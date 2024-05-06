@@ -89,7 +89,7 @@
 
 /* Header.css */
 .logo {
-  width: 25%; /* Adjust as needed */
+  width: 20%; /* Adjust as needed */
   height: auto; /* Keeps the aspect ratio */
   transition: opacity 0.3s ease; /* Adds a smooth transition */
 }
