@@ -1,0 +1,10 @@
+/* Search Page.css */
+.search-page {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    padding-top: 2%;
+  }
+  

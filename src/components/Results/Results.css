@@ -1,0 +1,13 @@
+/* Results.css */
+.Results {
+    position: relative;
+    top: 0%; /* Adjust this to move the box up or down */
+    width: 80%;
+    background-color: darkgrey;
+    padding: 20px;
+    border-radius: 5px;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+  

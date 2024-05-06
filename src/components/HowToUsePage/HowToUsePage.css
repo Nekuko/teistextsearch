@@ -1,0 +1,16 @@
+/* HowToUsePage.css */
+.how-to-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: red;
+  }
+  
+  .how-to-content {
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  

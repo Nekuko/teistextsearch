@@ -1,0 +1,103 @@
+.Header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  height: 100px;
+}
+
+.Header .title {
+  position: absolute;
+  left: 0;
+  padding: 0 4%;
+  display: flex;
+  align-items: center;
+  font-family: 'Noto Serif JP';
+  font-size: calc(1em + 2vw);
+  color: white;
+  letter-spacing: 0.07em;
+  text-decoration: none;
+}
+
+.Header .title .red {
+  color: #c8000f;
+  font-weight: 800; /* make the red text bolder */
+}
+
+.Header nav {
+  display: flex;
+  justify-content: flex-end;
+  width: calc(100% - 0%);
+  min-width: 0; /* add this to prevent overflow */
+}
+
+.Header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around; /* change this from space-between to space-around */
+  width: auto; /* change this from 100% to auto */
+  min-width: 0; /* add this to prevent overflow */
+  align-items: center;
+}
+
+.Header nav ul li {
+  padding: 0 2vw; /* add padding to each list item */
+  flex: 1 1 auto; /* add this to allow the items to shrink and grow as needed */
+}
+
+.Header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Bellota Text', cursive;
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  white-space: nowrap; /* add this to prevent text from breaking into multiple lines */
+  background-size: 200% 100%;
+  background-position: right;
+}
+
+.Header nav ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #c8000f; /* change this to the color you want */
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.Header nav ul li a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.Header nav ul li a:hover {
+  color: #fff; /* change this to the color you want when hovered */
+}
+
+.active-link {
+  background-color: #c8000f; /* change this to the color you want when active */
+}
+
+/* Header.css */
+.logo {
+  width: 25%; /* Adjust as needed */
+  height: auto; /* Keeps the aspect ratio */
+  transition: opacity 0.3s ease; /* Adds a smooth transition */
+}
+
+.logo:hover {
+  opacity: 0.7; /* Reduces the opacity to 70% when hovered over */
+}
+
+
+
+

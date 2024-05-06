@@ -1,0 +1,15 @@
+/* Filters.css */
+.filters {
+  justify-content: center;
+  align-items: center;
+  position: flex; /* Position relative to the Header component */
+  width: 75%;
+  background-color: #1f2224;
+  padding: 20px;
+  border-radius: 5px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 10%;
+  color: white;
+}
