@@ -1,0 +1,156 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: 'Noto Serif JP';
+  letter-spacing: 0.07em;
+}
+
+.season-title {
+  color: white;
+  font-weight: 400;
+  padding-right: 0.01%;
+}
+
+.dropdown-icon {
+  color: #c8000f;
+  height: 15px;
+  margin-left: 5px;
+}
+
+.dropdown-icon-main {
+  color: #c8000f;
+  height: 50px;
+  margin-left: 5px;
+}
+
+.greyed-out .season-title,
+.greyed-out .dropdown-icon {
+  color: grey;
+}
+
+
+.dropdown-menu {
+  display: block;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  margin: 0;
+  padding: 12px 16px;
+  z-index: 1;
+  color: white;
+}
+
+.greyed-out {
+  color: grey;
+}
+
+.dimmed {
+  color: #777;
+}
+
+
+.episode-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.episode-list {
+  padding-left: 0;
+  padding-right: 4%;
+}
+
+.episode-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2%;
+}
+
+.episode-item:last-child {
+  border-bottom: none;
+}
+
+.main-title {
+  color: #c8000f; /* Change to the color you want for the main title */
+  font-size: 3vh;
+}
+
+.greyed-out {
+  color: grey; /* Change to the color you want for the greyed-out main title */
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-item {
+  flex: 1;
+  border-bottom: 1px solid white;
+  padding: 5% 0;
+  border-color: #c8000f;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item ul {
+  max-height: 200px; /* Adjust as needed */
+  overflow-y: auto; /* Add this line */
+  font-family: 'Bellota Text', cursive;
+  font-weight: 700;
+  padding-top: 5%;
+  padding-left: 3%;
+}
+
+.episode-checked {
+  color: #000000; /* Change to the color you want for checked episodes */
+}
+
+.episode-unchecked {
+  color: #999999; /* Change to the color you want for unchecked episodes */
+}
+
+.dropdown-item ul li {
+  margin-bottom: 10px; /* Adjust as needed */
+  border-bottom: 1px solid white;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  color: #c8000f;
+}
+
+input[type="checkbox"] {
+  background-color: #000000;
+  accent-color: #c8000f;
+  margin-left: auto;
+}
+
+input[type="text"] {
+  border: 0;
+  background-color: #333333;
+  outline: none;
+  box-shadow: none;
+  padding: 1%;
+  margin-bottom: 1%;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding-left: 0;
+}
