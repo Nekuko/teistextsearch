@@ -1,0 +1,21 @@
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c8000f;
+    padding: 10px 0;
+  }
+  
+  /* Add this new class for the checkbox container */
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Adjust the input[type="checkbox"] to remove margin-left */
+  input[type="checkbox"] {
+    background-color: #000000;
+    accent-color: #c8000f;
+    margin-left: 0; /* Remove margin-left */
+  }
+  

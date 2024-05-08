@@ -1,36 +1,53 @@
 // Filters.js
-import React from 'react';
+import React, { useState } from 'react';
 import './Filters.css'; // Import the CSS file
-import AnimeDropdownMenu from '../menus/AnimeDropdownMenu'; // Import the HowToUsePage component
+import MediumsContainer from './MediumsContainer/MediumsContainer'; // Import the MediumsContainer component
 
 function Filters() {
+  const [animeDropdownState, setAnimeDropdownState] = useState({
+    mainChecked: false,
+    filter: '',
+    openSeasons: {},
+    seasonsChecked: {},
+    episodeFilters: {}
+  });
+
+  const [lnDropdownState, setLNDropdownState] = useState({
+    lnMainChecked: false,
+    lnFilter: '',
+    openVolumes: {},
+    volumesChecked: {},
+    chaptersFilters: {}
+  });
+
+  const updateAnimeDropdownState = (key, value) => {
+    setAnimeDropdownState(prevState => ({
+      ...prevState,
+      [key]: value
+    }));
+  }
+
+  const updateLNDropdownState = (key, value) => {
+    setLNDropdownState(prevState => ({
+      ...prevState,
+      [key]: value
+    }));
+  }
+
   return (
     <div className="filters">
-      <div className="mediums-container">
-        <h2 className="mediums-title">MEDIUMS</h2>
-        <AnimeDropdownMenu />
-        <AnimeDropdownMenu />
-        <AnimeDropdownMenu />
-        <AnimeDropdownMenu />
-        <AnimeDropdownMenu />
-      </div>
+      <MediumsContainer 
+        animeDropdownState={animeDropdownState}
+        updateAnimeDropdownState={updateAnimeDropdownState}
+        lnDropdownState={lnDropdownState}
+        updateLNDropdownState={updateLNDropdownState}
+      />
       <div className="mediums-container">
         <h2 className="mediums-title">CHARACTERS</h2>
-        <AnimeDropdownMenu />
-        <AnimeDropdownMenu />
-        <AnimeDropdownMenu />
-        <AnimeDropdownMenu />
-        <AnimeDropdownMenu />
       </div>
       <div className="mediums-container">
         <h2 className="mediums-title">OPTIONAL</h2>
-        <AnimeDropdownMenu />
-        <AnimeDropdownMenu />
-        <AnimeDropdownMenu />
-        <AnimeDropdownMenu />
-        <AnimeDropdownMenu />
       </div>
-    
     </div>
   );
 }
