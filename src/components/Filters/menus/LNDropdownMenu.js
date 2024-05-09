@@ -1,46 +1,49 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import './DropdownMenu.css';
 
-function LNDropdownMenu({ lnDropdownState, updateLNDropdownState }) {
+
+function LNDropdownMenu({ lnDropdownState, updateLNDropdownState, volumes, openLN, setOpenLN }) {
   const { lnMainChecked, lnFilter, openVolumes, volumesChecked, chapterFilters } = lnDropdownState;
-  const [openLN, setOpenLN] = useState(false);
 
-  const volume1Chapters = useMemo(() => [
-    { id: 'v1c1', name: 'Prologue' },
-    { id: 'v1c2', name: 'Chapter 1' },
-    { id: 'v1c3', name: 'Chapter 2' },
-    { id: 'v1c4', name: 'Chapter 3' },
-    { id: 'v1e5', name: 'Chapter 4' },
-    { id: 'v1e6', name: 'Chapter 5' },
-    { id: 'v1e7', name: 'Chapter 6' },
-    { id: 'v1e8', name: 'Final Chapter' },
-  ], []);
+  const dropdownRef = useRef(null);
 
-  const volume2Chapters = useMemo(() => [
-    { id: 'v2c1', name: 'Prologue' },
-    { id: 'v2c2', name: 'Chapter 1' },
-    { id: 'v2c3', name: 'Chapter 2' },
-    { id: 'v2c4', name: 'Chapter 3' },
-    { id: 'v2e5', name: 'Chapter 4' },
-    { id: 'v2e6', name: 'Chapter 5' },
-    { id: 'v2e7', name: 'Chapter 6' },
-    { id: 'v2e8', name: 'Chapter 7' },
-    { id: 'v2e9', name: 'Chapter 8' },
-    { id: 'v2e10', name: 'Final Chapter' },
-  ], []);
+  // Add an event listener to the document when the dropdown is open
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setOpenLN(false);
+      }
+    };
 
-  const volumes = useMemo(() => [
-    { name: "Volume 1", chapters: volume1Chapters },
-    { name: "Volume 2", chapters: volume2Chapters }
-  ], [volume1Chapters, volume2Chapters]);
+    if (openLN) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [openLN]);
+
+
+  useEffect(() => {
+    console.log(volumesChecked)
+    const allUnchecked = Object.values(volumesChecked).every(volume => Object.values(volume).every(checked => !checked));
+    if (allUnchecked) {
+      updateLNDropdownState('lnMainChecked', false);
+    } else {
+      updateLNDropdownState('lnMainChecked', true);
+    }
+  }, [volumesChecked]);
 
   const handleAnimeClick = () => {
     setOpenLN(!openLN);
   };
 
-  const handleSeasonClick = (volume) => {
+  const handleVolumeClick = (volume) => {
     // Close the currently open volume's dropdown
     if (openVolumes[volume]) {
       updateLNDropdownState('openVolumes', {
@@ -61,42 +64,53 @@ function LNDropdownMenu({ lnDropdownState, updateLNDropdownState }) {
     }
   };
 
-  const handleEpisodeCheck = (volume, episode) => {
-    const isEpisodeChecked = !volumesChecked[volume]?.[episode];
-    updateLNDropdownState('volumesChecked', {
-      ...volumesChecked,
-      [volume]: {
-        ...volumesChecked[volume],
-        [episode]: isEpisodeChecked
-      }
-    });
-
-    if (isEpisodeChecked) {
-      updateLNDropdownState('lnMainChecked', {
-        ...lnMainChecked,
-        [volume]: true
-      });
+  const handleChapterCheck = (volume, chapter) => {
+    const isChapterChecked = !volumesChecked[volume]?.[chapter];
+    const updatedVolume = {
+      ...volumesChecked[volume],
+      [chapter]: isChapterChecked
+    };
+  
+    // Check if all chapters are unchecked
+    const allChecks = Object.entries(updatedVolume);
+    const isAllUnchecked = allChecks.every(([name, checked]) => name === 'checked' ? true : !checked);
+  
+  
+    if (isAllUnchecked) {
+      // If all chapters are unchecked, uncheck the volume checkbox
+      updatedVolume.checked = false;
+    } else {
+      // If not all chapters are unchecked, check the volume checkbox
+      updatedVolume.checked = true;
     }
-  };
-
-  const handleSeasonCheck = (volume) => {
-    const isSeasonChecked = !lnMainChecked[volume];
-    updateLNDropdownState('lnMainChecked', {
-      ...lnMainChecked,
-      [volume]: isSeasonChecked
-    });
-
-    const volumeEpisodes = volumes.find(s => s.name === volume).chapters;
-    const updatedEpisodes = volumeEpisodes.reduce((acc, episode) => {
-      acc[episode.id] = isSeasonChecked;
-      return acc;
-    }, {});
-
+  
     updateLNDropdownState('volumesChecked', {
       ...volumesChecked,
-      [volume]: updatedEpisodes
+      [volume]: updatedVolume
     });
   };
+  
+  
+  
+  
+  
+  
+
+  const handleVolumeCheck = (volume) => {
+    const isVolumeChecked = !volumesChecked[volume]?.checked;
+    const updatedVolume = {
+      ...volumesChecked[volume],
+    };
+    Object.keys(updatedVolume).forEach(chapter => {
+      updatedVolume[chapter] = isVolumeChecked;
+    });
+  
+    updateLNDropdownState('volumesChecked', {
+      ...volumesChecked,
+      [volume]: { ...updatedVolume, checked: isVolumeChecked }
+    });
+  };
+  
 
   const handleFilterChange = (event, volume) => {
     if (volume) {
@@ -105,58 +119,63 @@ function LNDropdownMenu({ lnDropdownState, updateLNDropdownState }) {
         [volume]: event.target.value
       });
     } else {
-      updateLNDropdownState('filter', event.target.value);
+      updateLNDropdownState('lnFilter', event.target.value);
     }
   };
 
-  const filteredVolumes = useMemo(() => {
+  const lnFilteredVolumes = useMemo(() => {
     if (!lnFilter) return volumes;
     return volumes.filter(volume => volume.name.toLowerCase().includes(lnFilter.toLowerCase()));
   }, [volumes, lnFilter]);
 
-
-
   return (
-    <div className="dropdown">
+    <div className="dropdown" ref={dropdownRef}>
       <div onClick={handleAnimeClick}>
-        LIGHT NOVEL
-        <FontAwesomeIcon className="dropdown-icon-main"icon={openLN ? faChevronUp : faChevronDown} />
+        <span className={lnMainChecked ? '' : 'dimmed'}>LIGHT NOVEL</span>
+        <FontAwesomeIcon className="dropdown-icon-main" icon={openLN ? faChevronUp : faChevronDown} />
       </div>
       {openLN && (
         <div className = "dropdown-menu">
           <input type="text" value={lnFilter} onChange={handleFilterChange} placeholder="Search volumes..." />
-          {filteredVolumes.map((volume, index) => (
+          {lnFilteredVolumes.map((volume, index) => (
             <div key={index}>
               <div className="item-header">
                 <div style={{ display: 'flex', alignItems: 'center' }}>
-                  <span 
-                    className={`volume-title ${lnMainChecked[volume.name] ? '' : 'dimmed'}`} 
-                    onClick={() => handleSeasonClick(volume.name)}
+                <span 
+                    className={`volume-title ${volumesChecked[volume.name]?.checked ? '' : 'dimmed'}`} 
+                    onClick={() => handleVolumeClick(volume.name)}
                   >
                     {volume.name}
                   </span>
-                  <FontAwesomeIcon className="dropdown-icon" icon={openVolumes[volume.name] ? faChevronUp : faChevronDown} onClick={() => handleSeasonClick(volume.name)} />
+                  <FontAwesomeIcon className="dropdown-icon" icon={openVolumes[volume.name] ? faChevronUp : faChevronDown} onClick={() => handleVolumeClick(volume.name)} />
                 </div>
                 <input
                   type="checkbox"
-                  checked={!!lnMainChecked[volume.name]}
-                  onChange={() => handleSeasonCheck(volume.name)}
+                  checked={!!volumesChecked[volume.name]?.checked}
+                  onChange={() => handleVolumeCheck(volume.name)}
                 />
               </div>
               {openVolumes[volume.name] && (
                 <div>
                   <input type="text" value={chapterFilters[volume.name] || ''} onChange={(event) => handleFilterChange(event, volume.name)} placeholder="Search chapters..." />
-                  <div className="episode-list">
-                    {volume.chapters.filter(episode => !chapterFilters[volume.name] || episode.name.toLowerCase().includes(chapterFilters[volume.name].toLowerCase())).map((episode, index) => (
-                      <div key={index} className="episode-item">
-                        <span className={volumesChecked[volume.name]?.[episode.id] ? "episode-checked" : "episode-unchecked"}>{episode.name}</span>
-                        <input
-                          type="checkbox"
-                          checked={!!volumesChecked[volume.name]?.[episode.id]}
-                          onChange={() => handleEpisodeCheck(volume.name, episode.id)}
-                        />
-                      </div>
-                    ))}
+                  <div className="chapter-list">
+                  {volume.chapters.filter(chapter => !chapterFilters[volume.name] || chapter.name.toLowerCase().includes(chapterFilters[volume.name].toLowerCase())).map((chapter, index) => {
+                  const [chapterNumber, chapterName] = chapter.name.split('|');
+                  return (
+                    <div key={index} className="chapter-item">
+                      <span className={volumesChecked[volume.name]?.[chapter.id] ? "chapter-checked" : "chapter-unchecked"}>
+                        <span style={{color: 'red'}}>{chapterNumber}</span>
+                        <span className="chapter-name" title={chapterName}>|{chapterName}</span>
+                      </span>
+                      <input
+                        type="checkbox"
+                        checked={!!volumesChecked[volume.name]?.[chapter.id]}
+                        onChange={() => handleChapterCheck(volume.name, chapter.id)}
+                      />
+                    </div>
+                  );
+                })}
+
                   </div>
                 </div>
               )}

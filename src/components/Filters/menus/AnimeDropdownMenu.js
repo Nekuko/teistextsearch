@@ -1,16 +1,33 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import './DropdownMenu.css';
 
-// fix seasons not being able to be checked off rip
-// fix the episode not checking season thing
-// make it so only only related dropdown can be open=
 
-function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seasons }) {
+function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seasons, openAnime, setOpenAnime }) {
   const { mainChecked, filter, openSeasons, seasonsChecked, episodeFilters } = animeDropdownState;
-  const [openAnime, setOpenAnime] = useState(false);
-  
+
+  const dropdownRef = useRef(null);
+
+  // Add an event listener to the document when the dropdown is open
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setOpenAnime(false);
+      }
+    };
+
+    if (openAnime) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [openAnime]);
+
 
   useEffect(() => {
     const allUnchecked = Object.values(seasonsChecked).every(season => Object.values(season).every(checked => !checked));
@@ -52,50 +69,47 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seaso
       ...seasonsChecked[season],
       [episode]: isEpisodeChecked
     };
-
-    console.log(seasonsChecked)
   
     // Check if all episodes are unchecked
-    const isAllUnchecked = Object.values(seasonsChecked).every(checked => !checked);
+    const allChecks = Object.entries(updatedSeason);
+    const isAllUnchecked = allChecks.every(([name, checked]) => name === 'checked' ? true : !checked);
+  
+  
+    if (isAllUnchecked) {
+      // If all episodes are unchecked, uncheck the season checkbox
+      updatedSeason.checked = false;
+    } else {
+      // If not all episodes are unchecked, check the season checkbox
+      updatedSeason.checked = true;
+    }
   
     updateAnimeDropdownState('seasonsChecked', {
       ...seasonsChecked,
       [season]: updatedSeason
     });
-  
-    if (isAllUnchecked) {
-      // If all episodes are unchecked, uncheck the season checkbox
-      updateAnimeDropdownState('seasonsChecked', {
-        ...seasonsChecked,
-        [season]: { ...updatedSeason, checked: false }
-      });
-    } else {
-      // If not all episodes are unchecked, check the season checkbox
-      updateAnimeDropdownState('seasonsChecked', {
-        ...seasonsChecked,
-        [season]: { ...updatedSeason, checked: true }
-      });
-    }
-
-    console.log(seasonsChecked)
   };
+  
+  
+  
+  
   
   
 
   const handleSeasonCheck = (season) => {
-    const isSeasonChecked = !seasonsChecked[season]?.[Object.keys(seasonsChecked[season])[0]];
+    const isSeasonChecked = !seasonsChecked[season]?.checked;
     const updatedSeason = {
       ...seasonsChecked[season],
     };
     Object.keys(updatedSeason).forEach(episode => {
       updatedSeason[episode] = isSeasonChecked;
     });
-
+  
     updateAnimeDropdownState('seasonsChecked', {
       ...seasonsChecked,
-      [season]: updatedSeason
+      [season]: { ...updatedSeason, checked: isSeasonChecked }
     });
   };
+  
 
   const handleFilterChange = (event, season) => {
     if (season) {
@@ -114,7 +128,7 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seaso
   }, [seasons, filter]);
 
   return (
-    <div className="dropdown">
+    <div className="dropdown" ref={dropdownRef}>
       <div onClick={handleAnimeClick}>
         <span className={mainChecked ? '' : 'dimmed'}>ANIME</span>
         <FontAwesomeIcon className="dropdown-icon-main"icon={openAnime ? faChevronUp : faChevronDown} />
@@ -126,8 +140,8 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seaso
             <div key={index}>
               <div className="item-header">
                 <div style={{ display: 'flex', alignItems: 'center' }}>
-                  <span 
-                    className={`season-title ${seasonsChecked[season.name]?.[Object.keys(seasonsChecked[season.name])[0]] ? '' : 'dimmed'}`} 
+                <span 
+                    className={`season-title ${seasonsChecked[season.name]?.checked ? '' : 'dimmed'}`} 
                     onClick={() => handleSeasonClick(season.name)}
                   >
                     {season.name}
@@ -136,7 +150,7 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seaso
                 </div>
                 <input
                   type="checkbox"
-                  checked={!!seasonsChecked[season.name]?.[Object.keys(seasonsChecked[season.name])[0]]}
+                  checked={!!seasonsChecked[season.name]?.checked}
                   onChange={() => handleSeasonCheck(season.name)}
                 />
               </div>
