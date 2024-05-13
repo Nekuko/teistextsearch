@@ -1,13 +1,65 @@
 /* Results.css */
-.Results {
-    position: relative;
-    top: 0%; /* Adjust this to move the box up or down */
-    width: 80%;
-    background-color: darkgrey;
-    padding: 20px;
-    border-radius: 5px;
-    margin: auto;
-    left: 0;
-    right: 0;
-  }
-  
+.results-container {
+  align-items: center;
+  position: flex; /* Position relative to the Header component */
+  width: 75%;
+  background-color: #1f2224;
+  padding: 20px;
+  border-radius: 5px;
+  margin: auto;
+  display: flex; /* Use flexbox to arrange children in a row */
+  flex-direction: row; /* Align children horizontally */
+  justify-content: space-around; /* Distribute space evenly around the containers */
+  overflow-y: scroll;
+  max-height: 800px;
+  margin-bottom: 10%;
+  color: white;
+}
+
+.volume-section {
+  margin-bottom: 20px;
+}
+
+.chapter-section {
+  margin-left: 20px;
+}
+
+.sentence-list {
+  margin-left: 40px;
+}
+
+.sentences-container {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+
+/* Add the new styles here */
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c8000f;
+  padding: 10px 0;
+}
+
+/* Results.css */
+
+.sentence-box {
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.Collapsible__trigger {
+  color: red;
+}
+
+.results-header {
+  font-family: 'Noto Serif JP';
+  font-size: calc(0.9em + 1.8vw);
+  color: #c8000f;
+  font-weight: 100;
+  letter-spacing: 0.07em;
+}

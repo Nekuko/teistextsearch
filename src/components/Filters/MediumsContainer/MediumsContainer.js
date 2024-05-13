@@ -70,13 +70,13 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
     { id: 'v2c2', name: "1 | Fun Times at the Goddess's Trial!"},
     { id: 'v2c3', name: '2 | Investigating the Sanctuary!' },
     { id: 'v2c4', name: "3 | When Things Get Borings, It's Time for Explosives!" },
-    { id: 'v2c4', name: '4 | This Situation Calls for a "Who Is That Guy?!"'},
-    { id: 'v2c5', name: '5 | A Battle to Attract Only MVPS!' },
-    { id: 'v2c6', name: '6 | A Mastermind Always Plays Piano Under Moonlight!' },
-    { id: 'v2c7', name: '7 | Showing Off a Smidgen of My Strength' },
-    { id: 'v2c8', name: '8 | Lay Your Eyes on My True Powers!' },
-    { id: 'v2c9', name: 'F | Just Who Is This Mysterious Badass?!' },
-    { id: 'v2c10', name: 'A | Appendix' },
+    { id: 'v2c5', name: '4 | This Situation Calls for a "Who Is That Guy?!"'},
+    { id: 'v2c6', name: '5 | A Battle to Attract Only MVPS!' },
+    { id: 'v2c7', name: '6 | A Mastermind Always Plays Piano Under Moonlight!' },
+    { id: 'v2c8', name: '7 | Showing Off a Smidgen of My Strength' },
+    { id: 'v2c9', name: '8 | Lay Your Eyes on My True Powers!' },
+    { id: 'v2c10', name: 'F | Just Who Is This Mysterious Badass?!' },
+    { id: 'v2c11', name: 'A | Appendix' },
     ], []);
 
     const volume3Chapters = useMemo(() => [
@@ -84,12 +84,12 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
       { id: 'v3c2', name: "1 | Lawless City Bandit Hunting!"},
       { id: 'v3c3', name: '2 | Storming the Crimson Tower' },
       { id: 'v3c4', name: "3 | Pursuing the Blood Queen" },
-      { id: 'v3c4', name: 'X | Field Notes on a Little Brother—by Young Claire!'},
-      { id: 'v3c5', name: "4 | I'll Destroy It All and Start from Scratch!" },
-      { id: 'v3c6', name: '5 | Printing Fake Money as Mitsughoshi Throws Down with the Major Corporate Alliance!' },
-      { id: 'v3c7', name: '6 | Circulating Counterfeit Cash!' },
-      { id: 'v3c8', name: 'E | The One to Destroy It ALl and Start from Scratch—with Fake Bills!' },
-      { id: 'v3c9', name: 'A | Appendix' },
+      { id: 'v3c5', name: 'X | Field Notes on a Little Brother—by Young Claire!'},
+      { id: 'v3c6', name: "4 | I'll Destroy It All and Start from Scratch!" },
+      { id: 'v3c7', name: '5 | Printing Fake Money as Mitsughoshi Throws Down with the Major Corporate Alliance!' },
+      { id: 'v3c8', name: '6 | Circulating Counterfeit Cash!' },
+      { id: 'v3c9', name: 'E | The One to Destroy It ALl and Start from Scratch—with Fake Bills!' },
+      { id: 'v3c10', name: 'A | Appendix' },
       ], []);
 
     const volume4Chapters = useMemo(() => [
@@ -97,12 +97,12 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
       { id: 'v4c2', name: "1 | Putting the Kibosh on Rose Oriana's Wedding!"},
       { id: 'v4c3', name: '2 | Begin Operation Obstruction!' },
       { id: 'v4c4', name: "3 | Crashing the Ceremony!" },
-      { id: 'v4c4', name: 'X | Rise of the Fancy Hoodlum Slayer!'},
-      { id: 'v4c5', name: "4 | Lurking in the Darkness in Fantastical Japan!" },
-      { id: 'v4c6', name: '5 | Sneaking around in Japan, Just Like the Old Days!!' },
-      { id: 'v4c7', name: '6 | Something Smells Fishy...But an Eminence in Shadow Always Cracks the Case!' },
-      { id: 'v4c8', name: 'E | Behond, a Full-Fledged Eminence in Shadow!' },
-      { id: 'v4c9', name: 'A | Appendix' },
+      { id: 'v4c5', name: 'X | Rise of the Fancy Hoodlum Slayer!'},
+      { id: 'v4c6', name: "4 | Lurking in the Darkness in Fantastical Japan!" },
+      { id: 'v4c7', name: '5 | Sneaking around in Japan, Just Like the Old Days!!' },
+      { id: 'v4c8', name: '6 | Something Smells Fishy...But an Eminence in Shadow Always Cracks the Case!' },
+      { id: 'v4c9', name: 'E | Behond, a Full-Fledged Eminence in Shadow!' },
+      { id: 'v4c10', name: 'A | Appendix' },
       ], []);
 
     const volumes = useMemo(() => [
