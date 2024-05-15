@@ -109,7 +109,7 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
     { name: "Volume 1", chapters: volume1Chapters },
     { name: "Volume 2", chapters: volume2Chapters },
     { name: "Volume 3", chapters: volume3Chapters },
-    { name: "Volume 4", chapters: volume4Chapters}
+    { name: "Volume 4", chapters: volume4Chapters }
     ], [volume1Chapters, volume2Chapters, volume3Chapters, volume4Chapters]);
 
     

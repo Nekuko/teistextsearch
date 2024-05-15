@@ -30,7 +30,6 @@ function LNDropdownMenu({ lnDropdownState, updateLNDropdownState, volumes, openL
 
 
   useEffect(() => {
-    console.log(volumesChecked)
     const allUnchecked = Object.values(volumesChecked).every(volume => Object.values(volume).every(checked => !checked));
     if (allUnchecked) {
       updateLNDropdownState('lnMainChecked', false);

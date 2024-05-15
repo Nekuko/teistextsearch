@@ -11,13 +11,13 @@
   flex-direction: row; /* Align children horizontally */
   justify-content: space-around; /* Distribute space evenly around the containers */
   overflow-y: scroll;
-  max-height: 800px;
+  max-height: 1200px;
   margin-bottom: 10%;
   color: white;
 }
 
-.volume-section {
-  margin-bottom: 20px;
+.copy-button:hover {
+  background-color: #ff0000;
 }
 
 .chapter-section {
@@ -29,9 +29,15 @@
 }
 
 .sentences-container {
-  max-height: 200px;
+  max-height: 400px;
+  padding-right: 20px;
   overflow-y: auto;
 }
+
+.content-wrapper {
+  width: 80%; /* Set width to 90% of its parent */
+}
+
 
 
 /* Add the new styles here */
@@ -48,13 +54,102 @@
 
 .sentence-box {
   border: 1px solid #000;
+  border-radius: 5px;
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px 20px 10px 0; /* top right bottom left */
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup {
+  opacity: 0;
+  transition: opacity 0.2s;
+  background-color: #c8000f;
+  color: #fff;
+  font-size: medium;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -34px;
+}
+
+.popup::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #c8000f transparent transparent transparent;
+}
+
+.show {
+  opacity: 1;
+}
+
+
+
+
+.copy-icon {
+  color: #c8000f;
+  cursor: pointer;
+  position: relative;
+}
+
+.copy-icon:hover {
+  color: red;
+  cursor: pointer;
 }
 
 .Collapsible__trigger {
-  color: red;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #2c3033;
+  color: #fff;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border: 1px solid #c8000f;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
+
+.Collapsible__trigger:hover {
+  background-color: #3a3f42;
+}
+
+.Collapsible__trigger.is-open {
+  background-color: #c8000f;
+}
+
+.sentence-box {
+  border: 1px solid #000;
+  padding: 0px 20px 0px 10px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.copy-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #c8000f;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
 
 .results-header {
   font-family: 'Noto Serif JP';
