@@ -5,11 +5,12 @@ import LightNovelResults from './Containers/LightNovelResults'; // Import the ne
 import AnimeResults from './Containers/AnimeResults';
 import './Results.css'; // Import the CSS file
 
-function Results({ results }) {
+function Results({ results, characterImages }) {
   // Check if the results object is empty
   const noResults = Object.keys(results).length === 0;
+  console.log(results)
   const lnResults = results && results.ln ? results.ln.ln : null;
-  const anResults = results && results.an ? results.an.an : null;
+  const anResults = results && results.anime ? results.anime.an : null;
 
   return (
     <div>
@@ -27,7 +28,7 @@ function Results({ results }) {
               )}
               {anResults && (
                 <Collapsible trigger={`Anime (Total: ${anResults.count})`}>
-                  <AnimeResults anData={anResults} /> {/* Use the new component */}
+                  <AnimeResults anData={anResults} characterImages={characterImages} /> {/* Use the new component */}
                 </Collapsible>
               )}
             </>

@@ -1,0 +1,13 @@
+/* ImagePreview.css */
+.image-preview-content {
+    position: fixed;;
+    transform: translate(-42%, -105%);
+    z-index: 1; /* Ensure the preview is on top of everything else */
+    overflow: visible;
+  }
+  
+  .image-preview-content img {
+    max-width: 100%;
+    height: auto;
+  }
+  

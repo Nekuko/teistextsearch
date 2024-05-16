@@ -31,11 +31,11 @@
 .sentences-container {
   max-height: 400px;
   padding-right: 20px;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .content-wrapper {
-  width: 80%; /* Set width to 90% of its parent */
+  width: 90%; /* Set width to 90% of its parent */
 }
 
 
@@ -52,14 +52,35 @@
 
 /* Results.css */
 
-.sentence-box {
-  border: 1px solid #000;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px 20px 10px 0; /* top right bottom left */
-  position: relative;
+
+.sentence-character-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.image-icon-container {
+  position: relative; /* This is needed for absolute positioning of children */
+}
+
+
+.character-box img {
+  display: flex;
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+}
+
+
+.character-box {
+  border: 1px solid #c8000f;
+  border-radius: 5px;
+  padding-left: 5px;
+  width: 15%;
+  margin: 10px 0 10px 10px; /* top right bottom left */
+  position: relative;
+  display: flex;
+  justify-content: left;
   align-items: center;
 }
 
@@ -76,8 +97,11 @@
   z-index: 1;
   bottom: 125%;
   left: 50%;
-  margin-left: -34px;
+  margin-left: -32px;
 }
+
+
+
 
 .popup::after {
   content: "";
@@ -95,15 +119,20 @@
 }
 
 
+.icon-slashline {
+  margin-left: 10px;
+  width: 12px;
+}
 
-
-.copy-icon {
+.copy-icon, .image-icon {
   color: #c8000f;
   cursor: pointer;
   position: relative;
+  margin-left: 10px;
+  margin-top: 3px;
 }
 
-.copy-icon:hover {
+.copy-icon:hover, .image-icon:hover {
   color: red;
   cursor: pointer;
 }
@@ -130,11 +159,29 @@
   background-color: #c8000f;
 }
 
+
 .sentence-box {
+  width: 96%;
+  border-radius: 5px;
   border: 1px solid #000;
   padding: 0px 20px 0px 10px;
-  margin: 10px 0;
+  margin: 10px 0 10px 0; /* top right bottom left */
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sentence-box-image {
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 85%;
+  padding: 0px 0px 0px 10px;
+  margin-right: 0px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .copy-button {
@@ -147,6 +194,13 @@
   border: none;
   padding: 5px 10px;
   cursor: pointer;
+}
+
+.icon-container {
+  width: 10%;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
 }
 
 
