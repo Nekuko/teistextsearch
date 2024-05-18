@@ -9,15 +9,31 @@ import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
 import ImagePreview from './ImagePreview/ImagePreview'; // Adjust the path as needed
 
 function AnimeResults({ anData, characterImages }) {
+  const [imageCache, setImageCache] = useState({});
   const [previewImage, setPreviewImage] = useState(null);
   const [previewPosition, setPreviewPosition] = useState({top: 0, left: 0})
   const iconRefs = useRef({});
 
-  const handleMouseEnter = (url, seasonKey, episodeKey, index) => {
+  function handleMouseEnter(id, seasonKey, episodeKey, index) {
+    return;
     const rect = iconRefs.current[`${seasonKey}-${episodeKey}-${index}`].getBoundingClientRect();
     setPreviewPosition({ top: rect.top, left: rect.left });
-    setPreviewImage(url);
-  };
+    const url = `https://lh3.googleusercontent.com/d/${id.split('/d/')[1].split('/view')[0]}`;
+  
+    // Check if the image is already in the cache
+    if (imageCache[url]) {
+      setPreviewImage(imageCache[url]);
+    } else {
+      // If not, download the image and add it to the cache
+      const img = new Image();
+      img.onload = () => {
+        setImageCache(prevCache => ({ ...prevCache, [url]: img.src }));
+        setPreviewImage(img.src);
+      };
+      img.src = url;
+    }
+  }
+  
   
   if (Object.keys(anData.seasons).length === 0) {
     return null;
@@ -64,14 +80,15 @@ function AnimeResults({ anData, characterImages }) {
   }
 
   return (
-    <div>
+    <div className="anime-trigger">
       {Object.entries(anData.seasons).map(([seasonKey, seasonValue]) => {
         // Get the season title from the mapping
         const seasonTitle = seasonMapping[seasonKey]?.title || `Season ${seasonKey.slice(1)}`;
         // Calculate the total count for each season
         const seasonCount = Object.values(seasonValue.episodes).reduce((total, episode) => total + episode.count, 0);
-
+ 
         return (
+          <div>
           <Collapsible trigger={`${seasonTitle} (Total: ${seasonCount})`} key={seasonKey}>
             {Object.entries(seasonValue.episodes).map(([episodeKey, episodeValue]) => {
               // Get the episode title from the mapping
@@ -95,16 +112,17 @@ function AnimeResults({ anData, characterImages }) {
                           </CopyToClipboard>
                           <SlashLine className="icon-slashline"/>
                           <div className="image-icon-container"                                
-                            onMouseEnter={() => handleMouseEnter(`https://drive.google.com/thumbnail?id=${sentence.url.split('/d/')[1].split('/view')[0]}`, seasonKey, episodeKey, index)}
-                            onMouseLeave={() => setPreviewImage(null)}
-                            ref={ref => iconRefs.current[`${seasonKey}-${episodeKey}-${index}`] = ref}
-                              >
-                            {sentence.url && (
-                              <a href={`https://drive.google.com/uc?export=download&id=${sentence.url.split('/d/')[1].split('/view')[0]}`} download target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon className="image-icon" icon={faFileImage} />
-                              </a>
-                            )}
-                          </div>
+                          onMouseEnter={() => handleMouseEnter(sentence.url, seasonKey, episodeKey, index)}
+                          onMouseLeave={() => setPreviewImage(null)}
+                          ref={ref => iconRefs.current[`${seasonKey}-${episodeKey}-${index}`] = ref}
+                        >
+                          {sentence.url && (
+                            <a href={`https://drive.google.com/uc?export=download&id=${sentence.url.split('/d/')[1].split('/view')[0]}`} download target="_blank" rel="noopener noreferrer">
+                              <FontAwesomeIcon className="image-icon" icon={faFileImage} />
+                            </a>
+                          )}
+                        </div>
+
                           </div>
                       </div>
                       <div className="character-box">
@@ -118,6 +136,7 @@ function AnimeResults({ anData, characterImages }) {
               );
             })}
           </Collapsible>
+          </div>
         );
       })}
       {previewImage && <ImagePreview src={previewImage} position={previewPosition} />}

@@ -71,6 +71,31 @@
   margin-right: 10px;
 }
 
+.Collapsible__trigger img {
+  width: 42px;
+  height: 42px;
+  margin-right: 10px;
+}
+
+.character-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: large;
+}
+
+.characters-trigger {
+  font-size: larger;
+}
+
+.medium-trigger {
+  font-size: medium;
+}
+
+.anime-trigger {
+  font-size: small;
+}
+
 
 .character-box {
   border: 1px solid #c8000f;

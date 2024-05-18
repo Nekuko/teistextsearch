@@ -91,7 +91,7 @@ function LightNovelResults({ lnData }) {
         const volumeCount = Object.values(volumeValue.chapters).reduce((total, chapter) => total + chapter.count, 0);
 
         return (
-          <Collapsible trigger={`${volumeTitle} (Total: ${volumeCount})`} key={volumeKey}>
+          <Collapsible className="medium-margin" trigger={`${volumeTitle} (Total: ${volumeCount})`} key={volumeKey}>
             {Object.entries(volumeValue.chapters).map(([chapterKey, chapterValue]) => {
               // Get the chapter title from the mapping
               const chapterTitle = volumeMapping[volumeKey]?.chapters[chapterKey] || `Chapter ${chapterKey.slice(1)}`;

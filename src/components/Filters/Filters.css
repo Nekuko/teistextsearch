@@ -9,8 +9,15 @@
   margin: auto;
   color: white;
   display: flex; /* Use flexbox to arrange children in a row */
+  flex-direction: column; /* Align children horizontally */
+  justify-content: space-around; /* Distribute space evenly around the containers */
+}
+
+.row-container {
+  display: flex;
   flex-direction: row; /* Align children horizontally */
   justify-content: space-around; /* Distribute space evenly around the containers */
+  width: 100%;
 }
 
 .mediums-container {

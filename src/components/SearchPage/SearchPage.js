@@ -2229,6 +2229,10 @@ function SearchPage() {
     chapterFilters: {}
   });
 
+  const [keywords, setKeywords] = useState([]);
+  const [caseSensitive, setCaseSensitive] = useState(false);
+  const [exactMatch, setExactMatch] = useState(false);
+
   const characterImages = {
     "Shadow": ShadowIcon,
     "Cid Kagenou": CidKagenouIcon,
@@ -2278,8 +2282,6 @@ function SearchPage() {
           })
       );
   
-    // Define the keywords for the search
-    const keywords = ["what"];
     const characters = [];
     // Initialize separate objects to hold the anime and light novel results
     let animeResults = {};
@@ -2295,8 +2297,8 @@ function SearchPage() {
 
     console.log(animeText)
 
-    animeResults = searchAnime(animeCheckedItems, animeText, keywords, characters, false, false);
-    lnResults = searchLN(lnCheckedItems, lnText, keywords, false, false);
+    animeResults = searchAnime(animeCheckedItems, animeText, keywords, characters, caseSensitive, exactMatch);
+    lnResults = searchLN(lnCheckedItems, lnText, keywords, caseSensitive, exactMatch);
     console.log(animeResults)
   
     // Update the state with the search results
@@ -2312,6 +2314,12 @@ function SearchPage() {
         updateAnimeDropdownState={updateAnimeDropdownState}
         lnDropdownState={lnDropdownState}
         updateLNDropdownState={updateLNDropdownState}
+        keywords={keywords}
+        setKeywords={setKeywords}
+        caseSensitive={caseSensitive}
+        setCaseSensitive={setCaseSensitive}
+        exactMatch={exactMatch}
+        setExactMatch={setExactMatch}
       />
       <button onClick={handleSearch}>Search</button> {/* Search button */}
       <Results results={searchResults} characterImages={characterImages} />
