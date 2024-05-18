@@ -10,10 +10,33 @@
   display: flex; /* Use flexbox to arrange children in a row */
   flex-direction: row; /* Align children horizontally */
   justify-content: space-around; /* Distribute space evenly around the containers */
-  overflow-y: scroll;
   max-height: 1200px;
   margin-bottom: 10%;
   color: white;
+  position: relative;
+}
+
+.content-wrapper {
+  overflow-y: scroll;
+}
+
+/* Results.css */
+.highlight-icon {
+  position: absolute;
+  top: 10px; /* Adjust to align with the top edge of the results-container */
+  right: 10px; /* Adjust to align with the right edge of the results-container */
+  color: #c8000f; /* The red color you specified */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the icon */
+  opacity: 30%;
+}
+
+.highlight {
+  color: red /* The red color you specified */
+}
+
+.highlight-icon.active {
+  color: red; /* Change to your preferred active color */
+  opacity: 100%;
 }
 
 .copy-button:hover {

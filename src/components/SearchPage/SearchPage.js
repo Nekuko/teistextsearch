@@ -1,5 +1,5 @@
 // SearchPage.js
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './SearchPage.css'; // Import the CSS file
 import Filters from '../Filters/Filters'; // Import the Filters component
 import Results from '../Results/Results' // Import the Results component
@@ -2121,11 +2121,16 @@ function SearchPage() {
     }
   };
 
-  const [animeDropdownState, setAnimeDropdownState] = useState({
-    mainChecked: false,
-    filter: '',
-    openSeasons: {},
-    seasonsChecked: {
+  const [animeDropdownState, setAnimeDropdownState] = React.useState(() => {
+    const savedState = sessionStorage.getItem('animeDropdownState');
+    if (savedState) {
+      return JSON.parse(savedState);
+    } else {
+      return {
+        mainChecked: false,
+        filter: '',
+        openSeasons: {},
+        seasonsChecked: {
       "Season 1": {
           "s1e1": false,
           "s1e2": false,
@@ -2164,15 +2169,26 @@ function SearchPage() {
           "s2e12": false,
           "checked": false
       }
-  },
+    },
     episodeFilters: {}
-  });
+  };
+}
+});
 
-  const [lnDropdownState, setLNDropdownState] = useState({
-    lnMainChecked: false,
-    lnFilter: '',
-    openVolumes: {},
-    volumesChecked: {
+    React.useEffect(() => {
+    sessionStorage.setItem('animeDropdownState', JSON.stringify(animeDropdownState));
+  }, [animeDropdownState]);
+
+  const [lnDropdownState, setLNDropdownState] = React.useState(() => {
+    const savedState = sessionStorage.getItem('lnDropdownState');
+    if (savedState) {
+      return JSON.parse(savedState);
+    } else {
+      return {
+        lnMainChecked: false,
+        lnFilter: '',
+        openVolumes: {},
+        volumesChecked: {
       "Volume 1": {
           "v1c1": false,
           "v1c2": false,
@@ -2225,13 +2241,33 @@ function SearchPage() {
         "v4c10": false,
         "checked": false
     }
-  },
-    chapterFilters: {}
-  });
+},
+chapterFilters: {}
+};
+}
+});
 
-  const [keywords, setKeywords] = useState([]);
-  const [caseSensitive, setCaseSensitive] = useState(false);
-  const [exactMatch, setExactMatch] = useState(false);
+React.useEffect(() => {
+sessionStorage.setItem('lnDropdownState', JSON.stringify(lnDropdownState));
+}, [lnDropdownState]);
+
+  const [filterState, setFilterState] = useState(() => {
+    // Try to get the state from sessionStorage
+    const savedState = sessionStorage.getItem('filterState');
+    if (savedState) {
+      // If found, parse and return the saved state
+      return JSON.parse(savedState);
+    } else {
+      // If not found, return the initial state
+      return { keywords: [], caseSensitive: false, exactMatch: false };
+    }
+  });
+  
+  // Use an effect to update sessionStorage whenever the state changes
+  useEffect(() => {
+    sessionStorage.setItem('filterState', JSON.stringify(filterState));
+  }, [filterState]);
+  
 
   const characterImages = {
     "Shadow": ShadowIcon,
@@ -2257,9 +2293,22 @@ function SearchPage() {
     }));
   }
 
+  const [charDropdownState, setCharDropdownState] = useState(() => {
+    const savedState = sessionStorage.getItem('charDropdownState');
+    return savedState ? JSON.parse(savedState) : { /* ... initial state ... */ };
+  });
+
+
+
+  useEffect(() => {
+    sessionStorage.setItem('charDropdownState', JSON.stringify(charDropdownState));
+  }, [charDropdownState]);
+
   const [searchResults, setSearchResults] = useState({});
+  const [savedFilterState, setSavedFilterState] = useState(filterState);
 
   function handleSearch() {
+    setSavedFilterState(filterState);
     // Collect all checked items from animeDropdownState
     const animeCheckedItems = Object.entries(animeDropdownState.seasonsChecked)
       .flatMap(([season, episodes]) => 
@@ -2297,8 +2346,8 @@ function SearchPage() {
 
     console.log(animeText)
 
-    animeResults = searchAnime(animeCheckedItems, animeText, keywords, characters, caseSensitive, exactMatch);
-    lnResults = searchLN(lnCheckedItems, lnText, keywords, caseSensitive, exactMatch);
+    animeResults = searchAnime(animeCheckedItems, animeText, filterState.keywords, characters, filterState.caseSensitive, filterState.exactMatch);
+    lnResults = searchLN(lnCheckedItems, lnText, filterState.keywords, filterState.caseSensitive, filterState.exactMatch);
     console.log(animeResults)
   
     // Update the state with the search results
@@ -2314,15 +2363,13 @@ function SearchPage() {
         updateAnimeDropdownState={updateAnimeDropdownState}
         lnDropdownState={lnDropdownState}
         updateLNDropdownState={updateLNDropdownState}
-        keywords={keywords}
-        setKeywords={setKeywords}
-        caseSensitive={caseSensitive}
-        setCaseSensitive={setCaseSensitive}
-        exactMatch={exactMatch}
-        setExactMatch={setExactMatch}
+        filterState={filterState}
+        setFilterState={setFilterState}
+        charDropdownState={charDropdownState}
+        setCharDropdownState={setCharDropdownState}
       />
       <button onClick={handleSearch}>Search</button> {/* Search button */}
-      <Results results={searchResults} characterImages={characterImages} />
+      <Results results={searchResults} characterImages={characterImages} filterState={savedFilterState} />
     </div>
   );
 }  

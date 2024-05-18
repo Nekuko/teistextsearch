@@ -2,6 +2,8 @@
 import React, { useMemo, useState } from 'react';
 import AnimeDropdownMenu from '../menus/AnimeDropdownMenu'; // Import the AnimeDropdownMenu component
 import LNDropdownMenu from '../menus/LNDropdownMenu'; // Import the LNDropdownMenu component
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRotateRight } from '@fortawesome/free-solid-svg-icons';
 import './MediumsContainer.css'; // Import the CSS file
 
 function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropdownState, updateLNDropdownState }) {
@@ -9,6 +11,44 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
     const { lnMainChecked } = lnDropdownState;
     const [openAnime, setOpenAnime] = useState(false);
     const [openLN, setOpenLN] = useState(false);
+
+    const handleReset = () => {
+      // Reset anime dropdown state
+      updateAnimeDropdownState('mainChecked', false);
+      updateAnimeDropdownState('seasonsChecked', resetSeasonsChecked(seasons));
+      setOpenAnime(false);
+  
+      // Reset LN dropdown state
+      updateLNDropdownState('lnMainChecked', false);
+      updateLNDropdownState('volumesChecked', resetVolumesChecked(volumes));
+      setOpenLN(false);
+    };
+  
+    // Helper function to reset seasonsChecked
+    const resetSeasonsChecked = (seasons) => {
+      const resetState = {};
+      seasons.forEach(season => {
+        resetState[season.name] = season.episodes.reduce((acc, episode) => {
+          acc[episode.id] = false;
+          return acc;
+        }, {});
+        resetState[season.name].checked = false;
+      });
+      return resetState;
+    };
+  
+    // Helper function to reset volumesChecked
+    const resetVolumesChecked = (volumes) => {
+      const resetState = {};
+      volumes.forEach(volume => {
+        resetState[volume.name] = volume.chapters.reduce((acc, chapter) => {
+          acc[chapter.id] = false;
+          return acc;
+        }, {});
+        resetState[volume.name].checked = false;
+      });
+      return resetState;
+    };
       
     const season1Episodes = useMemo(() => [
         { id: 's1e1', name: '1 | The Hated Classmate' },
@@ -52,6 +92,22 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
     { name: "Season 1", episodes: season1Episodes },
     { name: "Season 2", episodes: season2Episodes }
     ], [season1Episodes, season2Episodes]);
+
+    const shadowGardenCharacters = useMemo(() => [
+      { id: 'sgc1', name: 'Cid Kagenou' },
+      { id: 'sgc2', name: 'Alpha' },
+      { id: 'sgc3', name: 'Beta' },
+      { id: 'sgc4', name: "Gamma" },
+      { id: 'sgc5', name: 'Delta' },
+      { id: 'sgc6', name: 'Epsilon' },
+      { id: 'sgc7', name: 'Zeta' },
+      { id: 'sgc8', name: 'Eta' }
+    ], []);
+
+    const groups = useMemo(() => [
+      { name: "Shadow Garden", episodes: shadowGardenCharacters },
+      { name: "Midgar", episodes: shadowGardenCharacters }
+      ], [shadowGardenCharacters, shadowGardenCharacters]);
 
     const volume1Chapters = useMemo(() => [
       { id: 'v1c1', name: 'P | Preparing the Perfect Stage!' },
@@ -188,6 +244,12 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
             onChange={handleMainCheck}
             />
         </div>
+        <FontAwesomeIcon
+        icon={faRotateRight}
+        className="reset-button"
+        onClick={handleReset}
+        title="Reset"
+      />
     </div>
     );
     }

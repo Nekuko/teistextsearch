@@ -1,5 +1,5 @@
-/* HowToUsePage.css */
-.how-to-page {
+/* ChangePage.css */
+.change-page {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     background-color: red;
   }
   
-  .how-to-content {
+  .change-content {
     width: 50%;
     background-color: white;
     padding: 20px;

@@ -6,7 +6,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy } from '@fortawesome/free-solid-svg-icons';
 
-function LightNovelResults({ lnData }) {
+function LightNovelResults({ lnData, keywords, highlight }) {
   // If lnData is empty, return nothing
 
   if (Object.keys(lnData.volumes).length === 0) {
@@ -70,6 +70,15 @@ function LightNovelResults({ lnData }) {
     },
   };
 
+  const highlightKeywords = (text) => {
+    let highlightedText = text;
+    keywords.forEach(keyword => {
+      highlightedText = highlightedText.replace(keyword, '<span class="highlight">' + keyword + '</span>');
+    });
+    return highlightedText;
+  };
+  
+
   function showPopup(volumeIndex, chapterIndex, sentenceIndex) {
     // Use a unique ID for each popup
     const popup = document.getElementById(`popup-${volumeIndex}-${chapterIndex}-${sentenceIndex}`);
@@ -99,8 +108,8 @@ function LightNovelResults({ lnData }) {
                 <Collapsible trigger={`${chapterTitle} (Total: ${chapterValue.count})`} key={chapterKey}>
                   <div className="sentences-container">
                   {chapterValue.sentences.map((sentence, index) => (
-                    <div className="sentence-box" key={index}>
-                      <p>{sentence}</p>
+                  <div className="sentence-box" key={index}>
+                    <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence) : sentence }} />
                       <CopyToClipboard text={sentence}>
                       <div className="copy-icon" onClick={() => showPopup(volumeKey, chapterKey, index)}>
                           <FontAwesomeIcon icon={faCopy} />

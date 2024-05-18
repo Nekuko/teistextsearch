@@ -8,12 +8,28 @@ import { faCopy, faFileImage } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
 import ImagePreview from './ImagePreview/ImagePreview'; // Adjust the path as needed
 
-function AnimeResults({ anData, characterImages }) {
+function AnimeResults({ anData, characterImages, highlight, filterState }) {
   const [imageCache, setImageCache] = useState({});
   const [previewImage, setPreviewImage] = useState(null);
   const [previewPosition, setPreviewPosition] = useState({top: 0, left: 0})
   const iconRefs = useRef({});
 
+  const highlightKeywords = (text) => {
+    let highlightedText = text;
+    filterState.keywords.forEach(keyword => {
+      let regex;
+      if (filterState.exactMatch) {
+        // If exactMatch is true, match the keyword exactly as it is
+        regex = new RegExp(`\\b${keyword}\\b`, filterState.caseSensitive ? '' : 'i');
+      } else {
+        // If exactMatch is false, match any occurrence of the keyword
+        regex = new RegExp(keyword, filterState.caseSensitive ? '' : 'i');
+      }
+      highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
+    });
+    return highlightedText;
+  };
+  
   function handleMouseEnter(id, seasonKey, episodeKey, index) {
     return;
     const rect = iconRefs.current[`${seasonKey}-${episodeKey}-${index}`].getBoundingClientRect();
@@ -97,9 +113,9 @@ function AnimeResults({ anData, characterImages }) {
                 <Collapsible trigger={`${episodeTitle} (Total: ${episodeValue.count})`} key={episodeKey}>
                   <div className="sentences-container">
                   {episodeValue.sentences.map((sentence, index) => (
-                    <div className="sentence-character-container" key={index}>
-                      <div className="sentence-box-image">
-                        <p>{sentence.subtitle}</p>
+        <div className="sentence-character-container" key={index}>
+          <div className="sentence-box-image">
+            <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
                         <div className="icon-container">
                           <CopyToClipboard text={sentence.subtitle}>
                               <div className="copy-icon" onClick={() => showPopup(seasonKey, episodeKey, index)}>

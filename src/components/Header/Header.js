@@ -31,10 +31,10 @@ function Header() {
           <SlashLine className="nav-separator" />
           <li>
             <NavLink 
-              to="/how-to" 
+              to="/change" 
               className={({ isActive }) => (isActive ? 'active-link' : '')}
             >
-              HOW TO USE
+              CHANGELOG
             </NavLink>
           </li>
         </ul>
