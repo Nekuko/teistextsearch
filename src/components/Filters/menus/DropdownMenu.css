@@ -127,3 +127,7 @@ input[type="text"] {
 .episode-list::-webkit-scrollbar-track {
   background: transparent;
 }
+
+input:disabled {
+  opacity: 0.3;
+}

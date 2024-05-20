@@ -3,9 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import './DropdownMenu.css';
 
-function CharacterDropdown({ dropdownName, dropdownStates, setDropdownStates }) {
+function CharacterDropdown({ dropdownName, dropdownStates, setDropdownStates, namedCharacters }) {
   const { openGroup, checked, filters, characters } = dropdownStates[dropdownName];
-
   const dropdownRef = useRef(null);
 
   // Add an event listener to the document when the dropdown is open
@@ -52,6 +51,10 @@ function CharacterDropdown({ dropdownName, dropdownStates, setDropdownStates }) 
   };
 
   const handleCharacterCheck = (character) => {
+    if (namedCharacters.length > 0 && !namedCharacters.includes(character)) {
+      return; // Ignore characters not in the namedCharacters list
+    }
+
     const isCharacterChecked = !characters[character]?.checked;
     const updatedCharacter = {
       ...characters[character],
@@ -84,6 +87,10 @@ function CharacterDropdown({ dropdownName, dropdownStates, setDropdownStates }) 
   };
 
   const handleAttributeCheck = (character, attribute) => {
+    if (namedCharacters.length > 0 && !namedCharacters.includes(character)) {
+      return; // Ignore characters not in the namedCharacters list
+    }
+
     const isAttributeChecked = !characters[character]?.[attribute];
     const updatedCharacter = {
       ...characters[character],
@@ -144,25 +151,27 @@ function CharacterDropdown({ dropdownName, dropdownStates, setDropdownStates }) 
           {filteredCharacters.map((character, index) => {
             const characterAttributes = Object.keys(characters[character]).filter(attribute => attribute !== 'checked' && attribute !== 'open');
             const hasAttributes = characterAttributes.length > 0;
+            const isDisabled = namedCharacters.length > 0 && !namedCharacters.includes(character);
             return (
               <div key={index}>
                 <div className="item-header">
                   <div style={{ display: 'flex', alignItems: 'center' }}>
                     <span 
                       className={`character-title ${characters[character]?.checked ? '' : 'dimmed'}`} 
-                      onClick={() => handleCharacterCheck(character)}
+                      onClick={() => !isDisabled && handleCharacterCheck(character)}
                     >
                       {character}
                     </span>
-                    {hasAttributes && <FontAwesomeIcon className="dropdown-icon" icon={characters[character]?.open ? faChevronUp : faChevronDown} onClick={() => handleCharacterDropdownClick(character)} />}
+                    {hasAttributes && <FontAwesomeIcon className="dropdown-icon" icon={characters[character]?.open ? faChevronUp : faChevronDown} onClick={() => !isDisabled && handleCharacterDropdownClick(character)} />}
                   </div>
                   <input
                     type="checkbox"
                     checked={!!characters[character]?.checked}
                     onChange={(event) => {
                       event.stopPropagation(); // Prevent the event from bubbling up to the div
-                      handleCharacterCheck(character);
+                      !isDisabled && handleCharacterCheck(character);
                     }}
+                    disabled={isDisabled}
                   />
                 </div>
                 {characters[character]?.open && (
@@ -175,7 +184,8 @@ function CharacterDropdown({ dropdownName, dropdownStates, setDropdownStates }) 
                         <input
                           type="checkbox"
                           checked={!!characters[character]?.[attribute]}
-                          onChange={() => handleAttributeCheck(character, attribute)}
+                          onChange={() => !isDisabled && handleAttributeCheck(character, attribute)}
+                          disabled={isDisabled}
                         />
                       </div>
                     ))}

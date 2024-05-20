@@ -2,7 +2,7 @@ import React from 'react';
 import Collapsible from 'react-collapsible';
 import AnimeResults from './AnimeResults';
 
-function CharacterResults({ anData, characterImages, filterState, highlight }) {
+function CharacterResults({ anData, characterImages, filterState, highlight, seasonMapping }) {
   const mediumNames = {
     'an': 'Anime',
     'mog': 'Master of Garden',
@@ -34,7 +34,7 @@ function CharacterResults({ anData, characterImages, filterState, highlight }) {
                   return (
                     <div className="medium-trigger">
                         <Collapsible key={medium} trigger={`${mediumName} (Total: ${mediumData.count})`}>
-                        <AnimeResults anData={mediumData} characterImages={characterImages} filterState={filterState} highlight={{highlight}} />
+                        <AnimeResults seasonMapping={seasonMapping} anData={mediumData} characterImages={characterImages} filterState={filterState} highlight={highlight} />
                         </Collapsible>
                     </div>
                   );

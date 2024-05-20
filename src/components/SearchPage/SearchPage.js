@@ -2121,6 +2121,7 @@ function SearchPage() {
     }
   };
 
+
   const [animeDropdownState, setAnimeDropdownState] = React.useState(() => {
     const savedState = sessionStorage.getItem('animeDropdownState');
     if (savedState) {
@@ -2279,7 +2280,8 @@ sessionStorage.setItem('lnDropdownState', JSON.stringify(lnDropdownState));
 
 
   const [dropdownStates, setDropdownStates] = React.useState(() => {
-    const savedState = sessionStorage.getItem('dropdownStates');
+    //const savedState = sessionStorage.getItem('dropdownStates');
+    const savedState = null;
     if (savedState) {
       return JSON.parse(savedState);
     } else {
@@ -2302,6 +2304,8 @@ sessionStorage.setItem('lnDropdownState', JSON.stringify(lnDropdownState));
               "checked": false
             },
             "Beta": {
+                "Beta": false,
+                "Natsume Kafka": false,
                 "checked": false
             },
             "Gamma": {

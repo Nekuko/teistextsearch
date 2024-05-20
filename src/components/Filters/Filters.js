@@ -4,6 +4,7 @@ import './Filters.css';
 import MediumsContainer from './MediumsContainer/MediumsContainer';
 import Keywords from './KeywordsContainer/Keywords'; // Import the Keywords component
 import CharactersContainer from './CharactersContainer/CharactersContainer';
+import SelectedContainer from './SelectedContainer/SelectedContainer';
 
 function Filters({
   animeDropdownState,
@@ -28,13 +29,13 @@ function Filters({
         dropdownStates={dropdownStates}
         setDropdownStates={setDropdownStates}
         />
-        <div className="mediums-container">
-          <h2 className="mediums-title">SELECTED</h2>
-          <input type="checkbox" />
-          <input type="checkbox" />
-        </div>
+        <SelectedContainer
+        animeDropdownState={animeDropdownState}
+        lnDropdownState={lnDropdownState}
+        dropdownStates={dropdownStates}
+        />
       </div>
-      <Keywords  filterState={filterState} setFilterState={setFilterState} /> {/* Make sure this is the last child of the .filters container */}
+      <Keywords filterState={filterState} setFilterState={setFilterState} /> {/* Make sure this is the last child of the .filters container */}
     </div>
   );
 }

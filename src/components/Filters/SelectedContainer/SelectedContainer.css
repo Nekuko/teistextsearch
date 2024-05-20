@@ -1,0 +1,79 @@
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c8000f;
+    padding: 10px 0;
+  }
+
+  .selected-container {
+    position: relative;
+  }
+  
+  /* Add this new class for the checkbox container */
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Adjust the input[type="checkbox"] to remove margin-left */
+  input[type="checkbox"] {
+    background-color: #000000;
+    accent-color: #c8000f;
+    margin-left: 0; /* Remove margin-left */
+  }
+
+  .reset-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #c8000f
+    /* Add additional styles for the button as needed */
+  }
+
+  .reset-button:hover {
+    color: red;
+    cursor: pointer;
+  }
+
+  .selected-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #2c2f33;
+    position: relative;
+    max-width: 25%;
+  }
+  
+  .selected-title {
+    margin-top: 0;
+    font-family: 'Noto Serif JP';
+    font-size: calc(0.9em + 1.8vw);
+    color: #c8000f;
+    font-weight: 100;
+    letter-spacing: 0.07em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+  }
+  
+  .selected-input-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #c8000f;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  .selected-bubble {
+    display: flex;
+    align-items: center;
+    background-color: #1f2224;
+    font-size: small;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 3px;
+  }
+  

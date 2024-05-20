@@ -31,8 +31,29 @@
     /* Add additional styles for the button as needed */
   }
 
+  .named-button {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    color: #c8000f;
+    font-size: small;
+    opacity: 40%;
+    /* Add additional styles for the button as needed */
+  }
+
   .reset-button:hover {
     color: red;
     cursor: pointer;
+  }
+
+  .named-button:hover {
+    color: red;
+    cursor: pointer;
+    opacity: 100%;
+  }
+
+  .named-button.active {
+    color: red;
+    opacity: 100%;
   }
   

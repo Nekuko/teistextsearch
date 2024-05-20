@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
 import './Results.css';
 
-function Results({ results, characterImages, filterState }) {
+function Results({ results, characterImages, filterState}) {
   const noResults = Object.keys(results).length === 0;
   const lnResults = results && results.ln ? results.ln.ln : null;
   const anResults = results && results.anime ? results.anime.an : null;
