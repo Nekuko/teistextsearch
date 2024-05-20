@@ -2277,6 +2277,91 @@ sessionStorage.setItem('lnDropdownState', JSON.stringify(lnDropdownState));
     "Akane Nishino": AkaneNishinoIcon,
   }
 
+
+  const [dropdownStates, setDropdownStates] = React.useState(() => {
+    const savedState = sessionStorage.getItem('dropdownStates');
+    if (savedState) {
+      return JSON.parse(savedState);
+    } else {
+      return {
+        'SHADOW GARDEN': {
+          openGroup: false,
+          checked: false,
+          filters: '',
+          characters: {
+            "Cid Kagenou": {
+              "Cid Kagenou": false,
+              "Shadow": false,
+              "Minoru Kageno": false,
+              "John Smith": false,
+              "Mundane Mann": false,
+              "Stylish Ruffian Slayer": false,
+              "checked": false
+            },
+            "Alpha": {
+              "checked": false
+            },
+            "Beta": {
+                "checked": false
+            },
+            "Gamma": {
+                "checked": false
+            }
+            ,
+            "Delta": {
+                "checked": false
+            }
+            ,
+            "Epsilon": {
+                "checked": false
+            }
+            ,
+            "Zeta": {
+                "checked": false
+            }
+            ,
+            "Eta": {
+                "checked": false
+            }
+          }
+        },
+        'MIDGAR': {
+            openGroup: false,
+            checked: false,
+            filters: '',
+            characters: {
+              "Alexia Midgar": {
+                "checked": false
+              },
+              "Iris Midgar": {
+                "checked": false
+              }
+            }
+          },
+        'EARTH': {
+            openGroup: false,
+            checked: false,
+            filters: '',
+            characters: {
+              "Akane Nishino": {
+                "checked": false
+              },
+              "Akane's Classmate": {
+                "checked": false
+              },
+              "Teacher": {
+                "checked": false
+              }
+            }
+          },
+      };
+    }
+  });
+
+  useEffect(() => {
+    sessionStorage.setItem('dropdownStates', JSON.stringify(dropdownStates));
+  }, [dropdownStates]);
+  
   
 
   const updateAnimeDropdownState = (key, value) => {
@@ -2292,17 +2377,6 @@ sessionStorage.setItem('lnDropdownState', JSON.stringify(lnDropdownState));
       [key]: value
     }));
   }
-
-  const [charDropdownState, setCharDropdownState] = useState(() => {
-    const savedState = sessionStorage.getItem('charDropdownState');
-    return savedState ? JSON.parse(savedState) : { /* ... initial state ... */ };
-  });
-
-
-
-  useEffect(() => {
-    sessionStorage.setItem('charDropdownState', JSON.stringify(charDropdownState));
-  }, [charDropdownState]);
 
   const [searchResults, setSearchResults] = useState({});
   const [savedFilterState, setSavedFilterState] = useState(filterState);
@@ -2330,8 +2404,35 @@ sessionStorage.setItem('lnDropdownState', JSON.stringify(lnDropdownState));
             return `ln_${volume}_c${ch}`;
           })
       );
-  
-    const characters = [];
+
+      const checkedCharacters = [];
+      Object.entries(dropdownStates).forEach(([group, { characters }]) => 
+        Object.entries(characters).forEach(([character, { checked, ...subnames }]) => {
+          if (checked) {
+            const subnamesEntries = Object.entries(subnames);
+            const hasSubnames = subnamesEntries.length > 0;
+            const checkedSubnames = subnamesEntries
+              .filter(([subname, checked]) => checked && subname !== 'checked' && subname !== 'open')
+              .map(([subname]) => subname);
+            if (hasSubnames) {
+              if (subnamesEntries.every(([subname, checked]) => subname === 'checked' || subname === 'open' || checked)) {
+                // If every item of the subnames is checked, only add the main name
+                checkedCharacters.push(character);
+              } else {
+                checkedCharacters.push(...checkedSubnames);
+              }
+            } else {
+              // If the character has no subnames, add the character
+              checkedCharacters.push(character);
+            }
+          }
+        })
+      );
+      
+      console.log(checkedCharacters);
+      console.log(dropdownStates)
+      
+
     // Initialize separate objects to hold the anime and light novel results
     let animeResults = {};
     let lnResults = {};
@@ -2340,15 +2441,11 @@ sessionStorage.setItem('lnDropdownState', JSON.stringify(lnDropdownState));
     const ln_v2_checked = [...lnCheckedItems].some(item => item.includes('ln_v2')) ? ln_v2 : {};
     const an_s1_checked = [...animeCheckedItems].some(item => item.includes('an_s1')) ? an_s1 : {};
     
-    console.log(an_s1_checked)
     const lnText = {"ln": { ...ln_v1_checked, ...ln_v2_checked}}
     const animeText = {"an": {...an_s1_checked}}
 
-    console.log(animeText)
-
-    animeResults = searchAnime(animeCheckedItems, animeText, filterState.keywords, characters, filterState.caseSensitive, filterState.exactMatch);
+    animeResults = searchAnime(animeCheckedItems, animeText, filterState.keywords, checkedCharacters, filterState.caseSensitive, filterState.exactMatch);
     lnResults = searchLN(lnCheckedItems, lnText, filterState.keywords, filterState.caseSensitive, filterState.exactMatch);
-    console.log(animeResults)
   
     // Update the state with the search results
     setSearchResults({ anime: animeResults, ln: lnResults });
@@ -2365,8 +2462,9 @@ sessionStorage.setItem('lnDropdownState', JSON.stringify(lnDropdownState));
         updateLNDropdownState={updateLNDropdownState}
         filterState={filterState}
         setFilterState={setFilterState}
-        charDropdownState={charDropdownState}
-        setCharDropdownState={setCharDropdownState}
+        dropdownStates={dropdownStates}
+        setDropdownStates={setDropdownStates}
+
       />
       <button onClick={handleSearch}>Search</button> {/* Search button */}
       <Results results={searchResults} characterImages={characterImages} filterState={savedFilterState} />

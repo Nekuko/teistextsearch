@@ -9,7 +9,6 @@ import './Results.css';
 
 function Results({ results, characterImages, filterState }) {
   const noResults = Object.keys(results).length === 0;
-  console.log(results);
   const lnResults = results && results.ln ? results.ln.ln : null;
   const anResults = results && results.anime ? results.anime.an : null;
   const [highlight, setHighlight] = useState(false);

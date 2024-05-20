@@ -12,8 +12,8 @@ function Filters({
   updateLNDropdownState,
   filterState,
   setFilterState,
-  charDropdownState,
-  setCharDropdownState
+  dropdownStates,
+  setDropdownStates
 }) {
   return (
     <div className="filters">
@@ -25,10 +25,8 @@ function Filters({
           updateLNDropdownState={updateLNDropdownState}
         />
         <CharactersContainer 
-          animeDropdownState={animeDropdownState}
-          updateAnimeDropdownState={updateAnimeDropdownState}
-          lnDropdownState={lnDropdownState}
-          updateLNDropdownState={updateLNDropdownState}
+        dropdownStates={dropdownStates}
+        setDropdownStates={setDropdownStates}
         />
         <div className="mediums-container">
           <h2 className="mediums-title">SELECTED</h2>

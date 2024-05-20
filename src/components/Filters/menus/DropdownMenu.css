@@ -23,7 +23,7 @@
   opacity: 0.5;
 }
 
-.episode-list, .volume-list {
+.episode-list, .volume-list, .attribute-list {
   max-height: 200px; /* Adjust this value as needed */
   overflow-y: auto; /* This will add a vertical scrollbar */
   overflow-x: hidden; /* Prevents horizontal scrolling */
@@ -33,9 +33,9 @@
   width: 8px;
 }
 
-.season-title, .volume-title {
+.season-title, .volume-title, .character-title {
   color: white;
-  font-weight: 400;
+  font-weight: 800;
   flex: 1;
   flex-grow: 1;
   text-align: left;
@@ -64,23 +64,24 @@
   border: 1px solid #c8000f;;
 }
 
-.episode-header, .volume-header {
+.episode-header, .volume-header, .attribute-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-.episode-list, .volume-list {
+.episode-list, .volume-list, .attribute-list {
   padding-left: 2px;
   padding-right: 4%;
   padding-top: 2%;
 }
 
-.episode-item, .chapter-item {
+.episode-item, .chapter-item, .attribute-item {
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+  font-weight: 400;
 }
 
 .episode-checked, .chapter-checked {
@@ -95,7 +96,7 @@
   max-width: 230px; /* Adjust as needed */
 }
 
-.episode-unchecked, .volume-unchecked {
+.episode-unchecked, .volume-unchecked, .attribute-checked {
   opacity: 0.5;
 }
 
