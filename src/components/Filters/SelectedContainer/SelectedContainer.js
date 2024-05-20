@@ -46,13 +46,13 @@ const getSelectedAnimeList = () => {
             if (episodes[i] === end + 1) {
               end = episodes[i];
             } else {
-              newList.push({ text: `AN S${seasonNumber} E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Anime Season ${seasonNumber} Episodes ${start}-${end}` });
+              newList.push({ text: `AN S${seasonNumber} E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Anime Season ${seasonNumber} Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
               start = episodes[i];
               end = start;
             }
           }
           if (start <= end) {
-            newList.push({ text: `AN S${seasonNumber} E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Anime Season ${seasonNumber} Episodes ${start}-${end}` });
+            newList.push({ text: `AN S${seasonNumber} E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Anime Season ${seasonNumber} Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
           }
         }
       });

@@ -41,7 +41,8 @@
     flex-direction: column;
     background-color: #2c2f33;
     position: relative;
-    max-width: 25%;
+    max-width: 20%;
+    min-width: 20%
   }
   
   .selected-title {
