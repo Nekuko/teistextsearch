@@ -14,7 +14,8 @@ function Filters({
   filterState,
   setFilterState,
   dropdownStates,
-  setDropdownStates
+  setDropdownStates,
+  volumes
 }) {
   return (
     <div className="filters">
@@ -24,6 +25,7 @@ function Filters({
           updateAnimeDropdownState={updateAnimeDropdownState}
           lnDropdownState={lnDropdownState}
           updateLNDropdownState={updateLNDropdownState}
+          volumes={volumes}
         />
         <CharactersContainer 
         dropdownStates={dropdownStates}
@@ -33,6 +35,7 @@ function Filters({
         animeDropdownState={animeDropdownState}
         lnDropdownState={lnDropdownState}
         dropdownStates={dropdownStates}
+        volumes={volumes}
         />
       </div>
       <Keywords filterState={filterState} setFilterState={setFilterState} /> {/* Make sure this is the last child of the .filters container */}

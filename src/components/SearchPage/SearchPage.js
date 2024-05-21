@@ -1,5 +1,5 @@
 // SearchPage.js
-import React, {useState, useEffect} from 'react';
+import React, {useMemo, useState, useEffect} from 'react';
 import './SearchPage.css'; // Import the CSS file
 import Filters from '../Filters/Filters'; // Import the Filters component
 import Results from '../Results/Results' // Import the Results component
@@ -2365,6 +2365,65 @@ sessionStorage.setItem('lnDropdownState', JSON.stringify(lnDropdownState));
   useEffect(() => {
     sessionStorage.setItem('dropdownStates', JSON.stringify(dropdownStates));
   }, [dropdownStates]);
+
+  const volume1Chapters = useMemo(() => [
+    { id: 'v1c1', name: 'P | Preparing the Perfect Stage!' },
+    { id: 'v1c2', name: '1 | Starting the Shadowbroker Tutorial!' },
+    { id: 'v1c3', name: '2 | Assuuming the Role of a Side Character at School!' },
+    { id: 'v1c4', name: "3 | My Official Beginning as a Mastermind in Action!" },
+    { id: 'v1c5', name: '4 | The Two Sides of the Shadow Garden?!' },
+    { id: 'v1c6', name: '5 | Mastering the Peaceful Life of a Nobody!' },
+    { id: 'v1c7', name: '6 | That Scene Where Terrorists Take Over the School' },
+    { id: 'v1c8', name: 'F | My Idea of the Ultimate Shadow Commander!' },
+    { id: 'v1c9', name: 'A | Appendix' },
+  ], []);
+
+  const volume2Chapters = useMemo(() => [
+  { id: 'v2c1', name: 'P | To Lindwurm, the Sacred Land!' },
+  { id: 'v2c2', name: "1 | Fun Times at the Goddess's Trial!"},
+  { id: 'v2c3', name: '2 | Investigating the Sanctuary!' },
+  { id: 'v2c4', name: "3 | When Things Get Borings, It's Time for Explosives!" },
+  { id: 'v2c5', name: '4 | This Situation Calls for a "Who Is That Guy?!"'},
+  { id: 'v2c6', name: '5 | A Battle to Attract Only MVPS!' },
+  { id: 'v2c7', name: '6 | A Mastermind Always Plays Piano Under Moonlight!' },
+  { id: 'v2c8', name: '7 | Showing Off a Smidgen of My Strength' },
+  { id: 'v2c9', name: '8 | Lay Your Eyes on My True Powers!' },
+  { id: 'v2c10', name: 'F | Just Who Is This Mysterious Badass?!' },
+  { id: 'v2c11', name: 'A | Appendix' },
+  ], []);
+
+  const volume3Chapters = useMemo(() => [
+    { id: 'v3c1', name: 'P | Heading to the Lawless City over Fall Break!' },
+    { id: 'v3c2', name: "1 | Lawless City Bandit Hunting!"},
+    { id: 'v3c3', name: '2 | Storming the Crimson Tower' },
+    { id: 'v3c4', name: "3 | Pursuing the Blood Queen" },
+    { id: 'v3c5', name: 'X | Field Notes on a Little Brother—by Young Claire!'},
+    { id: 'v3c6', name: "4 | I'll Destroy It All and Start from Scratch!" },
+    { id: 'v3c7', name: '5 | Printing Fake Money as Mitsughoshi Throws Down with the Major Corporate Alliance!' },
+    { id: 'v3c8', name: '6 | Circulating Counterfeit Cash!' },
+    { id: 'v3c9', name: 'E | The One to Destroy It ALl and Start from Scratch—with Fake Bills!' },
+    { id: 'v3c10', name: 'A | Appendix' },
+    ], []);
+
+  const volume4Chapters = useMemo(() => [
+    { id: 'v4c1', name: "P | It's Time for a War in the Oriana Kingdom!" },
+    { id: 'v4c2', name: "1 | Putting the Kibosh on Rose Oriana's Wedding!"},
+    { id: 'v4c3', name: '2 | Begin Operation Obstruction!' },
+    { id: 'v4c4', name: "3 | Crashing the Ceremony!" },
+    { id: 'v4c5', name: 'X | Rise of the Fancy Hoodlum Slayer!'},
+    { id: 'v4c6', name: "4 | Lurking in the Darkness in Fantastical Japan!" },
+    { id: 'v4c7', name: '5 | Sneaking around in Japan, Just Like the Old Days!!' },
+    { id: 'v4c8', name: '6 | Something Smells Fishy...But an Eminence in Shadow Always Cracks the Case!' },
+    { id: 'v4c9', name: 'E | Behond, a Full-Fledged Eminence in Shadow!' },
+    { id: 'v4c10', name: 'A | Appendix' },
+    ], []);
+
+  const volumes = useMemo(() => [
+  { name: "Volume 1", chapters: volume1Chapters },
+  { name: "Volume 2", chapters: volume2Chapters },
+  { name: "Volume 3", chapters: volume3Chapters },
+  { name: "Volume 4", chapters: volume4Chapters }
+  ], [volume1Chapters, volume2Chapters, volume3Chapters, volume4Chapters]);
   
   
 
@@ -2468,6 +2527,7 @@ sessionStorage.setItem('lnDropdownState', JSON.stringify(lnDropdownState));
         setFilterState={setFilterState}
         dropdownStates={dropdownStates}
         setDropdownStates={setDropdownStates}
+        volumes={volumes}
 
       />
       <button onClick={handleSearch}>Search</button> {/* Search button */}
