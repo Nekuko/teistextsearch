@@ -17,7 +17,7 @@
 }
 
 .content-wrapper {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 /* Results.css */
@@ -54,7 +54,7 @@
 .sentences-container {
   max-height: 400px;
   padding-right: 20px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content-wrapper {
@@ -94,13 +94,19 @@
   margin-right: 10px;
 }
 
-.Collapsible__trigger img {
+.character-title-image {
   width: 42px;
   height: 42px;
   margin-right: 10px;
 }
 
-.character-trigger {
+.cover-image {
+  width: 42px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.character-trigger, .volume-trigger, .season-trigger {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -109,6 +115,10 @@
 
 .characters-trigger {
   font-size: larger;
+}
+
+.ln-results {
+  margin-bottom: 20px;
 }
 
 .medium-trigger {

@@ -6,7 +6,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy } from '@fortawesome/free-solid-svg-icons';
 
-function LightNovelResults({ lnData, keywords, highlight }) {
+function LightNovelResults({ lnData, volumeImages, highlight, filterState }) {
   // If lnData is empty, return nothing
 
   if (Object.keys(lnData.volumes).length === 0) {
@@ -72,8 +72,16 @@ function LightNovelResults({ lnData, keywords, highlight }) {
 
   const highlightKeywords = (text) => {
     let highlightedText = text;
-    keywords.forEach(keyword => {
-      highlightedText = highlightedText.replace(keyword, '<span class="highlight">' + keyword + '</span>');
+    filterState.keywords.forEach(keyword => {
+      let regex;
+      if (filterState.exactMatch) {
+        // If exactMatch is true, match the keyword exactly as it is
+        regex = new RegExp(`\\b${keyword}\\b`, filterState.caseSensitive ? '' : 'i');
+      } else {
+        // If exactMatch is false, match any occurrence of the keyword
+        regex = new RegExp(keyword, filterState.caseSensitive ? '' : 'i');
+      }
+      highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
     });
     return highlightedText;
   };
@@ -92,7 +100,7 @@ function LightNovelResults({ lnData, keywords, highlight }) {
   }
 
   return (
-    <div>
+    <div className="ln-results">
       {Object.entries(lnData.volumes).map(([volumeKey, volumeValue]) => {
         // Get the volume title from the mapping
         const volumeTitle = volumeMapping[volumeKey]?.title || `Volume ${volumeKey.slice(1)}`;
@@ -100,7 +108,14 @@ function LightNovelResults({ lnData, keywords, highlight }) {
         const volumeCount = Object.values(volumeValue.chapters).reduce((total, chapter) => total + chapter.count, 0);
 
         return (
-          <Collapsible className="medium-margin" trigger={`${volumeTitle} (Total: ${volumeCount})`} key={volumeKey}>
+          <Collapsible className="medium-margin" trigger={
+            <>
+            <div className="volume-trigger">
+              {volumeImages[volumeKey] && <img className="cover-image" src={volumeImages[volumeKey]} alt={volumeTitle} />}
+              {`${volumeTitle} (Total: ${volumeCount})`}
+            </div>
+            </>
+          } key={volumeKey}>
             {Object.entries(volumeValue.chapters).map(([chapterKey, chapterValue]) => {
               // Get the chapter title from the mapping
               const chapterTitle = volumeMapping[volumeKey]?.chapters[chapterKey] || `Chapter ${chapterKey.slice(1)}`;

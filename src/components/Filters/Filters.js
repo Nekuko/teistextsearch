@@ -15,7 +15,11 @@ function Filters({
   setFilterState,
   dropdownStates,
   setDropdownStates,
-  volumes
+  volumes,
+  images,
+  namedActive,
+  namedCharacters,
+  setNamedActive
 }) {
   return (
     <div className="filters">
@@ -26,10 +30,14 @@ function Filters({
           lnDropdownState={lnDropdownState}
           updateLNDropdownState={updateLNDropdownState}
           volumes={volumes}
+          images={images}
         />
         <CharactersContainer 
         dropdownStates={dropdownStates}
         setDropdownStates={setDropdownStates}
+        namedActive={namedActive}
+        setNamedActive={setNamedActive}
+        namedCharacters={namedCharacters}
         />
         <SelectedContainer
         animeDropdownState={animeDropdownState}

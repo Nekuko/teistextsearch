@@ -6,13 +6,13 @@ import CharacterDropdown from '../menus/CharacterDropdown';
 
 function CharactersContainer({
   dropdownStates,
-  setDropdownStates
+  setDropdownStates,
+  namedCharacters,
+  namedActive,
+  setNamedActive
 }) {
 
-  const [namedActive, setNamedActive] = useState(false);
-  const namedCharacters = ["Cid Kagenou", "Akane Nishino", "Alpha", "Beta", "Gamma", "Delta", "Epsilon", 
-    "Zeta", "Eta", "Alexia Midgar", "Iris Midgar"
-  ];
+
 
   const handleReset = () => {
     // Reset all characters and their attributes to unchecked

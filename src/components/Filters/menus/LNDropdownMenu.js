@@ -4,7 +4,7 @@ import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import './DropdownMenu.css';
 
 
-function LNDropdownMenu({ lnDropdownState, updateLNDropdownState, volumes, openLN, setOpenLN }) {
+function LNDropdownMenu({ lnDropdownState, updateLNDropdownState, volumes, openLN, setOpenLN, volumeImages }) {
   const { lnMainChecked, lnFilter, openVolumes, volumesChecked, chapterFilters } = lnDropdownState;
 
   const dropdownRef = useRef(null);
@@ -127,6 +127,8 @@ function LNDropdownMenu({ lnDropdownState, updateLNDropdownState, volumes, openL
     return volumes.filter(volume => volume.name.toLowerCase().includes(lnFilter.toLowerCase()));
   }, [volumes, lnFilter]);
 
+  console.log(lnFilteredVolumes)
+
   return (
     <div className="dropdown" ref={dropdownRef}>
       <div onClick={handleAnimeClick}>
@@ -139,7 +141,8 @@ function LNDropdownMenu({ lnDropdownState, updateLNDropdownState, volumes, openL
           {lnFilteredVolumes.map((volume, index) => (
             <div key={index}>
               <div className="item-header">
-                <div style={{ display: 'flex', alignItems: 'center' }}>
+                <div className="volume-trigger-drop">
+                {volumeImages[volume.name.replace('Volume ', 'v')] && <img className="cover-image" src={volumeImages[volume.name.replace('Volume ', 'v')]} alt={volume.name} />}
                 <span 
                     className={`volume-title ${volumesChecked[volume.name]?.checked ? '' : 'dimmed'}`} 
                     onClick={() => handleVolumeClick(volume.name)}

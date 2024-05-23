@@ -1,7 +1,8 @@
-export function searchAnime(keys, text, keywords, characters = [], caseSensitive = false, exactMatch = false) {
+export function searchAnime(keys, text, keywords, characters = [], caseSensitive = false, exactMatch = false, namedActive = false, namedCharacters = []) {
   // Initialize an empty object to hold the results
+  console.log(characters)
   const name_map = {
-    'Cid Kagenou': ['Minoru Kageno', 'Shadow', 'Stylish Ruffian Slayer'],
+    'Cid Kagenou (All)': ['Cid Kagenou', 'Minoru Kageno', 'Shadow', 'Stylish Ruffian Slayer'],
   };
   let results = {};
 
@@ -43,7 +44,21 @@ export function searchAnime(keys, text, keywords, characters = [], caseSensitive
           }
         }
       }
-      if (allKeywordsFound && characters.length > 0) {
+      if (allKeywordsFound && namedActive && characters.length === 0) {
+        let characterFound = true;
+        for (let character of namedCharacters) {
+          let characterToCheck = character.toLowerCase();
+          if (characterToCheck === sentence.name_variant.toLowerCase()) {
+            characterFound = false;
+            
+            break;
+          }
+        }
+        if (!characterFound) {
+          totalMatches++;
+          return true;
+        }
+      } else if (allKeywordsFound && characters.length > 0) {
         let characterFound = false;
         for (let character of characters) {
           let characterToCheck = name_map[character] ? name_map[character].map(name => name.toLowerCase()) : [character.toLowerCase()];

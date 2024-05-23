@@ -8,11 +8,14 @@ import { faCopy, faFileImage } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
 import ImagePreview from './ImagePreview/ImagePreview'; // Adjust the path as needed
 
-function AnimeResults({ anData, characterImages, highlight, filterState }) {
+function AnimeResults({ anData, images, highlight, filterState, main }) {
   const [imageCache, setImageCache] = useState({});
   const [previewImage, setPreviewImage] = useState(null);
   const [previewPosition, setPreviewPosition] = useState({top: 0, left: 0})
   const iconRefs = useRef({});
+
+  const characterImages = images.characterImages;
+  const coverImages = images.animeCoverImages;
 
   const highlightKeywords = (text) => {
     let highlightedText = text;
@@ -105,7 +108,14 @@ function AnimeResults({ anData, characterImages, highlight, filterState }) {
  
         return (
           <div>
-          <Collapsible trigger={`${seasonTitle} (Total: ${seasonCount})`} key={seasonKey}>
+<Collapsible className="medium-margin" trigger={
+          <>
+            <div className="season-trigger">
+              {main && coverImages[seasonKey] && <img className="cover-image" src={coverImages[seasonKey]} alt={seasonTitle} />}
+              {`${seasonTitle} (Total: ${seasonCount})`}
+            </div>
+          </>
+        } key={seasonKey}>
             {Object.entries(seasonValue.episodes).map(([episodeKey, episodeValue]) => {
               // Get the episode title from the mapping
               const episodeTitle = seasonMapping[seasonKey]?.episodes[episodeKey] || `Episode ${episodeKey.slice(1)}`;

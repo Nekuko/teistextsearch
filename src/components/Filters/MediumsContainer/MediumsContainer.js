@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRotateRight } from '@fortawesome/free-solid-svg-icons';
 import './MediumsContainer.css'; // Import the CSS file
 
-function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropdownState, updateLNDropdownState, volumes }) {
+function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropdownState, updateLNDropdownState, volumes, images }) {
     const { mainChecked } = animeDropdownState;
     const { lnMainChecked } = lnDropdownState;
     const [openAnime, setOpenAnime] = useState(false);
@@ -161,6 +161,7 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
             volumes={volumes}
             openLN={openLN}
             setOpenLN={setOpenLN}
+            volumeImages={images.lnCoverImages}
             />
             <input
             type="checkbox"
@@ -175,6 +176,7 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
             seasons={seasons}
             openAnime={openAnime}
             setOpenAnime={setOpenAnime}
+            seasonImages={images.animeCoverImages}
             />
             <input
             type="checkbox"

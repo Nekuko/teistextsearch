@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
 import './Results.css';
 
-function Results({ results, characterImages, filterState}) {
+function Results({ results, images, filterState}) {
   const noResults = Object.keys(results).length === 0;
   const lnResults = results && results.ln ? results.ln.ln : null;
   const anResults = results && results.anime ? results.anime.an : null;
@@ -37,16 +37,16 @@ function Results({ results, characterImages, filterState}) {
           ) : (
             <>
               {lnResults && (
-                <Collapsible trigger={`Light Novel (Total: ${lnResults.count})`}>
-                  <LightNovelResults lnData={lnResults} highlight={highlight} filterState={filterState}/>
+                <Collapsible className="ln-results" trigger={`Light Novel (Total: ${lnResults.count})`}>
+                  <LightNovelResults lnData={lnResults} volumeImages={images.lnCoverImages}highlight={highlight} filterState={filterState}/>
                 </Collapsible>
               )}
               {shouldRenderCharacterResults && (
-                <CharacterResults anData={results.anime} characterImages={characterImages} highlight={highlight} filterState={filterState}/>
+                <CharacterResults anData={results.anime} images={images} highlight={highlight} filterState={filterState}/>
               )}
               {anResults && (
                 <Collapsible trigger={`Anime (Total: ${anResults.count})`}>
-                  <AnimeResults anData={anResults} characterImages={characterImages} highlight={highlight} filterState={filterState}/>
+                  <AnimeResults anData={anResults} images={images} highlight={highlight} filterState={filterState} main={true}/>
                 </Collapsible>
               )}
             </>

@@ -4,7 +4,7 @@ import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import './DropdownMenu.css';
 
 
-function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seasons, openAnime, setOpenAnime }) {
+function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seasons, openAnime, setOpenAnime, seasonImages }) {
   const { mainChecked, filter, openSeasons, seasonsChecked, episodeFilters } = animeDropdownState;
 
   const dropdownRef = useRef(null);
@@ -139,7 +139,8 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seaso
           {filteredSeasons.map((season, index) => (
             <div key={index}>
               <div className="item-header">
-                <div style={{ display: 'flex', alignItems: 'center' }}>
+                <div className="volume-trigger-drop">
+                {seasonImages[season.name.replace('Season ', 's')] && <img className="cover-image" src={seasonImages[season.name.replace('Season ', 's')]} alt={season.name} />}
                 <span 
                     className={`season-title ${seasonsChecked[season.name]?.checked ? '' : 'dimmed'}`} 
                     onClick={() => handleSeasonClick(season.name)}
