@@ -61,7 +61,7 @@ function AnimeResults({ anData, characterImages, highlight, filterState }) {
       "title": "Season 1",
       "episodes": {
         "e1": "Episode 1 | The Hated Classmate",
-        "e2": "Episode  | Shadow Garden is Born",
+        "e2": "Episode 2 | Shadow Garden is Born",
         "e3": "Episode 3 | Fencer Ordinaire",
         "e4": "Episode 4 | Sadism's Rewards",
         "e5": "Episode 5 | I Am...",
@@ -142,9 +142,11 @@ function AnimeResults({ anData, characterImages, highlight, filterState }) {
                           </div>
                       </div>
                       <div className="character-box">
-                        {characterImages[sentence.name_variant] && <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant} />}
-                        <p title={sentence.name}>{sentence.name !== sentence.name_variant ? `${sentence.name_variant}` : sentence.name}</p>
-                      </div>
+                    {characterImages[sentence.name_variant] && <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant} />}
+                    <p title={sentence.name !== sentence.name_variant ? `${sentence.name_variant} (${sentence.name})` : sentence.name}>
+                      {sentence.name !== sentence.name_variant ? `${sentence.name_variant}` : sentence.name}
+                    </p>
+                  </div>
                     </div>
                   ))}
                   </div>

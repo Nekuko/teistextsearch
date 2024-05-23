@@ -21,7 +21,7 @@ function CharacterResults({ anData, characterImages, filterState, highlight, sea
             <div key={character}>
               <Collapsible trigger={
                 <>
-                <div className="character-trigger">
+                <div className="character-trigger" title={character}>
                   {characterImages[character] && <img src={characterImages[character]} alt={character} />}
                   {`${character} (Total: ${characterData.count})`}
                 </div>
