@@ -76,10 +76,10 @@ function LightNovelResults({ lnData, volumeImages, highlight, filterState }) {
       let regex;
       if (filterState.exactMatch) {
         // If exactMatch is true, match the keyword exactly as it is
-        regex = new RegExp(`\\b${keyword}\\b`, filterState.caseSensitive ? '' : 'i');
+        regex = new RegExp(`\\b${keyword}\\b`, filterState.caseSensitive ? 'g' : 'gi');
       } else {
         // If exactMatch is false, match any occurrence of the keyword
-        regex = new RegExp(keyword, filterState.caseSensitive ? '' : 'i');
+        regex = new RegExp(keyword, filterState.caseSensitive ? 'g' : 'gi');
       }
       highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
     });

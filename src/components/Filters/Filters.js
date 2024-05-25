@@ -19,7 +19,9 @@ function Filters({
   images,
   namedActive,
   namedCharacters,
-  setNamedActive
+  setNamedActive,
+  mogDropdownState,
+  setMogDropdownState
 }) {
   return (
     <div className="filters">
@@ -31,6 +33,8 @@ function Filters({
           updateLNDropdownState={updateLNDropdownState}
           volumes={volumes}
           images={images}
+          mogDropdownState={mogDropdownState}
+          setMogDropdownState={setMogDropdownState}
         />
         <CharactersContainer 
         dropdownStates={dropdownStates}
@@ -44,6 +48,7 @@ function Filters({
         lnDropdownState={lnDropdownState}
         dropdownStates={dropdownStates}
         volumes={volumes}
+        namedActive={namedActive}
         />
       </div>
       <Keywords filterState={filterState} setFilterState={setFilterState} /> {/* Make sure this is the last child of the .filters container */}

@@ -2,7 +2,7 @@
 import React from 'react';
 import './SelectedContainer.css';
 
-function SelectedContainer({ animeDropdownState, lnDropdownState, dropdownStates, volumes }) {
+function SelectedContainer({ animeDropdownState, lnDropdownState, dropdownStates, volumes, namedActive }) {
   let animeCheckedItems = [];
 
   if (animeDropdownState && animeDropdownState.seasonsChecked) {
@@ -17,7 +17,6 @@ function SelectedContainer({ animeDropdownState, lnDropdownState, dropdownStates
       );
   }
 
-  console.log(lnDropdownState)
   const getSelectedLNList = () => {
     let lnList = [];
     const totalVolumes = volumes.length;
@@ -96,18 +95,6 @@ function SelectedContainer({ animeDropdownState, lnDropdownState, dropdownStates
     return lnList;
   };
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 const getSelectedAnimeList = () => {
     const totalEpisodes = { 'an_s1': 20, 'an_s2': 12 };
     const countEpisodes = animeCheckedItems.reduce((acc, item) => {
@@ -148,9 +135,6 @@ const getSelectedAnimeList = () => {
     return newList;
   };
 
-  // Function to process dropdownStates and create a list of selected characters
-// Function to process dropdownStates and create a list of selected characters
-// Function to process dropdownStates and create a list of selected characters
 const getSelectedCharacterList = () => {
   let characterList = [];
   Object.values(dropdownStates).forEach(group => {
@@ -183,6 +167,14 @@ const getSelectedCharacterList = () => {
 
 
   const selectedMediumList = [...selectedLNList, ...selectedAnimeList]
+  if (selectedMediumList.length === 0) {
+    selectedMediumList.push({ text: 'Any Medium', hoverText: 'Any Medium' });
+  }
+
+  if (selectedCharacterList.length === 0) {
+    const characterText = namedActive ? 'Any "Named" Character' : 'Any Character';
+    selectedCharacterList.push({ text: characterText, hoverText: characterText });
+  }
 
   return (
     <div className="selected-container">

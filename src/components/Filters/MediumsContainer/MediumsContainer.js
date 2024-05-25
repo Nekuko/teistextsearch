@@ -2,15 +2,18 @@
 import React, { useMemo, useState } from 'react';
 import AnimeDropdownMenu from '../menus/AnimeDropdownMenu'; // Import the AnimeDropdownMenu component
 import LNDropdownMenu from '../menus/LNDropdownMenu'; // Import the LNDropdownMenu component
+import MOGDropdownMenu from '../menus/MOGDropdownMenu'; // Import the MOGDropdownMenu component
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRotateRight } from '@fortawesome/free-solid-svg-icons';
 import './MediumsContainer.css'; // Import the CSS file
 
-function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropdownState, updateLNDropdownState, volumes, images }) {
+function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropdownState, updateLNDropdownState, mogDropdownState, setMogDropdownState, volumes, images }) {
     const { mainChecked } = animeDropdownState;
     const { lnMainChecked } = lnDropdownState;
+    const { mogMainChecked } = mogDropdownState; // parts derived from mogDropdownState
     const [openAnime, setOpenAnime] = useState(false);
     const [openLN, setOpenLN] = useState(false);
+    const [openMOG, setOpenMOG] = useState(false);
 
     const handleReset = () => {
       // Reset anime dropdown state
@@ -22,6 +25,10 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
       updateLNDropdownState('lnMainChecked', false);
       updateLNDropdownState('volumesChecked', resetVolumesChecked(volumes));
       setOpenLN(false);
+
+      // Reset MOG dropdown state
+      setMogDropdownState('mogMainChecked', false);
+      setOpenMOG(false);
     };
   
     // Helper function to reset seasonsChecked
@@ -104,11 +111,6 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
       { id: 'sgc8', name: 'Eta' }
     ], []);
 
-    const groups = useMemo(() => [
-      { name: "Shadow Garden", episodes: shadowGardenCharacters },
-      { name: "Midgar", episodes: shadowGardenCharacters }
-      ], [shadowGardenCharacters, shadowGardenCharacters]);
-
     const handleMainCheck = () => {
       const isMainChecked = !mainChecked;
       updateAnimeDropdownState('mainChecked', isMainChecked);
@@ -128,10 +130,6 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
       updateAnimeDropdownState('seasonsChecked', updatedSeasonsChecked);
     };
     
-    
-    
-    
-
     const handleLNMainCheck = () => {
       const isLNMainChecked = !lnMainChecked;
       updateLNDropdownState('lnMainChecked', isLNMainChecked);
@@ -151,47 +149,110 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
       updateLNDropdownState('volumesChecked', updatedVolumesChecked);
     };
 
+    const handleMOGMainCheck = () => {
+      setMogDropdownState(prevState => {
+        const isMOGMainChecked = !prevState.mogMainChecked;
+        const updatedPartsChecked = { ...prevState.partsChecked["Seven Shadows Chronicles"] };
+    
+        // Update the checked state of all parts, sections, and episodes
+        Object.keys(updatedPartsChecked).forEach(part => {
+          if (part !== 'checked') {
+            updatedPartsChecked[part].checked = isMOGMainChecked;
+            Object.keys(updatedPartsChecked[part]).forEach(section => {
+              if (section !== 'checked') {
+                updatedPartsChecked[part][section].checked = isMOGMainChecked;
+                Object.keys(updatedPartsChecked[part][section]).forEach(episode => {
+                  if (episode !== 'checked' && typeof updatedPartsChecked[part][section][episode] === 'boolean') {
+                    updatedPartsChecked[part][section][episode] = isMOGMainChecked;
+                  }
+                });
+              }
+            });
+          }
+        });
+    
+        // Check if all parts are unchecked
+        const allPartsUnchecked = Object.values(updatedPartsChecked).every(part => !part.checked);
+    
+        if (allPartsUnchecked) {
+          // If all parts are unchecked, uncheck the Seven Shadows Chronicles checkbox
+          updatedPartsChecked.checked = false;
+        } else {
+          // If not all parts are unchecked, check the Seven Shadows Chronicles checkbox
+          updatedPartsChecked.checked = true;
+        }
+    
+        return {
+          ...prevState,
+          mogMainChecked: isMOGMainChecked,
+          partsChecked: {
+            ...prevState.partsChecked,
+            "Seven Shadows Chronicles": updatedPartsChecked
+          }
+        };
+      });
+    };
+    
+    
+    
+    
+    
+    
+
     return (
-        <div className="mediums-container">
-        <h2 className="mediums-title">MEDIUMS</h2>
-        <div className="checkbox-container">
-            <LNDropdownMenu 
-            lnDropdownState={lnDropdownState}
-            updateLNDropdownState={updateLNDropdownState}
-            volumes={volumes}
-            openLN={openLN}
-            setOpenLN={setOpenLN}
-            volumeImages={images.lnCoverImages}
-            />
-            <input
+      <div className="mediums-container">
+      <h2 className="mediums-title">MEDIUMS</h2>
+      <div className="checkbox-container">
+          <LNDropdownMenu 
+          lnDropdownState={lnDropdownState}
+          updateLNDropdownState={updateLNDropdownState}
+          volumes={volumes}
+          openLN={openLN}
+          setOpenLN={setOpenLN}
+          volumeImages={images.lnCoverImages}
+          />
+          <input
+          type="checkbox"
+          checked={lnMainChecked}
+          onChange={handleLNMainCheck}
+          />
+      </div>
+      <div className="checkbox-container">
+          <AnimeDropdownMenu 
+          animeDropdownState={animeDropdownState}
+          updateAnimeDropdownState={updateAnimeDropdownState}
+          seasons={seasons}
+          openAnime={openAnime}
+          setOpenAnime={setOpenAnime}
+          seasonImages={images.animeCoverImages}
+          />
+          <input
+          type="checkbox"
+          checked={mainChecked}
+          onChange={handleMainCheck}
+          />
+      </div>
+      <div className="checkbox-container">
+        <MOGDropdownMenu 
+            mogDropdownState={mogDropdownState}
+            setMogDropdownState={setMogDropdownState}
+            openMOG={openMOG}
+            setOpenMOG={setOpenMOG}
+        />
+        <input
             type="checkbox"
-            checked={lnMainChecked}
-            onChange={handleLNMainCheck}
-            />
-        </div>
-        <div className="checkbox-container">
-            <AnimeDropdownMenu 
-            animeDropdownState={animeDropdownState}
-            updateAnimeDropdownState={updateAnimeDropdownState}
-            seasons={seasons}
-            openAnime={openAnime}
-            setOpenAnime={setOpenAnime}
-            seasonImages={images.animeCoverImages}
-            />
-            <input
-            type="checkbox"
-            checked={mainChecked}
-            onChange={handleMainCheck}
-            />
-        </div>
-        <FontAwesomeIcon
-        icon={faRotateRight}
-        className="reset-button"
-        onClick={handleReset}
-        title="Reset"
+            checked={mogMainChecked}
+            onChange={handleMOGMainCheck}
+        />
+      </div>
+      <FontAwesomeIcon
+          icon={faRotateRight}
+          className="reset-button"
+          onClick={handleReset}
+          title="Reset"
       />
-    </div>
-    );
-    }
+  </div>
+  );
+}
     
 export default MediumsContainer;

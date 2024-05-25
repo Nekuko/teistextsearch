@@ -127,8 +127,6 @@ function LNDropdownMenu({ lnDropdownState, updateLNDropdownState, volumes, openL
     return volumes.filter(volume => volume.name.toLowerCase().includes(lnFilter.toLowerCase()));
   }, [volumes, lnFilter]);
 
-  console.log(lnFilteredVolumes)
-
   return (
     <div className="dropdown" ref={dropdownRef}>
       <div onClick={handleAnimeClick}>
