@@ -33,7 +33,7 @@
   width: 8px;
 }
 
-.season-title, .volume-title, .character-title {
+.season-title, .volume-title, .character-title, .part-title {
   color: white;
   font-weight: 800;
   flex: 1;
@@ -64,7 +64,7 @@
   border: 1px solid #c8000f;;
 }
 
-.episode-header, .volume-header, .attribute-header {
+.episode-header, .volume-header, .attribute-header, .item-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,6 +89,14 @@
 }
 
 .episode-name, .chapter-name {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 230px; /* Adjust as needed */
+}
+
+.section-title {
   display: inline-block;
   white-space: nowrap;
   overflow: hidden;

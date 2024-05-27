@@ -18,18 +18,62 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
     const handleReset = () => {
       // Reset anime dropdown state
       updateAnimeDropdownState('mainChecked', false);
+      updateAnimeDropdownState('filter', '')
+      updateAnimeDropdownState('episodeFilters', {})
       updateAnimeDropdownState('seasonsChecked', resetSeasonsChecked(seasons));
       setOpenAnime(false);
   
       // Reset LN dropdown state
       updateLNDropdownState('lnMainChecked', false);
+      updateLNDropdownState('lnFilter', '');
+      updateLNDropdownState('chapterFilters', {});
       updateLNDropdownState('volumesChecked', resetVolumesChecked(volumes));
       setOpenLN(false);
 
       // Reset MOG dropdown state
-      setMogDropdownState('mogMainChecked', false);
+      resetMogDropdownState()
       setOpenMOG(false);
     };
+
+    const resetMogDropdownState = () => {
+      setMogDropdownState(prevState => {
+        let newState = JSON.parse(JSON.stringify(prevState)); // create a deep copy
+    
+        // Reset "Seven Shadows Chronicles"
+        for (let part in newState.partsChecked["Seven Shadows Chronicles"]) {
+          for (let subpart in newState.partsChecked["Seven Shadows Chronicles"][part]) {
+            if (typeof newState.partsChecked["Seven Shadows Chronicles"][part][subpart] === 'object') {
+              for (let episode in newState.partsChecked["Seven Shadows Chronicles"][part][subpart]) {
+                newState.partsChecked["Seven Shadows Chronicles"][part][subpart][episode] = false;
+              }
+            } else {
+              newState.partsChecked["Seven Shadows Chronicles"][part][subpart] = false;
+            }
+          }
+        }
+    
+        // Reset "Event Stories"
+        for (let story in newState.partsChecked["Event Stories"]) {
+          if (typeof newState.partsChecked["Event Stories"][story] === 'object') {
+            for (let episode in newState.partsChecked["Event Stories"][story]) {
+              newState.partsChecked["Event Stories"][story][episode] = false;
+            }
+          } else {
+            newState.partsChecked["Event Stories"][story] = false;
+          }
+        }
+    
+        newState.mogMainChecked = false;
+        newState.filter = '';
+        newState.openParts = {};
+        newState.categoryFilters = {};
+        newState.sectionFilters = {};
+    
+        return newState;
+      });
+    };
+
+    
   
     // Helper function to reset seasonsChecked
     const resetSeasonsChecked = (seasons) => {
@@ -152,18 +196,19 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
     const handleMOGMainCheck = () => {
       setMogDropdownState(prevState => {
         const isMOGMainChecked = !prevState.mogMainChecked;
-        const updatedPartsChecked = { ...prevState.partsChecked["Seven Shadows Chronicles"] };
+        const updatedPartsChecked = { ...prevState.partsChecked };
     
-        // Update the checked state of all parts, sections, and episodes
-        Object.keys(updatedPartsChecked).forEach(part => {
+        // Update the checked state of all parts, sections, and episodes for 'Seven Shadows Chronicles'
+        const storyType = 'Seven Shadows Chronicles';
+        Object.keys(updatedPartsChecked[storyType]).forEach(part => {
           if (part !== 'checked') {
-            updatedPartsChecked[part].checked = isMOGMainChecked;
-            Object.keys(updatedPartsChecked[part]).forEach(section => {
+            updatedPartsChecked[storyType][part].checked = isMOGMainChecked;
+            Object.keys(updatedPartsChecked[storyType][part]).forEach(section => {
               if (section !== 'checked') {
-                updatedPartsChecked[part][section].checked = isMOGMainChecked;
-                Object.keys(updatedPartsChecked[part][section]).forEach(episode => {
-                  if (episode !== 'checked' && typeof updatedPartsChecked[part][section][episode] === 'boolean') {
-                    updatedPartsChecked[part][section][episode] = isMOGMainChecked;
+                updatedPartsChecked[storyType][part][section].checked = isMOGMainChecked;
+                Object.keys(updatedPartsChecked[storyType][part][section]).forEach(episode => {
+                  if (episode !== 'checked' && typeof updatedPartsChecked[storyType][part][section][episode] === 'boolean') {
+                    updatedPartsChecked[storyType][part][section][episode] = isMOGMainChecked;
                   }
                 });
               }
@@ -171,27 +216,40 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
           }
         });
     
-        // Check if all parts are unchecked
-        const allPartsUnchecked = Object.values(updatedPartsChecked).every(part => !part.checked);
+        // Update the checked state of all parts and episodes for 'Event Stories'
+        const eventType = 'Event Stories';
+        Object.keys(updatedPartsChecked[eventType]).forEach(part => {
+          if (part !== 'checked') {
+            updatedPartsChecked[eventType][part].checked = isMOGMainChecked;
+            Object.keys(updatedPartsChecked[eventType][part]).forEach(episode => {
+              if (episode !== 'checked' && typeof updatedPartsChecked[eventType][part][episode] === 'boolean') {
+                updatedPartsChecked[eventType][part][episode] = isMOGMainChecked;
+              }
+            });
+          }
+        });
     
-        if (allPartsUnchecked) {
-          // If all parts are unchecked, uncheck the Seven Shadows Chronicles checkbox
-          updatedPartsChecked.checked = false;
-        } else {
-          // If not all parts are unchecked, check the Seven Shadows Chronicles checkbox
-          updatedPartsChecked.checked = true;
-        }
+        // Check if all parts are unchecked for both 'Seven Shadows Chronicles' and 'Event Stories'
+        ['Seven Shadows Chronicles', 'Event Stories'].forEach(storyType => {
+          const allPartsUnchecked = Object.values(updatedPartsChecked[storyType]).every(part => !part.checked);
+    
+          if (allPartsUnchecked) {
+            // If all parts are unchecked, uncheck the storyType checkbox
+            updatedPartsChecked[storyType].checked = false;
+          } else {
+            // If not all parts are unchecked, check the storyType checkbox
+            updatedPartsChecked[storyType].checked = true;
+          }
+        });
     
         return {
           ...prevState,
           mogMainChecked: isMOGMainChecked,
-          partsChecked: {
-            ...prevState.partsChecked,
-            "Seven Shadows Chronicles": updatedPartsChecked
-          }
+          partsChecked: updatedPartsChecked
         };
       });
     };
+    
     
     
     

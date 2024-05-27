@@ -25,7 +25,7 @@ function CharactersContainer({
         charAcc[character] = { ...attributes, checked: false, open: false };
         return charAcc;
       }, {});
-      acc[group] = { ...dropdownStates[group], characters, checked: false, openGroup: false };
+      acc[group] = { ...dropdownStates[group], characters, checked: false, openGroup: false, filters: '' };
       return acc;
     }, {});
     setDropdownStates(resetState);

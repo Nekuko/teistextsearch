@@ -11,7 +11,10 @@ function CharacterDropdown({ dropdownName, dropdownStates, setDropdownStates, na
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setDropdownStates(prevState => ({ ...prevState, [dropdownName]: { ...prevState[dropdownName], openGroup: false } }));
+        // Ignore clicks on the checkbox
+        if (event.target.type !== 'checkbox') {
+          setDropdownStates(prevState => ({ ...prevState, [dropdownName]: { ...prevState[dropdownName], openGroup: false } }));
+        }
       }
     };
 
@@ -25,6 +28,7 @@ function CharacterDropdown({ dropdownName, dropdownStates, setDropdownStates, na
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [openGroup]);
+
 
   const handleGroupClick = (event) => {
     event.stopPropagation(); // Prevent the event from bubbling up to the document

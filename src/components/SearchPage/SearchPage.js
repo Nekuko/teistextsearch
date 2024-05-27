@@ -11486,7 +11486,7 @@ function SearchPage() {
                 partsChecked: {
                     "Seven Shadows Chronicles": {
                         "Part 1 - Rise of Garden": {
-                            "Part 1-1 Shadow Garden, Mobilize!": {
+                            "Part 1-1 | Shadow Garden, Mobilize!": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11494,7 +11494,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-2 Ancient Dragon of Alexandria": {
+                            "Part 1-2 | Ancient Dragon of Alexandria": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11502,7 +11502,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-3 Have Mercy! Eta's Protocol": {
+                            "Part 1-3 | Have Mercy! Eta's Protocol": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11510,7 +11510,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-4 Behold! Tuna Chaos": {
+                            "Part 1-4 | Behold! Tuna Chaos": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11518,7 +11518,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-5 Here Comes Trouble": {
+                            "Part 1-5 | Here Comes Trouble": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11526,7 +11526,187 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-6 Intense! Unstoppable Alpha": {
+                            "Part 1-6 | Intense! Unstoppable Alpha": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 1-7 | Brutal! Delta's Night Hunt": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 1-8 | She is Beauty, She is Grace!": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 1-9 | Watch Out, Gamma!": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 1-10 | Mitsugoshi, Ltd. is Open!": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 1-11 | Deal! Arranged Booking": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 1-12 | Natsume & Shiron Hang Out!": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 1-13 | Visions... Zeta and the Prophet": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 1-14 | The Garden on the Eve of Battle!": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 1 Final | Final Battle! Templar Fanatics": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+
+                            "checked": false
+                        },
+                        "Part 2 - Sturm of Velgalta": {
+                            "Part 2-1 | Operation: Rescue & Recover": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 2-2 | A Brilliant Mission!": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 2-3 | Investigation! In Search of Oil": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 2-4 | Possessed Cult Leader": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 2-5 |  Cult Secrets Revealed!": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 2-6 | The Garden Heads North": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 2-7 | Blood Pact! Unlikely Pair": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 2-8 | Seven Blades Swordswoman": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 2-9 | The Ones We Protect": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 2-10 | Duel! Defeat Malak!": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 2-11 | Faith and Conviction": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 2-12 | Evil Ambition's End": {
+                                "e1": false,
+                                "e2": false,
+                                "e3": false,
+                                "e4": false,
+                                "e5": false,
+                                "checked": false
+                            },
+                            "Part 2-13 | Hero...... Lured by Illusions": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11536,48 +11716,8 @@ function SearchPage() {
                             },
                             "checked": false
                         },
-                        "Part 2 - Sturm of Velgalta": {
-                            "Part 2-1 Operation: Rescue & Recover": {
-                                "e1": false,
-                                "e2": false,
-                                "e3": false,
-                                "e4": false,
-                                "e5": false,
-                                "checked": false
-                            },
-                            "Part 2-2 A Brilliant Mission!": {
-                                "e1": false,
-                                "e2": false,
-                                "e3": false,
-                                "e4": false,
-                                "e5": false,
-                                "checked": false
-                            },
-                            "Part 2-3 Investigation! In Search of Oil": {
-                                "e1": false,
-                                "e2": false,
-                                "e3": false,
-                                "e4": false,
-                                "e5": false,
-                                "checked": false
-                            },
-                            "Part 2-4 Possessed Cult Leader": {
-                                "e1": false,
-                                "e2": false,
-                                "e3": false,
-                                "e4": false,
-                                "e5": false,
-                                "checked": false
-                            },
-                            "Part 2-5 Cult Secrets Revealed!": {
-                                "e1": false,
-                                "e2": false,
-                                "e3": false,
-                                "e4": false,
-                                "e5": false,
-                                "checked": false
-                            },
-                            "Part 2-6 The Garden Heads North": {
+                        "Part 3 - Secret of Sacra" : {
+                            "Part 3-1 | Shadow Garden Revamp": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11588,12 +11728,207 @@ function SearchPage() {
                             "checked": false
                         },
                         "checked": false
+                    },
+
+                    "Event Stories": {
+                        "Holiday Rhapsody": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "Fantastic! The Great Ize-athelon!": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "Natural vs. Artificial: Chocolate Showdown!": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "Rose of Garden": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "HIGHEST DREAM": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "Clever & Lucky Bunny Girls!": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "Shadows Unite! Let's party!": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "Truth Seekers": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "Midsummer Triangle": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "Dreamy Summer Sunset": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "Interlude": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "Let's Smile! Halloween Night!": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "Amnesia?! Noob Again!": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "A Gift from Miss Santa!": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "Run! The Great Ize-athlon 2.0!": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "Masquerade": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "Be Mine! Sweet Valentine": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "HIGHEST DREAM II": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "The Producer in Shadow!": {
+                            "e1": false,
+                            "e2": false,
+                            "e3": false,
+                            "e4": false,
+                            "e5": false,
+                            "e6": false,
+                            "e7": false,
+                            "checked": false
+                        },
+                        "checked": false
                     }
                 }
 
             }
         }
     });
+    
 
     React.useEffect(() => {
         sessionStorage.setItem('animeDropdownState', JSON.stringify(animeDropdownState));

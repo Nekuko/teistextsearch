@@ -9,20 +9,22 @@ function LNDropdownMenu({ lnDropdownState, updateLNDropdownState, volumes, openL
 
   const dropdownRef = useRef(null);
 
-  // Add an event listener to the document when the dropdown is open
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setOpenLN(false);
+        // Ignore clicks on the checkbox
+        if (event.target.type !== 'checkbox') {
+          setOpenLN(false);
+        }
       }
     };
-
+  
     if (openLN) {
       document.addEventListener('mousedown', handleClickOutside);
     } else {
       document.removeEventListener('mousedown', handleClickOutside);
     }
-
+  
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };

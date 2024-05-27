@@ -9,24 +9,27 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seaso
 
   const dropdownRef = useRef(null);
 
-  // Add an event listener to the document when the dropdown is open
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setOpenAnime(false);
+        // Ignore clicks on the checkbox
+        if (event.target.type !== 'checkbox') {
+          setOpenAnime(false);
+        }
       }
     };
-
+  
     if (openAnime) {
       document.addEventListener('mousedown', handleClickOutside);
     } else {
       document.removeEventListener('mousedown', handleClickOutside);
     }
-
+  
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [openAnime]);
+  
 
 
   useEffect(() => {
