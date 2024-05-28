@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRotateRight, faC } from '@fortawesome/free-solid-svg-icons';
 import './MediumsContainer.css'; // Import the CSS file
 
-function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropdownState, updateLNDropdownState, mogDropdownState, setMogDropdownState, volumes, images }) {
+function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropdownState, updateLNDropdownState, mogDropdownState, setMogDropdownState, volumes, images, canonActive, setCanonActive, canonES }) {
     const { mainChecked } = animeDropdownState;
     const { lnMainChecked } = lnDropdownState;
     const { mogMainChecked } = mogDropdownState; // parts derived from mogDropdownState
@@ -33,7 +33,46 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
       // Reset MOG dropdown state
       resetMogDropdownState()
       setOpenMOG(false);
+      setCanonActive(false);
+
     };
+
+    const handleCanon = () => {
+      const isActive = !canonActive;
+      setCanonActive(isActive);
+      let partsChecked = mogDropdownState.partsChecked["Event Stories"]
+  
+      // If canonActive is being set to true, uncheck all non-canon stories
+      if (isActive) {
+          const updatedPartsChecked = { ...partsChecked };
+  
+          // Iterate over all parts and episodes for 'Event Stories'
+          Object.keys(updatedPartsChecked).forEach(part => {
+              if (part !== 'checked') {
+                  // If part is not in canonES, uncheck this part and its episodes
+                  if (!canonES.includes(part)) {
+                      updatedPartsChecked[part].checked = false;
+                      Object.keys(updatedPartsChecked[part]).forEach(episode => {
+                          if (episode !== 'checked' && typeof updatedPartsChecked[part][episode] === 'boolean') {
+                              updatedPartsChecked[part][episode] = false;
+                          }
+                      });
+                  }
+              }
+          });
+  
+          // Update the mogDropdownState with the updated partsChecked
+          setMogDropdownState(prevState => ({
+              ...prevState,
+              partsChecked: {
+                  ...prevState.partsChecked,
+                  "Event Stories": updatedPartsChecked
+              }
+          }));
+      }
+  };
+  
+  
 
     const resetMogDropdownState = () => {
       setMogDropdownState(prevState => {
@@ -64,6 +103,7 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
         }
     
         newState.mogMainChecked = false;
+        newState.partsChecked["Seven Shadows Chronicles"].checked = false;
         newState.filter = '';
         newState.openParts = {};
         newState.categoryFilters = {};
@@ -195,60 +235,64 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
 
     const handleMOGMainCheck = () => {
       setMogDropdownState(prevState => {
-        const isMOGMainChecked = !prevState.mogMainChecked;
-        const updatedPartsChecked = { ...prevState.partsChecked };
-    
-        // Update the checked state of all parts, sections, and episodes for 'Seven Shadows Chronicles'
-        const storyType = 'Seven Shadows Chronicles';
-        Object.keys(updatedPartsChecked[storyType]).forEach(part => {
-          if (part !== 'checked') {
-            updatedPartsChecked[storyType][part].checked = isMOGMainChecked;
-            Object.keys(updatedPartsChecked[storyType][part]).forEach(section => {
-              if (section !== 'checked') {
-                updatedPartsChecked[storyType][part][section].checked = isMOGMainChecked;
-                Object.keys(updatedPartsChecked[storyType][part][section]).forEach(episode => {
-                  if (episode !== 'checked' && typeof updatedPartsChecked[storyType][part][section][episode] === 'boolean') {
-                    updatedPartsChecked[storyType][part][section][episode] = isMOGMainChecked;
+          const isMOGMainChecked = !prevState.mogMainChecked;
+          const updatedPartsChecked = { ...prevState.partsChecked };
+  
+          // Update the checked state of all parts, sections, and episodes for 'Seven Shadows Chronicles'
+          const storyType = 'Seven Shadows Chronicles';
+          Object.keys(updatedPartsChecked[storyType]).forEach(part => {
+              if (part !== 'checked') {
+                  updatedPartsChecked[storyType][part].checked = isMOGMainChecked;
+                  Object.keys(updatedPartsChecked[storyType][part]).forEach(section => {
+                      if (section !== 'checked') {
+                          updatedPartsChecked[storyType][part][section].checked = isMOGMainChecked;
+                          Object.keys(updatedPartsChecked[storyType][part][section]).forEach(episode => {
+                              if (episode !== 'checked' && typeof updatedPartsChecked[storyType][part][section][episode] === 'boolean') {
+                                  updatedPartsChecked[storyType][part][section][episode] = isMOGMainChecked;
+                              }
+                          });
+                      }
+                  });
+              }
+          });
+  
+          // Update the checked state of all parts and episodes for 'Event Stories'
+          const eventType = 'Event Stories';
+          Object.keys(updatedPartsChecked[eventType]).forEach(part => {
+              if (part !== 'checked') {
+                  // If canonActive is true and part is not in canonES, skip updating the checked state for this part and its episodes
+                  if (!(canonActive && !canonES.includes(part))) {
+                      updatedPartsChecked[eventType][part].checked = isMOGMainChecked;
+                      Object.keys(updatedPartsChecked[eventType][part]).forEach(episode => {
+                          if (episode !== 'checked' && typeof updatedPartsChecked[eventType][part][episode] === 'boolean') {
+                              updatedPartsChecked[eventType][part][episode] = isMOGMainChecked;
+                          }
+                      });
                   }
-                });
               }
-            });
-          }
-        });
-    
-        // Update the checked state of all parts and episodes for 'Event Stories'
-        const eventType = 'Event Stories';
-        Object.keys(updatedPartsChecked[eventType]).forEach(part => {
-          if (part !== 'checked') {
-            updatedPartsChecked[eventType][part].checked = isMOGMainChecked;
-            Object.keys(updatedPartsChecked[eventType][part]).forEach(episode => {
-              if (episode !== 'checked' && typeof updatedPartsChecked[eventType][part][episode] === 'boolean') {
-                updatedPartsChecked[eventType][part][episode] = isMOGMainChecked;
+          });
+  
+          // Check if all parts are unchecked for both 'Seven Shadows Chronicles' and 'Event Stories'
+          ['Seven Shadows Chronicles', 'Event Stories'].forEach(storyType => {
+              const allPartsUnchecked = Object.values(updatedPartsChecked[storyType]).every(part => !part.checked);
+  
+              if (allPartsUnchecked) {
+                  // If all parts are unchecked, uncheck the storyType checkbox
+                  updatedPartsChecked[storyType].checked = false;
+              } else {
+                  // If not all parts are unchecked, check the storyType checkbox
+                  updatedPartsChecked[storyType].checked = true;
               }
-            });
-          }
-        });
-    
-        // Check if all parts are unchecked for both 'Seven Shadows Chronicles' and 'Event Stories'
-        ['Seven Shadows Chronicles', 'Event Stories'].forEach(storyType => {
-          const allPartsUnchecked = Object.values(updatedPartsChecked[storyType]).every(part => !part.checked);
-    
-          if (allPartsUnchecked) {
-            // If all parts are unchecked, uncheck the storyType checkbox
-            updatedPartsChecked[storyType].checked = false;
-          } else {
-            // If not all parts are unchecked, check the storyType checkbox
-            updatedPartsChecked[storyType].checked = true;
-          }
-        });
-    
-        return {
-          ...prevState,
-          mogMainChecked: isMOGMainChecked,
-          partsChecked: updatedPartsChecked
-        };
+          });
+  
+          return {
+              ...prevState,
+              mogMainChecked: isMOGMainChecked,
+              partsChecked: updatedPartsChecked
+          };
       });
-    };
+  };
+  
     
     
     
@@ -296,6 +340,8 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
             setMogDropdownState={setMogDropdownState}
             openMOG={openMOG}
             setOpenMOG={setOpenMOG}
+            canonActive={canonActive}
+            canonES={canonES}
         />
         <input
             type="checkbox"
@@ -305,8 +351,9 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
       </div>
       <FontAwesomeIcon
           icon={faC}
-          className={`named-button`}
+          className={`canon-button ${canonActive ? 'active' : ''}`}
           title='Canon Only'
+          onClick={handleCanon}
       />
       <FontAwesomeIcon
           icon={faRotateRight}

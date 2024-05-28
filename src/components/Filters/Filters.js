@@ -19,6 +19,9 @@ function Filters({
   images,
   namedActive,
   namedCharacters,
+  canonActive,
+  canonES,
+  setCanonActive,
   setNamedActive,
   mogDropdownState,
   setMogDropdownState
@@ -35,6 +38,9 @@ function Filters({
           images={images}
           mogDropdownState={mogDropdownState}
           setMogDropdownState={setMogDropdownState}
+          canonActive={canonActive}
+          setCanonActive={setCanonActive}
+          canonES={canonES}
         />
         <CharactersContainer 
         dropdownStates={dropdownStates}
@@ -49,6 +55,7 @@ function Filters({
         dropdownStates={dropdownStates}
         volumes={volumes}
         namedActive={namedActive}
+        canonActive={canonActive}
         mogDropdownState={mogDropdownState}
         />
       </div>

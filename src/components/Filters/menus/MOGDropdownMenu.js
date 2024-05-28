@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import './DropdownMenu.css';
 
-function MOGDropdownMenu({ mogDropdownState, setMogDropdownState, openMOG, setOpenMOG }) {
+function MOGDropdownMenu({ mogDropdownState, setMogDropdownState, openMOG, setOpenMOG, canonActive, canonES }) {
   const { mogMainChecked, filter, openParts, partsChecked, sectionFilters, categoryFilters } = mogDropdownState;
 
   const dropdownRef = useRef(null);
@@ -278,29 +278,33 @@ function MOGDropdownMenu({ mogDropdownState, setMogDropdownState, openMOG, setOp
     // Update the checked state of all parts and episodes
     Object.keys(updatedPartsChecked['Event Stories']).forEach(part => {
       if (part !== 'checked') {
-        updatedPartsChecked['Event Stories'][part].checked = isEventStoriesChecked;
-        Object.keys(updatedPartsChecked['Event Stories'][part]).forEach(episode => {
-          if (episode !== 'checked' && typeof updatedPartsChecked['Event Stories'][part][episode] === 'boolean') {
-            updatedPartsChecked['Event Stories'][part][episode] = isEventStoriesChecked;
-          }
-        });
+        // If canonActive is true and part is not in canonES, skip updating the checked state for this part and its episodes
+        if (!(canonActive && !canonES.includes(part))) {
+          updatedPartsChecked['Event Stories'][part].checked = isEventStoriesChecked;
+          Object.keys(updatedPartsChecked['Event Stories'][part]).forEach(episode => {
+            if (episode !== 'checked' && typeof updatedPartsChecked['Event Stories'][part][episode] === 'boolean') {
+              updatedPartsChecked['Event Stories'][part][episode] = isEventStoriesChecked;
+            }
+          });
+        }
       }
     });
   
     // Check if any part is checked
     const anyPartChecked = Object.values(updatedPartsChecked['Event Stories']).some((part) => part.checked);
   
-  const anySevenShadowsChecked = Object.values(updatedPartsChecked['Seven Shadows Chronicles']).some((part) => part.checked);
+    const anySevenShadowsChecked = Object.values(updatedPartsChecked['Seven Shadows Chronicles']).some((part) => part.checked);
 
-  // Update the checked state of "mogMainChecked"
-  const mogMainChecked = anyPartChecked || anySevenShadowsChecked;
+    // Update the checked state of "mogMainChecked"
+    const mogMainChecked = anyPartChecked || anySevenShadowsChecked;
 
-  setMogDropdownState(prevState => ({
-    ...prevState,
-    mogMainChecked,
-    partsChecked: updatedPartsChecked
-  }));
+    setMogDropdownState(prevState => ({
+      ...prevState,
+      mogMainChecked,
+      partsChecked: updatedPartsChecked
+    }));
 };
+
   
   
 
@@ -451,6 +455,8 @@ const handleEventEpisodeCheck = (event, part, episode) => {
               setMogDropdownState={setMogDropdownState}
               handleCategoryFilterChange={handleCategoryFilterChange}
               categoryFilters={categoryFilters}
+              canonES={canonES}
+              canonActive={canonActive}
             />
           )}
         </div>

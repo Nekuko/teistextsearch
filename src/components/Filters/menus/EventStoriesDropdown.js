@@ -11,7 +11,9 @@ function EventStoriesDropdown({
     openParts, 
     handlePartClick, 
     handleCategoryFilterChange,
-    categoryFilters
+    categoryFilters,
+    canonActive,
+    canonES
  }) {
 
     const episodeMap = {
@@ -194,7 +196,7 @@ function EventStoriesDropdown({
         <div>
             {/* Add this input field for category filter */}
             <input type="text" value={categoryFilters['all-event'] || ''} onChange={(event) => handleCategoryFilterChange(event, 'all-event')} placeholder="Search stories..." />
-
+    
             {parts.filter(part => !categoryFilters['all-event'] || part.toLowerCase().includes(categoryFilters['all-event'].toLowerCase())).map((part, index) => (
                 <div key={index}>
                     <div className="item-header">
@@ -212,6 +214,7 @@ function EventStoriesDropdown({
                             type="checkbox"
                             checked={!!partsChecked[part]?.checked}
                             onChange={(event) => handleEventPartCheck(event, part)}
+                            disabled={canonActive && !canonES.includes(part)} // Disable the checkbox if canonActive is true and part is not in canonES
                         />
                     </div>
                     {openParts[part] && (
@@ -228,6 +231,7 @@ function EventStoriesDropdown({
                                         type="checkbox"
                                         checked={!!partsChecked[part][episode]}
                                         onChange={(event) => handleEventEpisodeCheck(event, part, episode)}
+                                        disabled={canonActive && !canonES.includes(part)} // Disable the checkbox for episodes if canonActive is true and part is not in canonES
                                     />
                                     </div>
                                 );
@@ -239,5 +243,7 @@ function EventStoriesDropdown({
         </div>
     );
 }
-
-export default EventStoriesDropdown;
+    
+    export default EventStoriesDropdown;
+    
+    

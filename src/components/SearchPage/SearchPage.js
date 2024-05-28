@@ -11472,8 +11472,7 @@ function SearchPage() {
     });
 
     const [mogDropdownState, setMogDropdownState] = React.useState(() => {
-        //const savedState = sessionStorage.getItem('mogDropdownState');
-        const savedState = null;
+        const savedState = sessionStorage.getItem('mogDropdownState');
         if (savedState) {
             return JSON.parse(savedState);
         } else {
@@ -11928,6 +11927,11 @@ function SearchPage() {
             }
         }
     });
+
+    React.useEffect(() => {
+        sessionStorage.setItem('mogDropdownState', JSON.stringify(mogDropdownState));
+    }, [mogDropdownState]);
+
     
 
     React.useEffect(() => {
@@ -12219,13 +12223,35 @@ function SearchPage() {
         { name: "Volume 4", chapters: volume4Chapters }
     ], [volume1Chapters, volume2Chapters, volume3Chapters, volume4Chapters]);
 
-    const [namedActive, setNamedActive] = useState(false);
+    const [namedActive, setNamedActive] = useState(() => {
+        // Get the initial value from sessionStorage or default to false
+        const saved = sessionStorage.getItem('namedActive');
+        const initialValue = JSON.parse(saved);
+        return initialValue || false;
+      });
+      
+      // Use an effect to update sessionStorage when namedActive changes
+      useEffect(() => {
+        sessionStorage.setItem('namedActive', JSON.stringify(namedActive));
+      }, [namedActive]);
+
     const namedCharacters = ["Cid Kagenou", "Akane Nishino", "Alpha", "Beta", "Gamma", "Delta", "Epsilon",
         "Zeta", "Eta", "Alexia Midgar", "Iris Midgar", "Shadow", "Minoru Kageno", "Stylish Ruffian Slayer"
     ];
 
-    const [canonActive, setCanonActive] = useState(false);
-    const nonCanon = [""]
+    const [canonActive, setCanonActive] = useState(() => {
+        // Get the initial value from sessionStorage or default to false
+        const saved = sessionStorage.getItem('canonActive');
+        const initialValue = JSON.parse(saved);
+        return initialValue || false;
+      });
+      
+      // Use an effect to update sessionStorage when canonActive changes
+      useEffect(() => {
+        sessionStorage.setItem('canonActive', JSON.stringify(canonActive));
+      }, [canonActive]);
+    
+    const canonES = ["Rose of Garden", "Truth Seekers", "Interlude", "Masquerade"]
 
 
 
@@ -12318,11 +12344,6 @@ function SearchPage() {
             }
           }
         }
-        
-        console.log(mogDropdownState)
-
-        console.log(mogCheckedItems)
-
 
         // Initialize separate objects to hold the anime and light novel results
         let animeResults = {};
@@ -12359,6 +12380,9 @@ function SearchPage() {
                 images={images}
                 namedActive={namedActive}
                 namedCharacters={namedCharacters}
+                canonActive={canonActive}
+                setCanonActive={setCanonActive}
+                canonES={canonES}
                 setNamedActive={setNamedActive}
                 mogDropdownState={mogDropdownState}
                 setMogDropdownState={setMogDropdownState}

@@ -29,6 +29,28 @@
     margin-left: 0; /* Remove margin-left */
   }
 
+  .canon-button {
+    position: absolute;
+    bottom: 10px;
+    right: 30px;
+    color: #c8000f;
+    font-size: small;
+    opacity: 40%;
+    /* Add additional styles for the button as needed */
+  }
+
+  .canon-button:hover {
+    color: red;
+    cursor: pointer;
+    opacity: 100%;
+  }
+
+  .canon-button.active {
+    color: red;
+    opacity: 100%;
+  }
+  
+
   .reset-button {
     position: absolute;
     bottom: 10px;
