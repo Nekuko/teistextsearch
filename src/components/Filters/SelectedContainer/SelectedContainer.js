@@ -2,12 +2,12 @@
 import React from 'react';
 import './SelectedContainer.css';
 
-function SelectedContainer({ animeDropdownState, lnDropdownState, dropdownStates, volumes, namedActive }) {
+function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownState, dropdownStates, volumes, namedActive }) {
   let animeCheckedItems = [];
 
   if (animeDropdownState && animeDropdownState.seasonsChecked) {
     animeCheckedItems = Object.entries(animeDropdownState.seasonsChecked)
-      .flatMap(([season, episodes]) => 
+      .flatMap(([season, episodes]) =>
         Object.entries(episodes)
           .filter(([episode, checked]) => checked && episode !== 'checked')
           .map(([episode]) => {
@@ -17,11 +17,112 @@ function SelectedContainer({ animeDropdownState, lnDropdownState, dropdownStates
       );
   }
 
+  // For Seven Shadows Chronicles
+  let sscCheckedItems = [];
+  for (let group in mogDropdownState.partsChecked) {
+    if (group === "Seven Shadows Chronicles") {
+      for (let part in mogDropdownState.partsChecked[group]) {
+        for (let section in mogDropdownState.partsChecked[group][part]) {
+          if (section !== 'checked') {
+            for (let episode in mogDropdownState.partsChecked[group][part][section]) {
+              if (episode !== 'checked' && mogDropdownState.partsChecked[group][part][section][episode]) {
+                sscCheckedItems.push(`${group}_${part}_${section}_${episode}`);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // For Event Stories
+  let esCheckedItems = [];
+  for (let group in mogDropdownState.partsChecked) {
+    if (group === "Event Stories") {
+      for (let part in mogDropdownState.partsChecked[group]) {
+        for (let episode in mogDropdownState.partsChecked[group][part]) {
+          if (episode !== 'checked' && mogDropdownState.partsChecked[group][part][episode]) {
+            esCheckedItems.push(`${group}_${part}_${episode}`);
+          }
+        }
+      }
+    }
+
+    
+  }
+
+  const getSelectedSSCList = () => {
+    const shortNames = {
+      'Seven Shadows Chronicles': 'SSC',
+      'Rise of Garden': 'ROG',
+      'Sturm of Velgalta': 'SOV',
+      'Secret of Sacra': 'SOS'
+    };
+    let sscList = [];
+    let groupedEpisodes = {};
+  
+    sscCheckedItems.forEach(item => {
+      let parts = item.split('_');
+      let group = parts[0];
+      let shortGroup = shortNames[group]
+      let partName = parts[1].split(' | ')[1];
+      let partStart = parts[1].split(' | ')[0];
+      let shortPartName = shortNames[partName];
+      let section = parts[2].split(' | ')[0]
+      let sectionName = parts[2].split(' | ')[1]
+      let episode = parseInt(parts[3].replace('e', ''));
+  
+      let key = `MOG ${shortGroup} ${shortPartName} P${section}`;
+      if (!groupedEpisodes[key]) {
+        groupedEpisodes[key] = { start: episode, end: episode, hoverText: `Master of Garden, ${group}, ${partStart} ${partName}, Part ${section} ${sectionName}` };
+      } else {
+        if (episode === groupedEpisodes[key].end + 1) {
+          groupedEpisodes[key].end = episode;
+        } else {
+          sscList.push({
+            text: `${key}${groupedEpisodes[key].start !== groupedEpisodes[key].end ? ' E' + groupedEpisodes[key].start + '-' + groupedEpisodes[key].end : ' E' + groupedEpisodes[key].start}`,
+            hoverText: `${groupedEpisodes[key].hoverText}${groupedEpisodes[key].start !== groupedEpisodes[key].end ? ', Episodes ' + groupedEpisodes[key].start + '-' + groupedEpisodes[key].end : ', Episode ' + groupedEpisodes[key].start}`
+          });
+          groupedEpisodes[key] = { start: episode, end: episode, hoverText: `Master of Garden, ${group}, ${partStart} ${partName}, Part ${section} ${sectionName}` };
+        }
+      }
+    });
+  
+    Object.keys(groupedEpisodes).forEach(key => {
+      sscList.push({
+        text: `${key}${groupedEpisodes[key].start !== groupedEpisodes[key].end && groupedEpisodes[key].end - groupedEpisodes[key].start < 4 ? ' E' + groupedEpisodes[key].start + '-' + groupedEpisodes[key].end : ''}`,
+        hoverText: `${groupedEpisodes[key].hoverText}${groupedEpisodes[key].start !== groupedEpisodes[key].end && groupedEpisodes[key].end - groupedEpisodes[key].start < 4 ? ', Episodes ' + groupedEpisodes[key].start + '-' + groupedEpisodes[key].end : ''}`
+      });
+    });
+  
+    return sscList;
+  };
+  
+  
+  
+  
+  
+
+
+  console.log(sscCheckedItems)
+
+
+
+
+
+
+
+
+
+
+
+
+
   const getSelectedLNList = () => {
     let lnList = [];
     const totalVolumes = volumes.length;
     const checkedVolumes = volumes.filter(volume => volume.chapters.every(chapter => lnDropdownState.volumesChecked[volume.name][chapter.id])).length;
-  
+
     if (lnDropdownState.lnMainChecked && totalVolumes === checkedVolumes) {
       lnList.push({ text: 'Light Novel', hoverText: 'Light Novel' });
     } else {
@@ -64,7 +165,7 @@ function SelectedContainer({ animeDropdownState, lnDropdownState, dropdownStates
             if (rangeStart === null) {
               rangeStart = chapterType;
               rangeEnd = chapterType;
-            } 
+            }
             rangeEnd = chapterType;
             if (i === checkedChapters.length - 1 || (i + 1 < checkedChapters.length && checkedChapters[i + 1].name.split('|')[0].trim() !== 'F' && parseInt(checkedChapters[i + 1].name.split('|')[0].trim()) !== chapterType + 1)) {
               if (rangeStart === 'F') {
@@ -94,15 +195,15 @@ function SelectedContainer({ animeDropdownState, lnDropdownState, dropdownStates
     }
     return lnList;
   };
-  
-const getSelectedAnimeList = () => {
+
+  const getSelectedAnimeList = () => {
     const totalEpisodes = { 'an_s1': 20, 'an_s2': 12 };
     const countEpisodes = animeCheckedItems.reduce((acc, item) => {
       const season = item.split('_e')[0];
       acc[season] = (acc[season] || 0) + 1;
       return acc;
     }, {});
-  
+
     let newList = [];
     if (countEpisodes['an_s1'] === totalEpisodes['an_s1'] && countEpisodes['an_s2'] === totalEpisodes['an_s2']) {
       newList.push({ text: 'Anime', hoverText: 'Anime' });
@@ -114,7 +215,7 @@ const getSelectedAnimeList = () => {
         } else {
           const episodes = animeCheckedItems.filter(item => item.includes(season)).map(item => parseInt(item.split('_e')[1]));
           episodes.sort((a, b) => a - b);
-  
+
           let start = episodes[0];
           let end = start;
           for (let i = 1; i < episodes.length; i++) {
@@ -135,38 +236,39 @@ const getSelectedAnimeList = () => {
     return newList;
   };
 
-const getSelectedCharacterList = () => {
-  let characterList = [];
-  Object.values(dropdownStates).forEach(group => {
-    Object.entries(group.characters).forEach(([character, attributes]) => {
-      const subnames = Object.entries(attributes).filter(([name, checked]) => name !== 'checked' && name !== 'open');
-      const checkedSubnames = subnames.filter(([name, checked]) => checked);
-      if (subnames.length > 0 && subnames.length === checkedSubnames.length) {
-        // If all subnames are checked, add the main character name with '(All)' after it to the list
-        // Include a list of all the variants in the hover text
-        const variants = subnames.map(([name]) => name).join(', ');
-        characterList.push({ text: `${character} (All)`, hoverText: `${variants}` });
-      } else if (checkedSubnames.length > 0) {
-        // If some subnames are checked, add them to the list
-        checkedSubnames.forEach(([subname]) => {
-          characterList.push({ text: subname, hoverText: subname });
-        });
-      } else if (attributes.checked) {
-        // If the main character is checked and there are no checked subnames, add the main character to the list
-        characterList.push({ text: character, hoverText: character });
-      }
+  const getSelectedCharacterList = () => {
+    let characterList = [];
+    Object.values(dropdownStates).forEach(group => {
+      Object.entries(group.characters).forEach(([character, attributes]) => {
+        const subnames = Object.entries(attributes).filter(([name, checked]) => name !== 'checked' && name !== 'open');
+        const checkedSubnames = subnames.filter(([name, checked]) => checked);
+        if (subnames.length > 0 && subnames.length === checkedSubnames.length) {
+          // If all subnames are checked, add the main character name with '(All)' after it to the list
+          // Include a list of all the variants in the hover text
+          const variants = subnames.map(([name]) => name).join(', ');
+          characterList.push({ text: `${character} (All)`, hoverText: `${variants}` });
+        } else if (checkedSubnames.length > 0) {
+          // If some subnames are checked, add them to the list
+          checkedSubnames.forEach(([subname]) => {
+            characterList.push({ text: subname, hoverText: subname });
+          });
+        } else if (attributes.checked) {
+          // If the main character is checked and there are no checked subnames, add the main character to the list
+          characterList.push({ text: character, hoverText: character });
+        }
+      });
     });
-  });
-  return characterList;
-};
+    return characterList;
+  };
 
   // Call the function to get the new list
   const selectedAnimeList = getSelectedAnimeList();
   const selectedLNList = getSelectedLNList();
   const selectedCharacterList = getSelectedCharacterList();
+  const selectedSSCList = getSelectedSSCList();
 
 
-  const selectedMediumList = [...selectedLNList, ...selectedAnimeList]
+  const selectedMediumList = [...selectedLNList, ...selectedAnimeList, ...selectedSSCList]
   if (selectedMediumList.length === 0) {
     selectedMediumList.push({ text: 'Any Medium', hoverText: 'Any Medium' });
   }

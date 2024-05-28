@@ -11485,8 +11485,8 @@ function SearchPage() {
                 sectionFilters: {},
                 partsChecked: {
                     "Seven Shadows Chronicles": {
-                        "Part 1 - Rise of Garden": {
-                            "Part 1-1 | Shadow Garden, Mobilize!": {
+                        "Part 1 | Rise of Garden": {
+                            "1-1 | Shadow Garden, Mobilize!": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11494,7 +11494,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-2 | Ancient Dragon of Alexandria": {
+                            "1-2 | Ancient Dragon of Alexandria": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11502,7 +11502,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-3 | Have Mercy! Eta's Protocol": {
+                            "1-3 | Have Mercy! Eta's Protocol": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11510,7 +11510,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-4 | Behold! Tuna Chaos": {
+                            "1-4 | Behold! Tuna Chaos": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11518,7 +11518,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-5 | Here Comes Trouble": {
+                            "1-5 | Here Comes Trouble": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11526,7 +11526,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-6 | Intense! Unstoppable Alpha": {
+                            "1-6 | Intense! Unstoppable Alpha": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11534,7 +11534,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-7 | Brutal! Delta's Night Hunt": {
+                            "1-7 | Brutal! Delta's Night Hunt": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11542,7 +11542,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-8 | She is Beauty, She is Grace!": {
+                            "1-8 | She is Beauty, She is Grace!": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11550,7 +11550,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-9 | Watch Out, Gamma!": {
+                            "1-9 | Watch Out, Gamma!": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11558,7 +11558,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-10 | Mitsugoshi, Ltd. is Open!": {
+                            "1-10 | Mitsugoshi, Ltd. is Open!": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11566,7 +11566,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-11 | Deal! Arranged Booking": {
+                            "1-11 | Deal! Arranged Booking": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11574,7 +11574,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-12 | Natsume & Shiron Hang Out!": {
+                            "1-12 | Natsume & Shiron Hang Out!": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11582,7 +11582,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-13 | Visions... Zeta and the Prophet": {
+                            "1-13 | Visions... Zeta and the Prophet": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11590,7 +11590,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1-14 | The Garden on the Eve of Battle!": {
+                            "1-14 | The Garden on the Eve of Battle!": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11598,7 +11598,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 1 Final | Final Battle! Templar Fanatics": {
+                            "1 Final | Final Battle! Templar Fanatics": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11609,8 +11609,8 @@ function SearchPage() {
 
                             "checked": false
                         },
-                        "Part 2 - Sturm of Velgalta": {
-                            "Part 2-1 | Operation: Rescue & Recover": {
+                        "Part 2 | Sturm of Velgalta": {
+                            "2-1 | Operation: Rescue & Recover": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11618,7 +11618,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 2-2 | A Brilliant Mission!": {
+                            "2-2 | A Brilliant Mission!": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11626,7 +11626,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 2-3 | Investigation! In Search of Oil": {
+                            "2-3 | Investigation! In Search of Oil": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11634,7 +11634,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 2-4 | Possessed Cult Leader": {
+                            "2-4 | Possessed Cult Leader": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11642,7 +11642,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 2-5 |  Cult Secrets Revealed!": {
+                            "2-5 |  Cult Secrets Revealed!": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11650,7 +11650,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 2-6 | The Garden Heads North": {
+                            "2-6 | The Garden Heads North": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11658,7 +11658,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 2-7 | Blood Pact! Unlikely Pair": {
+                            "2-7 | Blood Pact! Unlikely Pair": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11666,7 +11666,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 2-8 | Seven Blades Swordswoman": {
+                            "2-8 | Seven Blades Swordswoman": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11674,7 +11674,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 2-9 | The Ones We Protect": {
+                            "2-9 | The Ones We Protect": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11682,7 +11682,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 2-10 | Duel! Defeat Malak!": {
+                            "2-10 | Duel! Defeat Malak!": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11690,7 +11690,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 2-11 | Faith and Conviction": {
+                            "2-11 | Faith and Conviction": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11698,7 +11698,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 2-12 | Evil Ambition's End": {
+                            "2-12 | Evil Ambition's End": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11706,7 +11706,7 @@ function SearchPage() {
                                 "e5": false,
                                 "checked": false
                             },
-                            "Part 2-13 | Hero...... Lured by Illusions": {
+                            "2-13 | Hero...... Lured by Illusions": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -11716,8 +11716,8 @@ function SearchPage() {
                             },
                             "checked": false
                         },
-                        "Part 3 - Secret of Sacra" : {
-                            "Part 3-1 | Shadow Garden Revamp": {
+                        "Part 3 | Secret of Sacra" : {
+                            "3-1 | Shadow Garden Revamp": {
                                 "e1": false,
                                 "e2": false,
                                 "e3": false,
@@ -12224,6 +12224,9 @@ function SearchPage() {
         "Zeta", "Eta", "Alexia Midgar", "Iris Midgar", "Shadow", "Minoru Kageno", "Stylish Ruffian Slayer"
     ];
 
+    const [canonActive, setCanonActive] = useState(false);
+    const nonCanon = [""]
+
 
 
     const updateAnimeDropdownState = (key, value) => {
@@ -12291,9 +12294,34 @@ function SearchPage() {
             })
         );
 
+        let mogCheckedItems = [];
+        for (let group in mogDropdownState.partsChecked) {
+          if (group === "Seven Shadows Chronicles") {
+            for (let part in mogDropdownState.partsChecked[group]) {
+              for (let section in mogDropdownState.partsChecked[group][part]) {
+                if (section !== 'checked') {
+                  for (let episode in mogDropdownState.partsChecked[group][part][section]) {
+                    if (episode !== 'checked' && mogDropdownState.partsChecked[group][part][section][episode]) {
+                      mogCheckedItems.push(`${group}_${part}_${section}_${episode}`);
+                    }
+                  }
+                }
+              }
+            }
+          } else if (group === "Event Stories") {
+            for (let part in mogDropdownState.partsChecked[group]) {
+              for (let episode in mogDropdownState.partsChecked[group][part]) {
+                if (episode !== 'checked' && mogDropdownState.partsChecked[group][part][episode]) {
+                  mogCheckedItems.push(`${group}_${part}_${episode}`);
+                }
+              }
+            }
+          }
+        }
+        
+        console.log(mogDropdownState)
 
-        console.log(checkedCharacters);
-        console.log(dropdownStates)
+        console.log(mogCheckedItems)
 
 
         // Initialize separate objects to hold the anime and light novel results

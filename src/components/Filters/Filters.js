@@ -49,6 +49,7 @@ function Filters({
         dropdownStates={dropdownStates}
         volumes={volumes}
         namedActive={namedActive}
+        mogDropdownState={mogDropdownState}
         />
       </div>
       <Keywords filterState={filterState} setFilterState={setFilterState} /> {/* Make sure this is the last child of the .filters container */}

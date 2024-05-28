@@ -4,7 +4,7 @@ import AnimeDropdownMenu from '../menus/AnimeDropdownMenu'; // Import the AnimeD
 import LNDropdownMenu from '../menus/LNDropdownMenu'; // Import the LNDropdownMenu component
 import MOGDropdownMenu from '../menus/MOGDropdownMenu'; // Import the MOGDropdownMenu component
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRotateRight } from '@fortawesome/free-solid-svg-icons';
+import { faRotateRight, faC } from '@fortawesome/free-solid-svg-icons';
 import './MediumsContainer.css'; // Import the CSS file
 
 function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropdownState, updateLNDropdownState, mogDropdownState, setMogDropdownState, volumes, images }) {
@@ -303,6 +303,11 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
             onChange={handleMOGMainCheck}
         />
       </div>
+      <FontAwesomeIcon
+          icon={faC}
+          className={`named-button`}
+          title='Canon Only'
+      />
       <FontAwesomeIcon
           icon={faRotateRight}
           className="reset-button"
