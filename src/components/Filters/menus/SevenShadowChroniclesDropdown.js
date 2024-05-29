@@ -305,7 +305,7 @@ function SevenShadowChroniclesDropdown({
                     </div>
                     {openParts[part] && (
                         <div>
-                            <input type="text" value={sectionFilters[part] || ''} onChange={(event) => handleFilterChange(event, part)} placeholder="Search sections..." />
+                            <input type="text" value={sectionFilters[part] || ''} onChange={(event) => handleFilterChange(event, part)} placeholder="Search chapters..." />
                             <div className="section-list">
                                 {Object.keys(partsChecked[part]).filter(section => section !== 'checked' && (!sectionFilters[part] || section.toLowerCase().includes(sectionFilters[part].toLowerCase()))).map((section, index) => {
                                     const sectionName = section;

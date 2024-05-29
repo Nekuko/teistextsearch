@@ -1,10 +1,11 @@
 .item-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #c8000f;
-    padding: 10px 0;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c8000f;
+  padding: 10px 0;
+  width: 100%;
+}
 
   .mediums-container {
     position: relative;

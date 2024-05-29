@@ -1,12 +1,4 @@
-.item-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #c8000f;
-    padding: 10px 0;
-  }
-
-  .selected-container {
+.selected-container {
     position: relative;
     min-height: 250px;
   }

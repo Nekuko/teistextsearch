@@ -61,21 +61,6 @@
   width: 90%; /* Set width to 90% of its parent */
 }
 
-
-
-/* Add the new styles here */
-
-.item-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #c8000f;
-  padding: 10px 0;
-}
-
-/* Results.css */
-
-
 .sentence-character-container {
   display: flex;
   justify-content: space-between;

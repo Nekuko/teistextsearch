@@ -196,7 +196,7 @@ function EventStoriesDropdown({
         <div>
             {/* Add this input field for category filter */}
             <input type="text" value={categoryFilters['all-event'] || ''} onChange={(event) => handleCategoryFilterChange(event, 'all-event')} placeholder="Search stories..." />
-    
+            <div className="es-list">
             {parts.filter(part => !categoryFilters['all-event'] || part.toLowerCase().includes(categoryFilters['all-event'].toLowerCase())).map((part, index) => (
                 <div key={index}>
                     <div className="item-header">
@@ -240,6 +240,7 @@ function EventStoriesDropdown({
                     )}
                 </div>
             ))}
+            </div>
         </div>
     );
 }

@@ -81,19 +81,19 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
         if (group.start === 1 && group.end === 7) {
           selectedList.push({
             text: `MOG ${key}`,
-            hoverText: `Master of Garden ${group.hoverText.replace('ES', 'Event Stories')}`
+            hoverText: `Master of Garden, ${group.hoverText.replace('ES', 'Event Stories,')}`
           });
         } else {
           selectedList.push({
             text: `MOG ${key}${group.start !== group.end ? ' E' + group.start + '-' + group.end : ' E' + group.start}`,
-            hoverText: `Master of Garden ${group.hoverText.replace('ES', 'Event Stories')}${group.start !== group.end ? ', Episodes ' + group.start + '-' + group.end : ', Episode ' + group.start}`
+            hoverText: `Master of Garden, ${group.hoverText.replace('ES', 'Event Stories,')}${group.start !== group.end ? ', Episodes ' + group.start + '-' + group.end : ', Episode ' + group.start}`
           });
         }
       });
     }
 
     if (selectedList.length === 19 && Object.keys(selectedList).every(key => !selectedList[key].text.includes("Episode"))) {
-      return [{text: "MOG Event Stories", hoverText: "Master of Garden Event Stories"}]
+      return [{text: "MOG Event Stories", hoverText: "Master of Garden, Event Stories"}]
     }
 
     let mainGroups = ["MOG ES Rose of Garden", "MOG ES Truth Seekers", "MOG ES Interlude", "MOG ES Masquerade"];
@@ -128,9 +128,9 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
       let sectionName = parts[2].split(' | ')[1]
       let episode = parseInt(parts[3].replace('e', ''));
 
-      let key = `MOG ${shortGroup} ${shortPartName} P${section}`;
+      let key = `MOG ${shortGroup} ${shortPartName} C${section}`;
       if (!groupedEpisodes[key]) {
-        groupedEpisodes[key] = { start: episode, end: episode, hoverText: `Master of Garden, ${group}, ${partStart} ${partName}, Part ${section} ${sectionName}` };
+        groupedEpisodes[key] = { start: episode, end: episode, hoverText: `Master of Garden, ${group}, ${partStart} ${partName}, Chapter ${section} ${sectionName}` };
       } else {
         if (episode === groupedEpisodes[key].end + 1) {
           groupedEpisodes[key].end = episode;
@@ -139,7 +139,7 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
             text: `${key}${groupedEpisodes[key].start !== groupedEpisodes[key].end ? ' E' + groupedEpisodes[key].start + '-' + groupedEpisodes[key].end : ' E' + groupedEpisodes[key].start}`,
             hoverText: `${groupedEpisodes[key].hoverText}${groupedEpisodes[key].start !== groupedEpisodes[key].end ? ', Episodes ' + groupedEpisodes[key].start + '-' + groupedEpisodes[key].end : ', Episode ' + groupedEpisodes[key].start}`
           });
-          groupedEpisodes[key] = { start: episode, end: episode, hoverText: `Master of Garden, ${group}, ${partStart} ${partName}, Part ${section} ${sectionName}` };
+          groupedEpisodes[key] = { start: episode, end: episode, hoverText: `Master of Garden, ${group}, ${partStart} ${partName}, Chapter ${section} ${sectionName}` };
         }
       }
     });
@@ -167,19 +167,19 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
         let bNum;
 
         // Compare the main parts first.
-        let aMainPart = aParts[3].split("-")[0].replace("P", "");
-        let bMainPart = bParts[3].split("-")[0].replace("P", "");
+        let aMainPart = aParts[3].split("-")[0].replace("C", "");
+        let bMainPart = bParts[3].split("-")[0].replace("C", "");
 
         if (aMainPart < bMainPart) return -1;
         if (aMainPart > bMainPart) return 1;
 
         if (aParts[4] === "Final") {
-          aNum = "P-1-99";
+          aNum = "C-1-99";
         } else {
           aNum = aParts[3];
         }
         if (bParts[4] === "Final") {
-          bNum = "P-1-99";
+          bNum = "C-1-99";
         } else {
           bNum = bParts[3];
         }
@@ -207,13 +207,11 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
     let currentHover = null;
     let groupCount = 0;
 
-    console.log(sscList)
-
     sscList.forEach(item => {
       let text = item.text;
       let hoverText = item.hoverText;
       let parts = text.split(' ');
-      let partNumber = parts[3].replace('P', '');
+      let partNumber = parts[3].replace('C', '');
       let partMain;
       let subMain;
       if (parts[4] === "Final") {
@@ -245,8 +243,7 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
           if (currentStart !== currentEnd) {
             let hoverSplit = currentHover.split(',');
             let subPartSplit = hoverSplit[3].split(' ');
-            let newHoverText = `${hoverSplit[0]},${hoverSplit[1]},${hoverSplit[2]}, Parts ${subPartSplit[2]}-${currentEnd}`
-            console.log(newHoverText)
+            let newHoverText = `${hoverSplit[0]},${hoverSplit[1]},${hoverSplit[2]}, Chapters ${subPartSplit[2]}-${currentEnd}`
             groupParts.push({
               text: `${currentText.split('-')[0]}-${currentStart}-${currentEnd.replace("15", "F")}`,
               hoverText: newHoverText
@@ -268,8 +265,7 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
             if (currentStart !== currentEnd) {
               let hoverSplit = currentHover.split(',');
               let subPartSplit = hoverSplit[3].split(' ');
-              let newHoverText = `${hoverSplit[0]},${hoverSplit[1]},${hoverSplit[2]}, Parts ${subPartSplit[2]}-${currentEnd}`
-              console.log(newHoverText)
+              let newHoverText = `${hoverSplit[0]},${hoverSplit[1]},${hoverSplit[2]}, Chapters ${subPartSplit[2]}-${currentEnd}`
               groupParts.push({
                 text: `${currentText.split('-')[0]}-${currentStart}-${currentEnd.replace("15", "F")}`,
                 hoverText: newHoverText
@@ -305,8 +301,7 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
     if (currentStart !== currentEnd) {
       let hoverSplit = currentHover.split(',');
       let subPartSplit = hoverSplit[3].split(' ');
-      let newHoverText = `${hoverSplit[0]},${hoverSplit[1]},${hoverSplit[2]}, Parts ${subPartSplit[2]}-${currentEnd.replace("15", "F")}`
-      console.log(newHoverText)
+      let newHoverText = `${hoverSplit[0]},${hoverSplit[1]},${hoverSplit[2]}, Chapters ${subPartSplit[2]}-${currentEnd.replace("15", "F")}`
       groupParts.push({
         text: `${currentText.split('-')[0]}-${currentStart}-${currentEnd.replace("15", "F")}`,
         hoverText: newHoverText
@@ -319,15 +314,13 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
 
 
 
-    console.log(groupParts)
-
     let groupedMainParts = [];
     groupParts.forEach(item => {
-      if (item.text === "MOG SSC ROG P1-1-F") {
+      if (item.text === "MOG SSC ROG C1-1-F") {
         groupedMainParts.push({ text: "MOG SSC Rise of Garden", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 1 Rise of Garden" })
-      } else if (item.text === "MOG SSC SOV P2-1-13") {
+      } else if (item.text === "MOG SSC SOV C2-1-13") {
         groupedMainParts.push({ text: "MOG SSC Sturm of Velgalta", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 2 Sturm of Velgalta" })
-      } else if (item.text === "MOG SSC SOS P3-1") {
+      } else if (item.text === "MOG SSC SOS C3-1") {
         groupedMainParts.push({ text: "MOG SSC Secret of Sacra", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 3 Secret of Sacra" })
       } else {
         groupedMainParts.push(item)
@@ -426,7 +419,7 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
               ranges.push(`C${rangeStart}${rangeStart !== rangeEnd ? `-${rangeEnd}` : ''}`);
             }
           }
-          lnList.push(...ranges.map(range => typeof range === 'string' ? { text: `LN V${volume.name.split(' ')[1]} ${range}`, hoverText: `Light Novel Volume ${volume.name.split(' ')[1]} ${range.includes('-') ? 'Chapters' : 'Chapter'} ${range.split('C')[1].replace('-F', '-Final')}` } : { text: `LN V${volume.name.split(' ')[1]} ${range.type}`, hoverText: `Light Novel Volume ${volume.name.split(' ')[1]} ${range.type}` }));
+          lnList.push(...ranges.map(range => typeof range === 'string' ? { text: `LN V${volume.name.split(' ')[1]} ${range}`, hoverText: `Light Novel, Volume ${volume.name.split(' ')[1]}, ${range.includes('-') ? 'Chapters' : 'Chapter'} ${range.split('C')[1].replace('-F', '-Final')}` } : { text: `LN V${volume.name.split(' ')[1]} ${range.type}`, hoverText: `Light Novel Volume ${volume.name.split(' ')[1]} ${range.type}` }));
         }
       });
     }
@@ -459,13 +452,13 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
             if (episodes[i] === end + 1) {
               end = episodes[i];
             } else {
-              newList.push({ text: `AN S${seasonNumber} E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Anime Season ${seasonNumber} Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
+              newList.push({ text: `AN S${seasonNumber} E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Anime Season ${seasonNumber}, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
               start = episodes[i];
               end = start;
             }
           }
           if (start <= end) {
-            newList.push({ text: `AN S${seasonNumber} E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Anime Season ${seasonNumber} Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
+            newList.push({ text: `AN S${seasonNumber} E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Anime Season ${seasonNumber}, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
           }
         }
       });
