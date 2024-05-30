@@ -12040,6 +12040,7 @@ function SearchPage() {
             "Akane Nishino": AkaneNishinoIcon,
             "Alexia Midgar": AlexiaMidgarIcon,
             "Alpha": AlphaIcon,
+            "??? (Alpha)": AlphaIcon,
             "Beta": BetaIcon,
             "Claire Kagenou": ClaireKagenouIcon,
             "Delta": DeltaIcon,
@@ -12238,7 +12239,7 @@ function SearchPage() {
         sessionStorage.setItem('namedActive', JSON.stringify(namedActive));
       }, [namedActive]);
 
-    const namedCharacters = ["Cid Kagenou", "Akane Nishino", "Alpha", "Beta", "Gamma", "Delta", "Epsilon",
+    const namedCharacters = ["Cid Kagenou", "Akane Nishino", "Alpha", "??? (Alpha)", "Beta", "Gamma", "Delta", "Epsilon",
         "Zeta", "Eta", "Alexia Midgar", "Iris Midgar", "Shadow", "Minoru Kageno", "Stylish Ruffian Slayer"
     ];
 
@@ -12339,7 +12340,6 @@ function SearchPage() {
                 }
             }
         }
-        console.log(sscCheckedItems)
 
         // For Event Stories
         let esCheckedItems = [];
@@ -12367,14 +12367,14 @@ function SearchPage() {
 
         const lnText = { "ln": { ...ln_v1_checked, ...ln_v2_checked } }
         const animeText = { "an": { ...an_s1_checked } }
-        const sscText = { "ssc": {...ssc_temp_checked} }
+        const sscText = { "ssc": { ...ssc_temp_checked } }
 
         animeResults = searchAnime(animeCheckedItems, animeText, filterState.keywords, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, namedActive, namedCharacters);
         lnResults = searchLN(lnCheckedItems, lnText, filterState.keywords, filterState.caseSensitive, filterState.exactMatch);
         sscResults = searchSSC(sscCheckedItems, sscText, filterState.keywords, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, namedActive, namedCharacters)
 
         // Update the state with the search results
-        setSearchResults({ anime: animeResults, ln: lnResults });
+        setSearchResults({ anime: animeResults, ln: lnResults, mg: sscResults });
     }
 
 
