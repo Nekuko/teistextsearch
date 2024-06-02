@@ -24,12 +24,16 @@ function Filters({
   setCanonActive,
   setNamedActive,
   mogDropdownState,
-  setMogDropdownState
+  setMogDropdownState,
+  wnDropdownState,
+  updateWNDropdownState  
 }) {
   return (
     <div className="filters">
       <div className="row-container">
         <MediumsContainer 
+          wnDropdownState={wnDropdownState}
+          updateWNDropdownState={updateWNDropdownState}
           animeDropdownState={animeDropdownState}
           updateAnimeDropdownState={updateAnimeDropdownState}
           lnDropdownState={lnDropdownState}

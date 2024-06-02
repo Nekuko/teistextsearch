@@ -17,3 +17,8 @@ export { default as SherryBarnettIcon } from './SherryBarnettIcon.webp';
 export { default as SkelEtalIcon } from './SkelEtalIcon.webp';
 export { default as StylishRuffianSlayerIcon } from './StylishRuffianSlayerIcon.webp';
 export { default as ZetaIcon } from './ZetaIcon.webp';
+export { default as No666Icon } from './No666Icon.webp';
+export { default as LambdaIcon } from './LambdaIcon.webp';
+export { default as NuIcon } from './NuIcon.webp';
+export { default as StylishBanditSlayerIcon } from './StylishBanditSlayerIcon.webp';
+

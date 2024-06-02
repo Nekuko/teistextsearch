@@ -6,14 +6,17 @@ import MOGDropdownMenu from '../menus/MOGDropdownMenu'; // Import the MOGDropdow
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRotateRight, faC } from '@fortawesome/free-solid-svg-icons';
 import './MediumsContainer.css'; // Import the CSS file
+import WNDropdownMenu from '../menus/WNDropdownMenu';
 
-function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropdownState, updateLNDropdownState, mogDropdownState, setMogDropdownState, volumes, images, canonActive, setCanonActive, canonES }) {
+function MediumsContainer({wnDropdownState, updateWNDropdownState, animeDropdownState, updateAnimeDropdownState, lnDropdownState, updateLNDropdownState, mogDropdownState, setMogDropdownState, volumes, images, canonActive, setCanonActive, canonES }) {
     const { mainChecked } = animeDropdownState;
     const { lnMainChecked } = lnDropdownState;
     const { mogMainChecked } = mogDropdownState; // parts derived from mogDropdownState
+    const { wnMainChecked } = wnDropdownState;
     const [openAnime, setOpenAnime] = useState(false);
     const [openLN, setOpenLN] = useState(false);
     const [openMOG, setOpenMOG] = useState(false);
+    const [openWN, setOpenWN] = useState(false);
 
     const handleReset = () => {
       // Reset anime dropdown state
@@ -21,6 +24,7 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
       updateAnimeDropdownState('filter', '')
       updateAnimeDropdownState('episodeFilters', {})
       updateAnimeDropdownState('seasonsChecked', resetSeasonsChecked(seasons));
+      updateAnimeDropdownState('openVolumes', {})
       setOpenAnime(false);
   
       // Reset LN dropdown state
@@ -28,7 +32,15 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
       updateLNDropdownState('lnFilter', '');
       updateLNDropdownState('chapterFilters', {});
       updateLNDropdownState('volumesChecked', resetVolumesChecked(volumes));
+      updateLNDropdownState('openVolumes', {})
       setOpenLN(false);
+
+      updateWNDropdownState('wnMainChecked', false);
+      updateWNDropdownState('wnFilter', '');
+      updateWNDropdownState('chapterFilters', {});
+      updateWNDropdownState('volumesChecked', resetWNVolumesChecked(wnDropdownState.volumesChecked));
+      updateWNDropdownState('openVolumes', {})
+      setOpenWN(false);
 
       // Reset MOG dropdown state
       resetMogDropdownState()
@@ -140,6 +152,29 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
       });
       return resetState;
     };
+
+    const resetWNVolumesChecked = (volumesChecked) => {
+      // Directly mutate the volumesChecked object
+      Object.keys(volumesChecked).forEach(volumeName => {
+        const volume = volumesChecked[volumeName];
+        console.log(volume)
+        Object.keys(volume).forEach(chapterKey => {
+          if (chapterKey !== 'checked') {
+            volume[chapterKey].checked = false;
+          }
+        });
+    
+        // Reset the checked property for the volume
+        volume.checked = false;
+      });
+    
+      // Return the mutated volumesChecked object
+      return volumesChecked;
+    };
+    
+    
+    
+    
       
     const season1Episodes = useMemo(() => [
         { id: 's1e1', name: '1 | The Hated Classmate' },
@@ -293,6 +328,34 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
       });
   };
   
+  const handleWNMainCheck = () => {
+    const isWNMainChecked = !wnMainChecked;
+    updateWNDropdownState('wnMainChecked', isWNMainChecked);
+  
+    // Update the volumesChecked state for each chapter in each volume
+    const updatedVolumesChecked = {};
+    Object.keys(wnDropdownState.volumesChecked).forEach(volumeName => {
+      const volume = wnDropdownState.volumesChecked[volumeName];
+      const updatedVolume = {};
+      Object.keys(volume).forEach(chapterKey => {
+        if (chapterKey !== 'checked') {
+          updatedVolume[chapterKey] = {
+            ...volume[chapterKey],
+            checked: isWNMainChecked
+          };
+        }
+      });
+  
+      // Update the checked property for the volume
+      updatedVolume.checked = isWNMainChecked;
+      updatedVolumesChecked[volumeName] = updatedVolume;
+    });
+  
+    updateWNDropdownState('volumesChecked', updatedVolumesChecked);
+};
+
+
+  
     
     
     
@@ -317,6 +380,20 @@ function MediumsContainer({animeDropdownState, updateAnimeDropdownState, lnDropd
           type="checkbox"
           checked={lnMainChecked}
           onChange={handleLNMainCheck}
+          />
+      </div>
+      <div className="checkbox-container">
+          <WNDropdownMenu 
+          wnDropdownState={wnDropdownState}
+          updateWNDropdownState={updateWNDropdownState}
+          openWN={openWN}
+          setOpenWN={setOpenWN}
+          volumeImages={images.animeCoverImages}
+          />
+          <input
+          type="checkbox"
+          checked={wnMainChecked}
+          onChange={handleWNMainCheck}
           />
       </div>
       <div className="checkbox-container">

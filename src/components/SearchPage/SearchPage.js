@@ -6,7 +6,8 @@ import Results from '../Results/Results' // Import the Results component
 import { searchLN } from '../Search/searchLN';
 import { searchAnime } from '../Search/searchAnime';
 import { searchSSC } from '../Search/searchSSC';
-import { AkaneNishinoIcon, AlexiaMidgarIcon, AlphaIcon, BetaIcon, CidKagenouIcon, ClaireKagenouIcon, DeltaIcon, EpsilonIcon, EtaIcon, GammaIcon, IrisMidgarIcon, MinoruKagenoIcon, PoTatoIcon, RoseOrianaIcon, ShadowIcon, SherryBarnettIcon, SkelEtalIcon, StylishRuffianSlayerIcon, ZetaIcon } from '../../images/characterIcons';
+import { searchES } from '../Search//searchES'
+import { LambdaIcon, StylishBanditSlayerIcon, NuIcon, No666Icon, AkaneNishinoIcon, AlexiaMidgarIcon, AlphaIcon, BetaIcon, CidKagenouIcon, ClaireKagenouIcon, DeltaIcon, EpsilonIcon, EtaIcon, GammaIcon, IrisMidgarIcon, MinoruKagenoIcon, PoTatoIcon, RoseOrianaIcon, ShadowIcon, SherryBarnettIcon, SkelEtalIcon, StylishRuffianSlayerIcon, ZetaIcon } from '../../images/characterIcons';
 import { ANS1Cover, ANS2Cover, LNV1Cover, LNV2Cover, LNV3Cover, LNV4Cover, LNV5Cover } from '../../images/covers';
 
 function SearchPage() {
@@ -2238,6 +2239,2189 @@ function SearchPage() {
             }
         }
     }
+    const mg_es_rog = {
+        "Rose of Garden": {
+            "e1": [
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "An old fortress, the headquarters of the Shadow Garden. There, recruits endure harsh training under Lambda's strict gaze.",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/1zvbTgQrOYePvdNHW7XXkr9NPKd9OFvyr/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "A young woman who only just joined the Garden, given the name Number 666, is one such trainee\u2014",
+                    "line": 2,
+                    "url": "https://drive.google.com/file/d/1P9XccCmglxk2gvxLj4DoqOVfV3K4pcPM/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Haaahhh!!!",
+                    "line": 3,
+                    "url": "https://drive.google.com/file/d/1HuiVQ8R8Xn1IW65ZnPQuekEP7KtOFzSU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...Pathetic. Hmph!",
+                    "line": 4,
+                    "url": "https://drive.google.com/file/d/15JSAUYslEKodkfFfFQpP8TAStOVVp2Kv/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Ugh! *huff, huff*",
+                    "line": 5,
+                    "url": "https://drive.google.com/file/d/1u9nKVRXO91PH3eXD6LFOhitm_vZwk7OF/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "I'm here training you myself, and this is the best you can do? You lack both skill and passion. Do you even want to be here?",
+                    "line": 6,
+                    "url": "https://drive.google.com/file/d/1ZjXJOOtf10wsEnZaNCN2VD9L0jEAG7Qx/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Yes! I do!",
+                    "line": 7,
+                    "url": "https://drive.google.com/file/d/1NyFykrs9uwepJ_UUz65YyEO6HSDZD8N9/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Then focus! You think you can beat me with your mind on everything but your swordplay?!",
+                    "line": 8,
+                    "url": "https://drive.google.com/file/d/1nWvMICk1jGhL4kzQJeygVswKZQmkokIl/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Well you can't! I won't waste my time on someone who can't even keep her attention on her own training!",
+                    "line": 9,
+                    "url": "https://drive.google.com/file/d/1glO98cXvcrcsnjW_c7_88kCFtkH-Nd_4/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "I'm sorry! Please, just give me a little longer!",
+                    "line": 10,
+                    "url": "https://drive.google.com/file/d/1q1nToUWWgcHuNcdLvG3-3JLM5XnhDyaW/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...No, we're through. There's no merit or sense in me ninstructing you as you are now.",
+                    "line": 11,
+                    "url": "https://drive.google.com/file/d/1ReQOyPJSUZL9kEUpQDJzX0hlgNsXM0sL/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "But...!",
+                    "line": 12,
+                    "url": "https://drive.google.com/file/d/1oWzqUda3fbNywo3WQ8jJGKpOVZRrqI6o/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "What's the point if nothing changes? I know I don't have any breath to waste on soldiers who don't show a shred of promise!",
+                    "line": 13,
+                    "url": "https://drive.google.com/file/d/1R8-6HQODMD8Yiz6fZ34YRYYOOELuXx6U/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "If you understand, then go run laps. At least that should do you some good.",
+                    "line": 14,
+                    "url": "https://drive.google.com/file/d/1DyPxD2xczJbJmvcBjDYbpOKdiyl5ikLX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...Understood.",
+                    "line": 15,
+                    "url": "https://drive.google.com/file/d/1JSBL9aFGc-mBLNx7hOUt3fMIfF8yk7fq/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Choking down her frustration and shame, Number 666 sets down her weapon and goes to run as ordered.",
+                    "line": 16,
+                    "url": "https://drive.google.com/file/d/1xTSJuUywgoMDxXjOEJQNUXCGswQudSNz/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "*huff, huff*",
+                    "line": 17,
+                    "url": "https://drive.google.com/file/d/13j_ZlXhhy4OIM5jlOW-KYDxgcx0LjO5Q/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(What am I doing? This isn't what I came here for...)",
+                    "line": 18,
+                    "url": "https://drive.google.com/file/d/1DnjT-5TQHng7UFYQfBOQG0-7xx2SaK-5/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(No, this is all because of how pathetic I am. I'm weak, and that's no one's fault but my own...)",
+                    "line": 19,
+                    "url": "https://drive.google.com/file/d/1cfbtF2jmzrqC30miI8wOEfEspKEm-X7c/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(On the day I made my decision, I was still...)",
+                    "line": 20,
+                    "url": "https://drive.google.com/file/d/1I4a0B4c15w7q0LeTuiBTnWQrr6-61tqX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "Rose",
+                    "subtitle": "Perhaps I'll return to the capital, meet with the factions opposed to Perv...",
+                    "line": 21,
+                    "url": "https://drive.google.com/file/d/1FYha_bJhmCcGkW0f58al35MZRbzqR1hz/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "You have two choices.",
+                    "line": 22,
+                    "url": "https://drive.google.com/file/d/1wJubXF4VKi5R0MbkVEV5hkj4sXjfgh7z/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "Rose",
+                    "subtitle": "Huh?!",
+                    "line": 23,
+                    "url": "https://drive.google.com/file/d/1W8SqTaXdfUKQoQ5bfiBdno7JtlaDe7pO/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "Rose",
+                    "subtitle": "Ch-Choices...?",
+                    "line": 24,
+                    "url": "https://drive.google.com/file/d/1lWuQNemmyYJCeB7CVui7tJXnjlNHDYR2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "You can fight alone...or you can fight alongside us, the Shadow Garden. But you have to choose.",
+                    "line": 25,
+                    "url": "https://drive.google.com/file/d/1fjU6TwNV6YkktMBhdA7o-8O1BEXxYYl5/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "Rose",
+                    "subtitle": "...",
+                    "line": 26,
+                    "url": "https://drive.google.com/file/d/1du25Q2fRGg-Zj4PqHrND2TTkojsaYMpO/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "Rose",
+                    "subtitle": "Can you...save the Kingdom of Oriana?",
+                    "line": 27,
+                    "url": "https://drive.google.com/file/d/1GQB7gx-IUxaEAvL76t3gGaZ92vZEKYq1/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Right now, we have no reason to act on your behalf. If you want to save your country, show us your worth.",
+                    "line": 28,
+                    "url": "https://drive.google.com/file/d/1PWbjb2arNEnO5X-MCRQfyUoupS-JjmPu/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "Rose",
+                    "subtitle": "Worth...?",
+                    "line": 29,
+                    "url": "https://drive.google.com/file/d/13T07e85KUsJpm6v8l7wh7iIEi1sL1nIO/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Yours, and that of the Kingdom of Oriana.",
+                    "line": 30,
+                    "url": "https://drive.google.com/file/d/1v7YJk1PtN9bYDAxL1h0tBIz3s_JZy46W/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "Rose",
+                    "subtitle": "...Can you truly save my kingdom?",
+                    "line": 31,
+                    "url": "https://drive.google.com/file/d/1aU5kXA8250mwEChBYYc9jdlTgbwZgAXW/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "That depends upon you.",
+                    "line": 32,
+                    "url": "https://drive.google.com/file/d/1vxsSBAJbe5Z7uPFTUaQ6uYKmrVl58d2-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "Rose",
+                    "subtitle": "...Is Slayer\u2014no, Shadow\u2014the leader of your organization?",
+                    "line": 33,
+                    "url": "https://drive.google.com/file/d/16-V9nO3-rClRJnjMoqm9YdvGkKtBLybf/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...He is.",
+                    "line": 34,
+                    "url": "https://drive.google.com/file/d/18K6CInm6lXQf6ma4zoH3VVAxmaIfoECn/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "Rose",
+                    "subtitle": "...",
+                    "line": 35,
+                    "url": "https://drive.google.com/file/d/1Po3kBWg8AMxG4fT7ONMs2Pn_34M5aL0E/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "Rose",
+                    "subtitle": "...Forgive me, Father.",
+                    "line": 36,
+                    "url": "https://drive.google.com/file/d/1rzhgFWOWbQPfv9BAG6RCW66wYL0_M4G4/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "Rose",
+                    "subtitle": "...Then my blade is yours.",
+                    "line": 37,
+                    "url": "https://drive.google.com/file/d/1B1IM1T2zJjOu1R1V_D9sKylp1RkGuEld/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(...That's right. I came here because I was set on saving Oriana.)",
+                    "line": 38,
+                    "url": "https://drive.google.com/file/d/1Bk2SY93Kjyxy23mwH76zx9OqT20c7aay/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(And yet, nothing is going as I'd hoped... I'm losing time while gaining nothing in return.)",
+                    "line": 39,
+                    "url": "https://drive.google.com/file/d/1HLJEaZVC7UVWiNepGD_JIJUe0Xawp9N6/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(If this continues, then Oriana is doomed...)",
+                    "line": 40,
+                    "url": "https://drive.google.com/file/d/1kCD6-ILTTnyqX4acr75O53awYxmXc-g9/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Number 666 is suddenly overcome by a powerful wave of uncertainty and panic.",
+                    "line": 41,
+                    "url": "https://drive.google.com/file/d/1gJXD-JUOBHU9iLcoF2LUnkI84qNEH6Nq/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(I can't keep going on like this. I have to do something...)",
+                    "line": 42,
+                    "url": "https://drive.google.com/file/d/1b6TdFHZ84prgGjDdPHUwgi0d1cdTTjOd/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(But...what exactly is it that I'm supposed to do? I know I need to get stronger...)",
+                    "line": 43,
+                    "url": "https://drive.google.com/file/d/1SUe-pxJujsvUtHK3EOmbZxRBirVYlajt/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(But how can I do that when I'm not even sure where to start...? I'm at a complete loss.)",
+                    "line": 44,
+                    "url": "https://drive.google.com/file/d/1xnlfHLdQ2iwDfYmy7ajAJzHYnEfnDqaZ/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Beset by confusion and worry, all Number 666 can do is run until the sun sets, the answers still eluding her.",
+                    "line": 45,
+                    "url": "https://drive.google.com/file/d/1WkY4eSjZ6bfalN028YA54V8iRVgOz2aU/view?usp=drivesdk"
+                }
+            ],
+            "e2": [
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "It is night, and a lone figure stands on the training ground, swinging her sword intently\u2014Number 666.",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/12Xod_KN0drBxJCh5SPvh5CGigQQnHxCQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...",
+                    "line": 2,
+                    "url": "https://drive.google.com/file/d/1y9zlXL-mnh6YbAnbLjyQCqn48QbHSe5g/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(I should be exhausted, but I'm much too anxious to sleep...)",
+                    "line": 3,
+                    "url": "https://drive.google.com/file/d/1eWp4c1kIHEtL7lT6Yrm1blIjDSXEEWgY/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(The only thing that can calm me in this state is pushing myself past my limits.)",
+                    "line": 4,
+                    "url": "https://drive.google.com/file/d/1w5W2rItI8efNGK52EZDzcVU63BZNgV8X/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(I'll swing my sword just a little more and become that tiny bit stronger. There is so much I still lack, but even the smallest effort ought to make some positive change.)",
+                    "line": 5,
+                    "url": "https://drive.google.com/file/d/1euG0MSgJwUqvROskw-NsuoRZgZyN-ThQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Ha! Yaah!",
+                    "line": 6,
+                    "url": "https://drive.google.com/file/d/1NJwZg_mVaa9ZijkOgUquTaB9oJTLL-NZ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "I thought someone was making an awful racket and look who I find...Number 666.",
+                    "line": 7,
+                    "url": "https://drive.google.com/file/d/1D1ag3SjBXB6MGOSreyIiMjODW8mKGBqi/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Instructor Lambda?! My apologies, I'll leave at once!",
+                    "line": 8,
+                    "url": "https://drive.google.com/file/d/1894wCxzdXnVyItyW8rzxEFVdh5qDJl14/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Before you do, let me ask you something. Where did you learn those sword techniques?",
+                    "line": 9,
+                    "url": "https://drive.google.com/file/d/1g9ysci4d0IEvjpc9Py6k-58rJ_02-baM/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "I...",
+                    "line": 10,
+                    "url": "https://drive.google.com/file/d/1oD0RtSYSDdbWneIr4tc10Wjen3nHiAfn/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "??? (Stylish Bandit Slayer)",
+                    "subtitle": "Hah!",
+                    "line": 11,
+                    "url": "https://drive.google.com/file/d/1xpE1tIeWVjlz8tLFsMY8xk1h35cO_7sY/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "I'm mimicking a style of swordplay that I admire. Drawing upon a childhood memory that was burned into my mind.",
+                    "line": 12,
+                    "url": "https://drive.google.com/file/d/1wCH1CatF7Jpm-nCD9AjDeF5o1snhmmJF/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "A style of swordplay you admire, huh... I see.",
+                    "line": 13,
+                    "url": "https://drive.google.com/file/d/18iTVhwgICwHg87L9vwO35qunR5n-BW5K/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "(A style that combines both power and grace...much like that of Master Shadow and Lady Alpha.)",
+                    "line": 14,
+                    "url": "https://drive.google.com/file/d/1kYsOa70qs1pY98iCfcQBJukZri286eM-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "(I don't know why someone like her, who only just joined the Garden, would be familiar with their techniques...)",
+                    "line": 15,
+                    "url": "https://drive.google.com/file/d/1AyNyCOB1HwKv_KnisQXLr43C-NmX8xsR/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "(Still, this is a far cry from their brilliance. Even for simple imitation, it's much too crude.)",
+                    "line": 16,
+                    "url": "https://drive.google.com/file/d/1X6U8nFplBay0Q0yEI3Gk7rVqv_aRrAiQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Um... Am I doing something wrong?",
+                    "line": 17,
+                    "url": "https://drive.google.com/file/d/1fOvH97j6CDiJz996Yp55ZJeQnAsxhuLg/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...No, it's nothing. I've changed my mind. I'm going to offer you a test.",
+                    "line": 18,
+                    "url": "https://drive.google.com/file/d/1tzuA1_lFQIp16lsMYWx7yOhrj8oGpztS/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Y-Yes, ma'am! Thank you so much!",
+                    "line": 19,
+                    "url": "https://drive.google.com/file/d/14hVSEhnJ_zvHwodzkTItd-obEd3pQJ5I/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Now...cut that boulder over there.",
+                    "line": 20,
+                    "url": "https://drive.google.com/file/d/1jGJARUucE_ywtHoHVDxL5x68fzuUYOyD/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Lambda points to a large boulder.",
+                    "line": 21,
+                    "url": "https://drive.google.com/file/d/1kNDuuE38zvo9THctUkZ6hJ5vYV3xTjfx/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Cut it...? Is that all?",
+                    "line": 22,
+                    "url": "https://drive.google.com/file/d/10DYccYvn4wgVSU6bwTMhA1zcZoTkj9bH/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Anyone could cut the boulders around here if they infuse a little magic into their sword...",
+                    "line": 23,
+                    "url": "https://drive.google.com/file/d/1stqa78HCBfjtaClOwkqMaff9YXh8yG3q/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Spare me. Just show me you can do it.",
+                    "line": 24,
+                    "url": "https://drive.google.com/file/d/1sIJCWn1qhBfg4dt2ZR-Dlalm0HM1HJiL/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Understood. Now then...haaa!!!",
+                    "line": 25,
+                    "url": "https://drive.google.com/file/d/1s22Mjs_4_2kY1bctoH8jLulflGdWtyrz/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Number 666 fills her sword with magic and swings it at the boulder, causing it to break part with a clatter.",
+                    "line": 26,
+                    "url": "https://drive.google.com/file/d/1MeviglNtrUhopsdcNppofZA5EmK1JmlN/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...Phew. Instructor Lambda, as you asked, I\u2014",
+                    "line": 27,
+                    "url": "https://drive.google.com/file/d/1Ax5Mpm3v1j6UC7-6zn9KLfxJnnEOs0tr/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "As I asked? Do you not even know the difference between \"cut\" and \"shatter\"?",
+                    "line": 28,
+                    "url": "https://drive.google.com/file/d/1SpxvGAMMYM2SxKHQvbuOoUpMWutIQ_q5/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Wh-What do you mean...?",
+                    "line": 29,
+                    "url": "https://drive.google.com/file/d/1P7QsnMSk8XW1eMSRi1QUbpZYPh7EPwtC/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Allow me to demonstrate. This is what I mean by \"cut\"!",
+                    "line": 30,
+                    "url": "https://drive.google.com/file/d/1l9SkuJ5VwEt82uwToBWE_zCrcrKdbLbX/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Lambda unleashes a magic-infused strike toward one of the boulders, cleanly bisecting it without breaking apart. The stone had quite literally been cut.",
+                    "line": 31,
+                    "url": "https://drive.google.com/file/d/1xoV7NCx8j03f4aJe8BdcF8C-IHF030-_/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "A-Amazing... You sliced it so cleanly...!",
+                    "line": 32,
+                    "url": "https://drive.google.com/file/d/1AQdTTYsF5XTMsQsMS4yNWPy_xVSVCcyL/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "I wouldn't be so happy. Because I expect you to do this too.",
+                    "line": 33,
+                    "url": "https://drive.google.com/file/d/1uKmSasRalMh20m4oQKEKuXF3U3XMOnD7/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "You've got one week. Make sure you can cut a boulder by then.",
+                    "line": 34,
+                    "url": "https://drive.google.com/file/d/1dg0pzEogLVbZvnbhf9pa9fZeelYHxcCw/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "But I want you back here for practice tomorrow. Think of rest as another skill to master.",
+                    "line": 35,
+                    "url": "https://drive.google.com/file/d/1Q3bsvDL8k-TeRlcnnwhjkxMESZZi_DeV/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Yes, ma'am! Thank you!",
+                    "line": 36,
+                    "url": "https://drive.google.com/file/d/1XZ-j3ebaIR0BWyuc_cAA3dEY9bWmPB81/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(This is not some unreasonable task... No, I've been given a chance.)",
+                    "line": 37,
+                    "url": "https://drive.google.com/file/d/1u_CBdsUBwSG1NGTLFqRu0o_vXwHVAqo-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(I've been blundering along, unsure of what to do, but this could very well show me the way forward.)",
+                    "line": 38,
+                    "url": "https://drive.google.com/file/d/1VEI0svBE1Ja0k6L7ajGzsoDRuuGZphs_/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(...I'll prove I can do it, no matter what!)",
+                    "line": 39,
+                    "url": "https://drive.google.com/file/d/1xyS6chor_LPxFfIahKMElOIpeOJS3snY/view?usp=drivesdk"
+                }
+            ],
+            "e3": [
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Lambda had given Number 666 a task. But try as she might to cleave a boulder in two within the week she had been given\u2014",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/1UAF1g_1KAS9e5HElT-rmDit2loHslKlS/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Haaah!!!",
+                    "line": 2,
+                    "url": "https://drive.google.com/file/d/1c4iga-M1R733Uvfvlo58lzFZMEf277jR/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...Another failure. All I'm doing is smashing them.",
+                    "line": 3,
+                    "url": "https://drive.google.com/file/d/1xZAyMbBJWE4aPhoVGAkmQ8PuwU6CwIo6/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(It's been four days...and I haven't made any progress. I knew it wouldn't be easy, but I never thought I'd struggle this much.)",
+                    "line": 4,
+                    "url": "https://drive.google.com/file/d/1PSTx-cCRN221yidZAV7-fQgFAnH_5_Xf/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "What is it I'm missing here...",
+                    "line": 5,
+                    "url": "https://drive.google.com/file/d/1jfPdQhs3pZYG_qQwL3uh3d0xYBCXhkpF/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(I have to become stronger... If I don't, then I'll lose even more, face even more heartbreak.)",
+                    "line": 6,
+                    "url": "https://drive.google.com/file/d/1cG2nnji02oMXY1h8yt2SnH-u8F5h0Ctl/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(...But how do I do that? What is it I need to do? I don't even know what it is that I lack...)",
+                    "line": 7,
+                    "url": "https://drive.google.com/file/d/1cu0AbvXh5NzPpAMUYeqY4SGEltq_a3bE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(...No. I can't lose myself to uncertainty and fear again. At times like these, I just need to stay calm.)",
+                    "line": 8,
+                    "url": "https://drive.google.com/file/d/1zGNT_QSiKFQ_99YznQ4jEoj9JGUhLNzP/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Whew...",
+                    "line": 9,
+                    "url": "https://drive.google.com/file/d/153npwkBnW5w1mdNtrLvR_oi0aUivPjRM/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(Maybe it's a sign of how weak-hearted I am that I get upset so easily.)",
+                    "line": 10,
+                    "url": "https://drive.google.com/file/d/1wOD5ZowQhryTx72nwaKRUVRwPaKAve5B/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(...I need to rethink this with a calm head and heart. Why am I failing to cut the boulder, and what can I do to change that.)",
+                    "line": 11,
+                    "url": "https://drive.google.com/file/d/1Ozbvyz3yDHTkYN-Aqlo6wVWZ-Ip57fyr/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "The swordplay I seek is...",
+                    "line": 12,
+                    "url": "https://drive.google.com/file/d/1oW1MKDYWRhe6sLmQMYPUV4hh_ci0tO_1/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Number 666 turns her mind to a memory from the past, to the graceful swordsmanship she witnessed amidst the terror and confusion of that day.",
+                    "line": 13,
+                    "url": "https://drive.google.com/file/d/15-efzddM0v9F7z5azUjoKh9GvY4_MY5i/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(What I saw that day was much more refined and precise, yet also free of excess.)",
+                    "line": 14,
+                    "url": "https://drive.google.com/file/d/1MHfgHKoe3BoqMpzeGSy9rQ7i2vFovEkG/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(The person I'd aspired to for so long..he bestowed me with power, but I haven't been able to put it to any use at all... What is it that makes he and I so different...)",
+                    "line": 15,
+                    "url": "https://drive.google.com/file/d/1EBFNb040ucYW6wlod5gebBgbRW2KL25q/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "\"Do not forget. True strength does not come from power, but from within you.\"",
+                    "line": 16,
+                    "url": "https://drive.google.com/file/d/1ppfcax5tWIH934Qf2_NZFUZazgSzJji_/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Ah...!",
+                    "line": 17,
+                    "url": "https://drive.google.com/file/d/1rDkz5E5udrt42OYAsJhRyTMtuWyv4viF/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...True strength?",
+                    "line": 18,
+                    "url": "https://drive.google.com/file/d/1wrPYoy3tq1MsarlkXrBgcv4UpGnc5DEv/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(That's right... The way he swung his sword, it wasn't with magic-infused brute force, but...)",
+                    "line": 19,
+                    "url": "https://drive.google.com/file/d/1270b_UE3rwe93frQ0mGmIfmFFKVI0ppJ/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "And then, the day arrives.",
+                    "line": 20,
+                    "url": "https://drive.google.com/file/d/12Qix7bVpsY9A1r05S0ts747xnQkTCkH7/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "It's been a week. Judging by your face, I take it you've had a breakthrough.",
+                    "line": 21,
+                    "url": "https://drive.google.com/file/d/1rAd7dqOOc3u5SVJ7YwaSwqR6s712gNs6/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Now, Number 666! Show me what you've learned!",
+                    "line": 22,
+                    "url": "https://drive.google.com/file/d/1JytXbDpFJKepRRGwC7Ww8b5fty3zlw6-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Yes, ma'am!",
+                    "line": 23,
+                    "url": "https://drive.google.com/file/d/1FONKJaS9fmuk93K3ZeanIf55SB49podu/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...",
+                    "line": 24,
+                    "url": "https://drive.google.com/file/d/1nF6uSfY_QheQfV6uxrPcKPGPxc2mfTnA/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Magic slowly flows into Rose's sword.",
+                    "line": 25,
+                    "url": "https://drive.google.com/file/d/15-kSsr9BYqa4HIh1BbzzI04n0JyjaRMJ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "(Her magic is calm, not rough like before. Looks like she really has figured something out.)",
+                    "line": 26,
+                    "url": "https://drive.google.com/file/d/1lBAstrYb6cH3LqnfsQyD5MkTYRmP3j0h/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...Yaaah!!!",
+                    "line": 27,
+                    "url": "https://drive.google.com/file/d/1agN7me8GfrYV-cw5Vbam_tYn751hZqO_/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "With a yell, Number 666 cleaves the boulder in two with her blade.",
+                    "line": 28,
+                    "url": "https://drive.google.com/file/d/1lovjvdjEyq3SPYaBi-wTf_X_sT2Yp7SL/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...Phew. How was that?",
+                    "line": 29,
+                    "url": "https://drive.google.com/file/d/1jupLuyFQwN74nDrhFUqo85qk-miNGAIA/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...Not quite perfect. You spent too much time preparing, which isn't practical.",
+                    "line": 30,
+                    "url": "https://drive.google.com/file/d/1Y76L3dCucGXIM9YUeJSLlSl233Wip69Q/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "But...it's a world of difference from that sloppy display you put on last time. Good work.",
+                    "line": 31,
+                    "url": "https://drive.google.com/file/d/1UmiIwzZVvUoae1KxJdHZIi8asJeRWkwE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "*gasp* Thank you!",
+                    "line": 32,
+                    "url": "https://drive.google.com/file/d/1fSGAZcfGPT0CtX_wQVKz-vH1I37YNAtc/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "So, Number 666, did you realize anything while practicing?",
+                    "line": 33,
+                    "url": "https://drive.google.com/file/d/1HL9j9DD4dsV4MsFRFM8miisMTlPUmHGr/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Well...I compared the beautiful swordsmanship I saw in the past with my own here in the present.",
+                    "line": 34,
+                    "url": "https://drive.google.com/file/d/1SbXNw17yieLx1nYmwHxQQBymvNU2xBts/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "I suppose my abilities are approaching what I saw that day. That...perhaps they are no longer a mockery, a pale imitation.",
+                    "line": 35,
+                    "url": "https://drive.google.com/file/d/1hGm5fvbxG37Vcw9lfBifOdXw8m54Ci2D/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "As I thought back on that memory, I realized that his movements were graceful and subtle, not brash and emotional like mine.",
+                    "line": 36,
+                    "url": "https://drive.google.com/file/d/1u2m7d5iLoL_rhHnoAEkLRlm0FYtomaO-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "It's not amassing huge amounts of magic that matters... Until now I was too focused on what I was missing, to the point that I failed to see how futile that was.",
+                    "line": 37,
+                    "url": "https://drive.google.com/file/d/1Bn34qiH3H_1l18GOymg0WEeUaS4qFDf6/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(\"True strength does not come from power, but from within you.\" I think understand those words a little better now. You saved me yet again...)",
+                    "line": 38,
+                    "url": "https://drive.google.com/file/d/1sAYMsZg_ZJIxlv3kFkW0yMLBDt7UOSvy/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...Correct. Magic is not a blunt instrument where the more you pile on, the better. You need to be able to wield it properly.",
+                    "line": 39,
+                    "url": "https://drive.google.com/file/d/1F9hkcnUFH2ABFhR5HzVNWj3b2JMTXlTH/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Never forget that.",
+                    "line": 40,
+                    "url": "https://drive.google.com/file/d/1XBNYdrc13nz5nVITLTdGIgYu96caEpEn/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Yes, ma'am!",
+                    "line": 41,
+                    "url": "https://drive.google.com/file/d/1QGuZ242V_SpzlPSBIVxiN2d2UUK8wwRz/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(This is the first time I've felt results since coming to the Shadow Garden.)",
+                    "line": 42,
+                    "url": "https://drive.google.com/file/d/10kSMGt8G2U_93EW3CYtfab8tYKTZqRfZ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(If I keep this up, I will become stronger! Then, one day, I can save my homeland...)",
+                    "line": 43,
+                    "url": "https://drive.google.com/file/d/1Y-FavWBFELdCC14PcnwVBDNHhE3lbjbU/view?usp=drivesdk"
+                }
+            ],
+            "e4": [
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Having completed Lambda's task and grasping how to manipulate magic, Number 666 gradually begins to stand out from the other trainees.",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/15xABPfLiJbqF0di5MsLDY__Ots2jCCjv/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(I managed to keep up again today... I'm improving, bit by bit.)",
+                    "line": 2,
+                    "url": "https://drive.google.com/file/d/1Od_oizrtvPLOLCfFoZGh2L9lE04Awit1/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(I need to prove myself, and quickly. That will open the way for me.)",
+                    "line": 3,
+                    "url": "https://drive.google.com/file/d/1gNzG0NXJ3DnoxcChTOSe-fYTkS_H-y1D/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(...Time is of the essence. I must get them to recognize my skills as quickly as I can, before Oriana is completely lost...)",
+                    "line": 4,
+                    "url": "https://drive.google.com/file/d/1RlBN6LYQx6-87YoD1di6qt28C4AXzMYO/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Hey, Number 666. Clean out your ears!",
+                    "line": 5,
+                    "url": "https://drive.google.com/file/d/1WdqQaKOUMcc5icukzP4QBbndbBqMhPGv/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Y-Yes, ma'am! How can I serve?!",
+                    "line": 6,
+                    "url": "https://drive.google.com/file/d/1BQT21wsYbNbbdtxh_JSVTgPY_YGBwuTd/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "You've been looking pretty good out there lately. Maybe you're finding it so easy you think it's okay to daydream?",
+                    "line": 7,
+                    "url": "https://drive.google.com/file/d/1FKnpaewQ3xfToc7UrRmuSE4j8qSGAF4n/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "N-No, ma'am, I'm sorry...",
+                    "line": 8,
+                    "url": "https://drive.google.com/file/d/1owzmz0z3vgJKol3nsYHVP1H-fMLJdgDA/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "I have something special planned for you tomorrow. Be ready.",
+                    "line": 9,
+                    "url": "https://drive.google.com/file/d/1akUQRxl1AhnepsK8C_4mXE8nVOxgKmLS/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Th-Thank you! May as I ask what it is...?",
+                    "line": 10,
+                    "url": "https://drive.google.com/file/d/1ghglGwd_ilnu-9-nqXBC131mEt9KJYIf/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Simple. You'll be facing someone more skilled than usual. And you better believe you won't have any time for stray thoughts!",
+                    "line": 11,
+                    "url": "https://drive.google.com/file/d/1h5VqS_f9lxKniYLBigv1CSXP-UiYpNfT/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Yes, ma'am! I'll be prepared!",
+                    "line": 12,
+                    "url": "https://drive.google.com/file/d/18HaW482zgjDHSQRxZsYByKVTGQPusNfB/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "The next day, Number 666 is set to spar with an opponent hand-picked for her by Lambda.",
+                    "line": 13,
+                    "url": "https://drive.google.com/file/d/1hVqarPxjBUUkFX2okD8ZRCOEPwDh7nin/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Neither excited nor apprehensive, she merely waits quietly for the moment to arrive.",
+                    "line": 14,
+                    "url": "https://drive.google.com/file/d/10hlYCY_ogJlgVmDotl0oszLdK82TMpt-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Now, let us commence Number 666's special training. ...Nu!",
+                    "line": 15,
+                    "url": "https://drive.google.com/file/d/1oKq01Q3vkiAf7Wu0WpZ-crQbaxAQe6ok/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "Yes, I'm here.",
+                    "line": 16,
+                    "url": "https://drive.google.com/file/d/1gVwXrJ_BSgytJxPdFCZ_R0BjO_4jFQcS/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Huh...?!",
+                    "line": 17,
+                    "url": "https://drive.google.com/file/d/1iqiHdRXLFG1AlurjUNBFgafueniLeI4c/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(But when did she get here...?! So she's Nu...)",
+                    "line": 18,
+                    "url": "https://drive.google.com/file/d/1BUuJ9qatwiUIr6SHQEc8FHXaLjJIOO9F/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Go a round with 666 here. And no mercy or going easy just because you're both humans.",
+                    "line": 19,
+                    "url": "https://drive.google.com/file/d/1nojZXLA7Tirl2R5dHDDUa7rhOfxopQ0D/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "Understood... I look forward to facing you today, Number 666.",
+                    "line": 20,
+                    "url": "https://drive.google.com/file/d/1kJChL4SZxpuYtS6o_g16BQA96CvsvlK0/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Likewise, thank you for the opportunity!",
+                    "line": 21,
+                    "url": "https://drive.google.com/file/d/1uRx_O6Ni7KojXoos7atEj5IVmXI23wrF/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "And thus Number 666's special lesson begins...",
+                    "line": 22,
+                    "url": "https://drive.google.com/file/d/1kruyfsgSqBFpt2QdVSBR-EvSUYytBY3o/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "Heh...!",
+                    "line": 23,
+                    "url": "https://drive.google.com/file/d/15mi8XbqEnU0agfNPSBX-g0AxNgjHYSDl/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...Urgh!",
+                    "line": 24,
+                    "url": "https://drive.google.com/file/d/1FMB4hJGYxDlmDtYCxSLiCrje5Wg6pVR4/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(I knew she would be strong...but to this extent! This fight couldn't be more one-sided...)",
+                    "line": 25,
+                    "url": "https://drive.google.com/file/d/13eoscNJJgDuTbYc2d0bg2Zyh2jKm-SRH/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(Nevertheless, my own swordplay and magic aren't too inferior to hers. I can still win if I can just find an opening to exploit!)",
+                    "line": 26,
+                    "url": "https://drive.google.com/file/d/1V7iMJYh2dOHtm8fYlimKJttKk4iWFLC-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(Besides, I have a reason not to lose! I must take back the Kingdom of Oriana!)",
+                    "line": 27,
+                    "url": "https://drive.google.com/file/d/13GWYFJ0KtuZ3cjMcJK9Zbeli_kCsTlCk/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Haaah!!!",
+                    "line": 28,
+                    "url": "https://drive.google.com/file/d/1HjK0xIyRJ3vWnlIE166Z_dzARYiR_TZc/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "...Weak.",
+                    "line": 29,
+                    "url": "https://drive.google.com/file/d/1-v_8zhOuCHc0sh8kTkwuoD30ragOLZHI/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "With a flash of her blade, Nu causes Number 666 to lose her form.",
+                    "line": 30,
+                    "url": "https://drive.google.com/file/d/1mlI937cxS32vWEPt_XIAVWnApBZLBwgE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Wha...?!",
+                    "line": 31,
+                    "url": "https://drive.google.com/file/d/1SPKSuGTGlP2sZNuIHNtTH3qWgr3Z8Ffj/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "The tip of Nu's sword points at Rose's throat.",
+                    "line": 32,
+                    "url": "https://drive.google.com/file/d/1cS7s81TKWQXUeaqP2r8Blz4_XtCYEsmQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "...Your loss.",
+                    "line": 33,
+                    "url": "https://drive.google.com/file/d/1MFcDy6y0NFAx_CMlnkj9YkOTgs0uQQt7/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Enough!",
+                    "line": 34,
+                    "url": "https://drive.google.com/file/d/1R53jwT07-879Ga17d1T9qSZA4pdD6NsY/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Wait, please! Let us go another round...!",
+                    "line": 35,
+                    "url": "https://drive.google.com/file/d/11J_lHpm7ciQqZojHg0dAG7qLiPX_B52l/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "I don't mind, but...",
+                    "line": 36,
+                    "url": "https://drive.google.com/file/d/1clYbtcOQ3D7ThCflSE-aZsbK7q41CwkE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...Keep at it 'til you're satisfied.",
+                    "line": 37,
+                    "url": "https://drive.google.com/file/d/1Rp5nlQEYMGaXBH_hqvwhXNtNegb1vtWo/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Number 666 proceeded to challenge Nu until she had no more strength in her, but in the end she lost every round.",
+                    "line": 38,
+                    "url": "https://drive.google.com/file/d/1j4DVH97MlqwkZLhGSmSp-JgBKE28VLdD/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Urgh...! I lost...utterly and completely...",
+                    "line": 39,
+                    "url": "https://drive.google.com/file/d/1D1PUDC2a-p-WNCyDfci90I6byDPtZuas/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "...",
+                    "line": 40,
+                    "url": "https://drive.google.com/file/d/1XRxiBlgbIJeZfUL6qv9mIg_IjHkUk2B3/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(She doesn't even look flushed...)",
+                    "line": 41,
+                    "url": "https://drive.google.com/file/d/1B59tMEDWMSTfykcBWxTmE1C5TUqHn1eo/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Thank you, Nu. As for you, Number 666...",
+                    "line": 42,
+                    "url": "https://drive.google.com/file/d/1MjFSc_Zr__8VyAfkUCsYNgwoykO01NQP/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Y-Yes, ma'am!",
+                    "line": 43,
+                    "url": "https://drive.google.com/file/d/1zAW0uolCKfxxR8atC0bMFK-Zsq_9YVwN/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Why did you join the Shadow Garden?",
+                    "line": 44,
+                    "url": "https://drive.google.com/file/d/1U4Kj1366HfdtgWQB1rtQs3TKvwNAaZmb/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "I-I...",
+                    "line": 45,
+                    "url": "https://drive.google.com/file/d/1WMbCKuSVtH0pstKKQBCLC1944xJFJm_X/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "I thought I told you to throw everything away! So tell me, just what have you rid yourself of?!",
+                    "line": 46,
+                    "url": "https://drive.google.com/file/d/19wcnOCW3Ucyu_YVYC6Rz5TBukUPBFGJl/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "We are all here because we have staked everything on our fight! If you think this is some game, then get out of my sight, now!",
+                    "line": 47,
+                    "url": "https://drive.google.com/file/d/1A4NHo-3UeMYKS35P8ORIotM4utQRC4nX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Ahh...",
+                    "line": 48,
+                    "url": "https://drive.google.com/file/d/1XVFzVGV3W0WN44DuSkbNU__0P2qYmyee/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Number 666 is filled with chagrin, but she has no words to say in the face of such a pitiful outcome.",
+                    "line": 49,
+                    "url": "https://drive.google.com/file/d/1IjtQ6ZC1sZPLzBe4BtGV57yqG12x5fvU/view?usp=drivesdk"
+                }
+            ],
+            "e5": [
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...It's so quiet. No after-hours training tonight?",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/15vSLhiDSY2nAWoq_Z_RZf8lOul2rZ8Cw/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "No, not tonight. Wait, I hope it hasn't been disturbing you...",
+                    "line": 2,
+                    "url": "https://drive.google.com/file/d/19T9mE8eE_qK17ZtPjr7cXoOWI-Vsa0R_/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "That's not what I meant. I'd been hearing someone practicing their swordplay these past few days, so I was simply curious.",
+                    "line": 3,
+                    "url": "https://drive.google.com/file/d/1Id4o0e37wX5EfGRJXHUoP4xG_7NoqaPA/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "I see. That must have been Number 666. I told her that rest is also a skill to master, but...",
+                    "line": 4,
+                    "url": "https://drive.google.com/file/d/18QSnvti-r9VPosvaUc5QfMPg7HPwTcOX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Well, putting in hard work isn't a bad thing. So what do you think of her?",
+                    "line": 5,
+                    "url": "https://drive.google.com/file/d/1szjRckn_kcUMewCBE5DMEAAAIt-DIcR1/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Well... She stands out from the others in terms of character and ability. A little more discipline and she'll make for a useful pawn.",
+                    "line": 6,
+                    "url": "https://drive.google.com/file/d/1o4BJ_kWkQEzSmLyLs42vyk2h0MkcTRPc/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "You call her a \"pawn\", but she certainly seems to have caught your attention.",
+                    "line": 7,
+                    "url": "https://drive.google.com/file/d/12bFy0KJLSW7dxLm62-Yot3jo8bLlurel/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "That's not how I intended it, but...as her instructor, I can't help but do so.",
+                    "line": 8,
+                    "url": "https://drive.google.com/file/d/11T_YiBSwW5UDNJexQH0-Ch1b4poT_0He/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Heehee, such a serious answer.",
+                    "line": 9,
+                    "url": "https://drive.google.com/file/d/1zAxnGmTZwesN21YNe8F3rOmtBjr2PCF-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "But it's not just her. Each of our recruits has been assigned duties suited to their personalities and talents. All of this is thanks to your guidance.",
+                    "line": 10,
+                    "url": "https://drive.google.com/file/d/1qiSY-6oRlssvHFWfTyHZ4RiTICFROwc6/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "True kindness masked by stern words and actions\u2014perhaps this is what draws others to your lead, hm?",
+                    "line": 11,
+                    "url": "https://drive.google.com/file/d/1LqWhNtN-NBaezEdgfg1IZoFhu2NcaHns/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "That...is only because I lack experience.",
+                    "line": 12,
+                    "url": "https://drive.google.com/file/d/1Q-auqVxW50-wGt6prrsD35G1sgOMKvyH/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "I rely on you greatly as you are now.",
+                    "line": 13,
+                    "url": "https://drive.google.com/file/d/1FxFxffGhhDYtiJ7zmnnZM4OF0BAWvUe0/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "That's why I want you to do things as you see fit. If that doesn't get us results, then we can return to the drawing board.",
+                    "line": 14,
+                    "url": "https://drive.google.com/file/d/1jH1pLW_LXmvDgqcEg6se9_OcfjQ_wHdK/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Lady Alpha, I... Thank you. I shall continue to perform my duties as instructor to the best of my ability.",
+                    "line": 15,
+                    "url": "https://drive.google.com/file/d/1HpEsXfWshvij1miUGMjsAvHQ41KqcyIK/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Elsewhere, Number 666 is still dejected after her training session.",
+                    "line": 16,
+                    "url": "https://drive.google.com/file/d/1HVylE002utChNPyQFc1FNZ4-GN1tteBJ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...",
+                    "line": 17,
+                    "url": "https://drive.google.com/file/d/1FrY6lE80nWYWTnyXf6kEkTM4FLDHxtbz/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Why did you join the Shadow Garden?",
+                    "line": 18,
+                    "url": "https://drive.google.com/file/d/1yMs16gXE47MRhUWCxA2U-ZA9aGInckch/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "I-I...",
+                    "line": 19,
+                    "url": "https://drive.google.com/file/d/1NWMHEA46GVkIxOEiv0JO2Teme3bQsCCP/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "I thought I told you to throw everything away! So tell me, just what have you rid yourself of?!",
+                    "line": 20,
+                    "url": "https://drive.google.com/file/d/1jbCTTjg45dTO-yoPLcgjsrCzb6QwINX8/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "We are all here because we have staked everything on our fight! If you think this is some game, then get out of my sight, now!",
+                    "line": 21,
+                    "url": "https://drive.google.com/file/d/1EEw9aiDxzFclT85HHuODjwiotx4irrIN/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "I cast away so much in coming here...",
+                    "line": 22,
+                    "url": "https://drive.google.com/file/d/1O5gDf-diHwuRPS8mfKXMlAaaTxVW1pTo/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "It wasn't supposed to be like this. I didn't come here in search of frustration...",
+                    "line": 23,
+                    "url": "https://drive.google.com/file/d/1sBuP-5vnAgM-qbV7_V-S-5f4oLHZEJfE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "When, where...how did I go wrong?",
+                    "line": 24,
+                    "url": "https://drive.google.com/file/d/1UJSlra_5cjtMFIlDTEwhNSQ0m1ez1PRV/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "...You didn't do anything wrong. You just haven't cast everything aside yet.",
+                    "line": 25,
+                    "url": "https://drive.google.com/file/d/1ea2GBYRgRHiqJtTGUTEpuUSvCoGDwMoD/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "N-Nu...?! When did you...?",
+                    "line": 26,
+                    "url": "https://drive.google.com/file/d/1J4b9QiyEUWZYHtiYLAdGyMzcTdxt49c7/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "I've been here the entire time. Looks like you were too downcast to notice.",
+                    "line": 27,
+                    "url": "https://drive.google.com/file/d/1O3JxNemK0d1uUwcCvr5mPLVeO3iItdeO/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Oh...I see... What do you mean that I haven't cast everything aside?",
+                    "line": 28,
+                    "url": "https://drive.google.com/file/d/1dY1wyGgXAruIIf0U40z_v32QnXHqltqE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "I mean your former self, Rose Oriana. It appears that she's very much still with you.",
+                    "line": 29,
+                    "url": "https://drive.google.com/file/d/1EQ47XReY325Z38tk5fO4na0eCrf1N0fo/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "That's not true! On that day, I became Number 666!",
+                    "line": 30,
+                    "url": "https://drive.google.com/file/d/1-wWkfJXuF4iCZh8RYNO98oVctHBIB7wH/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "Then why are you so panicked and confused?",
+                    "line": 31,
+                    "url": "https://drive.google.com/file/d/1ht1_QUFPlWqgvhbOj5qItBfgAVmG2Su7/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Huh...?",
+                    "line": 32,
+                    "url": "https://drive.google.com/file/d/1JVnHdG5cmdojLexi164yuGqvpjPGjOP3/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "If you truly had nothing to compare to your current reality, you'd never face that kind of doubt.",
+                    "line": 33,
+                    "url": "https://drive.google.com/file/d/1iHL8XPriOfQFB2dZuuHc-0LJLb55Dpmg/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "What?! But...",
+                    "line": 34,
+                    "url": "https://drive.google.com/file/d/1Ug9Tvt1ZE52iUhls9JDjqVUNr6YMd0bs/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "Possession was like the death of our previous selves. We were then reborn with new names and a new purpose. That is the Shadow Garden.",
+                    "line": 35,
+                    "url": "https://drive.google.com/file/d/1mVDtizVeYz445FLIfnpwaYemsFzGkPhA/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "But you're different. You intend to become Rose again if everything goes as you hope. Am I wrong?",
+                    "line": 36,
+                    "url": "https://drive.google.com/file/d/1lWH9sTKi_tC-M3UwUHxODNGl8id_5TBV/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "*gasp*",
+                    "line": 37,
+                    "url": "https://drive.google.com/file/d/1cAIDv6D1wBQwFYlhsnwC4H5X-QY_ZcLD/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "It's that attachment that causes me to see both Rose and Number 666 in you now.",
+                    "line": 38,
+                    "url": "https://drive.google.com/file/d/1riJ_yqENRkXgRRAOGyuypFfVV27qzMsO/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "If you wish to remain here, Number 666...",
+                    "line": 39,
+                    "url": "https://drive.google.com/file/d/1eG9uAT7lU-yeQZseFtepzT007krtbHx2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "Then your former self, Rose Oriana, needs to die. By your own hand.",
+                    "line": 40,
+                    "url": "https://drive.google.com/file/d/1YQwEZOdv89Yp7SujOY22akj6ce2CQcwZ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "I must kill my former self...",
+                    "line": 41,
+                    "url": "https://drive.google.com/file/d/1zupCvHrkHGipHi3ZNcNsDlzw5-C-NjCx/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "Memories, both good and bad, the future that lay ahead for you\u2014the more of Rose you cast aside, the closer you will become to being a blade of the Shadow Garden.",
+                    "line": 42,
+                    "url": "https://drive.google.com/file/d/17MzuO7QAM_R_YbumhRHW3KGgNI3vDvSA/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "That is how everyone here attained strength. We let go of the past so that we might move ever forward in battle.",
+                    "line": 43,
+                    "url": "https://drive.google.com/file/d/161HgYT_ctW3-ffBM_HE0loq4L9auf41D/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "This is a very painful choice, but the rewards are equally great. Now...which do you choose?",
+                    "line": 44,
+                    "url": "https://drive.google.com/file/d/1g7XNRvgZ0d9xTHoMNJY6lIGDGJl5mDA5/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...",
+                    "line": 45,
+                    "url": "https://drive.google.com/file/d/14xTCZDOYpqifFfhHnwiPDzRR814RQSdz/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "I...",
+                    "line": 46,
+                    "url": "https://drive.google.com/file/d/1BZImWrsv3ZGDtKlx0tu2jrDSHBm_41ck/view?usp=drivesdk"
+                }
+            ],
+            "e6": [
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "...Good morning, Instructor Lambda.",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/1oe95VJVYnaXNlAiwF_KzFhB9WTZsI19q/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...",
+                    "line": 2,
+                    "url": "https://drive.google.com/file/d/1xdaik09ZX9JfqheB8Ojra7XP0SFfWgLG/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...You're still here? I thought I told you to leave.",
+                    "line": 3,
+                    "url": "https://drive.google.com/file/d/1Ud6ylBzV69yhl7HGzxGaDrUAH6gcjK01/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "I'm here today...to ask a favor of you.",
+                    "line": 4,
+                    "url": "https://drive.google.com/file/d/1mR9xlNtNDJvbhdQbWAh6nJvvDB37xI49/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Heh, as if I need to listen to anything a weakling like you has to say!",
+                    "line": 5,
+                    "url": "https://drive.google.com/file/d/17KW_O04jZme_cRkrCnLNV19-glIDBqUi/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "I am not a weakling! I prepared myself for the worst in coming here today!",
+                    "line": 6,
+                    "url": "https://drive.google.com/file/d/12WOByp49zove7F_IDGM-SQTsL5DYOOoD/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...Hmph.",
+                    "line": 7,
+                    "url": "https://drive.google.com/file/d/1U4rTBafXJ_WtNk81Vds8SzFAlIfQj3d8/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "(This isn't all talk. I don't know what happened, but there's definitely something different about her.)",
+                    "line": 8,
+                    "url": "https://drive.google.com/file/d/1FevpY6McQd27C6RnnDVa2Gt0HvQEUHC-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Very well, speak.",
+                    "line": 9,
+                    "url": "https://drive.google.com/file/d/17m3ckdEsiEPC3IExFqOrUzVNq2V5RdOj/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Thank you. Please...train me once more.",
+                    "line": 10,
+                    "url": "https://drive.google.com/file/d/1OLT_Ty1Eyqph8XRHct2WvQheu9h6BKJF/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "It can be fundamental drills, or sparring...anything. I don't mind, just please, allow me to be a member of the Shadow Garden!",
+                    "line": 11,
+                    "url": "https://drive.google.com/file/d/1fuuZ0F6sTdcR87a3vhzojQ-N40zslwFJ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "You don't have what it takes, and that won't change no matter how many times we go through this. Before long you'll falter and end up back in the dirt again.",
+                    "line": 12,
+                    "url": "https://drive.google.com/file/d/1LPQOcshIj6dIfwPMjZrXai0eNaAFrgVo/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Yes, I know I lost before... But thanks to that I now recognize my weakness!",
+                    "line": 13,
+                    "url": "https://drive.google.com/file/d/13Siiuu-p3ZEv38v-NvgGiXo2w6cJ_qCU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...",
+                    "line": 14,
+                    "url": "https://drive.google.com/file/d/1OqwQETqvi-x6g5jWpRjENciDtn8Z323o/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "I'm not trying to deny my previous faults. In fact, it's because I admit them that I'm here now!",
+                    "line": 15,
+                    "url": "https://drive.google.com/file/d/1-PV53JjTuSidl_AKu_NTYJNXzHAqrpVX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "My defeats and my former identity...they will all be steps on the path to my becoming a blade of the Shadow Garden!",
+                    "line": 16,
+                    "url": "https://drive.google.com/file/d/1Xl7tMYq6Mcb6v48aBqoRsxevCc0novFL/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...Well, well.",
+                    "line": 17,
+                    "url": "https://drive.google.com/file/d/1F7AIhbhHGnWWtaIcWsYouCrzh0azEsJF/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "(Hmm, so she's wisened up to her own failings. And it looks like she's ready to really let go of her past. All that's left...is for me to make sure of things myself.)",
+                    "line": 18,
+                    "url": "https://drive.google.com/file/d/1HyUA1e-g2IKpun0Mn_dR4-qqrNq_JJka/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...Fine.",
+                    "line": 19,
+                    "url": "https://drive.google.com/file/d/1U2HBwkLSXOtNk-FVFfqWt8HZSR3SR4WH/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "*gasp*",
+                    "line": 20,
+                    "url": "https://drive.google.com/file/d/1PZ2iXUrzB5x8PNUagc9WkJiQKub37JxX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Only this time it won't be Nu you face...it'll be me.",
+                    "line": 21,
+                    "url": "https://drive.google.com/file/d/1W-X_bD7xy94cinYQAXYD4aqS61hYRlRq/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "This is your last chance, are we clear? Fail to prove your worth to me here and... Well, I think you know the rest.",
+                    "line": 22,
+                    "url": "https://drive.google.com/file/d/1NgOfI8WIHBcWmKIneApRfV6LSaPXhvza/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...I'm ready!",
+                    "line": 23,
+                    "url": "https://drive.google.com/file/d/1j3QReaJfSLwNXbH81Jc6Mod3mtgfxqoK/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Alright then...let the training begin! Give me everything you've got!!!",
+                    "line": 24,
+                    "url": "https://drive.google.com/file/d/1iK542G8teqnDNsOApWj3B6hJYQ1ZmKTN/view?usp=drivesdk"
+                }
+            ],
+            "e7": [
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "C'mon! You won't win with defense alone!",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/1yiASTVwNBtWEmczpDX9RSEiljTHt6t8y/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...Urgh! I know that!",
+                    "line": 2,
+                    "url": "https://drive.google.com/file/d/1qZHKfxfT5ySOe2YyRnD_s-gY4sWt5aF7/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "(It looks like she's stuck on the defensive, but this is different than before... Her eyes tell me she's focused on the battle, waiting for her chance.)",
+                    "line": 3,
+                    "url": "https://drive.google.com/file/d/1vyGMhQKtW25VV91emouA0iVWjGUa6JKo/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "(This time, you just might have it...)",
+                    "line": 4,
+                    "url": "https://drive.google.com/file/d/1lqJviW1f34n0IeFHERuN1OUfo_NSRvcu/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "You're leaving yourself way too open, maggot!",
+                    "line": 5,
+                    "url": "https://drive.google.com/file/d/1Yy1WqlDF4sfa3PljuMw6OyIYb2ZR2U0f/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "C'mon, come at me like you want me dead!",
+                    "line": 6,
+                    "url": "https://drive.google.com/file/d/1ZbS0fjmvKNl_GmkA6FFXp07xHR96sIE-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...",
+                    "line": 7,
+                    "url": "https://drive.google.com/file/d/1BnNmCMTFgYpjWZUJG12Iz8PMACpMXoRh/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "My magic control...is ready!",
+                    "line": 8,
+                    "url": "https://drive.google.com/file/d/1n4zY3pUU13Hb3ZSFvxNUAyqFlGIlS4Ir/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Haaah!!!",
+                    "line": 9,
+                    "url": "https://drive.google.com/file/d/1o8pzPdKDWw7MJQI1C0t-9x7QcZCy4DnU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Wha...?!",
+                    "line": 10,
+                    "url": "https://drive.google.com/file/d/1X5rftxnVrLkaZoQJsGK4HM4C5v2mnG3m/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Lambda is knocked back by Number 666.",
+                    "line": 11,
+                    "url": "https://drive.google.com/file/d/1Nc-pIQGq4OW-8Z1GmnnAWJ4F8nF__pYX/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "She can see that the girl's sword is filled with just the right amount of magic for its form.",
+                    "line": 12,
+                    "url": "https://drive.google.com/file/d/1reGjNGuD4ZTgku1UnBaCgP8osOCBRtpn/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "So you were fending me off while focusing on your magic control, huh. Not bad.",
+                    "line": 13,
+                    "url": "https://drive.google.com/file/d/1TsC_jL8MXIy9RU_RZ3fan4C99GAmwtgy/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "I'm just getting started...!",
+                    "line": 14,
+                    "url": "https://drive.google.com/file/d/1BXFpoQbLyfr1waQPldoYxQsp-N1ukGT3/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(That was just me putting the things I've learned thus far into practice. Overcoming what comes next will be the real challenge!)",
+                    "line": 15,
+                    "url": "https://drive.google.com/file/d/15l9yTHqtgsLbTWsvD2IhwUeG8haGKbX2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(Cast aside Rose Oriana! Cast aside all those happy memories, the sad ones, the future that awaited her!)",
+                    "line": 16,
+                    "url": "https://drive.google.com/file/d/1JnpMPxhbgWVdpzqJk4ExpK8ZmFRA0Ked/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(Cast aside Alexia and Natsume, those she swore to fight alongside! Cast aside the father who raised her with such care! And...)",
+                    "line": 17,
+                    "url": "https://drive.google.com/file/d/120n8Y4Ie_rIMxcRVgqvXNLl10CIVmA7_/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(Cast aside Cid, the first and surely last person she will ever love!)",
+                    "line": 18,
+                    "url": "https://drive.google.com/file/d/1DuE1_U8x6bpW-FGyPGEB1Csb8XJniVlJ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(All you memories I couldn't bring myself to be rid of until the very end... I am doing away with Rose so I can become Number 666. And that is why...)",
+                    "line": 19,
+                    "url": "https://drive.google.com/file/d/1eorrCbI66uhdQnXYlEiwDHvYowf6uJAQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...I bid you farewell.",
+                    "line": 20,
+                    "url": "https://drive.google.com/file/d/1C_1cysDQqLhGigDc-QwVzp4PUsNaUbtN/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Number 666's slime sword transforms, as responding to her words.",
+                    "line": 21,
+                    "url": "https://drive.google.com/file/d/1e4yOuVXwePuzank9mm27OYuLFIpT-9g4/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Her slime sword is responding to her magic?! Its blade is growing thin and pointed, like a\u2014",
+                    "line": 22,
+                    "url": "https://drive.google.com/file/d/1LbdPNuUF-TmQpi09CxOL8uTyZRbtsC50/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...Haah!!!",
+                    "line": 23,
+                    "url": "https://drive.google.com/file/d/1rjrK8Jt7rG1ideUifxeco9ZWI5gpKzB9/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Urk!",
+                    "line": 24,
+                    "url": "https://drive.google.com/file/d/1T0ypUWge9eJGrEX6WIn-AtjNMOJ7XPx6/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Number 666's sword moves with much more speed and force than Lambda anticipated, crushing her defenses.",
+                    "line": 25,
+                    "url": "https://drive.google.com/file/d/1s8_nKwPl8gPkHva-u3RiSDOSvG0cCJ6L/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Urgh!",
+                    "line": 26,
+                    "url": "https://drive.google.com/file/d/1t2ReOYLHC-NHfLG63T47S81xUcT9QY-j/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Now!",
+                    "line": 27,
+                    "url": "https://drive.google.com/file/d/1Hjr_Y0rTuyACqylPdeU9kxN_MuZjjNvl/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "With Lambda off balance, Number 666 moves to deliver a powerful blow. But Lambda produces a slime sword of her own to intercept Rose.",
+                    "line": 28,
+                    "url": "https://drive.google.com/file/d/1A3KzFiCmcmmqGIH6ISX4p7iZE5_nR8Um/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Wha...?! I was so close!",
+                    "line": 29,
+                    "url": "https://drive.google.com/file/d/16rz3xURqBQO-Wd3mahmpDNuwtxzICN4C/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "You had me for a second there!",
+                    "line": 30,
+                    "url": "https://drive.google.com/file/d/1KJ8R5YOwSxkhn8FI84V0iv-T5i2SdugR/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "But I'm not just an instructor in title alone! I'll take everything you can throw at me and return it tenfold!",
+                    "line": 31,
+                    "url": "https://drive.google.com/file/d/1eCGOpqUD9qhklKDbT0vnBaM70JTzCnKV/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "I'm not done... Not by a long shot!",
+                    "line": 32,
+                    "url": "https://drive.google.com/file/d/1CSRfb7i7Sc0tHr0rccFjCsnWKPnqGRkx/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "Number 666 swings her sword with increasing vigor, driving Lambda back.",
+                    "line": 33,
+                    "url": "https://drive.google.com/file/d/1WUQ9Peise1w7u5SuXpsxCDHvBdJx9rrp/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(Come on, sword...hit! Hit...! HIT!!!)",
+                    "line": 34,
+                    "url": "https://drive.google.com/file/d/1iXv5QockzL-XOO8wfPXk2i6cBsaxqXs9/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Haaaaaaahhhhh!!!",
+                    "line": 35,
+                    "url": "https://drive.google.com/file/d/1Ij-4mjjbZqeAjWAvJabK8Sjev-TUNMLB/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Yaaaaaaah!!!",
+                    "line": 36,
+                    "url": "https://drive.google.com/file/d/1WkJLZZEymrcsR5qqrrmZDAi3qhP_eLES/view?usp=drivesdk"
+                },
+                {
+                    "name": "",
+                    "name_variant": "",
+                    "subtitle": "The refined magic clashes together, bathing the area in blinding light.",
+                    "line": 37,
+                    "url": "https://drive.google.com/file/d/1YN5J--M80QPRq98TQMDbx_XLtm8tPWTA/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "Did I...get her?",
+                    "line": 38,
+                    "url": "https://drive.google.com/file/d/1yubpQWx9TLr2wNF82Ma0Db7-l8Ag0MtM/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...",
+                    "line": 39,
+                    "url": "https://drive.google.com/file/d/1KYcwILiLAJ-or4r5eqfpt_YJwfobosa3/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "What...happened?",
+                    "line": 40,
+                    "url": "https://drive.google.com/file/d/1ZRCIEPebByEYtSgrpQOUtIj9wLyj1RcY/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...She lost consciousness the moment she let off that last attack.",
+                    "line": 41,
+                    "url": "https://drive.google.com/file/d/1OAeO1kRGeRI1tR3PdpALp8JjToExiWQ0/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Her body had probably already reached its limit and was moving off pure adrenaline. Too bad, she might have landed a hit if she'd able to last a bit longer.",
+                    "line": 42,
+                    "url": "https://drive.google.com/file/d/1DCYBtLmUpeqphxMWi3Ap-n74ZnMLxsZE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "That's why I told her...rest is another skill to master.",
+                    "line": 43,
+                    "url": "https://drive.google.com/file/d/1fRSSxnRWthQw6_hPGzYNMVaGLbi9KdUj/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Still...well done.",
+                    "line": 44,
+                    "url": "https://drive.google.com/file/d/1VFZ2_o1hJrYY4OzIt6EcOLO7bD4s7M5Y/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "...",
+                    "line": 45,
+                    "url": "https://drive.google.com/file/d/1ohlUtGCYoDNU1rz0H5FoufQx_T6HvtGC/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "She showed a lot of improvement. More than I had anticipated...",
+                    "line": 46,
+                    "url": "https://drive.google.com/file/d/1WnKpAStlH-_gdH1axpa2P2ZKg-A0eIF6/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Hmph, only because she was so awful before. I'd say she only just now became worth even acknowledging.",
+                    "line": 47,
+                    "url": "https://drive.google.com/file/d/12E5oA9CAggCGWVsRItdwYIHP471qAViX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Her stamina and skills still need a lot of work. Send her out into the field as she is now and she's a goner. That's why I'll begin training her tomorrow.",
+                    "line": 48,
+                    "url": "https://drive.google.com/file/d/1ALxx9JP6JjlvdRq2y8jmpiiscykmcBan/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "So does that mean...you accept her as a member of the Shadow Garden?",
+                    "line": 49,
+                    "url": "https://drive.google.com/file/d/1M0U4Z_-j7IuuckFRIJjv7OJVmrJsZ0L5/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Hmph! Just get that unconscious idiot inside.",
+                    "line": 50,
+                    "url": "https://drive.google.com/file/d/1REc2T8usjng-tNzNWchoiaqXmDEcOe3-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "Yes, ma'am, as you wish.",
+                    "line": 51,
+                    "url": "https://drive.google.com/file/d/1h3OIXIC_joTnU2bDeYjHyeQabfnQpa7U/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...",
+                    "line": 52,
+                    "url": "https://drive.google.com/file/d/1Zp9jZxMPTas260n6tOT7Is177r-7BK_7/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Hmph... This is the first time a recruit has ever given me such a headache.",
+                    "line": 53,
+                    "url": "https://drive.google.com/file/d/18ypcNVOpLMIdioJKK-MBk5tuPs2M_7Re/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(My eyes won't open... Guess I really overdid it.)",
+                    "line": 54,
+                    "url": "https://drive.google.com/file/d/1P_dDSakOZ4iCv6Im7N3z1BiNa60hAAgD/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(Goodbye, Rose Oriana...the old me.)",
+                    "line": 55,
+                    "url": "https://drive.google.com/file/d/1kcjBIH2Ky5kVXrwqNz1Z3siBnwpcr4Qd/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(Does this mean...I've been reborn?)",
+                    "line": 56,
+                    "url": "https://drive.google.com/file/d/1vMnOVQbV35khreudokIbkORx_lNDVcg2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(Was I able to prove my strength...?)",
+                    "line": 57,
+                    "url": "https://drive.google.com/file/d/1jS-l_e7lemVXR2lxboEcrlxLUq3NIGJw/view?usp=drivesdk"
+                },
+                {
+                    "name": "??? (Cid Kagenou)",
+                    "name_variant": "??? (Cid Kagenou)",
+                    "subtitle": "Oh hey, Nu. Why're you carrying Rose?",
+                    "line": 58,
+                    "url": "https://drive.google.com/file/d/1q0FpdtEw6KDvzEXZWjlJ59kipekCI9zs/view?usp=drivesdk"
+                },
+                {
+                    "name": "Nu",
+                    "name_variant": "Nu",
+                    "subtitle": "Ah, it's rare to see you back at the Garden, my lord. She just finished training with Lambda.",
+                    "line": 59,
+                    "url": "https://drive.google.com/file/d/14-AFymDrMDm48k3R6VSGkbNBMHo2U8W7/view?usp=drivesdk"
+                },
+                {
+                    "name": "??? (Cid Kagenou)",
+                    "name_variant": "??? (Cid Kagenou)",
+                    "subtitle": "Man, she looks really banged up. Hope Lambda didn't go too hard on her. Ah well, I've gotten carried away too, so I guess it happens.",
+                    "line": 60,
+                    "url": "https://drive.google.com/file/d/1hwbOWDlYnaldWZP41d37migrPBT450Sd/view?usp=drivesdk"
+                },
+                {
+                    "name": "??? (Cid Kagenou)",
+                    "name_variant": "??? (Cid Kagenou)",
+                    "subtitle": "Anyways, good work, guys.",
+                    "line": 61,
+                    "url": "https://drive.google.com/file/d/1Ta6TZp99uvTzMh1CNDlXMWR_lxRE7T4y/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(I swore that I was going to forget...but I can still recall your voice even now.)",
+                    "line": 62,
+                    "url": "https://drive.google.com/file/d/1wJdhFY7NEw1EWOBQh9RL8PKoNHqTA50P/view?usp=drivesdk"
+                },
+                {
+                    "name": "Rose Oriana",
+                    "name_variant": "No.666",
+                    "subtitle": "(You at least...I want to remember always...)",
+                    "line": 63,
+                    "url": "https://drive.google.com/file/d/1ZFBKhXfJNnNVuX0tlU2Ant2yUxFVUIA2/view?usp=drivesdk"
+                }
+            ]
+        }
+    }
+
+
     const ln_v1 = {
         "v1": {
             "c1": [
@@ -12013,6 +14197,854 @@ function SearchPage() {
         sessionStorage.setItem('lnDropdownState', JSON.stringify(lnDropdownState));
     }, [lnDropdownState]);
 
+    const [wnDropdownState, setWNDropdownState] = React.useState(() => {
+        const savedState = sessionStorage.getItem('wnDropdownState');
+        if (savedState) {
+            return JSON.parse(savedState);
+        } else {
+            return {
+                wnMainChecked: false,
+                wnFilter: '',
+                openVolumes: {},
+                volumesChecked: {
+                    "Volume 1": {
+                        "checked": false,
+                        "v1c1": {
+                            "checked": false,
+                            "title": "Remaining Within the Limits of Being Human Means You Would Be Vaporized By a Nuke"
+                        },
+                        "v1c2": {
+                            "checked": false,
+                            "title": "Bandits Are Basically Just Walking Bonus Stages"
+                        },
+                        "v1c3": {
+                            "checked": false,
+                            "title": "Sudden Emergence of the Order of Diabolos?!"
+                        },
+                        "v1c4": {
+                            "checked": false,
+                            "title": "If Only He Had Hair……"
+                        },
+                        "v1c5": {
+                            "checked": false,
+                            "title": "Real Member of the Order, and Real Person of the Curse"
+                        },
+                        "v1c6": {
+                            "checked": false,
+                            "title": "Your Drug Test Result is ‘Positive'"
+                        },
+                        "v1c7": {
+                            "checked": false,
+                            "title": "A Simple Fighting Lesson, Power in Shadows Style (With Only This Much, You Are Also a Power in the Shadows?!)"
+                        },
+                        "v1c8": {
+                            "checked": false,
+                            "title": "Powers in the Shadows are Lonely"
+                        },
+                        "v1c9": {
+                            "checked": false,
+                            "title": "The Frolicking of Those Who Know Nothing of the World of Shadows"
+                        },
+                        "v1c10": {
+                            "checked": false,
+                            "title": "Apparently He Discovered Her Secret And Is Blackmailing Her……"
+                        },
+                        "v1c11": {
+                            "checked": false,
+                            "title": "Conflict is Entertaining When You Are Uninvolved"
+                        },
+                        "v1c12": {
+                            "checked": false,
+                            "title": "Hi, My Name Is Pochi! Nice to Meet You, Everyone!"
+                        },
+                        "v1c13": {
+                            "checked": false,
+                            "title": "Incidentally, I'm In the Zenon Faction"
+                        },
+                        "v1c14": {
+                            "checked": false,
+                            "title": "It Would Take Serious Effort To Make Me Truly Flip Out"
+                        },
+                        "v1c15": {
+                            "checked": false,
+                            "title": "Oh Wow, What a Wonderful Idea (In a Monotone Voice)"
+                        },
+                        "v1c16": {
+                            "checked": false,
+                            "title": "Currently Writing the Complete Version of ‘The War Chronicles of Shadow-sama'"
+                        },
+                        "v1c17": {
+                            "checked": false,
+                            "title": "Fragment of Diabolos! Squish!"
+                        },
+                        "v1c18": {
+                            "checked": false,
+                            "title": "Keep Watching from Below the Stage"
+                        },
+                        "v1c19": {
+                            "checked": false,
+                            "title": "Far Off Memory"
+                        },
+                        "v1c20": {
+                            "checked": false,
+                            "title": "“I AM……”"
+                        },
+                        "v1c21": {
+                            "checked": false,
+                            "title": "[Urgent Question] The Way to Dispose of a Dead Body on Campus [Anon]"
+                        }
+                    },
+                    "Volume 2": {
+                        "checked": false,
+                        "v2c22": {
+                            "checked": false,
+                            "title": "That Which Anyone Would Overlook"
+                        },
+                        "v2c23": {
+                            "checked": false,
+                            "title": "Otherworld General Trading Company Mitsugoshi Co."
+                        },
+                        "v2c24": {
+                            "checked": false,
+                            "title": "7 Girls and 1 Guy. Obviously Someone's Going to Be Left Out"
+                        },
+                        "v2c25": {
+                            "checked": false,
+                            "title": "Respite in an Alleyway"
+                        },
+                        "v2c26": {
+                            "checked": false,
+                            "title": "Ugh, My Head..."
+                        },
+                        "v2c27": {
+                            "checked": false,
+                            "title": "High Heels & One Piece & White Legs"
+                        },
+                        "v2c28": {
+                            "checked": false,
+                            "title": "Otherworld-Style Valentine's Day"
+                        },
+                        "v2c29": {
+                            "checked": false,
+                            "title": "A Mob Can Tell"
+                        },
+                        "v2c30": {
+                            "checked": false,
+                            "title": "Bastard"
+                        },
+                        "v2c31": {
+                            "checked": false,
+                            "title": "Can You Keep Up With Me?"
+                        },
+                        "v2c32": {
+                            "checked": false,
+                            "title": "The Undying Magic Swordsman"
+                        },
+                        "v2c33": {
+                            "checked": false,
+                            "title": "What Every Boy in the Universe Dreams Of"
+                        },
+                        "v2c34": {
+                            "checked": false,
+                            "title": "There Are Times When A Mob Has to Act"
+                        },
+                        "v2c35": {
+                            "checked": false,
+                            "title": "The Romance of Looking Down From a Rooftop"
+                        },
+                        "v2c36": {
+                            "checked": false,
+                            "title": "Relieved That It's More Decent Than Expected"
+                        },
+                        "v2c37": {
+                            "checked": false,
+                            "title": "The Course of an Advanced Psychological Battle"
+                        },
+                        "v2c38": {
+                            "checked": false,
+                            "title": "Lending Just a Tiny Bit of Help"
+                        },
+                        "v2c39": {
+                            "checked": false,
+                            "title": "Wanting to Live for Just One More Day"
+                        },
+                        "v2c40": {
+                            "checked": false,
+                            "title": "That Which is Truly Important"
+                        },
+                        "v2c41": {
+                            "checked": false,
+                            "title": "Arrival of the Summer Rain"
+                        }
+                    },
+                    "Volume 3": {
+                        "checked": false,
+                        "v3c42": {
+                            "checked": false,
+                            "title": "Proposing the Leech-style Mob Life"
+                        },
+                        "v3c43": {
+                            "checked": false,
+                            "title": "That Thing That's As Enigmatic as Wooden Swords At Tourist Spots"
+                        },
+                        "v3c44": {
+                            "checked": false,
+                            "title": "Holy Sword Excalibur"
+                        },
+                        "v3c45": {
+                            "checked": false,
+                            "title": "Plan A Has Failed, Shift to Plan B"
+                        },
+                        "v3c46": {
+                            "checked": false,
+                            "title": "A Woman Who Seems Shady and A Woman Who Seems Cheap and A Woman Who Seems Blissful"
+                        },
+                        "v3c47": {
+                            "checked": false,
+                            "title": "The Theory That When a Bomb Goes Off It Can Erase Everything Else That Had Happened"
+                        },
+                        "v3c48": {
+                            "checked": false,
+                            "title": "Please Believe That There Really Are Times When Those Who Have No Intention of Looking Still End up Seeing"
+                        },
+                        "v3c49": {
+                            "checked": false,
+                            "title": "Those That Don't Understand Are Boring"
+                        },
+                        "v3c50": {
+                            "checked": false,
+                            "title": "The Heroine Who Directed and Acted in Her Own Production"
+                        },
+                        "v3c51": {
+                            "checked": false,
+                            "title": "The Birth of 'Precise'"
+                        },
+                        "v3c52": {
+                            "checked": false,
+                            "title": "The Truth Within Memories"
+                        },
+                        "v3c53": {
+                            "checked": false,
+                            "title": "The Escape Plan of a Fragile, Dainty Girl"
+                        },
+                        "v3c54": {
+                            "checked": false,
+                            "title": "Gratz for Taking First Place in the 'Humans Who Can't Use Magic' Tournament"
+                        },
+                        "v3c55": {
+                            "checked": false,
+                            "title": "Just Look at What You Want to Look At Then"
+                        },
+                        "v3c56": {
+                            "checked": false,
+                            "title": "Genes, Age, or Stress?"
+                        },
+                        "v3c57": {
+                            "checked": false,
+                            "title": "Everything Is Within His Expectations"
+                        },
+                        "v3c58": {
+                            "checked": false,
+                            "title": "That Which Can Only Be Drawn By the Chosen"
+                        },
+                        "v3c59": {
+                            "checked": false,
+                            "title": "Inescapable Attack"
+                        },
+                        "v3c60": {
+                            "checked": false,
+                            "title": "Puzzle Piece"
+                        }
+                    },
+                    "Volume 4": {
+                        "checked": false,
+                        "v4c61": {
+                            "checked": false,
+                            "title": "The Girl and the Sound of Rain"
+                        },
+                        "v4c62": {
+                            "checked": false,
+                            "title": "I Am a Man Who Rides the Waves"
+                        },
+                        "v4c63": {
+                            "checked": false,
+                            "title": "The Mysterious Young Swordsman Jimina"
+                        },
+                        "v4c64": {
+                            "checked": false,
+                            "title": "Spartan Hazing From a Festival Regular!"
+                        },
+                        "v4c65": {
+                            "checked": false,
+                            "title": "No Need to Rush, Youngster, For Life is Long"
+                        },
+                        "v4c66": {
+                            "checked": false,
+                            "title": "The Harmless Poyoyon and Mole"
+                        },
+                        "v4c67": {
+                            "checked": false,
+                            "title": "Sure-Win Golden Dragon's Sure-Win Formula"
+                        },
+                        "v4c68": {
+                            "checked": false,
+                            "title": "The Match Where The Stronger One Gets All the Attention"
+                        },
+                        "v4c69": {
+                            "checked": false,
+                            "title": "Evil ** Kill ** Dragon!!"
+                        },
+                        "v4c70": {
+                            "checked": false,
+                            "title": "In Expectation of This Happening"
+                        },
+                        "v4c71": {
+                            "checked": false,
+                            "title": "Beta's Job"
+                        },
+                        "v4c72": {
+                            "checked": false,
+                            "title": "A Power in the Shadows Playing Under the Moonlight"
+                        },
+                        "v4c73": {
+                            "checked": false,
+                            "title": "The Girl Who Dreams a Dream and the Boy Who Walks a Dream"
+                        },
+                        "v4c74": {
+                            "checked": false,
+                            "title": "The Single Ray of Light Shining Into the Darkness"
+                        },
+                        "v4c75": {
+                            "checked": false,
+                            "title": "The Girls' Paths, and His Decision"
+                        },
+                        "v4c76": {
+                            "checked": false,
+                            "title": "The Basics of Human Relationsh.i.p.s Is Abandonment Play"
+                        },
+                        "v4c77": {
+                            "checked": false,
+                            "title": "And Who Are You?"
+                        },
+                        "v4c78": {
+                            "checked": false,
+                            "title": "What Always Ends up Happening from Stopping at the Last Instant"
+                        },
+                        "v4c79": {
+                            "checked": false,
+                            "title": "I've Won! (Assured)"
+                        },
+                        "v4c80": {
+                            "checked": false,
+                            "title": "Exactly Who Are You?"
+                        },
+                        "v4c81": {
+                            "checked": false,
+                            "title": "Breakfast at the Special Seating NAO"
+                        },
+                        "v4c82": {
+                            "checked": false,
+                            "title": "The Smelly Man is Part of the Plan"
+                        },
+                        "v4c83": {
+                            "checked": false,
+                            "title": "From A Far Away Height..."
+                        },
+                        "v4c84": {
+                            "checked": false,
+                            "title": "Final Duty"
+                        },
+                        "v4c85": {
+                            "checked": false,
+                            "title": "Mysterious Masked Swordsman Slayer, At Your Service!!"
+                        },
+                        "v4c86": {
+                            "checked": false,
+                            "title": "Summit of the Path of the Sword"
+                        },
+                        "v4c87": {
+                            "checked": false,
+                            "title": "Your Real Enemy"
+                        },
+                        "v4c88": {
+                            "checked": false,
+                            "title": "Ashes of a Dream"
+                        }
+                    },
+                    "Volume 5": {
+                        "checked": false,
+                        "v5c89": {
+                            "checked": false,
+                            "title": "Being Gatekeeper A is Great!"
+                        },
+                        "v5c90": {
+                            "checked": false,
+                            "title": "It's Already Completely Healed"
+                        },
+                        "v5c91": {
+                            "checked": false,
+                            "title": "What Belongs to Bandits Also Belongs to Me"
+                        },
+                        "v5c92": {
+                            "checked": false,
+                            "title": "Two Loser (Dogs) and a Watchdog"
+                        },
+                        "v5c93": {
+                            "checked": false,
+                            "title": "Shockingly Huge Bargain Sale, Only in Outlaw City!!"
+                        },
+                        "v5c94": {
+                            "checked": false,
+                            "title": "Stop Throbbing..."
+                        },
+                        "v5c95": {
+                            "checked": false,
+                            "title": "From Mob Escape to Mob Revenge"
+                        },
+                        "v5c96": {
+                            "checked": false,
+                            "title": "For the Sake of This Day, I Have Prepared This… Hole!!"
+                        },
+                        "v5c97": {
+                            "checked": false,
+                            "title": "Rampage... The Streets are... Blood... Run..."
+                        },
+                        "v5c98": {
+                            "checked": false,
+                            "title": "Tough Lady"
+                        },
+                        "v5c99": {
+                            "checked": false,
+                            "title": "The Three Currents"
+                        },
+                        "v5c100": {
+                            "checked": false,
+                            "title": "War of Monsters"
+                        },
+                        "v5c101": {
+                            "checked": false,
+                            "title": "The Rumored Shadow Garden"
+                        },
+                        "v5c102": {
+                            "checked": false,
+                            "title": "Two Lasses"
+                        },
+                        "v5c103": {
+                            "checked": false,
+                            "title": "What are you doi-?!"
+                        },
+                        "v5c104": {
+                            "checked": false,
+                            "title": "Don't You Dare Steal My Role, Girl"
+                        },
+                        "v5c105": {
+                            "checked": false,
+                            "title": "The Man Who Was Too Early"
+                        },
+                        "v5c106": {
+                            "checked": false,
+                            "title": "What Do YOU Understand About This Pain?! (Blood Pressure)"
+                        },
+                        "v5c107": {
+                            "checked": false,
+                            "title": "Her Duty"
+                        },
+                        "v5c108": {
+                            "checked": false,
+                            "title": "Overwhelmingly Terrible at Explanations"
+                        },
+                        "v5c109": {
+                            "checked": false,
+                            "title": "The Queen of Blood"
+                        },
+                        "v5c110": {
+                            "checked": false,
+                            "title": "Her Master"
+                        },
+                        "v5c111": {
+                            "checked": false,
+                            "title": "Mission Complete"
+                        },
+                        "v5c112": {
+                            "checked": false,
+                            "title": "There's No Helping It When the Left Hand Begins to Ache"
+                        }
+                    },
+                    "Volume 6": {
+                        "checked": false,
+                        "v6c113": {
+                            "checked": false,
+                            "title": "Kyaaa! Not so rough!"
+                        },
+                        "v6c114": {
+                            "checked": false,
+                            "title": "Super Elite Agent, Whose Name Is"
+                        },
+                        "v6c115": {
+                            "checked": false,
+                            "title": "The World Is Whispering To Me"
+                        },
+                        "v6c116": {
+                            "checked": false,
+                            "title": "Do You Really Think So?"
+                        },
+                        "v6c117": {
+                            "checked": false,
+                            "title": "The smell of wood."
+                        },
+                        "v6c118": {
+                            "checked": false,
+                            "title": "Golden retriever"
+                        },
+                        "v6c119": {
+                            "checked": false,
+                            "title": "Ol, Its Ol!!"
+                        },
+                        "v6c120": {
+                            "checked": false,
+                            "title": "Blind Big Wolf"
+                        },
+                        "v6c121": {
+                            "checked": false,
+                            "title": "Great Trading Alliance"
+                        },
+                        "v6c122": {
+                            "checked": false,
+                            "title": "The Malaise Of Mitsugoshi"
+                        },
+                        "v6c123": {
+                            "checked": false,
+                            "title": "Sample"
+                        },
+                        "v6c124": {
+                            "checked": false,
+                            "title": "The Power of a Super Elite Agent"
+                        },
+                        "v6c125": {
+                            "checked": false,
+                            "title": "The First To Notice The Change"
+                        },
+                        "v6c126": {
+                            "checked": false,
+                            "title": "Don't Get In The Way"
+                        },
+                        "v6c127": {
+                            "checked": false,
+                            "title": "Black Jaguar"
+                        },
+                        "v6c128": {
+                            "checked": false,
+                            "title": "The Supreme Code"
+                        },
+                        "v6c129": {
+                            "checked": false,
+                            "title": "It's All That Fool's Fault"
+                        },
+                        "v6c130": {
+                            "checked": false,
+                            "title": "Goodbye, John Smith"
+                        },
+                        "v6c131": {
+                            "checked": false,
+                            "title": "His Back"
+                        },
+                        "v6c132": {
+                            "checked": false,
+                            "title": "Finally, This Day Has Come"
+                        },
+                        "v6c133": {
+                            "checked": false,
+                            "title": "Yukime and Gettan"
+                        },
+                        "v6c134": {
+                            "checked": false,
+                            "title": "Rumor of the counterfeit bills"
+                        },
+                        "v6c135": {
+                            "checked": false,
+                            "title": "John Smith was their esteemed master."
+                        },
+                        "v6c136": {
+                            "checked": false,
+                            "title": "You made me angry… . ."
+                        },
+                        "v6c137": {
+                            "checked": false,
+                            "title": "The man who is burning with revenge"
+                        },
+                        "v6c138": {
+                            "checked": false,
+                            "title": "Those who lost their eyes"
+                        },
+                        "v6c139": {
+                            "checked": false,
+                            "title": "Even if we talk, it will be a waste of time"
+                        },
+                        "v6c140": {
+                            "checked": false,
+                            "title": "Gettan……"
+                        },
+                        "v6c141": {
+                            "checked": false,
+                            "title": "Everything is his"
+                        },
+                        "v6c142": {
+                            "checked": false,
+                            "title": "The b.l.o.o.d.y Demon King who betrayed his dream"
+                        }
+                    },
+                    "Volume 7": {
+                        "checked": false,
+                        "v7c143": {
+                            "checked": false,
+                            "title": "That Ordinary Boy is Revealed to be—!"
+                        },
+                        "v7c145": {
+                            "checked": false,
+                            "title": "His name is Kageno Minoru [Cid's Past Life]"
+                        },
+                        "v7c146": {
+                            "checked": false,
+                            "title": "Mystery Man"
+                        },
+                        "v7c147": {
+                            "checked": false,
+                            "title": "Not Enough Calories At All"
+                        },
+                        "v7c148": {
+                            "checked": false,
+                            "title": "When it's All Over"
+                        },
+                        "v7c149": {
+                            "checked": false,
+                            "title": "Code 0"
+                        },
+                        "v7c150": {
+                            "checked": false,
+                            "title": "Who Do You Think You're Dealing With?"
+                        },
+                        "v7c151": {
+                            "checked": false,
+                            "title": "The Princess's Mob Friend"
+                        },
+                        "v7c152": {
+                            "checked": false,
+                            "title": "Evil Encroaching"
+                        },
+                        "v7c153": {
+                            "checked": false,
+                            "title": "Looks like We're Done"
+                        },
+                        "v7c154": {
+                            "checked": false,
+                            "title": "Soul Searching"
+                        },
+                        "v7c155": {
+                            "checked": false,
+                            "title": "Sorry, Ya Lost Me."
+                        },
+                        "v7c156": {
+                            "checked": false,
+                            "title": "Action Spy"
+                        },
+                        "v7c157": {
+                            "checked": false,
+                            "title": "Cut Down Anything!"
+                        },
+                        "v7c158": {
+                            "checked": false,
+                            "title": "Beacon of Revolt"
+                        },
+                        "v7c159": {
+                            "checked": false,
+                            "title": "I Can Hear Him But From Where…"
+                        },
+                        "v7c160": {
+                            "checked": false,
+                            "title": "My Time to Shine?"
+                        },
+                        "v7c161": {
+                            "checked": false,
+                            "title": "The Ringleader is Here!?"
+                        },
+                        "v7c162": {
+                            "checked": false,
+                            "title": "Sigh, really didn't want to make a scene, man~"
+                        },
+                        "v7c163": {
+                            "checked": false,
+                            "title": "The Power of Diabolos"
+                        },
+                        "v7c164": {
+                            "checked": false,
+                            "title": "Where is He?"
+                        },
+                        "v7c165": {
+                            "checked": false,
+                            "title": "Demon Lord Unleashed"
+                        },
+                        "v7c166": {
+                            "checked": false,
+                            "title": "Mordred"
+                        },
+                        "v7c167": {
+                            "checked": false,
+                            "title": "What Were Ideal Powers in Shadows in My Mind? "
+                        }
+                    },
+                    "Volume 8": {
+                        "checked": false,
+                        "v8c168": {
+                            "checked": false,
+                            "title": "In This Troop You Will Earn A Lot of Money"
+                        },
+                        "v8c169": {
+                            "checked": false,
+                            "title": "The Dream Of Two Men"
+                        },
+                        "v8c170": {
+                            "checked": false,
+                            "title": "Mob Character's Field Trip"
+                        },
+                        "v8c171": {
+                            "checked": false,
+                            "title": "Three Ojisans"
+                        },
+                        "v8c172": {
+                            "checked": false,
+                            "title": "Vow of Black Rose"
+                        },
+                        "v8c173": {
+                            "checked": false,
+                            "title": "Don't Upstage Me"
+                        },
+                        "v8c174": {
+                            "checked": false,
+                            "title": "Do Not Kick the Platform"
+                        },
+                        "v8c175": {
+                            "checked": false,
+                            "title": "Evil God・Instant Kill・〇〇〇 Sword"
+                        },
+                        "v8c176": {
+                            "checked": false,
+                            "title": "Died On the Spot"
+                        },
+                        "v8c177": {
+                            "checked": false,
+                            "title": "So-called Master"
+                        },
+                        "v8c178": {
+                            "checked": false,
+                            "title": "The End of Mob Character"
+                        },
+                        "v8c179": {
+                            "checked": false,
+                            "title": "A Small Part of the Abyss-like Plan"
+                        },
+                        "v8c180": {
+                            "checked": false,
+                            "title": "She's the Type of Person Who Always Exaggerates"
+                        },
+                        "v8c181": {
+                            "checked": false,
+                            "title": "The Other Side Connecting the Past, Present and Future"
+                        },
+                        "v8c182": {
+                            "checked": false,
+                            "title": "Infatuated with That Courage and Insight"
+                        },
+                        "v8c183": {
+                            "checked": false,
+                            "title": "We Are Friends After All!"
+                        },
+                        "v8c184": {
+                            "checked": false,
+                            "title": "If He Was Born Before A Thousand Years Ago"
+                        },
+                        "v8c185": {
+                            "checked": false,
+                            "title": "Terrible Interests"
+                        },
+                        "v8c186": {
+                            "checked": false,
+                            "title": "Two People with Social Phobia"
+                        },
+                        "v8c187": {
+                            "checked": false,
+                            "title": "Epsilon's Secret Recipe"
+                        },
+                        "v8c188": {
+                            "checked": false,
+                            "title": "Epsilon in Gorgeous Disguise"
+                        },
+                        "v8c189": {
+                            "checked": false,
+                            "title": "Take A Walk in the Forest"
+                        },
+                        "v8c190": {
+                            "checked": false,
+                            "title": "Everything Is Connected, All of Which Meets His Expectations"
+                        },
+                        "v8c191": {
+                            "checked": false,
+                            "title": " Let Me Show You Perfect Magic Control"
+                        },
+                        "v8c192": {
+                            "checked": false,
+                            "title": "It's Not My Fault The Shot Went Awry"
+                        },
+                        "v8c193": {
+                            "checked": false,
+                            "title": "Great Sacrifice for World Peace and Science"
+                        },
+                        "v8c194": {
+                            "checked": false,
+                            "title": "The Secret One Wants to Hide the Most"
+                        },
+                        "v8c195": {
+                            "checked": false,
+                            "title": "A Natural Phenomenon of Unknown Cause or A Paranormal Phenomenon"
+                        },
+                        "v8c196": {
+                            "checked": false,
+                            "title": "Battle of Darkness"
+                        },
+                        "v8c197": {
+                            "checked": false,
+                            "title": "Forget to Close the Door"
+                        },
+                        "v8c198": {
+                            "checked": false,
+                            "title": "It's All The Americans' Fault"
+                        },
+                        "v8c199": {
+                            "checked": false,
+                            "title": "Mysterious Architect Eta Lloyd Wright"
+                        },
+                        "v8c200": {
+                            "checked": false,
+                            "title": "The Only Food Left Is DX"
+                        },
+                        "v8c201": {
+                            "checked": false,
+                            "title": "Fraudulent Company"
+                        },
+                        "v8c202": {
+                            "checked": false,
+                            "title": "Seems Like Never Coming Back"
+                        }
+                    }
+                },
+                chapterFilters: {}
+            };
+        }
+    });
+
+    React.useEffect(() => {
+        sessionStorage.setItem('wnDropdownState', JSON.stringify(wnDropdownState));
+    }, [wnDropdownState]);
+
     const [filterState, setFilterState] = useState(() => {
         // Try to get the state from sessionStorage
         const savedState = sessionStorage.getItem('filterState');
@@ -12035,6 +15067,7 @@ function SearchPage() {
         "characterImages": {
             "Shadow": ShadowIcon,
             "Cid Kagenou": CidKagenouIcon,
+            "Cid": CidKagenouIcon,
             "Minoru Kageno": MinoruKagenoIcon,
             "Stylish Ruffian Slayer": StylishRuffianSlayerIcon,
             "Akane Nishino": AkaneNishinoIcon,
@@ -12048,11 +15081,18 @@ function SearchPage() {
             "Eta": EtaIcon,
             "Gamma": GammaIcon,
             "Iris Midgar": IrisMidgarIcon,
-            "PoTato": PoTatoIcon,
+            "Po Tato": PoTatoIcon,
             "Rose Oriana": RoseOrianaIcon,
+            "Rose": RoseOrianaIcon,
+            "No.666": No666Icon,
             "Sherry Barnett": SherryBarnettIcon,
-            "SkelEtal": SkelEtalIcon,
+            "Skel Etal": SkelEtalIcon,
             "Zeta": ZetaIcon,
+            "Rose": RoseOrianaIcon,
+            "Nu": NuIcon,
+            "??? (Stylish Bandit Slayer)": StylishBanditSlayerIcon,
+            "Lambda": LambdaIcon,
+            "Tawny Elf (Lambda)": LambdaIcon,
         },
         "lnCoverImages": {
             "v1": LNV1Cover,
@@ -12088,9 +15128,13 @@ function SearchPage() {
                             "John Smith": false,
                             "Mundane Mann": false,
                             "Stylish Ruffian Slayer": false,
+                            "Stylish Bandit Slayer": false,
+                            "??? (Stylish Bandit Slayer)": false,
                             "checked": false
                         },
                         "Alpha": {
+                            "Alpha": false,
+                            "??? (Alpha)": false,
                             "checked": false
                         },
                         "Beta": {
@@ -12116,6 +15160,14 @@ function SearchPage() {
                         ,
                         "Eta": {
                             "checked": false
+                        },
+                        "Lambda": {
+                            "Lambda": false,
+                            "Tawny Elf (Lambda)": false,
+                            "checked": false
+                        },
+                        "Nu": {
+                            checked: false,
                         }
                     }
                 },
@@ -12128,6 +15180,18 @@ function SearchPage() {
                             "checked": false
                         },
                         "Iris Midgar": {
+                            "checked": false
+                        }
+                    }
+                },
+                'ORIANA': {
+                    openGroup: false,
+                    checked: false,
+                    filters: '',
+                    characters: {
+                        "Rose Oriana": {
+                            "Rose Oriana": false,
+                            "No.666": false,
                             "checked": false
                         }
                     }
@@ -12243,6 +15307,15 @@ function SearchPage() {
         "Zeta", "Eta", "Alexia Midgar", "Iris Midgar", "Shadow", "Minoru Kageno", "Stylish Ruffian Slayer"
     ];
 
+    const nameMap = {
+        'Cid Kagenou (All)': ['Cid Kagenou', 'Minoru Kageno', 'Shadow', 'Stylish Ruffian Slayer', '??? (Stylish Bandit Slayer)'],
+        'Cid Kagenou': ['Cid'],
+        'Rose Oriana (All)': ['Rose Oriana', 'Rose', 'No.666'],
+        'Rose Oriana': ['Rose'],
+        'Alpha (All)': ['Alpha', '??? (Alpha)'],
+        'Lambda (All)': ['Lambda', 'Tawny Elf (Lambda)'],
+      };
+
     const [canonActive, setCanonActive] = useState(() => {
         // Get the initial value from sessionStorage or default to false
         const saved = sessionStorage.getItem('canonActive');
@@ -12268,6 +15341,13 @@ function SearchPage() {
 
     const updateLNDropdownState = (key, value) => {
         setLNDropdownState(prevState => ({
+            ...prevState,
+            [key]: value
+        }));
+    }
+
+    const updateWNDropdownState = (key, value) => {
+        setWNDropdownState(prevState => ({
             ...prevState,
             [key]: value
         }));
@@ -12348,40 +15428,47 @@ function SearchPage() {
                 for (let part in mogDropdownState.partsChecked[group]) {
                     for (let episode in mogDropdownState.partsChecked[group][part]) {
                         if (episode !== 'checked' && mogDropdownState.partsChecked[group][part][episode]) {
-                            esCheckedItems.push(`es_${part.split(" ")[1]}_${episode}`);
+                            esCheckedItems.push(`es_${part}_${episode}`);
                         }
                     }
                 }
             }
         }
-
+        console.log(esCheckedItems)
         // Initialize separate objects to hold the anime and light novel results
         let animeResults = {};
         let lnResults = {};
         let sscResults = {};
+        let esResults = {};
 
         const ln_v1_checked = [...lnCheckedItems].some(item => item.includes('ln_v1')) ? ln_v1 : {};
         const ln_v2_checked = [...lnCheckedItems].some(item => item.includes('ln_v2')) ? ln_v2 : {};
         const an_s1_checked = [...animeCheckedItems].some(item => item.includes('an_s1')) ? an_s1 : {};
         const ssc_temp_checked = [...sscCheckedItems].some(item => item.includes('ssc_p1_c1-1')) ? mg_ssc_p1 : {};
+        const es_rog_checked = [...esCheckedItems].some(item => item.includes('es_Rose of Garden')) ? mg_es_rog : {};
 
         const lnText = { "ln": { ...ln_v1_checked, ...ln_v2_checked } }
         const animeText = { "an": { ...an_s1_checked } }
         const sscText = { "ssc": { ...ssc_temp_checked } }
+        const esText = { "es" : { ...es_rog_checked } }
 
-        animeResults = searchAnime(animeCheckedItems, animeText, filterState.keywords, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, namedActive, namedCharacters);
+        animeResults = searchAnime(animeCheckedItems, animeText, filterState.keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, namedActive, namedCharacters);
         lnResults = searchLN(lnCheckedItems, lnText, filterState.keywords, filterState.caseSensitive, filterState.exactMatch);
-        sscResults = searchSSC(sscCheckedItems, sscText, filterState.keywords, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, namedActive, namedCharacters)
-
+        sscResults = searchSSC(sscCheckedItems, sscText, filterState.keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, namedActive, namedCharacters);
+        esResults = searchES(esCheckedItems, esText, filterState.keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, namedActive, namedCharacters);
         // Update the state with the search results
-        setSearchResults({ anime: animeResults, ln: lnResults, mg: sscResults });
+        setSearchResults({ anime: animeResults, ln: lnResults, ssc: {...sscResults}, es: {...esResults}} );
     }
+
+    
 
 
     // Add a button in your JSX to trigger the search
     return (
         <div className="search-page">
             <Filters
+                wnDropdownState={wnDropdownState}
+                updateWNDropdownState={updateWNDropdownState}
                 animeDropdownState={animeDropdownState}
                 updateAnimeDropdownState={updateAnimeDropdownState}
                 lnDropdownState={lnDropdownState}

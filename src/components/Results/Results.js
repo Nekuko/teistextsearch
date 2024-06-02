@@ -4,15 +4,19 @@ import LightNovelResults from './Containers/LightNovelResults';
 import AnimeResults from './Containers/AnimeResults';
 import CharacterResults from './Containers/CharacterResults';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLightbulb } from '@fortawesome/free-solid-svg-icons'
+import { faF, faLightbulb } from '@fortawesome/free-solid-svg-icons'
 import './Results.css';
 import SSCResults from './Containers/SSCResults';
+import ESResults from './Containers/ESResults';
 
 function Results({ results, images, filterState }) {
   const noResults = Object.keys(results).length === 0;
   const lnResults = results && results.ln ? results.ln.ln : null;
   const anResults = results && results.anime ? results.anime.an : null;
-  const sscResults = results && results.mg ? results.mg.ssc : null;
+  const sscResults = results && results.ssc ? results.ssc.ssc: null;
+  const esResults = results && results.es ? results.es.es: null;
+  console.log(results)
+
   const [highlight, setHighlight] = useState(false);
 
   const toggleHighlight = () => {
@@ -20,9 +24,26 @@ function Results({ results, images, filterState }) {
   };
 
 
+
   // Check if .an key exists in results.anime and if there are any characters to show
   const anCharacter = results && results.anime && !results.anime.an && Object.keys(results.anime).length > 0;
-  const sscCharacter = results && results.mg && !results.mg.ssc && Object.keys(results.mg).length > 0;
+  const sscCharacter = results && results.ssc && !results.ssc.ssc && Object.keys(results.ssc).length > 0;
+  const esCharacter = results && results.es && !results.es.es && Object.keys(results.es).length > 0;
+  console.log(sscCharacter)
+
+  console.log(sscResults, esResults)
+
+  let mgCount = 0;
+  if (sscCharacter === false && esCharacter === false) {
+    if (sscResults) {
+      mgCount += sscResults.count;
+    }
+    if (esResults) {
+      mgCount += esResults.count;
+    }
+  
+  }
+
 
   return (
     <div>
@@ -44,17 +65,26 @@ function Results({ results, images, filterState }) {
                   <LightNovelResults lnData={lnResults} volumeImages={images.lnCoverImages} highlight={highlight} filterState={filterState} />
                 </Collapsible>
               )}
-              {((anCharacter || sscCharacter) && (
-                <CharacterResults anData={results.anime} sscData={results.mg} images={images} highlight={highlight} filterState={filterState} />
+              {((anCharacter || esCharacter || sscCharacter) && (
+                <CharacterResults anData={results.anime} sscData={results.ssc} esData={results.es} images={images} highlight={highlight} filterState={filterState} />
               ))}
               {anResults && (
                 <Collapsible trigger={`Anime (Total: ${anResults.count})`}>
                   <AnimeResults anData={anResults} images={images} highlight={highlight} filterState={filterState} main={true} />
                 </Collapsible>
               )}
-              {sscResults && (
-                <Collapsible trigger={`Master of Garden (Total: ${sscResults.count})`}>
-                  <SSCResults sscData={sscResults} images={images} highlight={highlight} filterState={filterState} main={true} />
+              {((sscResults || esResults) && (mgCount > 0)) && (
+                <Collapsible trigger={`Master of Garden (Total: ${mgCount})`}>
+                  {sscResults && (
+                    <Collapsible key={'ssc'} trigger={`Seven Shadows Chronicles (Total: ${sscResults.count})`}>
+                      <SSCResults main={true} sscData={sscResults} images={images} filterState={filterState} highlight={highlight} />
+                    </Collapsible>
+                  )}
+                  {esResults && (
+                    <Collapsible key={'es'} trigger={`Event Stories (Total: ${esResults.count})`}>
+                      <ESResults main={true} anData={esResults} images={images} filterState={filterState} highlight={highlight} />
+                    </Collapsible>
+                  )}
                 </Collapsible>
               )}
             </>

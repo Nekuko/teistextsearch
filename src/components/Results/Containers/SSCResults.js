@@ -393,8 +393,9 @@ function SSCResults({ sscData, images, highlight, filterState, main }) {
                                                                         {
                                                                             sentence.name !== sentence.name_variant ? (
                                                                                 sentence.name_variant.includes("(") ?
-                                                                                    `${sentence.name_variant.split(' ')[1].replace(/\(|\)/g, "")} (${sentence.name_variant.split(' ')[0]})`
-                                                                                    : `${sentence.name_variant} (${sentence.name})`
+                                                                                `${sentence.name_variant.split(' ')[sentence.name_variant.split(' ').length - 1].replace(/\(|\)/g, "")} (${sentence.name_variant.split(' ').slice(0, -1).join(' ')})`
+                                                                                : `${sentence.name_variant} (${sentence.name})`
+                                                                              
                                                                             ) : sentence.name
                                                                         }
                                                                     </p>

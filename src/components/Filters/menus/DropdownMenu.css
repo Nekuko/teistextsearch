@@ -22,7 +22,7 @@
   padding-right: 2%;
 }
 
-.episode-list, .volume-list, .attribute-list, .section-list {
+.episode-list, .volume-list, .attribute-list, .section-list, .chapter-list {
   max-height: 200px; /* Adjust this value as needed */
   overflow-y: auto; /* This will add a vertical scrollbar */
 }
