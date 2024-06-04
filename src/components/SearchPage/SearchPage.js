@@ -25617,6 +25617,7 @@ function SearchPage() {
         const ln_v2_checked = [...lnCheckedItems].some(item => item.includes('ln_v2')) ? ln_v2 : {};
         const ln_v3_checked = [...lnCheckedItems].some(item => item.includes('ln_v3')) ? ln_v3 : {};
         const ln_v5_checked = [...lnCheckedItems].some(item => item.includes('ln_v5')) ? ln_v5 : {};
+        
         const an_s1_checked = [...animeCheckedItems].some(item => item.includes('an_s1')) ? an_s1 : {};
         const ssc_temp_checked = [...sscCheckedItems].some(item => item.includes('ssc_p1_c1-1')) ? mg_ssc_p1 : {};
         const es_rog_checked = [...esCheckedItems].some(item => item.includes('es_Rose of Garden')) ? mg_es_rog : {};
