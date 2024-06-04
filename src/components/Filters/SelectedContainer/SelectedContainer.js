@@ -2,7 +2,7 @@
 import React from 'react';
 import './SelectedContainer.css';
 
-function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownState, dropdownStates, volumes, namedActive, canonActive }) {
+function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownState, dropdownStates, namedActive, canonActive }) {
   let animeCheckedItems = [];
 
   if (animeDropdownState && animeDropdownState.seasonsChecked) {
@@ -93,7 +93,7 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
     }
 
     if (selectedList.length === 19 && Object.keys(selectedList).every(key => !selectedList[key].text.includes("Episode"))) {
-      return [{text: "MOG Event Stories", hoverText: "Master of Garden, Event Stories"}]
+      return [{ text: "MOG Event Stories", hoverText: "Master of Garden, Event Stories" }]
     }
 
     let mainGroups = ["MOG ES Rose of Garden", "MOG ES Truth Seekers", "MOG ES Interlude", "MOG ES Masquerade"];
@@ -350,23 +350,25 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
 
   const getSelectedLNList = () => {
     let lnList = [];
-    const totalVolumes = volumes.length;
-    const checkedVolumes = volumes.filter(volume => volume.chapters.every(chapter => lnDropdownState.volumesChecked[volume.name][chapter.id])).length;
+    const volumesChecked = lnDropdownState.volumesChecked;
+    const totalVolumes = Object.keys(volumesChecked).length;
+    const checkedVolumes = Object.values(volumesChecked).filter(volume => Object.values(volume).every(chapter => chapter.checked)).length;
 
     if (lnDropdownState.lnMainChecked && totalVolumes === checkedVolumes) {
       lnList.push({ text: 'Light Novel', hoverText: 'Light Novel' });
     } else {
-      volumes.forEach(volume => {
-        const checkedChapters = volume.chapters.filter(chapter => lnDropdownState.volumesChecked[volume.name][chapter.id]);
-        if (checkedChapters.length === volume.chapters.length) {
-          lnList.push({ text: `Light Novel Volume ${volume.name.split(' ')[1]}`, hoverText: `Light Novel Volume ${volume.name.split(' ')[1]}` });
-        } else {
+      Object.entries(volumesChecked).forEach(([volumeName, volume]) => {
+        const checkedChapters = Object.values(volume).filter(chapter => chapter.checked);
+        if (checkedChapters.length === Object.keys(volume).length - 1) {
+          lnList.push({ text: `Light Novel Volume ${volumeName.split(' ')[1]}`, hoverText: `Light Novel Volume ${volumeName.split(' ')[1]}` });
+        }
+        else {
           let ranges = [];
           let rangeStart = null;
           let rangeEnd = null;
           let chapterId = null; // Define chapterId here
           for (let i = 0; i < checkedChapters.length; i++) {
-            const chapterNumber = checkedChapters[i].name.split('|')[0].trim();
+            const chapterNumber = checkedChapters[i].title.split('|')[0].trim();
             chapterId = checkedChapters[i].id; // Update chapterId here
             let chapterType = '';
             switch (chapterNumber) {
@@ -375,11 +377,42 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
                 ranges.push({ id: chapterId, type: chapterType });
                 continue;
               case 'E':
-                chapterType = 'Epilogue';
-                ranges.push({ id: chapterId, type: chapterType });
-                continue;
+                if (volumeName === "Volume 3") {
+                  if (volumesChecked["Volume 3"]["v3c8"].checked) {
+                    chapterType = 'E';
+                  } else {
+                    chapterType = 'Epilogue';
+                    ranges.push({ id: chapterId, type: chapterType });
+                    continue;
+                  }
+                } else if (volumeName === "Volume 5") {
+                  if (volumesChecked["Volume 5"]["v5c6"].checked) {
+                    chapterType = 'E';
+                  } else {
+                    chapterType = 'Epilogue';
+                    ranges.push({ id: chapterId, type: chapterType });
+                    continue;
+                  }
+                }
+                break;
               case 'F':
-                chapterType = 'F';
+                if (volumeName === "Volume 1") {
+                  if (volumesChecked["Volume 1"]["v1c7"].checked) {
+                    chapterType = 'F';
+                  } else {
+                    chapterType = 'Final Chapter';
+                    ranges.push({ id: chapterId, type: chapterType });
+                    continue;
+                  }
+                } else if (volumeName === "Volume 2") {
+                  if (volumesChecked["Volume 2"]["v2c9"].checked) {
+                    chapterType = 'F';
+                  } else {
+                    chapterType = 'Final Chapter';
+                    ranges.push({ id: chapterId, type: chapterType });
+                    continue;
+                  }
+                }
                 break;
               case 'X':
                 chapterType = 'Auxiliary Chapter';
@@ -397,29 +430,31 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
               rangeEnd = chapterType;
             }
             rangeEnd = chapterType;
-            if (i === checkedChapters.length - 1 || (i + 1 < checkedChapters.length && checkedChapters[i + 1].name.split('|')[0].trim() !== 'F' && parseInt(checkedChapters[i + 1].name.split('|')[0].trim()) !== chapterType + 1)) {
-              if (rangeStart === 'F') {
-                ranges.push({ id: chapterId, type: 'Final Chapter' });
-              } else if (rangeEnd === 'F') {
-                ranges.push(`C${rangeStart}-F`);
-              } else {
-                ranges.push(`C${rangeStart}${rangeStart !== rangeEnd ? `-${rangeEnd}` : ''}`);
-              }
+            if (i === checkedChapters.length - 1 || (i + 1 < checkedChapters.length && checkedChapters[i + 1].title.split('|')[0].trim() !== 'F' && checkedChapters[i + 1].title.split('|')[0].trim() !== 'E' && parseInt(checkedChapters[i + 1].title.split('|')[0].trim()) !== chapterType + 1)) {
+              ranges.push(`C${rangeStart}${rangeStart !== rangeEnd ? `-${rangeEnd}` : ''}`);
               rangeStart = null;
               rangeEnd = null;
             }
           }
           // Add this to handle the case where the last chapter is checked but not added to the range
           if (rangeStart !== null) {
-            if (rangeStart === 'F') {
-              ranges.push({ id: chapterId, type: 'Final Chapter' });
-            } else if (rangeEnd === 'F') {
-              ranges.push(`C${rangeStart}-F`);
-            } else {
-              ranges.push(`C${rangeStart}${rangeStart !== rangeEnd ? `-${rangeEnd}` : ''}`);
-            }
+            ranges.push(`C${rangeStart}${rangeStart !== rangeEnd ? `-${rangeEnd}` : ''}`);
           }
-          lnList.push(...ranges.map(range => typeof range === 'string' ? { text: `LN V${volume.name.split(' ')[1]} ${range}`, hoverText: `Light Novel, Volume ${volume.name.split(' ')[1]}, ${range.includes('-') ? 'Chapters' : 'Chapter'} ${range.split('C')[1].replace('-F', '-Final')}` } : { text: `LN V${volume.name.split(' ')[1]} ${range.type}`, hoverText: `Light Novel Volume ${volume.name.split(' ')[1]} ${range.type}` }));
+          ranges.sort((a, b) => {
+            const typeA = typeof a === 'string' ? a.split('C')[1] : a.type;
+            const typeB = typeof b === 'string' ? b.split('C')[1] : b.type;
+
+            if (typeA === 'Appendix' || typeA === 'A') return 1;
+            if (typeB === 'Appendix' || typeB === 'A') return -1;
+            if (typeA === 'Final Chapter' || typeA === 'F') return 1;
+            if (typeB === 'Final Chapter' || typeB === 'F') return -1;
+            if (typeA === 'Epilogue' || typeA === 'E') return 1;
+            if (typeB === 'Epilogue' || typeB === 'E') return -1;
+
+          
+            return parseInt(typeA) - parseInt(typeB);
+          });
+          lnList.push(...ranges.map(range => typeof range === 'string' ? { text: `LN V${volumeName.split(' ')[1]} ${range}`, hoverText: `Light Novel, Volume ${volumeName.split(' ')[1]}, ${range.includes('-') ? 'Chapters' : 'Chapter'} ${range.split('C')[1].replace('-F', '-Final').replace('-E', '-Epilogue')}` } : { text: `LN V${volumeName.split(' ')[1]} ${range.type}`, hoverText: `Light Novel Volume ${volumeName.split(' ')[1]} ${range.type}` }));
         }
       });
     }
@@ -501,16 +536,16 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
   if (canonActive) {
     if (mogCombined.length === 2) {
       if (mogCombined[0].text === "MOG Seven Shadows Chronicles" && mogCombined[1].text === "MOG ES Auxiliary Chapters") {
-        mogCombined = [{text: "Master of Garden", hoverText: "Master of Garden"}]
+        mogCombined = [{ text: "Master of Garden", hoverText: "Master of Garden" }]
       }
     }
   } else {
     if (mogCombined.length === 2) {
       if (mogCombined[0].text === "MOG Seven Shadows Chronicles" && mogCombined[1].text === "MOG Event Stories") {
-        mogCombined = [{text: "Master of Garden", hoverText: "Master of Garden"}]
+        mogCombined = [{ text: "Master of Garden", hoverText: "Master of Garden" }]
       }
     }
-  
+
   }
 
 

@@ -3,190 +3,185 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import './DropdownMenu.css';
 
+function LNDropdownMenu({ lnDropdownState, updateLNDropdownState, openLN, setOpenLN, volumeImages }) {
+    const { lnMainChecked, lnFilter, openVolumes, volumesChecked, chapterFilters } = lnDropdownState;
 
-function LNDropdownMenu({ lnDropdownState, updateLNDropdownState, volumes, openLN, setOpenLN, volumeImages }) {
-  const { lnMainChecked, lnFilter, openVolumes, volumesChecked, chapterFilters } = lnDropdownState;
+    const dropdownRef = useRef(null);
 
-  const dropdownRef = useRef(null);
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                // Ignore clicks on the checkbox
+                if (event.target.type !== 'checkbox') {
+                    setOpenLN(false);
+                }
+            }
+        };
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        // Ignore clicks on the checkbox
-        if (event.target.type !== 'checkbox') {
-          setOpenLN(false);
+        if (openLN) {
+            document.addEventListener('mousedown', handleClickOutside);
+        } else {
+            document.removeEventListener('mousedown', handleClickOutside);
         }
-      }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [openLN]);
+
+    useEffect(() => {
+        const allUnchecked = Object.values(volumesChecked).every(volume =>
+            Object.values(volume).every(chapter =>
+                chapter.checked === undefined ? true : !chapter.checked
+            )
+        );
+        if (allUnchecked) {
+            updateLNDropdownState('lnMainChecked', false);
+        } else {
+            updateLNDropdownState('lnMainChecked', true);
+        }
+    }, [volumesChecked]);
+
+
+    const handleLightNovelClick = () => {
+        setOpenLN(!openLN);
     };
-  
-    if (openLN) {
-      document.addEventListener('mousedown', handleClickOutside);
-    } else {
-      document.removeEventListener('mousedown', handleClickOutside);
-    }
-  
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+
+    const handleVolumeClick = (volume) => {
+        // Close the currently open volume's dropdown
+        if (openVolumes[volume]) {
+            updateLNDropdownState('openVolumes', {
+                ...openVolumes,
+                [volume]: false
+            });
+        } else {
+            // Close all volume's dropdowns
+            const newOpenVolumes = Object.keys(openVolumes).reduce((acc, key) => {
+                acc[key] = false;
+                return acc;
+            }, {});
+
+            // Open the clicked volume's dropdown
+            newOpenVolumes[volume] = true;
+
+            updateLNDropdownState('openVolumes', newOpenVolumes);
+        }
     };
-  }, [openLN]);
 
+    const handleChapterCheck = (volume, chapter) => {
+        const isChapterChecked = !volumesChecked[volume]?.[chapter]?.checked;
+        const updatedVolume = {
+            ...volumesChecked[volume],
+            [chapter]: { ...volumesChecked[volume][chapter], checked: isChapterChecked }
+        };
 
-  useEffect(() => {
-    const allUnchecked = Object.values(volumesChecked).every(volume => Object.values(volume).every(checked => !checked));
-    if (allUnchecked) {
-      updateLNDropdownState('lnMainChecked', false);
-    } else {
-      updateLNDropdownState('lnMainChecked', true);
-    }
-  }, [volumesChecked]);
+        // Check if all chapters are unchecked
+        const allChecks = Object.entries(updatedVolume).filter(([key, value]) => key !== 'checked');
+        const isAllUnchecked = allChecks.every(([name, chapter]) => !chapter.checked);
 
-  const handleAnimeClick = () => {
-    setOpenLN(!openLN);
-  };
+        if (isAllUnchecked) {
+            // If all chapters are unchecked, uncheck the volume checkbox
+            updatedVolume.checked = false;
+        } else {
+            // If not all chapters are unchecked, check the volume checkbox
+            updatedVolume.checked = true;
+        }
 
-  const handleVolumeClick = (volume) => {
-    // Close the currently open volume's dropdown
-    if (openVolumes[volume]) {
-      updateLNDropdownState('openVolumes', {
-        ...openVolumes,
-        [volume]: false
-      });
-    } else {
-      // Close all volume's dropdowns
-      const newOpenVolumes = Object.keys(openVolumes).reduce((acc, key) => {
-        acc[key] = false;
-        return acc;
-      }, {});
-
-      // Open the clicked volume's dropdown
-      newOpenVolumes[volume] = true;
-
-      updateLNDropdownState('openVolumes', newOpenVolumes);
-    }
-  };
-
-  const handleChapterCheck = (volume, chapter) => {
-    const isChapterChecked = !volumesChecked[volume]?.[chapter];
-    const updatedVolume = {
-      ...volumesChecked[volume],
-      [chapter]: isChapterChecked
+        updateLNDropdownState('volumesChecked', {
+            ...volumesChecked,
+            [volume]: updatedVolume
+        });
     };
-  
-    // Check if all chapters are unchecked
-    const allChecks = Object.entries(updatedVolume);
-    const isAllUnchecked = allChecks.every(([name, checked]) => name === 'checked' ? true : !checked);
-  
-  
-    if (isAllUnchecked) {
-      // If all chapters are unchecked, uncheck the volume checkbox
-      updatedVolume.checked = false;
-    } else {
-      // If not all chapters are unchecked, check the volume checkbox
-      updatedVolume.checked = true;
-    }
-  
-    updateLNDropdownState('volumesChecked', {
-      ...volumesChecked,
-      [volume]: updatedVolume
-    });
-  };
-  
-  
-  
-  
-  
-  
 
-  const handleVolumeCheck = (volume) => {
-    const isVolumeChecked = !volumesChecked[volume]?.checked;
-    const updatedVolume = {
-      ...volumesChecked[volume],
+    const handleVolumeCheck = (volume) => {
+        const isVolumeChecked = !volumesChecked[volume]?.checked;
+        const updatedVolume = { ...volumesChecked[volume] };
+        Object.keys(updatedVolume).forEach(chapterKey => {
+            if (chapterKey !== 'checked') {
+                updatedVolume[chapterKey] = { ...updatedVolume[chapterKey], checked: isVolumeChecked };
+            }
+        });
+
+        updateLNDropdownState('volumesChecked', {
+            ...volumesChecked,
+            [volume]: { ...updatedVolume, checked: isVolumeChecked }
+        });
     };
-    Object.keys(updatedVolume).forEach(chapter => {
-      updatedVolume[chapter] = isVolumeChecked;
-    });
-  
-    updateLNDropdownState('volumesChecked', {
-      ...volumesChecked,
-      [volume]: { ...updatedVolume, checked: isVolumeChecked }
-    });
-  };
-  
 
-  const handleFilterChange = (event, volume) => {
-    if (volume) {
-      updateLNDropdownState('chapterFilters', {
-        ...chapterFilters,
-        [volume]: event.target.value
-      });
-    } else {
-      updateLNDropdownState('lnFilter', event.target.value);
-    }
-  };
 
-  const lnFilteredVolumes = useMemo(() => {
-    if (!lnFilter) return volumes;
-    return volumes.filter(volume => volume.name.toLowerCase().includes(lnFilter.toLowerCase()));
-  }, [volumes, lnFilter]);
+    const handleFilterChange = (event, volume) => {
+        if (volume) {
+            updateLNDropdownState('chapterFilters', {
+                ...chapterFilters,
+                [volume]: event.target.value
+            });
+        } else {
+            updateLNDropdownState('lnFilter', event.target.value);
+        }
+    };
 
-  return (
-    <div className="dropdown" ref={dropdownRef}>
-      <div onClick={handleAnimeClick}>
-        <span className={lnMainChecked ? '' : 'dimmed'}>LIGHT NOVEL</span>
-        <FontAwesomeIcon className="dropdown-icon-main" icon={openLN ? faChevronUp : faChevronDown} />
-      </div>
-      {openLN && (
-        <div className = "dropdown-menu">
-          <input type="text" value={lnFilter} onChange={handleFilterChange} placeholder="Search volumes..." />
-          {lnFilteredVolumes.map((volume, index) => (
-            <div key={index}>
-              <div className="item-header">
-                <div className="volume-trigger-drop">
-                {volumeImages[volume.name.replace('Volume ', 'v')] && <img className="cover-image" src={volumeImages[volume.name.replace('Volume ', 'v')]} alt={volume.name} />}
-                <span 
-                    className={`volume-title ${volumesChecked[volume.name]?.checked ? '' : 'dimmed'}`} 
-                    onClick={() => handleVolumeClick(volume.name)}
-                  >
-                    {volume.name}
-                  </span>
-                  <FontAwesomeIcon className="dropdown-icon" icon={openVolumes[volume.name] ? faChevronUp : faChevronDown} onClick={() => handleVolumeClick(volume.name)} />
-                </div>
-                <input
-                  type="checkbox"
-                  checked={!!volumesChecked[volume.name]?.checked}
-                  onChange={() => handleVolumeCheck(volume.name)}
-                />
-              </div>
-              {openVolumes[volume.name] && (
-                <div>
-                  <input type="text" value={chapterFilters[volume.name] || ''} onChange={(event) => handleFilterChange(event, volume.name)} placeholder="Search chapters..." />
-                  <div className="chapter-list">
-                  {volume.chapters.filter(chapter => !chapterFilters[volume.name] || chapter.name.toLowerCase().includes(chapterFilters[volume.name].toLowerCase())).map((chapter, index) => {
-                  const [chapterNumber, chapterName] = chapter.name.split('|');
-                  return (
-                    <div key={index} className="chapter-item">
-                      <span className={volumesChecked[volume.name]?.[chapter.id] ? "chapter-checked" : "chapter-unchecked"}>
-                        <span style={{color: 'red'}}>{chapterNumber}</span>
-                        <span className="chapter-name" title={chapterName}>|{chapterName}</span>
-                      </span>
-                      <input
-                        type="checkbox"
-                        checked={!!volumesChecked[volume.name]?.[chapter.id]}
-                        onChange={() => handleChapterCheck(volume.name, chapter.id)}
-                      />
-                    </div>
-                  );
-                })}
+    const lnFilteredVolumes = useMemo(() => {
+        if (!lnFilter) return Object.keys(volumesChecked);
+        return Object.keys(volumesChecked).filter(volume => volume.toLowerCase().includes(lnFilter.toLowerCase()));
+    }, [volumesChecked, lnFilter]);
 
-                  </div>
-                </div>
-              )}
+    return (
+        <div className="dropdown" ref={dropdownRef}>
+            <div onClick={handleLightNovelClick}>
+                <span className={lnMainChecked ? '' : 'dimmed'}>LIGHT NOVEL</span>
+                <FontAwesomeIcon className="dropdown-icon-main" icon={openLN ? faChevronUp : faChevronDown} />
             </div>
-          ))}
+            {openLN && (
+                <div className="dropdown-menu">
+                    <input type="text" value={lnFilter} onChange={handleFilterChange} placeholder="Search volumes..." />
+                    {lnFilteredVolumes.map((volume, index) => (
+                        <div key={index}>
+                            <div className="item-header">
+                                <div className="volume-trigger-drop">
+                                    {volumeImages[volume.replace('Volume ', 'v')] && <img className="cover-image" src={volumeImages[volume.replace('Volume ', 'v')]} alt={volume} />}
+                                    <span
+                                        className={`volume-title ${volumesChecked[volume]?.checked ? '' : 'dimmed'}`}
+                                        onClick={() => handleVolumeClick(volume)}
+                                    >
+                                        {volume}
+                                    </span>
+                                    <FontAwesomeIcon className="dropdown-icon" icon={openVolumes[volume] ? faChevronUp : faChevronDown} onClick={() => handleVolumeClick(volume)} />
+                                </div>
+                                <input
+                                    type="checkbox"
+                                    checked={!!volumesChecked[volume]?.checked}
+                                    onChange={() => handleVolumeCheck(volume)}
+                                />
+                            </div>
+                            {openVolumes[volume] && (
+                                <div>
+                                    <input type="text" value={chapterFilters[volume] || ''} onChange={(event) => handleFilterChange(event, volume)} placeholder="Search chapters..." />
+                                    <div className="chapter-list">
+                                        {Object.keys(volumesChecked[volume]).filter(chapter => chapter !== 'checked' && (!chapterFilters[volume] || chapter.toLowerCase().includes(chapterFilters[volume].toLowerCase()) || volumesChecked[volume][chapter].title.toLowerCase().includes(chapterFilters[volume].toLowerCase()))).map((chapter, index) => {
+                                            const chapterTitle = volumesChecked[volume][chapter].title;
+                                            return (
+                                                <div key={index} className="chapter-item">
+                                                    <span className={volumesChecked[volume]?.[chapter] ? "chapter-checked" : "chapter-unchecked"}>
+                                                        <span style={{ color: 'red' }}>{chapterTitle.split("|")[0]} </span>
+                                                        <span className="chapter-name" title={chapterTitle.split("|")[1]}>| {chapterTitle.split("|")[1]}</span>
+                                                    </span>
+                                                    <input
+                                                        type="checkbox"
+                                                        checked={!!volumesChecked[volume]?.[chapter].checked}
+                                                        onChange={() => handleChapterCheck(volume, chapter)}
+                                                    />
+                                                </div>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                    ))}
+                </div>
+            )}
         </div>
-      )}
-    </div>
-  );
+    );
 }
 
 export default LNDropdownMenu;

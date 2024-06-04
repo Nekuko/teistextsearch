@@ -31,7 +31,7 @@ function MediumsContainer({wnDropdownState, updateWNDropdownState, animeDropdown
       updateLNDropdownState('lnMainChecked', false);
       updateLNDropdownState('lnFilter', '');
       updateLNDropdownState('chapterFilters', {});
-      updateLNDropdownState('volumesChecked', resetVolumesChecked(volumes));
+      updateLNDropdownState('volumesChecked', resetVolumesChecked(lnDropdownState.volumesChecked));
       updateLNDropdownState('openVolumes', {})
       setOpenLN(false);
 
@@ -140,24 +140,28 @@ function MediumsContainer({wnDropdownState, updateWNDropdownState, animeDropdown
       return resetState;
     };
   
-    // Helper function to reset volumesChecked
-    const resetVolumesChecked = (volumes) => {
-      const resetState = {};
-      volumes.forEach(volume => {
-        resetState[volume.name] = volume.chapters.reduce((acc, chapter) => {
-          acc[chapter.id] = false;
-          return acc;
-        }, {});
-        resetState[volume.name].checked = false;
+    const resetVolumesChecked = (volumesChecked) => {
+      // Directly mutate the volumesChecked object
+      Object.keys(volumesChecked).forEach(volumeName => {
+        const volume = volumesChecked[volumeName];
+        Object.keys(volume).forEach(chapterKey => {
+          if (chapterKey !== 'checked') {
+            volume[chapterKey].checked = false;
+          }
+        });
+    
+        // Reset the checked property for the volume
+        volume.checked = false;
       });
-      return resetState;
+    
+      // Return the mutated volumesChecked object
+      return volumesChecked;
     };
 
     const resetWNVolumesChecked = (volumesChecked) => {
       // Directly mutate the volumesChecked object
       Object.keys(volumesChecked).forEach(volumeName => {
         const volume = volumesChecked[volumeName];
-        console.log(volume)
         Object.keys(volume).forEach(chapterKey => {
           if (chapterKey !== 'checked') {
             volume[chapterKey].checked = false;
@@ -253,20 +257,27 @@ function MediumsContainer({wnDropdownState, updateWNDropdownState, animeDropdown
       const isLNMainChecked = !lnMainChecked;
       updateLNDropdownState('lnMainChecked', isLNMainChecked);
     
-      // Update the seasonsChecked state for each episode in each season
+      // Update the volumesChecked state for each chapter in each volume
       const updatedVolumesChecked = {};
-      volumes.forEach(volume => {
-        updatedVolumesChecked[volume.name] = volume.chapters.reduce((acc, chapter) => {
-          acc[chapter.id] = isLNMainChecked;
-          return acc;
-        }, {});
+      Object.keys(lnDropdownState.volumesChecked).forEach(volumeName => {
+        const volume = lnDropdownState.volumesChecked[volumeName];
+        const updatedVolume = {};
+        Object.keys(volume).forEach(chapterKey => {
+          if (chapterKey !== 'checked') {
+            updatedVolume[chapterKey] = {
+              ...volume[chapterKey],
+              checked: isLNMainChecked
+            };
+          }
+        });
     
-        // Update the checked property for the season
-        updatedVolumesChecked[volume.name].checked = isLNMainChecked;
+        // Update the checked property for the volume
+        updatedVolume.checked = isLNMainChecked;
+        updatedVolumesChecked[volumeName] = updatedVolume;
       });
     
       updateLNDropdownState('volumesChecked', updatedVolumesChecked);
-    };
+  };
 
     const handleMOGMainCheck = () => {
       setMogDropdownState(prevState => {
@@ -371,7 +382,6 @@ function MediumsContainer({wnDropdownState, updateWNDropdownState, animeDropdown
           <LNDropdownMenu 
           lnDropdownState={lnDropdownState}
           updateLNDropdownState={updateLNDropdownState}
-          volumes={volumes}
           openLN={openLN}
           setOpenLN={setOpenLN}
           volumeImages={images.lnCoverImages}

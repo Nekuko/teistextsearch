@@ -9,13 +9,12 @@ import './Results.css';
 import SSCResults from './Containers/SSCResults';
 import ESResults from './Containers/ESResults';
 
-function Results({ results, images, filterState }) {
+function Results({ results, images, filterState, lnDropdownState }) {
   const noResults = Object.keys(results).length === 0;
   const lnResults = results && results.ln ? results.ln.ln : null;
   const anResults = results && results.anime ? results.anime.an : null;
   const sscResults = results && results.ssc ? results.ssc.ssc: null;
   const esResults = results && results.es ? results.es.es: null;
-  console.log(results)
 
   const [highlight, setHighlight] = useState(false);
 
@@ -29,9 +28,6 @@ function Results({ results, images, filterState }) {
   const anCharacter = results && results.anime && !results.anime.an && Object.keys(results.anime).length > 0;
   const sscCharacter = results && results.ssc && !results.ssc.ssc && Object.keys(results.ssc).length > 0;
   const esCharacter = results && results.es && !results.es.es && Object.keys(results.es).length > 0;
-  console.log(sscCharacter)
-
-  console.log(sscResults, esResults)
 
   let mgCount = 0;
   if (sscCharacter === false && esCharacter === false) {
@@ -62,7 +58,7 @@ function Results({ results, images, filterState }) {
             <>
               {lnResults && (
                 <Collapsible className="ln-results" trigger={`Light Novel (Total: ${lnResults.count})`}>
-                  <LightNovelResults lnData={lnResults} volumeImages={images.lnCoverImages} highlight={highlight} filterState={filterState} />
+                  <LightNovelResults lnDropdownState={lnDropdownState} lnData={lnResults} volumeImages={images.lnCoverImages} highlight={highlight} filterState={filterState} />
                 </Collapsible>
               )}
               {((anCharacter || esCharacter || sscCharacter) && (

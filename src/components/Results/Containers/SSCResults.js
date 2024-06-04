@@ -13,7 +13,6 @@ function SSCResults({ sscData, images, highlight, filterState, main }) {
     const [previewImage, setPreviewImage] = useState(null);
     const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
     const iconRefs = useRef({});
-    console.log(sscData)
 
     const characterImages = images.characterImages;
     const coverImages = images.animeCoverImages;

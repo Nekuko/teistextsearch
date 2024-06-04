@@ -15,7 +15,6 @@ function Filters({
   setFilterState,
   dropdownStates,
   setDropdownStates,
-  volumes,
   images,
   namedActive,
   namedCharacters,
@@ -38,7 +37,6 @@ function Filters({
           updateAnimeDropdownState={updateAnimeDropdownState}
           lnDropdownState={lnDropdownState}
           updateLNDropdownState={updateLNDropdownState}
-          volumes={volumes}
           images={images}
           mogDropdownState={mogDropdownState}
           setMogDropdownState={setMogDropdownState}
@@ -57,7 +55,6 @@ function Filters({
         animeDropdownState={animeDropdownState}
         lnDropdownState={lnDropdownState}
         dropdownStates={dropdownStates}
-        volumes={volumes}
         namedActive={namedActive}
         canonActive={canonActive}
         mogDropdownState={mogDropdownState}

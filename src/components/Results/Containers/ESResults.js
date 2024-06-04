@@ -13,7 +13,6 @@ function ESResults({ anData, images, highlight, filterState, main }) {
   const [previewImage, setPreviewImage] = useState(null);
   const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
   const iconRefs = useRef({});
-  console.log(anData)
 
   const characterImages = images.characterImages;
   const coverImages = images.animeCoverImages;
