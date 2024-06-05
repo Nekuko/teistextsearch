@@ -4,13 +4,15 @@ import Collapsible from 'react-collapsible';
 import '../Results.css'; // Import the CSS file
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faFileImage } from '@fortawesome/free-solid-svg-icons';
+import { faCopy, faFileImage, faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
 import ImagePreview from './ImagePreview/ImagePreview'; // Adjust the path as needed
+import InfoPreview from './InfoPreview/InfoPreview';
 
 function SSCResults({ sscData, images, highlight, filterState, main }) {
     const [imageCache, setImageCache] = useState({});
     const [previewImage, setPreviewImage] = useState(null);
+    const [previewText, setPreviewText] = useState(null);
     const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
     const iconRefs = useRef({});
 
@@ -52,6 +54,24 @@ function SSCResults({ sscData, images, highlight, filterState, main }) {
             img.src = url;
         }
     }
+
+    function handleMouseEnterInfo(partKey, chapterKey, episodeKey, index, chapterTitle, partTitle, episodeTitle, line, name, name_variant) {
+        let nameFinal;
+        if (name === name_variant) {
+            nameFinal = name;
+        } else {
+            nameFinal = `${name_variant} | (${name})`;
+        }
+        const rect = iconRefs.current[`${partKey}-${chapterKey}-${episodeKey}-${index}-info`].getBoundingClientRect();
+        setPreviewPosition({ top: rect.top, left: rect.left });
+
+        // Set the text data directly as the preview text
+        setPreviewText(`Master of Garden<br />Seven Shadows Chronicles<br />${chapterTitle.replace("|", "-")}<br />
+        Chapter ${partTitle.replace("|", "-")}<br />Episode ${episodeTitle.replace("|", "-")}<br />Line ${line}<br />${nameFinal}`);
+    }
+
+
+
 
     if (Object.keys(sscData.parts).length === 0) {
         return null;
@@ -369,7 +389,7 @@ function SSCResults({ sscData, images, highlight, filterState, main }) {
                                                             <div className="sentence-character-container" key={index}>
                                                                 <div className="sentence-box-image">
                                                                     <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
-                                                                    <div className="icon-container">
+                                                                    <div className="icon-container-triple">
                                                                         <CopyToClipboard text={sentence.subtitle}>
                                                                             <div className="copy-icon" onClick={() => showPopup(partKey, chapterKey, index)}>
                                                                                 <FontAwesomeIcon icon={faCopy} />
@@ -391,21 +411,35 @@ function SSCResults({ sscData, images, highlight, filterState, main }) {
 
                                                                             )}
                                                                         </div>
+                                                                        <SlashLine className="icon-slashline" />
+                                                                        <div className="info-icon-container"
+                                                                            onMouseEnter={() => handleMouseEnterInfo(partKey, chapterKey, episodeKey, index, partTitle,
+                                                                                chapterTitle, episodeTitle, sentence.line, sentence.name, sentence.name_variant)}
+                                                                            onMouseLeave={() => setPreviewText(null)}
+                                                                            ref={ref => iconRefs.current[`${partKey}-${chapterKey}-${episodeKey}-${index}-info`] = ref}
+                                                                        >
+                                                                            {sentence && (
+                                                                                <FontAwesomeIcon className="info-icon" icon={faCircleInfo} />
+                                                                            )}
+                                                                        </div>
+
                                                                     </div>
                                                                 </div>
                                                                 <div className="character-box">
                                                                     {characterImages[sentence.name_variant] && <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant} />}
-                                                                    <p title={sentence.name_variant}>
+                                                                    <p title={sentence.name_variant || 'Narrator'}>
                                                                         {
-                                                                            sentence.name !== sentence.name_variant ? (
-                                                                                sentence.name_variant.includes("(") ?
-                                                                                    `${sentence.name_variant.split(' ')[sentence.name_variant.split(' ').length - 1].replace(/\(|\)/g, "")} (${sentence.name_variant.split(' ').slice(0, -1).join(' ')})`
-                                                                                    : `${sentence.name_variant} (${sentence.name})`
-
-                                                                            ) : sentence.name
+                                                                            sentence.name && sentence.name_variant ? (
+                                                                                sentence.name !== sentence.name_variant ? (
+                                                                                    sentence.name_variant.includes("(") ?
+                                                                                        `${sentence.name_variant.split(' ')[sentence.name_variant.split(' ').length - 1].replace(/\(|\)/g, "")} (${sentence.name_variant.split(' ').slice(0, -1).join(' ')})`
+                                                                                        : `${sentence.name_variant} (${sentence.name})`
+                                                                                ) : sentence.name
+                                                                            ) : 'Narrator'
                                                                         }
                                                                     </p>
                                                                 </div>
+
 
 
                                                             </div>
@@ -422,6 +456,7 @@ function SSCResults({ sscData, images, highlight, filterState, main }) {
                 );
             })}
             {previewImage && <ImagePreview src={previewImage} position={previewPosition} />}
+            {previewText && <InfoPreview info={previewText} position={previewPosition} />}
         </div>
     );
 

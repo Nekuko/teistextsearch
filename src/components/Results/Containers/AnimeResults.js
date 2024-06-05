@@ -111,7 +111,7 @@ function AnimeResults({ anData, images, highlight, filterState, main }) {
             <Collapsible className="medium-margin" trigger={
               <>
                 <div className="season-trigger">
-                  {main && coverImages[seasonKey] && <img className="cover-image" src={coverImages[seasonKey]} alt={seasonTitle} />}
+                  {coverImages[seasonKey] && <img className="cover-image" src={coverImages[seasonKey]} alt={seasonTitle} />}
                   {`${seasonTitle} (Total: ${seasonCount})`}
                 </div>
               </>

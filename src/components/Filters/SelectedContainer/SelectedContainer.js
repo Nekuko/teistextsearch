@@ -403,7 +403,12 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     let lnList = [];
     const volumesChecked = lnDropdownState.volumesChecked;
     const totalVolumes = Object.keys(volumesChecked).length;
-    const checkedVolumes = Object.values(volumesChecked).filter(volume => Object.values(volume).every(chapter => chapter.checked)).length;
+    const checkedVolumes = Object.values(volumesChecked).filter(volume => {
+      // Get only the chapters from the volume
+      const chapters = Object.entries(volume).filter(([key]) => key.startsWith('v'));
+      // Check if all chapters are checked
+      return chapters.every(([, chapter]) => chapter.checked);
+    }).length;
 
     if (lnDropdownState.lnMainChecked && totalVolumes === checkedVolumes) {
       lnList.push({ text: 'Light Novel', hoverText: 'Light Novel' });
@@ -436,8 +441,25 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
                     ranges.push({ id: chapterId, type: chapterType });
                     continue;
                   }
+                } else if (volumeName === "Volume 4") {
+                  if (volumesChecked["Volume 4"]["v4c8"].checked) {
+                    chapterType = 'E';
+                  } else {
+                    chapterType = 'Epilogue';
+                    ranges.push({ id: chapterId, type: chapterType });
+                    continue;
+                  }
+
                 } else if (volumeName === "Volume 5") {
                   if (volumesChecked["Volume 5"]["v5c6"].checked) {
+                    chapterType = 'E';
+                  } else {
+                    chapterType = 'Epilogue';
+                    ranges.push({ id: chapterId, type: chapterType });
+                    continue;
+                  }
+                } else if (volumeName === "Volume 6") {
+                  if (volumesChecked["Volume 6"]["v6c8"].checked) {
                     chapterType = 'E';
                   } else {
                     chapterType = 'Epilogue';
@@ -465,6 +487,10 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
                   }
                 }
                 break;
+              case 'I':
+                chapterType = 'Intermission';
+                ranges.push({ id: chapterId, type: chapterType });
+                continue;
               case 'X':
                 chapterType = 'Auxiliary Chapter';
                 ranges.push({ id: chapterId, type: chapterType });

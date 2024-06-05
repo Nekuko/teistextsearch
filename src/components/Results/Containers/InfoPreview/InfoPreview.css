@@ -1,0 +1,13 @@
+/* ImagePreview.css */
+.info-preview-content {
+    position: fixed;
+    padding: 0.5%;
+    transform: translate(0, -300px);
+    max-width: 300px;
+    z-index: 1; /* Ensure the preview is on top of everything else */
+    overflow: visible;
+    background-color: #2c2f33;
+    border-radius: 5px;
+  }
+
+  

@@ -11,7 +11,9 @@ import SSCResults from './Containers/SSCResults';
 import ESResults from './Containers/ESResults';
 
 function Results({ results, images, filterState, lnDropdownState, wnDropdownState, setSearchResults }) {
-  const noResults = Object.keys(results).length === 0;
+  console.log(filterState)
+  console.log(results)
+  const noResults = Object.keys(results).every(key => Object.keys(results[key]).length === 0);
   const lnResults = results && results.ln ? results.ln.ln : null;
   const wnResults = results && results.wn ? results.wn.wn : null;
   const anResults = results && results.anime ? results.anime.an : null;
@@ -69,7 +71,16 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
         />
         <div className="content-wrapper">
           {noResults ? (
-            <p>No results found.</p>
+            <p>
+              No results found{filterState.keywords.length === 0 ? '.' : ''}
+              {filterState.keywords.length > 0 &&
+                <span> for
+                  <span style={{ color: 'red' }}>
+                    {` ${filterState.keywords.join(', ')}.`}
+                  </span>
+                </span>
+              }
+            </p>
           ) : (
             <>
               {lnResults && (
@@ -86,7 +97,7 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
                 <CharacterResults anData={results.anime} sscData={results.ssc} esData={results.es} images={images} highlight={highlight} filterState={filterState} />
               ))}
               {anResults && (
-                <Collapsible trigger={`Anime (Total: ${anResults.count})`}>
+                <Collapsible className="an-results" trigger={`Anime (Total: ${anResults.count})`}>
                   <AnimeResults anData={anResults} images={images} highlight={highlight} filterState={filterState} main={true} />
                 </Collapsible>
               )}

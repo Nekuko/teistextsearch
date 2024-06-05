@@ -143,7 +143,7 @@ function LNDropdownMenu({ lnDropdownState, updateLNDropdownState, openLN, setOpe
                                         className={`volume-title ${volumesChecked[volume]?.checked ? '' : 'dimmed'}`}
                                         onClick={() => handleVolumeClick(volume)}
                                     >
-                                        {volume}
+                                        {`${volume} ${volume === 'Volume 5' || volume === 'Volume 6' ? '[Fan-TL]' : ''}`}
                                     </span>
                                     <FontAwesomeIcon className="dropdown-icon" icon={openVolumes[volume] ? faChevronUp : faChevronDown} onClick={() => handleVolumeClick(volume)} />
                                 </div>
