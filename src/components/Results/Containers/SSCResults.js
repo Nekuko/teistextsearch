@@ -15,7 +15,7 @@ function SSCResults({ sscData, images, highlight, filterState, main }) {
     const iconRefs = useRef({});
 
     const characterImages = images.characterImages;
-    const coverImages = images.animeCoverImages;
+    const coverImages = images.sscCoverImages;
 
     const highlightKeywords = (text) => {
         let highlightedText = text;
@@ -346,13 +346,20 @@ function SSCResults({ sscData, images, highlight, filterState, main }) {
                                 for (let i = 0; i < chapterKeys.length; i++) {
                                     if (chapterKeys[i].startsWith(`${chapterKey.slice(1)}`)) {
                                         chapterTitle = chapterKeys[i];
+
                                         break;
                                     }
                                 }
                                 const chapterCount = Object.values(chapterValue.episodes).reduce((total, episode) => total + episode.sentences.length, 0);
-
                                 return (
-                                    <Collapsible trigger={`Chapter ${chapterTitle} (Total: ${chapterCount})`} key={chapterKey}>
+                                    <Collapsible className="medium-margin" trigger={
+                                        <>
+                                            <div className="volume-trigger">
+                                                {coverImages[chapterKey.split("c")[1]] && <img className="cover-image-ssc" src={coverImages[chapterKey.split("c")[1]]} alt={chapterTitle} />}
+                                                {`Chapter ${chapterTitle} (Total: ${chapterCount})`}
+                                            </div>
+                                        </>
+                                    }>
                                         {Object.entries(chapterValue.episodes).map(([episodeKey, episodeValue]) => {
                                             let episodeTitle = episodeMap["Seven Shadows Chronicles"][partTitle][chapterTitle][`e${episodeKey.slice(1)}`]
                                             return (
@@ -392,9 +399,9 @@ function SSCResults({ sscData, images, highlight, filterState, main }) {
                                                                         {
                                                                             sentence.name !== sentence.name_variant ? (
                                                                                 sentence.name_variant.includes("(") ?
-                                                                                `${sentence.name_variant.split(' ')[sentence.name_variant.split(' ').length - 1].replace(/\(|\)/g, "")} (${sentence.name_variant.split(' ').slice(0, -1).join(' ')})`
-                                                                                : `${sentence.name_variant} (${sentence.name})`
-                                                                              
+                                                                                    `${sentence.name_variant.split(' ')[sentence.name_variant.split(' ').length - 1].replace(/\(|\)/g, "")} (${sentence.name_variant.split(' ').slice(0, -1).join(' ')})`
+                                                                                    : `${sentence.name_variant} (${sentence.name})`
+
                                                                             ) : sentence.name
                                                                         }
                                                                     </p>

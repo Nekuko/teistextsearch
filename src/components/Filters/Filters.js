@@ -25,42 +25,50 @@ function Filters({
   mogDropdownState,
   setMogDropdownState,
   wnDropdownState,
-  updateWNDropdownState  
+  updateWNDropdownState,
+  handleSearch
 }) {
   return (
-    <div className="filters">
-      <div className="row-container">
-        <MediumsContainer 
-          wnDropdownState={wnDropdownState}
-          updateWNDropdownState={updateWNDropdownState}
-          animeDropdownState={animeDropdownState}
-          updateAnimeDropdownState={updateAnimeDropdownState}
-          lnDropdownState={lnDropdownState}
-          updateLNDropdownState={updateLNDropdownState}
-          images={images}
-          mogDropdownState={mogDropdownState}
-          setMogDropdownState={setMogDropdownState}
-          canonActive={canonActive}
-          setCanonActive={setCanonActive}
-          canonES={canonES}
-        />
-        <CharactersContainer 
-        dropdownStates={dropdownStates}
-        setDropdownStates={setDropdownStates}
-        namedActive={namedActive}
-        setNamedActive={setNamedActive}
-        namedCharacters={namedCharacters}
-        />
-        <SelectedContainer
-        animeDropdownState={animeDropdownState}
-        lnDropdownState={lnDropdownState}
-        dropdownStates={dropdownStates}
-        namedActive={namedActive}
-        canonActive={canonActive}
-        mogDropdownState={mogDropdownState}
-        />
+    <div>
+      <h1 className="filters-header">FILTERS</h1>
+      <div className="filters">
+        <div className="row-container">
+          <MediumsContainer
+            wnDropdownState={wnDropdownState}
+            updateWNDropdownState={updateWNDropdownState}
+            animeDropdownState={animeDropdownState}
+            updateAnimeDropdownState={updateAnimeDropdownState}
+            lnDropdownState={lnDropdownState}
+            updateLNDropdownState={updateLNDropdownState}
+            images={images}
+            mogDropdownState={mogDropdownState}
+            setMogDropdownState={setMogDropdownState}
+            canonActive={canonActive}
+            setCanonActive={setCanonActive}
+            canonES={canonES}
+          />
+          <CharactersContainer
+            dropdownStates={dropdownStates}
+            setDropdownStates={setDropdownStates}
+            namedActive={namedActive}
+            setNamedActive={setNamedActive}
+            namedCharacters={namedCharacters}
+          />
+          <SelectedContainer
+            animeDropdownState={animeDropdownState}
+            lnDropdownState={lnDropdownState}
+            dropdownStates={dropdownStates}
+            namedActive={namedActive}
+            canonActive={canonActive}
+            mogDropdownState={mogDropdownState}
+            wnDropdownState={wnDropdownState}
+          />
+        </div>
+        <div className="row-container-center">
+        <Keywords filterState={filterState} setFilterState={setFilterState} /> {/* Make sure this is the last child of the .filters container */}
+        <button className="search-button" onClick={handleSearch}>SEARCH</button> {/* Search button */}
+        </div>
       </div>
-      <Keywords filterState={filterState} setFilterState={setFilterState} /> {/* Make sure this is the last child of the .filters container */}
     </div>
   );
 }

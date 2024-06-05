@@ -14,7 +14,8 @@ function SevenShadowChroniclesDropdown({
     sectionFilters,
     handleFilterChange,
     handleCategoryFilterChange,
-    categoryFilters
+    categoryFilters,
+    images
 }) {
 
     const episodeMap = {
@@ -309,6 +310,7 @@ function SevenShadowChroniclesDropdown({
                             <div className="section-list">
                                 {Object.keys(partsChecked[part]).filter(section => section !== 'checked' && (!sectionFilters[part] || section.toLowerCase().includes(sectionFilters[part].toLowerCase()))).map((section, index) => {
                                     const sectionName = section;
+                                    const sectionKey = section.split(" |")[0];
                                     return (
                                         <div key={index}>
                                             <div className="item-header">

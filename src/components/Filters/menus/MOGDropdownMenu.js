@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import './DropdownMenu.css';
 
-function MOGDropdownMenu({ mogDropdownState, setMogDropdownState, openMOG, setOpenMOG, canonActive, canonES }) {
+function MOGDropdownMenu({ mogDropdownState, setMogDropdownState, openMOG, setOpenMOG, canonActive, canonES, images }) {
   const { mogMainChecked, filter, openParts, partsChecked, sectionFilters, categoryFilters } = mogDropdownState;
 
   const dropdownRef = useRef(null);
@@ -428,6 +428,7 @@ const handleEventEpisodeCheck = (event, part, episode) => {
               setMogDropdownState={setMogDropdownState}
               handleCategoryFilterChange={handleCategoryFilterChange}
               categoryFilters={categoryFilters}
+              images={images.sscCoverImages}
             />
           )}
           <div className="item-header">
@@ -457,6 +458,7 @@ const handleEventEpisodeCheck = (event, part, episode) => {
               categoryFilters={categoryFilters}
               canonES={canonES}
               canonActive={canonActive}
+              images={images.esCoverImages}
             />
           )}
         </div>

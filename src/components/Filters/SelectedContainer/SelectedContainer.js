@@ -2,7 +2,7 @@
 import React from 'react';
 import './SelectedContainer.css';
 
-function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownState, dropdownStates, namedActive, canonActive }) {
+function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownState, lnDropdownState, dropdownStates, namedActive, canonActive }) {
   let animeCheckedItems = [];
 
   if (animeDropdownState && animeDropdownState.seasonsChecked) {
@@ -342,6 +342,57 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
 
 
 
+  const getSelectedWNList = () => {
+    let wnList = [];
+    const volumesChecked = wnDropdownState.volumesChecked;
+    const totalVolumes = Object.keys(volumesChecked).length;
+    const checkedVolumes = Object.values(volumesChecked).filter(volume => {
+      // Get only the chapters from the volume
+      const chapters = Object.entries(volume).filter(([key]) => key.startsWith('v'));
+      // Check if all chapters are checked
+      return chapters.every(([, chapter]) => chapter.checked);
+    }).length;
+
+    if (wnDropdownState.wnMainChecked && totalVolumes === checkedVolumes) {
+      wnList.push({ text: 'Web Novel', hoverText: 'Web Novel' });
+    } else {
+      Object.entries(volumesChecked).forEach(([volumeName, volume]) => {
+        const checkedChapters = Object.entries(volume).filter(([chapterKey, chapter]) => chapter.checked);
+        if (checkedChapters.length === Object.keys(volume).length - 1) {
+          wnList.push({ text: `Web Novel Volume ${volumeName.split(' ')[1]}`, hoverText: `Web Novel Volume ${volumeName.split(' ')[1]}` });
+        }
+        else {
+          let ranges = [];
+          let rangeStart = null;
+          let rangeEnd = null;
+          for (let i = 0; i < checkedChapters.length; i++) {
+            const chapterNumber = parseInt(checkedChapters[i][0].split('c')[1]);
+            if (rangeStart === null) {
+              rangeStart = chapterNumber;
+              rangeEnd = chapterNumber;
+            }
+            rangeEnd = chapterNumber;
+            if (i === checkedChapters.length - 1 || (i + 1 < checkedChapters.length && parseInt(checkedChapters[i + 1][0].split('c')[1]) !== chapterNumber + 1)) {
+              ranges.push(`C${rangeStart}${rangeStart !== rangeEnd ? `-${rangeEnd}` : ''}`);
+              rangeStart = null;
+              rangeEnd = null;
+            }
+          }
+          // Add this to handle the case where the last chapter is checked but not added to the range
+          if (rangeStart !== null) {
+            ranges.push(`C${rangeStart}${rangeStart !== rangeEnd ? `-${rangeEnd}` : ''}`);
+          }
+          ranges.sort((a, b) => parseInt(a.split('C')[1]) - parseInt(b.split('C')[1]));
+          wnList.push(...ranges.map(range => ({ text: `WN V${volumeName.split(' ')[1]} ${range}`, hoverText: `Web Novel, Volume ${volumeName.split(' ')[1]}, ${range.includes('-') ? 'Chapters' : 'Chapter'} ${range.split('C')[1]}` })));
+        }
+      });
+    }
+    return wnList;
+  };
+
+
+
+
 
 
 
@@ -451,7 +502,7 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
             if (typeA === 'Epilogue' || typeA === 'E') return 1;
             if (typeB === 'Epilogue' || typeB === 'E') return -1;
 
-          
+
             return parseInt(typeA) - parseInt(typeB);
           });
           lnList.push(...ranges.map(range => typeof range === 'string' ? { text: `LN V${volumeName.split(' ')[1]} ${range}`, hoverText: `Light Novel, Volume ${volumeName.split(' ')[1]}, ${range.includes('-') ? 'Chapters' : 'Chapter'} ${range.split('C')[1].replace('-F', '-Final').replace('-E', '-Epilogue')}` } : { text: `LN V${volumeName.split(' ')[1]} ${range.type}`, hoverText: `Light Novel Volume ${volumeName.split(' ')[1]} ${range.type}` }));
@@ -532,6 +583,8 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
   const selectedCharacterList = getSelectedCharacterList();
   const selectedSSCList = getSelectedSSCList();
   const selectedESList = getSelectedESList();
+  const selectedWNList = getSelectedWNList();
+
   let mogCombined = [...selectedSSCList, ...selectedESList];
   if (canonActive) {
     if (mogCombined.length === 2) {
@@ -550,14 +603,14 @@ function SelectedContainer({ mogDropdownState, animeDropdownState, lnDropdownSta
 
 
 
-  const selectedMediumList = [...selectedLNList, ...selectedAnimeList, ...mogCombined]
+  const selectedMediumList = [...selectedLNList, ...selectedWNList, ...selectedAnimeList, ...mogCombined]
   if (selectedMediumList.length === 0) {
     const mediumText = canonActive ? 'Any Canon Medium' : 'Any Medium';
     selectedMediumList.push({ text: mediumText, hoverText: mediumText });
   }
 
   if (selectedCharacterList.length === 0) {
-    const characterText = namedActive ? 'Any "Named" Character' : 'Any Character';
+    const characterText = namedActive ? 'Any "Named" Character' : 'No Character';
     selectedCharacterList.push({ text: characterText, hoverText: characterText });
   }
 

@@ -429,6 +429,7 @@ function MediumsContainer({wnDropdownState, updateWNDropdownState, animeDropdown
             setOpenMOG={setOpenMOG}
             canonActive={canonActive}
             canonES={canonES}
+            images={images}
         />
         <input
             type="checkbox"

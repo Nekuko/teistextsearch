@@ -13,7 +13,8 @@ function EventStoriesDropdown({
     handleCategoryFilterChange,
     categoryFilters,
     canonActive,
-    canonES
+    canonES,
+    images
  }) {
 
     const episodeMap = {
@@ -201,6 +202,7 @@ function EventStoriesDropdown({
                 <div key={index}>
                     <div className="item-header">
                         <div className="volume-trigger-drop">
+                        {images[part] && <img className="cover-image-es-small" src={images[part]} alt={part} />}
                             <span
                                 className={`part-title ${partsChecked[part]?.checked ? '' : 'dimmed'}`}
                                 onClick={(event) => handlePartClick(event, part)}

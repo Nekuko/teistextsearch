@@ -1,7 +1,7 @@
 /* Results.css */
 .results-container {
   align-items: center;
-  position: flex; /* Position relative to the Header component */
+  position: relative; /* Position relative to the Header component */
   width: 75%;
   background-color: #1f2224;
   padding: 20px;
@@ -10,10 +10,29 @@
   display: flex; /* Use flexbox to arrange children in a row */
   flex-direction: row; /* Align children horizontally */
   justify-content: space-around; /* Distribute space evenly around the containers */
-  max-height: 1200px;
+  overflow: auto;
   margin-bottom: 10%;
   color: white;
   position: relative;
+}
+
+.scroll-top-button {
+  background-color: transparent;
+  font-family: 'Noto Serif JP';
+  font-size: calc(0.2em + 0.6vw);
+  color: #c8000f;
+  font-weight: 100;
+  letter-spacing: 0.07em;
+  border: none;
+  padding: 6px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.scroll-top-button:hover {
+  color: red;
+  cursor: pointer;
 }
 
 .content-wrapper {
@@ -37,6 +56,18 @@
 .highlight-icon.active {
   color: red; /* Change to your preferred active color */
   opacity: 100%;
+}
+
+.reset-icon {
+  position: absolute;
+  top: 10px; /* Adjust to align with the top edge of the results-container */
+  right: 30px; /* Adjust to align with the right edge of the results-container */
+  color: #c8000f; /* The red color you specified */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the icon */
+}
+
+.reset-icon:hover {
+  color: red;
 }
 
 .copy-button:hover {
@@ -91,6 +122,24 @@
   margin-right: 10px;
 }
 
+.cover-image-es {
+  width: 79px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.cover-image-ssc {
+  width: 101px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.cover-image-es-small {
+  width: 64px;
+  height: 26px;
+  margin-right: 10px;
+}
+
 .character-trigger, .volume-trigger, .season-trigger {
   display: flex;
   align-items: center;
@@ -102,7 +151,7 @@
   font-size: larger;
 }
 
-.ln-results {
+.ln-results, .wn-results {
   margin-bottom: 20px;
 }
 
@@ -248,10 +297,22 @@
 
 
 
-.results-header {
+.results-header, .filters-header {
   font-family: 'Noto Serif JP';
-  font-size: calc(0.9em + 1.8vw);
+  font-size: calc(1.2em + 2.4vw);
   color: #c8000f;
   font-weight: 100;
   letter-spacing: 0.07em;
+  align-items: center;
+  position: flex; /* Position relative to the Header component */
+  width: 77%;
+  border-radius: 5px;
+  margin: auto;
+  display: flex; /* Use flexbox to arrange children in a row */
+  position: relative;
+  margin-top: 1%;
+}
+
+.results-header {
+  margin-top: 3%;
 }

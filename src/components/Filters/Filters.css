@@ -13,12 +13,46 @@
   justify-content: space-around; /* Distribute space evenly around the containers */
 }
 
+.search-button {
+  background-color: #2c2f33;
+  border-radius: 5px;
+  font-family: 'Noto Serif JP';
+  font-size: calc(0.7em + 1.4vw);
+  color: #c8000f;
+  font-weight: 100;
+  letter-spacing: 0.07em;
+  border: none;
+  box-shadow: 2px 2px 2px;
+  transition: 0.1s;
+  margin-top: 2%;
+  padding: 6px;
+}
+
+.search-button:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.search-button:active {
+  transform: translateY(2px); /* Move the button down by 2px when it's clicked */
+  box-shadow: 1px 1px 1px; /* Reduce the shadow to give a "pushed down" effect */
+}
+
 .row-container {
   display: flex;
   flex-direction: row; /* Align children horizontally */
   justify-content: space-around; /* Distribute space evenly around the containers */
   width: 100%;
 }
+
+.row-container-center {
+  display: flex;
+  flex-direction: row; /* Align children horizontally */
+  justify-content: space-around; /* Distribute space evenly around the containers */
+  align-items: center;
+  width: 100%;
+}
+
 
 .mediums-container, .characters-container, .selected-container {
   display: flex;

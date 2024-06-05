@@ -1,25 +1,35 @@
 import React, { useState } from 'react';
 import Collapsible from 'react-collapsible';
 import LightNovelResults from './Containers/LightNovelResults';
+import WebNovelResults from './Containers/WebNovelResults';
 import AnimeResults from './Containers/AnimeResults';
 import CharacterResults from './Containers/CharacterResults';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faF, faLightbulb } from '@fortawesome/free-solid-svg-icons'
+import { faRotateRight, faLightbulb } from '@fortawesome/free-solid-svg-icons'
 import './Results.css';
 import SSCResults from './Containers/SSCResults';
 import ESResults from './Containers/ESResults';
 
-function Results({ results, images, filterState, lnDropdownState }) {
+function Results({ results, images, filterState, lnDropdownState, wnDropdownState, setSearchResults }) {
   const noResults = Object.keys(results).length === 0;
   const lnResults = results && results.ln ? results.ln.ln : null;
+  const wnResults = results && results.wn ? results.wn.wn : null;
   const anResults = results && results.anime ? results.anime.an : null;
-  const sscResults = results && results.ssc ? results.ssc.ssc: null;
-  const esResults = results && results.es ? results.es.es: null;
+  const sscResults = results && results.ssc ? results.ssc.ssc : null;
+  const esResults = results && results.es ? results.es.es : null;
 
   const [highlight, setHighlight] = useState(false);
 
   const toggleHighlight = () => {
     setHighlight(!highlight);
+  };
+
+  const resetResults = () => {
+    setSearchResults({});
+  }
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
 
@@ -37,7 +47,7 @@ function Results({ results, images, filterState, lnDropdownState }) {
     if (esResults) {
       mgCount += esResults.count;
     }
-  
+
   }
 
 
@@ -51,6 +61,12 @@ function Results({ results, images, filterState, lnDropdownState }) {
           onClick={toggleHighlight}
           title="Highlight Keywords"
         />
+        <FontAwesomeIcon
+          icon={faRotateRight}
+          className={`reset-icon`}
+          onClick={resetResults}
+          title="Clear Results"
+        />
         <div className="content-wrapper">
           {noResults ? (
             <p>No results found.</p>
@@ -59,6 +75,11 @@ function Results({ results, images, filterState, lnDropdownState }) {
               {lnResults && (
                 <Collapsible className="ln-results" trigger={`Light Novel (Total: ${lnResults.count})`}>
                   <LightNovelResults lnDropdownState={lnDropdownState} lnData={lnResults} volumeImages={images.lnCoverImages} highlight={highlight} filterState={filterState} />
+                </Collapsible>
+              )}
+              {wnResults && (
+                <Collapsible className="ln-results" trigger={`Web Novel (Total: ${wnResults.count})`}>
+                  <WebNovelResults wnDropdownState={wnDropdownState} wnData={wnResults} volumeImages={images.lnCoverImages} highlight={highlight} filterState={filterState} />
                 </Collapsible>
               )}
               {((anCharacter || esCharacter || sscCharacter) && (
@@ -86,6 +107,9 @@ function Results({ results, images, filterState, lnDropdownState }) {
             </>
           )}
         </div>
+        {!noResults && (
+          <button className="scroll-top-button" onClick={scrollToTop}>UP</button>
+        )}
       </div>
     </div>
   );

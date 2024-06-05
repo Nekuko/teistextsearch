@@ -15,7 +15,7 @@ function ESResults({ anData, images, highlight, filterState, main }) {
   const iconRefs = useRef({});
 
   const characterImages = images.characterImages;
-  const coverImages = images.animeCoverImages;
+  const coverImages = images.esCoverImages;
 
   const highlightKeywords = (text) => {
     let highlightedText = text;
@@ -82,7 +82,7 @@ function ESResults({ anData, images, highlight, filterState, main }) {
             <Collapsible className="medium-margin" trigger={
               <>
                 <div className="season-trigger">
-                  {main && coverImages[seasonKey] && <img className="cover-image" src={coverImages[seasonKey]} alt={seasonTitle} />}
+                  {main && coverImages[seasonKey] && <img className="cover-image-es" src={coverImages[seasonKey]} alt={seasonTitle} />}
                   {`${seasonTitle} (Total: ${seasonCount})`}
                 </div>
               </>
