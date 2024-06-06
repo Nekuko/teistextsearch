@@ -311,6 +311,63 @@
   align-items: center;
 }
 
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination-controls button {
+  background: none;
+  color: #c8000f;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.pagination-controls input {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  outline: inherit;
+  width: auto;
+  max-width: 20px;
+  text-align: center;
+}
+
+
+.pagination-controls button:hover {
+  color:red;
+}
+
+.pagination-controls button:disabled {
+  color: #999999; /* Change this to the color you want */
+  cursor: default;
+}
+
+.pagination-controls button:disabled {
+  color: #999999; /* Change this to the color you want */
+  cursor: default;
+}
+
+
+
 .copy-button {
   position: absolute;
   right: 10px;

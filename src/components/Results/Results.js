@@ -11,8 +11,7 @@ import SSCResults from './Containers/SSCResults';
 import ESResults from './Containers/ESResults';
 
 function Results({ results, images, filterState, lnDropdownState, wnDropdownState, setSearchResults }) {
-  console.log(filterState)
-  console.log(results)
+
   const noResults = Object.keys(results).every(key => Object.keys(results[key]).length === 0);
   const lnResults = results && results.ln ? results.ln.ln : null;
   const wnResults = results && results.wn ? results.wn.wn : null;
@@ -119,7 +118,7 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
           )}
         </div>
         {!noResults && (
-          <button className="scroll-top-button" onClick={scrollToTop}>UP</button>
+          <button title={"To Top"}className="scroll-top-button" onClick={scrollToTop}>UP</button>
         )}
       </div>
     </div>

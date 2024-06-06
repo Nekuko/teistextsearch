@@ -52,25 +52,25 @@ function MOGDropdownMenu({ mogDropdownState, setMogDropdownState, openMOG, setOp
     event.stopPropagation();
     const isSectionChecked = !mogDropdownState.partsChecked["Seven Shadows Chronicles"][part]?.[section]?.checked;
     const updatedSection = { ...mogDropdownState.partsChecked["Seven Shadows Chronicles"][part]?.[section] };
-  
+
     Object.keys(updatedSection).forEach(episode => {
-      if (episode !== 'checked') {
-        updatedSection[episode] = isSectionChecked;
+      if (episode !== 'checked' && typeof updatedSection[episode] === 'object') {
+        updatedSection[episode].checked = isSectionChecked;
       }
     });
-  
+
     // Create a new object for the updated part
     const updatedPart = {
       ...mogDropdownState.partsChecked["Seven Shadows Chronicles"][part],
       [section]: { ...updatedSection, checked: isSectionChecked }
     };
-  
+
     // Check if any section is checked
     const anyChecked = Object.values(updatedPart).some((section) => section.checked);
-  
+
     // Update the checked state of the part itself
     updatedPart.checked = anyChecked;
-  
+
     // Create a new object for the updated partsChecked
     const updatedPartsChecked = {
       ...mogDropdownState.partsChecked,
@@ -79,40 +79,47 @@ function MOGDropdownMenu({ mogDropdownState, setMogDropdownState, openMOG, setOp
         [part]: updatedPart
       }
     };
-  
+
     // Check if any part is checked
     const anyPartChecked = Object.values(updatedPartsChecked["Seven Shadows Chronicles"]).some((part) => part.checked);
-  
+
     // Update the checked state of "Seven Shadows Chronicles"
     updatedPartsChecked["Seven Shadows Chronicles"].checked = anyPartChecked;
-  
+
     const anyEventStoryChecked = Object.values(updatedPartsChecked['Event Stories']).some((part) => part.checked);
 
     // Update the checked state of "mogMainChecked"
     const mogMainChecked = anyPartChecked || anyEventStoryChecked;
-  
+
     setMogDropdownState(prevState => ({
-      ...prevState,
-      mogMainChecked,
-      partsChecked: updatedPartsChecked
+        ...prevState,
+        mogMainChecked,
+        partsChecked: updatedPartsChecked
     }));
-  };
+};
+
   
   
   
   const handleEpisodeCheck = (event, part, section, episode) => {
     event.stopPropagation();
-    const isEpisodeChecked = !mogDropdownState.partsChecked["Seven Shadows Chronicles"][part]?.[section]?.[episode];
-  
+    const isEpisodeChecked = !mogDropdownState.partsChecked["Seven Shadows Chronicles"][part]?.[section]?.[episode]?.checked;
+
+    // Create a new object for the updated episode
+    const updatedEpisode = {
+      ...mogDropdownState.partsChecked["Seven Shadows Chronicles"][part]?.[section]?.[episode],
+      checked: isEpisodeChecked
+    };
+
     // Create a new object for the updated section
     const updatedSection = {
       ...mogDropdownState.partsChecked["Seven Shadows Chronicles"][part]?.[section],
-      [episode]: isEpisodeChecked
+      [episode]: updatedEpisode
     };
-  
+
     // Check if all episodes are unchecked
-    const allUnchecked = Object.entries(updatedSection).every(([key, checked]) => key === 'checked' ? true : !checked);
-  
+    const allUnchecked = Object.entries(updatedSection).every(([key, value]) => key === 'checked' ? true : !value.checked);
+
     if (allUnchecked) {
       // If all episodes are unchecked, uncheck the section checkbox
       updatedSection.checked = false;
@@ -120,19 +127,19 @@ function MOGDropdownMenu({ mogDropdownState, setMogDropdownState, openMOG, setOp
       // If not all episodes are unchecked, check the section checkbox
       updatedSection.checked = true;
     }
-  
+
     // Create a new object for the updated part
     const updatedPart = {
       ...mogDropdownState.partsChecked["Seven Shadows Chronicles"][part],
       [section]: updatedSection
     };
-  
+
     // Check if any section is checked
     const anyChecked = Object.values(updatedPart).some((section) => section.checked);
-  
+
     // Update the checked state of the part itself
     updatedPart.checked = anyChecked;
-  
+
     // Create a new object for the updated partsChecked
     const updatedPartsChecked = {
       ...mogDropdownState.partsChecked,
@@ -141,63 +148,65 @@ function MOGDropdownMenu({ mogDropdownState, setMogDropdownState, openMOG, setOp
         [part]: updatedPart
       }
     };
-  
+
     // Check if any part is checked
     const anyPartChecked = Object.values(updatedPartsChecked["Seven Shadows Chronicles"]).some((part) => part.checked);
 
     // Update the checked state of "Seven Shadows Chronicles"
     updatedPartsChecked["Seven Shadows Chronicles"].checked = anyPartChecked;
-  
+
     const anyEventStoryChecked = Object.values(updatedPartsChecked['Event Stories']).some((part) => part.checked);
 
     // Update the checked state of "mogMainChecked"
     const mogMainChecked = anyPartChecked || anyEventStoryChecked;
-  
+
     setMogDropdownState(prevState => ({
-      ...prevState,
-      mogMainChecked,
-      partsChecked: updatedPartsChecked
+        ...prevState,
+        mogMainChecked,
+        partsChecked: updatedPartsChecked
     }));
-  };
+};
+
   
   
   const handlePartCheck = (event, part) => {
     event.stopPropagation();
     const isPartChecked = !mogDropdownState.partsChecked["Seven Shadows Chronicles"][part]?.checked;
-    const updatedPartsChecked = { ...mogDropdownState.partsChecked }; // Changed this line
-  
+    const updatedPartsChecked = { ...mogDropdownState.partsChecked };
+
     // Update the checked state of the part and all sections and episodes within it
     Object.keys(updatedPartsChecked["Seven Shadows Chronicles"][part]).forEach(section => {
-      if (section !== 'checked') {
-        updatedPartsChecked["Seven Shadows Chronicles"][part][section].checked = isPartChecked;
-        Object.keys(updatedPartsChecked["Seven Shadows Chronicles"][part][section]).forEach(episode => {
-          if (episode !== 'checked' && typeof updatedPartsChecked["Seven Shadows Chronicles"][part][section][episode] === 'boolean') {
-            updatedPartsChecked["Seven Shadows Chronicles"][part][section][episode] = isPartChecked;
-          }
-        });
-      }
+        if (section !== 'checked') {
+            updatedPartsChecked["Seven Shadows Chronicles"][part][section].checked = isPartChecked;
+            Object.keys(updatedPartsChecked["Seven Shadows Chronicles"][part][section]).forEach(episode => {
+                if (episode !== 'checked' && typeof updatedPartsChecked["Seven Shadows Chronicles"][part][section][episode] === 'object') {
+                    updatedPartsChecked["Seven Shadows Chronicles"][part][section][episode].checked = isPartChecked;
+                }
+            });
+        }
     });
-  
+
     // Update the checked state of the part itself
     updatedPartsChecked["Seven Shadows Chronicles"][part].checked = isPartChecked;
-  
+
     // Check if any part is checked
     const anyChecked = Object.values(updatedPartsChecked["Seven Shadows Chronicles"]).some((part) => part.checked);
-  
+
     // Update the checked state of "Seven Shadows Chronicles"
     updatedPartsChecked["Seven Shadows Chronicles"].checked = anyChecked;
-  
+
     const anyEventStoryChecked = Object.values(updatedPartsChecked['Event Stories']).some((part) => part.checked);
-  
+
     // Update the checked state of "mogMainChecked"
     const mogMainChecked = anyChecked || anyEventStoryChecked;
-  
+
     setMogDropdownState(prevState => ({
-      ...prevState,
-      mogMainChecked,
-      partsChecked: updatedPartsChecked
+        ...prevState,
+        mogMainChecked,
+        partsChecked: updatedPartsChecked
     }));
-  };
+};
+
   
   
   
@@ -232,10 +241,10 @@ function MOGDropdownMenu({ mogDropdownState, setMogDropdownState, openMOG, setOp
   const handleSevenShadowsCheck = (event) => {
     const isSevenShadowsChecked = !partsChecked['Seven Shadows Chronicles']?.checked;
     const updatedPartsChecked = { ...partsChecked };
-  
+
     // Update the checked state of 'Seven Shadows Chronicles'
     updatedPartsChecked['Seven Shadows Chronicles'].checked = isSevenShadowsChecked;
-  
+
     // Update the checked state of all parts, sections, and episodes
     Object.keys(updatedPartsChecked['Seven Shadows Chronicles']).forEach(part => {
       if (part !== 'checked') {
@@ -244,66 +253,68 @@ function MOGDropdownMenu({ mogDropdownState, setMogDropdownState, openMOG, setOp
           if (section !== 'checked') {
             updatedPartsChecked['Seven Shadows Chronicles'][part][section].checked = isSevenShadowsChecked;
             Object.keys(updatedPartsChecked['Seven Shadows Chronicles'][part][section]).forEach(episode => {
-              if (episode !== 'checked' && typeof updatedPartsChecked['Seven Shadows Chronicles'][part][section][episode] === 'boolean') {
-                updatedPartsChecked['Seven Shadows Chronicles'][part][section][episode] = isSevenShadowsChecked;
+              if (episode !== 'checked' && typeof updatedPartsChecked['Seven Shadows Chronicles'][part][section][episode] === 'object') {
+                updatedPartsChecked['Seven Shadows Chronicles'][part][section][episode].checked = isSevenShadowsChecked;
               }
             });
           }
         });
       }
     });
-  
+
     // Check if any part is checked in 'Event Stories'
     const anyEventStoryChecked = Object.values(updatedPartsChecked['Event Stories']).some((part) => part.checked);
-  
+
     // Update the checked state of "mogMainChecked"
     const mogMainChecked = isSevenShadowsChecked || anyEventStoryChecked;
-  
-    setMogDropdownState(prevState => ({
-      ...prevState,
-      mogMainChecked,
-      partsChecked: updatedPartsChecked
-    }));
-  };
-  
-  
-
-  const handleEventStoriesCheck = (event) => {
-    const isEventStoriesChecked = !partsChecked['Event Stories']?.checked;
-    const updatedPartsChecked = { ...partsChecked };
-  
-    // Update the checked state of 'Event Stories'
-    updatedPartsChecked['Event Stories'].checked = isEventStoriesChecked;
-  
-    // Update the checked state of all parts and episodes
-    Object.keys(updatedPartsChecked['Event Stories']).forEach(part => {
-      if (part !== 'checked') {
-        // If canonActive is true and part is not in canonES, skip updating the checked state for this part and its episodes
-        if (!(canonActive && !canonES.includes(part))) {
-          updatedPartsChecked['Event Stories'][part].checked = isEventStoriesChecked;
-          Object.keys(updatedPartsChecked['Event Stories'][part]).forEach(episode => {
-            if (episode !== 'checked' && typeof updatedPartsChecked['Event Stories'][part][episode] === 'boolean') {
-              updatedPartsChecked['Event Stories'][part][episode] = isEventStoriesChecked;
-            }
-          });
-        }
-      }
-    });
-  
-    // Check if any part is checked
-    const anyPartChecked = Object.values(updatedPartsChecked['Event Stories']).some((part) => part.checked);
-  
-    const anySevenShadowsChecked = Object.values(updatedPartsChecked['Seven Shadows Chronicles']).some((part) => part.checked);
-
-    // Update the checked state of "mogMainChecked"
-    const mogMainChecked = anyPartChecked || anySevenShadowsChecked;
 
     setMogDropdownState(prevState => ({
-      ...prevState,
-      mogMainChecked,
-      partsChecked: updatedPartsChecked
+        ...prevState,
+        mogMainChecked,
+        partsChecked: updatedPartsChecked
     }));
 };
+
+  
+  
+
+const handleEventStoriesCheck = (event) => {
+  const isEventStoriesChecked = !partsChecked['Event Stories']?.checked;
+  const updatedPartsChecked = { ...partsChecked };
+
+  // Update the checked state of 'Event Stories'
+  updatedPartsChecked['Event Stories'].checked = isEventStoriesChecked;
+
+  // Update the checked state of all parts and episodes
+  Object.keys(updatedPartsChecked['Event Stories']).forEach(part => {
+    if (part !== 'checked') {
+      // If canonActive is true and part is not in canonES, skip updating the checked state for this part and its episodes
+      if (!(canonActive && !canonES.includes(part))) {
+        updatedPartsChecked['Event Stories'][part].checked = isEventStoriesChecked;
+        Object.keys(updatedPartsChecked['Event Stories'][part]).forEach(episode => {
+          if (episode !== 'checked' && typeof updatedPartsChecked['Event Stories'][part][episode] === 'object') {
+            updatedPartsChecked['Event Stories'][part][episode].checked = isEventStoriesChecked;
+          }
+        });
+      }
+    }
+  });
+
+  // Check if any part is checked
+  const anyPartChecked = Object.values(updatedPartsChecked['Event Stories']).some((part) => part.checked);
+
+  const anySevenShadowsChecked = Object.values(updatedPartsChecked['Seven Shadows Chronicles']).some((part) => part.checked);
+
+  // Update the checked state of "mogMainChecked"
+  const mogMainChecked = anyPartChecked || anySevenShadowsChecked;
+
+  setMogDropdownState(prevState => ({
+    ...prevState,
+    mogMainChecked,
+    partsChecked: updatedPartsChecked
+  }));
+};
+
 
   
   
@@ -315,8 +326,8 @@ const handleEventPartCheck = (event, part) => {
 
   // Update the checked state of the part and all episodes within it
   Object.keys(updatedPartsChecked[part]).forEach(episode => {
-    if (episode !== 'checked') {
-      updatedPartsChecked[part][episode] = isPartChecked;
+    if (episode !== 'checked' && typeof updatedPartsChecked[part][episode] === 'object') {
+      updatedPartsChecked[part][episode].checked = isPartChecked;
     }
   });
 
@@ -345,18 +356,19 @@ const handleEventPartCheck = (event, part) => {
   }));
 };
 
+
 const handleEventEpisodeCheck = (event, part, episode) => {
   event.stopPropagation();
-  const isEpisodeChecked = !mogDropdownState.partsChecked["Event Stories"][part]?.[episode];
+  const isEpisodeChecked = !mogDropdownState.partsChecked["Event Stories"][part]?.[episode]?.checked;
 
   // Create a new object for the updated part
   const updatedPart = {
     ...mogDropdownState.partsChecked["Event Stories"][part],
-    [episode]: isEpisodeChecked
+    [episode]: { ...mogDropdownState.partsChecked["Event Stories"][part][episode], checked: isEpisodeChecked }
   };
 
   // Check if any episode is checked
-  const anyChecked = Object.keys(updatedPart).some((key) => key !== 'checked' && updatedPart[key] === true);
+  const anyChecked = Object.keys(updatedPart).some((key) => key !== 'checked' && updatedPart[key].checked === true);
 
   // Update the checked state of the part itself
   updatedPart.checked = anyChecked;
@@ -389,6 +401,7 @@ const handleEventEpisodeCheck = (event, part, episode) => {
   }));
 };
 
+
   
 
 
@@ -402,7 +415,6 @@ const handleEventEpisodeCheck = (event, part, episode) => {
       </div>
       {openMOG && (
         <div className="dropdown-menu">
-          <input type="text" value={filter} onChange={handleFilterChange} placeholder="Search stories..." />
           <div className="item-header">
             <div className="volume-trigger-drop">
               <span className={`season-title ${partsChecked['Seven Shadows Chronicles']?.checked ? '' : 'dimmed'}`}>Seven Shadows Chronicles</span>
@@ -447,7 +459,6 @@ const handleEventEpisodeCheck = (event, part, episode) => {
               parts={Object.keys(partsChecked['Event Stories']).filter(part => part !== 'checked')}
               partsChecked={partsChecked['Event Stories']}
               handleEventPartCheck={handleEventPartCheck}
-              handleSectionCheck={handleSectionCheck}
               handleEventEpisodeCheck={handleEventEpisodeCheck}
               openParts={openParts}
               handlePartClick={handlePartClick}

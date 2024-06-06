@@ -33,13 +33,18 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seaso
 
 
   useEffect(() => {
-    const allUnchecked = Object.values(seasonsChecked).every(season => Object.values(season).every(checked => !checked));
+    const allUnchecked = Object.values(seasonsChecked).every(season => 
+      Object.entries(season).every(([episodeId, episodeData]) => 
+        episodeId === 'checked' ? true : !episodeData.checked
+      )
+    );
     if (allUnchecked) {
       updateAnimeDropdownState('mainChecked', false);
     } else {
       updateAnimeDropdownState('mainChecked', true);
     }
   }, [seasonsChecked]);
+  
 
   const handleAnimeClick = () => {
     setOpenAnime(!openAnime);
@@ -67,16 +72,15 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seaso
   };
 
   const handleEpisodeCheck = (season, episode) => {
-    const isEpisodeChecked = !seasonsChecked[season]?.[episode];
+    const isEpisodeChecked = !seasonsChecked[season]?.[episode]?.checked;
     const updatedSeason = {
       ...seasonsChecked[season],
-      [episode]: isEpisodeChecked
+      [episode]: { title: seasonsChecked[season][episode].title, checked: isEpisodeChecked }
     };
   
     // Check if all episodes are unchecked
-    const allChecks = Object.entries(updatedSeason);
-    const isAllUnchecked = allChecks.every(([name, checked]) => name === 'checked' ? true : !checked);
-  
+    const allChecks = Object.entries(updatedSeason).filter(([key]) => key !== 'checked');
+    const isAllUnchecked = allChecks.every(([_, episodeData]) => !episodeData.checked);
   
     if (isAllUnchecked) {
       // If all episodes are unchecked, uncheck the season checkbox
@@ -97,6 +101,7 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seaso
   
   
   
+  
 
   const handleSeasonCheck = (season) => {
     const isSeasonChecked = !seasonsChecked[season]?.checked;
@@ -104,7 +109,9 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seaso
       ...seasonsChecked[season],
     };
     Object.keys(updatedSeason).forEach(episode => {
-      updatedSeason[episode] = isSeasonChecked;
+      if (episode !== 'checked') {
+        updatedSeason[episode] = { title: updatedSeason[episode].title, checked: isSeasonChecked };
+      }
     });
   
     updateAnimeDropdownState('seasonsChecked', {
@@ -126,9 +133,19 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seaso
   };
 
   const filteredSeasons = useMemo(() => {
-    if (!filter) return seasons;
-    return seasons.filter(season => season.name.toLowerCase().includes(filter.toLowerCase()));
-  }, [seasons, filter]);
+    // Convert the seasons object to an array
+    const seasonsArray = Object.keys(seasonsChecked).map(season => ({
+      name: season,
+      episodes: Object.keys(seasonsChecked[season]).filter(key => key !== 'checked').map(episode => ({
+        id: episode,
+        name: seasonsChecked[season][episode].title
+      }))
+    }));
+  
+    if (!filter) return seasonsArray;
+    return seasonsArray.filter(season => season.name.toLowerCase().includes(filter.toLowerCase()));
+  }, [seasonsChecked, filter]);
+  
 
   return (
     <div className="dropdown" ref={dropdownRef}>
@@ -166,13 +183,13 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seaso
                   const [episodeNumber, episodeName] = episode.name.split('|');
                   return (
                     <div key={index} className="episode-item">
-                      <span className={seasonsChecked[season.name]?.[episode.id] ? "episode-checked" : "episode-unchecked"}>
+                      <span className={seasonsChecked[season.name]?.[episode.id]?.checked ? "episode-checked" : "episode-unchecked"}>
                         <span style={{color: 'red'}}>{episodeNumber}</span>
                         <span className="episode-name" title={episodeName}>|{episodeName}</span>
                       </span>
                       <input
                         type="checkbox"
-                        checked={!!seasonsChecked[season.name]?.[episode.id]}
+                        checked={!!seasonsChecked[season.name]?.[episode.id]?.checked}
                         onChange={() => handleEpisodeCheck(season.name, episode.id)}
                       />
                     </div>

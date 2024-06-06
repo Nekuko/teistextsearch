@@ -6,7 +6,7 @@ import { faTimes, faXmark, faRotateRight } from '@fortawesome/free-solid-svg-ico
 import { VscCaseSensitive } from "react-icons/vsc";
 import { ReactComponent as WholeWord } from '../../../svgs/codicon--whole-word.svg';
 
-function Keywords({ filterState, setFilterState }) {
+function Keywords({ filterState, setFilterState, handleSearch }) {
   const [inputValue, setInputValue] = React.useState('');
 
   const handleInputChange = (e) => {
@@ -55,6 +55,7 @@ function Keywords({ filterState, setFilterState }) {
 
 
   return (
+    <div className="keywords-search-container">
     <div className="keywords-container">
       <h2 className="keywords-title">KEYWORDS</h2>
       <div className="keywords-input-wrapper">
@@ -92,13 +93,10 @@ function Keywords({ filterState, setFilterState }) {
             <FontAwesomeIcon className="delete-all-icon" icon={faTimes} />
           </button>
         </div>
+        
       </div>
-      <FontAwesomeIcon
-        icon={faRotateRight}
-        className="reset-button"
-        onClick={handleReset}
-        title="Reset"
-      />
+    </div>
+    <button className="search-button" onClick={handleSearch}>SEARCH</button> {/* Search button */}
     </div>
   );
 }

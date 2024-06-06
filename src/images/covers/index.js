@@ -37,6 +37,7 @@ export { default as SSC211Cover } from './SSC2-11Cover.webp'
 export { default as SSC212Cover } from './SSC2-12Cover.webp'
 export { default as SSC213Cover } from './SSC2-13Cover.webp'
 export { default as SSC31Cover } from './SSC3-1Cover.webp'
+export { default as SSC32Cover } from './SSC3-2Cover.webp'
 
 export { default as ESAGFMSCover } from './ESAGFMSCover.webp'
 export { default as ESANACover } from './ESANACover.webp'

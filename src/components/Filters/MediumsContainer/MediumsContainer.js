@@ -23,8 +23,8 @@ function MediumsContainer({wnDropdownState, updateWNDropdownState, animeDropdown
       updateAnimeDropdownState('mainChecked', false);
       updateAnimeDropdownState('filter', '')
       updateAnimeDropdownState('episodeFilters', {})
-      updateAnimeDropdownState('seasonsChecked', resetSeasonsChecked(seasons));
-      updateAnimeDropdownState('openVolumes', {})
+      updateAnimeDropdownState('seasonsChecked', resetSeasonsChecked(animeDropdownState.seasonsChecked));
+      updateAnimeDropdownState('openSeasons', {})
       setOpenAnime(false);
   
       // Reset LN dropdown state
@@ -128,17 +128,26 @@ function MediumsContainer({wnDropdownState, updateWNDropdownState, animeDropdown
     
   
     // Helper function to reset seasonsChecked
-    const resetSeasonsChecked = (seasons) => {
+    const resetSeasonsChecked = () => {
       const resetState = {};
-      seasons.forEach(season => {
-        resetState[season.name] = season.episodes.reduce((acc, episode) => {
-          acc[episode.id] = false;
-          return acc;
-        }, {});
-        resetState[season.name].checked = false;
+      Object.keys(animeDropdownState.seasonsChecked).forEach(season => {
+        resetState[season] = { ...animeDropdownState.seasonsChecked[season] };
+        Object.keys(resetState[season]).forEach(episode => {
+          if (episode !== 'checked') {
+            resetState[season][episode] = { 
+              title: resetState[season][episode].title, 
+              checked: false 
+            };
+          }
+        });
+    
+        // Reset the checked property for the season
+        resetState[season].checked = false;
       });
+    
       return resetState;
     };
+    
   
     const resetVolumesChecked = (volumesChecked) => {
       // Directly mutate the volumesChecked object
@@ -175,64 +184,6 @@ function MediumsContainer({wnDropdownState, updateWNDropdownState, animeDropdown
       // Return the mutated volumesChecked object
       return volumesChecked;
     };
-    
-    
-    
-    
-      
-    const season1Episodes = useMemo(() => [
-        { id: 's1e1', name: '1 | The Hated Classmate' },
-        { id: 's1e2', name: '2 | Shadow Garden is Born' },
-        { id: 's1e3', name: '3 | Fencer Ordinaire' },
-        { id: 's1e4', name: "4 | Sadism's Rewards" },
-        { id: 's1e5', name: '5 | I Am...' },
-        { id: 's1e6', name: '6 | Pretenders' },
-        { id: 's1e7', name: '7 | A Fencing Tournament of Intrigue & Bloodshed' },
-        { id: 's1e8', name: '8 | Dark Knight Academy Under Attack' },
-        { id: 's1e9', name: '9 | The End of a Lie' },
-        { id: 's1e10', name: '10 | The Sacred Land, City of Deception' },
-        { id: 's1e11', name: "11 | The Goddess's Trial" },
-        { id: 's1e12', name: '12 | The Truth Within the Memories' },
-        { id: 's1e13', name: '13 | A Bloody Showdown as an Offering to Annihilation' },
-        { id: 's1e14', name: '14 | Your Lie, Your Wish' },
-        { id: 's1e15', name: '15 | The Strongest Weakest Man' },
-        { id: 's1e16', name: '16 | Unseen Intentions' },
-        { id: 's1e17', name: '17 | Moonlight That Pierces the Darkness' },
-        { id: 's1e18', name: '18 | Betting on a Moment' },
-        { id: 's1e19', name: '19 | Dancing Puppet' },
-        { id: 's1e20', name: '20 | Advent of the Demon' },
-      ], []);
-    
-    const season2Episodes = useMemo(() => [
-    { id: 's2e1', name: '1 | The Lawless City' },
-    { id: 's2e2', name: '2 | The Haven'},
-    { id: 's2e3', name: '3 | The Hour Of Awakening' },
-    { id: 's2e4', name: '4 | Mask of Falsehood' },
-    { id: 's2e5', name: '5 | He Who Pulls the Strings' },
-    { id: 's2e6', name: '6 | John Smith' },
-    { id: 's2e7', name: '7 | Something Precious' },
-    { id: 's2e8', name: '8 | Tears of the Dragon' },
-    { id: 's2e9', name: '9 | The Key' },
-    { id: 's2e10', name: '10 | The Caged Bird' },
-    { id: 's2e11', name: '11 | Determination' },
-    { id: 's2e12', name: '12 | Highest' }
-    ], []);
-
-    const seasons = useMemo(() => [
-    { name: "Season 1", episodes: season1Episodes },
-    { name: "Season 2", episodes: season2Episodes }
-    ], [season1Episodes, season2Episodes]);
-
-    const shadowGardenCharacters = useMemo(() => [
-      { id: 'sgc1', name: 'Cid Kagenou' },
-      { id: 'sgc2', name: 'Alpha' },
-      { id: 'sgc3', name: 'Beta' },
-      { id: 'sgc4', name: "Gamma" },
-      { id: 'sgc5', name: 'Delta' },
-      { id: 'sgc6', name: 'Epsilon' },
-      { id: 'sgc7', name: 'Zeta' },
-      { id: 'sgc8', name: 'Eta' }
-    ], []);
 
     const handleMainCheck = () => {
       const isMainChecked = !mainChecked;
@@ -240,18 +191,24 @@ function MediumsContainer({wnDropdownState, updateWNDropdownState, animeDropdown
     
       // Update the seasonsChecked state for each episode in each season
       const updatedSeasonsChecked = {};
-      seasons.forEach(season => {
-        updatedSeasonsChecked[season.name] = season.episodes.reduce((acc, episode) => {
-          acc[episode.id] = isMainChecked;
-          return acc;
-        }, {});
+      Object.keys(animeDropdownState.seasonsChecked).forEach(season => {
+        updatedSeasonsChecked[season] = { ...animeDropdownState.seasonsChecked[season] };
+        Object.keys(updatedSeasonsChecked[season]).forEach(episode => {
+          if (episode !== 'checked') {
+            updatedSeasonsChecked[season][episode] = { 
+              title: updatedSeasonsChecked[season][episode].title, 
+              checked: isMainChecked 
+            };
+          }
+        });
     
         // Update the checked property for the season
-        updatedSeasonsChecked[season.name].checked = isMainChecked;
+        updatedSeasonsChecked[season].checked = isMainChecked;
       });
     
       updateAnimeDropdownState('seasonsChecked', updatedSeasonsChecked);
     };
+    
     
     const handleLNMainCheck = () => {
       const isLNMainChecked = !lnMainChecked;
@@ -279,65 +236,66 @@ function MediumsContainer({wnDropdownState, updateWNDropdownState, animeDropdown
       updateLNDropdownState('volumesChecked', updatedVolumesChecked);
   };
 
-    const handleMOGMainCheck = () => {
-      setMogDropdownState(prevState => {
-          const isMOGMainChecked = !prevState.mogMainChecked;
-          const updatedPartsChecked = { ...prevState.partsChecked };
-  
-          // Update the checked state of all parts, sections, and episodes for 'Seven Shadows Chronicles'
-          const storyType = 'Seven Shadows Chronicles';
-          Object.keys(updatedPartsChecked[storyType]).forEach(part => {
-              if (part !== 'checked') {
-                  updatedPartsChecked[storyType][part].checked = isMOGMainChecked;
-                  Object.keys(updatedPartsChecked[storyType][part]).forEach(section => {
-                      if (section !== 'checked') {
-                          updatedPartsChecked[storyType][part][section].checked = isMOGMainChecked;
-                          Object.keys(updatedPartsChecked[storyType][part][section]).forEach(episode => {
-                              if (episode !== 'checked' && typeof updatedPartsChecked[storyType][part][section][episode] === 'boolean') {
-                                  updatedPartsChecked[storyType][part][section][episode] = isMOGMainChecked;
-                              }
-                          });
-                      }
-                  });
-              }
-          });
-  
-          // Update the checked state of all parts and episodes for 'Event Stories'
-          const eventType = 'Event Stories';
-          Object.keys(updatedPartsChecked[eventType]).forEach(part => {
-              if (part !== 'checked') {
-                  // If canonActive is true and part is not in canonES, skip updating the checked state for this part and its episodes
-                  if (!(canonActive && !canonES.includes(part))) {
-                      updatedPartsChecked[eventType][part].checked = isMOGMainChecked;
-                      Object.keys(updatedPartsChecked[eventType][part]).forEach(episode => {
-                          if (episode !== 'checked' && typeof updatedPartsChecked[eventType][part][episode] === 'boolean') {
-                              updatedPartsChecked[eventType][part][episode] = isMOGMainChecked;
-                          }
-                      });
-                  }
-              }
-          });
-  
-          // Check if all parts are unchecked for both 'Seven Shadows Chronicles' and 'Event Stories'
-          ['Seven Shadows Chronicles', 'Event Stories'].forEach(storyType => {
-              const allPartsUnchecked = Object.values(updatedPartsChecked[storyType]).every(part => !part.checked);
-  
-              if (allPartsUnchecked) {
-                  // If all parts are unchecked, uncheck the storyType checkbox
-                  updatedPartsChecked[storyType].checked = false;
-              } else {
-                  // If not all parts are unchecked, check the storyType checkbox
-                  updatedPartsChecked[storyType].checked = true;
-              }
-          });
-  
-          return {
-              ...prevState,
-              mogMainChecked: isMOGMainChecked,
-              partsChecked: updatedPartsChecked
-          };
-      });
-  };
+  const handleMOGMainCheck = () => {
+    setMogDropdownState(prevState => {
+        const isMOGMainChecked = !prevState.mogMainChecked;
+        const updatedPartsChecked = { ...prevState.partsChecked };
+
+        // Update the checked state of all parts, sections, and episodes for 'Seven Shadows Chronicles'
+        const storyType = 'Seven Shadows Chronicles';
+        Object.keys(updatedPartsChecked[storyType]).forEach(part => {
+            if (part !== 'checked') {
+                updatedPartsChecked[storyType][part].checked = isMOGMainChecked;
+                Object.keys(updatedPartsChecked[storyType][part]).forEach(section => {
+                    if (section !== 'checked') {
+                        updatedPartsChecked[storyType][part][section].checked = isMOGMainChecked;
+                        Object.keys(updatedPartsChecked[storyType][part][section]).forEach(episode => {
+                            if (episode !== 'checked' && typeof updatedPartsChecked[storyType][part][section][episode] === 'object') {
+                                updatedPartsChecked[storyType][part][section][episode].checked = isMOGMainChecked;
+                            }
+                        });
+                    }
+                });
+            }
+        });
+
+        // Update the checked state of all parts and episodes for 'Event Stories'
+        const eventType = 'Event Stories';
+        Object.keys(updatedPartsChecked[eventType]).forEach(part => {
+            if (part !== 'checked') {
+                // If canonActive is true and part is not in canonES, skip updating the checked state for this part and its episodes
+                if (!(canonActive && !canonES.includes(part))) {
+                    updatedPartsChecked[eventType][part].checked = isMOGMainChecked;
+                    Object.keys(updatedPartsChecked[eventType][part]).forEach(episode => {
+                        if (episode !== 'checked' && typeof updatedPartsChecked[eventType][part][episode] === 'object') {
+                            updatedPartsChecked[eventType][part][episode].checked = isMOGMainChecked;
+                        }
+                    });
+                }
+            }
+        });
+
+        // Check if all parts are unchecked for both 'Seven Shadows Chronicles' and 'Event Stories'
+        ['Seven Shadows Chronicles', 'Event Stories'].forEach(storyType => {
+            const allPartsUnchecked = Object.values(updatedPartsChecked[storyType]).every(part => !part.checked);
+
+            if (allPartsUnchecked) {
+                // If all parts are unchecked, uncheck the storyType checkbox
+                updatedPartsChecked[storyType].checked = false;
+            } else {
+                // If not all parts are unchecked, check the storyType checkbox
+                updatedPartsChecked[storyType].checked = true;
+            }
+        });
+
+        return {
+            ...prevState,
+            mogMainChecked: isMOGMainChecked,
+            partsChecked: updatedPartsChecked
+        };
+    });
+};
+
   
   const handleWNMainCheck = () => {
     const isWNMainChecked = !wnMainChecked;
@@ -410,7 +368,6 @@ function MediumsContainer({wnDropdownState, updateWNDropdownState, animeDropdown
           <AnimeDropdownMenu 
           animeDropdownState={animeDropdownState}
           updateAnimeDropdownState={updateAnimeDropdownState}
-          seasons={seasons}
           openAnime={openAnime}
           setOpenAnime={setOpenAnime}
           seasonImages={images.animeCoverImages}

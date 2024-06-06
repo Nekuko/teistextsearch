@@ -1,10 +1,10 @@
 // AnimeResults.js
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Collapsible from 'react-collapsible';
 import '../Results.css'; // Import the CSS file
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faFileImage, faCircleInfo } from '@fortawesome/free-solid-svg-icons';
+import { faCopy, faFileImage, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
 import ImagePreview from './ImagePreview/ImagePreview'; // Adjust the path as needed
 import InfoPreview from './InfoPreview/InfoPreview';
@@ -14,6 +14,23 @@ function SSCResults({ sscData, images, highlight, filterState, main }) {
     const [previewImage, setPreviewImage] = useState(null);
     const [previewText, setPreviewText] = useState(null);
     const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
+    const [currentPage, setCurrentPage] = useState({});
+    useEffect(() => {
+        const initialPages = {};
+        Object.keys(sscData.parts).forEach(partKey => {
+          Object.keys(sscData.parts[partKey].chapters).forEach(chapterKey => {
+            Object.keys(sscData.parts[partKey].chapters[chapterKey].episodes).forEach(episodeKey => {
+              // Create a unique key for each episode
+              const uniqueEpisodeKey = `${partKey}-${chapterKey}-${episodeKey}`;
+              initialPages[uniqueEpisodeKey] = 1;
+            });
+          });
+        });
+        setCurrentPage(initialPages);
+      }, [sscData]);
+      
+    
+      
     const iconRefs = useRef({});
 
     const characterImages = images.characterImages;
@@ -382,10 +399,12 @@ function SSCResults({ sscData, images, highlight, filterState, main }) {
                                     }>
                                         {Object.entries(chapterValue.episodes).map(([episodeKey, episodeValue]) => {
                                             let episodeTitle = episodeMap["Seven Shadows Chronicles"][partTitle][chapterTitle][`e${episodeKey.slice(1)}`]
+                                            const sentencesPerPage = 15;
+                                            const uniqueChapterKey = `${partKey}-${chapterKey}-${episodeKey}`;
                                             return (
                                                 <Collapsible trigger={`Episode ${episodeTitle} (Total: ${episodeValue.sentences.length})`} key={episodeKey}>
                                                     <div className="sentences-container">
-                                                        {episodeValue.sentences.map((sentence, index) => (
+                                                        {episodeValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
                                                             <div className="sentence-character-container" key={index}>
                                                                 <div className="sentence-box-image">
                                                                     <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
@@ -427,7 +446,7 @@ function SSCResults({ sscData, images, highlight, filterState, main }) {
                                                                 </div>
                                                                 <div className="character-box">
                                                                     {characterImages[sentence.name_variant] && <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant} />}
-                                                                    <p title={sentence.name_variant || 'Narrator'}>
+                                                                    <p title={sentence.name_variant || 'None'}>
                                                                         {
                                                                             sentence.name && sentence.name_variant ? (
                                                                                 sentence.name !== sentence.name_variant ? (
@@ -435,7 +454,7 @@ function SSCResults({ sscData, images, highlight, filterState, main }) {
                                                                                         `${sentence.name_variant.split(' ')[sentence.name_variant.split(' ').length - 1].replace(/\(|\)/g, "")} (${sentence.name_variant.split(' ').slice(0, -1).join(' ')})`
                                                                                         : `${sentence.name_variant} (${sentence.name})`
                                                                                 ) : sentence.name
-                                                                            ) : 'Narrator'
+                                                                            ) : 'None'
                                                                         }
                                                                     </p>
                                                                 </div>
@@ -444,6 +463,23 @@ function SSCResults({ sscData, images, highlight, filterState, main }) {
 
                                                             </div>
                                                         ))}
+                                                        {episodeValue.sentences.length > sentencesPerPage && (
+                                                            <div className="pagination-controls">
+                                                                <button title={`Page 1`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: 1 }))}>
+                                                                    <FontAwesomeIcon icon={faAnglesLeft} />
+                                                                </button>
+                                                                <button title={`Page ${Math.max(currentPage[uniqueChapterKey] - 1, 1)}`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.max((oldPages[uniqueChapterKey] || 1) - 1, 1) }))}>
+                                                                    <FontAwesomeIcon icon={faAngleLeft} />
+                                                                </button>
+                                                                <input type="number" min="1" max={Math.ceil(episodeValue.sentences.length / sentencesPerPage)} value={currentPage[uniqueChapterKey] || 1} onChange={e => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min(Math.max(Number(e.target.value), 1), Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))} />
+                                                                <button title={`Page ${Math.min(currentPage[uniqueChapterKey] + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage))}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min((oldPages[uniqueChapterKey] || 1) + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))}>
+                                                                    <FontAwesomeIcon icon={faAngleRight} />
+                                                                </button>
+                                                                <button title={`Page ${Math.ceil(episodeValue.sentences.length / sentencesPerPage)}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.ceil(episodeValue.sentences.length / sentencesPerPage) }))}>
+                                                                    <FontAwesomeIcon icon={faAnglesRight} />
+                                                                </button>
+                                                            </div>
+                                                        )}
                                                     </div>
                                                 </Collapsible>
                                             );

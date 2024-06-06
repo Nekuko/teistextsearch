@@ -1,21 +1,49 @@
 // AnimeResults.js
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Collapsible from 'react-collapsible';
 import '../Results.css'; // Import the CSS file
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faFileImage } from '@fortawesome/free-solid-svg-icons';
+import { faCopy, faFileImage, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
 import ImagePreview from './ImagePreview/ImagePreview'; // Adjust the path as needed
+import InfoPreview from './InfoPreview/InfoPreview';
 
 function AnimeResults({ anData, images, highlight, filterState, main }) {
   const [imageCache, setImageCache] = useState({});
   const [previewImage, setPreviewImage] = useState(null);
   const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
+  const [previewText, setPreviewText] = useState(null);
   const iconRefs = useRef({});
+  const [currentPage, setCurrentPage] = useState({});
+  useEffect(() => {
+    const initialPages = {};
+    Object.keys(anData.seasons).forEach(seasonKey => {
+      Object.keys(anData.seasons[seasonKey].episodes).forEach(episodeKey => {
+        // Create a unique key for each chapter
+        const uniqueChapterKey = `${seasonKey}-${episodeKey}`;
+        initialPages[uniqueChapterKey] = 1;
+      });
+    });
+    setCurrentPage(initialPages);
+  }, [anData]);
 
   const characterImages = images.characterImages;
   const coverImages = images.animeCoverImages;
+
+  function handleMouseEnterInfo(seasonKey, episodeKey, index, seasonTitle, episodeTitle, start_time, end_time, name, name_variant) {
+    let nameFinal;
+    if (name === name_variant) {
+      nameFinal = name;
+    } else {
+      nameFinal = `${name_variant} | (${name})`;
+    }
+    const rect = iconRefs.current[`${seasonKey}-${episodeKey}-${index}-info`].getBoundingClientRect();
+    setPreviewPosition({ top: rect.top, left: rect.left });
+
+    // Set the text data directly as the preview text
+    setPreviewText(`Anime<br />${seasonTitle}<br />${episodeTitle}<br />Time ${start_time.replaceAll("-", ":")} - ${end_time.replaceAll("-", ":")}<br />${nameFinal}`);
+  }
 
   const highlightKeywords = (text) => {
     let highlightedText = text;
@@ -117,16 +145,19 @@ function AnimeResults({ anData, images, highlight, filterState, main }) {
               </>
             } key={seasonKey}>
               {Object.entries(seasonValue.episodes).map(([episodeKey, episodeValue]) => {
+                const sentencesPerPage = 15;
+                const uniqueChapterKey = `${seasonKey}-${episodeKey}`;
+
                 // Get the episode title from the mapping
                 const episodeTitle = seasonMapping[seasonKey]?.episodes[episodeKey] || `Episode ${episodeKey.slice(1)}`;
                 return (
                   <Collapsible trigger={`${episodeTitle} (Total: ${episodeValue.count})`} key={episodeKey}>
                     <div className="sentences-container">
-                      {episodeValue.sentences.map((sentence, index) => (
+                    {episodeValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
                         <div className="sentence-character-container" key={index}>
                           <div className="sentence-box-image">
                             <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
-                            <div className="icon-container">
+                            <div className="icon-container-triple">
                               <CopyToClipboard text={sentence.subtitle}>
                                 <div className="copy-icon" onClick={() => showPopup(seasonKey, episodeKey, index)}>
                                   <FontAwesomeIcon icon={faCopy} />
@@ -148,6 +179,16 @@ function AnimeResults({ anData, images, highlight, filterState, main }) {
                                   </a>
                                 )}
                               </div>
+                              <SlashLine className="icon-slashline" />
+                              <div className="info-icon-container"
+                                onMouseEnter={() => handleMouseEnterInfo(seasonKey, episodeKey, index, seasonTitle, episodeTitle, sentence.start_time, sentence.end_time, sentence.name, sentence.name_variant)}
+                                onMouseLeave={() => setPreviewText(null)}
+                                ref={ref => iconRefs.current[`${seasonKey}-${episodeKey}-${index}-info`] = ref}
+                              >
+                                {sentence && (
+                                  <FontAwesomeIcon className="info-icon" icon={faCircleInfo} />
+                                )}
+                              </div>
 
                             </div>
                           </div>
@@ -160,14 +201,36 @@ function AnimeResults({ anData, images, highlight, filterState, main }) {
                         </div>
                       ))}
                     </div>
+                    {
+                  episodeValue.sentences.length > sentencesPerPage && (
+                    <div className="pagination-controls">
+                      <button title={`Page 1`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: 1 }))}>
+                        <FontAwesomeIcon icon={faAnglesLeft} />
+                      </button>
+                      <button title={`Page ${Math.max(currentPage[uniqueChapterKey] - 1, 1)}`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.max((oldPages[uniqueChapterKey] || 1) - 1, 1) }))}>
+                        <FontAwesomeIcon icon={faAngleLeft} />
+                      </button>
+                      <input type="number" min="1" max={Math.ceil(episodeValue.sentences.length / sentencesPerPage)} value={currentPage[uniqueChapterKey] || 1} onChange={e => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min(Math.max(Number(e.target.value), 1), Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))} />
+                      <button title={`Page ${Math.min(currentPage[uniqueChapterKey] + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage))}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min((oldPages[uniqueChapterKey] || 1) + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))}>
+                        <FontAwesomeIcon icon={faAngleRight} />
+                      </button>
+                      <button title={`Page ${Math.ceil(episodeValue.sentences.length / sentencesPerPage)}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.ceil(episodeValue.sentences.length / sentencesPerPage) }))}>
+                        <FontAwesomeIcon icon={faAnglesRight} />
+                      </button>
+                    </div>
+                  )
+                }
                   </Collapsible>
+
                 );
+
               })}
             </Collapsible>
           </div>
         );
       })}
       {previewImage && <ImagePreview src={previewImage} position={previewPosition} />}
+      {previewText && <InfoPreview info={previewText} position={previewPosition} />}
     </div>
   );
 }

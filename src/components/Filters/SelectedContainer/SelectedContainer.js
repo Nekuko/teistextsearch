@@ -9,46 +9,47 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     animeCheckedItems = Object.entries(animeDropdownState.seasonsChecked)
       .flatMap(([season, episodes]) =>
         Object.entries(episodes)
-          .filter(([episode, checked]) => checked && episode !== 'checked')
-          .map(([episode]) => {
-            const [season, ep] = episode.split('e');
+          .filter(([episodeId, episodeData]) => episodeData.checked && episodeId !== 'checked')
+          .map(([episodeId]) => {
+            const [season, ep] = episodeId.split('e');
             return `an_${season}_e${ep}`;
           })
       );
   }
+  
 
-  // For Seven Shadows Chronicles
   let sscCheckedItems = [];
   for (let group in mogDropdownState.partsChecked) {
-    if (group === "Seven Shadows Chronicles") {
-      for (let part in mogDropdownState.partsChecked[group]) {
-        for (let section in mogDropdownState.partsChecked[group][part]) {
-          if (section !== 'checked') {
-            for (let episode in mogDropdownState.partsChecked[group][part][section]) {
-              if (episode !== 'checked' && mogDropdownState.partsChecked[group][part][section][episode]) {
-                sscCheckedItems.push(`${group}_${part}_${section}_${episode}`);
+      if (group === "Seven Shadows Chronicles") {
+          for (let part in mogDropdownState.partsChecked[group]) {
+              for (let section in mogDropdownState.partsChecked[group][part]) {
+                  if (section !== 'checked') {
+                      for (let episode in mogDropdownState.partsChecked[group][part][section]) {
+                          if (episode !== 'checked' && mogDropdownState.partsChecked[group][part][section][episode].checked) {
+                              sscCheckedItems.push(`${group}_${part}_${section}_${episode}`);
+                          }
+                      }
+                  }
               }
-            }
           }
-        }
       }
-    }
   }
+  
+  
+  
 
   // For Event Stories
   let esCheckedItems = [];
   for (let group in mogDropdownState.partsChecked) {
-    if (group === "Event Stories") {
-      for (let part in mogDropdownState.partsChecked[group]) {
-        for (let episode in mogDropdownState.partsChecked[group][part]) {
-          if (episode !== 'checked' && mogDropdownState.partsChecked[group][part][episode]) {
-            esCheckedItems.push(`${group}_${part}_${episode}`);
+      if (group === "Event Stories") {
+          for (let part in mogDropdownState.partsChecked[group]) {
+              for (let episode in mogDropdownState.partsChecked[group][part]) {
+                  if (episode !== 'checked' && mogDropdownState.partsChecked[group][part][episode].checked) {
+                      esCheckedItems.push(`es_${part}_${episode}`);
+                  }
+              }
           }
-        }
       }
-    }
-
-
   }
 
   const getSelectedESList = () => {
@@ -59,7 +60,8 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
 
     sortedItems.forEach(item => {
       let [key, episode] = item.split('_e');
-      key = key.replace('Event Stories', 'ES').replace(/_/g, ' ');
+      key = key.replace('es', 'ES').replace(/_/g, ' ');
+      console.log(key)
       episode = parseInt(episode);
 
       if (!groupedEpisodes[key]) {
@@ -103,7 +105,8 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     }
 
     return selectedList;
-  }
+}
+
 
 
 
@@ -118,6 +121,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     let groupedEpisodes = {};
 
     sscCheckedItems.forEach(item => {
+      console.log(item)
       let parts = item.split('_');
       let group = parts[0];
       let shortGroup = shortNames[group]
@@ -320,7 +324,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
         groupedMainParts.push({ text: "MOG SSC Rise of Garden", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 1 Rise of Garden" })
       } else if (item.text === "MOG SSC SOV C2-1-13") {
         groupedMainParts.push({ text: "MOG SSC Sturm of Velgalta", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 2 Sturm of Velgalta" })
-      } else if (item.text === "MOG SSC SOS C3-1") {
+      } else if (item.text === "MOG SSC SOS C3-1-2") {
         groupedMainParts.push({ text: "MOG SSC Secret of Sacra", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 3 Secret of Sacra" })
       } else {
         groupedMainParts.push(item)
@@ -631,7 +635,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
 
   const selectedMediumList = [...selectedLNList, ...selectedWNList, ...selectedAnimeList, ...mogCombined]
   if (selectedMediumList.length === 0) {
-    const mediumText = canonActive ? 'Any Canon Medium' : 'Any Medium';
+    const mediumText = canonActive ? 'Any Canon Medium' : 'No Medium';
     selectedMediumList.push({ text: mediumText, hoverText: mediumText });
   }
 
