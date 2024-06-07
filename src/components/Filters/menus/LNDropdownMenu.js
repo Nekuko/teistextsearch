@@ -161,7 +161,7 @@ function LNDropdownMenu({ lnDropdownState, updateLNDropdownState, openLN, setOpe
                                             const chapterTitle = volumesChecked[volume][chapter].title;
                                             return (
                                                 <div key={index} className="chapter-item">
-                                                    <span className={volumesChecked[volume]?.[chapter] ? "chapter-checked" : "chapter-unchecked"}>
+                                                    <span className={volumesChecked[volume]?.[chapter]?.checked ? "chapter-checked" : "chapter-unchecked"}>
                                                         <span style={{ color: 'red' }}>{chapterTitle.split("|")[0]} </span>
                                                         <span className="chapter-name" title={chapterTitle.split("|")[1]}>| {chapterTitle.split("|")[1]}</span>
                                                     </span>

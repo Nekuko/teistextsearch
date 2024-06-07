@@ -1,5 +1,5 @@
 // WebNovelResults.js
-import React, {useState, useRef, useEffect} from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Collapsible from 'react-collapsible';
 import '../Results.css'; // Import the CSS file
 import { CopyToClipboard } from 'react-copy-to-clipboard';
@@ -23,7 +23,7 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
     });
     setCurrentPage(initialPages);
   }, [wnData]);
-  
+
 
   const iconRefs = useRef({});
   // If wnData is empty, return nothing
@@ -94,7 +94,7 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
               return (
                 <Collapsible trigger={`${chapterKey} | ${chapterTitle} (Total: ${chapterValue.count})`} key={chapterKey}>
                   <div className="sentences-container">
-                  {chapterValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
+                    {chapterValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
                       <div className="sentence-box" key={index}>
                         <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.text) : sentence.text }} />
                         <div className="icon-container">
@@ -121,7 +121,7 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
                         </div>
                       </div>
                     ))}
-{chapterValue.sentences.length > sentencesPerPage && (
+                    {chapterValue.sentences.length > sentencesPerPage && (
                       <div className="pagination-controls">
                         <button title={`Page 1`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: 1 }))}>
                           <FontAwesomeIcon icon={faAnglesLeft} />

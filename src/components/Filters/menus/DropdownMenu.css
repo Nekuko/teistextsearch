@@ -95,7 +95,7 @@
   max-width: 340px; /* Adjust as needed */
 }
 
-.episode-unchecked, .volume-unchecked, .attribute-checked {
+.episode-unchecked, .volume-unchecked, .attribute-checked, .chapter-unchecked {
   opacity: 0.5;
 }
 

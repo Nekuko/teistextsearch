@@ -60,7 +60,8 @@
 
 .reset-icon {
   position: absolute;
-  top: 10px; /* Adjust to align with the top edge of the results-container */
+  font-size: 80%;
+  top: 11px; /* Adjust to align with the top edge of the results-container */
   right: 30px; /* Adjust to align with the right edge of the results-container */
   color: #c8000f; /* The red color you specified */
   cursor: pointer; /* Change the cursor to a pointer when hovering over the icon */
@@ -152,10 +153,6 @@
   font-size: larger;
 }
 
-.ln-results, .wn-results, .an-results {
-  margin-bottom: 20px;
-}
-
 .medium-trigger {
   font-size: medium;
 }
@@ -231,7 +228,7 @@
 .icon-container-triple {
   display: flex;
   margin: 0px;
-  margin-right: 3px;
+  margin-right: 5px;
   padding: 0px;
   justify-content: center;
   align-items: center;

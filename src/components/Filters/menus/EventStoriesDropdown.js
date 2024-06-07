@@ -50,7 +50,7 @@ function EventStoriesDropdown({
                                     const episodeName = partsChecked[part][episode].title;
                                     return (
                                         <div key={index} className="episode-item">
-                                            <span className={partsChecked[part][episode] ? "episode-checked" : "episode-unchecked"}>
+                                            <span className={partsChecked[part][episode].checked ? "episode-checked" : "episode-unchecked"}>
                                                 <span style={{ color: 'red' }}>{episodeNumber} </span>
                                                 <span className="episode-name" title={episodeName}>| {episodeName}</span>
                                             </span>

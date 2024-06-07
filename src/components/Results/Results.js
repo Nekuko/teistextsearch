@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useReducer } from 'react';
 import Collapsible from 'react-collapsible';
 import LightNovelResults from './Containers/LightNovelResults';
 import WebNovelResults from './Containers/WebNovelResults';
 import AnimeResults from './Containers/AnimeResults';
 import CharacterResults from './Containers/CharacterResults';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRotateRight, faLightbulb } from '@fortawesome/free-solid-svg-icons'
+import { faTrashCan, faLightbulb } from '@fortawesome/free-solid-svg-icons'
 import './Results.css';
 import SSCResults from './Containers/SSCResults';
 import ESResults from './Containers/ESResults';
@@ -33,8 +33,6 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-
-
   // Check if .an key exists in results.anime and if there are any characters to show
   const anCharacter = results && results.anime && !results.anime.an && Object.keys(results.anime).length > 0;
   const sscCharacter = results && results.ssc && !results.ssc.ssc && Object.keys(results.ssc).length > 0;
@@ -48,9 +46,7 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
     if (esResults) {
       mgCount += esResults.count;
     }
-
   }
-
 
   return (
     <div>
@@ -63,7 +59,7 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
           title="Highlight Keywords"
         />
         <FontAwesomeIcon
-          icon={faRotateRight}
+          icon={faTrashCan}
           className={`reset-icon`}
           onClick={resetResults}
           title="Clear Results"
@@ -83,22 +79,34 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
           ) : (
             <>
               {lnResults && (
-                <Collapsible className="ln-results" trigger={`Light Novel (Total: ${lnResults.count})`}>
-                  <LightNovelResults lnDropdownState={lnDropdownState} lnData={lnResults} volumeImages={images.lnCoverImages} highlight={highlight} filterState={filterState} />
-                </Collapsible>
+                <>
+                  <Collapsible className="ln-results" trigger={`Light Novel (Total: ${lnResults.count})`}>
+                    <LightNovelResults lnDropdownState={lnDropdownState} lnData={lnResults} volumeImages={images.lnCoverImages} highlight={highlight} filterState={filterState} />
+                  </Collapsible>
+                  <br/>
+                </>
               )}
               {wnResults && (
-                <Collapsible className="ln-results" trigger={`Web Novel (Total: ${wnResults.count})`}>
-                  <WebNovelResults wnDropdownState={wnDropdownState} wnData={wnResults} volumeImages={images.lnCoverImages} highlight={highlight} filterState={filterState} />
-                </Collapsible>
+                <>
+                  <Collapsible className="ln-results" trigger={`Web Novel (Total: ${wnResults.count})`}>
+                    <WebNovelResults wnDropdownState={wnDropdownState} wnData={wnResults} volumeImages={images.lnCoverImages} highlight={highlight} filterState={filterState} />
+                  </Collapsible>
+                  <br/>
+                </>
               )}
               {((anCharacter || esCharacter || sscCharacter) && (
-                <CharacterResults anData={results.anime} sscData={results.ssc} esData={results.es} images={images} highlight={highlight} filterState={filterState} />
+                <>
+                  <CharacterResults anData={results.anime} sscData={results.ssc} esData={results.es} images={images} highlight={highlight} filterState={filterState} />
+                  <br/>
+                </>
               ))}
               {anResults && (
-                <Collapsible className="an-results" trigger={`Anime (Total: ${anResults.count})`}>
-                  <AnimeResults anData={anResults} images={images} highlight={highlight} filterState={filterState} main={true} />
-                </Collapsible>
+                <>
+                  <Collapsible className="an-results" trigger={`Anime (Total: ${anResults.count})`}>
+                    <AnimeResults anData={anResults} images={images} highlight={highlight} filterState={filterState} main={true} />
+                  </Collapsible>
+                  <br />
+                </>
               )}
               {((sscResults || esResults) && (mgCount > 0)) && (
                 <Collapsible trigger={`Master of Garden (Total: ${mgCount})`}>
@@ -118,7 +126,7 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
           )}
         </div>
         {!noResults && (
-          <button title={"To Top"}className="scroll-top-button" onClick={scrollToTop}>UP</button>
+          <button title={"To Top"} className="scroll-top-button" onClick={scrollToTop}>UP</button>
         )}
       </div>
     </div>
