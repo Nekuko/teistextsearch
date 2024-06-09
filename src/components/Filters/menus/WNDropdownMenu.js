@@ -163,10 +163,12 @@ function WNDropdownMenu({ wnDropdownState, updateWNDropdownState, openWN, setOpe
                                             const chapterTitle = volumesChecked[volume][chapter].title;
                                             return (
                                                 <div key={index} className="chapter-item">
-                                                    <span className={volumesChecked[volume]?.[chapter]?.checked ? "chapter-checked" : "chapter-unchecked"}>
-                                                        <span style={{ color: 'red' }}>{chapter.split("c")[1]} </span>
-                                                        <span className="chapter-name" title={chapterTitle}>| {chapterTitle}</span>
-                                                    </span>
+                                                    <div className="episode-name">
+                                                        <span className={volumesChecked[volume]?.[chapter]?.checked ? "chapter-checked" : "chapter-unchecked"}>
+                                                            <span style={{ color: 'red' }}>{chapter.split("c")[1]} </span>
+                                                            <span className="episode-text" title={chapterTitle}>| {chapterTitle}</span>
+                                                        </span>
+                                                    </div>
                                                     <input
                                                         type="checkbox"
                                                         checked={!!volumesChecked[volume]?.[chapter]?.checked}

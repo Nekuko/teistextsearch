@@ -65,7 +65,12 @@ function Filters({
           />
         </div>
         <div className="row-container-center">
-        <Keywords handleSearch={handleSearch} filterState={filterState} setFilterState={setFilterState} /> {/* Make sure this is the last child of the .filters container */}
+          <Keywords handleSearch={handleSearch} filterState={filterState} setFilterState={setFilterState} /> {/* Make sure this is the last child of the .filters container */}
+        </div>
+        <div className="row-container-center">
+          <div className="filters-search">
+            <button className="search-button" onClick={handleSearch}>SEARCH</button> {/* Search button */}
+          </div>
         </div>
       </div>
     </div>

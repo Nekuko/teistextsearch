@@ -88,15 +88,19 @@ function Keywords({ filterState, setFilterState, handleSearch }) {
             onClick={toggleExactMatch}
             title="Match Whole Word(s)"
           />
-          <p className="input-instructions">Press enter after each keyword/phrase</p>
+
           <button className="delete-all" onClick={removeAllKeywords} title="Delete all">
             <FontAwesomeIcon className="delete-all-icon" icon={faTimes} />
           </button>
         </div>
         
+        
       </div>
+      <p className="input-instructions">Press enter after each keyword/phrase</p>
     </div>
-    <button className="search-button" onClick={handleSearch}>SEARCH</button> {/* Search button */}
+      <div className="keywords-search">
+        <button className="search-button" onClick={handleSearch}>SEARCH</button> {/* Search button */}
+      </div>
     </div>
   );
 }

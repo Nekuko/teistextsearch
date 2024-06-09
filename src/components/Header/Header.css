@@ -1,6 +1,19 @@
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+/* Hide desktop navigation on screens smaller than or equal to 768px */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+
 .Header {
-  position: relative;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.1);
@@ -9,7 +22,6 @@
 }
 
 .Header .title {
-  position: absolute;
   left: 0;
   padding: 0 4%;
   display: flex;
@@ -27,18 +39,15 @@
 }
 
 .Header nav {
-  display: flex;
+  display: flex; 
   justify-content: flex-end;
-  width: calc(100% - 0%);
-  min-width: 0; /* add this to prevent overflow */
+  border: 1px solid pink;
 }
 
 .Header nav ul {
   list-style-type: none;
   display: flex;
   justify-content: space-around; /* change this from space-between to space-around */
-  width: auto; /* change this from 100% to auto */
-  min-width: 0; /* add this to prevent overflow */
   align-items: center;
 }
 
@@ -89,7 +98,7 @@
 
 /* Header.css */
 .logo {
-  width: 20%; /* Adjust as needed */
+  width: 150px; /* Adjust as needed */
   height: auto; /* Keeps the aspect ratio */
   transition: opacity 0.3s ease; /* Adds a smooth transition */
 }

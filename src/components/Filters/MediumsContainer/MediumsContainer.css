@@ -7,62 +7,61 @@
   width: 100%;
 }
 
-  .mediums-container {
-    position: relative;
-  }
+.mediums-container {
+  position: relative;
+  padding-bottom: 40px;
+}
 
- .volume-trigger-drop {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  /* Add this new class for the checkbox container */
-  .checkbox-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  /* Adjust the input[type="checkbox"] to remove margin-left */
-  input[type="checkbox"] {
-    background-color: #000000;
-    accent-color: #c8000f;
-    margin-left: 0; /* Remove margin-left */
-  }
+.volume-trigger-drop {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
-  .canon-button {
-    position: absolute;
-    bottom: 10px;
-    right: 30px;
-    color: #c8000f;
-    font-size: small;
-    opacity: 40%;
+/* Add this new class for the checkbox container */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Adjust the input[type="checkbox"] to remove margin-left */
+input[type="checkbox"] {
+  background-color: #000000;
+  accent-color: #c8000f;
+}
+
+.canon-button {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  color: #c8000f;
+  font-size: small;
+  opacity: 40%;
+  /* Add additional styles for the button as needed */
+}
+
+.canon-button:hover {
+  color: red;
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.canon-button.active {
+  color: red;
+  opacity: 100%;
+}
+
+
+.reset-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #c8000f
     /* Add additional styles for the button as needed */
-  }
+}
 
-  .canon-button:hover {
-    color: red;
-    cursor: pointer;
-    opacity: 100%;
-  }
-
-  .canon-button.active {
-    color: red;
-    opacity: 100%;
-  }
-  
-
-  .reset-button {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    color: #c8000f
-    /* Add additional styles for the button as needed */
-  }
-
-  .reset-button:hover {
-    color: red;
-    cursor: pointer;
-  }
-  
+.reset-button:hover {
+  color: red;
+  cursor: pointer;
+}

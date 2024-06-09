@@ -163,10 +163,12 @@ function LNDropdownMenu({ lnDropdownState, updateLNDropdownState, openLN, setOpe
                                             const chapterTitle = volumesChecked[volume][chapter].title;
                                             return (
                                                 <div key={index} className="chapter-item">
-                                                    <span className={volumesChecked[volume]?.[chapter]?.checked ? "chapter-checked" : "chapter-unchecked"}>
-                                                        <span style={{ color: 'red' }}>{chapterTitle.split("|")[0]} </span>
-                                                        <span className="chapter-name" title={chapterTitle.split("|")[1]}>| {chapterTitle.split("|")[1]}</span>
-                                                    </span>
+                                                    <div className="episode-name">
+                                                        <span className={volumesChecked[volume]?.[chapter]?.checked ? "chapter-checked" : "chapter-unchecked"}>
+                                                            <span style={{ color: 'red' }}>{chapterTitle.split("|")[0]} </span>
+                                                            <span className="episode-text" title={chapterTitle.split("|")[1]}>| {chapterTitle.split("|")[1]}</span>
+                                                        </span>
+                                                    </div>
                                                     <input
                                                         type="checkbox"
                                                         checked={!!volumesChecked[volume]?.[chapter].checked}

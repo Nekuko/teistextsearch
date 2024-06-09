@@ -1,6 +1,7 @@
 
   .characters-container {
     position: relative;
+    padding-bottom: 40px;
   }
   
   /* Add this new class for the checkbox container */
@@ -13,7 +14,6 @@
   input[type="checkbox"] {
     background-color: #000000;
     accent-color: #c8000f;
-    margin-left: 0; /* Remove margin-left */
   }
 
   .reset-button {

@@ -102,10 +102,12 @@ function SevenShadowChroniclesDropdown({
                                                         const episodeName = partsChecked[part][section][episode].title;
                                                         return (
                                                             <div key={index} className="episode-item">
+                                                                <div className="episode-name">
                                                                 <span className={partsChecked[part][section][episode].checked ? "episode-checked" : "episode-unchecked"}>
                                                                     <span style={{ color: 'red' }}>{episodeNumber} </span>
-                                                                    <span className="episode-name" title={episodeName}>| {episodeName}</span>
+                                                                    <span className="episode-text" title={episodeName}>| {episodeName}</span>
                                                                 </span>
+                                                                </div>
                                                                 <input
                                                                     type="checkbox"
                                                                     checked={!!partsChecked[part][section][episode].checked}

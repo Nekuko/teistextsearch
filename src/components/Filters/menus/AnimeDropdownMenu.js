@@ -19,23 +19,23 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, openA
         }
       }
     };
-  
+
     if (openAnime) {
       document.addEventListener('mousedown', handleClickOutside);
     } else {
       document.removeEventListener('mousedown', handleClickOutside);
     }
-  
+
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [openAnime]);
-  
+
 
 
   useEffect(() => {
-    const allUnchecked = Object.values(seasonsChecked).every(season => 
-      Object.entries(season).every(([episodeId, episodeData]) => 
+    const allUnchecked = Object.values(seasonsChecked).every(season =>
+      Object.entries(season).every(([episodeId, episodeData]) =>
         episodeId === 'checked' ? true : !episodeData.checked
       )
     );
@@ -45,7 +45,7 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, openA
       updateAnimeDropdownState('mainChecked', true);
     }
   }, [seasonsChecked]);
-  
+
 
   const handleAnimeClick = () => {
     updateAnimeDropdownState('openSeasons', {});
@@ -79,11 +79,11 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, openA
       ...seasonsChecked[season],
       [episode]: { title: seasonsChecked[season][episode].title, checked: isEpisodeChecked }
     };
-  
+
     // Check if all episodes are unchecked
     const allChecks = Object.entries(updatedSeason).filter(([key]) => key !== 'checked');
     const isAllUnchecked = allChecks.every(([_, episodeData]) => !episodeData.checked);
-  
+
     if (isAllUnchecked) {
       // If all episodes are unchecked, uncheck the season checkbox
       updatedSeason.checked = false;
@@ -91,19 +91,19 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, openA
       // If not all episodes are unchecked, check the season checkbox
       updatedSeason.checked = true;
     }
-  
+
     updateAnimeDropdownState('seasonsChecked', {
       ...seasonsChecked,
       [season]: updatedSeason
     });
   };
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
 
   const handleSeasonCheck = (season) => {
     const isSeasonChecked = !seasonsChecked[season]?.checked;
@@ -115,13 +115,13 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, openA
         updatedSeason[episode] = { title: updatedSeason[episode].title, checked: isSeasonChecked };
       }
     });
-  
+
     updateAnimeDropdownState('seasonsChecked', {
       ...seasonsChecked,
       [season]: { ...updatedSeason, checked: isSeasonChecked }
     });
   };
-  
+
 
   const handleFilterChange = (event, season) => {
     if (season) {
@@ -143,28 +143,28 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, openA
         name: seasonsChecked[season][episode].title
       }))
     }));
-  
+
     if (!filter) return seasonsArray;
     return seasonsArray.filter(season => season.name.toLowerCase().includes(filter.toLowerCase()));
   }, [seasonsChecked, filter]);
-  
+
 
   return (
     <div className="dropdown" ref={dropdownRef}>
       <div onClick={handleAnimeClick}>
         <span className={mainChecked ? '' : 'dimmed'}>ANIME</span>
-        <FontAwesomeIcon className="dropdown-icon-main"icon={openAnime ? faChevronUp : faChevronDown} />
+        <FontAwesomeIcon className="dropdown-icon-main" icon={openAnime ? faChevronUp : faChevronDown} />
       </div>
       {openAnime && (
-        <div className = "dropdown-menu">
+        <div className="dropdown-menu">
           <input type="text" value={filter} onChange={handleFilterChange} placeholder="Search seasons..." />
           {filteredSeasons.map((season, index) => (
             <div key={index}>
               <div className="item-header">
                 <div className="volume-trigger-drop">
-                {seasonImages[season.name.replace('Season ', 's')] && <img className="cover-image" src={seasonImages[season.name.replace('Season ', 's')]} alt={season.name} />}
-                <span 
-                    className={`season-title ${seasonsChecked[season.name]?.checked ? '' : 'dimmed'}`} 
+                  {seasonImages[season.name.replace('Season ', 's')] && <img className="cover-image" src={seasonImages[season.name.replace('Season ', 's')]} alt={season.name} />}
+                  <span
+                    className={`season-title ${seasonsChecked[season.name]?.checked ? '' : 'dimmed'}`}
                     onClick={() => handleSeasonClick(season.name)}
                   >
                     {season.name}
@@ -181,22 +181,24 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, openA
                 <div>
                   <input type="text" value={episodeFilters[season.name] || ''} onChange={(event) => handleFilterChange(event, season.name)} placeholder="Search episodes..." />
                   <div className="episode-list">
-                  {season.episodes.filter(episode => !episodeFilters[season.name] || episode.name.toLowerCase().includes(episodeFilters[season.name].toLowerCase())).map((episode, index) => {
-                  const [episodeNumber, episodeName] = episode.name.split('|');
-                  return (
-                    <div key={index} className="episode-item">
-                      <span className={seasonsChecked[season.name]?.[episode.id]?.checked ? "episode-checked" : "episode-unchecked"}>
-                        <span style={{color: 'red'}}>{episodeNumber}</span>
-                        <span className="episode-name" title={episodeName}>|{episodeName}</span>
-                      </span>
-                      <input
-                        type="checkbox"
-                        checked={!!seasonsChecked[season.name]?.[episode.id]?.checked}
-                        onChange={() => handleEpisodeCheck(season.name, episode.id)}
-                      />
-                    </div>
-                  );
-                })}
+                    {season.episodes.filter(episode => !episodeFilters[season.name] || episode.name.toLowerCase().includes(episodeFilters[season.name].toLowerCase())).map((episode, index) => {
+                      const [episodeNumber, episodeName] = episode.name.split('|');
+                      return (
+                        <div key={index} className="episode-item">
+                          <span className={seasonsChecked[season.name]?.[episode.id]?.checked ? "episode-checked" : "episode-unchecked"}>
+                            <div className="episode-name">
+                              <span style={{ color: 'red' }}>{episodeNumber}</span>
+                              <span className="episode-text" title={episodeName}>|{episodeName}</span>
+                            </div>
+                          </span>
+                          <input
+                            type="checkbox"
+                            checked={!!seasonsChecked[season.name]?.[episode.id]?.checked}
+                            onChange={() => handleEpisodeCheck(season.name, episode.id)}
+                          />
+                        </div>
+                      );
+                    })}
 
                   </div>
                 </div>
