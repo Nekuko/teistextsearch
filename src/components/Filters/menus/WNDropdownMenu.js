@@ -14,6 +14,7 @@ function WNDropdownMenu({ wnDropdownState, updateWNDropdownState, openWN, setOpe
                 // Ignore clicks on the checkbox
                 if (event.target.type !== 'checkbox') {
                     setOpenWN(false);
+                    updateWNDropdownState('openVolumes', {})
                 }
             }
         };
@@ -44,6 +45,7 @@ function WNDropdownMenu({ wnDropdownState, updateWNDropdownState, openWN, setOpe
 
 
     const handleWebNovelClick = () => {
+        updateWNDropdownState('openVolumes', {})
         setOpenWN(!openWN);
     };
 

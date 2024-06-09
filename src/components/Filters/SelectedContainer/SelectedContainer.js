@@ -121,7 +121,6 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     let groupedEpisodes = {};
 
     sscCheckedItems.forEach(item => {
-      console.log(item)
       let parts = item.split('_');
       let group = parts[0];
       let shortGroup = shortNames[group]

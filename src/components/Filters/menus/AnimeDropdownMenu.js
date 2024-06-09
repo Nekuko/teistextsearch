@@ -4,7 +4,7 @@ import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import './DropdownMenu.css';
 
 
-function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seasons, openAnime, setOpenAnime, seasonImages }) {
+function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, openAnime, setOpenAnime, seasonImages }) {
   const { mainChecked, filter, openSeasons, seasonsChecked, episodeFilters } = animeDropdownState;
 
   const dropdownRef = useRef(null);
@@ -15,6 +15,7 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seaso
         // Ignore clicks on the checkbox
         if (event.target.type !== 'checkbox') {
           setOpenAnime(false);
+          updateAnimeDropdownState('openSeasons', {});
         }
       }
     };
@@ -47,6 +48,7 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, seaso
   
 
   const handleAnimeClick = () => {
+    updateAnimeDropdownState('openSeasons', {});
     setOpenAnime(!openAnime);
   };
 

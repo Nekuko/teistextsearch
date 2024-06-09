@@ -61,7 +61,7 @@
 .reset-icon {
   position: absolute;
   font-size: 80%;
-  top: 11px; /* Adjust to align with the top edge of the results-container */
+  top: 12px; /* Adjust to align with the top edge of the results-container */
   right: 30px; /* Adjust to align with the right edge of the results-container */
   color: #c8000f; /* The red color you specified */
   cursor: pointer; /* Change the cursor to a pointer when hovering over the icon */
@@ -85,7 +85,7 @@
 
 .sentences-container {
   max-height: 400px;
-  padding-right: 20px;
+  padding-right: 10px;
   overflow-y: auto;
 }
 
@@ -97,7 +97,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 1px;
 }
 
 .image-icon-container {

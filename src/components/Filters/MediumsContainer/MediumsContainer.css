@@ -21,6 +21,7 @@
   .checkbox-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   
   /* Adjust the input[type="checkbox"] to remove margin-left */

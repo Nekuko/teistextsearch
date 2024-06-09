@@ -14,6 +14,7 @@ function LNDropdownMenu({ lnDropdownState, updateLNDropdownState, openLN, setOpe
                 // Ignore clicks on the checkbox
                 if (event.target.type !== 'checkbox') {
                     setOpenLN(false);
+                    updateLNDropdownState('openVolumes', {});
                 }
             }
         };
@@ -44,6 +45,7 @@ function LNDropdownMenu({ lnDropdownState, updateLNDropdownState, openLN, setOpe
 
 
     const handleLightNovelClick = () => {
+        updateLNDropdownState('openVolumes', {});
         setOpenLN(!openLN);
     };
 

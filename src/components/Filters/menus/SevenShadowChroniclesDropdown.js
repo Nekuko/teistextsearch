@@ -19,17 +19,29 @@ function SevenShadowChroniclesDropdown({
 
     const handleSectionClick = (event, part, section) => {
         event.stopPropagation();
-        setMogDropdownState(prevState => ({
+        setMogDropdownState(prevState => {
+          // Get all the sections from the previous state
+          const { openParts } = prevState;
+      
+          // Create a new object with all sections closed
+          const newOpenSections = Object.keys(openParts[part]).reduce((acc, key) => {
+            acc[key] = false;
+            return acc;
+          }, {});
+      
+          // Toggle the clicked section
+          newOpenSections[section] = !openParts[part][section];
+      
+          return {
             ...prevState,
             openParts: {
-                ...prevState.openParts,
-                [part]: {
-                    ...prevState.openParts[part],
-                    [section]: !prevState.openParts[part]?.[section]
-                }
+              ...prevState.openParts,
+              [part]: newOpenSections
             }
-        }));
-    };
+          };
+        });
+      };
+      
 
     return (
         <div>
