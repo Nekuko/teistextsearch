@@ -41,7 +41,6 @@
 .Header nav {
   display: flex; 
   justify-content: flex-end;
-  border: 1px solid pink;
 }
 
 .Header nav ul {

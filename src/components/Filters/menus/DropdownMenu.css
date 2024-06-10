@@ -108,8 +108,8 @@
 
 
 .episode-name, .chapter-name, .part-title, .section-title {
-  display: inline-block;
-  width: 100%
+  display: flex;
+  width: auto;
 }
 
 

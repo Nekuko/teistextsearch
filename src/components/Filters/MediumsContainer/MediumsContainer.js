@@ -18,6 +18,8 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
   const [openMOG, setOpenMOG] = useState(false);
   const [openWN, setOpenWN] = useState(false);
 
+
+
   const handleReset = () => {
     // Reset anime dropdown state
     updateAnimeDropdownState('mainChecked', false);
@@ -53,11 +55,11 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
     const isActive = !canonActive;
     setCanonActive(isActive);
     let partsChecked = mogDropdownState.partsChecked["Event Stories"]
-
+  
     // If canonActive is being set to true, uncheck all non-canon stories
     if (isActive) {
       const updatedPartsChecked = { ...partsChecked };
-
+  
       // Iterate over all parts and episodes for 'Event Stories'
       Object.keys(updatedPartsChecked).forEach(part => {
         if (part !== 'checked') {
@@ -72,7 +74,7 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
           }
         }
       });
-
+  
       // Update the mogDropdownState with the updated partsChecked
       setMogDropdownState(prevState => ({
         ...prevState,
@@ -82,7 +84,7 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
         }
       }));
     }
-  };
+  }
 
 
 

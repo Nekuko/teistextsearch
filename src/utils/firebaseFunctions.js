@@ -71,5 +71,72 @@ export async function fetchLNData(lnCheckedItems, versionData, setVersionData) {
     return lnCheckedData;
 }
 
+export async function fetchWNData(wnCheckedItems, versionData, setVersionData) {
+    let wnCheckedData = {};
+    let uniqueVolumes = [...new Set(wnCheckedItems.map(item => item.split('_')[1]))];
+    const db = await openDB('firestore-cache-db', 1, {
+        upgrade(db) {
+            db.createObjectStore('firestore-cache');
+        },
+    });
+
+    const versionDocRef = doc(firestore, 'data', 'versions');
+    let versionDocSnap;
+    if (versionData) {
+        console.log("Version already stored locally (not indexedb).")
+        versionDocSnap = versionData;
+    } else {
+        versionDocSnap = await getDoc(versionDocRef);
+        setVersionData(versionDocSnap);
+        console.log("Version retrieved from firebase.")
+    }
+
+    for (let volume of uniqueVolumes) {
+        let firestoreVersion = versionDocSnap.data().wn[volume];
+        console.log("Firestore Version", firestoreVersion)
+        
+        let indexedDBVersion = await db.get('firestore-cache', `data-versions-wn-${volume}`);
+        console.log("IndexedDB Version", indexedDBVersion)
+
+        let data;
+        if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
+            console.log("Newer version found or no version in IndexedDB.")
+            const dataDocRef = doc(firestore, 'data', `wn_v${volume}`);
+            let dataDocSnap = await getDoc(dataDocRef);
+            data = dataDocSnap.data();
+
+            // Store the data in IndexedDB for future use
+            await db.put('firestore-cache', data, `data-wn-${volume}`);
+            console.log("Data retrieved from firebase and saved to IndexedDB.")
+        } else if (firestoreVersion === indexedDBVersion) {
+            console.log("Same version found.")
+            // Fetch data from IndexedDB
+            data = await db.get('firestore-cache', `data-wn-${volume}`);
+            console.log("Data retrieved from IndexedDB.")
+
+        }
+        
+
+        for (let item of wnCheckedItems) {
+            let [_, volumeChecked, chapter] = item.split('_');
+            if (volume === volumeChecked && data[chapter]) {
+                if (!wnCheckedData[volume]) {
+                    wnCheckedData[volume] = {};
+                }
+                wnCheckedData[volume][chapter] = data[chapter];
+            }
+        }
+
+        // Store the version number in IndexedDB for future use
+        if (firestoreVersion !== indexedDBVersion) {
+            await db.put('firestore-cache', firestoreVersion, `data-versions-wn-${volume}`);
+            console.log("New version saved to indexedDB.")
+        }
+    }
+    console.log(wnCheckedData)
+
+    return wnCheckedData;
+}
+
 
 

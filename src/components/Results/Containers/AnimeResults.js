@@ -193,7 +193,7 @@ function AnimeResults({ anData, images, highlight, filterState, main }) {
                             </div>
                           </div>
                           <div className="character-box">
-                            {characterImages[sentence.name_variant] && <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant} />}
+                            {characterImages[sentence.name_variant] && <img className="character-box-image" src={characterImages[sentence.name_variant]} alt={sentence.name_variant} />}
                             <p title={sentence.name !== sentence.name_variant ? `${sentence.name_variant} (${sentence.name})` : sentence.name}>
                               {sentence.name !== sentence.name_variant ? `${sentence.name_variant}` : sentence.name}
                             </p>

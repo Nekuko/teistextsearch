@@ -3,12 +3,93 @@
   .scroll-top-button {
     font-size: calc(0.2em + 0.6vw);
   }
+
+  .content-wrapper {
+    width: 95%;
+  }
+
+  .sentence-box {
+    width: 98%;
+  }
+
+  .results-header {
+    margin: auto;
+    margin-top: 3%;
+  }
+
+  .sentence-box-image {
+    flex-direction: row;
+    margin-bottom: none;
+    padding: 0px 0px 0px 10px;
+    margin-right: 0px;
+    flex: 1;
+  }
+
+  .character-box {
+    padding-left: 5px;
+    padding-right: 8px;
+    margin: 10px 0 10px 10px; /* top right bottom left */
+    flex-direction: row;
+    justify-content: left;
+    min-width: 9%;
+    white-space: nowrap;
+  }
+
+  .character-box img {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    padding: 2px 2px 2px 2px;
+    margin-right: 2%;
+  }
+
+  .character-box-text {
+    display: flex;
+  }
+
 }
 
 /* Hide desktop navigation on screens smaller than or equal to 768px */
 @media (max-width: 768px) {
   .scroll-top-button {
     font-size: calc(0.6em + 0.6vw);
+  }
+
+  .content-wrapper {
+    width: 100%;
+  }
+
+  .sentence-box {
+    width: 95%;
+  }
+
+  .results-header {
+    margin: auto;
+    margin-top: 5%;
+  }
+
+  .sentence-box-image {
+    flex-direction: column;
+    padding: 0px 5px 2px 5px;
+    margin-right: 0px;
+    flex: 1;
+  }
+
+  .character-box {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px 0 10px 10px; /* top right bottom left */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .character-box img {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    margin-right: 1%;
+    padding-top: 5%;
   }
 }
 
@@ -102,27 +183,17 @@
   overflow-y: auto;
 }
 
-.content-wrapper {
-  width: 90%; /* Set width to 90% of its parent */
-}
-
 .sentence-character-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 5px;
 }
 
 .image-icon-container {
   position: relative; /* This is needed for absolute positioning of children */
 }
 
-
-.character-box img {
-  display: flex;
-  width: 42px;
-  height: 42px;
-  margin-right: 10px;
-}
 
 .character-title-image {
   width: 42px;
@@ -175,15 +246,10 @@
 
 
 .character-box {
-  min-width: 10%;
   border: 1px solid #c8000f;
   border-radius: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px 0 10px 10px; /* top right bottom left */
   position: relative;
   display: flex;
-  justify-content: left;
   align-items: center;
 }
 
@@ -295,7 +361,6 @@
 
 
 .sentence-box {
-  width: 98%;
   max-width: 100%;
   border-radius: 5px;
   border: 1px solid #000;
@@ -310,10 +375,8 @@
 .sentence-box-image {
   border: 1px solid #000;
   border-radius: 5px;
-  width: 100%;
+  width: auto;
   max-width: 90%;
-  padding: 0px 0px 0px 10px;
-  margin-right: 0px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -414,12 +477,11 @@ input[type=number] {
   position: flex; /* Position relative to the Header component */
   width: 77%;
   border-radius: 5px;
-  margin: auto;
   display: flex; /* Use flexbox to arrange children in a row */
   position: relative;
-  margin-top: 1%;
 }
 
-.results-header {
-  margin-top: 3%;
+.filters-header {
+  margin: auto;
+  margin-top: 1%;
 }
