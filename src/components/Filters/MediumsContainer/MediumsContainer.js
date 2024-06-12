@@ -1,5 +1,5 @@
 // MediumsContainer.js
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AnimeDropdownMenu from '../menus/AnimeDropdownMenu'; // Import the AnimeDropdownMenu component
 import LNDropdownMenu from '../menus/LNDropdownMenu'; // Import the LNDropdownMenu component
 import MOGDropdownMenu from '../menus/MOGDropdownMenu'; // Import the MOGDropdownMenu component
@@ -8,7 +8,7 @@ import { faRotateRight, faC } from '@fortawesome/free-solid-svg-icons';
 import './MediumsContainer.css'; // Import the CSS file
 import WNDropdownMenu from '../menus/WNDropdownMenu';
 
-function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdownState, updateAnimeDropdownState, lnDropdownState, updateLNDropdownState, mogDropdownState, setMogDropdownState, volumes, images, canonActive, setCanonActive, canonES }) {
+function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdownState, updateAnimeDropdownState, lnDropdownState, updateLNDropdownState, mogDropdownState, setMogDropdownState, images, canonActive, setCanonActive, canonES,  mediumFlash, setMediumFlash }) {
   const { mainChecked } = animeDropdownState;
   const { lnMainChecked } = lnDropdownState;
   const { mogMainChecked } = mogDropdownState; // parts derived from mogDropdownState
@@ -17,6 +17,19 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
   const [openLN, setOpenLN] = useState(false);
   const [openMOG, setOpenMOG] = useState(false);
   const [openWN, setOpenWN] = useState(false);
+
+  
+  useEffect(() => {
+    if (mediumFlash) {
+      // Set a timeout to turn off the flash after a delay
+      const timeoutId = setTimeout(() => {
+        setMediumFlash(false);
+      }, 1000); // Adjust this value to control the duration of the flash
+
+      // Clean up the timeout when the component unmounts
+      return () => clearTimeout(timeoutId);
+    }
+  }, [mediumFlash, setMediumFlash]);
 
 
 
@@ -344,8 +357,8 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
 
 
   return (
-    <div className="mediums-container">
-      <h2 className="mediums-title">MEDIUMS</h2>
+    <div className={`mediums-container ${mediumFlash  ? 'flash-selected' : ''}`}>
+      <h2 className={`mediums-title ${mediumFlash  ? 'flash' : ''}`}>MEDIUMS</h2>
       <div className="checkbox-container">
         <LNDropdownMenu
           lnDropdownState={lnDropdownState}

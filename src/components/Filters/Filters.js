@@ -26,7 +26,11 @@ function Filters({
   setMogDropdownState,
   wnDropdownState,
   updateWNDropdownState,
-  handleSearch
+  handleSearch,
+  mediumFlash,
+  setMediumFlash,
+  keywordsFlash,
+  setKeywordsFlash
 }) {
   return (
     <div>
@@ -46,6 +50,8 @@ function Filters({
             canonActive={canonActive}
             setCanonActive={setCanonActive}
             canonES={canonES}
+            mediumFlash={mediumFlash}
+            setMediumFlash={setMediumFlash}
           />
           <CharactersContainer
             dropdownStates={dropdownStates}
@@ -65,7 +71,7 @@ function Filters({
           />
         </div>
         <div className="row-container-center">
-          <Keywords handleSearch={handleSearch} filterState={filterState} setFilterState={setFilterState} /> {/* Make sure this is the last child of the .filters container */}
+          <Keywords handleSearch={handleSearch} filterState={filterState} setFilterState={setFilterState} keywordsFlash={keywordsFlash} setKeywordsFlash={setKeywordsFlash} />
         </div>
         <div className="row-container-center">
           <div className="filters-search">

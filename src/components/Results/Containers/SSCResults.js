@@ -371,7 +371,7 @@ function SSCResults({ sscData, images, highlight, filterState, main }) {
                     <div key={partKey}>
                         <Collapsible className="medium-margin" trigger={
                             <>
-                                <div className="part-trigger">
+                                <div className="medium-trigger">
                                     {main && coverImages[partKey] && <img className="cover-image" src={coverImages[partKey]} alt={partTitle} />}
                                     {`${partTitle} (Total: ${partCount})`}
                                 </div>

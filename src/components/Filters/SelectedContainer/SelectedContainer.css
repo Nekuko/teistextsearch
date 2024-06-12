@@ -8,6 +8,7 @@
   flex-direction: column;
   background-color: #2c2f33;
   position: relative;
+  max-width: 350px;
 }
 
 .selected-title {
@@ -64,4 +65,27 @@
   padding: 5px 10px;
   border-radius: 20px;
   margin-right: 3px;
+}
+
+@keyframes flash-selected {
+  0% { background-color: #2c2f33;
+    }
+  50% { background-color: #363a3e;
+  } /* Change this to the color you want */
+  100% { background-color: #2c2f33;
+  }
+}
+
+.flash-selected  {
+  animation: flash-selected 1s infinite;
+}
+
+@keyframes flash {
+  0% { color: #c8000f; }
+  50% { color: #ff0112 } /* Change this to the color you want */
+  100% { color: #c8000f; }
+}
+
+.flash {
+  animation: flash 1s infinite;
 }

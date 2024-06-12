@@ -92,7 +92,7 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
               const chapterTitle = wnDropdownState.volumesChecked[`Volume ${volumeKey}`][`v${volumeKey}c${chapterKey}`].title || `Chapter ${chapterKey.slice(1)}`;
 
               return (
-                <Collapsible trigger={`${chapterKey} | ${chapterTitle} (Total: ${chapterValue.count})`} key={chapterKey}>
+                <Collapsible trigger={`Chapter ${chapterKey} | ${chapterTitle} (Total: ${chapterValue.count})`} key={chapterKey}>
                   <div className="sentences-container">
                     {chapterValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
                       <div className="sentence-box" key={index}>

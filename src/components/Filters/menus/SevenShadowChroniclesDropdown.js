@@ -14,7 +14,8 @@ function SevenShadowChroniclesDropdown({
     sectionFilters,
     handleFilterChange,
     handleCategoryFilterChange,
-    categoryFilters
+    categoryFilters,
+    images
 }) {
 
     const handleSectionClick = (event, part, section) => {

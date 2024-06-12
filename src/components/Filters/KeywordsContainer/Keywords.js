@@ -1,13 +1,25 @@
 // Keywords.js
-import React from 'react';
+import React, {useEffect} from 'react';
 import './Keywords.css'; // Import the CSS file
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faXmark, faRotateRight } from '@fortawesome/free-solid-svg-icons';
 import { VscCaseSensitive } from "react-icons/vsc";
 import { ReactComponent as WholeWord } from '../../../svgs/codicon--whole-word.svg';
 
-function Keywords({ filterState, setFilterState, handleSearch }) {
+function Keywords({ filterState, setFilterState, handleSearch, keywordsFlash, setKeywordsFlash }) {
   const [inputValue, setInputValue] = React.useState('');
+
+  useEffect(() => {
+    if (keywordsFlash) {
+      // Set a timeout to turn off the flash after a delay
+      const timeoutId = setTimeout(() => {
+        setKeywordsFlash(false);
+      }, 1000); // Adjust this value to control the duration of the flash
+
+      // Clean up the timeout when the component unmounts
+      return () => clearTimeout(timeoutId);
+    }
+  }, [keywordsFlash, setKeywordsFlash]);
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
@@ -55,9 +67,9 @@ function Keywords({ filterState, setFilterState, handleSearch }) {
 
 
   return (
-    <div className="keywords-search-container">
-    <div className="keywords-container">
-      <h2 className="keywords-title">KEYWORDS</h2>
+    <div className={`keywords-search-container ${keywordsFlash  ? 'flash-selected' : ''}`}>
+    <div className={`keywords-container ${keywordsFlash  ? 'flash-selected' : ''}`}>
+      <h2 className={`keywords-title ${keywordsFlash  ? 'flash' : ''}`}>KEYWORDS</h2>
       <div className="keywords-input-wrapper">
         <div className="keywords-input-container">
           {filterState.keywords.map((keyword, index) => (

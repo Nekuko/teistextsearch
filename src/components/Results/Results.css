@@ -485,3 +485,15 @@ input[type=number] {
   margin: auto;
   margin-top: 1%;
 }
+
+.es-image {
+  width: 88px;
+  height: 45px;
+  margin-right: 10px;
+}
+
+.ssc-image {
+  width: 88px;
+  height: 59px;
+  margin-right: 10px;
+}

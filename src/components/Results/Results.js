@@ -1,4 +1,4 @@
-import React, { useState, useReducer } from 'react';
+import React, { useState, useEffect } from 'react';
 import Collapsible from 'react-collapsible';
 import LightNovelResults from './Containers/LightNovelResults';
 import WebNovelResults from './Containers/WebNovelResults';
@@ -10,9 +10,28 @@ import './Results.css';
 import SSCResults from './Containers/SSCResults';
 import ESResults from './Containers/ESResults';
 
-function Results({ results, images, filterState, lnDropdownState, wnDropdownState, setSearchResults }) {
+function Results({ results, images, filterState, lnDropdownState, wnDropdownState, setSearchResults, resultsKey, setResultsKey }) {
+
+  const [resultsText, setResultsText] = useState('');
+
+  const resultsTextMap = {
+    0: 'No Results.',
+    1: 'No Keywords Selected.',
+    2: 'No Mediums Selected.',
+    3: 'No Mediums or Keywords Selected.',
+    4: 'No Matching Keywords.',
+    5: 'No Results.'
+  };
+
+  // Add a useEffect to update 'resultsText' when 'resultsKey' changes
+  useEffect(() => {
+    setResultsText(resultsTextMap[resultsKey]);
+  }, [resultsKey]);
 
   const noResults = Object.keys(results).every(key => Object.keys(results[key]).length === 0);
+  if (noResults && resultsKey !== 1 && resultsKey !== 2 && resultsKey !== 3 && resultsKey !== 5) {
+    setResultsKey(4);
+  }
   const lnResults = results && results.ln ? results.ln.ln : null;
   const wnResults = results && results.wn ? results.wn.wn : null;
   const anResults = results && results.anime ? results.anime.an : null;
@@ -27,6 +46,7 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
 
   const resetResults = () => {
     setSearchResults({});
+    setResultsKey(5);
   }
 
   const scrollToTop = () => {
@@ -65,16 +85,23 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
           title="Clear Results"
         />
         <div className="content-wrapper">
-          {noResults ? (
+        {noResults ? (
             <p>
-              No results found{filterState.keywords.length === 0 ? '.' : ''}
-              {filterState.keywords.length > 0 &&
-                <span> for
-                  <span style={{ color: 'red' }}>
-                    {` ${filterState.keywords.join(', ')}.`}
-                  </span>
-                </span>
-              }
+              {resultsKey === 4 ? (
+                <>
+                  No results found{filterState.keywords.length === 0 ? '.' : ''}
+                  {filterState.keywords.length > 0 &&
+                    <span> for
+                      <span style={{ color: 'red' }}>
+                        {` ${filterState.keywords.join(', ')}`}
+                      </span>
+                      <span>.</span>
+                    </span>
+                  }
+                </>
+              ) : (
+                <p>{resultsText}</p>
+              )}
             </p>
           ) : (
             <>
@@ -83,7 +110,7 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
                   <Collapsible className="ln-results" trigger={`Light Novel (Total: ${lnResults.count})`}>
                     <LightNovelResults lnDropdownState={lnDropdownState} lnData={lnResults} volumeImages={images.lnCoverImages} highlight={highlight} filterState={filterState} />
                   </Collapsible>
-                  <br/>
+                  <br />
                 </>
               )}
               {wnResults && (
@@ -91,13 +118,13 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
                   <Collapsible className="ln-results" trigger={`Web Novel (Total: ${wnResults.count})`}>
                     <WebNovelResults wnDropdownState={wnDropdownState} wnData={wnResults} volumeImages={images.lnCoverImages} highlight={highlight} filterState={filterState} />
                   </Collapsible>
-                  <br/>
+                  <br />
                 </>
               )}
               {((anCharacter || esCharacter || sscCharacter) && (
                 <>
                   <CharacterResults anData={results.anime} sscData={results.ssc} esData={results.es} images={images} highlight={highlight} filterState={filterState} />
-                  <br/>
+                  <br />
                 </>
               ))}
               {anResults && (
@@ -111,12 +138,29 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
               {((sscResults || esResults) && (mgCount > 0)) && (
                 <Collapsible trigger={`Master of Garden (Total: ${mgCount})`}>
                   {sscResults && (
-                    <Collapsible key={'ssc'} trigger={`Seven Shadows Chronicles (Total: ${sscResults.count})`}>
-                      <SSCResults main={true} sscData={sscResults} images={images} filterState={filterState} highlight={highlight} />
-                    </Collapsible>
+                    <>
+                      <Collapsible key={'ssc'} trigger={
+                        <>
+                          <div className="season-trigger">
+                            {images.sscCoverImages["ssc"] && <img className="ssc-image" src={images.sscCoverImages["ssc"]} alt={"Seven Shadows Chronicles"} />}
+                            {`Seven Shadows Chronicles (Total: ${sscResults.count})`}
+                          </div>
+                        </>
+                      }>
+                        <SSCResults main={true} sscData={sscResults} images={images} filterState={filterState} highlight={highlight} />
+                      </Collapsible>
+                      <br />
+                    </>
                   )}
                   {esResults && (
-                    <Collapsible key={'es'} trigger={`Event Stories (Total: ${esResults.count})`}>
+                    <Collapsible key={'es'} trigger={
+                      <>
+                        <div className="season-trigger">
+                          {images.esCoverImages["Event Stories"] && <img className="es-image" src={images.esCoverImages["Event Stories"]} alt={"Event Stories"} />}
+                          {`Event Stories (Total: ${esResults.count})`}
+                        </div>
+                      </>
+                    }>
                       <ESResults main={true} anData={esResults} images={images} filterState={filterState} highlight={highlight} />
                     </Collapsible>
                   )}

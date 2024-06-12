@@ -1,9 +1,10 @@
 // SelectedContainer.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import './SelectedContainer.css';
 
 function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownState, lnDropdownState, dropdownStates, namedActive, canonActive }) {
   let animeCheckedItems = [];
+
 
   if (animeDropdownState && animeDropdownState.seasonsChecked) {
     animeCheckedItems = Object.entries(animeDropdownState.seasonsChecked)
@@ -644,10 +645,10 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
   }
 
   return (
-    <div className="selected-container">
+    <div className={`selected-container`}>
       <h2 className="selected-title">SELECTED</h2>
-      <p className="selected-subtitle">MEDIUMS</p>
-      <div className="selected-input-container">
+      <p className={`selected-subtitle`}>MEDIUMS</p>
+      <div className={`selected-input-container`}>
         {selectedMediumList.map((item, index) => (
           <div className="selected-bubble" key={index} title={item.hoverText}>
             {item.text}
