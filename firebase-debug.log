@@ -1,0 +1,197 @@
+[debug] [2024-06-12T11:59:00.809Z] ----------------------------------------------------------------------
+[debug] [2024-06-12T11:59:00.812Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mxmol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2024-06-12T11:59:00.812Z] CLI Version:   13.11.2
+[debug] [2024-06-12T11:59:00.812Z] Platform:      win32
+[debug] [2024-06-12T11:59:00.812Z] Node Version:  v21.7.1
+[debug] [2024-06-12T11:59:00.813Z] Time:          Wed Jun 12 2024 12:59:00 GMT+0100 (British Summer Time)
+[debug] [2024-06-12T11:59:00.813Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-12T11:59:00.876Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-12T11:59:00.876Z] > authorizing via signed-in user (mxmoloney@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\TEIS Text Search\teistextsearch
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-06-12T11:59:05.764Z] Using project from CLI flag: teistextsearch
+[debug] [2024-06-12T11:59:05.767Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/teistextsearch [none]
+[debug] [2024-06-12T11:59:06.062Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/teistextsearch 200
+[debug] [2024-06-12T11:59:06.062Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/teistextsearch {"projectId":"teistextsearch","projectNumber":"140539177334","displayName":"teistextsearch","name":"projects/teistextsearch","resources":{"hostingSite":"teistextsearch"},"state":"ACTIVE","etag":"1_43d0d3c2-0d59-429c-8f1a-cf7e2038fa77"}
+[info] i  Using project teistextsearch (teistextsearch) 
+[info] 
+=== Functions Setup
+[debug] [2024-06-12T11:59:06.066Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-12T11:59:06.066Z] > authorizing via signed-in user (mxmoloney@gmail.com)
+[debug] [2024-06-12T11:59:06.066Z] [iam] checking project teistextsearch for permissions ["firebase.projects.get"]
+[debug] [2024-06-12T11:59:06.067Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/teistextsearch:testIamPermissions [none]
+[debug] [2024-06-12T11:59:06.067Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/teistextsearch:testIamPermissions x-goog-quota-user=projects/teistextsearch
+[debug] [2024-06-12T11:59:06.067Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/teistextsearch:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-12T11:59:06.272Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/teistextsearch:testIamPermissions 200
+[debug] [2024-06-12T11:59:06.272Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/teistextsearch:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-12T11:59:06.273Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-06-12T11:59:06.273Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/teistextsearch
+[debug] [2024-06-12T11:59:06.273Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-06-12T11:59:06.274Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/teistextsearch
+[debug] [2024-06-12T11:59:07.136Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/cloudfunctions.googleapis.com 200
+[debug] [2024-06-12T11:59:07.136Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-06-12T11:59:07.155Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/runtimeconfig.googleapis.com 200
+[debug] [2024-06-12T11:59:07.156Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/runtimeconfig.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] functions.source must be unique but 'functions' was used more than once.
+[debug] [2024-06-12T12:02:28.923Z] ----------------------------------------------------------------------
+[debug] [2024-06-12T12:02:28.926Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mxmol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2024-06-12T12:02:28.926Z] CLI Version:   13.11.2
+[debug] [2024-06-12T12:02:28.926Z] Platform:      win32
+[debug] [2024-06-12T12:02:28.926Z] Node Version:  v21.7.1
+[debug] [2024-06-12T12:02:28.927Z] Time:          Wed Jun 12 2024 13:02:28 GMT+0100 (British Summer Time)
+[debug] [2024-06-12T12:02:28.927Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-12T12:02:28.990Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-12T12:02:28.991Z] > authorizing via signed-in user (mxmoloney@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\TEIS Text Search\teistextsearch
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-06-12T12:02:30.256Z] Using project from CLI flag: teistextsearch
+[debug] [2024-06-12T12:02:30.259Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/teistextsearch [none]
+[debug] [2024-06-12T12:02:30.587Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/teistextsearch 200
+[debug] [2024-06-12T12:02:30.587Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/teistextsearch {"projectId":"teistextsearch","projectNumber":"140539177334","displayName":"teistextsearch","name":"projects/teistextsearch","resources":{"hostingSite":"teistextsearch"},"state":"ACTIVE","etag":"1_43d0d3c2-0d59-429c-8f1a-cf7e2038fa77"}
+[info] i  Using project teistextsearch (teistextsearch) 
+[info] 
+=== Functions Setup
+[debug] [2024-06-12T12:02:30.592Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-12T12:02:30.592Z] > authorizing via signed-in user (mxmoloney@gmail.com)
+[debug] [2024-06-12T12:02:30.592Z] [iam] checking project teistextsearch for permissions ["firebase.projects.get"]
+[debug] [2024-06-12T12:02:30.593Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/teistextsearch:testIamPermissions [none]
+[debug] [2024-06-12T12:02:30.593Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/teistextsearch:testIamPermissions x-goog-quota-user=projects/teistextsearch
+[debug] [2024-06-12T12:02:30.593Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/teistextsearch:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-12T12:02:31.269Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/teistextsearch:testIamPermissions 200
+[debug] [2024-06-12T12:02:31.269Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/teistextsearch:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-12T12:02:31.269Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-06-12T12:02:31.269Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/teistextsearch
+[debug] [2024-06-12T12:02:31.270Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-06-12T12:02:31.270Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/teistextsearch
+[debug] [2024-06-12T12:02:32.161Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/runtimeconfig.googleapis.com 200
+[debug] [2024-06-12T12:02:32.161Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-06-12T12:02:32.173Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/cloudfunctions.googleapis.com 200
+[debug] [2024-06-12T12:02:32.173Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] 
+Overwriting codebase default...
+
+[debug] [2024-06-12T12:04:42.117Z] ----------------------------------------------------------------------
+[debug] [2024-06-12T12:04:42.121Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mxmol\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-06-12T12:04:42.121Z] CLI Version:   13.11.2
+[debug] [2024-06-12T12:04:42.121Z] Platform:      win32
+[debug] [2024-06-12T12:04:42.121Z] Node Version:  v21.7.1
+[debug] [2024-06-12T12:04:42.122Z] Time:          Wed Jun 12 2024 13:04:42 GMT+0100 (British Summer Time)
+[debug] [2024-06-12T12:04:42.122Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-12T12:04:42.203Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-12T12:04:42.204Z] > authorizing via signed-in user (mxmoloney@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\TEIS Text Search\teistextsearch
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-06-12T12:04:50.160Z] Using project from CLI flag: teistextsearch
+[debug] [2024-06-12T12:04:50.162Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/teistextsearch [none]
+[debug] [2024-06-12T12:04:50.457Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/teistextsearch 200
+[debug] [2024-06-12T12:04:50.458Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/teistextsearch {"projectId":"teistextsearch","projectNumber":"140539177334","displayName":"teistextsearch","name":"projects/teistextsearch","resources":{"hostingSite":"teistextsearch"},"state":"ACTIVE","etag":"1_43d0d3c2-0d59-429c-8f1a-cf7e2038fa77"}
+[info] i  Using project teistextsearch (teistextsearch) 
+[info] 
+=== Functions Setup
+[debug] [2024-06-12T12:04:50.462Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-12T12:04:50.462Z] > authorizing via signed-in user (mxmoloney@gmail.com)
+[debug] [2024-06-12T12:04:50.462Z] [iam] checking project teistextsearch for permissions ["firebase.projects.get"]
+[debug] [2024-06-12T12:04:50.463Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/teistextsearch:testIamPermissions [none]
+[debug] [2024-06-12T12:04:50.463Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/teistextsearch:testIamPermissions x-goog-quota-user=projects/teistextsearch
+[debug] [2024-06-12T12:04:50.463Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/teistextsearch:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-12T12:04:51.090Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/teistextsearch:testIamPermissions 200
+[debug] [2024-06-12T12:04:51.090Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/teistextsearch:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-06-12T12:04:51.091Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-06-12T12:04:51.091Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/teistextsearch
+[debug] [2024-06-12T12:04:51.092Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-06-12T12:04:51.092Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/teistextsearch
+[debug] [2024-06-12T12:04:51.929Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/runtimeconfig.googleapis.com 200
+[debug] [2024-06-12T12:04:51.929Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-06-12T12:04:51.930Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/cloudfunctions.googleapis.com 200
+[debug] [2024-06-12T12:04:51.930Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/teistextsearch/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] functions.source must be unique but 'functions' was used more than once.

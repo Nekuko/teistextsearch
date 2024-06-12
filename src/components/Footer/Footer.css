@@ -1,0 +1,23 @@
+/* Footer.css */
+.footer {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+
+.logout {
+    margin-right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Bellota Text', cursive;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.logout:hover {
+    color: #c8000f;
+    cursor: pointer;
+}

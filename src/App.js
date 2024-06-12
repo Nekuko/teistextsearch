@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header/Header'; // Import the Header component
+import Footer from './components/Footer/Footer';
 import SearchPage from './components/SearchPage/SearchPage'; // Import the Searchpage component
 import InfoPage from './components/InfoPage/InfoPage'; // Import the InfoPage component
 import ChangePage from './components/ChangePage/ChangePage'; // Import the HowToUsePage component
@@ -30,6 +31,7 @@ function Main() {
         <Route path="/info" element={<ProtectedRoute component={InfoPage} />} />
         <Route path="/logout" element={<ProtectedRoute component={ChangePage} />} />
       </Routes>
+      {location.pathname !== '/login' && <Footer />}
     </div>
   );
 }

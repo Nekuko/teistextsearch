@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { getAnalytics } from "firebase/analytics";
 import { app } from './firebase'; // Import app from firebaseApp.js
+import { checkEmailOnLogin } from './functions/firebaseFunctions';
+
 
 const analytics = getAnalytics(app);
 
@@ -19,3 +21,5 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+exports.checkEmailOnLogin = checkEmailOnLogin;
+
