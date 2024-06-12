@@ -109,6 +109,7 @@
   color: white;
   position: relative;
   padding-top: 30px;
+  min-height: 50px;
 }
 
 .scroll-top-button {

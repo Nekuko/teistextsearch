@@ -85,8 +85,8 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
           title="Clear Results"
         />
         <div className="content-wrapper">
-        {noResults ? (
-            <p>
+          {noResults ? (
+            <div>
               {resultsKey === 4 ? (
                 <>
                   No results found{filterState.keywords.length === 0 ? '.' : ''}
@@ -102,7 +102,7 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
               ) : (
                 <p>{resultsText}</p>
               )}
-            </p>
+            </div>
           ) : (
             <>
               {lnResults && (

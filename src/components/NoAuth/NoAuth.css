@@ -1,0 +1,15 @@
+.noauth {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.nu-logo {
+    width: 140px;
+    height: 140x;
+}

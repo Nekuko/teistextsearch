@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 import { ReactComponent as SlashLine } from '../../svgs/nav_separator.svg';
-import Logo from '../../images/logo.png'
+import Logo from '../../images/icons/logo.png'
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
