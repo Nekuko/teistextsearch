@@ -58,7 +58,7 @@ function SevenShadowChroniclesDropdown({
                                 onClick={(event) => handlePartClick(event, part)}
                                 title={part.split(' | ')[1]}
                             >
-                                <span style={{ color: 'red' }}>{part.split(' | ')[0]}</span>
+                                <span style={{ color: 'red' }}>{`${part.split(' | ')[0]}`}&nbsp;</span>
                                 <span> | {part.split(' | ')[1]}</span>
                             </span>
                             <FontAwesomeIcon className="dropdown-icon" icon={openParts[part] ? faChevronUp : faChevronDown} onClick={(event) => handlePartClick(event, part)} />
@@ -85,7 +85,7 @@ function SevenShadowChroniclesDropdown({
                                                         title={sectionName.split(' | ')[1]}
                                                         onClick={(event) => handleSectionClick(event, part, section)}
                                                     >
-                                                        <span style={{ color: 'red' }}>{sectionName.split(' | ')[0]}</span>
+                                                        <span style={{ color: 'red' }}>{sectionName.split(' | ')[0]}&nbsp;</span>
                                                         <span> | {sectionName.split(' | ')[1]}</span>
                                                     </span>
                                                     <FontAwesomeIcon className="dropdown-icon" icon={openParts[part]?.[section] ? faChevronUp : faChevronDown} onClick={(event) => handleSectionClick(event, part, section)} />

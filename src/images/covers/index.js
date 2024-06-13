@@ -61,3 +61,6 @@ export { default as ESSULPCover } from './ESSULPCover.webp'
 export { default as ESTGHMSCover } from './ESTGHMSCover.webp'
 export { default as ESTPISCover } from './ESTPISCover.webp'
 export { default as ESTSCover } from './ESTSCover.webp'
+
+export { default as APOCover } from './APOCover.webp';
+export { default as APO11Cover } from './APO1-1Cover.webp';

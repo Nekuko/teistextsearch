@@ -35,6 +35,26 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
           }
       }
   }
+
+
+  let apoCheckedItems = [];
+  for (let group in mogDropdownState.partsChecked) {
+      if (group === "Apocrypha") {
+          for (let part in mogDropdownState.partsChecked[group]) {
+              for (let section in mogDropdownState.partsChecked[group][part]) {
+                  if (section !== 'checked') {
+                      for (let episode in mogDropdownState.partsChecked[group][part][section]) {
+                          if (episode !== 'checked' && mogDropdownState.partsChecked[group][part][section][episode].checked) {
+                            apoCheckedItems.push(`${group}_${part}_${section}_${episode}`);
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+
+  console.log(apoCheckedItems)
   
   
   
@@ -62,7 +82,6 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     sortedItems.forEach(item => {
       let [key, episode] = item.split('_e');
       key = key.replace('es', 'ES').replace(/_/g, ' ');
-      console.log(key)
       episode = parseInt(episode);
 
       if (!groupedEpisodes[key]) {
@@ -343,6 +362,235 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
 
   };
 
+  const getSelectedAPOList = () => {
+    const shortNames = {
+      'Apocrypha': "APO",
+      'Requiem for Scattered Shadows': 'RFSS',
+      'Millenium Past': 'MP'
+    };
+    let sscList = [];
+    let groupedEpisodes = {};
+
+    apoCheckedItems.forEach(item => {
+      let parts = item.split('_');
+      let group = parts[0];
+      let shortGroup = shortNames[group]
+      let partName = parts[1].split(' | ')[1];
+      let partStart = parts[1].split(' | ')[0];
+      let shortPartName = shortNames[partName];
+      let section = parts[2].split(' | ')[0]
+      let sectionName = parts[2].split(' | ')[1]
+      let episode = parseInt(parts[3].replace('e', ''));
+
+      let key = `MOG ${shortGroup} ${shortPartName} C${section}`;
+      if (!groupedEpisodes[key]) {
+        groupedEpisodes[key] = { start: episode, end: episode, hoverText: `Master of Garden, ${group}, ${partStart} ${partName}, Chapter ${section} ${sectionName}` };
+      } else {
+        if (episode === groupedEpisodes[key].end + 1) {
+          groupedEpisodes[key].end = episode;
+        } else {
+          sscList.push({
+            text: `${key}${groupedEpisodes[key].start !== groupedEpisodes[key].end ? ' E' + groupedEpisodes[key].start + '-' + groupedEpisodes[key].end : ' E' + groupedEpisodes[key].start}`,
+            hoverText: `${groupedEpisodes[key].hoverText}${groupedEpisodes[key].start !== groupedEpisodes[key].end ? ', Episodes ' + groupedEpisodes[key].start + '-' + groupedEpisodes[key].end : ', Episode ' + groupedEpisodes[key].start}`
+          });
+          groupedEpisodes[key] = { start: episode, end: episode, hoverText: `Master of Garden, ${group}, ${partStart} ${partName}, Chapter ${section} ${sectionName}` };
+        }
+      }
+    });
+
+    Object.keys(groupedEpisodes).forEach(key => {
+      let episodeText = '';
+      let hoverText = '';
+      if (groupedEpisodes[key].end - groupedEpisodes[key].start === 4) {
+        episodeText = '';
+        hoverText = '';
+      } else {
+        episodeText = ` E${groupedEpisodes[key].start}${groupedEpisodes[key].start !== groupedEpisodes[key].end ? '-' + groupedEpisodes[key].end : ''}`;
+        hoverText = `, ${groupedEpisodes[key].start !== groupedEpisodes[key].end ? 'Episodes ' : 'Episode '}${groupedEpisodes[key].start}${groupedEpisodes[key].start !== groupedEpisodes[key].end ? '-' + groupedEpisodes[key].end : ''}`;
+      }
+      sscList.push({
+        text: `${key}${episodeText}`,
+        hoverText: `${groupedEpisodes[key].hoverText}${hoverText}`
+      });
+
+      sscList.sort((a, b) => {
+        // Split the text into main parts and sub-parts.
+        let aParts = a.text.split(' ');
+        let bParts = b.text.split(' ');
+        let aNum;
+        let bNum;
+
+        // Compare the main parts first.
+        let aMainPart = aParts[3].split("-")[0].replace("C", "");
+        let bMainPart = bParts[3].split("-")[0].replace("C", "");
+
+        if (aMainPart < bMainPart) return -1;
+        if (aMainPart > bMainPart) return 1;
+
+        if (aParts[4] === "Final") {
+          aNum = "C-1-99";
+        } else {
+          aNum = aParts[3];
+        }
+        if (bParts[4] === "Final") {
+          bNum = "C-1-99";
+        } else {
+          bNum = bParts[3];
+        }
+        // If the main parts are equal, compare the sub-parts.
+        if (aNum && bNum) {
+          let aSubPart = Number(aNum.replace(/[^0-9]/g, ''));
+          let bSubPart = Number(bNum.replace(/[^0-9]/g, ''));
+
+          if (aSubPart < bSubPart) return -1;
+          if (aSubPart > bSubPart) return 1;
+        }
+
+        // If all parts are equal, the items are equal.
+        return 0;
+      });
+
+      return sscList;
+    });
+
+
+    let groupParts = [];
+    let currentGroup = null;
+    let currentStart = null;
+    let currentEnd = null;
+    let currentText = null;
+    let currentHover = null;
+    let groupCount = 0;
+
+    sscList.forEach(item => {
+      let text = item.text;
+      let hoverText = item.hoverText;
+      let parts = text.split(' ');
+      let partNumber = parts[3].replace('C', '');
+      let partMain;
+      let subMain;
+      if (parts[4] === "Final") {
+        partMain = "1"
+        subMain = "15"
+      } else {
+        partMain = partNumber.split("-")[0]
+        subMain = partNumber.split("-")[1]
+      }
+
+
+      if (currentGroup === null) {
+        if (parts[parts.length - 1].includes("E")) {
+          groupParts.push({ text: text, hoverText: hoverText })
+        } else {
+          currentGroup = partMain;
+          currentStart = subMain;
+          currentEnd = subMain;
+          currentText = text;
+          currentHover = hoverText;
+          groupCount = 1;
+        }
+
+      } else {
+        if (parseInt(subMain) - parseInt(currentStart) === groupCount && !parts[parts.length - 1].includes("E") && currentGroup === partMain) {
+          currentEnd = subMain;
+          groupCount++;
+        } else if (parts[parts.length - 1].includes("E")) {
+          if (currentStart !== currentEnd) {
+            let hoverSplit = currentHover.split(',');
+            let subPartSplit = hoverSplit[3].split(' ');
+            let newHoverText = `${hoverSplit[0]},${hoverSplit[1]},${hoverSplit[2]}, Chapters ${subPartSplit[2]}-${currentEnd}`
+            groupParts.push({
+              text: `${currentText.split('-')[0]}-${currentStart}-${currentEnd.replace("15", "F")}`,
+              hoverText: newHoverText
+            })
+          } else {
+            if (currentText !== null) {
+              groupParts.push({ text: currentText, hoverText: currentHover })
+            }
+          }
+          currentGroup = null;
+          currentStart = null;
+          currentEnd = null;
+          currentText = null;
+          groupCount = 0;
+          groupParts.push({ text: text, hoverText: hoverText })
+
+        } else {
+          if (currentStart === currentEnd) {
+            if (currentStart !== currentEnd) {
+              let hoverSplit = currentHover.split(',');
+              let subPartSplit = hoverSplit[3].split(' ');
+              let newHoverText = `${hoverSplit[0]},${hoverSplit[1]},${hoverSplit[2]}, Chapters ${subPartSplit[2]}-${currentEnd}`
+              groupParts.push({
+                text: `${currentText.split('-')[0]}-${currentStart}-${currentEnd.replace("15", "F")}`,
+                hoverText: newHoverText
+              })
+            } else {
+              if (currentText !== null) {
+                groupParts.push({ text: currentText, hoverText: currentHover })
+              }
+            }
+            groupParts.push({ text: text, hoverText: hoverText })
+            currentGroup = null;
+            currentStart = null;
+            currentEnd = null;
+            currentText = null;
+            groupCount = 0;
+          } else {
+            groupParts.push({
+              text: `${currentText.split('-')[0]}-${currentStart}-${currentEnd.replace("15", "F")}`,
+              hoverText: currentHover
+            })
+            currentGroup = partMain;
+            currentStart = subMain;
+            currentEnd = subMain;
+            currentText = text;
+            currentHover = hoverText;
+            groupCount = 1;
+          }
+
+        }
+      }
+    });
+
+
+    if (currentStart !== currentEnd) {
+      let hoverSplit = currentHover.split(',');
+      let subPartSplit = hoverSplit[3].split(' ');
+      let newHoverText = `${hoverSplit[0]},${hoverSplit[1]},${hoverSplit[2]}, Chapters ${subPartSplit[2]}-${currentEnd.replace("15", "F")}`
+      groupParts.push({
+        text: `${currentText.split('-')[0]}-${currentStart}-${currentEnd.replace("15", "F")}`,
+        hoverText: newHoverText
+      })
+    } else {
+      if (currentText !== null) {
+        groupParts.push({ text: currentText, hoverText: currentHover })
+      }
+    }
+
+
+    let groupedMainParts = [];
+    groupParts.forEach(item => {
+      if (item.text === "MOG APO RFSS C1-3") {
+        groupedMainParts.push({ text: "MOG APO RFSS Millennium Past", hoverText: "Master of Garden, Apocrypha, Millennium Past" })
+        groupedMainParts.push(item)
+      } else {
+        groupedMainParts.push(item)
+      }
+    });
+
+
+
+
+    let mainGroups = ["MOG APO Requiem for Scattered Shadows"];
+    if (mainGroups.every(group => groupedMainParts.some(item => item.text === group))) {
+      groupedMainParts = groupedMainParts.filter(item => !mainGroups.includes(item.text));
+      groupedMainParts.push({ text: "MOG Apocrypha", hoverText: "Master of Garden, Apocrypha" });
+    }
+
+    return groupedMainParts;
+
+  };
 
 
 
@@ -613,22 +861,16 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
   const selectedCharacterList = getSelectedCharacterList();
   const selectedSSCList = getSelectedSSCList();
   const selectedESList = getSelectedESList();
+  const selectedAPOList = getSelectedAPOList();
   const selectedWNList = getSelectedWNList();
 
-  let mogCombined = [...selectedSSCList, ...selectedESList];
+  let mogCombined = [...selectedSSCList, ...selectedESList, ...selectedAPOList];
   if (canonActive) {
-    if (mogCombined.length === 2) {
-      if (mogCombined[0].text === "MOG Seven Shadows Chronicles" && mogCombined[1].text === "MOG ES Auxiliary Chapters") {
+    if (mogCombined.length === 3) {
+      if (mogCombined[0].text === "MOG Seven Shadows Chronicles" && (mogCombined[1].text === "MOG ES Auxiliary Chapters" || mogCombined[1].text === "MOG Event Stories") && mogCombined[2].text === "MOG Apocrypha") {
         mogCombined = [{ text: "Master of Garden", hoverText: "Master of Garden" }]
       }
     }
-  } else {
-    if (mogCombined.length === 2) {
-      if (mogCombined[0].text === "MOG Seven Shadows Chronicles" && mogCombined[1].text === "MOG Event Stories") {
-        mogCombined = [{ text: "Master of Garden", hoverText: "Master of Garden" }]
-      }
-    }
-
   }
 
 
