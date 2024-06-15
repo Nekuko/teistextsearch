@@ -11,7 +11,7 @@ import SSCResults from './Containers/SSCResults';
 import ESResults from './Containers/ESResults';
 import APOResults from './Containers/APOResults';
 
-function Results({ results, images, filterState, lnDropdownState, wnDropdownState, mogDropdownState, setSearchResults, resultsKey, setResultsKey }) {
+function Results({ results, images, filterState, animeDropdownState, lnDropdownState, wnDropdownState, mogDropdownState, setSearchResults, resultsKey, setResultsKey }) {
 
   const [resultsText, setResultsText] = useState('');
 
@@ -136,7 +136,7 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
               {anResults && (
                 <>
                   <Collapsible className="an-results" trigger={`Anime (Total: ${anResults.count})`}>
-                    <AnimeResults anData={anResults} images={images} highlight={highlight} filterState={filterState} main={true} />
+                    <AnimeResults animeDropdownState={animeDropdownState} anData={anResults} images={images} highlight={highlight} filterState={filterState} main={true} />
                   </Collapsible>
                   <br />
                 </>
@@ -153,33 +153,36 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
                           </div>
                         </>
                       }>
-                        <SSCResults main={true} sscData={sscResults} images={images} filterState={filterState} highlight={highlight} />
+                        <SSCResults main={true} sscData={sscResults} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Seven Shadows Chronicles']} />
                       </Collapsible>
                       <br />
                     </>
                   )}
                   {esResults && (
-                    <Collapsible key={'es'} trigger={
-                      <>
-                        <div className="season-trigger">
-                          {images.esCoverImages["Event Stories"] && <img className="es-image" src={images.esCoverImages["Event Stories"]} alt={"Event Stories"} />}
-                          {`Event Stories (Total: ${esResults.count})`}
-                        </div>
-                      </>
-                    }>
-                      <ESResults main={true} anData={esResults} images={images} filterState={filterState} highlight={highlight} />
-                    </Collapsible>
+                    <>
+                      <Collapsible key={'es'} trigger={
+                        <>
+                          <div className="season-trigger">
+                            {images.esCoverImages["Event Stories"] && <img className="es-image" src={images.esCoverImages["Event Stories"]} alt={"Event Stories"} />}
+                            {`Event Stories (Total: ${esResults.count})`}
+                          </div>
+                        </>
+                      }>
+                        <ESResults main={true} anData={esResults} images={images} filterState={filterState} highlight={highlight} />
+                      </Collapsible>
+                      <br />
+                    </>
                   )}
                   {apoResults && (
                     <Collapsible key={'apo'} trigger={
                       <>
                         <div className="season-trigger">
-                          {images.apoCoverImages["Apocrypha"] && <img className="es-image" src={images.apoCoverImages["Apocrypha"]} alt={"Apocrypha"} />}
+                          {images.apoCoverImages["Apocrypha"] && <img className="apo-image-small" src={images.apoCoverImages["Apocrypha"]} alt={"Apocrypha"} />}
                           {`Apocrypha (Total: ${apoResults.count})`}
                         </div>
                       </>
                     }>
-                      <APOResults main={true} sscData={apoResults} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Apocrypha']}/>
+                      <APOResults main={true} sscData={apoResults} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Apocrypha']} />
                     </Collapsible>
                   )}
                 </Collapsible>

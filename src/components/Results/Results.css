@@ -232,6 +232,11 @@
   margin-right: 10px;
 }
 
+.apo-part-image {
+  width: 96px;
+  height: 39px;
+}
+
 .cover-image-apo-chapter-small {
   width: 90px;
   height: 23px;
@@ -421,6 +426,7 @@ input::-webkit-inner-spin-button {
 
 /* Firefox */
 input[type=number] {
+  appearance: textfield;
   -moz-appearance: textfield;
 }
 
@@ -514,5 +520,11 @@ input[type=number] {
 .apo-image {
   width: 88px;
   height: 85px;
+  margin-right: 10px;
+}
+
+.apo-image-small {
+  width: 64px;
+  height: 62px;
   margin-right: 10px;
 }

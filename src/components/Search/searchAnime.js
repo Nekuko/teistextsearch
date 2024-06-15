@@ -127,7 +127,7 @@ export function searchAnime(keys, text, keywords, nameMap, characters = [], case
 
   // Convert the results to a JSON string
   let jsonResults = JSON.stringify(results);
-  console.log(jsonResults)
+  //console.log(jsonResults)
 
   return results;
 }

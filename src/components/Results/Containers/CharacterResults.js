@@ -5,7 +5,7 @@ import SSCResults from './SSCResults'; // Import SSCResults
 import ESResults from './ESResults';
 import APOResults from './APOResults';
 
-function CharacterResults({ anData, sscData, esData, apoData, images, filterState, highlight, mogDropdownState }) {
+function CharacterResults({ anData, sscData, esData, apoData, images, filterState, highlight, mogDropdownState, animeDropdownState }) {
   const mediumNames = {
     'an': 'Anime',
     'ssc': 'Seven Shadows Chronicles',
@@ -121,7 +121,7 @@ function CharacterResults({ anData, sscData, esData, apoData, images, filterStat
                         <div className="medium-trigger">
                           {mediumData['ssc'] && (
                             <Collapsible key={'ssc'} trigger={`Seven Shadows Chronicles (Total: ${mediumData['ssc'].count})`}>
-                              <SSCResults main={false} sscData={mediumData['ssc']} images={images} filterState={filterState} highlight={highlight} />
+                              <SSCResults main={false} sscData={mediumData['ssc']} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Seven Shadows Chronicles']}/>
                             </Collapsible>
                           )}
                           {mediumData['es'] && (
@@ -143,7 +143,7 @@ function CharacterResults({ anData, sscData, esData, apoData, images, filterStat
                     return (
                       <div className="medium-trigger">
                         <Collapsible key={medium} trigger={`${mediumName} (Total: ${mediumData.count})`}>
-                          <AnimeResults main={false} anData={mediumData} images={images} filterState={filterState} highlight={highlight} />
+                          <AnimeResults animeDropdownState={animeDropdownState} main={false} anData={mediumData} images={images} filterState={filterState} highlight={highlight} />
                         </Collapsible>
                       </div>
                     );

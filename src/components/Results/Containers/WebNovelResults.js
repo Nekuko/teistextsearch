@@ -37,7 +37,7 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
 
     // Set the text data directly as the preview text
     setPreviewText(`Web Novel<br />Volume ${volumeKey}<br />
-    Chapter ${chapterKey} | ${chapterTitle}<br />Paragraph ${line}`);
+    Chapter ${chapterKey} - ${chapterTitle}<br />Paragraph ${line}`);
   }
 
   const highlightKeywords = (text) => {

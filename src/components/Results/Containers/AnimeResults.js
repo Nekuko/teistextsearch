@@ -9,13 +9,15 @@ import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
 import ImagePreview from './ImagePreview/ImagePreview'; // Adjust the path as needed
 import InfoPreview from './InfoPreview/InfoPreview';
 
-function AnimeResults({ anData, images, highlight, filterState, main }) {
+function AnimeResults({ anData, images, highlight, filterState, animeDropdownState }) {
   const [imageCache, setImageCache] = useState({});
   const [previewImage, setPreviewImage] = useState(null);
   const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
   const [previewText, setPreviewText] = useState(null);
   const iconRefs = useRef({});
   const [currentPage, setCurrentPage] = useState({});
+  const partsChecked = animeDropdownState.seasonsChecked;
+
   useEffect(() => {
     const initialPages = {};
     Object.keys(anData.seasons).forEach(seasonKey => {
@@ -42,7 +44,7 @@ function AnimeResults({ anData, images, highlight, filterState, main }) {
     setPreviewPosition({ top: rect.top, left: rect.left });
 
     // Set the text data directly as the preview text
-    setPreviewText(`Anime<br />${seasonTitle}<br />${episodeTitle}<br />Time ${start_time.replaceAll("-", ":")} - ${end_time.replaceAll("-", ":")}<br />${nameFinal}`);
+    setPreviewText(`Anime<br />${seasonTitle}<br />Episode ${episodeTitle.replace("|", "-")}<br />Time: ${start_time.replaceAll("-", ":")} - ${end_time.replaceAll("-", ":")}<br />${nameFinal}`);
   }
 
   const highlightKeywords = (text) => {
@@ -86,35 +88,6 @@ function AnimeResults({ anData, images, highlight, filterState, main }) {
     return null;
   }
 
-
-  const seasonMapping = {
-    "s1": {
-      "title": "Season 1",
-      "episodes": {
-        "e1": "Episode 1 | The Hated Classmate",
-        "e2": "Episode 2 | Shadow Garden is Born",
-        "e3": "Episode 3 | Fencer Ordinaire",
-        "e4": "Episode 4 | Sadism's Rewards",
-        "e5": "Episode 5 | I Am...",
-        "e6": "Episode 6 | Pretenders",
-        "e7": "Episode 7 | A Fencing Tournament of Intrigue & Bloodshed",
-        "e8": "Episode 8 | Dark Knight Academy Under Attack",
-        "e9": "Episode 9 | The End of a Lie",
-        "e10": "Episode 10 | The Sacred Land, City of Deception",
-        "e11": "Episode 11 | The Goddess's Trial",
-        "e12": "Episode 12 | The Truth Within the Memories",
-        "e13": "Episode 13 | A Bloody Showdown as an Offering to Annihilation",
-        "e14": "Episode 14 | Your Lie, Your Wish",
-        "e15": "Episode 15 | The Strongest Weakest Man",
-        "e16": "Episode 16 | Unseen Intentions",
-        "e17": "Episode 17 | Moonlight That Pierces the Darkness",
-        "e18": "Episode 18 | Betting on a Moment",
-        "e19": "Episode 19 | Dancing Puppet",
-        "e20": "Episode 20 | Advent of the Demon"
-      }
-    }
-  };
-
   function showPopup(seasonIndex, episodeIndex, sentenceIndex) {
     // Use a unique ID for each popup
     const popup = document.getElementById(`popup-${seasonIndex}-${episodeIndex}-${sentenceIndex}`);
@@ -130,7 +103,8 @@ function AnimeResults({ anData, images, highlight, filterState, main }) {
     <div className="anime-trigger">
       {Object.entries(anData.seasons).map(([seasonKey, seasonValue]) => {
         // Get the season title from the mapping
-        const seasonTitle = seasonMapping[seasonKey]?.title || `Season ${seasonKey.slice(1)}`;
+        const mapKey = seasonKey.replace("s", "Season ");
+        const seasonTitle = partsChecked[mapKey]?.title || `Season ${seasonKey.slice(1)}`;
         // Calculate the total count for each season
         const seasonCount = Object.values(seasonValue.episodes).reduce((total, episode) => total + episode.count, 0);
 
@@ -149,9 +123,9 @@ function AnimeResults({ anData, images, highlight, filterState, main }) {
                 const uniqueChapterKey = `${seasonKey}-${episodeKey}`;
 
                 // Get the episode title from the mapping
-                const episodeTitle = seasonMapping[seasonKey]?.episodes[episodeKey] || `Episode ${episodeKey.slice(1)}`;
+                const episodeTitle =  partsChecked[mapKey][`${seasonKey}${episodeKey}`].title || `Episode ${episodeKey.slice(1)}`;
                 return (
-                  <Collapsible trigger={`${episodeTitle} (Total: ${episodeValue.count})`} key={episodeKey}>
+                  <Collapsible trigger={`Episode ${episodeTitle} (Total: ${episodeValue.count})`} key={episodeKey}>
                     <div className="sentences-container">
                     {episodeValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
                         <div className="sentence-character-container" key={index}>

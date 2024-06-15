@@ -54,7 +54,7 @@ function LightNovelResults({ lnData, volumeImages, highlight, filterState, lnDro
 
     // Set the text data directly as the preview text
     setPreviewText(`Light Novel<br />${volumeKey.replace("v", " Volume ")}<br />
-     ${chapterTitle}<br />Paragraph ${line}`);
+     ${chapterTitle.replace("|", "-")}<br />Paragraph ${line}`);
   }
 
 

@@ -123,14 +123,15 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
                         return total + episode.sentences.length;
                     }, 0);
                 }, 0);
+                //                                    {main && coverImages[partKey.replace("p", "")] && <img className="apo-part-image" src={coverImages[partKey.replace("p", "")]} alt={partTitle} />}
 
                 return (
                     <div key={partTitle}>
                         <Collapsible className="medium-margin" trigger={
                             <>
-                                <div className="medium-trigger">
-                                    {main && coverImages[partKey] && <img className="cover-image" src={coverImages[partKey]} alt={partTitle} />}
-                                    {`${partTitle} (Total: ${partCount})`}
+                                <div className="volume-trigger">
+
+                                    {`${partTitle.split("|")[1]} (Total: ${partCount})`}
                                 </div>
                             </>
                         }>
@@ -163,7 +164,7 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
                                                 <Collapsible trigger={
                                                     <>
                                                         <div className="volume-trigger">
-                                                            {coverImages[imageKey] && <img className="cover-image-ssc" src={coverImages[imageKey]} alt={episodeTitle} />}
+                                                            {coverImages[imageKey] && <img className="cover-image-apo-small" src={coverImages[imageKey]} alt={episodeTitle} />}
                                                             {`${episodeTitle} (Total: ${episodeValue.sentences.length})`}
                                                         </div>
                                                     </>
