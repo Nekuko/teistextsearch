@@ -182,12 +182,12 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, openA
                   <input type="text" value={episodeFilters[season.name] || ''} onChange={(event) => handleFilterChange(event, season.name)} placeholder="Search episodes..." />
                   <div className="episode-list">
                     {season.episodes.filter(episode => !episodeFilters[season.name] || episode.name.toLowerCase().includes(episodeFilters[season.name].toLowerCase())).map((episode, index) => {
-                      const [episodeNumber, episodeName] = episode.name.split('|');
+                      const [episodeNumber, episodeName] = episode.name.split(' |');
                       return (
                         <div key={index} className="episode-item">
                           <span className={seasonsChecked[season.name]?.[episode.id]?.checked ? "episode-checked" : "episode-unchecked"}>
                             <div className="episode-name">
-                              <span style={{ color: 'red' }}>{episodeNumber}</span>
+                              <span style={{ color: 'red' }}>{episodeNumber}&nbsp;</span>
                               <span className="episode-text" title={episodeName}>|{episodeName}</span>
                             </div>
                           </span>

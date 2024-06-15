@@ -9,8 +9,9 @@ import { faTrashCan, faLightbulb } from '@fortawesome/free-solid-svg-icons'
 import './Results.css';
 import SSCResults from './Containers/SSCResults';
 import ESResults from './Containers/ESResults';
+import APOResults from './Containers/APOResults';
 
-function Results({ results, images, filterState, lnDropdownState, wnDropdownState, setSearchResults, resultsKey, setResultsKey }) {
+function Results({ results, images, filterState, lnDropdownState, wnDropdownState, mogDropdownState, setSearchResults, resultsKey, setResultsKey }) {
 
   const [resultsText, setResultsText] = useState('');
 
@@ -37,6 +38,7 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
   const anResults = results && results.anime ? results.anime.an : null;
   const sscResults = results && results.ssc ? results.ssc.ssc : null;
   const esResults = results && results.es ? results.es.es : null;
+  const apoResults = results && results.apo ? results.apo.apo : null;
 
   const [highlight, setHighlight] = useState(false);
 
@@ -56,15 +58,19 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
   // Check if .an key exists in results.anime and if there are any characters to show
   const anCharacter = results && results.anime && !results.anime.an && Object.keys(results.anime).length > 0;
   const sscCharacter = results && results.ssc && !results.ssc.ssc && Object.keys(results.ssc).length > 0;
+  const apoCharacter = results && results.apo && !results.apo.apo && Object.keys(results.apo).length > 0;
   const esCharacter = results && results.es && !results.es.es && Object.keys(results.es).length > 0;
 
   let mgCount = 0;
-  if (sscCharacter === false && esCharacter === false) {
+  if (sscCharacter === false && esCharacter === false && apoCharacter === false) {
     if (sscResults) {
       mgCount += sscResults.count;
     }
     if (esResults) {
       mgCount += esResults.count;
+    }
+    if (apoResults) {
+      mgCount += apoResults.count;
     }
   }
 
@@ -121,9 +127,9 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
                   <br />
                 </>
               )}
-              {((anCharacter || esCharacter || sscCharacter) && (
+              {((anCharacter || esCharacter || sscCharacter || apoCharacter) && (
                 <>
-                  <CharacterResults anData={results.anime} sscData={results.ssc} esData={results.es} images={images} highlight={highlight} filterState={filterState} />
+                  <CharacterResults anData={results.anime} sscData={results.ssc} esData={results.es} apoData={results.apo} images={images} highlight={highlight} filterState={filterState} mogDropdownState={mogDropdownState} />
                   <br />
                 </>
               ))}
@@ -135,7 +141,7 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
                   <br />
                 </>
               )}
-              {((sscResults || esResults) && (mgCount > 0)) && (
+              {((sscResults || esResults || apoResults) && (mgCount > 0)) && (
                 <Collapsible trigger={`Master of Garden (Total: ${mgCount})`}>
                   {sscResults && (
                     <>
@@ -162,6 +168,18 @@ function Results({ results, images, filterState, lnDropdownState, wnDropdownStat
                       </>
                     }>
                       <ESResults main={true} anData={esResults} images={images} filterState={filterState} highlight={highlight} />
+                    </Collapsible>
+                  )}
+                  {apoResults && (
+                    <Collapsible key={'apo'} trigger={
+                      <>
+                        <div className="season-trigger">
+                          {images.apoCoverImages["Apocrypha"] && <img className="es-image" src={images.apoCoverImages["Apocrypha"]} alt={"Apocrypha"} />}
+                          {`Apocrypha (Total: ${apoResults.count})`}
+                        </div>
+                      </>
+                    }>
+                      <APOResults main={true} sscData={apoResults} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Apocrypha']}/>
                     </Collapsible>
                   )}
                 </Collapsible>

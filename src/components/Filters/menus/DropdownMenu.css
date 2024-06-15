@@ -110,6 +110,7 @@
 .episode-name, .chapter-name, .part-title, .section-title {
   display: flex;
   width: auto;
+  align-items: center;
 }
 
 

@@ -3,19 +3,22 @@ import Collapsible from 'react-collapsible';
 import AnimeResults from './AnimeResults';
 import SSCResults from './SSCResults'; // Import SSCResults
 import ESResults from './ESResults';
+import APOResults from './APOResults';
 
-function CharacterResults({ anData, sscData, esData, images, filterState, highlight }) {
+function CharacterResults({ anData, sscData, esData, apoData, images, filterState, highlight, mogDropdownState }) {
   const mediumNames = {
     'an': 'Anime',
     'ssc': 'Seven Shadows Chronicles',
-    'es': "Event Stories"
+    'es': "Event Stories",
+    "apo": "Apocrypha"
   };
 
 
-  function combineData(sscData, anData, esData) {
+  function combineData(sscData, anData, esData, apoData) {
     let sscDataCopy = JSON.parse(JSON.stringify(sscData));
     let anDataCopy = JSON.parse(JSON.stringify(anData));
     let esDataCopy = JSON.parse(JSON.stringify(esData));
+    let apoDataCopy = JSON.parse(JSON.stringify(apoData));
 
     let combinedData = { ...sscDataCopy };
 
@@ -45,9 +48,20 @@ function CharacterResults({ anData, sscData, esData, images, filterState, highli
       }
     }
 
+    if (typeof apoDataCopy !== 'undefined') {
+      for (let character in apoData) {
+        if (combinedData[character]) {
+          combinedData[character].count += apoDataCopy[character].count;
+          combinedData[character].mediums = { ...combinedData[character].mediums, ...apoDataCopy[character].mediums };
+        } else {
+          combinedData[character] = apoDataCopy[character];
+        }
+      }
+    }
+
     // Add 'mg' dictionary for each character if it has a medium called 'es' or 'ssc'
     for (let character in combinedData) {
-      if (combinedData[character].mediums['es'] || combinedData[character].mediums['ssc']) {
+      if (combinedData[character].mediums['es'] || combinedData[character].mediums['ssc'] || combinedData[character].mediums['apo']) {
         combinedData[character].mediums['mg'] = {};
         if (combinedData[character].mediums['es']) {
           combinedData[character].mediums['mg']['es'] = combinedData[character].mediums['es'];
@@ -59,15 +73,19 @@ function CharacterResults({ anData, sscData, esData, images, filterState, highli
           combinedData[character].mediums['mg']['count'] = (combinedData[character].mediums['mg']['count'] || 0) + combinedData[character].mediums['ssc']['count'];
           delete combinedData[character].mediums['ssc'];
         }
+        if (combinedData[character].mediums['apo']) {
+          combinedData[character].mediums['mg']['apo'] = combinedData[character].mediums['apo'];
+          combinedData[character].mediums['mg']['count'] = (combinedData[character].mediums['mg']['count'] || 0) + combinedData[character].mediums['apo']['count'];
+          delete combinedData[character].mediums['apo'];
+        }
       }
     }
 
     return combinedData;
   }
 
-  const combinedData = combineData(sscData, anData, esData);
+  const combinedData = combineData(sscData, anData, esData, apoData);
   console.log(combinedData)
-
   const characterImages = images.characterImages;
 
   const totalCharacters = Object.values(combinedData).reduce((total, characterData) => total + characterData.count, 0);
@@ -111,6 +129,11 @@ function CharacterResults({ anData, sscData, esData, images, filterState, highli
                               <ESResults main={false} anData={mediumData['es']} images={images} filterState={filterState} highlight={highlight} />
                             </Collapsible>
                           )}
+                          {mediumData['apo'] && (
+                            <Collapsible key={'apo'} trigger={`Apocrypha (Total: ${mediumData['apo'].count})`}>
+                              <APOResults main={false} sscData={mediumData['apo']} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Apocrypha']}/>
+                            </Collapsible>
+                          )}
                         </div>
                       </Collapsible>
                     );
@@ -127,7 +150,9 @@ function CharacterResults({ anData, sscData, esData, images, filterState, highli
                   }
                 })}
               </Collapsible>
+              <br/>
             </div>
+
           );
         })}
       </Collapsible>

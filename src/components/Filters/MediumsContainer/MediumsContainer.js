@@ -134,10 +134,26 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
           newState.partsChecked["Event Stories"][story] = false;
         }
       }
+
+      for (let part in newState.partsChecked["Apocrypha"]) {
+        for (let subpart in newState.partsChecked["Apocrypha"][part]) {
+          if (typeof newState.partsChecked["Apocrypha"][part][subpart] === 'object') {
+            newState.partsChecked["Apocrypha"][part][subpart].checked = false;
+            for (let episode in newState.partsChecked["Apocrypha"][part][subpart]) {
+              if (episode !== 'checked') {
+                newState.partsChecked["Apocrypha"][part][subpart][episode].checked = false;
+              }
+            }
+          } else {
+            newState.partsChecked["Apocrypha"][part][subpart] = false;
+          }
+        }
+      }
   
       newState.mogMainChecked = false;
       newState.partsChecked["Seven Shadows Chronicles"].checked = false;
       newState.partsChecked["Event Stories"].checked = false;
+      newState.partsChecked["Apocrypha"].checked = false;
       newState.filter = '';
       newState.openParts = {};
       newState.categoryFilters = {};
@@ -265,22 +281,26 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
       const updatedPartsChecked = { ...prevState.partsChecked };
 
       // Update the checked state of all parts, sections, and episodes for 'Seven Shadows Chronicles'
-      const storyType = 'Seven Shadows Chronicles';
-      Object.keys(updatedPartsChecked[storyType]).forEach(part => {
-        if (part !== 'checked') {
-          updatedPartsChecked[storyType][part].checked = isMOGMainChecked;
-          Object.keys(updatedPartsChecked[storyType][part]).forEach(section => {
-            if (section !== 'checked') {
-              updatedPartsChecked[storyType][part][section].checked = isMOGMainChecked;
-              Object.keys(updatedPartsChecked[storyType][part][section]).forEach(episode => {
-                if (episode !== 'checked' && typeof updatedPartsChecked[storyType][part][section][episode] === 'object') {
-                  updatedPartsChecked[storyType][part][section][episode].checked = isMOGMainChecked;
-                }
-              });
-            }
-          });
-        }
+      const storyTypes = ['Seven Shadows Chronicles', 'Apocrypha'];
+
+      storyTypes.forEach(storyType => {
+        Object.keys(updatedPartsChecked[storyType]).forEach(part => {
+          if (part !== 'checked') {
+            updatedPartsChecked[storyType][part].checked = isMOGMainChecked;
+            Object.keys(updatedPartsChecked[storyType][part]).forEach(section => {
+              if (section !== 'checked') {
+                updatedPartsChecked[storyType][part][section].checked = isMOGMainChecked;
+                Object.keys(updatedPartsChecked[storyType][part][section]).forEach(episode => {
+                  if (episode !== 'checked' && typeof updatedPartsChecked[storyType][part][section][episode] === 'object') {
+                    updatedPartsChecked[storyType][part][section][episode].checked = isMOGMainChecked;
+                  }
+                });
+              }
+            });
+          }
+        });
       });
+      
 
       // Update the checked state of all parts and episodes for 'Event Stories'
       const eventType = 'Event Stories';
@@ -297,9 +317,8 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
           }
         }
       });
-
       // Check if all parts are unchecked for both 'Seven Shadows Chronicles' and 'Event Stories'
-      ['Seven Shadows Chronicles', 'Event Stories'].forEach(storyType => {
+      ['Seven Shadows Chronicles', 'Event Stories', 'Apocrypha'].forEach(storyType => {
         const allPartsUnchecked = Object.values(updatedPartsChecked[storyType]).every(part => !part.checked);
 
         if (allPartsUnchecked) {

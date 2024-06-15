@@ -75,7 +75,7 @@ function ApocryphaDropdown({
                             <div className="section-list">
                                 {Object.keys(partsChecked[part]).filter(section => section !== 'checked' && (!sectionFilters[part] || section.toLowerCase().includes(sectionFilters[part].toLowerCase()))).map((section, index) => {
                                     const sectionName = section;
-                                    const sectionKey = section.split(" |")[0];
+                                    const sectionKey = `${part.split(' | ')[0]}-${sectionName.split(' | ')[0]}`;
                                     return (
                                         <div key={index}>
                                             <div className="item-header">
@@ -85,7 +85,7 @@ function ApocryphaDropdown({
                                                         title={sectionName.split(' | ')[1]}
                                                         onClick={(event) => handleSectionClick(event, part, section)}
                                                     >
-                                                        <span style={{ color: 'red' }}>Chapter {sectionName.split(' | ')[0]}&nbsp;</span>
+                                                        <span style={{ color: 'red' }}>{part.split(' | ')[0]}-{sectionName.split(' | ')[0]}&nbsp;</span>
                                                         <span> | {sectionName.split(' | ')[1]}</span>
                                                     </span>
                                                     <FontAwesomeIcon className="dropdown-icon" icon={openParts[part]?.[section] ? faChevronUp : faChevronDown} onClick={(event) => handleSectionClick(event, part, section)} />
@@ -101,9 +101,11 @@ function ApocryphaDropdown({
                                                     {Object.keys(partsChecked[part][section]).filter(episode => episode !== 'checked' && episode.startsWith('e')).map((episode, index) => {
                                                         const episodeNumber = episode.split("e")[1];
                                                         const episodeName = partsChecked[part][section][episode].title;
+                                                        const imageKey = `${part.split(' | ')[0]}-${sectionName.split(' | ')[0]}-${episodeNumber}`
                                                         return (
                                                             <div key={index} className="episode-item">
                                                                 <div className="episode-name">
+                                                                {images[imageKey] && <img className="cover-image-apo-small" src={images[imageKey]} alt={episodeName} />}
                                                                 <span className={partsChecked[part][section][episode].checked ? "episode-checked" : "episode-unchecked"}>
                                                                     <span style={{ color: 'red' }}>{episodeNumber} </span>
                                                                     <span className="episode-text" title={episodeName}>| {episodeName}</span>

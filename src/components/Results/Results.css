@@ -226,6 +226,18 @@
   margin-right: 10px;
 }
 
+.cover-image-apo-small {
+  width: 64px;
+  height: 39px;
+  margin-right: 10px;
+}
+
+.cover-image-apo-chapter-small {
+  width: 90px;
+  height: 23px;
+  margin-right: 10px;
+}
+
 .character-trigger, .volume-trigger, .season-trigger {
   display: flex;
   align-items: center;
