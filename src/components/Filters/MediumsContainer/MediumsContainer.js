@@ -80,8 +80,8 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
           if (!canonES.includes(part)) {
             updatedPartsChecked[part].checked = false;
             Object.keys(updatedPartsChecked[part]).forEach(episode => {
-              if (episode !== 'checked' && typeof updatedPartsChecked[part][episode] === 'boolean') {
-                updatedPartsChecked[part][episode] = false;
+              if (episode !== 'checked') {
+                updatedPartsChecked[part][episode].checked = false;
               }
             });
           }
