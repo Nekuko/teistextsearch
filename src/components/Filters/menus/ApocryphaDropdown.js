@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
@@ -18,31 +18,38 @@ function ApocryphaDropdown({
     images
 }) {
 
+    const endOfDropdownRef = useRef(null);
+    useEffect(() => {
+        if (openParts && endOfDropdownRef.current) {
+            endOfDropdownRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, [openParts]);
+
     const handleSectionClick = (event, part, section) => {
         event.stopPropagation();
         setMogDropdownState(prevState => {
-          // Get all the sections from the previous state
-          const { openParts } = prevState;
-      
-          // Create a new object with all sections closed
-          const newOpenSections = Object.keys(openParts[part]).reduce((acc, key) => {
-            acc[key] = false;
-            return acc;
-          }, {});
-      
-          // Toggle the clicked section
-          newOpenSections[section] = !openParts[part][section];
-      
-          return {
-            ...prevState,
-            openParts: {
-              ...prevState.openParts,
-              [part]: newOpenSections
-            }
-          };
+            // Get all the sections from the previous state
+            const { openParts } = prevState;
+
+            // Create a new object with all sections closed
+            const newOpenSections = Object.keys(openParts[part]).reduce((acc, key) => {
+                acc[key] = false;
+                return acc;
+            }, {});
+
+            // Toggle the clicked section
+            newOpenSections[section] = !openParts[part][section];
+
+            return {
+                ...prevState,
+                openParts: {
+                    ...prevState.openParts,
+                    [part]: newOpenSections
+                }
+            };
         });
-      };
-      
+    };
+
 
     return (
         <div>
@@ -105,11 +112,11 @@ function ApocryphaDropdown({
                                                         return (
                                                             <div key={index} className="episode-item">
                                                                 <div className="episode-name">
-                                                                {images[imageKey] && <img className="cover-image-apo-small" src={images[imageKey]} alt={episodeName} />}
-                                                                <span className={partsChecked[part][section][episode].checked ? "episode-checked" : "episode-unchecked"}>
-                                                                    <span style={{ color: 'red' }}>{episodeNumber} </span>
-                                                                    <span className="episode-text" title={episodeName}>| {episodeName}</span>
-                                                                </span>
+                                                                    {images[imageKey] && <img className="cover-image-apo-small" src={images[imageKey]} alt={episodeName} />}
+                                                                    <span className={partsChecked[part][section][episode].checked ? "episode-checked" : "episode-unchecked"}>
+                                                                        <span style={{ color: 'red' }}>{episodeNumber} </span>
+                                                                        <span className="episode-text" title={episodeName}>| {episodeName}</span>
+                                                                    </span>
                                                                 </div>
                                                                 <input
                                                                     type="checkbox"
@@ -131,6 +138,7 @@ function ApocryphaDropdown({
                     )}
                 </div>
             ))}
+            <div ref={endOfDropdownRef} />
         </div>
     );
 }

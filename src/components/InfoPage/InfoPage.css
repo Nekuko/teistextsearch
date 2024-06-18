@@ -1,16 +1,33 @@
 /* InfoPage.css */
 .info-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: red;
-  }
-  
-  .info-content {
-    width: 50%;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: red;
+}
+
+.info-header {
+  font-family: 'Noto Serif JP';
+  font-size: calc(0.8em + 1.8vw);
+  color: #c8000f;
+  font-weight: 100;
+  letter-spacing: 0.07em;
+  align-items: center;
+  position: flex; /* Position relative to the Header component */
+  border-radius: 5px;
+  display: flex; /* Use flexbox to arrange children in a row */
+  position: relative;
+}
+
+.info-content {
+  position: flex; /* Position relative to the Header component */
+  width: 75%;
+  background-color: #1f2224;
+  padding: 20px;
+  border-radius: 5px;
+  margin: auto;
+  color: white;
+  display: flex; /* Use flexbox to arrange children in a row */
+  flex-direction: column; /* Align children horizontally */
+}

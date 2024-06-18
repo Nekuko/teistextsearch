@@ -43,7 +43,7 @@ function Header() {
                 to="/change" 
                 className={({ isActive }) => (isActive ? 'active-link' : '')}
               >
-                CHANGELOG
+                DISCORD
               </NavLink>
             </li>
           </ul>
@@ -72,7 +72,7 @@ function Header() {
               to="/change" 
               className={({ isActive }) => (isActive ? 'active-link' : '')}
             >
-              CHANGELOG
+              DISCORD
             </NavLink>
           </nav>
         )}

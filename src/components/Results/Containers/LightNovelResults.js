@@ -41,7 +41,8 @@ function LightNovelResults({ lnData, volumeImages, highlight, filterState, lnDro
     "X ": "Auxiliary Chapter",
     "F ": "Final Chapter",
     "A ": "Appendix",
-    "E ": "Epilogue"
+    "E ": "Epilogue",
+    "I ": "Intermission"
   }
 
   if (Object.keys(lnData.volumes).length === 0) {
