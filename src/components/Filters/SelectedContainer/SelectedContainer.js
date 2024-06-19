@@ -53,8 +53,6 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     }
   }
 
-  console.log(esCheckedItems)
-
   const getSelectedESList = () => {
     let groupedEpisodes = {};
 

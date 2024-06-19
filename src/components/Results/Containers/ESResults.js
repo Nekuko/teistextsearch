@@ -107,7 +107,7 @@ function ESResults({ anData, images, highlight, filterState, main }) {
         const seasonCount = Object.values(seasonValue.episodes).reduce((total, episode) => total + episode.count, 0);
 
         return (
-          <div>
+          <div key={`${seasonKey}`}>
             <Collapsible className="medium-margin" trigger={
               <>
                 <div className="season-trigger">
@@ -115,17 +115,17 @@ function ESResults({ anData, images, highlight, filterState, main }) {
                   {`${seasonTitle} (Total: ${seasonCount})`}
                 </div>
               </>
-            } key={seasonKey}>
+            }>
               {Object.entries(seasonValue.episodes).map(([episodeKey, episodeValue]) => {
                 const sentencesPerPage = 15;
                 const uniqueChapterKey = `${seasonKey}-${episodeKey}`;
                 // Get the episode title from the mapping
                 const episodeTitle = `Episode ${episodeKey.slice(1)}`;
                 return (
-                  <Collapsible trigger={`${episodeTitle} (Total: ${episodeValue.count})`} key={episodeKey}>
+                  <Collapsible trigger={`${episodeTitle} (Total: ${episodeValue.count})`} key={uniqueChapterKey}>
                     <div className="sentences-container">
                     {episodeValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
-                        <div className="sentence-character-container" key={index}>
+                        <div className="sentence-character-container" key={`${uniqueChapterKey}-${index}`}>
                           <div className="sentence-box-image">
                             <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
                             <div className="icon-container-triple">

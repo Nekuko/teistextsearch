@@ -109,7 +109,7 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
         const seasonCount = Object.values(seasonValue.episodes).reduce((total, episode) => total + episode.count, 0);
 
         return (
-          <div>
+          <div key={seasonTitle}>
             <Collapsible className="medium-margin" trigger={
               <>
                 <div className="season-trigger">
@@ -117,7 +117,7 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
                   {`${seasonTitle} (Total: ${seasonCount})`}
                 </div>
               </>
-            } key={seasonKey}>
+            }>
               {Object.entries(seasonValue.episodes).map(([episodeKey, episodeValue]) => {
                 const sentencesPerPage = 15;
                 const uniqueChapterKey = `${seasonKey}-${episodeKey}`;
@@ -125,7 +125,7 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
                 // Get the episode title from the mapping
                 const episodeTitle =  partsChecked[mapKey][`${seasonKey}${episodeKey}`].title || `Episode ${episodeKey.slice(1)}`;
                 return (
-                  <Collapsible trigger={`Episode ${episodeTitle} (Total: ${episodeValue.count})`} key={episodeKey}>
+                  <Collapsible trigger={`Episode ${episodeTitle} (Total: ${episodeValue.count})`} key={uniqueChapterKey}>
                     <div className="sentences-container">
                     {episodeValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
                         <div className="sentence-character-container" key={index}>

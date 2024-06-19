@@ -138,7 +138,6 @@ function ApocryphaDropdown({
                     )}
                 </div>
             ))}
-            <div ref={endOfDropdownRef} />
         </div>
     );
 }

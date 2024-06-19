@@ -153,7 +153,7 @@ function SSCResults({ sscData, images, highlight, filterState, main, partsChecke
                                                 {`Chapter ${chapterTitle} (Total: ${chapterCount})`}
                                             </div>
                                         </>
-                                    }>
+                                    } key={chapterTitle}>
                                         {Object.entries(chapterValue.episodes).map(([episodeKey, episodeValue]) => {
                                             let episodeTitle = partsChecked[partTitle][chapterTitle][`e${episodeKey.slice(1)}`].title;
                                             const sentencesPerPage = 15;
