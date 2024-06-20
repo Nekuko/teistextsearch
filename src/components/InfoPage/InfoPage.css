@@ -1,10 +1,8 @@
 /* InfoPage.css */
 .info-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: red;
+  display: flexbox;
+  flex-direction: column;
+  height: 100%;
 }
 
 .info-header {
@@ -20,8 +18,9 @@
   position: relative;
 }
 
+
 .info-content {
-  position: flex; /* Position relative to the Header component */
+  position: relative; /* Position relative to the Header component */
   width: 75%;
   background-color: #1f2224;
   padding: 20px;
@@ -30,4 +29,5 @@
   color: white;
   display: flex; /* Use flexbox to arrange children in a row */
   flex-direction: column; /* Align children horizontally */
+  margin-bottom: 5%;
 }
