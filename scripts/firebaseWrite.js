@@ -626,42 +626,42 @@ let data = {
                 },
                 {
                     "name": "Beta",
-                    "name_variant": "Everyone",
+                    "name_variant": "Everyone (Beta)",
                     "subtitle": "Lady Alpha?!",
                     "line": 12,
                     "url": "https://drive.google.com/file/d/1WxRn92SvVO1VWWb9gSlxxprg_Az9R0dc/view?usp=drivesdk"
                 },
                                 {
                     "name": "Gamma",
-                    "name_variant": "Everyone",
+                    "name_variant": "Everyone (Gamma)",
                     "subtitle": "Lady Alpha?!",
                     "line": 12,
                     "url": "https://drive.google.com/file/d/1WxRn92SvVO1VWWb9gSlxxprg_Az9R0dc/view?usp=drivesdk"
                 },
                                 {
                     "name": "Delta",
-                    "name_variant": "Everyone",
+                    "name_variant": "Everyone (Delta)",
                     "subtitle": "Lady Alpha?!",
                     "line": 12,
                     "url": "https://drive.google.com/file/d/1WxRn92SvVO1VWWb9gSlxxprg_Az9R0dc/view?usp=drivesdk"
                 },
                                 {
                     "name": "Epsilon",
-                    "name_variant": "Everyone",
+                    "name_variant": "Everyone (Epsilon)",
                     "subtitle": "Lady Alpha?!",
                     "line": 12,
                     "url": "https://drive.google.com/file/d/1WxRn92SvVO1VWWb9gSlxxprg_Az9R0dc/view?usp=drivesdk"
                 },
                                 {
                     "name": "Zeta",
-                    "name_variant": "Everyone",
+                    "name_variant": "Everyone (Zeta)",
                     "subtitle": "Lady Alpha?!",
                     "line": 12,
                     "url": "https://drive.google.com/file/d/1WxRn92SvVO1VWWb9gSlxxprg_Az9R0dc/view?usp=drivesdk"
                 },
                                 {
                     "name": "Eta",
-                    "name_variant": "Everyone",
+                    "name_variant": "Everyone (Eta)",
                     "subtitle": "Lady Alpha?!",
                     "line": 12,
                     "url": "https://drive.google.com/file/d/1WxRn92SvVO1VWWb9gSlxxprg_Az9R0dc/view?usp=drivesdk"
@@ -2223,14 +2223,14 @@ let data = {
                 },
                 {
                     "name": "Beta",
-                    "name_variant": "Beta & Epsilon",
+                    "name_variant": "Beta & Epsilon (Beta)",
                     "subtitle": "Yes, ma'am...",
                     "line": 10,
                     "url": "https://drive.google.com/file/d/1mL52f4tgQ76Puu6VhYx2A057HqxoYlKm/view?usp=drivesdk"
                 },
                                 {
                     "name": "Epsilon",
-                    "name_variant": "Beta & Epsilon",
+                    "name_variant": "Beta & Epsilon (Epsilon)",
                     "subtitle": "Yes, ma'am...",
                     "line": 10,
                     "url": "https://drive.google.com/file/d/1mL52f4tgQ76Puu6VhYx2A057HqxoYlKm/view?usp=drivesdk"

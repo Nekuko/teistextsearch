@@ -16,33 +16,50 @@ function CharacterGroupDropdown({
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        if (event.target.type !== 'checkbox') {
-          // Update the dropdown state to close it
-          setDropdownStates(prevState => ({
-            ...prevState,
-            [dropdownName]: {
-              ...prevState[dropdownName],
-              open: false, // Set open to false to close the dropdown
-              // Reset other state as needed
-            },
-          }));
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+            if (event.target.type !== 'checkbox') {
+                // Close all open dropdowns
+                setDropdownStates((prevState) => {
+                    const updatedState = { ...prevState };
+                    for (const name in updatedState) {
+                        updatedState[name].open = false;
+                        // Reset other state properties as needed
+                        if (updatedState[name].groups) {
+                            for (const groupName in updatedState[name].groups) {
+                                updatedState[name].groups[groupName].open = false;
+                                // Reset other group properties as needed
+                            }
+                        }
+                        if (updatedState[name].characters) {
+                            for (const charName in updatedState[name].characters) {
+                                const character = updatedState[name].characters[charName];
+                                for (const key in character) {
+                                    if (key === 'open') {
+                                        character[key] = false;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    return updatedState;
+                });
+            }
         }
-      }
     };
-  
+
     // Add event listener if the dropdown is open
     if (selectedGroup.open) {
-      document.addEventListener('mousedown', handleClickOutside);
+        document.addEventListener('mousedown', handleClickOutside);
     } else {
-      document.removeEventListener('mousedown', handleClickOutside);
+        document.removeEventListener('mousedown', handleClickOutside);
     }
-  
+
     return () => {
-      // Clean up event listener on component unmount or when dropdown closes
-      document.removeEventListener('mousedown', handleClickOutside);
+        // Clean up event listener on component unmount or when dropdown closes
+        document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [selectedGroup.open, dropdownName, setDropdownStates]);
+}, [selectedGroup.open, dropdownName, setDropdownStates]);
+
 
 
   const [filter, setFilter] = useState(''); // State for the filter input

@@ -52,24 +52,46 @@ function CharacterDropdown({
     
     
     const handleOpenToggle = () => {
-        setDropdownStates((prevState) => ({
-            ...prevState,
-            [dropdownName]: {
-                ...prevState[dropdownName],
-                characters: {
-                    ...prevState[dropdownName].characters,
-                    [characterName]: {
-                        ...prevState[dropdownName].characters[characterName],
-                        open: !characterData.open,
+        setDropdownStates((prevState) => {
+            const updatedCharacters = { ...prevState[dropdownName].characters };
+            const updatedGroups = { ...prevState[dropdownName].groups };
+            for (const charName in updatedCharacters) {
+                if (charName !== characterName && updatedCharacters[charName].open) {
+                    updatedCharacters[charName].open = false;
+                }
+            }
+
+            for (const groupName in updatedGroups) {
+                console.log(updatedGroups[groupName])
+                if (updatedGroups[groupName].open) {
+                    updatedGroups[groupName].open = false;
+                }
+            }
+    
+            return {
+                ...prevState,
+                [dropdownName]: {
+                    ...prevState[dropdownName],
+                    characters: {
+                        ...updatedCharacters,
+                        [characterName]: {
+                            ...prevState[dropdownName].characters[characterName],
+                            open: !characterData.open,
+                        },
                     },
+                    groups: {
+                        ...updatedGroups
+                    }
                 },
-            },
-        }));
+            };
+        });
     };
+    
     
     const handleCheckboxChangeOption = (optionKey) => {
         setDropdownStates((prevState) => {
             const updatedCharacters = { ...prevState[dropdownName].characters };
+            const updatedGroups = { ...prevState[dropdownName].groups };
             
             // Toggle the option's checked state
             updatedCharacters[characterName][optionKey] = !updatedCharacters[characterName][optionKey];
@@ -81,11 +103,18 @@ function CharacterDropdown({
     
             // Update the character's checked state based on options
             updatedCharacters[characterName].checked = isAnyOptionChecked;
+
+            const isAnyGroupChecked = Object.values(updatedGroups).some(group => group.checked);
+
+            // Determine if any main characters are checked
+            const isAnyMainCharacterChecked = Object.values(updatedCharacters).some(character => character.checked);
     
             return {
                 ...prevState,
                 [dropdownName]: {
                     ...prevState[dropdownName],
+                    checked: isAnyGroupChecked || isAnyMainCharacterChecked,
+                    groups: updatedGroups,
                     characters: updatedCharacters,
                 },
             };

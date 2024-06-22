@@ -82,8 +82,8 @@ export function searchES(keys, text, keywords, nameMap, characters = [], caseSen
         if (filteredSentences.length > 0) {
             if (characters.length > 0) {
                 for (let character of characters) {
-                    let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [character.toLowerCase()];
-                    let characterSentences = filteredSentences.filter(sentence => characterToCheck.some(name => sentence.name_variant.toLowerCase().includes(name)));
+                    let characterToCheck = nameMap[character] ? nameMap[character].map(name => name) : [character];
+                    let characterSentences = filteredSentences.filter(sentence => characterToCheck.some(name => sentence.name_variant.includes(name)));
                     if (characterSentences.length > 0) {
                         if (!results[character]) {
                             results[character] = { count: 0, mediums: {} };

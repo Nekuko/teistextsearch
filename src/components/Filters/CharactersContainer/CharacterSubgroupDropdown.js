@@ -11,26 +11,55 @@ function CharacterSubgroupDropdown({
     setDropdownStates,
     namedCharacters,
 }) {
+
     const handleGroupClick = () => {
-        // Implement your logic for handling subgroup click here
-        // For example, toggle the 'checked' property
-        const updatedGroup = {
-            ...dropdownStates[dropdownName].groups[subgroupName],
-            open: !dropdownStates[dropdownName].groups[subgroupName].open,
+        // Close all other subgroups within the same dropdown
+        const updatedCharacters = { ...dropdownStates[dropdownName].characters };
+        const updatedSubCharacters = { ...dropdownStates[dropdownName].groups[subgroupName].characters };
+
+        for (const charName in updatedCharacters) {
+            if (updatedCharacters[charName].open) {
+                updatedCharacters[charName].open = false;
+            }
+        }
+
+        for (const charName in updatedSubCharacters) {
+            if (updatedSubCharacters[charName].open) {
+                updatedSubCharacters[charName].open = false;
+            }
+        }
+
+        const updatedGroups = { ...dropdownStates[dropdownName].groups };
+        for (const group in updatedGroups) {
+            if (group !== subgroupName) {
+                updatedGroups[group].open = false;
+            }
+        }
+
+        // Toggle the 'open' property for the selected subgroup
+        const updatedSubgroup = {
+            ...updatedGroups[subgroupName],
+            open: !updatedGroups[subgroupName].open,
+            characters: updatedSubCharacters, // Add this line to update the characters
         };
 
-        // Update the state with the modified subgroup
+        // Update the state with the modified subgroup and other subgroups
         setDropdownStates((prevState) => ({
             ...prevState,
             [dropdownName]: {
                 ...prevState[dropdownName],
                 groups: {
-                    ...prevState[dropdownName].groups,
-                    [subgroupName]: updatedGroup,
+                    ...updatedGroups,
+                    [subgroupName]: updatedSubgroup,
                 },
+                characters: {
+                    ...updatedCharacters
+                }
             },
         }));
     };
+
+
     const selectedGroup = dropdownStates[dropdownName].groups[subgroupName];
     const handleGroupCheck = (selectedGroup) => {
         // Toggle the 'checked' state for the subgroup
@@ -62,15 +91,15 @@ function CharacterSubgroupDropdown({
             // Check if all groups are in the same checked state as newCheckedState
             const groups = prevState[dropdownName].groups;
             const characters = prevState[dropdownName].characters; // Assuming this is where the characters are stored
-            
-            const anyGroupChecked = Object.keys(groups).some(key => 
-              key === subgroupName ? newCheckedState : groups[key].checked
+
+            const anyGroupChecked = Object.keys(groups).some(key =>
+                key === subgroupName ? newCheckedState : groups[key].checked
             );
-            
-            const anyCharacterChecked = characters && Object.keys(characters).some(key => 
-              characters[key].checked
+
+            const anyCharacterChecked = characters && Object.keys(characters).some(key =>
+                characters[key].checked
             );
-            
+
             const updatedCheckedState = anyGroupChecked || anyCharacterChecked;
 
             return {
@@ -123,14 +152,14 @@ function CharacterSubgroupDropdown({
             </div>
 
             {selectedGroup.open && (
-                
+
                 <div>
-                                <input
-                type="text"
-                value={filter}
-                onChange={handleFilterChange}
-                placeholder="Search..."
-            />
+                    <input
+                        type="text"
+                        value={filter}
+                        onChange={handleFilterChange}
+                        placeholder="Search..."
+                    />
                     {/* Render filtered characters within the subgroup */}
                     {filteredCharacters.map((characterName) => (
                         <CharacterSubgroupCharacterDropdown

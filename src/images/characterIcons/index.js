@@ -21,4 +21,11 @@ export { default as No666Icon } from './No666Icon.webp';
 export { default as LambdaIcon } from './LambdaIcon.webp';
 export { default as NuIcon } from './NuIcon.webp';
 export { default as StylishBanditSlayerIcon } from './StylishBanditSlayerIcon.webp';
+export { default as VictoriaIcon } from './VictoriaIcon.webp';
+export { default as YukimeIcon } from './YukimeIcon.webp';
+export { default as OlivierIcon } from './OlivierIcon.webp';
+export { default as FreyaIcon } from './FreyaIcon.webp';
+export { default as LiliIcon } from './LiliIcon.webp';
+export { default as DuetIcon } from './DuetIcon.webp';
+export { default as PenteIcon } from './PenteIcon.webp';
 
