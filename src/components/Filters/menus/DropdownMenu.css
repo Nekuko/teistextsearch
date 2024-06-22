@@ -51,6 +51,8 @@
 .season-title, .volume-title, .character-title, .part-title {
   color: white;
   text-overflow: ellipsis;
+  font-family: 'Noto Serif JP';
+  letter-spacing: 0.07em;
 }
 
 .dropdown-icon {

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './CharactersContainer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRotateRight, faN } from '@fortawesome/free-solid-svg-icons';
-import CharacterDropdown from '../menus/CharacterDropdown';
+import CharacterGroupDropdown from './CharacterGroupDropdown.js';
 
 function CharactersContainer({
   dropdownStates,
@@ -15,85 +15,111 @@ function CharactersContainer({
 
 
   const handleReset = () => {
-    // Reset all characters and their attributes to unchecked
-    const resetState = Object.keys(dropdownStates).reduce((acc, group) => {
-      const characters = Object.keys(dropdownStates[group].characters).reduce((charAcc, character) => {
-        const attributes = Object.keys(dropdownStates[group].characters[character]).reduce((attrAcc, attribute) => {
-          attrAcc[attribute] = false;
-          return attrAcc;
-        }, {});
-        charAcc[character] = { ...attributes, checked: false, open: false };
-        return charAcc;
-      }, {});
-      acc[group] = { ...dropdownStates[group], characters, checked: false, openGroup: false, filters: '' };
-      return acc;
-    }, {});
-    setDropdownStates(resetState);
-    setNamedActive(false); // Disable the named button
-  };
-  
-  const handleCheckboxChange = (group) => {
-    const isChecked = !dropdownStates[group].checked;
-    const updatedCharacters = Object.keys(dropdownStates[group].characters).reduce((acc, character) => {
-      // If namedActive is true, only check the characters in the namedCharacters list
-      if (!namedActive || (namedActive && namedCharacters.includes(character))) {
-        const updatedAttributes = Object.keys(dropdownStates[group].characters[character]).reduce((attrAcc, attribute) => {
-          if (attribute !== 'open') {
-            attrAcc[attribute] = isChecked;
-          }
-          return attrAcc;
-        }, {});
-        acc[character] = { ...updatedAttributes, checked: isChecked };
-      } else {
-        // If namedActive is true and the character is not in the namedCharacters list, keep the character unchecked
-        acc[character] = dropdownStates[group].characters[character];
-      }
-      return acc;
-    }, {});
-  
-    setDropdownStates(prevState => ({
-      ...prevState,
-      [group]: {
-        ...prevState[group],
-        characters: updatedCharacters,
-        checked: isChecked
-      }
-    }));
-  };
+    setDropdownStates(prevState => {
+        const resetState = { ...prevState };
+
+        // Iterate over each dropdown
+        Object.keys(resetState).forEach(dropdownName => {
+            const dropdown = resetState[dropdownName];
+            dropdown.openGroup = false;
+            dropdown.checked = false;
+            dropdown.open = false;
+            dropdown.filters = '';
+
+            // Check if groups exist and iterate over them
+            if (dropdown.groups) {
+                Object.keys(dropdown.groups).forEach(groupName => {
+                    const group = dropdown.groups[groupName];
+                    group.openGroup = false;
+                    group.checked = false;
+                    group.open = false;
+                    group.filters = '';
+
+                    // Iterate over each character within the group
+                    Object.keys(group.characters).forEach(characterName => {
+                        const character = group.characters[characterName];
+                        Object.keys(character).forEach(key => {
+                            if (typeof character[key] === 'boolean') {
+                                character[key] = false;
+                            }
+                        });
+                    });
+                });
+            }
+
+            // Check if characters exist and iterate over them
+            if (dropdown.characters) {
+                Object.keys(dropdown.characters).forEach(characterName => {
+                    const character = dropdown.characters[characterName];
+                    Object.keys(character).forEach(key => {
+                        if (typeof character[key] === 'boolean') {
+                            character[key] = false;
+                        }
+                    });
+                });
+            }
+        });
+
+        return resetState;
+    });
+};
+
 
   const handleNamed = () => {
-    const isActive = !namedActive;
-    setNamedActive(isActive);
-  
-    // Only update the state when the button is checked
-    if (isActive) {
-      const updatedDropdownStates = Object.keys(dropdownStates).reduce((acc, group) => {
-        let allUnchecked = true;
-        const updatedCharacters = Object.keys(dropdownStates[group].characters).reduce((charAcc, character) => {
-          // Only update characters that are not in the namedCharacters array
-          if (!namedCharacters.includes(character)) {
-            const updatedAttributes = Object.keys(dropdownStates[group].characters[character]).reduce((attrAcc, attribute) => {
-              if (attribute !== 'open') {
-                attrAcc[attribute] = false; // Uncheck all attributes
-              }
-              return attrAcc;
-            }, {});
-            charAcc[character] = { ...updatedAttributes, checked: false }; // Uncheck the character
-          } else {
-            charAcc[character] = dropdownStates[group].characters[character]; // Keep the state of named characters
-            if (dropdownStates[group].characters[character].checked) {
-              allUnchecked = false;
-            }
-          }
-          return charAcc;
-        }, {});
-        acc[group] = { ...dropdownStates[group], characters: updatedCharacters, checked: !allUnchecked }; // Check or uncheck the group based on allUnchecked
-        return acc;
-      }, {});
-      setDropdownStates(updatedDropdownStates);
-    }
+    
   };
-  
+
+  const handleCheckboxChange = (groupName) => {
+    setDropdownStates((prevState) => {
+        const updateCheckedState = (items, newCheckedState) => {
+            return Object.keys(items).reduce((updatedItems, itemName) => {
+                const item = items[itemName];
+                const updatedItem = { ...item, checked: newCheckedState };
+
+                // Update options for this item
+                Object.keys(updatedItem).forEach((key) => {
+                    if (key !== 'checked' && key !== 'open' && key !== 'groups' && key !== 'characters') {
+                        updatedItem[key] = newCheckedState;
+                    }
+                });
+
+                // If this item has characters, update them
+                if (updatedItem.characters) {
+                    updatedItem.characters = updateCheckedState(updatedItem.characters, newCheckedState);
+                }
+
+                // If this item has nested groups, update them recursively
+                if (updatedItem.groups) {
+                    updatedItem.groups = updateCheckedState(updatedItem.groups, newCheckedState);
+                }
+
+                updatedItems[itemName] = updatedItem;
+                return updatedItems;
+            }, {});
+        };
+
+        const group = prevState[groupName];
+        const newCheckedState = !group.checked;
+
+        // Update all characters and nested groups within this group to match the new checked state
+        const updatedGroup = { ...group, checked: newCheckedState };
+        if (updatedGroup.characters) {
+            updatedGroup.characters = updateCheckedState(updatedGroup.characters, newCheckedState);
+        }
+        if (updatedGroup.groups) {
+            updatedGroup.groups = updateCheckedState(updatedGroup.groups, newCheckedState);
+        }
+
+        return {
+            ...prevState,
+            [groupName]: updatedGroup,
+        };
+    });
+};
+
+
+
+
   
   
   
@@ -103,9 +129,9 @@ function CharactersContainer({
       <h2 className="characters-title">CHARACTERS</h2>
       {Object.keys(dropdownStates).map((group, index) => (
         <div key={index} className="checkbox-container">
-          <CharacterDropdown 
+          <CharacterGroupDropdown
             dropdownName={group.toUpperCase()}
-            dropdownStates={dropdownStates} 
+            dropdownStates={dropdownStates}
             setDropdownStates={setDropdownStates}
             namedCharacters={namedActive ? namedCharacters : []}
           />

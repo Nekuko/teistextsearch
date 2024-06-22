@@ -793,28 +793,48 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
 
   const getSelectedCharacterList = () => {
     let characterList = [];
-    Object.values(dropdownStates).forEach(group => {
-      Object.entries(group.characters).forEach(([character, attributes]) => {
-        const subnames = Object.entries(attributes).filter(([name, checked]) => name !== 'checked' && name !== 'open');
-        const checkedSubnames = subnames.filter(([name, checked]) => checked);
-        if (subnames.length > 0 && subnames.length === checkedSubnames.length) {
-          // If all subnames are checked, add the main character name with '(All)' after it to the list
-          // Include a list of all the variants in the hover text
-          const variants = subnames.map(([name]) => name).join(', ');
-          characterList.push({ text: `${character} (All)`, hoverText: `${variants}` });
-        } else if (checkedSubnames.length > 0) {
-          // If some subnames are checked, add them to the list
-          checkedSubnames.forEach(([subname]) => {
-            characterList.push({ text: subname, hoverText: subname });
+    Object.values(dropdownStates).forEach(dropdown => {
+      // Check if there are groups and iterate over them
+      if (dropdown.groups) {
+        Object.values(dropdown.groups).forEach(group => {
+          // Add group characters
+          Object.entries(group.characters).forEach(([character, attributes]) => {
+            characterList = characterList.concat(getCharacterEntries(character, attributes));
           });
-        } else if (attributes.checked) {
-          // If the main character is checked and there are no checked subnames, add the main character to the list
-          characterList.push({ text: character, hoverText: character });
-        }
-      });
+        });
+      }
+      // Add standalone characters not within groups
+      if (dropdown.characters) {
+        Object.entries(dropdown.characters).forEach(([character, attributes]) => {
+          characterList = characterList.concat(getCharacterEntries(character, attributes));
+        });
+      }
     });
     return characterList;
   };
+  
+  // Helper function to get character entries
+  const getCharacterEntries = (character, attributes) => {
+    let entries = [];
+    const subnames = Object.entries(attributes).filter(([name, checked]) => name !== 'checked' && name !== 'open');
+    const checkedSubnames = subnames.filter(([name, checked]) => checked);
+    if (subnames.length > 0 && subnames.length === checkedSubnames.length) {
+      // If all subnames are checked, add the main character name with '(All)' after it to the list
+      // Include a list of all the variants in the hover text
+      const variants = subnames.map(([name]) => name).join(', ');
+      entries.push({ text: `${character} (All)`, hoverText: `${variants}` });
+    } else if (checkedSubnames.length > 0) {
+      // If some subnames are checked, add them to the list
+      checkedSubnames.forEach(([subname]) => {
+        entries.push({ text: subname, hoverText: subname });
+      });
+    } else if (attributes.checked) {
+      // If the main character is checked and there are no checked subnames, add the main character to the list
+      entries.push({ text: character, hoverText: character });
+    }
+    return entries;
+  };
+  
 
   // Call the function to get the new list
   const selectedAnimeList = getSelectedAnimeList();
