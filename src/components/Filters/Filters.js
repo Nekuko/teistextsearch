@@ -59,6 +59,7 @@ function Filters({
             namedActive={namedActive}
             setNamedActive={setNamedActive}
             namedCharacters={namedCharacters}
+            characterImages={images['characterImages']}
           />
           <SelectedContainer
             animeDropdownState={animeDropdownState}

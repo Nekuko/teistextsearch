@@ -1,53 +1,75 @@
+/* Results.css */
+@media (min-width: 769px) {
+  .dropdown-menu {
+    min-width: 400px;
+  }
+}
 
-  .characters-container {
-    position: relative;
-    padding-bottom: 40px;
+/* Hide desktop navigation on screens smaller than or equal to 768px */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    min-width: none;
+    width: 90%;
   }
-  
-  
-  /* Add this new class for the checkbox container */
-  .checkbox-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Adjust the input[type="checkbox"] to remove margin-left */
-  input[type="checkbox"] {
-    background-color: #000000;
-    accent-color: #c8000f;
-  }
+}
 
-  .reset-button {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    color: #c8000f
+.characters-container-image {
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+}
+.characters-container-image-small {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.characters-container {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+/* Adjust the input[type="checkbox"] to remove margin-left */
+input[type="checkbox"] {
+  background-color: #000000;
+  accent-color: #c8000f;
+}
+
+.reset-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #c8000f
     /* Add additional styles for the button as needed */
-  }
+}
 
-  .named-button {
-    position: absolute;
-    bottom: 10px;
-    right: 30px;
-    color: #c8000f;
-    font-size: small;
-    opacity: 40%;
-    /* Add additional styles for the button as needed */
-  }
+.named-button {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  color: #c8000f;
+  font-size: small;
+  opacity: 40%;
+  /* Add additional styles for the button as needed */
+}
 
-  .reset-button:hover {
-    color: red;
-    cursor: pointer;
-  }
+.reset-button:hover {
+  color: red;
+  cursor: pointer;
+}
 
-  .named-button:hover {
-    color: red;
-    cursor: pointer;
-    opacity: 100%;
-  }
+.named-button:hover {
+  color: red;
+  cursor: pointer;
+  opacity: 100%;
+}
 
-  .named-button.active {
-    color: red;
-    opacity: 100%;
-  }
-  
+.named-button.active {
+  color: red;
+  opacity: 100%;
+}

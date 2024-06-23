@@ -9,6 +9,7 @@ function CharacterGroupDropdown({
   dropdownStates,
   setDropdownStates,
   namedCharacters,
+  characterImages
 }) {
 
   const dropdownRef = useRef(null);
@@ -109,15 +110,11 @@ function CharacterGroupDropdown({
   );
 
   return (
-    <div>
       <div className="dropdown" ref={dropdownRef}>
-        <div className="checkbox-container">
           <div onClick={handleGroupClick}>
             <span className={selectedGroup.checked ? '' : 'dimmed'}>{dropdownName}</span>
             <FontAwesomeIcon className="dropdown-icon-main" icon={selectedGroup.open ? faChevronUp : faChevronDown} />
           </div>
-        </div>
-
       {selectedGroup.open && (
         <div className="dropdown-menu">
           <input
@@ -134,6 +131,7 @@ function CharacterGroupDropdown({
                 dropdownStates={dropdownStates}
                 setDropdownStates={setDropdownStates}
                 namedCharacters={namedCharacters}
+                characterImages={characterImages}
               />
             </div>
           ))}
@@ -145,6 +143,7 @@ function CharacterGroupDropdown({
                 dropdownStates={dropdownStates}
                 setDropdownStates={setDropdownStates}
                 namedCharacters={namedCharacters}
+                characterImages={characterImages}
               />
             </div>
           ))}
@@ -152,7 +151,6 @@ function CharacterGroupDropdown({
           
         </div>
       )}
-    </div>
     </div>
   );
 }

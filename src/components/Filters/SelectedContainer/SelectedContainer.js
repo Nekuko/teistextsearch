@@ -810,6 +810,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
         });
       }
     });
+
     return characterList;
   };
   
@@ -848,9 +849,14 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
   let mogCombined = [...selectedSSCList, ...selectedESList, ...selectedAPOList];
   if (mogCombined.length === 3) {
     if (mogCombined[0].text === "MOG Seven Shadows Chronicles" && 
-      (mogCombined[1].text === "MOG ES Auxiliary Chapters" || mogCombined[1].text === "MOG Event Stories") 
+      mogCombined[1].text === "MOG Event Stories"
       && mogCombined[2].text === "MOG Apocrypha") {
       mogCombined = [{ text: "Master of Garden", hoverText: "Master of Garden" }]
+    }
+    if (mogCombined[0].text === "MOG Seven Shadows Chronicles" 
+      && mogCombined[1].text === "MOG ES Auxiliary Chapters"
+      && mogCombined[2].text === "MOG Apocrypha") {
+      mogCombined = [{ text: "Master of Garden (Canon)", hoverText: "Master of Garden (Canon)" }]
     }
   }
 
@@ -863,7 +869,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
   }
 
   if (selectedCharacterList.length === 0) {
-    const characterText = namedActive ? 'Any "Named" Character' : 'No Character';
+    const characterText = namedActive ? 'No Character' : 'No Character';
     selectedCharacterList.push({ text: characterText, hoverText: characterText });
   }
 

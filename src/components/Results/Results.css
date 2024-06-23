@@ -46,6 +46,10 @@
   .character-box-text {
     display: flex;
   }
+  
+  .results-container {
+    padding: 20px;
+  }
 
 }
 
@@ -91,6 +95,11 @@
     margin-right: 1%;
     padding-top: 5%;
   }
+
+  .results-container {
+    padding: 20px;
+    padding-bottom: 40px;
+  }
 }
 
 .results-container {
@@ -98,18 +107,17 @@
   position: relative; /* Position relative to the Header component */
   width: 75%;
   background-color: #1f2224;
-  padding: 20px;
   border-radius: 5px;
   margin: auto;
   display: flex; /* Use flexbox to arrange children in a row */
   flex-direction: row; /* Align children horizontally */
   justify-content: space-around; /* Distribute space evenly around the containers */
   overflow: auto;
-  margin-bottom: 10%;
   color: white;
   position: relative;
   padding-top: 30px;
   min-height: 50px;
+  margin-bottom: 10%;
 }
 
 .scroll-top-button {

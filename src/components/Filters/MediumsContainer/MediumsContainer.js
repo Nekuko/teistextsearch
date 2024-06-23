@@ -8,7 +8,7 @@ import { faRotateRight, faC } from '@fortawesome/free-solid-svg-icons';
 import './MediumsContainer.css'; // Import the CSS file
 import WNDropdownMenu from '../menus/WNDropdownMenu';
 
-function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdownState, updateAnimeDropdownState, lnDropdownState, updateLNDropdownState, mogDropdownState, setMogDropdownState, images, canonActive, setCanonActive, canonES,  mediumFlash, setMediumFlash }) {
+function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdownState, updateAnimeDropdownState, lnDropdownState, updateLNDropdownState, mogDropdownState, setMogDropdownState, images, canonActive, setCanonActive, canonES, mediumFlash, setMediumFlash }) {
   const { mainChecked } = animeDropdownState;
   const { lnMainChecked } = lnDropdownState;
   const { mogMainChecked } = mogDropdownState; // parts derived from mogDropdownState
@@ -18,7 +18,7 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
   const [openMOG, setOpenMOG] = useState(false);
   const [openWN, setOpenWN] = useState(false);
 
-  
+
   useEffect(() => {
     if (mediumFlash) {
       // Set a timeout to turn off the flash after a delay
@@ -67,12 +67,12 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
   const handleCanon = () => {
     const isActive = !canonActive;
     setCanonActive(isActive);
-    let partsChecked = mogDropdownState.partsChecked["Event Stories"]
-  
+    let partsChecked = mogDropdownState.partsChecked["Event Stories"];
+
     // If canonActive is being set to true, uncheck all non-canon stories
     if (isActive) {
       const updatedPartsChecked = { ...partsChecked };
-  
+
       // Iterate over all parts and episodes for 'Event Stories'
       Object.keys(updatedPartsChecked).forEach(part => {
         if (part !== 'checked') {
@@ -87,24 +87,44 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
           }
         }
       });
-  
+
+      // Check if every part is unchecked
+      let allPartsUnchecked = true;
+      Object.keys(updatedPartsChecked).forEach(part => {
+        if (part !== 'checked' && updatedPartsChecked[part].checked) {
+          allPartsUnchecked = false;
+        }
+      });
+
+      if (allPartsUnchecked) {
+        updatedPartsChecked.checked = false;
+      }
+
+      let updatedMOGMainChecked = mogMainChecked;
+      if (!mogDropdownState.partsChecked["Seven Shadows Chronicles"].checked &&
+        !mogDropdownState.partsChecked["Apocrypha"].checked && allPartsUnchecked) {
+          updatedMOGMainChecked = false;
+      }
+
       // Update the mogDropdownState with the updated partsChecked
       setMogDropdownState(prevState => ({
         ...prevState,
+        mogMainChecked: updatedMOGMainChecked,
         partsChecked: {
           ...prevState.partsChecked,
           "Event Stories": updatedPartsChecked
         }
       }));
     }
-  }
+  };
+
 
 
 
   const resetMogDropdownState = () => {
     setMogDropdownState(prevState => {
       let newState = JSON.parse(JSON.stringify(prevState)); // create a deep copy
-  
+
       // Reset "Seven Shadows Chronicles"
       for (let part in newState.partsChecked["Seven Shadows Chronicles"]) {
         for (let subpart in newState.partsChecked["Seven Shadows Chronicles"][part]) {
@@ -120,7 +140,7 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
           }
         }
       }
-  
+
       // Reset "Event Stories"
       for (let story in newState.partsChecked["Event Stories"]) {
         if (typeof newState.partsChecked["Event Stories"][story] === 'object') {
@@ -149,7 +169,7 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
           }
         }
       }
-  
+
       newState.mogMainChecked = false;
       newState.partsChecked["Seven Shadows Chronicles"].checked = false;
       newState.partsChecked["Event Stories"].checked = false;
@@ -158,11 +178,11 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
       newState.openParts = {};
       newState.categoryFilters = {};
       newState.sectionFilters = {};
-  
+
       return newState;
     });
   };
-  
+
 
 
 
@@ -300,7 +320,7 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
           }
         });
       });
-      
+
 
       // Update the checked state of all parts and episodes for 'Event Stories'
       const eventType = 'Event Stories';
@@ -376,8 +396,8 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
 
 
   return (
-    <div className={`mediums-container ${mediumFlash  ? 'flash-selected' : ''}`}>
-      <h2 className={`mediums-title ${mediumFlash  ? 'flash' : ''}`}>MEDIUMS</h2>
+    <div className={`mediums-container ${mediumFlash ? 'flash-selected' : ''}`}>
+      <h2 className={`mediums-title ${mediumFlash ? 'flash' : ''}`}>MEDIUMS</h2>
       <div className="checkbox-container">
         <LNDropdownMenu
           lnDropdownState={lnDropdownState}

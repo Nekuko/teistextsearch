@@ -9,6 +9,7 @@ function CharacterSubgroupCharacterDropdown({
     subgroupName,
     setDropdownStates,
     namedCharacters,
+    characterImages
 }) {
     const characterData = dropdownStates[dropdownName].groups[subgroupName].characters[characterName];
 
@@ -175,48 +176,73 @@ function CharacterSubgroupCharacterDropdown({
 
     return (
         <div className="episode-list">
-            <div className="item-header">
-                <div className="volume-trigger-drop">
-                    <span className={characterData.checked ? "episode-checked" : "episode-unchecked"}>
-                        <div className="episode-name">
-                            <span className="season-title" title={characterName}>{characterName}</span>
-                            {hasDropdownOptions && (
-                                <FontAwesomeIcon
-                                    className="dropdown-icon"
-                                    icon={characterData.open ? faChevronUp : faChevronDown}
-                                    onClick={handleOpenToggle}
-                                />
-                            )}
-                        </div>
-                    </span>
+          <div className="item-header">
+            <div className="volume-trigger-drop">
+            {characterImages[characterName] && <img className="characters-container-image" src={characterImages[characterName]} alt={characterName} />}
+              <span
+                className={
+                  characterData.checked ? "episode-checked" : "episode-unchecked"
+                }
+              >
+                <div className="episode-name">
+                  <span className="season-title" title={characterName}>
+                    {characterName}
+                  </span>
+                  {hasDropdownOptions && (
+                    <FontAwesomeIcon
+                      className="dropdown-icon"
+                      icon={characterData.open ? faChevronUp : faChevronDown}
+                      onClick={handleOpenToggle}
+                    />
+                  )}
                 </div>
-                <input
-                    type="checkbox"
-                    checked={characterData.checked}
-                    onChange={() => handleCheckboxChange()}
-                />
+              </span>
             </div>
-            {hasDropdownOptions && characterData.open && (
-                <div className="episode-list">
-                    {Object.keys(characterData).filter(key => key !== 'checked' && key !== 'open').map((optionKey, index) => (
-                        <div key={index} className="item-header">
-                            <div className="volume-trigger-drop">
-                                <span className={characterData[optionKey] ? "episode-checked" : "episode-unchecked"}>
-                                    <span className="episode-text" title={optionKey}>{optionKey}</span>
-                                </span>
-                            </div>
-                            <input
-                                type="checkbox"
-                                checked={!!characterData[optionKey]}
-                                onChange={() => handleCheckboxChangeOption(optionKey)}
-                            />
-                        </div>
-                    ))}
-                </div>
-            )}
-
+            <input
+              type="checkbox"
+              checked={characterData.checked}
+              onChange={() => handleCheckboxChange()}
+              disabled={
+                namedCharacters.length > 0 && !namedCharacters.includes(characterName)
+              }
+            />
+          </div>
+          {hasDropdownOptions && characterData.open && (
+            <div className="episode-list">
+              {Object.keys(characterData)
+                .filter((key) => key !== "checked" && key !== "open")
+                .map((optionKey, index) => (
+                  <div key={index} className="item-header">
+                    <div className="volume-trigger-drop">
+                    {characterImages[optionKey] && <img className="characters-container-image-small" src={characterImages[optionKey]} alt={optionKey} />}
+                      <span
+                        className={
+                          characterData[optionKey]
+                            ? "episode-checked"
+                            : "episode-unchecked"
+                        }
+                      >
+                        <span className="episode-text" title={optionKey}>
+                          {optionKey}
+                        </span>
+                      </span>
+                    </div>
+                    <input
+                      type="checkbox"
+                      checked={!!characterData[optionKey]}
+                      onChange={() => handleCheckboxChangeOption(optionKey)}
+                      disabled={
+                        namedCharacters.length > 0 &&
+                        !namedCharacters.includes(characterName)
+                      }
+                    />
+                  </div>
+                ))}
+            </div>
+          )}
         </div>
-    );
+      );
+      
 }
 
 export default CharacterSubgroupCharacterDropdown;

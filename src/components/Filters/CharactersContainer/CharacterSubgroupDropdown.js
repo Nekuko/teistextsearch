@@ -10,6 +10,7 @@ function CharacterSubgroupDropdown({
     dropdownStates,
     setDropdownStates,
     namedCharacters,
+    characterImages
 }) {
 
     const handleGroupClick = () => {
@@ -77,12 +78,25 @@ function CharacterSubgroupDropdown({
                 }
                 return options;
             }, {});
-
-            // Update characters with the modified character data and options
-            characters[characterName] = {
-                ...updatedCharacterOptions,
-                checked: newCheckedState, // Update the 'checked' property for the character
-            };
+        
+            // Check if namedCharacters exists and only update characters whose name is in the list
+            if (namedCharacters.length > 0) {
+                if (namedCharacters.includes(characterName)) {
+                    characters[characterName] = {
+                        ...updatedCharacterOptions,
+                        checked: newCheckedState, // Update the 'checked' property for the character
+                    };
+                } else {
+                    characters[characterName] = character;
+                }
+            } else {
+                characters[characterName] = {
+                    ...updatedCharacterOptions,
+                    checked: newCheckedState, // Update the 'checked' property for the character
+                };
+            }
+                
+        
             return characters;
         }, {});
 
@@ -137,45 +151,63 @@ function CharacterSubgroupDropdown({
 
     return (
         <div className="episode-list">
-            <div className="item-header">
-                <div className="volume-trigger-drop">
-                    <div onClick={handleGroupClick}>
-                        <span className={`season-title ${selectedGroup.checked ? '' : 'dimmed'}`}>{subgroupName}</span>
-                        <FontAwesomeIcon className="dropdown-icon-main" icon={selectedGroup.open ? faChevronUp : faChevronDown} />
-                    </div>
-                </div>
-                <input
-                    type="checkbox"
-                    checked={selectedGroup.checked}
-                    onChange={(event) => handleGroupCheck(selectedGroup)}
+          <div className="item-header">
+            <div className="volume-trigger-drop">
+              <div onClick={handleGroupClick}>
+                <span
+                  className={`season-title ${
+                    selectedGroup.checked ? '' : 'dimmed'
+                  }`}
+                >
+                  {subgroupName}
+                </span>
+                <FontAwesomeIcon
+                  className="dropdown-icon-main"
+                  icon={selectedGroup.open ? faChevronUp : faChevronDown}
                 />
+              </div>
             </div>
-
-            {selectedGroup.open && (
-
-                <div>
-                    <input
-                        type="text"
-                        value={filter}
-                        onChange={handleFilterChange}
-                        placeholder="Search..."
-                    />
-                    {/* Render filtered characters within the subgroup */}
-                    {filteredCharacters.map((characterName) => (
-                        <CharacterSubgroupCharacterDropdown
-                            key={characterName} // Don't forget to add a key for list items
-                            characterName={characterName}
-                            subgroupName={subgroupName}
-                            dropdownName={dropdownName}
-                            dropdownStates={dropdownStates}
-                            setDropdownStates={setDropdownStates}
-                            namedCharacters={namedCharacters}
-                        />
-                    ))}
-                </div>
-            )}
+            <input
+              type="checkbox"
+              checked={selectedGroup.checked}
+              onChange={(event) => handleGroupCheck(selectedGroup)}
+              disabled={
+                namedCharacters.length > 0 &&
+                Object.keys(selectedGroup.characters).every(
+                  (characterName) =>
+                    !namedCharacters.includes(characterName)
+                )
+              }
+            />
+          </div>
+      
+          {selectedGroup.open && (
+            <div>
+              <input
+                type="text"
+                value={filter}
+                onChange={handleFilterChange}
+                placeholder="Search..."
+              />
+              {/* Render filtered characters within the subgroup */}
+              {filteredCharacters.map((characterName) => (
+                <CharacterSubgroupCharacterDropdown
+                  key={characterName} // Don't forget to add a key for list items
+                  characterName={characterName}
+                  subgroupName={subgroupName}
+                  dropdownName={dropdownName}
+                  dropdownStates={dropdownStates}
+                  setDropdownStates={setDropdownStates}
+                  namedCharacters={namedCharacters}
+                  characterImages={characterImages}
+                />
+              ))}
+            </div>
+          )}
         </div>
-    );
+      );
+      
+      
 };
 
 export default CharacterSubgroupDropdown;
