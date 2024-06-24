@@ -63,7 +63,6 @@ function CharacterDropdown({
             }
 
             for (const groupName in updatedGroups) {
-                console.log(updatedGroups[groupName])
                 if (updatedGroups[groupName].open) {
                     updatedGroups[groupName].open = false;
                 }
