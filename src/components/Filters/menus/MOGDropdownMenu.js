@@ -59,19 +59,16 @@ function MOGDropdownMenu({ mogDropdownState, setMogDropdownState, openMOG, setOp
         // If 'Event Stories' is open and the clicked part is a key name of partsChecked['Event Stories']
         // then close all other parts except 'Event Stories' and the clicked part
         if (openParts['Event Stories'] && partsChecked['Event Stories'][part]) {
-          console.log("1")
           acc[key] = (key === 'Event Stories' || key === part);
         } else if (openParts['Apocrypha'] && partsChecked['Apocrypha'][part]) {
           acc[key] = (key === 'Apocrypha' || key === part);
         }
         // If the clicked part doesn't start with "Part", close all other parts
         else if (!part.startsWith("Part")) {
-          console.log("2")
           acc[key] = false;
         }
         // If the part starts with "Part", close other parts that also start with "Part"
         else if (part.startsWith("Part") && key.startsWith("Part")) {
-          console.log("3")
           acc[key] = false;
         } else {
           acc[key] = openParts[key];
