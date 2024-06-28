@@ -2137,6 +2137,8 @@ const apo_info = {
     }
 }
 
+const es_info = {}
+
 
 const generateCollapsiblesLN = (all_counts) => {
     const volumes = Object.keys(all_counts).filter(key => key !== 'total'); // Exclude the 'total' key
@@ -2281,6 +2283,10 @@ const generateCollapsiblesAPO = (all_counts) => {
     );
 };
 
+const generateCollapsiblesES = (all_counts) => {
+
+}
+
 
 
 function InfoPage() {
@@ -2294,6 +2300,7 @@ function InfoPage() {
                 {generateCollapsiblesWN(wn_info)}
                 <br />
                 <Collapsible trigger="Master of Garden">
+                    {/*generateCollapsiblesES(es_info)*/}
                     {generateCollapsiblesAPO(apo_info)}
                 </Collapsible>
                 {/* ... Other mediums ... */}
