@@ -211,4 +211,72 @@ export async function fetchAPOData(apoCheckedItems, versionData, setVersionData)
     return apoCheckedData;
 }
 
+export async function fetchESData(esCheckedItems, versionData, setVersionData) {
+    let esCheckedData = {};
+    let uniqueParts = [...new Set(esCheckedItems.map(item => item.split('_')[1]))];
+    const db = await openDB('firestore-cache-db', 1, {
+        upgrade(db) {
+            db.createObjectStore('firestore-cache');
+        },
+    });
+
+    const versionDocRef = doc(firestore, 'data', 'versions');
+    let versionDocSnap;
+    if (versionData) {
+        console.log("Version already stored locally (not indexedb).");
+        versionDocSnap = versionData;
+    } else {
+        versionDocSnap = await getDoc(versionDocRef);
+        setVersionData(versionDocSnap);
+        console.log("Version retrieved from firebase.");
+    }
+
+    for (let part of uniqueParts) {
+        let firestoreVersion = versionDocSnap.data().es[part];
+        console.log("Firestore Version", firestoreVersion);
+
+        let indexedDBVersion = await db.get('firestore-cache', `data-versions-es-${part}`);
+        console.log("IndexedDB Version", indexedDBVersion);
+
+        let data;
+        if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
+            console.log("Newer version found or no version in IndexedDB.");
+            const dataDocRef = doc(firestore, 'data', `es_${part}`);
+            let dataDocSnap = await getDoc(dataDocRef);
+            data = dataDocSnap.data();
+
+            // Store the data in IndexedDB for future use
+            await db.put('firestore-cache', data, `data-es-${part}`);
+            console.log("Data retrieved from firebase and saved to IndexedDB.");
+        } else if (firestoreVersion === indexedDBVersion) {
+            console.log("Same version found.");
+            // Fetch data from IndexedDB
+            data = await db.get('firestore-cache', `data-es-${part}`);
+            console.log("Data retrieved from IndexedDB.");
+        }
+
+        console.log(data)
+
+
+        for (let item of esCheckedItems) {
+            let [_, partChecked, episode] = item.split('_');
+            if (part === partChecked && data[episode]) {
+                if (!esCheckedData[part]) {
+                    esCheckedData[part] = {};
+                }
+                esCheckedData[part][episode] = data[episode];
+            }
+        }
+
+        // Store the version number in IndexedDB for future use
+        if (firestoreVersion !== indexedDBVersion) {
+            await db.put('firestore-cache', firestoreVersion, `data-versions-es-${part}`);
+            console.log("New version saved to indexedDB.");
+        }
+    }
+    console.log(esCheckedData);
+
+    return esCheckedData;
+}
+
 

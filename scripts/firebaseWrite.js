@@ -710,14 +710,14 @@ let data = {
                 },
                 {
                     "name": "Duet",
-                    "name_variant": "Beta Look-alike (Duet)",
+                    "name_variant": "Beta Look-alike",
                     "subtitle": "Ack... The difference in strength is too great...",
                     "line": 19,
                     "url": "https://drive.google.com/file/d/10qTb5W2QxUZiva77sRDl_SPZugQxlsfc/view?usp=drivesdk"
                 },
                 {
                     "name": "Pente",
-                    "name_variant": "Epsilon Look-alike (Pente)",
+                    "name_variant": "Epsilon Look-alike",
                     "subtitle": "Is there no way we can match its level...?",
                     "line": 20,
                     "url": "https://drive.google.com/file/d/1F-tGUg8DOYqoqPNeH3cBOjgu1bho-jZ8/view?usp=drivesdk"
@@ -738,7 +738,7 @@ let data = {
                 },
                 {
                     "name": "Olivier",
-                    "name_variant": "Alpha Look-alike (Olivier)",
+                    "name_variant": "Alpha Look-alike",
                     "subtitle": "...You sure about that?",
                     "line": 23,
                     "url": "https://drive.google.com/file/d/17Mkr6j2g5xi-jP8RK-cX6Uw05Lhoz0oW/view?usp=drivesdk"
@@ -794,7 +794,7 @@ let data = {
                 },
                 {
                     "name": "Olivier",
-                    "name_variant": "Alpha Look-alike (Olivier)",
+                    "name_variant": "Alpha Look-alike",
                     "subtitle": "Our numbers have increased...?",
                     "line": 31,
                     "url": "https://drive.google.com/file/d/1MQgvZPB9OAt3QeIGhhn4yjX1czasmgAN/view?usp=drivesdk"
@@ -836,7 +836,7 @@ let data = {
                 },
                 {
                     "name": "Olivier",
-                    "name_variant": "Alpha Look-alike (Olivier)",
+                    "name_variant": "Alpha Look-alike",
                     "subtitle": "Who are you...?",
                     "line": 37,
                     "url": "https://drive.google.com/file/d/1Qw5fUj7Aw6C0Xs4PXtGDWSXm7cU6Yy8f/view?usp=drivesdk"
@@ -864,7 +864,7 @@ let data = {
                 },
                 {
                     "name": "Olivier",
-                    "name_variant": "Alpha Look-alike (Olivier)",
+                    "name_variant": "Alpha Look-alike",
                     "subtitle": "This is bad...",
                     "line": 41,
                     "url": "https://drive.google.com/file/d/1fsizNuhCSJq1atskOgsOCsmHp3lsoOX_/view?usp=drivesdk"
@@ -878,7 +878,7 @@ let data = {
                 },
                 {
                     "name": "Duet",
-                    "name_variant": "Beta Look-alike (Duet)",
+                    "name_variant": "Beta Look-alike",
                     "subtitle": "Not happening!",
                     "line": 43,
                     "url": "https://drive.google.com/file/d/1nSidbAy7pfmkKZ6_8XT7e2BroIdUAywt/view?usp=drivesdk"
@@ -934,7 +934,7 @@ let data = {
                 },
                 {
                     "name": "Duet",
-                    "name_variant": "Beta Look-alike (Duet)",
+                    "name_variant": "Beta Look-alike",
                     "subtitle": "Eeek?!",
                     "line": 51,
                     "url": "https://drive.google.com/file/d/11oss6Vma2E59GtkoQ0vIr6qq1sSKqYjN/view?usp=drivesdk"
@@ -992,7 +992,7 @@ let data = {
                 },
                 {
                     "name": "Olivier",
-                    "name_variant": "Alpha Look-alike (Olivier)",
+                    "name_variant": "Alpha Look-alike",
                     "subtitle": "A few of us are down.",
                     "line": 5,
                     "url": "https://drive.google.com/file/d/1sk49IFJvhfdv30zIk6P_2p0h9lnDQ5t_/view?usp=drivesdk"
@@ -1321,7 +1321,7 @@ let data = {
                 },
                 {
                     "name": "Pente",
-                    "name_variant": "Epsilon Look-alike (Pente)",
+                    "name_variant": "Epsilon Look-alike",
                     "subtitle": "I don't know who you are, but now with our forces assembled, this is the perfect opportunity!",
                     "line": 52,
                     "url": "https://drive.google.com/file/d/1fsSGQl__FWKf3UqMX54iuKx6G6CuLAJF/view?usp=drivesdk"
@@ -1363,7 +1363,7 @@ let data = {
                 },
                 {
                     "name": "Olivier",
-                    "name_variant": "Alpha Look-alike (Olivier)",
+                    "name_variant": "Alpha Look-alike",
                     "subtitle": "No, Freya, we mustn't fall back.",
                     "line": 58,
                     "url": "https://drive.google.com/file/d/1NP0sCKKRg779FQVLalhESCWpWfp5Wj8a/view?usp=drivesdk"
@@ -1384,7 +1384,7 @@ let data = {
                 },
                 {
                     "name": "Olivier",
-                    "name_variant": "Alpha Look-alike (Olivier)",
+                    "name_variant": "Alpha Look-alike",
                     "subtitle": "Whether there's a chance or not doesn't really interest me. If we're defeated, then that's that.",
                     "line": 61,
                     "url": "https://drive.google.com/file/d/1-zpj5Fu9UdWSDzC9602htzfRnuG36_fI/view?usp=drivesdk"

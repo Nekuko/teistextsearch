@@ -3,6 +3,7 @@ import React from 'react';
 import './InfoPage.css'; // Import the CSS file
 import Collapsible from 'react-collapsible';
 import * as covers from '../../images/covers';
+import { ESMAP } from '../../esMap';
 
 const formatNumber = (num) => num.toLocaleString();
 
@@ -37,6 +38,11 @@ const apoCoverImages = {
     "1 | Millenium Past-e7": covers.APO117Cover,
     "1 | Millenium Past-e8-1": covers.APO1181Cover,
     "1 | Millenium Past-e8-2": covers.APO1182Cover,
+}
+
+const esCoverImages = {
+    "es-hr": covers.ESHRCover,
+    "es-rog": covers.ESROGCover
 }
 
 
@@ -1742,16 +1748,16 @@ const apo_info = {
         "Beta": 44,
         "Gamma": 41,
         "Zeta": 29,
-        "Beta (Everyone)": 1,
-        "Gamma (Everyone)": 1,
-        "Delta (Everyone)": 1,
-        "Epsilon (Everyone)": 1,
-        "Zeta (Everyone)": 1,
-        "Eta (Everyone)": 1,
-        "Duet (Beta Look-alike (Duet))": 3,
-        "Pente (Epsilon Look-alike (Pente))": 2,
+        "Beta (Everyone (Beta))": 1,
+        "Gamma (Everyone (Gamma))": 1,
+        "Delta (Everyone (Delta))": 1,
+        "Epsilon (Everyone (Epsilon))": 1,
+        "Zeta (Everyone (Zeta))": 1,
+        "Eta (Everyone (Eta))": 1,
+        "Duet (Beta Look-alike)": 3,
+        "Pente (Epsilon Look-alike)": 2,
         "Diablos (Massive Mound of Magic)": 14,
-        "Olivier (Alpha Look-alike (Olivier))": 7,
+        "Olivier (Alpha Look-alike)": 7,
         "Lili": 17,
         "Freya (??? (Freya))": 1,
         "Freya": 21,
@@ -1764,8 +1770,8 @@ const apo_info = {
         "Duet": 21,
         "Olivier": 45,
         "Alpha (None (Alpha))": 4,
-        "Beta (Beta & Epsilon)": 1,
-        "Epsilon (Beta & Epsilon)": 1,
+        "Beta (Beta & Epsilon (Beta))": 1,
+        "Epsilon (Beta & Epsilon (Epsilon))": 1,
         "Pente": 20,
         "Mysterious Man A": 1,
         "Mysterious Man B": 1,
@@ -1811,16 +1817,16 @@ const apo_info = {
                                 "Beta": 1,
                                 "Gamma": 1,
                                 "Zeta": 2,
-                                "Beta (Everyone)": 1,
-                                "Gamma (Everyone)": 1,
-                                "Delta (Everyone)": 1,
-                                "Epsilon (Everyone)": 1,
-                                "Zeta (Everyone)": 1,
-                                "Eta (Everyone)": 1,
-                                "Duet (Beta Look-alike (Duet))": 3,
-                                "Pente (Epsilon Look-alike (Pente))": 1,
+                                "Beta (Everyone (Beta))": 1,
+                                "Gamma (Everyone (Gamma))": 1,
+                                "Delta (Everyone (Delta))": 1,
+                                "Epsilon (Everyone (Epsilon))": 1,
+                                "Zeta (Everyone (Zeta))": 1,
+                                "Eta (Everyone (Eta))": 1,
+                                "Duet (Beta Look-alike)": 3,
+                                "Pente (Epsilon Look-alike)": 1,
                                 "Diablos (Massive Mound of Magic)": 8,
-                                "Olivier (Alpha Look-alike (Olivier))": 4,
+                                "Olivier (Alpha Look-alike)": 4,
                                 "Lili": 4,
                                 "Freya (??? (Freya))": 1,
                                 "Freya": 3,
@@ -1841,7 +1847,7 @@ const apo_info = {
                                 "Zeta": 3,
                                 "Eta": 4,
                                 "Alpha": 21,
-                                "Olivier (Alpha Look-alike (Olivier))": 3,
+                                "Olivier (Alpha Look-alike)": 3,
                                 "Beta": 2,
                                 "Delta": 6,
                                 "Epsilon": 3,
@@ -1850,7 +1856,7 @@ const apo_info = {
                                 "Freya": 7,
                                 "Yukime": 5,
                                 "Victoria (No. 559)": 5,
-                                "Pente (Epsilon Look-alike (Pente))": 1,
+                                "Pente (Epsilon Look-alike)": 1,
                                 "Lili": 3,
                                 "Duet": 1,
                                 "Olivier": 1
@@ -2137,7 +2143,266 @@ const apo_info = {
     }
 }
 
-const es_info = {}
+const es_info = {
+    "stories": 2,
+    "line_count": 748,
+    "word_count": 8321,
+    "char_count": 45234,
+    "characters": {
+        "Alexia Midgar (Alexia)": 176,
+        "Committee Member": 3,
+        "Sherry Barnett (Sherry)": 99,
+        "Committee Person": 1,
+        "Po Tato (Po)": 8,
+        "Skel Etal (Skel)": 6,
+        "Cid Kagenou (Cid)": 60,
+        "None": 53,
+        "Alexia Midgar (????? (Alexia Midgar))": 1,
+        "Rose Oriana (Rose)": 45,
+        "Girl Cmte. Member A": 2,
+        "Girl Cmte. Member B": 2,
+        "Boy Cmte. Member A": 1,
+        "Boy Cmte. Member B": 1,
+        "Committee Members": 1,
+        "Cake Shop Assistant": 6,
+        "Wounded Merchant": 6,
+        "Monster": 5,
+        "Boss Monster": 2,
+        "Sherry Barnett (Shelly and Alexia)": 1,
+        "Alexia Midgar (Shelly and Alexia)": 1,
+        "Gamma": 2,
+        "Rose Oriana (No.666)": 137,
+        "Lambda": 83,
+        "Alpha": 15,
+        "Cid Kagenou (??? (Stylish Bandit Slayer))": 1,
+        "Cid Kagenou (Shadow)": 1,
+        "Nu": 27,
+        "??? (Cid Kagenou)": 3
+    },
+    "parts": {
+        "hr": {
+            "line_count": 439,
+            "word_count": 4907,
+            "char_count": 26676,
+            "characters": {
+                "Alexia Midgar (Alexia)": 176,
+                "Committee Member": 3,
+                "Sherry Barnett (Sherry)": 99,
+                "Committee Person": 1,
+                "Po Tato (Po)": 8,
+                "Skel Etal (Skel)": 6,
+                "Cid Kagenou (Cid)": 60,
+                "None": 22,
+                "Alexia Midgar (????? (Alexia Midgar))": 1,
+                "Rose Oriana (Rose)": 34,
+                "Girl Cmte. Member A": 2,
+                "Girl Cmte. Member B": 2,
+                "Boy Cmte. Member A": 1,
+                "Boy Cmte. Member B": 1,
+                "Committee Members": 1,
+                "Cake Shop Assistant": 6,
+                "Wounded Merchant": 6,
+                "Monster": 5,
+                "Boss Monster": 2,
+                "Sherry Barnett (Shelly and Alexia)": 1,
+                "Alexia Midgar (Shelly and Alexia)": 1,
+                "Gamma": 2
+            },
+            "episodes": {
+                "e1": {
+                    "word_count": 645,
+                    "char_count": 3498,
+                    "line_count": 50,
+                    "characters": {
+                        "Alexia Midgar (Alexia)": 32,
+                        "Committee Member": 3,
+                        "Sherry Barnett (Sherry)": 14,
+                        "Committee Person": 1
+                    }
+                },
+                "e2": {
+                    "word_count": 818,
+                    "char_count": 4479,
+                    "line_count": 72,
+                    "characters": {
+                        "Po Tato (Po)": 8,
+                        "Skel Etal (Skel)": 6,
+                        "Cid Kagenou (Cid)": 33,
+                        "Alexia Midgar (Alexia)": 21,
+                        "None": 4
+                    }
+                },
+                "e3": {
+                    "word_count": 897,
+                    "char_count": 4915,
+                    "line_count": 76,
+                    "characters": {
+                        "Cid Kagenou (Cid)": 17,
+                        "Alexia Midgar (????? (Alexia Midgar))": 1,
+                        "Alexia Midgar (Alexia)": 22,
+                        "Rose Oriana (Rose)": 6,
+                        "Sherry Barnett (Sherry)": 22,
+                        "None": 2,
+                        "Girl Cmte. Member A": 2,
+                        "Girl Cmte. Member B": 2,
+                        "Boy Cmte. Member A": 1,
+                        "Boy Cmte. Member B": 1
+                    }
+                },
+                "e4": {
+                    "word_count": 640,
+                    "char_count": 3463,
+                    "line_count": 53,
+                    "characters": {
+                        "Sherry Barnett (Sherry)": 10,
+                        "Alexia Midgar (Alexia)": 22,
+                        "Rose Oriana (Rose)": 20,
+                        "Committee Members": 1
+                    }
+                },
+                "e5": {
+                    "word_count": 613,
+                    "char_count": 3349,
+                    "line_count": 55,
+                    "characters": {
+                        "Sherry Barnett (Sherry)": 19,
+                        "Alexia Midgar (Alexia)": 24,
+                        "Cake Shop Assistant": 6,
+                        "None": 4,
+                        "Rose Oriana (Rose)": 1,
+                        "Wounded Merchant": 1
+                    }
+                },
+                "e6": {
+                    "word_count": 618,
+                    "char_count": 3421,
+                    "line_count": 68,
+                    "characters": {
+                        "Wounded Merchant": 5,
+                        "Alexia Midgar (Alexia)": 34,
+                        "Sherry Barnett (Sherry)": 19,
+                        "None": 4,
+                        "Monster": 5,
+                        "Boss Monster": 1
+                    }
+                },
+                "e7": {
+                    "word_count": 676,
+                    "char_count": 3551,
+                    "line_count": 65,
+                    "characters": {
+                        "Boss Monster": 1,
+                        "Alexia Midgar (Alexia)": 21,
+                        "Sherry Barnett (Sherry)": 15,
+                        "Rose Oriana (Rose)": 7,
+                        "None": 8,
+                        "Cid Kagenou (Cid)": 10,
+                        "Sherry Barnett (Shelly and Alexia)": 1,
+                        "Alexia Midgar (Shelly and Alexia)": 1,
+                        "Gamma": 2
+                    }
+                }
+            }
+        },
+        "rog": {
+            "line_count": 309,
+            "word_count": 3414,
+            "char_count": 18558,
+            "characters": {
+                "None": 31,
+                "Rose Oriana (No.666)": 137,
+                "Lambda": 83,
+                "Rose Oriana (Rose)": 11,
+                "Alpha": 15,
+                "Cid Kagenou (??? (Stylish Bandit Slayer))": 1,
+                "Cid Kagenou (Shadow)": 1,
+                "Nu": 27,
+                "??? (Cid Kagenou)": 3
+            },
+            "episodes": {
+                "e1": {
+                    "word_count": 452,
+                    "char_count": 2444,
+                    "line_count": 45,
+                    "characters": {
+                        "None": 5,
+                        "Rose Oriana (No.666)": 16,
+                        "Lambda": 7,
+                        "Rose Oriana (Rose)": 11,
+                        "Alpha": 6
+                    }
+                },
+                "e2": {
+                    "word_count": 442,
+                    "char_count": 2439,
+                    "line_count": 39,
+                    "characters": {
+                        "None": 4,
+                        "Rose Oriana (No.666)": 20,
+                        "Lambda": 14,
+                        "Cid Kagenou (??? (Stylish Bandit Slayer))": 1
+                    }
+                },
+                "e3": {
+                    "word_count": 567,
+                    "char_count": 3042,
+                    "line_count": 43,
+                    "characters": {
+                        "None": 5,
+                        "Rose Oriana (No.666)": 29,
+                        "Cid Kagenou (Shadow)": 1,
+                        "Lambda": 8
+                    }
+                },
+                "e4": {
+                    "word_count": 465,
+                    "char_count": 2562,
+                    "line_count": 49,
+                    "characters": {
+                        "None": 8,
+                        "Rose Oriana (No.666)": 22,
+                        "Lambda": 12,
+                        "Nu": 7
+                    }
+                },
+                "e5": {
+                    "word_count": 586,
+                    "char_count": 3124,
+                    "line_count": 46,
+                    "characters": {
+                        "Alpha": 9,
+                        "Lambda": 9,
+                        "None": 1,
+                        "Rose Oriana (No.666)": 14,
+                        "Nu": 13
+                    }
+                },
+                "e6": {
+                    "word_count": 274,
+                    "char_count": 1461,
+                    "line_count": 24,
+                    "characters": {
+                        "None": 1,
+                        "Rose Oriana (No.666)": 10,
+                        "Lambda": 13
+                    }
+                },
+                "e7": {
+                    "word_count": 628,
+                    "char_count": 3486,
+                    "line_count": 63,
+                    "characters": {
+                        "Lambda": 20,
+                        "Rose Oriana (No.666)": 26,
+                        "Nu": 7,
+                        "None": 7,
+                        "??? (Cid Kagenou)": 3
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 const generateCollapsiblesLN = (all_counts) => {
@@ -2257,8 +2522,8 @@ const generateCollapsiblesAPO = (all_counts) => {
                                 <Collapsible key={episode} trigger={
                                     <>
                                         <div className="volume-trigger">
-                                            {apoCoverImages[`${chapter}-${episode}`] && <img className="cover-image-apo-small" src={apoCoverImages[`${chapter}-${episode}`]} alt={`${chapter}-${episode}`} />}
-                                            {`Episode: ${episode.replace("e", "")}`}
+                                            {esCoverImages[`${chapter}-${episode}`] && <img className="cover-image-apo-small" src={apoCoverImages[`${chapter}-${episode}`]} alt={`${chapter}-${episode}`} />}
+                                            {`Episode ${episode.replace("e", "")}`}
                                         </div>
                                     </>
                                 }>
@@ -2284,8 +2549,68 @@ const generateCollapsiblesAPO = (all_counts) => {
 };
 
 const generateCollapsiblesES = (all_counts) => {
-
-}
+    const parts = Object.keys(all_counts.parts); // Get all part keys
+    return (
+        <Collapsible trigger="Event Stories">
+            <p>Stories: {formatNumber(all_counts.stories)}</p>
+            <p>Paragraphs: {formatNumber(all_counts.line_count)}</p>
+            <p>Approximate Word Count: {formatNumber(all_counts.word_count)}</p>
+            <p>Character Count: {formatNumber(all_counts.char_count)}</p>
+            <Collapsible trigger="Characters">
+                {Object.keys(all_counts.characters).sort().map(character => (
+                    <div key={character}>
+                        <span>{character}: </span>
+                        <span>{all_counts.characters[character]}</span>
+                    </div>
+                ))}
+            </Collapsible>
+            {parts.map(part => (
+                <Collapsible key={part} trigger={
+                    <>
+                        <div className="volume-trigger">
+                            {esCoverImages[`es-${part}`] && <img className="cover-image-es" src={esCoverImages[`es-${part}`]} alt={`es-${part}`} />}
+                            {ESMAP[part]}
+                        </div>
+                    </>
+                }>
+                    <p>Episodes: {Object.keys(all_counts.parts[part].episodes).length}</p>
+                    <p>Paragraphs: {formatNumber(all_counts.parts[part].line_count)}</p>
+                    <p>Approximate Word Count: {formatNumber(all_counts.parts[part].word_count)}</p>
+                    <p>Character Count: {formatNumber(all_counts.parts[part].char_count)}</p>
+                    <Collapsible trigger="Characters">
+                        {Object.keys(all_counts.parts[part].characters).sort().map(character => (
+                            <div key={character}>
+                                <span>{character}: </span>
+                                <span>{all_counts.parts[part].characters[character]}</span>
+                            </div>
+                        ))}
+                    </Collapsible>
+                    {Object.keys(all_counts.parts[part].episodes).sort().map(episode => (
+                        <Collapsible key={episode} trigger={
+                            <>
+                                <div className="volume-trigger">
+                                    {`Episode ${episode.replace("e", "")}`}
+                                </div>
+                            </>
+                        }>
+                            <p>Paragraphs: {formatNumber(all_counts.parts[part].episodes[episode].line_count)}</p>
+                            <p>Approximate Word Count: {formatNumber(all_counts.parts[part].episodes[episode].word_count)}</p>
+                            <p>Character Count: {formatNumber(all_counts.parts[part].episodes[episode].char_count)}</p>
+                            <Collapsible trigger="Characters">
+                                {Object.keys(all_counts.parts[part].episodes[episode].characters).sort().map(character => (
+                                    <div key={character}>
+                                        <span>{character}: </span>
+                                        <span>{all_counts.parts[part].episodes[episode].characters[character]}</span>
+                                    </div>
+                                ))}
+                            </Collapsible>
+                        </Collapsible>
+                    ))}
+                </Collapsible>
+            ))}
+        </Collapsible>
+    );
+};
 
 
 
@@ -2300,7 +2625,8 @@ function InfoPage() {
                 {generateCollapsiblesWN(wn_info)}
                 <br />
                 <Collapsible trigger="Master of Garden">
-                    {/*generateCollapsiblesES(es_info)*/}
+                    {generateCollapsiblesES(es_info)}
+                    <br />
                     {generateCollapsiblesAPO(apo_info)}
                 </Collapsible>
                 {/* ... Other mediums ... */}

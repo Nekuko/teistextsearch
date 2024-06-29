@@ -8,6 +8,7 @@ import { faCopy, faFileImage, faCircleInfo, faAnglesLeft, faAnglesRight, faAngle
 import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
 import ImagePreview from './ImagePreview/ImagePreview'; // Adjust the path as needed
 import InfoPreview from './InfoPreview/InfoPreview';
+import { ESMAP } from '../../../esMap';
 
 function ESResults({ anData, images, highlight, filterState, main }) {
   const [imageCache, setImageCache] = useState({});
@@ -59,7 +60,7 @@ function ESResults({ anData, images, highlight, filterState, main }) {
     setPreviewPosition({ top: rect.top, left: rect.left });
 
     // Set the text data directly as the preview text
-    setPreviewText(`Master of Garden<br />Event Stories<br />${seasonTitle}<br />${episodeTitle}<br />Line ${line}<br />${nameFinal}`);
+    setPreviewText(`Master of Garden<br />Event Stories<br />${ESMAP[seasonTitle]}<br />${episodeTitle}<br />Line ${line}<br />${nameFinal}`);
   }
 
   function handleMouseEnter(id, seasonKey, episodeKey, index) {
@@ -112,7 +113,7 @@ function ESResults({ anData, images, highlight, filterState, main }) {
               <>
                 <div className="season-trigger">
                   {main && coverImages[seasonKey] && <img className="cover-image-es" src={coverImages[seasonKey]} alt={seasonTitle} />}
-                  {`${seasonTitle} (Total: ${seasonCount})`}
+                  {`${ESMAP[seasonTitle]} (Total: ${seasonCount})`}
                 </div>
               </>
             }>
