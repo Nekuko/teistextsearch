@@ -1,7 +1,7 @@
 export const ESMAP = {
     "hr": "Holiday Rhapsody",
-    "ftgi!": "Fantastic! The Great Ize-athelon!",
-    "nvacs!": "Natural vs. Artificial: Chocolate Showdown!",
+    "ftgi": "Fantastic! The Great Ize-athelon!",
+    "nvacs": "Natural vs. Artificial: Chocolate Showdown!",
     "rog": "Rose of Garden",
     "hd": "HIGHEST DREAM",
     "clbg": "Clever & Lucky Bunny Girls!",

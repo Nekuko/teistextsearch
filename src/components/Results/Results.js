@@ -129,7 +129,7 @@ function Results({ results, images, filterState, animeDropdownState, lnDropdownS
               )}
               {((anCharacter || esCharacter || sscCharacter || apoCharacter) && (
                 <>
-                  <CharacterResults anData={results.anime} sscData={results.ssc} esData={results.es} apoData={results.apo} images={images} highlight={highlight} filterState={filterState} mogDropdownState={mogDropdownState} />
+                  <CharacterResults animeDropdownState={animeDropdownState} anData={results.anime} sscData={results.ssc} esData={results.es} apoData={results.apo} images={images} highlight={highlight} filterState={filterState} mogDropdownState={mogDropdownState} />
                   <br />
                 </>
               ))}
