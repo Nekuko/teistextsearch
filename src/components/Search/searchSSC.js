@@ -82,7 +82,7 @@ export function searchSSC(keys, text, keywords, nameMap, characters = [], caseSe
         if (characters.length > 0) {
           for (let character of characters) {
             let characterToCheck = nameMap[character] ? nameMap[character].map(name => name) : [character];
-            let characterSentences = filteredSentences.filter(sentence => characterToCheck.some(name => sentence.name_variant.includes(name)));
+            let characterSentences = filteredSentences.filter(sentence => characterToCheck.some(name => sentence.name_variant === name));
       
             if (characterSentences.length > 0) {
               if (!sscResults[character]) {

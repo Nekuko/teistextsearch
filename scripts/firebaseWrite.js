@@ -10,3189 +10,2685 @@ admin.initializeApp({
 let db = admin.firestore();
 
 let data = {
-    "nvacs": {
+    "clbg": {
         "e1": [
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Beta's Notes",
+                "name": "Margrave",
+                "name_variant": "Margrave",
+                "subtitle": "...That's when I said, \"I'll take care of this. You go on ahead!\"",
                 "line": 1,
-                "url": "https://drive.google.com/file/d/1tANLDUvQjwFA-fXbSvX0_cOi7GUCg5rB/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1X4qvz17134IHR7vvncE6qXLkGNCKTA8o/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
-                "name_variant": "None (Beta)",
-                "subtitle": "The Valentine season is just around the corner, and the capital of Midgar has recently become tinted in the color of love.",
+                "name_variant": "Beta",
+                "subtitle": "My! What a lovely tale!",
                 "line": 2,
-                "url": "https://drive.google.com/file/d/1RMCCQAQIZ-d9XEiw1Q_XNATjimcF5vLw/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Col-KfxoQE-uUzujxpMk1NNSk9QEMbKo/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
-                "name_variant": "None (Beta)",
-                "subtitle": "This event, that many say has been popularized by Mitsugoshi, has taken hold faster than expected because of it's link with love.",
+                "name_variant": "Beta",
+                "subtitle": "...Oh dear, your glass is empty. What would you like to drink next, Lord Margrave?",
                 "line": 3,
-                "url": "https://drive.google.com/file/d/1r885S4KaopjC9t6gF_-ulD_bsVTBhADi/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1xY0u8hGOIbM36nyeBCbLUdOWBtyPbA25/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "None (Beta)",
-                "subtitle": "No matter the era, love has always driven people to do crazy things. And of course, I have also made chocolate to give to Master Shadow...",
+                "name": "Margrave",
+                "name_variant": "Margrave",
+                "subtitle": "Many thanks. Ah, but this is quite surreal having drinks with the best-selling author Natsume Kafka. I'm deeply humbled.",
                 "line": 4,
-                "url": "https://drive.google.com/file/d/1w5OWgAXRlxxgiBq85mQYCul3vIkPG9gV/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1NUQwQ4Xj6wjQNC4cW_lqzVVm_trUpx-a/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "A gift, my gift... When, where and how shall I give it to him...",
+                "subtitle": "Oh, please. Your stories are all so fascinating, Lord Margrave. They give me inspiration for my novels!",
                 "line": 5,
-                "url": "https://drive.google.com/file/d/1rM7ZN5aCK6LeSyJ6l3xFjJvVRxGMptmz/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1LMclk4MUp3LbFE47vxORhI4OyOyVqkkN/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "At the end of the day at Shadow Garden? No, too normal and no impact at all.",
+                "name": "Margrave",
+                "name_variant": "Margrave",
+                "subtitle": "Oh? How flattering. Well then, for my next story... Yes, why don't I tell you about the recent rise in low-class aristocrats?",
                 "line": 6,
-                "url": "https://drive.google.com/file/d/1lBAT4YwNuqU96EBpzA_Mxo9Z_Z8wQlqf/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1qUU5NIe-uHGpnZxR2vIR5dCQS_otyPjX/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "If I'm going to give him chocolate, then maybe I should do it like this...",
+                "subtitle": "I've heard about that. Apparently, once-insignificant aristocrats have suddenly increased their assets and risen to the ranks of the voter class.",
                 "line": 7,
-                "url": "https://drive.google.com/file/d/1oAZE9vAS5WKhJRz20p9HkLHjbVMyi-gN/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ZkCM_vwfVnV9AVJWV1AegWpofHxaLyOT/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Crap, I'm late!",
+                "name": "Margrave",
+                "name_variant": "Margrave",
+                "subtitle": "Very impressive, Lady Natsume. You have your ear to the ground. It seems they all made a fortune through a certain casino.",
                 "line": 8,
-                "url": "https://drive.google.com/file/d/1DtqTRx0pdHK8bycHKNV8StEqByG3xtRE/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1gikkP1mMMvYlzq4CkCDr1d6_36f5YGNW/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Hey, there's something in my locker... A heart-shaped box and a letter?",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(It wouldn't hurt to dig deeper into this intel about a casino in the capital.)",
                 "line": 9,
-                "url": "https://drive.google.com/file/d/1N70x7eJsC2AF07BAFEy02Nrcf9LhPEmP/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1JsNwGdQY9T2NekFQqd2ai9XaAq3zb7kX/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "None (Cid Kagenou)",
-                "subtitle": "Dear Master Shadow, thank you for always being so kind to me.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Sounds like quite the lucky break. But how does one amass such a fortune to become a voter?",
                 "line": 10,
-                "url": "https://drive.google.com/file/d/1lz_FgWLyCzcwckdpejd_7_opm59i7uOn/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1e3-R-4yArhgpRawDleuxeeZoajpkjaCC/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "None (Cid Kagenou)",
-                "subtitle": "I appreciate what you do every day, and how you put so much love into everything... My eyes are always upon you. From your gorgeous silver-haired, blue-eyed, with-a-mole-under-her-eye, elf.",
+                "name": "Margrave",
+                "name_variant": "Margrave",
+                "subtitle": "I've only been there once myself. You see, the casino is notorious for its incredibly high rates. It costs no small sum to play at their tables.",
                 "line": 11,
-                "url": "https://drive.google.com/file/d/1rEepactm1h6SpilwcN6EwTrwb52OssFJ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1cPCCTxoJl5ayEDy32bI9AcjOdHXpL4zO/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Gorgeous silver-haired, blue-eyed, with-a-mole-under-her-eye, elf... That can only be Beta!",
+                "name": "Margrave",
+                "name_variant": "Margrave",
+                "subtitle": "I don't know why they operate that way, but one can assume there are those willing to take high risks for high returns.",
                 "line": 12,
-                "url": "https://drive.google.com/file/d/1kq35K6xQaSXysg1NWvtFJaeWfuEGQ1nH/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/16-1bk-Q4xoF46wiyy1gMXGGOfp0D_1ht/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "What a graceful and dreamy woman, she doesn't say things directly, instead writing such a beautiful letter...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(It could just be some high-end, exclusive casino, but the Cult is often behind high-value transactions. It sounds like something we ought to investigate...)",
                 "line": 13,
-                "url": "https://drive.google.com/file/d/1_CDbgSuNkgruQuwYAhZZ3-eOpUmYUVpy/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/18GU6EAKDotkLIGhYybDthafigxO5Yabf/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Beta! For me, there is only you!!!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(Admission into the casino seems more challenging than anticipated, but that's no excuse not to look into somewhere that could provide us with a lead to the Cult.)",
                 "line": 14,
-                "url": "https://drive.google.com/file/d/1siwLGhbf5f3_StWAZRJ6XcAlgbIEOBwk/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1pF5Xwi_XwEq_v6nDAvZgssz6XEzJ11zs/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Oh my, if it went like that...hehehe.",
+                "subtitle": "That sounds like a highly suspicious...I mean, deeply fascinating story that stokes my creativity. Would you take me there sometime?",
                 "line": 15,
-                "url": "https://drive.google.com/file/d/1B86EO94u0peD7KTnlNeJSsz9L5tFtVEz/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1I0o-Kxr5_01aiLYOPqAv3gerZVRu9gPS/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Oh! If it's going to be at school, then there is another way it could go...",
+                "name": "Margrave",
+                "name_variant": "Margrave",
+                "subtitle": "Well, while I'd be happy to lend you my assistance, the truth is even I cannot gain access so easily.",
                 "line": 16,
-                "url": "https://drive.google.com/file/d/1IU563ErGiLZZHTQrZvP2zxSzhX5YLwjV/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ApCiacUCeVEO31mbTkvs6s6-Hf--S7JR/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "\"I have something to tell you. Here, after school...\"",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "What? Even someone such as yourself, Lord Margrave?",
                 "line": 17,
-                "url": "https://drive.google.com/file/d/1QTmG-RV65h7Vgj-BeuzB_EBLYm_3bvqe/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/18krv8U13EIujGj9AVApDL4pRB-C3fnpx/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "I wonder who this is from, and for what?",
+                "name": "Margrave",
+                "name_variant": "Margrave",
+                "subtitle": "Indeed... They have quite the screening process. The one time I visited, I was really only allowed entry as I was accompanying a duke.",
                 "line": 18,
-                "url": "https://drive.google.com/file/d/19RRmXbcbvKWZ4n6SLF1ZvyUZrJiV93-G/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1mpVv725tMX-UIIqrGvqefQvw2KqqEK3J/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Master Shadow...it was me. Beta.",
+                "name": "Margrave",
+                "name_variant": "Margrave",
+                "subtitle": "Ideally, it would be best to receive an introduction from, or accompany someone close to, the royal family...",
                 "line": 19,
-                "url": "https://drive.google.com/file/d/1yPrlyWzDzpRyv_xrIdGr0xEW2sRQ6RvH/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1c7bl5bk2Vc7NWUfga0qST7Fbn7LdIqaN/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "What's up, Beta? Do you need someth\u2014 Oh! This is...!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "I see... Someone close to the royal family...",
                 "line": 20,
-                "url": "https://drive.google.com/file/d/1OcZTKeuV1h1LAbu3adqC7glS5HeRKirt/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1iiV2w9UxHRrLqJSW8vM9oS2iqmKTpDZE/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Yes, chocolate. Hand-made chocolate for my lord, Master Shadow...",
+                "subtitle": "(Well...I know a certain someone who's not only \"close to\" but \"part of\" the royal family...)",
                 "line": 21,
-                "url": "https://drive.google.com/file/d/1aTlk9P0nzkjngA4wpbkpL878YpntlO56/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Po_Qh3lOXe5KxuN6x9E2GOvV6jaGfXvt/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "So beautiful...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(...But I'd prefer not to disclose my movements to Princess Alexia. It would only arouse her suspicions if I asked her to conceal my reasons.)",
                 "line": 22,
-                "url": "https://drive.google.com/file/d/1IHexntW6P9hTLQGoRGOHWQLj0omJM36Q/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/197Cn_1JZ83HEIBC_QN4Wubh5UL_eVnBc/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Thank you. I was able to make it look this beautiful\u2014",
+                "subtitle": "(Besides...just the thought of asking that woman for a favor...!)",
                 "line": 23,
-                "url": "https://drive.google.com/file/d/16UNMeR7Sh6RrRZXqwIEbvk7ixwA4UDNT/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/15c8sOIkxUvzWfV0kl0w3mbW0MIKInuQG/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "No, Beta, I'm saying you're beautiful.",
+                "name": "Margrave",
+                "name_variant": "Margrave",
+                "subtitle": "...In any case, how about the two of us visit a more affordable casino together\u2014",
                 "line": 24,
-                "url": "https://drive.google.com/file/d/1YLgEQVJ9pCj5RwYfddS3mWMmbQlYcXvO/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1DR-nK8I1eFqtYXpxZ5y68hUrGVMI4fPS/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Ulp...!",
+                "subtitle": "Absolutely not!",
                 "line": 25,
-                "url": "https://drive.google.com/file/d/18JLlwfab7t9mHeXTVtNN_2SUcTRpbcBW/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/111G3khyduVV1hSMacx5m3hk3hREGQmgJ/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Classes over, the school is bathed in the glow of sunset. There, I confess my love while giving him chocolate!",
+                "name": "Margrave",
+                "name_variant": "Margrave",
+                "subtitle": "Huh?",
                 "line": 26,
-                "url": "https://drive.google.com/file/d/1xteAuHalH1OtDKGG8N-qLQzX15wjdM6D/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1F7uhd2Yfm0MWKm9U5Pp-qsPQOEuSsV5r/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Our shadows grow long, and then become one...! Oh...!",
+                "subtitle": "What? Oh, I wasn't referring to you, Lord Margrave. My mind wandered for a moment... Ahahah!",
                 "line": 27,
-                "url": "https://drive.google.com/file/d/1FrItF_fCKHsqIcZYUNhXLjRWu6UCIEwQ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Qby3YpsD7azCtl4r3ovfAymOqw05WTro/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Oh my oh my, the fantasy started with chocolate but ended with a kiss...",
+                "name": "Margrave",
+                "name_variant": "Margrave",
+                "subtitle": "Y-You surprised me there! Ha-hahaha...",
                 "line": 28,
-                "url": "https://drive.google.com/file/d/14pZ7kbZ2D-9pzZQzL3unilJlWJIy_yNz/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1y2n2pWcAxzIw25IR-Is9BKKTC7KKorsm/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "B-But, if I'm going to do this I could go further...and use a way that gets us straight to the final stage...",
+                "subtitle": "(The casino is the most suspicious intel from today. It seems more challenging than anticipated, but I can't ignore somewhere that could provide us with a lead to the Cult.)",
                 "line": 29,
-                "url": "https://drive.google.com/file/d/1sj4QS10Z_aomdvWnXozFnHB9nk2Ss5Z-/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1myRU6M3DuzTpmn7yhFI7KauEI7lsPv0h/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Even though today is Valentine's Day, I didn't see Beta at all.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(Since a formal introduction or accompanying someone from the royal family isn't really an option, I'd best think of another way. Let's see...)",
                 "line": 30,
-                "url": "https://drive.google.com/file/d/1CN6oDT29J3KTS72tN1uA6w8W_lYOjLTy/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1iD1wmxBOdmESsr-O2ygHOs67p2ydlt6Q/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "I was looking forward to getting some chocolate from her...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "...Hm? This advert is for the very same casino...",
                 "line": 31,
-                "url": "https://drive.google.com/file/d/1KQNcLoet28oEv0lEfy0W4rx1YeJt3kEX/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1f2E8dW9T5QqWY0B-AzO7gZeG3cGLLGTz/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "At a time like this, all you can do is sleep and forget about...it? Huh? What's this bulge in my bed...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "...Th-That's it!",
                 "line": 32,
-                "url": "https://drive.google.com/file/d/1EgYrlNSAJbYFj1erlyythBDXqA6TVi4W/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1R0jz0wiKV7H1_GtsHNQgHNLWAbP3QAfX/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Is there someone in my bed?!",
+                "name": "",
+                "name_variant": "",
+                "subtitle": "A few days later...",
                 "line": 33,
-                "url": "https://drive.google.com/file/d/15JsjMj0ybBKoYVnEi8cSj0qmNXWj2dzf/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1iXE7l9xMWyFd08xGIIFZRk9jjYl5Vc-9/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Ack! B-Beta, you're naked apart from that ribbon wrapped around you, and your delicate white skin is covered in chocolate!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Welcome to our casino! Have a welcome drink!",
                 "line": 34,
-                "url": "https://drive.google.com/file/d/1yfOGUR7c84pucK-rr4IfredoZzmQOuOk/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/162CeoUIdNmGHx2aG6rdWJE9x65H6IF0c/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Master Shadow, happy Valentine's Day. I was waiting for you.",
+                "subtitle": "On your left are the card tables! And on your right are the roulette tables!",
                 "line": 35,
-                "url": "https://drive.google.com/file/d/16GutqQLfFtZMh6JW35ygLEDDGilkN8jg/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1i2Y3UhaDT4UyiXvvyfDByohBAYsMeRl7/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "The chocolate gift is...me. Please e-a-t me!",
+                "subtitle": "Please feel free to join in or spectate! Just follow the rules and have fun at the tables! Enjoy!",
                 "line": 36,
-                "url": "https://drive.google.com/file/d/1mkoOlA8lBTqirvpiRatg1mT0EHY3sQdb/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1VFJx0Mn0n69E-tVtLUO7xbBCGb1aVbzx/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "N-No, I don't think that will go as expected... Also, Master Shadow's bed will get dirty from the chocolate...",
+                "subtitle": "...Whew.",
                 "line": 37,
-                "url": "https://drive.google.com/file/d/1NP7UUjWnSDQzns_g5CVPvk5cYW8fWo7T/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1rbOKqlh0c9bw2Gx3-CA1P3K3jpby3BvD/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "How I give my gift is important, but I also need to think about what kind of chocolate to give him.",
+                "subtitle": "(I lucked out coming across that poster advert recruiting staff!)",
                 "line": 38,
-                "url": "https://drive.google.com/file/d/1o0QaDh8ZxEOPOUAZI2cafkGrBH-vz921/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1oJ-9nz34WhED1kZSHq_rG7Mvyfki4j7A/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "If I were to say who would give the best chocolate in Shadow Garden...then it has to be Epsilon.",
+                "subtitle": "(Being the high-class casino it is, the required skills were set high, but...)",
                 "line": 39,
-                "url": "https://drive.google.com/file/d/1DLXFIeZeIrv8zgB4FqBVugoFasET57St/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1jO9mDmy67NAo7L0PnX4Ec447PiGt0rEH/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "When it comes to \"Faithful\" Epsilon, there is no doubt that she will give Master Shadow elaborate chocolate...",
+                "subtitle": "(I managed to falsify my documents with Gamma's help. The interview itself was a cakewalk, thanks to that and my silver tongue!)",
                 "line": 40,
-                "url": "https://drive.google.com/file/d/11qW8Q5PeN6N6XvN1iyU0JUHYeZkgp9HP/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1hspC2075bsJzXkJxkqYR_XujETZfHvrG/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "I need to make the ultimate chocolate, one that surpasses Epsilon. If I don't, I won't be able to make the biggest impact on Master Shadow!",
+                "subtitle": "(That said, there was a lot to pick up beforehand, and it wasn't easy learning all the casino etiquette and rules of the games...but, thanks to that, I can move about with ease now.)",
                 "line": 41,
-                "url": "https://drive.google.com/file/d/11xrdVbmRdKTIXJHHBoAzW56_7OQ1gUv8/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1KVEYF-cJ0CieHVDS0AWXnkhQ3TJh4lSm/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Meanwhile, at that time\u2014",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(Anyway, time to get to work! I don't want to draw any unnecessary suspicion. I'll blend into my environment while getting my hands on valuable intel!)",
                 "line": 42,
-                "url": "https://drive.google.com/file/d/1jEUXYLNfB8wbzhlz5-wr3fLy5Pgx-5sq/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1SimaByE3lkOQ0RIzZAr3YRLzxQJ-MSU6/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "My main rival on Valentine's Day will probably be Beta...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Let me take your empty glass. What would you like to drink next?",
                 "line": 43,
-                "url": "https://drive.google.com/file/d/1XiJvHWiBP_kcQDLpVtIXGIrBNvKhyCfa/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1jbgTOWShNaHDx6x6UirjI_X2JEU_S64n/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "When it comes to cooking, I am unbeatable, but Beta's love for Master Shadow is really something else.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Here's how this game works...",
                 "line": 44,
-                "url": "https://drive.google.com/file/d/1s_y4Hy9Uh9LCHrn6dpoOLOpDx6mpG-j1/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1BnixpcMncKOySTqmJvcQUyBdy4ViuiSw/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I can't just hand over delicious chocolates, I need some flair. Bend my knees and lean forward a bit like this, with a 45 degree tilt to the left.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Please exchange your chips over there! See you again soon!",
                 "line": 45,
-                "url": "https://drive.google.com/file/d/1jWU5mSbUjPvdsNN11xV2RXqeVGIUQHHT/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1awErlus9PsmEcvIdVo92uxJYWHU_IlaH/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I have to pull back and bend my arms, emphasize my chest and give him my chocolate while looking up at him.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "...Whew. I might've taken my cover a little too seriously.",
                 "line": 46,
-                "url": "https://drive.google.com/file/d/1_I-2M7ObqJHt_FCjWbkD9LrZe7TGQ37a/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1NPclESxdCIKyVv0I-4KuRuqZ12n8Azly/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Beta doesn't realize that her weapons are weapons! She is strong but ignorant and proud!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "I have a bad habit of getting wrapped up in whatever I'm doing. I ought to ease up\u2014",
                 "line": 47,
-                "url": "https://drive.google.com/file/d/1rJUoAa7buDhQiVU04MTRVd9zAeUk4Ewp/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1pdHpEI9nmi3PmOhezM1ufHr25YFGxzf_/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "However, I am neither ignorant nor proud. I make the maximum use of my weapons...",
+                "name": "Customer",
+                "name_variant": "??? (Customer)",
+                "subtitle": "N-No way!",
                 "line": 48,
-                "url": "https://drive.google.com/file/d/1CXDtteIUQfLTNfgJNlR7JnwOJX1eZ3Kp/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1i-YPpdvGjGq2-d8UQl8jc0Ggpqflb6WP/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "A pose to compliment my superior chocolate! My pose alone will make my chocolate the best!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Huh?! What is going on?",
                 "line": 49,
-                "url": "https://drive.google.com/file/d/16-z6_5CxfbYUFPAxZ7QeDU9LDAEXYckd/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1iCll4KDo1LqioCFp9ASe7QJIfYPVWukY/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "You had better get yourself ready Beta! In the moment, artificial will triumph over natural!",
+                "name": "Customer",
+                "name_variant": "Customer",
+                "subtitle": "N-No way! Lemme do it again!",
                 "line": 50,
-                "url": "https://drive.google.com/file/d/1yZlJzkdMxgPU0dLRLUFfdT9qcYaKb4SH/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1pMs4jXsSO6W3d_r6sAaRSU9LlIka_a4i/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Also around that time\u2014",
+                "name": "Staff",
+                "name_variant": "Staff",
+                "subtitle": "Sir, you're inconveniencing the other customers...",
                 "line": 51,
-                "url": "https://drive.google.com/file/d/1nUEtWSH0L_zPJrrtUqSY1SeOJiYzRlw6/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1U2P-Io_zHTug155IPknC5yYnDLpJ89mm/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Hmm...the estimates come out to roughly this amount. But, I want to get them up by single\u2014no, double digits.",
+                "name": "Customer",
+                "name_variant": "Customer",
+                "subtitle": "Gimme back the money I gambled! I'll settle for just half! It's all I've got!",
                 "line": 52,
-                "url": "https://drive.google.com/file/d/1RWnjB2xuXonxVFUQaFD5HC5jajRtFjW7/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1iDQot8MPMdNe8y2LTwCGqNOj0iNFSpaz/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Valentine's Day is an ideal selling season. I need to think about Mitsugoshi's chocolate potential.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(Judging from the looks of it, he gambled big and lost all his money. He's making a scene now that he's broke.)",
                 "line": 53,
-                "url": "https://drive.google.com/file/d/1v4loMo4uCVaRXRK6yWviDgb-eLKaKNeV/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1kU-KcJX8L_xOWFZiA4epiAtmTkNBhkhQ/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "In recent years our Valentine's Day events have become fairly well known, so...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(Based on my research, each game is based on solid theories and rates of return.)",
                 "line": 54,
-                "url": "https://drive.google.com/file/d/1nYwX4_S6XEZrKmjAW-UPaocHa99j0BPR/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/14yQGExpN99J0JDUCm9uKnOIngbF-m36V/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "We should liven things up for this year's campaign! A collaboration with the popular writer Natsume! And!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(So long as you maintain strict self-discipline, you shouldn't lose too much money, but...)",
                 "line": 55,
-                "url": "https://drive.google.com/file/d/1xRhDrw8bKGr4NytgTOZVA-MylxvnFttB/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ttI2WT4h2nzTxdvdOls-TmpOpqmIQ8YS/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "We can really fire up our Valentine's Day with a collaboration with popular pianist Shiron!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(Well, I guess someone has to lose to make the rise in low-class aristocrats a reality.)",
                 "line": 56,
-                "url": "https://drive.google.com/file/d/1PB4CTUggZhb_t_-nM8VOExxNsAlf_Yks/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ZidJohMo1j0MN2OE-1MciZdV-6ywUeSL/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "This will surely increase Shadow Garden's assets! I need to ask them at once!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "All right, time to get back to work\u2014",
                 "line": 57,
-                "url": "https://drive.google.com/file/d/1Xvl5AhBnKFjSH_ncbpEwoMKsMlZWN6Ue/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1b34b9U1lXSAz1LiadfuqmbLUmB5DA8Sf/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Beta, otherwise known as Natsume, and Epsilon, otherwise known as Shiron! Here I come...!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Hold on! I-Isn't that?!",
                 "line": 58,
-                "url": "https://drive.google.com/file/d/1pDTz-7JRadW1-8EbEjEj0nTl1sZzrize/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1evs6deDgw4wvoCQ2cP0u2qhzbrGQ3gkK/view?usp=drivesdk"
             }
         ],
         "e2": [
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "So I have been selected for Mitsugoshi's Valentine campaign...",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Wow...",
                 "line": 1,
-                "url": "https://drive.google.com/file/d/1uLeW-5rzG3rq_tOgs4iTtjdystXbGNIn/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/148poDocRzIdlX4dSTWJNuA_AdBSd4YjI/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "It appears that Gamma really sees my value as a performer.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(Pr-Princess Alexia?! What's she doing here?!)",
                 "line": 2,
-                "url": "https://drive.google.com/file/d/1r_BKI6xrM7_IiG088BPDk6y-P8Wvh3s3/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1QvbNTAT6aTe0t00vgDJAxsKXdan0JeDj/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(This is where I can get more popular, and get ahead of Beta.)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(Well, she's the second princess of Midgar Kingdom. It's only natural for her to be at a casino that's reserved mainly for royalty.)",
                 "line": 3,
-                "url": "https://drive.google.com/file/d/18wg9BwpAjAbXa8HmKxqiyOTVX-7MYv0z/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1zJSX_0penS96rYrrbfDzg9VLe0Ov3D04/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(If I can achieve that, then it will be even more certain that Master Shadow will choose me over that all-natural girl!)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(More importantly, why is she also wearing a bunny costume? It makes no sense for a princess to be dressed in one. She must be up to something...)",
                 "line": 4,
-                "url": "https://drive.google.com/file/d/1quD9ExExvvCpGhS8SbY6HctJijYk3-uY/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1YrBODPBwTDrNLwEimfKIgxrx41_SLf2q/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Sorry I'm late. I was busy with a deadline...",
+                "subtitle": "(Judging by the dumb look on her face, I'd say it's her first time in a casino.)",
                 "line": 5,
-                "url": "https://drive.google.com/file/d/1fLneROR12bueRldmHma0QvYvTCRhsNys/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1M9pAoWqamSvf0uribt_Jpwt59cNu4vZt/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Oh, Beta?",
+                "name": "Customer",
+                "name_variant": "Customer",
+                "subtitle": "Hey! I'm a customer! You can't treat me like this! Lemme go, or else\u2014",
                 "line": 6,
-                "url": "https://drive.google.com/file/d/1G8DhxG2MRz-kppLWJNoe0tkHtlDTZACU/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Iufb6P7kWiliQLFZqew5VP7fHKGGblzh/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Epsilon? What are you doing here? I'm here for the meeting about the Valentine campaign...",
+                "name": "Customer",
+                "name_variant": "Customer",
+                "subtitle": "Agh?! Aahh...",
                 "line": 7,
-                "url": "https://drive.google.com/file/d/1C0XsslKEgi9mXpOabJ2MHRYvcQ4hCLeY/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/13JAVWdOpIXBcD_lkIXsByFkEKSdZlKpZ/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "I've been waiting for you both, Natsume, Shiron.",
+                "name": "Staff",
+                "name_variant": "Staff",
+                "subtitle": "The safety of our guests is our priority, so we have rendered him unconscious. We sincerely apologize for any discomfort this has caused you.",
                 "line": 8,
-                "url": "https://drive.google.com/file/d/1Ipr5FmUjEt7Lx9LpKLUP_LfZlAnY370b/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1wxJlPT6l6uTUSPH37GEFHXldNzVExzcH/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Hold on a moment, what's the meaning of this?! No one told me that Beta was coming.",
+                "name": "Staff",
+                "name_variant": "Staff",
+                "subtitle": "We hope you continue to enjoy your time at our tables.",
                 "line": 9,
-                "url": "https://drive.google.com/file/d/1rf6wlQN6QZ3B1SOuYOofbnFuNPn741Pt/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/18ojsT0Dsxig_IU1_M5ODQ0qASvjlH6fd/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Maybe a communication mix-up? Sorry about that.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(I see. Being the high-class casino that it is, the staff seem highly competent.)",
                 "line": 10,
-                "url": "https://drive.google.com/file/d/1QJZjoQUCoQ-RG3wHc6S1IIhYfrTJkqfC/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1iuU2WwkhiAm_ylWyJrRkdXF0_Sz-n6xK/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "(If had said that in advance I'm sure they wouldn't have agreed to come. This is another business technique...)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(Thanks to what just happened, I've managed to figure out how extensive the security is here.)",
                 "line": 11,
-                "url": "https://drive.google.com/file/d/1bZ-7_ijJf35_4xLixcInhjhVdks6Roci/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1SUN2NUMrnWcpr4GjR02vvNcuUPmyk_O6/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Oh, are you going to break your promise...? You wouldn't do such a thing, would you?",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(The problem is the princess being here. Since I'm currently undercover, the presence of someone who knows my identity is highly risky.)",
                 "line": 12,
-                "url": "https://drive.google.com/file/d/1WL0xKMFiRqGlZuNv7Xfx8wyv_AaPTj46/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1x1Zao9jbBY_LTsdeSV8o9kFli_4KvYWw/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Ulp, o-of course not.",
+                "subtitle": "(It'll be a real problem if she notices me here and refers to me as \"Natsume.\" I'll need to handle this as soon as possible.)",
                 "line": 13,
-                "url": "https://drive.google.com/file/d/1C8qo-0JOliQ6QmwUJ3LZdkDNd5KXRTjw/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1EaV3uOqGYeDkaFamQVCveRxS-j80mztN/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I can't be seen as untrustworthy...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(Besides, I assume she's also up to something based on the fact she's in a bunny costume. I'll stay two steps ahead and make my move first...!)",
                 "line": 14,
-                "url": "https://drive.google.com/file/d/1rWfFVmYHPjP8Ish4qwVGsac4_vlnG1O9/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1KnwWYMNvcztMzVCqIA5UNGe6QHwmieRM/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(I really can't believe she is here, I was totally unprepared for this.)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "I see. Of course, it's only natural some win big while others lose big.",
                 "line": 15,
-                "url": "https://drive.google.com/file/d/1vhBFIo13lyXna1D_tKHZLWHzKoszOPnS/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1stqrUwE7RI6nsKjBGzxg0TUBlIaxqKnP/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Wait, I can think of this as a chance to beat her directly! I am absolutely not going to lose!)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "It serves them right, but I shudder to think of such a financial fallout...",
                 "line": 16,
-                "url": "https://drive.google.com/file/d/1iwcbCnRCKxhnqcpx8jnK-OEjEPuSLmmV/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ykwaCJ57zWLoHjcauc0TDMEY5SBXGLUI/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Good. You two seem ready. Let's get started...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "That's the kind of world this is, Princess.",
                 "line": 17,
-                "url": "https://drive.google.com/file/d/15p_akA1hXl5mkdzJno_rRndzQuYjZsYM/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/16AusjPzffPpkJbRvsvBfAippi3Lhzls_/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Where did that measuring tape come from? Are you going to measure something?",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Huh?! Who're you calling \"Princess\"?! ...Wait, you're Natsu\u2014",
                 "line": 18,
-                "url": "https://drive.google.com/file/d/123gxT86SfGT_S-kUsLbEebX_K-5wHNXN/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1k5sqNmg8ARO-877ERpeiTEQSaqAr9XVf/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Yes, I want to make life-size chocolate statues of the two of you for the campaign...",
+                "name": "",
+                "name_variant": "",
+                "subtitle": "Just as Alexia is about to say her name, Beta puts her hand over her mouth.",
                 "line": 19,
-                "url": "https://drive.google.com/file/d/1ftEx9nLnZn1AY4E8b8xA9MFRmadnmwd6/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1y6yNPf_x6pvqAmPHyIlles9qqA63o4hT/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Ugh! Measurements? That would be be bad! They'll discover my \"adjustments\"...)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "*muffle, muffle* (Wh-What the heck?!)",
                 "line": 20,
-                "url": "https://drive.google.com/file/d/1F20aVYbsl9iqJnd_GMMzdk7Y4IFJErY5/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1X3Ott4g2PlhO1J53Hk0OXHGMZV2_urC4/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "The measurements will take just a moment. Please stay still.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Stop. Please, calm down.",
                 "line": 21,
-                "url": "https://drive.google.com/file/d/1y6ipFJWO1S5sYOu6Fn9e7CEizPf7uaSb/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1cToX7qoNr5wXnFude5By136iLXkQFl4v/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "I guess I have no choice... I'll cooperate, but please make it quick.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Pfft! Wh-What was that for?!",
                 "line": 22,
-                "url": "https://drive.google.com/file/d/1L5d8heknT3gOTF5NRWr-M19mnyyI0VY-/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/18JR219yiaC4dKKg7_V6-5OuFIylVzi_U/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Yes yes... Hmm, have your breasts got a bit bigger?",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "I just need you to promise you won't mention my name here. Understood?",
                 "line": 23,
-                "url": "https://drive.google.com/file/d/1Dm3-8VL3I0ILl2d5xSGHIWCUnO68yuwJ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1OvbT9RIPOai-lofh6Y33mnDe0LoJsZ_K/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Probably...my clothes have gotten tighter.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "What's up with all this? Hmph. Anyway, keeping quiet doesn't benefit me. I won't agree to some annoying promise.",
                 "line": 24,
-                "url": "https://drive.google.com/file/d/11wLxZTmDUzZNE6P_VufLrmUqIfN79AJt/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1eYk5JCSpNBwdAIUKE0yZKD16xXzMn5fh/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Grrrr! So envious!!!)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Oh? Judging by your surprise just now, I'm guessing you're keeping your identity as a \"princess\" hidden.",
                 "line": 25,
-                "url": "https://drive.google.com/file/d/1cWASUFe-GgU_vC9IpyyHQOTySSnRz7ap/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/13mN7IMGcqyU_hFbFwQ8no7oeXagj5eDg/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Okay, all done. Next, Shiron.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Ulp...",
                 "line": 26,
-                "url": "https://drive.google.com/file/d/1j0Z-xr4wd4YWEEyQF_ijI3CZMTOc5bo5/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1rESRMGCLnqa8bHHN0WjUiG6hXW2_nofv/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "N-Not necessary.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Something tells me I'm not the only one wanting to keep their name a secret.",
                 "line": 27,
-                "url": "https://drive.google.com/file/d/1BbNy16AZ_ssy6cOmMvfWjmDuvKkJtyiJ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ZDhctQ9SXG2D5zo2AMJBwy_4lV5u_i4l/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Oh, but...",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Ack. Tit for tat, huh? Fine, I'll keep quiet for your sake.",
                 "line": 28,
-                "url": "https://drive.google.com/file/d/1sbV0pm-7DcvpdHwYGYqOxpZ9X7pA-BJC/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1pTnF_n_b6idYknT1IcTFU2pfW1uYxf7K/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I can remember all of my measurements. I wrote down all the numbers you need here.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Why do you always have to act so entitled? Anyway... what're you even doing here?",
                 "line": 29,
-                "url": "https://drive.google.com/file/d/1UFna6z9hLO0fKP4yjyVCLwoyihGkIC3b/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1d6ccWMZHBVgx1arzWXh0dI9Om5mVsuTW/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(If I'm not touched right, and my pride collapses... I absolutely can't let such a tragedy happen!)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "I was invited to this casino today. I'm an official guest of honor.",
                 "line": 30,
-                "url": "https://drive.google.com/file/d/1__ki5l20W_I5rtHz6xuWWf0-kyR20qxz/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1pMT4xKCvCRyWvDaJskMdLfVwKuqYwvYq/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "But, you might have grown...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Is that so? I see. That's quite an unusual outfit for an official guest of honor.",
                 "line": 31,
-                "url": "https://drive.google.com/file/d/1PzfWLLNTP8HYBOIP9yfS0UfvweMztoZy/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1HbXObJJ2Nyk5I5Nd-7xag1hMI2w1pHOZ/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I measure myself every day. Here you go, these are today's numbers.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Well, um...aristocrat after aristocrat was coming up to greet me, so I ditched them to avoid the hassle.",
                 "line": 32,
-                "url": "https://drive.google.com/file/d/1vbOHGWDImIxps-EPsN11aavBVUlSHoJR/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/15bJIixaCMslbdJW04Xz13NAWQnMshXNp/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "E-Every day? Well...it's great that you've saved me some time.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "That's literally the point of being a guest of honor...",
                 "line": 33,
-                "url": "https://drive.google.com/file/d/1CGUrn8zBBE6uIDebxEBngrod8x2yg-9-/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1VFbKuOhW8o9EE587RWZovZQX1rYCkQ3j/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Whew, I escaped that pinch somehow...)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "A-Anyway, my father and sister said I was forbidden from visiting casinos, so it only made me even more curious to see what they're all about...",
                 "line": 34,
-                "url": "https://drive.google.com/file/d/1zpf5x9ejF_lRleIKTuGtU4B3SEGvIn17/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1mpOtKP8fE-N_tYxgUOsTvUN-hRcpjWWk/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Now that I have your measurements, let's begin our meeting about the event.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Are you telling me that's why you're disguised as one of the staff? You do know the staff can't play at the tables, right?",
                 "line": 35,
-                "url": "https://drive.google.com/file/d/1rN4O-VVZu9d6RQ9JneIGkH74qjQPHxgt/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/13IxgEpt55GYO5VKUH5bc1U6-QaMW_bzd/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "As this will be a collaboration between Mitsugoshi and two creatives, I would like you both to produce something.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "O-Of course I do! But I only realized that after I put on the costume, so get off my case!",
                 "line": 36,
-                "url": "https://drive.google.com/file/d/1n2R5nojbESG-iwyEIkXpI6xtgWCW0rCd/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1nXilseoc0vLmJv9TT8HKY40ZUJ60EpT2/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Produce... In my case, you mean like a theme song?",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Besides, you're also wearing a bunny costume. Explain yourself.",
                 "line": 37,
-                "url": "https://drive.google.com/file/d/1XvKolON4ADESorgIc0y-6srrec6p7hAO/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/10knKnuCrzbk5lI-sBHXQN_cLJfNeW6T_/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "You catch on quickly. Yes, exactly that.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "No, don't tell me. I've already figured it out.",
                 "line": 38,
-                "url": "https://drive.google.com/file/d/1MVu9843If9zvuThzGWBGWMj-MnHRsdBM/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1aHTwzvN0VCCs1pcD56Gm4KR0ztx_Ocln/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "As you are a songwriter, Shiron, I would like a special song for our event.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Huh?",
                 "line": 39,
-                "url": "https://drive.google.com/file/d/1i0wbsUr9KcMVH7u53hG4BH55bvnmvnss/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/10fOipwA4D7xWygqpKAidxjXpvPlJdey5/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "And Natsume, as our resident writer, I would like you to write an advertising slogan for this event.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Allow me to explain. You hit your limits as a writer, so you switched careers to being a bunny girl! Elementary, my dear, Natsume.",
                 "line": 40,
-                "url": "https://drive.google.com/file/d/1XwTGHGnz8_AyBUit6o8_Xf-aoVq9eaL2/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/11RzfBzRqx1wRE1x0LFKU6jA7hqk78STv/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Huh? An advertising slogan?!",
+                "subtitle": "W-R-O-N-G! My writing career is going just fine, thank you very much!",
                 "line": 41,
-                "url": "https://drive.google.com/file/d/1GQwZMEDmczc6ya1f4r7qwXZqy3WWo_mI/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1LLkXJ5BVy4Gx_lf3GlWietxT_SCELvXw/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(What should I do? I write novels\u2014I've never thought about advertising slogans.)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Well, that's a shame... That costume suits you.",
                 "line": 42,
-                "url": "https://drive.google.com/file/d/1VZo3XVfi93-K_9BjSUKKd2n2Hyw2_buW/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1kzkEMgjZoK5yWkJFxi1ueghFrMQUfVLv/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Yes, just something short and catchy which captures the essence of the event.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Is that meant to be a compliment or an insult?",
                 "line": 43,
-                "url": "https://drive.google.com/file/d/1atwfagu9YfZDkJzlVBK1rWxRk3aiKU3V/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1FBJVANXtmBlc02b3uBMp1POUGeiJt_YX/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(You got to be kidding me?! You think it's that simple?!)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Anyway, I doubt you're willing to say much more. Fine, then I'm guessing you're conducting some sort of undercover interview.",
                 "line": 44,
-                "url": "https://drive.google.com/file/d/1x5Hx2nDS68ctlPlApnPcl0lympgyGotz/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/15QJlBO1B21ewNWJCHJPcHu-y_5Ex5E6C/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "(It takes far more time and effort to write something short and-catchy than my usual long and elaborate sentences...!)",
+                "subtitle": "Um, something like that\u2014",
                 "line": 45,
-                "url": "https://drive.google.com/file/d/1V7JTkA6RATwOnU5JGJFZuGhS1oVjtQB8/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1u9Sf5p-ngG5xXgAsrOpf8GQd_n7cOGY6/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "That's a bit...",
+                "name": "Staff",
+                "name_variant": "Staff",
+                "subtitle": "Hey, new girl! What're you slacking off for?",
                 "line": 46,
-                "url": "https://drive.google.com/file/d/1U77S10nOVyFMSO5Jg_kZ7LuXeQqX6R1A/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1kPbnaX95NnEmk9THlo1sFN2cIoK-QmD6/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "A special song for the event... All right, I'll do it.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Oh, my apologies! I'll get back to work immediately!",
                 "line": 47,
-                "url": "https://drive.google.com/file/d/1AMDXj4wOQL5byE3g703Kio51LEIZY3r2/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1h0MNwEzGLmT4gzpxnOXhuEAy2z4l2kqy/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "!!!",
+                "subtitle": "Well then, if you'll excuse me. Please keep to your promise, understood?",
                 "line": 48,
-                "url": "https://drive.google.com/file/d/1dWPUDJwB5BIUPiNS7StrsrN5i_RGXacT/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ke9-I44fWj4eCOSFmKOHDllHRz4SI52M/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Can you tell me afterwards what kind of song would be good? And whether an existing song will do?",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Honestly. What in the world is she up to?",
                 "line": 49,
-                "url": "https://drive.google.com/file/d/1yRRSyHWqdf24JAhAK3K-I0GIVJU_ca0Q/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "You want an image of the event...understood. Thank you very much, Shiron!",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1QwaUOqzl_X5gBH7feVbZhmJeqiMnie4w/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(Urk... If Epsilon can manage this, and I can't, I will lose status...)",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/14UX2GYrV35aAosr9IzPg91fsPg9QXnQ5/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "O-Okay. I will think up some advertising slogans.",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1RIj-6ez2iImeMxyA7o6tSMFEo-DQNWSx/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Thank you for consenting, Natsume. As Director Luna of Mitsugoshi, I appreciate it.",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/18kaxfW6SdWUSPjrSf642U3umdlg4c7r3/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(Ugh, I felt pressured and said okay. Will it really be okay?! Can I do it? I mean, I'm...)",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/17jXtqUZc1xoSG9UCbGdOaaW3pFo-Lmjv/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1e4s6AQhvWOTBJvjZF_kSnP1kBNnL7CNb/view?usp=drivesdk"
             }
         ],
         "e3": [
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "\"It has transient sweetness, like an enchantment...\" No, too dull!",
+                "subtitle": "(Whew... I managed to quiet her for now. For all her faults, she tends to stick to her word, so it should be fine.)",
                 "line": 1,
-                "url": "https://drive.google.com/file/d/1C_wNI2LXn_mSspUHz7w4GccM-rfzM9US/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1xumuwErUpFiGutywGFTsbaG9xXrl5xbC/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Urk, I wish I hadn't been swept up in the excitement and said okay...",
+                "subtitle": "(Anyway, I've been observing the casino while working but haven't seen anything suspicious yet.)",
                 "line": 2,
-                "url": "https://drive.google.com/file/d/1xlsO-XnTF_fynk4RdwmZS8poalXmDCKl/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1OWkYGJp_kTY4lD_KRKoL2yX1zAzfeu-A/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "(Gamma... No, Director Luna of Mitsugoshi, made a request of the writer Natsume.)",
+                "subtitle": "(The security staff network seems extensive, but I guess it's only natural in a place with so many dignitaries.)",
                 "line": 3,
-                "url": "https://drive.google.com/file/d/1DSsJiIxnVbBwn0maHfq-0TfdRCO3HGcY/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Bzp2HjBfGjuMaLMX0FJkMQ29X-4_EqFz/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "(Write an advertising slogan that matches the Mitsugoshi Valentine campaign.)",
+                "subtitle": "(And while some customers were making a scene about cheating, it's likely just sour grapes. At any rate, I'm not picking up on any nefarious intent from the dealers.)",
                 "line": 4,
-                "url": "https://drive.google.com/file/d/1cds2DuP941r9q_XBh5PqSWJMffooYIYC/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1cPDZxhMPlld-TY8YGRUkGXh0ud3Fp8tz/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "(It's so much harder than I thought... I'm surrounded by a mountain of thrown away, crumpled up paper.)",
+                "subtitle": "(They could be running an honest casino on the surface while all the shady business happens behind the scenes.)",
                 "line": 5,
-                "url": "https://drive.google.com/file/d/1pb32nQEqk8h8QBZOUHDQ9EujJPk0qNi5/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1e3-mEG7x-cojXUx6ga4L-21JhoFrV-IN/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Epsilon is lucky. Writing songs is her usual work.",
+                "subtitle": "(It's tough getting a lead on an investigation of this magnitude, especially if the Cult is involved\u2014)",
                 "line": 6,
-                "url": "https://drive.google.com/file/d/1e87dFxzB8iVUNkBy7qSyK16Jc42OJR7m/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1GQ5w-o_H25jP6kDBm_40JdwIDnxcugFE/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(Epsilon, as the singer Shiron, was asked at the same time to arrange a song.)",
+                "name": "Staff",
+                "name_variant": "Staff",
+                "subtitle": "Hey, new girl.",
                 "line": 7,
-                "url": "https://drive.google.com/file/d/1SFgRtT84VH3eotBgNAypAn3cCkblXPDz/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1nFl8g0qT0007h6cK2lChAlHLBtvVyYH8/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "It is like asking an amazing long-distance marathon runner to do a 100 meter sprint!",
+                "subtitle": "...Y-Yes?!",
                 "line": 8,
-                "url": "https://drive.google.com/file/d/1aRiLWTlil23k_cLo1zjxVqSf9jCPwnxE/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1K0Dxitv6Pb-14VWHsmK-33z-g82WH1uN/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(My sentences usually become elaborate. I want to use metaphors and adjectives!)",
+                "name": "Staff",
+                "name_variant": "Staff",
+                "subtitle": "You're the new bunny girl who just started today, aren't you?",
                 "line": 9,
-                "url": "https://drive.google.com/file/d/1GFo0ZQUsn5VxQynf88_XdW3IkxlHJNFm/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ulgacnJULKqiXmIFcbgLZ7un6phqN8ai/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "(Ask me to write a long novel with as many words as I want, then you'll get Natsume the genius writer.)",
+                "subtitle": "Y-Yes...",
                 "line": 10,
-                "url": "https://drive.google.com/file/d/1xH59qPWTnfyJSy-y2DpOjtY8rYCkrmz-/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1KMvsqT5qqD0GsaMrfBMN-CcKkMD56IFr/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Short, blunt... Don't waste a single letter...",
+                "name": "Staff",
+                "name_variant": "Staff",
+                "subtitle": "You've been spending a lot of time spacing out and seem completely unfocused. Just because it's your first day doesn't mean we'll go easy on you.",
                 "line": 11,
-                "url": "https://drive.google.com/file/d/1iflfpdKAzIT96_rWBkvJmAikppBDON2h/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1wVpMZWacvwDH48phrUPYwZ8rHX0rE6zB/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(This is as difficult as writing that \"haiku\" that Master Shadow taught me.)",
+                "name": "Staff",
+                "name_variant": "Staff",
+                "subtitle": "And what's with that notepad? It doesn't look like something you need for work. How suspicious...",
                 "line": 12,
-                "url": "https://drive.google.com/file/d/1gZyBMqY4H_gIZYq3uoRH2577o-KDlcIM/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/14ERX3S92NXUXMa_DVJTkQoqUYtRQfqUE/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "After all, this is not my field! Ugh, it's impossible. Impossible, impossible!!!",
+                "subtitle": "(Damn it, he's sharp!)",
                 "line": 13,
-                "url": "https://drive.google.com/file/d/1EIKi1kQ6cplzC-3elKoUtoZ_PBwwWUQn/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1zbd1ky7erez2gC9wTHzNFdCKSZD2qm7z/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(Even if I wail like a brat or go sulk in my bed, the fairies aren't going to come do my work for me.)",
+                "name": "Staff",
+                "name_variant": "Staff",
+                "subtitle": "Are you...hiding something?",
                 "line": 14,
-                "url": "https://drive.google.com/file/d/1gcIH6qKvtggGIpts0qLH6C3cJSt6phLY/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1LzadWY6LXdxqhEjqv5aR4S6ppcSOYRnl/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "(Still though, I don't think this situation will improve if I sit here glued to my desk...)",
+                "subtitle": "N-No! Nothing at all!",
                 "line": 15,
-                "url": "https://drive.google.com/file/d/1FZNs0HSSdantmHz1P6T7H3lyNeLlvbYK/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1x1VLPgGSQI85UlfU_bn8W7R55OZHd3PQ/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(I will slowly stand up, and make a declaration!)",
+                "name": "Staff",
+                "name_variant": "Staff",
+                "subtitle": "Then let me take a look. If nothing's wrong with it, I'll return it right away.",
                 "line": 16,
-                "url": "https://drive.google.com/file/d/16YQD8EJbU4sSJ8Mme3rIM2I8WSyQaxXd/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1DLDbupcjgJ3aHe0xYykcmJYi7ycYUu9-/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Right, before anything else I should practice making chocolate for Master Shadow!",
+                "subtitle": "(Agh! There's no way I'm showing my notes! Not if I can help it...)",
                 "line": 17,
-                "url": "https://drive.google.com/file/d/1dmr9lKoStxjSjzJkxFj8mbV2l7u2yYtd/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1RvHXzWFxmVvFyjpWAKHvi0wsLyZI5m_Z/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "(Because I really need to practice, and um...it'll be good to stretch my legs!)",
+                "subtitle": "U-Um... The truth is that I write fiction as a hobby! I thought I'd never have another opportunity to be in such a gorgeous place, so I just had to scribble down ideas in my notepad...",
                 "line": 18,
-                "url": "https://drive.google.com/file/d/1VOPh5xRv0RoIqsF1ugrXD-CmISauIMMB/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1WJ9EqOoVJtZzC_lSbzgFOgFyEkLtGMBN/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "(Though, I know that actually I am just running from the reality that haven't written even one slogan...)",
+                "subtitle": "As a writer, I can't let people see the ideas in my notebook! I-I'm sorry!",
                 "line": 19,
-                "url": "https://drive.google.com/file/d/14EoKNYYZj4t__0u3-GDPNcsA2VLdldkc/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1sS4oW-gkKq7O16k9F_nI03N2EtbEQNdi/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "The ingredients I asked Gamma to get should be here...",
+                "name": "Staff",
+                "name_variant": "Staff",
+                "subtitle": "...Be that as it may, this isn't an issue I can overlook. What to do...?",
                 "line": 20,
-                "url": "https://drive.google.com/file/d/1f04Nlf5q2lxCuB5R08GtELU6mJ69y80m/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1-Ej0t_mzDyQ6eOaBNtJ_XDFWbCTrtuU8/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta & Epsilon (Beta)",
-                "subtitle": "Ah.",
+                "name": "King",
+                "name_variant": "??? (King)",
+                "subtitle": "What's going on here?",
                 "line": 21,
-                "url": "https://drive.google.com/file/d/1Ln57pbQwENEvLDmkw9EUx75w4ikTosjb/view?usp=drivesdk"
-            },
-                        {
-                "name": "Epsilon",
-                "name_variant": "Beta & Epsilon (Epsilon)",
-                "subtitle": "Ah.",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1Ln57pbQwENEvLDmkw9EUx75w4ikTosjb/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1gTKdNaxIhrbolVlhNMtXxlv1-qaubkFa/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Hey, Epsilon. Wh-What are the chances, right?",
+                "subtitle": "Huh?!",
                 "line": 22,
-                "url": "https://drive.google.com/file/d/1Na2-Zui-au0tSqsyZuOvkAxNHHrJCAJG/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ddc7yBg_H8Azzp-RYcevLkA03PGXGVub/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Um, yes. I was just going to cook a little something...",
+                "name": "Staff",
+                "name_variant": "Staff",
+                "subtitle": "K-King! Sir! I was instructing this new staff member who's been absentminded...",
                 "line": 23,
-                "url": "https://drive.google.com/file/d/1JtAP_n5r3cwkFGdpQTv6Ha6dbWpG_6sU/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1EBIC5SYM92fJ_JySdG6ajS5ZHuKorvnn/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "...Like what?",
+                "subtitle": "(King...?! Does that make him the boss of this casino?! I hadn't expected the top brass to show up so suddenly...)",
                 "line": 24,
-                "url": "https://drive.google.com/file/d/11O-howclM4YDiyv7YrudFW5ryL-j-3QY/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1UQnWXri7oM_W4DYmDASeoAva-AWYnrfj/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(Is she...out stretching her legs too?)",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "I see. Trouble with new staff, huh? It's a common occurrence. As usual, I'll leave it to you.",
                 "line": 25,
-                "url": "https://drive.google.com/file/d/1lApxkzOA6SKA8lfhKg3Rm-PpxllRx-Q4/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/12d4UqR3CCZgibfo6mciEIYuR61604GvQ/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Well...maybe something sweet, you know, like chocolate...",
+                "name": "Staff",
+                "name_variant": "Staff",
+                "subtitle": "Wait, King, I've something to report. I've discovered something in this newcomer's background that we were previously unaware of...",
                 "line": 26,
-                "url": "https://drive.google.com/file/d/1wJ1dJTgzLTx0B0bkqnuiCwK1bt9Entac/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1MNZ6Qvb7XUW2ipuqLErQU9cXuCxzqZBm/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Just to be sure, I was going to review my chocolate-making process...)",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "Oh?",
                 "line": 27,
-                "url": "https://drive.google.com/file/d/1fFOI6pj52wrYayIQYHC8p6ehnT2-2nXa/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1jemQdxM4-txfWyhEq-V0CvbNwm7QqXbP/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Beta being here to practice as well... Were we both thinking the same thing?)",
+                "name": "Staff",
+                "name_variant": "Staff",
+                "subtitle": "She apparently writes fiction as a hobby and was taking notes about the casino for her stories...",
                 "line": 28,
-                "url": "https://drive.google.com/file/d/1oEMeYv2caLOGvnOwLTNAM-spN49RAOgC/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1RWR9mWxSSAnHuFxUQRm6et-nRqlGS_Ww/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Why are you here?",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "I see. So that was the cause of the trouble.",
                 "line": 29,
-                "url": "https://drive.google.com/file/d/1c03pV5Zw6IoV3uYtfuVycVSZF-zlAKmY/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1J-tCt8Y-IPtiLwVE1fmdxrysBLxsAvhg/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Well, obviously the only reason why anyone would come here is to cook or eat.",
+                "subtitle": "M-My apologies!",
                 "line": 30,
-                "url": "https://drive.google.com/file/d/1CoVU5Py64I2wySDttseEJOJNeZER7VHX/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1a5ydOusJQ65QHOeXKWCjSs_yJX4L5cAo/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Wow, you've got so much time that you can cook while working on slogans?",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "Hmm... No. You don't have to apologize. Furthermore, there's no need to keep us abreast about all your hobbies.",
                 "line": 31,
-                "url": "https://drive.google.com/file/d/1xQe95NyepWtVoiPi_ytKB-YFG5X7ir_N/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/19z0-uDMTLFOQMfgoDjXPoktS9zWKH16f/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "That goes for you too...!",
+                "subtitle": "Huh?",
                 "line": 32,
-                "url": "https://drive.google.com/file/d/1ppT5QJJ4lUIe747ACV9NRtgLbOB_ZPFU/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1B637AlCfJ540y0DinJJgHdE3alw93rV5/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta & Epsilon (Beta)",
-                "subtitle": "(Good chance! I can see for myself what chocolate she is going to make!)",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "We employed you for your ability to work effectively. As long as you can offer value in that area, there shouldn't be any problem.",
                 "line": 33,
-                "url": "https://drive.google.com/file/d/18imdBlqY8_b6v9vKDglrnS5JgNbtp6E6/view?usp=drivesdk"
-            },
-                        {
-                "name": "Epsilon",
-                "name_variant": "Beta & Epsilon (Epsilon)",
-                "subtitle": "(Good chance! I can see for myself what chocolate she is going to make!)",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/18imdBlqY8_b6v9vKDglrnS5JgNbtp6E6/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1QZ5xglxwoVemjFEK74m10r9EKGvIdOG2/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Let's see, cacao, cacao...",
+                "subtitle": "(What a generous man! I'm honestly impressed...)",
                 "line": 34,
-                "url": "https://drive.google.com/file/d/1_ptp5hZJUiUw8Ogrp6SKstx-syxkzdtf/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1IgmRS29ZQschPrxfTVigeDqLMfuGpbAh/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Milk, and eggs too...",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "But...you shouldn't be bringing your hobbies to work, correct?",
                 "line": 35,
-                "url": "https://drive.google.com/file/d/1lo8Mj96-zYUuySSTZqq1UlwhhaTxyUJH/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1zFprqtDptDQka6A2-5FP3UAB8rNLppoV/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "(Eggs? Chocolate? Gateau chocolate? No... She is going to use egg white...meringue?)",
+                "subtitle": "Ulp. Of course you're right...",
                 "line": 36,
-                "url": "https://drive.google.com/file/d/1oRg16wIbOH0YwZNgmqLXcCywbyJK2uqU/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1lyciyxoFjzgZEw4z9OizW2HG_senNPWM/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Rather than melt cooking, chocolate with hot water, you ordered raw cacao beans?!)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(Impeccably dressed, perfect responses, and that mysterious aura he gives off... There's no doubt about it. He's the boss of this casino.)",
                 "line": 37,
-                "url": "https://drive.google.com/file/d/1wxxRSPB51GHdU20WqcRB0FKKoO0TYlcI/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ozjBmVxV2H8-3D81TjJN4Q0Zk7MbO0hn/view?usp=drivesdk"
+            },
+            {
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "Well, new girl. The fact is your work ethic wasn't up to par. We could terminate your employment based on the terms of your contract.",
+                "line": 38,
+                "url": "https://drive.google.com/file/d/1vYEZoGpHvEXrFXUQ2LScxLGwF4J31pYz/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
-                "name_variant": "Beta & Epsilon (Beta)",
-                "subtitle": "Not bad...! Not bad at all...!",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1VUg8i9-2yVsl27fjWsA4-pPaRbwSnMLt/view?usp=drivesdk"
-            },
-                        {
-                "name": "Epsilon",
-                "name_variant": "Beta & Epsilon (Epsilon)",
-                "subtitle": "Not bad...! Not bad at all...!",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1VUg8i9-2yVsl27fjWsA4-pPaRbwSnMLt/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "10 minutes later.",
+                "name_variant": "Beta",
+                "subtitle": "Pl-Please don't!",
                 "line": 39,
-                "url": "https://drive.google.com/file/d/1rKAzU-LyZEdbFp1uPn60rCyjla3Wzm-i/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1SUcMjzpLhreebpJPGpc0XAWItTpvS9lQ/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "This casino has a reputation as a high-class venue. The customer service skills required of newcomers is incredibly high, and it will take time to find your replacement.",
                 "line": 40,
-                "url": "https://drive.google.com/file/d/1T_bfpJ_xSljAqdKmrQLddUtd4vw4YQCd/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Ph5U3mU4oIbnsTWOvKD4nLSudu5bppz0/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(She finely chopped the cooking chocolate, and made it more fine by indirectly melting it with hot water...)",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "However, the fact is we hired you because we value you. So...how about taking on a little gamble?",
                 "line": 41,
-                "url": "https://drive.google.com/file/d/165g97Nyy0LjOkxN-_aeOQke4NJwMxFTj/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1saSDFBaKMZsXdWT1wscBojV545Hmouz_/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Room temperature 17.56 degrees, humidity 23% 50.23 degrees... That's it, there. Okay.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "A g-gamble? What on earth do you mean?",
                 "line": 42,
-                "url": "https://drive.google.com/file/d/1bCMBm18LCB8Ik5zqOQsrw4BDj_0m1FV-/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Kl2dcLdy2LCBKTwvBDq5awfxQfVij5NA/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(Epsilon's \"tempering\" involves centipoise unit adjustments using a thermometer created by Eta.)",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "As you know, this is a casino. It's a place where winners and losers at the game tables determine all outcomes. Why shouldn't we also gamble to determine the outcome here?",
                 "line": 43,
-                "url": "https://drive.google.com/file/d/1mU9GB0mM2wzn1EsF87Mvf7GHk-Sr4zAj/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ax-yFB4_fVBWQudpmzSLoqoMZZmTzFm1/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "(She is controlling the room temperature and humidity, even her own body temperature... This is why she is \"Precision\" Epsilon...)",
+                "subtitle": "I see...",
                 "line": 44,
-                "url": "https://drive.google.com/file/d/1WewvKgm414QqSHw8tTUuNhWoUGnkkTa_/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1DRGDJB9vWkk8Evv_KNXidBqL6O9YM6wk/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "...",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "The outcome will be absolute. Win, and you gain something; lose, and you lose something.",
                 "line": 45,
-                "url": "https://drive.google.com/file/d/1fOoQMbSPEdn_n1Hn-u0ujSaey4mlxAUr/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/12Thq4__oE7Qjyywjr7J8Mn3jCq-iekeR/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(I see how you're moving your hands. I'll use that as a reference, thanks!)",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "If you win, we'll tell you every there is to know about this casino. We'll even share with you...our trade secrets.",
                 "line": 46,
-                "url": "https://drive.google.com/file/d/1kquJqueNJZ-izWKcoEwUSMU70RoCUKr4/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1-hoYTjoo6rhbzZnEgAMBAnPuwTxDLHSE/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(I can sense the smell of that chocolate from here. It's so good...)",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "As for if you lose...let's see, you must reveal your identity in full.",
                 "line": 47,
-                "url": "https://drive.google.com/file/d/1VP8U_nsYiLzc1xa-O_nIPNlEvPjYNXUf/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Nqi5pHI_cE9MTA4XritOfU_HL0eWyWEF/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(And their color...maybe I need to casually check inside that box.)",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "Fortunately, there are not many customers today, so the rest of the staff can cover. If we host it as an event, it should also entertain the customers.",
                 "line": 48,
-                "url": "https://drive.google.com/file/d/1XPru5PWbwtEdWipeWKW0hK4p3F_Ua0E_/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1uLVZ_CtQSwC9HiYCA70wq7cExRP6sLz8/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Whoa! A premium brand cacao from the secret island of Chocoray in the Southern Kingdom!)",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "So, what do you say to a serious gamble with those demands on the line?",
                 "line": 49,
-                "url": "https://drive.google.com/file/d/1tOLR-dcJVdUd11oigAeGxmzEgz-3c-O1/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1h6BRRh39JasI1yQuDVnVzrlvylokcvFA/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(And that dish! It's a replica of silverware used by an ancient queen!)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(It sounds like I'm simply being assigned to today's event, but it could also be a trap set by someone suspicious of me.)",
                 "line": 50,
-                "url": "https://drive.google.com/file/d/1PP4jQWdBvftAVgL-bTzvoZDt5YzckiTB/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1N6ikZLjHaPILnuWCOmjNadWPKNFNsXNc/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(As you would expect of a writer, even her meals have a story.)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(But my position is highly tenuous. If I refuse, they'll fire me for sure. I've got no choice but to comply here... Wait but\u2014)",
                 "line": 51,
-                "url": "https://drive.google.com/file/d/1QVtMEppaSi5-qspm7iJSjV1BVIVX1fCd/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1v3JrNO3WJz_JCQK9aB30tXi86trCncpV/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(I can't lose if it's any old dish, but this opponent has \"added value!\")",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "M-May I think about it for a moment\u2014",
                 "line": 52,
-                "url": "https://drive.google.com/file/d/19ybLxKCLq7LnCaui0xti9ZV_Fl7pmM18/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1IpZ1aOXANc4VUAnrJ69ofYuG6k9u0jJ9/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(I see, she does have a point. I'll use that as a reference.)",
+                "name": "Alexia Midgar",
+                "name_variant": "??? (Alexia Midgar)",
+                "subtitle": "Very well. We accept!",
                 "line": 53,
-                "url": "https://drive.google.com/file/d/1q-CowJWgr79mP-ESp8oAeUfik3kkWUKI/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/17x-QyKSt0LkEKMzCh2QQLS1xjuaQq00c/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Whew... Now to let it cool and harden.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "...Huh? W-Wait! Who're you?!",
                 "line": 54,
-                "url": "https://drive.google.com/file/d/1WeDir3tmT-1oAdUurcOEVZVxf34YSIG9/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Done.",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1YRJY3d4I7usDNbTYhmVUWPYuC3AXHbWV/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta & Epsilon (Beta)",
-                "subtitle": "...",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1X4vMTte5sEabMihhQKvjVzb3hFuJE74x/view?usp=drivesdk"
-            },
-                        {
-                "name": "Epsilon",
-                "name_variant": "Beta & Epsilon (Epsilon)",
-                "subtitle": "...",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1X4vMTte5sEabMihhQKvjVzb3hFuJE74x/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "As you worked so terribly hard, would you mind if I dip my little finger in for a taste?",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1CrYHMw9GqyyotPkb9dlyrONIIUgXUAn5/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "...Sure, I was thinking I need someone, anyone, to taste it. In return, let me put my pinky in yours...",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/11y6t5OUhtey2kpEy8tZGFibKd6a32D0N/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "!!!",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/16-Z7eY6eoECG3KZlE3ADNEwfFaObkEq-/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "!!!",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1MyelxW3DCBgWIgxmjp_VE5MIugKLynXg/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(It's delicious....amazing technique!)",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1U8MCUUXe8u-0eJ-xeeZ1-Sm1QQBOO4ID/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Delicious...amazing ingredients!)",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1swbRCMpvGlYlDJdibS_uiq4-gTZBwJL_/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Goodness! You've got some talent, Shiron.",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/1PEst2PRt4sps68UVJhiSomIm-PNuJJdB/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "You too, Natsume!",
-                "line": 64,
-                "url": "https://drive.google.com/file/d/1wNhVqy7xKpWyxMQoH2IHGZfZd27GiYdJ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/17hASRa_a8mkQLnrNeNfciti8YIxN-RkT/view?usp=drivesdk"
             }
         ],
         "e4": [
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "D-Done! The Mitsugoshi Valentine's Day campaign song!",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "Who's this?",
                 "line": 1,
-                "url": "https://drive.google.com/file/d/1SKJYxLLkkJgejtsNUSEm9o5ZXjLHIrIx/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1IwzPO3CACKYhMW5Mtm0E9T4UQ9iqC9Pr/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I have to admit it wasn't easy. I did some chocolate-making as an act of escapism...",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "As a senior bunny girl, I'm responsible for my subordinate's mistakes. So will you kindly allow me to participate as well?",
                 "line": 2,
-                "url": "https://drive.google.com/file/d/1U3e1WVInQeVCRhSLfUqyKpGm1183i8u6/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1mJEB5iEN6PiqF8tuXebLmz1XW4B_3lJI/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Because I competed with Beta in the kitchen, I was able to write a great song...",
+                "name": "Staff",
+                "name_variant": "Staff",
+                "subtitle": "I don't recall this bunny girl in our staff roster... Forget it. I can't afford to mess up in front of King.",
                 "line": 3,
-                "url": "https://drive.google.com/file/d/1HY_k_XCZvwju3vzfYWs0jPygfyHDkH3J/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Dez8phv9-y4vgBCQXUEDcHdmeCWj4yuW/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "She's my rival in many ways, but I should be grateful.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(This woman... What is she playing at?!)",
                 "line": 4,
-                "url": "https://drive.google.com/file/d/1mIBb5b2G4ApRui5sYqHrqdFeVpBxZoA9/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1XLPc8G_3Lm5uxJi1lnh5SEArFqeuT30s/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Beta, your existence pushes me to get stronger and stronger. But, in the end I, Epsilon, will be the last one standing!",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "...Very well. The more the merrier.",
                 "line": 5,
-                "url": "https://drive.google.com/file/d/1Trx1_Us62haa-8oobAkSpodFtBB0Kl9j/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ejqx0-O1v2g97ceaE3SuoLI1kRIy3Vyb/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(~?)",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "If you'll excuse us for a moment. We'll make the necessary preparations and meet up again later.",
                 "line": 6,
-                "url": "https://drive.google.com/file/d/10cEE8KwzkI3XdQPUwFyTxFNDnx3eNp98/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1BEyipWhySA49cX9nk09djlV5zL2fr_K5/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Wow...!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "...What do you think you're doing?",
                 "line": 7,
-                "url": "https://drive.google.com/file/d/14X3XEsoj5unu4VNbNd_QdR7KZpneKGIK/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1H4k_wgLUrEfk9EMicHIxjh-Ve12GJtMQ/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "So, the song I just played is the one I wrote with the Mitsugoshi event in mind.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Nothing. I saw an opportunity for a staff member like myself to join in a game, so I took it. That's all.",
                 "line": 8,
-                "url": "https://drive.google.com/file/d/1XiJL1P3bzzP0y9GLOYIfwsIICXfttd-o/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ynEI65bWyvx3F1gFUZigWWkkD0gggKQY/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Thank you so much! It was just as I imagined... No, it is a song even better than I imagined!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "...Just to clarify, have you ever gambled at a casino before?",
                 "line": 9,
-                "url": "https://drive.google.com/file/d/11ZuzCT2mCrkjMhyuqXM24BGuN5g2emyy/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1kai49yEe9LtitMH6x4L0eQmsrqlyqr9t/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "And this is the score for the campaign song. I made some adjustments so that even amateurs can play it.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Of course not. This is my first time stepping into one.",
                 "line": 10,
-                "url": "https://drive.google.com/file/d/1xzkAbupeCh9OyJBH41Yy5gt6CYFrssE1/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1bhhXHqXUnpLCD-E_wz6zvq4a0Kxiydtp/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "You even thought about the musicians! I really appreciate all of this.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "But don't worry. I sort of get how the rules work.",
                 "line": 11,
-                "url": "https://drive.google.com/file/d/1Ki5nDAayR7EPIgU3NrUBtSoSNq-Of8Wd/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1inUd8OEQeEuC_P-W4TUzwu6RinqXjmwn/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "A melting melody, which is sweet like chocolate...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "...Sort of? You'll just hold me back at this rate. Honestly, I didn't think you were this impulsive...",
                 "line": 12,
-                "url": "https://drive.google.com/file/d/1WSS1wv9C7hST-uI1CQYArw02lpCgCyz2/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1XMh9n5rZPU_IoIGfrda-TDSahCwx0vVE/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "...and yet it was a superb song that somehow contained a feeling of sharp sparks.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "What's the big deal? I only joined mid conversation, but it didn't seem like you were in a position to turn down participating.",
                 "line": 13,
-                "url": "https://drive.google.com/file/d/1K--7ywQg_Ag8GN3wyWM6T4YyLxsgxrbT/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1urFf41RLYsJcmcUjUZIdWthrAni-Frh1/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(She really got it. Gamma's eye for quality...no, her ear? Is always reliable.)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "W-Well...",
                 "line": 14,
-                "url": "https://drive.google.com/file/d/192BUHT3vZWFvD7evt1BmtxonEu62d_8V/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/19bu3jUOAdnsUjFHeKF-c87c2o8IyGicT/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "I was concerned if you would be able to create a song that matches our advertising slogan, but it is perfect.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "I get to join in the games, and you get a reassuring ally. Sounds like a win-win situation to me.",
                 "line": 15,
-                "url": "https://drive.google.com/file/d/10nFfIt1nZdTChNzxV3KDqk5LL6PZSDZ8/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1hFaPT8YgJMIqeHKBZ4LT-GRphw2RYW-L/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "The advertising slogan? Beta beat me to it...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Not sure about \"reassuring,\" but I guess you're right. Still\u2014",
                 "line": 16,
-                "url": "https://drive.google.com/file/d/1rVSDuOqF-WfAbzQppq1Ct5lYFYlCyG-f/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1pVonQThJbPcsFlx8S0b-RHKFSYcz_vrW/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "The advertising slogan is short. Here, I've put it on this poster!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Jeez, c'mon. It's already decided. Just accept it.",
                 "line": 17,
-                "url": "https://drive.google.com/file/d/1tp8bpVBALFkcYrAPCP5K-NTWmjN51efn/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1JNvSGqodTkcaire8yn5L_EnBhUQCKzX1/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "\"Sweet Fight.\" I see...",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Anyway, the fact is I couldn't just stand by while you were in trouble. I mean, we're comrades who promised to help each other.",
                 "line": 18,
-                "url": "https://drive.google.com/file/d/1ZHYeIZ6-iNMEeTKaSQ_ev6F7keEs5pAf/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Z7x_CdjiJb5q6-afifO95f-U7nyeuzGt/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "There is a gap between \"sweet\" and \"fight,\" it impacts customers quickly, in a good way.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "I'm sorry if I didn't go about it in the smoothest way, but...",
                 "line": 19,
-                "url": "https://drive.google.com/file/d/1p0ioiILMDQ23vnUIXKzMQapSf5Pit1_q/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/13u-CSHuE2LkUn7_cLwdmAeZz5sB6lq0-/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "What is that \".\" at the end I wonder. Could it be a symbol for chocolate?",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "If there's reason behind your actions, why don't you let me help?",
                 "line": 20,
-                "url": "https://drive.google.com/file/d/1PVp_WQoEnMS4CZ2szQizU64wD1ZyMp72/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1D477ExO-jd-6JB7EcXiZ7m8QrHv9twrv/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "When you use a period it marks the end of a sentence. It marks the conclusion. It has the effect of emphasis.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Princess Alexia...",
                 "line": 21,
-                "url": "https://drive.google.com/file/d/1L_KSo0LOK1L1NRsHXbZs_aqFKJBGADfr/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/17l_yTXjPMo0OotpA7OTZRY2aIYh-tBTG/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "For example, in music we use a mark called an accent to indicate a strong emphasis.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "...Fine. Just try not to hold me back.",
                 "line": 22,
-                "url": "https://drive.google.com/file/d/1qZ6X6qLXJ_pT2U61eUxcB9-C6F-yivlI/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1nHstnzOOiYnekbd14CM5WnMOdkYuo5JA/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Wow. I guess it is to be expected that experts know about other experts. It is a bit beyond me.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Sure, you just tell yourself that.",
                 "line": 23,
-                "url": "https://drive.google.com/file/d/14hZOX7q6JBcqBduas8Ryw79qvY78pOTl/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1AKD6a1TkhR0f7VagLRdwn-YaO7HWrDzF/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Beta and I were on equal footing in that chocolate-making practice...)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Right back at you.",
                 "line": 24,
-                "url": "https://drive.google.com/file/d/1BxZaMpSOIKyiG3xd_74ZYEdFAWS-MgL_/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1x4jWOo0H3ns_S8-tW_gwHAZeB9II9QMk/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(There is no mystery or surprise here. She can achieve it if she tries.)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "By the way, you're on your own if we lose, okay? I'm only here for support.",
                 "line": 25,
-                "url": "https://drive.google.com/file/d/1pLaC9JmZgh72lzpfTHep11uERQIsbS8H/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/184bcNZbaYFPI13AXHncUFtlx_FBY0I6n/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(There would be no competition here otherwise!)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Y-You petty princess... You just want to gamble...!",
                 "line": 26,
-                "url": "https://drive.google.com/file/d/1sQ93QKM8t2UpQCNF5rqnOltdFM_RzRcS/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1wie82pGUeDTOAx_KxhghEkYJYpbe8XZP/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Anyway, we will probably need to make some adjustments to the score...",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "Thank you for your patience. The game event will momentarily commence.",
                 "line": 27,
-                "url": "https://drive.google.com/file/d/1PCkplUtiEoQEZNgwhc2BcEq6zmE-8_Qn/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1LgOeYNDnDk47-fCBw-eh0BDA_PQt_YwK/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "But, you successfully did your part. Thank you very much.",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "Are you two bunny girls ready?",
                 "line": 28,
-                "url": "https://drive.google.com/file/d/16Aobiz6vokXAFaP70_6knEWhtMssHoo3/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1KrWcPYogiIjUL2ZtnV9JfzK76RxCrP3m/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...It's not enough.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "...Yes, we're ready.",
                 "line": 29,
-                "url": "https://drive.google.com/file/d/1yYr1hy0594H-3jzPNH4OkEATFvUdvw4L/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1vOQRQL234rys0-usy3Rn4ZROtY2TdJIW/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Huh?",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "Very well. Here are the rules: we'll play a maximum of three games, with the victor being whoever wins best out of two.",
                 "line": 30,
-                "url": "https://drive.google.com/file/d/1vv22_q3mlUt9ndBBtZYnH_WE_JZ78qKT/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/16BFneSlYCY0zo1gkR8GVvR4KYGZ_zh-o/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I am saying just a song and slogan aren't enough to make an impact and draw in customers.",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "The first game is Blackjack. The match will take place between the dealer and the player.",
                 "line": 31,
-                "url": "https://drive.google.com/file/d/1Eho3VsBCMvAdrhTojjEfWqNm2CK_eY_o/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/16mf6ot7_yP_meQjmskL-qiKSFPXX_-7K/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Let's make another event to liven things up on the day.",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "You'll play a total of 11 rounds. You must win six or more out of 11 to win the match. Are we clear?",
                 "line": 32,
-                "url": "https://drive.google.com/file/d/1F_XW12kmvSd-J94N245RcwY3_8P29Op-/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1VZFksEPaFOID-Zefx3tWNcz4cZowVNt8/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "We should hold a chocolate-making event, a cooking battle, between me and Natsume!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Blackjack...huh? Very well. We accept.",
                 "line": 33,
-                "url": "https://drive.google.com/file/d/1bcynEREiKf6YMOm-SEP_UdCAoPGljVkM/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1pb-EDdqSN4D5YVNIo9SsUUn8iUGoNk_q/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "What...?! Well...it would be interesting!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Blackjack...? C-Could you explain the rules, just in case...?",
                 "line": 34,
-                "url": "https://drive.google.com/file/d/1MPEqj0WIh8UFZ8AjRLVaxziKa35dDmbJ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1PBfBhFwfi8HVIaii6cuqXkmtf35xslbb/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "But, I wonder if Natsume can fit it into her schedule...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "...Are you telling me you don't know? I thought you said you sort of get how the rules work...",
                 "line": 35,
-                "url": "https://drive.google.com/file/d/1g0_TP2-24wQ6-xMVc2zn28V5P5MMZXuN/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1vAZmPu_e71rD-9EebIfuo0uc2JtdHoS0/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "She'll make time. I mean, even if she doesn't have time, she'll force open her schedule to participate.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "*sigh* Well, we're off to a good start. Dealer, could you please explain the rules to her?",
                 "line": 36,
-                "url": "https://drive.google.com/file/d/1OudcMONvn_glWHFVyFK2CXg2uAUilBz1/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1p_5OUfFMOmHgg1TiZGCegsKABDbutGdz/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Isn't that right Beta? Let's settle this!)",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "Of course, and by the way, I will be your dealer for this match.",
                 "line": 37,
-                "url": "https://drive.google.com/file/d/1l5V8zqMuSe-j8-vgUxsCX6FTod1RZyOB/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1IwuSs-7SHth-4MsNoaqt63TySKLaRLJ-/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Very well then...I will arrange a venue immediately and make an announcement!",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "To put it simply, the player whose hand is closest to 21 wins.",
                 "line": 38,
-                "url": "https://drive.google.com/file/d/1we4GtcLQWOfeiYuFx4wtHYXpv7rrwDOG/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1sW568fc5z_4Hf_WYkd5e4-1Biis8bwPx/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "A few days later, in a certain room.",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "Cards 2 through 10 are worth their face value, and face cards are worth 10. The ace is a powerful card worth either 1 or 11.",
                 "line": 39,
-                "url": "https://drive.google.com/file/d/1qovvJkhfNRFNfrg3wWwEOzVJSQxk4luk/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1BW5eD0O3Yw3rZ3kMglMdf-sYYEgnlk0s/view?usp=drivesdk"
             },
             {
-                "name": "Mysterious Man A",
-                "name_variant": "Mysterious Man A",
-                "subtitle": "I assume you are all aware of why I have summoned you here today. This Mistugoshi flier.",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "At any rate, whoever's hand is either 21 exactly or closest to 21 wins. It's a draw if the values are the same.",
                 "line": 40,
-                "url": "https://drive.google.com/file/d/1ikaiG76Y3to6OC_3FCS3ykfN5SpF6Zni/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1jRSc0oL_OfscBNmEv6URsR-r9fOg7xxR/view?usp=drivesdk"
             },
             {
-                "name": "Mysterious Man B",
-                "name_variant": "Mysterious Man B",
-                "subtitle": "\"Sweet Fight.\", a collaboration with popular creators. It even has a special song.",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "One thing to keep in mind is that if the total of your hand exceeds 22, you bust and lose. As for me, the dealer, I must keep drawing cards until I reach 17 or more.",
                 "line": 41,
-                "url": "https://drive.google.com/file/d/1MT01UvV79UmaeyCOMn68s4Kkoa0nHOfn/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/14gv_xl8VY5HoZzPKPd4DPOmtX6BvlTNt/view?usp=drivesdk"
             },
             {
-                "name": "Mysterious Man C",
-                "name_variant": "Mysterious Man C",
-                "subtitle": "There will also be a chocolate-making battle on the day. Jeez, how much is this all costing them...?",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "Do you understand?",
                 "line": 42,
-                "url": "https://drive.google.com/file/d/1OX8X03eBlWkF7exbGXGdAWgG_oJqngly/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1zsdxJSQ5NcFGE7hsUAHdPXK21Z1E__ob/view?usp=drivesdk"
             },
             {
-                "name": "Mysterious Man D",
-                "name_variant": "Mysterious Man D",
-                "subtitle": "If this continues then Mitsugoshi is going to reap the benefits this year too.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Of course, that's so simple. I understand perfectly.",
                 "line": 43,
-                "url": "https://drive.google.com/file/d/1EVbDQWLJruYZOPYc7_3vItXXEuaScTpv/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1kgO4mTN9L-va0sp4PhrLOy-pA_jovhBM/view?usp=drivesdk"
             },
             {
-                "name": "Mysterious Man A",
-                "name_variant": "Mysterious Man A",
-                "subtitle": "The question, gentlemen, is how do we sabotage it... Are there any cracks in their armor that we, the Akindo League, can exploit?",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Feel free to go first. You can enjoy yourself for three rounds or so.",
                 "line": 44,
-                "url": "https://drive.google.com/file/d/1uff0byRtFHUnpMP5EeD9dHO_E8QG94dS/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1zzSfwmvstCQiRG-dsBebMcpJP04BkFII/view?usp=drivesdk"
             },
             {
-                "name": "Mysterious Man B",
-                "name_variant": "Mysterious Man B",
-                "subtitle": "With all due respect...I have a suggestion.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Oh, are you sure? Heheh. Don't be surprised if your turn never comes around.",
                 "line": 45,
-                "url": "https://drive.google.com/file/d/1egQdJDpkuG8nv99GSayDHc6zZNeE5xCB/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1V9MD-C8St1sR7gSNmQQ0yiqOY5CLRC8C/view?usp=drivesdk"
             },
             {
-                "name": "Mysterious Man B",
-                "name_variant": "Mysterious Man B",
-                "subtitle": "Mitsugoshi has rushed this campaign. For example, they're hiring a lot of staff at high salaries to get everything set up on the day of the event.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "We'll need to win six rounds, so I'm pretty sure my turn will come around...",
                 "line": 46,
-                "url": "https://drive.google.com/file/d/1PDoWC6KUUNXEIPVuSH-GnfQgytONbnE1/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1O-ef8cUrlyvbYSJWDYyBxL-uoB3sZb1T/view?usp=drivesdk"
             },
             {
-                "name": "Mysterious Man B",
-                "name_variant": "Mysterious Man B",
-                "subtitle": "They don't have time to look into the background of the staff they are hiring, so they aren't checking people properly...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Well, you wanted to gamble, right? Go ahead and knock yourself out before the stakes get too high.",
                 "line": 47,
-                "url": "https://drive.google.com/file/d/1bJX2O7673zukGkOZXNmD5hnykWQ8DqdH/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1jtvHJBg7CQi4SCfPLCpgw5vg1lgF71M8/view?usp=drivesdk"
             },
             {
-                "name": "Mysterious Man C",
-                "name_variant": "Mysterious Man C",
-                "subtitle": "I see. So you mean we can send troops in to make it look like they've made mistakes.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Well, aren't you considerate? Fine, I'll do just that. But don't worry. I have every intention of winning.",
                 "line": 48,
-                "url": "https://drive.google.com/file/d/1lYXuO9feiZk7xbczbbR8Er6j4vBUT37R/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1MoxA9Ezxb8kjgbtujBtcmSWOpG02XdXy/view?usp=drivesdk"
             },
             {
-                "name": "Mysterious Man B",
-                "name_variant": "Mysterious Man B",
-                "subtitle": "Yes, that's it exactly. We plan it so that there is an incident, which leaves the impression that it was caused by Mitsugoshi itself...",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "Well then, let's begin.",
                 "line": 49,
-                "url": "https://drive.google.com/file/d/1QFGKgustjAuh9pf9u51upqlukLMsTqRL/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1I23cc7A9HVKg1-j9See1tUTwK_8MHlJk/view?usp=drivesdk"
             },
             {
-                "name": "Mysterious Man D",
-                "name_variant": "Mysterious Man D",
-                "subtitle": "Hohoho... How dastardly!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "The total is...24?! Bust again?! That's three in a row. So unlucky...",
                 "line": 50,
-                "url": "https://drive.google.com/file/d/1R9kjviNSH7JhfFiYUYJPbGHfmgZoJwZ5/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1GK27lsurrZVxwVwMHDWo2ErXL_ujQFmN/view?usp=drivesdk"
             },
             {
-                "name": "Mysterious Man B",
-                "name_variant": "Mysterious Man B",
-                "subtitle": "What are you saying. I can't match you even in your retirement... Hahaha!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "You're being too greedy. Since your opponent has to keep drawing until they get over 17, sometimes it's best to stop drawing cards once you pass 17.",
                 "line": 51,
-                "url": "https://drive.google.com/file/d/1zRJ9jd7pfLT3A6RGPn1teK0BovRBh49m/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1JLunZ3eVghBl_uvTcqJKT07id0uSwjHL/view?usp=drivesdk"
             },
             {
-                "name": "Mysterious Man A",
-                "name_variant": "Mysterious Man A",
-                "subtitle": "Right...anyway, I will leave the details to you. I'll cover the costs.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "While there is no loss in getting 21, you have to understand that's not your primary aim.",
                 "line": 52,
-                "url": "https://drive.google.com/file/d/188g4tAsCgZzezfKusbN_1g8be11HigeU/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1TkT7mcy2Asq-7bjr8ejJJ1eVhofc4gWr/view?usp=drivesdk"
             },
             {
-                "name": "Mysterious Man C",
-                "name_variant": "Mysterious Man C",
-                "subtitle": "Don't underestimate our strength, Mitsugoshi!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "I'm up next... Deal me in.",
                 "line": 53,
-                "url": "https://drive.google.com/file/d/1uD0yujOanNskrevHLBH1gkdsowgWaXen/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1WM9WUozLy5IVs7VguZ7GOnMxGpQv9g9j/view?usp=drivesdk"
+            },
+            {
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "Very well... The first card in my hand is an 8.",
+                "line": 54,
+                "url": "https://drive.google.com/file/d/1PGxoAaroXO6ovOiJPkXAoIjMZgFPKzHp/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "I have a 5 and 6 for a total of 11...",
+                "line": 55,
+                "url": "https://drive.google.com/file/d/1glarumJfP5a0yiyJvkNLAkuAHuPaxlpG/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Hit me.",
+                "line": 56,
+                "url": "https://drive.google.com/file/d/1fgnQxNeGkvZgFKycOQNogb87Qhde65bF/view?usp=drivesdk"
+            },
+            {
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "Here's your third card\u2014",
+                "line": 57,
+                "url": "https://drive.google.com/file/d/1nuG9s2PwlYZO3nmjCa2meG_NFm6W38Nf/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Queen of Hearts... Face cards are worth 10, so that's a total of 21.",
+                "line": 58,
+                "url": "https://drive.google.com/file/d/1Ie81JEouYxdMOZTVKMGVsc0YprjE0Gk4/view?usp=drivesdk"
+            },
+            {
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "I have a total of 17... Well played.",
+                "line": 59,
+                "url": "https://drive.google.com/file/d/1TrvH0NPJA3AibVzAEPCycvc_y9q5Q8Mz/view?usp=drivesdk"
+            },
+            {
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "It's now one to three with house advantage. Next round.",
+                "line": 60,
+                "url": "https://drive.google.com/file/d/1dHac1hv7QNsIadexGN8pFAu9ay9n7Znr/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Stand. That's a total of 20.",
+                "line": 61,
+                "url": "https://drive.google.com/file/d/1yqcYeX6pRoJ3rEADE7heHNjy56zvmeEe/view?usp=drivesdk"
+            },
+            {
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "I lose with 19. It's now five to three.",
+                "line": 62,
+                "url": "https://drive.google.com/file/d/1oy_AZGXj2yIrxwzYnmmtuospxMgQcmja/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Ack... Four wins in a row! What is going on?!",
+                "line": 63,
+                "url": "https://drive.google.com/file/d/15YwoZNs0sdpxU6D--breWiUsIU-c5X0l/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Why are you upset...?",
+                "line": 64,
+                "url": "https://drive.google.com/file/d/1oyKUJpByKi64-gAw7VG70gLUGEIjPFHW/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "I'm upset because I'm the only one who lost.",
+                "line": 65,
+                "url": "https://drive.google.com/file/d/1P0_hm4ozxJOOSRHXfBVIL7o_914WfW4W/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "What a selfish thing to say... Anyway, back to the game... My hand is a total of 20.",
+                "line": 66,
+                "url": "https://drive.google.com/file/d/1H6UMkLfqd7kJNuFW0Jr_Z279J1n4oxwS/view?usp=drivesdk"
+            },
+            {
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "Mine is a total of 11. Well, what will you do?",
+                "line": 67,
+                "url": "https://drive.google.com/file/d/1kDDC23NuB5rDN4ZH-TvDcXXbO59H9Yk2/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "20... She has a solid hand. It only loses to 21. The dealer also has a pretty good hand, but there's a chance of busting. You should definitely stand\u2014",
+                "line": 68,
+                "url": "https://drive.google.com/file/d/1GWlLR8Klt8t4Uv-zjivsz0xj6W1N-Sod/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Hit me.",
+                "line": 69,
+                "url": "https://drive.google.com/file/d/1XeqkZw1MnZ6ZdZxu5uZIozxz85Q_w5xS/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Wha...?!",
+                "line": 70,
+                "url": "https://drive.google.com/file/d/16JNSnYBnuY30brn0N5cdxHXei-Ij0RX_/view?usp=drivesdk"
+            },
+            {
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "...Here's your third card.",
+                "line": 71,
+                "url": "https://drive.google.com/file/d/1TFGJF4UK81Iqz0x0b1ZyFCxLqAl4crVq/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "...An ace. And you?",
+                "line": 72,
+                "url": "https://drive.google.com/file/d/1jp4rdOZchBKx9MBSsYMLxT74pjsAjDkC/view?usp=drivesdk"
+            },
+            {
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "...16. As I'm under 17, I'll need to draw another card. That's a total of 24... Bust.",
+                "line": 73,
+                "url": "https://drive.google.com/file/d/1UzI_p6IDifz-Ey12BPw8X72qFAqLVBo4/view?usp=drivesdk"
+            },
+            {
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "That makes it six to three... The bunny girls win.",
+                "line": 74,
+                "url": "https://drive.google.com/file/d/1wNyZO-bD76vfNAPrNHgF-_-CiKmwO7gG/view?usp=drivesdk"
+            },
+            {
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "I see... So you were counting cards.",
+                "line": 75,
+                "url": "https://drive.google.com/file/d/1iamJoyrXe7EUwn941so8ogrywi2IOlu4/view?usp=drivesdk"
+            },
+            {
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "Counting cards?! So you were tracking the order of the cards in the deck! But when...?",
+                "line": 76,
+                "url": "https://drive.google.com/file/d/1pdDMlhG5C_VtndynxI5XkgmEjSxXVKZ2/view?usp=drivesdk"
+            },
+            {
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "She likely has an incredibly keen eye. She must have watched the cards meticulously in the first three rounds.",
+                "line": 77,
+                "url": "https://drive.google.com/file/d/1ol5tsveno59RTrNW-hAsde6fRHipJmCG/view?usp=drivesdk"
+            },
+            {
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "Furthermore, we often use new decks in cases like this, which can result in a certain amount of bias due to an insufficient shuffle.",
+                "line": 78,
+                "url": "https://drive.google.com/file/d/1ipsmS33L1KCfNpzHqaMhSGVwvAh-xzts/view?usp=drivesdk"
+            },
+            {
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "I doubt she knew the exact order, but she could make decisions based on estimates. She soundly defeated us.",
+                "line": 79,
+                "url": "https://drive.google.com/file/d/1wAUlQaOHUXdWGKuEosmVjQ7Glv5P-y4k/view?usp=drivesdk"
+            },
+            {
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "I-I see...",
+                "line": 80,
+                "url": "https://drive.google.com/file/d/1xEHQ6wBJdrVK_S7gyO4uxdyqsarpN6Ks/view?usp=drivesdk"
+            },
+            {
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "Quite the impressive match. Let's move on to the next game!",
+                "line": 81,
+                "url": "https://drive.google.com/file/d/1aRoKBXN8Fu7312MYl6yTTHCsFLDA0ZOX/view?usp=drivesdk"
             }
         ],
         "e5": [
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Valentine's Day, Mitsugoshi Cooking Stadium",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "The next game is roulette!",
                 "line": 1,
-                "url": "https://drive.google.com/file/d/1KxOdn981jH5Y9woItnk8SM8pEYnFT61s/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1pJxOq_9MAdwhuZpznuxC4epkTB2zAvYx/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Ladies and gentlemen, thank you for coming to Mitsugoshi today.",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "This time, we'll determine the winner by chip count, not the number of wins. You win if you have at least 1,000 chips within 100 spins.",
                 "line": 2,
-                "url": "https://drive.google.com/file/d/1U6P4iV11kNvz0fH4rsR0rDHHln3AaKiq/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1vDzpaTWR2v1xWH_YJvS8HOyQ0R47iUCI/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "I, Luna, Director of Mitsugoshi, declare this event to be open.",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "Your starting hand will be 100 chips... By the way, you'll have to pay for your own chips. We wouldn't want you to get complacent just because it's a game.",
                 "line": 3,
-                "url": "https://drive.google.com/file/d/1aTTlPyrhZXhwzuA2LU-Ocq2A6Flv67vu/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Yw4vr0sLqlHIETefseRO22WdT9MtNNUw/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "First, allow me to introduce you to the famous writer! Natsume Kafka!",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "Oh, and just so you know, our casino chips are 100,000 zeni a piece. We pride ourselves in being a high-class casino, after all.",
                 "line": 4,
-                "url": "https://drive.google.com/file/d/1xQQAItPuy4seKE6L6EWKY0mzl86n1EWN/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1kH1N18lY6IG1x4q0S_dHIfndq7Vl3863/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Hello everyone, good to see you.",
+                "subtitle": "(I-In other words, 10 million zeni?! Worst case scenario, I may have to go begging to Gamma...!)",
                 "line": 5,
-                "url": "https://drive.google.com/file/d/1IztQB3OOE-MWz-kZ-Ni3vwCLyxUFyUHo/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1txC7kAyPWpygaOZpEqfz4F9URulKGaPi/view?usp=drivesdk"
             },
             {
-                "name": "Attendees",
-                "name_variant": "Attendees",
-                "subtitle": "Natsume! We're rooting for ya!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Is that around 10 million? No problem.",
                 "line": 6,
-                "url": "https://drive.google.com/file/d/1m_ghiEzEBRH3IRi6yPqf4LBof9joN6ch/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/18pTXxU-KywRkcnb71qqhk-4uI0Fk6p2B/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "And, Natsume's chocolate-making challenger, the popular singer Shiron!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(She really has no sense of money... The royals are truly frightening.)",
                 "line": 7,
-                "url": "https://drive.google.com/file/d/1Z7kq7rMjzvKEU8AR_hCkvNZB2ufDkkar/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1qnu_1PSDlUl8NGpH3Ha50Jl_AAa-Fpuq/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Everyone, I'm here to give you a great performance.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Anyway, I'm sure you have something up your sleeve for this game, too, right?",
                 "line": 8,
-                "url": "https://drive.google.com/file/d/1wQ5C0QEccA7XWwcap77Eh9saHTQCqARM/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1GkokJ8bpYBEQ2SMg2aZE_wbuw8z05-55/view?usp=drivesdk"
             },
             {
-                "name": "Attendees",
-                "name_variant": "Attendees",
-                "subtitle": "Shiron! She looks so lovely today!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "...No, it's not that simple. The odds are far worse for this game.",
                 "line": 9,
-                "url": "https://drive.google.com/file/d/1qK857IQuixOvZrv04xZEYuOIXKYvoAjn/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1f0c49mQLpEi-J6_KY28D5JEvgrh0Chdi/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "For your chocolate-making, you may freely use any ingredients inside the stadium.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "...Around 94 percent.",
                 "line": 10,
-                "url": "https://drive.google.com/file/d/1D3baINovu3sUlcgJGMAalX0jCk7t_4-n/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1w6g9yTD98-0Q40cK81ld9fbC7UsObDSG/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Once the cooking time is over, our 3 judges will have a vote. The one with the most votes wins.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Excuse me?",
                 "line": 11,
-                "url": "https://drive.google.com/file/d/1RWF7rmdiiuWTL2SBNmyUwur0DaYWdEAX/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ZYNiZ60dd5TUoxzEVc9fKNOm-MfDkUK3/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "The judges will include myself, and a representative of the Kingdom of Art, Oriana! She is currently studying in Midgar. Princess Rose!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "That's the rate of return in roulette. Blackjack, by the way, is around 102 percent at best.",
                 "line": 12,
-                "url": "https://drive.google.com/file/d/19sxUkd2zFRV7UNdStnMk1SQv9RQg74FN/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/18OdRHijXzA1fgRnK8ClNOVAp9V-QoKmr/view?usp=drivesdk"
             },
             {
-                "name": "Rose Oriana",
-                "name_variant": "Rose",
-                "subtitle": "I am really looking forward to seeing what kind of delicious chocolate you two make.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "So, unlike Blackjack, the more you play...the more money you lose?! That's so unfair!",
                 "line": 13,
-                "url": "https://drive.google.com/file/d/1OpOvtneM1C--x4_4e_lFo_12K-uyMMms/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1uyYH0xabjsUn4VjqAtNpW5IWyux_bw0U/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Also, as a representative of our customers, a student who was blessed with great luck to be chosen. Cid!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "It's not a charity, so of course, the house has the advantage. In fact, Blackjack is the rare exception.",
                 "line": 14,
-                "url": "https://drive.google.com/file/d/17r3DumPbP-LV_Go8uddx_48G6kPcpzOB/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1NL1WsVJhs8PexWbmUdSSCMHu9csMz9VW/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Haha, hahaha... I'm so lucky.",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "Now then, let's begin. Place your bets!",
                 "line": 15,
-                "url": "https://drive.google.com/file/d/1UMH151GzLYOVYkWglbQgtROuni4-QBHb/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/10InHc0Fd51j6g_nFOf1SQLkLxwnLSvtO/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(I hate standing out, but Gamma said me being around really motivates those two...)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "When are we supposed to place our bets?",
                 "line": 16,
-                "url": "https://drive.google.com/file/d/1vbQa86DZSZQbZPymF-XqyvbUERnvvaIo/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Cu6XHafGZcn3avQfZdOVd44r8g4rOR99/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Natsume, perhaps it is a good idea to think about what you will say when you are defeated now, before we start?",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "We can bet now. I'll put one chip on black.",
                 "line": 17,
-                "url": "https://drive.google.com/file/d/1RiAd5jruvImhiaHSuidCxuMjKtsY1hQQ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1I0sxAYMDUwehDAJUpGz-nUKRddnYglz1/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Unfortunately, the word \"defeat\" isn't in my dictionary.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Black? You can bet on a color instead of a number?",
                 "line": 18,
-                "url": "https://drive.google.com/file/d/1psxaJ-65pJ9MmAGcJOCMCc3jeIsWisEu/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1e9ztLTVAvuAxLUA4dGV7GpuKFNqUuG-M/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Wow, sparks are flying! The writer and musician are glaring at each other.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Yes, if it's black, I win. If it's red, I lose. If it lands on green 0 or 00, then the winner takes all. It's easier to win but with less of a payoff.",
                 "line": 19,
-                "url": "https://drive.google.com/file/d/1_HhnHSaDmuoIrQjq9ulVumgtkyagCYq8/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1XbOVGjprAXDSpymEgoQpvO5oCJl6-9ZC/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(To the outside world this contest looks like a battle for the most votes...but!)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "In other words, a coward's way of betting?",
                 "line": 20,
-                "url": "https://drive.google.com/file/d/1tInCsZIknA4x9LXO0S_8vThK8soq2mf6/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1qsPm8b8H3juuN_f3SkDrXsztazhSHzDO/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(It doesn't matter who Gamma or the princess votes for, whoever gets Master Shadow's vote will be the real winner!)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Watch it...",
                 "line": 21,
-                "url": "https://drive.google.com/file/d/1iZ-YQzPR1SQ9eaNhahcJt8Ktq_MW8Gis/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ypeWyVPysIoChLapVWp1Ti1ailBRdi4H/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Crap... I'll have to choose one.)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(Calm down, Beta. Start by placing small bets with high-probability odds and observe. You need to get a read on the dealer if you're going to win...!)",
                 "line": 22,
-                "url": "https://drive.google.com/file/d/17AGWbdbAB6izRZcOHE_v0hMEVn3hQrpw/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1kNtKLPSKHQzuSYsbD9oqLTTrue1N6fxl/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(A real extra would beg a girl to make him home-made chocolate for Valentine's Day.)",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "Time to spin the ball! No more bets.",
                 "line": 23,
-                "url": "https://drive.google.com/file/d/1Tr0urB_e4lNrsEn4O94RhkTlSR6ZbJao/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/19XFCKgg6pMes__58F5VbmRxk3tGSUcsf/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Or you only get chocolates from your mom, right? But this? This is...)",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "The result is...red 11.",
                 "line": 24,
-                "url": "https://drive.google.com/file/d/1tC7LrSRQL4f7_U1CL6eiSW0vqCzYwYdX/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1susnjFbSUgWuiwv7LBIc9fID-dCwe35Z/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Anyway, being in this position to choose someone is taboo in my Theory of Extras...)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "I lose. There goes one chip.",
                 "line": 25,
-                "url": "https://drive.google.com/file/d/1bCVSc4cHsYnnO_5FfF0PGW7KCPLkBEIs/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1uJeF6MvPPa-nkEnnXeAFXVneyQhsKwyB/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(I have to figure out how to manage this...)",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "Onto the next spin...!",
                 "line": 26,
-                "url": "https://drive.google.com/file/d/11n3R7ZC1NsRHBJ05Dt0fwWUoYd3Vz1BI/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Q1kbg9-345j5Wtxm33GhtIqw_gw1OIMK/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Now, I will hit the gong to signal that you can start cooking!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Let's see. So far, it's landed on...",
                 "line": 27,
-                "url": "https://drive.google.com/file/d/1w1MJvkHHgZBEndn7DkHvY1Nz52QRBmox/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Yxbh6hNWJ178YaMZdc6_ozcS-uVbTh5I/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Thanks to our previous chocolate-making practice, I know her movements!)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Red 11, red 25, black 6, black 1, red 27, black 29, black 26, black 17, red 12, and black 8.",
                 "line": 28,
-                "url": "https://drive.google.com/file/d/1GQeeszEIWR3gbR2GXUq3ccdpdb00FcxV/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/180taen0BCku7nJF680Ql_Yc8-n9uV4w7/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Ahh...!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "I-I'm surprised you remember all that...",
                 "line": 29,
-                "url": "https://drive.google.com/file/d/1obUwnlhEGhZaNvAfJ3rDZdgyqTtiW7P5/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ECCwkSl85oASveDhEu8i-mQg7D035oQZ/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(Is she planning to make me choose my ingredients first and then compete with the same ones?!)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "That's a lot of black. Don't you think it'll land on red soon?",
                 "line": 30,
-                "url": "https://drive.google.com/file/d/1ZEMkdMf3caR-6byVpyKRXWnU5-uqSBs6/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1sfLtwRDX982yUkCRnFPxaZYYyM-oCBWY/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(If we compete with the same ingredients, my skills will win out!)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "It doesn't work that way. It's not like Blackjack, where you have a fixed number of cards.",
                 "line": 31,
-                "url": "https://drive.google.com/file/d/1bye_HC3pVGJJwBxF5sCqlgqXEZBKe3HW/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1GfH2HM5DJd5GxiGT73o6p6UZi9-t0EXX/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "(If she is thinking about out-competing me in skill, then she is way too naive!)",
+                "subtitle": "Excluding 0, the probability is 50-50 every time. It may just keep landing on black forever.",
                 "line": 32,
-                "url": "https://drive.google.com/file/d/1FxCyAulOjwjFClXYQNfKLd54gPWmaE9T/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1pYyj03-GLvtFmxFRdlt3zKlL_zVOPjsL/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "What is that?! Natsume chose cacao beans, and then pulled some kind of powder from her bosom!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Then what do we do? We've got to win...",
                 "line": 33,
-                "url": "https://drive.google.com/file/d/1MLSP40PTIob9JMALxMceDv6MEV6aHqvG/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1BzXNJvOoVNWBrzNC9rsCcDY2qLbGQM0I/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "She brought in her own ingredients?! Isn't that against the rules?!",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "Betting is about to end...",
                 "line": 34,
-                "url": "https://drive.google.com/file/d/159QFVKhkCpQ3lbtKAvHRttXPvCcFKM3P/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1UbWkYbZjyXIwY_ItO70gxZj6IVcNeDDW/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Check the rules! \"Please freely use the ingredients inside the stadium.\"",
+                "subtitle": "...One chip on red.",
                 "line": 35,
-                "url": "https://drive.google.com/file/d/1h8_K5t3hlLtYEV-L03C_-Ad44VBsCu0h/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1GpuSlYYPVf83U99IzxUGEWpDleXqwR7o/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "This ingredient is in the stadium! So no rules have been broken!",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "The result is...red 16. Congratulations. Here are your winnings.",
                 "line": 36,
-                "url": "https://drive.google.com/file/d/1lIB3MNV2sxuKyY7ocXRHp606dKs4ZK0U/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1hOnIUZ0FVFQ7TafP6el082RZneVRpsdl/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Pulling a plot twist from between her...?! That's why she is a writer!)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(We've gone through about ten spins without gaining or losing any chips. This time, the dealer seems to be consciously randomizing everything to avoid giving away any tells.)",
                 "line": 37,
-                "url": "https://drive.google.com/file/d/1-UtrH76N58m5oGbjirKN5yi0zy0f8ACA/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1bwr758F9SZ40r5SAsB2isOFe39Yyks6Q/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "(Hehehe, this is \"Original Seasoning,\" a multi-purpose condiment that I asked Eta to make for me!)",
+                "subtitle": "(Luckily, we've managed to maintain 50-50, but in the long run, the odds are against us... What to do\u2014)",
                 "line": 38,
-                "url": "https://drive.google.com/file/d/18Yqzf4BZLLCR9QL7-qzoasaOc0BKCD4O/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1X54Mpobla_gGHDh7N9K1QT0FYWc1zH5t/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(I need to cover the difference in technique with wisdom and inspiration! I hope this is delicious in the end!)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "That does it! I'm betting all the chips on 1!",
                 "line": 39,
-                "url": "https://drive.google.com/file/d/1oMnM0jujKO8ppgvn44sP1iRctTwKE0Ui/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Z1gclpueodVzlC2zTmenvZI34-jlOniA/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "I'll tell you one thing Shiron, cooking is about more than taste...",
+                "subtitle": "Huh?! Wh-Wh-Wh-What are you doing?! Dealer, cancel that bet\u2014",
                 "line": 40,
-                "url": "https://drive.google.com/file/d/16YtGAiU6wja6wY63ecOnDoy1RPFEp4OZ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1TXdvLt2JpkLGoLmrxZrIgN0C4Ko1pIYV/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Sorry to tell you this, but I learnt that beginner lesson long ago!",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "Bets made by your partner are also considered valid. Time is up, so no more bets.",
                 "line": 41,
-                "url": "https://drive.google.com/file/d/1bXCT987iW5HsbK1kYzJj6eYwWrEWhmeH/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1t5S1A0BBEA5f8ap0NC7zBu_ohwwOFxvL/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(You can't jump the gap to my technical prowess with a bit of cheating!)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "N-No...!",
                 "line": 42,
-                "url": "https://drive.google.com/file/d/1deFvwOJH1hBd4XZIHH0vxhl0J_D0LoNj/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1kHBhJd24ZNEKZvakEw0oAVDpWK_X24Lt/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Oh! Shiron is assembling her chocolate at a dizzying pace!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Brace yourself. If it lands here, based on the rules, we'll win. Even if we lose, we can win the next game.",
                 "line": 43,
-                "url": "https://drive.google.com/file/d/1JjJCR4bW2mVk9g7M0pxam-CfaBCqRU_2/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/19OQ5BqqDEV3D0OslPaX93wUghVuStKaU/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(It isn't your taste buds, it is your eyes! You have to taste it by...sight and by smell. With your nose!)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "By the way, what happens if it lands on the single number we bet everything on?",
                 "line": 44,
-                "url": "https://drive.google.com/file/d/1IlEB_eBpHddDvVbFOF6Seh-CgobfzY7z/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1wZReM5rYT7nYdCzZta-95bEHhnPqqBhu/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "A chocolate tower built so high you have to look up!",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "That's a multiple of 36, and since you bet 100 chips, the payout would be 3,600 chips.",
                 "line": 45,
-                "url": "https://drive.google.com/file/d/1s98PM-DPMoJxf5FSYoFd6xdV462tTRu8/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1_JuHqKRee19-FEiS8raRePfu2Qja5Nls/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "A perfect tower, she's proud of it's height, but it is impossible to move!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "That's a considerable gain. I may have bet a little too much, but if it lands on 1, we'll be the clear winners.",
                 "line": 46,
-                "url": "https://drive.google.com/file/d/1OLFKO6Lj8K-M3yprE3-10r-zA33ykzfh/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/195uJLk27ey6Z8ag6_LGVuEdnxOBm3-Di/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Do you see it?! This is a \"Precision\" technique! Before the judges can even eat your chocolate...)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Seriously!? I should've expected such outlandish and reckless gambling from a royal! Not that your family won't ultimately bail you out!",
                 "line": 47,
-                "url": "https://drive.google.com/file/d/1E-ylc4Z9L_7WhcimJNcxJwSUXXow82Xb/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Wb6M4CVskhR08ibJREbHJe_7lF2z2jjO/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Their stomachs will be full of my tower!)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "H-Hey!",
                 "line": 48,
-                "url": "https://drive.google.com/file/d/1XS5iKQOKoPGIqThe8iiNoSGtMu1981Yq/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1TMnjyzvFq8f3hoL7rgJpP72QUj2dXO6q/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "S-So that was your plan! To physically fill up the judges!",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "A royal...?",
                 "line": 49,
-                "url": "https://drive.google.com/file/d/1rZqWGxgvv1GRkAfZQITE2-HcJuUkc53K/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1fjtIZ05Jy1Ib4p1fSp5MCJflErbj2SKF/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "(Then, could they eat my chocolate first? No, but...)",
+                "subtitle": "I-I meant she acts like a royal...! It's a metaphor! A metaphor!",
                 "line": 50,
-                "url": "https://drive.google.com/file/d/1eatyoB1ucJ49w4fZLYOAEQo5wbQMbHK5/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1N53pEY9_7PfrbWQioqvqv7HZHKi5DJZh/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(I will need to throw the precious Shadow Wisdom that Master Shadow taught me in the trash. \"In a cooking battle the one batting second has an absolute advantage!\")",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "...Time to spin the ball.",
                 "line": 51,
-                "url": "https://drive.google.com/file/d/1UTRq0mExbxg-sqhEN_lSVzAx4PF9M8fx/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1YN95qCV9irgroH9usSRNCuNkca6fk2ih/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(...Yes, sometimes the one who goes first can win! I will prove it!)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "I'm getting excited!",
                 "line": 52,
-                "url": "https://drive.google.com/file/d/16g4k_6Qbqn3SIc79Cd_pu4k4s7GchfV_/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ognFm5vekxj__JPqnZJdwtHrOjaHfttv/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Meanwhile, Natsume has started making a thick bar of chocolate?!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(Waaah! Help me, my lord!)",
                 "line": 53,
-                "url": "https://drive.google.com/file/d/1Ae_ptFv7EhExmblGpUCU7DNbSWs8KvBY/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "What is it...? It's like a book...",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1wQfHBHbm9St0vSs14lOAAZh8R6VdH_zJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Yes, I'm making a book! Shiron, your strategy is not nearly enough!",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1hIAAMyBFfvqjavWpXqST8eiOJhzzWn8W/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(It's true that you can taste food with your other senses... But, there aren't just five senses!)",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1RjkRpj50TNnrwco9CN3b4g8uBQDCbWt7/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Natsume has split the book! Now she is writing on the dark chocolate pages with white chocolate!",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1SP3ui67G3u49dIB5voP-d74vkiLetRW2/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(People live by eating information... Satisfaction, feelings of superiority, possessiveness... Stimulate them!)",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/17hNP82Femzq7pUVnfa7GwlLXM-fhDvS6/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Is she making a real book?! It will be a special story newly written by a best-selling author! An edible chocolate book!",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1L1ecGVAHePCbOtkTARipNbyRA331IxJ8/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose",
-                "subtitle": "There is nothing like it in this world... What a luxurious chocolate it will become.",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1dWr-DycchovfSDWCT0rH2y6hcT30DWMq/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Damn... Can I involve music somehow? No... I can't think of anything like that!",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1_ks3ISHJ5CIMrcJ8AZHuFc90_slTUVsV/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(This is a precisely calculated tower, I can't add anything to it, or remove anything!)",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1a3-BdkhCfCv2ck1Sf4i-x7VTK5yH7dzQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(There is nothing I can do except trust myself, and run with it...!)",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/1iwCMylijcsHtn4CcpMfVJ1JTOf9oLMjy/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Stop! Your time is up!",
-                "line": 64,
-                "url": "https://drive.google.com/file/d/1A044bp5y8jlxBzwtYh9y5rd4uA9BxprJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Somehow I managed to finish writing...",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/1m5GT-hchDPrSIDinqJd-REk-Snkwb69o/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I finished too... *huff* Tower...finished...",
-                "line": 66,
-                "url": "https://drive.google.com/file/d/1BdJQtSkWw8b8HeQEa9nHUdiw-kxUON62/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Great work both of you! Their chocolate creations are ready! Now for the judging!",
-                "line": 67,
-                "url": "https://drive.google.com/file/d/1jzQC6GgBnKPYMuC6RRZtqopvG00ENIZ5/view?usp=drivesdk"
+                "url": ""
             }
         ],
         "e6": [
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "A chocolate-making battle between Natsume and Shiron!",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "If it lands on 1, you win. Anything else, we win.",
                 "line": 1,
-                "url": "https://drive.google.com/file/d/1u4Znj5ITxq2_56EfsGJCh3PLYi01beR8/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1c1k8Cswa2oItl3Znfy-4qFcXyeJaH2nU/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "What a spectacular show! Now to try their finished creations.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "It's over... All my hard work is for nothing if we lose this pivotal match... Ohh, what did I do to deserve this...?",
                 "line": 2,
-                "url": "https://drive.google.com/file/d/1SqVwdDq35wcyish79ufcrCNxO-eW15UY/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/19wTTNNJfH-LI0z3eGc7sI6CN4yhTzzoA/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "First, Natsume's chocolate book!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Well, sounds like a \"you\" problem.",
                 "line": 3,
-                "url": "https://drive.google.com/file/d/1D5Ndj7E2_HEduefFfPFLM7iXvoZbH_95/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1zvXyAesoXeqwVCZx3yYfmpSMs7qkssWb/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "It's a waste to eat it after she wrote such an amazing story!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "It must be real nice not having anything to lose!",
                 "line": 4,
-                "url": "https://drive.google.com/file/d/1_TBy0CepTG4xhmR8SX6vwUzbeOAljPmf/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1S5qTe5el559Lefl9MmkRNSyy5q3ZHGD1/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(You're saying that, but at the same time you are cutting it into little pieces...)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Relax. We're going to win this round! I've got a good feeling about this!",
                 "line": 5,
-                "url": "https://drive.google.com/file/d/1jtA14w7mdjlg-lf-CBHYgsBhv3oJozEg/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1BjKi9hAcUUohY0Cy6O4djbur7cWCEVNk/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "And the taste... *munch* ...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Yeah, sure. Good luck with that.",
                 "line": 6,
-                "url": "https://drive.google.com/file/d/1_2GSTGc51XEKVAshvXOo1gxPY2xMKK9b/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/17Z4XLuhNkOFys0FaPYc4RBJbSfPP-G7q/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(Ugh... My nerves are in a twist about the evaluation since she stopped talking...)",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "We're just about to see the results...! Ohh...?!",
                 "line": 7,
-                "url": "https://drive.google.com/file/d/112SkWiKQcnwNFiaJK3CcvHjb7UobeDUy/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1x6vWN7ejn2Lw-fdLiZlSnczhgZmVHUJp/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Delicious!",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "O-Ooooone?!",
                 "line": 8,
-                "url": "https://drive.google.com/file/d/1wXxP7gbMVIHqBNBRHNeykY_0opccNuLF/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ojPnB9h0Wj-HxyHrodAIMAxlWeKABG6H/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "I did it!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "S-See?! I won! C'mon, hand over my 3,600 chips! Eeeek! I'm amazing!",
                 "line": 9,
-                "url": "https://drive.google.com/file/d/1btgpu5GnZ3VX4Efy6XQSQPRIFbGu7R6C/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1xbouiVPn4kiDXghfIkcwdmDilGwbfNLz/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "The chocolate has a fine texture, and it melts so smoothly on the tongue!",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "M-My apologies...but we're out of chips. We hadn't anticipated this outcome...",
                 "line": 10,
-                "url": "https://drive.google.com/file/d/1qXWix96yhib_XmwYFBW97urXm1fzRk-w/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1bBXlXhGw19iZ84_iSRDam2rTQlR7bI7D/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(Though, this is the technique I saw and stole from Epsilon. Temperature...)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Huh? Well, that's no fun.",
                 "line": 11,
-                "url": "https://drive.google.com/file/d/1GoVV3mskptLyplsC5IQiP-MuObbGNii9/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1uyXPkFfYxwwBEVBtNr39SThSYVFK6Xh2/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(Sorry Epsilon, I borrowed your technique.)",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "Wh-What astonishing luck... Unbelievable...",
                 "line": 12,
-                "url": "https://drive.google.com/file/d/18p5src8NXfbFswHAqY1K2BysuvA2g-9a/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1S8P6aHLlCaGhwuDeVdGNuZdWiyCDmx07/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "I thought it would be heavy, but this dark chocolate is crispy.",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "Such luck is unheard of! Unless we're talking about the natural luck of the royals...!",
                 "line": 13,
-                "url": "https://drive.google.com/file/d/1nrw9o9artFF0cveuoIqOuKDS8Xnmf6TM/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1IOHfcTvGxq6kqwj6T-UJnWrBTzeRxXkI/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Rather than being plate-shaped, I used a cross-shape to bind air inside the chocolate.",
+                "subtitle": "(Well, she does happen to be a princess...)",
                 "line": 14,
-                "url": "https://drive.google.com/file/d/1pVsVJm9mvtKq9SzUUpztCkRF_cleNayq/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1cCpnjrEuv-41erOEXEBPYgvwGI4jbChb/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "It would be absolutely terrible if you get full before you eat Shiron's chocolate.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Heehee! That gives us two wins in a row! What would you like to play next? If it's poker, I know how to play.",
                 "line": 15,
-                "url": "https://drive.google.com/file/d/1zBuurwLyLnfTJFAElNWONqO4NE2hc0po/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1I9NWiVF2xl50tuYpZCU96pD1ncapEs3I/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Are you pouring salt on my wounds after stealing my technique? I wonder how far she will push it.)",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "No, we've already won two games, so we're the winner. But thanks for the transparency that you're just here to gamble.",
                 "line": 16,
-                "url": "https://drive.google.com/file/d/1CNRKI_HFR8tNYAqYCZQQVZULY19JqTMD/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1IYGazbQ3UsVCFU06OUKbz1v5--sPhazR/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "But, this powder that was sprinkled all over it, it doesn't match the chocolate taste very well...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "By the way, since we had to self-fund the money we gambled with...you'll, of course, be paying us our wins, correct?",
                 "line": 17,
-                "url": "https://drive.google.com/file/d/1rbIBrCVsRZed1ENYN7NHfkp9pDnZmhUH/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1L9R4SkAVCpLgIW3ck2rW3A1WmtKfbacc/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "I-Is that so...?",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "Ack! Oh dear. I hadn't expected us to exceed the event budget... What will I tell the boss?",
                 "line": 18,
-                "url": "https://drive.google.com/file/d/1iOcB_OIhUeg1-oEFNJ3Tpk884dHMXoyk/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ASpZ0vAZaH4MJnDT8Pa4t3yMiRAE0W5Q/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "(The seasoning Eta made and gave me, her Original Seasoning... I didn't have time to test it out with chocolate...)",
+                "subtitle": "Boss...? But aren't you the boss\u2014",
                 "line": 19,
-                "url": "https://drive.google.com/file/d/1izTKgB8FU44hIiAfGPC3NNXd8ksAspwQ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1SUrDUsXPL8aw6ZV-qWsc8z2GGXKJBuHM/view?usp=drivesdk"
             },
             {
-                "name": "Rose Oriana",
-                "name_variant": "Rose",
-                "subtitle": "Now, the chocolate tower made by Shiron.",
+                "name": "Joker",
+                "name_variant": "??? (Joker)",
+                "subtitle": "What a poor showing, King. I came here because you told me an interesting match was taking place, but all I see is you losing badly to a couple of girls.",
                 "line": 20,
-                "url": "https://drive.google.com/file/d/1cmrj8sjfvlsZI78VMH2QM6a_dF-ydQQf/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1LlhJskPViKufKhoHGuoiXU_G_DLJgVmp/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Yes, I hope you enjoy it.",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "B-Boss...!",
                 "line": 21,
-                "url": "https://drive.google.com/file/d/1IJl4wyBssZbiU30z4tBFMcQD1jBR3UoA/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1YRXUwO9nHWrCrYyiAnbo9F_Nmtm2sc1X/view?usp=drivesdk"
             },
             {
-                "name": "Rose Oriana",
-                "name_variant": "Rose",
-                "subtitle": "Well, first of all my eyes are drawn to the many detailed designs...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Boss...? King, you're not the one running this casino?",
                 "line": 22,
-                "url": "https://drive.google.com/file/d/1qU8sbOdgvausTbwrn9bq_GhUfkajE_Fy/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/14tLErdt9JruCmROk79BPpSm7O_XqdakO/view?usp=drivesdk"
             },
             {
-                "name": "Rose Oriana",
-                "name_variant": "Rose",
-                "subtitle": "She didn't just build a tower, there are detailed patterns drawn on the pillars...",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "No, I'm second in command... Joker there is the boss.",
                 "line": 23,
-                "url": "https://drive.google.com/file/d/1KVp7S4RjwS6EEncOVF18MMyHMrTFhJnK/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1_-yVC4nmu2B-U11YXBYvLj-ne9QOePoY/view?usp=drivesdk"
             },
             {
-                "name": "Rose Oriana",
-                "name_variant": "Rose",
-                "subtitle": "In the Kingdom of Oriana, this kind of chocolate would be popular, and would also receive praise.",
+                "name": "Joker",
+                "name_variant": "Joker",
+                "subtitle": "That's right. King was originally a customer, but I hired him and gave him a high position due to his excellent management skills.",
                 "line": 24,
-                "url": "https://drive.google.com/file/d/1i9j3wjdfqNRYDvW2XYOs_sqLxsFw9tHy/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/17pFcRtZZH_6WjsrxMFT_kwEVtrVYrzRU/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Wow... Coming from a lady of culture, there isn't any higher honor...!",
+                "name": "Joker",
+                "name_variant": "Joker",
+                "subtitle": "But that's beside the point. King, Dealer, how will you rectify this loss? Wouldn't you say these expenses are a little too steep for an event?",
                 "line": 25,
-                "url": "https://drive.google.com/file/d/1hyJG0tnrWKCm8mCSjOj8ID8ScbsvKOfq/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/103TmzRX4VwDgFiIxpECjVjT-sejgaWbJ/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Shad... Cid, please have a bite.",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "M-My apologies. Forgive me...",
                 "line": 26,
-                "url": "https://drive.google.com/file/d/1yWPAL5hzpK93BTFpoiNBiFGNgeclqz79/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1wg3K-BHnUviXss9aPjy7WTJwSqKMrHVY/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Uhh, yeah, I'll try it...",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "I'm not defending them, but I'm pretty sure these people were just doing their jobs.",
                 "line": 27,
-                "url": "https://drive.google.com/file/d/1-iwSjeMVlFKLro00Ypr5yYbNRomwGzZp/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1BhRYuRmnYXHSkdluxv_sLRloxgDqlONm/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Double damn, I still can't think up a reason not to choose either one.)",
+                "name": "Joker",
+                "name_variant": "Joker",
+                "subtitle": "Oh? You can't say they were \"doing their jobs\" when they failed to consider unexpected losses. They'll have to take full responsibility.",
                 "line": 28,
-                "url": "https://drive.google.com/file/d/117eFKLqACaOaaKd69c1iHmnzIDWzO2lK/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1cLms2n_rH-9-fpBKRQbHtERRRQo3ElGO/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(I'm almost at my escape card limit, but maybe...)",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "What an arrogant-looking guy... Being in my position, I don't want to overlook the misery of my people. I'd have difficulty sleeping at night, especially knowing I was to blame.",
                 "line": 29,
-                "url": "https://drive.google.com/file/d/1_9WTwUzupdNFKaTpwhA4Nj1YpYP90qsg/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Jweg_Jg7YuQIe4HDMNFweFTTL038HCyj/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Um, how do I eat it? If I cut a piece from the bottom it'll collapse.",
+                "name": "Joker",
+                "name_variant": "Joker",
+                "subtitle": "What're you going on about...? If you're attempting to overturn the results of a game, we'll have to take appropriate action.",
                 "line": 30,
-                "url": "https://drive.google.com/file/d/1Ve6MzaJ-TWqXUrevD2NXTu5X8pnGFlQL/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1LyAbgPgG4hd-etj6S3sM-4tw1Om8K-u9/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Yes, but you can cut from the top...",
+                "name": "",
+                "name_variant": "",
+                "subtitle": "The guards who had been waiting in the wings surround Beta and Alexia.",
                 "line": 31,
-                "url": "https://drive.google.com/file/d/1leOgZNSIiIPwvE_EYZgyINdeB-_iN0T7/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1RlclMIPrOjecbnMEKF81tvCJPb-yMgPg/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Well, not even my hand can reach the top...",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Fine! You already killed my winner's high by treating me like I did something wrong! I'm pissed! I'll take on all of you!",
                 "line": 32,
-                "url": "https://drive.google.com/file/d/15pW26BDyV18NIz137KiecRVkX7peOR5m/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/11-yPUocu395lEG2su7yv1ivk82o90uRf/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Craaaap!! I got carried away and made it too high!",
+                "name": "Joker",
+                "name_variant": "Joker",
+                "subtitle": "I was once a renowned warrior. I'm not averse to settling this with force, but just know I won't go easy on you!",
                 "line": 33,
-                "url": "https://drive.google.com/file/d/1HKWGdPD9NaLQCqQ70KXvTQ_sRoHWkEAY/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1pK-s-sIklKow5f1E_vPoVlFiMKCT7Hhg/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Then, let's use the stepladder over there and just cut the top tier.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Oh c'mon! We won! Why is this happening?!",
                 "line": 34,
-                "url": "https://drive.google.com/file/d/1TDYZWYDDWx6LbrxgzR0KCZn-A3Q4BGWf/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1XTwgHML_9s0CYh1Fvo9PJWMTO9LDJKXk/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Erm, absolutely not, Gamm...Luna, your clumsiness will cause a catastrophe.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Eeek! Sooo scary! I'm too young to die!",
                 "line": 35,
-                "url": "https://drive.google.com/file/d/1QL7R_wbKyuei5vXtbm8yBEVe3QOfasn9/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1_rvB7vbb_JakJzMGvDtC3SoT0625RFcw/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "No no, I won't be clumsy. Please trust me.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Hey, why are you hiding?! Where's all your bravado from a moment ago?!",
                 "line": 36,
-                "url": "https://drive.google.com/file/d/1apfGgxa3p_7OuuNk8CAZzByTn4TTUFAn/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1gVp5u3AgvAtFowf3gBAhxAt6VRubp04C/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Ugh... I have a sinking feeling about this...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Waah...! I've never held anything heavier than a pen! ...So I'll leave the fighting to you!",
                 "line": 37,
-                "url": "https://drive.google.com/file/d/1OvTcrBzGrTw9QbVlPaLuZIs3hwyRB-lN/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1KxSXHDq4W3dXgpH6RnPgteHAXgnR-noe/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Here we are! Now I will cut the chocolate\u2014",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Jeez, back me up, at least!",
                 "line": 38,
-                "url": "https://drive.google.com/file/d/14icSsCUPobMdJnxD5kfBUU5oDCPScVG9/view?usp=drivesdk"
-            },
-            {
-                "name": "Rogue B",
-                "name_variant": "Rogue B",
-                "subtitle": "Aaah!",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1FkQz-bfNNq3SdCcOrvwpthEMhuYTH490/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Eek?!",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1SO-dMpLmBEvaV0wicd0kx7R8Zpa34auZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Ohhhh, Gamma on the stepladder got a shock and lost her balance!)",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1xn_zYkVBpJsxYR6Q0OJvZJ11fJCLWgYr/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Are you okay?",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1TDAKmeaNW4kj77xKC-HzD2Dc1CpQhM-D/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Oh that was close...but somehow my tower was protected...)",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/11S0DagTgRVVGFnJiWkrlr0APCivF5Yb8/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Hey, what are you doing?",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1KYa48fS9O6l-GgncLaW4xA7ISsY6nPKc/view?usp=drivesdk"
-            },
-            {
-                "name": "Rogue A",
-                "name_variant": "Rogue A",
-                "subtitle": "We were hired to work backstage! But we've had enough!",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1e6R8WyjOia14wZ0exw7uz94ANDsVHWne/view?usp=drivesdk"
-            },
-            {
-                "name": "Rogue Leader",
-                "name_variant": "Rogue Leader",
-                "subtitle": "Mitsugoshi won't pay us, they just demanded we turn up today!",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1xSmRR02UrVTTttJeGYGo4X4ZRky0j13T/view?usp=drivesdk"
-            },
-            {
-                "name": "Rogue B",
-                "name_variant": "Rogue B",
-                "subtitle": "We've had it! Mitsugoshi, raise our salaries!",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1hYeiYsJSEJ9eDk-i31vc9qObR4As1-Dp/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Stop this at once! You are ruining our special event!",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1GJ-46z9KBd7Ck9ftfLjd4OKNfuO8RsnO/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Gamma, one question\u2014are they really part-time staff at Mitsugoshi?",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1PcU1pFJR0u6dAAkkSwExkFqbTylOotuh/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "They...might be. This event was suddenly thrown together, so I omitted a few background checks.",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1l2S0-FJLxcggDTJC_TmwEjWd-g9tg4V8/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "So, is that chocolate grenade you're about to throw a prop?",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1lcZ2GgTmxzIX_YlOlm6-3r4D29uGw3x4/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "No, I wasn't thinking anything of the sort!",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1h3_amlTzAYsbSODvC39jkdPC5A9YWaay/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "So maybe it's some kind of harassment arranged by a rival company that hired mercenaries...",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1SVowRWi5DbYow_YmeRqL57ITELXNLO2S/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Would they go that far? However, we've garnered so much resentment we wouldn't know who did it...",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1LdoeYjxxaNOMZFQ6wyz4c5NB1lh4mvKA/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "I think in all probability this would have been backed by a company that sees Mitsugoshi as an enemy.",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1WWwYcxdwBKRXc1oAstinNOAl_B-KwP-J/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Well, regardless of who's behind it, I'm gonna make use of the chaos and quietly take them out.",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1UVzjHkl_o8Dz5oP77cBcN6MS7fT2lJsU/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Th-Thank you... We can't resort to force so publicly.",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1UgYJIburxNuOXcX6XhNu5toYvXTRAAMB/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Saying that, how do you think I became Shadow...",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/19TVgICZ3fyKvCj3ThL2_xML0VvUU0_jj/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose",
-                "subtitle": "Cid, it's too dangerous here!",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1H0itmOjKtzIU7oNCcLlslZepxuaWXect/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Huh? When did she grab me by the scruff of the neck)",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1MZtD4vnrCJgOQfSxhreKpHnV2hD7qtvY/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Nah, I'm safe...but I think Natsume and Shiron are in danger...",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1vyyXxllh51B-WE_gQ9YEUxQs5Wbr-C-y/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose",
-                "subtitle": "Don't panic! This time I will protect you! They will have to kill me to get to you!",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1uZ6Xhw65acmJY2DpQwo9veDaS5-EEAfP/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Aaaah! Gaaaaaaah!!!",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/1Gyn_cS3ktF5TGGw0QEMfBDL8QEfqlQnU/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(A cat burglar has carried away Master Shadow!)",
-                "line": 64,
-                "url": "https://drive.google.com/file/d/1mFnmXmfczs93vs1cfwQZN8jcM_pX0t2e/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(If Princess Rose and her fighting ability are gone, there is no one left who can go all out...)",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/1MDY2SDzde8I9nWPjrHrwEjHtj0lUxZ50/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(But do you bastards really think you can interrupt this duel between me and Beta with your pitiful interference?!)",
-                "line": 66,
-                "url": "https://drive.google.com/file/d/18hW0nthHi2lrr4wyFRR9ym4wD91tyTa7/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "(~?)",
-                "line": 67,
-                "url": "https://drive.google.com/file/d/11678kzsTe02TH2nApOSJ5ncjuOfFdg0I/view?usp=drivesdk"
-            },
-            {
-                "name": "Rogue A",
-                "name_variant": "Rogue A",
-                "subtitle": "Wh-What's up with the song?!",
-                "line": 68,
-                "url": "https://drive.google.com/file/d/1YPoJdSnPfwV1PHdc-QiS90_CH0SeWiNN/view?usp=drivesdk"
-            },
-            {
-                "name": "Rogue Leader",
-                "name_variant": "Rogue Leader",
-                "subtitle": "It's her, Shiron! She's playing the piano!",
-                "line": 69,
-                "url": "https://drive.google.com/file/d/1GUJ-bpYijsjVpuVyEnUvFI44pR30pY6V/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(Epsilon, what are you doi\u2014 Oh! Nice!)",
-                "line": 70,
-                "url": "https://drive.google.com/file/d/1aznI7VJr8uizb_Ev3YCJqYt8VGP54VLi/view?usp=drivesdk"
-            },
-            {
-                "name": "Rogue B",
-                "name_variant": "Rogue B",
-                "subtitle": "Agh!",
-                "line": 71,
-                "url": "https://drive.google.com/file/d/1hw-fFnh7vEiIht7G6jZXiMSlM0GCOffs/view?usp=drivesdk"
-            },
-            {
-                "name": "Rogue A",
-                "name_variant": "Rogue A",
-                "subtitle": "Ahh...!",
-                "line": 72,
-                "url": "https://drive.google.com/file/d/14j1Z1KohNSDz5_PNR4VD-KC4JtvEMqoY/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(Everyone is focusing on Epsilon! I'll take this chance to pick off some of the enemy!)",
-                "line": 73,
-                "url": "https://drive.google.com/file/d/1g519yAYbTlejbWaQ5fVGvkWTc4X6MYWh/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Everyone, this is Shiron's magic song! It has the power to make even bad people behave!",
-                "line": 74,
-                "url": "https://drive.google.com/file/d/1lntFTTC9oMBoJRmk3ssoGqQagQh01w4s/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Heh, she is throwing the ball to me and directing everyone's attention to the stage... I'm the human sacrifice in her improvised plot...)",
-                "line": 75,
-                "url": "https://drive.google.com/file/d/1Cosb-FLCGjiVqGPMKAb1pt5daeeohMGN/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "(~?)",
-                "line": 76,
-                "url": "https://drive.google.com/file/d/1xpWUwR-3dKS8BWpbSpWrpMmEnALmnihC/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(She really is a third-rate writer. But, no other choice here so I'll play along!)",
-                "line": 77,
-                "url": "https://drive.google.com/file/d/1MABOCmt-COu_j0cH2BmfKqg5cO6dOpzu/view?usp=drivesdk"
-            },
-            {
-                "name": "Rogue Leader",
-                "name_variant": "Rogue Leader",
-                "subtitle": "Damn, we were goin' for a surprise attack, but they are surprise attacking back! Get the others in 'ere! Get ready for a melee!",
-                "line": 78,
-                "url": "https://drive.google.com/file/d/1ahAwu-q6XTlyPSvquJhBOhLtUpDvMOvi/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(As if we will let you. This improvisation will end secretly, in the shadows!)",
-                "line": 79,
-                "url": "https://drive.google.com/file/d/1-GTnyM_eF_EfFWrpvcDlxvzRxt85bouH/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1eqNmMJKozjhthX5oMQho5i1iG0UZtQJE/view?usp=drivesdk"
             }
         ],
         "e7": [
             {
-                "name": "Rogue Leader",
-                "name_variant": "Rogue Leader",
-                "subtitle": "Damnit, I didn't say do that! It's an easy job you fools, just work up a riot!",
+                "name": "Joker",
+                "name_variant": "Joker",
+                "subtitle": "Ulp... Who would've thought she'd be physically formidable as well? A complete miscalculation...",
                 "line": 1,
-                "url": "https://drive.google.com/file/d/1pCfFwc7nFbCfK39TBxw_q7RQNDO3rT2F/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1su7TK3EsFGB1eRXzyCscx7EZhhIvo7Gk/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Easy jobs always have a catch... If you don't know that, you really are hopeless!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "*pant, pant* Don't underestimate my strength.",
                 "line": 2,
-                "url": "https://drive.google.com/file/d/1At0n5rCo3eLHpnqsycniGBydONZsfIen/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1NDaTsI9ndq7M4KPpWz656U4pZLsDpb4x/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Time to play the last movement... Time for the grand finale!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Eeep... Is it over? That was sooo scary.",
                 "line": 3,
-                "url": "https://drive.google.com/file/d/1mvqzPTbNN4-KxPrK5GD2vA24GNTJgVsj/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/10WfIeouTszRqmraD4lbsRo_aDF4btu5m/view?usp=drivesdk"
             },
             {
-                "name": "Rogue Leader",
-                "name_variant": "Rogue Leader",
-                "subtitle": "Damnit, she's a decoy! The other finalist is taking us out separately!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "...Drop the act already.",
                 "line": 4,
-                "url": "https://drive.google.com/file/d/1-OFhZaAsJn_FxFQQKWXMjJdNdg-V9rkl/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1SiNaoFllh6hEalS6o25dsGq-4gpPDkXN/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "You noticed too late.",
+                "subtitle": "Whaaat? What on earth do you mean?",
                 "line": 5,
-                "url": "https://drive.google.com/file/d/1inrhjsFM8ETIxzAOociMYJ4EZovFRhuW/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Xl6sFxjQvGnrSetHljDf2d5iwgAEjAlF/view?usp=drivesdk"
             },
             {
-                "name": "Rogue Leader",
-                "name_variant": "Rogue Leader",
-                "subtitle": "Ah! You're that writer...",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Jeez, you're one annoying woman...",
                 "line": 6,
-                "url": "https://drive.google.com/file/d/1wwh7B6j74nyVxUJkNQeU1qdpewBQJiSy/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1kyHjwxcL2FY6PsO-r2-0huiEfqqPe7Nx/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "It's time to put a period on the last sentence of this drama.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "...As for the rest of you, don't get any ideas.",
                 "line": 7,
-                "url": "https://drive.google.com/file/d/15kWvVEElTac4t6tLTOSpIka9M-sDdzzs/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1AZvF4E20VLRqR1EWwGF8hKHcaV40EJCr/view?usp=drivesdk"
             },
             {
-                "name": "Rogue Leader",
-                "name_variant": "Rogue Leader",
-                "subtitle": "Ugh! Damnit...! If we gotta retreat, I'm takin' you with me...!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "After such a spectacular rampage, I won't be surprised if the Knight Order of Midgar Kingdom arrives soon.",
                 "line": 8,
-                "url": "https://drive.google.com/file/d/1KSF3MtR2Q7j4W_tKzwchWQIJ4TBmhFz9/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1nGHAz1yHdNQ6GbtdNs236Lb7J-_uGb-r/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Huh? Me?",
+                "name": "Joker",
+                "name_variant": "Joker",
+                "subtitle": "What?! This is between us! It's none of your business!",
                 "line": 9,
-                "url": "https://drive.google.com/file/d/1MlptTat6IW_7ocUnu14jTfUZLbWEviYk/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1bm87zpM5C4_MxtZglMCWqQrZoNHusAYv/view?usp=drivesdk"
             },
             {
-                "name": "Rogue Leader",
-                "name_variant": "Rogue Leader",
-                "subtitle": "Director Luna of Mitsugoshi! If I can take you out of the picture then it'll be mission complete!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Of course it's my business. I am Alexia Midgar, Second Princess of the Midgar Kingdom.",
                 "line": 10,
-                "url": "https://drive.google.com/file/d/108HcX9v5pjDxi5Y1mUnmaU1bXMZpPrMf/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1CI2--q65WCniIn5CdC7m7tfwwLCRtHVs/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "S-Stop that! Let go of me!",
+                "name": "Joker",
+                "name_variant": "Joker",
+                "subtitle": "...Wh-Whaaat?!",
                 "line": 11,
-                "url": "https://drive.google.com/file/d/1nzA6rLia__0nyTsaNNqQDDOJkMhOr7-_/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/19OrCf5Thn70DK74p8mzzCUSU2jJytDW5/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Oh, that's...!",
+                "name": "King",
+                "name_variant": "King",
+                "subtitle": "...Wh-Whaaaaaat?!",
                 "line": 12,
-                "url": "https://drive.google.com/file/d/1_xYbTeFtVXYIDtWXK9Z8E2yr-XJMsClj/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/12EWcv5CCjQNYBfZj36Mda9eLm6WK2sbT/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Oh, that's...!",
+                "name": "Dealer",
+                "name_variant": "Dealer",
+                "subtitle": "...Wh-Whaaaaaat?!",
                 "line": 13,
-                "url": "https://drive.google.com/file/d/1x7hEENrY0XpFSuVW1VEGIF5X-t1FR6X9/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1JY_4dsR_TuEBihhnx4zepvfEzReGOksG/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "What the...?! Oh...!!!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Y-You sure you're okay giving away your identity?",
                 "line": 14,
-                "url": "https://drive.google.com/file/d/1wx0e0465Hv_PBt7VWcZQSQMO-XBkkLve/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1kv4FWgn7Idg1s0oE5ktEKoHXtGB8LFjP/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Noooo, my tower!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "How else are we going to resolve this situation? Anyway, I've enjoyed myself plenty already.",
                 "line": 15,
-                "url": "https://drive.google.com/file/d/1cxLrRWy0TstUGGiY54BpB-oAft90fQ4I/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ynJ2hFdR5ysLMhFQQ9d2X8E2Ugcww33h/view?usp=drivesdk"
             },
             {
-                "name": "Rogue Leader",
-                "name_variant": "Rogue Leader",
-                "subtitle": "Wh-Whoa, the tower! Aaagggh!!!",
+                "name": "Joker",
+                "name_variant": "Joker",
+                "subtitle": "I had no idea you were the princess. Please, forgive my disrespect...",
                 "line": 16,
-                "url": "https://drive.google.com/file/d/1FYSPGQLXgRITyGK9z0DxJij0fJshQodQ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/18n-0ftv_aCYxMDf-JEaU4ikK7qH111RK/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Urk... You didn't need to make our enemies eat my tower before I got a chance to let Master Shadow eat it!",
+                "name": "Knight",
+                "name_variant": "Knight",
+                "subtitle": "And you? Are you an employee here?",
                 "line": 17,
-                "url": "https://drive.google.com/file/d/1OQQIIgZxzNr8wBaR6edUxamB1Nbd_OI5/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1eXqmqUYG6uIhBNAXKQTdmrmxKL3QJFQi/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "That's exactly why I said it's dangerous... It's too reckless to let them take clumsy Gamma hostage...",
+                "subtitle": "Oh yes! All I know is there was a sudden commotion!",
                 "line": 18,
-                "url": "https://drive.google.com/file/d/11XFOGv6p8WGU_yrFmX9y-rTvWBhxsGHj/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1i11EsBBqq-GH3sz81eK8gqzWwg6F3dPT/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "I-It couldn't hurt you two to be a little worried about me...!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(I ultimately didn't get any sense that this casino was connected to the Cult.)",
                 "line": 19,
-                "url": "https://drive.google.com/file/d/1Ng9CbyzgN3IRhKusUHg18tBoXO1lSzz9/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1-ss5cEnTFWQ6vk6uwLuaZvSOgLQ1bzSB/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "I'll listen to your complaints later. Quick, lend me your ear...",
+                "subtitle": "(On the contrary, it was a regular casino with excellent service. The only problem, if you could call it that, was the boss's final use of force.)",
                 "line": 20,
-                "url": "https://drive.google.com/file/d/1sjggFqAkcDsC5d9qOC8nhsTfxxBAeSBm/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Nb0rrxoFjje6_YWoOXdft52rK93sZx6f/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Hmm, I see... Okay, as you wish.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(The bottom line is that I uncovered zero ties to the Cult or any illicit operations. It was a wasted trip, but every suspicion we quash is a good thing, right?)",
                 "line": 21,
-                "url": "https://drive.google.com/file/d/1GtxQLQaabHPBaU9WK2P8ac4MtoMU3LF_/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1VW5anjg7duyqlFmhzL1_rBu7RITvA9o5/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Ladies and gentlemen! Tell me, how was the Chocolate Hero Show?!",
+                "name": "Knight",
+                "name_variant": "Knight",
+                "subtitle": "It must've given you quite the fright to witness the sudden commotion.",
                 "line": 22,
-                "url": "https://drive.google.com/file/d/1gIGbwPr31dwHEv_tE_HjEiI4KPBZXo0-/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1pesIAOhit-uExEpNTQIa1Jzccj2Z3eMk/view?usp=drivesdk"
             },
             {
-                "name": "Rose Oriana",
-                "name_variant": "Rose",
-                "subtitle": "Oooh, so that's what it was? It was like a real attack...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "It was sooo frightening! But that lady right there was strong, and she saved me. I had no idea she was Princess Alexia.",
                 "line": 23,
-                "url": "https://drive.google.com/file/d/1KR4g2Pnr1vVa8OO5VIckSi2mvRdjQ5rl/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/12ObUVDH15UlK1lB3P4cwtssWrjlMtm7D/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Everyone, please give a big round of applause to how Mitsugoshi's chocolate power completely routed the Evil Granulated Faction!",
+                "name": "Knight",
+                "name_variant": "Knight",
+                "subtitle": "What! Princess Alexia? What on earth are you doing dressed like that?!",
                 "line": 24,
-                "url": "https://drive.google.com/file/d/147FsXOktApyYWyYGzNjI4T0YFhaOaH12/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1a8KbrofuJY2ppZvcJIcxmPLx3qiFp9sA/view?usp=drivesdk"
             },
             {
-                "name": "Spectator Woman",
-                "name_variant": "Spectator Woman",
-                "subtitle": "Don't give me that nonsense about a show! Look at my clothes! There is chocolate everywhere!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "Y-You! Just because I said my name, it doesn't give you the right to... Fine, two can play this game...",
                 "line": 25,
-                "url": "https://drive.google.com/file/d/14ycKlfk-TO-QcqkoiLbDPUSvuxl7GxVs/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/170CG_MpvsuUyodX-qAgJOtdazOK0opt-/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Yes, we pulled off quite the surprise, I am deeply sorry that we could not give advance warning.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "I was here as a guest of honor but ran into various circumstances...",
                 "line": 26,
-                "url": "https://drive.google.com/file/d/1pIUazz58qP4wnpyPkz3e_YlW41WW8Zsh/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1q1Lko_CnosBtxDM_qb--dGY76wNCjDeX/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "If anyone has clothing or property that got messy, we will let you exchange them for anything you want at Mitsugoshi!",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "More importantly...what's Natsume Kafka doing here?",
                 "line": 27,
-                "url": "https://drive.google.com/file/d/17OlfsU-X3rQ2g-ogXHy-QosBDlgTbBKB/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1dtsYSSolTv1C6FPJg66jqU0DBXan425C/view?usp=drivesdk"
             },
             {
-                "name": "Spectator Woman",
-                "name_variant": "Spectator Woman",
-                "subtitle": "Oh? Really? Well if that's the case...",
+                "name": "Knight",
+                "name_variant": "Knight",
+                "subtitle": "N-Natsume Kafka?! Now that you mention it, there does seem to be a resemblance...!",
                 "line": 28,
-                "url": "https://drive.google.com/file/d/1ODmv-7A_fM5CVqZPj-egIIfm6Ym9KJ12/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1nYx-vz9uSh9PbF2chNgyhjbHmgUCAl3A/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "It was really thrilling, but I'm glad no one got hurt.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "What?! You must be confusing me with someone else!",
                 "line": 29,
-                "url": "https://drive.google.com/file/d/13YBPTv6El4xjgNzoApthpupkEl9GAfJi/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/12bE_1K47YZXsR76NproyLYHqAGk_vyLg/view?usp=drivesdk"
             },
             {
-                "name": "Rose Oriana",
-                "name_variant": "Rose",
-                "subtitle": "Yes, both the performance and action were amazing!",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "(This woman! The moment she no longer needs to hide her own identity...!)",
                 "line": 30,
-                "url": "https://drive.google.com/file/d/12SUfw_wBmrv_G5e2hJ2PHF77NfcDclm7/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1GgXHfom0UA07p1TkMpDsIAbDjsVPuRFv/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(More than that, I escaped having to choose anyone! Yeah, I got through it!)",
+                "name": "Joker",
+                "name_variant": "Joker",
+                "subtitle": "D-Did you say \"Natsume Kafka\"?!",
                 "line": 31,
-                "url": "https://drive.google.com/file/d/1arrHXJ9KmyHAa0hNdhlMXOzhqnfZGcZG/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1xWO5koIhMMZ2UQWZqhjDcXdPeJ-Ia3sb/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Phew, somehow the Valentine event finished safely...",
+                "name": "Joker",
+                "name_variant": "Joker",
+                "subtitle": "No doubt about it! A beautiful elf girl with silver hair, blue eyes, and a beauty mark beneath her eye! You really are Natsume Kafka!",
                 "line": 32,
-                "url": "https://drive.google.com/file/d/1JpCyvi5qURhKUNBjJeN5L11Auwz4oO_W/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1SFJ0Fd1ISECqUKnZizyFbU0ylvo8vBrz/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Now, you lot. Which company hired you?",
+                "name": "Joker",
+                "name_variant": "Joker",
+                "subtitle": "I'm a huge fan! There's no way I'd confuse you for anyone else! I carry your books with me everywhere, especially Cinderella!",
                 "line": 33,
-                "url": "https://drive.google.com/file/d/1aF9dsg1orn6HfPduMy5EP5a3k4A25tJ0/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/12avjk_HVu7XaSdXAwZyCGAkKdcZOiwt4/view?usp=drivesdk"
             },
             {
-                "name": "Rogue Leader",
-                "name_variant": "Rogue Leader",
-                "subtitle": "...I ain't gonna sing. It's all about trust in the merc world.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "What a change in attitude...",
                 "line": 34,
-                "url": "https://drive.google.com/file/d/1eeXXzOdNoNyGpJcF4ZNvEkmMKraGAFhe/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/19XZg5cqMx1taKMXqmNXkPQ7kx4-ff-nR/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Is that so? That isn't what I heard you say earlier. You thought it was an easy job to cause an uproar and then run, right?",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "I-I see... Thank you...",
                 "line": 35,
-                "url": "https://drive.google.com/file/d/1z-SPX_RnnnhlBkvUkKDNFJCCliwix4rO/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1J8kko2WZHMj1_noe2SvMR5PJjZWBQWXl/view?usp=drivesdk"
             },
             {
-                "name": "Rogue Leader",
-                "name_variant": "Rogue Leader",
-                "subtitle": "That's...um.",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "In fact, I'm thinking of setting my next novel in a casino, which is why I came here for research...",
                 "line": 36,
-                "url": "https://drive.google.com/file/d/1NNN1ombr3aEMx6U_SJ1JNjmJ313bmLiA/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1C0-od263Qa2usYzwSkLMhb71B6_0WPtd/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Well, I am not interested in who it is. You can tell your employer that.",
+                "name": "Joker",
+                "name_variant": "Joker",
+                "subtitle": "I see! So that's why... If you had just said so, I'd have shown you every nook and cranny of this place! I apologize for my rudeness!",
                 "line": 37,
-                "url": "https://drive.google.com/file/d/1WPfAru_J7bAtADMYPXkl5QNzI4JoWyY_/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/11Lyyoq5LiaAm1ZSv5jjwmR3d0nhIMbmE/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "You tell them, next time come at us as a business and play fair.",
+                "name": "Joker",
+                "name_variant": "Joker",
+                "subtitle": "U-Um... If you don't mind, can I have your signature?! Please! I beg you!",
                 "line": 38,
-                "url": "https://drive.google.com/file/d/1Y1qLobvPddN-tRtJqiQ-3eMKAReD6PgP/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1rwuJe1KJFd1x0x8tUVoE4mxF9OKU5Zou/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Master Shadow, finally... Please tell us whose chocolate you choose. Mine or Epsilon's.",
+                "name": "Knight",
+                "name_variant": "Knight",
+                "subtitle": "Hey, how about you back off? Excuse me, Lady Natsume. While you're at it, could I also get your signature? I'm actually a fan as well...",
                 "line": 39,
-                "url": "https://drive.google.com/file/d/1LDNkBL9tQkhXKhL3Ke2-gonpjy6U2-70/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1c52vFQckIO-wGO3Ki7aWrBuzmvU38RE8/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "No, I can't decide that since I didn't eat Epsilon's chocolate...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "U-Um... I'm so glad to hear you say that...!",
                 "line": 40,
-                "url": "https://drive.google.com/file/d/1lj9lE0GPeLdMfP5F45v2lKNZmk7t3MUI/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1wMfVI-w4l6-tiA2UyVfNg-tpvJcqCSVT/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I thought you'd say that, so I'm in the middle of building a mini chocolate tower in the Shadow Garden kitchen.",
+                "name": "Joker",
+                "name_variant": "Joker",
+                "subtitle": "Ya-hoo!",
                 "line": 41,
-                "url": "https://drive.google.com/file/d/1rGerFEkf1Oz_ZsIf9aGLqboRhFXTbeLQ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ozEGtdM-OEnBWwQATc-EIXgruG5p5M9x/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(I thought I had an escape route, but then a mini-tower fell on it!)",
+                "name": "Knight",
+                "name_variant": "Knight",
+                "subtitle": "Yippee!",
                 "line": 42,
-                "url": "https://drive.google.com/file/d/1mKmIVXtpc7loZ02seSDnaC4JQCbEix6K/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1PDQmf5n7Z1cPvhnbMuBSklqb65kQnFPB/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Come on, you two. Shadow had a tough day at the event as well, let him rest.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia",
+                "subtitle": "What the hell is this charade...?",
                 "line": 43,
-                "url": "https://drive.google.com/file/d/1y8HL6SdnHQfuqf03qkd1C4iS0D04ofsx/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/14OKkSsqb4ec6dsNqf0JKwtIuKRDDZzfu/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Alpha...",
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Please, everyone, calm down. I'm not going anywhere. One at a time, please!",
                 "line": 44,
-                "url": "https://drive.google.com/file/d/1qncQoSBN3JfNRtvgffyEigjASE1aNqFn/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ve5n-1Kqnd5jJfx9anQ6r-40mpwqxRhy/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Moreover, it is not just the two of you that wants to give chocolate to Shadow. Going behind the others' backs is forbidden.",
+                "name": "",
+                "name_variant": "",
+                "subtitle": "Following this, the incident was settled mutually and the casino boss was released without incident, thanks to Natsume's help.",
                 "line": 45,
-                "url": "https://drive.google.com/file/d/1R0qXVOVWWw-HgrGlqWZz0wRfZU7wfRPI/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1FHDHv0dt5zwlpz2l5MH38RQkqNXIJn6p/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Huh?",
+                "name": "",
+                "name_variant": "",
+                "subtitle": "Later that day, Natsume was welcomed into the casino as an official guest and investigated every nook and cranny under the guise of an interview.",
                 "line": 46,
-                "url": "https://drive.google.com/file/d/1D7IZzyUyw2ITnbs1H9RYfEGstJJwZqLE/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/17ltsSzyIQ0tcdm_EjULwG-bqasaMVtC1/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "All of the Seven Shadows will make chocolate here, and give it to Shadow.",
+                "name": "",
+                "name_variant": "",
+                "subtitle": "Having found no particular connection to the Cult, Natsume concluded this series of investigations.",
                 "line": 47,
-                "url": "https://drive.google.com/file/d/1f4tDTmkpVJthVsKmvwmcZuvOmEWcA4pp/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "But that's... But I worked so hard...!",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1YLHCU332-1SO__yPtGpl7i0pYJaWXr16/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "That's completely different to what I had planned...!",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1n-7eNYdSDUyvzvlzivYvU9YAonFjMndl/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Is that clear?",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1gRj908Mixi9dbJT4-weBPAWDUjRQ0CZX/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta & Epsilon (Beta)",
-                "subtitle": "Y-Yes, ma'am.",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1CZxzrAvnHNkbsbaU4tMJTksvWYwFbLaU/view?usp=drivesdk"
-            },
-                        {
-                "name": "Epsilon",
-                "name_variant": "Beta & Epsilon (Epsilon)",
-                "subtitle": "Y-Yes, ma'am.",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1CZxzrAvnHNkbsbaU4tMJTksvWYwFbLaU/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Whoa, scary! No one can disobey this side of Alpha...)",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1vPIGgTC3Yd_H47lBTh8jqUzjaR2ugflg/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Done! Fruit chocolate!",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1se71lVQw9YXDdXaYEbntrmtIG-6nlNhf/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Didn't you just cut some fruit and stuff a bar of cooking chocolate between them?",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1ym4k1DhLhzeqyTcWVbAIhw2zr-UMutvN/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Err... I don't like really sweet chocolate. So that's why it's more fruit than chocolate!",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1FHLYRiaQZru1hQqoD84CDdUJOA8TSI4m/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Could you at least wash the fruit? You don't want to give Master Shadow a stomachache.",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1fDBDlrc76HgTANvyhb9qqtI0FMYkjNOl/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Beta...my....original seasoning...how was it?",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1W0RQCwwC0QswK-URS1izW5TQwS166Z2L/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "The judges didn't care for it... It's a delicious powder, but it might be too salty.",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1OsG4fxNc7QOLrOdm6zHYl8bG9UPBue-l/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Sweet and delicious...hmm. Maybe, a chocolate jelly pack...that can efficiently supply sugar...?",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1vDaHU4N73KA5kmHDUQmhHwOb_H8J54VZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Your ideas place too much emphasis on efficiency and lack in presentation...",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1bLTMk3ihVqnWC2wCjuM1uEIq-tcs1dQd/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Epsilon, I wonder if you could show me how to make chocolate?",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1dMXH3LESVQozZclDqIkxlvxXyZ8TaZmm/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Ulp, Me? Show Lady Alpha? Too scary...",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1aAAVpMeJtBViMRkNsNDn3Fpa-XDF5OWR/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Everyone recognizes your cooking skill. Here, you could be everyone's teacher.",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/1Sz8IKcL4SQkAYPM_sp5Hmh1bMi45KZTB/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Teacher...! Th-Then with your permission! Ahem, the temperature has to be\u2014",
-                "line": 64,
-                "url": "https://drive.google.com/file/d/1PrRGlV5CfmezjuGd4nzt8i9dwdTVqm95/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "I don't understand why you put it in hot water to begin with. It would be much faster if you just put it into a pot\u2014 Owwww!!!",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/1NyI58SB78MX57ctZ5z1RvlqR-8Z-5w_A/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Because you will burn the pot! It is so that it melts smoothly at a low temperature! Gamma! Don't make your own original recipes!",
-                "line": 66,
-                "url": "https://drive.google.com/file/d/1dglAaTV80YvX3nBuidjKxU9pEiL9JNG6/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Everyone is busy and noisy, but it looks like they're having a lot of fun.)",
-                "line": 67,
-                "url": "https://drive.google.com/file/d/1KfOPTaCX_uCm-c1bbKb60ZrvwEu8R90W/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Delta has Zeta helping her, and Gamma has Epsilon as well as Alpha. I don't think anyone is going to make any big mistakes.)",
-                "line": 68,
-                "url": "https://drive.google.com/file/d/1j5xRVfrT8fPLM_qtgLCKx1UybR7d8XN4/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(If the chocolate is from everyone, then I don't need to choose someone. It's a good thing that it seems like I can get through this in peace.)",
-                "line": 69,
-                "url": "https://drive.google.com/file/d/1wtHKPB_btXtssRNCCLBTL8SSrMWcdsBt/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(Next year, Master Shadow...)",
-                "line": 70,
-                "url": "https://drive.google.com/file/d/11RiYcu6RJg6YT98XGR7Kt68j5QHgwG-U/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(The first chocolate you get will be mine...!)",
-                "line": 71,
-                "url": "https://drive.google.com/file/d/1NK1pGACKa5AWETh2esX_FJZtl2rejUUc/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(...Next year will be fine, right?)",
-                "line": 72,
-                "url": "https://drive.google.com/file/d/1mNpiuj-ueSZDqm6VwtL3SA2KTX7i381b/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/10ZJ4Se8sSteJXm-IflDFFGOS2SIAaQns/view?usp=drivesdk"
             }
         ]
     }
 }
 
-let setDoc = db.collection('data').doc('es_nvacs').set(data['nvacs']);
+let setDoc = db.collection('data').doc('es_clbg').set(data['clbg']);
 
 setDoc.then(() => {
   console.log('Document successfully written!');
