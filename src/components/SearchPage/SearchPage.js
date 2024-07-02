@@ -7247,6 +7247,7 @@ function SearchPage() {
                                     "??? (Alpha)": false,
                                     "None (Alpha)": false,
                                     "Everyone (Alpha)": false,
+                                    "Alpha & Beta (Alpha)": false,
                                     "Alpha & Zeta (Alpha)": false,
                                     "checked": false,
                                     "open": false
@@ -7255,8 +7256,10 @@ function SearchPage() {
                                     "Beta": false,
                                     "Natsume Kafka": false,
                                     "None (Beta)": false,
+                                    "Alpha & Beta (Beta)": false,
                                     "Beta & Epsilon (Beta)": false,
                                     "Everyone (Beta)": false,
+                                    "??? (Beta)": false,
                                     "checked": false,
                                     "open": false
                                 },
@@ -7270,6 +7273,7 @@ function SearchPage() {
                                 "Delta": {
                                     "Delta": false,
                                     "Everyone (Delta)": false,
+                                    "??? (Delta)": false,
                                     "checked": false,
                                     "open": false
                                 }
@@ -7277,6 +7281,8 @@ function SearchPage() {
                                 "Epsilon": {
                                     "Epsilon": false,
                                     "Beta & Epsilon (Epsilon)": false,
+                                    "Everyone (Epsilon)": false,
+                                    "??? (Epsilon)": false,
                                     "checked": false,
                                     "open": false
                                 }
@@ -7285,6 +7291,8 @@ function SearchPage() {
                                     "Zeta": false,
                                     "Everyone (Zeta)": false,
                                     "Alpha & Zeta (Zeta)": false,
+                                    "Zeta & Eta (Zeta)": false,
+                                    "??? (Zeta)": false,
                                     "checked": false,
                                     "open": false
                                 }
@@ -7292,6 +7300,7 @@ function SearchPage() {
                                 "Eta": {
                                     "Eta": false,
                                     "Everyone (Eta)": false,
+                                    "Zeta & Eta (Eta)": false,
                                     "checked": false,
                                     "open": false
                                 }
@@ -7547,6 +7556,18 @@ function SearchPage() {
                                 "Participant C": {
                                     "checked": false,
                                 },
+                                "Passerby A": {
+                                    "checked": false,
+                                },
+                                "Passerby B": {
+                                    "checked": false,
+                                },
+                                "Passerby C": {
+                                    "checked": false,
+                                },
+                                "Passerby D": {
+                                    "checked": false,
+                                },
                                 "Margrave": {
                                     "checked": false,
                                 },
@@ -7642,6 +7663,23 @@ function SearchPage() {
                                 }
                             }
                         },
+                        "Dragons": {
+                            openGroup: false,
+                            checked: false,
+                            open: false,
+                            filters: '',
+                            characters: {
+                                "Mist Dragon": {
+                                    "checked": false,
+                                },
+                                "Nidhogg": {
+                                    "checked": false,
+                                },
+                                "Malak": {
+                                    "checked": false
+                                }
+                            }
+                        },
                         "Monsters": {
                             openGroup: false,
                             checked: false,
@@ -7653,6 +7691,9 @@ function SearchPage() {
                                 },
                                 "Boss Monster": {
                                     "checked": false,
+                                },
+                                "Boar": {
+                                    "checked": false
                                 },
                                 "Shishiodoshi": {
                                     "Shishiodoshi": false,
@@ -7813,15 +7854,19 @@ function SearchPage() {
         'Skel Etal': ['Skel'],
         'Rose Oriana (All)': ['Rose Oriana', 'Rose', 'No.666'],
         'Rose Oriana': ['Rose'],
-        'Alpha (All)': ['Alpha', '??? (Alpha)', 'None (Alpha)', 'Everyone (Alpha)', 'Alpha & Zeta (Alpha)'],
+        'Alpha (All)': ['Alpha', '??? (Alpha)', 'None (Alpha)', 'Everyone (Alpha)', 'Alpha & Zeta (Alpha)', 'Alpha & Beta (Alpha)'],
         'Alpha': ['??? (Alpha)', 'None (Alpha)'],
         'Lambda (All)': ['Lambda', 'Tawny Elf (Lambda)'],
-        'Beta (All)': ['Beta', 'Natsume Kafka', 'None (Beta)', 'Everyone (Beta)', 'Beta & Epsilon (Beta)'],
-        'Epsilon (All)': ['Epsilon', 'Everyone (Epsilon)', 'Beta & Epsilon (Epsilon)'],
-        'Eta (All)': ['Eta', 'Everyone (Eta)'],
+        'Beta (All)': ['Beta', 'Natsume Kafka', 'None (Beta)', 'Everyone (Beta)', 'Beta & Epsilon (Beta)', 'Alpha & Beta (Beta)', '??? (Beta)'],
+        'Beta': ['??? (Beta)', 'None (Beta)'],
+        'Epsilon (All)': ['Epsilon', 'Everyone (Epsilon)', 'Beta & Epsilon (Epsilon)', '??? (Epsilon)'],
+        'Epsilon': ['??? (Epsilon)'],
+        'Eta (All)': ['Eta', 'Everyone (Eta)', 'Zeta & Eta (Eta)'],
         'Gamma (All)': ['Gamma', 'Everyone (Gamma)'],
-        "Delta (All)": ['Delta', 'Everyone (Delta)'],
-        'Zeta (All)': ['Zeta', 'Everyone (Zeta)', 'Alpha & Zeta (Zeta)'],
+        "Delta (All)": ['Delta', 'Everyone (Delta)', '??? (Delta)'],
+        "Delta": ['??? (Delta)'],
+        'Zeta (All)': ['Zeta', 'Everyone (Zeta)', 'Alpha & Zeta (Zeta)', 'Zeta & Eta (Zeta)', '??? (Zeta)'],
+        'Zeta': ['??? (Zeta)'],
         'Diablos': ['Massive Mound of Magic'],
         'Olivier (All)': ['Olivier', 'Alpha Look-alike'],
         'Olivier': ['Alpha Look-alike'],
