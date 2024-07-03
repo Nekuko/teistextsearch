@@ -105,7 +105,8 @@ function CharacterDropdown({
             updatedCharacters[characterName].checked = isAnyOptionChecked;
 
             const isAnyGroupChecked = Object.values(updatedGroups).some(group => group.checked);
-
+            
+    
             // Determine if any main characters are checked
             const isAnyMainCharacterChecked = Object.values(updatedCharacters).some(character => character.checked);
     

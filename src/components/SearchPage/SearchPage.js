@@ -13,7 +13,7 @@ import * as covers from '../../images/covers';
 import { fetchLNData, fetchWNData, fetchAPOData, fetchESData } from '../../utils/firebaseFunctions';
 import { VERSIONS } from '../../versions';
 import { searchAPO } from '../Search/searchAPO';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faListNumeric, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { ESMAPREVERSE } from '../../esMap';
 
 
@@ -7245,8 +7245,8 @@ function SearchPage() {
                                 "Alpha": {
                                     "Alpha": false,
                                     "??? (Alpha)": false,
-                                    "None (Alpha)": false,
                                     "Everyone (Alpha)": false,
+                                    "None (Alpha)": false,
                                     "Alpha & Beta (Alpha)": false,
                                     "Alpha & Zeta (Alpha)": false,
                                     "checked": false,
@@ -7255,44 +7255,45 @@ function SearchPage() {
                                 "Beta": {
                                     "Beta": false,
                                     "Natsume Kafka": false,
+                                    "??? (Beta)": false,
+                                    "Everyone (Beta)": false,
                                     "None (Beta)": false,
                                     "Alpha & Beta (Beta)": false,
                                     "Beta & Epsilon (Beta)": false,
-                                    "Everyone (Beta)": false,
-                                    "??? (Beta)": false,
                                     "checked": false,
                                     "open": false
                                 },
                                 "Gamma": {
                                     "Gamma": false,
-                                    "checked": false,
+                                    "??? (Gamma)": false,
                                     "Everyone (Gamma)": false,
+                                    "checked": false,
                                     "open": false
                                 }
                                 ,
                                 "Delta": {
                                     "Delta": false,
-                                    "Everyone (Delta)": false,
                                     "??? (Delta)": false,
+                                    "Everyone (Delta)": false,
                                     "checked": false,
                                     "open": false
                                 }
                                 ,
                                 "Epsilon": {
                                     "Epsilon": false,
-                                    "Beta & Epsilon (Epsilon)": false,
-                                    "Everyone (Epsilon)": false,
                                     "??? (Epsilon)": false,
+                                    "Everyone (Epsilon)": false,
+                                    "Beta & Epsilon (Epsilon)": false,
                                     "checked": false,
                                     "open": false
                                 }
                                 ,
                                 "Zeta": {
                                     "Zeta": false,
+                                    "??? (Zeta)": false,
                                     "Everyone (Zeta)": false,
                                     "Alpha & Zeta (Zeta)": false,
                                     "Zeta & Eta (Zeta)": false,
-                                    "??? (Zeta)": false,
                                     "checked": false,
                                     "open": false
                                 }
@@ -7383,9 +7384,17 @@ function SearchPage() {
                             characters: {
                                 "Alexia Midgar": {
                                     "Alexia Midgar": false,
-                                    "????? (Alexia)": false,
-                                    "??? (Alexia)": false,
+                                    "????? (Alexia Midgar)": false,
+                                    "??? (Alexia Midgar)": false,
+                                    "Alexia & Claire (Alexia Midgar)": false,
                                     "Shelly and Alexia (Alexia Midgar)": false,
+                                    "open": false,
+                                    "checked": false,
+                                },
+                                "Claire Kagenou": {
+                                    "Claire Kagenou": false,
+                                    "??? (Claire Kagenou)": false,
+                                    "Alexia & Claire (Claire Kagenou)": false,
                                     "open": false,
                                     "checked": false,
                                 },
@@ -7413,7 +7422,7 @@ function SearchPage() {
                     characters: {
                         "Rose Oriana": {
                             "Rose Oriana": false,
-                            "No.666": false,
+                            "No. 666": false,
                             "checked": false,
                             "open": false
                         }
@@ -7703,6 +7712,9 @@ function SearchPage() {
                                 },
                                 "Evil Spirit": {
                                     "checked": false,
+                                },
+                                "Ghoul": {
+                                    "checked": false,
                                 }
                             }
                         },
@@ -7845,15 +7857,17 @@ function SearchPage() {
             '??? (Minoru Kageno)', 'Nuru', '??? (Nuru)'
         ],
         'Cid Kagenou': ['Cid', '??? (Cid Kagenou)'],
-        'Claire Kagenou': ['Claire'],
-        'Alexia Midgar (All)': ['Alexia', '????? (Alexia Midgar)', 'Shelly and Alexia (Alexia Midgar)', "??? (Alexia)"],
-        'Alexia Midgar': ['Alexia', '????? (Alexia Midgar)', 'Shelly and Alexia (Alexia Midgar)', "??? (Alexia)"],
+        'Claire Kagenou (All)': ['Claire', '??? (Claire Kagenou)', "Alexia & Claire (Claire Kagenou)"],
+        'Claire Kagenou': ['Claire', '??? (Claire Kagenou)'],
+        'Alexia Midgar (All)': ['Alexia', '????? (Alexia Midgar)', 'Shelly and Alexia (Alexia Midgar)', "??? (Alexia Midgar)", "Alexia & Claire (Alexia Midgar)"],
+        'Alexia Midgar': ['Alexia', '????? (Alexia Midgar)', 'Shelly and Alexia (Alexia Midgar)', "??? (Alexia Midgar)"],
         'Sherry Barnett (All)': ['Sherry', 'Shelly and Alexia (Sherry Barnett)'],
         'Sherry Barnett': ['Sherry', 'Shelly and Alexia (Sherry Barnett)'],
         'Po Tato': ['Po'],
         'Skel Etal': ['Skel'],
         'Rose Oriana (All)': ['Rose Oriana', 'Rose', 'No.666'],
         'Rose Oriana': ['Rose'],
+        'No. 666': ['No. 666', 'No.666'],
         'Alpha (All)': ['Alpha', '??? (Alpha)', 'None (Alpha)', 'Everyone (Alpha)', 'Alpha & Zeta (Alpha)', 'Alpha & Beta (Alpha)'],
         'Alpha': ['??? (Alpha)', 'None (Alpha)'],
         'Lambda (All)': ['Lambda', 'Tawny Elf (Lambda)'],
@@ -7862,7 +7876,8 @@ function SearchPage() {
         'Epsilon (All)': ['Epsilon', 'Everyone (Epsilon)', 'Beta & Epsilon (Epsilon)', '??? (Epsilon)'],
         'Epsilon': ['??? (Epsilon)'],
         'Eta (All)': ['Eta', 'Everyone (Eta)', 'Zeta & Eta (Eta)'],
-        'Gamma (All)': ['Gamma', 'Everyone (Gamma)'],
+        'Gamma (All)': ['Gamma', 'Everyone (Gamma)', '??? (Gamma)'],
+        'Gamma': ['??? (Gamma)'],
         "Delta (All)": ['Delta', 'Everyone (Delta)', '??? (Delta)'],
         "Delta": ['??? (Delta)'],
         'Zeta (All)': ['Zeta', 'Everyone (Zeta)', 'Alpha & Zeta (Zeta)', 'Zeta & Eta (Zeta)', '??? (Zeta)'],
