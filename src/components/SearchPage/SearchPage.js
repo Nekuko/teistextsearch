@@ -5227,6 +5227,29 @@ function SearchPage() {
                             },
                             "checked": false
                         },
+                        "3-3 | Alexandria Rebellion": {
+                            "e1": {
+                                "checked": false,
+                                "title": "The Situation Begins"
+                            },
+                            "e2": {
+                                "checked": false,
+                                "title": "I Won't Hurt You..."
+                            },
+                            "e3": {
+                                "checked": false,
+                                "title": "Override Experiment"
+                            },
+                            "e4": {
+                                "checked": false,
+                                "title": "Outcome of the Duel"
+                            },
+                            "e5": {
+                                "checked": false,
+                                "title": "End of Scenario"
+                            },
+                            "checked": false
+                        },
                         "checked": false
                     },
                     "checked": false
@@ -7176,7 +7199,8 @@ function SearchPage() {
             "2-12": covers.SSC212Cover,
             "2-13": covers.SSC213Cover,
             "3-1": covers.SSC31Cover,
-            "3-2": covers.SSC32Cover
+            "3-2": covers.SSC32Cover,
+            "3-3": covers.SSC33Cover
         },
         "esCoverImages": {
             "Event Stories": covers.ESCover,
@@ -7594,6 +7618,9 @@ function SearchPage() {
                                 },
                                 "Spectator Woman": {
                                     "checked": false
+                                },
+                                "Mother": {
+                                    "checked": false
                                 }
                             }
                         },
@@ -7615,6 +7642,32 @@ function SearchPage() {
                                 "Bandit Boss": {
                                     "checked": false,
                                 },
+                            }
+                        },
+                        "Children": {
+                            openGroup: false,
+                            checked: false,
+                            open: false,
+                            filters: '',
+                            characters: {
+                                "Children": {
+                                    "checked": false,
+                                },
+                                "Boy A": {
+                                    "checked": false,
+                                },
+                                "Boy B": {
+                                    "checked": false,
+                                },
+                                "Boy C": {
+                                    "checked": false,
+                                },
+                                "Girl A": {
+                                    "checked": false,
+                                },
+                                "Girl B": {
+                                    "checked": false,
+                                }
                             }
                         },
                         "Committee": {
@@ -7652,6 +7705,9 @@ function SearchPage() {
                             open: false,
                             filters: '',
                             characters: {
+                                "Branch Manager": {
+                                    "checked": false,
+                                },
                                 "Cake Shop Assistant": {
                                     "checked": false,
                                 },
@@ -7659,6 +7715,15 @@ function SearchPage() {
                                     "checked": false,
                                 },
                                 "Shop Staff": {
+                                    "checked": false,
+                                },
+                                "Skewer Stall Owner": {
+                                    "checked": false,
+                                },
+                                "Quiche Stall Owner": {
+                                    "checked": false,
+                                },
+                                "Soup Stall Owner": {
                                     "checked": false,
                                 },
                                 "Customer": {
@@ -7702,6 +7767,9 @@ function SearchPage() {
                                     "checked": false,
                                 },
                                 "Boar": {
+                                    "checked": false
+                                },
+                                "Mr. Vendy": {
                                     "checked": false
                                 },
                                 "Shishiodoshi": {
