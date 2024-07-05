@@ -10,3210 +10,2691 @@ admin.initializeApp({
 let db = admin.firestore();
 
 let data = {
-    "lshn": {
+    "rtgi2": {
         "e1": [
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "\u2014And that wraps up the status of this year's Halloween.",
+                "name": "",
+                "name_variant": "",
+                "subtitle": "On a day while the world is engulfed in the joy of the New Year, the Seven Shadows each enjoy their New Year's break. However...",
                 "line": 1,
-                "url": "https://drive.google.com/file/d/1nEYZbGoKLSgXAQ8eVgxx_BeV1zwSRCa4/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1pJariJobmbSKsoSGaOTWEgHXL1HYQiUv/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Within the private office of the Shadow Garden, Alpha listens to Gamma's report and nods with a satisfied expression.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Why...? What's going on...?!",
                 "line": 2,
-                "url": "https://drive.google.com/file/d/12_J70WxyC9j6qmWpMsQDQ0d22R4D3HL8/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1MINdT_Jo7DXrMLfnCpcsyucvZou-YiVc/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "I'm pleased to hear that it's been a tremendous success. The Halloween event he suggested has taken firm root in Midgar Kingdom.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Lately, no matter how I arrange them, they just don't feel right...)",
                 "line": 3,
-                "url": "https://drive.google.com/file/d/1xfeNaLI0yKYJwN8o7FZbIpCdwSjqw1-z/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Fa-PRi2qaScNcVOQIiEEIjd4jSGTbZ00/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Certainly. Mitsugoshi's branches have also achieved impressive sales figures and established a solid reputation.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Am I lacking volume? No, the quantity and shape should be perfect... Yet, why don't they feel as impactful?)",
                 "line": 4,
-                "url": "https://drive.google.com/file/d/1QA68P49M9uO_GkrqR_dsrLCfPhl2OPZV/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Epg3Bs-Zb7VWrJVQoWdueNRZh9HjJSOU/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Well then, what's with the long face?",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Ah, it's so cold. Nothing beats a heated table during New Year's\u2014",
                 "line": 5,
-                "url": "https://drive.google.com/file/d/1PRjvthqmwFRzsocYh4--TlDCgxFbUKey/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1FVeNlS-lQJcmojeDlPuEp_I3IlnPokKW/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "...Huh? Oh, my apologies. It seems my emotions got the best of me, and I've let them show...",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Huh, it's just you here, Epsilon? Where are the others?",
                 "line": 6,
-                "url": "https://drive.google.com/file/d/1THFO6uTfBi1LV9F9oL15A5dgU4GULWb5/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1qCZuaTGdRRnnUYFHUhq5s4kaoqzvHbvu/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "What happened?",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Master Shadow is busy with family matters. Lady Alpha went somewhere with Delta, and the others have their own engagements...",
                 "line": 7,
-                "url": "https://drive.google.com/file/d/1lac-ykKFS2463NyMDlyzMI4nqiQoArDc/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1M_MJ1J1Xw4k5_BfV9ohTAbBOeH_lrSoR/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Actually...this year's Halloween has been even more successful than anticipated, so we're currently mobilizing all of our staff to handle the situation.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Hmm... Busy times for everyone during the New Year, huh?",
                 "line": 8,
-                "url": "https://drive.google.com/file/d/1-SvAMHQxnUjigy3BzEJrVnAn4LT8-Oey/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1d8u0hwILwZDZLmrlu6oqUymoxcq1ekLW/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "To be honest, it's been so well-received that we're experiencing a shortage of staff for our pop-up stores and branches...",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Well, I get the heated table all to myself then. Ahh, this gentle warmth... This is what happiness is all about...",
                 "line": 9,
-                "url": "https://drive.google.com/file/d/1g9Tp9bw05zCJhDHti7ISeNtMsDcNP4o_/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1zC61DGkMJmvo3He3zrj7IwyFVvdXHgI9/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "I see. So we're already understaffed even at this stage...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...*sigh*",
                 "line": 10,
-                "url": "https://drive.google.com/file/d/1zJRFPg9LV8bV8w7QxkSUX8wiiFpeB_Rx/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1W_rSAYZ8eRKvYSSr-UXWICHgi2NdBExN/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Yes. We're hastily making arrangements to provide training for several individuals, including those from the Garden's Numbers who seem promising, with plans to dispatch them to different branches.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "What's with the heavy sigh, Epsilon? You're ruining my New Year vibes.",
                 "line": 11,
-                "url": "https://drive.google.com/file/d/15sboP4ZprZnQVXQzHyXDd9B8tD5Nc9Jr/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1u9NyqHr1Y9JKg_25WEJSMcrTZ_5HPdRy/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "However, we've already received personnel requests from our pop-up stores that can't wait until the training is completed...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "I-It's nothing.",
                 "line": 12,
-                "url": "https://drive.google.com/file/d/1GO_m9TK7mrTs2ugp5eHgKO3cqBHErP4m/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1S6_VTTWdW1eZwuBWB-nqht9rz0naOU7J/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Is there really nobody available? No one at all?",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "You sure? Well, if you say so.",
                 "line": 13,
-                "url": "https://drive.google.com/file/d/1LKdvJyQhhAdnmc6p79OATK-gHICTynsn/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1yys1eTe9DDZgYbaqoEI_2gpkRVa5zwjB/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Umm...",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Anyway, why not have some red bean soup? It's good for lifting your spirit when you're feeling down.",
                 "line": 14,
-                "url": "https://drive.google.com/file/d/1IM46gKhgkjSmdsa9ylcWCTHmHTXmvjbO/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1QTbJbuCqtXlIQMnN4_v-GPu1VUMAOT4a/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Gamma?",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "And make some for me too while you're at it.",
                 "line": 15,
-                "url": "https://drive.google.com/file/d/17XMCKvVJ-ZDTkoxs6Nzfi5_iHyjc-NVd/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1M7C6b1xI-BwLuu0FvvIWm6wYdwCn7um6/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "...Delta and Eta are still on hand.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Seriously? You just want some for yourself.",
                 "line": 16,
-                "url": "https://drive.google.com/file/d/17UNmYfnBGWisU2lYLTiWyOXxpKkvky7e/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1MnsaT-YP8fpupmfwH39lVedCXJZevLRn/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Alpha prompts Gamma to continue her sentence, but she freezes upon hearing the names she mentions.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "But...alright. I was getting hungry anyway. I'll make some.",
                 "line": 17,
-                "url": "https://drive.google.com/file/d/1KuTYrdUKHlYuDiLJOpswhbPeLQPnTyLG/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/15HCQ4_ZNawvi1xtFHDPoSa4zt-qDzi_d/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "(If we send those two, it could potentially increase the workload at the store...)",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(...Rice cakes are so strange. They puff up so much when you grill them...)",
                 "line": 18,
-                "url": "https://drive.google.com/file/d/1ZbYaeaw9aI9g-gZSxB76dhJOeRMuXpw3/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Cv2kM1UeDTGZhA2uu6G9kqitmGnJsmvQ/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "(But...)",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(I remember when eating the kagami rice cake, I thought about using it as a substitute for slime...)",
                 "line": 19,
-                "url": "https://drive.google.com/file/d/1JVs17wt7Lq0knlqMyw3e7ELqwzTTH-jm/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1iZm3amDeKeKthkJnU51y00PbbRpZ3oY-/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Um...Lady Alpha?",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(It didn't work out, though. Regular rice cakes are far from ideal. They need to be softer, more elastic, with a certain texture...)",
                 "line": 20,
-                "url": "https://drive.google.com/file/d/1Fzr2wtkLdAasnFuZPjSofwHH91y5JfEa/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ByzZwFlqTTE3F1JWSH73rMaDJ0BBxatB/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Desperate times call for desperate measures. We need to fill the personnel shortage.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "It should have that bouncy feel to it, right?",
                 "line": 21,
-                "url": "https://drive.google.com/file/d/1CduLEpLq2asZ_22eM5ZzgI6NmwIBS1Xp/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1m344qImJO_2SzK1LWWr88fVQUI7ZDqIu/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "*gasp* You mean...?!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Exactly, bouncy and jiggly\u2014",
                 "line": 22,
-                "url": "https://drive.google.com/file/d/1IccLdaBOybJcP1de19LYBV-Vtf4nCaUF/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Il2DohU9YZy0-YVcagMV7wJ9HmL5si1w/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Let's dispatch the two for a limited time and assign them to specific, straightforward tasks until the others have completed their training.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Wait, Zeta?! Weren't you curled up under the heated table...?",
                 "line": 23,
-                "url": "https://drive.google.com/file/d/1cGNG8twI49p6VVaVXsmu6M3i8WIcvfjz/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1PyY9eVQTuZi3Qre5wESo2uVxOMFwC1xb/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "What?! Y-You can't be serious!",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Thought it was about time it'd be ready. Just in case, let mine cool off a bit, please.",
                 "line": 24,
-                "url": "https://drive.google.com/file/d/1NwoMXjCJmXvW5jCmWCj8eJ0QivHQI1mU/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1BYb27rryeKdUBTtVw23fALweJPLwGlsk/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "I am. We currently have no other option.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Were you reading my mind just now?",
                 "line": 25,
-                "url": "https://drive.google.com/file/d/13jEroH64EFN-P-TaUz7QWA2IY6iGO1Wn/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1FQW52Q7M1JjwMMULfHgQOe4aINWeKy_E/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Alpha leans forward, rests her elbows on the table, and instructs Gamma to summon the two.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "No way, I can't do that. I'm not Master Shadow.",
                 "line": 26,
-                "url": "https://drive.google.com/file/d/1KVY3BDJXah2Q_wdH4zgWe0zFvS_m6Fd5/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1JLeD9bZ_EkUljfnOF_TMAooGFRk4F1KU/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Once Delta and Eta are summoned, Alpha proceeds to explain the situation to them using clear and simple language.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "R-Right, of course. We were talking about rice cakes, yes! Look! They're almost ready!",
                 "line": 27,
-                "url": "https://drive.google.com/file/d/1ZxE7Dn7HbKes5zWhkD9jGMo-lshP7_Pg/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1eLs-N315caauyPCXkeMG-FIw_oNuuaP7/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "I have a single task to assign to both of you. Go to the pop-up stores and give out sweets to the children as part of the event.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Whoa, looks deliciously grilled. If ordinary rice cakes are this good, the legendary rice cake must be amazing.",
                 "line": 28,
-                "url": "https://drive.google.com/file/d/1IZ4RV49tg-L1nEemdZEt0BzwowwG9bgp/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1oTPL8tgXGvPmOv0sDTKWeiJRpW0SCjKs/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Why do we have to give out candy?",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Legendary rice cake...?",
                 "line": 29,
-                "url": "https://drive.google.com/file/d/1M7-ZFZ5MjT8SHDyQPdDC4jHouQufVx91/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Ly9A3I5mq1qATN1lmCW0xa_vWtf0PgD1/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "It's not just about clearing excess inventory. The goal is to boost sales at the main store by giving out candy at the pop-up venues.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "You don't know? It's this rice cake called \"Heart's Bounty\".",
                 "line": 30,
-                "url": "https://drive.google.com/file/d/1D3Oo1WSpmHMMZ2IDQwbPwYId3delbChP/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1XEJGGdqnto0ZfDS79wrV8nMrtdFZBC2r/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Boost...sales... Um, wha...?",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Never heard of it... What's so legendary about it? Is it super tasty or something?",
                 "line": 31,
-                "url": "https://drive.google.com/file/d/1tez3C6J9b_VmEzut3E3get5ZoIqR7T-0/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1pWbKy6dt2MT1t3wFHzI3vgC769Lwi7hY/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Eta, you understand, right?",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Well, it probably tastes delicious, no?",
                 "line": 32,
-                "url": "https://drive.google.com/file/d/1aZdI6AzBspqPyR7VK_ws0Y0XUVoSpS5p/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1vSfIN_-VAqxTDobwm2DMUEK38vx7039W/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...The strategy is to lure customers with candy samples...",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Perfect in softness, stretch, bounce, and elasticity... If it's all that, it must be good, I guess.",
                 "line": 33,
-                "url": "https://drive.google.com/file/d/1-oDw_pwUOGlgTn9m7UcgaZOXQudTOl6j/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1r1-j7-RMnhUTI62m_ijjfbZHTp8ByJXo/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "What a relief. Yes, it seems you get the picture.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Softness...bounce, and elasticity...?!",
                 "line": 34,
-                "url": "https://drive.google.com/file/d/1LVvUtyAdVQepPdbkkOD_tEx4Cs6NSVuJ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ocdS3JqzoZipOHIm8_SHUcPCKk7iOiDl/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "But...I can't stand...crowds...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Th-That's it!",
                 "line": 35,
-                "url": "https://drive.google.com/file/d/1pDOQ3igk1AqrBNQPyn013FRoK5UjX9Ka/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1cTBY60VECo-yrWMzE-EkncWDxtrJ96bY/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Whether or not you can stand it, you have to do it. You'll give sweets to children who say the words, \"Trick or Treat!\"",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Huh?",
                 "line": 36,
-                "url": "https://drive.google.com/file/d/1jK8eq00vI1tqYtQLIhvDZ6cWtG5EEHnY/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/13YpsCYFXB2ZImQ-9K5eOGCtySE-swcqL/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Tri...ck?",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(I might be able to use that rice cake as a reference for my slime body... In fact, I'm sure of it!)",
                 "line": 37,
-                "url": "https://drive.google.com/file/d/1WkofAqqcjdmLFbGe2ZjQjuYTYrP-1ikr/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/137Gwi_yD9YCYlQsL9lTTIjn9e-56gxBs/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Trick or treat. It means, \"Give us candy, or we'll play tricks on you.\"",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Zeta! Tell me more about this \"Heart's Bounty\"! Where can I find it?!",
                 "line": 38,
-                "url": "https://drive.google.com/file/d/1uHs99p5RNfehdWBio7FGW7zphI8ihwkc/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1X9fllOKGFsb0Le8AFAhNWqziJ6vQEY7c/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "What?! Only naughty children threaten others like that! I'll take 'em all out!",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "...I didn't know you were such a foodie, Epsilon.",
                 "line": 39,
-                "url": "https://drive.google.com/file/d/1uSj5aVh7poUdU_OgUDi9NmCK4LZ6B6ft/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1HrohQzk3UkX0paylWtrW17VX5i9k7Ilh/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Don't be silly! That's the way Halloween works.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "It's not for eating! Come on, tell me where it is!",
                 "line": 40,
-                "url": "https://drive.google.com/file/d/1Bx3k4qNob1I5L2qSIG7THDGQmtcgXoh8/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1LxX5SXF23Nm0QssdyHe-zhznA3GkMwj_/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Your job is to promote us to the children and their guardians...creating opportunities for them to shop at Mitsugoshi for future Halloweens.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "What will you use it for if not to eat it...? Sorry, but I don't know exactly where it is either.",
                 "line": 41,
-                "url": "https://drive.google.com/file/d/1h_C2OlmArCHSV8TxMWJI89TUt-xfa1Xf/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1VN6xy4lSMZDb7qreStneRqo8ZLxAuxYh/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "So you must under no circumstances \"take them all out\"!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Anything you recall would help! You're my only hope right now, Zeta!",
                 "line": 42,
-                "url": "https://drive.google.com/file/d/1rIkAVAEDBF7bGfYbJHAxKxaCHa7lts0r/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1gvI1A6bzY9ot8trkTwk8g--UwfhG5TgD/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Listening to you makes my head hurt, Gamma.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Alright, alright. I'm not keeping it a secret, and you don't have to beg. I'll tell you.",
                 "line": 43,
-                "url": "https://drive.google.com/file/d/16jdyv2xB9wFNtmjNzAlx0i0MZQ-HlShE/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ee1m39tOAsrycBJj33gc9dqiawXFseUe/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Wha\u2014?!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Zeta...thank you!",
                 "line": 44,
-                "url": "https://drive.google.com/file/d/1PCj6k-OvMffoKQPM79b3bTetHM-6ZaoS/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Eyy3QxgH4vg7m_-ElOg7851hJIaUbx52/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "I can't stand...mobs of children...",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "It's not like I have any confirmed intel either. I just have a hunch.",
                 "line": 45,
-                "url": "https://drive.google.com/file/d/1Qp1Cufsmfxs-E5o5A4yURr5O473rLXpD/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ET9WDfCNVXdDpsGtK5g3xyRAnsMm7tdU/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Ugh! Eta!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "That's fine! Tell me about your hunch!",
                 "line": 46,
-                "url": "https://drive.google.com/file/d/12jpeOkvxgl_uos1iN0AKYYXnEkwC-V_Y/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1oe8IFNgq0EYMpKf3oS2gbdSuvQ3hrRVD/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Gamma turns away from Delta and Eta, facing Alpha with a look of desperation.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "...The Great Ize Shrine. The therianthrope shrine Lady Alpha and Delta went to before.",
                 "line": 47,
-                "url": "https://drive.google.com/file/d/1l6sAm4cgHy1P8ozf77URyK3h8foIIIJ-/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Lady Alpha, sending these two to handle the job is pointless... We should wait until the others finish their training!",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/196NEVIkhaswIE9tzy5MsxpDlV28EEA1T/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Grr... I may not get what you're saying, Gamma, but I won't stand being made fun of by you!",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/10uM23mS_sjU-j3hRg0tfx9Ss_hBfb1xv/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Hm... If we don't have to go...then I agree with Gamma...",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1F788dy9TBqxFU-J4w8_ETlx2JlSSNO5D/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "We can't include anyone who lacks comprehension or motivation as part of the workforce!",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1DyT26UmT0n0eAq4mISQeapBKybb4f5MU/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Quiet, all of you.",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/12lxF0QdyGkFrG8dQbO9tZKKESbboBHcL/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Alpha raises her hand to silence them, and all three stop talking and freeze in their tracks.",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/12ZTJ1YgADzZlLxBoVOGKHEcioLF312RQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Gamma, beggars can't be choosers. You underestimated the situation and didn't make adequate preparations, correct?",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1ZbVnI8CAfGNLrSgkMCVU87ztxxVQT7UP/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Y-Yes... My lenient judgment is largely responsible for our current predicament...",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1Ve0gZ1vQ88XnkR5Cj4Ug-lMgfVKTYk4J/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Delta, your task is simple. Give sweets to children as part of the pop-up store event.",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1NpA3wg5BzhfH56AMS5A2m2O1UJLIMr3I/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Ha-ruff... I-I can do that...",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1gMtOJzNs_PfqOZCyDHXmlA7b61kXA8-X/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Eta, take a moment to carefully consider the source of your research funds. Now, answer me: Can I entrust you with this job?",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1lG4L7KVUcF3OJLJiWXwk4na5E_Tc73O-/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...And if I refuse?",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1AnVlW4zvjZENbXxnzAzqKHbD3Yw8YX1Z/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "You know what will happen, don't you?",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1X4FQNa8G_DpkoRRB9S3c1sHrnWOZ6qUS/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "My research funds will be reduced... Ack... Understood...",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/15xLKRkk-1HZUxQ_XFiaw8bKVCYqnJx2B/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "After hearing the responses from the three, Alpha's expression softens, and she claps her hands together.",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1T4wykxFX3c4LOSXHft5LreztGxgGNNd6/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "I'm glad we've come to an agreement. Delta, Eta, head to your destinations immediately.",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/1uTux4gJXQOUq5wTaF3pewvxSdVKCNMZf/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Y-Yeah. Okay!",
-                "line": 64,
-                "url": "https://drive.google.com/file/d/1Jer8o20BuPadRlIKJYRJPO9RACFlKcol/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Copy that.",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/1pxq0_Yb2FxgqYAl1_cuZXl-l13uby_P-/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "...",
-                "line": 66,
-                "url": "https://drive.google.com/file/d/1S4zYLyvf0JxKQ4estVkBoLZqtR6gGGpF/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Lady Alpha?",
-                "line": 67,
-                "url": "https://drive.google.com/file/d/1_uJG2WqvAswzCsNKSqKik5a_vlKfCsGC/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "...I'd like to believe everything will be fine, but Gamma, please ensure the others complete their training as soon as possible.",
-                "line": 68,
-                "url": "https://drive.google.com/file/d/1I4r6mlZSbo-MVI6PlKaIdzHpOnrfOSq1/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Understood.",
-                "line": 69,
-                "url": "https://drive.google.com/file/d/1QQEmbfTY_zyKqEZY9Bapff5a6FVgqSkt/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "(I just hope pressuring them into this decision wasn't a mistake...)",
-                "line": 70,
-                "url": "https://drive.google.com/file/d/192QyORhnXKtxNhcfR1vP5PCk-pK3uouK/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "As Delta and Eta exit the room, Alpha gazes at the door with a concerned expression on her face and lets out a deep sigh.",
-                "line": 71,
-                "url": "https://drive.google.com/file/d/1cvpHMgRSuJj6U18UV3LSm-pQrISVluHU/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1lDQMpg9BDcwCkXX4R77F_kp3y3qtQflW/view?usp=drivesdk"
             }
         ],
         "e2": [
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "W-Welcome. Thank you for coming. S-S-Such fine weather we're having today\u2014",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "The Great Ize Shrine... So this is where the \"Heart's Bounty\" might be.",
                 "line": 1,
-                "url": "https://drive.google.com/file/d/1RrhU98UJHjklvnCUGejKURObp-fAD4DF/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ar6lGuhsikA8LG-o2K1Pt4wL8WuXo-Wq/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Wetter?",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "...Why did you drag me along? And why am I dressed up in a kimono?",
                 "line": 2,
-                "url": "https://drive.google.com/file/d/1iFcOOEYP-ijRoFvTHyoYXdqtQdw2c3q_/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Wo0UjLeHzRaVOl2QcLZwhRYylZ600xpI/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Skip the pleasantries. Just give us the details...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Well, I needed a guide, didn't I? And isn't it nice wearing a beautiful outfit for a visit to a shrine?",
                 "line": 3,
-                "url": "https://drive.google.com/file/d/1j1iyjgygD-IUg6aXuJjF2rzdmMoePSJj/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/113x5s3D1iWY6jbN-bYyEFH-BLKi1hfCa/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "R-Right!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "By the way, I put a lot of thought into the design of my kimono as well! The white camellia symbolizes \"perfect beauty,\" \"impeccable charm\"...",
                 "line": 4,
-                "url": "https://drive.google.com/file/d/10KlMsqjtPWScJcB4t8r6CeT_emdKLO_l/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1TyIbXTqjxg2ILwtgDVsD3JjuMWlbuEHP/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Face-to-face with two of the Shadow Garden's top members, the pop-up store branch manager struggles to maintain her composure\u2014her knees tremble nervously.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Don't you think it's perfect for me as I'm about to acquire the perfect charm?",
                 "line": 5,
-                "url": "https://drive.google.com/file/d/1_L8mhTMEn3ymIOymY-bTlMZb8asigTSK/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1l3KwxpPB4cPwJwK0GYtrxordB1FxVnh2/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "U-Um, I see you've already changed into your costumes. Lady Delta, Lady Eta, we'd like for you to go out into the city dressed like that.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "What do rice cakes have to do with \"charm\"?",
                 "line": 6,
-                "url": "https://drive.google.com/file/d/1nj4XvpjXP8y0R6a0bVLpukOznImQ3IkU/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/15AxKraL59poEFOOWnPYyU7Dm4r0rCKMG/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "I'm an super-smart witch!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Th-That's a secret! Come on, let's start looking!",
                 "line": 7,
-                "url": "https://drive.google.com/file/d/1kA2tYMm45_V--Oq0nkFn03jjT5tXV9kr/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ZiG8eGeozQsmQ_dhpN-5jGh29zB4_MIy/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...I'm a fluttery vampire...",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Alright, alright... What the heck is up with you...?",
                 "line": 8,
-                "url": "https://drive.google.com/file/d/1Rv2Wsj2ol69Qq-AXGWX7GHKWJBDVyzBN/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1s5zqrvbwV60OqwQjRkiGCKXW4ZOap0G1/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "The costumes suit both of you very well. Please try to enjoy the Halloween festivities... I do apologize for burdening you with such work. I feel terrible.",
+                "name": "",
+                "name_variant": "",
+                "subtitle": "And so, the two search the shrine for clues about the legendary rice cake, but...",
                 "line": 9,
-                "url": "https://drive.google.com/file/d/1xCKQZwYlAMNrom-aK3f7SDVtfcVYVDnF/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1xPTYTLKy5fkxz-bIsggoRmRI_5DpITIH/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Tell you what. I feel terrible about making you feel terrible... We'll just leave...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "It's not here... It's nowhere to be found!",
                 "line": 10,
-                "url": "https://drive.google.com/file/d/1Ua1jXq7ZJ2K56cbH1CMx902IOAe_MHRM/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1BjaMMJrvgCq6cf9cBCVjHELzPGWVmn7l/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "No!",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "The rice cake at the stalls were also just regular ones. It's a legend, so maybe it's not that easy to find.",
                 "line": 11,
-                "url": "https://drive.google.com/file/d/15Kisscg1tVDz_62KX9h7z5h_97DDC_08/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1aaVNYUTmsSWQhhZJNe5vfTsIdDLk1uop/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "If we go back without doing anything, Lady Alpha will be...really mad at us!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "First of all, are you sure this is even the location of the legendary rice cake? There are shady-looking attractions and mascots, but nothing about this shrine feels traditional...",
                 "line": 12,
-                "url": "https://drive.google.com/file/d/1QGz7knoqUu_obwbNdK_jwVRtS2CCOlUX/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ou85K3E2M3G64o-mFRe5-2hsPwgABe2t/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Just thought I'd give it a try.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "We're talking about something legendary, right? I imagined somewhere more...dignified.",
                 "line": 13,
-                "url": "https://drive.google.com/file/d/1yRfPBPiRetoBsKiSktzZLYpSTOFOqowb/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1HWMpJN_b4vP5_oIsKri_ZDzNG_r9R2_w/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...We'll complete our mission properly. Tell us the details...",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "I was surprised too when I first came here. Never thought there'd really be a shrine like Lady Alpha and that dumb dog described.",
                 "line": 14,
-                "url": "https://drive.google.com/file/d/1R-FIka22DFruZSUW0rvqVXLJry3_yKVg/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1OMU943G7fU53fea29feybMo0UAVah9x2/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Understood.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "When I heard their story, I thought that meathead had finally lost it.",
                 "line": 15,
-                "url": "https://drive.google.com/file/d/1fb4_MRVwfr_dehGvD69ajo8G-aubSU0e/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ZHkuijGD2bgRQHz44yKAGuEq9d3vecnh/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "During the Halloween event, we'll be handing out ribbons exclusively to children who have made purchases at Mitsugoshi-affiliated stores.",
+                "name": "Delta",
+                "name_variant": "??? (Delta)",
+                "subtitle": "...Hm?! I thought I heard someone bad-mouthing me...!",
                 "line": 16,
-                "url": "https://drive.google.com/file/d/1cMfimG93679W9hkod8ZGtqc5utHmT9Xw/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1z8Bukbv1Fh_bPxkR5CpMpj3NWL2beCMr/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Ribbons?",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Huh? That voice\u2014",
                 "line": 17,
-                "url": "https://drive.google.com/file/d/191rRue__K4sT3Qr3361G-HJSDNvsk85f/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1OELpw8UaVPOtYmHoB5DBFJnz9BiGxxDn/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "These ribbons come in three colors: red, blue, and yellow, with each corresponding to the amount spent. We would like you to give sweets to the children based on the color of their ribbons.",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Kitty cat! What're you doing here?",
                 "line": 18,
-                "url": "https://drive.google.com/file/d/1u47B5fcyLE9-5W8pDe1rh8nrnyGvJ3vz/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1cgH-uNtFB--S-P9oTLv6qzgLeWIZPZhV/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "When children approach, they will say, \"Trick or treat!\" If a child's ribbon is red, please offer them both cookies and candy; for blue ribbons, just cookies; and for yellow ribbons, just candy.",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "And Epsilon too!",
                 "line": 19,
-                "url": "https://drive.google.com/file/d/1K_jTXTSv7JnW44cd-E-F-UXlHuj-Di8O/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1UyPzAa27Imt1jTDXcFA8KgNykaIm8emw/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Okay got it. Is that all?",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "What a coincidence,",
                 "line": 20,
-                "url": "https://drive.google.com/file/d/1YLKjrhmMqas43haRFTyjhiFMT-BcWxYi/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Pg2e-ZB2WAeM-yGibmUhYx9J9MQ_dd2N/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Y-Yes... Once again, I'm terribly sorry, but can I leave these tasks to you?",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "meeting the two of you here.",
                 "line": 21,
-                "url": "https://drive.google.com/file/d/1_FOXxRN-3OGck5U6cuX6VkPluOIBDGwI/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1XvfH5fGdLzANyJtvC5buwU8KS2eDf_kx/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "No problem! Leave it to me! I'll handle it just fine!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Lady Alpha and Delta...!",
                 "line": 22,
-                "url": "https://drive.google.com/file/d/1kmMS_C1AhweEcTYT0aNrr-TH_UxDCw_t/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1YjeJGpuAz1AsTIErVI5n7yVcWt9mb2Mu/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Giving out different sweets based on the amount spent? Trust Gamma to come up with such a messy system...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "What are you doing here?!",
                 "line": 23,
-                "url": "https://drive.google.com/file/d/1YzNB8ZChi7KhVinHwXciGusUQz8Pezjq/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1jOZQJA_gBgS6I4Hz53yDeSfKpZxen4Sf/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Messy? I prefer a mess of cookies AND candy!",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "I came to check out the Great Ize-athlon.",
                 "line": 24,
-                "url": "https://drive.google.com/file/d/1SlosguMQfomR-OYptYZXRFtqlRjMXYmO/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1_dA1A56LPpZWv2BYnPLH4cSXAq4Oxg_j/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Yeah, that's not quite what I meant.",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "I heard it was revamped into",
                 "line": 25,
-                "url": "https://drive.google.com/file/d/1dN53lRbRokWNi_evHzRJiThV6P4RFT4l/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1LUAgGNj5rk0yYbEgDwjPlUElI47TAKNu/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Well, anyway, it'll be more of a mess to explain...",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "the \"Great Ize-athlon 2.0\",",
                 "line": 26,
-                "url": "https://drive.google.com/file/d/1bx5X62CZhby7PIPh598VucJaGqNvSSkC/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1KhsQSIyyLytL2VDWhK5OYBRVoWSoJu3r/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Alright, Eta! Off to the frontlines!",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "and got curious.",
                 "line": 27,
-                "url": "https://drive.google.com/file/d/1wx9mAoVNqgFw_Jqjfb4D-09qJBDzlYGW/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1JnNGtmgYCDEgr98aTLeJR_V2fJcF9ABH/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...What the heck?",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Revamped?",
                 "line": 28,
-                "url": "https://drive.google.com/file/d/16ET2C2npJo10CQNNXrTNcWn_pyapilQz/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1cNDD7qQ0JXTxML4B1YCR9_Bm8xMc7NKw/view?usp=drivesdk"
             },
             {
                 "name": "Delta",
                 "name_variant": "Delta",
-                "subtitle": "It's something Boss man said before!",
+                "subtitle": "Heheh!",
                 "line": 29,
-                "url": "https://drive.google.com/file/d/14kO06uzl90afZKOo4pxPzBy7VqIt9fEr/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1A-jUxz-StuNRGbKl26ZhLPeKDxfFDyIX/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Hmm...",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "You don't know, kitty cat?",
                 "line": 30,
-                "url": "https://drive.google.com/file/d/17vQTZdLyP7tZER_om8LrdhC7T1DuBzzH/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/13KFTnXhvH-hX4ewPy6vShXO6j1R6IOwS/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Watching the enthusiastic Delta exit the room, with the somewhat reluctant Eta in tow, the branch manager finally breathes a sigh of relief.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "It seems you're well-informed, dumb doggie.",
                 "line": 31,
-                "url": "https://drive.google.com/file/d/1IflWZcoM4JzOYW2cRvLY2SROI9_mHt_p/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1yATs8zzNqYReib0W4M6TuIt3JNZ0AANx/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Delta and Eta venture out into the city carrying baskets filled with sweets. There they immediately ay pam surrounded by a throng of excited children\u2014",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Would you mind explaining?",
                 "line": 32,
-                "url": "https://drive.google.com/file/d/1brMfG487F7mPN_ObyTJ6wtLqLLUdPLML/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/18R5O1wF8Qol9jHjU9tCO-x1NmncPTJ2s/view?usp=drivesdk"
             },
             {
-                "name": "Girl A",
-                "name_variant": "Girl A",
-                "subtitle": "Trick or treat! Give me sweets, witch lady!",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Well, um...",
                 "line": 33,
-                "url": "https://drive.google.com/file/d/1cllQc6_o1-SEoI7FClXDmbDUag9UYX2D/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/15fHkSycm7I4dxCwfmt-xO_0qUF1hjGsd/view?usp=drivesdk"
             },
             {
-                "name": "Boy A",
-                "name_variant": "Boy A",
-                "subtitle": "Trick or treat! Me too! Gimme!",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "It looks like Lady Alpha wants to say something, so I'll let her!",
                 "line": 34,
-                "url": "https://drive.google.com/file/d/146dVtNXM06eTViCdaGfY7-n0Dn9jJFrs/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1k2tiAYg37jHM0b2_0hHP21LoykiuqJbV/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Hm?",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "*sigh* Alright then. I told you both about last year's Great Ize-athlon, right?",
                 "line": 35,
-                "url": "https://drive.google.com/file/d/1NSUG2DQjwEmr48tmYUOtSU8lA_QxCsYo/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1qq8OGnuzgTFwoeFsKCaBhvUSIAGOS61W/view?usp=drivesdk"
             },
             {
-                "name": "Girl B",
-                "name_variant": "Girl B",
-                "subtitle": "Trick or treat! Hey, vampire lady! I've gotta red ribbon!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Yes, I heard it was a crazy event...",
                 "line": 36,
-                "url": "https://drive.google.com/file/d/1nji7MXdu1eZ4qse5uzqI_IrAsC0ieSPJ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1I45b5V1812CdrBFZnspFVgXQiBtN7Rde/view?usp=drivesdk"
             },
             {
-                "name": "Boy B",
-                "name_variant": "Boy B",
-                "subtitle": "Mine's blue... Oh, I forgot! Trick or treat!",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Right, and this year, they've spiced it up even more for a lively and fun experience.",
                 "line": 37,
-                "url": "https://drive.google.com/file/d/1PFf2jXHYIFTnMF9oMGZ-eTlrMhJC9yrw/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1R08baZrpJ7_9nDJp8wqV2xw7hf0BAtXI/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Red. Got it. Blue. Here you go.",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "They've also changed the grand prize from the kagami rice cake to \"Heart's Bounty\" rice cake\u2014",
                 "line": 38,
-                "url": "https://drive.google.com/file/d/1WOBs_AORBByTdhBgyQ9TfNDiJD53Q_vt/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1aA8TMBZ_BF3mcAoHK2ty5xjX3dnbkiGJ/view?usp=drivesdk"
             },
             {
-                "name": "Girl A",
-                "name_variant": "Girl A",
-                "subtitle": "Hurry up, witch lady!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "\"Heart's Bounty\"?!",
                 "line": 39,
-                "url": "https://drive.google.com/file/d/1ORystnt_ZXxzzCrzPlWAUHCrtXyAKGJm/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1CyUdSRmLgPabNvksHJsmSl2S81TmVP36/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Umm... Red is this and this?",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "I'll participate! Whether it's \"2.0\" or whatever, I'll win it!",
                 "line": 40,
-                "url": "https://drive.google.com/file/d/1VYgWnHM_tB7waxnz77nvJKfLr9ktoPwv/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Si8__riGTm_LsmF2mSoo9Sa7mh5WV8E3/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Hmm? And this one too?",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Uh, okay...good luck. By the way, there are other great prizes as well. Here's a flyer.",
                 "line": 41,
-                "url": "https://drive.google.com/file/d/11p4PC7bfe6JPO2ttDVO3tZ61YvX-A9pc/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1F_xIcK_ma7bb7MYpJQF-oXbW6Vtv6dLK/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Let's see...hmm, interesting...",
                 "line": 42,
-                "url": "https://drive.google.com/file/d/1uJtyLFnNwrJVucWR6Rji-2Fq-Dnb-Plx/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/15RZN1uyP1Xn944i3GYaLmiWezQs-QOOf/view?usp=drivesdk"
             },
             {
-                "name": "Boy A",
-                "name_variant": "Boy A",
-                "subtitle": "Mine's yellow!",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "It's not your thing, kitty cat. Besides, you're too scared to participate\u2014",
                 "line": 43,
-                "url": "https://drive.google.com/file/d/1MzLSRD7ryBRUZ7zRKfKN7nfYWx6K7Pfu/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Yv6bzpZV4-ZBvNpBWeAV7OKjEuntKi8s/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Yellow...is this and this? Oh, and this one!",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "No, I'm participating too.",
                 "line": 44,
-                "url": "https://drive.google.com/file/d/1sJUTcVUb0AbwqvDRiBpK_gqhvG4JH77w/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1iFbe2rGiUgNqh4gIGtFOVAfw_ybXqhjK/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "What?! Why?! You were reluctant to even come here...",
                 "line": 45,
-                "url": "https://drive.google.com/file/d/16xmWy5L4OmHL1--hkGCOguGUpsEfGDHm/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1UBTdo0OK9D9a7hyU9y1VIZRs2TUHT9X5/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Perhaps due to Eta's leisurely pace, most of the children flock to Delta.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "That was then, this is now. I feel like joining the festivities. That's fine, right?",
                 "line": 46,
-                "url": "https://drive.google.com/file/d/10ClmEl1dMx0pzoke_yvErB2e-yWJYT_K/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1_1cK7nyo3zs8L-x28KlIYsVc-ygIHtIQ/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Oh well.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Did Zeta also develop a desire for the \"Heart's Bounty\" while we were searching for it?)",
                 "line": 47,
-                "url": "https://drive.google.com/file/d/1BjODUqf47OdedvqsvQqFIt9ca2hkc5KM/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1B8eVw4cP9_1C_Jdk7KSIRqYxcevvSA-G/view?usp=drivesdk"
             },
             {
-                "name": "Boy C",
-                "name_variant": "Boy C",
-                "subtitle": "U-Um... Trick or treat...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(But I won't lose! No matter who my opponent is, I won't hand it over!)",
                 "line": 48,
-                "url": "https://drive.google.com/file/d/1TBnSTpEJ-Ooo59YUp1Ooe1Znc3xsZpnE/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/140j8N_RAG7gFqShFkfrmzH6vPZizNa9h/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...A yellow ribbon. Candy... Here you go.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "So, what will the dumb doggie do? Running away is also a tactic, you know?",
                 "line": 49,
-                "url": "https://drive.google.com/file/d/1Nud7Vbfjm2uHTLU1u1XOyam6prGIcjao/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1uL_ksM5n4zaO6-EQ6rZsoAQFRjrw294h/view?usp=drivesdk"
             },
             {
-                "name": "Boy C",
-                "name_variant": "Boy C",
-                "subtitle": "Th-Thanks! Bye, miss!",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "No way am I running away! Fine, I'll participate too!",
                 "line": 50,
-                "url": "https://drive.google.com/file/d/1A7YOepneF0W2zBkTjreA3LHRWHnG_Zz2/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1TIuyv51V2wr_j1IhyUlVgMyenpGQemgF/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Bye...",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "No, you can't. If you both participate, who knows what will happen to the venue.",
                 "line": 51,
-                "url": "https://drive.google.com/file/d/1pRhnrkLZfDuPXcpOhnaY9317S8xT94cH/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/156IJ8nSToHeb1_OsxH5U5VLb4roSAVK4/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Eta! What's taking you so long?",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Then that's a default win for me, isn't it?",
                 "line": 52,
-                "url": "https://drive.google.com/file/d/1OqffzBXU_QknpUpR2XQXd_qDlr57jypm/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1P6seHOefnztV0tEF2MSn93T8yyDyz1zQ/view?usp=drivesdk"
             },
             {
                 "name": "Delta",
                 "name_variant": "Delta",
-                "subtitle": "Heehee! I'm already out of sweets.",
+                "subtitle": "No way!",
                 "line": 53,
-                "url": "https://drive.google.com/file/d/1xes6PO2-k_YJr8eCHXCI_b5Y7_PuIFnF/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/13AzcboJmg8qTZOewk89iM-dH_J9ehDEZ/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Already?",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "...Oh? If it isn't Alpha and Delta! Glad to see you participating again this year!",
                 "line": 54,
-                "url": "https://drive.google.com/file/d/1t8qXA6Jo0VEQ4zFypgWSFmAEOpy3FA2O/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1rV0VZ95UtbYueBwiPQJ3FgZdo04mueXn/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "I'll help you with yours, Eta!",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "You're the priest from last year... Unfortunately, this year, we're just spectators.",
                 "line": 55,
-                "url": "https://drive.google.com/file/d/1fHpjMlKLZjJY8GXfn8Rsy89hyAP0_QNY/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1rwZ7IA_UK6owJevsZhUocmjwJwL4Qth2/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "I see, I see! In that case, Alpha, could you and the others please provide live commentary and analysis? What do you think?",
                 "line": 56,
-                "url": "https://drive.google.com/file/d/13jtPQrhiVDLCdPcccWO6M77IKKInmYfL/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1rtmRZzv8HOQO_u-CWFyI5USQSFr5d2u9/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Sure. Thanks.",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "I'm sure it will be quite exciting if the top performers from the previous event could take on this role!",
                 "line": 57,
-                "url": "https://drive.google.com/file/d/1hkhKetYiu7s6u_SP5X7r_irZ1-t60uKJ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/17MyTPC4cbe1kZvyftB5hAUjece0L8pSS/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Leave it to me!",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "I don't mind. Hehe. If I'm going to commentate, I'll have to remain impartial.",
                 "line": 58,
-                "url": "https://drive.google.com/file/d/1yxAeQnm63d99O0OiM30wAj3lMcXfqkVj/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1yrAe0HqUconSIZ16CotRMqPlYJ2gJwUi/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Eta hands her basket over to Delta. In no time at all, the mountain of sweets rapidly vanishes.",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Live commentary? Analysis? Can I make the kitty cat admit defeat?",
                 "line": 59,
-                "url": "https://drive.google.com/file/d/1mjBtY4ArOBuX6idv_LrKe-2BeC_vB5Zw/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1_sYVhnxYH9xedx0Qocijryx5q0pwnrb4/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Priest, as you can see, you'd best give up on the idea. Getting this dumb doggie to do commentary is impossible.",
                 "line": 60,
-                "url": "https://drive.google.com/file/d/1JNW_2n-JS1HAWV8iOqVT2eG3nMp-NqYq/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1s2RjGYwOWTiyW73p7EoaoG96k_4Sx16L/view?usp=drivesdk"
             },
             {
                 "name": "Delta",
                 "name_variant": "Delta",
-                "subtitle": "Hee-hee-heeee! Finished!",
+                "subtitle": "What?! Leave the commentary and analysis to me!",
                 "line": 61,
-                "url": "https://drive.google.com/file/d/17Ju63_CVDFgYXTek0rjRy-MerwLSJYM4/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1LB4VauhbX5hW7vT_kLjidcWSvOS8eHpG/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Mission accomplished! Let's go report to that girl from earlier! Hurry up, Eta!",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Oh, thank you! In that case, will the commentators please come with me? Those who wish to participate, please hurry to the registration!",
                 "line": 62,
-                "url": "https://drive.google.com/file/d/17tUcVoreiuBGFsPloCLr7aoD9VdmFuiL/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1zkNP3qvGAMI-uKCoFWeDkfWufOY758wv/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Okay, okay...",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Well, we're off then. You two, do your best.",
                 "line": 63,
-                "url": "https://drive.google.com/file/d/1pu6UO7uNYfJmpGLw1ad-rcrf264NOPfX/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1T2lMmL7LBCdg1pVsX2vInjWrdcY4kRp6/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Similar to when they entered the city, Eta quietly follows behind Delta as she enthusiastically walks ahead...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Of course!",
                 "line": 64,
-                "url": "https://drive.google.com/file/d/1L_CFn-xcccURTE-Rj1cFGzzm7rYWWOSc/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1BUoDEjfdUogcsAuVLaPmZrMUF_-iYfrL/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Well, I might as well put in some effort.",
+                "line": 65,
+                "url": "https://drive.google.com/file/d/1RYm5estQTNLeO3eqFYehDUFpBXLAnGki/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Zeta, putting in effort? She really is aiming to win. But...)",
+                "line": 66,
+                "url": "https://drive.google.com/file/d/1iF3VH4j-TXKUIpbCIvANKBTYsNlk1STQ/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Zeta. I won't lose to you.",
+                "line": 67,
+                "url": "https://drive.google.com/file/d/19NyFDvbOZQUKXhzjOOXTaBhsDr1-kFn8/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Huh? I don't plan to compete against you, Epsilon.",
+                "line": 68,
+                "url": "https://drive.google.com/file/d/1iyZ9KCEtzM4emigxSgfX_XcRv1OKCV9q/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Does that mean you don't even see me as competition?! I'm the one who's going to win and get the \"Heart's Bounty\"!",
+                "line": 69,
+                "url": "https://drive.google.com/file/d/1JwTi-eKbw-jk-oYBVOMLxKXTuAAZCHCs/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "It's not like that...but okay.",
+                "line": 70,
+                "url": "https://drive.google.com/file/d/1Gcka6jhXQmsIQCKFqp4UWkCbbjSwYsej/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "It's better for me if you're motivated. Hehe...",
+                "line": 71,
+                "url": "https://drive.google.com/file/d/1Qej9q31rTqqqSEIGS1H3sEwHHqlcD-m1/view?usp=drivesdk"
             }
         ],
         "e3": [
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "After giving out their sweets to the children, Delta and Eta return and report to the branch manager. However...",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Here we are, at the start of the New Year again! This is the Great Ize-athlon...no, the Great Ize-athlon 2.0!",
                 "line": 1,
-                "url": "https://drive.google.com/file/d/1vIGSYf0w6vr_DbY0B-f8rUNftIVt5kPo/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1jh-N0ucWMrLJlmDkCRcOTOIJ0FOBMwO9/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "W-What's going on?! The amount of candy distributed and the sales don't match up!",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "First, let me introduce our commentators, the top two performers from the last event! Alpha and Delta!",
                 "line": 2,
-                "url": "https://drive.google.com/file/d/1K765H9X-LAMgss2KRuqPimt9dSVG33d1/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/129StEynjHRyPkYgbZcWSj2FIiSNI7mLB/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "I distributed them properly.",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "I'm Alpha, the last winner. Pleased to be here.",
                 "line": 3,
-                "url": "https://drive.google.com/file/d/1miO0y68sIhmM5erLgxOS-jZKGeB3ggRw/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1v3IhZ-0QziBfqEA1W_SXxIdpnpuaSFt0/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...That's a lie. You got confused pretty early on and handed out candy and cookies as a set to everyone.",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Ehehe! I'm the runner-up, Delta!",
                 "line": 4,
-                "url": "https://drive.google.com/file/d/12ftweVwzh5nn2gwPSmE4Y3RcyObttWQW/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1J3aEKTRek8Oh0Tb56S5FV8hiSJ4PHqRM/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Grr! If you knew, you should've told me then!",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "This year, the Great Ize-athlon 2.0 has been significantly revamped and made even harder! It's a multi-participant long-distance race overcoming numerous challenges!",
                 "line": 5,
-                "url": "https://drive.google.com/file/d/14Kq6jCMo1CNaN6hSY_yeu13XKFnHrwG2/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/11raRnTddLXPTgF3azNcOB0mZkB7pnnfz/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Too much of a hassle...",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "I'm both excited and anxious to see what challenges lie ahead...",
                 "line": 6,
-                "url": "https://drive.google.com/file/d/1vQkcZd05mcPq2FdNXdW3DT0QT0mTcTCB/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1OD5TOQ2zz0X2stISKPaFxB_IWpdEYeLG/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Argh! With all due respect! Please don't just pass out sweets at random or ignore mistakes you're well aware of! Take this seriously!",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Remember, straying off course means immediate disqualification! That said, obstacles and traps are fair game according to our brutal rules!",
                 "line": 7,
-                "url": "https://drive.google.com/file/d/1idNAg60pSCUaJ3flP1sdhenpiSzn1BKG/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1nAJPE7xB2LiogqhOXt5qwELBnL2eisYf/view?usp=drivesdk"
             },
             {
                 "name": "Delta",
                 "name_variant": "Delta",
-                "subtitle": "What's with the sudden attitude?",
+                "subtitle": "It wouldn't be fun without them!",
                 "line": 8,
-                "url": "https://drive.google.com/file/d/1KFsVWJ9facXaHTAoAbSB5YiySiKDCDb7/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1T9Nabn-Vd-f7XukrOIwLMOBHhxj7Fvv0/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "...Well, Gamma did pick her as the branch manager. She might be the type who steps up when it really matters.",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "The grand prize this time is the \"Heart's Bounty\" rice cake! There are also luxurious prizes for the other top performers, so give it your all!",
                 "line": 9,
-                "url": "https://drive.google.com/file/d/1xZgo6lRueX0l-cLBM7lyJfFV4-iDdyFg/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1wvK_HAxkayQ36D1fIEDbnUJr9wOfcmVx/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Halloween isn't just about having fun! Please, for this branch...and for the company's sake, lend us your strength!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(I won't settle for anything but coming in first. I'm only after the main prize...!)",
                 "line": 10,
-                "url": "https://drive.google.com/file/d/1KLPrtVrjPH0IKJZ1sOHPkBJvqZcZtFJQ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1X_KFo-GPSd0BYeKnsU84_3fN1tfOAEVs/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Seeing the branch manager's resolute expression as she pleads desperately, Delta shifts her gaze uncomfortably.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(There seem to be many therianthropes participating, but none with physical abilities like Delta's...)",
                 "line": 11,
-                "url": "https://drive.google.com/file/d/1UDVZwqNII532ppFlsXpT7Iamb-ixxYaD/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1DYsNOMIoR-vE-9-WvoSCNUdV3Y2uvvPw/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Argh... Fine! I'll do it!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(I should only be wary of Zeta. Seeing how relaxed she was earlier, I wouldn't be surprised if she's up to something.)",
                 "line": 12,
-                "url": "https://drive.google.com/file/d/1Tue5jnbjhSQlAVljqt79_r_NvQENiHkY/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1reaLS3R-htUIgnFksTbtSB9_TJbCq7mn/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "All participants, please head to the starting line!",
                 "line": 13,
-                "url": "https://drive.google.com/file/d/13TJWerO8zQuwZLXsx7dU3eRc45eIH9-M/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1QOfvsm94xArGhBKIC7SOxzR6p2QlZNsc/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Not that I can picture you suddenly becoming competent.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Here we go... I'll get the \"Heart's Bounty,\" and then Master Shadow will only have eyes for me!)",
                 "line": 14,
-                "url": "https://drive.google.com/file/d/1uU1bP0PqhTPK5CGVkqqxbYuaKlLmhbBz/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1zJ8fJtHI-xfgRnHT_MTNvb40FgboTw8Z/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "What'd you say?!",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "There are more participants than I expected. They're no match for us, though.",
                 "line": 15,
-                "url": "https://drive.google.com/file/d/135aGWHloyF1za4eEtNMP71tTYfCqXyE9/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1_fKpftkTnLmYw5l21mLzqrnnA4MSfUUL/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Hold on a moment. I'll be right back...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Yes...and under no circumstances will I lose to you either.",
                 "line": 16,
-                "url": "https://drive.google.com/file/d/1e7q_KOfLh5gI0irEl1cCQeAv7DzC6xDU/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Ez-alxHg4AHVrrGYf01wEJMrI16c-3NU/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Huh?! Where are you going?!",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Oh, you're all fired up. Keep up that energy, Epsilon.",
                 "line": 17,
-                "url": "https://drive.google.com/file/d/17ael7FfeAuXpnL4Iot0m0q7lKRZXwGg3/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/15qQ_zlB-9_L9yw4z7D_B4f9rY7AorSYO/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...To my lab.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "What?! Y-You seem to be awfully confident...!",
                 "line": 18,
-                "url": "https://drive.google.com/file/d/1QlOgmx8DxMQRAV2WAFDe7qrLnP5z59bk/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1P8rs6ddxPOMUEcI27mq-gMmzdfBDumOk/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "With these words, Eta leaves the branch and makes her way back to the Shadow Garden's hideout.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Fine then... I'll win no matter what it takes!)",
                 "line": 19,
-                "url": "https://drive.google.com/file/d/1SBwsTHrd131OJKpci1lxiLA92AiC5lCW/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1MfOhcd2cObDJ3FP9VW8vWHVQ-XUjITJv/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "...So? Why did you come back here?",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Oh? Epsilon seems quite motivated. Heheh. Competition can be a good thing sometimes.",
                 "line": 20,
-                "url": "https://drive.google.com/file/d/1yynwqICbrrx1ZSLix12bpOlfasXYM6eQ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1T3VOYzsoaMnNoRWyjiaZgPzXpuTuxnGm/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Eta is meant to be at the branch, but she returns abruptly, leading to a confrontation with a puzzled Gamma. Eta casts a fleeting glance at Gamma before heading to her lab. However...",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "That pussy cat is as annoying as ever!",
                 "line": 21,
-                "url": "https://drive.google.com/file/d/1C-RWQ3rUhBbmXLPHOj2lmUhWgjOSnjeE/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/13YzKaJU0y7VbJXvY23Tc_PZSAHoZIm3p/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Wait! Explain yourself!",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Is everyone ready? Alright then, take your positions\u2014",
                 "line": 22,
-                "url": "https://drive.google.com/file/d/1Gt36MyxJ27-NvnZa-KulFkmCO5juGMr6/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Ukebg8R3EANje5aFc2MWHmHb6paasvIV/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...I'm in a hurry...",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1FBfnycxzicKm9PJiTcsp4nSS-SGDwJxA/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "*sigh* The branch manager is in trouble.",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1UT3m-mFSf81P6iDEHomfTaGf5rkQT1J3/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Huh?",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1qkhiUDZUCt_ZBio_N6X-yVFOAJTkxdvC/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "So, I'm deploying a secret weapon.",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/12Oh7dggiEASvNnUIzFmjbhajsbIbz8Dm/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "A secret weapon?",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1DQtUkgL9Cl6K9_tkm4zp_Bl6iNuWzoXg/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Yes, it's for the branch manager. That's why I need you to allocate me a budget.",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1NzSs9jiquUUyigjp9e2j1FVu7d9szKCn/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
                 "subtitle": "...",
+                "line": 23,
+                "url": "https://drive.google.com/file/d/1W--lfAYwQuuAeFHN00rq-2DYvjelD87K/view?usp=drivesdk"
+            },
+            {
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Ready, set, go!",
+                "line": 24,
+                "url": "https://drive.google.com/file/d/1G5f5fH8VTKxS1zAfuBA58PwrDBNxqIdC/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Hyaaaaaahhh!!!",
+                "line": 25,
+                "url": "https://drive.google.com/file/d/12_aQeyyWX5MU01k14dG1Oo4b4Pz7mR5U/view?usp=drivesdk"
+            },
+            {
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "And it's...Epsilon who's off to a good start!",
+                "line": 26,
+                "url": "https://drive.google.com/file/d/1RznD3uwaKB9CIaBK7W_13GIOOm55OM1a/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "But isn't she going too fast? I'm sure there are obstacles up ahead...",
+                "line": 27,
+                "url": "https://drive.google.com/file/d/1MHCH7jqeSK8Q9EyYK8LDKzxjXiqZyr9p/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(I've had a good start, but so far, it's just a regular marathon. Not what I expected...)",
+                "line": 28,
+                "url": "https://drive.google.com/file/d/1RqhYQ1GkOpfxhEYY-SfL6NImCTFLmibw/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "If you space out like that, I'll leave you in the dust.",
                 "line": 29,
-                "url": "https://drive.google.com/file/d/1j-mI9Y7fHCZ6UIE0EWojZ2ZomXhWKKvn/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1W5h_-KmVs6PkjMl0a6iqkJGEZa9lXNLd/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Who's responsible for dispatching us two troublemakers? That would be you, Gamma.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Ah! Hey, get back here!",
                 "line": 30,
-                "url": "https://drive.google.com/file/d/1eOjTc5IGgcT7-wJqSoehHoTQQqndalhm/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/17zm1JSYuwjrcrBr5fhpKgPAm5Zg_B3K0/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "What?! Are you putting the blame on me?!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(...No use overthinking things. I'll just run for the finish line\u2014)",
                 "line": 31,
-                "url": "https://drive.google.com/file/d/1zcQVIpaOxd-TM6bo07B8MuJjZAYiBAjL/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Yl9VFMW97c9m3m-2F9sDv9Qx36m4sCD1/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Own up to it.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Wait, what's that noise...?",
                 "line": 32,
-                "url": "https://drive.google.com/file/d/1FD-Qj_JePuxjVHJeNTkUiMHZ1Mpb-hRl/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Fc-Q_tAbwUNFhwbnh7_eCLHXNIzPZx-b/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "...Alright, I'll do it. Just make sure to keep the budget as low as possible!",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Guess it's not just a regular marathon after all.",
                 "line": 33,
-                "url": "https://drive.google.com/file/d/1C80nVcaOLOjDw3d_tpHt6LbXq_hgmcwh/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Ioqu08xUjhbpA5NzOSqD6IpgmKkK3nBh/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Got it.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Hurry up, Epsilon. You don't want to get caught in that thing.",
                 "line": 34,
-                "url": "https://drive.google.com/file/d/155FUo00gdrCxqYFqhX4M-bv_qBvka0nE/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1CHLyhvEJYMF_14oTVrRWPthW-72KTIqY/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Eta holes herself up in her lab to craft a secret weapon. Once it's completed, she returns to the branch with it in tow...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "That thing...?",
                 "line": 35,
-                "url": "https://drive.google.com/file/d/15SNV0a1N7nMWGos0t1NNyvgH-syXU30p/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1heWAXy7QXpy0M8cQKo0Ohyvs5IkGHh3D/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Whoa... That's one big thingy you've got with you.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Wh-What the\u2014?! What the heck is that ball?!",
                 "line": 36,
-                "url": "https://drive.google.com/file/d/1lbeVH_b5IQAuCuQ3sDldafp5WxAyRZnn/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1yy5fqqjMd2zGdQ43IVo2oLxSr9f4a6Jo/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "What in the world?",
+                "name": "Therianthrope A",
+                "name_variant": "Therianthrope A",
+                "subtitle": "N-Not good! It's rolling this way!",
                 "line": 37,
-                "url": "https://drive.google.com/file/d/1ecSAMRmjrNhPpy6JPKaBgg3YDPuAFkEr/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1QStqUOpMBzbXELeYFVsZbSQUJVldCCoK/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Facing Delta and the branch manager, Eta stands proudly next to an object concealed beneath a cloth.",
+                "name": "Therianthrope B",
+                "name_variant": "Therianthrope B",
+                "subtitle": "I-I'm gonna get hit! Stay away from me!",
                 "line": 38,
-                "url": "https://drive.google.com/file/d/1HfQO2YqmqSTDiv4s7yl5urvLc2Kkciid/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1EfE96pgaUTM_iVZOq_nPgEYrTY7gHTel/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Ahem... Inspired by vending machines, Shadow Wisdom taught to me by Master Shadow... I present to you...",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Looks like this is the first challenge. Be careful, Epsilon.",
                 "line": 39,
-                "url": "https://drive.google.com/file/d/1qETBOysiRakJUGyddiguKC3vhVVk6NmG/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1g0EQ-bfVUlsv8H4RmPcUgbFxdBJIdNoG/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Mr. Vendy the automatic dispenser!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "I know! Stop worrying about others, and look out for yourself, Zeta!",
                 "line": 40,
-                "url": "https://drive.google.com/file/d/11QB7PcNxYSymspbvhSaimomMXuQWEUZE/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Eta removes the cloth, unveiling Mr. Vendy, the automatic dispenser, in all its glory.",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1SOhjordtp0kFr-A8rJENg0iB5oDEWGzL/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Wh-Whoaaaa...!!! It looks kinda cool!",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1D3PSlw2acYlC0NxsvnZMDmdd8pT2-c1D/view?usp=drivesdk"
-            },
-            {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "S-So this is...the Shadow Wisdom of Master Shadow, said to be granted only to the chosen ones!",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1A5Z7HcAfIJNC71osT4yymLKRImzDRQXP/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Eta! How do you make this thing work?! Hurry up and tell me!",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1M7c0uFA_4l7OTULhQbr1AkFly1BJjFPZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Well, seeing is believing...or something like that. Let's see it in action.",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1zgQ-To1JBYSDGJa0ll66Vo3UzCg-EdCB/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Delta, Eta, and the branch manager head into the city, bustling with Halloween spirit, to witness the capabilities of Mr. Vendy, the automatic dispenser.",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1_JnLN8Yv12E_5ksGv1udR3DykIvo5lTM/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Eta sets up Mr. Vendy in the same spot where they previously handed out sweets. After a while, a child approaches...",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1dRpvvep-XLMtKMZZtOVxFGQ0PVtN-9HB/view?usp=drivesdk"
-            },
-            {
-                "name": "Boy A",
-                "name_variant": "Boy A",
-                "subtitle": "What's this? It says to say the magic words... *gulp* Tr-Trick or treat!",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1twPNGRo6A0ISkDM5i_QhYdzMMFWInENT/view?usp=drivesdk"
-            },
-            {
-                "name": "Mr. Vendy",
-                "name_variant": "Mr. Vendy",
-                "subtitle": "BEEP BEEP... BLUE RIBBON... THANK YOU FOR YOUR PURCHASE OF OVER 5,000 ZENI, UP TO 10,000 ZENI.",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1w4QZGxGqkLtmTv6qw8qsv1LqTNM3izSC/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "With a clunk, a package containing cookies dispenses from Mr. Vendy.",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1wlz1ETN8TqlDr0Kk17M9SNrZ96rbBVgJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Wh-What the...?",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1madMuBrNvcgqsclFHAkG-MjHP8VVis4x/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "The branch manager's expression stiffens upon observing the mechanical response devoid of humanity. However, Delta's eyes gleam.",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1InsU865uOfPaAeBgMndzjHl9MvY6i9Tn/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "N-No way! Even I won't mess this up!",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1bURQYzgD0MPfthX9HuvHnCCQXSS8Dd46/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Forget messing up. We won't even need to do anything.",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1xs9Jpc7M4DV6Sr_u9EdNk1L7NXJ9Sfcr/view?usp=drivesdk"
-            },
-            {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Um, sorry, but do you really intend to use this?",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1yNnLn-MXXkpoYr6GGsDn_73AdqBgRdxN/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...You've got a problem with that?",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/12mbbjved1jPSM5SvqCqkHF7PDV3kO1DI/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Concerned about the excessively impersonal exchange, the branch manager cautiously asks Eta, who gestures toward Mr. Vendy.",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1clSLKorM_VBpAveTw0vd62Ya5dEqKjBU/view?usp=drivesdk"
-            },
-            {
-                "name": "Boy B",
-                "name_variant": "Boy B",
-                "subtitle": "Whoa! What's this?! Cool!",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1ES99DG4cjGOJzygKkAPVe05GCmFb25xi/view?usp=drivesdk"
-            },
-            {
-                "name": "Girl A",
-                "name_variant": "Girl A",
-                "subtitle": "I'm first! Wait your turn!",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1cdZFbJtluJS3kFM7gLLWGrOzcuUK81mp/view?usp=drivesdk"
-            },
-            {
-                "name": "Mr. Vendy",
-                "name_variant": "Mr. Vendy",
-                "subtitle": "BEEP BEEP... BLUE RIBBON... THANK YOU FOR YOUR PURCHASE OF OVER 5,000 ZENI, UP TO 10,000 ZENI.",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1za7Qf1Df9_QovLgH_WjowL0rPEwPVvyT/view?usp=drivesdk"
-            },
-            {
-                "name": "Girl A",
-                "name_variant": "Girl A",
-                "subtitle": "Thank you, Mr. Vendy!",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1anxFc-FGWuYC4Tl_WVr4VKDlDpTaYyAU/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "It seems super popular.",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1xfmwJVWT_Q4DeqCR_QtVFqCiCKqvG2Rs/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Everyone looks happy... I do less work... Is there a problem?",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/1yQaTC_eloubLu05I4YDoZb7BI0Eed34z/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Contrary to the branch manager's concerns, the children lining up in front of Mr. Vendy are all smiles.",
-                "line": 64,
-                "url": "https://drive.google.com/file/d/1JYAPNN1fpnYKNao04sRCpjJnO45MDTxa/view?usp=drivesdk"
-            },
-            {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Well... At the moment, it seems everything is fine. Let's monitor the situation for now.",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/1bStm3OTY8pldKUWDSQzZzjOXJkjfObKe/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Yup... Problem solved.",
-                "line": 66,
-                "url": "https://drive.google.com/file/d/1WbxICQl7Ce8imV8LrSZzgf-N1emCSb01/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Eta nods with satisfaction as she listens to Delta's voice blending in with the delighted children.",
-                "line": 67,
-                "url": "https://drive.google.com/file/d/1xI60iG3qe-KIR3czad2TXLb-u0o3HbFB/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1lVZyHJrhjGHZdrBzCKw6zjbYLZ1oi__z/view?usp=drivesdk"
             }
         ],
         "e4": [
             {
-                "name": "Mr. Vendy",
-                "name_variant": "Mr. Vendy",
-                "subtitle": "BEEP BEEP... BLUE RIBBON... THANK YOU FOR YOUR PURCHASE OF OVER 5,000 ZENI, UP TO 10,000 ZENI.",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Would one of the challenges in the Great Ize-athlon 2.0 consist of just running undisturbed? Absolutely not!",
                 "line": 1,
-                "url": "https://drive.google.com/file/d/1XOdjjPMfDZhvwI2vxVQhN5ncDL0HFHqx/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1z1xALeVQ4UGrW_NYYluQ3uBnbbRCgNnl/view?usp=drivesdk"
             },
             {
-                "name": "Boy A",
-                "name_variant": "Boy A",
-                "subtitle": "Thanks, Mr. Vendy!",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "The first ordeal is \"Falling Balls\"! Can the participants reach the finish line while dodging a multitude of rolling giant balls?",
                 "line": 2,
-                "url": "https://drive.google.com/file/d/1Q6s67XPquZsPqqHRS6Pit50q7DAh3nPw/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1RqCDvzMEqbdp5F_SIpV7Tt7WYT9ui4Rt/view?usp=drivesdk"
             },
             {
-                "name": "Boy B",
-                "name_variant": "Boy B",
-                "subtitle": "Trick or treat!",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Oh my... Those participants caught off guard are dropping out one after another.",
                 "line": 3,
-                "url": "https://drive.google.com/file/d/1dBS8aJtngbDWku8ktJ_8zAN-6URa5xl2/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1qjbEVvFXjWtbueaSn_37BnTEeJItjnBP/view?usp=drivesdk"
             },
             {
-                "name": "Mr. Vendy",
-                "name_variant": "Mr. Vendy",
-                "subtitle": "BEEP BEEP... RED RIBBON... THANK YOU FOR YOUR PURCHASE OF OVER 10,000 ZENI.",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "What a turbulent start to the race!",
                 "line": 4,
-                "url": "https://drive.google.com/file/d/1WytuoBvpvtxxfChOC5i7O94R9dyCxSMR/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1tGNm147lZPpg-QUI80WTw0_c_yHZqPAg/view?usp=drivesdk"
             },
             {
-                "name": "Boy B",
-                "name_variant": "Boy B",
-                "subtitle": "Th-Thanks...",
+                "name": "Bearded Participant",
+                "name_variant": "Bearded Participant",
+                "subtitle": "This is as far as I go. All of you...carry on with courage in your hearts and don't be afraid to go forth...!",
                 "line": 5,
-                "url": "https://drive.google.com/file/d/1R5FdjTXUqF561l8bu6l4CJoUzULJqlo9/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1pVOlpZ7a6MIdZazX8qP4uG1FJX0cwhxb/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "The newly implemented Mr. Vendy distributes sweets flawlessly without making any errors.",
+                "name": "Disciple",
+                "name_variant": "Disciple",
+                "subtitle": "Master?! No, let's reach the goal together!",
                 "line": 6,
-                "url": "https://drive.google.com/file/d/1ayQcTpCstp1UtKeoUDmV8v9WRE62NOxY/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1PKg4DxhYyxfMxdhT5JRAIDlgJWSftzWd/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Delta and Eta are standing a short distance away.",
+                "name": "Junior",
+                "name_variant": "Junior",
+                "subtitle": "Watch out! That giant ball is so close...! Hurry, or we'll get caught\u2014",
                 "line": 7,
-                "url": "https://drive.google.com/file/d/1UIdYRiIH8v-gfMtvNBM-w90yCd7r1xzM/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1m4FXo70wptxFw9O-XF-hkW2sNC85rqmb/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Zzz...",
+                "name": "Bearded Participant",
+                "name_variant": "Bearded Participant",
+                "subtitle": "Aaaaghhhh\u2014?!",
                 "line": 8,
-                "url": "https://drive.google.com/file/d/1Que-yRrir1vvGvYklZ7UEIjcvSOCc77i/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/11hpNEDsbwunPx9fyee1nM3Q-rERXnDaV/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Eta, Eta, wake up! I'm bored!",
+                "name": "Disciple",
+                "name_variant": "Disciple",
+                "subtitle": "Master\u2014!",
                 "line": 9,
-                "url": "https://drive.google.com/file/d/1chwMsyLEPeuqJMJOgWtaZigCvoyC0zBa/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1NG7B-z3g55CAjbt6_JGUk-P-YXqnDxKn/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Zzz... Quiet... *snore*",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...What are they even doing?",
                 "line": 10,
-                "url": "https://drive.google.com/file/d/1KIxW1RkM4D136bRSH9AUIonC7_QdXWbd/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1mCTjOZXLNhrUYg0Yt1WoYmJp4Qra47pf/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "I wanna do something fun! No sleeping!",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Participants are getting blown away one after the other by the giant balls! How will they manage to escape?!",
                 "line": 11,
-                "url": "https://drive.google.com/file/d/12ysbFZTRrfG_YyDaMCry6Qf-kj4PQGAn/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/10NnIIjxj5ZpV3UoE5rNTDaZG7Ry5IF8c/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "...Ha-ruff... I said no sleeping... Don't you hear me? I'm bored...",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Let's hear from our commentators, Alpha and Delta. What do you think about this first challenge?",
                 "line": 12,
-                "url": "https://drive.google.com/file/d/1vKSibi7-ahGiZBkzPK2GxAxRcsdWIGas/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Psn6gEtQy98RvvcRLUIG7rW5iEA_dYa3/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Delta finds herself with nothing to do, thanks to Mr. Vendy's success. Suddenly, she catches wind of an appetizing scent.",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "It's intriguing. I've heard that rolling a large ball originally symbolized the act of warding off evil... I wonder how it turned into this mayhem?",
                 "line": 13,
-                "url": "https://drive.google.com/file/d/1q02u-mEXXvaRLXinoFlJQ494Ol5XOcbT/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1sXQIRCNYUqrhMYpClTDQjL7UAXtbjB2m/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Something smells good... It's coming from over there!",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Delta, how would you tackle these \"Falling Balls\"?",
                 "line": 14,
-                "url": "https://drive.google.com/file/d/1c5NqzIc-UAnG0tCA2ICWc6fBY1yYUMAC/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Z3tKdotidbQFXefFebzLvgYxxD9PdAEK/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Delta swiftly pivots her body and lunges toward the source of the scent.",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Just smash 'em all!",
                 "line": 15,
-                "url": "https://drive.google.com/file/d/1EJ8veb4Vk7MLeMo49rFUy76Ibln1OzPL/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/17mj9tr5kLLsgyrRtklNpNLzH0ez862IX/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "*drool*",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Well said from the previous winner and runner-up! Such sharp analysis!",
                 "line": 16,
-                "url": "https://drive.google.com/file/d/1brdFUIrgtnGJV3mtfFXYC6iV_i0p60CY/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1u_4Z56QOclIBJFLwUIFgy85HIv_aOubE/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Delta reaches an area lined with food stalls. She comes to a halt in front of a particular stall and wipes away drool from her mouth.",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Hehe! Leave the thinking to me!",
                 "line": 17,
-                "url": "https://drive.google.com/file/d/1hREm4PzDROq4x8sWrnSN0CdwPabILq0P/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1fAsX7u7Qanae3qHOscwhFIg5kqpGIxcL/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "It looks and smells...delicious... *gulp*",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(I'm pretty sure Delta's brute force doesn't involve any thinking...but, anyway, let's focus on this challenge.)",
                 "line": 18,
-                "url": "https://drive.google.com/file/d/1SGsdzm7puJ1i_3HqOkz7A74gsYDh0Ews/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1tAh4yl0KtbpoelQia1U0uLdDx8f0sulz/view?usp=drivesdk"
             },
             {
-                "name": "Skewer Stall Owner",
-                "name_variant": "Skewer Stall Owner",
-                "subtitle": "Welcome! Step right up!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "I just need to dodge these balls and speed forward!",
                 "line": 19,
-                "url": "https://drive.google.com/file/d/1KHpsP1b_T3Pwxcepz73oybTuWLCFiwXG/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1lWVgxcxTBBG1YFgpIG0Kwx4T1vOdHto8/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "What is this?!",
+                "name": "Therianthrope A",
+                "name_variant": "Therianthrope A",
+                "subtitle": "That elf is quite something. And she's so beautiful...!",
                 "line": 20,
-                "url": "https://drive.google.com/file/d/1_iW_hVjbk0abrAk1h78ClPr8MinXBSRY/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/132WU_XThMWh-enyNfbhlzXSN2ilGdtMB/view?usp=drivesdk"
             },
             {
-                "name": "Skewer Stall Owner",
-                "name_variant": "Skewer Stall Owner",
-                "subtitle": "It's skewered chicken. This one's seasoned with salt and grilled. That one's coated with a sweet and spicy sauce.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Hehe, of course! I precisely calculated this outfit so that I look beautiful even while running!)",
                 "line": 21,
-                "url": "https://drive.google.com/file/d/1JyVYjPPSDdHoH06t-ZsCuDVf5iGLgGeH/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1QbqRuKbJimEZs7aImCg7gT561K_olqgf/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "*drool*",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(What do you think about my natural sway? Hehe, even without the \"Heart's Bounty,\" I might just beat that airhead\u2014)",
                 "line": 22,
-                "url": "https://drive.google.com/file/d/1Dm2ZPObttLYcz7EXGuYECbDPsKtPx45N/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/15LTXz2B_KGTWODuUjsC-CmUXA4Lck9MK/view?usp=drivesdk"
             },
             {
-                "name": "Skewer Stall Owner",
-                "name_variant": "Skewer Stall Owner",
-                "subtitle": "Judging by your appearance, you're from Mitsugoshi... Would you like to buy some, young lady?",
+                "name": "Therianthrope B",
+                "name_variant": "Therianthrope B",
+                "subtitle": "Wh-Whoa! Look at that!",
                 "line": 23,
-                "url": "https://drive.google.com/file/d/1p4P4IHDtosGHrNo5XH8axUiTH0DAs8GY/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1eqZMlkSd9kZYf4eMz7tSJYZnN1qr7o14/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Can I?!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Huh?",
                 "line": 24,
-                "url": "https://drive.google.com/file/d/1eE-pHkGQ_iDaIqgkM92w27uhFMmINmPP/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1M0Zdvs6X7Hml2HKEc61hzriwrayD1x3J/view?usp=drivesdk"
             },
             {
-                "name": "Skewer Stall Owner",
-                "name_variant": "Skewer Stall Owner",
-                "subtitle": "It'll be 300 Zeni per skewer.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Excuse me, you're in the way. Coming through.",
                 "line": 25,
-                "url": "https://drive.google.com/file/d/1F-npMNit1YT8B5KoyKAA1xW_BGErqlPx/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/14rZdvqG5tLGtHzTDdOKGcq1686aOwD2F/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Zeni?!",
+                "name": "Therianthrope B",
+                "name_variant": "Therianthrope B",
+                "subtitle": "H-How can she walk so leisurely and still avoid the balls...?!",
                 "line": 26,
-                "url": "https://drive.google.com/file/d/1bLYIqxMl7DUoP5Qxmpqk2Li_wpQH9Pos/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/11XFZLPC2xem3f1olBKvtVbi0AFXegbJY/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "...I don't have any money...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Just as I thought, Zeta...she's reading the trajectory of the balls and calmly dodging... No, it's almost like the balls are dodging her!)",
                 "line": 27,
-                "url": "https://drive.google.com/file/d/1yrhDdV0f0KM0zD8grWpt-tPVgg5DVp5O/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1r-rv2-nJWRXARZ9Unv2SiIz2dpTaiu1f/view?usp=drivesdk"
             },
             {
-                "name": "Skewer Stall Owner",
-                "name_variant": "Skewer Stall Owner",
-                "subtitle": "If you don't have any cash on you, I can put it on Mitsugoshi's tab.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Wait, but more importantly...)",
                 "line": 28,
-                "url": "https://drive.google.com/file/d/1o7lfHzR75zMMRddcMq9yUKIC57GJGyEd/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1r3zeY5zGyfPHXYpXbG2qv0FL0cWmm1iE/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Mitsugoshi's tab? I can buy it with that?",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Oops, that was close. Misread that trajectory a bit.",
                 "line": 29,
-                "url": "https://drive.google.com/file/d/10JLOVJSLTSVBexx7TnbCai7Gm9AVt4bG/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1nXrdHGFhDUL2f-zg9QUv0pdQDyu20iua/view?usp=drivesdk"
             },
             {
-                "name": "Skewer Stall Owner",
-                "name_variant": "Skewer Stall Owner",
-                "subtitle": "Yes, ma'am. So what'll it be?",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(That natural yet bold sway... I haven't paid much attention before, but Zeta's quite a natural herself.)",
                 "line": 30,
-                "url": "https://drive.google.com/file/d/10s7fk5Z9rBFW0n6C225Vr-XANxtZh-cm/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/12Rmk1bKZLG2A0Qg5h4_-huqN7l20YU9c/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Okay! Gimme the skewered chicken, one of each kind... No! Five of each kind! Put it on Mitugoshi's tab!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(She's not on Beta's level, but...definitely a formidable rival!)",
                 "line": 31,
-                "url": "https://drive.google.com/file/d/1VVom-9PkYfKkgvWB7rOTSHjaucyp42Rd/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1AEGZaxHUM4_k4S4KU2fLxcRqXq42Vu-5/view?usp=drivesdk"
             },
             {
-                "name": "Skewer Stall Owner",
-                "name_variant": "Skewer Stall Owner",
-                "subtitle": "Coming right up!",
+                "name": "Therianthrope A",
+                "name_variant": "Therianthrope A",
+                "subtitle": "Eek...?! What's with that elf's menacing aura?!",
                 "line": 32,
-                "url": "https://drive.google.com/file/d/1v-V5-GFrXKRBFyYDfaJCMFG-ZNT1g9pu/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/10yavQtI8hqBh9NslEOKOztKSv5CK3pTH/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Delta's eyes sparkle with excitement as she holds five skewers of chicken in each hand.",
+                "name": "Therianthrope A",
+                "name_variant": "Therianthrope A",
+                "subtitle": "G-Get out of the way! Or we'll be finished off by that elf!",
                 "line": 33,
-                "url": "https://drive.google.com/file/d/1qjlNr8SUGcgkANyH3kY99EME2OdOOJdF/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/171Q3sMcpQU9w_azKQGIUOmi8o2EqVP92/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "This tab thingy...! I don't really get it, but it's incredible!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(My pride won't let natural talent surpass me. Just you wait, Zeta... I'll take the top spot!)",
                 "line": 34,
-                "url": "https://drive.google.com/file/d/1UYgohZVwl4FamJ2JVxdK5QLWXMBqwHsB/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1LCfO1iCQBm_tgzPyre7wENouVsCiOm5l/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "As long as I have this...!",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Oh, not bad, Epsilon. That's more like it.",
                 "line": 35,
-                "url": "https://drive.google.com/file/d/1vhq2pfwAxz_wlnXHhq3N9lqzgPkA9Smm/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1gop8-l1zaH1rqacRjKi_4ALE2qCjZ1mF/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Delta sinks her teeth into the skewered chicken. She devours them quickly before rushing to the next food stall she spots.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Wow, she must really want that grand prize...",
                 "line": 36,
-                "url": "https://drive.google.com/file/d/1C2xppbUp1reXwA3j9UDiZVzkzy62vwgh/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1vT6DWzel8xrvxcWmeW9ALFJw7Jd0bNSZ/view?usp=drivesdk"
             },
             {
                 "name": "Delta",
                 "name_variant": "Delta",
-                "subtitle": "I'd like your limited-edition Halloween quiches! Hmm...all types! Put it on Mitsugoshi's tab!",
+                "subtitle": "Epsilon is kinda different today! Use that energy to take out that pussy cat!",
                 "line": 37,
-                "url": "https://drive.google.com/file/d/1t4B8HjdkugEb8K1G-5GQnnaR3gR8yyYK/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1YbqLX_Oz6AE1L5S3mHp_32hCjjJqgNQH/view?usp=drivesdk"
             },
             {
-                "name": "Quiche Stall Owner",
-                "name_variant": "Quiche Stall Owner",
-                "subtitle": "Of course. Coming right up!",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "She's always been fiercely competitive. You can tell something's lit a fire in her heart.",
                 "line": 38,
-                "url": "https://drive.google.com/file/d/15Z-tVDMTTdkIFQuFtzZ1WcJH18DnHUYG/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1nQKzh6K5jMty4JkEqTkISdkHtJElp7Ty/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Pumpkin soup? That's perfect for Halloween! Gimme a large bowl! Put it on Mitsugoshi's tab!",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Heheh... This event is shaping up to be quite enjoyable.",
                 "line": 39,
-                "url": "https://drive.google.com/file/d/1UdgwGdBzuGrlCVyw_onI3YE6qNR84CyB/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/165hKPwHc2YQ-67PkUb5qkPLa-vlK76PD/view?usp=drivesdk"
             },
             {
-                "name": "Soup Stall Owner",
-                "name_variant": "Soup Stall Owner",
-                "subtitle": "Sure thing. Enjoy!",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Zeta was in the lead, but Epsilon has just caught up! How will this race turn out\u2014?!",
                 "line": 40,
-                "url": "https://drive.google.com/file/d/1WaU4aM_6JL7tzbVaEXqXx-naRYfhB9B1/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "No need to slice the pumpkin pie! Just give me a whole one! Put it on Mitsugoshi's tab!",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1Vrs3immcF40afE-r7UrmDfzFEoa6hFU3/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Ghost pumpkin candles? Hmm... Put it on Mitsugoshi's tab!",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1qrXCvVdoHH-F6_aN1zJ4VYBo8vNmbUMt/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Mitsugoshi's tab!",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/16gZwFEpGYC3G15kLU54U_rloyjytYVxY/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Mitsugoshi's tab!!!",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1JtUufTlr0LlaOUNsumXxZ_9CW6-bhQga/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Delta goes on a shopping spree from stall to stall. Before she knows it, her hands are full of Halloween food and trinkets.",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1bSGkToIKS6I7QukTOJKkvNDQWQI-KMr-/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "What else... Oh right!",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1g9vicG5rCLQVaJMSGP9iSf3cb5REIEOn/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "I mean, it's Halloween, and there are so many rare thingies. I'll get souvenirs for Boss man!",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1RazsPwrGJHcU9zHiqGkvKpcPau9XhoaW/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Candies, cookies, ghost pumpkin masks...and, and... Oh! That looks cool as well!",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1WrwQMg-4Idednc9E1VwRuuXlmfSjAqh7/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "With a radiant smile, Delta enthusiastically resumes her exploration of the stalls.",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1e89ue8W4okbLF-rmac9KAyjEs__3U4l8/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1AHbpH-GTqXpd6ptIfLhTohW2AEnHDQSg/view?usp=drivesdk"
             }
         ],
         "e5": [
             {
-                "name": "Boy A",
-                "name_variant": "Boy A",
-                "subtitle": "Trick or treat!",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "The race is already heating up in the Great Ize-athlon 2.0! Those in the lead are approaching the next trial!",
                 "line": 1,
-                "url": "https://drive.google.com/file/d/1tUh2kEtgpJOOKs2-IA9tElYzop0JOgCp/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1EsiN3RedYLteJyqUDmqR-g7AJpdA5jfd/view?usp=drivesdk"
             },
             {
-                "name": "Mr. Vendy",
-                "name_variant": "Mr. Vendy",
-                "subtitle": "BEEP BEEP... RED RIBBON... THANK YOU FOR YOUR PURCHASE OF OVER 10,000 ZENI.",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "This is the second challenge... What kind of ordeal awaits, and how will it be tackled... There's a lot to look forward to.",
                 "line": 2,
-                "url": "https://drive.google.com/file/d/1kEKRf9GcPS6MVKMdvo9Oa4ioy6u4RhsW/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1QrbGnOxRaI_IXW9xnicXkEtdORZp9F1b/view?usp=drivesdk"
             },
             {
-                "name": "Boy A",
-                "name_variant": "Boy A",
-                "subtitle": "...",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "What's next? A fistfight or something?",
                 "line": 3,
-                "url": "https://drive.google.com/file/d/1m2j0o9HD8e_HvJFgmqgBFzERbKeTx-Tu/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1lCyvyP5kr8YDEM-62v7EyMdeUIslpjbi/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Mr. Vendy, the automatic dispenser, distributes sweets. However, the faces of the children who receive the sweets seem...disappointed.",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Our commentators are also curious about the next event... It's called \"Card Shoot\"!",
                 "line": 4,
-                "url": "https://drive.google.com/file/d/1cH6VsYh9npqUBcH-LXJtnDCrgp7lcju8/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1PtN7G-PMWlHr2du0w7vZfNKGr-2OcRD1/view?usp=drivesdk"
             },
             {
-                "name": "Boy A",
-                "name_variant": "Boy A",
-                "subtitle": "This Mr. Vendy is...kinda boring.",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "\"Card Shoot\"... I wonder what that could mean? You throw a card to flip over other cards?",
                 "line": 5,
-                "url": "https://drive.google.com/file/d/1tSOnnt_c1Y4G7ZFIlAhda1mav3gVovg7/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/17K3q3jnmu5CONNbYmvkieiensEFz523A/view?usp=drivesdk"
             },
             {
-                "name": "Mother",
-                "name_variant": "Mother",
-                "subtitle": "While receiving sweets is nice, the whole process feels quite mechanical... I mean, it's impressive, but is this really all that Mitsugoshi has to offer?",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Exactly! Here, you'll need to flip over five cards to advance.",
                 "line": 6,
-                "url": "https://drive.google.com/file/d/1QmkKI8wnJwZq15dWh68AOw-C_lNsnQc7/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ACt0tdf6aS1FmTv_WINB82WZf_ltqTa2/view?usp=drivesdk"
             },
             {
-                "name": "Boy B",
-                "name_variant": "Boy B",
-                "subtitle": "Mom, let's just get the sweets and check out a different store!",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "It suddenly got so lame.",
                 "line": 7,
-                "url": "https://drive.google.com/file/d/1KGelkN2Mgq-NXbEv5JXJK15uNH6N8JuG/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1u64eO6IN-8KL0NABwvsBaWO_nfy8hoXU/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "The initial excitement diminishes as time passes, and the children's enthusiasm wanes.",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Y-You don't mince words, do you...",
                 "line": 8,
-                "url": "https://drive.google.com/file/d/1KRe7A_fiWP6RTcSZ9lKOBUdYyxFRkRWC/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ErQY61ye0LhNX6pQtLcbSWpSfEwfl_gR/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "After returning from the food stalls, Delta blinks in surprise at this scene.",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "It's tame for the Great Ize-athlon, but it requires flipping technique and throwing form... It'll be interesting to see how each participant performs individually.",
                 "line": 9,
-                "url": "https://drive.google.com/file/d/1XZHgcCqHg4ghohtvfembI3FiKRu80Iv0/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1yzEYOyeEdpCYIo-5Le1c0aFB5Q8UO6xs/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Eta, Eta, wake up!",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Right! Exactly! Alpha, you're great at hyping things up!",
                 "line": 10,
-                "url": "https://drive.google.com/file/d/13ol-hHQuzDMzTl0RlV9rNQAxP61506g1/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1iKOkKmIQI2-QTuNLOoBVaXc1RqoNhPr0/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...I'm awake...",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "U-Uh... Thank you...",
                 "line": 11,
-                "url": "https://drive.google.com/file/d/1Y6caXAQf8tO4qh9NBom8MI_VRnt1B3IE/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/10_EEVDbTy9QP-HRYc3JE0YjT883LS6ct/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "They're saying Mr. Vendy is boring.",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "(Just flip over five cards, huh... Is that really all there is to it?)",
                 "line": 12,
-                "url": "https://drive.google.com/file/d/1PvO3Gu8iOba4MV4cjFTcOEHgmJuxDHuy/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1FiqHC5m92HurGJzlrUjxn_Fwwf7m7kCz/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Who...?",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "I see... So it's a challenge where control is key.",
                 "line": 13,
-                "url": "https://drive.google.com/file/d/1r3BhXuYYKJ10iLDidg6Bb7KbLjJVVJId/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Xd9GnN54y82OI1IO4lcd6skhMA6KcmQo/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "The kids. They're not interested anymore.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Heheh. This event seems tailor-made for me!",
                 "line": 14,
-                "url": "https://drive.google.com/file/d/1enoni-LUqG8AASoaicLVpb3nQXPkwpfZ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1PWJ76-vmAfA0g92rdVH6bQ_Eghb0EMgu/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...But sweets aren't meant to be interesting...",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "...",
                 "line": 15,
-                "url": "https://drive.google.com/file/d/1G7cT9kHMI-c3r-npdNYuXMLO4CrTLSio/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1g1wV3sQhOYKpbrKOzuNVF6-KIy3evK83/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "...True.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Zeta, aren't you joining in? You haven't moved all this time...",
                 "line": 16,
-                "url": "https://drive.google.com/file/d/1Ul7yuusRDVmpdLv9_BUUk8ZoOksQexFu/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1uujqfDhVVCrGTMJ3bStyqNI_h1RdcY-J/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Sweets aren't meant to be interesting...just delicious!",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Don't mind me. This is like fishing\u2014it's all about the right timing.",
                 "line": 17,
-                "url": "https://drive.google.com/file/d/10-N3VlIzYvIMa8AlZ90ont--OQVn1JHf/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ylpWHkrx5BLVVNLdm-_W7R4zms3LcdOp/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Are you done? I'm going back to sleep...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "I don't quite get it, but that's just fine by me! Take this! Hyahhh!",
                 "line": 18,
-                "url": "https://drive.google.com/file/d/1rVh_CYcnsln4KeLs0jZiirsijObOFI7i/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1YhPwemsUKliMP7fU2R9cj-PSwoDklyaD/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Don't you want some pumpkin soup? I went and bought it for you!",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Whoa! Epsilon's card flies with incredible control!",
                 "line": 19,
-                "url": "https://drive.google.com/file/d/1GW1MuxhvQgT-IObJMBWHxJc85_VefJ2K/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1H_43wUUPlZqekRO5esyO44zuKXeKy7xv/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Mm... Later... Zzz...",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "She's flipping the cards one after another! Whoa, what a pace!",
                 "line": 20,
-                "url": "https://drive.google.com/file/d/1my81SGWY2hdDAuk_rwkCWZkc5mK3EAWI/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1wgW3MGeQQBbH7gxIHIwx3z9uB1MpJnm6/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "She's asleep again. Grr... Fine, I'm off to play\u2014",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "That's Epsilon for you. She doesn't rely on strength, but on perfect form and precision. Impressive technique.",
                 "line": 21,
-                "url": "https://drive.google.com/file/d/16XChAk0Q2fExwHMbfKFdpNbXikPL-H3-/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1NAvUMBZ5PxIPR_WjCrYNfql-UcJvodTW/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "U-Um, excuse me. Could I have a moment, please?!",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "*yawn* I'm getting sleepy.",
                 "line": 22,
-                "url": "https://drive.google.com/file/d/1WuoepUKQOQkiud2UjxKLwmTgV9sHx9ls/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/145mn1aKEZHe3ukWCafL4bKUYccuKdkEu/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Huh?",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Um, Delta? Could you show a little more enthusiasm, please?",
                 "line": 23,
-                "url": "https://drive.google.com/file/d/1H1TNbiqrGGBrnjCbYZgOSU3CDO18Cztn/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1jqe5ul3PCbTQxUQgJgladDU2u2_vFXsS/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "The nervous-looking branch manager appears before Delta, who is about to take off, and the sleeping Eta.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "I'll use this momentum...and flip the fifth one!",
                 "line": 24,
-                "url": "https://drive.google.com/file/d/1SELFBUZrBIDgPQLlMSBmKHuHI7odl0cE/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1OE6AIyrSKi0g-C_OJk1BnsLxY1MynN5Y/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Eta, the branch manager's here.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Huh, what? \"Start over\"...?!",
                 "line": 25,
-                "url": "https://drive.google.com/file/d/1v5Tfw7iDcLPHJmHYJt3KY-gpmCbVhskY/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1OUIdhKnC-hKbUCMm_iMiV--usDz_0kZD/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Mmn... What...?",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Epsilon flipped the wrong card! She must place all her cards back and start from scratch!",
                 "line": 26,
-                "url": "https://drive.google.com/file/d/1og3i2N6NaAKxBwxqRCMafTbmmXoHTKOJ/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ZHrxrzbRhpX-bKpIUhh94dlMQuJq4Tg7/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "I think Mr. Vendy is incredible.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "This is so unfair...!",
                 "line": 27,
-                "url": "https://drive.google.com/file/d/1MqXn0zdRbBSXBIXDaHd7A4weHELeTsgG/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Blt1twlcjhOVJjuAcIWQRTVghmdYveXH/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "By instantly identifying the ribbon's color, it accurately dispenses sweets without delay... If we were to scale up production, it could significantly reduce labor costs.",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Having to flip five cards in a row, and the right ones, too... Everyone seems to be struggling.",
                 "line": 28,
-                "url": "https://drive.google.com/file/d/1TAMs5I3PZ__Sgi_c5e1veiyAOndvAneo/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1rFjrs97L3JMAkZDszGoKyA-Px8IDg0MB/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "She's complimenting you, Eta.",
+                "name": "Therianthrope A",
+                "name_variant": "Therianthrope A",
+                "subtitle": "Tsk... I have to start over! Just when I managed to flip one!",
                 "line": 29,
-                "url": "https://drive.google.com/file/d/1W6gHi374EwgOGJoHbT-1o7oLxfNSlyEX/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/10qEebuar02IsPyVs9cdpV4AgGipRSERR/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Good to hear...",
+                "name": "Therianthrope B",
+                "name_variant": "Therianthrope B",
+                "subtitle": "Damn it... Where are the right cards?!",
                 "line": 30,
-                "url": "https://drive.google.com/file/d/1tyEIqRO-SIm3JuX67yAK6IPFWyO2nKIm/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1VzIrdR_9J7jqKYGCNGgCGmbHj7NsvCts/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "But!",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Cries of frustration ring out from the participants! What will happen in \"Card Shoot\"? Who will emerge triumphant?!",
                 "line": 31,
-                "url": "https://drive.google.com/file/d/1XP_q34_eIll4ADKuGcYl-RxVTBZJ0Ome/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/142_YwCBzx-9KlqzmEOXCjeJRZsDN4YcB/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "But what?",
+                "name": "Disciple",
+                "name_variant": "Disciple",
+                "subtitle": "Ugh...I can't advance like this. Take this card and go first!",
                 "line": 32,
-                "url": "https://drive.google.com/file/d/1cB5j7O6uyod45B9lItuVlTfKwVTaZrqw/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1wJPSfU6hH5RO7uqpiKkVQjoXuxlk4VGX/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "While we can distribute the sweets properly using Mr. Vendy, we cannot fully embody Mitsugoshi's spirit of hospitality.",
+                "name": "Junior",
+                "name_variant": "Junior",
+                "subtitle": "But, this is the one you risked everything to flip\u2014",
                 "line": 33,
-                "url": "https://drive.google.com/file/d/1IluFyErfDhAurnw9-DS8m3-dwdG7joZy/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ltA0nNPu8vrKBpmBl7K2a_TIYKrrSwqp/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Hospitality? What's that?",
+                "name": "Disciple",
+                "name_variant": "Disciple",
+                "subtitle": "Just do what I tell you! ...Do it for me too.",
                 "line": 34,
-                "url": "https://drive.google.com/file/d/1HjxCDtadoNAWI0fEg0iFAsiZWqjVgwCB/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1RNIcBmmjUhb8z1LagzflUU5QQtN6uCm_/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Customer service techniques, or something like that...",
+                "name": "Junior",
+                "name_variant": "Junior",
+                "subtitle": "Jeez, maaaaan!",
                 "line": 35,
-                "url": "https://drive.google.com/file/d/18-le6rIglkwE7E_NMEPvLdgtMvfLDPY3/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1VYs9ei0mMMPPbUg-yfR6MkYvPbYIfwd4/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "With Lady Gamma at the helm, Mitsugoshi's business has been strategically managed until now. From coming up with new products to distinguishing ourselves from competitors...we've skillfully forged our way ahead.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "What are they even doing...?",
                 "line": 36,
-                "url": "https://drive.google.com/file/d/1d0x4g99i7JUQ-7h6g4HrAPldW9Bm4DhT/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1OMkqCaWdsroGpV8B2prOqiwdCPHNGrhD/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Yet, despite our astute business practices, we've also cherished genuine customer interactions. It goes beyond mere customer service obligations. We genuinely find it fulfilling.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Ugh... You got to be kidding. But I remember where I put back the card I just took. If I aim for that one\u2014",
                 "line": 37,
-                "url": "https://drive.google.com/file/d/1ElphorUjRiEAyW6wlYD4Nx4llq_CJNsD/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/18WBTGtfqA6aIq-CZW_smg9ysDxB-tnZ7/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Huh?",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Oh, I'll take that, thank you.",
                 "line": 38,
-                "url": "https://drive.google.com/file/d/1aLfPRMUpoTFGpuipYY_O9C5acajUfMyE/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1YmDIeNjsE03oUaCV-uPQ1WR-4eJ_cd0i/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Delta and Eta exchange glances as the nervous branch manager speaks passionately to them.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Ah?! Hey!",
                 "line": 39,
-                "url": "https://drive.google.com/file/d/1qo8isjrge4GiLgpcgU33k2miPC5XTNpb/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/12zI7fwtWm7R872iGZy_NGMDfqBmkmH6K/view?usp=drivesdk"
+            },
+            {
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Zeta manages to swipe it from under Epsilon's nose! Epsilon's target card has been taken!",
+                "line": 40,
+                "url": "https://drive.google.com/file/d/1i4AwdoRkn9t36ELKJ-OTngKMII9l8Xmp/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Never let your guard down. Thanks for handing it over.",
+                "line": 41,
+                "url": "https://drive.google.com/file/d/1Tb8HtGzOfqbHKY0l0VlUJor4zVYcP9Fk/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "W-Wait, is that why you weren't moving earlier...?",
+                "line": 42,
+                "url": "https://drive.google.com/file/d/1EtBJD4oWazoyT6ipkxX1ujF_Bimgi63m/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Observation is my forte. I'm not breaking any rules, so don't take it personally.",
+                "line": 43,
+                "url": "https://drive.google.com/file/d/1N0Wpd4ohMqdIuVtAa3trT-m1qjEJgr-M/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Got my five cards, so I'll catch you later.",
+                "line": 44,
+                "url": "https://drive.google.com/file/d/1s_BGC3k0-jY1ed-5LLG2w3B8uie6af-v/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Ugh...! Oh no you don't!",
+                "line": 45,
+                "url": "https://drive.google.com/file/d/1d96WPA5kxvEnKpTPKHom2_juDa5Lfy6i/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(...No, I can't let my emotions get the better of me. I'll calmly determine which card to flip...!)",
+                "line": 46,
+                "url": "https://drive.google.com/file/d/1ftlEXKqzZxV-I46g7teuPoyZWO5Gj9Zz/view?usp=drivesdk"
+            },
+            {
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Oh? Epsilon appears to be frozen. Was she that traumatized by having her card taken by Zeta?",
+                "line": 47,
+                "url": "https://drive.google.com/file/d/1VwAo4vA-RBYbw66DIvTwPidcHfih90cw/view?usp=drivesdk"
             },
             {
                 "name": "Delta",
                 "name_variant": "Delta",
-                "subtitle": "I don't really get it, but are we being scolded?",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/104fI9R0vJjD4vdL1_0KMV3Q6ujTCdUAU/view?usp=drivesdk"
+                "subtitle": "...Her aura seems different.",
+                "line": 48,
+                "url": "https://drive.google.com/file/d/1rLjOHDoUNktS1q501hBKw00FEZ48d1w2/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "You find interacting with people fulfilling? I'm struggling to get it...",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1xB_fUbSslXGik_bNNd8GV-sj6OUFCKKQ/view?usp=drivesdk"
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Yes, she's...incredibly focused.",
+                "line": 49,
+                "url": "https://drive.google.com/file/d/1jfs0S0HKMi2-8pGT8E0OkPyduWKAObjk/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Although I get we're being scolded...",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/12YgnA4fLT151aZ4Cd-xY5XOoN9EDjmGZ/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(The effects of the \"start over\" cards shouldn't last long, so there must be a subtle difference in the amount of magic residue between them and the correct cards...)",
+                "line": 50,
+                "url": "https://drive.google.com/file/d/1hgJrK1gFjoyss_t0nH7qxKmR4lSBYtns/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Not fully grasping the meaning of the branch manager's words, the two exchange puzzled glances while feeling a slight sense of guilt.",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/14a07OfQgXD1dv-VMvW0OiQn1nhBMEcUI/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(I'll use my magic detection to discern the difference...!)",
+                "line": 51,
+                "url": "https://drive.google.com/file/d/1bdZZx1itWcnH540v7CBhxPXJiZrnshJ9/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Got it! The right cards are...this, this, this, this and...this!",
+                "line": 52,
+                "url": "https://drive.google.com/file/d/1E0QWhSvb-byasw-pDdjtpmE26ijYFbw0/view?usp=drivesdk"
+            },
+            {
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Incredible! Epsilon flawlessly flipped all five of the right cards!",
+                "line": 53,
+                "url": "https://drive.google.com/file/d/1m2gOt1E72yLT2IGCmkhZ6Oq40Tg-Aj3G/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "It may seem like luck to the casual onlooker, but it's not. It's her skill that pulled that off.",
+                "line": 54,
+                "url": "https://drive.google.com/file/d/1DwtcT44kG3k7KH5QhKqAW5TF4lcRqnpT/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Card shooting looks fun! I wanna play too!",
+                "line": 55,
+                "url": "https://drive.google.com/file/d/1UbvhGSJYAwCq6rOlFuUpLhOgAv5juMxJ/view?usp=drivesdk"
+            },
+            {
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "The entire venue erupts in response to Epsilon's miraculous performance! No one can take their eyes off of whatever's coming next!",
+                "line": 56,
+                "url": "https://drive.google.com/file/d/13FAKh0LeEWlg8zn_w0wNt0TzN2Z6Yk-2/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Just you wait, Zeta... I'll catch up to you soon enough!",
+                "line": 57,
+                "url": "https://drive.google.com/file/d/1hP-uIiOQQC7cMt9jul3JU5cjGlCBvzPG/view?usp=drivesdk"
             }
         ],
         "e6": [
             {
                 "name": "",
                 "name_variant": "",
-                "subtitle": "After receiving a passionate lecture from the branch manager about the essence of customer service, Delta and Eta's next course of action is\u2014",
+                "subtitle": "The race continues after \"Card Shoot,\" but...",
                 "line": 1,
-                "url": "https://drive.google.com/file/d/1gu_dGQWX_hPj6gFKEdv6t4pJzajRtTKN/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ifrqbKzOlCpBN9goY-mEoM4J5vdsxENJ/view?usp=drivesdk"
             },
             {
                 "name": "Delta",
                 "name_variant": "Delta",
-                "subtitle": "The pumpkin pies taste different at different food stalls! Some are sweet, and others are stuffed with meat!",
+                "subtitle": "Hmph... What's Epsilon doing?! She's not catching up to that kitty cat!",
                 "line": 2,
-                "url": "https://drive.google.com/file/d/12L1J4RiE44DZut7a9BTyGqmA1FhNbJqI/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/118nZmUsf8LQElRO9_LJea7BOiKejb4DR/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Lazing around in the hustle and bustle...is kinda nice...",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "At this rate, I'll have to interfere\u2014",
                 "line": 3,
-                "url": "https://drive.google.com/file/d/1fyAu4NrOxxPV7LkxMrhVQuAmpl04w-nG/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1InDgsZvyen62q-B3QeipC01GNtApkyCw/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "You eat too, Eta!",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Sit.",
                 "line": 4,
-                "url": "https://drive.google.com/file/d/1XmPffO3aoPd7QTX67NGvzzLJzIyvh_PU/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1EZQl1RpgUWElWy5O0weTY5fbkAbWZiAy/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Mmph... Don't...force me...",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Ugh... Yes, ma'am...",
                 "line": 5,
-                "url": "https://drive.google.com/file/d/1j0MOpBEDsq9vU0A9dJDzs3n3Vmx56wLi/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1XCIpo5FLr4tJ3Qu-B9Op9Coni_Hhyur4/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Despite the branch manager's fervent speech, the two continue enjoying Halloween without a care in the world.",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "The race is nearing its climax. I wonder what the final challenge will be.",
                 "line": 6,
-                "url": "https://drive.google.com/file/d/1UCet-fgEBytk24aWGtcLijiDtI-uctg7/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1GeQD6d_7bbxUQrtXKmBqNgZGaYpOjlGt/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "*sigh*",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "I'm glad you asked! The final ordeal is...\"Rice Cake Pounding\"!",
                 "line": 7,
-                "url": "https://drive.google.com/file/d/1AzRC0tkkA9msDSKYqsaFQuzgGue-lELe/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1QmPC1RMkOxpPTscFeqG-4aq9Ykawv7og/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "What's with the sigh? Aren't you gonna eat too?",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Participants must take down a giant rice cake-like slime and its minions with a mallet while shouting \"flat\"!",
                 "line": 8,
-                "url": "https://drive.google.com/file/d/1Q9h7PcmfK-Vs4c8VF5FjkHK_dmqW7Cot/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1bplfuFgLnXqLKjQCl2El-m9VPgt5yByU/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Skewered chicken... I'm not in the mood to enjoy a meal right now. Can't you two understand what I'm trying to convey?",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Whoa! Sounds fun and tasty!",
                 "line": 9,
-                "url": "https://drive.google.com/file/d/1FQxus35z_27fin2heqOnvdIoh5k9xf10/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Czvb_UHrj4O7sqNmVPdxBequnI2CqvQQ/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Business is booming.",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Remember, you must shout \"flat\"! Fail to say it, and you'll be disqualified!",
                 "line": 10,
-                "url": "https://drive.google.com/file/d/19mYi6akSVzHKBx7Mc_t_yqgUlClKgzyT/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1EDsYCCvyiFfjsgXToXvAJocTiDf1ivOV/view?usp=drivesdk"
             },
             {
-                "name": "Mr. Vendy",
-                "name_variant": "Mr. Vendy",
-                "subtitle": "BEEP BEEP...BEEP...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Wh-What...?! Who're you calling \"flat\"?!",
                 "line": 11,
-                "url": "https://drive.google.com/file/d/1LjJAi2tWQUPbg1SSddUKQgXhAyBcNGhl/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/122AIiY56joJl6BlNOMOHtlhWkwoZwe3Q/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...It'll reach its quota soon.",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Um...who...? It's a traditional chant when pounding rice cakes, you know?",
                 "line": 12,
-                "url": "https://drive.google.com/file/d/1hNSxetOXvaMtLlDldBLKuo5uFy1p2Ay6/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1jEMcxhhiPmR5lndjug1o21xs-BIBqzUX/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Huh?",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Ah! R-Right... Hahah...",
                 "line": 13,
-                "url": "https://drive.google.com/file/d/1DXW8EdAg_ZGHXuyZUHeMLD3cC1u2sXb2/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/14oreoux2y1Ws0Q7IfJfuiMJ_cakst80f/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...The sweets in Mr. Vendy are about to run out...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Right, it's about rice cakes... In no way is it meant to mock someone's physique. Calm down, Epsilon!)",
                 "line": 14,
-                "url": "https://drive.google.com/file/d/1Iw7xtM538z_xdWSkBotjjrOP8nIdKA3-/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ous1x6vcdWnQ7pyi6cRicyWYeBBxpzgs/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Oh, it's done already? Well, I'll head back to the stalls then!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Okay. Here goes, \"Flat...\"",
                 "line": 15,
-                "url": "https://drive.google.com/file/d/1OgZ2KUbToy2jNJQHWhTNsNu8-o5nyB2E/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1JIvhfmatwHT33AgPN6fOjuOfRJSACrJg/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...I'm going home...",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Epsilon has begun taking out the minions! But her shout is small! So small!",
                 "line": 16,
-                "url": "https://drive.google.com/file/d/1-B955wnAmsdq1nZ02CpX6Z4bFwbxuzNi/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1y16Bqk5YMia6WjRO_HeNDxoKcJ5pWDEc/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Ohh... Is it going to end like this? Mitsugoshi's principles won't be properly conveyed to our customers...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...What? What're you calling \"small\"?!",
                 "line": 17,
-                "url": "https://drive.google.com/file/d/1Ms_g_P7QPP8AXzyGBKODNTgAO_pVb0Ed/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ZoYO-nEhtZZjqFJXaYJxJUrlZ5HSfzxa/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "As the branch manager laments, a boy rushes up to Mr. Vendy.",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "I meant your chanting...",
                 "line": 18,
-                "url": "https://drive.google.com/file/d/1jxI5Nw_ZnbIj_wcpv1qMFK2Ws-7etOTm/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1qPmUxAHDGmj_nPveIbpi881iZQLBG6f-/view?usp=drivesdk"
             },
             {
-                "name": "Boy A",
-                "name_variant": "Boy A",
-                "subtitle": "Trick or treat!",
+                "name": "Therianthrope A",
+                "name_variant": "Therianthrope A",
+                "subtitle": "Hraaahhh! Flat! Flat!",
                 "line": 19,
-                "url": "https://drive.google.com/file/d/1ZmmD6yROR3hcltH-gIn3uutxAloJHSFt/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1lxnEBsl43rJ_pl6Pji8yjnB5NTKiCPhT/view?usp=drivesdk"
             },
             {
-                "name": "Mr. Vendy",
-                "name_variant": "Mr. Vendy",
-                "subtitle": "BEEP BEEP...BEEP... PSHHHT... OUT OF STOCK...",
+                "name": "Therianthrope B",
+                "name_variant": "Therianthrope B",
+                "subtitle": "Flat! Flat! Flat!!!",
                 "line": 20,
-                "url": "https://drive.google.com/file/d/1F-Ge7NDc10p5mfDrHzQD2jHRlowUmpK6/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1TylrudcozR_zGlDNXxRL77KxNmPSGkXB/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Oh... It's done.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Nghh...",
                 "line": 21,
-                "url": "https://drive.google.com/file/d/1aOScMblk0FuZwEYY2jBeamStNyYzNpT_/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1kLR0U9gymqfKP7aluEKEB5cvsq5jpa40/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "It's run out of stock. Alright, I'll give that boy his sweets, and we can wrap up this event\u2014",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Epsilon has stopped moving again! Will we see another miracle like we witnessed with \"Card Shoot\"?",
                 "line": 22,
-                "url": "https://drive.google.com/file/d/1MP9q4O_sGep-2hql3rZc0V1_FyVDjar_/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/170SQiduh945PMO_L4iMKwgnDSwDpeXyW/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "But as the branch manager tries to approach the boy...",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Unfortunately, it doesn't seem so. She looks frustrated, but why...?",
                 "line": 23,
-                "url": "https://drive.google.com/file/d/1mkY_YbuAxQQURry6gkbpwPc7HCpCYiCm/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1T0LwRUpmLsKd7lcuQJl2potwJPj2h-5c/view?usp=drivesdk"
             },
             {
                 "name": "Delta",
                 "name_variant": "Delta",
-                "subtitle": "...Hm?",
+                "subtitle": "Epsilon, move! If you don't, the kitty cat will win!",
                 "line": 24,
-                "url": "https://drive.google.com/file/d/1mltWaf6sdnB35BYa6KLDADtKf3cAc9NO/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ShaApfA18EsdV3WmcIisDR0f9xQyKOBP/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Mr. Vendy's suddenly got...a different smell.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(This is the worst... The actual worst! So what if I'm actually flat-chested, and these breasts are fake! I've worked hard for them...)",
                 "line": 25,
-                "url": "https://drive.google.com/file/d/16MJrNih7lBo_XVkjJhDXAO_hOrSt9Azj/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1hhzl84Ldc4pWwedWFtq8P15Tverf1N2y/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Huh?",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(...But do I still fall short of that airhead...? If I'm going to have to suffer like this, I might as well\u2014)",
                 "line": 26,
-                "url": "https://drive.google.com/file/d/1AXQ0GdPBzN4LrxZfkH3HSteZyYlgpG0H/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/14FZFI4MzLABpSl4Ji0rc-xmhk-SZgUTk/view?usp=drivesdk"
             },
             {
-                "name": "Mr. Vendy",
-                "name_variant": "Mr. Vendy",
-                "subtitle": "OUT OF STOCK... RESTOCKING.",
+                "name": "Junior",
+                "name_variant": "Junior",
+                "subtitle": "Hey, watch out!",
                 "line": 27,
-                "url": "https://drive.google.com/file/d/1I8w6QFRzbGmAUmx80ikLc-CAypG-RDH-/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/11Z2Bcsv3TkVPTFE3Sc9P7S459pjqBF_k/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Mr. Vendy blares an error message, and its built-in arms and legs start to move, snatching sweets from children nearby.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Huh...?",
                 "line": 28,
-                "url": "https://drive.google.com/file/d/19F70YTP3Gimsdl9MLNXNwQHDwQo2KAJ4/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/198tJWZTL-pl-ZSj-7e-06iNIXA6PnUbS/view?usp=drivesdk"
             },
             {
-                "name": "Girl A",
-                "name_variant": "Girl A",
-                "subtitle": "Eeeek!",
+                "name": "Junior",
+                "name_variant": "Junior",
+                "subtitle": "Ughhh?!",
                 "line": 29,
-                "url": "https://drive.google.com/file/d/19VjIRJDrJGcrJBI5qFIOMOik1Kl5hS0I/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/13oDt3Qx3xxC6mazTHmapVQa17u8pTECA/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Wha\u2014?! What's going on?!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "You... Y-You protected me...?",
                 "line": 30,
-                "url": "https://drive.google.com/file/d/119AwreNgl96sLjEtD4VjfDOYYRwFBQ3m/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1JVoL1sBmSgB9uuQ6uCZEYCdmfJmvMUB6/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "It's rampaging.",
+                "name": "Junior",
+                "name_variant": "Junior",
+                "subtitle": "...That giant slime is scary. It's only natural to freeze up.",
                 "line": 31,
-                "url": "https://drive.google.com/file/d/1oXwNVNNgJqPQWWt0WpO6MrrjtO13G3KR/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1LHxSgkaHT5E1-Pa7DEoMVsGHepWOq5p3/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Now isn't the time for such calm remarks! If we don't hurry up and stop it, the children might get hurt!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Um, he protected me, but...who even is this?)",
                 "line": 32,
-                "url": "https://drive.google.com/file/d/13kD5u8f36thIBO5aN7utdQXrcoRfS6-R/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1oaWt290rcgYbILqGhwuu1llZKiYKKDQa/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Go on, Delta...",
+                "name": "Junior",
+                "name_variant": "Junior",
+                "subtitle": "But thanks to my master and my senior, I get it now. Regardless of what stands in our way, we must move forward...!",
                 "line": 33,
-                "url": "https://drive.google.com/file/d/1CMfqtTal8z_kcXtAul1MVwgVejU9O_QX/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1qQtPaVN-ou8JVquuPSuAi8cCz_1cn0iQ/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Jeez, fine. Be right back!",
+                "name": "Junior",
+                "name_variant": "Junior",
+                "subtitle": "So, even if it's reckless, I'll accept the challenge! Again and again!",
                 "line": 34,
-                "url": "https://drive.google.com/file/d/1-ZHlllEhtt86LvEtWlrMePj-xeCDL_4b/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1lnHKacYg_sTpmE4piJx3mg1WupfNUfGP/view?usp=drivesdk"
             },
             {
-                "name": "Mr. Vendy",
-                "name_variant": "Mr. Vendy",
-                "subtitle": "RESTOCKING... RESTOCKING...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Even if it's scary or reckless...accept the challenge...)",
                 "line": 35,
-                "url": "https://drive.google.com/file/d/1HYtXEFmcY6B8uybCdZ95B_FHb6-TW9h-/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1B9KSTPD0kIhfvmRehaMrSyK0nld75XPU/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Stop right there!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Yes... I kept moving forward, even when my heart almost broke before obtaining this body...)",
                 "line": 36,
-                "url": "https://drive.google.com/file/d/1PyeDt9jzMcL_rL8NODThEsSzPpqMQq9P/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1LrK4GfpD04ZzHB508g2nxvvgGLdRHTvr/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Delta leaps forward and kicks Mr. Vendy's extended arm away from a girl holding sweets.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(I can't let that challenge I accepted...go to waste here!)",
                 "line": 37,
-                "url": "https://drive.google.com/file/d/1L3ZX1bSee7oYczrQLIoGgIwj9WHZh-iE/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1pTReOSvYUXsGquljXbaNxr3C_zPcYhCw/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "The crowd is kind of getting in Delta's way...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Hyaaaahhh! Flaaaat!!!",
                 "line": 38,
-                "url": "https://drive.google.com/file/d/1V2GkXmrobbeYDW20sq1oNxpDg0td1UHV/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ft3g6wdfVc8UXRLxw-xiGodMi5a-9IoF/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Ah! Everyone, please step back!",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Epsilon is back in full force! She's running with incredible momentum!",
                 "line": 39,
-                "url": "https://drive.google.com/file/d/1y4G9UU0DEMwycdSbEZTRWQD2fAAmWIli/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1F0kzAGm8GBNWbZBGoC3OffKg5HY_MsK2/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Mitsugoshi employees from the branch rush over, guiding the public away from the scene.",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "She seems to be showing signs of growth. Heheh. She's still evolving.",
                 "line": 40,
-                "url": "https://drive.google.com/file/d/1mmgCk6EVM-o8iZfcns3D-BzAWGX_vvID/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1rdMXxL9-6GavFNpA_YMhfm0Mlq2oQOet/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Delta confronts, Mr. Vendy head-on. Sensing this is no time to be lazing around, Eta joins her.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(...That guy inspired me, but what even was that charade...?)",
                 "line": 41,
-                "url": "https://drive.google.com/file/d/11ZPRxX2XLC3HkxtPolguZqEasUc5Q186/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1KeU9r19gq1zAKugC8kPaHSXvMe6VvNLq/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Eta, what's going on? Why's Mr. Vendy acting so weird?",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Flat! Flat! Flaaaat!",
                 "line": 42,
-                "url": "https://drive.google.com/file/d/1mFLGpVLcdipm4sCNzkmrS7bJAH8hzRQA/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/147R9nM8ACTNXfOGW60HSC4eLd0Akv6yc/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Well, I made it in a hurry, so the restocking system is a bit sloppy...",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Epsilon has overtaken the other participants, reaching the lead group! But the giant slime lies in wait ahead!",
                 "line": 43,
-                "url": "https://drive.google.com/file/d/1-9BynQaFA_VWnuX4RRCU9kxKeUNPACBy/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1puMexYjoHKdjGB0YedbDSsTRYh7gv52p/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "...What's that supposed to mean?",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "It doesn't look too violent or dangerous, but that rice cake-like body...seems a bit troublesome.",
                 "line": 44,
-                "url": "https://drive.google.com/file/d/1GClYTgHr2llUCxyOaoZo2l8AG1GUl3Cq/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1RmFGYbLDd92IU4to9-ZOUXQT0mk3BwYU/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "It's an automated system for restocking sweets. But the settings for where it restocks from... Well, you get the picture.",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "A light scratch won't be enough to take it down.",
                 "line": 45,
-                "url": "https://drive.google.com/file/d/1Rcgbp5t1r0_gasF4J6ZwD7-uhTGMSMvB/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1IfvSsybAZiJb1EM_LhSRqdAzRaoJ5B3r/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "I don't really get it!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "This thing...looks like a handful. Well then, how should I attack it...?",
                 "line": 46,
-                "url": "https://drive.google.com/file/d/1K26oRDt_4Z4lJxTfFWJU0EOwzD8no5Oi/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1y7e8MEHuILrsFBl0sOF57BI42byENGO2/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...If you don't get it, that's fine.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Oh, Epsilon! I was waiting for you.",
                 "line": 47,
-                "url": "https://drive.google.com/file/d/1YAkfwEI3zc8kMql8WSdvtW1hAmi4R8OI/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1FgLHTGBxwktMWm_VDaX3U-Mj64zjHbYM/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Mr. Vendy is rampaging. Stop him.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Wait, you wanted to team up with me?",
                 "line": 48,
-                "url": "https://drive.google.com/file/d/1SBW3-k2b4CSzn9DTDbOXYUh_0WXDYtoV/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1BecKswv44jJck2utCwUKIQoYKp7A2PxZ/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "I see! That's simple and easy to get!",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "That's part of it.",
                 "line": 49,
-                "url": "https://drive.google.com/file/d/1ouUw_1GCeV0BiU_Xf0YyWEY1NYVJ0_VK/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Xwk4n0sZUvAeyX3lL9i7ITao-I_ejCog/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "With a wild grin on her face, Delta charges straight at Mr. Vendy...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Part of it? Well, whatever. Right now, let's join forces to defeat this thing!",
                 "line": 50,
-                "url": "https://drive.google.com/file/d/1TIIsVo26mI1jXUsOWvfASHcL9VyGW84z/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/16sPWdyvPdHDiABsJkVjXOjqqkiJiJLmf/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Wha\u2014?!",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Sure, sounds good... Here it comes!",
                 "line": 51,
-                "url": "https://drive.google.com/file/d/1Amd_hKKqAVe243rMl4eZVlKxcSk13cIn/view?usp=drivesdk"
-            },
-            {
-                "name": "Mr. Vendy",
-                "name_variant": "Mr. Vendy",
-                "subtitle": "BEEP BEEP... LOOTER IDENTIFIED. INITIATING ELIMINATION PROTOCOL.",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1MIUFQfWyb-dWbKG-_IPYXxLSXnIwKiyZ/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Mr. Vendy's arms and legs move swiftly, launching an attack in an attempt to eliminate Delta.",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1tv078LNFkxdg9k84hN6FE9pRj6XHPdgN/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Eta?! What the heck is this?!",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1rxp5WBtlOHUr6S22zbcd_T62aY6Er8PO/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...I thought enemies might come to steal the sweets, so I equipped it with an armed security system...",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1wnZt5QQsLOfWrTFcKF_JBo4pkrwh9Hvu/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...It's the perfect security system.",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/19HbIURECYTQRedtci6QNSqmvQtoRIvFX/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Security...system?",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1sPDkTpOjccrB9O4lnenICJ3BYeCDH5fi/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "But it's only natural to protect food from enemies! Well done, Eta!",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1bJY4UYpeav9q3lhNXXtobxjpv0s-0XeJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "This isn't a time for compliments! Why did you focus on those features and neglect the restocking system?",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1u8Am3Gyfe9rC2In27Il5NW8M3OA9m8Lk/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Personal tastes...?",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1OXkkYUx6T2ykKaCp-73bXp87jGA6qBMM/view?usp=drivesdk"
-            },
-            {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Personal tastes...? Oh, Lady Delta! It's stealing your food!",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1D6Cbi7wzTs_BWDKIHEGogBlBf2zOwBk5/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "What'd you say?!",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/11WZyqT4-v24kvxoSHKml-Gg5qunS7O9Z/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Delta turns around, only to find Mr. Vendy's extended arms snatching the snacks and food she had procured.",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/1XO1xuzVssHkFQyey0hEja39EVwqT6eNW/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Boss man's souvenirs...! I won't let you take 'em!",
-                "line": 64,
-                "url": "https://drive.google.com/file/d/1BgFvA61CTFoXyEwM_N4KeOb38hXua420/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Eta! How do we stop Mr. Vendy?!",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/1QQS9vIxYgrHePVqxiaPvkIsQwZZ3Sidb/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...There's an emergency shutdown switch. But it'll be tough to press it while it's rampaging...",
-                "line": 66,
-                "url": "https://drive.google.com/file/d/1xFivnL0rWTZI0lNelqxJymNY4-6Tnewl/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Then I'll make it stop moving! You do something in the meantime!",
-                "line": 67,
-                "url": "https://drive.google.com/file/d/1oY9UIgdNJ-IjPtIYqpL6JPl1QTTSzj-k/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Talk about unscheduled labor...",
-                "line": 68,
-                "url": "https://drive.google.com/file/d/1Q8YSpVpJ7nku1njg3nsbW5gCpm9HRrE-/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Alright, here goes!",
-                "line": 69,
-                "url": "https://drive.google.com/file/d/1tTukCoCNpXi3d3GTvbRzkgq_KUe0oHU4/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "While Mr. Vendy continues its rampage, Delta fearlessly leaps toward it. Eta looks for her opening...",
-                "line": 70,
-                "url": "https://drive.google.com/file/d/1JCQTh76DYeyrAJDXybbgOscTjSZskvh3/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1pHoDKDc6qSUhvf-I6I2wxF5KWrLMiOcX/view?usp=drivesdk"
             }
         ],
         "e7": [
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Phew... I'm beat...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Whew. That was easier than I expected. Well, that's what happens when the two of us team up.",
                 "line": 1,
-                "url": "https://drive.google.com/file/d/1gebBjRqEvIhKAcGnHtJ_pbf3RK-wt3eT/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1yD8I8jGq9icGCfXoVP6EBfAi0otbhtAN/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "I'm not tired at all!",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Exactly. It was worth waiting...although that's not the only reason.",
                 "line": 2,
-                "url": "https://drive.google.com/file/d/19tBqj-QJlFNFdlU_tfVAZoVcCZfDC5Ev/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1a76iagkFfDE2cybxwDirgJOuDneSSvNm/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "You're so weak, Eta, if just pressing a switch makes you tired!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "What do you even mean by that\u2014?",
                 "line": 3,
-                "url": "https://drive.google.com/file/d/1CfAMiXwfH09BJHVPOzHldOuycFB5iUwO/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1e_V-f5ZMZ4Tuo8iYp1tw9DCgPxgJADkP/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Okay, okay...",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Never mind. For now, let's focus on reaching the finish line. We wouldn't want someone else to snatch our victory after we defeated the slime, would we?",
                 "line": 4,
-                "url": "https://drive.google.com/file/d/1gar9kh1076_zcc-XjBakX99oetC61y8H/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/18g9PXCPfMOUjuorRa0jWhqH1f2Wicg9B/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Mr. Vendy emits puffs of smoke and has completely stopped functioning.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "R-Right... Well, Zeta, from here on out, it's a real showdown!",
                 "line": 5,
-                "url": "https://drive.google.com/file/d/1Bwant0TrpqKxsxrxFsP_AoH13m8_oIz_/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1bDsRV0avVJXjotd6x6iLXVvHe9pOz5d3/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Hey, branch manager. We're done here, so\u2014",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Sure thing. Don't leave me behind...hup!",
                 "line": 6,
-                "url": "https://drive.google.com/file/d/1K4zKhfif3uuU0ui44fFj4wf0BbT-hhs1/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1IHp3ZdlTlxuOcXYQHXdJHIWZM_3jBfpw/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Delta turns towards where the branch manager is, when...",
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "And Epsilon and Zeta are off running! We are about to witness the winner of the Great Ize-athlon 2.0!",
                 "line": 7,
-                "url": "https://drive.google.com/file/d/1mTo3YY3pZMIbZPY56u7yVaOvO1WK-_U8/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ESrVmY-0uoVX0IbI-VPWJiqXaEwjWXRB/view?usp=drivesdk"
             },
             {
-                "name": "Children",
-                "name_variant": "Children",
-                "subtitle": "Whoaaaaa!!! You ladies are amaaazing!!!",
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Good luck...both of you.",
                 "line": 8,
-                "url": "https://drive.google.com/file/d/1eYqbHdXQsoIwciuQ88J17ark-VivJDHD/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Q--hcBDM0pr-OLeak8Mpp25x6hOgKVnu/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "A wave of applause and cheers erupts from the crowd evacuated by the Mitsugoshi branch's employees.",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Epsilon! Take her out!",
                 "line": 9,
-                "url": "https://drive.google.com/file/d/1OQviMWQ4PJiqRvY2-GbUvKRpzu9oxW3R/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1vG4JUWb0Znr5qXs0QnVUrayczsXWTR58/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Wh-What the heck it this?!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Ack... Zeta's fast...! At this rate, my win... my grand prize...!)",
                 "line": 10,
-                "url": "https://drive.google.com/file/d/12JJ3e0l-Ou0uxqLtM9cZ6T9zoaUjV3-E/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1JUVZ1wY5XdhpxVSBwSPRc_eL3DNKFDqc/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "No idea...",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "...",
                 "line": 11,
-                "url": "https://drive.google.com/file/d/1xe0v9kislMLs7J2lmlNozIDZGdNYdb1n/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ACshgQWnw6YjXRv4TXX_5RsCO2VJ2j17/view?usp=drivesdk"
             },
             {
-                "name": "Boy A",
-                "name_variant": "Boy A",
-                "subtitle": "That was awesome, witch lady! You're super strong!",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "O-Ow! I got a foot cramp!",
                 "line": 12,
-                "url": "https://drive.google.com/file/d/1R0vYg63q69_ROuflFD55_0LcgCOHqU6e/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1XL4sMXeUbOKIXCPI6Kzv0gW8xOo18TuC/view?usp=drivesdk"
             },
             {
-                "name": "Girl A",
-                "name_variant": "Girl A",
-                "subtitle": "Thanks for protecting us! You looked really cool!",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1zYGn5OqFGwpwFIdxIZcViFAmAn_sl_xt/view?usp=drivesdk"
-            },
-            {
-                "name": "Boy A",
-                "name_variant": "Boy A",
-                "subtitle": "Mom! The witch lady and the vampire lady defeated the bad Mr. Vendy!",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/1iBILUOpvaDaAxuh0K2NEk-x5zw-iQTdb/view?usp=drivesdk"
-            },
-            {
-                "name": "Mother",
-                "name_variant": "Mother",
-                "subtitle": "Yes, that was incredible. I'm surprised by how much of a show they put on.",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/18EsHor0JfDc-Ca8iRg2Nb0n9-CC7YQzR/view?usp=drivesdk"
-            },
-            {
-                "name": "Mother",
-                "name_variant": "Mother",
-                "subtitle": "Mitsugoshi always manages to impress. I can't believe Mr. Vendy was part of this performance all along!",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1LXcw8jXBQkL2uu7-A2MmVEz0mOLq-nU3/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Performance...?",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1Oscxnz9x_dFUIxBSe222SUVNL8b7bwSb/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...The misunderstandings are escalating...",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1dEt9HDs544YWnetfeEte5nvcK8JZqy_W/view?usp=drivesdk"
-            },
-            {
-                "name": "Boy B",
-                "name_variant": "Boy B",
-                "subtitle": "I thought you were weirdos giving out sweets...but you're actually pretty amazing!",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/1hOdKSOZyfu1H4BcAGV0uUUrzrutcR6ie/view?usp=drivesdk"
-            },
-            {
-                "name": "Girl A",
-                "name_variant": "Girl A",
-                "subtitle": "Thanks for getting our sweets back!",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1NofG9ICQYB1K3f0rHrG4WwxlLJqllnC4/view?usp=drivesdk"
-            },
-            {
-                "name": "Girl B",
-                "name_variant": "Girl B",
-                "subtitle": "Witch lady, vampire lady, can I shake your hands?!",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1LyeI1S8BzZv2yMi-YQ2AsqXVbcb44CRd/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "H-H-Hey... No pushing!",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1pzmMh_h83hD0WcdxrJcEBWohzF-x1MbF/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "E-Eta! What's going on?!",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1MPC7EgJPY7Bs4MZdXpUKqsgf9QPQTSV-/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Don't know. There are a lot of people... Wanna run?",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1QEraF253Vk4LjvKnMgM9YME_tcBEZmvj/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "No...running! I'm not sure, but I feel...nervous? Excited? How about you, Eta?",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1a_-rYt0Pt56azsYRT3nnK4W223ed2g_U/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Well...I don't feel bad...",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/1L23ZCw3JdrexjLl5Hlzo7edw-k4t5-RC/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Yup, yup. It's really something that they get how awesome I am.",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/10q6usxeaC1AuVKked4hWQztS0Vzs5oTD/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Eta and Delta find themselves surrounded by children who gaze at them as if they are heroes.",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1BtqOgeDoyqTqS_V6Hf1MXxUeRhnCZpKa/view?usp=drivesdk"
-            },
-            {
-                "name": "Boy A",
-                "name_variant": "Boy A",
-                "subtitle": "Hey, witch lady! Trick or treat!",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1l_Dtd_P6ri-2jvAj_awuHBoAImZVz1Vy/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Hmm?",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1_NRmMMp19Bc_O1NS-TSelL1buWiNcXt6/view?usp=drivesdk"
-            },
-            {
-                "name": "Girl B",
-                "name_variant": "Girl B",
-                "subtitle": "Me too! Miss Vampire! Trick or treat!",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/1QnAinwce5JHiWx22DwRtRq1wtAbrlZ_X/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Huh?",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/10IThelnz-yRvRz96oGrWrIiPfJQ5owOR/view?usp=drivesdk"
-            },
-            {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Hehehe. Witch lady and vampire lady, would you please give out sweets to the children?",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/18UCt5zIIfMifl8GR42C5D1Yg2fVkdo8b/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "The two exchange glances as the branch manager smiles and makes this request. Then...",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/1p_9TBo3COAMNMDgqhvpMrGo9ziHpMzGH/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Heehee! Well, since you insist, I'll do it!",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/1bqW_txLbyvBciRjn53DzWs7g-R-oic1t/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Oh well...",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1s2nMf7VTXrckeDoGBuOpXAwR9rOXFcYX/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Okay, kids! Say the magic words!",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/1BWAlfFdkw2bQbPSJv-KRol3hTQ3bXPdg/view?usp=drivesdk"
-            },
-            {
-                "name": "Boy B",
-                "name_variant": "Boy B",
-                "subtitle": "Trick or treat! Give us candy, or we'll play tricks on you!",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1doNdE5ob3uaFN8yxr7qJu-i2GF1BqFfX/view?usp=drivesdk"
-            },
-            {
-                "name": "Girl A",
-                "name_variant": "Girl A",
-                "subtitle": "Trick or treat!",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1fqBMOllr083_7iQ-KO5-TWprE1EJbx6Q/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Here you go...",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1IwL2cKcUIC7Te-4xcuTbu3lxea3hPxoc/view?usp=drivesdk"
-            },
-            {
-                "name": "Girl A",
-                "name_variant": "Girl A",
-                "subtitle": "Thank you, miss!",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/15MNnEIjcNi2XVrdz7wlCeSsiigK3Z0K2/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Mm. You're welcome.",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1oUtT5jw5L8zmE-DgIJ-Q_BEZInCn5uVD/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "It's only after Eta and Delta finish handing out sweets to the children that they realize they both have smiles on their faces.",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1jr5zAHRIhfVqKKg59SCkbUFY1qqTW5Iv/view?usp=drivesdk"
-            },
-            {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Lady Eta, Lady Delta, well done!",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1teXuukzaJjdrKAVZNFoxHCLdEZbttIf2/view?usp=drivesdk"
-            },
-            {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Despite the unfortunate trouble that occurred, thanks to both of you, it didn't escalate into a major incident. In fact, the Halloween event was a great success!",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1Y3EfpEkH4UovQgdoeLLO6Y3EseDb8Bn6/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "After giving out all the sweets, Eta and Delta return to the Mitsugoshi branch.",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1EvbkDWBfiQpBgVDwn3hP8-rBnIqjlvNB/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Heehee! It's a piece of cake when I get serious about it!",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1OHvIMb6s8wdkiDvsNFiezefSDFwmyYsK/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Kids have way too much energy...but...well, it wasn't not fun...",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1P2_NuL22mluP5SmC09p9EKIOCWimjlKI/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Umm... It wasn't not fun... Hmmm...oh! Which means it was fun!",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1Ufv-WkEDnc6qxh0zJSCu8dZ3WIvqis8o/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "I had fun too! I think I sorta got what you were saying!",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/12-ZzcFtacuECpky_qze1T2KzEt3eE23Z/view?usp=drivesdk"
-            },
-            {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
                 "subtitle": "Huh?",
+                "line": 13,
+                "url": "https://drive.google.com/file/d/1xt5XUrpoTgR7lt8KtK0U4tYE4-DFgD_f/view?usp=drivesdk"
+            },
+            {
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Whoops, Zeta has had an accident! She's slowing down right before the goal!",
+                "line": 14,
+                "url": "https://drive.google.com/file/d/1Nwa0CAe0NazT0L7rptGFWu5XsesyPVfF/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Wh-What the...? Fine, if she's going to let me win, I'll take it\u2014",
+                "line": 15,
+                "url": "https://drive.google.com/file/d/1Uh9GrdkUa7fTM4hXtW--jwxAC00dqRjY/view?usp=drivesdk"
+            },
+            {
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Epsilon doesn't stop! And there she goes, crossing the finish line! The winner is Epsilon!",
+                "line": 16,
+                "url": "https://drive.google.com/file/d/1zyBFXhsJc7eLc3GehbnYwAjtqQZoWZnR/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Ouch, owwww.",
+                "line": 17,
+                "url": "https://drive.google.com/file/d/1ygGqcZqEDoNE4gasEMj6X7IO2_lr7R_2/view?usp=drivesdk"
+            },
+            {
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "And Zeta also crosses the finish line! She comes in second place!",
+                "line": 18,
+                "url": "https://drive.google.com/file/d/1Qqrp6-liG3iOOli8xEQD3-p6mWf99_re/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "A surprising turn of events. It looked like she fell on purpose...",
+                "line": 19,
+                "url": "https://drive.google.com/file/d/1IK5TmpVRSBLe9sxf3en_-EmNjnUBlOHd/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Yay, yay! The kitty cat lost! That's what she gets!",
+                "line": 20,
+                "url": "https://drive.google.com/file/d/1CYr6s7h0R-7G-hje20S8rrX3LLC4ocRW/view?usp=drivesdk"
+            },
+            {
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Now that we've determined the placements, let's move to the award ceremony! The prizes will be presented by our commentators! Don't miss it!",
+                "line": 21,
+                "url": "https://drive.google.com/file/d/1_xrKgwaovoF-5TPvUKs_OMC42aGdj3Dl/view?usp=drivesdk"
+            },
+            {
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "And the victor of this year's Great Ize-athlon 2.0 is...Epsilon!",
+                "line": 22,
+                "url": "https://drive.google.com/file/d/1V0IZGVVt2hHJvUC1koN7beiJemwUGU3F/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...",
+                "line": 23,
+                "url": "https://drive.google.com/file/d/16dQgKJX61dhZgY9xpQ61yuv6zMOPezvy/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Hey, why did you hold back?",
+                "line": 24,
+                "url": "https://drive.google.com/file/d/1MntPrdpth7OqPrtSZqbrNOhpmJuHwNrk/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Hmm?",
+                "line": 25,
+                "url": "https://drive.google.com/file/d/1BszceTkULY3bWcRHYP2u1yR9y-_KRgXN/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Don't play dumb. You didn't really cramp your foot before the finish, did you? You did that on purpose to let me win?",
+                "line": 26,
+                "url": "https://drive.google.com/file/d/171tr_v4eFalqALdlJD2o-oY4viH7L4Jx/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Well, yeah... People have their own goals, you know. Mine wasn't to be first, that's all.",
+                "line": 27,
+                "url": "https://drive.google.com/file/d/13lvbXNOn1PuiGHTZXOWe8NZiSQagdzdP/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Congratulations to both of you. You were impressive. Here, these are your prizes.",
+                "line": 28,
+                "url": "https://drive.google.com/file/d/1yIa7Stvc3i1nb8gfGra39Bh5DsuxkD2U/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Epsilon wins and gets the rice cake, and you, kitty cat...get Golden Sardines.",
+                "line": 29,
+                "url": "https://drive.google.com/file/d/1WUXPexMyqAYsYQ78hQbBvP83ebni0jfd/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "S-So, this is the \"Heart's Bounty\"...! It really does radiate grace and beauty\u2014",
+                "line": 30,
+                "url": "https://drive.google.com/file/d/1RoAwle5gSJRPaPNTTifeABuLt388U_sH/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Huh? Golden Sardines? Zeta, don't tell me you...",
+                "line": 31,
+                "url": "https://drive.google.com/file/d/1kR3gb7VrleDxWkYctevY3CV0ENwe3rtb/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Yeah, this is what I wanted\u2014the second-place prize. They say it's a legendary fish that tastes great and is good for your looks.",
+                "line": 32,
+                "url": "https://drive.google.com/file/d/12xLC3Y1EnmRCuQcFbIF4ZCn33OOw55PL/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "*sigh* So that's why you suddenly got fired up after reading the flyer...",
+                "line": 33,
+                "url": "https://drive.google.com/file/d/1m34OEI0fv4Ah15bOyg7QfeVbYlbXPHW2/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(I was so focused on the main prize, that I didn't even notice... A rare fish as second prize...)",
+                "line": 34,
+                "url": "https://drive.google.com/file/d/1F8wA978VL8yLuLOxCmTnehnoJHL4DIwH/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(It's supposed to be good for beauty... Makes me wonder if I missed out.)",
+                "line": 35,
+                "url": "https://drive.google.com/file/d/1rfnyRnFoa1DJ4wWQsUEMrHwE9motim5v/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Heheh. I can't wait to sun-dry these at home. They're going to be delicious...!",
+                "line": 36,
+                "url": "https://drive.google.com/file/d/1F_qVHdDCtZHARiRI86AeaRM6DdI6bm8d/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(...Well, it's fine. I got the \"Heart's Bounty,\" after all!)",
+                "line": 37,
+                "url": "https://drive.google.com/file/d/1rncGJ6BzeaIGLZaXdie4uuzEvkTUYPUt/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Aww... I wish I got to join in. I would've won first place...",
+                "line": 38,
+                "url": "https://drive.google.com/file/d/13Z7ikwHuWTjtlpFI9MRfqVdW461FUawb/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "After watching the two of you, I do feel like moving my body...",
+                "line": 39,
+                "url": "https://drive.google.com/file/d/17rTD9Xd9lfN6Vd23U6nexiuuld9zMW-V/view?usp=drivesdk"
+            },
+            {
+                "name": "Dog T.thrope Priest",
+                "name_variant": "Dog T.thrope Priest",
+                "subtitle": "Next, we'll have an exhibition match of \"Hagoita Deathmatch\"! Those wishing to participate, please come to the central square!",
+                "line": 40,
+                "url": "https://drive.google.com/file/d/1zqMLvUKTrXsrewWYM-MrD6O1ssFXBi60/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Oh, Hagoita Deathmatch! Lady Alpha, let's compete!",
+                "line": 41,
+                "url": "https://drive.google.com/file/d/1QeawZ08vDCnxyhXTmCDgZDkp8ouSnx4e/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Alright, I'll take you on. But don't expect any mercy.",
+                "line": 42,
+                "url": "https://drive.google.com/file/d/1_AQ3xLI9aN_PKk2rFsD8HkIme9qIeBO5/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "B-Bring it on!",
+                "line": 43,
+                "url": "https://drive.google.com/file/d/1GJtvBMetQUTqqGqLJAkSOC7KQ6F7LY9G/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Are you two joining? It's surprisingly strategic and fun.",
+                "line": 44,
+                "url": "https://drive.google.com/file/d/1xhbCTrgAUO_zQKg8_hozUGTLNeYYFyxj/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "No, I'm...quite exhausted...",
+                "line": 45,
+                "url": "https://drive.google.com/file/d/1ZU3fPqJXeL_sDNt7Pn0rXFSYWygWKdCz/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Me too. I want to cook these Golden Sardines as soon as possible.",
+                "line": 46,
+                "url": "https://drive.google.com/file/d/1rLcm52-A7yChzt3BsxAgIsr34Q0ACjxr/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Oh, I see. Let's go then, Delta.",
+                "line": 47,
+                "url": "https://drive.google.com/file/d/1P6QMVh2OrQ9pPg5G17vU8EbrnxjFfwGF/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Well, guess it's time for us to head back.",
+                "line": 48,
+                "url": "https://drive.google.com/file/d/1a7lb6zfQ97vy4VIBFwptOzsZWo8zesH-/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Heheh. Can't wait to study this \"Heart's Bounty\"! My ultimate body is within reach...!",
+                "line": 49,
+                "url": "https://drive.google.com/file/d/1cMj7DnXxEZbQbyJ_0EC7qvqGR0feNbTe/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "...Seriously, what are you planning to do with that?",
+                "line": 50,
+                "url": "https://drive.google.com/file/d/15YzAd73ArslH7geDbvkE2_lWr0LS51Qy/view?usp=drivesdk"
+            },
+            {
+                "name": "",
+                "name_variant": "",
+                "subtitle": "A few days after their fierce battle at Great Ize Shrine...",
                 "line": 51,
-                "url": "https://drive.google.com/file/d/1CQnU9YHb37U9zqTtREdM2B6G4ggTl7jF/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/10L2SiGHDHRX9uo77qntbRbraskw6G0PK/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...That thing you said about customer service.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Master Shadow, how's the dried Golden Sardine?",
                 "line": 52,
-                "url": "https://drive.google.com/file/d/1nEzu2DJ6xuRjcDZKApC2EDR1JYM1_TRn/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1S0TmElAXXoE7WAwSvm_5184puMF7nJ2f/view?usp=drivesdk"
             },
             {
-                "name": "Branch Manager",
-                "name_variant": "Branch Manager",
-                "subtitle": "Ah... I'm really glad you were able to gain some understanding of our philosophy at Mitsugoshi. Thank you very much.",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "It's delicious. The amount of fat is just perfect.",
                 "line": 53,
-                "url": "https://drive.google.com/file/d/1YaexU0-bSFw_bSOEJ5UkisPl03QLjuic/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1OgHbt5ANUe1CL7VOxz0zz4Ti9rYHp4rQ/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Halloween was such a great festival!",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Hehe. Glad to hear that. It was worth the effort of going to the shrine.",
                 "line": 54,
-                "url": "https://drive.google.com/file/d/1kD9EvtHqKOfUILUhJxxC6z8TDDBCaZSD/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1G9umwpbDrqG7DgnQjwmcqRtdiZ8Dvf3-/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Yeah. I'll prepare a more perfect Mr. Vendy for next year...",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Hmph... It's unfair that only the kitty cat gets praised!",
                 "line": 55,
-                "url": "https://drive.google.com/file/d/1abrrLTURRJSuZaF5vNCbSi-KLNxd_Bov/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1aV_7B2XOpmodkW5P9AWxN1AAqkRaLS3V/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "With their work completed, satisfied smiles adorn the faces of the witch and vampire.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "If you're that envious, why don't you catch some yourself? Oh, but a dumb dog like you couldn't do that.",
                 "line": 56,
-                "url": "https://drive.google.com/file/d/1VhLgrPymoGDZtlWyuXrloyCfhdFf9_Zv/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1YXv3LS2eW9Olp4Zlumox6qkKZPBqcTkA/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "That concludes the report submitted by the branch manager regarding Eta and Delta's assistance at the Mitsugoshi branch.",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "I can fish! I'll go right now!",
                 "line": 57,
-                "url": "https://drive.google.com/file/d/1antBSNfFxlEAgw1XYiEr1J6rlIHrFr43/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1LFIDRlQ1NgJ4mUllbjiIazNqVt9unUMR/view?usp=drivesdk"
             },
             {
                 "name": "Alpha",
                 "name_variant": "Alpha",
-                "subtitle": "I was worried about how things would turn out, but those girls really gave it their all.",
+                "subtitle": "That's enough. The New Year has just started, and look at you two already...",
                 "line": 58,
-                "url": "https://drive.google.com/file/d/16vGGDtKcySceLwAvZbxHztJzEVpsp1O9/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1RMrMY0_kkU4dJcpYRoeE_yAYZladiv6m/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Within the private office of the Shadow Garden, Alpha listens to Gamma's report and nods with a satisfied expression.",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Ha-ruff... It's because of this kitty cat...",
                 "line": 59,
-                "url": "https://drive.google.com/file/d/1SJ87A45HitKuq1x13lnQ-IOuA4j09-JP/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1NprqvJNyUNeNuI_UAMnhoduCb0Hi3-Mb/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "...Yes. We have successfully completed the training for the new recruits. Eta and Delta are expected to return tomorrow.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "The one who started the fight was you, dumb dog.",
                 "line": 60,
-                "url": "https://drive.google.com/file/d/11EyhcUTLqVMCSukwLOs9kyFAvIfhKL8Y/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/10_yNfPa6m264WRSf9K4o22RCCb5xZE0Q/view?usp=drivesdk"
             },
             {
                 "name": "Alpha",
                 "name_variant": "Alpha",
-                "subtitle": "Then what's with the long face? I saw that same expression on you just the other day.",
+                "subtitle": "Let's at least spend today peacefully...understood?",
                 "line": 61,
-                "url": "https://drive.google.com/file/d/1BoySlMqukRvvc_RlGINQqCHT3MQ-Swef/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1sKf82wgSH1JMTGNnnTH7fDcE9YchoZrh/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "...Please take a look at this. It's the report and the balance sheet.",
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Eep...! O-Of course!",
                 "line": 62,
-                "url": "https://drive.google.com/file/d/1d4JVWGoDcYIQFAyYV9JJdqVNVtMLpA35/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ikN67_jWGEzrzO3OUaZjCM7TM2f9B7-P/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Let me see.",
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "...Alright.",
                 "line": 63,
-                "url": "https://drive.google.com/file/d/1vqya16_szteTCVJocsK0qWA_FNOWgn3-/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1fhAz_gJNdgsKkeYM45WbcRGonLD28ANw/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Here. Sales at Mitsugoshi's main store have been strong this year, thanks to the events held in various locations. The Halloween sales campaign was a big success. However...",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "(Man, that pressure she's putting on them... Alpha's the least peaceful one here...)",
                 "line": 64,
-                "url": "https://drive.google.com/file/d/10S0Qwu3wZDehwG_y7bOgy2-Iwd1bRUVD/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/13kR08YwnYc6rdhA1p0z7VLMw7cUjYSic/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "This is...a serious issue.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Master Shadow! Notice anything different about me today...?",
                 "line": 65,
-                "url": "https://drive.google.com/file/d/1ImEaHgzYTLYqdqMgWjjC-fz52t7xjFH2/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1bFwzC2TptDPmctkmr7v1VuOR-fstCfn8/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Alpha groans upon seeing the balance sheet, and Gamma's expression is tinged with gloom...",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(How's this?! By studying the \"Heart's Bounty,\" I've reached new heights with my slime bodysuit...!)",
                 "line": 66,
-                "url": "https://drive.google.com/file/d/1XT5C7RGdP8ZvjGSdCe0WDl8-bzAESU1-/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1wJm8PSVOwUgi8vPLa8SdBQLoMdfQ1S-j/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "The next day, after returning from the Mitsugoshi branch, Eta and Delta visit Alpha's office to deliver their report...",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Whoa...",
                 "line": 67,
-                "url": "https://drive.google.com/file/d/1-O-g3yzNMrbd9rZwSaAubgili_C2F9fb/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1eK7B4ct5nvtyaJ0rgDLhffYYhl4mdn38/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "We're back! I did a perfect job!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Heheh. He's captivated...!)",
                 "line": 68,
-                "url": "https://drive.google.com/file/d/1FtAlAgAaFdF5Vs-dFvKY6l4uSS6pYkd8/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1uH15bstUnO65tPHiMBRCyuZkHlBtp4tz/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...I've done a year's worth of work... I'll be holed up in my research lab for a while...",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "(Epsilon's further improved her...skills. She's subtly adjusted her magic, making them even more realistic.)",
                 "line": 69,
-                "url": "https://drive.google.com/file/d/1CTRM6Y2z2rUWnw1_d5wnt8xhyRuZ68kI/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1ljzMOF-HZjr5O_lu5c1F0FB6R774AzUH/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "We deserve to be rewarded...for our\u2014",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "(That meticulous approach of hers has leveled up even more. I should properly acknowledge her efforts.)",
                 "line": 70,
-                "url": "https://drive.google.com/file/d/1FbZOUs4kqO7HJNasXydfN20XBWj35LvP/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/18p1Q6dy2vEEMkNzcy-CaYvFsuFZlNZ3N/view?usp=drivesdk"
             },
             {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Eep?!",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "You're even more bountiful than usual. Keep refining your figure.",
                 "line": 71,
-                "url": "https://drive.google.com/file/d/1ccBUuxrBwLxjxiy-kwMgFbS2nYYUvK18/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1vIdYqRnQhxLmPYVuZrHlzPcU3kqwimtC/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...I'm getting chills!",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Ah... Ah... Master Shadow praised me! This perfect body of mine...!)",
                 "line": 72,
-                "url": "https://drive.google.com/file/d/1VumMs9jhWyWFx1wXSk-IsRhA-URjMDpu/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1H6FfOkI7idPvt9uRba5peDEAVGdAfhpF/view?usp=drivesdk"
             },
             {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "The two enter the office in high spirits, but they come to an abrupt stop.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Ngh... Master... I-I...will keep trying my best!",
                 "line": 73,
-                "url": "https://drive.google.com/file/d/1Wnjk-Fw3U8gHoa_jXAKR4xqXnNG11J-S/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1Fpc3mqW6AKY_TROFJLdmhRGqRaCtHwhB/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Welcome back. It seems you two had quite the Halloween.",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Y-Yeah... I see how your own effort has moved you to tears.",
                 "line": 74,
-                "url": "https://drive.google.com/file/d/1IZcEXgUjugntXeqac885-dwT3Q-EpZR0/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Wh-Why're you so angry?!",
-                "line": 75,
-                "url": "https://drive.google.com/file/d/1Aenfrpja9M0Ahw0kWZFFfkg3l8Thl0le/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Take a look at this.",
-                "line": 76,
-                "url": "https://drive.google.com/file/d/1PM3F2Hbys1v2vPBVOLyBs6RbKIeksouD/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...The balance sheet...?",
-                "line": 77,
-                "url": "https://drive.google.com/file/d/1M_TsZ0_ksoWj6GWgo6RaSMmpa_pxf4t4/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "The Halloween sales campaign was a success, and sales are up...but there's one problem. Take a look at the expenses on the balance sheet.",
-                "line": 78,
-                "url": "https://drive.google.com/file/d/1GNXGLPpacOmeUno9fkhEUVptXPXsRPaI/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Expenses?",
-                "line": 79,
-                "url": "https://drive.google.com/file/d/1796U70OEkuwWnmpvulFOTmFdkQ4wC6Qc/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Expenses...right...",
-                "line": 80,
-                "url": "https://drive.google.com/file/d/1ydjNhfITMHVKQVww3vvSY_LrqhpaeeWR/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Delta, these expenses on Mitsugoshi's tab are from you, aren't they?",
-                "line": 81,
-                "url": "https://drive.google.com/file/d/1J8wJsu-1NYKHuFS31y6v7E2yq0jFHFpl/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Mitsugoshi's tab! If you say those magic words at the food stalls, you can get food without paying!",
-                "line": 82,
-                "url": "https://drive.google.com/file/d/1ThgcxGT8J0KVpLJkmKKRfNmzjyN05792/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "It's not \"without paying.\" It means they trust Mitsugoshi enough to postpone payment. And as for you, Eta...",
-                "line": 83,
-                "url": "https://drive.google.com/file/d/1CPlqpYKltyhVZrCmAppjfkWIhwbT6gSk/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Mr. Vendy, huh...?",
-                "line": 84,
-                "url": "https://drive.google.com/file/d/1RzTrY4-ZNnc3CNrMk2l4ZGjXa6mLxrJH/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "So, you're aware of it. How reassuring. What's the deal with the massive production costs? They're enough to offset the sales from the branch you visited.",
-                "line": 85,
-                "url": "https://drive.google.com/file/d/1g_PJ4JanYZcx0oF3qqXYzHIHciJ86gJy/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...But they were necessary expenses...",
-                "line": 86,
-                "url": "https://drive.google.com/file/d/1qdwyhQ-f3jAE_Fx1fXdd7Oue-618gkpR/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "If I knew what \"Mitsugoshi's tab\" meant, I wouldn't have done it! So...it's all the fault of the food stalls!",
-                "line": 87,
-                "url": "https://drive.google.com/file/d/1ufjj8H52kfinJEIBasCPFWH65bWORo81/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Sounds like you're making excuses... I wonder if you're truly reflecting on your actions...",
-                "line": 88,
-                "url": "https://drive.google.com/file/d/1ONmbonx9BoREqENSA6jLfH94oLOXtrDF/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Eep?! Y-Yes, I am...",
-                "line": 89,
-                "url": "https://drive.google.com/file/d/1NI0Yjx1Pc99xRdbV5P-64u8m3m7EDCgS/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "I shouldn't have come here...",
-                "line": 90,
-                "url": "https://drive.google.com/file/d/1h29WWWQhyH1JkTGIbL5G8Xj9iR_hvKEz/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1fPud8FeS5yLlgH_A72YhZMqHrSsbUUWn/view?usp=drivesdk"
             },
             {
                 "name": "",
                 "name_variant": "",
-                "subtitle": "And so, Eta and Delta's Halloween comes to a close amidst Alpha's thunderous rage...",
-                "line": 91,
-                "url": "https://drive.google.com/file/d/1SCSRSGPZy_CwjeNsA9aycL2yDkTZo17L/view?usp=drivesdk"
+                "subtitle": "Having achieved their respective goals, Epsilon and Zeta go on to enjoy a peaceful New Year's...",
+                "line": 75,
+                "url": "https://drive.google.com/file/d/1ymp68_TypwoA6DJR4i9KKcCTA84OYg1q/view?usp=drivesdk"
             }
         ]
     }
 }
-
-let setDoc = db.collection('data').doc('es_ana').set(data['ana']);
+let setDoc = db.collection('data').doc('es_m').set(data['m']);
 
 setDoc.then(() => {
   console.log('Document successfully written!');

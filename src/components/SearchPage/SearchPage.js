@@ -7366,16 +7366,16 @@ function SearchPage() {
                     characters: {
                         "Cid Kagenou": {
                             "Cid Kagenou": false,
+                            "??? (Cid Kagenou)": false,
+                            "None (Cid Kagenou)": false,
                             "Shadow": false,
+                            "Mundane Mann": false,
+                            "John Smith": false,
                             "Minoru Kageno": false,
                             "??? (Minoru Kageno)": false,
-                            "John Smith": false,
-                            "Mundane Mann": false,
                             "Stylish Ruffian Slayer": false,
                             "Stylish Bandit Slayer": false,
                             "??? (Stylish Bandit Slayer)": false,
-                            "??? (Cid Kagenou)": false,
-                            "None (Cid Kagenou)": false,
                             "Nuru": false,
                             "??? (Nuru)": false,
                             "checked": false,
@@ -7408,7 +7408,6 @@ function SearchPage() {
                             characters: {
                                 "Alexia Midgar": {
                                     "Alexia Midgar": false,
-                                    "????? (Alexia Midgar)": false,
                                     "??? (Alexia Midgar)": false,
                                     "Alexia & Claire (Alexia Midgar)": false,
                                     "Shelly and Alexia (Alexia Midgar)": false,
@@ -7474,14 +7473,30 @@ function SearchPage() {
                         }
                     }
                 },
-                'LAWLESS CITY': {
+                'OTHERS': {
                     openGroup: false,
                     checked: false,
                     filters: '',
                     open: false,
                     characters: {
-                        "Yukime": {
+                        "Beatrix": {
                             "checked": false,
+                        },
+                        "Goldy Gilded": {
+                            "checked": false,
+                        }
+                    },
+                    groups: {
+                        "Lawless City": {
+                            openGroup: false,
+                            checked: false,
+                            open: false,
+                            filters: '',
+                            characters: {
+                                "Yukime": {
+                                    "checked": false,
+                                }
+                            }
                         }
                     }
                 },
@@ -7577,16 +7592,16 @@ function SearchPage() {
                                 "Attendees": {
                                     "checked": false,
                                 },
+                                "Disciple": {
+                                    "checked": false,
+                                },
+                                "Junior": {
+                                    "checked": false,
+                                },
                                 "Knight": {
                                     "checked": false,
                                 },
-                                "Participant A": {
-                                    "checked": false,
-                                },
-                                "Participant B": {
-                                    "checked": false,
-                                },
-                                "Participant C": {
+                                "Knight A": {
                                     "checked": false,
                                 },
                                 "Passerby A": {
@@ -7604,6 +7619,9 @@ function SearchPage() {
                                 "Margrave": {
                                     "checked": false,
                                 },
+                                "Mother": {
+                                    "checked": false
+                                },
                                 "Mysterious Man A": {
                                     "checked": false,
                                 },
@@ -7617,9 +7635,6 @@ function SearchPage() {
                                     "checked": false,
                                 },
                                 "Spectator Woman": {
-                                    "checked": false
-                                },
-                                "Mother": {
                                     "checked": false
                                 }
                             }
@@ -7653,6 +7668,9 @@ function SearchPage() {
                                 "Children": {
                                     "checked": false,
                                 },
+                                "Boys": {
+                                    "checked": false,
+                                },
                                 "Boy A": {
                                     "checked": false,
                                 },
@@ -7660,6 +7678,9 @@ function SearchPage() {
                                     "checked": false,
                                 },
                                 "Boy C": {
+                                    "checked": false,
+                                },
+                                "Girl": {
                                     "checked": false,
                                 },
                                 "Girl A": {
@@ -7685,16 +7706,48 @@ function SearchPage() {
                                 "Committe Person": {
                                     "checked": false,
                                 },
+                                "Boy Cmte. Member A": {
+                                    "checked": false,
+                                },
+                                "Boy Cmte. Member B": {
+                                    "checked": false,
+                                },
                                 "Girl Cmte. Member A": {
                                     "checked": false,
                                 },
                                 "Girl Cmte. Member B": {
                                     "checked": false,
-                                },
-                                "Boy Cmte. Member A": {
+                                }
+                            }
+                        },
+                        "Events": {
+                            openGroup: false,
+                            checked: false,
+                            open: false,
+                            filters: '',
+                            characters: {
+                                "Announcer": {
                                     "checked": false,
                                 },
-                                "Boy Cmte. Member B": {
+                                "Audience": {
+                                    "checked": false,
+                                },
+                                "Participant A": {
+                                    "checked": false,
+                                },
+                                "Participant B": {
+                                    "checked": false,
+                                },
+                                "Participant C": {
+                                    "checked": false,
+                                },
+                                "Bearded Participant": {
+                                    "checked": false,
+                                },
+                                "Spectator A": {
+                                    "checked": false,
+                                },
+                                "Spectator B": {
                                     "checked": false,
                                 }
                             }
@@ -7711,7 +7764,13 @@ function SearchPage() {
                                 "Cake Shop Assistant": {
                                     "checked": false,
                                 },
-                                "Wounded Merchant": {
+                                "Customer": {
+                                    "Customer": false,
+                                    "??? (Customer)": false,
+                                    "checked": false,
+                                    "open": false,
+                                },
+                                "Quiche Stall Owner": {
                                     "checked": false,
                                 },
                                 "Shop Staff": {
@@ -7720,21 +7779,15 @@ function SearchPage() {
                                 "Skewer Stall Owner": {
                                     "checked": false,
                                 },
-                                "Quiche Stall Owner": {
-                                    "checked": false,
-                                },
                                 "Soup Stall Owner": {
                                     "checked": false,
                                 },
-                                "Customer": {
-                                    "Customer": false,
-                                    "??? (Customer)": false,
-                                    "checked": false,
-                                    "opened": false,
-                                },
                                 "Staff": {
                                     "checked": false
-                                }
+                                },
+                                "Wounded Merchant": {
+                                    "checked": false,
+                                },
                             }
                         },
                         "Dragons": {
@@ -7743,14 +7796,14 @@ function SearchPage() {
                             open: false,
                             filters: '',
                             characters: {
+                                "Malak": {
+                                    "checked": false
+                                },
                                 "Mist Dragon": {
                                     "checked": false,
                                 },
                                 "Nidhogg": {
                                     "checked": false,
-                                },
-                                "Malak": {
-                                    "checked": false
                                 }
                             }
                         },
@@ -7769,6 +7822,15 @@ function SearchPage() {
                                 "Boar": {
                                     "checked": false
                                 },
+                                "Evil Spirit": {
+                                    "checked": false,
+                                },
+                                "Ghoul": {
+                                    "checked": false,
+                                },
+                                "Merry Whip": {
+                                    "checked": false
+                                },
                                 "Mr. Vendy": {
                                     "checked": false
                                 },
@@ -7777,12 +7839,6 @@ function SearchPage() {
                                     "Shishi(?)": false,
                                     "open": false,
                                     "checked": false
-                                },
-                                "Evil Spirit": {
-                                    "checked": false,
-                                },
-                                "Ghoul": {
-                                    "checked": false,
                                 }
                             }
                         },
@@ -7809,13 +7865,13 @@ function SearchPage() {
                             open: false,
                             filters: '',
                             characters: {
+                                "Classmate": {
+                                    "checked": false,
+                                },
                                 "Student": {
                                     "checked": false,
                                 },
                                 "Female Student": {
-                                    "checked": false,
-                                },
-                                "Classmate": {
                                     "checked": false,
                                 },
                                 "Teacher": {
@@ -7829,17 +7885,17 @@ function SearchPage() {
                             open: false,
                             filters: '',
                             characters: {
-                                "King": {
-                                    "King": false,
-                                    "??? (King)": false,
-                                    "checked": false,
-                                    "opened": false,
-                                },
                                 "Joker": {
                                     "Joker": false,
                                     "??? (Joker)": false,
                                     "checked": false,
-                                    "opened": false,
+                                    "open": false,
+                                },
+                                "King": {
+                                    "King": false,
+                                    "??? (King)": false,
+                                    "checked": false,
+                                    "open": false,
                                 },
                                 "Dealer": {
                                     "checked": false,
@@ -7852,34 +7908,10 @@ function SearchPage() {
                             open: false,
                             filters: '',
                             characters: {
-                                "Rabbit T-thrope": {
+                                "Therianthrope A": {
                                     "checked": false,
                                 },
-                                "Fox T-thrope": {
-                                    "checked": false,
-                                },
-                                "Raccoon T-thrope": {
-                                    "checked": false,
-                                },
-                                "Dog T-thrope Priest": {
-                                    "checked": false,
-                                },
-                                "White Horse T-thrope": {
-                                    "checked": false,
-                                },
-                                "Red Horse T-thrope": {
-                                    "checked": false,
-                                },
-                                "Tiger T-thrope": {
-                                    "checked": false,
-                                },
-                                "McKen Ro": {
-                                    "checked": false,
-                                },
-                                "Bearded T-thrope": {
-                                    "checked": false,
-                                },
-                                "Pigtailed T-thrope": {
+                                "Therianthrope B": {
                                     "checked": false,
                                 },
                                 "T-thrope Opponent": {
@@ -7889,6 +7921,36 @@ function SearchPage() {
                                     "checked": false,
                                 },
                                 "T-thrope Spectators": {
+                                    "checked": false,
+                                },
+                                "Bearded T-thrope": {
+                                    "checked": false,
+                                },
+                                "Dog T-thrope Priest": {
+                                    "checked": false,
+                                },
+                                "Fox T-thrope": {
+                                    "checked": false,
+                                },
+                                "Pigtailed T-thrope": {
+                                    "checked": false,
+                                },
+                                "Rabbit T-thrope": {
+                                    "checked": false,
+                                },
+                                "Raccoon T-thrope": {
+                                    "checked": false,
+                                },
+                                "Red Horse T-thrope": {
+                                    "checked": false,
+                                },
+                                "Tiger T-thrope": {
+                                    "checked": false,
+                                },
+                                "White Horse T-thrope": {
+                                    "checked": false,
+                                },
+                                "McKen Ro": {
                                     "checked": false,
                                 },
                             }
@@ -7928,7 +7990,9 @@ function SearchPage() {
         'Claire Kagenou (All)': ['Claire', '??? (Claire Kagenou)', "Alexia & Claire (Claire Kagenou)"],
         'Claire Kagenou': ['Claire', '??? (Claire Kagenou)'],
         'Alexia Midgar (All)': ['Alexia', '????? (Alexia Midgar)', 'Shelly and Alexia (Alexia Midgar)', "??? (Alexia Midgar)", "Alexia & Claire (Alexia Midgar)"],
-        'Alexia Midgar': ['Alexia', '????? (Alexia Midgar)', 'Shelly and Alexia (Alexia Midgar)', "??? (Alexia Midgar)"],
+        'Alexia Midgar': ['Alexia', 'Shelly and Alexia (Alexia Midgar)', "??? (Alexia Midgar)"],
+        '??? (Alexia Midgar)': ['????? (Alexia Midgar)'],
+        'Iris Midgar': ['Iris'],
         'Sherry Barnett (All)': ['Sherry', 'Shelly and Alexia (Sherry Barnett)'],
         'Sherry Barnett': ['Sherry', 'Shelly and Alexia (Sherry Barnett)'],
         'Po Tato': ['Po'],
@@ -7965,7 +8029,8 @@ function SearchPage() {
         'Shishiodoshi (All)': ['Shishiodoshi', 'Shishi(?)'],
         'Customer (All)': ['Customer', '??? (Customer)'],
         'King (All)': ['King', '??? (King)'],
-        'Joker (All)': ['Joker', '??? (Joker)']
+        'Joker (All)': ['Joker', '??? (Joker)'],
+        'Dog T-thrope Priest': ['Dog T.thrope Priest']
     };
 
     const [canonActive, setCanonActive] = useState(() => {

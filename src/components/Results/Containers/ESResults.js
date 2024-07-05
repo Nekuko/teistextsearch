@@ -112,7 +112,7 @@ function ESResults({ anData, images, highlight, filterState, main }) {
             <Collapsible className="medium-margin" trigger={
               <>
                 <div className="season-trigger">
-                  {main && coverImages[seasonKey] && <img className="cover-image-es" src={coverImages[seasonKey]} alt={seasonTitle} />}
+                  {coverImages[seasonKey] && <img className="cover-image-es" src={coverImages[seasonKey]} alt={seasonTitle} />}
                   {`${ESMAP[seasonTitle]} (Total: ${seasonCount})`}
                 </div>
               </>
