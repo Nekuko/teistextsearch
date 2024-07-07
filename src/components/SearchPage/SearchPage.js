@@ -7270,6 +7270,7 @@ function SearchPage() {
                                     "Alpha": false,
                                     "??? (Alpha)": false,
                                     "Everyone (Alpha)": false,
+                                    "Seven Shadows (Alpha)": false,
                                     "None (Alpha)": false,
                                     "Alpha & Beta (Alpha)": false,
                                     "Alpha & Zeta (Alpha)": false,
@@ -7281,6 +7282,7 @@ function SearchPage() {
                                     "Natsume Kafka": false,
                                     "??? (Beta)": false,
                                     "Everyone (Beta)": false,
+                                    "Seven Shadows (Beta)": false,
                                     "None (Beta)": false,
                                     "Alpha & Beta (Beta)": false,
                                     "Beta & Epsilon (Beta)": false,
@@ -7291,6 +7293,7 @@ function SearchPage() {
                                     "Gamma": false,
                                     "??? (Gamma)": false,
                                     "Everyone (Gamma)": false,
+                                    "Seven Shadows (Gamma)": false,
                                     "checked": false,
                                     "open": false
                                 }
@@ -7299,6 +7302,7 @@ function SearchPage() {
                                     "Delta": false,
                                     "??? (Delta)": false,
                                     "Everyone (Delta)": false,
+                                    "Seven Shadows (Delta)": false,
                                     "checked": false,
                                     "open": false
                                 }
@@ -7307,6 +7311,7 @@ function SearchPage() {
                                     "Epsilon": false,
                                     "??? (Epsilon)": false,
                                     "Everyone (Epsilon)": false,
+                                    "Seven Shadows (Epsilon)": false,
                                     "Beta & Epsilon (Epsilon)": false,
                                     "checked": false,
                                     "open": false
@@ -7316,6 +7321,7 @@ function SearchPage() {
                                     "Zeta": false,
                                     "??? (Zeta)": false,
                                     "Everyone (Zeta)": false,
+                                    "Seven Shadows (Zeta)": false,
                                     "Alpha & Zeta (Zeta)": false,
                                     "Zeta & Eta (Zeta)": false,
                                     "checked": false,
@@ -7325,6 +7331,7 @@ function SearchPage() {
                                 "Eta": {
                                     "Eta": false,
                                     "Everyone (Eta)": false,
+                                    "Seven Shadows (Eta)": false,
                                     "Zeta & Eta (Eta)": false,
                                     "checked": false,
                                     "open": false
@@ -7388,6 +7395,8 @@ function SearchPage() {
                             "Stylish Ruffian Slayer": false,
                             "Stylish Bandit Slayer": false,
                             "??? (Stylish Bandit Slayer)": false,
+                            "Sunraku & Shadow (Shadow)": false,
+                            "Cid & Sunraku (Cid)": false,
                             "Nuru": false,
                             "??? (Nuru)": false,
                             "checked": false,
@@ -7518,6 +7527,34 @@ function SearchPage() {
                                     "checked": false,
                                 }
                             }
+                        },
+                        "Shangri-La Frontier": {
+                            openGroup: false,
+                            checked: false,
+                            open: false,
+                            filters: '',
+                            characters: {
+                                "Arthur Pencilgon": {
+                                    "checked": false,
+                                },
+                                "OiKatzo": {
+                                    "checked": false,
+                                },
+                                "Sunraku": {
+                                    "Sunraku": false,
+                                    "??? (Sunraku)": false,
+                                    "Sunraku & Shadow (Sunraku)": false,
+                                    "Cid & Sunraku (Sunraku)": false,
+                                    "open": false,
+                                    "checked": false,
+                                },
+                                "Wethermon": {
+                                    "Wethermon": false,
+                                    "??? (Wethermon)": false,
+                                    "open": false,
+                                    "checked": false,
+                                },
+                            }
                         }
                     }
                 },
@@ -7603,6 +7640,11 @@ function SearchPage() {
                     checked: false,
                     filters: '',
                     open: false,
+                    characters: {
+                        "None": {
+                            "checked": false,
+                        }
+                    },
                     groups: {
                         "General": {
                             openGroup: false,
@@ -8008,7 +8050,7 @@ function SearchPage() {
 
     const nameMap = {
         'Cid Kagenou (All)': ['Cid', 'Cid Kagenou', 'Minoru Kageno', 'Shadow', 'Stylish Ruffian Slayer', '??? (Stylish Bandit Slayer)', '??? (Cid Kagenou)',
-            '??? (Minoru Kageno)', 'Nuru', '??? (Nuru)'
+            '??? (Minoru Kageno)', 'Nuru', '??? (Nuru)', 'Sunraku & Shadow (Shadow)', 'Cid & Sunraku (Cid)'
         ],
         'Cid Kagenou': ['Cid', '??? (Cid Kagenou)'],
         'Claire Kagenou (All)': ['Claire', '??? (Claire Kagenou)', "Alexia & Claire (Claire Kagenou)"],
@@ -8024,22 +8066,22 @@ function SearchPage() {
         'Rose Oriana (All)': ['Rose Oriana', 'Rose', 'No.666'],
         'Rose Oriana': ['Rose'],
         'No. 666': ['No. 666', 'No.666'],
-        'Alpha (All)': ['Alpha', '??? (Alpha)', 'None (Alpha)', 'Everyone (Alpha)', 'Alpha & Zeta (Alpha)', 'Alpha & Beta (Alpha)'],
+        'Alpha (All)': ['Alpha', '??? (Alpha)', 'None (Alpha)', 'Everyone (Alpha)', 'Alpha & Zeta (Alpha)', 'Alpha & Beta (Alpha)', 'Seven Shadows (Alpha)'],
         'Alpha': ['??? (Alpha)', 'None (Alpha)'],
-        'Lambda (All)': ['Lambda', 'Tawny Elf (Lambda)'],
-        'Beta (All)': ['Beta', 'Natsume Kafka', 'None (Beta)', 'Everyone (Beta)', 'Beta & Epsilon (Beta)', 'Alpha & Beta (Beta)', '??? (Beta)'],
+        'Beta (All)': ['Beta', 'Natsume Kafka', 'None (Beta)', 'Everyone (Beta)', 'Beta & Epsilon (Beta)', 'Alpha & Beta (Beta)', '??? (Beta)', 'Seven Shadows (Beta)'],
         'Beta': ['??? (Beta)', 'None (Beta)'],
-        'Epsilon (All)': ['Epsilon', 'Everyone (Epsilon)', 'Beta & Epsilon (Epsilon)', '??? (Epsilon)'],
-        'Epsilon': ['??? (Epsilon)'],
-        'Eta (All)': ['Eta', 'Everyone (Eta)', 'Zeta & Eta (Eta)'],
-        'Gamma (All)': ['Gamma', 'Everyone (Gamma)', '??? (Gamma)'],
+        'Gamma (All)': ['Gamma', 'Everyone (Gamma)', '??? (Gamma)', 'Seven Shadows (Gamma)'],
         'Gamma': ['??? (Gamma)'],
-        "Delta (All)": ['Delta', 'Everyone (Delta)', '??? (Delta)'],
+        "Delta (All)": ['Delta', 'Everyone (Delta)', '??? (Delta)', 'Seven Shadows (Delta)'],
         "Delta": ['??? (Delta)'],
-        'Zeta (All)': ['Zeta', 'Everyone (Zeta)', 'Alpha & Zeta (Zeta)', 'Zeta & Eta (Zeta)', '??? (Zeta)'],
+        'Epsilon (All)': ['Epsilon', 'Everyone (Epsilon)', 'Beta & Epsilon (Epsilon)', '??? (Epsilon)', 'Seven Shadows (Epsilon)'],
+        'Epsilon': ['??? (Epsilon)'],
+        'Zeta (All)': ['Zeta', 'Everyone (Zeta)', 'Alpha & Zeta (Zeta)', 'Zeta & Eta (Zeta)', '??? (Zeta)', 'Seven Shadows (Zeta)'],
         'Zeta': ['??? (Zeta)'],
+        'Eta (All)': ['Eta', 'Everyone (Eta)', 'Zeta & Eta (Eta)', 'Seven Shadows (Eta)'],
         'Chi (All)': ["Chi", "(Chi & Omega (Chi)"],
         'Omega (All)': ["Omega", "(Chi & Omega (Omega)"],
+        'Lambda (All)': ['Lambda', 'Tawny Elf (Lambda)'],
         'Diablos': ['Massive Mound of Magic'],
         'Olivier (All)': ['Olivier', 'Alpha Look-alike'],
         'Olivier': ['Alpha Look-alike'],
@@ -8054,9 +8096,17 @@ function SearchPage() {
         'Victoria (All)': ['Victoria', 'No. 559'],
         'Shishiodoshi (All)': ['Shishiodoshi', 'Shishi(?)'],
         'Customer (All)': ['Customer', '??? (Customer)'],
+        'Customer': ['??? (Customer)'],
         'King (All)': ['King', '??? (King)'],
+        'King': ['??? (King)'],
         'Joker (All)': ['Joker', '??? (Joker)'],
-        'Dog T-thrope Priest': ['Dog T.thrope Priest']
+        'Joker': ['??? (Joker)'],
+        'Dog T-thrope Priest': ['Dog T.thrope Priest'],
+        'Wethermon (All)': ['Wethermon', '??? (Wethermon)'],
+        'Wethermon': ['??? (Wethermon)'],
+        'Sunraku (All)': ['Sunraku', '??? (Sunraku)', 'Cid & Sunraku (Sunraku)', 'Sunraku & Shadow (Sunraku)'],
+        'Sunraku': ['??? (Sunraku)'],
+        'None': ['']
     };
 
     const [canonActive, setCanonActive] = useState(() => {
