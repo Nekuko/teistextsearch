@@ -13,7 +13,7 @@ import * as covers from '../../images/covers';
 import { fetchLNData, fetchWNData, fetchAPOData, fetchESData } from '../../utils/firebaseFunctions';
 import { VERSIONS } from '../../versions';
 import { searchAPO } from '../Search/searchAPO';
-import { faListNumeric, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faGaugeSimpleMed, faListNumeric, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { ESMAPREVERSE } from '../../esMap';
 
 
@@ -7345,6 +7345,18 @@ function SearchPage() {
                                 },
                                 "Nu": {
                                     checked: false,
+                                },
+                                "Chi": {
+                                    "Chi": false,
+                                    "Chi & Omega (Chi)": false,
+                                    "checked": false,
+                                    "open": false
+                                },
+                                "Omega": {
+                                    "Omega": false,
+                                    "Chi & Omega (Omega)": false,
+                                    "checked": false,
+                                    "open": false
                                 }
                             }
                         },
@@ -7463,6 +7475,9 @@ function SearchPage() {
                             open: false,
                             filters: '',
                             characters: {
+                                "Maximilian": {
+                                    "checked": false,
+                                },
                                 "Nanigashi": {
                                     "Nanigashi": false,
                                     "??? (Nanigashi)": false,
@@ -7479,6 +7494,12 @@ function SearchPage() {
                     filters: '',
                     open: false,
                     characters: {
+                        "Aurora": {
+                            "Aurora": false,
+                            "??? (Aurora)": false,
+                            "checked": false,
+                            "open": false
+                        },
                         "Beatrix": {
                             "checked": false,
                         },
@@ -7632,6 +7653,9 @@ function SearchPage() {
                                     "checked": false,
                                 },
                                 "Mysterious Man D": {
+                                    "checked": false,
+                                },
+                                "Noblewoman": {
                                     "checked": false,
                                 },
                                 "Spectator Woman": {
@@ -8014,6 +8038,8 @@ function SearchPage() {
         "Delta": ['??? (Delta)'],
         'Zeta (All)': ['Zeta', 'Everyone (Zeta)', 'Alpha & Zeta (Zeta)', 'Zeta & Eta (Zeta)', '??? (Zeta)'],
         'Zeta': ['??? (Zeta)'],
+        'Chi (All)': ["Chi", "(Chi & Omega (Chi)"],
+        'Omega (All)': ["Omega", "(Chi & Omega (Omega)"],
         'Diablos': ['Massive Mound of Magic'],
         'Olivier (All)': ['Olivier', 'Alpha Look-alike'],
         'Olivier': ['Alpha Look-alike'],
@@ -8104,7 +8130,7 @@ function SearchPage() {
                     })
             );
 
-        
+
         let lnCheckedData = await fetchLNData(lnCheckedItems, versionData, setVersionData);
 
 
