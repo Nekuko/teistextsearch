@@ -18,19 +18,19 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
     useEffect(() => {
         const initialPages = {};
         Object.keys(sscData.parts).forEach(partKey => {
-          Object.keys(sscData.parts[partKey].chapters).forEach(chapterKey => {
-            Object.keys(sscData.parts[partKey].chapters[chapterKey].episodes).forEach(episodeKey => {
-              // Create a unique key for each episode
-              const uniqueEpisodeKey = `${partKey}-${chapterKey}-${episodeKey}`;
-              initialPages[uniqueEpisodeKey] = 1;
+            Object.keys(sscData.parts[partKey].chapters).forEach(chapterKey => {
+                Object.keys(sscData.parts[partKey].chapters[chapterKey].episodes).forEach(episodeKey => {
+                    // Create a unique key for each episode
+                    const uniqueEpisodeKey = `${partKey}-${chapterKey}-${episodeKey}`;
+                    initialPages[uniqueEpisodeKey] = 1;
+                });
             });
-          });
         });
         setCurrentPage(initialPages);
-      }, [sscData]);
-      
-    
-      
+    }, [sscData]);
+
+
+
     const iconRefs = useRef({});
 
     const characterImages = images.characterImages;
@@ -109,7 +109,7 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
     return (
         <div className="anime-trigger">
             {Object.entries(sscData.parts).map(([partKey, chapters]) => {
-                const partKeyInt = parseInt(partKey.split("p")[1])-1;
+                const partKeyInt = parseInt(partKey.split("p")[1]) - 1;
                 const partkeys = Object.keys(partsChecked);
                 let partTitle = "Cannot find.";
                 for (let i = 0; i < partkeys.length; i++) {

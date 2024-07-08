@@ -49,7 +49,6 @@ function ESResults({ anData, images, highlight, filterState, main }) {
   };
   //seasonKey, episodeKey, index, seasonTitle, episodeTitle, sentence.line, sentence.name, sentence.name_variant
   function handleMouseEnterInfo(seasonKey, episodeKey, index, seasonTitle, episodeTitle, line, name, name_variant) {
-    console.log(seasonKey, episodeKey, index, seasonTitle, episodeTitle, line, name, name_variant);
     let nameFinal;
     if (name === name_variant) {
       nameFinal = name;
@@ -125,7 +124,7 @@ function ESResults({ anData, images, highlight, filterState, main }) {
                 return (
                   <Collapsible trigger={`${episodeTitle} (Total: ${episodeValue.count})`} key={uniqueChapterKey}>
                     <div className="sentences-container">
-                    {episodeValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
+                      {episodeValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
                         <div className="sentence-character-container" key={`${uniqueChapterKey}-${index}`}>
                           <div className="sentence-box-image">
                             <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
@@ -167,29 +166,37 @@ function ESResults({ anData, images, highlight, filterState, main }) {
                           <div className="character-box">
                             {characterImages[sentence.name_variant] && <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant || 'None'} />}
                             <p title={sentence.name && sentence.name_variant ? (sentence.name !== sentence.name_variant ? `${sentence.name_variant} (${sentence.name})` : sentence.name) : 'None'}>
-                              {sentence.name && sentence.name_variant ? (sentence.name !== sentence.name_variant ? `${sentence.name_variant}` : sentence.name) : 'None'}
+                              {
+                                sentence.name && sentence.name_variant ? (
+                                  sentence.name !== sentence.name_variant ? (
+                                    sentence.name_variant.includes("(") ?
+                                      `${sentence.name_variant.split(' ')[sentence.name_variant.split(' ').length - 1].replace(/\(|\)/g, "")} (${sentence.name_variant.split(' ').slice(0, -1).join(' ')})`
+                                      : `${sentence.name_variant} (${sentence.name})`
+                                  ) : sentence.name
+                                ) : 'None'
+                              }
                             </p>
                           </div>
 
                         </div>
                       ))}
                       {episodeValue.sentences.length > sentencesPerPage && (
-                      <div className="pagination-controls">
-                        <button title={`Page 1`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: 1 }))}>
-                          <FontAwesomeIcon icon={faAnglesLeft} />
-                        </button>
-                        <button title={`Page ${Math.max(currentPage[uniqueChapterKey] - 1, 1)}`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.max((oldPages[uniqueChapterKey] || 1) - 1, 1) }))}>
-                          <FontAwesomeIcon icon={faAngleLeft} />
-                        </button>
-                        <input type="number" min="1" max={Math.ceil(episodeValue.sentences.length / sentencesPerPage)} value={currentPage[uniqueChapterKey] || 1} onChange={e => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min(Math.max(Number(e.target.value), 1), Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))} />
-                        <button title={`Page ${Math.min(currentPage[uniqueChapterKey] + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage))}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min((oldPages[uniqueChapterKey] || 1) + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))}>
-                          <FontAwesomeIcon icon={faAngleRight} />
-                        </button>
-                        <button title={`Page ${Math.ceil(episodeValue.sentences.length / sentencesPerPage)}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.ceil(episodeValue.sentences.length / sentencesPerPage) }))}>
-                          <FontAwesomeIcon icon={faAnglesRight} />
-                        </button>
-                      </div>
-                    )}
+                        <div className="pagination-controls">
+                          <button title={`Page 1`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: 1 }))}>
+                            <FontAwesomeIcon icon={faAnglesLeft} />
+                          </button>
+                          <button title={`Page ${Math.max(currentPage[uniqueChapterKey] - 1, 1)}`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.max((oldPages[uniqueChapterKey] || 1) - 1, 1) }))}>
+                            <FontAwesomeIcon icon={faAngleLeft} />
+                          </button>
+                          <input type="number" min="1" max={Math.ceil(episodeValue.sentences.length / sentencesPerPage)} value={currentPage[uniqueChapterKey] || 1} onChange={e => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min(Math.max(Number(e.target.value), 1), Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))} />
+                          <button title={`Page ${Math.min(currentPage[uniqueChapterKey] + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage))}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min((oldPages[uniqueChapterKey] || 1) + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))}>
+                            <FontAwesomeIcon icon={faAngleRight} />
+                          </button>
+                          <button title={`Page ${Math.ceil(episodeValue.sentences.length / sentencesPerPage)}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.ceil(episodeValue.sentences.length / sentencesPerPage) }))}>
+                            <FontAwesomeIcon icon={faAnglesRight} />
+                          </button>
+                        </div>
+                      )}
                     </div>
                   </Collapsible>
                 );

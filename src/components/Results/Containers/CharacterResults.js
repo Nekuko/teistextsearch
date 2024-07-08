@@ -85,7 +85,6 @@ function CharacterResults({ anData, sscData, esData, apoData, images, filterStat
   }
 
   const combinedData = combineData(sscData, anData, esData, apoData);
-  console.log(combinedData)
   const characterImages = images.characterImages;
 
   const totalCharacters = Object.values(combinedData).reduce((total, characterData) => total + characterData.count, 0);

@@ -10,3224 +10,2641 @@ admin.initializeApp({
 let db = admin.firestore();
 
 let data = {
-    "tghms": {
-        "e1": [
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Shangri-La Frontier, a full-dive VR game often referred to as god-tier. Today three friends are having another lively session within its world...",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/11vj3UFRg1gOzDv0VZJRqmg4IfA11R-ZW/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "And...there! One more left!",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/1Wp9V8HMNBOTCX52oL93pF5f7rlnuSs7B/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "It's headed your way, Sunraku! Take it down!",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1Au7x1CywL1cZ4kTeZ2j9YvG5EsfDUiVG/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Yup, I'm on it",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/1HBYKB92bTNEIVa9mkITbGXYsQ4GZieXq/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Come on, let's make this easy!",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1wtzK4Y4F7-OABA_R4u-JR4j1tFlQ3EmU/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "...Okay, guess that's that. Good work, you two!",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/1dwYNTqOPPdRqs5tyl61oVAPEDKRdqaVX/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Higher-level monsters sure are great for farming XP. I'm gaining levels like crazy.",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1EtN5vONg-m0VY5OypKuUcr4Ida-0inDp/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Good, it's about time you stood on your own two feet. I can't babysit sit lowbies forever, you know.",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/1W7C-3fk5IK0jm1G7J5zEDHLZb1WodRey/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "And just whose fault is it that I lost levels to begin with, hmm?!",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/10nnLFJgfxTjcCgv1dfG2jhVncXY-Jg8y/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Huh... Hey, check your drops, guys. Did you get anything weird?",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/133SxWRPHYstgUvVgEzAwSQobQ1JtN-dB/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Anything weird? Let me take a look...",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/1KkNg75IRSiAdP3rLBYgEIf7-uxWI-SEr/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Oh, you mean this? What the... It looks like a VR headset.",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1clL78sKBJHfxCJ_yDQQ3MzE0JvrwETb_/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Yup, that's it. Are they saying we should do VR in VR?",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/18nCBQwT95RjUKYylPeOQdJ-Tlpuj8yBI/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "No telling unless we try. Okay, Sunraku, put it on.",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/1An9xPrLEaTMMvkfWRdejVIYmRUHe8dV_/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Hey, don't just assume I'll be the lab rat. I'll give it a go, though.",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1Y9K9rtA6gkLWyYK_5G58r9DyW9g6xYQY/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "...",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1lqptgAcmDi-NOF_yYCHKDh5dzAKjuA08/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "...Well?",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1u5G35O-wS1F5z021ANhMs2kHPnDIKT5J/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "...Whoa. Is this some kinda unique ev\u2014",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/18JesBAXzVTECIfMUI6gqB6j-cCC7cbjM/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "\u2014ent?!",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/1BfWxD6W4qRIFu5lFHYaF50Nd5v57OHbr/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Wha...! He warped?!",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1Y3XaYJXCp021juYVadgeK3Xa7P-dsx7B/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Hey, Pencilgon! Did Sunraku just say\u2014",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1pF2erZT2QtY8cXIbMAbg6bZMGG5jJGTx/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "...He did. A unique event. So what's it going to be, Katzo?",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1t79wcubR8mi4S8MnDMuBy5crdQW0DYL1/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Like you even need to ask. We can't let him hog all the fun!",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1g4FusCXcDadsM-EhRYaj-17ZSWOusDZ0/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Damn straight! Now, come on! Let's go catch him!",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1uNLimjvXEsutNb9O0d2x_nOKJOwb8wVG/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Whoa... Where are we?",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1psFNVCgzCTQrtBxkuo4XoDIm5TgxCD_-/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "It looks...like an ordinary town.",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/1IkaoaI6vfFFuvgiYkA4srQ0EIH6Wo7gM/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "...Oh, you guys came, too. Not sure that's a good thing, though...",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1JuyPKnEcwiPe9hkHqqJflYdFjUTyGRj2/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Aha, the event hog himself! This time I'm gonna\u2014",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1yWAfOZ8WlTAGt0KbMrqg4CWfcRVC3CLQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Hate to burst your bubble, but that's not what's going on here. Or maybe I should say, we got bigger things to worry about.",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1YAN3t1lCIpoTz_fh7l36GtukOhUdAvBW/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Notice that there's no map or anything displayed here? And as for logging out...",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1so2kesNZL2i0ygPwaiw5CUo8U9O6Ozu8/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Oh dear, looks like I can't.",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/13OGi8F0w9q-EyJlWbZ_P7IfOkJodWOtq/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Ugh, for real?! Should we contact the admins?",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/13Omi_CZ9PUCadwF9okyiRbSISRy8-y2X/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Can't imagine the SLF team missing such a rudimentary bug... Maybe this is part of plot?",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1RnjkHpmfFMpwolt3IqLCEjewExMkRo0b/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Anyhoo, we're not getting anywhere like this. Let's go chat up some NPCs and see what's up.",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/19YPZumSQhTrCIthTRpfHELAiW82mUc73/view?usp=drivesdk"
-            },
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "Meanwhile, in another world\u2014",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/1XmFjWamD58v2egn083TTLWeA0qdxjsdn/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...So these are the artifacts you were talking about?",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1KyXsDuU3yPQHJU8J8YeTCE1obHxVB6Dx/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Yes. Zeta found three of them.",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/1ZNPJSbvwxkHjFrlwhDMljWD7B6sTJ-5I/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Interesting...",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1PgcvTLF_lA9v7Mzn5xRAjq2wFARpUK35/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Yup, these are definitely VR headsets...)",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1Ud46ZQhC3k5WIvxE0Wzj9aZlYEjLcX1X/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "I surmise...that this part goes over the eyes. It may be connected to...the virtual space created by Laugus... I'm still studying the details...",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1Yjnj5XSfl1uunEMBmYbxmRrFFYFRVVbT/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(A link to a virtual space...?! Never thought the VR rigs in this world would be such amazing gadgets!)",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1K3aoUKiucjsy8r04Y3-9juXBiXZvDX54/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(What if using these plunges me into a game, a cryptic contest of life and death?!)",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/18MXIdvYWAMeMAvbDkY5eKODBvKoNCnDl/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Man, artifacts rock! They're like a dream come true for boys and girls everywhere!)",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1HLwFcBji_5cswmLKXos3agT9dRS_8YJ7/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "So...should we try using them?",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1OuZ09OrEa0cBhip6yhjq-6zowyqEFjy_/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Keep your distance, Cid. There's no telling what might happen.",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1bp1w6tT5UigYDYqhux6hnAkNQTJgUpNO/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(So that's your play, huh... Very slick, Alpha, very slick. You always find ways to leave me out of the fun!)",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1DuHfi1WxixZ5MHRd5uXP8nvPtLLGHA41/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "So if these do take the wearer to some unknown place, which of us has the highest chance of survival if something happens?",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1JOfLN5si4iaABdV-4qI3yq39fQ1X7f96/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Well...you, of course.",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1ySDECEEa5snEGGZHBcQf0iOAFf4xdghZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Heh, then there's nothing to fear. I volunteer myself to gaze into the abyss.",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1D9rnVS-HPfjXhKEmVgBYJ91uSpVaicHq/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Cid...",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1xBVI9IAivPG2ffX9x-xgBgDKuvFiaNZD/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "I'll see you on the other side... Now, here goes.",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1HGLqFHokOvu8fadPYDOn8J0D4JWO4kw1/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...He put it on.",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1LD7tn4m97zXnkosHBod9XPBQf70DQ8t3/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1iZQU4VEQwEyTeWc6xb7dk24Gnsl2Hkkj/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "So? Do you feel any different?",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1pYSDhlkx25QTNsAmKOAOQqLu1-Rf7rBg/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1heA9mCLY-BK_qcu8YIlIji42tKpr8PgI/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Um, Master...? Hello?",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1bBUM1KproHMYVgJo8xDIz20kyCgbU8zV/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...He's unconscious.",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/12D2MaGky3Q_wINW4FzeA5XEyfjP-zQGJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Wh-What...?",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1lN6Wc58pLs0GX7cAiciGU58mnZZIdpai/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "...You wait here, Eta. I'm going to report to the rest of the Seven Shadows and discuss a solution!",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1Xptqi7pKcTaOJWP4OFy_SXmIXU17poVj/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Please be safe, Cid...",
-                "line": 60,
-                "url": ""
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "I...don't recognize this forest. Not that I was ever any good at telling forests apart to begin with, though.",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/19LDRcv92sHdJY-HnqnrWkbRumr_mkeic/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "I thought this was gonna be VR, but it looks so real that it's kind of a buzzkill...",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1eUdkJhRZwdXlIXtzcE523_tlv9s2n8YB/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Sure would be nice to see something besides trees... Hm?",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/1marBVVg6Pv3E8luHquMnuU-kibqKRqXO/view?usp=drivesdk"
-            },
-            {
-                "name": "Wethermon",
-                "name_variant": "??? (Wethermon)",
-                "subtitle": "...",
-                "line": 64,
-                "url": "https://drive.google.com/file/d/1TnkErRucemERoI-Sj8pDVf9P67n3Czid/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "A suit of armor...or should I say, samurai armor? Things are getting Japanese all of a sudden.",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/1pxFoknSsAodCLZvpw_T1btUrUMY1Ypif/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "But I can dig it! I love subculture-y stuff that slaps different settings together!",
-                "line": 66,
-                "url": "https://drive.google.com/file/d/13XV5ktVlbWSJHNZMnRtNp7c8fRqL-upj/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "This thing's pretty rusty, but maybe it'd move if I fed it some magic...",
-                "line": 67,
-                "url": "https://drive.google.com/file/d/1JzWVfMqeOgUZD2pluooWmUFeqjgQJtYz/view?usp=drivesdk"
-            },
-            {
-                "name": "Wethermon",
-                "name_variant": "??? (Wethermon)",
-                "subtitle": "...",
-                "line": 68,
-                "url": "https://drive.google.com/file/d/1LSNJj8kSB7JvPrpdosUnKNFT6eJF1knD/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...Hmm, nothing. And here I thought it'd be cool to have an armor-clad minion tagging along.",
-                "line": 69,
-                "url": "https://drive.google.com/file/d/1WVPXqBlGg2FuafqYeB38qRks-LHloxKJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Ah, whatever. More importantly\u2014",
-                "line": 70,
-                "url": "https://drive.google.com/file/d/1jdIQCun8cnm3mUaoGNqNk_uYNPHnbRJN/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...I'm starving. Didn't realize hunger would still be a thing in VR.",
-                "line": 71,
-                "url": "https://drive.google.com/file/d/14fAmvEP6l33a6ogq8VyJiZp8vEXltqfZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Guess I'll start walking and see if I can find anywhere to get something to eat.",
-                "line": 72,
-                "url": "https://drive.google.com/file/d/1_7swMAONAEDFaWmzg5N-9cv_JRn3Yl7R/view?usp=drivesdk"
-            }
-        ],
-        "e2": [
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "\u2014And that sums up the situation.",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/1xrvsYS0PvSysLzul6gCVUMfuz1wPEWbJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "How strange... I know he said would be back, but this is worrying.",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/1DWvyu_GOpTUWjVPjuLlmlAWIKrVHs42E/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Our lord is in trouble, and we're here doing nothing... Lady Alpha, is there no way we can go find him?!",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1qQL7aYe8Xor0XjNqSrbzwLZkD3L3Sgc8/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Calm down, Epsilon...",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/18Pu5OW8Wirwu3D7YmZclh_GFMvpkcPjC/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Two artifacts remain. If we use them, we may be able to save Master Shadow. But\u2014",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/17bWf1gMf1Jtwt1reKfrZ0YKjX9F0070F/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "He's the only one who knows what's on the other side... It will be...undoubtedly dangerous...",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/1J8X3-HqOEccDw9Fut-pbM3SzcI14J3wJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "So what're we gonna do?!",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1qTg63TkYlNkKpkuPcPVdAykh0O4Yc9m-/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "We all want to help Cid, so...let's decide who goes, in a fair manner.",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/1I_-4ssOinHkgQTY0g47Li8i81n6xT4-7/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Yes...with Seven Shadows rock, paper, scissors!",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/1YZQZ4A6Droq4QQhTY14NDF33Ev1wZQe_/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I'll call it out. Is everyone ready?",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/1xrStBVMHFSc4x8vmTTLd3vu51_l34hpX/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Seven Shadows rock, paper, scissors! One, two\u2014",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/1EBzUWMdQtaYIYxRZqBPq_oESyuxMFdhp/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Seven Shadows (Alpha)",
-                "subtitle": "Three!!!",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1cppkpiJjyBy37QHEc5lG0YLtJ_Lw1VLY/view?usp=drivesdk"
-            },
-                        {
-                "name": "Beta",
-                "name_variant": "Seven Shadows (Beta)",
-                "subtitle": "Three!!!",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1cppkpiJjyBy37QHEc5lG0YLtJ_Lw1VLY/view?usp=drivesdk"
-            },
-                        {
-                "name": "Gamma",
-                "name_variant": "Seven Shadows (Gamma)",
-                "subtitle": "Three!!!",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1cppkpiJjyBy37QHEc5lG0YLtJ_Lw1VLY/view?usp=drivesdk"
-            },
-                        {
-                "name": "Delta",
-                "name_variant": "Seven Shadows (Delta)",
-                "subtitle": "Three!!!",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1cppkpiJjyBy37QHEc5lG0YLtJ_Lw1VLY/view?usp=drivesdk"
-            },
-                        {
-                "name": "Epsilon",
-                "name_variant": "Seven Shadows (Epsilon)",
-                "subtitle": "Three!!!",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1cppkpiJjyBy37QHEc5lG0YLtJ_Lw1VLY/view?usp=drivesdk"
-            },
-                        {
-                "name": "Zeta",
-                "name_variant": "Seven Shadows (Zeta)",
-                "subtitle": "Three!!!",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1cppkpiJjyBy37QHEc5lG0YLtJ_Lw1VLY/view?usp=drivesdk"
-            },
-                        {
-                "name": "Eta",
-                "name_variant": "Seven Shadows (Eta)",
-                "subtitle": "Three!!!",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1cppkpiJjyBy37QHEc5lG0YLtJ_Lw1VLY/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "...Looks like we have our two volunteers.",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1W_TUMV1Nrd45bAzb7SLvnAXPyPalLOYI/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Lady Alpha and Delta... Please, bring Master Shadow back!",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/1gkTYJDEk_1ARXWYpFB2VnTJOOfOab8Hl/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Hmm... This gives me time...to figure out those artifacts...",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1WP6PLNDMjifQemOkLzDPUm954AdO7W8X/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Well, there's not much else we can do. Please rest assured we'll look after things here.",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1jXlviWcAUmrZsbuj7c0KmMPe6y1GMZ08/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Yes, thank you, everyone. We will be back with Cid, I promise.",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/19IisUv5kENb6lFIGvFhmWiIO9-9_jhBe/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "See ya in a jiffy!",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/13_K7RLrr2evkEw3LsZi-6pjmC0Jv80SN/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "So this is the virtual space... It seems to be an ordinary town. Delta, can you pick up anything?",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/10tVQKxYgJcDBVbl8Gic5JrhLN-fLUeCc/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "*sniff sniff* I don't smell Boss man!",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1NY2UCjhozrakBdSZDDh3pBWN71AWj58v/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Which I suppose means...he hasn't come here yet. Still, it would be foolish to act blindly.",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1myROCzCvsRPWlBJjl8pRizKMb3lQugyo/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Delta, let's start by gathering information on our surroundings. We need to be aware so that\u2014",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1U6X6xIla66GlTducWPQN3oa-d0MoH1wb/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Hey, do you have a second?",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1ViNJXtDILvQNiskD_8Rdbw3ozvCSDrNn/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Um...pardon me?",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/18d6oqcTjhZxf2oVtGXAwKmz8sXqDv9V-/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Whoa, talk about NPCs with detailed models. I can see the devs got really into making those black suits.",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1yqialH46YZs3_t5Z_ivVWoQzbweatmw-/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Cut it out, man. The AI in SLF is super good, so talking like that might piss 'em off!",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/1CDAGG2S8hxOrt-W86iTWLn5IUIsUR2DH/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "(A bird's head on a human body... It could be rare breed of therianthrope, or just some weirdo. Either way, we should remain on guard...)",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1BI6uWQMQt013kxsybOUBIev6OtxvQpyg/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "...",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/13BggIsNqAokMu9-riobulwut8HH7EeQN/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Huh? She's giving me some serious stink-eye.",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1Dq7WZkl-e581rX70wthkPh2JPbHd8mZj/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "See, I told ya so.",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1PSvRiE36gMDCNZus0Y9cXOfA031pbyVH/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "The birdy can talk?! Kinda weird, but I'm gonna catch it anyway!",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/1Z6td4-b-D3DLP7tq19gtA-vog_-lFjU1/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Ack! Wait, wait! We aren't bad guys, and feather-head here is just a creep, not a monster. Don't worry!",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/19XScHoX60w6FIlP4LvxBcjjczwujtGSn/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Hey!",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1NBJgK3rWylW0xPiGHb0mJ_X2RLI3FpD-/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Anyway, we don't pose any danger to you. We only want to talk, okay?",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/1vO3kVlQs4KdgLepK4D3k_edjs2zy9jY_/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "...Understood. Perhaps you'll answer our questions in return?",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/10pw0FvmyULVm1xDVck_1QUJnxoefMwZT/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Of course. Sounds like we have a deal, then. But would you mind calming down your friend here?",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1hm60nazsm5lc3JAHCs83NgX7DktqUE16/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Stay, Delta.",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/1flYZpkPdgM-g-NP4Q0ErUUoNvk1vU2rF/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "O-Okay!",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1QW7ayHaNDviEJjYdnGgyRBTrJBzck753/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Pro communicators are something else. She got us into the dialogue phase, just like that.",
-                "line": 39,
-                "url": ""
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Yeah, but I got labeled a creep in the process!",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1PjFLPJcjULGEdP5S_3uOMh1kGtgw64Bc/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Whew, what a relief. Now we can finally get some info about this place from the locals.",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1WxbyyOyfYXSYA1hyZxG6MQILObKHOfdk/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "...Locals? But we're...never mind. We'll explain that, too.",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1HPMLI-HQh9WT1LpSRs8WhAkL_xho29BE/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "I see... And those artifacts are what brought you here...",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/17zj3RolbHfOIOXxGJPtqsgJS4A2HkCmP/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Sounds kinda like what happened to us, huh?",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/18PFpQJYokga8PGlbhsYuKw2rDPF6HZsz/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "On the point of similar objects bringing us here, yes.",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1e_4OqPgybmvvM7HYjIz-HdU1-S5Aj6Qa/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Okay, so we know that this is someone's virtual space and not a game. Now, how do we get out?",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1p1sydJcw8EJdcUzoPoKU9IR5S9MzYijM/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Whaaat?! We can't go home?!",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1f0hfxNup9vy8s-i1sJIvtTRGMXFPJqLX/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Calm yourself. Laugus will surely have built in some means of exit. We'll keep an eye out for clues as we search for Cid.",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1VeO4hDHMIVGCfQqYawAG4KL_Qq-6uW1D/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Hey, how about we join forces? We'll help you look for this Cid person, and you tell us if you find a way out of this world.",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1nHwKAY9-fm7Uh1PojaadIv18XcIrygMQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "I'd also like it we could pool our efforts while we're stuck here. We'll lend a hand in any battles, too. Well? I don't think it's a bad offer.",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1gSixAMF0sxNRC8kE5FfzR5OKHKHzgnMD/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "(The Shadow Garden in me says to avoid getting involved with others, but...I don't think we have any other choice, given the circumstances.)",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1esmQCT7k8ANiN1-qL8IXcKDcFQhmYbkb/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Very well. Let's cooperate however we can.",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/19HD85XdTlQqgZnPh65mYHaGk5qkf3qoJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Alright, it's a deal! Thanks, um...",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1GZvC-_1W8_b6AZzFaPp4bOUBoHbSq5UW/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Alpha.",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1T3yd5TdGHsYaySa6W3ShwyrWGuqaxOYy/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "And I'm Delta!",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1f4PmVIlbmPeZW7OvB7pqcMPkhQEYxTgI/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Alpha and Delta, got it! I'm Pencilgon! And here with me are Stooge No. 1 and Stooge No. 2!",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1r8xLuM2f-wFI9apfnRrxDa9ZpmEV_p37/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Wrong! I'm Sunraku, not a stooge, and definitely not a creep!",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1_oUZI-8mybOOCUR3KDlqJyzUTcbuY0KR/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "I'm OiKatzo, and I'm no stooge either.",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1MMuWsEze6Q6Fwt-WXSFN6ew8v-N_xHGC/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "A bird and a male that's like a female.",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1-WTlNsn8hNAGIUUCp0uycMhAMfUsfZKV/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Say, Alpha... Is your friend here okay?",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1Aam5o92TRQZI3fQTNKqvpJF5NhXToJDt/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "What'd you say?! I hate people who say catty stuff!",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1OEamnPJntAGrR4chQZyAd5z3gNhXygCo/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Didn't take long for this relationship to go sour...",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1_EiHbLt8zUJFfe-IFWPSGfDoFm9OTEBK/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "...Yes, it doesn't bode well.",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/1oum_Ijo-9EPFSuyPAQkfBXPTAC1SwpW2/view?usp=drivesdk"
-            }
-        ],
-        "e3": [
-            {
-                "name": "",
-                "name_variant": "",
-                "subtitle": "While Alpha and the others meet, Cid strolls the streets, having no way of knowing that there are other visitors aside from himself.",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/16QCzL0bUewBUwtXOS9sXxNaT8u9dur7w/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Hmm, this place is plain as can be... I was hoping for something more obvious, like, I dunno, a city in the grip of a heinous villain or something...)",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/15lN1B-IQkYJWY2f-W2r_I2F7slvf6rcj/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(But this place being normal means more fun for me as a shadowbroker! Not to mention that it's the perfect setting to blend in as a side character.)",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1qZdQYXvo2tIPivIc1_ZTf_7aVU8lkK9U/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(I just know some daring heroes are gonna come along soon enough to face off against the great evils in this world...)",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/1KOCcshRwA-SUykpisVB_0zk_mqMaCfWp/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(And when they do, it's on! I'll give everyone in this place a taste of shadowbroker showmanship!)",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1TGRjhLt3qkGF3obDUZLea0basIluSjTp/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "??? (Sunraku)",
-                "subtitle": "Hey, can I ask you something...",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/1y8L9hLOxIxKfxPj1dcishUOT0eksDZuJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Heh, knowing how to respond like you're nobody special is the first part of being a shadowbroker. Now observe the answer of a true side character!)",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1ppH5HnlIz-NJ5k4sajXEgCWn5BqkMyyc/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Wh-What is it? If I can help, then I\u2014",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/1p_e1mhXYeYFmVZVPW3bvpebf-kUVwXmC/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...Huh?",
-                "line": 9,
-                "url": ""
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Do you know anything about this world? Names of places or any other little details will do.",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/1nJ1GTDWNFbb4s3cY_Vl3czZBRWI5h0Qk/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/12B60ttkpUoUvvUOd3WIuc77akf-X3SCf/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Uh... Anyone home?",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1nX7I9e-zvCISNCxlF0m_kNoyogNZVOfq/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(G-Get it together. He came on so strong that my brain shut down for a sec.)",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1oEQyXvfe7vcl_or-isYl_6ARxYZhvSMI/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(But come on, no shirt with a bird mask? Isn't that a little too out there?)",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/1UnVBjYisBk1yXPvcrCRvZYSoRaFkZ9X0/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Wait...maybe that's his character type. Yeah, like he's the party's token weirdo! Except those guys usually end up being pretty strong!)",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1UDboKkvtDll89A0vMRD8CwUCZRY5Hps_/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Which means...this isn't an ideal situation. I need to keep interactions with the heroes to minimum. So\u2014)",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1eDaB9akl4Ja6eDujsYRMwUuAsh2jenLC/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Um, hello? No need to think about it that hard...",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1d7re74BvNYgbEC2SGUQDfbUF6zYN2j0P/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "I-I don't know. Nope, I don't know a thing!",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1WyV1f4Rqd7ot1_wQVQuaVFMimQJQVoHc/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Wha? O-Oh, really...",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/1tuIEoLVw6yOUp7ProHCDRY4r_OtFyAt3/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Yup, really. So...be careful out there, traveler.",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1QhhohrCWpu1UXltUGoFzPwZ2JmLP7coT/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Uh, sure, thanks...",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1iC-gncFAn9r06tgDzmYKoYqxyEtpDDUh/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "What the heck was up with that NPC? Not sure if he was being nice or trying to brush me off...",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1Cerhhy9fhaS31dBA3SvkmRCHEa6Om1xg/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Whew, that was close. But run-ins with the main cast are always high-risk.)",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1kTywMMRtaTbjqTCSrphgW6Z6Jf3YClsa/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(My goal is to be a shadowbroker in side character's clothing. That means interfering with protagonists is a no\u2014)",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1T2nRDOU29JRiClfgL-Fyc8wQ5CMcAa2U/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Hey, do you live here? I got a few questions for you, okay?",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1f9nHqCGrDmx6-atN4J9fRxItOrsksIjr/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "S-Sure... Hm?",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/1b4V6M5IUi8ikm7lFC9MDFqcsl7bYi2VN/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(...This one looks like a girl, but totally moves and talks like a man.)",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1-w5HRVnm1RVZUcUka-TEgOatAy-v8fga/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(The so-called femboy role, eh... Yep, you find them in main character parties pretty often, too.)",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1XjHFbUBbZf0GfI40uY2Pg1D7Rt3Swgip/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(That said, it's not a great topic to bring up. There may be some compelling reason behind them being the way they are.)",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1e2n-ExP10palVEkmNPxvP4_-5qckRM-X/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Be friendly but don't get too close\u2014it's the best way to deal with a complicated heart.)",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1xuGY2-MQatvXEpga-_FtMjOYWHDSrHHl/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "While I'd love to be of help, I'm afraid I really don't know much...",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/1nkzD6XKWvGCtF-V_8ptjZzLix9TFLIa_/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Hmm, gotcha... Not like an NPC would know how to get outta here anyway.",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/16yMCVqZpb8f76lgD2qdpP4wz8wvw_hN-/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...NPC?",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1H_Wa5uA-_P7RuI3TS3e4eJ8kILCcIBWk/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Oh, uh, sorry. Just talking to myself! Thanks anyway, see you\u2014",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/1FUZNs_AOE9CauVZ5DOEiHEUfIHqMUZkG/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Wait!",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/1J9QDK25qE5RkUxhyCRhXvpA7zzEIyxNa/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Many troubles may lie ahead for you, but...I'm on your side.",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1ibv9VRdcG5FbVysEplxeARzJ69WcOr0d/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "O-Oh, okay. Thanks...",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/1-9-G00LY0-msmCfcbecAfb8LCtt66j2k/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Virtual spaces really are something else. Seems like they even come with quirky characters straight out of a video game.)",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1YLbqQZorvCTEeCtd8psq2sUsgUzg68l7/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(But getting called an NPC... Does that mean I'm pulling off my side character act almost too well?!)",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1RBgNVZtudU5L9sUz57u3NCb39Efy5I_a/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Yeah, that's a great milestone! Makes me feel like I've reached a new level of nobody-ness!)",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1OTJar8Tz2cOsghL6eNwMp9uwdOogdwWQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Hello there, sir. Do you have a moment? There's a few things I'd like you to tell me, if you could...",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1tQV0QndQXhVKt8Kxr9rPxowgAYkQt0Ep/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Huh? I sure am popular today. Guess I can scratch what I just said, since I've obviously got work to do. Anyway, time layer it on thick!)",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1iKyKJ0w9S8kB7vIAebdl5V5NGZS-d1US/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...Urk!",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/11HZ_36rb-R73Fi_sQHadoqHN1A_lMKeA/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Whoa, what's that reaction? Shocked by my beauty?",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1c08b0TLevk6SRsP6-DQ-aJQME9uWHR0v/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(I thought those other two were bad...but she just might be the worst!)",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1m6iKTSfbpLKCeyYhRWQKfxWXCpkoi8qg/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(A smiling face with major serial killer vibes! I'm sensing fathomless darkness here!)",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1fjsGtBmewzzjKNO625_6mwHbDGx-7HjZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "My friends and I have been asking around for info, but haven't been able to learn anything worthwhile.",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1HyvW08XKZwtfwLoOmWxiI0XWo9vXEA3V/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(But I'm also detecting Gamma-level intellect... Could she be the ringleader?)",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1yNIUvxHINlG7GPwGOLSFL5oPM-BHa6Ko/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(If so...then maybe now's a good time to drop a hint of my existence. A little foreshadowing that this unassuming extra was actually a shadowbroker all along!)",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/10plLa1Zm_PUYOwuQ7Xm-q6eWDn0v8ix7/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "So, one who seeks to escape this enclosed world has arisen...",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1rW-nbMMfveM0IuoLGEnppqxipiwbibaf/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "...Come again?",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1FDyhOTIWPixYe8SOYnezX8Bd6totjtn0/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "However, that time is not yet upon us. I shall be observing you...from the shadows.",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/16r_sVdd_QfRXQ0-zkt5g-5lpEucq6XoN/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "...He's gone.",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1mhfkgWCyL11ylZQai4LIRhSL0yGRJynD/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Yo, Pencilgon!",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1t0lre2u-hKBe2p9e0sI9lJMaS75v8sQw/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Learn anything useful?",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/13_l5xx9tHvYD7TFCcdd4IGqPHypDpzoF/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Well...I spoke to an NPC, but all I got out of him was a bunch of edgy nonsense. Beats me what he was on about.",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1OH1iYxwdZ4Qs_NQeMmVjsaWPNGsTJm7e/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "I tried talking to a NPC, too, but he gave me the cold shoulder... What'd I do wrong?",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1olGGoPNsTF50OlWqrY7SwXrlNcp0MeWm/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "It's gotta be how you look. My NPC was super nice to me, even though he didn't tell me anything.",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1CSQ27LHFG-hfXD0NGPxBFRzjFORaRaJc/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Being judged by my appearance over here too... I just can't catch a break.",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1aPhL0KlOpUS-19_N8I3DqVuoyQ00nM0i/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Your situation aside, some NPCs are just weird.",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1-Qfx4wEeyBXel6ExqRmp9MFFYNK2qlq1/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "While it's disappointing that we couldn't get anything out of the townsfolk, maybe Alpha and Delta had better luck.",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1atk8fx5juCKckedRTpwUKSV7f2EdjQnM/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "I suppose we should catch up with them and hope that's the case.",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1NFZzN5jMMWph_V0MpKpiIK_qHlntypMj/view?usp=drivesdk"
-            }
-        ],
-        "e4": [
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Hey there, Alpha. Hope the investigation went well. Shall we share our findings?",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/1FJ8NJ0lKI9uv3fwU2xN6bn2hhZa2blLW/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "...Would you mind going first?",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/1fQUXqZ7eN9U7FLqki5fC_tFMwmtP4H88/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Sure, no problem. Except, we weren't able to turn up anything about this \"Cid\" guy you're after.",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1GIXd0pF42M3xMcgZ-jPKU630dw30nxyx/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "I see...",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/1qhOp3CACZRoGgpZRDw4LtcKZ2ccNezSK/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Apart from that, apparently the currency of this world is called \"zeni\". Needless to say, we've never heard of it.",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1V2_Un9BHi4lZvdqdIeFq7ckHppzK1WVy/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "They use the same currency where Delta and I are from. But in our rush to get here, we neglected to bring any with us.",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/1Px9EVoMTzaDiON57ef8e686sM3Io8EaC/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Speaking of, where is Delta?",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1kBF7YzcL0p_GQ-SYIZ2RBoI8u-X-ku8r/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "I sent her to find food, thinking we might be forced to camp for a while. Sadly, it seems I was right.",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/1wd8uU4A1qOpX-EgD9cClUbFAia3x1ikj/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Ugh, camping? Can't say I'm looking forward to it. I'm an indoor type.",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/1vmLk_gqTGtbYwuknLmkhsib0ubEe1gXa/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "*sigh* A tough situation, but I suppose there's not much we can do about it. So, is that all you have to report, Alpha?",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/1yM6xvWdRiEPDfhTA2NH8c7CGNp3RWeOQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "No, there's more. It's about these \"levels\" and \"stats\" you mentioned.",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/10vur0S1fLzUA1fR0UBzpXd6rShDl51nB/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "It appears these concepts don't exist here. No matter how many monsters we slew, there were no \"experience points\" to be found.",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/14YVNCMjkPXCC0N8g3dO_B45T-g8E6xKN/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Which means it's all about player skill. Hehe, now this I like!",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1JNtGjMktsG4xmvpNubZFgQ9RnLWPuq6K/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "I get that, but what about the skills we used in SLF?",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/19v0gXYyPhwRJHYLb5784_PgROXd8c9WJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "That's not something I would know, is it?",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1YtJzz18KnHSMVKFmsofm4GKQwCyCIHWp/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "T-True enough...",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1wJFCdCHi_tERDBqkS2vw5eJD3OzzakHy/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "In that case, shall we conduct a few tests in the forest while we set up camp?",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1Enord7UDbsZX6ztB-9T4D4uWOVQugFDS/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "That will likely tell us whether we can use our skills or not, and I'd like to check our damage output without levels or stats.",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1_PnKOxF0PzLuT4RDbOF9QsJHw4rBkqgj/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Agreed! You in, Alpha?",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/1CPYnHmlwBXjUrwpVatiKYABRqpCdqQmQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Yes. Now that we're working together, your safety is my responsibility.",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1nPrZB6lm6F8rM9s2L3ZYZT4ehzfQCm36/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Then it's decided. Tests...and hunting for tonight's dinner! Let's go!",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1iJOKXiEqN6EYrnqZin_4X1KKO3fe5hEK/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Boar, rabbit, and wild herbs... That ought to make a decent enough meal.",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1nnunsww_9wsINJF-fLB2TUHSEnMULVHz/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Hold on, Sunraku. Aren't you forgetting why we came here in the first place?",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1evCMOozM7IoVQ5SfMAOq-3CfqiZ-WLwS/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Good work, you three. Nice moves back there. So those techniques you used occasionally... Were those your \"skills\"?",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1EWYcb0iMXqfAg7jPfAiTEvN9eDv4GCV4/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Yup, very observant of you. Looks like we can still use them here.",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1gla-EJm9XqoAMkaDBlttGA-nAxJb5MN8/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Although they're a little tough to use since we can't see our recast times or HP changes... But, that's where experience and instinct come into play.",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/1VYznQ2X5j5vz6AV8owxhLqd_8kIZ-_5V/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Right. It's better than not being able to use them at all, and that's enough.",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1CQ7yaYa11SxrkxBjma8bEw_tnTQAzcaa/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Now that we've figured that out, maybe we should start making camp\u2014",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1BI8xXgol96hxNxYhOops5A2pxa987zN2/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "...Wait, we came here without telling Delta. Do you think she'll be okay?",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1dGM4uHEVIiLMM0m5OzehOKhABxt6VyLq/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Yes, no need to worry about her. In fact, she should be back soon\u2014",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1SRI5p30pE1t9jdKYxLu4Re51mpX5cyiK/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "BOSS MAN!!!",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/1PcxuALX8QB2Nm1ALk9bXbTDOwF-_zX7o/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "See? For a nose as keen as hers, tracking my scent is a simple matter\u2014",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/1l0Ye-JYOhJG9e2dhDkIb8n43gWzmsoUH/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "...Wait, did you just say \"boss man\"?",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/11Bu8HiEaBZv4737P5CzaIRUMBgiNQ8Hf/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "I did! But...where is he?",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/1ZHtJu2vs54RDRxWen0ABtkJ0mUseYUgh/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "What'd I tell ya? She's no good.",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/1Hs9oWfU06jJQHbfiFsFsag0NHqV0m_VT/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "What'd you say?! I am very good!",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1b6EDt-A8zPQKZdbkFnIY4mpuMMfTiBWE/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "But I smelled metal and heard it too, so maybe my nose isn't working right...",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/1zEX5zDRujNikgtwnBqVfj9_N0x0c7FRq/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "I have faith in your senses, Delta. It's possible that we encountered him without knowing it.",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/16AQuNlNNrxEm5ljELvnIPuPkQu_NpwLM/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Does that ring a bell to anyone?",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1ujawRLnyEy8QCp7JL61Ls-bkcxuSTMH4/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Hmm, let's see... I did talk to this one NPC with black hair that gave me the cold shoulder.",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1kHdW86iV0CmYUunH-EoBheueUYQ4gk7T/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Could that be...?!",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1V2gVmXW-504-m-5QB36QSIZKVVR9SgP-/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "But this guy seemed pretty weak\u2014not at all like you described. Just really average.",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1redq6Qv034cCrGuydc_DSR6yQHQ5DtgP/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Hmm... That's not much to go on.",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1Lu39xhS1zcZiOsZX2yhJ2SL9fA_JhsOl/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "This one NPC that spoke to me was nice enough.",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1JpSx3AoYU5YfPelyokQNq3Di9hTIyORY/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Boss man is definitely nice!",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1lTe7KeV8Fr0TMKDmSLOr4XRVhFy6KdbK/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "He felt kinda ordinary to me, though... More weak than anything, I guess.",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1doulQD19f6fvoWJUQlX2T92q0y4sfx67/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Then that's not Boss man.",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1DmkzBK1wXW6sMNA5fgrSPzSTwgB1MGKX/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "I met someone with a bad case of edginess, but he\u2014",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1JFLwTMt_z28_pOW47TXR_56wBL2SUk02/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "He was ill? Cid is the very picture of health.",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1RnJCENyUdQcOLvnSqbfs-KmOlkSYeQyF/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "No, that's not what I mean... He said something cryptic about watching from the shadows\u2014",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1q65smAaMU3ruggBFAP8mtedAwAhA8Oo0/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Shadows...?!",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/129hWGmjRmCSIOW1EmNu_PalHv9C-ahiD/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Black hair, soft-spoken, and says cryptic things... That has to be Cid! Let's go find him at once!",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1xtw1IyA_vu_c5vgq4yycC-T075B4oMyB/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Yes, ma'am!",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1D3allhw_1FWrxJOeaxUQy0VjfvIIcQnb/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "...Man, this Cid guy really gets her engine revving.",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1r8PIkUvchZVERTj7EpgRdm3izzceal9F/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Not surprising. Alpha is a girl, after all.",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1rsS90XhXqu7U4tooOrml-M8-xqHFOXtv/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Is that why? Anyway, should we go after them?",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1PpnQbpc9f6YjxbmZV4VotbQ4_Joe5HQk/view?usp=drivesdk"
-            }
-        ],
-        "e5": [
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(...Hmm. This town is really...plain. So plain that I can't think of any other word for it.)",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/1LF8xpJC40HnXeal9z3LBV1r4YqUlZT42/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(And so far, that bird guy, the femboy, and that sketchy lady are the only people who stand out.)",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/1duYW6bdxe9Wtuox2edxAbC60B1KxRnSS/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Heh... Sounds like a pretty good place to live as a background character, huh?)",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/15j9kcS3wfzcqQfeIidGUpXNhmvBwSUq3/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(All I need to do now is stick to the shadows and look for a way out, Occasionally assisted by those main characters, but never getting too close...)",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/1iBrMjhdiOsyk_NLCthAnJp60jIL_SPTQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(There it is! The ultimate solution to this place...the ultimate side character life!)",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1aBMNSmkowXkjdJUl8KTHLQe2y8h6VCux/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "BOSS MAN!!!",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/1rL83UtobXHxuqtKNDgpGY5NfSn_67aVa/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Hm? That sounds like... Nah, no way Delta's here.",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1FgokkfI3bivwx90mrwxA_0iYXYkfr1tj/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...Uh.",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/1zqB944RxXI3Gsmw5OH3jnuamj1DLBq3v/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Hey, he really was that NPC from before! You should've said something sooner!",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/1RS4-xJOjaMFWRtRqP6yWowmpOCnOMRNq/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Anyways, we're gonna be working together from now on, so nice to meet ya!",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/1jQdz9z-6h6kuw81DvkLthughkRZGsb6N/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Wow, you certainly did pull of the \"nobody important\" act well... Oh, but I don't mean that in a bad way.",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/1xHkh9vUJGoJHjY-3TGFEMBCvjiqmSHO-/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...Explain.",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1Vi33tmGKKxP0f-LKp8rqzoDCSuEAxS1w/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Forgive me, Cid. I enlisted their help to get us out of this situation.",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1Pm4tlwDsIYn-nZlNkU-DltJIYBRkNbXp/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Still, I'm truly glad to see you unharmed. Please don't do anything else reckless.",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/1B9fMp-G68IE-sL98kwwB2NxC-5UT4lav/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...Oh really. Huh.",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1Me3SkoJHI-EhU6WQem0xJLy5dIiopwY6/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(It's over... Goodbye, perfect side character life!)",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1K2R-18wsDhQtt4l2w9eM28HU7cwnxJB3/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Now if we can cut this heartwarming reunion short...",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1OOWyGhSshREKyRyGyWK8yGz_0fYrWn2h/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(My heart isn't even a degree warmer.)",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1g0QF7OuDISA2CNLRqbBXuAE9NhHZtkOv/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "I'd like to go over the details one more time. Have you noticed anything strange?",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/1W8IzKNp7vZ8V-QewTnAqIMpNDaDgPyDx/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Hmm, not really. That goes for the town, too. The very picture of mundane.",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1P-ert8OmAnFLCEJdUvJ0_DV7nL9J2V9a/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "You're asking the wrong question. Of course he's gonna say there wasn't anything weird.",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1wv_S3pU-MD72FBKT14-w8gmSX5azCaga/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Tell us everything from the start\u2014what you've done since getting here, what you saw...",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1fj3x5vKghhGWNtpDPrHf6_cNbiOK7jxP/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Well, I put on the artifact...and then next thing I knew, I was in the forest. There was this rusty old armored warrior, and then\u2014",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/11zmssF8l5Z55S9u5f9J1WoasSkgPWCSp/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "S-Stop right there! I just heard a very important word!",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1HZZvvoOKVrrv8WmCAqUWnpl4SsnWgVMZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Wait a sec, by \"armored warrior\", do you mean...?!",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1x7M-inMhSPgbAvnCvtYmVwAsDHhSYDsJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "...Wethermon the Tombguard.",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/1AMx8cXWIerCOeHNpyTRRbDFcB8E0eNHI/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Wait, but we defeated him, right? I REALLY hope this is a case of mistaken identity.",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1BQBBq-Eye70X_CeHFa39G7kGE-1QT0Lt/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "You seem to have some connection to this \"Wethermon\".",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1l0gyj9_ECP9J_r5LpX7HynpgotXuftpZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Connection... Yeah, I guess you could say that. He's a monster the three of us took out together.",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1YsaC5kPYoptdloy_LlE3J-HBAZX1WwhV/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "That reminds me, Delta, didn't you say you smelled and heard something metallic in the forest?",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1U5vK8uNU0OsQ6QVdEjSEub1QZsmKiRwb/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Yeah! Maybe it's the guy you're talking about?",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/1HPNH39W90CIeJfSSlnoSczwezIbBdIJA/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Yeah. But why on earth would he be here...?",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/10gCAOQXmwsSLm6hhKLoBhI-1WS3Hd6t4/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "We beat Wethermon, no questioning that. So this one may be unused or leftover data...basically not the original.",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1l_DPyta1tSG7jbjMXtWKs0ZbhZr9i3lD/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Smelling him is one thing, but if Delta heard him, would that mean he's moving around? He was completely immobile, last I saw.)",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/19OqqFBaXKT_G0qJfRLxZhVdQh6DnoSk0/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Anyway, that's not our question to answer. But\u2014",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/1s6nbURrZy6tDe5CoZLoQ2nX2jpvcM-Px/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "He, Wethermon, might be the key to getting home. As hardcore gamers, we gotta check it out.",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1YEAsq83yrz2lzQAkbuxAEcbl6as6EPdi/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "*sigh* Just like a unique event. So our initial reason for coming here was correct.",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/11v8-Byuym6HRtro6myXwxnD_spBdNuFh/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "I'm not sure I understand everything, but can I assume beating that armored guy is our ticket home?",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1AS7M6tZmhsFcEBaITh6OncFSculVhMxp/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "You say that like it's gonna be easy. Us winning a rematch against that thing is pretty laughable, okay?",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/18YM-3h4eE7FKYf7_zenbwupVG5UuDBFD/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Yeah, because we barely won the first time, and at a massive cost to us all three of us.",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1HGmRh6x0lUtqNCAudlxuL7uV6TdoLb_v/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "So it was only the three of you. Wouldn't that mean our chances are better this time around?",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1PsZ4yBdKcYhOe1LV3h74msGUeuV-POp3/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "I mean, there are six of us\u2014",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1MDRMS8eS8PtYIWOln7tDVs_SJeRCJ1GG/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Five of us. And I'm sure we'll be fine.",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1usvnuZu9nCIcGFS0Is0k2zc5v3NWTAOj/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Hold up... Uh, Alpha? You aren't trying to leave me out of the action again, are you?)",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1ZYu1mwRBKX_e7TSIt_OVAE0jHPNbl-YR/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "You demonstrated your strength to us earlier. If Delta and I join you, I'm fairly certain we can overcome even the toughest of foes.",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/14p2VNAOGRiPRrw4Rq49W9p8Umbg5bPvX/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "I could do it by myself! So you just stay back, female male guy!",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1pDVt-NaR5EP__0LoS5WKU_chKUcu7CeQ/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Hmph, well, somebody's got a mouth...",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/11aQ3LkXsoXLY4k2c35pC-HnrOvfHGocD/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "...We'll be fine, Cid. No need to trouble yourself.",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1cUEgsmN5xqdH15EpSU3XvPsQ0iQMv3_l/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(I knew it! She's trying to exclude me!)",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1wmg9qO108ij55w9oh9T7_lSBHCBNokLU/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "But yeah, if you can't move that well, you'll only get insta-killed. So, it looks like it's just going be the five of us.",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/16ulTw6iZrTVB_UrYVDQdHOlCqHBgrePz/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...Is that what you really think?",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1IGsmy1ucR7poIcVywaCrDIDgRqM4LcBV/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "About what?",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/10j4mRB8cPO4GcFtdR91sXZJ97X3zCy9p/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Do you really think it's going to be five on one?!",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1jQL0d091WNppGI7UGa9ptqVenFVFwev-/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "...Oh yeah, that's right.",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1E5evITMwSPyAI99ZmLAxYF99wGakDnsG/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "If he summons Kirin, then it'll be five on two... I totally forgot.",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/15OgBDRj6hMdLET9jaokh270wg6bZt-li/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "That's because you leave everything to me.",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/167nFXQGSAsqWHDpKHJpsHIY_As8990Iq/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Hey, that's just division of labor.",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/11jNnYh2vSMTs7PzLdK0kzz5pexp_tweW/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Wh-What the hell...?! I'm fine with being treated like a side character, but to be completely brushed aside like this...)",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/11U_ju_Bwq4mQC5y0rkgJg94CnUbdeIPT/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "So, you surmised that our target has a companion... Impressive as ever, Cid.",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/12srumaH4656UdRL8mDDlUm5Jtp5pFGPG/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "I'd like for the three of you to tell us everything you know about Wethermon and Kirin. Then Pencilgon and I will devise a strategy.",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1nSAbQyNyzUOEfJ1sFOxzwdOAOA6znDaK/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "You got it!",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1d9w0m67WdMYlvpD9KbX1c9zrSaPzw-eW/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...Sure looks like they're having fun stategizing. And all without a single thought for me!",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1F1roBEizZBovFMZo4lMuYqUMWAkGKTq3/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Boss man!",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/1wFXj6vfsl3igLenEVOQ3L6RWEsCZLmsX/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "My only friend is Delta, who wouldn't understand the meeting anyway... Good girl...",
-                "line": 64,
-                "url": "https://drive.google.com/file/d/1-Ro4za5RU5me_bYOJWtVkwQwHn3ufRwv/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Ehehe! Delta's on your side!",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/1Acm-DSa5td5hQzEf_pVnAvCWSG3ov7PG/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Not that I'm gonna roll over and take it so easy, though!)",
-                "line": 66,
-                "url": "https://drive.google.com/file/d/1dFleucjbTnnTD7-MO-ISWDF5AkiISNSw/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(They'll never know it, but I'm going with them on the Wethermon hunt! Count on it!)",
-                "line": 67,
-                "url": "https://drive.google.com/file/d/1ZakrnnRG3yxs5nwrZpA1u_14f1KLU3Id/view?usp=drivesdk"
-            }
-        ],
-        "e6": [
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "I wanted to hunt the monster with Boss man...",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/13NWjYYCAXsnzeoiBE7QKyBQ8iiqbH6c9/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Delta, this is a good opportunity for us. We need to do well here so that he'll recognize our abilities, if even a little.",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/1i-kDwsaelF8LtE1H2Qm2GFEX3I8gV-_G/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Alright! Then I'm gonna do my best!",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1Z8OnFDsqc9S8T3BzzjL4Ma9PXvcMkztu/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Even Delta joined them in the end... I knew that was gonna happen, though.)",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/1IR17MaAicalUpk6dgCZzMKcsQCldaqQO/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(But hey, are these really the same woods where I found that armored warrior? They feel totally different somehow...)",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1ByMNgSkfN0BCD2q69Lbv3WpoOuuCSWH8/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "The smell is really strong... He's close!",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/1_8pFDE-lC2saK6IpPLMSF820hHGOIeG3/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Guess it's about that time. Is everyone ready?",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1LdVgj5zsf1cmf9jQb4fun256XB95_NVc/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Yes, of course.",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/16_UGvrS0eLLsLwNteg8CIc8HIvyJDf74/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "If I wasn't, I wouldn't even consider trying this again!",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/18ZMOgE7FUhcB7Zc0RKz5u9xzpNHUVDD4/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Ahaha, you said it, Katzo!",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/1miWbmRde3wjFnIlLZixs7yWIZzohdbAt/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Grr... They're even starting to throw around this weird camaraderie!)",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/163Sdc9pgH2vkeV2BB-tszhi_H8G7TnWC/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "...There he is.",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1oBc_Wdxexi9T027eVvagZkLB9YrQtxF8/view?usp=drivesdk"
-            },
-            {
-                "name": "Wethermon",
-                "name_variant": "Wethermon",
-                "subtitle": "...",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1323ZGJVmpzAt2DuH92MvA1tttRiw3EYJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "So that's Wethermon...",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/1N_qg3SEaIHJFobpUAhxK6EOaM3R_bsL9/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Okay, Alpha, Delta. Shall we do this as planned?",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1L4GgBbqCJautkDcKUcb0mCbXXiSFn_uN/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Graaah!!!",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1gZ7x1_ZySgFZlWHkV802_aFUjm2SIufa/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Whoa, don't just charge straight in! The real fight begins once Kirin shows up\u2014",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1OAMU4Olhl4qZ9kMvqScCUQxMqZbYM7Um/view?usp=drivesdk"
-            },
-            {
-                "name": "Wethermon",
-                "name_variant": "Wethermon",
-                "subtitle": "...!",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1F3HwG_nUrFZNvlELUC-hCLEmxiAimSh6/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Mmph!",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/19HPZp1csvix2jLP3FIyQuAA9C7qWfCiI/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Huh? Is it me, or was that attack super fast?!",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1k7pPLVzDlyrqE3F-uwJVjgrJpvlxdncu/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "It's not just his speed... Something else was off just now, too.",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1qkBZqxTA2MOeDxuMIFKggSCfUSz20Qzh/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Right... He didn't say the name of the skill.",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1546ipuGY6nTMG8oBEhLOr3hJ-rjPD4X9/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Guess there's no hints this time. Definitely different from the original.",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1imvqP9xwJ79DR2ZYbkyiVYQg-2jMwT2Y/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Seems the whole no levels or stats thing also applied to Wethermon. But instead, he's been made much stronger...!",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1S7iWjSner1XMj3wRF7u2ua2PE-hup_oy/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Nevertheless, we're lucky you're here. Dodging such a masterful attack with no prior knowledge could not have been easy.",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1eipJZEvTTvYg6GjEDjzg0vtZuUk8jI5G/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Honestly, being able to evade just with what we told you is quite impressive...",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/1P-dwqkvuR505Q1-YyiuGlTvJxnmFZhFw/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Hold up, this guy was still as a rock a bit ago. Why's he suddenly all powered up...?)",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1W14MueY0HwjynZ64r3fmEpTogY687RZ9/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Wait... Could it be that\u2014)",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1zIi450MdSlCs-tv-aoXGyUSBusge5C5t/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "This thing's pretty rusty, but maybe it'd move if I fed it some magic...",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1FvXjgbv9nJlFLEQGqmiX7lK-05GJ15Xs/view?usp=drivesdk"
-            },
-            {
-                "name": "Wethermon",
-                "name_variant": "??? (Wethermon)",
-                "subtitle": "...",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1sWoMZ1ZZ9j3Ry6iRbgogaI8BwVE1LHYo/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...Hmm, nothing. And here I thought it'd be cool to have an armor-clad minion tagging along.",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/1o6hgBqahTGB1Vg49Umkq-_L1bD6RSHY2/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Oh no....It's all because I infused him with magic!)",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/1rqoj6NM2REoxUFGBwbDQZ6i2ycg3LqbA/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(This is not good...)",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1cXEFjJDatcNiBktKgE3tiIfL_aLhli9z/view?usp=drivesdk"
-            },
-            {
-                "name": "Wethermon",
-                "name_variant": "Wethermon",
-                "subtitle": "...",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/1NWrc1ouO1YeKRguSyVdVVRlCQhtfYXAB/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Is that...a horse?",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/1QjgxjeR7N3uwAbhi6x06i6B_-rMV4oUH/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "I get why you'd think that.",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1zVJb5c8Jfl6GT0_i7CRnM2XGcHWQdRSb/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "That's Kirin! Pretty much a dump truck with legs!",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/1oBVbZ4hbkIE8I4PvYxv_yl3x53N2SyS8/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "So this is the one...! Lady Alpha, let's take it down!",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1CJqpS1Mg_T8msIZ62EuesWbkzFOrjogj/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Yes, good memory! Though it feels odd doing so...we'll leave Kirin up to you two!",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1FHc9aUldrZS8R4tDdMIZOAZGdl9GmTn3/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Okay, we understand!",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1c8dKySngAqovkEWjcn-UQN6K_rYY4jBd/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Alright... So it's us three versus Wethermon, huh? Why does it feel like we're doing the heavy lifting?",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1tfN5pFUvBEIoW34i2cuSL3Qgy0CFqqVu/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Hey, not like we have a choice. We could also hold out until Alpha and Delta finish up on their end and come join us, too.",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1dkwjGBhLl8j7t0sWfTqblpR_4J0-4qOf/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Like you said, Sunraku, this is going to be hard. Let's stay focused!",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1jGG1G0SL1NX4RFuzsJHEtrIcQCUxFFZm/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Yeah...this is far from ideal.)",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1d04BB63cm-GFnCQX66MjB_LxyUv-9jQc/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Those three are pretty good, but Wethermon still has them on the ropes. And it's only gonna get worse as this fight drags on.)",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1Nst3dyUw-Jy8GQevE21gnEZ0k6sWt36U/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(You reap what you sow, huh. Which means, time for me to cut in!)",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1UUtCOd1gKmFYV6RRhNtUtE_d9HL72DO4/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Okay, he should be moving into the next phase anytime now...",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1irDxCW4pqt-TjlGT_xQDwKxn_kjR2Axu/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "So you'd think, but his motions aren't changing at all.",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1nFVt93057RIqV2UMsqwn-qbMrtnVTOry/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "So what's our play? Can't say I'm a fan of keeping up this dodge fest!",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1tlDZhvuXBFqFp2qO7KDnzs8eTDA9XSJN/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "...Travelers of this world. Are you in need of my power?",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1b22Rs9YhYyGKbVO0UZPa1YZvAZCdRq20/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Huh? Wh-Who the hell is that?",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1Q3EFLjKOTfvsKMObOAViBAu3H8168bLa/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "My name is Shadow... I lurk in the darkness and hunt down shadows.",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1UpJMT_3Ius7jqiO-Fy-WnEOItD-l7Aki/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Shadow...!",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/16Ls0SNMF7PJg7jIQy8rqwLEnesnCCz1R/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "A new enemy, now?!",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1azi4uquLOACu3EqsuoOFtK36-_ezGMUC/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "No, he's an ally. But why is he here...",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1PUHtOCtzJpmJJAFiVQpLJn36g5idyljo/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "...The answer is simple. You foresaw we'd have trouble and came to our aid, yes?",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1TfpAQALrzm8e_6UWe4KKer7sZ3BiofhP/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(It hurts having her even look at me! This entire fix you're in is my fault! Not like I'd ever say that, though.)",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1HAMOgN5xpVy5vK8WsLCPd95BKSiL-xXG/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Whatever the reason, I'm glad for any help now! I can tell you're strong, too!",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1evNgwakqGjuGkch414X6jrX-U6H4oPfo/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "The let us fight together. Alpha, Delta, stay on the horse.",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1QCkIcbHHFY8DvJ0HtrrEDNR7ExQlS2r3/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Got it!",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1CSCATW1NnClaDEeE8Ucaw6KoNbJnK0iU/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Of course\u2014and this time we won't need your help!",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1SEi3WitC7CbMtKN2dhrbVcYgGh6J0Any/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Shadow, right? The main thing here is to dodge. And then, when there's an opening, try getting in some hits, okay?",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1e8ZXtJDAP5BkrNe9U0OEQT8_kFdtcpHz/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Yeah, because he's not like when we fought him before. Think you can handle it?",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/1t8x1f1WBryzKyPwWClelNx7g9Cj-o2l2/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "Heh, of course. Now, follow my lead!",
-                "line": 64,
-                "url": "https://drive.google.com/file/d/1fUgIoeYzSB0r7KxQO3IjaVEFquir3dL7/view?usp=drivesdk"
-            }
-        ],
-        "e7": [
-            {
-                "name": "Wethermon",
-                "name_variant": "Wethermon",
-                "subtitle": "...!",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/1vcTnvL5kaGNrjrKhOa5a4Ci_12nlxlq-/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "A brilliant maneuver. But in my eyes, it's still much too...slow!",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/11GL5uWHXDVUNzGP8N_72f3rf4nZ3aVwi/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Whoa... Those are some clean dodges.",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1eRaLfBULiVe4enIY_ykYKpdR9NrM2D5M/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "He's maintaining perfect distance with minimal movement... This is no time for being awestruck, but I can't help it.",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/1zGrKChhk4NQqk3k0rwDbR2LrvGb0e3s3/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "...Odd.",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1Nr_Bw9zE9m4JVvSpVI1YehGpWiu-04mE/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "This Wethermon is different from the one we know in terms of both when he summons Kirin and the timing of his phases. It very well may be that\u2014",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/1zYM9116Gqm3z6GZV4vsjZocIuP3rPIei/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "The victory conditions are different from then too, right?",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1YPqfy0609HBKbGoADZWRFNvSy0qQRfaA/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Levels aren't a thing here, so it may be safe to assume that we don't need to do anything special to win, either.",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/1Yi48mzaiwQY6a4eTgXCjZfBPqSHwR3pq/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Huh. Meaning?",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/1cYRlD-1PnJLIzX6-vF0bBXHxs8FWvctn/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "We just hammer him until he drops!",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/1EbB7bffPRKOoK-IRssC1sJl1ILJTVnZX/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "I see. It helps when things are so simple.",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/16JcZVJSfEwzk3epZ3KX477ehDE34rPiq/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "We're the ones who'll be in trouble if this drags on any longer... So, we need to hit him all at once and end this fast!",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1l_AF8Uk4qWLhMmJmPtVVL3-wL7kqZOlc/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "So we can finally stop taking it and start dishing it out! Bashing our way to victory is what we do best!",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1r13H1dAshc9z7ZtiyE0dapSXncL2Xztu/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "Time to crash down on him like an angry wave!",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/1mQTrN0ssreufheWGNKyj9tzCs2MAC4-z/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Yeah! Just don't fall behind, Shadow!",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1DIQ2pKtoL0nN-pXgcrgCLaLKyk6g9p2U/view?usp=drivesdk"
-            },
-            {
-                "name": "Wethermon",
-                "name_variant": "Wethermon",
-                "subtitle": "...!",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1Xqr08ceuHFTozU6AuQT7vfD2cw8lvmzb/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "C'mon, get some! I'm right over...here!",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1rdaT6sxoW4enXV6DF1-mLhEpcZ5LK32N/view?usp=drivesdk"
-            },
-            {
-                "name": "Wethermon",
-                "name_variant": "Wethermon",
-                "subtitle": "...!",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1Dp6EaYhOdUAeCIToUXwXCYSaXG-ZhFy9/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "He's distracted! Sunraku, Shadow! Now!!!",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/1rVJgd5HKxepyycL0gD36eRPW-hh_xOtK/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Oh yeah, no need\u2014",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1Z2a13NGQk3xs0WTr_ywVqgwmaEqA4nhP/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "\u2014To tell us twice!",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1MK8n2IzRT7Hh02qF4c0cuSVCHj-AB_Rt/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku & Shadow (Sunraku)",
-                "subtitle": "Haaahhh!!!",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1gD--pQpRGejkQOkoqVa4Y6HBuqIDL1Ac/view?usp=drivesdk"
-            },
-            {
-                "name": "Shadow",
-                "name_variant": "Sunraku & Shadow (Shadow)",
-                "subtitle": "Haaahhh!!!",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1gD--pQpRGejkQOkoqVa4Y6HBuqIDL1Ac/view?usp=drivesdk"
-            },
-            {
-                "name": "Wethermon",
-                "name_variant": "Wethermon",
-                "subtitle": "...?!",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1mcYQ5Tbt0yoL-sm-LYQjZOk7SnhgdkKw/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "*pant pant* How was that?",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1SNxqyXj7zjrjeb_g7yUThP5jkYKtGte0/view?usp=drivesdk"
-            },
-            {
-                "name": "Wethermon",
-                "name_variant": "Wethermon",
-                "subtitle": "...Well done.",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1eMWW7ZYvxH3w_uYDYaPyCW4Hgl6lVmUy/view?usp=drivesdk"
-            },
-            {
-                "name": "Wethermon",
-                "name_variant": "Wethermon",
-                "subtitle": "Truly...splendid...",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/1bTpmyOPD_LP0dszCEQ2byZ1FFFu9MeKk/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "I know you're not the same Wethermon as before...but I hope you can rest peacefully again.",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1ct03aVJkODNCzZyvGdPkIHZt6gjLp6XF/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "...It appears you finished things up here, too.",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1jOaW2g8BuhDVmJFGyybMgEa0ANDN0SIF/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Oh right, Kirin...is just a big pile of scrap now.",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1srQAweHyV8o0HaUsrbvU95f3rXKOqWdd/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "For a horse it didn't look yummy at all.",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1Rob2eL_f37O3i6gqXnGrHpZ0XNQytzWE/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Looks like you two really know how to throw down.",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/1sr08B_yVhit349_hsBtBP1ZOLZyfyDdr/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "For us, this was nothing... Alpha, Delta, excellent work.",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/1tiRVhX4sHqIKc4quYEbkm-T9upNYahFJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Just who the hell are y\u2014",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1PEodJzwYlfNbfWbFIBpTW9uUNw8KnTjj/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "Woah, was that an earthquake?!",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/1njpqNvXXWseTjpMLM_lthACdYFx2JYWc/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "...This space is collapsing. It would appear Wethermon really was the key.",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/1XcRaWN8tmT9J3RbhmBsMrHDhfGevhNvA/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Oh, that means we can finally go home. Whew, I don't think I could take sleeping in the wild any longer.",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/15zI947P6gOikWodAXNe5FxTnaS2Y9QV2/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Anyway, we owe you all a big thank-you. For helping us take down Wethermon, too.",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/1NKaCFkIh666olDN8f-1C8fgntyLWKFit/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Heheh, that was super easy for me! Especially with Boss ma\u2014",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1ba7Zf7LjPpz-pJmQLxc54q2nDj4GDjPj/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "...Huh? Hey, Boss man is gone.",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1TKrub6gPmqKp_Mzsr07jLet4094wVwVU/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "I mean, he never came here with us to begin with, right?",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1eW4r3h08KhwP1AXVO3IujEfbA8b7-zBC/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "...True. But I'm sure he will return to where he belongs. Now then...stay well, you three.",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1pMZGfXOn7RUhGkMxheFA78B7YPCyz9o4/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Y-Yeah...hope to see ya around!",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1oWVDXlF4qTfZX2km5Av5_WXBOJPTouX0/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Ngh...",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1b2tKgi5SaQkvA4QizDjj8ApWVL2Rh1J9/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "My lord! Lady Alpha and Delta as well! I'm so glad you're unharmed!",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1h8S8Jg6eBOSDaFCnmmT32PR3ogo3lWJh/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Waaaaah!!! I was so worried about you all!",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1QRca8XPuBzdxYKHqi6KKhdnF3ezEiBv1/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "So, you were watching over us. But we're back, and with Cid in tow.",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1ayx0xtMjuJ7uzBuMpv1DTakuP7FYA3GC/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "What a relief... We need to be more careful about how we handle artifacts from now on.",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1nNLctYTQuF4VqyChPLjJvg7FUIbWKoIE/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Looks like these ones broke, though. As dangerous as they are, it's probably for the best.",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/11MHWOXlmAW01IoOpzGtF8umjno8OmCL8/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "I'll take...what's left of the artifacts... I may be able...to extract some useful data...",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1bP3hcOEU84u2gp5NzwssrJhcLihhDcNc/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Yipe?! I'm never touching one of those again!",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1KTByP5Am5CqVWShG-cqnrwKz-euhmO6S/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Good call... Eta, do take care in your research. Also, even if you repair the artifacts, you are not to make others use them.",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1gtNFCgM10EDpU4uJcngUdoyAwjlMlSCP/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Hmm...home sweet home, I guess.)",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1VuVF5PYCUzK_SwnjTFL4pvRresSIlJ3B/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(I got caught up in a bunch of stuff, but I had fun and that's good enough for me. Besides\u2014)",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1pHBByjN1_7ZCWwRhV91SQxZAj9UA_-mX/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "This is... Hey, are we home?",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/12AhwavnQfCIFH5FDCHn_OigKMy7Dw5h5/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Looks like it. Uh-oh, but it looks like our headsets broke.",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1fKspJpKTJp7M4_q7OcQSHp1akYdY36O5/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "I'm cool with that. Not like we're gonna use 'em again anyway.",
-                "line": 56,
-                "url": ""
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "...",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1vSz0hNlETqodjZrSIHwY99-qD8akMVVO/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Something on your mind, Sunraku?",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1-PWet8NC8c9KHj3_82Udkcv1vtTKB3HD/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Not really... But didn't Cid and Shadow seem kinda similar?",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1gUICQQX99hvdQboe8xPw2kOr02QEMt4A/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Then there's that \"boss\" Delta kept talking about\u2014",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1g76fGFEud1HNomIHVDZwPGB4wPOxsCXQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Arthur Pencilgon",
-                "name_variant": "Arthur Pencilgon",
-                "subtitle": "Ugh, just stop, okay. Yeah, I am kind of curious, but I'm too tired to think now...",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1Q-i3Qu1PHWrQogwx8uACiskziBeABrlG/view?usp=drivesdk"
-            },
-            {
-                "name": "OiKatzo",
-                "name_variant": "OiKatzo",
-                "subtitle": "True that... Between roughing it and Wethermon, I'm beat.",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1aX3lyt_INZu0oOkOp638xAjSNyz66Yub/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "Hmm... Eh, oh well. Guess I'll call it a day and stop sweating the small stuff.",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/113NBk8h2PKRAOMEf8NVd0GAXdLKypefl/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Sunraku",
-                "subtitle": "(That was a jam-packed experience but not-altogether-bad experience. Besides\u2014)",
-                "line": 64,
-                "url": "https://drive.google.com/file/d/1nVdBTmvAIw730q0EgCJYC663BpvPCtNT/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid",
-                "name_variant": "Cid & Sunraku (Cid)",
-                "subtitle": "(Fighting alongside those guys was really fun!)",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/1Os-uaWQJcU0aZkawi7j0Juf1VG4nTShV/view?usp=drivesdk"
-            },
-            {
-                "name": "Sunraku",
-                "name_variant": "Cid & Sunraku (Sunraku)",
-                "subtitle": "(Fighting alongside those guys was really fun!)",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/1Os-uaWQJcU0aZkawi7j0Juf1VG4nTShV/view?usp=drivesdk"
-            }
-        ]
+    "p1": {
+        "c1-2": {
+            "e1": [
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...Okay! Next!",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/1BBkkUmYnrJun8y7AXNRJHRcaZ704zSA3/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...Alright! Let's take a 30-minute break! Don't forget to stay hydrated!",
+                    "line": 2,
+                    "url": "https://drive.google.com/file/d/17LldR1uRk8NxyTqGPQ1RK6A-11boKhfO/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...",
+                    "line": 3,
+                    "url": "https://drive.google.com/file/d/1V7S_41GKBMyl2BiTmNuw0DPcGDloegzf/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "If the Shadow Garden grows any larger, securing enough training space will be a real challenge!",
+                    "line": 4,
+                    "url": "https://drive.google.com/file/d/1eGcAup2BGs3jKoAHHq5gtcyXt9NCwrFL/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Village...is cramped...",
+                    "line": 5,
+                    "url": "https://drive.google.com/file/d/1iXcU1965ouUT3ArpStgahregObUjyV9N/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "That's right! Cramped!",
+                    "line": 6,
+                    "url": "https://drive.google.com/file/d/12kZUK49qUy8PBiGbl-NoaqlON0VAoa1r/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "I'm happy our pack is growing! Not happy it's getting cramped!",
+                    "line": 7,
+                    "url": "https://drive.google.com/file/d/1X9jbGYdXkEee2jyuW7vmFtMSQAhKNZp7/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "True, I'm not happy about it either. It's starting to interfere with Lambda's training of our members.",
+                    "line": 8,
+                    "url": "https://drive.google.com/file/d/16dG8YpEwZR8OLWVWkkLM1mMEMpz-pDjz/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "Hey, Epsilon! Don't copy what I said!",
+                    "line": 9,
+                    "url": "https://drive.google.com/file/d/139mCttnC2fFwr18yFRu_jkYbXwpCij3k/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Huhhh...?!",
+                    "line": 10,
+                    "url": "https://drive.google.com/file/d/1gMasvxcus_h_r-1TKNobUSuhNV07BvyW/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Based on my calculations, this ghost town will become a fully thriving village in a month...if our numbers continue to increase at the current rate.",
+                    "line": 11,
+                    "url": "https://drive.google.com/file/d/1bbkufOrO2mPXTtjF0Gllp6Py54cxAcKs/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Available living spaces are also running out. We're fast approaching a situation where we can't keep our presence here a secret any longer.",
+                    "line": 12,
+                    "url": "https://drive.google.com/file/d/1Y8Ofp6vXmx8aJ3K3ymYnZ1Q9EbRJCRi2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...",
+                    "line": 13,
+                    "url": "https://drive.google.com/file/d/1YPPE-J-undjbTkQCv8Iy8n1hDUwF2sdx/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Lady Alpha!",
+                    "line": 14,
+                    "url": "https://drive.google.com/file/d/16MqTKVmSafvp5LS5ysI_lTvncIqc5MmE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "It looks like we can't wait for Zeta any longer. She'll return today, so we'll narrow down the list of potential new locations for our base when she gets here.",
+                    "line": 15,
+                    "url": "https://drive.google.com/file/d/1lWbHTYRco53Hx91js57qyoNdLVuw1bjl/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Well then, let's adjourn the meeting until Zeta returns.",
+                    "line": 16,
+                    "url": "https://drive.google.com/file/d/1wE_nbCaiDkLleiDznRtjMHZ6FICVi3Mt/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "...Fine...I'll sleep...",
+                    "line": 17,
+                    "url": "https://drive.google.com/file/d/1Xw87d1mlw3FTV9flkUnTwunkAw9VLksI/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "Always asleep like a log, aren't you?",
+                    "line": 18,
+                    "url": "https://drive.google.com/file/d/1eQEUlvjvZEzjjPJg23KTFnWQMm29m-_J/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "But Delta, you usually sleep through meetings too...",
+                    "line": 19,
+                    "url": "https://drive.google.com/file/d/1jQMIUJFtNuoHt9p0aADTe2rIfRz094MQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "If you're so jealous, why don't you copy me?",
+                    "line": 20,
+                    "url": "https://drive.google.com/file/d/1HfjG4VW4OpBH2_8YPGLkKPKmK2Ou8Eyj/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "I hate people copying what I say, but I don't mind if you copy what I do! I'd be honored!",
+                    "line": 21,
+                    "url": "https://drive.google.com/file/d/1c7w2gwF-Bo9XSZOmJ9EtAB56D8FCP9Dl/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Um, well... I think I'll pass on both!",
+                    "line": 22,
+                    "url": "https://drive.google.com/file/d/1Sru4h4bhWq2_uw8zaeCwiL7wmkbVAokQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "...I'm home.",
+                    "line": 23,
+                    "url": "https://drive.google.com/file/d/1DI0AhuqwlYNOBQZQrXry5nmFxyOzeWsb/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "Oh, the cat returns.",
+                    "line": 24,
+                    "url": "https://drive.google.com/file/d/1hRxTrsmOmO8NPtHXtlTy7aODc14OVaN8/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "Were you in the middle of a meeting?",
+                    "line": 25,
+                    "url": "https://drive.google.com/file/d/1AWnedvzYXFH06EaIbx-1YaGbr9PSakNp/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Welcome back, Zeta. We were just taking a break.",
+                    "line": 26,
+                    "url": "https://drive.google.com/file/d/19KfBdWZWbQnB0HxSGObX7PJsW5XqF46Y/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "The plan was to reconvene as soon as you returned. It's up to you\u2014would you like to rest up first?",
+                    "line": 27,
+                    "url": "https://drive.google.com/file/d/1mOcgvjlK2BPYruLDEy14VdpJGC9cR68R/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "No, we can get started immediately. With all the time I had, I managed to find a promising location.",
+                    "line": 28,
+                    "url": "https://drive.google.com/file/d/13AkuKVx1sPqMTFkxAQkIceCvKtJ84TRR/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Good house...where?!",
+                    "line": 29,
+                    "url": "https://drive.google.com/file/d/1QgRMp3dfYRIiywHnDsoLamey80HJBicY/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Well then, shall we resume the meeting, Lady Alpha?",
+                    "line": 30,
+                    "url": "https://drive.google.com/file/d/11Pw0JtJbQGiWboJbhC_T5OBmQao7xMeE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Very well. So Zeta, where is this promising place?",
+                    "line": 31,
+                    "url": "https://drive.google.com/file/d/1wHOhqYYoSNiCw5Zk3VfDeA4-hlVokAXx/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "...The ancient city of Alexandria.",
+                    "line": 32,
+                    "url": "https://drive.google.com/file/d/1TZ5qdsRiwTv_Omnfewlj6Tqe5HWcZVHh/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Alexandria? I've never heard of such a place.",
+                    "line": 33,
+                    "url": "https://drive.google.com/file/d/15gIvgf8yhMHZs4z7Wr_-rQTOqosEY_Mf/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Neither have I. Have you, Beta?",
+                    "line": 34,
+                    "url": "https://drive.google.com/file/d/1WgcO3CReo6Za1WQCXQJWJr5IoQjDm_on/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Um...yes, to some extent.",
+                    "line": 35,
+                    "url": "https://drive.google.com/file/d/1fndLPN-3BHhCBQCrX749MnJ_i2zA47pZ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "It's described in ancient legends as a city that exists far to the east of the Sacred Land of Lindwurm, beyond the Abyss Woods.",
+                    "line": 36,
+                    "url": "https://drive.google.com/file/d/1tJ1_A_sbPJ9RZtBVE9EQkOfmhYftDDg5/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "However, it only appears in legends and folklore\u2014its existence is yet to be confirmed.",
+                    "line": 37,
+                    "url": "https://drive.google.com/file/d/1GohHDkKjjUdEXdp-U9VbLT3ST4UYDEt5/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "This is because the Abyss Woods itself is said to be filled with a deadly mist, and those who enter never return.",
+                    "line": 38,
+                    "url": "https://drive.google.com/file/d/1d3Q2sOY3FjG2nddhH5SEdFdoOdZmivl8/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "But that makes it the perfect place where no one will disturb us. Even if there is no ancient city, I think it's the best candidate for our base.",
+                    "line": 39,
+                    "url": "https://drive.google.com/file/d/1dYBYKbFpftXGanfz-hpEd7Zp9SES-USg/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Of course, it's important we find a place where we won't be disturbed, but...",
+                    "line": 40,
+                    "url": "https://drive.google.com/file/d/1GSRqviblctqnwdBmLZDdl6Gh6R5hiAq-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...",
+                    "line": 41,
+                    "url": "https://drive.google.com/file/d/1Ro8IKp6oNKfOiUE-eZitfMFWldespaMA/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Lady Alpha?",
+                    "line": 42,
+                    "url": "https://drive.google.com/file/d/1ut8fqpdq0xz-Ue1g-tv8MR69ykMB5-s8/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "\"Beyond that heavy mist lies the land of shadows where we must rise\"\u2014that's what he told me.",
+                    "line": 43,
+                    "url": "https://drive.google.com/file/d/17Apg6WYXY3U61N79kS1VAyZmUhgcvymP/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Wait, did Master Shadow...reveal to us that the ancient city of Alexandria is a suitable location for our base?!",
+                    "line": 44,
+                    "url": "https://drive.google.com/file/d/1NJTj2pi-dzaf69rVUt865lspMW3WQUm_/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "So...Alexandria really does exist!",
+                    "line": 45,
+                    "url": "https://drive.google.com/file/d/1eBwDZXMBMx9iD2TT5UjeuckcckJCwjY-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Then the choice has been made for us.",
+                    "line": 46,
+                    "url": "https://drive.google.com/file/d/1gmD6rY0PHd1ZElhwtsDG9b_CxflcOE3G/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "We'll need to prepare to travel through the Abyss Woods and investigate the ancient city of Alexandria beyond.",
+                    "line": 47,
+                    "url": "https://drive.google.com/file/d/1kNDuCZfSA1ORhTaRP6QUlO2o6XvOn_75/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Agreed. In the following days, let's gather our battle-ready members and prepare for travel.",
+                    "line": 48,
+                    "url": "https://drive.google.com/file/d/11x984xixTEGbutpAD3IND_I7N4ZwrRnz/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "Ooh! I know! That's what they call a \"picnic\"!",
+                    "line": 49,
+                    "url": "https://drive.google.com/file/d/1GhyEne8tYn2sHuU1LaWO6q0TeAYQO2RB/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "I'll...pass...",
+                    "line": 50,
+                    "url": "https://drive.google.com/file/d/19zMqYAygmyHXvfP5YpWO9C0YMQrZJ7-6/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "Delta mentioned something about everyone going on a picnic when she dropped by the other day.",
+                    "line": 51,
+                    "url": "https://drive.google.com/file/d/1Ys7BHHblFVZNNy2bUzPbwofbD36Mwq2J/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "A picnic? Oh, she means investigating our new base.",
+                    "line": 52,
+                    "url": "https://drive.google.com/file/d/1NDlqFHtxdZ-Tmu-XY1fHM15qUNCk2R4i/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "If the Garden is always by your side as we begin to launch full-scale operations, we may inadvertently reveal your existence to the world\u2014and to the Cult of Diablos.",
+                    "line": 53,
+                    "url": "https://drive.google.com/file/d/1Eu7ZVKg-LZTXDkiRaLutXjSI4EAWTrwJ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "We plan to prevent this by moving the Shadow Garden's base to a secluded location...deep within the Abyss Woods.",
+                    "line": 54,
+                    "url": "https://drive.google.com/file/d/10XBseraIHYNMh9DTNLS9wXVVCun_821D/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "So that's the excuse you're going with just to exclude me...",
+                    "line": 55,
+                    "url": "https://drive.google.com/file/d/1z6SCGIcrcNO15zEJhSPjeM8u0_s_AT1h/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Cid? Is something wrong?",
+                    "line": 56,
+                    "url": "https://drive.google.com/file/d/13JWTyxycfYr7p7HIoYVuFNwE7Y68w4o4/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "Nope, nothing.",
+                    "line": 57,
+                    "url": "https://drive.google.com/file/d/1TeZK9wsIksqc1htqaijeO0QI53y8y4Nk/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Our one concern is the folklore surrounding the Abyss Woods. It speaks of a transcendent being known as the Mist Dragon.",
+                    "line": 58,
+                    "url": "https://drive.google.com/file/d/1kxnHS7B4xR0jmkrF4AdFBbc-gtk8vTCO/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "I doubt we'll encounter an actual dragon...",
+                    "line": 59,
+                    "url": "https://drive.google.com/file/d/1lPA4CQFiDwT3is8rNF-sgvtp9nVYqzN1/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "But it may be a metaphor for some powerful monster, so we intend to proceed with caution.",
+                    "line": 60,
+                    "url": "https://drive.google.com/file/d/1ZNFO5WBaAENjKYXN8nGmAcjCXPCHMPPV/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "A dragon, huh...",
+                    "line": 61,
+                    "url": "https://drive.google.com/file/d/1uaFIH7vSh15B7vWAgNx5JraxclJV76e4/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(Sounds like things might get interesting. Think I'll check what Alpha and the others get up to without crashing their girls\u2019 picnic.)",
+                    "line": 62,
+                    "url": "https://drive.google.com/file/d/1RCmck6iIYeXibw5eVCkdYMqRl_3xOxUV/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(Not that I don't understand why they wouldn't want to bring a boy into the mix at a girls-only picnic...)",
+                    "line": 63,
+                    "url": "https://drive.google.com/file/d/1gCimCm_97msiI4u1GFZ6DZLMVuC0BXZF/view?usp=drivesdk"
+                }
+            ],
+            "e2": [
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Take this!",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/1W6WTPprygzWkxc5uOiD51sSTdnnN09sh/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Whew... We did it!",
+                    "line": 2,
+                    "url": "https://drive.google.com/file/d/1VWmhmSYbnJ_eibnE6cblSOAPAC4HpjH1/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "Jeez, what a weakling!",
+                    "line": 3,
+                    "url": "https://drive.google.com/file/d/1ZBPU4kLe2T1R-JTExQtIkRfyBYc5zdTQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "Thought they'd have more backbone living in such a dangerous forest.",
+                    "line": 4,
+                    "url": "https://drive.google.com/file/d/1nninQl6YzRGwgACtfpqP6xHqSGRu0SQO/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "True, the monsters are displaying fewer signs of mutation than I anticipated.",
+                    "line": 5,
+                    "url": "https://drive.google.com/file/d/10yuAjRbZmuix43x-4yiX0U_AJ0r0T7Ju/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "Mutation?",
+                    "line": 6,
+                    "url": "https://drive.google.com/file/d/1tXpzKjMAkHHt3Cs49WE7s5d9FqoRb1_l/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "...Um, explain it a little simpler!",
+                    "line": 7,
+                    "url": "https://drive.google.com/file/d/1gqgmwVuyLOSeDAwx_iBHV8el9J2Qo-lq/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Let's see... The Abyss Woods is overflowing with poisonous fog.",
+                    "line": 8,
+                    "url": "https://drive.google.com/file/d/1iSQJEZ5Fh-DEk-ZFqUmbEM1G8BED-f45/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "We've been trying to avoid it as we make our way through the woods.",
+                    "line": 9,
+                    "url": "https://drive.google.com/file/d/1KI05Fn_WrtOFbCMwCGZTIGIYD8-5z1vo/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "But the monsters we've encountered haven't adapted to the fog and live their lives avoiding its poison.",
+                    "line": 10,
+                    "url": "https://drive.google.com/file/d/1JTubQNTZqcxqPa42FiGcxQuGL0xcS1bm/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "In other words, the fog hasn't been around for long since the monsters haven't had enough time to adapt to it.",
+                    "line": 11,
+                    "url": "https://drive.google.com/file/d/1HnYYMFy4P00NDKRSwdMK49EIDxYuk9ES/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "If the monsters haven't adapted...does that mean the fog isn't natural?!",
+                    "line": 12,
+                    "url": "https://drive.google.com/file/d/1Y9nIWdEH1T74QxpDByoVLQKwkL5URo6G/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "How unusually perceptive of you, Delta. Yes, that's most likely the case.",
+                    "line": 13,
+                    "url": "https://drive.google.com/file/d/1cYiS69lPKreZA4NIoCfWcIbV6oDnpaNy/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "Course I am, Gamma! Can't hunt without knowing the ways of nature!",
+                    "line": 14,
+                    "url": "https://drive.google.com/file/d/1t6DmB_HcglrSc6d3EpGIlZgPOz0uY_TT/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "You didn't even know that being so smart? No wonder you're still a weakling.",
+                    "line": 15,
+                    "url": "https://drive.google.com/file/d/1f6UBB1AilVnVnBbF0YeqhiwMkITyWyV2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Ouch... Anyway, we should assume some singular entity deliberately created this fog.",
+                    "line": 16,
+                    "url": "https://drive.google.com/file/d/1JYoNWUqyOMd6IzMLwwSjF-uoZPXGU5y9/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Are you suggesting this singular entity is the Mist Dragon described in folklore?",
+                    "line": 17,
+                    "url": "https://drive.google.com/file/d/1kPwxNmT7yUu25rEdeB4rjBqB-4xcsMYU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "I'm not so sure about that one. Legends are just legends, and folklore is no different from gossip until proven otherwise.",
+                    "line": 18,
+                    "url": "https://drive.google.com/file/d/11ZaGLjOjuCGHoXAAssX0FwAglx_ZV9vq/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "But the fact is there are records, and we're witnessing the poison fog first-hand...",
+                    "line": 19,
+                    "url": "https://drive.google.com/file/d/1XMv9VOOK_pIGV-Wg7LbxZMCLs9v1xfK6/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "It's pretty clear that whatever lives in this forest is no joke.",
+                    "line": 20,
+                    "url": "https://drive.google.com/file/d/1mj5V6r_X3X2GXv1M8G1D-W9xAKQIz14-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "All the more reason to use these woods as our hideout.",
+                    "line": 21,
+                    "url": "https://drive.google.com/file/d/15AXMYScRvcTeVwIkls2DB_MR-fPFFh8B/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...",
+                    "line": 22,
+                    "url": "https://drive.google.com/file/d/1se2K4lCQeU99Ox7lZT1r0EnN1QkpIJq8/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Even the Seven Shadows seem to be on high alert.",
+                    "line": 23,
+                    "url": "https://drive.google.com/file/d/1QQ-_3mGhEFm3jVm8boKG-LACONBSGu2w/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Far better than treating this as an excursion.",
+                    "line": 24,
+                    "url": "https://drive.google.com/file/d/1O7n6AsqiQuxb4a9NfI_ClekuykkatS-9/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Especially Delta... She instantly perceived these woods to be dangerous. I'm sure her sharp intuition will be invaluable here.",
+                    "line": 25,
+                    "url": "https://drive.google.com/file/d/1UALVN92sxbGYBwDcPgAqxPHXN722Ztwr/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Based on Lady Zeta's preliminary investigation, I've made all possible preparations, bringing along enough members to the extent they won't get in the way. But\u2014",
+                    "line": 26,
+                    "url": "https://drive.google.com/file/d/1-_DA72GFNQR8eIT0XfeFfPM9CY9xN-q1/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Heh... Are you uncertain, Lambda?",
+                    "line": 27,
+                    "url": "https://drive.google.com/file/d/1Vpdhfn44mIjRxUcHBFBDTnOTgkCN5fmD/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "It's my job to tackle uncertainties and prepare for eventualities by training members and organizing our units.",
+                    "line": 28,
+                    "url": "https://drive.google.com/file/d/1GPsizVJoXraRitJ2BAaok9-UT6Q6NBd1/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "I know this is slightly off topic, but may I ask you a difficult question?",
+                    "line": 29,
+                    "url": "https://drive.google.com/file/d/101vcElMf368CJ5_6q3x0xNZA2GwSd4a4/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Difficult or not, I'll answer any question you have.",
+                    "line": 30,
+                    "url": "https://drive.google.com/file/d/1ATDRrJCWURK9DoYf_EY2C2QX59rBBqRl/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...",
+                    "line": 31,
+                    "url": "https://drive.google.com/file/d/1p9YnHiZPCS5oNX-4HTJcZO-Me6PtsMCF/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "As someone likely once involved in high-ranking military service, what do you think of the Seven Shadows' swordsmanship?",
+                    "line": 32,
+                    "url": "https://drive.google.com/file/d/1aC-nP5OzGGUUa_ERF_8sdM3rykG-csWU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...Well.",
+                    "line": 33,
+                    "url": "https://drive.google.com/file/d/1JyZZdVCnbEy0F7dXHc0ylS3EneOVJbxy/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "If I can give my honest opinion, putting aside individual abilities, I feel there is some imbalance.",
+                    "line": 34,
+                    "url": "https://drive.google.com/file/d/1cl3SegSWRYyPnsov3dQerEmwkDqgZ8OD/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "I'm told Master Shadow originally trained each of the Seven Shadows in the sword.",
+                    "line": 35,
+                    "url": "https://drive.google.com/file/d/1j2C58tSxZH_hhrkAHGkgUEjGU4FqcXRG/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Shadow had me and Beta train in his own style of swordsmanship using a blade similar to his own.",
+                    "line": 36,
+                    "url": "https://drive.google.com/file/d/1xhjgZ-4mvswXW34dkio5VupKB6TQTVHp/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "But after training Gamma and Delta for some time, he changed his instructions and had each of us develop our unique styles, and then stopped actively teaching the sword.",
+                    "line": 37,
+                    "url": "https://drive.google.com/file/d/1a-YQas17eec1zjTfOH9VmOUTOZid45uC/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Because of that, each of us has come to use our preferred weapon.",
+                    "line": 38,
+                    "url": "https://drive.google.com/file/d/1TFdUQk5WmJ9MtiwTxyROYxvEJJNd0ZH7/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "I see... I don't know if that's the cause, but I have some concerns, especially regarding Lady Epsilon's swordsmanship.",
+                    "line": 39,
+                    "url": "https://drive.google.com/file/d/1zpJcwNt4IFFpnc2Uk-fvwNrqG3A2LyMg/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Perhaps it's due to her creativity...but unlike the swordsmanship Master Shadow taught the other Seven Shadows, her style appears self-taught, with an emphasis on magic control.",
+                    "line": 40,
+                    "url": "https://drive.google.com/file/d/1OMOq6BVZPgLerq60nKI6BQYfe8F3XPmI/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Lady Epsilon's swordsmanship is unique to the point that anyone knowledgeable in the sword can recognize it at a glance.",
+                    "line": 41,
+                    "url": "https://drive.google.com/file/d/13SiGk5jfbYDpJdwLnU_Gkq65R0QFv0sb/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "As for Lady Gamma and Lady Delta, their swordsmanship is far too primitive and reliant on brute force. They could both use some form of retraining...at least in my opinion.",
+                    "line": 42,
+                    "url": "https://drive.google.com/file/d/11JrYDlSGqoqieu0-bR56xiBFah8wXBcd/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Shadow must have anticipated and factored in such stylistic deviations in their sword technique. After all, everything he does is part of a greater design.",
+                    "line": 43,
+                    "url": "https://drive.google.com/file/d/1qexuF1pNCPY9KpKYuyr8GXMTSpKfTwXF/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Still, as members of the Shadow Garden, it\u2019s an absolute requirement that the Seven Shadows train in Shadow's swordsmanship.",
+                    "line": 44,
+                    "url": "https://drive.google.com/file/d/1A42ov_ip-o3ygvw9SJljJ4rFax6rLq2W/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Thank you, Lambda. I'll continue to rely on you for such matters.",
+                    "line": 45,
+                    "url": "https://drive.google.com/file/d/1uZtZv0JrAE1imSqN8kdfX0xW2CAGkw8s/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Of course. That is what I'm here for...",
+                    "line": 46,
+                    "url": "https://drive.google.com/file/d/1PUsXU9LlrCoHp7Nvh88BGTRKhMz3dA5c/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "To serve Master Shadow and the Shadow Garden.",
+                    "line": 47,
+                    "url": "https://drive.google.com/file/d/1V9HuN-dEwx46A4EsVuJVde7As2a8IJCo/view?usp=drivesdk"
+                }
+            ],
+            "e3": [
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "I'm picking up on something strange.",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/14PV-O7xK85zMbmVKuStyRwt2b2d-GMej/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Epsilon?",
+                    "line": 2,
+                    "url": "https://drive.google.com/file/d/1_vpc-rjvXUvLCLkQCYZ4v3kmA05N0mnx/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "I can faintly sense it as well.",
+                    "line": 3,
+                    "url": "https://drive.google.com/file/d/19Rn_nR6T_KpG9IsRC3yEZUeYeM78kWVL/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "It feels as if...something is bending space. Epsilon, can you pick up on anything more?",
+                    "line": 4,
+                    "url": "https://drive.google.com/file/d/1xBpTBsGNyTKzV-7fBuvuYS5HF68iO9-i/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "I'll give it a try.",
+                    "line": 5,
+                    "url": "https://drive.google.com/file/d/10KGB5opQ-PkQQfFxTsgr4mp5vja6Iedf/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "...",
+                    "line": 6,
+                    "url": "https://drive.google.com/file/d/1EVhEMJFTp11okydqaYcCTbSnjib9F3cX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "It seems a powerful magic barrier is obstructing our sense of direction.",
+                    "line": 7,
+                    "url": "https://drive.google.com/file/d/1V3A2BAleR32aJvtj2FwDPuee_8ARMS6G/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "You're saying someone is blocking us from advancing?!",
+                    "line": 8,
+                    "url": "https://drive.google.com/file/d/1TBReDqO0cNWxkJWEZLituV_ROXjzlP7S/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "...Guess that means we're getting closer to the center of the Abyss Woods.",
+                    "line": 9,
+                    "url": "https://drive.google.com/file/d/1Zonh2UOMsJIecKsw7DVROQ7k7USyurlG/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Zeta's right. We're on the right path, and someone or something out there is trying to stop us.",
+                    "line": 10,
+                    "url": "https://drive.google.com/file/d/1kkC113E-1QxzMsR-qzq_0BS96x5iDi0z/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "I smell something strong over this way.",
+                    "line": 11,
+                    "url": "https://drive.google.com/file/d/1lnf7DA9yB4OBaKiFndKDg-zc5dQGTeN_/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "Doggo, quit breaking formation\u2014",
+                    "line": 12,
+                    "url": "https://drive.google.com/file/d/1kfHWBKbfXGifpNNf4gpe4HNQhsIEy8BJ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "You really can't smell it, cat?!",
+                    "line": 13,
+                    "url": "https://drive.google.com/file/d/1LQimVuk1XH9YcHUN1IFuoVr0_OS_KwCs/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "Hmph!",
+                    "line": 14,
+                    "url": "https://drive.google.com/file/d/13w5q4PMihXT-31lYBEQjNPhtjm220wom/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "She's right! There's something up ahead!",
+                    "line": 15,
+                    "url": "https://drive.google.com/file/d/17QKZv8twkCzbzqEVsO4wtA1fFVqesDP3/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "But what immense power... Alpha!",
+                    "line": 16,
+                    "url": "https://drive.google.com/file/d/1sHb6cVt2cc4WUUcICU6FBGUdNkv0Fhe0/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "It must be something considerably dangerous if it's enough to unsettle you.",
+                    "line": 17,
+                    "url": "https://drive.google.com/file/d/1ZqFHkHuP2uUkF2B-h0GPWqo3pKdw1xhu/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "Let's get closer and take it out! Whatever \"it\" is!",
+                    "line": 18,
+                    "url": "https://drive.google.com/file/d/1imVd1fYA5vn3-nQGa0wzhEy2LljjhgrX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "Dumb dog! Quit prancing ahead on your own!",
+                    "line": 19,
+                    "url": "https://drive.google.com/file/d/1gibl-xQiJqCkkEIgJLXvo_A8Uus3RBq-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Both of you! Come back\u2014",
+                    "line": 20,
+                    "url": "https://drive.google.com/file/d/1L8UAx6AswmiW0GwHQiw2TVBXsEwtAKqQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "No, let's have them go first.",
+                    "line": 21,
+                    "url": "https://drive.google.com/file/d/1GsiCRwwifg6484WcMi48qIwsGSx70WoN/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "We should trust their wild instincts rather than rely on our distorted sense of direction.",
+                    "line": 22,
+                    "url": "https://drive.google.com/file/d/1WoP8HFFGUUyo1jix0yTJauGkHGxtA4AN/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "But we don't know what awaits us ahead!",
+                    "line": 23,
+                    "url": "https://drive.google.com/file/d/1PSrywbKf7U2WIsrGBxEodHXykP11URF5/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "We seek the Garden's new home\u2014turning back is not an option. However...",
+                    "line": 24,
+                    "url": "https://drive.google.com/file/d/1mWPdqIv-yDlR9-LYAYFaZD9ygG9lB1Yh/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Lambda, you take the other Garden members and head back. If we don't return within three days, inform Shadow.",
+                    "line": 25,
+                    "url": "https://drive.google.com/file/d/13mcOMHb0XhkM4apjC1-93sAqvQGRINmI/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Lady Alpha...",
+                    "line": 26,
+                    "url": "https://drive.google.com/file/d/1tUIwC5-zBotcuvcXFtWG_FIjix0tlzNh/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "We face an opponent with unimaginable power. We can't be certain the others will stand a chance.",
+                    "line": 27,
+                    "url": "https://drive.google.com/file/d/1_FRh2HNJxGAmWteBa1eFP0AqRijurX_p/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...Very well. We'll withdraw immediately.",
+                    "line": 28,
+                    "url": "https://drive.google.com/file/d/1x70B82cUUBx4o1MT51viadkQz4JX-xKP/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Travel safe, and give Eta my regards. We'll pursue Delta and Zeta!",
+                    "line": 29,
+                    "url": "https://drive.google.com/file/d/1ESJTApu6xwBdczTEmL4W-xap14of-Ruw/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "May you prevail!",
+                    "line": 30,
+                    "url": "https://drive.google.com/file/d/19nMY9cyZjKs0JR29srPnuAgelfZu6Jt7/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "That thing...is huge!",
+                    "line": 31,
+                    "url": "https://drive.google.com/file/d/13wj0qTlasCuoagT6NO4jtGuGPRfHQEiA/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "So...it is real!",
+                    "line": 32,
+                    "url": "https://drive.google.com/file/d/1Qbf19CGAmBuFYBbWUQDWXJ_cFFipMGRB/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Delta! Zeta!",
+                    "line": 33,
+                    "url": "https://drive.google.com/file/d/1yoiBE_tKy1mZqoJEEpszQKDx1BbCffy-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Oh!",
+                    "line": 34,
+                    "url": "https://drive.google.com/file/d/1CubcgdvII8YgeXhQUc1oU7_onsBpB2hi/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "??? (Mist Dragon)",
+                    "subtitle": "Who awakens me from my slumber...",
+                    "line": 35,
+                    "url": "https://drive.google.com/file/d/1aHVodu00IFIYvsBf8sXK2oX7HSAni_I2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Whoa!",
+                    "line": 36,
+                    "url": "https://drive.google.com/file/d/15E-Att9bddroJtEc6E6U_vcH9iPJzmBN/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Wh-What incredible magic force!",
+                    "line": 37,
+                    "url": "https://drive.google.com/file/d/1mFiTlHd2FHVNXPI6FEfx1tbpO7CR73Fu/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "A surprising turn of events. They all look stunned, not that I blame them.",
+                    "line": 38,
+                    "url": "https://drive.google.com/file/d/1rIkizzZmMhYnnxEc5Z6A0c95TduFGaYg/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "The Mist Dragon!",
+                    "line": 39,
+                    "url": "https://drive.google.com/file/d/1K1UFtlWo9ZLch5GyJZ4tXSemUy8Uotkx/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "There were those who once called me that...",
+                    "line": 40,
+                    "url": "https://drive.google.com/file/d/1XbdHQQ1FtaPn7PnJxCFxOA5kFu7bDzA0/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "But all have perished with the passing of time and within the mist.",
+                    "line": 41,
+                    "url": "https://drive.google.com/file/d/1AELc4vkgjC4lb1BJl24bvptdElLJFjY2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "The ancient city of Alexandria as well?",
+                    "line": 42,
+                    "url": "https://drive.google.com/file/d/1i68vfzKLahzl5jWgNePZqc1DbMWiIoVZ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Beta?!",
+                    "line": 43,
+                    "url": "https://drive.google.com/file/d/1_fSiMcFLnXUNaR7LBB-Mt8QfWdzDxRua/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "...",
+                    "line": 44,
+                    "url": "https://drive.google.com/file/d/1xI2dfg5_1Zl5s8wrDNftlZd37N6_bgAb/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "You would rather seek the truth of a city lost to the shadows of history than the fate that awaits you?",
+                    "line": 45,
+                    "url": "https://drive.google.com/file/d/1hwgrKtW-HSsEXnI8qiGa-3gQMoN-Hl9M/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Even if you were to know, you would still die here without ever having told a soul.",
+                    "line": 46,
+                    "url": "https://drive.google.com/file/d/1jfC1wk5pJZeLIsu4udaN6x7oMp7l9nh3/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Still, I'm so curious!",
+                    "line": 47,
+                    "url": "https://drive.google.com/file/d/1QThxzfYGxZEMww1x7G-14PLrAVLE-Bl8/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "I couldn't gather much intel, but I'd like to use this opportunity to confirm if what I do have is correct!",
+                    "line": 48,
+                    "url": "https://drive.google.com/file/d/1lpAVTt-ZSCWLST8VZTwD008Qaodg4QX0/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "You would prefer that I corroborate your information? Haha! Fascinating!",
+                    "line": 49,
+                    "url": "https://drive.google.com/file/d/10CDSjKOqgAq9az3r17_-DcZH2J9tDi1I/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Very well... I suggest using the time I speak to figure out a way to outsmart me!",
+                    "line": 50,
+                    "url": "https://drive.google.com/file/d/1r1hQv5mM7CSE7cVk7sg8_vuq6wIdtrAb/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "What the heck? Turns out they both just like chit-chatting.",
+                    "line": 51,
+                    "url": "https://drive.google.com/file/d/15N4xKP4jvqFLhkB913Fs0LCM9G2EXhnC/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "Shh! Keep quiet, you dumb dog!",
+                    "line": 52,
+                    "url": "https://drive.google.com/file/d/1w8vZD_lj53tO_fvsmkOkbE6ClNtPBiCI/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Some legends say the Mist Dragon ravaged the prosperous city of Alexandria, laying waste to it in a single night.",
+                    "line": 53,
+                    "url": "https://drive.google.com/file/d/1xqTL46MWaa_znQhz-lUMmF-aOfyR-RoE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Others say it was the guardian of Alexandria who made a pact with its king before betraying him and engulfing the city in poison mist.",
+                    "line": 54,
+                    "url": "https://drive.google.com/file/d/1VhMQ9vvmbC0Ew-M7wCTOP9qEL_80KZqC/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "How's she conducting this mock interview under these circumstances?",
+                    "line": 55,
+                    "url": "https://drive.google.com/file/d/1lOMZOawmCk_2oV3jAi4aRZaEYlVhXM_o/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "One of Beta's strengths is intellectual curiosity that surpasses her own fears.",
+                    "line": 56,
+                    "url": "https://drive.google.com/file/d/1dmc0KBqIgFNxYYTDqlDGyMdzJJKHLI9X/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "...",
+                    "line": 57,
+                    "url": "https://drive.google.com/file/d/1z0OaChlPvccguv3n0n4Io7wtvLpCq2um/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "There's a degree of truth to that, but it hardly represents all the facts.",
+                    "line": 58,
+                    "url": "https://drive.google.com/file/d/1m9-UuZprAvYXAD3BvmvfQVp35jk_VOI1/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Then what actually happened?!",
+                    "line": 59,
+                    "url": "https://drive.google.com/file/d/1ixC0K8spdYZCsatRNtNdWCM6VEuuakzv/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "In ancient times, I made a pact with the king of Alexandria. It was a pact between two mighty forces, promising prosperity for the city he had established.",
+                    "line": 60,
+                    "url": "https://drive.google.com/file/d/1ZEY42Rts5vkDg4n9Oi6hsLIKgs56V5Om/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "But the pact was eventually forgotten\u2014its details, its meaning, even my very existence.",
+                    "line": 61,
+                    "url": "https://drive.google.com/file/d/159-nRrEs9HEIoMUOVfThda0MVlrgLsAj/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Not only the people, no, but even the descendants of the king whose kingdom I had continued to protect beneath my fog had also all forgotten.",
+                    "line": 62,
+                    "url": "https://drive.google.com/file/d/1yG23r6cxKD_k2FlWra_mBTybsVSV87cz/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "You were forgotten from their history? A considerable amount of time must have passed then.",
+                    "line": 63,
+                    "url": "https://drive.google.com/file/d/1dYbJgGwAa7UIDGlWUvYj6tCRExVksYIb/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "It was likely less than a millennium, which is a fraction of time in terms of the existence of life and the history of civilization.",
+                    "line": 64,
+                    "url": "https://drive.google.com/file/d/10XS_p_MyHYMqAcHGgiyakjZ2zPuMIVpN/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Still, you could say that's a long, long time for a human.",
+                    "line": 65,
+                    "url": "https://drive.google.com/file/d/1y4lqB9SSIkRNif_XV3DPKruhGSRDGzO3/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Indeed, it is the ephemeral nature of those whose lives are mortal to be buried in the flow of time...",
+                    "line": 66,
+                    "url": "https://drive.google.com/file/d/1A3JVvKDXuCyaBxXx6fSa5ue956dkHCNn/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Did Alexandria's prosperity transform into corruption over time?",
+                    "line": 67,
+                    "url": "https://drive.google.com/file/d/1nDZZPs5GfNpRjgYSpzGIVVqiOBsY8f_s/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Clever girl. You seem to have quite the imagination.",
+                    "line": 68,
+                    "url": "https://drive.google.com/file/d/1J79NOTE3wngSoq2tZG3eETyHoUkSmW4T/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Yes, as the people of Alexandria grew jaded over their prosperity, they lost the virtues of their leaders who followed the ancient pact.",
+                    "line": 69,
+                    "url": "https://drive.google.com/file/d/1c5JY3iSR4abs5C_b3REizWzJLzFzc0mZ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "So...that's why you destroyed them?",
+                    "line": 70,
+                    "url": "https://drive.google.com/file/d/18G9hHYPqVOQzgoPbkZzo_KR8k39kmDZ2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "With great power comes the need to prove one is worthy of such power.",
+                    "line": 71,
+                    "url": "https://drive.google.com/file/d/1I1gbra5Hvqumiwiuwh5N1WA4yarGQ5-D/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "One such way is a ruler's virtue...along with dreams, ambitions, determination, and a noble spirit.",
+                    "line": 72,
+                    "url": "https://drive.google.com/file/d/1H4OPjsywSEIilP_IP6hb80-Ao8_M1N_c/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "A noble spirit...",
+                    "line": 73,
+                    "url": "https://drive.google.com/file/d/1O2hz5Roo5iJbqWSyO-5ITpm-Jt269x43/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "So you sought a spirit worthy of power from the king of Alexandria and its people?",
+                    "line": 74,
+                    "url": "https://drive.google.com/file/d/12Fk8ifKyUwfubuwEV63KzoCh9T0MyZqA/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "I seek it not just from humans but from all life!",
+                    "line": 75,
+                    "url": "https://drive.google.com/file/d/1MFEgcuXZ2EazgGpOFg1v4Mx1Qmvu2XsG/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Those who lose their spirits and pursue only the comforts of prosperity are not worthy of the blessings such power bestows.",
+                    "line": 76,
+                    "url": "https://drive.google.com/file/d/1IgXMtWcA6Z89G86Hz3N_2-SgazuJtZPr/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "The lives and histories of other races pass in the blink of an eye for dragons...",
+                    "line": 77,
+                    "url": "https://drive.google.com/file/d/1KMb8ZRTr0H3vfuzJVe4qaj_mwlWGz1r2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "So because of how slowly time passes for dragons, you place value in the spirit's relationship to power?",
+                    "line": 78,
+                    "url": "https://drive.google.com/file/d/1LMttgLvigBsYjGZ24RVb6zl5eqHu_w8Q/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "I had hoped the wisdom brought to this new city by the ancient king would transform the world and the lives of those in it.",
+                    "line": 79,
+                    "url": "https://drive.google.com/file/d/1fGXg66saSEngJn4quVEJO2-oRFW_2DwY/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "And I had hoped for the manifestation of spirit\u2014the power to stand up to the strong, to nurture one's will, and to ascend higher as living beings!",
+                    "line": 80,
+                    "url": "https://drive.google.com/file/d/1ho7bXIofRITifJjye99mILsnh1MrAREd/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "You know what I mean, don't you, therianthrope? That exhilarating moment you sense the presence of someone powerful.",
+                    "line": 81,
+                    "url": "https://drive.google.com/file/d/1sWpNdsRrDJHIpUtRbvdnUdN7oQGMLK6T/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "What're they talking about? Can't hear from this distance...",
+                    "line": 82,
+                    "url": "https://drive.google.com/file/d/1o9CRbmddV984Y9SaaIxqketrg_FLfy7H/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "Oh-woof, I do! Fighting against strong folk is super exciting!",
+                    "line": 83,
+                    "url": "https://drive.google.com/file/d/18j2FsKKpHyRNR-QowQYMFJARZExmiEne/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "...So the city of Alexandria no longer sought strength and fell into corruption\u2014that's why you destroyed it?!",
+                    "line": 84,
+                    "url": "https://drive.google.com/file/d/1bvJTijEKPZxll-zBLfrqYiWeGqsqWnos/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Precisely!",
+                    "line": 85,
+                    "url": "https://drive.google.com/file/d/1P7ySr30gZ1xqHnNUJo2xyXXhikBTYmEr/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Graarrr!!!",
+                    "line": 86,
+                    "url": "https://drive.google.com/file/d/1b5Yd0IWyA_LGSbtWlJ0WYbIBKYYzyKEa/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Eeeek?!",
+                    "line": 87,
+                    "url": "https://drive.google.com/file/d/1SSmEyldMBOqW4Jhty0f0OuijpGHztMin/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Their end was swift and unceremonious. That city, once so prosperous, was destroyed by a simple change in the direction of the billowing fog.",
+                    "line": 88,
+                    "url": "https://drive.google.com/file/d/1DrUh4PsF7Vbe62MpkpszS-5FmMvk1fB5/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "So you helped the city prosper and then destroyed it with your own hands?",
+                    "line": 89,
+                    "url": "https://drive.google.com/file/d/1pn_mX3rCP2fneDNwSghPdGswaiGbaaNj/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "All that giving and taking just makes you one selfish bastard...",
+                    "line": 90,
+                    "url": "https://drive.google.com/file/d/1DB1cdOfkzWq28Ueiy0R-JNLC4xMW2NIo/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Give and take... Exactly, therianthrope! Ultimately, those are the only two things that move this world!",
+                    "line": 91,
+                    "url": "https://drive.google.com/file/d/1H5CUHl1JVoZRAI8XFvCX5_-sEZw_3uyV/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "And you...who have ventured.deep into this forest will be given nothing...and have your lives taken from you!",
+                    "line": 92,
+                    "url": "https://drive.google.com/file/d/16ShzhG7w0UmTLOwFt7oCtOEPKgzsVlTb/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "Yikes, looks like they've upset it.",
+                    "line": 93,
+                    "url": "https://drive.google.com/file/d/1smKQ90bC8HA6GVmIma3WFR-6d6Z4ABPQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Lady Alpha! What's our strategy\u2014",
+                    "line": 94,
+                    "url": "https://drive.google.com/file/d/1ehEVAl2f9ZMtk-t3ef0ecsAcil4ti1cw/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "It never let its guard down the whole time we were talking. We'll have to work together to defeat the dragon while avoiding its poison fog!",
+                    "line": 95,
+                    "url": "https://drive.google.com/file/d/1tyiNlHXDHlAFl8MYM7NJXYWqpVEzOMsT/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "You mean fight it head-on?!",
+                    "line": 96,
+                    "url": "https://drive.google.com/file/d/1IxQMFYD5dR5hd1uZySL0AkxRCLqiaUpR/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Tricks are not likely to work on it\u2014this will be a pure battle of strength!",
+                    "line": 97,
+                    "url": "https://drive.google.com/file/d/1kpGHDrKqPJR3ax8G2NSjJtpNzwqTMSDt/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "A face-off and not a hunt... I'm getting excited!",
+                    "line": 98,
+                    "url": "https://drive.google.com/file/d/1kWyKrbB9--BQhnV19TI3tBzqA9b0aYuM/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Another passage soon to be added to the legend of my existence!",
+                    "line": 99,
+                    "url": "https://drive.google.com/file/d/16suIDmnMMS9qgyTiIGtolDegiOBsAW6x/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Curiosity killed...the elves and therianthropes!",
+                    "line": 100,
+                    "url": "https://drive.google.com/file/d/15h3cmKYZCuNLmEfC7gog96IDZ_zi0Q6g/view?usp=drivesdk"
+                }
+            ],
+            "e4": [
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "Tsk!",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/1PNHx_XgpBDmfTtQZevAmXZkwse_qrbcp/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "I see you've aimed for the arteries leading to my heart...but you've missed!",
+                    "line": 2,
+                    "url": "https://drive.google.com/file/d/1MGrKUYUotOoB_7TGlQrfmieF2AXUsCr-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "Aghh... Its attacks are super strong...!",
+                    "line": 3,
+                    "url": "https://drive.google.com/file/d/1KCmuV8GC62tynSNUvqIBPCz5BVwLIugp/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Zeta!",
+                    "line": 4,
+                    "url": "https://drive.google.com/file/d/1SVhAEmzfR6Eb0EIvLReiYwkuQpIHuoJq/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "Do better, cat!",
+                    "line": 5,
+                    "url": "https://drive.google.com/file/d/1EHr2b1VJu1wi-JLF8ZXw1lsIcfZgL-xi/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "You dumb dog! You can't attack it head-on\u2014",
+                    "line": 6,
+                    "url": "https://drive.google.com/file/d/1517zxK3B8BgMGrFO3aEK3teKbfwl2z4-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "Graaaarrrr!!!",
+                    "line": 7,
+                    "url": "https://drive.google.com/file/d/1sBAENPrlraG45-oNWTYW-bvTXFrH2sPC/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Brute force stands no chance. against a dragon!",
+                    "line": 8,
+                    "url": "https://drive.google.com/file/d/1GyciQTc4PvUQhbSV2xUQHh7ogxOe692A/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "It blocked it?!",
+                    "line": 9,
+                    "url": "https://drive.google.com/file/d/1ldMJAtpV_RmAYyaiSTKDOxISsnJN5_NG/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Hey Beta! Haven't you done some research on this bastard's weak points?!",
+                    "line": 10,
+                    "url": "https://drive.google.com/file/d/1Lb0Rwl81wj4bzrhbJv5vM97LsoEy6rHK/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Don't look at me! I didn't expect there to be an actual dragon in the woods!",
+                    "line": 11,
+                    "url": "https://drive.google.com/file/d/1vxHwilcBwmKKmX3jbUroM_E381oGjX6f/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Then what about dragons in general?! They're living creatures, so they can be killed, right?",
+                    "line": 12,
+                    "url": "https://drive.google.com/file/d/1ZUVCD6RIvbLV_D-MBkQVL6f1MMVVa_PF/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "...",
+                    "line": 13,
+                    "url": "https://drive.google.com/file/d/19mUfz3_EJaDdOWjfF6qY6WAl2BAbEnNz/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "They don't...have weak points... None whatsoever as far as I know!",
+                    "line": 14,
+                    "url": "https://drive.google.com/file/d/18n_Vl1S5PgibgiNZeT_9BCvK6zroWEc0/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Whaaat?!",
+                    "line": 15,
+                    "url": "https://drive.google.com/file/d/1_DOo5FvVjrjOWOob51L2IQZLbsu7Y5j1/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "In fact, it's said that slaying a dragon is impossible using standard attacks\u2014",
+                    "line": 16,
+                    "url": "https://drive.google.com/file/d/1MRxFp599XmMnblWHaRS2ikEEydUqjrsJ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "What?! But that's cheating!",
+                    "line": 17,
+                    "url": "https://drive.google.com/file/d/1Qhf_96LSIi8xP08iBCuVFqwvirRiMke3/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "That thing's on another level. Sounds like humans don't stand a chance.",
+                    "line": 18,
+                    "url": "https://drive.google.com/file/d/17NJmvmP-5P29wf7xQ4-B6PMWrbWbktVU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "Definitely not your run-of-the-mill monster. Not that I'd expect anything less from a dragon.",
+                    "line": 19,
+                    "url": "https://drive.google.com/file/d/1C1s4nHucyA0Rd3E6i7u1uHfTjsmtVSNv/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "Now then...guess it's a matter of when to show up to the party.",
+                    "line": 20,
+                    "url": "https://drive.google.com/file/d/1F9ULg2fSKYag-xWQD4WciDlaBOAmQdOH/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Welcome to the real world, little elf, where here be dragons!",
+                    "line": 21,
+                    "url": "https://drive.google.com/file/d/1pn6WDBwfEkghtiBZp_2vMhLTbTKm6cCQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Eeeek!!!",
+                    "line": 22,
+                    "url": "https://drive.google.com/file/d/1h_L5TLzFloax0Q4ACJlFnJdfl8XHNwvX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Epsilon!",
+                    "line": 23,
+                    "url": "https://drive.google.com/file/d/1OQZdOQOVAXlrUMYCH8A4oJSPPcaVP9Om/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "D-Dodged it...just barely!",
+                    "line": 24,
+                    "url": "https://drive.google.com/file/d/10iDtkcF_bG877j7_KtgEOankzZ54gAvM/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Not sure what you're defending, but it seems you're struggling to dodge my attacks.",
+                    "line": 25,
+                    "url": "https://drive.google.com/file/d/1CXOWsWj6dDagdO1EZBQESaDsuZa3TQ43/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "No one asked you! Your turn, Beta!",
+                    "line": 26,
+                    "url": "https://drive.google.com/file/d/1TXwnglCHPZoVgmp9psvIUjUCPqQOm9Oe/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Got it!",
+                    "line": 27,
+                    "url": "https://drive.google.com/file/d/1VGmr2r_HLzy3uXNtppA8UTzsidHdzDbk/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "That was a definite hit, but it had zero effect...What should I do?!",
+                    "line": 28,
+                    "url": "https://drive.google.com/file/d/1T32a2uPEzrFNutGhIWMCHI3uko6LOjpZ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Aaah!!!",
+                    "line": 29,
+                    "url": "https://drive.google.com/file/d/1dpkvfy2S2nYMC1p-EU7-AUSACECAM65f/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Beta!",
+                    "line": 30,
+                    "url": "https://drive.google.com/file/d/1LORk5HqhBAfY8apqrn79sMj7LuDn2dBp/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Take this!!!",
+                    "line": 31,
+                    "url": "https://drive.google.com/file/d/16EDBcl2clb21D05xOicvWKHKqC_dzCEi/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Gamma!",
+                    "line": 32,
+                    "url": "https://drive.google.com/file/d/1bLG-xMB-Z4vsmZNnD7mdTwCtYk-0FMK2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Beta! Epsilon! Stand back!",
+                    "line": 33,
+                    "url": "https://drive.google.com/file/d/1av0IDvKgzcKhBJkUcpTN36l-odfo8uv0/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Don't have to worry about missing when the target's this big, but...",
+                    "line": 34,
+                    "url": "https://drive.google.com/file/d/1vCF4fhWgUz6iMzb0SqJer6pLZgvc7pZI/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Hitting your target is not the same as defeating it. Indeed, the wiser are quicker to despair!",
+                    "line": 35,
+                    "url": "https://drive.google.com/file/d/1j2MYAU-WZziyNHtYSGE882f8W4Ww8H6Y/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Heh. We'll see about that...",
+                    "line": 36,
+                    "url": "https://drive.google.com/file/d/1X_r1oVypUZ1g3EHj29lUf43b9AHNY-JD/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Hmph?!",
+                    "line": 37,
+                    "url": "https://drive.google.com/file/d/1pdHFvNJ7wEG7wHjtKj4AAIv3MpKCvP84/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...With this single blow!",
+                    "line": 38,
+                    "url": "https://drive.google.com/file/d/17o-0Wre3Jiwa43dBmQUKS6yKDaXMSqRU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "It worked!",
+                    "line": 39,
+                    "url": "https://drive.google.com/file/d/1OBgo5BNBrUcQTIwRTQPwaN-YiNpMWGt9/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "A deep blow to the spine! That would take out any living creature\u2014",
+                    "line": 40,
+                    "url": "https://drive.google.com/file/d/1F97gCR0D_2JYv53GpHwROR41Typ38Pup/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Cleverly done, noble one!",
+                    "line": 41,
+                    "url": "https://drive.google.com/file/d/1Xr5OYCZF172J2g0oQKHXCA-IrH8rYawC/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Huh?!",
+                    "line": 42,
+                    "url": "https://drive.google.com/file/d/1rwEUJEn9RJit6Gv3hJcx6w-nmwqpg3Gj/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Agh...",
+                    "line": 43,
+                    "url": "https://drive.google.com/file/d/1-kI2WwGZ1W-zrvXHOEeTjUJMoKwoEUxZ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Lady Alpha!",
+                    "line": 44,
+                    "url": "https://drive.google.com/file/d/1aFjyUiTPbmSWI1YXyma6JjyEUkCqkASU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...What strength!",
+                    "line": 45,
+                    "url": "https://drive.google.com/file/d/1TKKMnzsWiu3_z2Bsnei8xfOap_aPWFhV/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(Well then, time to get started!)",
+                    "line": 46,
+                    "url": "https://drive.google.com/file/d/19YJiHSAKrDFY_EDrME_YUn0XQZf-EfIl/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Indeed, I am strong.",
+                    "line": 47,
+                    "url": "https://drive.google.com/file/d/1GAUkkxaEoVpRt2n0OYgwnksqEAXM54q8/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "And so are all of you\u2014so strong, in fact, no ordinary being would stand a chance against you.",
+                    "line": 48,
+                    "url": "https://drive.google.com/file/d/1fb9Jqvhb6f1he3WwHjkfHqbT9ZZjd5YJ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "However, in this world, there is always someone higher up in the food chain...",
+                    "line": 49,
+                    "url": "https://drive.google.com/file/d/1-3b9-zEt2AD0L_iP1dFAHVtwVXqhh1ro/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "???? (Shadow)",
+                    "subtitle": "Indeed.",
+                    "line": 50,
+                    "url": "https://drive.google.com/file/d/1UPyL8iNhJsBIE9bNf-4NaDOtlNmsfq81/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Huh?!",
+                    "line": 51,
+                    "url": "https://drive.google.com/file/d/1al7bbAbLJCaQT71BjmsLsnVfbwINdSHY/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "That voice...!",
+                    "line": 52,
+                    "url": "https://drive.google.com/file/d/16nmXMrtWHRF3atA_24frr4QkkDdmBWe1/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "???? (Shadow)",
+                    "subtitle": "The same can be said of a pathetic dragon who carves its idle history in the shadows of this sleeping forest.",
+                    "line": 53,
+                    "url": "https://drive.google.com/file/d/1yZsLX_WJ5__2te-zFMwpTwY3sHiWB-T-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Who's there?!",
+                    "line": 54,
+                    "url": "https://drive.google.com/file/d/1F5WSM7AEKMq-pPji0lnjduaEeYt56XaK/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "???? (Shadow)",
+                    "subtitle": "...",
+                    "line": 55,
+                    "url": "https://drive.google.com/file/d/1jUPY_Vaw0R2qNBiz_8IPdYp62mZf89n_/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "My name is Shadow. I lurk in the darkness and hunt down shadows.",
+                    "line": 56,
+                    "url": "https://drive.google.com/file/d/1CeMUXC9vuy7f9wqmoEdsmhxY_5bKucqP/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "You wretched creature, playing games to relieve the boredom of your perpetual existence. I shall cut you down with my blade.",
+                    "line": 57,
+                    "url": "https://drive.google.com/file/d/1odU7nyHtSmVZqrq9fCKHUOUWZd6lhdEU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Shadow! You came all this way to save us?!",
+                    "line": 58,
+                    "url": "https://drive.google.com/file/d/1k6EreK4jwN-XAxpaRhbJ9D1IzoJMiGtN/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(Heh... Nailed it! Did my intro and called out the dragon. Total isekai move!)",
+                    "line": 59,
+                    "url": "https://drive.google.com/file/d/16aEoC4CQhlbsqIQM9m_nEwQzq4Z3LOrN/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...I got it! All of you, block the dragon's retreat! Take care to avoid the fog! We'll encircle the beast and gradually close in!",
+                    "line": 60,
+                    "url": "https://drive.google.com/file/d/1FOPSBLwgd0I7d_MmI6hxYoGJa6OREkiy/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "...",
+                    "line": 61,
+                    "url": "https://drive.google.com/file/d/1Igf8G6EkCPoVMtx_kMfBH99-qM9sj66E/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(Hmm. Pretty sure I also nailed that pose, but Alpha's ad-libs are always the chef's kiss!)",
+                    "line": 62,
+                    "url": "https://drive.google.com/file/d/14RzUDp0nqUGVSfv1eV5moos9SzV2Skk3/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Shadow! Your orders for the Seven Shadows!",
+                    "line": 63,
+                    "url": "https://drive.google.com/file/d/1xGHJfrbA1x6Lus0laKwP28mjekzffepV/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "Alpha\u2014all of you, stand back. This is my battle to fight.",
+                    "line": 64,
+                    "url": "https://drive.google.com/file/d/1EkIM9HL3ZE1rjL_n_idm6378IQ5hw1_h/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Master Shadow... Understood!",
+                    "line": 65,
+                    "url": "https://drive.google.com/file/d/1wTNidjrBqZKjN-YjPw_Q295eOLBBOH-d/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Ahhh! Master Shadow! How divine! I must write down every detail of his majestic visage!",
+                    "line": 66,
+                    "url": "https://drive.google.com/file/d/1D_ESj8njqjGPhxj2gJyLlYaZCEmxtktc/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Beta...how're you taking notes during an emergency like this?",
+                    "line": 67,
+                    "url": "https://drive.google.com/file/d/1HzCpCS1lrD3ulo9sYUokUmCVR8RQDlJv/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Not that I'm any less excited Master Shadow is here! I'm so happy I could sing!",
+                    "line": 68,
+                    "url": "https://drive.google.com/file/d/1zXashFsLdEZDKLphM7np97ugX7XNPpc-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "C'mon, boss man! Kill it!",
+                    "line": 69,
+                    "url": "https://drive.google.com/file/d/177CEQfOzi-QIdS5IoVbP0Zr6f0batQ4B/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "Will he perform another miracle...against our most formidable foe yet?",
+                    "line": 70,
+                    "url": "https://drive.google.com/file/d/1uwMFdfn0FSnUUwRtcVCRih2yzEs62t-b/view?usp=drivesdk"
+                }
+            ],
+            "e5": [
+                {
+                    "name": "Alpha",
+                    "name_variant": "Seven Shadows (Alpha)",
+                    "subtitle": "Master Shadow!!!",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/18mAUEwZ80ffoI1QB98XcETkUGr68Cg3s/view?usp=drivesdk"
+                },
+                                {
+                    "name": "Beta",
+                    "name_variant": "Seven Shadows (Beta)",
+                    "subtitle": "Master Shadow!!!",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/18mAUEwZ80ffoI1QB98XcETkUGr68Cg3s/view?usp=drivesdk"
+                },
+                                {
+                    "name": "Gamma",
+                    "name_variant": "Seven Shadows (Gamma)",
+                    "subtitle": "Master Shadow!!!",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/18mAUEwZ80ffoI1QB98XcETkUGr68Cg3s/view?usp=drivesdk"
+                },
+                                {
+                    "name": "Delta",
+                    "name_variant": "Seven Shadows (Delta)",
+                    "subtitle": "Master Shadow!!!",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/18mAUEwZ80ffoI1QB98XcETkUGr68Cg3s/view?usp=drivesdk"
+                },
+                                {
+                    "name": "Epsilon",
+                    "name_variant": "Seven Shadows (Epsilon)",
+                    "subtitle": "Master Shadow!!!",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/18mAUEwZ80ffoI1QB98XcETkUGr68Cg3s/view?usp=drivesdk"
+                },
+                                {
+                    "name": "Zeta",
+                    "name_variant": "Seven Shadows (Zeta)",
+                    "subtitle": "Master Shadow!!!",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/18mAUEwZ80ffoI1QB98XcETkUGr68Cg3s/view?usp=drivesdk"
+                },
+                                {
+                    "name": "Eta",
+                    "name_variant": "Seven Shadows (Eta)",
+                    "subtitle": "Master Shadow!!!",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/18mAUEwZ80ffoI1QB98XcETkUGr68Cg3s/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "You've grown tired of your own power and perpetual existence",
+                    "line": 2,
+                    "url": "https://drive.google.com/file/d/1Li2au8fyZXw6yQ1NlKBeavbBERvdK6QK/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "while you idly gorge on the flow of time\u2014",
+                    "line": 3,
+                    "url": "https://drive.google.com/file/d/1GGVJG5_JpabVAPKolVWKeAzmGHXOWnOS/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "Ancient dragon...what is it you desire?",
+                    "line": 4,
+                    "url": "https://drive.google.com/file/d/1dZ6eotla_1_YwnmK3MT93Y5oFMVFJbsd/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "You...are no ordinary human.",
+                    "line": 5,
+                    "url": "https://drive.google.com/file/d/1PDx1zz8SUu8Q761JRPyINUTxgU9bLzrt/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "Indeed, I am!",
+                    "line": 6,
+                    "url": "https://drive.google.com/file/d/1osoF7jd-_ARtRwsThymXyA4tibZ_Qn-2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "But I'm a human far beyond your pitiful imagination!",
+                    "line": 7,
+                    "url": "https://drive.google.com/file/d/1EzY1Q-m0Z-ljyA41R8tE8-5hkfXLx185/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "His attacks are clearly working!",
+                    "line": 8,
+                    "url": "https://drive.google.com/file/d/1oTLHBR0v70MgPruCnAbKLja3a3hwMo4-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Master Shadow! None of us stood a chance against the dragon, and yet...",
+                    "line": 9,
+                    "url": "https://drive.google.com/file/d/1gkfQw1KDxhHWmvARaiUpJCiSCaU-wJc6/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "He's got it in the palm of his hand. Incredible!",
+                    "line": 10,
+                    "url": "https://drive.google.com/file/d/1ltj-DwL_cpoAf82MCWHiYOH8PoiYTw1Q/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "Boss man's the strongest! That's why Boss man's the leader of our pack!",
+                    "line": 11,
+                    "url": "https://drive.google.com/file/d/1qYmkcKR_AqTyi0AtFfu2yOhquIHPU9TI/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "When did you last experience the arrogance and hubris of the mighty?",
+                    "line": 12,
+                    "url": "https://drive.google.com/file/d/1MKpzRwwE2rQPQCia37QnpcibE4ohgo6F/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "In any case, it seems I will be the first to shatter your unchallenged indulgences head-on.",
+                    "line": 13,
+                    "url": "https://drive.google.com/file/d/1Gqxrn_z-FDusp_5pCBc-DHuY63NgbTce/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Heh heh heh... You think...you can slay me?!",
+                    "line": 14,
+                    "url": "https://drive.google.com/file/d/1cDsdUc5RhFSt4SMUhefDeYIKpiZVZBqf/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "This fear...it brings me immense pleasure!",
+                    "line": 15,
+                    "url": "https://drive.google.com/file/d/18TqfukcdtxO--s5OWK_TLPZT0kOE9UdO/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "My ancient pact was once discarded...but the world has returned it to me!",
+                    "line": 16,
+                    "url": "https://drive.google.com/file/d/1hJXX0q4VYqtPSzpVzS4HOGCEEN8cg_6H/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Yes, perhaps you may be the one... However! You make far too many unnecessary moves!",
+                    "line": 17,
+                    "url": "https://drive.google.com/file/d/1mZr5oF-R1SbgnjLmw_-k2Bx6tXNeZSKf/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Master Shadow!",
+                    "line": 18,
+                    "url": "https://drive.google.com/file/d/1F9NBmHRi3QrVA9-ZqDya5hKuzLWOK0o9/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...No, those moves weren't unnecessary!",
+                    "line": 19,
+                    "url": "https://drive.google.com/file/d/1CIagDm73OXjPlvr_lo6d0gjtRHnsUSB9/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Huh?!",
+                    "line": 20,
+                    "url": "https://drive.google.com/file/d/1Y6eCQ7ZEkbWNNPaVubskYN2pzyS0IW4m/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "Unnecessary moves, huh?",
+                    "line": 21,
+                    "url": "https://drive.google.com/file/d/1Trunibq6XLSsEH_mQi_Pf_EwQvX-qUAX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "If only your power-obsessed, arrogant mind did not cloud your judgment...",
+                    "line": 22,
+                    "url": "https://drive.google.com/file/d/1CWz9g3YWDPJTEJzCRsqDrh29wy90VAcp/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "...you would not have betrayed yourself to an unknown foe.",
+                    "line": 23,
+                    "url": "https://drive.google.com/file/d/1NYpsYww7ANtaj2vCdOuyh9AXmhLRAgOZ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "My blade shall always take the honorable path!",
+                    "line": 24,
+                    "url": "https://drive.google.com/file/d/1C7cIGwwfBpBU5PcNcy1n14OwnG8pLz_c/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Im-Impossible...! Your moves were no arrogant display of strength\u2014you calculated them!",
+                    "line": 25,
+                    "url": "https://drive.google.com/file/d/1fJLSdLUgqYxQtvsyyYj0b7GGOM3daXfS/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "I may be strong, but more than that...",
+                    "line": 26,
+                    "url": "https://drive.google.com/file/d/1ch_yrzsZ7LINePbfo46GOBfEBrs2YF4_/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "I am strength incarnate!",
+                    "line": 27,
+                    "url": "https://drive.google.com/file/d/1IhtnawSOlVmWsPzJ3MK_RydsT_EpTkIq/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(A bit too simple of a closer, maybe?)",
+                    "line": 28,
+                    "url": "https://drive.google.com/file/d/1pavacI7CQZEa4z-Mn9DdBvCNGqyF038u/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(Might've been my straightforward handling of the dragon's fatal error caused by typical impatience, which resulted in it overreacting to a simple space adjustment on my part.)",
+                    "line": 29,
+                    "url": "https://drive.google.com/file/d/1btu0zbjIGIxPveWPwaqmRAtXY9l5dLnp/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(Oh well, guess there'll always be plenty of other opportunities.)",
+                    "line": 30,
+                    "url": "https://drive.google.com/file/d/1SxZEWfUpDraBrIV-QhlHSpq7-FHY-2tS/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Yes!",
+                    "line": 31,
+                    "url": "https://drive.google.com/file/d/1geU84uHe2dc_XrlCvmCkLNm50KSsxTY9/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...Hold on, wait!",
+                    "line": 32,
+                    "url": "https://drive.google.com/file/d/1ZNBQ4dBRuE3kxXwaaCQkaZDgTTIJtq8W/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Grarrr...rarrr...rarrr!",
+                    "line": 33,
+                    "url": "https://drive.google.com/file/d/1QW-U5Tu0IoqI6VigmZIMOhKHiCBwoza4/view?usp=drivesdk"
+                },
+                {
+                    "name": "Zeta",
+                    "name_variant": "Zeta",
+                    "subtitle": "It's still alive?!",
+                    "line": 34,
+                    "url": "https://drive.google.com/file/d/1_CHUtwuOrzt-ln-B4B2Akay9QpAB8uji/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Something a mere mortal like you...is unlikely to comprehend!",
+                    "line": 35,
+                    "url": "https://drive.google.com/file/d/1U3lDj2Oc_Be_abL6qZhgyL8la7ZmXPl2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Delta",
+                    "name_variant": "Delta",
+                    "subtitle": "But you've got blood gushing outta you! Do dragons not die?!",
+                    "line": 36,
+                    "url": "https://drive.google.com/file/d/1BrNLkuLKOEEoo5GUe3dt7u9Os2S8pXr0/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(Really good question.)",
+                    "line": 37,
+                    "url": "https://drive.google.com/file/d/1daDwpfrleBzS1MJSIBG16uqOeVEMzhM7/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(Doesn't seem like an undead, and I doubt it's a number of \"lives\" left thing, a \"defeat using a special method\" deal, or even one of those glitched unbeatable bosses.)",
+                    "line": 38,
+                    "url": "https://drive.google.com/file/d/18hhEQ8rols0-Zuq_GJkSJeButHEs0IoQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "This world is cursed...so that no dragon...is allowed...a conventional death!",
+                    "line": 39,
+                    "url": "https://drive.google.com/file/d/1d2uuORcjVsA50UQA6TB-3L0iCCaCpG6Z/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Hence...true victory over a dragon...is gained by having the power...to take its life!",
+                    "line": 40,
+                    "url": "https://drive.google.com/file/d/1jniMNc1o06eeq0-gIVmXLui7NHQ7vfnT/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "My ancient pact...is to obey those who possess that power...on the condition that one day I will be given death.",
+                    "line": 41,
+                    "url": "https://drive.google.com/file/d/1ZP9gJ0c6TUP_9WZqxDvcwbIcR37L3kEu/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "I see... Interesting magic.",
+                    "line": 42,
+                    "url": "https://drive.google.com/file/d/17TA3QC31IO_nhqCxgVnzS1I-ZMNVUyMI/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(Is this...some sort of marking? Just wish it hadn't breathed on me directly. I mean, it probably hasn't brushed its teeth, right? Anyway...)",
+                    "line": 43,
+                    "url": "https://drive.google.com/file/d/1tm8gzQdwUjF6U6XP0Wgn7GVC0edklrGX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "My power will be with you always! You, who shall one day end my life...what is it you desire?",
+                    "line": 44,
+                    "url": "https://drive.google.com/file/d/1uQst7pGARGxVGTFaCA9yotvEoyr14dny/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "...",
+                    "line": 45,
+                    "url": "https://drive.google.com/file/d/12zWL3-z88eYszuTArdUSmrgh63AMBGhZ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "...I couldn't kill you off, which means I still have more training to do.",
+                    "line": 46,
+                    "url": "https://drive.google.com/file/d/1qML8qMtQ7a7PZv5i4DPpHjtbW-NszSJh/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "H-Hmph... It's not that simple!",
+                    "line": 47,
+                    "url": "https://drive.google.com/file/d/1kbRMOKdDTdcqEQrDXrFMBrzTFDBWlajc/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(Well, that's what it comes down to. Besides, my physique is still lacking in a lot of ways. Should resolve itself with time, but it's a little annoying.)",
+                    "line": 48,
+                    "url": "https://drive.google.com/file/d/1Nkk9HW4WB2S0F8VKefo-oaav6yAEEYQl/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(Oh, looks like I'm outta time. I'll miss my sister's curfew if I don't dash home.)",
+                    "line": 49,
+                    "url": "https://drive.google.com/file/d/1cRBq4LPl2WysH6OIfthYjjcTktLCFH3S/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Shadow",
+                    "subtitle": "I have personal matters to deal with. I'll leave the rest to you, Alpha.",
+                    "line": 50,
+                    "url": "https://drive.google.com/file/d/1D0Lif5Tly1OqC0tife3PK9rgmmpzE2TL/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Understood!",
+                    "line": 51,
+                    "url": "https://drive.google.com/file/d/1a50TaePtFoXcahm7FVeqDQEKPLJOqXvl/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "...",
+                    "line": 52,
+                    "url": ""
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Hah hah hah... This Shadow\u2014he's quite the extraordinary individual!",
+                    "line": 53,
+                    "url": "https://drive.google.com/file/d/1gKW1aXIiTBiMA_zwzemXefCuRK878nEi/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "So you are the allies who follow him. Why do you travel through these woods to the ancient city of Alexandria?",
+                    "line": 54,
+                    "url": "https://drive.google.com/file/d/1pK5i8T100Q2MQBamfgUrvWU3fSJQqhQX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "We seek a new land worthy of Shadow and the Shadow Garden he leads.",
+                    "line": 55,
+                    "url": "https://drive.google.com/file/d/14_bvRmtJ73Np1IYcPFN3kH3WpE7yq1eE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Shadow and the rest of us have work to do. We'll need a place to lay low and build our strength for this.",
+                    "line": 56,
+                    "url": "https://drive.google.com/file/d/1GPYgYUL3QOhBbv9iiWksIt-yDgeG0GWy/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "A new land... I see!",
+                    "line": 57,
+                    "url": "https://drive.google.com/file/d/1hRTrMbD-bfK5TtmDkmC4V3SHo8O8CVYE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Increasing your strength will help him come closer to uncovering the truth of this world.",
+                    "line": 58,
+                    "url": "https://drive.google.com/file/d/1hc43Ah5osAm1XmRpHLHmC1Ad_4bXGh5R/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Very well. Let the ancient city of Alexandria, combined with my power, belong to Shadow and the Shadow Garden!",
+                    "line": 59,
+                    "url": "https://drive.google.com/file/d/19PWD9onBl8XlAYGCPCrPaHMG2NI0Nsbt/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Ohh!",
+                    "line": 60,
+                    "url": "https://drive.google.com/file/d/1bO5JiMNvhR_W0-WMmJjbUxDnOVz6L_Ch/view?usp=drivesdk"
+                },
+                {
+                    "name": "Mist Dragon",
+                    "name_variant": "Mist Dragon",
+                    "subtitle": "Henceforth, this ancient city will be your stronghold. My mist will be the veil that hides you from the world!",
+                    "line": 61,
+                    "url": "https://drive.google.com/file/d/1bcVePIH4DOk8PC87UrCDcNtT79MFJIEm/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "The fog is clearing!",
+                    "line": 62,
+                    "url": "https://drive.google.com/file/d/1_kaqxrQSYcHPYcLRvqF7x7qswMtspRlQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "So...this is the ancient city of Alexandria!",
+                    "line": 63,
+                    "url": "https://drive.google.com/file/d/1nJ8czgCZ3EJVDUEqkmQ_CGmoB5KhRf8z/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Lady Alpha...",
+                    "line": 64,
+                    "url": "https://drive.google.com/file/d/1_o3FwxkiDC2G9v_gm0Dy-8t8GLE-3l47/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Gamma, return immediately, and inform Eta and Lambda.",
+                    "line": 65,
+                    "url": "https://drive.google.com/file/d/1_e8kO555tlW8X5wEUue2FfJtsYcxWh6n/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Our base relocation begins now!",
+                    "line": 66,
+                    "url": "https://drive.google.com/file/d/1tJi_GyKE91EqrF7_55mLtWogaK0omJ_E/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Here to report\u2014eeek!",
+                    "line": 67,
+                    "url": "https://drive.google.com/file/d/1hvxcMoGNVBEaOUl-Pqa61nae8cmmurYg/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(As usual, she manages to trip on nothing. Is there any way to utilize this talent of hers?)",
+                    "line": 68,
+                    "url": "https://drive.google.com/file/d/14Le9VFlvCUaaeDyMXEn2Wv9jbHsA59Wr/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "S-So sorry... I'm here to report.",
+                    "line": 69,
+                    "url": "https://drive.google.com/file/d/1mtjpfDWvkntR3EbRNdIUdY7X-Nm8UwGy/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "Your nose is bleeding.",
+                    "line": 70,
+                    "url": "https://drive.google.com/file/d/18pEXURf5NYgSqfUFzUdtvMREX3Dom-eA/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Oh! Excuse\u2014me we've commandeered a new base.",
+                    "line": 71,
+                    "url": "https://drive.google.com/file/d/1WyvWWrz7V7vjFe9pZa-BX7xtbWkXqi1c/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "The relocation of personnel and supplies is nearly complete, and the new base should be fully operational by the start of next week.",
+                    "line": 72,
+                    "url": "https://drive.google.com/file/d/11XDturKBLhTInAC5ONGRPoAuCn22zUxf/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(She's got mad administrative talent. Bet she's the type who'd be amazing at simulation games.)",
+                    "line": 73,
+                    "url": "https://drive.google.com/file/d/17tdouUeZgZYTN8WDwaunyloj0Y7KQI_I/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "Keep it up, Gamma. Always strive to improve yourself, and don't get complacent at the new base. Upholding that mindset will strengthen your foundation.",
+                    "line": 74,
+                    "url": "https://drive.google.com/file/d/19QOFOJ151h025RuFmee-WOCskATueluV/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(If only she could channel her talents to take on a little more action. Well, I guess people like Alpha and Zeta, who can handle everything, are the rare ones.)",
+                    "line": 75,
+                    "url": "https://drive.google.com/file/d/1BW3Q1bOqbEG3OWHAd5TQ_nL6SmlxGRaa/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Understood, Master Shadow! By the way, regarding our new base\u2014",
+                    "line": 76,
+                    "url": "https://drive.google.com/file/d/1cFWmp2JH3Gv4YUM0f3ER9z9uZA0TJc3H/view?usp=drivesdk"
+                },
+                {
+                    "name": "Claire Kagenou",
+                    "name_variant": "Claire",
+                    "subtitle": "Hey, Cid! Everything okay?!",
+                    "line": 77,
+                    "url": "https://drive.google.com/file/d/1WcN3YD9FEDuWYQn5MHFlpOXDT44SvhIA/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Aaah!!!",
+                    "line": 78,
+                    "url": "https://drive.google.com/file/d/19262trNBCz4Efnj_-4w4u4bzvgZNCmg9/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "Wow, she didn't trip this time.",
+                    "line": 79,
+                    "url": "https://drive.google.com/file/d/1jwvKyD6bu-1eL7UOLGftqhQH2aKdPdFN/view?usp=drivesdk"
+                },
+                {
+                    "name": "Claire Kagenou",
+                    "name_variant": "Claire",
+                    "subtitle": "Cid?! I just heard a loud crash",
+                    "line": 80,
+                    "url": "https://drive.google.com/file/d/1KpS6pmcILOY7VcFrNIKfACDC8wFxVL4n/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "Hm? I'm fine. Not like I tripped and fell or anything.",
+                    "line": 81,
+                    "url": "https://drive.google.com/file/d/1HsiRNs2w73kFUxJq7nuyKXzSQFW8TRt4/view?usp=drivesdk"
+                },
+                {
+                    "name": "Claire Kagenou",
+                    "name_variant": "Claire",
+                    "subtitle": "Really? Well, as long as you're okay. Jeez...you scared me.",
+                    "line": 82,
+                    "url": "https://drive.google.com/file/d/11lSXgKwyih_uuLTjeJMOsL0nrvEwknuX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Claire Kagenou",
+                    "name_variant": "Claire",
+                    "subtitle": "Anyway, I just got back, so hurry on out here don't stay cooped up in your room!",
+                    "line": 83,
+                    "url": "https://drive.google.com/file/d/1QZHqgYf7O32LW8_88mDj4q7v-Kp8fZ37/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "Got it. I'll be right there.",
+                    "line": 84,
+                    "url": "https://drive.google.com/file/d/1X5DXdEK06q3ScVA5g8j9pkitrXVQG9oX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "What a day secretly spying on the girls' merry picnic, fighting an enemy of enormous strength, and taking care of everything here at home...",
+                    "line": 85,
+                    "url": "https://drive.google.com/file/d/1SGmM45whhBYFbnhlLZTkkTH86xc0H-gg/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "It's not easy being a shadowbroker.",
+                    "line": 86,
+                    "url": "https://drive.google.com/file/d/1sTVyt_iDVbGIOWgX_3KEC2GqENEuEilJ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "Looks like Gamma's gone. Wonder where this new base she mentioned is, anyway.",
+                    "line": 87,
+                    "url": "https://drive.google.com/file/d/1xuz7QajxqBoTKEJQk3TFfkVSjGeo-lgG/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "Well, knowing Gamma, I guess she just wanted to chat about all the fine details.",
+                    "line": 88,
+                    "url": "https://drive.google.com/file/d/1tglTNZxq9c_Scc3Rriy1kVzc8SXFdR1M/view?usp=drivesdk"
+                }
+            ]
+        }
     }
 }
 
-let setDoc = db.collection('data').doc('es_hd2').set(data['hd2']);
+let setDoc = db.collection('data').doc('ssc_p1_c1-3').set(data['p1']['c1-3']);
 
 setDoc.then(() => {
   console.log('Document successfully written!');
