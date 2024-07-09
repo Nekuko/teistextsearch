@@ -164,14 +164,16 @@ function ESResults({ anData, images, highlight, filterState, main }) {
                             </div>
                           </div>
                           <div className="character-box">
-                            {characterImages[sentence.name_variant] && <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant || 'None'} />}
+                            {characterImages[sentence.name_variant] && (
+                              <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant || 'None'} />
+                            ) || (characterImages[sentence.name] && (
+                              <img src={characterImages[sentence.name]} alt={sentence.name || 'None'} />
+                            ))}
                             <p title={sentence.name && sentence.name_variant ? (sentence.name !== sentence.name_variant ? `${sentence.name_variant} (${sentence.name})` : sentence.name) : 'None'}>
                               {
                                 sentence.name && sentence.name_variant ? (
                                   sentence.name !== sentence.name_variant ? (
-                                    sentence.name_variant.includes("(") ?
-                                      `${sentence.name_variant.split(' ')[sentence.name_variant.split(' ').length - 1].replace(/\(|\)/g, "")} (${sentence.name_variant.split(' ').slice(0, -1).join(' ')})`
-                                      : `${sentence.name_variant} (${sentence.name})`
+                                    sentence.name_variant
                                   ) : sentence.name
                                 ) : 'None'
                               }

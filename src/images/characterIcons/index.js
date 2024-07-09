@@ -28,4 +28,10 @@ export { default as FreyaIcon } from './FreyaIcon.webp';
 export { default as LiliIcon } from './LiliIcon.webp';
 export { default as DuetIcon } from './DuetIcon.webp';
 export { default as PenteIcon } from './PenteIcon.webp';
+export { default as AnneroseNichtsehenIcon } from './AnneroseNichtsehenIcon.webp';
+export { default as JohnSmithIcon } from './JohnSmithIcon.webp';
+export { default as MundaneMannIcon } from './MundaneMannIcon.webp';
+export { default as BeatrixIcon } from './BeatrixIcon.webp';
+export { default as NatsumeKafkaIcon } from './NatsumeKafkaIcon.webp';
+export { default as AuroraIcon } from './AuroraIcon.webp';
 

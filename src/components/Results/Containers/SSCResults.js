@@ -18,19 +18,19 @@ function SSCResults({ sscData, images, highlight, filterState, main, partsChecke
     useEffect(() => {
         const initialPages = {};
         Object.keys(sscData.parts).forEach(partKey => {
-          Object.keys(sscData.parts[partKey].chapters).forEach(chapterKey => {
-            Object.keys(sscData.parts[partKey].chapters[chapterKey].episodes).forEach(episodeKey => {
-              // Create a unique key for each episode
-              const uniqueEpisodeKey = `${partKey}-${chapterKey}-${episodeKey}`;
-              initialPages[uniqueEpisodeKey] = 1;
+            Object.keys(sscData.parts[partKey].chapters).forEach(chapterKey => {
+                Object.keys(sscData.parts[partKey].chapters[chapterKey].episodes).forEach(episodeKey => {
+                    // Create a unique key for each episode
+                    const uniqueEpisodeKey = `${partKey}-${chapterKey}-${episodeKey}`;
+                    initialPages[uniqueEpisodeKey] = 1;
+                });
             });
-          });
         });
         setCurrentPage(initialPages);
-      }, [sscData]);
-      
-    
-      
+    }, [sscData]);
+
+
+
     const iconRefs = useRef({});
 
     const characterImages = images.characterImages;
@@ -202,14 +202,16 @@ function SSCResults({ sscData, images, highlight, filterState, main, partsChecke
                                                                     </div>
                                                                 </div>
                                                                 <div className="character-box">
-                                                                    {characterImages[sentence.name_variant] && <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant} />}
+                                                                    {characterImages[sentence.name_variant] && (
+                                                                        <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant || 'None'} />
+                                                                    ) || (characterImages[sentence.name] && (
+                                                                        <img src={characterImages[sentence.name]} alt={sentence.name || 'None'} />
+                                                                    ))}
                                                                     <p title={sentence.name_variant || 'None'}>
                                                                         {
                                                                             sentence.name && sentence.name_variant ? (
                                                                                 sentence.name !== sentence.name_variant ? (
-                                                                                    sentence.name_variant.includes("(") ?
-                                                                                        `${sentence.name_variant.split(' ')[sentence.name_variant.split(' ').length - 1].replace(/\(|\)/g, "")} (${sentence.name_variant.split(' ').slice(0, -1).join(' ')})`
-                                                                                        : `${sentence.name_variant} (${sentence.name})`
+                                                                                    sentence.name_variant
                                                                                 ) : sentence.name
                                                                             ) : 'None'
                                                                         }

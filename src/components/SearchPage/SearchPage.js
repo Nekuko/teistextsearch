@@ -4868,64 +4868,49 @@ function SearchPage() {
     const images = {
         "characterImages": {
             "Shadow": characterCovers.ShadowIcon,
+            "??? (Shadow)": characterCovers.ShadowIcon,
+            "Sunraku & Shadow (Shadow)": characterCovers.ShadowIcon,
             "Cid Kagenou": characterCovers.CidKagenouIcon,
-            "Cid": characterCovers.CidKagenouIcon,
             "Minoru Kageno": characterCovers.MinoruKagenoIcon,
+            "??? (Minoru Kageno)": characterCovers.MinoruKagenoIcon,
             "Stylish Ruffian Slayer": characterCovers.StylishRuffianSlayerIcon,
+            "Mundane Mann": characterCovers.MundaneMannIcon,
+            "John Smith": characterCovers.JohnSmithIcon,
+            "Stylish Bandit Slayer": characterCovers.StylishBanditSlayerIcon,
+            "??? (Stylish Bandit Slayer)": characterCovers.StylishBanditSlayerIcon,
+            "Nuru": characterCovers.StylishBanditSlayerIcon,
+            "??? (Nuru)": characterCovers.StylishBanditSlayerIcon,
+            "Aurora": characterCovers.AuroraIcon,
+            "Annerose Nichtsehen": characterCovers.AnneroseNichtsehenIcon,
             "Akane Nishino": characterCovers.AkaneNishinoIcon,
             "Alexia Midgar": characterCovers.AlexiaMidgarIcon,
-            "????? (Alexia Midgar)": characterCovers.AlexiaMidgarIcon,
-            "Shelly and Alexia (Alexia Midgar)": characterCovers.AlexiaMidgarIcon,
-            "Alexia": characterCovers.AlexiaMidgarIcon,
             "Alpha": characterCovers.AlphaIcon,
-            "??? (Alpha)": characterCovers.AlphaIcon,
-            "None (Alpha)": characterCovers.AlphaIcon,
-            "Everyone (Alpha)": characterCovers.AlphaIcon,
+            "Beatrix": characterCovers.BeatrixIcon,
             "Beta": characterCovers.BetaIcon,
-            "Beta & Epsilon (Beta)": characterCovers.BetaIcon,
-            "Everyone (Beta)": characterCovers.BetaIcon,
-            "None (Beta)": characterCovers.BetaIcon,
+            "Natsume Kafka": characterCovers.NatsumeKafkaIcon,
+            "??? (Natsume Kafka)": characterCovers.NatsumeKafkaIcon,
             "Claire Kagenou": characterCovers.ClaireKagenouIcon,
             "Delta": characterCovers.DeltaIcon,
-            "Everyone (Delta)": characterCovers.DeltaIcon,
             "Epsilon": characterCovers.EpsilonIcon,
-            "Everyone (Epsilon)": characterCovers.EpsilonIcon,
-            "Beta & Epsilon (Epsilon)": characterCovers.EpsilonIcon,
             "Eta": characterCovers.EtaIcon,
-            "Everyone (Eta)": characterCovers.EtaIcon,
             "Gamma": characterCovers.GammaIcon,
-            "Everyone (Gamma)": characterCovers.GammaIcon,
             "Iris Midgar": characterCovers.IrisMidgarIcon,
             "Po Tato": characterCovers.PoTatoIcon,
-            "Po": characterCovers.PoTatoIcon,
             "Rose Oriana": characterCovers.RoseOrianaIcon,
-            "Rose": characterCovers.RoseOrianaIcon,
-            "No.666": characterCovers.No666Icon,
+            "No. 666": characterCovers.No666Icon,
             "Sherry Barnett": characterCovers.SherryBarnettIcon,
-            "Sherry": characterCovers.SherryBarnettIcon,
-            "Shelly and Alexia (Sherry Barnett)": characterCovers.SherryBarnettIcon,
             "Skel Etal": characterCovers.SkelEtalIcon,
-            "Skel": characterCovers.SkelEtalIcon,
             "Zeta": characterCovers.ZetaIcon,
-            "Everyone (Zeta)": characterCovers.ZetaIcon,
             "Nu": characterCovers.NuIcon,
-            "??? (Stylish Bandit Slayer)": characterCovers.StylishBanditSlayerIcon,
-            "Stylish Bandit Slayer": characterCovers.StylishBanditSlayerIcon,
-            "??? (Cid Kagenou)": characterCovers.CidKagenouIcon,
+
             "Lambda": characterCovers.LambdaIcon,
-            "Tawny Elf (Lambda)": characterCovers.LambdaIcon,
             "Yukime": characterCovers.YukimeIcon,
             "Victoria": characterCovers.VictoriaIcon,
-            "No. 559": characterCovers.VictoriaIcon,
             "Lili": characterCovers.LiliIcon,
             "Olivier": characterCovers.OlivierIcon,
-            "Alpha Look-alike": characterCovers.OlivierIcon,
             "Pente": characterCovers.PenteIcon,
-            "Epsilon Look-alike": characterCovers.PenteIcon,
             "Duet": characterCovers.DuetIcon,
-            "Beta Look-alike": characterCovers.DuetIcon,
             "Freya": characterCovers.FreyaIcon,
-            "??? (Freya)": characterCovers.FreyaIcon,
         },
         "lnCoverImages": {
             "v1": covers.LNV1Cover,
@@ -5068,17 +5053,16 @@ function SearchPage() {
                                     "Seven Shadows (Gamma)": false,
                                     "checked": false,
                                     "open": false
-                                }
-                                ,
+                                },
                                 "Delta": {
                                     "Delta": false,
                                     "??? (Delta)": false,
                                     "Everyone (Delta)": false,
                                     "Seven Shadows (Delta)": false,
+                                    "Delta & Zeta (Delta)": false,
                                     "checked": false,
                                     "open": false
-                                }
-                                ,
+                                },
                                 "Epsilon": {
                                     "Epsilon": false,
                                     "??? (Epsilon)": false,
@@ -5087,19 +5071,18 @@ function SearchPage() {
                                     "Beta & Epsilon (Epsilon)": false,
                                     "checked": false,
                                     "open": false
-                                }
-                                ,
+                                },
                                 "Zeta": {
                                     "Zeta": false,
                                     "??? (Zeta)": false,
                                     "Everyone (Zeta)": false,
                                     "Seven Shadows (Zeta)": false,
                                     "Alpha & Zeta (Zeta)": false,
+                                    "Delta & Zeta (Zeta)": false,
                                     "Zeta & Eta (Zeta)": false,
                                     "checked": false,
                                     "open": false
-                                }
-                                ,
+                                },
                                 "Eta": {
                                     "Eta": false,
                                     "??? (Eta)": false,
@@ -5300,6 +5283,27 @@ function SearchPage() {
                                 "Cultist F": {
                                     "checked": false,
                                 },
+                                "Cult Members": {
+                                    "checked": false,
+                                },
+                                "Cult Member Boss": {
+                                    "checked": false
+                                },
+                                "Cult Member A": {
+                                    "Cult Member A": false,
+                                    "Cult Member A & B (Cult Member A)": false,
+                                    "open": false,
+                                    "checked": false,
+                                },
+                                "Cult Member B": {
+                                    "Cult Member B": false,
+                                    "Cult Member A & B (Cult Member B)": false,
+                                    "open": false,
+                                    "checked": false,
+                                },
+                                "Cult Member C": {
+                                    "checked": false,
+                                },
                             }
                         }
                     }
@@ -5379,6 +5383,29 @@ function SearchPage() {
                                     "Wethermon": false,
                                     "??? (Wethermon)": false,
                                     "open": false,
+                                    "checked": false,
+                                },
+                            }
+                        },
+                        "Templars": {
+                            openGroup: false,
+                            checked: false,
+                            open: false,
+                            filters: '',
+                            characters: {
+                                "Templar": {
+                                    "Templar": false,
+                                    "????? (Templar)": false,
+                                    "open": false,
+                                    "checked": false,
+                                },
+                                "Templar A": {
+                                    "checked": false,
+                                },
+                                "Templar B": {
+                                    "checked": false,
+                                },
+                                "Templar C": {
                                     "checked": false,
                                 },
                             }
@@ -5519,6 +5546,9 @@ function SearchPage() {
                                     "checked": false
                                 },
                                 "Noblewoman": {
+                                    "checked": false,
+                                },
+                                "Researcher": {
                                     "checked": false,
                                 },
                                 "Spectator Woman": {
@@ -5776,6 +5806,20 @@ function SearchPage() {
                                 },
                             }
                         },
+                        "News": {
+                            openGroup: false,
+                            checked: false,
+                            open: false,
+                            filters: '',
+                            characters: {
+                                "Editor": {
+                                    "checked": false,
+                                },
+                                "MNA Journalist": {
+                                    "checked": false,
+                                }
+                            }
+                        },
                         "Rogues": {
                             openGroup: false,
                             checked: false,
@@ -5928,14 +5972,14 @@ function SearchPage() {
         '??? (Natsume Kafka)': ['??? (Natsume)'],
         'Gamma (All)': ['Gamma', 'Everyone (Gamma)', '??? (Gamma)', 'Seven Shadows (Gamma)'],
         'Gamma': ['??? (Gamma)'],
-        "Delta (All)": ['Delta', 'Everyone (Delta)', '??? (Delta)', 'Seven Shadows (Delta)'],
+        "Delta (All)": ['Delta', 'Everyone (Delta)', '??? (Delta)', 'Seven Shadows (Delta)', 'Delta & Zeta (Delta)'],
         "Delta": ['??? (Delta)'],
         'Epsilon (All)': ['Epsilon', 'Everyone (Epsilon)', 'Beta & Epsilon (Epsilon)', '??? (Epsilon)', 'Seven Shadows (Epsilon)'],
         'Epsilon': ['??? (Epsilon)'],
-        'Zeta (All)': ['Zeta', 'Everyone (Zeta)', 'Alpha & Zeta (Zeta)', 'Zeta & Eta (Zeta)', '??? (Zeta)', 'Seven Shadows (Zeta)'],
+        'Zeta (All)': ['Zeta', 'Everyone (Zeta)', 'Alpha & Zeta (Zeta)', 'Zeta & Eta (Zeta)', '??? (Zeta)', 'Seven Shadows (Zeta)', 'Delta & Zeta (Zeta)'],
         'Zeta': ['??? (Zeta)'],
         'Eta (All)': ['Eta', 'Everyone (Eta)', 'Zeta & Eta (Eta)', 'Seven Shadows (Eta)', '??? (Eta)'],
-        'Eta': ['??? (Eta)'], 
+        'Eta': ['??? (Eta)'],
         'Chi (All)': ["Chi", "(Chi & Omega (Chi)"],
         'Omega (All)': ["Omega", "(Chi & Omega (Omega)"],
         'Lambda (All)': ['Lambda', 'Tawny Elf (Lambda)'],
@@ -5963,8 +6007,12 @@ function SearchPage() {
         'Wethermon': ['??? (Wethermon)'],
         'Sunraku (All)': ['Sunraku', '??? (Sunraku)', 'Cid & Sunraku (Sunraku)', 'Sunraku & Shadow (Sunraku)'],
         'Sunraku': ['??? (Sunraku)'],
-        'Mist Dragon (All)': ['Mist Dragon', '??? (Mist Dragon'],
+        'Mist Dragon (All)': ['Mist Dragon', '??? (Mist Dragon)'],
         'Mist Dragon': ['??? (Mist Dragon)'],
+        'Templar (All)': ['Templar', '????? (Templar)'],
+        'Templar': ['????? (Templar)'],
+        'Cult Member A (All)': ['Cult Member A', 'Cult Member A & B (Cult Member A)'],
+        'Cult Member B (All)': ['Cult Member B', 'Cult Member A & B (Cult Member B)'],
         'None': ['']
     };
 
