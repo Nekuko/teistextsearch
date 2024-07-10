@@ -18,7 +18,7 @@ export function searchSSC(keys, text, keywords, nameMap, characters = [], caseSe
   
       // Get the list of sentences for this key
       let sentences = text[medium][part][chapter][episode];
-  
+      console.log(chapter)
       // Filter the sentences based on the keywords and character names
       let filteredSentences = sentences.filter(sentence => {
         let sentenceToCheck = caseSensitive ? sentence.subtitle : sentence.subtitle.toLowerCase();

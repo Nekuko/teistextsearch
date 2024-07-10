@@ -4940,7 +4940,7 @@ function SearchPage() {
             "1-12": covers.SSC112Cover,
             "1-13": covers.SSC113Cover,
             "1-14": covers.SSC114Cover,
-            "1-F": covers.SSC1FCover,
+            "1-15": covers.SSC1FCover,
             "2-1": covers.SSC21Cover,
             "2-2": covers.SSC22Cover,
             "2-3": covers.SSC23Cover,
@@ -5108,7 +5108,10 @@ function SearchPage() {
                                     "open": false
                                 },
                                 "Nu": {
-                                    checked: false,
+                                    "Nu": false,
+                                    "No. 93": false,
+                                    "open": false,
+                                    "checked": false,
                                 },
                                 "Chi": {
                                     "Chi": false,
@@ -5132,6 +5135,7 @@ function SearchPage() {
                             characters: {
                                 "Victoria": {
                                     "Victoria": false,
+                                    "??? (Victoria)": false,
                                     "No. 559": false,
                                     "checked": false,
                                     "open": false
@@ -5175,6 +5179,12 @@ function SearchPage() {
                             filters: '',
                             characters: {
                                 "Iris Midgar": {
+                                    "checked": false,
+                                },
+                                "Marco Granger": {
+                                    "Marco Granger": false,
+                                    "Dark Knight Trainee": false,
+                                    "open": false,
                                     "checked": false,
                                 }
                             }
@@ -5227,6 +5237,25 @@ function SearchPage() {
                     checked: false,
                     filters: '',
                     open: false,
+                    groups: {
+                        "Generic": {
+                            openGroup: false,
+                            checked: false,
+                            open: false,
+                            filters: '',
+                            characters: {
+                                "Oriana Noble A": {
+                                    "checked": false,
+                                },
+                                "Oriana Noble B": {
+                                    "checked": false,
+                                },
+                                "Oriana Noble C": {
+                                    "checked": false,
+                                }
+                            }
+                        }
+                    },
                     characters: {
                         "Rose Oriana": {
                             "Rose Oriana": false,
@@ -5399,6 +5428,9 @@ function SearchPage() {
                                     "open": false,
                                     "checked": false,
                                 },
+                                "Templars": {
+                                    "checked": false,
+                                },
                                 "Templar A": {
                                     "checked": false,
                                 },
@@ -5406,6 +5438,27 @@ function SearchPage() {
                                     "checked": false,
                                 },
                                 "Templar C": {
+                                    "checked": false,
+                                },
+                                "Templar Leader": {
+                                    "checked": false,
+                                },
+                                "Templar Leader A": {
+                                    "checked": false,
+                                },
+                                "Templar Leader B": {
+                                    "checked": false,
+                                },
+                                "Templar Leader C": {
+                                    "checked": false,
+                                },
+                                "Templar Leader D": {
+                                    "checked": false,
+                                },
+                                "Follower A": {
+                                    "checked": false,
+                                },
+                                "Follower B": {
                                     "checked": false,
                                 },
                             }
@@ -5446,6 +5499,7 @@ function SearchPage() {
                             characters: {
                                 "Olivier": {
                                     "Olivier": false,
+                                    "??? (Olivier)": false,
                                     "Alpha Look-alike": false,
                                     "open": false,
                                     "checked": false,
@@ -5518,13 +5572,28 @@ function SearchPage() {
                                 "Disciple": {
                                     "checked": false,
                                 },
+                                "Elven Coachwoman": {
+                                    "checked": false,
+                                },
+                                "Elven Guardswoman": {
+                                    "checked": false,
+                                },
+                                "Fan Passerby": {
+                                    "checked": false,
+                                },
+                                "Female Pilgrim": {
+                                    "checked": false,
+                                },
+                                "Guard": {
+                                    "checked": false,
+                                },
                                 "Junior": {
                                     "checked": false,
                                 },
-                                "Knight": {
+                                "Old Man": {
                                     "checked": false,
                                 },
-                                "Knight A": {
+                                "Paladin": {
                                     "checked": false,
                                 },
                                 "Passerby A": {
@@ -5552,6 +5621,9 @@ function SearchPage() {
                                     "checked": false,
                                 },
                                 "Spectator Woman": {
+                                    "checked": false
+                                },
+                                "Veteran Paladin": {
                                     "checked": false
                                 }
                             }
@@ -5594,6 +5666,21 @@ function SearchPage() {
                                     "checked": false,
                                     "open": false,
                                 },
+                                "Merchant A": {
+                                    "checked": false,
+                                },
+                                "Merchant A Secretary": {
+                                    "checked": false,
+                                },
+                                "Merchant B": {
+                                    "checked": false,
+                                },
+                                "Merchant C": {
+                                    "checked": false,
+                                },
+                                "Wounded Merchant": {
+                                    "checked": false,
+                                },
                                 "Quiche Stall Owner": {
                                     "checked": false,
                                 },
@@ -5608,10 +5695,7 @@ function SearchPage() {
                                 },
                                 "Staff": {
                                     "checked": false
-                                },
-                                "Wounded Merchant": {
-                                    "checked": false,
-                                },
+                                }
                             }
                         },
                         "Casino": {
@@ -5730,6 +5814,52 @@ function SearchPage() {
                                 }
                             }
                         },
+                        "Knights": {
+                            openGroup: false,
+                            checked: false,
+                            open: false,
+                            filters: '',
+                            characters: {
+                                "Knight": {
+                                    "checked": false,
+                                },
+                                "Knight A": {
+                                    "checked": false,
+                                },
+                                "Dark Knight": {
+                                    "checked": false,
+                                },
+                                "Female DK Trainee": {
+                                    "checked": false,
+                                },
+                            }
+                        },
+                        "Mercenarys": {
+                            openGroup: false,
+                            checked: false,
+                            open: false,
+                            filters: '',
+                            characters: {
+                                "Mercenary A": {
+                                    "Mercenary A": false,
+                                    "??? (Mercenary A)": false,
+                                    "open": false,
+                                    "checked": false,
+                                },
+                                "Mercenary B": {
+                                    "checked": false,
+                                },
+                                "Mercenary C": {
+                                    "checked": false,
+                                },
+                                "Mercenary Veteran": {
+                                    "checked": false,
+                                },
+                                "Mercenary Boss": {
+                                    "checked": false,
+                                },
+                            }
+                        },
                         "Monsters": {
                             openGroup: false,
                             checked: false,
@@ -5740,6 +5870,12 @@ function SearchPage() {
                                     "checked": false,
                                 },
                                 "Boss Monster": {
+                                    "checked": false,
+                                },
+                                "Alpha Wolf": {
+                                    "checked": false,
+                                },
+                                "Basilisk": {
                                     "checked": false,
                                 },
                                 "Boar": {
@@ -5785,7 +5921,7 @@ function SearchPage() {
                                 },
                                 "Mysterious Man D": {
                                     "checked": false,
-                                },
+                                }, 
                                 "Mysterious Soldiers": {
                                     "checked": false,
                                 },
@@ -5816,6 +5952,9 @@ function SearchPage() {
                                     "checked": false,
                                 },
                                 "MNA Journalist": {
+                                    "checked": false,
+                                },
+                                "Reporter": {
                                     "checked": false,
                                 }
                             }
@@ -5984,8 +6123,8 @@ function SearchPage() {
         'Omega (All)': ["Omega", "(Chi & Omega (Omega)"],
         'Lambda (All)': ['Lambda', 'Tawny Elf (Lambda)'],
         'Diablos': ['Massive Mound of Magic'],
-        'Olivier (All)': ['Olivier', 'Alpha Look-alike'],
-        'Olivier': ['Alpha Look-alike'],
+        'Olivier (All)': ['Olivier', 'Alpha Look-alike', '??? (Olivier)'],
+        'Olivier': ['Alpha Look-alike', '??? (Olivier)'],
         'Duet (All)': ['Duet', 'Beta Look-alike'],
         'Duet': ['Beta Look-alike'],
         'Pente (All)': ['Pente', 'Epsilon Look-alike'],
@@ -5994,7 +6133,10 @@ function SearchPage() {
         'Freya': ['??? (Freya)'],
         'Nanigashi (All)': ['Nanigashi', '??? (Nanigashi)'],
         'Nanigashi': ['??? (Nanigashi)'],
-        'Victoria (All)': ['Victoria', 'No. 559'],
+        'Victoria (All)': ['Victoria', 'No. 559', '??? (Victoria)'],
+        'Victoria': ['??? (Victoria)'],
+        'Nu (All)': ['Nu', '93'],
+        'No. 93': ['93'],
         'Shishiodoshi (All)': ['Shishiodoshi', 'Shishi(?)'],
         'Customer (All)': ['Customer', '??? (Customer)'],
         'Customer': ['??? (Customer)'],
@@ -6013,6 +6155,8 @@ function SearchPage() {
         'Templar': ['????? (Templar)'],
         'Cult Member A (All)': ['Cult Member A', 'Cult Member A & B (Cult Member A)'],
         'Cult Member B (All)': ['Cult Member B', 'Cult Member A & B (Cult Member B)'],
+        'Marco Granger (All)': ['Marco Granger', 'Dark Knight Trainee'],
+        'Mercenary A (All)': ['Mercenary A', '??? (Mercenary A)'],
         'None': ['']
     };
 

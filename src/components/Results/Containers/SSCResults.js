@@ -21,7 +21,10 @@ function SSCResults({ sscData, images, highlight, filterState, main, partsChecke
             Object.keys(sscData.parts[partKey].chapters).forEach(chapterKey => {
                 Object.keys(sscData.parts[partKey].chapters[chapterKey].episodes).forEach(episodeKey => {
                     // Create a unique key for each episode
-                    const uniqueEpisodeKey = `${partKey}-${chapterKey}-${episodeKey}`;
+                    let uniqueEpisodeKey = `${partKey}-${chapterKey}-${episodeKey}`;
+                    if (uniqueEpisodeKey.startsWith("p1-c1-15")) {
+                        uniqueEpisodeKey =  `p1-11 Final-e${uniqueEpisodeKey.split("e")[1]}`;
+                    }
                     initialPages[uniqueEpisodeKey] = 1;
                 });
             });
@@ -35,6 +38,7 @@ function SSCResults({ sscData, images, highlight, filterState, main, partsChecke
 
     const characterImages = images.characterImages;
     const coverImages = images.sscCoverImages;
+    console.log(sscData)
 
     const highlightKeywords = (text) => {
         let highlightedText = text;
@@ -137,10 +141,15 @@ function SSCResults({ sscData, images, highlight, filterState, main, partsChecke
                             {Object.entries(chapters.chapters).map(([chapterKey, chapterValue]) => {
                                 const chapterKeys = Object.keys(partsChecked[partTitle]);
                                 let chapterTitle = "Cannot find.";
+                                let imageKey = chapterKey;
+                                if (chapterKey === "c1-15") {
+                                    chapterKey = "11 Final"
+                                    imageKey = "c1-15";
+                                }
+
                                 for (let i = 0; i < chapterKeys.length; i++) {
                                     if (chapterKeys[i].startsWith(`${chapterKey.slice(1)}`)) {
                                         chapterTitle = chapterKeys[i];
-
                                         break;
                                     }
                                 }
@@ -149,7 +158,7 @@ function SSCResults({ sscData, images, highlight, filterState, main, partsChecke
                                     <Collapsible className="medium-margin" trigger={
                                         <>
                                             <div className="volume-trigger">
-                                                {coverImages[chapterKey.split("c")[1]] && <img className="cover-image-ssc" src={coverImages[chapterKey.split("c")[1]]} alt={chapterTitle} />}
+                                                {coverImages[imageKey.split("c")[1]] && <img className="cover-image-ssc" src={coverImages[imageKey.split("c")[1]]} alt={chapterTitle} />}
                                                 {`Chapter ${chapterTitle} (Total: ${chapterCount})`}
                                             </div>
                                         </>
@@ -158,6 +167,7 @@ function SSCResults({ sscData, images, highlight, filterState, main, partsChecke
                                             let episodeTitle = partsChecked[partTitle][chapterTitle][`e${episodeKey.slice(1)}`].title;
                                             const sentencesPerPage = 15;
                                             const uniqueChapterKey = `${partKey}-${chapterKey}-${episodeKey}`;
+                                            console.log(uniqueChapterKey)
                                             return (
                                                 <Collapsible trigger={`Episode ${episodeKey.slice(1)} | ${episodeTitle} (Total: ${episodeValue.sentences.length})`} key={episodeKey}>
                                                     <div className="sentences-container">

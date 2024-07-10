@@ -34,4 +34,5 @@ export { default as MundaneMannIcon } from './MundaneMannIcon.webp';
 export { default as BeatrixIcon } from './BeatrixIcon.webp';
 export { default as NatsumeKafkaIcon } from './NatsumeKafkaIcon.webp';
 export { default as AuroraIcon } from './AuroraIcon.webp';
+export { default as ElisabethIcon } from './ElisabethIcon.webp';
 
