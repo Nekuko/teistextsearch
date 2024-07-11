@@ -18,7 +18,8 @@ export const ESMAP = {
     "bmsv": "Be Mine! Sweet Valentine",
     "tghms": "Trash-Game Hunter Meets Shadow",
     "hd2": "HIGHEST DREAM II",
-    "tpis": "The Producer in Shadow!"
+    "tpis": "The Producer in Shadow!",
+    "ssitw": "Stranded! Summer in the Wild?!"
 };
 
 const ESMAPREVERSE = {};

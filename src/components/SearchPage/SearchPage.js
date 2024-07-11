@@ -3646,6 +3646,37 @@ function SearchPage() {
                         },
                         "checked": false
                     },
+                    "Stranded! Summer in the Wild?!": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Stranded! Summer in the Wild?!"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Stranded! Summer in the Wild?!"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Stranded! Summer in the Wild?!"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Stranded! Summer in the Wild?!"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Stranded! Summer in the Wild?!"
+                        },
+                        "e6": {
+                            "checked": false,
+                            "title": "Stranded! Summer in the Wild?!"
+                        },
+                        "e7": {
+                            "checked": false,
+                            "title": "Stranded! Summer in the Wild?!"
+                        },
+                        "checked": false
+                    },
                     "checked": false
                 },
                 "Apocrypha": {
@@ -4979,7 +5010,8 @@ function SearchPage() {
             "bmsv": covers.ESBMSVCover,
             "tghms": covers.ESTGHMSCover,
             "hd2": covers.ESHD2Cover,
-            "tpis": covers.ESTPISCover
+            "tpis": covers.ESTPISCover,
+            "ssitw": covers.ESSSITWCover
         },
         "apoCoverImages": {
             "Apocrypha": covers.APOCover,
