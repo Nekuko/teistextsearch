@@ -61,6 +61,7 @@ const esCoverImages = {
     "es-tghms": covers.ESTGHMSCover,
     "es-hd2": covers.ESHD2Cover,
     "es-tpis": covers.ESTPISCover,
+    "es-ssitw": covers.ESSSITWCover
 }
 
 
@@ -2162,10 +2163,10 @@ const apo_info = {
 }
 
 const es_info = {
-    "stories": 20,
-    "line_count": 9002,
-    "word_count": 99847,
-    "char_count": 557495,
+    "stories": 21,
+    "line_count": 9344,
+    "word_count": 104198,
+    "char_count": 580689,
     "characters": {
         "Alexia Midgar (Alexia)": 489,
         "Committee Member": 3,
@@ -2173,7 +2174,7 @@ const es_info = {
         "Committee Person": 5,
         "Po Tato (Po)": 19,
         "Skel Etal (Skel)": 36,
-        "Cid Kagenou (Cid)": 918,
+        "Cid Kagenou (Cid)": 1059,
         "None": 527,
         "Alexia Midgar (????? (Alexia Midgar))": 1,
         "Rose Oriana (Rose)": 141,
@@ -2190,10 +2191,10 @@ const es_info = {
         "Alexia Midgar (Shelly and Alexia)": 1,
         "Gamma": 304,
         "Eta": 471,
-        "Zeta": 696,
-        "Alpha": 1068,
+        "Zeta": 790,
+        "Alpha": 1162,
         "Delta": 499,
-        "Beta": 589,
+        "Beta": 599,
         "Nu": 199,
         "Rabbit T-thrope": 14,
         "Fox T-thrope": 1,
@@ -2222,7 +2223,7 @@ const es_info = {
         "Zeta (Everyone (Zeta))": 4,
         "Eta (Everyone (Eta))": 4,
         "Beta (None (Beta))": 3,
-        "Cid Kagenou (None (Cid Kagenou))": 2,
+        "Cid Kagenou (None (Cid Kagenou))": 5,
         "Beta (Beta & Epsilon (Beta))": 16,
         "Epsilon (Beta & Epsilon (Epsilon))": 16,
         "Mysterious Man A": 3,
@@ -4775,6 +4776,91 @@ const es_info = {
                         "Po Tato (Po)": 2,
                         "Claire Kagenou (Claire)": 9,
                         "None": 1
+                    }
+                }
+            }
+        },
+        "ssitw": {
+            "line_count": 342,
+            "word_count": 4351,
+            "char_count": 23194,
+            "characters": {
+                "Cid Kagenou (Cid)": 141,
+                "Alpha": 94,
+                "Zeta": 94,
+                "Cid Kagenou (None (Cid Kagenou))": 3,
+                "Beta": 10
+            },
+            "episodes": {
+                "e1": {
+                    "word_count": 725,
+                    "char_count": 3802,
+                    "line_count": 50,
+                    "characters": {
+                        "Cid Kagenou (Cid)": 22,
+                        "Alpha": 14,
+                        "Zeta": 14
+                    }
+                },
+                "e2": {
+                    "word_count": 698,
+                    "char_count": 3622,
+                    "line_count": 58,
+                    "characters": {
+                        "Alpha": 15,
+                        "Zeta": 17,
+                        "Cid Kagenou (Cid)": 26
+                    }
+                },
+                "e3": {
+                    "word_count": 528,
+                    "char_count": 2861,
+                    "line_count": 39,
+                    "characters": {
+                        "Cid Kagenou (Cid)": 20,
+                        "Alpha": 10,
+                        "Zeta": 9
+                    }
+                },
+                "e4": {
+                    "word_count": 680,
+                    "char_count": 3573,
+                    "line_count": 53,
+                    "characters": {
+                        "Cid Kagenou (Cid)": 21,
+                        "Alpha": 18,
+                        "Zeta": 14
+                    }
+                },
+                "e5": {
+                    "word_count": 534,
+                    "char_count": 2996,
+                    "line_count": 42,
+                    "characters": {
+                        "Cid Kagenou (None (Cid Kagenou))": 3,
+                        "Alpha": 7,
+                        "Cid Kagenou (Cid)": 23,
+                        "Zeta": 9
+                    }
+                },
+                "e6": {
+                    "word_count": 465,
+                    "char_count": 2435,
+                    "line_count": 40,
+                    "characters": {
+                        "Alpha": 20,
+                        "Zeta": 20
+                    }
+                },
+                "e7": {
+                    "word_count": 721,
+                    "char_count": 3905,
+                    "line_count": 60,
+                    "characters": {
+                        "Zeta": 11,
+                        "Alpha": 10,
+                        "Cid Kagenou (Cid)": 29,
+                        "Beta": 10
                     }
                 }
             }

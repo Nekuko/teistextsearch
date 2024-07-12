@@ -5083,6 +5083,7 @@ function SearchPage() {
                                     "??? (Gamma)": false,
                                     "Everyone (Gamma)": false,
                                     "Seven Shadows (Gamma)": false,
+                                    "None (Gamma)": false,
                                     "checked": false,
                                     "open": false
                                 },
@@ -5136,12 +5137,14 @@ function SearchPage() {
                                     "Lambda": false,
                                     "Mound of Flesh (Lambda)": false,
                                     "Tawny Elf (Lambda)": false,
+                                    "None (Lambda)": false,
                                     "checked": false,
                                     "open": false
                                 },
                                 "Nu": {
                                     "Nu": false,
                                     "No. 93": false,
+                                    "??? (No. 93)": false,
                                     "open": false,
                                     "checked": false,
                                 },
@@ -5171,6 +5174,12 @@ function SearchPage() {
                                     "No. 559": false,
                                     "checked": false,
                                     "open": false
+                                },
+                                "Garden Member": {
+                                    "checked": false
+                                },
+                                "Garden Members": {
+                                    "checked": false
                                 }
                             }
                         }
@@ -5344,7 +5353,13 @@ function SearchPage() {
                                 "Cultist F": {
                                     "checked": false,
                                 },
+                                "Cult Leader": {
+                                    "checked": false,
+                                },
                                 "Cult Members": {
+                                    "checked": false,
+                                },
+                                "Cult Member": {
                                     "checked": false,
                                 },
                                 "Cult Member Boss": {
@@ -5485,6 +5500,12 @@ function SearchPage() {
                                     "checked": false,
                                 },
                                 "Templar Leader D": {
+                                    "checked": false,
+                                },
+                                "Bishop Drake": {
+                                    "Bishop Drake": false,
+                                    "Bishop of Orum": false,
+                                    "open": false,
                                     "checked": false,
                                 },
                                 "Follower A": {
@@ -6141,8 +6162,8 @@ function SearchPage() {
         'Beta': ['??? (Beta)', 'None (Beta)'],
         'Natsume Kafka': ['Natsume'],
         '??? (Natsume Kafka)': ['??? (Natsume)'],
-        'Gamma (All)': ['Gamma', 'Everyone (Gamma)', '??? (Gamma)', 'Seven Shadows (Gamma)'],
-        'Gamma': ['??? (Gamma)'],
+        'Gamma (All)': ['Gamma', 'Everyone (Gamma)', '??? (Gamma)', 'Seven Shadows (Gamma)', 'None (Gamma)'],
+        'Gamma': ['??? (Gamma)', 'None (Gamma)'],
         "Delta (All)": ['Delta', 'Everyone (Delta)', '??? (Delta)', 'Seven Shadows (Delta)', 'Delta & Zeta (Delta)'],
         "Delta": ['??? (Delta)'],
         'Epsilon (All)': ['Epsilon', 'Everyone (Epsilon)', 'Beta & Epsilon (Epsilon)', '??? (Epsilon)', 'Seven Shadows (Epsilon)'],
@@ -6153,7 +6174,8 @@ function SearchPage() {
         'Eta': ['??? (Eta)'],
         'Chi (All)': ["Chi", "(Chi & Omega (Chi)"],
         'Omega (All)': ["Omega", "(Chi & Omega (Omega)"],
-        'Lambda (All)': ['Lambda', 'Tawny Elf (Lambda)'],
+        'Lambda (All)': ['Lambda', 'Tawny Elf (Lambda)', 'None (Lambda)'],
+        'Lambda': ['None (Lambda)'],
         'Diablos': ['Massive Mound of Magic'],
         'Olivier (All)': ['Olivier', 'Alpha Look-alike', '??? (Olivier)'],
         'Olivier': ['Alpha Look-alike', '??? (Olivier)'],
@@ -6167,8 +6189,8 @@ function SearchPage() {
         'Nanigashi': ['??? (Nanigashi)'],
         'Victoria (All)': ['Victoria', 'No. 559', '??? (Victoria)'],
         'Victoria': ['??? (Victoria)'],
-        'Nu (All)': ['Nu', '93'],
-        'No. 93': ['93'],
+        'Nu (All)': ['Nu', '93', 'No. 93', '??? (No. 93)'],
+        'No. 93': ['93', 'No. 93', '??? (No. 93)'],
         'Shishiodoshi (All)': ['Shishiodoshi', 'Shishi(?)'],
         'Customer (All)': ['Customer', '??? (Customer)'],
         'Customer': ['??? (Customer)'],
@@ -6189,6 +6211,7 @@ function SearchPage() {
         'Cult Member B (All)': ['Cult Member B', 'Cult Member A & B (Cult Member B)'],
         'Marco Granger (All)': ['Marco Granger', 'Dark Knight Trainee'],
         'Mercenary A (All)': ['Mercenary A', '??? (Mercenary A)'],
+        'Bishop Drake (All)': ['Bishop Drake', 'Bishop of Orum'],
         'None': ['']
     };
 

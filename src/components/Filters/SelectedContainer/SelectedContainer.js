@@ -94,7 +94,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
       });
     }
 
-    if (selectedList.length === 20 && Object.keys(selectedList).every(key => !selectedList[key].text.includes("Episode"))) {
+    if (selectedList.length === 21 && Object.keys(selectedList).every(key => !selectedList[key].text.includes("Episode"))) {
       return [{ text: "MOG Event Stories", hoverText: "Master of Garden, Event Stories" }]
     }
 
