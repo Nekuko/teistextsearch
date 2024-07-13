@@ -28,7 +28,8 @@
   .character-box {
     padding-left: 5px;
     padding-right: 8px;
-    margin: 10px 0 10px 10px; /* top right bottom left */
+    margin: 10px 0 10px 10px;
+    /* top right bottom left */
     flex-direction: row;
     justify-content: left;
     min-width: 9%;
@@ -46,7 +47,7 @@
   .character-box-text {
     display: flex;
   }
-  
+
   .results-container {
     padding: 20px;
   }
@@ -82,7 +83,8 @@
   .character-box {
     padding-left: 5px;
     padding-right: 5px;
-    margin: 5px 0 10px 10px; /* top right bottom left */
+    margin: 5px 0 10px 10px;
+    /* top right bottom left */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -104,14 +106,18 @@
 
 .results-container {
   align-items: center;
-  position: relative; /* Position relative to the Header component */
+  position: relative;
+  /* Position relative to the Header component */
   width: 75%;
   background-color: #1f2224;
   border-radius: 5px;
   margin: auto;
-  display: flex; /* Use flexbox to arrange children in a row */
-  flex-direction: row; /* Align children horizontally */
-  justify-content: space-around; /* Distribute space evenly around the containers */
+  display: flex;
+  /* Use flexbox to arrange children in a row */
+  flex-direction: row;
+  /* Align children horizontally */
+  justify-content: space-around;
+  /* Distribute space evenly around the containers */
   overflow: auto;
   color: white;
   position: relative;
@@ -145,29 +151,39 @@
 /* Results.css */
 .highlight-icon {
   position: absolute;
-  top: 10px; /* Adjust to align with the top edge of the results-container */
-  right: 10px; /* Adjust to align with the right edge of the results-container */
-  color: #c8000f; /* The red color you specified */
-  cursor: pointer; /* Change the cursor to a pointer when hovering over the icon */
+  top: 10px;
+  /* Adjust to align with the top edge of the results-container */
+  right: 10px;
+  /* Adjust to align with the right edge of the results-container */
+  color: #c8000f;
+  /* The red color you specified */
+  cursor: pointer;
+  /* Change the cursor to a pointer when hovering over the icon */
   opacity: 30%;
 }
 
 .highlight {
-  color: red /* The red color you specified */
+  color: red
+    /* The red color you specified */
 }
 
 .highlight-icon.active {
-  color: red; /* Change to your preferred active color */
+  color: red;
+  /* Change to your preferred active color */
   opacity: 100%;
 }
 
 .reset-icon {
   position: absolute;
   font-size: 80%;
-  top: 12px; /* Adjust to align with the top edge of the results-container */
-  right: 30px; /* Adjust to align with the right edge of the results-container */
-  color: #c8000f; /* The red color you specified */
-  cursor: pointer; /* Change the cursor to a pointer when hovering over the icon */
+  top: 12px;
+  /* Adjust to align with the top edge of the results-container */
+  right: 30px;
+  /* Adjust to align with the right edge of the results-container */
+  color: #c8000f;
+  /* The red color you specified */
+  cursor: pointer;
+  /* Change the cursor to a pointer when hovering over the icon */
 }
 
 .reset-icon:hover {
@@ -200,7 +216,8 @@
 }
 
 .image-icon-container {
-  position: relative; /* This is needed for absolute positioning of children */
+  position: relative;
+  /* This is needed for absolute positioning of children */
 }
 
 
@@ -251,7 +268,9 @@
   margin-right: 10px;
 }
 
-.character-trigger, .volume-trigger, .season-trigger {
+.character-trigger,
+.volume-trigger,
+.season-trigger {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -338,7 +357,9 @@
   align-items: center;
 }
 
-.copy-icon, .image-icon, .info-icon {
+.copy-icon,
+.image-icon,
+.info-icon {
   color: #c8000f;
   cursor: pointer;
   position: relative;
@@ -358,7 +379,9 @@
   margin-left: 3px;
 }
 
-.copy-icon:hover, .image-icon:hover, .info-icon:hover {
+.copy-icon:hover,
+.image-icon:hover,
+.info-icon:hover {
   color: red;
   cursor: pointer;
 }
@@ -391,7 +414,8 @@
   border-radius: 5px;
   border: 1px solid #000;
   padding: 0px 5px 0px 10px;
-  margin: 10px 0 10px 0; /* top right bottom left */
+  margin: 10px 0 10px 0;
+  /* top right bottom left */
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -452,16 +476,18 @@ input[type=number] {
 
 
 .pagination-controls button:hover {
-  color:red;
+  color: red;
 }
 
 .pagination-controls button:disabled {
-  color: #999999; /* Change this to the color you want */
+  color: #999999;
+  /* Change this to the color you want */
   cursor: default;
 }
 
 .pagination-controls button:disabled {
-  color: #999999; /* Change this to the color you want */
+  color: #999999;
+  /* Change this to the color you want */
   cursor: default;
 }
 
@@ -489,23 +515,30 @@ input[type=number] {
   padding: 10px;
   margin-top: 10px;
   margin-left: 10px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 
 
-.results-header, .filters-header {
+.results-header,
+.filters-header {
   font-family: 'Noto Serif JP';
   font-size: calc(1.2em + 2.4vw);
   color: #c8000f;
   font-weight: 100;
   letter-spacing: 0.07em;
   align-items: center;
-  position: flex; /* Position relative to the Header component */
+  position: flex;
+  /* Position relative to the Header component */
   width: 77%;
   border-radius: 5px;
-  display: flex; /* Use flexbox to arrange children in a row */
+  display: flex;
+  /* Use flexbox to arrange children in a row */
   position: relative;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .filters-header {

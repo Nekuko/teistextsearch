@@ -330,6 +330,37 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
       }
     });
 
+    let containsC3_1 = false;
+    let containsC3_2_3 = false;
+    let containsC2_1 = false;
+    let containsC2_2_13 = false;
+
+    for (const item of groupParts) {
+      if (item.text === "MOG SSC SOS C3-1") {
+        containsC3_1 = true;
+      } else if (item.text === "MOG SSC SOS C3-2-3") {
+        containsC3_2_3 = true;
+      } else if (item.text === "MOG SSC SOV C2-1") {
+        containsC2_1 = true;
+      } else if (item.text === "MOG SSC SOV C2-2-13") {
+        containsC2_2_13 = true;
+      }
+    }
+
+    if (containsC2_1 && containsC2_2_13) {
+      groupedMainParts.push({ text: "MOG SSC Sturm of Velgalta", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 2 Sturm of Velgalta" })
+      groupedMainParts = groupedMainParts.filter(item => {
+        return item.text !== "MOG SSC SOV C2-1" && item.text !== "MOG SSC SOV C2-2-13";
+      });
+    }
+
+    if (containsC3_1 && containsC3_2_3) {
+      groupedMainParts.push({ text: "MOG SSC Secret of Sacra", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 3 Secret of Sacra" })
+      groupedMainParts = groupedMainParts.filter(item => {
+        return item.text !== "MOG SSC SOS C3-1" && item.text !== "MOG SSC SOS C3-2-3";
+      });
+    }
+
 
 
     let mainGroups = ["MOG SSC Rise of Garden", "MOG SSC Sturm of Velgalta", "MOG SSC Secret of Sacra"];
@@ -489,15 +520,15 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
       const grouped = list.reduce((acc, item, index, array) => {
         const currentEpisode = item.text.split(' ')[4]; // Assuming 'E1', 'E2', etc. are at this position
         const nextEpisode = array[index + 1] ? array[index + 1].text.split(' ')[4] : null;
-    
+
         // Check if current or next episode contains a dash
         const hasCurrentDash = currentEpisode.includes('-');
         const hasNextDash = nextEpisode ? nextEpisode.includes('-') : false;
-    
+
         if (!hasCurrentDash) {
           const currentNumber = parseInt(currentEpisode.replace('E', ''));
           const nextNumber = hasNextDash ? null : nextEpisode ? parseInt(nextEpisode.replace('E', '')) : null;
-    
+
           if (nextNumber && currentNumber + 1 === nextNumber) {
             if (!acc.temp) acc.temp = [currentEpisode];
             acc.temp.push(nextEpisode);
@@ -506,7 +537,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
               const lastOccurrenceRegexText = new RegExp(`E${acc.temp[acc.temp.length - 1].replace('E', '')}$`);
               // Replace only the last occurrence of 'Episode <number>' in hoverText
               const lastOccurrenceRegexHover = new RegExp(`Episode ${acc.temp[acc.temp.length - 1].replace('E', '')}$`);
-              
+
               acc.grouped.push({
                 text: item.text.replace(lastOccurrenceRegexText, `E${acc.temp[0].replace('E', '')}-${acc.temp[acc.temp.length - 1].replace('E', '')}`),
                 hoverText: item.hoverText.replace(lastOccurrenceRegexHover, `Episodes ${acc.temp[0].replace('E', '')}-${acc.temp[acc.temp.length - 1].replace('E', '')}`)
@@ -530,15 +561,15 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
         }
         return acc;
       }, { grouped: [], temp: null }).grouped;
-    
+
       return grouped;
     };
-    
+
     apoList = groupAdjacentEpisodes(apoList);
-    
+
     // Return the new list with combined episodes
     return apoList;
-    
+
   };
 
 
@@ -813,7 +844,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
 
     return characterList;
   };
-  
+
   // Helper function to get character entries
   const getCharacterEntries = (character, attributes) => {
     let entries = [];
@@ -835,7 +866,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     }
     return entries;
   };
-  
+
 
   // Call the function to get the new list
   const selectedAnimeList = getSelectedAnimeList();
@@ -848,12 +879,12 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
 
   let mogCombined = [...selectedSSCList, ...selectedESList, ...selectedAPOList];
   if (mogCombined.length === 3) {
-    if (mogCombined[0].text === "MOG Seven Shadows Chronicles" && 
+    if (mogCombined[0].text === "MOG Seven Shadows Chronicles" &&
       mogCombined[1].text === "MOG Event Stories"
       && mogCombined[2].text === "MOG Apocrypha") {
       mogCombined = [{ text: "Master of Garden", hoverText: "Master of Garden" }]
     }
-    if (mogCombined[0].text === "MOG Seven Shadows Chronicles" 
+    if (mogCombined[0].text === "MOG Seven Shadows Chronicles"
       && mogCombined[1].text === "MOG ES Auxiliary Chapters"
       && mogCombined[2].text === "MOG Apocrypha") {
       mogCombined = [{ text: "Master of Garden (Canon)", hoverText: "Master of Garden (Canon)" }]

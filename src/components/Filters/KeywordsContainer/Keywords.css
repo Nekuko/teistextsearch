@@ -6,7 +6,12 @@
   }
   
   .keywords-search {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #c8000f;
+    margin-right: 20px;
+    margin-top: 30px;
   }
   
   .keywords-container {
@@ -80,6 +85,10 @@
     letter-spacing: 0.07em;
     margin-bottom: 10px;
     border-bottom: 1px solid white;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
   
   .keywords-input-container {

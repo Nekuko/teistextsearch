@@ -13,7 +13,6 @@ import * as characterCovers from '../../images/characterIcons';
 import * as covers from '../../images/covers';
 import { fetchLNData, fetchWNData, fetchAPOData, fetchESData, fetchSSCData } from '../../utils/firebaseFunctions';
 import { VERSIONS } from '../../versions';
-import { faGaugeSimpleMed, faListNumeric, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { ESMAPREVERSE } from '../../esMap';
 
 
@@ -5887,7 +5886,7 @@ function SearchPage() {
                                 },
                             }
                         },
-                        "Mercenarys": {
+                        "Mercenaries": {
                             openGroup: false,
                             checked: false,
                             open: false,

@@ -11,8 +11,6 @@
 
   .search-button {
     font-size: calc(0.3em + 1vw);
-    margin-top: 19%;
-    margin-right: 20px;
     box-shadow: 1px 1px 2px;
     border: none;
   }
@@ -107,4 +105,8 @@
   letter-spacing: 0.07em;
   margin-bottom: 0;
   border-bottom: 1px solid white; /* Adjust the color as needed */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }

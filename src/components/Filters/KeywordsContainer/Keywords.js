@@ -1,5 +1,5 @@
 // Keywords.js
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import './Keywords.css'; // Import the CSS file
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faXmark, faRotateRight } from '@fortawesome/free-solid-svg-icons';
@@ -7,7 +7,7 @@ import { VscCaseSensitive } from "react-icons/vsc";
 import { ReactComponent as WholeWord } from '../../../svgs/codicon--whole-word.svg';
 
 function Keywords({ filterState, setFilterState, handleSearch, keywordsFlash, setKeywordsFlash }) {
-  const [inputValue, setInputValue] = React.useState('');
+  const [inputValue, setInputValue] = useState('');
 
   useEffect(() => {
     if (keywordsFlash) {
@@ -112,6 +112,7 @@ function Keywords({ filterState, setFilterState, handleSearch, keywordsFlash, se
     </div>
       <div className="keywords-search">
         <button className="search-button" onClick={handleSearch}>SEARCH</button> {/* Search button */}
+
       </div>
     </div>
   );

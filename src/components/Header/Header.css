@@ -11,6 +11,41 @@
   }
 }
 
+.overlay-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 30px;
+  right: 0;
+  width: 250px;
+  height: auto;
+  background-color: rgba(17, 17, 17, 1); /* Semi-transparent black overlay */
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.burger-icon {
+  font-size: 200%;
+  position: absolute;
+  color: white;
+  right: 10px;
+  top: 34px;
+  z-index: 3;
+}
+
+.burger-icon:hover {
+  color: #c8000f;
+  cursor: pointer;
+}
+
+.burger-open {
+  color: #c8000f;
+}
+
+.burger-open:hover {
+  color: white;
+}
+
 .Header {
   display: flex;
   position: relative;
@@ -19,6 +54,7 @@
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   height: 100px;
+  z-index: 1;
 }
 
 .Header .title {
@@ -43,14 +79,27 @@
   justify-content: flex-end;
 }
 
-.Header nav ul {
+.desktop-nav-ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-around; /* change this from space-between to space-around */
+  justify-content: space-around; 
   align-items: center;
 }
 
-.Header nav ul li {
+.mobile-nav-ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 30px;
+}
+
+.desktop-nav-li {
+  padding: 0 2vw; /* add padding to each list item */
+  flex: 1 1 auto; /* add this to allow the items to shrink and grow as needed */
+}
+
+.mobile-nav-li {
   padding: 0 2vw; /* add padding to each list item */
   flex: 1 1 auto; /* add this to allow the items to shrink and grow as needed */
 }
@@ -62,7 +111,6 @@
   font-weight: 700;
   position: relative;
   overflow: hidden;
-  z-index: 1;
   white-space: nowrap; /* add this to prevent text from breaking into multiple lines */
   background-size: 200% 100%;
   background-position: right;
@@ -90,6 +138,8 @@
 .Header nav ul li a:hover {
   color: #fff; /* change this to the color you want when hovered */
 }
+
+
 
 .active-link {
   background-color: #c8000f; /* change this to the color you want when active */
