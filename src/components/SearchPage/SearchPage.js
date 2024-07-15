@@ -5074,15 +5074,20 @@ function SearchPage() {
                                     "Seven Shadows (Beta)": false,
                                     "Alpha & Beta (Beta)": false,
                                     "Beta & Epsilon (Beta)": false,
+                                    "Beta & Gamma (Beta)": false,
+                                    "Beta & Delta & Zeta (Beta)": false,
                                     "checked": false,
                                     "open": false
                                 },
                                 "Gamma": {
                                     "Gamma": false,
                                     "??? (Gamma)": false,
+                                    "None (Gamma)": false,
                                     "Everyone (Gamma)": false,
                                     "Seven Shadows (Gamma)": false,
-                                    "None (Gamma)": false,
+                                    "Beta & Gamma (Gamma)": false,
+                                    "Gamma & Epsilon (Gamma)": false,
+                                    "Gamma & Epsilon & Eta (Gamma)": false,
                                     "checked": false,
                                     "open": false
                                 },
@@ -5092,6 +5097,7 @@ function SearchPage() {
                                     "Everyone (Delta)": false,
                                     "Seven Shadows (Delta)": false,
                                     "Delta & Zeta (Delta)": false,
+                                    "Beta & Delta & Zeta (Delta)": false,
                                     "checked": false,
                                     "open": false
                                 },
@@ -5101,6 +5107,8 @@ function SearchPage() {
                                     "Everyone (Epsilon)": false,
                                     "Seven Shadows (Epsilon)": false,
                                     "Beta & Epsilon (Epsilon)": false,
+                                    "Gamma & Epsilon (Epsilon)": false,
+                                    "Gamma & Epsilon & Eta (Epsilon)": false,
                                     "checked": false,
                                     "open": false
                                 },
@@ -5112,6 +5120,7 @@ function SearchPage() {
                                     "Alpha & Zeta (Zeta)": false,
                                     "Delta & Zeta (Zeta)": false,
                                     "Zeta & Eta (Zeta)": false,
+                                    "Beta & Delta & Zeta (Zeta)": false,
                                     "checked": false,
                                     "open": false
                                 },
@@ -5121,6 +5130,7 @@ function SearchPage() {
                                     "Everyone (Eta)": false,
                                     "Seven Shadows (Eta)": false,
                                     "Zeta & Eta (Eta)": false,
+                                    "Gamma & Epsilon & Eta (Eta)": false,
                                     "checked": false,
                                     "open": false
                                 }
@@ -5149,13 +5159,20 @@ function SearchPage() {
                                 },
                                 "Chi": {
                                     "Chi": false,
+                                    "No. 111": false,
+                                    "Karen": false,
+                                    "??? (Karen)": false,
                                     "Chi & Omega (Chi)": false,
+                                    "No. 111 & No. 122 (No. 111)": false,
                                     "checked": false,
                                     "open": false
                                 },
                                 "Omega": {
                                     "Omega": false,
+                                    "No. 122": false,
+                                    "Possessed (Omega)": false,
                                     "Chi & Omega (Omega)": false,
+                                    "No. 111 & No. 122 (No. 122)": false,
                                     "checked": false,
                                     "open": false
                                 }
@@ -5305,12 +5322,75 @@ function SearchPage() {
                         }
                     }
                 },
+                'VELGALTA': {
+                    openGroup: false,
+                    checked: false,
+                    filters: '',
+                    open: false,
+                    groups: {
+                        "Generic": {
+                            openGroup: false,
+                            checked: false,
+                            open: false,
+                            filters: '',
+                            characters: {
+                                "Curie Oso": {
+                                    "checked": false,
+                                },
+                                "Velgalta Soldier": {
+                                    "checked": false,
+                                },
+                                "Velgalta Soldiers": {
+                                    "checked": false,
+                                },
+                                "Velgalta Soldier A": {
+                                    "checked": false,
+                                },
+                                "Velgalta Soldier B": {
+                                    "checked": false,
+                                },
+                                "Velgalta Soldier C": {
+                                    "checked": false,
+                                },
+                                "Velgalta Soldier D": {
+                                    "checked": false,
+                                },
+                                "Velgalta Soldier E": {
+                                    "checked": false,
+                                }
+                            }
+                        }
+                    },
+                    characters: {
+                        "Annerose Nichtsehen": {
+                            "Annerose Nichtsehen": false,
+                            "None (Annerose)": false,
+                            "open": false,
+                            "checked": false,
+                        }
+                    }
+                },
                 'CULT OF DIABLOS': {
                     openGroup: false,
                     checked: false,
                     filters: '',
                     open: false,
                     groups: {
+                        "Knights of Rounds": {
+                            openGroup: false,
+                            checked: false,
+                            open: false,
+                            filters: '',
+                            characters: {
+                                "Sergey Gorman": {
+                                    "Sergey Gorman": false,
+                                    "??? (Sergey Gorman)": false,
+                                    "None (Sergey Gorman)": false,
+                                    "checked": false,
+                                    "open": false
+                                }
+                            }
+                        },
                         "Children": {
                             openGroup: false,
                             checked: false,
@@ -5334,6 +5414,9 @@ function SearchPage() {
                             open: false,
                             filters: '',
                             characters: {
+                                "Cultist": {
+                                    "checked": false,
+                                },
                                 "Cultist A": {
                                     "checked": false,
                                 },
@@ -5410,11 +5493,16 @@ function SearchPage() {
                             filters: '',
                             characters: {
                                 "Malak": {
+                                    "Malak": false,
+                                    "Malaks": false,
+                                    "Malak Swarm": false,
+                                    "open": false,
                                     "checked": false
                                 },
                                 "Mist Dragon": {
                                     "Mist Dragon": false,
                                     "??? (Mist Dragon)": false,
+                                    "None (Mist Dragon)": false,
                                     "open": false,
                                     "checked": false,
                                 },
@@ -5910,6 +5998,9 @@ function SearchPage() {
                                 "Mercenary Boss": {
                                     "checked": false,
                                 },
+                                "Mundane Mercenary": {
+                                    "checked": false,
+                                }
                             }
                         },
                         "Monsters": {
@@ -6157,22 +6248,28 @@ function SearchPage() {
         'No. 666': ['No. 666', 'No.666'],
         'Alpha (All)': ['Alpha', '??? (Alpha)', 'None (Alpha)', 'Everyone (Alpha)', 'Alpha & Zeta (Alpha)', 'Alpha & Beta (Alpha)', 'Seven Shadows (Alpha)'],
         'Alpha': ['??? (Alpha)', 'None (Alpha)'],
-        'Beta (All)': ['Beta', 'Natsume Kafka', 'Natsume', '??? (Natsume Kafka)', '??? (Natsume)', 'None (Beta)', 'Everyone (Beta)', 'Beta & Epsilon (Beta)', 'Alpha & Beta (Beta)', '??? (Beta)', 'Seven Shadows (Beta)'],
+        'Beta (All)': ['Beta', 'Natsume Kafka', 'Natsume', '??? (Natsume Kafka)', '??? (Natsume)', 'None (Beta)', 'Everyone (Beta)', 'Beta & Epsilon (Beta)', 
+            'Alpha & Beta (Beta)', 'Beta & Gamma (Beta)', '??? (Beta)', 'Seven Shadows (Beta)', 'Beta & Delta & Zeta (Beta)'],
         'Beta': ['??? (Beta)', 'None (Beta)'],
         'Natsume Kafka': ['Natsume'],
         '??? (Natsume Kafka)': ['??? (Natsume)'],
-        'Gamma (All)': ['Gamma', 'Everyone (Gamma)', '??? (Gamma)', 'Seven Shadows (Gamma)', 'None (Gamma)'],
+        'Gamma (All)': ['Gamma', 'Everyone (Gamma)', '??? (Gamma)', 'Seven Shadows (Gamma)', 'None (Gamma)', 'Beta & Gamma (Gamma)', 
+            'Gamma& Epsilon & Eta (Gamma)', 'Gamma & Epsilon (Gamma)'],
         'Gamma': ['??? (Gamma)', 'None (Gamma)'],
-        "Delta (All)": ['Delta', 'Everyone (Delta)', '??? (Delta)', 'Seven Shadows (Delta)', 'Delta & Zeta (Delta)'],
+        "Delta (All)": ['Delta', 'Everyone (Delta)', '??? (Delta)', 'Seven Shadows (Delta)', 'Delta & Zeta (Delta)', 'Beta & Delta & Zeta (Delta)'],
         "Delta": ['??? (Delta)'],
-        'Epsilon (All)': ['Epsilon', 'Everyone (Epsilon)', 'Beta & Epsilon (Epsilon)', '??? (Epsilon)', 'Seven Shadows (Epsilon)'],
+        'Epsilon (All)': ['Epsilon', 'Everyone (Epsilon)', 'Beta & Epsilon (Epsilon)', '??? (Epsilon)', 'Seven Shadows (Epsilon)', 
+            'Gamma& Epsilon & Eta (Epsilon)', 'Gamma & Epsilon (Epsilon)'],
         'Epsilon': ['??? (Epsilon)'],
-        'Zeta (All)': ['Zeta', 'Everyone (Zeta)', 'Alpha & Zeta (Zeta)', 'Zeta & Eta (Zeta)', '??? (Zeta)', 'Seven Shadows (Zeta)', 'Delta & Zeta (Zeta)'],
+        'Zeta (All)': ['Zeta', 'Everyone (Zeta)', 'Alpha & Zeta (Zeta)', 'Zeta & Eta (Zeta)', '??? (Zeta)', 'Seven Shadows (Zeta)', 'Delta & Zeta (Zeta)', 'Beta & Delta & Zeta (Zeta)'],
         'Zeta': ['??? (Zeta)'],
-        'Eta (All)': ['Eta', 'Everyone (Eta)', 'Zeta & Eta (Eta)', 'Seven Shadows (Eta)', '??? (Eta)'],
+        'Eta (All)': ['Eta', 'Everyone (Eta)', 'Zeta & Eta (Eta)', 'Seven Shadows (Eta)', '??? (Eta)', 'Gamma& Epsilon & Eta (Eta)'],
+        'Gamma & Epsilon & Eta (Eta)': ['Gamma& Epsilon & Eta (Eta)'],
+        'Gamma & Epsilon & Eta (Gamma)': ['Gamma& Epsilon & Eta (Gamma)'],
+        'Gamma & Epsilon & Eta (Epsilon)': ['Gamma& Epsilon & Eta (Epsilon)'],
         'Eta': ['??? (Eta)'],
-        'Chi (All)': ["Chi", "(Chi & Omega (Chi)"],
-        'Omega (All)': ["Omega", "(Chi & Omega (Omega)"],
+        'Chi (All)': ["Chi", "Chi & Omega (Chi)", "Karen", "??? (Karen)", "No. 111", "No. 111 & No. 122 (No. 111)"],
+        'Omega (All)': ["Omega", "Chi & Omega (Omega)", "Possessed (Omega)", "No. 111 & No. 122 (No. 122)", "No. 122"],
         'Lambda (All)': ['Lambda', 'Tawny Elf (Lambda)', 'None (Lambda)'],
         'Lambda': ['None (Lambda)'],
         'Diablos': ['Massive Mound of Magic'],
@@ -6202,15 +6299,20 @@ function SearchPage() {
         'Wethermon': ['??? (Wethermon)'],
         'Sunraku (All)': ['Sunraku', '??? (Sunraku)', 'Cid & Sunraku (Sunraku)', 'Sunraku & Shadow (Sunraku)'],
         'Sunraku': ['??? (Sunraku)'],
-        'Mist Dragon (All)': ['Mist Dragon', '??? (Mist Dragon)'],
-        'Mist Dragon': ['??? (Mist Dragon)'],
+        'Mist Dragon (All)': ['Mist Dragon', '??? (Mist Dragon)', 'None (Mist Dragon)'],
+        'Mist Dragon': ['??? (Mist Dragon)', 'None (Mist Dragon)'],
         'Templar (All)': ['Templar', '????? (Templar)'],
         'Templar': ['????? (Templar)'],
         'Cult Member A (All)': ['Cult Member A', 'Cult Member A & B (Cult Member A)'],
         'Cult Member B (All)': ['Cult Member B', 'Cult Member A & B (Cult Member B)'],
         'Marco Granger (All)': ['Marco Granger', 'Dark Knight Trainee'],
         'Mercenary A (All)': ['Mercenary A', '??? (Mercenary A)'],
+        'Sergey Gorman (All)': ['Sergey Gorman', '??? (Sergey Gorman)', "Sergey", "Sergei"],
+        'Sergey': ['Sergei'],
         'Bishop Drake (All)': ['Bishop Drake', 'Bishop of Orum'],
+        'Curie Oso': ['Curious Noblewoman'],
+        'Annerose Nichtsehen (All)': ['Annerose', 'None (Annerose)'],
+        'Annerose Nichtsehen': ['Annerose', 'None (Annerose)'],
         'None': ['']
     };
 
