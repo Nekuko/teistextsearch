@@ -33,7 +33,7 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
   const characterImages = images.characterImages;
   const coverImages = images.animeCoverImages;
 
-  function handleMouseEnterInfo(seasonKey, episodeKey, index, seasonTitle, episodeTitle, start_time, end_time, name, name_variant) {
+  function handleMouseEnterInfo(seasonKey, episodeKey, index, seasonTitle, episodeTitle, start_time, end_time, name, name_variant, line) {
     let nameFinal;
     if (name === name_variant) {
       nameFinal = name;
@@ -44,7 +44,7 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
     setPreviewPosition({ top: rect.top, left: rect.left });
 
     // Set the text data directly as the preview text
-    setPreviewText(`Anime<br />${seasonTitle}<br />Episode ${episodeTitle.replace("|", "-")}<br />Time: ${start_time.replaceAll("-", ":")} - ${end_time.replaceAll("-", ":")}<br />${nameFinal}`);
+    setPreviewText(`Anime<br />${seasonTitle}<br />Episode ${episodeTitle.replace("|", "-")}<br />Time: ${start_time.replaceAll("-", ":")} - ${end_time.replaceAll("-", ":")}<br/> Subtitle: ${line}<br />${nameFinal}`);
   }
 
   const highlightKeywords = (text) => {
@@ -155,7 +155,7 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
                               </div>
                               <SlashLine className="icon-slashline" />
                               <div className="info-icon-container"
-                                onMouseEnter={() => handleMouseEnterInfo(seasonKey, episodeKey, index, seasonTitle, episodeTitle, sentence.start_time, sentence.end_time, sentence.name, sentence.name_variant)}
+                                onMouseEnter={() => handleMouseEnterInfo(seasonKey, episodeKey, index, seasonTitle, episodeTitle, sentence.start_time, sentence.end_time, sentence.name, sentence.name_variant, sentence.line)}
                                 onMouseLeave={() => setPreviewText(null)}
                                 ref={ref => iconRefs.current[`${seasonKey}-${episodeKey}-${index}-info`] = ref}
                               >

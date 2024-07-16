@@ -352,4 +352,75 @@ export async function fetchESData(esCheckedItems, versionData, setVersionData) {
     return esCheckedData;
 }
 
+export async function fetchANData(anCheckedItems, versionData, setVersionData) {
+    let anCheckedData = {};
+    let uniqueParts = [...new Set(anCheckedItems.map(item => `${item.split('_')[1]}_${item.split('_')[2]}`))];
+    console.log(uniqueParts)
+    const db = await openDB('firestore-cache-db', 1, {
+        upgrade(db) {
+            db.createObjectStore('firestore-cache');
+        },
+    });
+
+    const versionDocRef = doc(firestore, 'data', 'versions');
+    let versionDocSnap;
+    if (versionData) {
+        console.log("Version already stored locally (not indexedb).");
+        versionDocSnap = versionData;
+    } else {
+        versionDocSnap = await getDoc(versionDocRef);
+        setVersionData(versionDocSnap);
+        console.log("Version retrieved from firebase.");
+    }
+
+    for (let part of uniqueParts) {
+        let firestoreVersion = versionDocSnap.data().an[part]; // Update to 'an' instead of 'es'
+        console.log("Firestore Version", firestoreVersion);
+
+        let indexedDBVersion = await db.get('firestore-cache', `data-versions-an-${part}`); // Update to 'an' instead of 'es'
+        console.log("IndexedDB Version", indexedDBVersion);
+
+        let data;
+        if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
+            console.log(part)
+            console.log("Newer version found or no version in IndexedDB.");
+            const dataDocRef = doc(firestore, 'data', `an_${part}`); // Update to 'an' instead of 'es'
+            let dataDocSnap = await getDoc(dataDocRef);
+            data = dataDocSnap.data();
+
+            // Store the data in IndexedDB for future use
+            await db.put('firestore-cache', data, `data-an-${part}`); // Update to 'an' instead of 'es'
+            console.log("Data retrieved from firebase and saved to IndexedDB.");
+        } else if (firestoreVersion === indexedDBVersion) {
+            console.log("Same version found.");
+            // Fetch data from IndexedDB
+            data = await db.get('firestore-cache', `data-an-${part}`); // Update to 'an' instead of 'es'
+            console.log("Data retrieved from IndexedDB.");
+        }
+
+        console.log(data);
+
+        for (let item of anCheckedItems) { // Update to 'an' instead of 'es'
+            let [_, partChecked, episode] = item.split('_');
+            console.log(item)
+            let split_part = part.split("_")[0];
+            if (split_part === partChecked && data[episode]) {
+                if (!anCheckedData[split_part]) {
+                    anCheckedData[split_part] = {};
+                }
+                anCheckedData[split_part][episode] = data[episode];
+            }
+        }
+
+        // Store the version number in IndexedDB for future use
+        if (firestoreVersion !== indexedDBVersion) {
+            await db.put('firestore-cache', firestoreVersion, `data-versions-an-${part}`); // Update to 'an' instead of 'es'
+            console.log("New version saved to indexedDB.");
+        }
+    }
+    console.log(anCheckedData);
+
+    return anCheckedData;
+}
+
 

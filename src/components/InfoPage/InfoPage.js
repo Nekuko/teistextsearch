@@ -11,6 +11,10 @@ const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
+
+const sscMap = { 'p1': 'Part 1 | Rise of Garden', 'p1_c1-1': 'Chapter 1-1 | Shadow Garden, Mobilize!', 'p1_c1-1_e1': 'Episode 1 - Prelude', 'p1_c1-1_e2': 'Episode 2 - Garden Policy', 'p1_c1-1_e3': 'Episode 3 - Shadow Garden Covert Op', 'p1_c1-1_e4': 'Episode 4 - Possessed Search', 'p1_c1-1_e5': 'Episode 5 - After the Rescue', 'p1_c1-2': 'Chapter 1-2 | Ancient Dragon of Alexandria', 'p1_c1-2_e1': 'Episode 1 - The Lost City', 'p1_c1-2_e2': 'Episode 2 - Abyss Woods', 'p1_c1-2_e3': 'Episode 3 - Tale of Ruin', 'p1_c1-2_e4': "Episode 4 - Shadow's Sword", 'p1_c1-2_e5': 'Episode 5 - Future Unlocked', 'p1_c1-3': "Chapter 1-3 | Have Mercy! Eta's Protocol", 'p1_c1-3_e1': "Episode 1 - Eta's Scheme", 'p1_c1-3_e2': 'Episode 2 - Defense System', 'p1_c1-3_e3': 'Episode 3 - Magic Gear', 'p1_c1-3_e4': 'Episode 4 - Try, Try Again', 'p1_c1-3_e5': "Episode 5 - The Gear's Value", 'p1_c1-4': 'Chapter 1-4 | Behold! Tuna Chaos', 'p1_c1-4_e1': 'Episode 1 - Day Off Together', 'p1_c1-4_e2': 'Episode 2 - Going Fishing', 'p1_c1-4_e3': 'Episode 3 - Tasty Tuna Sammy', 'p1_c1-4_e4': 'Episode 4 - Victory Formula', 'p1_c1-4_e5': 'Episode 5 - A King is Born', 'p1_c1-5': 'Chapter 1-5 | Here Comes Trouble', 'p1_c1-5_e1': 'Episode 1 - News Beginnings', 'p1_c1-5_e2': 'Episode 2 - Open the Door', 'p1_c1-5_e3': 'Episode 3 - N. Kafka is Born', 'p1_c1-5_e4': 'Episode 4 - Mystery Paladin', 'p1_c1-5_e5': 'Episode 5 - Point Blank', 'p1_c1-6': 'Chapter 1-6 | Intense! Unstoppable Alpha', 'p1_c1-6_e1': 'Episode 1 - Poking the Bear', 'p1_c1-6_e2': 'Episode 2 - Re-Infiltration', 'p1_c1-6_e3': 'Episode 3 - BBQ Provocation', 'p1_c1-6_e4': 'Episode 4 - Merciless Probe', 'p1_c1-6_e5': 'Episode 5 - Grace Thy Blade', 'p1_c1-7': "Chapter 1-7 | Brutal! Delta's Night Hunt", 'p1_c1-7_e1': 'Episode 1 - Mountaineering', 'p1_c1-7_e2': 'Episode 2 - As Cats and Dogs', 'p1_c1-7_e3': 'Episode 3 - Begin the Hunt', 'p1_c1-7_e4': 'Episode 4 - Brutal Diplomacy', 'p1_c1-7_e5': 'Episode 5 - My Fangs Rejoice', 'p1_c1-8': 'Chapter 1-8 | She is Beauty, She is Grace!', 'p1_c1-8_e1': 'Episode 1 - Inspired by Ire', 'p1_c1-8_e2': 'Episode 2 - Presentation Row', 'p1_c1-8_e3': 'Episode 3 - Shadow Power!', 'p1_c1-8_e4': "Episode 4 - Epsilon's Justice", 'p1_c1-8_e5': 'Episode 5 - Pianist Shiron', 'p1_c1-9': 'Chapter 1-9 | Watch Out, Gamma!', 'p1_c1-9_e1': 'Episode 1 - Morning Shopping', 'p1_c1-9_e2': "Episode 2 - Luna's Past", 'p1_c1-9_e3': 'Episode 3 - Luna: The Truth', 'p1_c1-9_e4': 'Episode 4 - Gamma Capriccio', 'p1_c1-9_e5': 'Episode 5 - Shadow World Foe', 'p1_c1-10': 'Chapter 1-10 | Mitsugoshi, Ltd. is Open!', 'p1_c1-10_e1': 'Episode 1 - Info Wars Begin', 'p1_c1-10_e2': 'Episode 2 - Plot at A-Okay Co.', 'p1_c1-10_e3': 'Episode 3 - Deception Op', 'p1_c1-10_e4': 'Episode 4 - Mitsugoshi Credo', 'p1_c1-10_e5': 'Episode 5 - No Shadows Left', 'p1_c1-11': 'Chapter 1-11 | Deal! Arranged Booking', 'p1_c1-11_e1': 'Episode 1 - Beta Reminisces', 'p1_c1-11_e2': 'Episode 2 - Harsh Happenings', 'p1_c1-11_e3': 'Episode 3 - 2 Birds 1 Stone', 'p1_c1-11_e4': "Episode 4 - Sponsor's Intent", 'p1_c1-11_e5': 'Episode 5 - Ebony Swirl', 'p1_c1-12': 'Chapter 1-12 | Natsume & Shiron Hang Out!', 'p1_c1-12_e1': 'Episode 1 - City-State Duo', 'p1_c1-12_e2': 'Episode 2 - Fleeting Vacance', 'p1_c1-12_e3': 'Episode 3 - Jugang Ruins', 'p1_c1-12_e4': 'Episode 4 - Beta—Behind You!', 'p1_c1-12_e5': 'Episode 5 - Great Collapse', 'p1_c1-13': 'Chapter 1-13 | Visions... Zeta and the Prophet', 'p1_c1-13_e1': 'Episode 1 - Spy Request', 'p1_c1-13_e2': 'Episode 2 - Saintly Prayer', 'p1_c1-13_e3': 'Episode 3 - Secret Cathedral', 'p1_c1-13_e4': 'Episode 4 - Wonky Background', 'p1_c1-13_e5': 'Episode 5 - Victoria—Prophet', 'p1_c1-14': 'Chapter 1-14 | The Garden on the Eve of Battle!', 'p1_c1-14_e1': 'Episode 1 - Can You Lift?', 'p1_c1-14_e2': 'Episode 2 - Research & Hair', 'p1_c1-14_e3': "Episode 3 - Garden's Enemy", 'p1_c1-14_e4': 'Episode 4 - Cherish Shadow', 'p1_c1-14_e5': 'Episode 5 - To the Prelude', 'p1_c1-15': 'Chapter 1-15 | Final Battle! Templar Fanatics', 'p1_c1-15_e1': 'Episode 1 - Battlefront: Part 1', 'p1_c1-15_e2': 'Episode 2 - Battlefront: Part 2', 'p1_c1-15_e3': 'Episode 3 - Battlefront: Part 3', 'p1_c1-15_e4': 'Episode 4 - Reunion in Flame', 'p1_c1-15_e5': 'Episode 5 - Prelude to a New Battle', 'p2': 'Part 2 | Sturm of Velgalta', 'p2_c2-1': 'Chapter 2-1 | Operation: Rescue & Recover', 'p2_c2-1_e1': "Episode 1 - Zeta's Departure", 'p2_c2-1_e2': 'Episode 2 - Lurk in Darkness, Hunt Down Shadows', 'p2_c2-1_e3': 'Episode 3 - Possessed Heiress', 'p2_c2-1_e4': 'Episode 4 - Nicoletta Marquez', 'p2_c2-1_e5': 'Episode 5 - Opeartion: Rescue', 'p2_c2-2': 'Chapter 2-2 | A Brilliant Mission!', 'p2_c2-2_e1': 'Episode 1 - Slow and Slay', 'p2_c2-2_e2': 'Episode 2 - The Weakest Link', 'p2_c2-2_e3': 'Episode 3 - Pitfall Experiments', 'p2_c2-2_e4': "Episode 4 - Prophetess' Doubt", 'p2_c2-2_e5': 'Episode 5 - Destined Numbers', 'p2_c2-3': 'Chapter 2-3 | Investigation! In Search of Oil', 'p2_c2-3_e1': 'Episode 1 - Buried Black Gold', 'p2_c2-3_e2': 'Episode 2 - The Land of Madlid', 'p2_c2-3_e3': 'Episode 3 - Nyle River Trouble', 'p2_c2-3_e4': 'Episode 4 - Malak the Malevolent', 'p2_c2-3_e5': 'Episode 5 - The Perfect Base', 'p2_c2-4': 'Chapter 2-4 | Possessed Cult Leader', 'p2_c2-4_e1': 'Episode 1 - Keep Investigating', 'p2_c2-4_e2': 'Episode 2 - Two "Seven Blades"', 'p2_c2-4_e3': 'Episode 3 - Confronting Sergey', 'p2_c2-4_e4': 'Episode 4 - Not Even a Scratch', 'p2_c2-4_e5': 'Episode 5 - Glorious Escape', 'p2_c2-5': 'Chapter 2-5 |  Cult Secrets Revealed!', 'p2_c2-5_e1': 'Episode 1 - Possessed Lady Karen', 'p2_c2-5_e2': 'Episode 2 - Two Ruthless Choices', 'p2_c2-5_e3': 'Episode 3 - Cult Secrets Unveiled', 'p2_c2-5_e4': 'Episode 4 - To Know Thyself', 'p2_c2-5_e5': 'Episode 5 - Loss and Rebirth', 'p2_c2-6': 'Chapter 2-6 | The Garden Heads North', 'p2_c2-6_e1': 'Episode 1 - Mysterious "Tears"', 'p2_c2-6_e2': 'Episode 2 - Countering Regeneration', 'p2_c2-6_e3': 'Episode 3 - Altered History', 'p2_c2-6_e4': 'Episode 4 - Vengeance is Mine', 'p2_c2-6_e5': 'Episode 5 - Journey to the North', 'p2_c2-7': 'Chapter 2-7 | Blood Pact! Unlikely Pair', 'p2_c2-7_e1': 'Episode 1 - Secret Villa Seizure', 'p2_c2-7_e2': 'Episode 2 - Secret Fund in Laugus', 'p2_c2-7_e3': 'Episode 3 - RIP Mundane Man', 'p2_c2-7_e4': 'Episode 4 - Authorized Savagery', 'p2_c2-7_e5': 'Episode 5 - Without Loyalties', 'p2_c2-8': 'Chapter 2-8 | Seven Blades Swordswoman', 'p2_c2-8_e1': 'Episode 1 - Her Name is Annerose', 'p2_c2-8_e2': 'Episode 2 - Naive Swordswoman', 'p2_c2-8_e3': 'Episode 3 - Luna & Annerose', 'p2_c2-8_e4': "Episode 4 - A Knight's Honor", 'p2_c2-8_e5': 'Episode 5 - What is Passed Down', 'p2_c2-9': 'Chapter 2-9 | The Ones We Protect', 'p2_c2-9_e1': 'Episode 1 - Fallout', 'p2_c2-9_e2': 'Episode 2 - Painted Lies', 'p2_c2-9_e3': 'Episode 3 - Reason to Fight', 'p2_c2-9_e4': 'Episode 4 - The Ones We Protect', 'p2_c2-9_e5': 'Episode 5 - Embarkment', 'p2_c2-10': 'Chapter 2-10 | Duel! Defeat Malak!', 'p2_c2-10_e1': 'Episode 1 - Path of the Dragon', 'p2_c2-10_e2': 'Episode 2 - Evolutionary Dead-End', 'p2_c2-10_e3': 'Episode 3 - Muscles Are Stored', 'p2_c2-10_e4': 'Episode 4 - Break Apart!', 'p2_c2-10_e5': 'Episode 5 - White Diamond', 'p2_c2-11': 'Chapter 2-11 | Faith and Conviction', 'p2_c2-11_e1': 'Episode 1 - People in the Stands', 'p2_c2-11_e2': 'Episode 2 - Shadow Actress', 'p2_c2-11_e3': "Episode 3 - Trust's Companion", 'p2_c2-11_e4': 'Episode 4 - A Saint Gone Mad', 'p2_c2-11_e5': 'Episode 5 - False Oracles', 'p2_c2-12': "Chapter 2-12 | Evil Ambition's End", 'p2_c2-12_e1': 'Episode 1 - The First Child', 'p2_c2-12_e2': 'Episode 2 - Numbers Advantage', 'p2_c2-12_e3': 'Episode 3 - "He" is Here', 'p2_c2-12_e4': 'Episode 4 - Dragon Awakes', 'p2_c2-12_e5': 'Episode 5 - Summit of Strength', 'p2_c2-13': 'Chapter 2-13 | Hero...... Lured by Illusions', 'p2_c2-13_e1': 'Episode 1 - A New Journey', 'p2_c2-13_e2': "Episode 2 - Sergey's Hideout", 'p2_c2-13_e3': 'Episode 3 - Artificial Dragons', 'p2_c2-13_e4': "Episode 4 - Ambition's End", 'p2_c2-13_e5': 'Episode 5 - A Mysterious Elf', 'p3': 'Part 3 | Secret of Sacra', 'p3_c3-1': 'Chapter 3-1 | Shadow Garden Revamp', 'p3_c3-1_e1': 'Episode 1 - A Bitter Retreat', 'p3_c3-1_e2': 'Episode 2 - Reorganizing', 'p3_c3-1_e3': 'Episode 3 - Girls Reshuffled', 'p3_c3-1_e4': "Episode 4 - Lambda's Favorite", 'p3_c3-1_e5': 'Episode 5 - Take No One Lightly', 'p3_c3-2': 'Chapter 3-2 | The Hero Revealed!', 'p3_c3-2_e1': 'Episode 1 - Secret of the Heroes', 'p3_c3-2_e2': 'Episode 2 - Church and Heroes', 'p3_c3-2_e3': 'Episode 3 - Truth Amidst Lies', 'p3_c3-2_e4': 'Episode 4 - The Lost Tribe', 'p3_c3-2_e5': "Episode 5 - Olivier's Face", 'p3_c3-3': 'Chapter 3-3 | Alexandria Rebellion', 'p3_c3-3_e1': 'Episode 1 - The Situation Begins', 'p3_c3-3_e2': "Episode 2 - I Won't Hurt You...", 'p3_c3-3_e3': 'Episode 3 - Override Experiment', 'p3_c3-3_e4': 'Episode 4 - Outcome of the Duel', 'p3_c3-3_e5': 'Episode 5 - End of Scenario' }
+
+const apoMap = { 'p1': 'Part 1 | Requiem for Scattered Shadows', 'c1-1': 'Chapter 1-1 | Millenium Past' }
 const lnCoverImages = {
     "Volume 1": covers.LNV1Cover,
     "Volume 2": covers.LNV2Cover,
@@ -22,22 +26,22 @@ const lnCoverImages = {
 
 const apoCoverImages = {
     "Apocrypha": covers.APOCover,
-    "Requiem for Scattered Shadows": covers.APO1Cover,
-    "1 | Millenium Past": covers.APO11Cover,
-    "1 | Millenium Past-e1": covers.APO111Cover,
-    "1 | Millenium Past-e2": covers.APO112Cover,
-    "1 | Millenium Past-e3-1": covers.APO1131Cover,
-    "1 | Millenium Past-e3-2": covers.APO1132Cover,
-    "1 | Millenium Past-e3-3": covers.APO1133Cover,
-    "1 | Millenium Past-e4-1": covers.APO1141Cover,
-    "1 | Millenium Past-e4-2": covers.APO1142Cover,
-    "1 | Millenium Past-e5-1": covers.APO1151Cover,
-    "1 | Millenium Past-e5-2": covers.APO1152Cover,
-    "1 | Millenium Past-e5-3": covers.APO1153Cover,
-    "1 | Millenium Past-e6": covers.APO116Cover,
-    "1 | Millenium Past-e7": covers.APO117Cover,
-    "1 | Millenium Past-e8-1": covers.APO1181Cover,
-    "1 | Millenium Past-e8-2": covers.APO1182Cover,
+    "p1": covers.APO1Cover,
+    "c1-1": covers.APO11Cover,
+    "c1-1-e1": covers.APO111Cover,
+    "c1-1-e2": covers.APO112Cover,
+    "c1-1-e3-1": covers.APO1131Cover,
+    "c1-1-e3-2": covers.APO1132Cover,
+    "c1-1-e3-3": covers.APO1133Cover,
+    "c1-1-e4-1": covers.APO1141Cover,
+    "c1-1-e4-2": covers.APO1142Cover,
+    "c1-1-e5-1": covers.APO1151Cover,
+    "c1-1-e5-2": covers.APO1152Cover,
+    "c1-1-e5-3": covers.APO1153Cover,
+    "c1-1-e6": covers.APO116Cover,
+    "c1-1-e7": covers.APO117Cover,
+    "c1-1-e8-1": covers.APO1181Cover,
+    "c1-1-e8-2": covers.APO1182Cover,
 }
 
 const esCoverImages = {
@@ -62,6 +66,41 @@ const esCoverImages = {
     "es-hd2": covers.ESHD2Cover,
     "es-tpis": covers.ESTPISCover,
     "es-ssitw": covers.ESSSITWCover
+}
+
+const sscCoverImages = {
+    "ssc": covers.SSCCover,
+    "c1-1": covers.SSC11Cover,
+    "c1-2": covers.SSC12Cover,
+    "c1-3": covers.SSC13Cover,
+    "c1-4": covers.SSC14Cover,
+    "c1-5": covers.SSC15Cover,
+    "c1-6": covers.SSC16Cover,
+    "c1-7": covers.SSC17Cover,
+    "c1-8": covers.SSC18Cover,
+    "c1-9": covers.SSC19Cover,
+    "c1-10": covers.SSC110Cover,
+    "c1-11": covers.SSC111Cover,
+    "c1-12": covers.SSC112Cover,
+    "c1-13": covers.SSC113Cover,
+    "c1-14": covers.SSC114Cover,
+    "c1-15": covers.SSC1FCover,
+    "c2-1": covers.SSC21Cover,
+    "c2-2": covers.SSC22Cover,
+    "c2-3": covers.SSC23Cover,
+    "c2-4": covers.SSC24Cover,
+    "c2-5": covers.SSC25Cover,
+    "c2-6": covers.SSC26Cover,
+    "c2-7": covers.SSC27Cover,
+    "c2-8": covers.SSC28Cover,
+    "c2-9": covers.SSC29Cover,
+    "c2-10": covers.SSC210Cover,
+    "c2-11": covers.SSC211Cover,
+    "c2-12": covers.SSC212Cover,
+    "c2-13": covers.SSC213Cover,
+    "c3-1": covers.SSC31Cover,
+    "c3-2": covers.SSC32Cover,
+    "c3-3": covers.SSC33Cover
 }
 
 
@@ -1748,6 +1787,7 @@ const wn_info = {
 }
 
 const apo_info = {
+    "part_count": 1,
     "line_count": 793,
     "word_count": 6645,
     "char_count": 38195,
@@ -1798,15 +1838,109 @@ const apo_info = {
         "Mysterious Man D": 1
     },
     "parts": {
-        "Requiem for Scattered Shadows": {
+        "p1": {
+            "chapter_count": 1,
             "line_count": 793,
             "word_count": 6645,
             "char_count": 38195,
+            "characters": {
+                "Bandit Boss": 6,
+                "Bandit A": 1,
+                "Bandits": 2,
+                "Cid Kagenou (Cid)": 35,
+                "Bandit B": 2,
+                "Alpha": 235,
+                "Nanigashi (??? (Nanigashi))": 2,
+                "Nanigashi": 5,
+                "Mysterious Voice": 2,
+                "Delta": 82,
+                "Eta": 29,
+                "Epsilon": 47,
+                "Beta": 44,
+                "Gamma": 41,
+                "Zeta": 29,
+                "Beta (Everyone (Beta))": 1,
+                "Gamma (Everyone (Gamma))": 1,
+                "Delta (Everyone (Delta))": 1,
+                "Epsilon (Everyone (Epsilon))": 1,
+                "Zeta (Everyone (Zeta))": 1,
+                "Eta (Everyone (Eta))": 1,
+                "Duet (Beta Look-alike)": 3,
+                "Pente (Epsilon Look-alike)": 2,
+                "Diablos (Massive Mound of Magic)": 14,
+                "Olivier (Alpha Look-alike)": 7,
+                "Lili": 17,
+                "Freya (??? (Freya))": 1,
+                "Freya": 21,
+                "Yukime": 7,
+                "Claire Kagenou (Claire)": 11,
+                "Victoria (No. 559)": 7,
+                "Rose Oriana (Rose)": 2,
+                "Alexia Midgar (Alexia)": 24,
+                "None": 13,
+                "Duet": 21,
+                "Olivier": 45,
+                "Alpha (None (Alpha))": 4,
+                "Beta (Beta & Epsilon (Beta))": 1,
+                "Epsilon (Beta & Epsilon (Epsilon))": 1,
+                "Pente": 20,
+                "Mysterious Man A": 1,
+                "Mysterious Man B": 1,
+                "Mysterious Man C": 1,
+                "Mysterious Man D": 1
+            },
             "chapters": {
-                "1 | Millenium Past": {
+                "c1-1": {
+                    "episode_count": 14,
                     "line_count": 793,
                     "word_count": 6645,
                     "char_count": 38195,
+                    "characters": {
+                        "Bandit Boss": 6,
+                        "Bandit A": 1,
+                        "Bandits": 2,
+                        "Cid Kagenou (Cid)": 35,
+                        "Bandit B": 2,
+                        "Alpha": 235,
+                        "Nanigashi (??? (Nanigashi))": 2,
+                        "Nanigashi": 5,
+                        "Mysterious Voice": 2,
+                        "Delta": 82,
+                        "Eta": 29,
+                        "Epsilon": 47,
+                        "Beta": 44,
+                        "Gamma": 41,
+                        "Zeta": 29,
+                        "Beta (Everyone (Beta))": 1,
+                        "Gamma (Everyone (Gamma))": 1,
+                        "Delta (Everyone (Delta))": 1,
+                        "Epsilon (Everyone (Epsilon))": 1,
+                        "Zeta (Everyone (Zeta))": 1,
+                        "Eta (Everyone (Eta))": 1,
+                        "Duet (Beta Look-alike)": 3,
+                        "Pente (Epsilon Look-alike)": 2,
+                        "Diablos (Massive Mound of Magic)": 14,
+                        "Olivier (Alpha Look-alike)": 7,
+                        "Lili": 17,
+                        "Freya (??? (Freya))": 1,
+                        "Freya": 21,
+                        "Yukime": 7,
+                        "Claire Kagenou (Claire)": 11,
+                        "Victoria (No. 559)": 7,
+                        "Rose Oriana (Rose)": 2,
+                        "Alexia Midgar (Alexia)": 24,
+                        "None": 13,
+                        "Duet": 21,
+                        "Olivier": 45,
+                        "Alpha (None (Alpha))": 4,
+                        "Beta (Beta & Epsilon (Beta))": 1,
+                        "Epsilon (Beta & Epsilon (Epsilon))": 1,
+                        "Pente": 20,
+                        "Mysterious Man A": 1,
+                        "Mysterious Man B": 1,
+                        "Mysterious Man C": 1,
+                        "Mysterious Man D": 1
+                    },
                     "episodes": {
                         "e1": {
                             "line_count": 76,
@@ -1825,7 +1959,7 @@ const apo_info = {
                             }
                         },
                         "e2": {
-                            "line_count": 59,
+                            "line_count": 54,
                             "word_count": 433,
                             "char_count": 2495,
                             "characters": {
@@ -1900,7 +2034,7 @@ const apo_info = {
                             }
                         },
                         "e4-1": {
-                            "line_count": 50,
+                            "line_count": 49,
                             "word_count": 430,
                             "char_count": 2499,
                             "characters": {
@@ -1919,7 +2053,7 @@ const apo_info = {
                             }
                         },
                         "e5-1": {
-                            "line_count": 89,
+                            "line_count": 88,
                             "word_count": 946,
                             "char_count": 5416,
                             "characters": {
@@ -1928,8 +2062,8 @@ const apo_info = {
                                 "Olivier": 6,
                                 "Beta": 9,
                                 "Epsilon": 9,
-                                "Beta (Beta & Epsilon)": 1,
-                                "Epsilon (Beta & Epsilon)": 1,
+                                "Beta (Beta & Epsilon (Beta))": 1,
+                                "Epsilon (Beta & Epsilon (Epsilon))": 1,
                                 "Pente": 3,
                                 "Duet": 4,
                                 "Eta": 9
@@ -1963,7 +2097,7 @@ const apo_info = {
                             }
                         },
                         "e7": {
-                            "line_count": 39,
+                            "line_count": 38,
                             "word_count": 203,
                             "char_count": 1245,
                             "characters": {
@@ -1991,7 +2125,7 @@ const apo_info = {
                             }
                         },
                         "e3-3": {
-                            "line_count": 38,
+                            "line_count": 37,
                             "word_count": 275,
                             "char_count": 1603,
                             "characters": {
@@ -2063,100 +2197,8 @@ const apo_info = {
                                 "None": 2
                             }
                         }
-                    },
-                    "characters": {
-                        "Bandit Boss": 6,
-                        "Bandit A": 1,
-                        "Bandits": 2,
-                        "Cid Kagenou (Cid)": 35,
-                        "Bandit B": 2,
-                        "Alpha": 235,
-                        "Nanigashi (??? (Nanigashi))": 2,
-                        "Nanigashi": 5,
-                        "Mysterious Voice": 2,
-                        "Delta": 82,
-                        "Eta": 29,
-                        "Epsilon": 47,
-                        "Beta": 44,
-                        "Gamma": 41,
-                        "Zeta": 29,
-                        "Beta (Everyone)": 1,
-                        "Gamma (Everyone)": 1,
-                        "Delta (Everyone)": 1,
-                        "Epsilon (Everyone)": 1,
-                        "Zeta (Everyone)": 1,
-                        "Eta (Everyone)": 1,
-                        "Duet (Beta Look-alike (Duet))": 3,
-                        "Pente (Epsilon Look-alike (Pente))": 2,
-                        "Diablos (Massive Mound of Magic)": 14,
-                        "Olivier (Alpha Look-alike (Olivier))": 7,
-                        "Lili": 17,
-                        "Freya (??? (Freya))": 1,
-                        "Freya": 21,
-                        "Yukime": 7,
-                        "Claire Kagenou (Claire)": 11,
-                        "Victoria (No. 559)": 7,
-                        "Rose Oriana (Rose)": 2,
-                        "Alexia Midgar (Alexia)": 24,
-                        "None": 13,
-                        "Duet": 21,
-                        "Olivier": 45,
-                        "Alpha (None (Alpha))": 4,
-                        "Beta (Beta & Epsilon)": 1,
-                        "Epsilon (Beta & Epsilon)": 1,
-                        "Pente": 20,
-                        "Mysterious Man A": 1,
-                        "Mysterious Man B": 1,
-                        "Mysterious Man C": 1,
-                        "Mysterious Man D": 1
                     }
                 }
-            },
-            "characters": {
-                "Bandit Boss": 6,
-                "Bandit A": 1,
-                "Bandits": 2,
-                "Cid Kagenou (Cid)": 35,
-                "Bandit B": 2,
-                "Alpha": 235,
-                "Nanigashi (??? (Nanigashi))": 2,
-                "Nanigashi": 5,
-                "Mysterious Voice": 2,
-                "Delta": 82,
-                "Eta": 29,
-                "Epsilon": 47,
-                "Beta": 44,
-                "Gamma": 41,
-                "Zeta": 29,
-                "Beta (Everyone)": 1,
-                "Gamma (Everyone)": 1,
-                "Delta (Everyone)": 1,
-                "Epsilon (Everyone)": 1,
-                "Zeta (Everyone)": 1,
-                "Eta (Everyone)": 1,
-                "Duet (Beta Look-alike (Duet))": 3,
-                "Pente (Epsilon Look-alike (Pente))": 2,
-                "Diablos (Massive Mound of Magic)": 14,
-                "Olivier (Alpha Look-alike (Olivier))": 7,
-                "Lili": 17,
-                "Freya (??? (Freya))": 1,
-                "Freya": 21,
-                "Yukime": 7,
-                "Claire Kagenou (Claire)": 11,
-                "Victoria (No. 559)": 7,
-                "Rose Oriana (Rose)": 2,
-                "Alexia Midgar (Alexia)": 24,
-                "None": 13,
-                "Duet": 21,
-                "Olivier": 45,
-                "Alpha (None (Alpha))": 4,
-                "Beta (Beta & Epsilon)": 1,
-                "Epsilon (Beta & Epsilon)": 1,
-                "Pente": 20,
-                "Mysterious Man A": 1,
-                "Mysterious Man B": 1,
-                "Mysterious Man C": 1,
-                "Mysterious Man D": 1
             }
         }
     }
@@ -4868,6 +4910,3215 @@ const es_info = {
     }
 }
 
+const ssc_info = {
+    "part_count": 3,
+    "line_count": 9649,
+    "word_count": 101958,
+    "char_count": 584523,
+    "characters": {
+        "Alpha": 1258,
+        "None": 51,
+        "Mysterious Captain": 26,
+        "Mysterious Soldier A": 10,
+        "Alpha (??? (Alpha))": 5,
+        "Mysterious Soldier B": 4,
+        "Delta": 545,
+        "Eta": 606,
+        "Mysterious Soldier C": 6,
+        "Epsilon": 883,
+        "Mysterious Soldier D": 4,
+        "Zeta": 936,
+        "Gamma": 1053,
+        "Mysterious Soldier E": 6,
+        "Beta": 943,
+        "Mysterious Soldiers": 2,
+        "Cultist A": 8,
+        "Cultist B": 5,
+        "Cultist C": 4,
+        "Cultist D": 1,
+        "Cultist E": 1,
+        "Cultist F": 3,
+        "Lambda (Mound of Flesh (Lambda))": 1,
+        "Lambda (Tawny Elf (Lambda))": 15,
+        "Cid Kagenou (Cid)": 574,
+        "Lambda": 370,
+        "Merchant B": 11,
+        "Merchant A Secretary": 10,
+        "Merchant C": 2,
+        "Merchant A": 31,
+        "Elven Coachwoman": 5,
+        "Elven Guardswoman": 7,
+        "Mercenary B": 3,
+        "Mercenary Veteran": 21,
+        "Mercenary C": 2,
+        "Victoria (??? (Victoria))": 10,
+        "Follower A": 3,
+        "Follower B": 1,
+        "Victoria": 113,
+        "Reporter": 29,
+        "Beta (Beta & Epsilon (Beta))": 7,
+        "Epsilon (Beta & Epsilon (Epsilon))": 7,
+        "Dark Knight": 2,
+        "Templar Leader": 11,
+        "Claire Kagenou (Claire)": 17,
+        "Old Man": 7,
+        "Female Pilgrim": 1,
+        "Paladin": 10,
+        "Veteran Paladin": 1,
+        "Alpha (None (Alpha))": 12,
+        "Templar Leader A": 17,
+        "Templar": 19,
+        "Templars": 4,
+        "Templar Leader B": 6,
+        "Delta (Delta & Zeta (Delta))": 2,
+        "Zeta (Delta & Zeta (Zeta))": 2,
+        "Templar Leader C": 6,
+        "Templar A": 17,
+        "Templar B": 8,
+        "Templar Leader D": 1,
+        "Mist Dragon (??? (Mist Dragon))": 1,
+        "Mist Dragon": 82,
+        "Cid Kagenou (???? (Shadow))": 3,
+        "Cid Kagenou (Shadow)": 157,
+        "Alpha (Seven Shadows (Alpha))": 3,
+        "Beta (Seven Shadows (Beta))": 3,
+        "Gamma (Seven Shadows (Gamma))": 3,
+        "Delta (Seven Shadows (Delta))": 3,
+        "Epsilon (Seven Shadows (Epsilon))": 3,
+        "Zeta (Seven Shadows (Zeta))": 3,
+        "Eta (Seven Shadows (Eta))": 3,
+        "Delta (??? (Delta))": 2,
+        "MNA Journalist": 14,
+        "Editor": 23,
+        "Cult Member A": 32,
+        "Cult Member B": 11,
+        "Cult Member C": 6,
+        "Templar (????? (Templar))": 14,
+        "Templar C": 7,
+        "Researcher": 8,
+        "Cult Member A (Cult Member A & B (Cult Member A))": 3,
+        "Cult Member B (Cult Member A & B (Cult Member B))": 3,
+        "Cult Members": 2,
+        "Cult Member Boss": 14,
+        "Bandit Boss": 25,
+        "Bandit A": 15,
+        "Guard": 2,
+        "Basilisk": 4,
+        "Oriana Noble A": 1,
+        "Oriana Noble B": 1,
+        "Oriana Noble C": 1,
+        "Dark Knight Trainee": 1,
+        "Female DK Trainee": 2,
+        "Mercenary A (??? (Mercenary A))": 1,
+        "Mercenary A": 1,
+        "Mercenary Boss": 20,
+        "Alpha Wolf": 8,
+        "Cult Leader": 26,
+        "Cult Member": 7,
+        "Zeta (??? (Zeta))": 1,
+        "Alpha (Everyone (Alpha))": 1,
+        "Beta (Everyone (Beta))": 1,
+        "Gamma (Everyone (Gamma))": 1,
+        "Delta (Everyone (Delta))": 1,
+        "Epsilon (Everyone (Epsilon))": 1,
+        "Eta (Everyone (Eta))": 1,
+        "Mist Dragon (None (Mist Dragon))": 19,
+        "Malak": 40,
+        "Chi (No. 111)": 278,
+        "Omega (No. 122)": 200,
+        "Annerose Nichtsehen (Annerose)": 100,
+        "Sergey Gorman (Sergey)": 145,
+        "Velgalta Soldier A": 2,
+        "Velgalta Soldier B": 3,
+        "Velgalta Soldier C": 4,
+        "Beta (Beta & Delta & Zeta (Beta))": 1,
+        "Delta (Beta & Delta & Zeta (Delta))": 1,
+        "Zeta (Beta & Delta & Zeta (Zeta))": 1,
+        "Gamma (Gamma& Epsilon & Eta (Gamma))": 1,
+        "Epsilon (Gamma& Epsilon & Eta (Epsilon))": 1,
+        "Eta (Gamma& Epsilon & Eta (Eta))": 1,
+        "Velgalta Soldier D": 1,
+        "Velgalta Soldier E": 2,
+        "Velgalta Soldiers": 2,
+        "Malak Swarm": 3,
+        "No. 111 (No. 111 & No. 122 (No. 111))": 5,
+        "No. 122 (No. 111 & No. 122 (No. 122))": 5,
+        "Annerose Nichtsehen (None (Annerose))": 4,
+        "Chi": 74,
+        "Omega": 88,
+        "Malaks": 1,
+        "Sergey Gorman (None (Sergey Gorman))": 32,
+        "Gamma (Gamma & Epsilon (Gamma))": 1,
+        "Epsilon (Gamma & Epsilon (Epsilon))": 1,
+        "Olivier (??? (Olivier))": 12,
+        "Bishop Drake (Bishop of Orum)": 10,
+        "Bishop Drake": 6,
+        "Gamma (None (Gamma))": 21,
+        "Sergey Gorman (??? (Sergey Gorman))": 1,
+        "Chi (??? (Karen))": 13,
+        "Chi (Karen)": 180,
+        "Gamma (??? (Gamma))": 1,
+        "Beta (Beta & Gamma (Beta))": 2,
+        "Gamma (Beta & Gamma (Gamma))": 2,
+        "Mundane Mercenary": 9,
+        "Cid Kagenou (None (Cid Kagenou))": 7,
+        "Omega (Possessed (Omega))": 4,
+        "Curie Oso (Curious Noblewoman)": 8,
+        "Sergey Gorman (Sergei)": 22,
+        "Velgalta Soldier": 6,
+        "Cultist": 1,
+        "Nu (93)": 21,
+        "Beta (None (Beta))": 8,
+        "Fan Passerby": 9,
+        "Alpha (Alpha & Beta (Alpha))": 1,
+        "Beta (Alpha & Beta (Beta))": 1,
+        "Olivier": 10,
+        "Garden Members": 3,
+        "Nu (??? (No. 93))": 1,
+        "Nu (No. 93)": 19,
+        "Garden Member": 2,
+        "Chi (Chi & Omega (Chi))": 1,
+        "Omega (Chi & Omega (Omega))": 1,
+        "Lambda (None (Lambda))": 1
+    },
+    "parts": {
+        "p1": {
+            "chapter_count": 15,
+            "line_count": 4626,
+            "word_count": 47753,
+            "char_count": 270458,
+            "characters": {
+                "Alpha": 764,
+                "None": 39,
+                "Mysterious Captain": 26,
+                "Mysterious Soldier A": 10,
+                "Alpha (??? (Alpha))": 3,
+                "Mysterious Soldier B": 4,
+                "Delta": 272,
+                "Eta": 216,
+                "Mysterious Soldier C": 6,
+                "Epsilon": 555,
+                "Mysterious Soldier D": 4,
+                "Zeta": 521,
+                "Gamma": 491,
+                "Mysterious Soldier E": 6,
+                "Beta": 623,
+                "Mysterious Soldiers": 2,
+                "Cultist A": 1,
+                "Cultist B": 1,
+                "Cultist C": 1,
+                "Cultist D": 1,
+                "Cultist E": 1,
+                "Cultist F": 3,
+                "Lambda (Mound of Flesh (Lambda))": 1,
+                "Lambda (Tawny Elf (Lambda))": 15,
+                "Cid Kagenou (Cid)": 269,
+                "Lambda": 163,
+                "Merchant B": 11,
+                "Merchant A Secretary": 10,
+                "Merchant C": 2,
+                "Merchant A": 31,
+                "Elven Coachwoman": 5,
+                "Elven Guardswoman": 7,
+                "Mercenary B": 3,
+                "Mercenary Veteran": 21,
+                "Mercenary C": 2,
+                "Victoria (??? (Victoria))": 10,
+                "Follower A": 3,
+                "Follower B": 1,
+                "Victoria": 68,
+                "Reporter": 29,
+                "Beta (Beta & Epsilon (Beta))": 5,
+                "Epsilon (Beta & Epsilon (Epsilon))": 5,
+                "Dark Knight": 2,
+                "Templar Leader": 8,
+                "Claire Kagenou (Claire)": 8,
+                "Old Man": 7,
+                "Female Pilgrim": 1,
+                "Paladin": 10,
+                "Veteran Paladin": 1,
+                "Alpha (None (Alpha))": 3,
+                "Templar Leader A": 17,
+                "Templar": 17,
+                "Templars": 4,
+                "Templar Leader B": 6,
+                "Delta (Delta & Zeta (Delta))": 2,
+                "Zeta (Delta & Zeta (Zeta))": 2,
+                "Templar Leader C": 6,
+                "Templar A": 14,
+                "Templar B": 7,
+                "Templar Leader D": 1,
+                "Mist Dragon (??? (Mist Dragon))": 1,
+                "Mist Dragon": 62,
+                "Cid Kagenou (???? (Shadow))": 3,
+                "Cid Kagenou (Shadow)": 21,
+                "Alpha (Seven Shadows (Alpha))": 1,
+                "Beta (Seven Shadows (Beta))": 1,
+                "Gamma (Seven Shadows (Gamma))": 1,
+                "Delta (Seven Shadows (Delta))": 1,
+                "Epsilon (Seven Shadows (Epsilon))": 1,
+                "Zeta (Seven Shadows (Zeta))": 1,
+                "Eta (Seven Shadows (Eta))": 1,
+                "Delta (??? (Delta))": 1,
+                "MNA Journalist": 14,
+                "Editor": 23,
+                "Cult Member A": 25,
+                "Cult Member B": 5,
+                "Cult Member C": 5,
+                "Templar (????? (Templar))": 14,
+                "Templar C": 6,
+                "Researcher": 8,
+                "Cult Member A (Cult Member A & B (Cult Member A))": 3,
+                "Cult Member B (Cult Member A & B (Cult Member B))": 3,
+                "Cult Members": 2,
+                "Cult Member Boss": 14,
+                "Bandit Boss": 25,
+                "Bandit A": 15,
+                "Guard": 2,
+                "Basilisk": 4,
+                "Oriana Noble A": 1,
+                "Oriana Noble B": 1,
+                "Oriana Noble C": 1,
+                "Dark Knight Trainee": 1,
+                "Female DK Trainee": 2,
+                "Mercenary A (??? (Mercenary A))": 1,
+                "Mercenary A": 1,
+                "Mercenary Boss": 20,
+                "Alpha Wolf": 8
+            },
+            "chapters": {
+                "c1-1": {
+                    "episode_count": 5,
+                    "line_count": 316,
+                    "word_count": 3277,
+                    "char_count": 18986,
+                    "characters": {
+                        "Alpha": 118,
+                        "None": 8,
+                        "Mysterious Captain": 13,
+                        "Mysterious Soldier A": 5,
+                        "Alpha (??? (Alpha))": 1,
+                        "Mysterious Soldier B": 2,
+                        "Delta": 19,
+                        "Eta": 12,
+                        "Mysterious Soldier C": 3,
+                        "Epsilon": 38,
+                        "Mysterious Soldier D": 2,
+                        "Zeta": 5,
+                        "Gamma": 6,
+                        "Mysterious Soldier E": 3,
+                        "Beta": 41,
+                        "Mysterious Soldiers": 1,
+                        "Cultist A": 1,
+                        "Cultist B": 1,
+                        "Cultist C": 1,
+                        "Cultist D": 1,
+                        "Cultist E": 1,
+                        "Cultist F": 3,
+                        "Lambda (Mound of Flesh (Lambda))": 1,
+                        "Lambda (Tawny Elf (Lambda))": 15,
+                        "Cid Kagenou (Cid)": 15
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 62,
+                            "word_count": 469,
+                            "char_count": 2739,
+                            "characters": {
+                                "Alpha": 15,
+                                "None": 8,
+                                "Mysterious Captain": 13,
+                                "Mysterious Soldier A": 5,
+                                "Alpha (??? (Alpha))": 1,
+                                "Mysterious Soldier B": 2,
+                                "Delta": 1,
+                                "Eta": 2,
+                                "Mysterious Soldier C": 3,
+                                "Epsilon": 1,
+                                "Mysterious Soldier D": 2,
+                                "Zeta": 2,
+                                "Gamma": 1,
+                                "Mysterious Soldier E": 3,
+                                "Beta": 2,
+                                "Mysterious Soldiers": 1
+                            }
+                        },
+                        "e2": {
+                            "line_count": 76,
+                            "word_count": 944,
+                            "char_count": 5566,
+                            "characters": {
+                                "Alpha": 33,
+                                "Beta": 14,
+                                "Eta": 10,
+                                "Delta": 7,
+                                "Epsilon": 4,
+                                "Gamma": 5,
+                                "Zeta": 3
+                            }
+                        },
+                        "e3": {
+                            "line_count": 37,
+                            "word_count": 361,
+                            "char_count": 2102,
+                            "characters": {
+                                "Beta": 17,
+                                "Alpha": 12,
+                                "Delta": 1,
+                                "Epsilon": 7
+                            }
+                        },
+                        "e4": {
+                            "line_count": 52,
+                            "word_count": 522,
+                            "char_count": 2951,
+                            "characters": {
+                                "Cultist A": 1,
+                                "Epsilon": 7,
+                                "Alpha": 19,
+                                "Delta": 10,
+                                "Beta": 8,
+                                "Cultist B": 1,
+                                "Cultist C": 1,
+                                "Cultist D": 1,
+                                "Cultist E": 1,
+                                "Cultist F": 3
+                            }
+                        },
+                        "e5": {
+                            "line_count": 89,
+                            "word_count": 981,
+                            "char_count": 5628,
+                            "characters": {
+                                "Epsilon": 19,
+                                "Alpha": 39,
+                                "Lambda (Mound of Flesh (Lambda))": 1,
+                                "Lambda (Tawny Elf (Lambda))": 15,
+                                "Cid Kagenou (Cid)": 15
+                            }
+                        }
+                    }
+                },
+                "c1-10": {
+                    "episode_count": 5,
+                    "line_count": 286,
+                    "word_count": 3510,
+                    "char_count": 20203,
+                    "characters": {
+                        "Eta": 9,
+                        "Gamma": 39,
+                        "Lambda": 9,
+                        "Alpha": 54,
+                        "Beta": 16,
+                        "Merchant B": 11,
+                        "Merchant A Secretary": 10,
+                        "Merchant C": 2,
+                        "Merchant A": 31,
+                        "None": 4,
+                        "Zeta": 9,
+                        "Epsilon": 10,
+                        "Delta": 9,
+                        "Elven Coachwoman": 5,
+                        "Elven Guardswoman": 7,
+                        "Mercenary B": 3,
+                        "Mercenary Veteran": 21,
+                        "Mercenary C": 2,
+                        "Cid Kagenou (Cid)": 24,
+                        "Alpha (??? (Alpha))": 1,
+                        "Victoria (??? (Victoria))": 5,
+                        "Follower A": 3,
+                        "Follower B": 1,
+                        "Victoria": 1
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 40,
+                            "word_count": 438,
+                            "char_count": 2547,
+                            "characters": {
+                                "Eta": 8,
+                                "Gamma": 10,
+                                "Lambda": 9,
+                                "Alpha": 13
+                            }
+                        },
+                        "e2": {
+                            "line_count": 43,
+                            "word_count": 653,
+                            "char_count": 3790,
+                            "characters": {
+                                "Beta": 13,
+                                "Merchant B": 4,
+                                "Merchant A Secretary": 5,
+                                "Merchant C": 2,
+                                "Merchant A": 5,
+                                "None": 2,
+                                "Zeta": 1,
+                                "Epsilon": 7,
+                                "Alpha": 4
+                            }
+                        },
+                        "e3": {
+                            "line_count": 49,
+                            "word_count": 523,
+                            "char_count": 2993,
+                            "characters": {
+                                "Beta": 2,
+                                "Alpha": 9,
+                                "Epsilon": 2,
+                                "Gamma": 2,
+                                "Zeta": 7,
+                                "Eta": 1,
+                                "Delta": 2,
+                                "None": 2,
+                                "Elven Coachwoman": 5,
+                                "Elven Guardswoman": 7,
+                                "Mercenary B": 3,
+                                "Mercenary Veteran": 5,
+                                "Mercenary C": 2
+                            }
+                        },
+                        "e4": {
+                            "line_count": 104,
+                            "word_count": 1279,
+                            "char_count": 7358,
+                            "characters": {
+                                "Merchant A Secretary": 5,
+                                "Merchant A": 24,
+                                "Merchant B": 7,
+                                "Gamma": 27,
+                                "Cid Kagenou (Cid)": 13,
+                                "Mercenary Veteran": 15,
+                                "Alpha (??? (Alpha))": 1,
+                                "Alpha": 8,
+                                "Delta": 4
+                            }
+                        },
+                        "e5": {
+                            "line_count": 50,
+                            "word_count": 617,
+                            "char_count": 3515,
+                            "characters": {
+                                "Epsilon": 1,
+                                "Beta": 1,
+                                "Zeta": 1,
+                                "Mercenary Veteran": 1,
+                                "Delta": 3,
+                                "Alpha": 20,
+                                "Merchant A": 2,
+                                "Cid Kagenou (Cid)": 11,
+                                "Victoria (??? (Victoria))": 5,
+                                "Follower A": 3,
+                                "Follower B": 1,
+                                "Victoria": 1
+                            }
+                        }
+                    }
+                },
+                "c1-11": {
+                    "episode_count": 5,
+                    "line_count": 283,
+                    "word_count": 2804,
+                    "char_count": 15189,
+                    "characters": {
+                        "Beta": 103,
+                        "Zeta": 13,
+                        "Reporter": 29,
+                        "Alpha": 58,
+                        "Epsilon": 29,
+                        "Beta (Beta & Epsilon (Beta))": 1,
+                        "Epsilon (Beta & Epsilon (Epsilon))": 1,
+                        "Gamma": 16,
+                        "Lambda": 11,
+                        "Cid Kagenou (Cid)": 22
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 52,
+                            "word_count": 626,
+                            "char_count": 3356,
+                            "characters": {
+                                "Beta": 39,
+                                "Zeta": 13
+                            }
+                        },
+                        "e2": {
+                            "line_count": 56,
+                            "word_count": 509,
+                            "char_count": 2688,
+                            "characters": {
+                                "Reporter": 29,
+                                "Beta": 27
+                            }
+                        },
+                        "e3": {
+                            "line_count": 50,
+                            "word_count": 445,
+                            "char_count": 2386,
+                            "characters": {
+                                "Alpha": 22,
+                                "Beta": 17,
+                                "Epsilon": 10,
+                                "Beta (Beta & Epsilon (Beta))": 1,
+                                "Epsilon (Beta & Epsilon (Epsilon))": 1
+                            }
+                        },
+                        "e4": {
+                            "line_count": 50,
+                            "word_count": 506,
+                            "char_count": 2838,
+                            "characters": {
+                                "Beta": 12,
+                                "Epsilon": 11,
+                                "Gamma": 16,
+                                "Lambda": 11
+                            }
+                        },
+                        "e5": {
+                            "line_count": 74,
+                            "word_count": 718,
+                            "char_count": 3921,
+                            "characters": {
+                                "Beta": 8,
+                                "Epsilon": 8,
+                                "Alpha": 36,
+                                "Cid Kagenou (Cid)": 22
+                            }
+                        }
+                    }
+                },
+                "c1-12": {
+                    "episode_count": 5,
+                    "line_count": 313,
+                    "word_count": 3395,
+                    "char_count": 18548,
+                    "characters": {
+                        "None": 13,
+                        "Beta": 127,
+                        "Epsilon": 120,
+                        "Beta (Beta & Epsilon (Beta))": 4,
+                        "Epsilon (Beta & Epsilon (Epsilon))": 4,
+                        "Alpha": 15,
+                        "Dark Knight": 2,
+                        "Templar Leader": 8,
+                        "Cid Kagenou (Cid)": 16,
+                        "Claire Kagenou (Claire)": 4
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 50,
+                            "word_count": 605,
+                            "char_count": 3500,
+                            "characters": {
+                                "None": 8,
+                                "Beta": 16,
+                                "Epsilon": 13,
+                                "Beta (Beta & Epsilon (Beta))": 2,
+                                "Epsilon (Beta & Epsilon (Epsilon))": 2,
+                                "Alpha": 11
+                            }
+                        },
+                        "e2": {
+                            "line_count": 65,
+                            "word_count": 859,
+                            "char_count": 4628,
+                            "characters": {
+                                "Epsilon": 27,
+                                "Beta": 32,
+                                "Beta (Beta & Epsilon (Beta))": 1,
+                                "Epsilon (Beta & Epsilon (Epsilon))": 1,
+                                "None": 5
+                            }
+                        },
+                        "e3": {
+                            "line_count": 47,
+                            "word_count": 544,
+                            "char_count": 2915,
+                            "characters": {
+                                "Epsilon": 24,
+                                "Beta": 23
+                            }
+                        },
+                        "e4": {
+                            "line_count": 66,
+                            "word_count": 673,
+                            "char_count": 3736,
+                            "characters": {
+                                "Dark Knight": 2,
+                                "Beta": 37,
+                                "Epsilon": 23,
+                                "Templar Leader": 3,
+                                "Beta (Beta & Epsilon (Beta))": 1,
+                                "Epsilon (Beta & Epsilon (Epsilon))": 1
+                            }
+                        },
+                        "e5": {
+                            "line_count": 81,
+                            "word_count": 714,
+                            "char_count": 3769,
+                            "characters": {
+                                "Templar Leader": 5,
+                                "Epsilon": 33,
+                                "Beta": 19,
+                                "Alpha": 4,
+                                "Cid Kagenou (Cid)": 16,
+                                "Claire Kagenou (Claire)": 4
+                            }
+                        }
+                    }
+                },
+                "c1-13": {
+                    "episode_count": 5,
+                    "line_count": 298,
+                    "word_count": 3139,
+                    "char_count": 17366,
+                    "characters": {
+                        "Alpha": 24,
+                        "Zeta": 200,
+                        "Old Man": 7,
+                        "None": 4,
+                        "Victoria": 32,
+                        "Female Pilgrim": 1,
+                        "Paladin": 10,
+                        "Veteran Paladin": 1,
+                        "Cid Kagenou (Cid)": 19
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 46,
+                            "word_count": 556,
+                            "char_count": 3065,
+                            "characters": {
+                                "Alpha": 24,
+                                "Zeta": 22
+                            }
+                        },
+                        "e2": {
+                            "line_count": 50,
+                            "word_count": 474,
+                            "char_count": 2609,
+                            "characters": {
+                                "Zeta": 31,
+                                "Old Man": 7,
+                                "None": 3,
+                                "Victoria": 8,
+                                "Female Pilgrim": 1
+                            }
+                        },
+                        "e3": {
+                            "line_count": 48,
+                            "word_count": 606,
+                            "char_count": 3484,
+                            "characters": {
+                                "Zeta": 48
+                            }
+                        },
+                        "e4": {
+                            "line_count": 56,
+                            "word_count": 601,
+                            "char_count": 3552,
+                            "characters": {
+                                "Zeta": 54,
+                                "Paladin": 1,
+                                "Veteran Paladin": 1
+                            }
+                        },
+                        "e5": {
+                            "line_count": 98,
+                            "word_count": 902,
+                            "char_count": 4656,
+                            "characters": {
+                                "Paladin": 9,
+                                "None": 1,
+                                "Zeta": 45,
+                                "Victoria": 24,
+                                "Cid Kagenou (Cid)": 19
+                            }
+                        }
+                    }
+                },
+                "c1-14": {
+                    "episode_count": 5,
+                    "line_count": 271,
+                    "word_count": 2720,
+                    "char_count": 15239,
+                    "characters": {
+                        "Delta": 18,
+                        "Lambda": 32,
+                        "Eta": 38,
+                        "Epsilon": 43,
+                        "Alpha": 44,
+                        "Beta": 19,
+                        "Gamma": 19,
+                        "Zeta": 18,
+                        "Mysterious Captain": 13,
+                        "Mysterious Soldier A": 5,
+                        "Alpha (??? (Alpha))": 1,
+                        "Mysterious Soldier B": 2,
+                        "Mysterious Soldier C": 3,
+                        "Mysterious Soldier D": 2,
+                        "Mysterious Soldier E": 3,
+                        "Mysterious Soldiers": 1,
+                        "Cid Kagenou (Cid)": 8,
+                        "Alpha (None (Alpha))": 2
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 45,
+                            "word_count": 433,
+                            "char_count": 2486,
+                            "characters": {
+                                "Delta": 13,
+                                "Lambda": 32
+                            }
+                        },
+                        "e2": {
+                            "line_count": 70,
+                            "word_count": 543,
+                            "char_count": 3037,
+                            "characters": {
+                                "Eta": 31,
+                                "Epsilon": 39
+                            }
+                        },
+                        "e3": {
+                            "line_count": 36,
+                            "word_count": 583,
+                            "char_count": 3272,
+                            "characters": {
+                                "Alpha": 6,
+                                "Beta": 10,
+                                "Gamma": 11,
+                                "Zeta": 9
+                            }
+                        },
+                        "e4": {
+                            "line_count": 31,
+                            "word_count": 515,
+                            "char_count": 2721,
+                            "characters": {
+                                "Alpha": 18,
+                                "Beta": 5,
+                                "Gamma": 4,
+                                "Zeta": 4
+                            }
+                        },
+                        "e5": {
+                            "line_count": 89,
+                            "word_count": 646,
+                            "char_count": 3723,
+                            "characters": {
+                                "Alpha": 20,
+                                "Gamma": 4,
+                                "Beta": 4,
+                                "Zeta": 5,
+                                "Eta": 7,
+                                "Epsilon": 4,
+                                "Delta": 5,
+                                "Mysterious Captain": 13,
+                                "Mysterious Soldier A": 5,
+                                "Alpha (??? (Alpha))": 1,
+                                "Mysterious Soldier B": 2,
+                                "Mysterious Soldier C": 3,
+                                "Mysterious Soldier D": 2,
+                                "Mysterious Soldier E": 3,
+                                "Mysterious Soldiers": 1,
+                                "Cid Kagenou (Cid)": 8,
+                                "Alpha (None (Alpha))": 2
+                            }
+                        }
+                    }
+                },
+                "c1-15": {
+                    "episode_count": 5,
+                    "line_count": 295,
+                    "word_count": 2558,
+                    "char_count": 14337,
+                    "characters": {
+                        "Templar Leader A": 17,
+                        "Templar": 15,
+                        "Eta": 22,
+                        "Templars": 4,
+                        "Epsilon": 25,
+                        "Delta": 20,
+                        "Templar Leader B": 6,
+                        "Zeta": 51,
+                        "None": 1,
+                        "Delta (Delta & Zeta (Delta))": 1,
+                        "Zeta (Delta & Zeta (Zeta))": 1,
+                        "Gamma": 27,
+                        "Templar Leader C": 6,
+                        "Templar A": 3,
+                        "Beta": 20,
+                        "Templar B": 2,
+                        "Victoria (??? (Victoria))": 5,
+                        "Victoria": 35,
+                        "Alpha": 33,
+                        "Templar Leader D": 1
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 58,
+                            "word_count": 432,
+                            "char_count": 2598,
+                            "characters": {
+                                "Templar Leader A": 17,
+                                "Templar": 5,
+                                "Eta": 17,
+                                "Templars": 1,
+                                "Epsilon": 18
+                            }
+                        },
+                        "e2": {
+                            "line_count": 46,
+                            "word_count": 410,
+                            "char_count": 2223,
+                            "characters": {
+                                "Delta": 15,
+                                "Templar": 4,
+                                "Templar Leader B": 6,
+                                "Zeta": 19,
+                                "None": 1,
+                                "Delta (Delta & Zeta (Delta))": 1,
+                                "Zeta (Delta & Zeta (Zeta))": 1
+                            }
+                        },
+                        "e3": {
+                            "line_count": 55,
+                            "word_count": 464,
+                            "char_count": 2535,
+                            "characters": {
+                                "Gamma": 25,
+                                "Templar Leader C": 6,
+                                "Templar A": 3,
+                                "Beta": 19,
+                                "Templar B": 2
+                            }
+                        },
+                        "e4": {
+                            "line_count": 57,
+                            "word_count": 551,
+                            "char_count": 3077,
+                            "characters": {
+                                "Templar": 5,
+                                "Victoria (??? (Victoria))": 5,
+                                "Victoria": 15,
+                                "Templars": 2,
+                                "Eta": 3,
+                                "Epsilon": 5,
+                                "Alpha": 16,
+                                "Zeta": 6
+                            }
+                        },
+                        "e5": {
+                            "line_count": 78,
+                            "word_count": 701,
+                            "char_count": 3904,
+                            "characters": {
+                                "Zeta": 26,
+                                "Alpha": 17,
+                                "Victoria": 20,
+                                "Templar Leader D": 1,
+                                "Templar": 1,
+                                "Delta": 5,
+                                "Gamma": 2,
+                                "Epsilon": 2,
+                                "Beta": 1,
+                                "Eta": 2,
+                                "Templars": 1
+                            }
+                        }
+                    }
+                },
+                "c1-2": {
+                    "episode_count": 5,
+                    "line_count": 374,
+                    "word_count": 3839,
+                    "char_count": 21998,
+                    "characters": {
+                        "Lambda": 20,
+                        "Eta": 4,
+                        "Delta": 29,
+                        "Epsilon": 27,
+                        "Gamma": 25,
+                        "Beta": 45,
+                        "Alpha": 65,
+                        "Zeta": 26,
+                        "Cid Kagenou (Cid)": 35,
+                        "Mist Dragon (??? (Mist Dragon))": 1,
+                        "Mist Dragon": 62,
+                        "Cid Kagenou (???? (Shadow))": 3,
+                        "Cid Kagenou (Shadow)": 21,
+                        "Alpha (Seven Shadows (Alpha))": 1,
+                        "Beta (Seven Shadows (Beta))": 1,
+                        "Gamma (Seven Shadows (Gamma))": 1,
+                        "Delta (Seven Shadows (Delta))": 1,
+                        "Epsilon (Seven Shadows (Epsilon))": 1,
+                        "Zeta (Seven Shadows (Zeta))": 1,
+                        "Eta (Seven Shadows (Eta))": 1,
+                        "Claire Kagenou (Claire)": 4
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 63,
+                            "word_count": 696,
+                            "char_count": 3935,
+                            "characters": {
+                                "Lambda": 4,
+                                "Eta": 4,
+                                "Delta": 8,
+                                "Epsilon": 6,
+                                "Gamma": 4,
+                                "Beta": 9,
+                                "Alpha": 16,
+                                "Zeta": 6,
+                                "Cid Kagenou (Cid)": 6
+                            }
+                        },
+                        "e2": {
+                            "line_count": 47,
+                            "word_count": 622,
+                            "char_count": 3669,
+                            "characters": {
+                                "Beta": 7,
+                                "Delta": 7,
+                                "Gamma": 2,
+                                "Epsilon": 1,
+                                "Zeta": 4,
+                                "Alpha": 13,
+                                "Lambda": 13
+                            }
+                        },
+                        "e3": {
+                            "line_count": 100,
+                            "word_count": 1080,
+                            "char_count": 6122,
+                            "characters": {
+                                "Epsilon": 8,
+                                "Beta": 16,
+                                "Alpha": 20,
+                                "Gamma": 4,
+                                "Zeta": 9,
+                                "Delta": 7,
+                                "Lambda": 3,
+                                "Mist Dragon (??? (Mist Dragon))": 1,
+                                "Cid Kagenou (Cid)": 3,
+                                "Mist Dragon": 29
+                            }
+                        },
+                        "e4": {
+                            "line_count": 70,
+                            "word_count": 526,
+                            "char_count": 2973,
+                            "characters": {
+                                "Zeta": 5,
+                                "Mist Dragon": 12,
+                                "Beta": 11,
+                                "Delta": 5,
+                                "Epsilon": 10,
+                                "Cid Kagenou (Cid)": 6,
+                                "Gamma": 6,
+                                "Alpha": 8,
+                                "Cid Kagenou (???? (Shadow))": 3,
+                                "Cid Kagenou (Shadow)": 4
+                            }
+                        },
+                        "e5": {
+                            "line_count": 88,
+                            "word_count": 915,
+                            "char_count": 5299,
+                            "characters": {
+                                "Alpha (Seven Shadows (Alpha))": 1,
+                                "Beta (Seven Shadows (Beta))": 1,
+                                "Gamma (Seven Shadows (Gamma))": 1,
+                                "Delta (Seven Shadows (Delta))": 1,
+                                "Epsilon (Seven Shadows (Epsilon))": 1,
+                                "Zeta (Seven Shadows (Zeta))": 1,
+                                "Eta (Seven Shadows (Eta))": 1,
+                                "Cid Kagenou (Shadow)": 17,
+                                "Mist Dragon": 21,
+                                "Beta": 2,
+                                "Epsilon": 2,
+                                "Zeta": 2,
+                                "Delta": 2,
+                                "Gamma": 9,
+                                "Alpha": 8,
+                                "Cid Kagenou (Cid)": 20,
+                                "Claire Kagenou (Claire)": 4
+                            }
+                        }
+                    }
+                },
+                "c1-3": {
+                    "episode_count": 5,
+                    "line_count": 282,
+                    "word_count": 2479,
+                    "char_count": 14867,
+                    "characters": {
+                        "None": 5,
+                        "Alpha": 66,
+                        "Lambda": 50,
+                        "Eta": 88,
+                        "Cid Kagenou (Cid)": 18,
+                        "Gamma": 46,
+                        "Delta (??? (Delta))": 1,
+                        "Delta": 8
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 49,
+                            "word_count": 414,
+                            "char_count": 2416,
+                            "characters": {
+                                "None": 5,
+                                "Alpha": 11,
+                                "Lambda": 17,
+                                "Eta": 16
+                            }
+                        },
+                        "e2": {
+                            "line_count": 60,
+                            "word_count": 565,
+                            "char_count": 3505,
+                            "characters": {
+                                "Eta": 18,
+                                "Cid Kagenou (Cid)": 1,
+                                "Alpha": 20,
+                                "Gamma": 15,
+                                "Lambda": 6
+                            }
+                        },
+                        "e3": {
+                            "line_count": 79,
+                            "word_count": 706,
+                            "char_count": 4268,
+                            "characters": {
+                                "Alpha": 15,
+                                "Eta": 25,
+                                "Gamma": 27,
+                                "Lambda": 11,
+                                "Cid Kagenou (Cid)": 1
+                            }
+                        },
+                        "e4": {
+                            "line_count": 52,
+                            "word_count": 358,
+                            "char_count": 2083,
+                            "characters": {
+                                "Gamma": 4,
+                                "Lambda": 11,
+                                "Eta": 17,
+                                "Alpha": 13,
+                                "Delta (??? (Delta))": 1,
+                                "Delta": 6
+                            }
+                        },
+                        "e5": {
+                            "line_count": 42,
+                            "word_count": 436,
+                            "char_count": 2595,
+                            "characters": {
+                                "Delta": 2,
+                                "Alpha": 7,
+                                "Lambda": 5,
+                                "Eta": 12,
+                                "Cid Kagenou (Cid)": 16
+                            }
+                        }
+                    }
+                },
+                "c1-4": {
+                    "episode_count": 5,
+                    "line_count": 300,
+                    "word_count": 2708,
+                    "char_count": 15450,
+                    "characters": {
+                        "Zeta": 131,
+                        "Eta": 41,
+                        "Gamma": 114,
+                        "Cid Kagenou (Cid)": 14
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 59,
+                            "word_count": 464,
+                            "char_count": 2739,
+                            "characters": {
+                                "Zeta": 25,
+                                "Eta": 14,
+                                "Gamma": 19,
+                                "Cid Kagenou (Cid)": 1
+                            }
+                        },
+                        "e2": {
+                            "line_count": 52,
+                            "word_count": 447,
+                            "char_count": 2531,
+                            "characters": {
+                                "Zeta": 24,
+                                "Gamma": 13,
+                                "Eta": 15
+                            }
+                        },
+                        "e3": {
+                            "line_count": 65,
+                            "word_count": 545,
+                            "char_count": 3094,
+                            "characters": {
+                                "Eta": 12,
+                                "Zeta": 26,
+                                "Gamma": 27
+                            }
+                        },
+                        "e4": {
+                            "line_count": 65,
+                            "word_count": 626,
+                            "char_count": 3535,
+                            "characters": {
+                                "Gamma": 36,
+                                "Zeta": 29
+                            }
+                        },
+                        "e5": {
+                            "line_count": 59,
+                            "word_count": 626,
+                            "char_count": 3551,
+                            "characters": {
+                                "Gamma": 19,
+                                "Zeta": 27,
+                                "Cid Kagenou (Cid)": 13
+                            }
+                        }
+                    }
+                },
+                "c1-5": {
+                    "episode_count": 5,
+                    "line_count": 350,
+                    "word_count": 3786,
+                    "char_count": 21718,
+                    "characters": {
+                        "Beta": 215,
+                        "Alpha": 9,
+                        "Zeta": 19,
+                        "MNA Journalist": 14,
+                        "Editor": 23,
+                        "Cid Kagenou (Cid)": 34,
+                        "None": 4,
+                        "Epsilon": 12,
+                        "Cult Member A": 2,
+                        "Alpha (None (Alpha))": 1,
+                        "Cult Member B": 1,
+                        "Cult Member C": 2,
+                        "Templar (????? (Templar))": 14
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 55,
+                            "word_count": 722,
+                            "char_count": 4133,
+                            "characters": {
+                                "Beta": 46,
+                                "Alpha": 9
+                            }
+                        },
+                        "e2": {
+                            "line_count": 59,
+                            "word_count": 517,
+                            "char_count": 2875,
+                            "characters": {
+                                "Beta": 33,
+                                "Zeta": 12,
+                                "MNA Journalist": 14
+                            }
+                        },
+                        "e3": {
+                            "line_count": 86,
+                            "word_count": 894,
+                            "char_count": 5140,
+                            "characters": {
+                                "Editor": 23,
+                                "Beta": 47,
+                                "Cid Kagenou (Cid)": 12,
+                                "None": 4
+                            }
+                        },
+                        "e4": {
+                            "line_count": 72,
+                            "word_count": 816,
+                            "char_count": 4820,
+                            "characters": {
+                                "Epsilon": 12,
+                                "Beta": 44,
+                                "Cult Member A": 2,
+                                "Zeta": 4,
+                                "Alpha (None (Alpha))": 1,
+                                "Cult Member B": 1,
+                                "Cult Member C": 2,
+                                "Templar (????? (Templar))": 6
+                            }
+                        },
+                        "e5": {
+                            "line_count": 78,
+                            "word_count": 837,
+                            "char_count": 4750,
+                            "characters": {
+                                "Templar (????? (Templar))": 8,
+                                "Beta": 45,
+                                "Cid Kagenou (Cid)": 22,
+                                "Zeta": 3
+                            }
+                        }
+                    }
+                },
+                "c1-6": {
+                    "episode_count": 5,
+                    "line_count": 320,
+                    "word_count": 3278,
+                    "char_count": 18556,
+                    "characters": {
+                        "Beta": 18,
+                        "Alpha": 125,
+                        "Epsilon": 56,
+                        "Delta": 53,
+                        "Lambda": 12,
+                        "Cult Member B": 1,
+                        "Cult Member A": 20,
+                        "Templar": 2,
+                        "Templar B": 5,
+                        "Templar A": 11,
+                        "Templar C": 6,
+                        "Cid Kagenou (Cid)": 11
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 38,
+                            "word_count": 521,
+                            "char_count": 2985,
+                            "characters": {
+                                "Beta": 18,
+                                "Alpha": 20
+                            }
+                        },
+                        "e2": {
+                            "line_count": 46,
+                            "word_count": 580,
+                            "char_count": 3209,
+                            "characters": {
+                                "Epsilon": 12,
+                                "Alpha": 20,
+                                "Delta": 14
+                            }
+                        },
+                        "e3": {
+                            "line_count": 55,
+                            "word_count": 631,
+                            "char_count": 3503,
+                            "characters": {
+                                "Alpha": 22,
+                                "Lambda": 12,
+                                "Epsilon": 12,
+                                "Delta": 9
+                            }
+                        },
+                        "e4": {
+                            "line_count": 81,
+                            "word_count": 666,
+                            "char_count": 3815,
+                            "characters": {
+                                "Alpha": 28,
+                                "Cult Member B": 1,
+                                "Delta": 16,
+                                "Epsilon": 14,
+                                "Cult Member A": 20,
+                                "Templar": 2
+                            }
+                        },
+                        "e5": {
+                            "line_count": 100,
+                            "word_count": 880,
+                            "char_count": 5044,
+                            "characters": {
+                                "Templar B": 5,
+                                "Alpha": 35,
+                                "Templar A": 11,
+                                "Templar C": 6,
+                                "Delta": 14,
+                                "Epsilon": 18,
+                                "Cid Kagenou (Cid)": 11
+                            }
+                        }
+                    }
+                },
+                "c1-7": {
+                    "episode_count": 5,
+                    "line_count": 334,
+                    "word_count": 3165,
+                    "char_count": 17807,
+                    "characters": {
+                        "Epsilon": 17,
+                        "Delta": 116,
+                        "Zeta": 37,
+                        "Alpha": 104,
+                        "Delta (Delta & Zeta (Delta))": 1,
+                        "Zeta (Delta & Zeta (Zeta))": 1,
+                        "Researcher": 8,
+                        "Cult Member A": 3,
+                        "Cult Member B": 3,
+                        "Cult Member A (Cult Member A & B (Cult Member A))": 3,
+                        "Cult Member B (Cult Member A & B (Cult Member B))": 3,
+                        "Cult Members": 2,
+                        "Cult Member Boss": 14,
+                        "Cult Member C": 3,
+                        "Cid Kagenou (Cid)": 19
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 54,
+                            "word_count": 640,
+                            "char_count": 3609,
+                            "characters": {
+                                "Epsilon": 17,
+                                "Delta": 10,
+                                "Zeta": 12,
+                                "Alpha": 15
+                            }
+                        },
+                        "e2": {
+                            "line_count": 69,
+                            "word_count": 643,
+                            "char_count": 3579,
+                            "characters": {
+                                "Delta": 31,
+                                "Zeta": 9,
+                                "Alpha": 29
+                            }
+                        },
+                        "e3": {
+                            "line_count": 57,
+                            "word_count": 599,
+                            "char_count": 3416,
+                            "characters": {
+                                "Alpha": 13,
+                                "Zeta": 10,
+                                "Delta": 16,
+                                "Delta (Delta & Zeta (Delta))": 1,
+                                "Zeta (Delta & Zeta (Zeta))": 1,
+                                "Researcher": 8,
+                                "Cult Member A": 3,
+                                "Cult Member B": 3,
+                                "Cult Member A (Cult Member A & B (Cult Member A))": 3,
+                                "Cult Member B (Cult Member A & B (Cult Member B))": 3
+                            }
+                        },
+                        "e4": {
+                            "line_count": 69,
+                            "word_count": 543,
+                            "char_count": 3009,
+                            "characters": {
+                                "Alpha": 26,
+                                "Delta": 24,
+                                "Cult Members": 2,
+                                "Cult Member Boss": 14,
+                                "Cult Member C": 3
+                            }
+                        },
+                        "e5": {
+                            "line_count": 81,
+                            "word_count": 740,
+                            "char_count": 4194,
+                            "characters": {
+                                "Delta": 35,
+                                "Alpha": 21,
+                                "Zeta": 6,
+                                "Cid Kagenou (Cid)": 19
+                            }
+                        }
+                    }
+                },
+                "c1-8": {
+                    "episode_count": 5,
+                    "line_count": 323,
+                    "word_count": 3700,
+                    "char_count": 21120,
+                    "characters": {
+                        "Epsilon": 178,
+                        "Alpha": 30,
+                        "Cid Kagenou (Cid)": 20,
+                        "Gamma": 35,
+                        "Lambda": 29,
+                        "Bandit Boss": 11,
+                        "Bandit A": 6,
+                        "Eta": 2,
+                        "Guard": 2,
+                        "Basilisk": 4,
+                        "Oriana Noble A": 1,
+                        "Oriana Noble B": 1,
+                        "Oriana Noble C": 1,
+                        "Dark Knight Trainee": 1,
+                        "Female DK Trainee": 2
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 55,
+                            "word_count": 672,
+                            "char_count": 4039,
+                            "characters": {
+                                "Epsilon": 43,
+                                "Alpha": 10,
+                                "Cid Kagenou (Cid)": 2
+                            }
+                        },
+                        "e2": {
+                            "line_count": 71,
+                            "word_count": 846,
+                            "char_count": 4797,
+                            "characters": {
+                                "Alpha": 15,
+                                "Gamma": 25,
+                                "Epsilon": 20,
+                                "Lambda": 11
+                            }
+                        },
+                        "e3": {
+                            "line_count": 60,
+                            "word_count": 677,
+                            "char_count": 3859,
+                            "characters": {
+                                "Lambda": 18,
+                                "Epsilon": 30,
+                                "Gamma": 7,
+                                "Alpha": 5
+                            }
+                        },
+                        "e4": {
+                            "line_count": 57,
+                            "word_count": 678,
+                            "char_count": 3809,
+                            "characters": {
+                                "Epsilon": 49,
+                                "Bandit Boss": 2,
+                                "Bandit A": 2,
+                                "Eta": 2,
+                                "Guard": 2
+                            }
+                        },
+                        "e5": {
+                            "line_count": 80,
+                            "word_count": 827,
+                            "char_count": 4616,
+                            "characters": {
+                                "Bandit Boss": 9,
+                                "Bandit A": 4,
+                                "Basilisk": 4,
+                                "Epsilon": 36,
+                                "Oriana Noble A": 1,
+                                "Oriana Noble B": 1,
+                                "Oriana Noble C": 1,
+                                "Dark Knight Trainee": 1,
+                                "Female DK Trainee": 2,
+                                "Gamma": 3,
+                                "Cid Kagenou (Cid)": 18
+                            }
+                        }
+                    }
+                },
+                "c1-9": {
+                    "episode_count": 5,
+                    "line_count": 281,
+                    "word_count": 3395,
+                    "char_count": 19074,
+                    "characters": {
+                        "Alpha": 19,
+                        "Gamma": 164,
+                        "Beta": 19,
+                        "Zeta": 12,
+                        "Bandit Boss": 14,
+                        "Bandit A": 9,
+                        "Mercenary A (??? (Mercenary A))": 1,
+                        "Mercenary A": 1,
+                        "Mercenary Boss": 20,
+                        "Alpha Wolf": 8,
+                        "Cid Kagenou (Cid)": 14
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 35,
+                            "word_count": 616,
+                            "char_count": 3434,
+                            "characters": {
+                                "Alpha": 15,
+                                "Gamma": 20
+                            }
+                        },
+                        "e2": {
+                            "line_count": 64,
+                            "word_count": 854,
+                            "char_count": 4764,
+                            "characters": {
+                                "Gamma": 45,
+                                "Beta": 19
+                            }
+                        },
+                        "e3": {
+                            "line_count": 41,
+                            "word_count": 590,
+                            "char_count": 3393,
+                            "characters": {
+                                "Gamma": 29,
+                                "Zeta": 12
+                            }
+                        },
+                        "e4": {
+                            "line_count": 57,
+                            "word_count": 485,
+                            "char_count": 2734,
+                            "characters": {
+                                "Gamma": 26,
+                                "Bandit Boss": 12,
+                                "Bandit A": 9,
+                                "Mercenary A (??? (Mercenary A))": 1,
+                                "Mercenary A": 1,
+                                "Mercenary Boss": 6,
+                                "Alpha Wolf": 2
+                            }
+                        },
+                        "e5": {
+                            "line_count": 84,
+                            "word_count": 850,
+                            "char_count": 4749,
+                            "characters": {
+                                "Alpha Wolf": 6,
+                                "Gamma": 44,
+                                "Bandit Boss": 2,
+                                "Mercenary Boss": 14,
+                                "Alpha": 4,
+                                "Cid Kagenou (Cid)": 14
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "p2": {
+            "chapter_count": 13,
+            "line_count": 4137,
+            "word_count": 44374,
+            "char_count": 257580,
+            "characters": {
+                "Alpha (None (Alpha))": 9,
+                "Zeta": 361,
+                "Alpha (??? (Alpha))": 1,
+                "Alpha": 339,
+                "Eta": 311,
+                "Cult Leader": 26,
+                "Cult Member": 7,
+                "Gamma": 508,
+                "Zeta (??? (Zeta))": 1,
+                "Delta": 234,
+                "Beta": 203,
+                "Epsilon": 306,
+                "Alpha (Everyone (Alpha))": 1,
+                "Beta (Everyone (Beta))": 1,
+                "Gamma (Everyone (Gamma))": 1,
+                "Delta (Everyone (Delta))": 1,
+                "Epsilon (Everyone (Epsilon))": 1,
+                "Eta (Everyone (Eta))": 1,
+                "Beta (Beta & Epsilon (Beta))": 2,
+                "Epsilon (Beta & Epsilon (Epsilon))": 2,
+                "Cid Kagenou (Cid)": 249,
+                "Mist Dragon": 20,
+                "Mist Dragon (None (Mist Dragon))": 19,
+                "Malak": 40,
+                "Chi (No. 111)": 278,
+                "Omega (No. 122)": 200,
+                "Annerose Nichtsehen (Annerose)": 100,
+                "Victoria": 45,
+                "Claire Kagenou (Claire)": 9,
+                "Sergey Gorman (Sergey)": 145,
+                "Velgalta Soldier A": 2,
+                "Velgalta Soldier B": 3,
+                "Velgalta Soldier C": 4,
+                "Beta (Beta & Delta & Zeta (Beta))": 1,
+                "Delta (Beta & Delta & Zeta (Delta))": 1,
+                "Zeta (Beta & Delta & Zeta (Zeta))": 1,
+                "Gamma (Gamma& Epsilon & Eta (Gamma))": 1,
+                "Epsilon (Gamma& Epsilon & Eta (Epsilon))": 1,
+                "Eta (Gamma& Epsilon & Eta (Eta))": 1,
+                "Velgalta Soldier D": 1,
+                "Velgalta Soldier E": 2,
+                "Velgalta Soldiers": 2,
+                "Malak Swarm": 3,
+                "Cid Kagenou (Shadow)": 136,
+                "No. 111 (No. 111 & No. 122 (No. 111))": 5,
+                "No. 122 (No. 111 & No. 122 (No. 122))": 5,
+                "Annerose Nichtsehen (None (Annerose))": 4,
+                "Chi": 11,
+                "Omega": 8,
+                "Malaks": 1,
+                "Sergey Gorman (None (Sergey Gorman))": 32,
+                "Gamma (Gamma & Epsilon (Gamma))": 1,
+                "Epsilon (Gamma & Epsilon (Epsilon))": 1,
+                "Olivier (??? (Olivier))": 2,
+                "Cult Member A": 7,
+                "Templar": 2,
+                "Lambda": 144,
+                "Cult Member B": 6,
+                "Cult Member C": 1,
+                "Bishop Drake (Bishop of Orum)": 10,
+                "Bishop Drake": 6,
+                "Gamma (None (Gamma))": 21,
+                "None": 12,
+                "Sergey Gorman (??? (Sergey Gorman))": 1,
+                "Chi (??? (Karen))": 13,
+                "Chi (Karen)": 180,
+                "Gamma (??? (Gamma))": 1,
+                "Beta (Beta & Gamma (Beta))": 2,
+                "Gamma (Beta & Gamma (Gamma))": 2,
+                "Mundane Mercenary": 9,
+                "Cultist A": 7,
+                "Cid Kagenou (None (Cid Kagenou))": 7,
+                "Cultist B": 4,
+                "Cultist C": 3,
+                "Templar A": 3,
+                "Templar Leader": 3,
+                "Templar B": 1,
+                "Templar C": 1,
+                "Omega (Possessed (Omega))": 4,
+                "Curie Oso (Curious Noblewoman)": 8,
+                "Sergey Gorman (Sergei)": 22,
+                "Velgalta Soldier": 6,
+                "Cultist": 1
+            },
+            "chapters": {
+                "c2-1": {
+                    "episode_count": 5,
+                    "line_count": 320,
+                    "word_count": 3954,
+                    "char_count": 22810,
+                    "characters": {
+                        "Alpha (None (Alpha))": 9,
+                        "Zeta": 116,
+                        "Alpha (??? (Alpha))": 1,
+                        "Alpha": 51,
+                        "Eta": 19,
+                        "Cult Leader": 7,
+                        "Cult Member": 7,
+                        "Gamma": 28,
+                        "Zeta (??? (Zeta))": 1,
+                        "Delta": 11,
+                        "Beta": 14,
+                        "Epsilon": 16,
+                        "Alpha (Everyone (Alpha))": 1,
+                        "Beta (Everyone (Beta))": 1,
+                        "Gamma (Everyone (Gamma))": 1,
+                        "Delta (Everyone (Delta))": 1,
+                        "Epsilon (Everyone (Epsilon))": 1,
+                        "Eta (Everyone (Eta))": 1,
+                        "Beta (Beta & Epsilon (Beta))": 1,
+                        "Epsilon (Beta & Epsilon (Epsilon))": 1,
+                        "Cid Kagenou (Cid)": 32
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 42,
+                            "word_count": 439,
+                            "char_count": 2508,
+                            "characters": {
+                                "Alpha (None (Alpha))": 9,
+                                "Zeta": 19,
+                                "Alpha (??? (Alpha))": 1,
+                                "Alpha": 13
+                            }
+                        },
+                        "e2": {
+                            "line_count": 57,
+                            "word_count": 720,
+                            "char_count": 4235,
+                            "characters": {
+                                "Zeta": 44,
+                                "Eta": 13
+                            }
+                        },
+                        "e3": {
+                            "line_count": 65,
+                            "word_count": 817,
+                            "char_count": 4654,
+                            "characters": {
+                                "Cult Leader": 7,
+                                "Cult Member": 7,
+                                "Zeta": 32,
+                                "Gamma": 9,
+                                "Zeta (??? (Zeta))": 1,
+                                "Alpha": 1,
+                                "Delta": 5,
+                                "Beta": 1,
+                                "Epsilon": 1,
+                                "Alpha (Everyone (Alpha))": 1,
+                                "Beta (Everyone (Beta))": 1,
+                                "Gamma (Everyone (Gamma))": 1,
+                                "Delta (Everyone (Delta))": 1,
+                                "Epsilon (Everyone (Epsilon))": 1,
+                                "Eta (Everyone (Eta))": 1
+                            }
+                        },
+                        "e4": {
+                            "line_count": 71,
+                            "word_count": 852,
+                            "char_count": 5001,
+                            "characters": {
+                                "Delta": 5,
+                                "Eta": 5,
+                                "Gamma": 12,
+                                "Beta": 10,
+                                "Epsilon": 11,
+                                "Zeta": 13,
+                                "Alpha": 15
+                            }
+                        },
+                        "e5": {
+                            "line_count": 79,
+                            "word_count": 1126,
+                            "char_count": 6412,
+                            "characters": {
+                                "Epsilon": 4,
+                                "Zeta": 8,
+                                "Gamma": 7,
+                                "Beta": 3,
+                                "Alpha": 22,
+                                "Delta": 1,
+                                "Eta": 1,
+                                "Beta (Beta & Epsilon (Beta))": 1,
+                                "Epsilon (Beta & Epsilon (Epsilon))": 1,
+                                "Cid Kagenou (Cid)": 32
+                            }
+                        }
+                    }
+                },
+                "c2-10": {
+                    "episode_count": 5,
+                    "line_count": 306,
+                    "word_count": 2633,
+                    "char_count": 15229,
+                    "characters": {
+                        "Delta": 130,
+                        "Beta": 7,
+                        "Epsilon": 7,
+                        "Alpha": 22,
+                        "Beta (Beta & Epsilon (Beta))": 1,
+                        "Epsilon (Beta & Epsilon (Epsilon))": 1,
+                        "Eta": 4,
+                        "Mist Dragon": 20,
+                        "Mist Dragon (None (Mist Dragon))": 19,
+                        "Cid Kagenou (Cid)": 82,
+                        "Malak": 13
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 64,
+                            "word_count": 453,
+                            "char_count": 2513,
+                            "characters": {
+                                "Delta": 29,
+                                "Beta": 7,
+                                "Epsilon": 7,
+                                "Alpha": 16,
+                                "Beta (Beta & Epsilon (Beta))": 1,
+                                "Epsilon (Beta & Epsilon (Epsilon))": 1,
+                                "Eta": 4
+                            }
+                        },
+                        "e2": {
+                            "line_count": 55,
+                            "word_count": 612,
+                            "char_count": 3611,
+                            "characters": {
+                                "Delta": 16,
+                                "Mist Dragon": 20,
+                                "Mist Dragon (None (Mist Dragon))": 19
+                            }
+                        },
+                        "e3": {
+                            "line_count": 68,
+                            "word_count": 632,
+                            "char_count": 3687,
+                            "characters": {
+                                "Cid Kagenou (Cid)": 45,
+                                "Delta": 23
+                            }
+                        },
+                        "e4": {
+                            "line_count": 43,
+                            "word_count": 198,
+                            "char_count": 1174,
+                            "characters": {
+                                "Delta": 31,
+                                "Malak": 10,
+                                "Cid Kagenou (Cid)": 2
+                            }
+                        },
+                        "e5": {
+                            "line_count": 75,
+                            "word_count": 738,
+                            "char_count": 4244,
+                            "characters": {
+                                "Delta": 31,
+                                "Malak": 3,
+                                "Alpha": 6,
+                                "Cid Kagenou (Cid)": 35
+                            }
+                        }
+                    }
+                },
+                "c2-11": {
+                    "episode_count": 5,
+                    "line_count": 302,
+                    "word_count": 3210,
+                    "char_count": 17785,
+                    "characters": {
+                        "Alpha": 12,
+                        "Beta": 7,
+                        "Gamma": 11,
+                        "Zeta": 85,
+                        "Chi (No. 111)": 63,
+                        "Omega (No. 122)": 53,
+                        "Annerose Nichtsehen (Annerose)": 26,
+                        "Victoria": 22,
+                        "Claire Kagenou (Claire)": 9,
+                        "Cid Kagenou (Cid)": 14
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 51,
+                            "word_count": 800,
+                            "char_count": 4470,
+                            "characters": {
+                                "Alpha": 12,
+                                "Beta": 7,
+                                "Gamma": 11,
+                                "Zeta": 21
+                            }
+                        },
+                        "e2": {
+                            "line_count": 71,
+                            "word_count": 726,
+                            "char_count": 3823,
+                            "characters": {
+                                "Chi (No. 111)": 29,
+                                "Omega (No. 122)": 25,
+                                "Zeta": 17
+                            }
+                        },
+                        "e3": {
+                            "line_count": 46,
+                            "word_count": 523,
+                            "char_count": 2945,
+                            "characters": {
+                                "Chi (No. 111)": 15,
+                                "Annerose Nichtsehen (Annerose)": 14,
+                                "Omega (No. 122)": 9,
+                                "Zeta": 8
+                            }
+                        },
+                        "e4": {
+                            "line_count": 59,
+                            "word_count": 314,
+                            "char_count": 1764,
+                            "characters": {
+                                "Chi (No. 111)": 14,
+                                "Annerose Nichtsehen (Annerose)": 12,
+                                "Omega (No. 122)": 6,
+                                "Zeta": 15,
+                                "Victoria": 12
+                            }
+                        },
+                        "e5": {
+                            "line_count": 75,
+                            "word_count": 847,
+                            "char_count": 4783,
+                            "characters": {
+                                "Victoria": 10,
+                                "Zeta": 24,
+                                "Chi (No. 111)": 5,
+                                "Omega (No. 122)": 13,
+                                "Claire Kagenou (Claire)": 9,
+                                "Cid Kagenou (Cid)": 14
+                            }
+                        }
+                    }
+                },
+                "c2-12": {
+                    "episode_count": 5,
+                    "line_count": 326,
+                    "word_count": 2880,
+                    "char_count": 17267,
+                    "characters": {
+                        "Sergey Gorman (Sergey)": 69,
+                        "Chi (No. 111)": 22,
+                        "Omega (No. 122)": 21,
+                        "Velgalta Soldier A": 1,
+                        "Velgalta Soldier B": 1,
+                        "Velgalta Soldier C": 2,
+                        "Beta (Beta & Delta & Zeta (Beta))": 1,
+                        "Delta (Beta & Delta & Zeta (Delta))": 1,
+                        "Zeta (Beta & Delta & Zeta (Zeta))": 1,
+                        "Gamma (Gamma& Epsilon & Eta (Gamma))": 1,
+                        "Epsilon (Gamma& Epsilon & Eta (Epsilon))": 1,
+                        "Eta (Gamma& Epsilon & Eta (Eta))": 1,
+                        "Alpha": 25,
+                        "Gamma": 15,
+                        "Eta": 14,
+                        "Velgalta Soldier D": 1,
+                        "Epsilon": 12,
+                        "Beta": 12,
+                        "Zeta": 15,
+                        "Velgalta Soldier E": 2,
+                        "Delta": 18,
+                        "Velgalta Soldiers": 1,
+                        "Malak Swarm": 3,
+                        "Cid Kagenou (Shadow)": 83,
+                        "No. 111 (No. 111 & No. 122 (No. 111))": 1,
+                        "No. 122 (No. 111 & No. 122 (No. 122))": 1,
+                        "Malak": 1
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 44,
+                            "word_count": 429,
+                            "char_count": 2449,
+                            "characters": {
+                                "Sergey Gorman (Sergey)": 14,
+                                "Chi (No. 111)": 6,
+                                "Omega (No. 122)": 5,
+                                "Velgalta Soldier A": 1,
+                                "Velgalta Soldier B": 1,
+                                "Velgalta Soldier C": 2,
+                                "Beta (Beta & Delta & Zeta (Beta))": 1,
+                                "Delta (Beta & Delta & Zeta (Delta))": 1,
+                                "Zeta (Beta & Delta & Zeta (Zeta))": 1,
+                                "Gamma (Gamma& Epsilon & Eta (Gamma))": 1,
+                                "Epsilon (Gamma& Epsilon & Eta (Epsilon))": 1,
+                                "Eta (Gamma& Epsilon & Eta (Eta))": 1,
+                                "Alpha": 3,
+                                "Gamma": 1,
+                                "Eta": 2,
+                                "Velgalta Soldier D": 1,
+                                "Epsilon": 1,
+                                "Beta": 2,
+                                "Zeta": 1,
+                                "Velgalta Soldier E": 1,
+                                "Delta": 1
+                            }
+                        },
+                        "e2": {
+                            "line_count": 77,
+                            "word_count": 698,
+                            "char_count": 4016,
+                            "characters": {
+                                "Omega (No. 122)": 8,
+                                "Chi (No. 111)": 7,
+                                "Velgalta Soldier E": 1,
+                                "Velgalta Soldiers": 1,
+                                "Delta": 5,
+                                "Sergey Gorman (Sergey)": 14,
+                                "Beta": 3,
+                                "Epsilon": 3,
+                                "Gamma": 5,
+                                "Eta": 4,
+                                "Zeta": 4,
+                                "Alpha": 6,
+                                "Malak Swarm": 2,
+                                "Cid Kagenou (Shadow)": 14
+                            }
+                        },
+                        "e3": {
+                            "line_count": 58,
+                            "word_count": 522,
+                            "char_count": 3113,
+                            "characters": {
+                                "Gamma": 4,
+                                "Delta": 8,
+                                "Beta": 4,
+                                "Sergey Gorman (Sergey)": 5,
+                                "Eta": 4,
+                                "Epsilon": 5,
+                                "Zeta": 3,
+                                "Alpha": 8,
+                                "Chi (No. 111)": 2,
+                                "Omega (No. 122)": 2,
+                                "No. 111 (No. 111 & No. 122 (No. 111))": 1,
+                                "No. 122 (No. 111 & No. 122 (No. 122))": 1,
+                                "Cid Kagenou (Shadow)": 12
+                            }
+                        },
+                        "e4": {
+                            "line_count": 78,
+                            "word_count": 704,
+                            "char_count": 4396,
+                            "characters": {
+                                "Sergey Gorman (Sergey)": 22,
+                                "Cid Kagenou (Shadow)": 24,
+                                "Malak Swarm": 1,
+                                "Malak": 1,
+                                "Gamma": 4,
+                                "Beta": 2,
+                                "Epsilon": 2,
+                                "Eta": 3,
+                                "Zeta": 6,
+                                "Delta": 3,
+                                "Alpha": 5,
+                                "Chi (No. 111)": 3,
+                                "Omega (No. 122)": 2
+                            }
+                        },
+                        "e5": {
+                            "line_count": 64,
+                            "word_count": 527,
+                            "char_count": 3293,
+                            "characters": {
+                                "Sergey Gorman (Sergey)": 14,
+                                "Cid Kagenou (Shadow)": 33,
+                                "Beta": 1,
+                                "Gamma": 1,
+                                "Delta": 1,
+                                "Epsilon": 1,
+                                "Zeta": 1,
+                                "Eta": 1,
+                                "Chi (No. 111)": 4,
+                                "Omega (No. 122)": 4,
+                                "Alpha": 3
+                            }
+                        }
+                    }
+                },
+                "c2-13": {
+                    "episode_count": 5,
+                    "line_count": 272,
+                    "word_count": 3337,
+                    "char_count": 18530,
+                    "characters": {
+                        "Annerose Nichtsehen (Annerose)": 20,
+                        "Velgalta Soldiers": 1,
+                        "Annerose Nichtsehen (None (Annerose))": 4,
+                        "Omega (No. 122)": 2,
+                        "Chi (No. 111)": 3,
+                        "Chi": 11,
+                        "Omega": 8,
+                        "Beta": 23,
+                        "Zeta": 39,
+                        "Eta": 33,
+                        "Epsilon": 19,
+                        "Alpha": 34,
+                        "Gamma": 15,
+                        "Delta": 16,
+                        "Malaks": 1,
+                        "Malak": 7,
+                        "Sergey Gorman (None (Sergey Gorman))": 32,
+                        "Gamma (Gamma & Epsilon (Gamma))": 1,
+                        "Epsilon (Gamma & Epsilon (Epsilon))": 1,
+                        "Olivier (??? (Olivier))": 2
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 49,
+                            "word_count": 640,
+                            "char_count": 3495,
+                            "characters": {
+                                "Annerose Nichtsehen (Annerose)": 20,
+                                "Velgalta Soldiers": 1,
+                                "Annerose Nichtsehen (None (Annerose))": 4,
+                                "Omega (No. 122)": 2,
+                                "Chi (No. 111)": 3,
+                                "Chi": 11,
+                                "Omega": 8
+                            }
+                        },
+                        "e2": {
+                            "line_count": 54,
+                            "word_count": 630,
+                            "char_count": 3431,
+                            "characters": {
+                                "Beta": 5,
+                                "Zeta": 20,
+                                "Eta": 4,
+                                "Epsilon": 5,
+                                "Alpha": 8,
+                                "Gamma": 4,
+                                "Delta": 7,
+                                "Malaks": 1
+                            }
+                        },
+                        "e3": {
+                            "line_count": 60,
+                            "word_count": 561,
+                            "char_count": 3297,
+                            "characters": {
+                                "Delta": 4,
+                                "Malak": 7,
+                                "Epsilon": 4,
+                                "Beta": 7,
+                                "Gamma": 5,
+                                "Zeta": 10,
+                                "Eta": 13,
+                                "Alpha": 10
+                            }
+                        },
+                        "e4": {
+                            "line_count": 50,
+                            "word_count": 958,
+                            "char_count": 5287,
+                            "characters": {
+                                "Sergey Gorman (None (Sergey Gorman))": 26,
+                                "Eta": 3,
+                                "Alpha": 5,
+                                "Beta": 5,
+                                "Zeta": 4,
+                                "Delta": 2,
+                                "Gamma": 1,
+                                "Epsilon": 3,
+                                "Gamma (Gamma & Epsilon (Gamma))": 1,
+                                "Epsilon (Gamma & Epsilon (Epsilon))": 1
+                            }
+                        },
+                        "e5": {
+                            "line_count": 58,
+                            "word_count": 548,
+                            "char_count": 3020,
+                            "characters": {
+                                "Gamma": 5,
+                                "Beta": 6,
+                                "Eta": 13,
+                                "Zeta": 5,
+                                "Epsilon": 7,
+                                "Delta": 3,
+                                "Alpha": 11,
+                                "Sergey Gorman (None (Sergey Gorman))": 6,
+                                "Olivier (??? (Olivier))": 2
+                            }
+                        }
+                    }
+                },
+                "c2-2": {
+                    "episode_count": 5,
+                    "line_count": 288,
+                    "word_count": 3408,
+                    "char_count": 19173,
+                    "characters": {
+                        "Delta": 23,
+                        "Beta": 31,
+                        "Cult Member A": 7,
+                        "Templar": 2,
+                        "Zeta": 64,
+                        "Gamma": 18,
+                        "Eta": 31,
+                        "Lambda": 21,
+                        "Cult Member B": 6,
+                        "Cult Leader": 16,
+                        "Epsilon": 11,
+                        "Alpha": 24,
+                        "Cult Member C": 1,
+                        "Victoria": 14,
+                        "Cid Kagenou (Cid)": 19
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 61,
+                            "word_count": 688,
+                            "char_count": 3795,
+                            "characters": {
+                                "Delta": 22,
+                                "Beta": 30,
+                                "Cult Member A": 7,
+                                "Templar": 2
+                            }
+                        },
+                        "e2": {
+                            "line_count": 35,
+                            "word_count": 491,
+                            "char_count": 2775,
+                            "characters": {
+                                "Zeta": 18,
+                                "Gamma": 17
+                            }
+                        },
+                        "e3": {
+                            "line_count": 47,
+                            "word_count": 498,
+                            "char_count": 2836,
+                            "characters": {
+                                "Eta": 19,
+                                "Lambda": 18,
+                                "Cult Member B": 5,
+                                "Cult Leader": 5
+                            }
+                        },
+                        "e4": {
+                            "line_count": 64,
+                            "word_count": 686,
+                            "char_count": 3975,
+                            "characters": {
+                                "Cult Member B": 1,
+                                "Cult Leader": 11,
+                                "Epsilon": 6,
+                                "Alpha": 14,
+                                "Cult Member C": 1,
+                                "Zeta": 23,
+                                "Victoria": 8
+                            }
+                        },
+                        "e5": {
+                            "line_count": 81,
+                            "word_count": 1045,
+                            "char_count": 5792,
+                            "characters": {
+                                "Victoria": 6,
+                                "Zeta": 23,
+                                "Alpha": 10,
+                                "Epsilon": 5,
+                                "Eta": 12,
+                                "Delta": 1,
+                                "Beta": 1,
+                                "Gamma": 1,
+                                "Lambda": 3,
+                                "Cid Kagenou (Cid)": 19
+                            }
+                        }
+                    }
+                },
+                "c2-3": {
+                    "episode_count": 5,
+                    "line_count": 346,
+                    "word_count": 3787,
+                    "char_count": 22429,
+                    "characters": {
+                        "Bishop Drake (Bishop of Orum)": 10,
+                        "Victoria": 9,
+                        "Bishop Drake": 6,
+                        "Eta": 79,
+                        "Gamma": 130,
+                        "Gamma (None (Gamma))": 10,
+                        "None": 2,
+                        "Malak": 15,
+                        "Cid Kagenou (Shadow)": 50,
+                        "Epsilon": 20,
+                        "Lambda": 15
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 55,
+                            "word_count": 634,
+                            "char_count": 3601,
+                            "characters": {
+                                "Bishop Drake (Bishop of Orum)": 10,
+                                "Victoria": 9,
+                                "Bishop Drake": 6,
+                                "Eta": 12,
+                                "Gamma": 18
+                            }
+                        },
+                        "e2": {
+                            "line_count": 37,
+                            "word_count": 452,
+                            "char_count": 2696,
+                            "characters": {
+                                "Gamma": 24,
+                                "Eta": 8,
+                                "Gamma (None (Gamma))": 4,
+                                "None": 1
+                            }
+                        },
+                        "e3": {
+                            "line_count": 49,
+                            "word_count": 722,
+                            "char_count": 4347,
+                            "characters": {
+                                "Gamma": 28,
+                                "Eta": 14,
+                                "Gamma (None (Gamma))": 6,
+                                "None": 1
+                            }
+                        },
+                        "e4": {
+                            "line_count": 63,
+                            "word_count": 484,
+                            "char_count": 2780,
+                            "characters": {
+                                "Eta": 23,
+                                "Malak": 8,
+                                "Gamma": 32
+                            }
+                        },
+                        "e5": {
+                            "line_count": 142,
+                            "word_count": 1495,
+                            "char_count": 9005,
+                            "characters": {
+                                "Malak": 7,
+                                "Gamma": 28,
+                                "Eta": 22,
+                                "Cid Kagenou (Shadow)": 50,
+                                "Epsilon": 20,
+                                "Lambda": 15
+                            }
+                        }
+                    }
+                },
+                "c2-4": {
+                    "episode_count": 5,
+                    "line_count": 359,
+                    "word_count": 3240,
+                    "char_count": 19053,
+                    "characters": {
+                        "Eta": 85,
+                        "Malak": 4,
+                        "Gamma": 106,
+                        "Sergey Gorman (??? (Sergey Gorman))": 1,
+                        "Sergey Gorman (Sergey)": 70,
+                        "Chi (??? (Karen))": 13,
+                        "Velgalta Soldier A": 1,
+                        "Chi (Karen)": 56,
+                        "Gamma (??? (Gamma))": 1,
+                        "Velgalta Soldier B": 2,
+                        "Velgalta Soldier C": 2,
+                        "Cid Kagenou (Cid)": 18
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 52,
+                            "word_count": 513,
+                            "char_count": 3004,
+                            "characters": {
+                                "Eta": 23,
+                                "Malak": 4,
+                                "Gamma": 25
+                            }
+                        },
+                        "e2": {
+                            "line_count": 56,
+                            "word_count": 588,
+                            "char_count": 3417,
+                            "characters": {
+                                "Sergey Gorman (??? (Sergey Gorman))": 1,
+                                "Eta": 13,
+                                "Gamma": 18,
+                                "Sergey Gorman (Sergey)": 11,
+                                "Chi (??? (Karen))": 13
+                            }
+                        },
+                        "e3": {
+                            "line_count": 55,
+                            "word_count": 480,
+                            "char_count": 2743,
+                            "characters": {
+                                "Velgalta Soldier A": 1,
+                                "Chi (Karen)": 9,
+                                "Sergey Gorman (Sergey)": 15,
+                                "Gamma": 16,
+                                "Eta": 13,
+                                "Gamma (??? (Gamma))": 1
+                            }
+                        },
+                        "e4": {
+                            "line_count": 107,
+                            "word_count": 891,
+                            "char_count": 5408,
+                            "characters": {
+                                "Sergey Gorman (Sergey)": 32,
+                                "Chi (Karen)": 34,
+                                "Gamma": 22,
+                                "Eta": 15,
+                                "Velgalta Soldier B": 2,
+                                "Velgalta Soldier C": 2
+                            }
+                        },
+                        "e5": {
+                            "line_count": 89,
+                            "word_count": 768,
+                            "char_count": 4481,
+                            "characters": {
+                                "Gamma": 25,
+                                "Eta": 21,
+                                "Chi (Karen)": 13,
+                                "Sergey Gorman (Sergey)": 12,
+                                "Cid Kagenou (Cid)": 18
+                            }
+                        }
+                    }
+                },
+                "c2-5": {
+                    "episode_count": 5,
+                    "line_count": 408,
+                    "word_count": 4734,
+                    "char_count": 27168,
+                    "characters": {
+                        "Eta": 29,
+                        "Chi (Karen)": 121,
+                        "Lambda": 54,
+                        "Epsilon": 11,
+                        "Alpha": 97,
+                        "Beta": 27,
+                        "Gamma": 50,
+                        "Beta (Beta & Gamma (Beta))": 1,
+                        "Gamma (Beta & Gamma (Gamma))": 1,
+                        "Cid Kagenou (Cid)": 17
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 72,
+                            "word_count": 735,
+                            "char_count": 4139,
+                            "characters": {
+                                "Eta": 15,
+                                "Chi (Karen)": 2,
+                                "Lambda": 19,
+                                "Epsilon": 6,
+                                "Alpha": 14,
+                                "Beta": 8,
+                                "Gamma": 7,
+                                "Beta (Beta & Gamma (Beta))": 1,
+                                "Gamma (Beta & Gamma (Gamma))": 1
+                            }
+                        },
+                        "e2": {
+                            "line_count": 68,
+                            "word_count": 774,
+                            "char_count": 4353,
+                            "characters": {
+                                "Lambda": 7,
+                                "Gamma": 12,
+                                "Alpha": 18,
+                                "Epsilon": 3,
+                                "Beta": 3,
+                                "Chi (Karen)": 20,
+                                "Eta": 5
+                            }
+                        },
+                        "e3": {
+                            "line_count": 96,
+                            "word_count": 1424,
+                            "char_count": 8372,
+                            "characters": {
+                                "Chi (Karen)": 51,
+                                "Alpha": 31,
+                                "Beta": 6,
+                                "Gamma": 3,
+                                "Epsilon": 2,
+                                "Lambda": 3
+                            }
+                        },
+                        "e4": {
+                            "line_count": 93,
+                            "word_count": 930,
+                            "char_count": 5194,
+                            "characters": {
+                                "Alpha": 18,
+                                "Lambda": 13,
+                                "Eta": 7,
+                                "Chi (Karen)": 32,
+                                "Gamma": 23
+                            }
+                        },
+                        "e5": {
+                            "line_count": 78,
+                            "word_count": 871,
+                            "char_count": 5110,
+                            "characters": {
+                                "Chi (Karen)": 16,
+                                "Alpha": 16,
+                                "Gamma": 5,
+                                "Lambda": 12,
+                                "Eta": 2,
+                                "Beta": 10,
+                                "Cid Kagenou (Cid)": 17
+                            }
+                        }
+                    }
+                },
+                "c2-6": {
+                    "episode_count": 5,
+                    "line_count": 295,
+                    "word_count": 3720,
+                    "char_count": 22076,
+                    "characters": {
+                        "Alpha": 55,
+                        "Gamma": 46,
+                        "Beta": 37,
+                        "Epsilon": 77,
+                        "Sergey Gorman (Sergey)": 6,
+                        "Chi (Karen)": 3,
+                        "Eta": 17,
+                        "Beta (Beta & Gamma (Beta))": 1,
+                        "Gamma (Beta & Gamma (Gamma))": 1,
+                        "Chi (No. 111)": 26,
+                        "Cid Kagenou (Shadow)": 3,
+                        "Delta": 5,
+                        "Cid Kagenou (Cid)": 18
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 47,
+                            "word_count": 663,
+                            "char_count": 3719,
+                            "characters": {
+                                "Alpha": 14,
+                                "Gamma": 14,
+                                "Beta": 4,
+                                "Epsilon": 6,
+                                "Sergey Gorman (Sergey)": 6,
+                                "Chi (Karen)": 3
+                            }
+                        },
+                        "e2": {
+                            "line_count": 51,
+                            "word_count": 538,
+                            "char_count": 3257,
+                            "characters": {
+                                "Eta": 17,
+                                "Beta": 5,
+                                "Alpha": 10,
+                                "Epsilon": 9,
+                                "Gamma": 10
+                            }
+                        },
+                        "e3": {
+                            "line_count": 37,
+                            "word_count": 604,
+                            "char_count": 3741,
+                            "characters": {
+                                "Beta": 21,
+                                "Gamma": 15,
+                                "Beta (Beta & Gamma (Beta))": 1,
+                                "Gamma (Beta & Gamma (Gamma))": 1
+                            }
+                        },
+                        "e4": {
+                            "line_count": 72,
+                            "word_count": 745,
+                            "char_count": 4339,
+                            "characters": {
+                                "Chi (No. 111)": 26,
+                                "Epsilon": 43,
+                                "Cid Kagenou (Shadow)": 3
+                            }
+                        },
+                        "e5": {
+                            "line_count": 87,
+                            "word_count": 1170,
+                            "char_count": 7020,
+                            "characters": {
+                                "Alpha": 31,
+                                "Epsilon": 19,
+                                "Delta": 5,
+                                "Beta": 7,
+                                "Gamma": 7,
+                                "Cid Kagenou (Cid)": 18
+                            }
+                        }
+                    }
+                },
+                "c2-7": {
+                    "episode_count": 5,
+                    "line_count": 296,
+                    "word_count": 2923,
+                    "char_count": 17155,
+                    "characters": {
+                        "Delta": 31,
+                        "Epsilon": 98,
+                        "Lambda": 54,
+                        "Chi (No. 111)": 40,
+                        "Mundane Mercenary": 9,
+                        "Cultist A": 5,
+                        "Cid Kagenou (None (Cid Kagenou))": 7,
+                        "Cultist B": 2,
+                        "Cultist C": 2,
+                        "Templar A": 3,
+                        "Templar Leader": 3,
+                        "Templar B": 1,
+                        "Templar C": 1,
+                        "Omega (Possessed (Omega))": 4,
+                        "Omega (No. 122)": 15,
+                        "Cid Kagenou (Cid)": 21
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 53,
+                            "word_count": 632,
+                            "char_count": 3616,
+                            "characters": {
+                                "Delta": 10,
+                                "Epsilon": 25,
+                                "Lambda": 9,
+                                "Chi (No. 111)": 9
+                            }
+                        },
+                        "e2": {
+                            "line_count": 64,
+                            "word_count": 652,
+                            "char_count": 3773,
+                            "characters": {
+                                "Delta": 7,
+                                "Lambda": 11,
+                                "Epsilon": 24,
+                                "Chi (No. 111)": 11,
+                                "Mundane Mercenary": 6,
+                                "Cultist A": 5
+                            }
+                        },
+                        "e3": {
+                            "line_count": 40,
+                            "word_count": 295,
+                            "char_count": 1778,
+                            "characters": {
+                                "Mundane Mercenary": 3,
+                                "Delta": 7,
+                                "Cid Kagenou (None (Cid Kagenou))": 7,
+                                "Chi (No. 111)": 13,
+                                "Lambda": 6,
+                                "Cultist B": 2,
+                                "Cultist C": 2
+                            }
+                        },
+                        "e4": {
+                            "line_count": 49,
+                            "word_count": 420,
+                            "char_count": 2525,
+                            "characters": {
+                                "Epsilon": 26,
+                                "Templar A": 3,
+                                "Templar Leader": 3,
+                                "Delta": 4,
+                                "Templar B": 1,
+                                "Templar C": 1,
+                                "Lambda": 7,
+                                "Omega (Possessed (Omega))": 4
+                            }
+                        },
+                        "e5": {
+                            "line_count": 90,
+                            "word_count": 924,
+                            "char_count": 5463,
+                            "characters": {
+                                "Delta": 3,
+                                "Epsilon": 23,
+                                "Chi (No. 111)": 7,
+                                "Omega (No. 122)": 15,
+                                "Lambda": 21,
+                                "Cid Kagenou (Cid)": 21
+                            }
+                        }
+                    }
+                },
+                "c2-8": {
+                    "episode_count": 5,
+                    "line_count": 334,
+                    "word_count": 3540,
+                    "char_count": 21149,
+                    "characters": {
+                        "Gamma": 89,
+                        "Curie Oso (Curious Noblewoman)": 8,
+                        "Gamma (None (Gamma))": 11,
+                        "No. 111 (No. 111 & No. 122 (No. 111))": 3,
+                        "No. 122 (No. 111 & No. 122 (No. 122))": 3,
+                        "Chi (No. 111)": 73,
+                        "Omega (No. 122)": 59,
+                        "Annerose Nichtsehen (Annerose)": 54,
+                        "Cultist A": 2,
+                        "Cultist B": 2,
+                        "Cultist C": 1,
+                        "Cult Leader": 3,
+                        "Cid Kagenou (Cid)": 15,
+                        "Zeta": 11
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 47,
+                            "word_count": 675,
+                            "char_count": 3998,
+                            "characters": {
+                                "Gamma": 26,
+                                "Curie Oso (Curious Noblewoman)": 8,
+                                "Gamma (None (Gamma))": 11,
+                                "No. 111 (No. 111 & No. 122 (No. 111))": 2,
+                                "No. 122 (No. 111 & No. 122 (No. 122))": 2
+                            }
+                        },
+                        "e2": {
+                            "line_count": 68,
+                            "word_count": 651,
+                            "char_count": 3943,
+                            "characters": {
+                                "Gamma": 32,
+                                "Chi (No. 111)": 20,
+                                "Omega (No. 122)": 16
+                            }
+                        },
+                        "e3": {
+                            "line_count": 65,
+                            "word_count": 957,
+                            "char_count": 5818,
+                            "characters": {
+                                "Annerose Nichtsehen (Annerose)": 26,
+                                "Gamma": 31,
+                                "Chi (No. 111)": 4,
+                                "Omega (No. 122)": 3,
+                                "No. 111 (No. 111 & No. 122 (No. 111))": 1,
+                                "No. 122 (No. 111 & No. 122 (No. 122))": 1
+                            }
+                        },
+                        "e4": {
+                            "line_count": 59,
+                            "word_count": 539,
+                            "char_count": 3074,
+                            "characters": {
+                                "Annerose Nichtsehen (Annerose)": 12,
+                                "Cultist A": 2,
+                                "Chi (No. 111)": 20,
+                                "Omega (No. 122)": 20,
+                                "Cultist B": 2,
+                                "Cultist C": 1,
+                                "Cult Leader": 2
+                            }
+                        },
+                        "e5": {
+                            "line_count": 92,
+                            "word_count": 718,
+                            "char_count": 4316,
+                            "characters": {
+                                "Annerose Nichtsehen (Annerose)": 16,
+                                "Chi (No. 111)": 29,
+                                "Cult Leader": 1,
+                                "Omega (No. 122)": 20,
+                                "Cid Kagenou (Cid)": 15,
+                                "Zeta": 11
+                            }
+                        }
+                    }
+                },
+                "c2-9": {
+                    "episode_count": 5,
+                    "line_count": 285,
+                    "word_count": 3008,
+                    "char_count": 17756,
+                    "characters": {
+                        "Sergey Gorman (Sergei)": 22,
+                        "Velgalta Soldier": 6,
+                        "None": 10,
+                        "Zeta": 31,
+                        "Alpha": 19,
+                        "Beta": 45,
+                        "Chi (No. 111)": 51,
+                        "Epsilon": 35,
+                        "Omega (No. 122)": 50,
+                        "No. 111 (No. 111 & No. 122 (No. 111))": 1,
+                        "No. 122 (No. 111 & No. 122 (No. 122))": 1,
+                        "Cultist": 1,
+                        "Cid Kagenou (Cid)": 13
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 38,
+                            "word_count": 462,
+                            "char_count": 2822,
+                            "characters": {
+                                "Sergey Gorman (Sergei)": 22,
+                                "Velgalta Soldier": 6,
+                                "None": 10
+                            }
+                        },
+                        "e2": {
+                            "line_count": 63,
+                            "word_count": 863,
+                            "char_count": 5163,
+                            "characters": {
+                                "Zeta": 31,
+                                "Alpha": 19,
+                                "Beta": 13
+                            }
+                        },
+                        "e3": {
+                            "line_count": 54,
+                            "word_count": 570,
+                            "char_count": 3366,
+                            "characters": {
+                                "Beta": 24,
+                                "Chi (No. 111)": 6,
+                                "Epsilon": 20,
+                                "Omega (No. 122)": 3,
+                                "No. 111 (No. 111 & No. 122 (No. 111))": 1,
+                                "No. 122 (No. 111 & No. 122 (No. 122))": 1
+                            }
+                        },
+                        "e4": {
+                            "line_count": 62,
+                            "word_count": 454,
+                            "char_count": 2715,
+                            "characters": {
+                                "Chi (No. 111)": 32,
+                                "Cultist": 1,
+                                "Omega (No. 122)": 29
+                            }
+                        },
+                        "e5": {
+                            "line_count": 67,
+                            "word_count": 659,
+                            "char_count": 3690,
+                            "characters": {
+                                "Epsilon": 15,
+                                "Beta": 8,
+                                "Chi (No. 111)": 13,
+                                "Omega (No. 122)": 18,
+                                "Cid Kagenou (Cid)": 13
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "p3": {
+            "chapter_count": 3,
+            "line_count": 886,
+            "word_count": 9831,
+            "char_count": 56485,
+            "characters": {
+                "Olivier (??? (Olivier))": 10,
+                "Alpha": 155,
+                "Beta": 117,
+                "Gamma": 54,
+                "Epsilon": 22,
+                "Zeta": 54,
+                "Delta": 39,
+                "Eta": 79,
+                "Alpha (Seven Shadows (Alpha))": 2,
+                "Beta (Seven Shadows (Beta))": 2,
+                "Gamma (Seven Shadows (Gamma))": 2,
+                "Delta (Seven Shadows (Delta))": 2,
+                "Epsilon (Seven Shadows (Epsilon))": 2,
+                "Zeta (Seven Shadows (Zeta))": 2,
+                "Eta (Seven Shadows (Eta))": 2,
+                "Lambda": 63,
+                "Omega": 80,
+                "Chi": 63,
+                "Nu (93)": 21,
+                "Cid Kagenou (Cid)": 56,
+                "Beta (None (Beta))": 8,
+                "Fan Passerby": 9,
+                "Alpha (Alpha & Beta (Alpha))": 1,
+                "Beta (Alpha & Beta (Beta))": 1,
+                "Olivier": 10,
+                "Garden Members": 3,
+                "Nu (??? (No. 93))": 1,
+                "Nu (No. 93)": 19,
+                "Garden Member": 2,
+                "Delta (??? (Delta))": 1,
+                "Chi (Chi & Omega (Chi))": 1,
+                "Omega (Chi & Omega (Omega))": 1,
+                "Alpha (??? (Alpha))": 1,
+                "Lambda (None (Lambda))": 1
+            },
+            "chapters": {
+                "c3-1": {
+                    "episode_count": 5,
+                    "line_count": 304,
+                    "word_count": 3503,
+                    "char_count": 19922,
+                    "characters": {
+                        "Olivier (??? (Olivier))": 10,
+                        "Alpha": 45,
+                        "Beta": 21,
+                        "Gamma": 15,
+                        "Epsilon": 13,
+                        "Zeta": 17,
+                        "Delta": 19,
+                        "Eta": 14,
+                        "Alpha (Seven Shadows (Alpha))": 2,
+                        "Beta (Seven Shadows (Beta))": 2,
+                        "Gamma (Seven Shadows (Gamma))": 2,
+                        "Delta (Seven Shadows (Delta))": 2,
+                        "Epsilon (Seven Shadows (Epsilon))": 2,
+                        "Zeta (Seven Shadows (Zeta))": 2,
+                        "Eta (Seven Shadows (Eta))": 2,
+                        "Lambda": 31,
+                        "Omega": 45,
+                        "Chi": 22,
+                        "Nu (93)": 21,
+                        "Cid Kagenou (Cid)": 17
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 53,
+                            "word_count": 309,
+                            "char_count": 1837,
+                            "characters": {
+                                "Olivier (??? (Olivier))": 10,
+                                "Alpha": 13,
+                                "Beta": 6,
+                                "Gamma": 4,
+                                "Epsilon": 4,
+                                "Zeta": 7,
+                                "Delta": 4,
+                                "Eta": 5
+                            }
+                        },
+                        "e2": {
+                            "line_count": 51,
+                            "word_count": 564,
+                            "char_count": 3136,
+                            "characters": {
+                                "Alpha": 15,
+                                "Gamma": 6,
+                                "Delta": 12,
+                                "Beta": 5,
+                                "Zeta": 6,
+                                "Epsilon": 3,
+                                "Eta": 2,
+                                "Alpha (Seven Shadows (Alpha))": 2,
+                                "Beta (Seven Shadows (Beta))": 2,
+                                "Gamma (Seven Shadows (Gamma))": 2,
+                                "Delta (Seven Shadows (Delta))": 2,
+                                "Epsilon (Seven Shadows (Epsilon))": 2,
+                                "Zeta (Seven Shadows (Zeta))": 2,
+                                "Eta (Seven Shadows (Eta))": 2
+                            }
+                        },
+                        "e3": {
+                            "line_count": 54,
+                            "word_count": 988,
+                            "char_count": 5832,
+                            "characters": {
+                                "Alpha": 12,
+                                "Beta": 10,
+                                "Gamma": 5,
+                                "Epsilon": 6,
+                                "Zeta": 4,
+                                "Delta": 3,
+                                "Lambda": 7,
+                                "Eta": 7
+                            }
+                        },
+                        "e4": {
+                            "line_count": 48,
+                            "word_count": 603,
+                            "char_count": 3359,
+                            "characters": {
+                                "Omega": 16,
+                                "Lambda": 15,
+                                "Chi": 10,
+                                "Nu (93)": 7
+                            }
+                        },
+                        "e5": {
+                            "line_count": 86,
+                            "word_count": 1039,
+                            "char_count": 5758,
+                            "characters": {
+                                "Omega": 29,
+                                "Nu (93)": 14,
+                                "Chi": 12,
+                                "Lambda": 9,
+                                "Alpha": 5,
+                                "Cid Kagenou (Cid)": 17
+                            }
+                        }
+                    }
+                },
+                "c3-2": {
+                    "episode_count": 5,
+                    "line_count": 260,
+                    "word_count": 3150,
+                    "char_count": 17778,
+                    "characters": {
+                        "Beta": 96,
+                        "Alpha": 69,
+                        "Beta (None (Beta))": 8,
+                        "Cid Kagenou (Cid)": 20,
+                        "Fan Passerby": 9,
+                        "Zeta": 37,
+                        "Alpha (Alpha & Beta (Alpha))": 1,
+                        "Beta (Alpha & Beta (Beta))": 1,
+                        "Olivier": 10,
+                        "Epsilon": 9
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 45,
+                            "word_count": 564,
+                            "char_count": 3122,
+                            "characters": {
+                                "Beta": 20,
+                                "Alpha": 25
+                            }
+                        },
+                        "e2": {
+                            "line_count": 37,
+                            "word_count": 647,
+                            "char_count": 3828,
+                            "characters": {
+                                "Beta": 29,
+                                "Beta (None (Beta))": 8
+                            }
+                        },
+                        "e3": {
+                            "line_count": 60,
+                            "word_count": 749,
+                            "char_count": 4119,
+                            "characters": {
+                                "Cid Kagenou (Cid)": 4,
+                                "Beta": 35,
+                                "Fan Passerby": 9,
+                                "Zeta": 12
+                            }
+                        },
+                        "e4": {
+                            "line_count": 47,
+                            "word_count": 568,
+                            "char_count": 3209,
+                            "characters": {
+                                "Alpha": 20,
+                                "Beta": 7,
+                                "Zeta": 19,
+                                "Alpha (Alpha & Beta (Alpha))": 1,
+                                "Beta (Alpha & Beta (Beta))": 1
+                            }
+                        },
+                        "e5": {
+                            "line_count": 70,
+                            "word_count": 622,
+                            "char_count": 3500,
+                            "characters": {
+                                "Olivier": 10,
+                                "Alpha": 24,
+                                "Beta": 5,
+                                "Zeta": 6,
+                                "Epsilon": 9,
+                                "Cid Kagenou (Cid)": 16
+                            }
+                        }
+                    }
+                },
+                "c3-3": {
+                    "episode_count": 5,
+                    "line_count": 322,
+                    "word_count": 3178,
+                    "char_count": 18785,
+                    "characters": {
+                        "Alpha": 41,
+                        "Gamma": 39,
+                        "Omega": 35,
+                        "Chi": 41,
+                        "Garden Members": 3,
+                        "Nu (??? (No. 93))": 1,
+                        "Nu (No. 93)": 19,
+                        "Garden Member": 2,
+                        "Eta": 65,
+                        "Lambda": 32,
+                        "Delta (??? (Delta))": 1,
+                        "Delta": 20,
+                        "Chi (Chi & Omega (Chi))": 1,
+                        "Omega (Chi & Omega (Omega))": 1,
+                        "Alpha (??? (Alpha))": 1,
+                        "Lambda (None (Lambda))": 1,
+                        "Cid Kagenou (Cid)": 19
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 68,
+                            "word_count": 681,
+                            "char_count": 4004,
+                            "characters": {
+                                "Alpha": 23,
+                                "Gamma": 15,
+                                "Omega": 10,
+                                "Chi": 14,
+                                "Garden Members": 3,
+                                "Nu (??? (No. 93))": 1,
+                                "Nu (No. 93)": 2
+                            }
+                        },
+                        "e2": {
+                            "line_count": 58,
+                            "word_count": 511,
+                            "char_count": 2955,
+                            "characters": {
+                                "Nu (No. 93)": 17,
+                                "Garden Member": 2,
+                                "Omega": 9,
+                                "Chi": 11,
+                                "Eta": 16,
+                                "Lambda": 1,
+                                "Delta (??? (Delta))": 1,
+                                "Delta": 1
+                            }
+                        },
+                        "e3": {
+                            "line_count": 75,
+                            "word_count": 691,
+                            "char_count": 4014,
+                            "characters": {
+                                "Delta": 16,
+                                "Chi": 5,
+                                "Omega": 6,
+                                "Chi (Chi & Omega (Chi))": 1,
+                                "Omega (Chi & Omega (Omega))": 1,
+                                "Lambda": 14,
+                                "Eta": 13,
+                                "Gamma": 15,
+                                "Alpha (??? (Alpha))": 1,
+                                "Alpha": 4
+                            }
+                        },
+                        "e4": {
+                            "line_count": 48,
+                            "word_count": 417,
+                            "char_count": 2413,
+                            "characters": {
+                                "Alpha": 8,
+                                "Eta": 10,
+                                "Lambda": 5,
+                                "Chi": 11,
+                                "Omega": 10,
+                                "Gamma": 2,
+                                "Delta": 2
+                            }
+                        },
+                        "e5": {
+                            "line_count": 72,
+                            "word_count": 878,
+                            "char_count": 5399,
+                            "characters": {
+                                "Lambda (None (Lambda))": 1,
+                                "Alpha": 6,
+                                "Eta": 26,
+                                "Lambda": 12,
+                                "Gamma": 7,
+                                "Delta": 1,
+                                "Cid Kagenou (Cid)": 19
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+const mg_info = {
+    "line_count": apo_info["line_count"] + ssc_info["line_count"] + es_info["line_count"],
+    "word_count": apo_info["word_count"] + ssc_info["word_count"] + es_info["word_count"],
+    "char_count": apo_info["char_count"] + ssc_info["char_count"] + es_info["char_count"],
+    characters: {},
+}
+
+for (const info of [apo_info, ssc_info, es_info]) {
+    for (const [character, count] of Object.entries(info.characters)) {
+        mg_info.characters[character] = (mg_info.characters[character] || 0) + count;
+    }
+}
+
+const all_info = {
+    "line_count": mg_info["line_count"] + ln_info["total"]["line_count"] + wn_info["total"]["line_count"],
+    "word_count": mg_info["word_count"] + ln_info["total"]["word_count"] + wn_info["total"]["word_count"],
+    "char_count": mg_info["char_count"] + ln_info["total"]["char_count"] + wn_info["total"]["char_count"],
+}
+
 
 const generateCollapsiblesLN = (all_counts) => {
     const volumes = Object.keys(all_counts).filter(key => key !== 'total'); // Exclude the 'total' key
@@ -4936,6 +8187,7 @@ const generateCollapsiblesAPO = (all_counts) => {
     const parts = Object.keys(all_counts.parts); // Get all part keys
     return (
         <Collapsible trigger="Apocrypha">
+            <p>Parts: {formatNumber(all_counts.part_count)}</p>
             <p>Paragraphs: {formatNumber(all_counts.line_count)}</p>
             <p>Approximate Word Count: {formatNumber(all_counts.word_count)}</p>
             <p>Character Count: {formatNumber(all_counts.char_count)}</p>
@@ -4948,7 +8200,13 @@ const generateCollapsiblesAPO = (all_counts) => {
                 ))}
             </Collapsible>
             {parts.map(part => (
-                <Collapsible key={part} trigger={`${part}`}>
+                <Collapsible key={part} trigger={
+                    <>
+                        <div className="volume-trigger">
+                            {`${apoMap[part]}`}
+                        </div>
+                    </>
+                }>
                     <p>Chapters: {Object.keys(all_counts.parts[part].chapters).length}</p>
                     <p>Paragraphs:{formatNumber(all_counts.parts[part].line_count)}</p>
                     <p>Approximate Word Count: {formatNumber(all_counts.parts[part].word_count)}</p>
@@ -4961,51 +8219,145 @@ const generateCollapsiblesAPO = (all_counts) => {
                             </div>
                         ))}
                     </Collapsible>
-                    {Object.keys(all_counts.parts[part].chapters).sort().map(chapter => (
-                        <Collapsible key={chapter} trigger={
-                            <>
-                                <div className="volume-trigger">
-                                    {apoCoverImages[`${chapter}`] && <img className="cover-image-apo-chapter-small" src={apoCoverImages[`${chapter}`]} alt={`${part}-${chapter}`} />}
-                                    {`${chapter}`}
-                                </div>
-                            </>
-                        }>
-                            <p>Episodes: {Object.keys(all_counts.parts[part].chapters[chapter].episodes).length}</p>
-                            <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].line_count)}</p>
-                            <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].word_count)}</p>
-                            <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].char_count)}</p>
-                            <Collapsible trigger="Characters">
-                                {Object.keys(all_counts.parts[part].chapters[chapter].characters).map(character => (
-                                    <div key={character}>
-                                        <span>{character}: </span>
-                                        <span>{all_counts.parts[part].chapters[chapter].characters[character]}</span>
+                    {Object.keys(all_counts.parts[part].chapters)
+                        .sort((a, b) => {
+                            // Extract the numeric part of the chapter keys
+                            const aNum = parseInt(a.split('-')[1]);
+                            const bNum = parseInt(b.split('-')[1]);
+                            return aNum - bNum;
+                        })
+                        .map(chapter => (
+                            <Collapsible key={chapter} trigger={
+                                <>
+                                    <div className="volume-trigger">
+                                        {apoCoverImages[`${chapter}`] && <img className="cover-image-apo-chapter-small" src={apoCoverImages[`${chapter}`]} alt={`${part}-${chapter}`} />}
+                                        {`${apoMap[chapter]}`}
                                     </div>
+                                </>
+                            }>
+                                <p>Episodes: {Object.keys(all_counts.parts[part].chapters[chapter].episodes).length}</p>
+                                <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].line_count)}</p>
+                                <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].word_count)}</p>
+                                <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].char_count)}</p>
+                                <Collapsible trigger="Characters">
+                                    {Object.keys(all_counts.parts[part].chapters[chapter].characters).map(character => (
+                                        <div key={character}>
+                                            <span>{character}: </span>
+                                            <span>{all_counts.parts[part].chapters[chapter].characters[character]}</span>
+                                        </div>
+                                    ))}
+                                </Collapsible>
+                                {Object.keys(all_counts.parts[part].chapters[chapter].episodes).sort().map(episode => (
+                                    <Collapsible key={episode} trigger={
+                                        <>
+                                            <div className="volume-trigger">
+                                                {apoCoverImages[`${chapter}-${episode}`] && <img className="cover-image-apo-small" src={apoCoverImages[`${chapter}-${episode}`]} alt={`${chapter}-${episode}`} />}
+                                                {`Episode ${episode.replace("e", "")}`}
+                                            </div>
+                                        </>
+                                    }>
+                                        <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].line_count)}</p>
+                                        <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].word_count)}</p>
+                                        <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].char_count)}</p>
+                                        <Collapsible trigger="Characters">
+                                            {Object.keys(all_counts.parts[part].chapters[chapter].episodes[episode].characters).sort().map(character => (
+                                                <div key={character}>
+                                                    <span>{character}: </span>
+                                                    <span>{all_counts.parts[part].chapters[chapter].episodes[episode].characters[character]}</span>
+                                                </div>
+                                            ))}
+                                        </Collapsible>
+                                    </Collapsible>
                                 ))}
                             </Collapsible>
-                            {Object.keys(all_counts.parts[part].chapters[chapter].episodes).sort().map(episode => (
-                                <Collapsible key={episode} trigger={
-                                    <>
-                                        <div className="volume-trigger">
-                                            {esCoverImages[`${chapter}-${episode}`] && <img className="cover-image-apo-small" src={apoCoverImages[`${chapter}-${episode}`]} alt={`${chapter}-${episode}`} />}
-                                            {`Episode ${episode.replace("e", "")}`}
+                        ))}
+                </Collapsible>
+            ))}
+        </Collapsible>
+    );
+};
+
+const generateCollapsiblesSSC = (all_counts) => {
+    const parts = Object.keys(all_counts.parts); // Get all part keys
+    return (
+        <Collapsible trigger="Seven Shadows Chronicles">
+            <p>Parts: {formatNumber(all_counts.part_count)}</p>
+            <p>Paragraphs: {formatNumber(all_counts.line_count)}</p>
+            <p>Approximate Word Count: {formatNumber(all_counts.word_count)}</p>
+            <p>Character Count: {formatNumber(all_counts.char_count)}</p>
+            <Collapsible trigger="Characters">
+                {Object.keys(all_counts.characters).sort().map(character => (
+                    <div key={character}>
+                        <span>{character}: </span>
+                        <span>{all_counts.characters[character]}</span>
+                    </div>
+                ))}
+            </Collapsible>
+            {parts.map(part => (
+                <Collapsible key={part} trigger={`${sscMap[part]}`}>
+                    <p>Chapters: {Object.keys(all_counts.parts[part].chapters).length}</p>
+                    <p>Paragraphs:{formatNumber(all_counts.parts[part].line_count)}</p>
+                    <p>Approximate Word Count: {formatNumber(all_counts.parts[part].word_count)}</p>
+                    <p>Character Count: {formatNumber(all_counts.parts[part].char_count)}</p>
+                    <Collapsible trigger="Characters">
+                        {Object.keys(all_counts.parts[part].characters).sort().map(character => (
+                            <div key={character}>
+                                <span>{character}: </span>
+                                <span>{all_counts.parts[part].characters[character]}</span>
+                            </div>
+                        ))}
+                    </Collapsible>
+                    {Object.keys(all_counts.parts[part].chapters)
+                        .sort((a, b) => {
+                            // Extract the numeric part of the chapter keys
+                            const aNum = parseInt(a.split('-')[1]);
+                            const bNum = parseInt(b.split('-')[1]);
+                            return aNum - bNum;
+                        })
+                        .map(chapter => (
+                            <Collapsible key={chapter} trigger={
+                                <>
+                                    <div className="volume-trigger">
+                                        {sscCoverImages[`${chapter}`] && <img className="cover-image-ssc" src={sscCoverImages[`${chapter}`]} alt={`${part}-${chapter}`} />}
+                                        {sscMap[`${part}_${chapter}`]}
+                                    </div>
+                                </>
+                            }>
+                                <p>Episodes: {Object.keys(all_counts.parts[part].chapters[chapter].episodes).length}</p>
+                                <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].line_count)}</p>
+                                <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].word_count)}</p>
+                                <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].char_count)}</p>
+                                <Collapsible trigger="Characters">
+                                    {Object.keys(all_counts.parts[part].chapters[chapter].characters).map(character => (
+                                        <div key={character}>
+                                            <span>{character}: </span>
+                                            <span>{all_counts.parts[part].chapters[chapter].characters[character]}</span>
                                         </div>
-                                    </>
-                                }>
-                                    <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].line_count)}</p>
-                                    <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].word_count)}</p>
-                                    <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].char_count)}</p>
-                                    <Collapsible trigger="Characters">
-                                        {Object.keys(all_counts.parts[part].chapters[chapter].episodes[episode].characters).sort().map(character => (
-                                            <div key={character}>
-                                                <span>{character}: </span>
-                                                <span>{all_counts.parts[part].chapters[chapter].episodes[episode].characters[character]}</span>
-                                            </div>
-                                        ))}
-                                    </Collapsible>
+                                    ))}
                                 </Collapsible>
-                            ))}
-                        </Collapsible>
-                    ))}
+                                {Object.keys(all_counts.parts[part].chapters[chapter].episodes).sort().map(episode => (
+                                    <Collapsible key={episode} trigger={
+                                        <>
+                                            <div className="volume-trigger">
+                                                {sscMap[`${part}_${chapter}_${episode}`]}
+                                            </div>
+                                        </>
+                                    }>
+                                        <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].line_count)}</p>
+                                        <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].word_count)}</p>
+                                        <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].char_count)}</p>
+                                        <Collapsible trigger="Characters">
+                                            {Object.keys(all_counts.parts[part].chapters[chapter].episodes[episode].characters).sort().map(character => (
+                                                <div key={character}>
+                                                    <span>{character}: </span>
+                                                    <span>{all_counts.parts[part].chapters[chapter].episodes[episode].characters[character]}</span>
+                                                </div>
+                                            ))}
+                                        </Collapsible>
+                                    </Collapsible>
+                                ))}
+                            </Collapsible>
+                        ))}
                 </Collapsible>
             ))}
         </Collapsible>
@@ -5084,11 +8436,29 @@ function InfoPage() {
             <h1 className="filters-header">INFORMATION</h1>
             <div className="info-content">
                 <h1 className="info-header">MEDIUMS</h1>
+                <p>Paragraphs: {formatNumber(all_info.line_count)}</p>
+                <p>Approximate Word Count: {formatNumber(all_info.word_count)}</p>
+                <p>Character Count: {formatNumber(all_info.char_count)}</p>
+                <br />
                 {generateCollapsiblesLN(ln_info)}
                 <br />
                 {generateCollapsiblesWN(wn_info)}
                 <br />
                 <Collapsible trigger="Master of Garden">
+                    <p>Paragraphs: {formatNumber(mg_info.line_count)}</p>
+                    <p>Approximate Word Count: {formatNumber(mg_info.word_count)}</p>
+                    <p>Character Count: {formatNumber(mg_info.char_count)}</p>
+                    <Collapsible trigger="Characters">
+                        {Object.keys(mg_info.characters).sort().map(character => (
+                            <div key={character}>
+                                <span>{character}: </span>
+                                <span>{mg_info.characters[character]}</span>
+                            </div>
+                        ))}
+                    </Collapsible>
+                    <br />
+                    {generateCollapsiblesSSC(ssc_info)}
+                    <br />
                     {generateCollapsiblesES(es_info)}
                     <br />
                     {generateCollapsiblesAPO(apo_info)}
