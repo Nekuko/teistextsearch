@@ -22,8 +22,10 @@ function CharacterGroupDropdown({
                 // Close all open dropdowns
                 setDropdownStates((prevState) => {
                     const updatedState = { ...prevState };
+                    setFilter('');
                     for (const name in updatedState) {
                         updatedState[name].open = false;
+                        updatedState[name].filters = '';
                         // Reset other state properties as needed
                         if (updatedState[name].groups) {
                             for (const groupName in updatedState[name].groups) {
@@ -100,9 +102,12 @@ function CharacterGroupDropdown({
   };
 
   // Filter subgroups based on the filter value
-  const filteredGroups = Object.keys(selectedGroup.groups || {}).filter((groupName) =>
-    groupName.toLowerCase().includes(filter.toLowerCase())
-  );
+  const filteredGroups = Object.keys(selectedGroup.groups || {}).filter((groupName) => {
+    const groupCharacters = selectedGroup.groups[groupName].characters || {};
+    return Object.keys(groupCharacters).some((characterName) =>
+      characterName.toLowerCase().includes(filter.toLowerCase())
+    );
+  });
 
   // Filter characters based on the filter value
   const filteredCharacters = Object.keys(selectedGroup.characters || {}).filter((characterName) =>

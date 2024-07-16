@@ -2805,8 +2805,8 @@ function SearchPage() {
             "John Smith": characterCovers.JohnSmithIcon,
             "Stylish Bandit Slayer": characterCovers.StylishBanditSlayerIcon,
             "??? (Stylish Bandit Slayer)": characterCovers.StylishBanditSlayerIcon,
-            "Nuru": characterCovers.StylishBanditSlayerIcon,
-            "??? (Nuru)": characterCovers.StylishBanditSlayerIcon,
+            "Nuru": characterCovers.NuruIcon,
+            "??? (Nuru)": characterCovers.NuruIcon,
             "Aurora": characterCovers.AuroraIcon,
             "Annerose Nichtsehen": characterCovers.AnneroseNichtsehenIcon,
             "Akane Nishino": characterCovers.AkaneNishinoIcon,
@@ -2848,12 +2848,15 @@ function SearchPage() {
             "Marie": characterCovers.MarieIcon,
             "Mary": characterCovers.MaryIcon,
             "Mist Dragon": characterCovers.MistDragonIcon,
-            "Nuru": characterCovers.NuruIcon,
             "Omega": characterCovers.OmegaIcon,
             "Quinton": characterCovers.QuintonIcon,
             "Sergey Gorman": characterCovers.SergeyGormanIcon,
             "Sir Gaunt": characterCovers.SirGauntIcon,
-            "White Demon": characterCovers.WhiteDemonIcon
+            "White Demon": characterCovers.WhiteDemonIcon,
+            "Zenon Griffey": characterCovers.ZenonGriffeyIcon,
+            "Glen": characterCovers.GlenIcon,
+            "Mr. Kagenou": characterCovers.MrKagenouIcon,
+            "Mrs. Kagenou": characterCovers.MrsKagenouIcon,
         },
         "lnCoverImages": {
             "v1": covers.LNV1Cover,
@@ -3151,6 +3154,9 @@ function SearchPage() {
                                 "Iris Midgar": {
                                     "checked": false,
                                 },
+                                "Glen": {
+                                    "checked": false,
+                                },
                                 "Marco Granger": {
                                     "Marco Granger": false,
                                     "Dark Knight Trainee": false,
@@ -3344,6 +3350,9 @@ function SearchPage() {
                                 "Grease": {
                                     "checked": false,
                                 },
+                                "Zenon Griffey": {
+                                    "checked": false,
+                                }
                             }
                         },
                         "Generic": {
@@ -3647,6 +3656,9 @@ function SearchPage() {
                                 "Broadcast": {
                                     "checked": false,
                                 },
+                                "Civilian": {
+                                    "checked": false,
+                                },
                                 "Disciple": {
                                     "checked": false,
                                 },
@@ -3700,6 +3712,9 @@ function SearchPage() {
                                 },
                                 "Researcher": {
                                     "checked": false,
+                                },
+                                "Scientist": {
+                                    "checked": false
                                 },
                                 "Solider": {
                                     "checked": false

@@ -52,4 +52,8 @@ export { default as MistDragonIcon } from './MistDragonIcon.webp';
 export { default as NuruIcon } from './NuruIcon.webp';
 export { default as OmegaIcon } from './OmegaIcon.webp';
 export { default as QuintonIcon } from './QuintonIcon.webp';
+export { default as ZenonGriffeyIcon } from './ZenonGriffeyIcon.webp';
+export { default as GlenIcon } from './GlenIcon.webp';
+export { default as MrKagenouIcon } from './MrKagenouIcon.webp';
+export { default as MrsKagenouIcon } from './MrsKagenouIcon.webp';
 
