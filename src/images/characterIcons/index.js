@@ -56,4 +56,5 @@ export { default as ZenonGriffeyIcon } from './ZenonGriffeyIcon.webp';
 export { default as GlenIcon } from './GlenIcon.webp';
 export { default as MrKagenouIcon } from './MrKagenouIcon.webp';
 export { default as MrsKagenouIcon } from './MrsKagenouIcon.webp';
+export { default as RexIcon } from './RexIcon.webp';
 

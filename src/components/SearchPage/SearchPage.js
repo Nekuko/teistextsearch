@@ -2857,6 +2857,7 @@ function SearchPage() {
             "Glen": characterCovers.GlenIcon,
             "Mr. Kagenou": characterCovers.MrKagenouIcon,
             "Mrs. Kagenou": characterCovers.MrsKagenouIcon,
+            "Rex": characterCovers.RexIcon
         },
         "lnCoverImages": {
             "v1": covers.LNV1Cover,
@@ -2992,6 +2993,8 @@ function SearchPage() {
                                     "Beta & Epsilon (Beta)": false,
                                     "Beta & Gamma (Beta)": false,
                                     "Beta & Delta & Zeta (Beta)": false,
+                                    "Fictional Zenon (Beta)": false,
+                                    "Fictional Shadow (Beta)": false,
                                     "checked": false,
                                     "open": false
                                 },
@@ -3315,6 +3318,12 @@ function SearchPage() {
                             open: false,
                             filters: '',
                             characters: {
+                                "Lutheran Barnett": {
+                                    "Lutheran Barnett": false,
+                                    "Sir Gaunt": false,
+                                    "checked": false,
+                                    "open": false
+                                },
                                 "Sergey Gorman": {
                                     "Sergey Gorman": false,
                                     "??? (Sergey Gorman)": false,
@@ -3338,6 +3347,9 @@ function SearchPage() {
                                     "??? (Nanigashi)": false,
                                     "checked": false,
                                     "open": false
+                                },
+                                "Rex": {
+                                    "checked": false,
                                 }
                             }
                         },
@@ -3653,7 +3665,13 @@ function SearchPage() {
                                 "Attendees": {
                                     "checked": false,
                                 },
+                                "Bookie": {
+                                    "checked": false,
+                                },
                                 "Broadcast": {
+                                    "checked": false,
+                                },
+                                "Church Member": {
                                     "checked": false,
                                 },
                                 "Civilian": {
@@ -3704,10 +3722,16 @@ function SearchPage() {
                                 "Margrave": {
                                     "checked": false,
                                 },
+                                "Medic": {
+                                    "checked": false,
+                                },
                                 "Mother": {
                                     "checked": false
                                 },
                                 "Noblewoman": {
+                                    "checked": false,
+                                },
+                                "Referee": {
                                     "checked": false,
                                 },
                                 "Researcher": {
@@ -4275,6 +4299,7 @@ function SearchPage() {
         'Curie Oso': ['Curious Noblewoman'],
         'Annerose Nichtsehen (All)': ['Annerose', 'None (Annerose)'],
         'Annerose Nichtsehen': ['Annerose', 'None (Annerose)'],
+        'Lutheran Barnett (All)': ['Lutheran Barnett', 'Sir Gaunt'],
         'None': ['']
     };
 
