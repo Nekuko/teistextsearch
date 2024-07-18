@@ -2989,12 +2989,13 @@ function SearchPage() {
                                     "??? (Natsume Kafka)": false,
                                     "Everyone (Beta)": false,
                                     "Seven Shadows (Beta)": false,
+                                    "Alexia Midgar & Natsume Kafka (Natsume Kafka)": false,
                                     "Alpha & Beta (Beta)": false,
                                     "Beta & Epsilon (Beta)": false,
                                     "Beta & Gamma (Beta)": false,
                                     "Beta & Delta & Zeta (Beta)": false,
-                                    "Fictional Zenon (Beta)": false,
-                                    "Fictional Shadow (Beta)": false,
+                                    "Beta (Fictional Zenon)": false,
+                                    "Beta (Fictional Shadow)": false,
                                     "checked": false,
                                     "open": false
                                 },
@@ -3002,6 +3003,7 @@ function SearchPage() {
                                     "Gamma": false,
                                     "??? (Gamma)": false,
                                     "None (Gamma)": false,
+                                    "Luna": false,
                                     "Everyone (Gamma)": false,
                                     "Seven Shadows (Gamma)": false,
                                     "Beta & Gamma (Gamma)": false,
@@ -3178,6 +3180,7 @@ function SearchPage() {
                                     "Alexia Midgar": false,
                                     "??? (Alexia Midgar)": false,
                                     "Alexia & Claire (Alexia Midgar)": false,
+                                    "Alexia Midgar & Natsume Kafka (Alexia Midgar)": false,
                                     "Shelly and Alexia (Alexia Midgar)": false,
                                     "open": false,
                                     "checked": false,
@@ -3303,6 +3306,9 @@ function SearchPage() {
                             "None (Annerose)": false,
                             "open": false,
                             "checked": false,
+                        },
+                        "Rude": {
+                            "checked": false,
                         }
                     }
                 },
@@ -3318,6 +3324,9 @@ function SearchPage() {
                             open: false,
                             filters: '',
                             characters: {
+                                "Jack Nelson": {
+                                    "checked": false,
+                                },
                                 "Lutheran Barnett": {
                                     "Lutheran Barnett": false,
                                     "Sir Gaunt": false,
@@ -3561,6 +3570,17 @@ function SearchPage() {
                                     "checked": false,
                                 },
                             }
+                        },
+                        "Side Characters": {
+                            openGroup: false,
+                            checked: false,
+                            open: false,
+                            filters: '',
+                            characters: {
+                                "Toppe Batterius": {
+                                    "checked": false,
+                                }
+                            }
                         }
                     }
                 },
@@ -3803,6 +3823,9 @@ function SearchPage() {
                                 },
                                 "Wounded Merchant": {
                                     "checked": false,
+                                },
+                                "Mitsugoshi Staff": {
+                                    "checked": false
                                 },
                                 "Quiche Stall Owner": {
                                     "checked": false,
@@ -4219,7 +4242,7 @@ function SearchPage() {
         '??? (Shadow)': ['???? (Shadow)'],
         'Claire Kagenou (All)': ['Claire', '??? (Claire Kagenou)', "Alexia & Claire (Claire Kagenou)"],
         'Claire Kagenou': ['Claire', '??? (Claire Kagenou)'],
-        'Alexia Midgar (All)': ['Alexia', '????? (Alexia Midgar)', 'Shelly and Alexia (Alexia Midgar)', "??? (Alexia Midgar)", "Alexia & Claire (Alexia Midgar)"],
+        'Alexia Midgar (All)': ['Alexia', '????? (Alexia Midgar)', 'Shelly and Alexia (Alexia Midgar)', "??? (Alexia Midgar)", "Alexia & Claire (Alexia Midgar)", 'Alexia Midgar & Natsume Kafka (Alexia Midgar)'],
         'Alexia Midgar': ['Alexia', 'Shelly and Alexia (Alexia Midgar)', "??? (Alexia Midgar)"],
         '??? (Alexia Midgar)': ['????? (Alexia Midgar)'],
         'Iris Midgar': ['Iris'],
@@ -4235,12 +4258,13 @@ function SearchPage() {
         'Alpha (All)': ['Alpha', '??? (Alpha)', 'None (Alpha)', 'Everyone (Alpha)', 'Alpha & Zeta (Alpha)', 'Alpha & Beta (Alpha)', 'Seven Shadows (Alpha)'],
         'Alpha': ['??? (Alpha)', 'None (Alpha)'],
         'Beta (All)': ['Beta', 'Natsume Kafka', 'Natsume', '??? (Natsume Kafka)', '??? (Natsume)', 'None (Beta)', 'Everyone (Beta)', 'Beta & Epsilon (Beta)', 
-            'Alpha & Beta (Beta)', 'Beta & Gamma (Beta)', '??? (Beta)', 'Seven Shadows (Beta)', 'Beta & Delta & Zeta (Beta)'],
+            'Alpha & Beta (Beta)', 'Beta & Gamma (Beta)', '??? (Beta)', 'Seven Shadows (Beta)', 'Beta & Delta & Zeta (Beta)', 'Alexia Midgar & Natsume Kafka (Natsume Kafka)',
+        'Beta (Fictional Shadow)', 'Beta (Fictional Zenon)'],
         'Beta': ['??? (Beta)', 'None (Beta)'],
         'Natsume Kafka': ['Natsume'],
         '??? (Natsume Kafka)': ['??? (Natsume)'],
         'Gamma (All)': ['Gamma', 'Everyone (Gamma)', '??? (Gamma)', 'Seven Shadows (Gamma)', 'None (Gamma)', 'Beta & Gamma (Gamma)', 
-            'Gamma& Epsilon & Eta (Gamma)', 'Gamma & Epsilon (Gamma)'],
+            'Gamma& Epsilon & Eta (Gamma)', 'Gamma & Epsilon (Gamma)', 'Luna'],
         'Gamma': ['??? (Gamma)', 'None (Gamma)'],
         "Delta (All)": ['Delta', 'Everyone (Delta)', '??? (Delta)', 'Seven Shadows (Delta)', 'Delta & Zeta (Delta)', 'Beta & Delta & Zeta (Delta)'],
         "Delta": ['??? (Delta)'],
