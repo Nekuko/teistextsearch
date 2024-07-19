@@ -3258,6 +3258,9 @@ function SearchPage() {
                             "No. 666": false,
                             "checked": false,
                             "open": false
+                        },
+                        "Rapheal Oriana": {
+                            "checked": false,
                         }
                     }
                 },
@@ -3371,6 +3374,9 @@ function SearchPage() {
                                 "Grease": {
                                     "checked": false,
                                 },
+                                "Perv Asshat": {
+                                    "checked": false,
+                                },
                                 "Zenon Griffey": {
                                     "checked": false,
                                 }
@@ -3450,6 +3456,9 @@ function SearchPage() {
                             "checked": false,
                         },
                         "Goldy Gilded": {
+                            "checked": false,
+                        },
+                        "Quinton": {
                             "checked": false,
                         }
                     },
@@ -3694,6 +3703,12 @@ function SearchPage() {
                                 "Church Member": {
                                     "checked": false,
                                 },
+                                "Civil Servant": {
+                                    "checked": false,
+                                },
+                                "Civil Servants": {
+                                    "checked": false,
+                                },
                                 "Civilian": {
                                     "checked": false,
                                 },
@@ -3713,6 +3728,9 @@ function SearchPage() {
                                     "checked": false,
                                 },
                                 "Guard": {
+                                    "checked": false,
+                                },
+                                "Heckler": {
                                     "checked": false,
                                 },
                                 "Junior": {
@@ -3809,6 +3827,9 @@ function SearchPage() {
                                     "checked": false,
                                     "open": false,
                                 },
+                                "Clerk": {
+                                    "checked": false,
+                                },              
                                 "Merchant A": {
                                     "checked": false,
                                 },
@@ -3938,6 +3959,9 @@ function SearchPage() {
                                     "checked": false,
                                 },
                                 "Audience": {
+                                    "checked": false,
+                                },
+                                "Participant": {
                                     "checked": false,
                                 },
                                 "Participant A": {

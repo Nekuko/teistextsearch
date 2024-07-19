@@ -11,3071 +11,3071 @@ let db = admin.firestore();
 
 let data = {
     "s1": {
-        "e14": [
+        "e17": [
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "Are you so stupid that you don't know what's going on here?",
+                "name": "Cid Kagenou",
+                "name_variant": "Mundane Mann",
+                "subtitle": "There's something I think you should know.",
                 "line": 1,
-                "start_time": "0-00-02.040000",
-                "end_time": "0-00-05.540000",
-                "url": "https://drive.google.com/file/d/1Ng9Ge0MqDH63DzGt60bp5OTZyirSrU9U/view?usp=drivesdk"
+                "start_time": "0-00-11.040000",
+                "end_time": "0-00-13",
+                "url": "https://drive.google.com/file/d/1ZSSFujKsEK9dFkugPIjm9M8KEqZ-u_Tk/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "We're trying to tell you that if you're a good boy and do what the grownups say,",
+                "name": "Cid Kagenou",
+                "name_variant": "Mundane Mann",
+                "subtitle": "I've only shown you 22 milliwatts of my power...",
                 "line": 2,
-                "start_time": "0-00-05.670000",
-                "end_time": "0-00-08.710000",
-                "url": "https://drive.google.com/file/d/1eCQv9aslJpmXDFMFNK-Z0aV5L8OsGBYq/view?usp=drivesdk"
+                "start_time": "0-00-13.500000",
+                "end_time": "0-00-16.500000",
+                "url": "https://drive.google.com/file/d/1blqIOrEwJrxIa3yFFeaB0SvH9nYT3FDr/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "we'll let you go!",
+                "name": "Cid Kagenou",
+                "name_variant": "Mundane Mann",
+                "subtitle": "No, 32.45 grams?",
                 "line": 3,
-                "start_time": "0-00-08.710000",
-                "end_time": "0-00-09.920000",
-                "url": "https://drive.google.com/file/d/1wYnsyV1VWxqlT2_yrovrw6M_rlxRgGrc/view?usp=drivesdk"
+                "start_time": "0-00-16.960000",
+                "end_time": "0-00-19.080000",
+                "url": "https://drive.google.com/file/d/1ooUHled8ykmNquXfKyMV1OxlgkVrpbB7/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "And I'm saying, I don't need your help.",
+                "name_variant": "Mundane Mann",
+                "subtitle": "Three yards, eight pounds...",
                 "line": 4,
-                "start_time": "0-00-09.920000",
-                "end_time": "0-00-11.960000",
-                "url": "https://drive.google.com/file/d/1KsHpxyCUgQg2tzSqAuUkcrNu_3Kz6yOS/view?usp=drivesdk"
+                "start_time": "0-00-19.580000",
+                "end_time": "0-00-21.750000",
+                "url": "https://drive.google.com/file/d/1dmvdOnaNlg4H2ZFLfN5UPaLGofHeZAHR/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Both of you, just watch.",
+                "name_variant": "Mundane Mann",
+                "subtitle": "Knots? Gauss? Candelae?",
                 "line": 5,
-                "start_time": "0-00-11.960000",
-                "end_time": "0-00-13.540000",
-                "url": "https://drive.google.com/file/d/1i-pUiMdMdi6pFoZhYw8aA2JJzFbUyOfb/view?usp=drivesdk"
+                "start_time": "0-00-22.290000",
+                "end_time": "0-00-25.630000",
+                "url": "https://drive.google.com/file/d/1H8zPpKsQOl1Tpzx5sRmfin36J6WJXvVC/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "Wait!",
+                "name": "Cid Kagenou",
+                "name_variant": "Mundane Mann",
+                "subtitle": "Newtons...",
                 "line": 6,
-                "start_time": "0-00-13.540000",
-                "end_time": "0-00-14.540000",
-                "url": "https://drive.google.com/file/d/1YGRjJAMx4I5amf7qbmfE01Nx4czf7tun/view?usp=drivesdk"
+                "start_time": "0-00-25.960000",
+                "end_time": "0-00-27.170000",
+                "url": "https://drive.google.com/file/d/1uPzA7cLEuACdVQwe2D1DbTc8ek-bWF0h/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "Fine then!",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "It's hopeless!",
                 "line": 7,
-                "start_time": "0-00-14.750000",
-                "end_time": "0-00-15.960000",
-                "url": "https://drive.google.com/file/d/1mCscDAF0xfNOmun3RlkRp76V8h2Tox5e/view?usp=drivesdk"
+                "start_time": "0-00-29.130000",
+                "end_time": "0-00-30.330000",
+                "url": "https://drive.google.com/file/d/1CSkKxflRvUcV3xGvWGZ9An5lCimBgawu/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "Kill him!",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "I'm getting so hung up on the right units of measure that I'm starting to confuse myself.",
                 "line": 8,
-                "start_time": "0-00-15.960000",
-                "end_time": "0-00-18.170000",
-                "url": "https://drive.google.com/file/d/1lvnKubIkWFQ_jQuoQ_SDit0rkvLwuowa/view?usp=drivesdk"
+                "start_time": "0-00-30.630000",
+                "end_time": "0-00-33.500000",
+                "url": "https://drive.google.com/file/d/1onIDqD9ColMWcGZJWoOSy12XBZc3531k/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "Gotcha.",
+                "subtitle": "I need to hone the image in my mind better.",
                 "line": 9,
-                "start_time": "0-00-33.250000",
-                "end_time": "0-00-34.630000",
-                "url": "https://drive.google.com/file/d/1sNFnwKBaB4LNbhk41KeMhZJ-jmJqgmTA/view?usp=drivesdk"
+                "start_time": "0-00-33.500000",
+                "end_time": "0-00-36.130000",
+                "url": "https://drive.google.com/file/d/17QpCADeKEha8FM3ysdBXvMOdqHiIdT3Y/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "How are you alive?",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Hey, Cid!",
                 "line": 10,
-                "start_time": "0-02-53.210000",
-                "end_time": "0-02-54.420000",
-                "url": "https://drive.google.com/file/d/1Im1_8uviLsOPBiHr948qdClk_L73biOG/view?usp=drivesdk"
+                "start_time": "0-00-37.290000",
+                "end_time": "0-00-38.500000",
+                "url": "https://drive.google.com/file/d/14Cm8WPTDcMV4u5e6B8ArcB2TgwjLDiUT/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "She stabbed you through the gut!",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "I have an offer you can't refuse! Open up!",
                 "line": 11,
-                "start_time": "0-02-54.420000",
-                "end_time": "0-02-56.460000",
-                "url": "https://drive.google.com/file/d/1zEsNrOreEA7ktd7fMx04C0TJDySbMfPs/view?usp=drivesdk"
+                "start_time": "0-00-38.500000",
+                "end_time": "0-00-40.420000",
+                "url": "https://drive.google.com/file/d/1rBNR35NwlynoufzCKJDj7k1AUevcVqaE/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "As long as you protect the vitals, the human body is surprisingly sturdy.",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Hey, Cid! Open up!",
                 "line": 12,
-                "start_time": "0-02-56.460000",
-                "end_time": "0-03-00.040000",
-                "url": "https://drive.google.com/file/d/10XpY-dCZRIyDY4qB2_Q-6m3quB3HAiDw/view?usp=drivesdk"
+                "start_time": "0-00-40.420000",
+                "end_time": "0-00-41.040000",
+                "url": "https://drive.google.com/file/d/1-_R89aJHCz6rE90j7dYgYcGse-jyhcsS/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "Even if you get stabbed through the gut,",
+                "subtitle": "As long as people interact with one another,",
                 "line": 13,
-                "start_time": "0-03-00.420000",
-                "end_time": "0-03-01.710000",
-                "url": "https://drive.google.com/file/d/1qgT6-DpoE785Xh985U2QA3tVpK_B632e/view?usp=drivesdk"
+                "start_time": "0-00-41.040000",
+                "end_time": "0-00-42.380000",
+                "url": "https://drive.google.com/file/d/1aPyr_yFfYICPcwhrcHNd6Jf9kRnGUTAh/view?usp=drivesdk"
+            },
+            {
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Hey, Cid! Open up!",
+                "line": 13,
+                "start_time": "0-00-41.040000",
+                "end_time": "0-00-42.380000",
+                "url": "https://drive.google.com/file/d/1aPyr_yFfYICPcwhrcHNd6Jf9kRnGUTAh/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "keep your arteries and important organs safe, and it won't kill you.",
+                "subtitle": "As long as people interact with one another,",
                 "line": 14,
-                "start_time": "0-03-01.710000",
-                "end_time": "0-03-04.830000",
-                "url": "https://drive.google.com/file/d/1_jhJNFE6H6J3dYfHr7xfTMKZvwtm2jeI/view?usp=drivesdk"
+                "start_time": "0-00-42.380000",
+                "end_time": "0-00-42.830000",
+                "url": "https://drive.google.com/file/d/1ua8OvSvOnEl2M9xIbJH6NVIj3aHqMwfj/view?usp=drivesdk"
+            },
+            {
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Come on, open up!",
+                "line": 14,
+                "start_time": "0-00-42.380000",
+                "end_time": "0-00-42.830000",
+                "url": "https://drive.google.com/file/d/1ua8OvSvOnEl2M9xIbJH6NVIj3aHqMwfj/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "Don't you think that's just such a beautiful thing?",
+                "subtitle": "that interaction will breed annoyance.",
                 "line": 15,
-                "start_time": "0-03-05.130000",
-                "end_time": "0-03-07.920000",
-                "url": "https://drive.google.com/file/d/1hcmSoBd4N2SDuQHkbJXj9wIZyXSMDnqT/view?usp=drivesdk"
+                "start_time": "0-00-42.830000",
+                "end_time": "0-00-45",
+                "url": "https://drive.google.com/file/d/1H1VlKmtX7fJh5DWQSDjsaMiSeiB9R6d3/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "Beautiful thing?",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Come on, open up!",
+                "line": 15,
+                "start_time": "0-00-42.830000",
+                "end_time": "0-00-45",
+                "url": "https://drive.google.com/file/d/1H1VlKmtX7fJh5DWQSDjsaMiSeiB9R6d3/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "Why do people continue to seek the company of others",
                 "line": 16,
-                "start_time": "0-03-08.250000",
-                "end_time": "0-03-10.830000",
-                "url": "https://drive.google.com/file/d/1J1bB4JXqKR7pILNRvmerHyL_4X9fYlTh/view?usp=drivesdk"
+                "start_time": "0-00-45",
+                "end_time": "0-00-46.540000",
+                "url": "https://drive.google.com/file/d/1e-pCA8HtL46vbgpY71F9ElmaID444ZXC/view?usp=drivesdk"
+            },
+            {
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Do you hear me?",
+                "line": 16,
+                "start_time": "0-00-45",
+                "end_time": "0-00-46.540000",
+                "url": "https://drive.google.com/file/d/1e-pCA8HtL46vbgpY71F9ElmaID444ZXC/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "Yes!",
+                "subtitle": "Why do people continue to seek the company of others",
                 "line": 17,
-                "start_time": "0-03-10.830000",
-                "end_time": "0-03-11.830000",
-                "url": "https://drive.google.com/file/d/1syXmR8nwvkl6m3HMLbyAOJosRC-JH6aY/view?usp=drivesdk"
+                "start_time": "0-00-46.540000",
+                "end_time": "0-00-47.420000",
+                "url": "https://drive.google.com/file/d/1pwWBCry4eCnoqejB_oT8zlEqF996Uo2M/view?usp=drivesdk"
+            },
+            {
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Hey! Come on!",
+                "line": 17,
+                "start_time": "0-00-46.540000",
+                "end_time": "0-00-47.420000",
+                "url": "https://drive.google.com/file/d/1pwWBCry4eCnoqejB_oT8zlEqF996Uo2M/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "You just protect your vitals,",
+                "subtitle": "when they know it will be so annoying?",
                 "line": 18,
-                "start_time": "0-03-11.830000",
-                "end_time": "0-03-13.040000",
-                "url": "https://drive.google.com/file/d/1u8QRxJlFr4N5PMRTvDao9JgsAH-Hc0XT/view?usp=drivesdk"
+                "start_time": "0-00-47.420000",
+                "end_time": "0-00-48.540000",
+                "url": "https://drive.google.com/file/d/1ZqBrMKa41FbFbYTGwgN8K11YIT9cHu83/view?usp=drivesdk"
+            },
+            {
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Hey! Come on!",
+                "line": 18,
+                "start_time": "0-00-47.420000",
+                "end_time": "0-00-48.540000",
+                "url": "https://drive.google.com/file/d/1ZqBrMKa41FbFbYTGwgN8K11YIT9cHu83/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "and it saves you all the trouble of dodging your enemy's attack.",
+                "subtitle": "when they know it will be so annoying?",
                 "line": 19,
-                "start_time": "0-03-13.040000",
-                "end_time": "0-03-15.500000",
-                "url": "https://drive.google.com/file/d/1OY7AZnEO5BpMFQnaNV1ZnDuTOtkbJQgU/view?usp=drivesdk"
+                "start_time": "0-00-48.540000",
+                "end_time": "0-00-49.380000",
+                "url": "https://drive.google.com/file/d/1atUt8soAq63cPV5mpEG0GCnYHpDq8Wer/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Then, once you've been impaled through the belly,",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Hey!",
+                "line": 19,
+                "start_time": "0-00-48.540000",
+                "end_time": "0-00-49.380000",
+                "url": "https://drive.google.com/file/d/1atUt8soAq63cPV5mpEG0GCnYHpDq8Wer/view?usp=drivesdk"
+            },
+            {
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Hey, hey!",
                 "line": 20,
-                "start_time": "0-03-15.830000",
-                "end_time": "0-03-17.460000",
-                "url": "https://drive.google.com/file/d/1sRtdnNVHAI6fWytkPz9UL_wWu6-hSVL0/view?usp=drivesdk"
+                "start_time": "0-00-49.500000",
+                "end_time": "0-00-51",
+                "url": "https://drive.google.com/file/d/1LSXIkyfGfy-ndpgXpnBgRhs4nNNAbAS0/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "you can bite right into the other guy's neck.",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "We're gonna strike it rich!",
                 "line": 21,
-                "start_time": "0-03-17.460000",
-                "end_time": "0-03-19.130000",
-                "url": "https://drive.google.com/file/d/1ML_K7MLos9Lg4TemQKsH68Nw8V05EuOi/view?usp=drivesdk"
+                "start_time": "0-00-51",
+                "end_time": "0-00-52.580000",
+                "url": "https://drive.google.com/file/d/1DAdMx0S6x0GuFXVtTzJ_I8oGP25k4w0l/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "You're in position for a nigh-inescapable counter attack.",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Look! Student Council President Rose is a wanted criminal!",
                 "line": 22,
-                "start_time": "0-03-19.130000",
-                "end_time": "0-03-21.420000",
-                "url": "https://drive.google.com/file/d/1SqyED1IlNPa4NmDHAs83G7IwF5iSbDps/view?usp=drivesdk"
+                "start_time": "0-00-52.580000",
+                "end_time": "0-00-55.250000",
+                "url": "https://drive.google.com/file/d/1wU0ZM09-5QZzvflWBLvwfERFTeuA--8g/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "Are you sure you're all right upstairs?",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "We get 10 million zeni if we bring her in alive!",
                 "line": 23,
-                "start_time": "0-03-21.830000",
-                "end_time": "0-03-24.830000",
-                "url": "https://drive.google.com/file/d/11Z9r-XjGVf8xUymyfwLbUq0FlPsrXxyw/view?usp=drivesdk"
+                "start_time": "0-00-57.380000",
+                "end_time": "0-00-59.380000",
+                "url": "https://drive.google.com/file/d/1gsHQMMup14qby-3LNa31nlwm1-Aa2oBT/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "So now what?",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "500 thousand if we can give them any useful information!",
                 "line": 24,
-                "start_time": "0-03-24.830000",
-                "end_time": "0-03-26.040000",
-                "url": "https://drive.google.com/file/d/1k4zhAUZ036WYzjNRDVQu5QgonAIrgWNM/view?usp=drivesdk"
+                "start_time": "0-00-59.380000",
+                "end_time": "0-01-01.880000",
+                "url": "https://drive.google.com/file/d/17ZV2DDx0GOpMHtgUsyjAh2xpIVwe38P_/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Your elf friend is gone.",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Let's go catch her!",
                 "line": 25,
-                "start_time": "0-03-26.250000",
-                "end_time": "0-03-27.960000",
-                "url": "https://drive.google.com/file/d/1Xz3ZkV3FfysfG4VlmLrFIsKEXTX9pOAO/view?usp=drivesdk"
+                "start_time": "0-01-02.210000",
+                "end_time": "0-01-03.880000",
+                "url": "https://drive.google.com/file/d/1nOyM-DN4u8iAXcCKo8YtECXc4ZQ8xlLN/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "Is it safe to assume I'll be fighting you next?",
+                "subtitle": "Why?",
                 "line": 26,
-                "start_time": "0-03-27.960000",
-                "end_time": "0-03-30.130000",
-                "url": "https://drive.google.com/file/d/1hGAjmfyLT4l5DuYAU84vzAyTkmtfdS1u/view?usp=drivesdk"
+                "start_time": "0-01-03.880000",
+                "end_time": "0-01-05.080000",
+                "url": "https://drive.google.com/file/d/16tAmnk7h-9rlLZ8PvixUQ5wsk9jpXAo5/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "W-Wait!",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Because I'm broke!",
                 "line": 27,
-                "start_time": "0-03-30.330000",
-                "end_time": "0-03-32.130000",
-                "url": "https://drive.google.com/file/d/18ZxyEZFAVwpLE30d2BP4poXEHsf6Vuug/view?usp=drivesdk"
+                "start_time": "0-01-05.580000",
+                "end_time": "0-01-06.960000",
+                "url": "https://drive.google.com/file/d/1Tk9wexra4L09noQLPqrt5Y7YKL-RTN13/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "I give up!",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "I thought you were gonna make a killing on a bet you couldn't lose.",
                 "line": 28,
-                "start_time": "0-03-32.130000",
-                "end_time": "0-03-33.540000",
-                "url": "https://drive.google.com/file/d/1C34jxD5DC4TeJ0ALfWLGZ3vxiYcKiycM/view?usp=drivesdk"
+                "start_time": "0-01-08.130000",
+                "end_time": "0-01-11.080000",
+                "url": "https://drive.google.com/file/d/1ZxhDIPefwKgcCJsb1HR7t_axTwVmwf5N/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "I was wrong!",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Shut up! Just shut up!",
                 "line": 29,
-                "start_time": "0-03-33.540000",
-                "end_time": "0-03-35.250000",
-                "url": "https://drive.google.com/file/d/1O6aDqtrMQgQg2jayQUkjJZU55vTKnhsp/view?usp=drivesdk"
+                "start_time": "0-01-11.080000",
+                "end_time": "0-01-12.670000",
+                "url": "https://drive.google.com/file/d/1bqHiykSpck_pp7hhGAVx8lzPUloFpRRz/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "I'm sorry.",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "I'm broke, so I'm not going to go into all the reasons.",
                 "line": 30,
-                "start_time": "0-03-35.250000",
-                "end_time": "0-03-36.290000",
-                "url": "https://drive.google.com/file/d/1UkTpyLm9xoPZs_g5d9enMSX8Hr_2B3A7/view?usp=drivesdk"
+                "start_time": "0-01-12.670000",
+                "end_time": "0-01-15.380000",
+                "url": "https://drive.google.com/file/d/1BN8V6-7VwSR_8wFXePdVwJ15WoEWuQWU/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "Let's all just calm down, and we can talk it out.",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "But the point is, I have no money!",
                 "line": 31,
-                "start_time": "0-03-36.290000",
-                "end_time": "0-03-39",
-                "url": "https://drive.google.com/file/d/1kJOS_97A-S1JJwVqiR2tv7bTq2GZz_PI/view?usp=drivesdk"
+                "start_time": "0-01-15.380000",
+                "end_time": "0-01-17.420000",
+                "url": "https://drive.google.com/file/d/1L-Tsmo-RS9jDhx6d1Gzl9v6aSKn6LCJX/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "Is that what you thought I'd say?!",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Ergo, for no reason in particular, I need money!",
                 "line": 32,
-                "start_time": "0-03-39.290000",
-                "end_time": "0-03-41.330000",
-                "url": "https://drive.google.com/file/d/1LCEnlNMPT9ztT8jihh4ATiUMnzbGHsMN/view?usp=drivesdk"
+                "start_time": "0-01-17.420000",
+                "end_time": "0-01-20.580000",
+                "url": "https://drive.google.com/file/d/1lN-ebgagNSE74sqExH_HEC7dNOHBN54D/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "I admit, I was surprised to see Olivier defeated",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "Uh-huh.",
                 "line": 33,
-                "start_time": "0-03-42.960000",
-                "end_time": "0-03-46",
-                "url": "https://drive.google.com/file/d/149XOA4XX47ueUDYSMQa_peziGDip6VlV/view?usp=drivesdk"
+                "start_time": "0-01-20.580000",
+                "end_time": "0-01-21.580000",
+                "url": "https://drive.google.com/file/d/1uZB6pRA2XgWO9dGN67O86khc3DCqF1UT/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "by some punk kid who can't use his magic.",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Of course we'll split the reward fifty-fifty.",
                 "line": 34,
-                "start_time": "0-03-46",
-                "end_time": "0-03-48.750000",
-                "url": "https://drive.google.com/file/d/1aktqAX34tSgY8KRFbpZdFiUQ_P2usqsD/view?usp=drivesdk"
+                "start_time": "0-01-21.750000",
+                "end_time": "0-01-24.080000",
+                "url": "https://drive.google.com/file/d/1EtjN7KQb8Cd0iOJUj8_ZO5hYHNRdfQqM/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "You were probably just lucky, but nevertheless, a win is a win.",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Or that's what I'd like to say,",
                 "line": 35,
-                "start_time": "0-03-48.750000",
-                "end_time": "0-03-53",
-                "url": "https://drive.google.com/file/d/1Y6PekpzcQb5wEbEQGSSzMRndm4AQQUrU/view?usp=drivesdk"
+                "start_time": "0-01-24.080000",
+                "end_time": "0-01-25.830000",
+                "url": "https://drive.google.com/file/d/1PMsa72PL5m9EIBBNulAQtl2tgZtAfmmb/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "Congratulations!",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "But the thing is, I'm in favor of her running away.",
                 "line": 36,
-                "start_time": "0-03-53",
-                "end_time": "0-03-54.630000",
-                "url": "https://drive.google.com/file/d/1jYZt7DoLEnyOAQz02Js8GCIKiS1vld4x/view?usp=drivesdk"
+                "start_time": "0-01-25.830000",
+                "end_time": "0-01-28.210000",
+                "url": "https://drive.google.com/file/d/149deo1secvChhoLziUomI8I21LZVViM7/view?usp=drivesdk"
+            },
+            {
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "but you're my best friend, and I believe in you!",
+                "line": 36,
+                "start_time": "0-01-25.830000",
+                "end_time": "0-01-28.210000",
+                "url": "https://drive.google.com/file/d/149deo1secvChhoLziUomI8I21LZVViM7/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "Thank you!",
+                "subtitle": "But the thing is, I'm in favor of her running away.",
                 "line": 37,
-                "start_time": "0-03-54.880000",
-                "end_time": "0-03-56.330000",
-                "url": "https://drive.google.com/file/d/1R9qsA0IvMiUWWzP4BGEYRSauUGUZwMIv/view?usp=drivesdk"
+                "start_time": "0-01-28.210000",
+                "end_time": "0-01-29.540000",
+                "url": "https://drive.google.com/file/d/1wJBcbDZfkRhkP94Tx69-fji-JZzhOX0d/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "But all you did was beat one shoddy copy,",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "In your kindness, and in your desire",
+                "line": 37,
+                "start_time": "0-01-28.210000",
+                "end_time": "0-01-29.540000",
+                "url": "https://drive.google.com/file/d/1wJBcbDZfkRhkP94Tx69-fji-JZzhOX0d/view?usp=drivesdk"
+            },
+            {
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "to let your broke friend keep all the money!",
                 "line": 38,
-                "start_time": "0-03-57.960000",
-                "end_time": "0-04-01.960000",
-                "url": "https://drive.google.com/file/d/1d0Jrag4sR1qSiMe_FxMNDjx6t-9LqVRU/view?usp=drivesdk"
+                "start_time": "0-01-29.540000",
+                "end_time": "0-01-30.630000",
+                "url": "https://drive.google.com/file/d/1M_w_vtI5LKVN4ITE8kAxwwSX4g6Wv_rg/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "so don't pat yourself on the back too hard just yet.",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "She's a rebel who would try and kill a fiance",
                 "line": 39,
-                "start_time": "0-04-01.960000",
-                "end_time": "0-04-03.830000",
-                "url": "https://drive.google.com/file/d/1Z_u-3Cf3zV0V3YRW-oLWJZWNUKcIljdy/view?usp=drivesdk"
+                "start_time": "0-01-30.630000",
+                "end_time": "0-01-33",
+                "url": "https://drive.google.com/file/d/1RYMxHk6YdBYF_N_buddAQkVmwVKGPP0Y/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "There is so much magical energy lying dormant in the Sanctuary",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "to let your broke friend keep all the money!",
+                "line": 39,
+                "start_time": "0-01-30.630000",
+                "end_time": "0-01-33",
+                "url": "https://drive.google.com/file/d/1RYMxHk6YdBYF_N_buddAQkVmwVKGPP0Y/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "that she doesn't want to marry.",
                 "line": 40,
-                "start_time": "0-04-03.830000",
-                "end_time": "0-04-06.750000",
-                "url": "https://drive.google.com/file/d/1OZrbsbvSCx0frq0vC3_AmncEPZjzHYpf/view?usp=drivesdk"
+                "start_time": "0-01-33",
+                "end_time": "0-01-34.540000",
+                "url": "https://drive.google.com/file/d/1MkUQyQP57NJ-AbIH-Rb7NZxhgocidwmG/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "that not even we can fathom it.",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "If we look for her together,",
+                "line": 40,
+                "start_time": "0-01-33",
+                "end_time": "0-01-34.540000",
+                "url": "https://drive.google.com/file/d/1MkUQyQP57NJ-AbIH-Rb7NZxhgocidwmG/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "That takes chutzpah! I really admire that!",
                 "line": 41,
-                "start_time": "0-04-06.750000",
-                "end_time": "0-04-08.290000",
-                "url": "https://drive.google.com/file/d/1iQje-aAwVu9a30uOn0PuHxWoBKmsHOdx/view?usp=drivesdk"
+                "start_time": "0-01-34.540000",
+                "end_time": "0-01-36.670000",
+                "url": "https://drive.google.com/file/d/1xlfxJD5PrpiJ7DuKaSELvxYBKk0RdQdP/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "That means we can even...",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "we double our chances!",
+                "line": 41,
+                "start_time": "0-01-34.540000",
+                "end_time": "0-01-36.670000",
+                "url": "https://drive.google.com/file/d/1xlfxJD5PrpiJ7DuKaSELvxYBKk0RdQdP/view?usp=drivesdk"
+            },
+            {
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "and the percentage of my cut!",
                 "line": 42,
-                "start_time": "0-04-08.960000",
-                "end_time": "0-04-11.040000",
-                "url": "https://drive.google.com/file/d/18NIR2i-uuKXbo24SZ524beVqwqU66GM3/view?usp=drivesdk"
+                "start_time": "0-01-36.670000",
+                "end_time": "0-01-37.380000",
+                "url": "https://drive.google.com/file/d/19Su9oavLkfJ6EfMX3D_pE9drq8VGhFpU/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "do this!",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "You don't see that every day.",
                 "line": 43,
-                "start_time": "0-04-11.040000",
-                "end_time": "0-04-12.960000",
-                "url": "https://drive.google.com/file/d/1FIWHksXTljVQ_jIJW_wRpOnolATa086R/view?usp=drivesdk"
+                "start_time": "0-01-37.380000",
+                "end_time": "0-01-38.580000",
+                "url": "https://drive.google.com/file/d/1pg8q2pltU_MvXesfS4M0HwOuNRHo67_4/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "O-Oh no...",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "and the percentage of my cut!",
+                "line": 43,
+                "start_time": "0-01-37.380000",
+                "end_time": "0-01-38.580000",
+                "url": "https://drive.google.com/file/d/1pg8q2pltU_MvXesfS4M0HwOuNRHo67_4/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "I wish she had let me be there to watch.",
                 "line": 44,
-                "start_time": "0-04-21.250000",
-                "end_time": "0-04-22.250000",
-                "url": "https://drive.google.com/file/d/1LfqPJPKoyPgtjhrliiwisB9U8YHRZAvx/view?usp=drivesdk"
+                "start_time": "0-01-38.580000",
+                "end_time": "0-01-40.830000",
+                "url": "https://drive.google.com/file/d/1AGhihjA_WSBDScbeUOhHKC-373UWOMq7/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "This is the power of the Sanctuary!",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "You get the joy of looking for your dear Rose!",
+                "line": 44,
+                "start_time": "0-01-38.580000",
+                "end_time": "0-01-40.830000",
+                "url": "https://drive.google.com/file/d/1AGhihjA_WSBDScbeUOhHKC-373UWOMq7/view?usp=drivesdk"
+            },
+            {
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "And I get the joy of the cash reward!",
                 "line": 45,
-                "start_time": "0-04-24.710000",
-                "end_time": "0-04-28",
-                "url": "https://drive.google.com/file/d/1V-tT8bPd9sg0AZe7jE-Ktm2F7aO3aG0z/view?usp=drivesdk"
+                "start_time": "0-01-40.830000",
+                "end_time": "0-01-42.460000",
+                "url": "https://drive.google.com/file/d/1Qr4ya9xFqrq2iUrS_O4fNjaP-UtJPJPC/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "A resurrected superhuman army, eh?",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "It's a win-win!",
                 "line": 46,
-                "start_time": "0-04-30.290000",
-                "end_time": "0-04-32.460000",
-                "url": "https://drive.google.com/file/d/1YWtqLdVwySnB5tBzqVUpQ8pETDK6DfWe/view?usp=drivesdk"
+                "start_time": "0-01-42.460000",
+                "end_time": "0-01-43.790000",
+                "url": "https://drive.google.com/file/d/1DIJQVtnX-AaNsVPw2sPkbWX4VzESvkmQ/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Sorry...",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Don't even worry!",
                 "line": 47,
-                "start_time": "0-04-34.630000",
-                "end_time": "0-04-35.830000",
-                "url": "https://drive.google.com/file/d/1AwwCrM4zQDsUUVK3hb9nWocCcdoPaRQL/view?usp=drivesdk"
+                "start_time": "0-01-43.790000",
+                "end_time": "0-01-45.080000",
+                "url": "https://drive.google.com/file/d/16iERxYsdzswGZW02g__Ey4xcVRKqpQ2u/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "your time's up.",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Your personal reward will always be with you, living on in your heart.",
                 "line": 48,
-                "start_time": "0-04-36.460000",
-                "end_time": "0-04-38",
-                "url": "https://drive.google.com/file/d/1PpUFOsjWM1Syyyed8sQMITFfgvtlU8rK/view?usp=drivesdk"
+                "start_time": "0-01-45.210000",
+                "end_time": "0-01-48.750000",
+                "url": "https://drive.google.com/file/d/1qVhvfxXZ6jRXxGA9VWONpJhjeUHFQL6O/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "What...",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "The shining memories of frolicking frantically across the capital under the summer sky",
                 "line": 49,
-                "start_time": "0-04-53.830000",
-                "end_time": "0-04-55.040000",
-                "url": "https://drive.google.com/file/d/1JH7gxhDBF68ch3Rsfno4DW4OKIDwziTe/view?usp=drivesdk"
+                "start_time": "0-01-48.750000",
+                "end_time": "0-01-52.630000",
+                "url": "https://drive.google.com/file/d/1-Lio-WwUq65afkumBgQZ5bcyEK9XQXfs/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "What is that?",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "so that I can get the cash reward:",
                 "line": 50,
-                "start_time": "0-04-55.040000",
-                "end_time": "0-04-56.580000",
-                "url": "https://drive.google.com/file/d/1GnCdtrmS-Vqb18oG4WxmWt7SVNqzaLDg/view?usp=drivesdk"
+                "start_time": "0-01-52.630000",
+                "end_time": "0-01-54.380000",
+                "url": "https://drive.google.com/file/d/1R9OMkfVxoHjF27bo3Lf23hnBqqvVcWuh/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "A solid mass of magical energy?",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "That will be the greatest treasure!",
                 "line": 51,
-                "start_time": "0-04-56.920000",
-                "end_time": "0-04-58.960000",
-                "url": "https://drive.google.com/file/d/1oGb291EX5OX-pBBR0MPhiT4Uqk40dqF6/view?usp=drivesdk"
+                "start_time": "0-01-54.380000",
+                "end_time": "0-01-55.710000",
+                "url": "https://drive.google.com/file/d/1VCg4ToAazGGUixcfqXPmcG7FrueAWW7W/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "An artifact?",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Memories are the ultimate reward!",
                 "line": 52,
-                "start_time": "0-04-58.960000",
-                "end_time": "0-05-00.290000",
-                "url": "https://drive.google.com/file/d/1CA5miPS5I9C6rT82bgTvTGDg5AZ8WgG8/view?usp=drivesdk"
+                "start_time": "0-01-55.710000",
+                "end_time": "0-01-57.670000",
+                "url": "https://drive.google.com/file/d/10aZy6u8JJsnQ5UuD9MyuO0dmGlVka_AB/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "No, don't tell me it's slime?",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "So of course you understand, Cid!",
                 "line": 53,
-                "start_time": "0-05-00.290000",
-                "end_time": "0-05-03.750000",
-                "url": "https://drive.google.com/file/d/1EB8oy87UWyLk2l5-KCYtVbPbdgj9j5Iz/view?usp=drivesdk"
+                "start_time": "0-01-57.670000",
+                "end_time": "0-01-58.880000",
+                "url": "https://drive.google.com/file/d/1rarH0AeberR4a4Oo5pCKp8sHZyUe-NQJ/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "But how?",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "I'm saying all this for my own benefit-",
                 "line": 54,
-                "start_time": "0-05-04.130000",
-                "end_time": "0-05-05.580000",
-                "url": "https://drive.google.com/file/d/1hafUaitZUayvT0HaeyIcQBwutq3BOQRA/view?usp=drivesdk"
+                "start_time": "0-01-58.880000",
+                "end_time": "0-02-00.830000",
+                "url": "https://drive.google.com/file/d/1sFN3k3CV1uoop5MxJuHjxJpfPFstOKX1/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "How can you use magic?",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "All right, time to start Operation: Capture the Student Council President.",
                 "line": 55,
-                "start_time": "0-05-05.580000",
-                "end_time": "0-05-07.830000",
-                "url": "https://drive.google.com/file/d/1RBsjriZ6plFUltnRkyjb70eMbQU07Kmh/view?usp=drivesdk"
+                "start_time": "0-02-02.170000",
+                "end_time": "0-02-05",
+                "url": "https://drive.google.com/file/d/1ElZkJERgvB61NWROjp6s1J2u1WWxMvRC/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "If trying to use magic gets it absorbed,",
+                "name": "Skel Etal",
+                "name_variant": "Skel Etal",
+                "subtitle": "Start operation, but-",
                 "line": 56,
-                "start_time": "0-05-08.710000",
-                "end_time": "0-05-10.790000",
-                "url": "https://drive.google.com/file/d/13n2ouoI-FRpBddpOnbzeWOGqP-I40XYj/view?usp=drivesdk"
+                "start_time": "0-02-05",
+                "end_time": "0-02-06.290000",
+                "url": "https://drive.google.com/file/d/1TVT6yYuAAU4WNwiyCK0KSfm3Nah_Yhjz/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "then I just have to temper the magic until it's too solid to be absorbed.",
+                "subtitle": "Don't wanna waste time. Let's go.",
                 "line": 57,
-                "start_time": "0-05-10.790000",
-                "end_time": "0-05-13.540000",
-                "url": "https://drive.google.com/file/d/1Fx6Apf68JxbOdKTVmcfzNnuq2ob00oOD/view?usp=drivesdk"
+                "start_time": "0-02-06.290000",
+                "end_time": "0-02-08.580000",
+                "url": "https://drive.google.com/file/d/1XMqNSGDlL9IY9ymDoIyQK-7F5Y_RJGnM/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "It took a bit of time,",
+                "subtitle": "For now, I just need to buy some time while I wait for my sister to cool her head.",
                 "line": 58,
-                "start_time": "0-05-14.040000",
-                "end_time": "0-05-15.750000",
-                "url": "https://drive.google.com/file/d/1d9u4hu4Y55OCg35eJMcEfDQOfcGwdRFs/view?usp=drivesdk"
+                "start_time": "0-03-58.750000",
+                "end_time": "0-04-02.500000",
+                "url": "https://drive.google.com/file/d/1CPjQjuHJ7G6qtDEvYlReBxclVDMosemj/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "but it's really quite simple.",
+                "subtitle": "I wonder if Rose managed to get away safe and sound?",
                 "line": 59,
-                "start_time": "0-05-15.750000",
-                "end_time": "0-05-17.290000",
-                "url": "https://drive.google.com/file/d/1cZs0pisYiz7HaIPC7bwSC-s0BeVdLLaG/view?usp=drivesdk"
+                "start_time": "0-04-03.420000",
+                "end_time": "0-04-06.170000",
+                "url": "https://drive.google.com/file/d/1HSDo-y-FQKzMHpjtCNLnetanDikW6IuS/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "Simple?",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "If I'd had my wish, I would have liked to ask her in person what inspired her",
                 "line": 60,
-                "start_time": "0-05-18.130000",
-                "end_time": "0-05-19.330000",
-                "url": "https://drive.google.com/file/d/1XLEKIe8H65OH5ssgeoFJ9sm6Luq5Ds3c/view?usp=drivesdk"
+                "start_time": "0-04-08.580000",
+                "end_time": "0-04-12.250000",
+                "url": "https://drive.google.com/file/d/1QT61yWdNnPoU7a_sC78aBjm-_QBeJryz/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "But that's not possible for any human being!",
+                "subtitle": "to do something so rock'n'roll as to stab her fiance.",
                 "line": 61,
-                "start_time": "0-05-20.040000",
-                "end_time": "0-05-23.210000",
-                "url": "https://drive.google.com/file/d/1zn2x9I2WEzViqJ-zg9CpG1T-cgTyN89r/view?usp=drivesdk"
+                "start_time": "0-04-12.250000",
+                "end_time": "0-04-14.290000",
+                "url": "https://drive.google.com/file/d/1xX-H3FpPP9sww1gWd0tPy1VlCllA56LC/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "Olivier! Kill him now!",
+                "subtitle": "They're pretty good.",
                 "line": 62,
-                "start_time": "0-05-23.460000",
-                "end_time": "0-05-27.080000",
-                "url": "https://drive.google.com/file/d/17WuoQKxhTDgcIfxItS_njQf7FCUBPiit/view?usp=drivesdk"
+                "start_time": "0-04-21.420000",
+                "end_time": "0-04-22.830000",
+                "url": "https://drive.google.com/file/d/1zqoy5QNt1aBLPeCRg5PpUzfTfbkCey-X/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "Your moves are even more tedious than before.",
+                "subtitle": "In my past life, as part of my family's educational policy,",
                 "line": 63,
-                "start_time": "0-05-27.960000",
-                "end_time": "0-05-29.880000",
-                "url": "https://drive.google.com/file/d/1cWL2BIFiOyNI7UyKjB0bKnhYnDSXM4aE/view?usp=drivesdk"
+                "start_time": "0-04-25",
+                "end_time": "0-04-28.040000",
+                "url": "https://drive.google.com/file/d/1skztrHqS_2W-qZwWaWoau05p9tERvtxl/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "It's like fighting a bunch of scarecrows.",
+                "subtitle": "I was forced to learn the piano.",
                 "line": 64,
-                "start_time": "0-05-29.880000",
-                "end_time": "0-05-31.790000",
-                "url": "https://drive.google.com/file/d/1wMUtRkyHILE30youlPKdoSoLTFhz_HU4/view?usp=drivesdk"
+                "start_time": "0-04-28.040000",
+                "end_time": "0-04-29.540000",
+                "url": "https://drive.google.com/file/d/1DFRKck9QQr4C0-2bWlRuDYC50EfQADAi/view?usp=drivesdk"
             },
             {
-                "name": "Jack Nelson",
-                "name_variant": "Jack Nelson",
-                "subtitle": "Just like that! Kill him!",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "Frankly, I would have much rather spent my time training to become the Eminence in Shadow",
                 "line": 65,
-                "start_time": "0-05-31.880000",
-                "end_time": "0-05-34.380000",
-                "url": "https://drive.google.com/file/d/1FjLK3EKXQeiTAGgdqa7lFLef9h7pO41B/view?usp=drivesdk"
+                "start_time": "0-04-30.540000",
+                "end_time": "0-04-35.290000",
+                "url": "https://drive.google.com/file/d/1GrqJXe86DqRXu-SrpcvFXy0F0Um57PWg/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "I guess playtime's over.",
+                "subtitle": "than wasting it on that nonsense.",
                 "line": 66,
-                "start_time": "0-05-34.710000",
-                "end_time": "0-05-36.420000",
-                "url": "https://drive.google.com/file/d/1gYUEa6iy4I0x_WBltyvbk5Ausknn0QKm/view?usp=drivesdk"
+                "start_time": "0-04-35.290000",
+                "end_time": "0-04-37.210000",
+                "url": "https://drive.google.com/file/d/1GsiJsMd7fXnUMZoDwwF8eWgT0NlcxRbg/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "So you said we draw the holy sword,",
+                "subtitle": "But after a while, I started thinking the piano's not so bad.",
                 "line": 67,
-                "start_time": "0-05-37.250000",
-                "end_time": "0-05-38.790000",
-                "url": "https://drive.google.com/file/d/1CpOvG32tcKbtP_Uy8LosmMAFTtOLVsVq/view?usp=drivesdk"
+                "start_time": "0-04-38.130000",
+                "end_time": "0-04-41.210000",
+                "url": "https://drive.google.com/file/d/1QTylMk3DxEryuzDZofsTZ8WFpE3_ae4I/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "cut the chains, and destroy the magical core.",
+                "subtitle": "When you get good at the piano, everybody around you starts to assume,",
                 "line": 68,
-                "start_time": "0-05-38.790000",
-                "end_time": "0-05-41.830000",
-                "url": "https://drive.google.com/file/d/1ywOcYOmnkNt-7fgOC3_O1whTLLlrimi5/view?usp=drivesdk"
+                "start_time": "0-04-41.960000",
+                "end_time": "0-04-44.540000",
+                "url": "https://drive.google.com/file/d/1cCkVqnC0tftr2W7Bxzt5vSYY0fivm4Eh/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "Is that right?",
+                "subtitle": "\"Oh, he's busy practicing,\" so they don't bother you.",
                 "line": 69,
-                "start_time": "0-05-41.830000",
-                "end_time": "0-05-43.170000",
-                "url": "https://drive.google.com/file/d/15KwqrxeoSaPPnN3_MYVT-c6ywDGS6-kT/view?usp=drivesdk"
+                "start_time": "0-04-44.540000",
+                "end_time": "0-04-47.630000",
+                "url": "https://drive.google.com/file/d/1z7j13F7VBUaZvGlKFHNB4PHOSJA2iqUH/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "Um, yes...",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "As someone who wanted to keep friendly interactions to a minimum",
                 "line": 70,
-                "start_time": "0-05-43.750000",
-                "end_time": "0-05-45.460000",
-                "url": "https://drive.google.com/file/d/1qswOUqC8jvDZW6hhzb6akWiFo9317erN/view?usp=drivesdk"
+                "start_time": "0-04-48.170000",
+                "end_time": "0-04-51.210000",
+                "url": "https://drive.google.com/file/d/15EiTBcfF9F5tWCSr-6OU00gGYEd-JWAV/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "Wait, you're not going to...",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "in my quest to be the Eminence in Shadow,",
                 "line": 71,
-                "start_time": "0-05-46.920000",
-                "end_time": "0-05-48.250000",
-                "url": "https://drive.google.com/file/d/1q507Q_r60-dobkGEZsiSwL83p_DAaskN/view?usp=drivesdk"
+                "start_time": "0-04-51.210000",
+                "end_time": "0-04-53.540000",
+                "url": "https://drive.google.com/file/d/1ZnJHrgPnz-GU9saeb_q4p2iwvgRLfXzA/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "It's such a pain to go through each individual step.",
+                "subtitle": "I appreciated this misunderstanding.",
                 "line": 72,
-                "start_time": "0-05-48.250000",
-                "end_time": "0-05-50.380000",
-                "url": "https://drive.google.com/file/d/1M_eJNcgisMZe5tPdtWQ4YPHwZ74SbIQv/view?usp=drivesdk"
+                "start_time": "0-04-53.540000",
+                "end_time": "0-04-55.380000",
+                "url": "https://drive.google.com/file/d/1DR1IlwAz4yVD-Ct375p8zSptB6dVwlj_/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "We could just blast through all of them at once.",
+                "subtitle": "But most of all, I simply realized that the piano is just really cool.",
                 "line": 73,
-                "start_time": "0-05-50.830000",
-                "end_time": "0-05-53.170000",
-                "url": "https://drive.google.com/file/d/13HHCx_SqbSn-LyLgklNwslCRialLKqHV/view?usp=drivesdk"
+                "start_time": "0-04-55.920000",
+                "end_time": "0-04-59.420000",
+                "url": "https://drive.google.com/file/d/1s17UooE-lyWPMUkn5_2pPKH-GMor0eIi/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "Same result, right?",
+                "subtitle": "The Eminence in Shadow, playing the piano in the light of the moon...",
                 "line": 74,
-                "start_time": "0-05-53.750000",
-                "end_time": "0-05-55.130000",
-                "url": "https://drive.google.com/file/d/1b8_7mi8lAniCTlniL0y-_xUDxuX3VFio/view?usp=drivesdk"
+                "start_time": "0-05-00.080000",
+                "end_time": "0-05-03.250000",
+                "url": "https://drive.google.com/file/d/1Qzp1LY09us0ADQM_Umsj82U7HpNoqBIT/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "How could anyone be allowed this much power?",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "Awesome, right?",
                 "line": 75,
-                "start_time": "0-06-06",
-                "end_time": "0-06-09",
-                "url": "https://drive.google.com/file/d/1lWSUUIkWyAhbbK2T9Y6BWt3DdTx-ZrOq/view?usp=drivesdk"
+                "start_time": "0-05-03.790000",
+                "end_time": "0-05-05.040000",
+                "url": "https://drive.google.com/file/d/1KezF1rSG7RwgaDMuddzexAdgxrVbm7ra/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "I am...",
+                "subtitle": "It shows the world that I'm not just about pure power.",
                 "line": 76,
-                "start_time": "0-06-11.960000",
-                "end_time": "0-06-15.170000",
-                "url": "https://drive.google.com/file/d/1Qxa1vVTnEwOueh7tdByz-r6Zso0cxPFN/view?usp=drivesdk"
+                "start_time": "0-05-05.460000",
+                "end_time": "0-05-08.080000",
+                "url": "https://drive.google.com/file/d/1BPkJrWk0Ky0V-NOY7YvJYw8tw3AE4JBG/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "...the All-Range...",
+                "subtitle": "I'm also an amazing artiste.",
                 "line": 77,
-                "start_time": "0-06-16.500000",
-                "end_time": "0-06-19.580000",
-                "url": "https://drive.google.com/file/d/1lZZHlVNGo4MjfOxt7dErvXvlMylSyo_u/view?usp=drivesdk"
+                "start_time": "0-05-08.080000",
+                "end_time": "0-05-09.920000",
+                "url": "https://drive.google.com/file/d/1VKM4yavMXfa9dA7wBB3SoaYyc3rZkvmA/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "...Atomic.",
+                "subtitle": "So cool...",
                 "line": 78,
-                "start_time": "0-06-26.790000",
-                "end_time": "0-06-28.210000",
-                "url": "https://drive.google.com/file/d/14F0zwO-qbdBihB_cJhu3eXxnZhhFAFGy/view?usp=drivesdk"
+                "start_time": "0-05-10.290000",
+                "end_time": "0-05-11.500000",
+                "url": "https://drive.google.com/file/d/1MlkAcOKor5m2Z8nYhvp-sR3lNMRKSARg/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "You even survived being stabbed through the heart.",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "The next thing I knew, I was pretty hardcore about the piano.",
                 "line": 79,
-                "start_time": "0-08-02.750000",
-                "end_time": "0-08-05.420000",
-                "url": "https://drive.google.com/file/d/1aJOJxT5xxsYmqMVuiJAUw0N0gnxCBInR/view?usp=drivesdk"
+                "start_time": "0-05-11.880000",
+                "end_time": "0-05-15.330000",
+                "url": "https://drive.google.com/file/d/101DMn5uM5Isgkt7uHKTi7pa0zScW-jNk/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "Oh, I used magic to pull my heart over to the side.",
+                "subtitle": "Of course training to be Eminence in Shadow was my number one priority.",
                 "line": 80,
-                "start_time": "0-08-05.710000",
-                "end_time": "0-08-08.170000",
-                "url": "https://drive.google.com/file/d/1bdkMvBuU6LTKys-XzhYXz6qAi40tj5LK/view?usp=drivesdk"
+                "start_time": "0-05-16",
+                "end_time": "0-05-19.920000",
+                "url": "https://drive.google.com/file/d/1sEeodm5rpR-j3nNIU89CVccZiACiQNhB/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "And now I'm extra tired.",
+                "subtitle": "But the idea of creating the mood for a battle with some sweet piano music...",
                 "line": 81,
-                "start_time": "0-08-08.880000",
-                "end_time": "0-08-10.580000",
-                "url": "https://drive.google.com/file/d/1C_oid9Sez7tMfLW8YtOVfNJAn0Kdpkxr/view?usp=drivesdk"
+                "start_time": "0-05-20.580000",
+                "end_time": "0-05-23.960000",
+                "url": "https://drive.google.com/file/d/1qYXtIjYdu-msRVIKCmT723n7Lm-dsFiz/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "You're just full of surprises.",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "That was hard to give up.",
                 "line": 82,
-                "start_time": "0-08-11.330000",
-                "end_time": "0-08-12.960000",
-                "url": "https://drive.google.com/file/d/1pjxOgN8Y5-aJ-1oFPIQZOJd4EVg7ZjBc/view?usp=drivesdk"
+                "start_time": "0-05-24.330000",
+                "end_time": "0-05-25.630000",
+                "url": "https://drive.google.com/file/d/1aY0slqI9vCZpgiJ1BY2zba5SJJWgSPNN/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "I'm nowhere near as...",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "Beethoven's Piano Sonata Number 14,",
                 "line": 83,
-                "start_time": "0-08-14.170000",
-                "end_time": "0-08-15.920000",
-                "url": "https://drive.google.com/file/d/1JiSFIhrq5wBBgf6UlGffe790sjTMJalG/view?usp=drivesdk"
+                "start_time": "0-05-28.500000",
+                "end_time": "0-05-31.500000",
+                "url": "https://drive.google.com/file/d/1Q4OrqXmzVPpRu6M1HFFBm7TSPFTntLx9/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "You're disappearing?",
+                "subtitle": "the \"Moonlight Sonata.\"",
                 "line": 84,
-                "start_time": "0-08-20.170000",
-                "end_time": "0-08-21.380000",
-                "url": "https://drive.google.com/file/d/1J5zY1oXm47tjlFhJ6qHI1t6xnGNMymO_/view?usp=drivesdk"
+                "start_time": "0-05-31.500000",
+                "end_time": "0-05-32.960000",
+                "url": "https://drive.google.com/file/d/14spjJGNhcJ4JBcNACO1RvPDzsol1Cs77/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "I suppose so.",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "Even under the hot summer sun,",
                 "line": 85,
-                "start_time": "0-08-23.500000",
-                "end_time": "0-08-24.710000",
-                "url": "https://drive.google.com/file/d/1_9YQTzReX1ibccd34kT6iMKW2uWylG1q/view?usp=drivesdk"
+                "start_time": "0-05-33.460000",
+                "end_time": "0-05-35.210000",
+                "url": "https://drive.google.com/file/d/1ljaBfKrpMVwEp4kWpCCGSO_Wg8_YN5zM/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "I am the one who called you here.",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "it conjures images of the moon shining in the dark night.",
                 "line": 86,
-                "start_time": "0-08-29.420000",
-                "end_time": "0-08-31.460000",
-                "url": "https://drive.google.com/file/d/1XP48EqU1-5_rg65hUSL8N4k30r_B2VaI/view?usp=drivesdk"
+                "start_time": "0-05-35.210000",
+                "end_time": "0-05-38.080000",
+                "url": "https://drive.google.com/file/d/1kVM30b8CxH6hh3G8VLHqEoPOUIGHtDIV/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "I'm sorry for lying to you.",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "It's my favorite piece.",
                 "line": 87,
-                "start_time": "0-08-31.790000",
-                "end_time": "0-08-33.540000",
-                "url": "https://drive.google.com/file/d/1kaAn_gtA4DebKuDVBMEjdp6xONrW2rFq/view?usp=drivesdk"
+                "start_time": "0-05-38.630000",
+                "end_time": "0-05-40.380000",
+                "url": "https://drive.google.com/file/d/1WkIXh2P7HPWg2qYMAsCCOewJ26cBmBlo/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "That's okay.",
+                "subtitle": "In fact, I love it so much,",
                 "line": 88,
-                "start_time": "0-08-33.880000",
-                "end_time": "0-08-35.080000",
-                "url": "https://drive.google.com/file/d/1eHpcxlmCIG8yWVquodBbdaupJasV8xnx/view?usp=drivesdk"
+                "start_time": "0-05-41",
+                "end_time": "0-05-43.250000",
+                "url": "https://drive.google.com/file/d/1U2QuUqqHlgYyiHuXCvjO_ephMC_d_S0Y/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "That's not the only thing I lied about.",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "I think it's the only piece that could be considered the best piece for an Eminence in Shadow.",
                 "line": 89,
-                "start_time": "0-08-36.290000",
-                "end_time": "0-08-38.330000",
-                "url": "https://drive.google.com/file/d/1abJjYmp7yGQjt9GnHu9e627VA5nliZ5J/view?usp=drivesdk"
+                "start_time": "0-05-43.250000",
+                "end_time": "0-05-46.960000",
+                "url": "https://drive.google.com/file/d/1lChTPh14AZbd4YpSLr1EBVIrtWDeQSC_/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "That's okay.",
+                "subtitle": "But how does the \"Moonlight Sonata\" exist in this world?",
                 "line": 90,
-                "start_time": "0-08-38.540000",
-                "end_time": "0-08-39.750000",
-                "url": "https://drive.google.com/file/d/1nlIDo9TPbe2u7v4yktBA7Q72VYQpshJQ/view?usp=drivesdk"
+                "start_time": "0-05-47.540000",
+                "end_time": "0-05-50.500000",
+                "url": "https://drive.google.com/file/d/1VJUAd4c5pywSl6AC12XDFGfYUCk-mIOC/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "For so long, all I wanted was to fade into nothing.",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "Maybe there really is someone else who's been reincarnated.",
                 "line": 91,
-                "start_time": "0-08-40.710000",
-                "end_time": "0-08-44.080000",
-                "url": "https://drive.google.com/file/d/11DXgY6h6Xc9w54l09nEQJKYUXRkyWNwL/view?usp=drivesdk"
+                "start_time": "0-05-52.330000",
+                "end_time": "0-05-55.210000",
+                "url": "https://drive.google.com/file/d/1aLIwy7RKcoboop5lk4KAjOZyBj_9BPMh/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "I wanted to forget everything.",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "It looks like she's wearing a nice summer dress,",
                 "line": 92,
-                "start_time": "0-08-44.750000",
-                "end_time": "0-08-46.670000",
-                "url": "https://drive.google.com/file/d/1kZV75Hr39u1gRXqL6SXWaW3eBFuqZby-/view?usp=drivesdk"
+                "start_time": "0-06-08.540000",
+                "end_time": "0-06-10.420000",
+                "url": "https://drive.google.com/file/d/1vVEO2pm8m5ImaY7CyX7FGBwI-eVo9OGm/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "But now,",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "which also happens to perfectly cover her slime-enhanced chest and legs.",
                 "line": 93,
-                "start_time": "0-08-50.330000",
-                "end_time": "0-08-51.580000",
-                "url": "https://drive.google.com/file/d/1ETrPd6iXKrCYV6b_PZXT0yWg9beR2WjY/view?usp=drivesdk"
+                "start_time": "0-06-10.420000",
+                "end_time": "0-06-14",
+                "url": "https://drive.google.com/file/d/1i5deuDosCRotTOluGj42IVS8TNOeHHj5/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "I've made one memory that I don't want to forget.",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "That's Epsilon the Precise for you.",
                 "line": 94,
-                "start_time": "0-08-51.580000",
-                "end_time": "0-08-54.210000",
-                "url": "https://drive.google.com/file/d/1VQKF6Bq8XD5jzG8ewSTWX1QRN0ykQTuN/view?usp=drivesdk"
+                "start_time": "0-06-14.830000",
+                "end_time": "0-06-16.880000",
+                "url": "https://drive.google.com/file/d/1vUuJWYvH2adMAKhxhlpgJzjQjGY99xmf/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "Even if I disappear,",
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "First Gamma, then Beta, now Epsilon.",
                 "line": 95,
-                "start_time": "0-08-55.080000",
-                "end_time": "0-08-56.880000",
-                "url": "https://drive.google.com/file/d/1IXrpk1YD--2WWTxwm97ntTF64_OJ_m4V/view?usp=drivesdk"
+                "start_time": "0-06-27.290000",
+                "end_time": "0-06-29.920000",
+                "url": "https://drive.google.com/file/d/1RFK3YuGgdtMyZNWuUi2CicbVXjB73CnZ/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "I want to hold on to this experience, and never let it go.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "I never would have dreamed that you would come to hear me play, My Lord.",
                 "line": 96,
-                "start_time": "0-08-57.210000",
-                "end_time": "0-08-59.750000",
-                "url": "https://drive.google.com/file/d/1lYOOxpoC7aXfzO7DPsuUAbfsSHoM37l9/view?usp=drivesdk"
+                "start_time": "0-06-33.170000",
+                "end_time": "0-06-36.540000",
+                "url": "https://drive.google.com/file/d/1zR2lERVD6430ZUCCWEJh8TBnQAdy_qou/view?usp=drivesdk"
             },
             {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "Thank you for the precious memory.",
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "I'm not worthy of this honor.",
                 "line": 97,
-                "start_time": "0-09-01.790000",
-                "end_time": "0-09-04.630000",
-                "url": "https://drive.google.com/file/d/1evm7v_3fnDNDMhOUdL4XLjfRGzwrgIz6/view?usp=drivesdk"
+                "start_time": "0-06-36.540000",
+                "end_time": "0-06-38.130000",
+                "url": "https://drive.google.com/file/d/1QO2c4Pj5b0MJHBytaD54VBqiQ-G0ZWss/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Cid Kagenou",
-                "subtitle": "I had a good time, too.",
+                "subtitle": "That piece, it was the \"Moonlight Sonata,\" wasn't it?",
                 "line": 98,
-                "start_time": "0-09-05.670000",
-                "end_time": "0-09-07.130000",
-                "url": "https://drive.google.com/file/d/1-oSZVU3uc7nLVGsBqwGixWxQ0y4SpP_P/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Thanks.",
-                "line": 99,
-                "start_time": "0-09-07.460000",
-                "end_time": "0-09-08.670000",
-                "url": "https://drive.google.com/file/d/1Gt_kvjQ_sWiG4I7ccm_FdLdI-zcN2qww/view?usp=drivesdk"
-            },
-            {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "If you ever find the real me...",
-                "line": 100,
-                "start_time": "0-09-15.580000",
-                "end_time": "0-09-19.380000",
-                "url": "https://drive.google.com/file/d/1oZKX8o2GXWHC03Fzn9iGqSa7iBRsILjp/view?usp=drivesdk"
-            },
-            {
-                "name": "Aurora",
-                "name_variant": "Aurora",
-                "subtitle": "Please...",
-                "line": 101,
-                "start_time": "0-09-20.380000",
-                "end_time": "0-09-21.580000",
-                "url": "https://drive.google.com/file/d/1rCgGUXQcGqPstlTHUwxSCPVzmlYvnmdx/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Please?",
-                "line": 102,
-                "start_time": "0-09-45",
-                "end_time": "0-09-46.210000",
-                "url": "https://drive.google.com/file/d/1qH8bNrYt5bW4j7aZprAIELLKiOmmJDof/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "What we saw back there...",
-                "line": 103,
-                "start_time": "0-09-55.040000",
-                "end_time": "0-09-56.580000",
-                "url": "https://drive.google.com/file/d/1SsPkpWOtAHLWDaloxPCqfosoEuWmnuub/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "It was probably Shadow's...",
-                "line": 104,
-                "start_time": "0-09-57.210000",
-                "end_time": "0-09-59.210000",
-                "url": "https://drive.google.com/file/d/1CvG9JBI6Aun6Y3vGNf94w0imFbEpJv5P/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Alexia?",
-                "line": 105,
-                "start_time": "0-10-02.710000",
-                "end_time": "0-10-03.960000",
-                "url": "https://drive.google.com/file/d/1aSlVVDVXx0gdOvQ1hzlBSb3Oc-Ay_NKI/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Doesn't it just kill you?",
-                "line": 106,
-                "start_time": "0-10-05.330000",
-                "end_time": "0-10-06.920000",
-                "url": "https://drive.google.com/file/d/1K4koD5-9YyLuS4FXvpe6dbzs-eXyrn92/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Kill me?",
-                "line": 107,
-                "start_time": "0-10-07.250000",
-                "end_time": "0-10-08.460000",
-                "url": "https://drive.google.com/file/d/1SkaZNM3HSfDWF1ZRBCyBYCTK04rfTyI2/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "We couldn't do anything.",
-                "line": 108,
-                "start_time": "0-10-10.670000",
-                "end_time": "0-10-12.830000",
-                "url": "https://drive.google.com/file/d/1f7hIjvE46F49ccUtqgdMnWpVmUQLzv3a/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "I thought I had accepted the fact that I'm powerless.",
-                "line": 109,
-                "start_time": "0-10-14.040000",
-                "end_time": "0-10-16.630000",
-                "url": "https://drive.google.com/file/d/1tfrA5Rprv4LJ7ooqCw2x7fRXCgbaMXZl/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "But there's more to it than that.",
-                "line": 110,
-                "start_time": "0-10-16.920000",
-                "end_time": "0-10-18.500000",
-                "url": "https://drive.google.com/file/d/1hJCnS5GW82wDMtmqiw7StA9s_f_Pl-ok/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Who was right and who was wrong?",
-                "line": 111,
-                "start_time": "0-10-18.750000",
-                "end_time": "0-10-21.330000",
-                "url": "https://drive.google.com/file/d/1-RbLFzF6M9EbI7u3BjRZfBJVRLyhlBS4/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "I couldn't even judge between good and evil.",
-                "line": 112,
-                "start_time": "0-10-21.790000",
-                "end_time": "0-10-24.210000",
-                "url": "https://drive.google.com/file/d/1p8Wg-HCtRW0cIPrH7dELJcmil5sHyYnQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "All I could do was stand there as a helpless spectator.",
-                "line": 113,
-                "start_time": "0-10-24.210000",
-                "end_time": "0-10-26.710000",
-                "url": "https://drive.google.com/file/d/1qJyPOZGXIWrlpEmIBeF7rjfqmeoxCH5m/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "If things stay this way, if I never learn anything,",
-                "line": 114,
-                "start_time": "0-10-27.420000",
-                "end_time": "0-10-29.630000",
-                "url": "https://drive.google.com/file/d/1SlqfcDNRsyXwcpCHve20lgUqG5T8-YF9/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "then I'm going to lose all the things I care about before I even know they're in danger.",
-                "line": 115,
-                "start_time": "0-10-29.630000",
-                "end_time": "0-10-32.540000",
-                "url": "https://drive.google.com/file/d/1IWumi8Pj74IrENyVxTsLsrPIQ7_12XrC/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "That's the feeling I get.",
-                "line": 116,
-                "start_time": "0-10-33.040000",
-                "end_time": "0-10-34.460000",
-                "url": "https://drive.google.com/file/d/1cNnFSNwb-ieRIPs6kmyHovc0qs0wKwyU/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I've been thinking, too.",
-                "line": 117,
-                "start_time": "0-10-35.960000",
-                "end_time": "0-10-37.830000",
-                "url": "https://drive.google.com/file/d/1hi0K2J6kyfDNTjYn_jPJbmk6u7RwdtmX/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Ever since the Academy was attacked the other day,",
-                "line": 118,
-                "start_time": "0-10-38.630000",
-                "end_time": "0-10-40.920000",
-                "url": "https://drive.google.com/file/d/1Cl1NIG-mdr3fZGX8YKzwPGvdDRtx2u0J/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I've felt there are massive organizations working in the shadows.",
-                "line": 119,
-                "start_time": "0-10-40.920000",
-                "end_time": "0-10-43.330000",
-                "url": "https://drive.google.com/file/d/1XKIJ79rqrJI8h534hzIc8ywhKC05Ftad/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "But we don't know anything,",
-                "line": 120,
-                "start_time": "0-10-43.580000",
-                "end_time": "0-10-46.080000",
-                "url": "https://drive.google.com/file/d/1PvB4q4ZY-ssT-HEooCuB28O4AK9jeDKw/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "not about Shadow Garden, or about the organization they're at war with.",
-                "line": 121,
-                "start_time": "0-10-46.080000",
-                "end_time": "0-10-49.790000",
-                "url": "https://drive.google.com/file/d/1i9H1R5CpXKpXLApcfiCt4eI1F7hFXvxd/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "Then what are you going to do about it, Princess Alexia Midgar?",
-                "line": 122,
-                "start_time": "0-10-50.170000",
-                "end_time": "0-10-53.920000",
-                "url": "https://drive.google.com/file/d/1zOAVktHBlXtEacr7FH-irQBywZlom_-j/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "We're weak, and we're ignorant.",
-                "line": 123,
-                "start_time": "0-10-54.330000",
-                "end_time": "0-10-56.420000",
-                "url": "https://drive.google.com/file/d/1FyQ8eh6qa0FH_d1_Hz0HCiSUN9hRIeB0/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "But if the three of us work together, we should be able to do something.",
-                "line": 124,
-                "start_time": "0-10-57.290000",
-                "end_time": "0-10-59.920000",
-                "url": "https://drive.google.com/file/d/1Vxo3Jm14eatqE5sLG-kQGgsvOUbc3Lbt/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "After all, I'm the princess of the Midgar Kingdom,",
-                "line": 125,
-                "start_time": "0-11-00.250000",
-                "end_time": "0-11-02.540000",
-                "url": "https://drive.google.com/file/d/1y7JaNgzPCnXwd9IixXCMk7gOyGVFxg1g/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "and Rose is the princess of the Oriana Kingdom,",
-                "line": 126,
-                "start_time": "0-11-02.710000",
-                "end_time": "0-11-05.250000",
-                "url": "https://drive.google.com/file/d/1VcPU3yVh80txiZszrlY5PLC0Ouxlptlb/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "and you, Natsume Kafka.",
-                "line": 127,
-                "start_time": "0-11-05.420000",
-                "end_time": "0-11-06.630000",
-                "url": "https://drive.google.com/file/d/1UrDPnuOs6W2rTZf3vmIBNwTeFbOsL0pt/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "As an author, surely you have a network of connections you can use.",
-                "line": 128,
-                "start_time": "0-11-06.630000",
-                "end_time": "0-11-09.670000",
-                "url": "https://drive.google.com/file/d/1BIN8wV0NnLeic3hmKmjKrVYEu-H6PaW-/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "We'll work together to gather information.",
-                "line": 129,
-                "start_time": "0-11-10.330000",
-                "end_time": "0-11-13.080000",
-                "url": "https://drive.google.com/file/d/16FZpvlQbfrBFV_ohlfE8XwUHCQFsTlyY/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "And what will you do with the information you find?",
-                "line": 130,
-                "start_time": "0-11-13.080000",
-                "end_time": "0-11-15.750000",
-                "url": "https://drive.google.com/file/d/1GJn1MkrqYXGWdrV0wdoT0517bkYo-gHE/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "That depends on what it is.",
-                "line": 131,
-                "start_time": "0-11-16.250000",
-                "end_time": "0-11-17.830000",
-                "url": "https://drive.google.com/file/d/1aeB4eHeybbOyzbBKGMn2F4c-Mm_VXQGs/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "But I'm thinking maybe the three of us can join forces and fight back?",
-                "line": 132,
-                "start_time": "0-11-17.830000",
-                "end_time": "0-11-20.540000",
-                "url": "https://drive.google.com/file/d/1QVhuOQM4_OGljTd0FL8XAn-JJYS4uXDJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "We'll recruit allies, establish a base of operations...",
-                "line": 133,
-                "start_time": "0-11-20.960000",
-                "end_time": "0-11-24.040000",
-                "url": "https://drive.google.com/file/d/1tQQeZKil1P8ZGcQ-0vYJzFiZAL4ETzCq/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Would that work?",
-                "line": 134,
-                "start_time": "0-11-24.960000",
-                "end_time": "0-11-26.210000",
-                "url": "https://drive.google.com/file/d/1CTHOvb006FBO_MzV5WxREPe5K-EZL0W6/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "Not even a shred of a solid plan.",
-                "line": 135,
-                "start_time": "0-11-28",
-                "end_time": "0-11-30.250000",
-                "url": "https://drive.google.com/file/d/1o76HBS1gtrGLogKh_HFUe7r9sPtau4if/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Well, I said we'll gather information first!",
-                "line": 136,
-                "start_time": "0-11-30.630000",
-                "end_time": "0-11-32.920000",
-                "url": "https://drive.google.com/file/d/1iP8MXsY6ujV-HBmPnJ2RYi7WwNVGKy1W/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "We'll analyze it and then decide!",
-                "line": 137,
-                "start_time": "0-11-32.920000",
-                "end_time": "0-11-35.330000",
-                "url": "https://drive.google.com/file/d/1ztegSju64mm-l9qTH-JJOuM_xYuUxAR2/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "That would be nice, if you had the intellect to analyze anything.",
-                "line": 138,
-                "start_time": "0-11-35.630000",
-                "end_time": "0-11-38.420000",
-                "url": "https://drive.google.com/file/d/1A4ACyhprQ9oK6qCVowCnIicOq9Ig5olo/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Did you say something?",
-                "line": 139,
-                "start_time": "0-11-38.750000",
-                "end_time": "0-11-40.210000",
-                "url": "https://drive.google.com/file/d/1-xnXHgUHpaDvssgjWliHeEV8hn3dMSRQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "No, nothing at all.",
-                "line": 140,
-                "start_time": "0-11-40.210000",
-                "end_time": "0-11-41.710000",
-                "url": "https://drive.google.com/file/d/1Qv19Di8NKTQgCN5nkhOdX5EAvAIcdOe_/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "So what do you say?",
-                "line": 141,
-                "start_time": "0-11-42.290000",
-                "end_time": "0-11-43.750000",
-                "url": "https://drive.google.com/file/d/1s9OEJ5dNVaK1R0TVhOtTtw_84PcN_sID/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Are you with me, or aren't you?",
-                "line": 142,
-                "start_time": "0-11-43.750000",
-                "end_time": "0-11-45.290000",
-                "url": "https://drive.google.com/file/d/1IU-4cmZ-ruvv6xH6Lvl_wkv9godIxjZu/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I'll join you.",
-                "line": 143,
-                "start_time": "0-11-46.380000",
-                "end_time": "0-11-47.630000",
-                "url": "https://drive.google.com/file/d/1BkiL76U0g2bGiP6v7_U1MOaorNVU6XEe/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I don't have much to offer,",
-                "line": 144,
-                "start_time": "0-11-47.630000",
-                "end_time": "0-11-49.040000",
-                "url": "https://drive.google.com/file/d/14OCSPdH3EQflUHnmdaSYNEElyMNezhpv/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "but I do have a bit of influence.",
-                "line": 145,
-                "start_time": "0-11-49.040000",
-                "end_time": "0-11-50.580000",
-                "url": "https://drive.google.com/file/d/16eRKLW1t5YQsmMocsx5iCPywsODqKvyi/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "I'm in, too.",
-                "line": 146,
-                "start_time": "0-11-50.580000",
-                "end_time": "0-11-51.580000",
-                "url": "https://drive.google.com/file/d/1aqjLcMp0H9YKTn8w7wH7DjtAPgi6Dc4h/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "I'll use my writing connections to do some research.",
-                "line": 147,
-                "start_time": "0-11-51.580000",
-                "end_time": "0-11-54.080000",
-                "url": "https://drive.google.com/file/d/1ZFc5PyRLYdvQgSqxhWl49AQaeyVclZ6V/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "That settles it.",
-                "line": 148,
-                "start_time": "0-11-57.380000",
-                "end_time": "0-11-58.580000",
-                "url": "https://drive.google.com/file/d/1JXzmsEXvcaN5zLAjZjmW-7K5y85orvB5/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "We're now officially a team.",
-                "line": 149,
-                "start_time": "0-12-00.040000",
-                "end_time": "0-12-01.960000",
-                "url": "https://drive.google.com/file/d/1TT6TXqRS8PDsOmfOvhXobmgsHXnmRwgw/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Even if one of us is from a different kingdom and social standing,",
-                "line": 150,
-                "start_time": "0-12-02.210000",
-                "end_time": "0-12-04.330000",
-                "url": "https://drive.google.com/file/d/1FrybyJBJkv2KetZxnf0cM-MfnydREJtP/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "and there's absolutely no telling what's going on deep in her heart,",
-                "line": 151,
-                "start_time": "0-12-04.330000",
-                "end_time": "0-12-07.170000",
-                "url": "https://drive.google.com/file/d/1xwQs8qQc-gEZARWARQ43YDuzda4tVSjD/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "I choose to believe we're on the same side.",
-                "line": 152,
-                "start_time": "0-12-07.670000",
-                "end_time": "0-12-09.670000",
-                "url": "https://drive.google.com/file/d/1HmOFoZgfHxWUtLIYYzgGVrUhWm8zSKhW/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Joining forces to expose the truth of the world...",
-                "line": 153,
-                "start_time": "0-12-10.250000",
-                "end_time": "0-12-12.540000",
-                "url": "https://drive.google.com/file/d/1r8B_eYHhArNyMGdH88blHjmoLuyEhwD0/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "It's like the start of a legend.",
-                "line": 154,
-                "start_time": "0-12-12.750000",
-                "end_time": "0-12-14.670000",
-                "url": "https://drive.google.com/file/d/1L8pbgRgmgmjs8G6sT3d2_rOVDN4QUqAD/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "We have the hero, the wise woman,",
-                "line": 155,
-                "start_time": "0-12-14.960000",
-                "end_time": "0-12-16.500000",
-                "url": "https://drive.google.com/file/d/1fBXsSeZ2JaeTW1So3Oz9gSXY-mYKthxr/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "and the deadweight, all present and accounted for.",
-                "line": 156,
-                "start_time": "0-12-16.500000",
-                "end_time": "0-12-18.880000",
-                "url": "https://drive.google.com/file/d/1GRRRHP9MzXyPSOb-DlqgP8u8RXU08TRe/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "You're the deadweight, right?",
-                "line": 157,
-                "start_time": "0-12-19.630000",
-                "end_time": "0-12-21.580000",
-                "url": "https://drive.google.com/file/d/1xbHkVsr80DQgFRDPFzf7lZ4MbthH-WSU/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "The Sanctuary has been obliterated.",
-                "line": 158,
-                "start_time": "0-12-28.960000",
-                "end_time": "0-12-30.790000",
-                "url": "https://drive.google.com/file/d/1gNhZc8PIMChk8_CQ3C94ytcQxmuUr8Jn/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Yes.",
-                "line": 159,
-                "start_time": "0-12-31.170000",
-                "end_time": "0-12-32.170000",
-                "url": "https://drive.google.com/file/d/1GCEeoXcSr1zCEwVza0stxRj8vU-I93Uk/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Has the holy sword been recovered?",
-                "line": 160,
-                "start_time": "0-12-32.630000",
-                "end_time": "0-12-34.170000",
-                "url": "https://drive.google.com/file/d/1kOYppwMjNd0ZjEmU4z76aR5IG7wVPRYI/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "The holy sword was vaporized.",
-                "line": 161,
-                "start_time": "0-12-34.170000",
-                "end_time": "0-12-36.040000",
-                "url": "https://drive.google.com/file/d/1KRA0_BCWE-qtX8Hs5IzBpDZflG7uGcHS/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Any samples from the magical core?",
-                "line": 162,
-                "start_time": "0-12-36.630000",
-                "end_time": "0-12-38.500000",
-                "url": "https://drive.google.com/file/d/1DjV-s8pwHLgYl9Q_P49diDuQY4lf-Otn/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Also vaporized.",
-                "line": 163,
-                "start_time": "0-12-38.960000",
-                "end_time": "0-12-40.380000",
-                "url": "https://drive.google.com/file/d/1rgI8u-eSyDCCAgQeupPJ78HCT-8UE9En/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "The simplest and most reliable solution to the matter.",
-                "line": 164,
-                "start_time": "0-12-41.130000",
-                "end_time": "0-12-44.960000",
-                "url": "https://drive.google.com/file/d/1nsWNrYHevAhZNHiAPtHIjzux7JshZaOt/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "That's so like him.",
-                "line": 165,
-                "start_time": "0-12-45.290000",
-                "end_time": "0-12-46.500000",
-                "url": "https://drive.google.com/file/d/1lsIgn-tLv3A5x_nHmKelWJvpGFef-uGX/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "After all, Lord Shadow is the only one who could have accomplished it.",
-                "line": 166,
-                "start_time": "0-12-46.830000",
-                "end_time": "0-12-49.960000",
-                "url": "https://drive.google.com/file/d/1ZUaZbjjke3Q-jMik9TnPm6WgtmIrh9V5/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "The path he treads is the path we walk, as well.",
-                "line": 167,
-                "start_time": "0-12-50.210000",
-                "end_time": "0-12-54.830000",
-                "url": "https://drive.google.com/file/d/1li4_Qd_gAEAMSn0uNj-RvkmXwtei3Ezb/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "And what of Beta?",
-                "line": 168,
-                "start_time": "0-12-55.880000",
-                "end_time": "0-12-57.080000",
-                "url": "https://drive.google.com/file/d/1MIYXcPUgFvHicyimDQzm_oGANIx0-t45/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "She is guiding the princesses.",
-                "line": 169,
-                "start_time": "0-12-57.080000",
-                "end_time": "0-12-59.130000",
-                "url": "https://drive.google.com/file/d/176Lu0K2-LDuAxd8zOWPDo8GsEKOrWW3Q/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "If she plays her cards right, she may be able to infiltrate their inner circles.",
-                "line": 170,
-                "start_time": "0-12-59.130000",
-                "end_time": "0-13-01.630000",
-                "url": "https://drive.google.com/file/d/1KG7rL6qve8hXbsu2gwTddD9BWze7AS6k/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Then it's going well?",
-                "line": 171,
-                "start_time": "0-13-01.630000",
-                "end_time": "0-13-02.830000",
-                "url": "https://drive.google.com/file/d/1TrDdpQv4_9lnC93EKUYEbtnShCGjrehQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Yes.",
-                "line": 172,
-                "start_time": "0-13-02.830000",
-                "end_time": "0-13-03.830000",
-                "url": "https://drive.google.com/file/d/1HAUuRDishDRazrm44btXzSSZuTl603WA/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Now, about the other matter...",
-                "line": 173,
-                "start_time": "0-13-04.040000",
-                "end_time": "0-13-05.580000",
-                "url": "https://drive.google.com/file/d/1e16hbCBBXb6EhIIHmof2WblE63Xo8a7h/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Go on.",
-                "line": 174,
-                "start_time": "0-13-05.710000",
-                "end_time": "0-13-06.920000",
-                "url": "https://drive.google.com/file/d/1KGu18Wsh1eF4uoJpqnAkxlAKAmHDV1Xt/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "It appears our theory was correct.",
-                "line": 175,
-                "start_time": "0-13-06.920000",
-                "end_time": "0-13-08.790000",
-                "url": "https://drive.google.com/file/d/1D33cDIcqiLwfQXt_9604zDKTZU3r5fpR/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Aurora, the Witch of Calamity, has another name:",
-                "line": 176,
-                "start_time": "0-13-09.130000",
-                "end_time": "0-13-12.210000",
-                "url": "https://drive.google.com/file/d/1ja00PYE6HMye2HPRXY5SnH7PoA9hUBlk/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "the Demon Diablos.",
-                "line": 177,
-                "start_time": "0-13-12.540000",
-                "end_time": "0-13-14.130000",
-                "url": "https://drive.google.com/file/d/1B8j5696veaHdJVBIgHHa-A9yXcYOM-1i/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "I see.",
-                "line": 178,
-                "start_time": "0-13-15.710000",
-                "end_time": "0-13-16.710000",
-                "url": "https://drive.google.com/file/d/1tOb2LGfikYog4NdTbBsMmT0xLtCIh5fj/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "So that's why he...",
-                "line": 179,
-                "start_time": "0-13-16.920000",
-                "end_time": "0-13-18.210000",
-                "url": "https://drive.google.com/file/d/1ts4BnjAgrpNh7zUzz6prHoEaLzVyPuyC/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "The stage for our next performance will be the Royal Capital of Midgar.",
-                "line": 180,
-                "start_time": "0-13-19.380000",
-                "end_time": "0-13-21.630000",
-                "url": "https://drive.google.com/file/d/1uFBpWdfAK-R7Bgys5FBSTCvhgzNIk2dG/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Make sure to be ready.",
-                "line": 181,
-                "start_time": "0-13-21.630000",
-                "end_time": "0-13-23.330000",
-                "url": "https://drive.google.com/file/d/1VsSh74d7eNhYSpLzNj5af3pbYcicYG_u/view?usp=drivesdk"
+                "start_time": "0-06-38.130000",
+                "end_time": "0-06-40.380000",
+                "url": "https://drive.google.com/file/d/1XReDGlgUKr27gosdPVT2dGRRa2fSCeGc/view?usp=drivesdk"
             },
             {
                 "name": "Epsilon",
                 "name_variant": "Epsilon",
                 "subtitle": "Yes!",
-                "line": 182,
-                "start_time": "0-13-23.540000",
-                "end_time": "0-13-24.670000",
-                "url": "https://drive.google.com/file/d/1wMBflnJKWeF66PYh2e2JdcEOB_FIDVQk/view?usp=drivesdk"
+                "line": 99,
+                "start_time": "0-06-40.380000",
+                "end_time": "0-06-41.380000",
+                "url": "https://drive.google.com/file/d/17h_Cusnm8_Z35sfnPUXymoj_x6DFDNk9/view?usp=drivesdk"
             },
             {
                 "name": "Epsilon",
                 "name_variant": "Epsilon",
-                "subtitle": "Shall I report to Lord Shadow?",
-                "line": 183,
-                "start_time": "0-13-24.670000",
-                "end_time": "0-13-26.080000",
-                "url": "https://drive.google.com/file/d/1XZ3V_JdNG5c1nWwA5FeQLxW8TsM8uZG6/view?usp=drivesdk"
+                "subtitle": "Of the many pieces you so graciously taught me, it is the one I like the very best.",
+                "line": 100,
+                "start_time": "0-06-41.880000",
+                "end_time": "0-06-47.290000",
+                "url": "https://drive.google.com/file/d/1p-GLFCe79UjO33gPiIJJBh-5tPCcxc_q/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "No need.",
-                "line": 184,
-                "start_time": "0-13-26.080000",
-                "end_time": "0-13-27.290000",
-                "url": "https://drive.google.com/file/d/1fx5QsA3_gghbT9E3U4fcJWDW5Lq50VZ7/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "I didn't mean to teach you anything.",
+                "line": 101,
+                "start_time": "0-06-47.960000",
+                "end_time": "0-06-49.960000",
+                "url": "https://drive.google.com/file/d/1lU8II4Tk28aJiGeTIkxHpM6IbEvFbFkA/view?usp=drivesdk"
             },
             {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "He knows everything.",
-                "line": 185,
-                "start_time": "0-13-27.290000",
-                "end_time": "0-13-29.040000",
-                "url": "https://drive.google.com/file/d/1LClo6vy87aPcZlgrIvh0NXBXz5ra0qUu/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "But I guess I can be pleased to hear someone else say she likes something I like.",
+                "line": 102,
+                "start_time": "0-06-50.670000",
+                "end_time": "0-06-56.290000",
+                "url": "https://drive.google.com/file/d/1sYKExx7odL2G4dUfLPoUtZ_coOJpMs1j/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "I personally recommend this property, Ms. Luna.",
-                "line": 186,
-                "start_time": "0-13-42.130000",
-                "end_time": "0-13-45",
-                "url": "https://drive.google.com/file/d/1-wnTGOVvaOKtQKNIuFE4L6lB4l6DO6m-/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Thanks to your wisdom, My Lord,",
+                "line": 103,
+                "start_time": "0-06-57",
+                "end_time": "0-06-59",
+                "url": "https://drive.google.com/file/d/1YuF-xZdYWOEhedAfFvCXsEI5qs-l-Wsk/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "It faces out onto the main road,",
-                "line": 187,
-                "start_time": "0-13-45.710000",
-                "end_time": "0-13-47.290000",
-                "url": "https://drive.google.com/file/d/1NUIqwuN9eNdNUKaAyTkAZ_tyuA_nIgcb/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "I am building connections with influential people as a pianist and as a composer.",
+                "line": 104,
+                "start_time": "0-06-59",
+                "end_time": "0-07-03.630000",
+                "url": "https://drive.google.com/file/d/1_phEb8BYG_-BK84zVbtEXf60k46RyF40/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "it gets plenty of sunlight, and it boasts a wide frontage.",
-                "line": 188,
-                "start_time": "0-13-47.290000",
-                "end_time": "0-13-49.580000",
-                "url": "https://drive.google.com/file/d/1G6v5wDErYGD129kftIQp64wq55oaIZxk/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "A composer?",
+                "line": 105,
+                "start_time": "0-07-04.670000",
+                "end_time": "0-07-05.960000",
+                "url": "https://drive.google.com/file/d/11SOilo48Zisg4K_pwlDvVI82lR8TNpI7/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "Including the land, it's all worth 140 million zeni,",
-                "line": 189,
-                "start_time": "0-13-49.580000",
-                "end_time": "0-13-52.460000",
-                "url": "https://drive.google.com/file/d/1qzYHJ4SN7BQ_PwUSCwkFIF32cD0JU9Ld/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Yes, My Lord!",
+                "line": 106,
+                "start_time": "0-07-05.960000",
+                "end_time": "0-07-06.960000",
+                "url": "https://drive.google.com/file/d/1kbIKz-OLGOATRkUngrdSAHU34CS-x5Ly/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "but I will give you a special discount and let you have it for only 120 million.",
-                "line": 190,
-                "start_time": "0-13-52.460000",
-                "end_time": "0-13-56.250000",
-                "url": "https://drive.google.com/file/d/1iTK_ZdHKNEC8PtEptxRmsxZ4gn5Ic8Lu/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "The \"Moonlight Sonata,\" the \"Turkish March,\" the \"Minute Waltz\"...",
+                "line": 107,
+                "start_time": "0-07-06.960000",
+                "end_time": "0-07-10.670000",
+                "url": "https://drive.google.com/file/d/10PxzQa6VThDYQO_qC5LBqZp-dkFTt3VB/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "We would very much love to have Mitsugoshi, Ltd.",
-                "line": 191,
-                "start_time": "0-13-56.250000",
-                "end_time": "0-13-59.540000",
-                "url": "https://drive.google.com/file/d/1mxv8mWBvhBHMfKTXQpkd7lLSuKs6Bkpi/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "They're very popular among the nobility,",
+                "line": 108,
+                "start_time": "0-07-10.670000",
+                "end_time": "0-07-12.420000",
+                "url": "https://drive.google.com/file/d/1lJMGeY6bt8JQL6rmebtq6MEA4cD9WJal/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "open a second store here in the Velgalta Empire.",
-                "line": 192,
-                "start_time": "0-13-59.540000",
-                "end_time": "0-14-02.170000",
-                "url": "https://drive.google.com/file/d/1EFvI9yLItQxopIxzoTO5yk0hXm3ktuLS/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "and the Royal Capital has even given me awards.",
+                "line": 109,
+                "start_time": "0-07-12.420000",
+                "end_time": "0-07-14.580000",
+                "url": "https://drive.google.com/file/d/15bgsEcqkLiwtFVxHLJcVVP2uMUTwKiSm/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Luna",
-                "subtitle": "I can see that.",
-                "line": 193,
-                "start_time": "0-14-02.670000",
-                "end_time": "0-14-03.880000",
-                "url": "https://drive.google.com/file/d/1MnoVo8-0-RHd8-xM16at_gpnaU8sVemr/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "Have they now?",
+                "line": 110,
+                "start_time": "0-07-15",
+                "end_time": "0-07-16.210000",
+                "url": "https://drive.google.com/file/d/14VxpAJ_doC7P04SQ4uQBjRmYR1RGJXsp/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Luna",
-                "subtitle": "But we do have to consider the reconstruction projects in the Sacred Land after that disaster...",
-                "line": 194,
-                "start_time": "0-14-04.040000",
-                "end_time": "0-14-08.330000",
-                "url": "https://drive.google.com/file/d/1RRLFeGHteMBRnNy2nc2j2_lgfw_ws6tw/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "Accepting awards for plagiarized music?",
+                "line": 111,
+                "start_time": "0-07-16.630000",
+                "end_time": "0-07-18.170000",
+                "url": "https://drive.google.com/file/d/1fZE_xtiemUiZ3FmTDZ66JUyX_sA-qQld/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "But look at it! Prime property for only 120 million!",
-                "line": 195,
-                "start_time": "0-14-08.330000",
-                "end_time": "0-14-11.920000",
-                "url": "https://drive.google.com/file/d/1XWOZsqLJZtxKT4JkHuN7HD4NLpvGKrpG/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "That's the most shameless thing I've ever heard.",
+                "line": 112,
+                "start_time": "0-07-18.170000",
+                "end_time": "0-07-20.130000",
+                "url": "https://drive.google.com/file/d/1OG9pteSGwliEkljLu6THtmmDJwWXSidZ/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Luna",
-                "subtitle": "Yes, prime property, still on the market despite its exceptionally low price.",
-                "line": 196,
-                "start_time": "0-14-12.500000",
-                "end_time": "0-14-16.960000",
-                "url": "https://drive.google.com/file/d/1Uc8sgZFTUZVbxbW9WLnaxxroIeObOkDH/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "The Oriana Kingdom, the kingdom of art and culture,",
+                "line": 113,
+                "start_time": "0-07-20.420000",
+                "end_time": "0-07-22.630000",
+                "url": "https://drive.google.com/file/d/1STbDjRBsynql6shPiiFg2wdzy-UxdsYU/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "B-but that's only in the short term!",
-                "line": 197,
-                "start_time": "0-14-16.960000",
-                "end_time": "0-14-20.710000",
-                "url": "https://drive.google.com/file/d/1QufHZtHy0NZMI8WN-IusHY4Q3Wqrm7J0/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "has invited me to visit as an up-and-coming composer.",
+                "line": 114,
+                "start_time": "0-07-22.630000",
+                "end_time": "0-07-25.790000",
+                "url": "https://drive.google.com/file/d/1gYNOOLk-UwQJj56qo8oY5IoyR-EMlyPk/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "All we need is for a shopping center like Mitsugoshi to open,",
-                "line": 198,
-                "start_time": "0-14-20.710000",
-                "end_time": "0-14-23.170000",
-                "url": "https://drive.google.com/file/d/1Vb1BE-yfrLOHr14FeqWw6Yr81irhQH4a/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "My apologies to all the great composers.",
+                "line": 115,
+                "start_time": "0-07-25.790000",
+                "end_time": "0-07-28.540000",
+                "url": "https://drive.google.com/file/d/1yDbNJ-Fv5cJ4mmWyeh1WuhBlPpQqZZKG/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "and the city of Madlid will thrive!",
-                "line": 199,
-                "start_time": "0-14-23.170000",
-                "end_time": "0-14-25.420000",
-                "url": "https://drive.google.com/file/d/1dKQKvMV37_D7EIDBMSXy7QnX4Bf6_2kw/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "As I'm sure you are aware,",
+                "line": 116,
+                "start_time": "0-07-28.710000",
+                "end_time": "0-07-30.040000",
+                "url": "https://drive.google.com/file/d/1BZGod7Hsr2j3t_20hX7Mm7yC7XuKHXUY/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Luna",
-                "subtitle": "Even I've heard about the Mitsugoshi in the Velgalta Imperial Capital,",
-                "line": 200,
-                "start_time": "0-14-25.880000",
-                "end_time": "0-14-28.750000",
-                "url": "https://drive.google.com/file/d/1dqlfGfA2cMk9r0LpRCfjfTfMluRcm2Q5/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "there is a lot of profitable work to be done in the Oriana Kingdom right now.",
+                "line": 117,
+                "start_time": "0-07-30.040000",
+                "end_time": "0-07-34.420000",
+                "url": "https://drive.google.com/file/d/1551URMdkH5amtyzlDzMZ_KLOTtK4PJi_/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Luna",
-                "subtitle": "and my humble domain is out in the middle of nowhere!",
-                "line": 201,
-                "start_time": "0-14-28.750000",
-                "end_time": "0-14-32.040000",
-                "url": "https://drive.google.com/file/d/1e1JqwPjF4vL1k5mYpF5lZagmsMIzGD50/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "They are the kingdom of art and culture.",
+                "line": 118,
+                "start_time": "0-07-34.420000",
+                "end_time": "0-07-36.420000",
+                "url": "https://drive.google.com/file/d/1I3GC1wKuYnqaqtdhBut6GcEdl9jaOnj-/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Luna",
-                "subtitle": "We need a Mitsugoshi here in Madlid!",
-                "line": 202,
-                "start_time": "0-14-32.040000",
-                "end_time": "0-14-35.330000",
-                "url": "https://drive.google.com/file/d/1S7zizhKOBscNyw0EJksuVnkaIkKEt4uc/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Yes, My Lord.",
+                "line": 119,
+                "start_time": "0-07-36.420000",
+                "end_time": "0-07-37.420000",
+                "url": "https://drive.google.com/file/d/1aifBCXy7dqP6iiehtXmUFs9_fiyXLltr/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Luna",
-                "subtitle": "Our future depends on it!",
-                "line": 203,
-                "start_time": "0-14-35.330000",
-                "end_time": "0-14-36.540000",
-                "url": "https://drive.google.com/file/d/1P1PRl1_u4UsuAFHf8X-DIzZ77aqkBwzi/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "This time, I think there is an especially worthwhile job to be done.",
+                "line": 120,
+                "start_time": "0-07-37.630000",
+                "end_time": "0-07-40.710000",
+                "url": "https://drive.google.com/file/d/1YBJjWhL1RruOue10m-gqhQXwMWlW6nEd/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "Oh, I know! I'll make it a hundred million zeni!",
-                "line": 204,
-                "start_time": "0-14-36.710000",
-                "end_time": "0-14-39.250000",
-                "url": "https://drive.google.com/file/d/1tCSIEqIHSKIAeZcCbt1WXsRCwnSlaT9u/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "Good luck with that.",
+                "line": 121,
+                "start_time": "0-07-41",
+                "end_time": "0-07-42.210000",
+                "url": "https://drive.google.com/file/d/1QAhm8UQi1aUi43l0Ktjd2LELDxIrAr5l/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "And I'll throw in priority use of the warehouses,",
-                "line": 205,
-                "start_time": "0-14-39.250000",
-                "end_time": "0-14-41.170000",
-                "url": "https://drive.google.com/file/d/16Hx3FJ-JbhrOIweM-il2NwOe7bcRM_hw/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "I shall perform my duty and and my music in a way worthy of the sublime masterpieces",
+                "line": 122,
+                "start_time": "0-07-42.460000",
+                "end_time": "0-07-46.210000",
+                "url": "https://drive.google.com/file/d/1OGdli3vWmu-0tYTVKBld6rXPiAR4YTAc/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "and temporary reduction measures on all forms of taxes.",
-                "line": 206,
-                "start_time": "0-14-41.170000",
-                "end_time": "0-14-42.460000",
-                "url": "https://drive.google.com/file/d/1B4u_ks-PHpOijIWjqVb5o8R4tFhTX3jO/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "you have bestowed upon me, My Lord.",
+                "line": 123,
+                "start_time": "0-07-46.210000",
+                "end_time": "0-07-47.960000",
+                "url": "https://drive.google.com/file/d/1_jhxYSKWGqb3L4PRPS-UDXqeGGtsexgh/view?usp=drivesdk"
             },
             {
-                "name": "Nu",
-                "name_variant": "Nu",
-                "subtitle": "The survey is complete",
-                "line": 207,
-                "start_time": "0-14-42.460000",
-                "end_time": "0-14-43.670000",
-                "url": "https://drive.google.com/file/d/1oHkHLiafLOEU87Sg15niV0sALnXz-3_l/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "Good luck with that.",
+                "line": 124,
+                "start_time": "0-07-47.960000",
+                "end_time": "0-07-49.330000",
+                "url": "https://drive.google.com/file/d/1Zh-xFvEUVTWu8RJLnH_EJljKephqyYne/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "and temporary reduction measures on all forms of taxes.",
-                "line": 207,
-                "start_time": "0-14-42.460000",
-                "end_time": "0-14-43.670000",
-                "url": "https://drive.google.com/file/d/1oHkHLiafLOEU87Sg15niV0sALnXz-3_l/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "That reminds me.",
+                "line": 125,
+                "start_time": "0-07-50.170000",
+                "end_time": "0-07-51.380000",
+                "url": "https://drive.google.com/file/d/1muRCig1nkmZ2bbSF93fXxZtq9f1mXL-A/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Luna",
-                "subtitle": "Conclusion",
-                "line": 208,
-                "start_time": "0-14-43.670000",
-                "end_time": "0-14-45",
-                "url": "https://drive.google.com/file/d/1R4bQXELSVAY7GXri-xe4CWyNqQjMHCpG/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "Do you happen to know where Oriana's Princess Rose ran off to?",
+                "line": 126,
+                "start_time": "0-07-51.380000",
+                "end_time": "0-07-53.880000",
+                "url": "https://drive.google.com/file/d/1I4QeSvN2MuQU09rilqnTZGhV_xIO7F9T/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "Of course, in the event that you choose to construct a storefront,",
-                "line": 208,
-                "start_time": "0-14-43.670000",
-                "end_time": "0-14-45",
-                "url": "https://drive.google.com/file/d/1R4bQXELSVAY7GXri-xe4CWyNqQjMHCpG/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Princess Rose, My Lord?",
+                "line": 127,
+                "start_time": "0-07-54.130000",
+                "end_time": "0-07-56.580000",
+                "url": "https://drive.google.com/file/d/1bO6EEQuKAIFZb-Ec5wrO4gUNhCq7Pea7/view?usp=drivesdk"
             },
             {
-                "name": "Nu",
-                "name_variant": "Nu",
-                "subtitle": "It will work",
-                "line": 209,
-                "start_time": "0-14-45",
-                "end_time": "0-14-46.040000",
-                "url": "https://drive.google.com/file/d/1gZGo7HykSU2dXklrxICrbtSwv_k5tQLk/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Beta is responsible for that particular case, so I don't know any details.",
+                "line": 128,
+                "start_time": "0-07-57",
+                "end_time": "0-08-00.830000",
+                "url": "https://drive.google.com/file/d/1WUx6CiO89_HrmdQTy9pQJWVIXDkWnigp/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "Of course, in the event that you choose to construct a storefront,",
-                "line": 209,
-                "start_time": "0-14-45",
-                "end_time": "0-14-46.040000",
-                "url": "https://drive.google.com/file/d/1gZGo7HykSU2dXklrxICrbtSwv_k5tQLk/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "But I have heard that she has taken refuge in the tunnels under the Royal Capital.",
+                "line": 129,
+                "start_time": "0-08-01.460000",
+                "end_time": "0-08-04.750000",
+                "url": "https://drive.google.com/file/d/1m_RI9jSuQ_5EeXb9iYWYCIssgLsq5RFZ/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Luna",
-                "subtitle": "And the liquid",
-                "line": 210,
-                "start_time": "0-14-46.040000",
-                "end_time": "0-14-47.250000",
-                "url": "https://drive.google.com/file/d/1VnjSA_eGDCJAzRBd-cRB3MDN25ECRrAv/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "Underground, huh?",
+                "line": 130,
+                "start_time": "0-08-05.170000",
+                "end_time": "0-08-06.380000",
+                "url": "https://drive.google.com/file/d/15ufWAikvsCYFw4T_XY6DbZVDyGfWd7Aj/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "I'll rally my entire domain and make it our top priority.",
-                "line": 210,
-                "start_time": "0-14-46.040000",
-                "end_time": "0-14-47.250000",
-                "url": "https://drive.google.com/file/d/1VnjSA_eGDCJAzRBd-cRB3MDN25ECRrAv/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "I'll send a messenger to Beta-",
+                "line": 131,
+                "start_time": "0-08-07",
+                "end_time": "0-08-08.500000",
+                "url": "https://drive.google.com/file/d/1iwIccqVG60e_bN72TVA_Pl2381c8N8Pi/view?usp=drivesdk"
             },
             {
-                "name": "Nu",
-                "name_variant": "Nu",
-                "subtitle": "No doubt about it",
-                "line": 211,
-                "start_time": "0-14-47.250000",
-                "end_time": "0-14-48.670000",
-                "url": "https://drive.google.com/file/d/1USTNiigrq1hVHW84XvA6pegXDKrxcNNQ/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "That's okay.",
+                "line": 132,
+                "start_time": "0-08-08.500000",
+                "end_time": "0-08-09.750000",
+                "url": "https://drive.google.com/file/d/1PI_9ekFUhjwb84PFeoqXvJPITGCFZ05U/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "I'll rally my entire domain and make it our top priority.",
-                "line": 211,
-                "start_time": "0-14-47.250000",
-                "end_time": "0-14-48.670000",
-                "url": "https://drive.google.com/file/d/1USTNiigrq1hVHW84XvA6pegXDKrxcNNQ/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "You've given me all I need to know.",
+                "line": 133,
+                "start_time": "0-08-09.750000",
+                "end_time": "0-08-11.460000",
+                "url": "https://drive.google.com/file/d/1h5ybKnuRL6ZkkvkhExAEqMXm8DhAwpkt/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "The feudal lord committee has already authorized me",
-                "line": 212,
-                "start_time": "0-14-48.790000",
-                "end_time": "0-14-49.290000",
-                "url": "https://drive.google.com/file/d/1JJJ9eot-nJM-YzBW1FujehRgDw5wCyMe/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "Your figure is as lovely as ever today, Epsilon.",
+                "line": 134,
+                "start_time": "0-08-12.290000",
+                "end_time": "0-08-14.880000",
+                "url": "https://drive.google.com/file/d/1F6M4mVp1g-qmI1LMo5C5t-KtEKGgpHpH/view?usp=drivesdk"
             },
             {
-                "name": "Nu",
-                "name_variant": "Nu",
-                "subtitle": "It's petroleum",
-                "line": 213,
-                "start_time": "0-14-49.290000",
-                "end_time": "0-14-50.750000",
-                "url": "https://drive.google.com/file/d/1X-AKLsb43Q2-w0-bzfhE58aHxZry5421/view?usp=drivesdk"
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Y-you're too kind! Humble Epsilon is still nowhere near...",
+                "line": 135,
+                "start_time": "0-08-15.460000",
+                "end_time": "0-08-18.710000",
+                "url": "https://drive.google.com/file/d/13atAwHqGGTK0loOX_IBFR727zS-EVgbA/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "The feudal lord committee has already authorized me",
-                "line": 213,
-                "start_time": "0-14-49.290000",
-                "end_time": "0-14-50.750000",
-                "url": "https://drive.google.com/file/d/1X-AKLsb43Q2-w0-bzfhE58aHxZry5421/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "Plagiarism issues aside,",
+                "line": 136,
+                "start_time": "0-08-20.420000",
+                "end_time": "0-08-22.130000",
+                "url": "https://drive.google.com/file/d/1oz0k30GXhcJfCTi1vdBXIWoU-f6slDjv/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "to conscript the citizens for forced labor should you so desire.",
-                "line": 214,
-                "start_time": "0-14-50.750000",
-                "end_time": "0-14-52.750000",
-                "url": "https://drive.google.com/file/d/1HBCIy3C4PWimk36B5mpHHJ-LHO786kdE/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "she made me happy by telling me she likes the \"Moonlight Sonata.\"",
+                "line": 137,
+                "start_time": "0-08-22.130000",
+                "end_time": "0-08-25.790000",
+                "url": "https://drive.google.com/file/d/1iiyEVnN3DYyR0VrONm3AjaQa48NBZulV/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "So I humbly beg you! Please, turn our slum-",
-                "line": 215,
-                "start_time": "0-14-52.880000",
-                "end_time": "0-14-54.750000",
-                "url": "https://drive.google.com/file/d/1JO-qfX8opQRVKXzHHoG1BpBQK-oqJXam/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "So I ought to tell her something to make her happy, too.",
+                "line": 138,
+                "start_time": "0-08-26.330000",
+                "end_time": "0-08-29.540000",
+                "url": "https://drive.google.com/file/d/1Z76Obfk3xneQjh1tAnmVd1VTflEGyJRb/view?usp=drivesdk"
             },
             {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "I mean, our shopping district into-",
-                "line": 216,
-                "start_time": "0-14-54.750000",
-                "end_time": "0-14-56.420000",
-                "url": "https://drive.google.com/file/d/1I8OJ2N4mN4IvVXcKT3OIgC6guxPK3ePc/view?usp=drivesdk"
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "My sister Iris thanks you for the information you provided.",
+                "line": 139,
+                "start_time": "0-08-39.920000",
+                "end_time": "0-08-44.170000",
+                "url": "https://drive.google.com/file/d/1fl2N57ueWB-XbI4Wu7vwqA2vrvfpaTEZ/view?usp=drivesdk"
             },
             {
-                "name": "Gamma",
-                "name_variant": "Luna",
-                "subtitle": "I'll take it.",
-                "line": 217,
-                "start_time": "0-14-56.420000",
-                "end_time": "0-14-57.630000",
-                "url": "https://drive.google.com/file/d/1_uzojw0x1PGIyzeGtXyP-s_prB36_NoP/view?usp=drivesdk"
-            },
-            {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "Yes?",
-                "line": 218,
-                "start_time": "0-14-59.630000",
-                "end_time": "0-15-00.630000",
-                "url": "https://drive.google.com/file/d/1oX8OVWwjuE4Ey9kQA2KonbtdBYw0gn3m/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Luna",
-                "subtitle": "Our company will buy every property on this street.",
-                "line": 219,
-                "start_time": "0-15-00.630000",
-                "end_time": "0-15-04.290000",
-                "url": "https://drive.google.com/file/d/1BwWRS2pq7Hc9P8gja2e-S-wvCMc5dcKh/view?usp=drivesdk"
-            },
-            {
-                "name": "Rude",
-                "name_variant": "Rude",
-                "subtitle": "I'm sorry, what did you say?",
-                "line": 220,
-                "start_time": "0-15-04.710000",
-                "end_time": "0-15-07.330000",
-                "url": "https://drive.google.com/file/d/18YBlB6LD3d2Y_v6CWwWWXOuDIvt6Ig8o/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Luna",
-                "subtitle": "If you will accept our terms,",
-                "line": 221,
-                "start_time": "0-15-07.710000",
-                "end_time": "0-15-09.960000",
-                "url": "https://drive.google.com/file/d/13JecqUoiFW1uJyW2YDXN1O4JGBK6uz_4/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Luna",
-                "subtitle": "then we will redevelop this city, and make it the greatest city in Velgalta.",
-                "line": 222,
-                "start_time": "0-15-09.960000",
-                "end_time": "0-15-14.790000",
-                "url": "https://drive.google.com/file/d/10LHlZW7t3VOL5yz8Nb9E1THoMvXZbvaj/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Luna",
-                "subtitle": "That is what I said.",
-                "line": 223,
-                "start_time": "0-15-14.790000",
-                "end_time": "0-15-16",
-                "url": "https://drive.google.com/file/d/1DJW8edwz0Iu1trlyQflWBSdDGUC0XAu6/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Luna",
-                "subtitle": "Are you willing to expand the Nyle River's tributaries and build a canal?",
-                "line": 224,
-                "start_time": "0-15-16",
-                "end_time": "0-15-20",
-                "url": "https://drive.google.com/file/d/1jKPmWQ__dYnTlyDRx5y2kXm6LysDcXgU/view?usp=drivesdk"
-            },
-            {
-                "name": "Nu",
-                "name_variant": "Nu",
-                "subtitle": "Buy up every notable property along the tributaries of the Nyle River.",
-                "line": 225,
-                "start_time": "0-15-20.790000",
-                "end_time": "0-15-23.880000",
-                "url": "https://drive.google.com/file/d/1T9TB9zMbvhHz0Piufd_Wu8k_-30MmHvz/view?usp=drivesdk"
-            },
-            {
-                "name": "Mitsugoshi Staff",
-                "name_variant": "Mitsugoshi Staff",
-                "subtitle": "Right away!",
-                "line": 226,
-                "start_time": "0-15-23.880000",
-                "end_time": "0-15-25.080000",
-                "url": "https://drive.google.com/file/d/1czYR3V1qf-WaS6KM5QROnTyB6BvTszl6/view?usp=drivesdk"
-            },
-            {
-                "name": "Nu",
-                "name_variant": "Nu",
-                "subtitle": "Get ready.",
-                "line": 227,
-                "start_time": "0-15-25.080000",
-                "end_time": "0-15-26.290000",
-                "url": "https://drive.google.com/file/d/1dpqe7mi7355fSaTZlQxbdbv_e4UgBLT0/view?usp=drivesdk"
-            },
-            {
-                "name": "Nu",
-                "name_variant": "Nu",
-                "subtitle": "It's time for the real estate bubble.",
-                "line": 228,
-                "start_time": "0-15-26.830000",
-                "end_time": "0-15-28.580000",
-                "url": "https://drive.google.com/file/d/1WrKA3lM_21XeOJgujlhgCN9c4rEWQrp4/view?usp=drivesdk"
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "She says she hopes you'll help us again in the future.",
+                "line": 140,
+                "start_time": "0-08-44.540000",
+                "end_time": "0-08-46.750000",
+                "url": "https://drive.google.com/file/d/1yspeQ1dyN_ykUSFk8jD3CXv3iY38AfPe/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "That reminds me, where's Delta?",
-                "line": 229,
-                "start_time": "0-15-40.710000",
-                "end_time": "0-15-42.130000",
-                "url": "https://drive.google.com/file/d/1Sqrjp5QHg0IaZkCsm4YJGywIZS9XSPvx/view?usp=drivesdk"
-            },
-            {
-                "name": "Chi",
-                "name_variant": "Chi",
-                "subtitle": "She hasn't come back yet.",
-                "line": 230,
-                "start_time": "0-15-42.670000",
-                "end_time": "0-15-44.500000",
-                "url": "https://drive.google.com/file/d/11M9EJ1BGDn-ZHGdpt7XHf7U2Ws1mTT8j/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Do you think she's still in the Sacred Land?",
-                "line": 231,
-                "start_time": "0-15-45.130000",
-                "end_time": "0-15-47.040000",
-                "url": "https://drive.google.com/file/d/1eDEgnn3_YIPMhAS3fh2A64zFy7gSXtke/view?usp=drivesdk"
-            },
-            {
-                "name": "Omega",
-                "name_variant": "Omega",
-                "subtitle": "Should we send someone to get her?",
-                "line": 232,
-                "start_time": "0-15-50.500000",
-                "end_time": "0-15-52.460000",
-                "url": "https://drive.google.com/file/d/14GY4jywusLQgmZRGEfqX1d5bP5x7Zy13/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I wouldn't worry about it. She'll be back when it gets cold.",
-                "line": 233,
-                "start_time": "0-15-52.830000",
-                "end_time": "0-15-55.830000",
-                "url": "https://drive.google.com/file/d/1s8YptZ2fTXOx3pTZiZmiWGAhjsGD3O_u/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "What do you think?",
-                "line": 234,
-                "start_time": "0-16-10.580000",
-                "end_time": "0-16-11.790000",
-                "url": "https://drive.google.com/file/d/1soTcIWcuGsvgfzoJx6sZlkR5xFwxouz-/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Yeah...",
-                "line": 235,
-                "start_time": "0-16-11.790000",
-                "end_time": "0-16-12.790000",
-                "url": "https://drive.google.com/file/d/1vonHrbO4w5WMZ-KICUa2zSUllePzZuOh/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "A very familiar architectural style, right here in another world.",
-                "line": 236,
-                "start_time": "0-16-13.330000",
-                "end_time": "0-16-16.380000",
-                "url": "https://drive.google.com/file/d/1cshVjoRhvXybpruK7GKcl0CMtqIRORNX/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Wood frame construction...",
-                "line": 237,
-                "start_time": "0-16-16.920000",
-                "end_time": "0-16-18.170000",
-                "url": "https://drive.google.com/file/d/1IPwyuxziw1K1ous4kUSRD5liUSOWee9C/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "We couldn't have done it without the building techniques you taught us.",
-                "line": 238,
-                "start_time": "0-16-18.380000",
-                "end_time": "0-16-21.170000",
-                "url": "https://drive.google.com/file/d/1d79pC0tCAExJHBgCLPaYHiZANXkEs6cc/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Is that so...",
-                "line": 239,
-                "start_time": "0-16-21.630000",
-                "end_time": "0-16-23.040000",
-                "url": "https://drive.google.com/file/d/1wryfRVMTKXkP5zzSRr2X2caraaEPUtp0/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Our temporary base is complete.",
-                "line": 240,
-                "start_time": "0-16-23.670000",
-                "end_time": "0-16-25.500000",
-                "url": "https://drive.google.com/file/d/1YjRGifzwrQ4aZcQ1AF8R5NpjKmsBhDdf/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Now the girls can begin their training in earnest.",
-                "line": 241,
-                "start_time": "0-16-25.790000",
-                "end_time": "0-16-29.040000",
-                "url": "https://drive.google.com/file/d/1gkTVD1yEOM7J_LSDIZ1M8plZLyyKdA-2/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "You're really going to train them, too?",
-                "line": 242,
-                "start_time": "0-16-29.830000",
-                "end_time": "0-16-32.080000",
-                "url": "https://drive.google.com/file/d/1kS22XMTwzc9V6oYHpql3Ql-orhW5lMWO/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Yes, it's bound to be necessary.",
-                "line": 243,
-                "start_time": "0-16-32.460000",
-                "end_time": "0-16-34.880000",
-                "url": "https://drive.google.com/file/d/1EugseMz4g-knOCCaZwfrMhNZP376Z4SM/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "If we're going to fight the Cult of Diablos,",
-                "line": 244,
-                "start_time": "0-16-35.330000",
-                "end_time": "0-16-37.580000",
-                "url": "https://drive.google.com/file/d/1n3lD0iXpmA67095MvWzOETSJEjEhpLt2/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "we're going to need to enhance our individual strengths as we expand our operations.",
-                "line": 245,
-                "start_time": "0-16-37.580000",
-                "end_time": "0-16-41.710000",
-                "url": "https://drive.google.com/file/d/1xa-OUlaN1Zn1lc8e2MpC-pG0CeDiIpHj/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Yeah, I guess that is how the story would work.",
-                "line": 246,
-                "start_time": "0-16-42.290000",
-                "end_time": "0-16-45",
-                "url": "https://drive.google.com/file/d/1BmfhjKS6pAE1cZZ388diP_pgHlsGwu3f/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Besides, they want the power to fight against the cult.",
-                "line": 247,
-                "start_time": "0-16-45.170000",
-                "end_time": "0-16-48.880000",
-                "url": "https://drive.google.com/file/d/1C2EZJ8-DXZP2yNQEl6hK2c69dhvIxjEd/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Really?",
-                "line": 248,
-                "start_time": "0-16-49.080000",
-                "end_time": "0-16-50.290000",
-                "url": "https://drive.google.com/file/d/1tUvGTqUymd56XipCqUfoR1h7_2YeXko2/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Then allow me to impart a portion of my wisdom to them.",
-                "line": 249,
-                "start_time": "0-16-50.290000",
-                "end_time": "0-16-53.130000",
-                "url": "https://drive.google.com/file/d/1-CFvtaSXzsLsTIcVAb4w9t0VKTjJoaOA/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "I will give them the power to stay true to their convictions in the darkest of shadows.",
-                "line": 250,
-                "start_time": "0-16-53.500000",
-                "end_time": "0-16-57.250000",
-                "url": "https://drive.google.com/file/d/11GDS13ExfgvAlXfWB3k8H_7FRos4KvCQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "After all, kids living all on their own will at least need to know some self-defense techniques.",
-                "line": 251,
-                "start_time": "0-16-58.170000",
-                "end_time": "0-17-02.500000",
-                "url": "https://drive.google.com/file/d/1Jn4oiTPD7odtFkfUan6tMI_sTlqrcQhh/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Lady Alpha...",
-                "line": 252,
-                "start_time": "0-17-11.170000",
-                "end_time": "0-17-12.380000",
-                "url": "https://drive.google.com/file/d/1Cc6b6c2_RY916OVwsyAl8XPgov_r2VVs/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "We've received a message from the Oriana Kingdom.",
-                "line": 253,
-                "start_time": "0-17-13.790000",
-                "end_time": "0-17-15.790000",
-                "url": "https://drive.google.com/file/d/174qUaYelUNk89l-kip50kS0AYYE5baaV/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "They have informed us that the Royal Chancellor Perv Asshat",
-                "line": 254,
-                "start_time": "0-17-16.210000",
-                "end_time": "0-17-18.380000",
-                "url": "https://drive.google.com/file/d/1BDyXKvgvCvSWBhEwuL_Z5E2R6wioJj5y/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "has set out to visit the Royal Capital of Midgar.",
-                "line": 255,
-                "start_time": "0-17-18.380000",
-                "end_time": "0-17-21.580000",
-                "url": "https://drive.google.com/file/d/1wYc4DK1Rv0tYZLJ-x7P0yw5w2HFMLY_J/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Perv Asshat...",
-                "line": 256,
-                "start_time": "0-17-22.130000",
-                "end_time": "0-17-23.580000",
-                "url": "https://drive.google.com/file/d/1niGZPqVRC2UfVS9Gf_QpcJSJn6QUBL17/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "So it begins.",
-                "line": 257,
-                "start_time": "0-17-25",
-                "end_time": "0-17-26.290000",
-                "url": "https://drive.google.com/file/d/1oGz5lpSl8vvkkuDyE1QxXmI1YkEdn3Hh/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "Then it's true.",
-                "line": 258,
-                "start_time": "0-17-33.960000",
-                "end_time": "0-17-35.250000",
-                "url": "https://drive.google.com/file/d/1xnuBmMEN8F9v2EhqVGUxrCarOKz4tnUh/view?usp=drivesdk"
+                "name_variant": "Natsume Kafka",
+                "subtitle": "I'm honored.",
+                "line": 141,
+                "start_time": "0-08-46.750000",
+                "end_time": "0-08-47.960000",
+                "url": "https://drive.google.com/file/d/1nGZX5ZwMvPbSObbIhhIRZLIBUYUGcYi_/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "Yes, we have no choice but to place the entire Church of the Divine Teachings under suspicion.",
-                "line": 259,
-                "start_time": "0-17-35.630000",
-                "end_time": "0-17-39.460000",
-                "url": "https://drive.google.com/file/d/1rpFeZxHqWG_vFf2GA7boLSDBTPQZold5/view?usp=drivesdk"
+                "subtitle": "So I was right, we should assume that Perv Asshat is working with the Cult.",
+                "line": 142,
+                "start_time": "0-08-51.380000",
+                "end_time": "0-08-55.920000",
+                "url": "https://drive.google.com/file/d/1yqUahxoOY_Th-JAFw-VNUuqJMLgrwRQL/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "Yes, if we follow his dubious personal history, I believe there is no room for doubt.",
+                "line": 143,
+                "start_time": "0-08-55.920000",
+                "end_time": "0-08-59.920000",
+                "url": "https://drive.google.com/file/d/1-tYgn4JZN6yRlyo7vpb-LpyWQyyGsm5z/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "The murdered archbishop, the man who killed him and took his place as acting archbishop-",
-                "line": 260,
-                "start_time": "0-17-40.130000",
-                "end_time": "0-17-44.170000",
-                "url": "https://drive.google.com/file/d/1aIzut3Wkb_jpWSlGKALIdcAAewmUz4op/view?usp=drivesdk"
+                "subtitle": "The problem is that we have no evidence.",
+                "line": 144,
+                "start_time": "0-09-00.080000",
+                "end_time": "0-09-02.250000",
+                "url": "https://drive.google.com/file/d/1XIioFiEZD-VJO9nPdH1Miu1VdgkC7EsJ/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "Indeed.",
+                "line": 145,
+                "start_time": "0-09-02.250000",
+                "end_time": "0-09-03.460000",
+                "url": "https://drive.google.com/file/d/1R2lr3flQYXdFY-qeMIybQBPyFGRor6EY/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "This matter involves the government and the Church,",
+                "line": 146,
+                "start_time": "0-09-03.790000",
+                "end_time": "0-09-06.790000",
+                "url": "https://drive.google.com/file/d/1PWaOKTJOFLk9NGFPqXuz2uslfXzl7Hku/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "so normal evidence will not be enough.",
+                "line": 147,
+                "start_time": "0-09-06.790000",
+                "end_time": "0-09-08.630000",
+                "url": "https://drive.google.com/file/d/1Jrycgi7tedz8F8FR3dAaFerB96OmD3y9/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "they both belonged to the Cult.",
-                "line": 261,
-                "start_time": "0-17-44.170000",
-                "end_time": "0-17-46.170000",
-                "url": "https://drive.google.com/file/d/15T7-bpcX34kDCI9IrqtQ6CTcYojqgA4x/view?usp=drivesdk"
+                "subtitle": "Yeah, I know.",
+                "line": 148,
+                "start_time": "0-09-08.790000",
+                "end_time": "0-09-10.130000",
+                "url": "https://drive.google.com/file/d/1uvEXbJfF4e0p0HWiss_SrzMFe2m4C8QP/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "But I don't know any more than that.",
-                "line": 262,
-                "start_time": "0-17-46.920000",
-                "end_time": "0-17-48.830000",
-                "url": "https://drive.google.com/file/d/1F6CJ630Lts3rCGJZSgwpZp99Yq9Qqqj3/view?usp=drivesdk"
+                "subtitle": "Even Father broke his usual silence to give me a stern warning.",
+                "line": 149,
+                "start_time": "0-09-10.460000",
+                "end_time": "0-09-13.170000",
+                "url": "https://drive.google.com/file/d/19NQMObSpbS2JOvXDHndJxOPu0DlLHNzb/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "The evidence has been covered up.",
-                "line": 263,
-                "start_time": "0-17-49.210000",
-                "end_time": "0-17-50.750000",
-                "url": "https://drive.google.com/file/d/1KIBsptRGlcB5WUM5pWmHNeHzfK8f7nZ-/view?usp=drivesdk"
+                "subtitle": "He's all, \"If you want to tie the Divine Teachings to the Cult of Diablos,",
+                "line": 150,
+                "start_time": "0-09-14.040000",
+                "end_time": "0-09-17.210000",
+                "url": "https://drive.google.com/file/d/1MoHeoQOcB_UeApVHxzOF5zOhi-vB19sD/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "And we can't even find a way to get back into the place they call the Sanctuary.",
-                "line": 264,
-                "start_time": "0-17-50.750000",
-                "end_time": "0-17-54.960000",
-                "url": "https://drive.google.com/file/d/1SpZ0GkYniQZNX-zUpFqBWQd7-9hUVST2/view?usp=drivesdk"
+                "subtitle": "you're going to need to convince all our people, and the neighboring governments.\"",
+                "line": 151,
+                "start_time": "0-09-17.210000",
+                "end_time": "0-09-20.960000",
+                "url": "https://drive.google.com/file/d/1717L_pp5hR4klWQ5s8TSbyukP6xYpizg/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "And if they brand us as heretics, it's all over.",
+                "line": 152,
+                "start_time": "0-09-20.960000",
+                "end_time": "0-09-23.880000",
+                "url": "https://drive.google.com/file/d/1OL52P2v8jvXcEIAkn9QNU9GFeE-lY_CM/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "A facility of that size and scale",
-                "line": 265,
-                "start_time": "0-17-55.750000",
-                "end_time": "0-17-57.540000",
-                "url": "https://drive.google.com/file/d/1-d-aZFUH_SPs-rfNtbtfvLa_XBMSODZE/view?usp=drivesdk"
+                "subtitle": "Father keeps insisting that I not mess with the Divine Teachings.",
+                "line": 153,
+                "start_time": "0-09-24.080000",
+                "end_time": "0-09-27.210000",
+                "url": "https://drive.google.com/file/d/1zdpY_fJ-erSIAnrcRfntUxqubPkriCkA/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "couldn't possibly be kept hidden without considerable influence in the public sphere.",
-                "line": 266,
-                "start_time": "0-17-57.540000",
-                "end_time": "0-18-01",
-                "url": "https://drive.google.com/file/d/1hKlmVbHCjNr5ZMDnGLqkBZcle-mD429c/view?usp=drivesdk"
+                "subtitle": "How in the world does he plan to put a stop to all the chaos the Cult of Diablos has caused?",
+                "line": 154,
+                "start_time": "0-09-28.080000",
+                "end_time": "0-09-32.210000",
+                "url": "https://drive.google.com/file/d/1rVFVdV5jU7IWmzeurSn3NGm-UpYv7vF3/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "And if we were looking for an organization that actually has that kind of power and influence...",
-                "line": 267,
-                "start_time": "0-18-01.460000",
-                "end_time": "0-18-06.040000",
-                "url": "https://drive.google.com/file/d/1d4rlMMHikbH4C0xnRVXyOQ9XZESGm8z7/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Forget diplomacy!",
-                "line": 268,
-                "start_time": "0-18-06.380000",
-                "end_time": "0-18-07.580000",
-                "url": "https://drive.google.com/file/d/1UxZbq7jCoaTYrnNPt97CtwZll6_53LPe/view?usp=drivesdk"
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "I believe he plans to ignore it as he always has.",
+                "line": 155,
+                "start_time": "0-09-32.710000",
+                "end_time": "0-09-35.170000",
+                "url": "https://drive.google.com/file/d/13j1BBiqQMleAqjGkEXAKO9dZlnuEgIFD/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "We need to investigate the Divine Teachings!",
-                "line": 269,
-                "start_time": "0-18-07.580000",
-                "end_time": "0-18-09.500000",
-                "url": "https://drive.google.com/file/d/1dkMcFdAHg4_xEm1RZv77vW7CEW5aHLY9/view?usp=drivesdk"
+                "subtitle": "\"Always has\"?",
+                "line": 156,
+                "start_time": "0-09-35.790000",
+                "end_time": "0-09-37.420000",
+                "url": "https://drive.google.com/file/d/1RKcSviBgMlC4OQVUdbvwrvCPDTDloUc4/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "Just my own speculation.",
+                "line": 157,
+                "start_time": "0-09-37.420000",
+                "end_time": "0-09-39.210000",
+                "url": "https://drive.google.com/file/d/1RBE1zYVKxAFCzpuFdHs-_24CKZfXk-vI/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "Please forget I said anything.",
+                "line": 158,
+                "start_time": "0-09-39.210000",
+                "end_time": "0-09-40.540000",
+                "url": "https://drive.google.com/file/d/1ZOM1OR1Fu_mdGXshL-0-Xa2DkkODfwQS/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "If we tie this to the incident at the capital and say we're trying to find the cause of it,",
-                "line": 270,
-                "start_time": "0-18-09.500000",
-                "end_time": "0-18-12.790000",
-                "url": "https://drive.google.com/file/d/1L9tGHd36v-7WyE6XSLbIVRO_2g2RcEoK/view?usp=drivesdk"
+                "subtitle": "Fine, whatever.",
+                "line": 159,
+                "start_time": "0-09-41.080000",
+                "end_time": "0-09-42.290000",
+                "url": "https://drive.google.com/file/d/1A6r1S1IRC7wMN--uHkxaVLCu9KKxwcbN/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "even they can't brush us off-",
-                "line": 271,
-                "start_time": "0-18-12.790000",
-                "end_time": "0-18-14.130000",
-                "url": "https://drive.google.com/file/d/19UoAoyRcr6XcIMZxWhJQTGJw0S6TMmCo/view?usp=drivesdk"
+                "subtitle": "Anyway, Iris said something that's been bothering me.",
+                "line": 160,
+                "start_time": "0-09-42.670000",
+                "end_time": "0-09-45.380000",
+                "url": "https://drive.google.com/file/d/1FDaGS5auPO_VbzySJzyYAxDRIKvz4LAe/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "I have suggested the same thing to Father-",
-                "line": 272,
-                "start_time": "0-18-14.500000",
-                "end_time": "0-18-16.630000",
-                "url": "https://drive.google.com/file/d/18AmvwNIH5wdvYcElJp3bAwYr3KCTGVrk/view?usp=drivesdk"
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "She had an audience with King Oriana, but he seemed somewhat vacant.",
+                "line": 161,
+                "start_time": "0-09-45.880000",
+                "end_time": "0-09-49.960000",
+                "url": "https://drive.google.com/file/d/1rnWWgXi2dP2JkWm0Hgf2DaRBOfq4gfMO/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "I mean, His Majesty.",
-                "line": 273,
-                "start_time": "0-18-16.630000",
-                "end_time": "0-18-18.500000",
-                "url": "https://drive.google.com/file/d/1yjkBvjPrg1YfsZGGvuLUrUOe0uB2QXHf/view?usp=drivesdk"
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "\"Vacant\"?",
+                "line": 162,
+                "start_time": "0-09-49.960000",
+                "end_time": "0-09-51.170000",
+                "url": "https://drive.google.com/file/d/1ifJbSZl1FuS7BAtuDKZe7basVII9aEDg/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "But he always gives me the same answer: \"Don't make a move.\"",
-                "line": 274,
-                "start_time": "0-18-19.500000",
-                "end_time": "0-18-22.420000",
-                "url": "https://drive.google.com/file/d/1TfYAFVtstaXiEtsb7HsrEoZRa2iabu6b/view?usp=drivesdk"
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "It makes sense that he would be distracted by his daughter's act of violence,",
+                "line": 163,
+                "start_time": "0-09-51.710000",
+                "end_time": "0-09-54.750000",
+                "url": "https://drive.google.com/file/d/1l8thaBc7WvR0a7-gvSNKkqLSvBmYF548/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "but Iris said it wasn't like that.",
+                "line": 164,
+                "start_time": "0-09-54.750000",
+                "end_time": "0-09-56.880000",
+                "url": "https://drive.google.com/file/d/1l_C_0ki0DswziRDaQNK8wrG-Iut4a6iR/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "And apparently there was a sweet smell.",
+                "line": 165,
+                "start_time": "0-09-57.420000",
+                "end_time": "0-09-59.500000",
+                "url": "https://drive.google.com/file/d/1tHRmVEqBlXI_v0o2gJ-tcstaMU5xLM5O/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "It may already be too late.",
+                "line": 166,
+                "start_time": "0-10-00.830000",
+                "end_time": "0-10-02.920000",
+                "url": "https://drive.google.com/file/d/1g7ANsESBf3QEUUYCNZO5auca5vCi_nv7/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "The Cult is still out there working its evil.",
+                "line": 167,
+                "start_time": "0-10-04.500000",
+                "end_time": "0-10-06.580000",
+                "url": "https://drive.google.com/file/d/1doJT8yANDX7--ydUVc_Bf3t8MMq49uYU/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "The way Father does things, eventually they'll get to our kingdom, too.",
+                "line": 168,
+                "start_time": "0-10-07",
+                "end_time": "0-10-10.040000",
+                "url": "https://drive.google.com/file/d/1pcJwskfcdfNEujtV5-MDkA0OwIAIcO_N/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "Might I ask, where does this stairway lead?",
+                "line": 169,
+                "start_time": "0-10-13.380000",
+                "end_time": "0-10-16.710000",
+                "url": "https://drive.google.com/file/d/1ZknLlTFy_j_Pd0bOx7tJTTz_tmDuMQd3/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "To an entrance to the Royal Capital's underground passages.",
+                "line": 170,
+                "start_time": "0-10-16.710000",
+                "end_time": "0-10-19.460000",
+                "url": "https://drive.google.com/file/d/1xdjfA8KHGk9TGePugIdwabQcdIGZcHsq/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "But you already know all about those.",
+                "line": 171,
+                "start_time": "0-10-20.170000",
+                "end_time": "0-10-21.960000",
+                "url": "https://drive.google.com/file/d/1QI5Vm-RrPMcAQ_46DhXAl5BIzaiDp8_P/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "Yes, you mean the underground labyrinth built across the entire Capital ages ago,",
+                "line": 172,
+                "start_time": "0-10-22.380000",
+                "end_time": "0-10-27.040000",
+                "url": "https://drive.google.com/file/d/11I7HlS2D2f6sb1OSyCH7u6z5NtFkDEBu/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "allegedly to help the royal family escape.",
+                "line": 173,
+                "start_time": "0-10-27.040000",
+                "end_time": "0-10-29.960000",
+                "url": "https://drive.google.com/file/d/1vUXJ_igkfcl5py1d0CW8fZEfTBhrgZ3s/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "A labyrinth...",
+                "line": 174,
+                "start_time": "0-10-30.460000",
+                "end_time": "0-10-31.670000",
+                "url": "https://drive.google.com/file/d/17Mcw1E9wra_SINbHhzS0bHaCY6nR0H_C/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "Yeah, it is.",
+                "line": 175,
+                "start_time": "0-10-31.880000",
+                "end_time": "0-10-32.920000",
+                "url": "https://drive.google.com/file/d/1g0XLc61mcReIlJ3FQwYlJNgvnwjjZZ9u/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "All the maps, keys, codes, and everything were lost a long time ago,",
+                "line": 176,
+                "start_time": "0-10-32.920000",
+                "end_time": "0-10-36.460000",
+                "url": "https://drive.google.com/file/d/1_MlnrbzixoWELE5q87KeXAAkG1c0bRfT/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "so now it is nothing but a giant maze.",
+                "line": 177,
+                "start_time": "0-10-36.460000",
+                "end_time": "0-10-38.540000",
+                "url": "https://drive.google.com/file/d/1CvXr-JLyxFgFaTN30HaFV47vs6qIS_Gz/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "So why are we heading to these passages now?",
+                "line": 178,
+                "start_time": "0-10-38.540000",
+                "end_time": "0-10-40.790000",
+                "url": "https://drive.google.com/file/d/1ZlMqETX-3qg9av4MKo2N51-wwzn8pxWk/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "To dispose of your body.",
+                "line": 179,
+                "start_time": "0-10-41.170000",
+                "end_time": "0-10-43.130000",
+                "url": "https://drive.google.com/file/d/1UZF7D-xqMei18hlrbzfDH8SrsJHmACoe/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "That was a joke.",
+                "line": 180,
+                "start_time": "0-10-45.170000",
+                "end_time": "0-10-46.420000",
+                "url": "https://drive.google.com/file/d/19PJTycu6o2zw6Ifp66Yiia-6Ujhs6KKL/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "You're not even a little bit scared.",
+                "line": 181,
+                "start_time": "0-10-46.880000",
+                "end_time": "0-10-48.420000",
+                "url": "https://drive.google.com/file/d/1fb-RgPtzKic4Ph6geFoPE4CitTQ6HeKn/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "Don't kill me!",
+                "line": 182,
+                "start_time": "0-10-49.330000",
+                "end_time": "0-10-51.420000",
+                "url": "https://drive.google.com/file/d/19hJZh8E7Xpgz9bxm0nnw1m-S_VwCSwCC/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "It's possible that Rose has escaped into the underground passages.",
+                "line": 183,
+                "start_time": "0-10-52.460000",
+                "end_time": "0-10-55.920000",
+                "url": "https://drive.google.com/file/d/1aawQUOPVOrb74IOZmMMVtb4YhMojlMT8/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "So we're going there to look for her.",
+                "line": 184,
+                "start_time": "0-10-56.250000",
+                "end_time": "0-10-58",
+                "url": "https://drive.google.com/file/d/1zND7J9pVq-_WU6gnug-Eud91SqPDuhYT/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "Excuse me a moment.",
+                "line": 185,
+                "start_time": "0-10-58",
+                "end_time": "0-10-59.540000",
+                "url": "https://drive.google.com/file/d/1kEl47r-oJezeKaKp0YcnTh-zTOkyeBpV/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
                 "subtitle": "What?",
-                "line": 275,
-                "start_time": "0-18-22.420000",
-                "end_time": "0-18-23.630000",
-                "url": "https://drive.google.com/file/d/10iUbxjSZwavl13VXREV-0qGfZMSezib9/view?usp=drivesdk"
+                "line": 186,
+                "start_time": "0-10-59.540000",
+                "end_time": "0-11-00.380000",
+                "url": "https://drive.google.com/file/d/1aZkRhiWiGzjBB80N8NvUZseN4oKB_MMX/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "It's what I expect from him and his \"don't rock the boat\" policies.",
-                "line": 276,
-                "start_time": "0-18-23.710000",
-                "end_time": "0-18-26.040000",
-                "url": "https://drive.google.com/file/d/1HMGN8Ri5yoleU08kKWH3WURLjmAPj7tA/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "Considering the upcoming visit of King Oriana, ruler over one of our allied nations,",
-                "line": 277,
-                "start_time": "0-18-26.500000",
-                "end_time": "0-18-30.380000",
-                "url": "https://drive.google.com/file/d/1vesw9m5kqzHdQSX54dtrw9MN3VNS3sNb/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "he probably doesn't want to cause undue trouble, especially not against the Church.",
-                "line": 278,
-                "start_time": "0-18-30.380000",
-                "end_time": "0-18-33.750000",
-                "url": "https://drive.google.com/file/d/1pIJuI79BmeNDiownOEMSRgku2yOcrFrK/view?usp=drivesdk"
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "Have you told anyone about this?",
+                "line": 187,
+                "start_time": "0-11-00.380000",
+                "end_time": "0-11-02.460000",
+                "url": "https://drive.google.com/file/d/1WvGLqK3GjZZ4QQDJ-Fh7G8mtr9XuUp03/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "Undue trouble?",
-                "line": 279,
-                "start_time": "0-18-34.420000",
-                "end_time": "0-18-35.830000",
-                "url": "https://drive.google.com/file/d/1o50Wk-CesNbOUv5SQYVapUDat9Qu8tc5/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "If we're going to spur him to action, we'll need to either find definitive evidence,",
-                "line": 280,
-                "start_time": "0-18-35.830000",
-                "end_time": "0-18-39.420000",
-                "url": "https://drive.google.com/file/d/1uFLzv7RFNqV4nJhk6ixJ6Py2c5yvHqNr/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "or show him that we have the power to overcome any difficulty that comes to the kingdom.",
-                "line": 281,
-                "start_time": "0-18-39.420000",
-                "end_time": "0-18-43.920000",
-                "url": "https://drive.google.com/file/d/1Ic_TBuAF5dERX7aOUGg8E0S15UDqkONC/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "In that sense, it's fortunate that the Bushin Festival is being held this year.",
-                "line": 282,
-                "start_time": "0-18-44.420000",
-                "end_time": "0-18-48.880000",
-                "url": "https://drive.google.com/file/d/1dU6PGP2qBVCvIjGS2vpByD2YrPcVpjQU/view?usp=drivesdk"
+                "subtitle": "Why would I tell anybody?",
+                "line": 188,
+                "start_time": "0-11-02.710000",
+                "end_time": "0-11-04.290000",
+                "url": "https://drive.google.com/file/d/1sQcl9FkeMifYeHpWg9itTf3Fg3GWxizt/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "The Bushin Festival...",
-                "line": 283,
-                "start_time": "0-18-48.880000",
-                "end_time": "0-18-50.210000",
-                "url": "https://drive.google.com/file/d/1keN5Rvexa9hiIeKdbHfiNXZYQwCpHfor/view?usp=drivesdk"
+                "subtitle": "They would try and stop me.",
+                "line": 189,
+                "start_time": "0-11-04.290000",
+                "end_time": "0-11-05.500000",
+                "url": "https://drive.google.com/file/d/1_sjJVRi_J_XFL9ZKN7G0CMRsNM7zzxoo/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "The title of repeat winner of the Bushin Festival",
-                "line": 284,
-                "start_time": "0-18-50.710000",
-                "end_time": "0-18-52.880000",
-                "url": "https://drive.google.com/file/d/109HrHniGeFsCkzUqoHkQ7LgHfVJDHdEW/view?usp=drivesdk"
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "You just said that this was a maze.",
+                "line": 190,
+                "start_time": "0-11-05.500000",
+                "end_time": "0-11-07.580000",
+                "url": "https://drive.google.com/file/d/1HYs-0fA0OgQ9CsGNVriw1eYLhp2-21-f/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "will be the best thing to win more backing from the Knight Order.",
-                "line": 285,
-                "start_time": "0-18-52.880000",
-                "end_time": "0-18-55.880000",
-                "url": "https://drive.google.com/file/d/1D-pGrUIEh-ivedtLuKDNi_qxdbCgnynx/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "And if I bring our nation the glory of victory in an international tournament,",
-                "line": 286,
-                "start_time": "0-18-56.420000",
-                "end_time": "0-19-00.210000",
-                "url": "https://drive.google.com/file/d/1i6skm_U8YoE6BAY97JIAT-w16pMhlL3_/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "then the people's support will be rock solid.",
-                "line": 287,
-                "start_time": "0-19-00.210000",
-                "end_time": "0-19-02.460000",
-                "url": "https://drive.google.com/file/d/1r_vdEjFDTIAeSjh6y8Jh8ASZ7QAHjhvH/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "And when that happens,",
-                "line": 288,
-                "start_time": "0-19-03",
-                "end_time": "0-19-04.210000",
-                "url": "https://drive.google.com/file/d/1nMPfGxQQHq0WkSomqLLCXXUudhm-v0Or/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "then His Majesty and his entire council will be forced to hear what I have to say.",
-                "line": 289,
-                "start_time": "0-19-04.210000",
-                "end_time": "0-19-08.380000",
-                "url": "https://drive.google.com/file/d/1jD4zccZEsdZEcHKNKu_tv5JO1UIzfEsS/view?usp=drivesdk"
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "How can you be sure that we'll make it back out?",
+                "line": 191,
+                "start_time": "0-11-07.580000",
+                "end_time": "0-11-09.920000",
+                "url": "https://drive.google.com/file/d/16_p0FrDhS118IPg-tBcr43ZCAqNOAZMi/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "But, Iris...",
-                "line": 290,
-                "start_time": "0-19-09",
-                "end_time": "0-19-10.330000",
-                "url": "https://drive.google.com/file/d/1h0GqLWqjsx-An3VUneA1ydhYzZIajvpn/view?usp=drivesdk"
+                "subtitle": "We just have to go back the way we came in, right?",
+                "line": 192,
+                "start_time": "0-11-09.920000",
+                "end_time": "0-11-12.380000",
+                "url": "https://drive.google.com/file/d/18AmLrIgDC_kCira37bTirgKCtpTAUZMc/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "Excuse me, would you please refrain from dragging people",
+                "line": 193,
+                "start_time": "0-11-13.080000",
+                "end_time": "0-11-15.500000",
+                "url": "https://drive.google.com/file/d/1qBslpy8j8U5512FT0EWdgw0zoWV25Z3J/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "into your spur-of-the-moment reckless schemes?",
+                "line": 194,
+                "start_time": "0-11-15.500000",
+                "end_time": "0-11-17.130000",
+                "url": "https://drive.google.com/file/d/16DmRsLfItQzIk76G0hGkOG0CzJgoiwXS/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "what if Shadow Garden or the Cult of Diablos starts plotting something again?",
-                "line": 291,
-                "start_time": "0-19-10.630000",
-                "end_time": "0-19-14.540000",
-                "url": "https://drive.google.com/file/d/1MGhKWjJ4bZZOXwVZFlNgroudAzQ-7zWI/view?usp=drivesdk"
+                "subtitle": "If you have a problem with it, you can leave.",
+                "line": 195,
+                "start_time": "0-11-18.330000",
+                "end_time": "0-11-20.540000",
+                "url": "https://drive.google.com/file/d/1QXPkXrvNHZ9lPM0JwSWsJOH7RJl7cORE/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "Babysitting is part of the job, Beta.",
+                "line": 196,
+                "start_time": "0-11-23.670000",
+                "end_time": "0-11-25.920000",
+                "url": "https://drive.google.com/file/d/1X0HuIh6f9WIuLeqUsP7-9WHCX0TlGf4R/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "What was I supposed to do back there?",
+                "line": 197,
+                "start_time": "0-11-35.500000",
+                "end_time": "0-11-38.750000",
+                "url": "https://drive.google.com/file/d/1VygBOH4zeRFT7_epuQ0iyLScR1MJPpcG/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "What was the right thing?",
+                "line": 198,
+                "start_time": "0-11-39.710000",
+                "end_time": "0-11-41.250000",
+                "url": "https://drive.google.com/file/d/1_minnYbgYeT9Jw6z_KbBi-K5OPwRlV1W/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "What would have been the best course of action?",
+                "line": 199,
+                "start_time": "0-11-41.250000",
+                "end_time": "0-11-43.080000",
+                "url": "https://drive.google.com/file/d/1_zJ-NW9hl6wakLe5_5bXwxZia6vi4kwV/view?usp=drivesdk"
+            },
+            {
+                "name": "Civil Servant",
+                "name_variant": "Civil Servant",
+                "subtitle": "Please welcome His Royal Majesty.",
+                "line": 200,
+                "start_time": "0-11-45.920000",
+                "end_time": "0-11-47.540000",
+                "url": "https://drive.google.com/file/d/1PgcaL6I52rJOGehN6zE4L9SpoeFVoQBB/view?usp=drivesdk"
+            },
+            {
+                "name": "Perv Asshat",
+                "name_variant": "Perv Asshat",
+                "subtitle": "Go on, Your Majesty.",
+                "line": 201,
+                "start_time": "0-11-58.250000",
+                "end_time": "0-11-59.540000",
+                "url": "https://drive.google.com/file/d/17ZLpMepkbH-bECefhbfUJaGjlJHhcSOa/view?usp=drivesdk"
+            },
+            {
+                "name": "Raphael Oriana",
+                "name_variant": "Raphael Oriana",
+                "subtitle": "You may raise your head...",
+                "line": 202,
+                "start_time": "0-11-59.540000",
+                "end_time": "0-12-02.880000",
+                "url": "https://drive.google.com/file/d/1c-QWSkv41PHgKjvxMO5yrGuYQt5nhO7z/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "It is good to see you again, Your Majesty.",
+                "line": 203,
+                "start_time": "0-12-03.170000",
+                "end_time": "0-12-05.210000",
+                "url": "https://drive.google.com/file/d/1gawXuUmyCO2KQ9t2z8CR4FfDe3wg_WM9/view?usp=drivesdk"
+            },
+            {
+                "name": "Raphael Oriana",
+                "name_variant": "Raphael Oriana",
+                "subtitle": "It is good to see you...",
+                "line": 204,
+                "start_time": "0-12-11.500000",
+                "end_time": "0-12-15.080000",
+                "url": "https://drive.google.com/file/d/1990RLpSacDgeumj-qa27cdERXDvx3Vr6/view?usp=drivesdk"
+            },
+            {
+                "name": "Raphael Oriana",
+                "name_variant": "Raphael Oriana",
+                "subtitle": "Rose...",
+                "line": 205,
+                "start_time": "0-12-15.790000",
+                "end_time": "0-12-18.080000",
+                "url": "https://drive.google.com/file/d/1ozR6htaBHvIcx4yKCrBF0_Tn_SXOKOAn/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "Father!",
+                "line": 206,
+                "start_time": "0-12-18.460000",
+                "end_time": "0-12-19.670000",
+                "url": "https://drive.google.com/file/d/1jwlDPsmkiz4oGl1NiwgKKnvpevDH9ZO0/view?usp=drivesdk"
+            },
+            {
+                "name": "Civil Servants",
+                "name_variant": "Civil Servants",
+                "subtitle": "Princess Rose has gone mad!",
+                "line": 207,
+                "start_time": "0-12-38.380000",
+                "end_time": "0-12-40.790000",
+                "url": "https://drive.google.com/file/d/1BvOQw6AUDY-qbaLZ340jXfcBs3t6W1eZ/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "At the time, I thought I had made a rational decision.",
+                "line": 208,
+                "start_time": "0-12-47.130000",
+                "end_time": "0-12-50.580000",
+                "url": "https://drive.google.com/file/d/1Gj3g_0CWFXU2FWekq1redGmnu4Os6mHa/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "If I could have settled the matter then and there,",
+                "line": 209,
+                "start_time": "0-12-51.960000",
+                "end_time": "0-12-54.250000",
+                "url": "https://drive.google.com/file/d/1OGsP6VYPzibw2Z_ftRg8PiihG-q4mYyS/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "we could have treated it all as a domestic affair within the Oriana Kingdom.",
+                "line": 210,
+                "start_time": "0-12-54.250000",
+                "end_time": "0-12-57.330000",
+                "url": "https://drive.google.com/file/d/1btq3jMBlCck8RCvSDniBazqIuPUCoVQx/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "We could have stopped the problem from spreading to other nations,",
+                "line": 211,
+                "start_time": "0-12-58.170000",
+                "end_time": "0-13-02.830000",
+                "url": "https://drive.google.com/file/d/1kwQXJT80Xm8Q7uMt-qb-BJYCq2RI6vsl/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "like the Midgar Kingdom.",
+                "line": 212,
+                "start_time": "0-13-02.830000",
+                "end_time": "0-13-04.580000",
+                "url": "https://drive.google.com/file/d/19sQSxoHo1XTwlm89S1xxx6jJXYAaHGx_/view?usp=drivesdk"
+            },
+            {
+                "name": "Perv Asshat",
+                "name_variant": "Perv Asshat",
+                "subtitle": "Turn yourself in before the Bushin Festival is over!",
+                "line": 213,
+                "start_time": "0-13-09.790000",
+                "end_time": "0-13-12.040000",
+                "url": "https://drive.google.com/file/d/1O0MOPOXtpO3VD8Esr1MJGgR9L7n36ATP/view?usp=drivesdk"
+            },
+            {
+                "name": "Perv Asshat",
+                "name_variant": "Perv Asshat",
+                "subtitle": "Otherwise, I'll make your father kill one of the other guests of honor!",
+                "line": 214,
+                "start_time": "0-13-12.040000",
+                "end_time": "0-13-15.790000",
+                "url": "https://drive.google.com/file/d/1DqI440owwGYmEHZ0AQ1LRXMk5tYkOylA/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "But what I did was not a rational thing to do.",
+                "line": 215,
+                "start_time": "0-13-18.250000",
+                "end_time": "0-13-20.540000",
+                "url": "https://drive.google.com/file/d/1KY3q--Qm5kfHpSt9IYNEBusl811acYvt/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I was only acting on my anger and desperation.",
+                "line": 216,
+                "start_time": "0-13-21.540000",
+                "end_time": "0-13-24.960000",
+                "url": "https://drive.google.com/file/d/1Ev4PzQ1-CvAD16hWisSYu5T0UzHa4d29/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I wanted to protect them...",
+                "line": 217,
+                "start_time": "0-13-25.880000",
+                "end_time": "0-13-27.250000",
+                "url": "https://drive.google.com/file/d/1vmbVipiuXBwfZYwLGjJtcviBTDnzue4q/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "My one and only father, my one and only homeland.",
+                "line": 218,
+                "start_time": "0-13-27.630000",
+                "end_time": "0-13-32.040000",
+                "url": "https://drive.google.com/file/d/1o864JG3vg3IwxGUwrIIJOQZ9xDSoMInx/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "Perv is just one of the Cult's disposable pawns.",
+                "line": 219,
+                "start_time": "0-13-32.540000",
+                "end_time": "0-13-34.630000",
+                "url": "https://drive.google.com/file/d/15orI5yWkOvBh0BIqIkVitbr8XzZS-rC-/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "Killing him won't change anything.",
+                "line": 220,
+                "start_time": "0-13-35.290000",
+                "end_time": "0-13-37.040000",
+                "url": "https://drive.google.com/file/d/1sdyCxNdscb31rARjLSl2BDCsTXxVtEcv/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "The Cult's roots have already spread too deep within the Oriana Kingdom.",
+                "line": 221,
+                "start_time": "0-13-37.040000",
+                "end_time": "0-13-40.130000",
+                "url": "https://drive.google.com/file/d/1LkhYJwk4AuMaxnq3LAwlnEGUNBbborbe/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "If I do manage to get away, what then?",
+                "line": 222,
+                "start_time": "0-13-45.460000",
+                "end_time": "0-13-47.290000",
+                "url": "https://drive.google.com/file/d/1hT-GCn6s_M66OOaw_z5EXdmtqLu91jim/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I'm hurting the knights of my own kingdom, pointlessly making the problem worse.",
+                "line": 223,
+                "start_time": "0-13-47.830000",
+                "end_time": "0-13-52.460000",
+                "url": "https://drive.google.com/file/d/1eHRdpX3tdLvznmuBfadI0s_n-9-OXFq2/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "What good will that do?",
+                "line": 224,
+                "start_time": "0-13-52.790000",
+                "end_time": "0-13-54.130000",
+                "url": "https://drive.google.com/file/d/1s_B92a1j1kfWsBZ-YKU3A94OjKSEPNQI/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "Maybe I should just turn myself in.",
+                "line": 225,
+                "start_time": "0-13-55.210000",
+                "end_time": "0-13-57.710000",
+                "url": "https://drive.google.com/file/d/1moxiNgbdYtAh8RVqBmA2dKQRYJNXxwSS/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "Then we can at least avoid a war.",
+                "line": 226,
+                "start_time": "0-13-58.330000",
+                "end_time": "0-14-01.210000",
+                "url": "https://drive.google.com/file/d/1-dk8MhC8LABpZNjUqQfk0e3EHJF6tYXO/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "And Father...",
+                "line": 227,
+                "start_time": "0-14-01.630000",
+                "end_time": "0-14-02.830000",
+                "url": "https://drive.google.com/file/d/1WGZppTELbG1pAHr9jAhhhsBca1Dm97AA/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "Would you keep believing in me, come what may?",
+                "line": 228,
+                "start_time": "0-14-08.710000",
+                "end_time": "0-14-12.130000",
+                "url": "https://drive.google.com/file/d/1VM8uWuJ8aEAAJMEtuRQB3spmeLjOvolb/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "Okay, I will.",
+                "line": 229,
+                "start_time": "0-14-12.460000",
+                "end_time": "0-14-14.710000",
+                "url": "https://drive.google.com/file/d/1e4Ng8PmQPTVZaRqIHmyqgVmPrkJMdme4/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "Oh, Cid, surely you know what's happened by now.",
+                "line": 230,
+                "start_time": "0-14-16.540000",
+                "end_time": "0-14-20.380000",
+                "url": "https://drive.google.com/file/d/139eQROnpacKLbeQ2z4cgouZPiZuWvtmz/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "Do you still believe in me?",
+                "line": 231,
+                "start_time": "0-14-21.170000",
+                "end_time": "0-14-24.380000",
+                "url": "https://drive.google.com/file/d/1KiH8f3nLrjiiNEgsaEJQKmbvZN7rDneO/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I wish I could eliminate Perv and his ilk, and get my father back.",
+                "line": 232,
+                "start_time": "0-14-26.580000",
+                "end_time": "0-14-30.130000",
+                "url": "https://drive.google.com/file/d/1D_Y-Zf6Vt5Kz6ek_pA53RCtfwje_BUZW/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "Then I'd marry you and live happily ever after.",
+                "line": 233,
+                "start_time": "0-14-30.670000",
+                "end_time": "0-14-32.380000",
+                "url": "https://drive.google.com/file/d/1_4zkxmDw4zpfj77_rwPuyoB2tzAqEOQE/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "If only such fairy tale endings were real...",
+                "line": 234,
+                "start_time": "0-14-33.170000",
+                "end_time": "0-14-35.580000",
+                "url": "https://drive.google.com/file/d/1ch9t-b-Zhgg5kxAdLvI3xHhLi8k1Rgah/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "But in reality, I'm possessed.",
+                "line": 235,
+                "start_time": "0-14-40.670000",
+                "end_time": "0-14-42.580000",
+                "url": "https://drive.google.com/file/d/1un2MMF4CkNN9HXSCyUK36NZ2LwX5jV_3/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "None of my dreams were ever meant to come true.",
+                "line": 236,
+                "start_time": "0-14-43.170000",
+                "end_time": "0-14-46.460000",
+                "url": "https://drive.google.com/file/d/1jn73nWt6rRmWqq1CGjrN5-NpSbieiUmb/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "The \"Moonlight Sonata\"?",
+                "line": 237,
+                "start_time": "0-15-04",
+                "end_time": "0-15-05.210000",
+                "url": "https://drive.google.com/file/d/1nmgFBFY5FT5xl1L4L3iPLaqq4nCdq7ju/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "It's you...",
+                "line": 238,
+                "start_time": "0-15-51.670000",
+                "end_time": "0-15-52.880000",
+                "url": "https://drive.google.com/file/d/1cn_vMfzL7EpvnjwUmhyf1VA1Up_E8vtz/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "Shadow!",
+                "line": 239,
+                "start_time": "0-15-54.380000",
+                "end_time": "0-15-55.580000",
+                "url": "https://drive.google.com/file/d/1UuCqF3jGcD9xWB8v209x-vXt0a7_8l1d/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I've heard the \"Moonlight Sonata\" many times,",
+                "line": 240,
+                "start_time": "0-16-25.670000",
+                "end_time": "0-16-27.710000",
+                "url": "https://drive.google.com/file/d/1HWb09_uS_lsSJx2_MILXc8rP1DW-K4nI/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "but that is without a doubt the best performance I've ever experienced.",
+                "line": 241,
+                "start_time": "0-16-27.710000",
+                "end_time": "0-16-30.170000",
+                "url": "https://drive.google.com/file/d/1Wg97cc701VFX76b2sNijpdn1SuJZGd70/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Shadow",
+                "subtitle": "What do you hope to accomplish?",
+                "line": 242,
+                "start_time": "0-16-31.170000",
+                "end_time": "0-16-32.920000",
+                "url": "https://drive.google.com/file/d/10GAn66H9GCSqs_1GmMzRH25sH0AHoVk3/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I wanted to protect them.",
+                "line": 243,
+                "start_time": "0-16-39.380000",
+                "end_time": "0-16-41.830000",
+                "url": "https://drive.google.com/file/d/15IB1HxccNPnO1Jn5DKG8D2bkJE5DcJhw/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "But I couldn't...",
+                "line": 244,
+                "start_time": "0-16-43.290000",
+                "end_time": "0-16-44.500000",
+                "url": "https://drive.google.com/file/d/1dhu7hil1AcRLYWsP5lAFk7lvXpaZWLOX/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I couldn't do anything.",
+                "line": 245,
+                "start_time": "0-16-44.830000",
+                "end_time": "0-16-46.290000",
+                "url": "https://drive.google.com/file/d/1q0Mz3SisxoKv50BD59frs4iwSgZnv9wV/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Shadow",
+                "subtitle": "And you would let it end there?",
+                "line": 246,
+                "start_time": "0-16-46.710000",
+                "end_time": "0-16-48.210000",
+                "url": "https://drive.google.com/file/d/1Pa3RqVw4yMfLQnvyIo_LY-qCUwa0e211/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Shadow",
+                "subtitle": "You would put down your sword and stop fighting?",
+                "line": 247,
+                "start_time": "0-16-49.710000",
+                "end_time": "0-16-52.500000",
+                "url": "https://drive.google.com/file/d/1VZ7Rp-8WYykv3nnpRM0xn5baWmQAHgRq/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "It's not like I wanted it to end this way!",
+                "line": 248,
+                "start_time": "0-16-53.040000",
+                "end_time": "0-16-55.630000",
+                "url": "https://drive.google.com/file/d/1WVZaibsOqd3_HyYwM5pB-4l9z6RTPTnG/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I wanted to win the brightest future for everyone!",
+                "line": 249,
+                "start_time": "0-16-56.210000",
+                "end_time": "0-16-58.330000",
+                "url": "https://drive.google.com/file/d/1PiiyU03P3J75FAJAr5KKZ5b6OK4LwDlt/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Shadow",
+                "subtitle": "If you have any desire to keep up the fight...",
+                "line": 250,
+                "start_time": "0-17-00.580000",
+                "end_time": "0-17-03.290000",
+                "url": "https://drive.google.com/file/d/123HJ4jfz1sfMUNk62ZRTxeGfah1bxP8-/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Shadow",
+                "subtitle": "I will give you power.",
+                "line": 251,
+                "start_time": "0-17-04.330000",
+                "end_time": "0-17-05.960000",
+                "url": "https://drive.google.com/file/d/1jauNZECByIC38MOwKmCYdJixeMcsKFAo/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "If I use that power...",
+                "line": 252,
+                "start_time": "0-17-08.920000",
+                "end_time": "0-17-10.580000",
+                "url": "https://drive.google.com/file/d/1TnGh62dpv_JWorm5M9YOV-MTvzfS5uOY/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "will I be able to change the future?",
+                "line": 253,
+                "start_time": "0-17-11.790000",
+                "end_time": "0-17-13.750000",
+                "url": "https://drive.google.com/file/d/1wC0j7gEyGPSBzTnCrvFDop3exOt1iNDO/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Shadow",
+                "subtitle": "That depends on you.",
+                "line": 254,
+                "start_time": "0-17-14.500000",
+                "end_time": "0-17-15.960000",
+                "url": "https://drive.google.com/file/d/1Ew7tIgEC1iIiXwnckJtjt5bIsjM9fkgH/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I...",
+                "line": 255,
+                "start_time": "0-17-17.750000",
+                "end_time": "0-17-18.960000",
+                "url": "https://drive.google.com/file/d/1UFwBLXqv50RZamoL55tQA9QjAIkyeUNk/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I am the Princess of Oriana, and as such, there are things that I must do!",
+                "line": 256,
+                "start_time": "0-17-18.960000",
+                "end_time": "0-17-22.500000",
+                "url": "https://drive.google.com/file/d/1_jRCOHoAyPB7cQPvg26AurEkcJqbEybs/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "As Rose Oriana, there are hopes I want to keep alive!",
+                "line": 257,
+                "start_time": "0-17-22.500000",
+                "end_time": "0-17-25.460000",
+                "url": "https://drive.google.com/file/d/1tHxvYLemS5U4l94Lc57WuBFXkVR3_YjB/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I want the power to achieve that!",
+                "line": 258,
+                "start_time": "0-17-25.790000",
+                "end_time": "0-17-27.830000",
+                "url": "https://drive.google.com/file/d/1rTab777vXS7PtRefB_S1JPvxkN_-cSbA/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "What's happening?",
+                "line": 259,
+                "start_time": "0-17-30.460000",
+                "end_time": "0-17-31.670000",
+                "url": "https://drive.google.com/file/d/1tGYTcFr0SgXH6muodEhbD3IhdipS2K29/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "Incredible...",
+                "line": 260,
+                "start_time": "0-17-36.960000",
+                "end_time": "0-17-38.170000",
+                "url": "https://drive.google.com/file/d/1DHWE6k9g6kdca6dO8_zDFev62o2xJiJB/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "This is Shadow's magic?",
+                "line": 261,
+                "start_time": "0-17-38.380000",
+                "end_time": "0-17-40.210000",
+                "url": "https://drive.google.com/file/d/18Lhz95Rl4kLdQ0MN5sAKqXNShBpR1x-H/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Shadow",
+                "subtitle": "Rise up.",
+                "line": 262,
+                "start_time": "0-17-40.960000",
+                "end_time": "0-17-42.210000",
+                "url": "https://drive.google.com/file/d/1JFYcBrhMeqY4HAScHaNmqVIbNsgvV4vy/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Shadow",
+                "subtitle": "And prove to me that you are willing to keep up the fight.",
+                "line": 263,
+                "start_time": "0-17-42.92000",
+                "end_time": "0-17-46.500000",
+                "url": "https://drive.google.com/file/d/1jqpXbyEwaS4QGUkCI5KCtd2omfbyK5M_/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Shadow",
+                "subtitle": "Never forget:",
+                "line": 264,
+                "start_time": "0-17-47.580000",
+                "end_time": "0-17-48.790000",
+                "url": "https://drive.google.com/file/d/1nkhSO5X6DJIbGwTu59jWv2uXA0VdS-Jc/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Shadow",
+                "subtitle": "True strength lies not in one's power, but in one's way of being.",
+                "line": 265,
+                "start_time": "0-17-49",
+                "end_time": "0-17-53.380000",
+                "url": "https://drive.google.com/file/d/1yVOxadyeSATtpq6n5GirEsS3UoGhYvqW/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "Those uniforms...",
+                "line": 266,
+                "start_time": "0-18-03.080000",
+                "end_time": "0-18-04.500000",
+                "url": "https://drive.google.com/file/d/1M697DqacjhvlURnImf5hx5v2JyfkCK7A/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "So you belong to the Cult of Diablos.",
+                "line": 267,
+                "start_time": "0-18-04.670000",
+                "end_time": "0-18-06.630000",
+                "url": "https://drive.google.com/file/d/1yAm5hs1_GVQ5HBZ-pSxy2TrCD3tOR1NU/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "The fact that you are appearing here, at this particular moment means...",
+                "line": 268,
+                "start_time": "0-18-09.330000",
+                "end_time": "0-18-12.540000",
+                "url": "https://drive.google.com/file/d/1AZtyfolGfnsUNvmXspa3eaYfIRJDcnJO/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "Shadow...",
+                "line": 269,
+                "start_time": "0-18-20.130000",
+                "end_time": "0-18-21.330000",
+                "url": "https://drive.google.com/file/d/1dLPTN7VpY7o7B8JmKehPHv1J5vVY3pck/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "He is a ray of moonlight that pierces the darkness.",
+                "line": 270,
+                "start_time": "0-18-21.830000",
+                "end_time": "0-18-24.500000",
+                "url": "https://drive.google.com/file/d/1vNcQ0a8pYYiNaqm-zhoEvKSC74qID6UD/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "If I could have my wish, I, too...",
+                "line": 271,
+                "start_time": "0-18-25.290000",
+                "end_time": "0-18-27.500000",
+                "url": "https://drive.google.com/file/d/15A7B_bc4O6jQVIlsnSdKBgvX8kgOOTic/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "They have been operating behind the scenes at every major event.",
-                "line": 292,
-                "start_time": "0-19-15.540000",
-                "end_time": "0-19-19.290000",
-                "url": "https://drive.google.com/file/d/11OogwOamBao-W8Fn37_9Io5C6MWxiesI/view?usp=drivesdk"
+                "subtitle": "What was that enormous burst of magical energy?",
+                "line": 272,
+                "start_time": "0-18-30.330000",
+                "end_time": "0-18-32.170000",
+                "url": "https://drive.google.com/file/d/1vOinpHKcbeCPKRBl-b9WED6_v8KRM-iU/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "They could be at the Bushin Festival, too.",
-                "line": 293,
-                "start_time": "0-19-19.710000",
-                "end_time": "0-19-21.330000",
-                "url": "https://drive.google.com/file/d/1VBkQkZl8ULS2hrDu7K6n_1GpCxxMjH2n/view?usp=drivesdk"
+                "subtitle": "Rose!",
+                "line": 273,
+                "start_time": "0-18-38.960000",
+                "end_time": "0-18-40.170000",
+                "url": "https://drive.google.com/file/d/1xAKowgkK5I_Andfcr28DVnaczxohD3DA/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
                 "subtitle": "Alexia...",
+                "line": 274,
+                "start_time": "0-18-41.330000",
+                "end_time": "0-18-42.540000",
+                "url": "https://drive.google.com/file/d/1HwbNEQDS0CvtW9NtL5CElBfdXuSjwddX/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "Look at you!",
+                "line": 275,
+                "start_time": "0-18-42.960000",
+                "end_time": "0-18-44.210000",
+                "url": "https://drive.google.com/file/d/1jTDDlzAh-s6ZiRXD2wm1SlCL2R4cV26x/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "What was that burst of magic?",
+                "line": 276,
+                "start_time": "0-18-44.880000",
+                "end_time": "0-18-46.380000",
+                "url": "https://drive.google.com/file/d/1DXpmyfJQ9lNjuv_KqGDOe2taEGOFK-CM/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "Rose?",
+                "line": 277,
+                "start_time": "0-18-47.040000",
+                "end_time": "0-18-48.250000",
+                "url": "https://drive.google.com/file/d/1rtkCzpO_zlQhJUqohwzu2m3n099-RhMT/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I have obtained power.",
+                "line": 278,
+                "start_time": "0-18-49",
+                "end_time": "0-18-50.420000",
+                "url": "https://drive.google.com/file/d/11OgwyexZC7ofgSyQmtinRFRCS-06ti-C/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I will follow the path I believe in.",
+                "line": 279,
+                "start_time": "0-18-51.210000",
+                "end_time": "0-18-53.670000",
+                "url": "https://drive.google.com/file/d/17nTSgAGaof8Wx6ZE7G9sJrkjo9TfFqRy/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "Wait a minute!",
+                "line": 280,
+                "start_time": "0-18-53.670000",
+                "end_time": "0-18-54.880000",
+                "url": "https://drive.google.com/file/d/1o6EghibulMYruKZgLqRdT4G19i4Kq0jq/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "What are you talking about?",
+                "line": 281,
+                "start_time": "0-18-55.170000",
+                "end_time": "0-18-56.420000",
+                "url": "https://drive.google.com/file/d/14a4DMOC72Xn01tSC3GOPIu0t8ncPa0md/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "Why did you stab your fiance?",
+                "line": 282,
+                "start_time": "0-18-56.420000",
+                "end_time": "0-18-58.210000",
+                "url": "https://drive.google.com/file/d/1Ikm7s2RUo2k1X3L1QkpWKH-6DR3kMFNs/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I'm sorry.",
+                "line": 283,
+                "start_time": "0-18-58.960000",
+                "end_time": "0-19-00.170000",
+                "url": "https://drive.google.com/file/d/1VsNMyVDTuVW3EMFWsk3M9JzG6bNn-AHb/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I don't want to drag you into this.",
+                "line": 284,
+                "start_time": "0-19-00.670000",
+                "end_time": "0-19-02.250000",
+                "url": "https://drive.google.com/file/d/1AsNZ0GdHOqlXxBDg0uUocvp65qEIqqRl/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "That doesn't tell me anything!",
+                "line": 285,
+                "start_time": "0-19-02.250000",
+                "end_time": "0-19-04.040000",
+                "url": "https://drive.google.com/file/d/1qf6J81wVZQIXxGEtTY4EjEY41u3fBcCz/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "Answer the question!",
+                "line": 286,
+                "start_time": "0-19-04.040000",
+                "end_time": "0-19-05.580000",
+                "url": "https://drive.google.com/file/d/1bPx4sAb34qstEBgxWlafL6sbpif3R5Ee/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "If I tell you, you will get dragged into it.",
+                "line": 287,
+                "start_time": "0-19-08.960000",
+                "end_time": "0-19-10.880000",
+                "url": "https://drive.google.com/file/d/1Sq1LraTMTuhhnjxy69L450Qmc7J92DQW/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "Back at the Sanctuary, we promised each other.",
+                "line": 288,
+                "start_time": "0-19-12.250000",
+                "end_time": "0-19-15.130000",
+                "url": "https://drive.google.com/file/d/1BhfcjiyNODwBVqv7OYL-4KWwT3lGCQbU/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "If we're never more than spectators, someday we'll lose everything we care about.",
+                "line": 289,
+                "start_time": "0-19-15.710000",
+                "end_time": "0-19-19.960000",
+                "url": "https://drive.google.com/file/d/15-02CqY1l_qTwOl5QspQ39qRUvsSJuqw/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "That's why we promised each other that we'd protect those things together.",
+                "line": 290,
+                "start_time": "0-19-20.380000",
+                "end_time": "0-19-23.580000",
+                "url": "https://drive.google.com/file/d/1d-rVrcPAeWIXrceSKUr4m_8C8SaLgDg5/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "So how can you talk to me like this?",
+                "line": 291,
+                "start_time": "0-19-23.960000",
+                "end_time": "0-19-26.080000",
+                "url": "https://drive.google.com/file/d/1VsCgcS744gARhPFx3I80tgKrCIj8dN6H/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "Do you think I'm only good as a spectator, too?",
+                "line": 292,
+                "start_time": "0-19-26.080000",
+                "end_time": "0-19-29.170000",
+                "url": "https://drive.google.com/file/d/1-MbuCqxA885ZOONHRk7LBdU5j7NuQiCx/view?usp=drivesdk"
+            },
+            {
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I'm sorry.",
+                "line": 293,
+                "start_time": "0-19-30.630000",
+                "end_time": "0-19-31.630000",
+                "url": "https://drive.google.com/file/d/1xQUEHMEIWISifTgdlEfEXay8VQEqCTEx/view?usp=drivesdk"
+            },
+            {
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "Answer me!",
                 "line": 294,
-                "start_time": "0-19-21.330000",
-                "end_time": "0-19-22.540000",
-                "url": "https://drive.google.com/file/d/1_Jp4Z_qyNaa4mU-XhMNF90rqc6qhf9aO/view?usp=drivesdk"
+                "start_time": "0-19-31.630000",
+                "end_time": "0-19-32.920000",
+                "url": "https://drive.google.com/file/d/1UOiVnW422BWrLIIWuMAkbYI9vcN2arb-/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "You have nothing to worry about.",
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "There's no turning back for me now.",
                 "line": 295,
-                "start_time": "0-19-23.580000",
-                "end_time": "0-19-25.330000",
-                "url": "https://drive.google.com/file/d/1SJaRnyWr4Kiliq-z_zA2FBYlMlGO7z8_/view?usp=drivesdk"
+                "start_time": "0-19-33.210000",
+                "end_time": "0-19-35.080000",
+                "url": "https://drive.google.com/file/d/1hTh_LqpO9vx-OvvE4pR2a5enPHtQr7iS/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "I don't care what kind of powerful artifacts they have at their disposal.",
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "And I envy you.",
                 "line": 296,
-                "start_time": "0-19-25.750000",
-                "end_time": "0-19-29",
-                "url": "https://drive.google.com/file/d/1ufCBSho8heZDSSiEUyCWgE2_yKPjfcGn/view?usp=drivesdk"
+                "start_time": "0-19-35.080000",
+                "end_time": "0-19-36.880000",
+                "url": "https://drive.google.com/file/d/16SW1_qbAymJ50OyIz9T_K-A8mLTtBrcA/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "My sword will not be defeated.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "Why?",
                 "line": 297,
-                "start_time": "0-19-29.710000",
-                "end_time": "0-19-31.540000",
-                "url": "https://drive.google.com/file/d/1QGVyJbB_EJYBVj56zIdukejLFDQO30Qv/view?usp=drivesdk"
+                "start_time": "0-19-37.250000",
+                "end_time": "0-19-38.460000",
+                "url": "https://drive.google.com/file/d/1jjgHXPbYOovyEKMBfqtFrdSkQxnxgQWg/view?usp=drivesdk"
             },
             {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Iris, artifacts aren't the only weapons they have in their arsenal!",
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I've lost a number of things already, and I'm going to lose more.",
                 "line": 298,
-                "start_time": "0-19-32.040000",
-                "end_time": "0-19-35.420000",
-                "url": "https://drive.google.com/file/d/150Igbidza4zwOGVosuj_q51hjsMxG4La/view?usp=drivesdk"
+                "start_time": "0-19-38.750000",
+                "end_time": "0-19-42.920000",
+                "url": "https://drive.google.com/file/d/1P0SY6ephlZoyVqkhdStVupRYAckWsMaN/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "You were there, magical light engulfed the capital.",
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "Everyone will reject me, denounce me as evil.",
                 "line": 299,
-                "start_time": "0-19-35.420000",
-                "end_time": "0-19-37.630000",
-                "url": "https://drive.google.com/file/d/1XAdyCAzThDWiwzymCyEdoW2Og3uq4nvz/view?usp=drivesdk"
+                "start_time": "0-19-43.420000",
+                "end_time": "0-19-46.920000",
+                "url": "https://drive.google.com/file/d/1mNqCeuWqQADto_v7OXOUb7Yu3YyP_Tlw/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "You saw it.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "Yeah, so what?",
                 "line": 300,
-                "start_time": "0-19-37.630000",
-                "end_time": "0-19-39.080000",
-                "url": "https://drive.google.com/file/d/1CddQCoU_K6Yz9op5nmToQfdQIt2zgKmO/view?usp=drivesdk"
+                "start_time": "0-19-47.460000",
+                "end_time": "0-19-49.710000",
+                "url": "https://drive.google.com/file/d/1LAuKd7oQYF_MF1wOE7kG_kX4NtkXRxB7/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "No human being can produce that kind of power.",
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I'm sorry.",
                 "line": 301,
-                "start_time": "0-19-40",
-                "end_time": "0-19-42.250000",
-                "url": "https://drive.google.com/file/d/1YjthCBtgqnHGw9AR3X1FmpvFSH9V6HAV/view?usp=drivesdk"
+                "start_time": "0-19-50.460000",
+                "end_time": "0-19-52",
+                "url": "https://drive.google.com/file/d/1VbWbwnHLVm2tFcjyGKygoPooUYXMs-uL/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "As with what happened at the Academy,",
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I have to go.",
                 "line": 302,
-                "start_time": "0-19-42.790000",
-                "end_time": "0-19-44.460000",
-                "url": "https://drive.google.com/file/d/1ECDBmtkR5HanKPFJAD7A7-ZZ1lmSZanF/view?usp=drivesdk"
+                "start_time": "0-19-52",
+                "end_time": "0-19-53.580000",
+                "url": "https://drive.google.com/file/d/1Jo0vU3naVYY0fL8_ZYoVyq2i7gf1WXDV/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "the only explanation is that it was caused by an artifact housing enormous magical energy.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "All right, fine!",
                 "line": 303,
-                "start_time": "0-19-44.460000",
-                "end_time": "0-19-48.330000",
-                "url": "https://drive.google.com/file/d/1VZDGavB0C0LYpSM1pEQ84GIIwWPeATp6/view?usp=drivesdk"
+                "start_time": "0-19-53.580000",
+                "end_time": "0-19-54.580000",
+                "url": "https://drive.google.com/file/d/1C0CQqjamIcWBlicQWDqAm-oKgTmPcaPN/view?usp=drivesdk"
             },
             {
                 "name": "Alexia Midgar",
                 "name_variant": "Alexia Midgar",
-                "subtitle": "Iris, Shadow's power is..",
+                "subtitle": "If you won't give me the answers, I'll force them out of you!",
                 "line": 304,
-                "start_time": "0-19-48.920000",
-                "end_time": "0-19-51.330000",
-                "url": "https://drive.google.com/file/d/1QtG27Tv2T0UT5GBBLEmYRjL-LW6Q5qTF/view?usp=drivesdk"
+                "start_time": "0-19-54.580000",
+                "end_time": "0-19-56.920000",
+                "url": "https://drive.google.com/file/d/1-nFo8bACxXC7Cj3lTbx88yIDIAenWMRT/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "Besides, I saw it.",
+                "name": "Alexia Midgar",
+                "name_variant": "Alexia Midgar",
+                "subtitle": "I'm not just a spectator anymore!",
                 "line": 305,
-                "start_time": "0-19-51.330000",
-                "end_time": "0-19-53.170000",
-                "url": "https://drive.google.com/file/d/10FUkpUqdwQpb3zy7mQz4Ph6qpNd4nHlN/view?usp=drivesdk"
+                "start_time": "0-20-06.040000",
+                "end_time": "0-20-08.210000",
+                "url": "https://drive.google.com/file/d/1dGPy3RDhQhpniUG6EVPYKbfYnkM_7pfO/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "I saw them sending an artifact out of control.",
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "Alexia, when did you get to be this strong?",
                 "line": 306,
-                "start_time": "0-19-53.750000",
-                "end_time": "0-19-56.830000",
-                "url": "https://drive.google.com/file/d/1__v2gd26N6i6fcKtBl8fXnGX3I6jYUSJ/view?usp=drivesdk"
+                "start_time": "0-20-38.080000",
+                "end_time": "0-20-41.880000",
+                "url": "https://drive.google.com/file/d/1splW4KYvRgTxf1wqFgGHgEqCJuU_2jhf/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "Yes, I saw it.",
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "Miss Natsume...",
                 "line": 307,
-                "start_time": "0-19-57.830000",
-                "end_time": "0-19-59.960000",
-                "url": "https://drive.google.com/file/d/1k3SkzmeHax13F6JamWXeqcC9-BQOp6Rc/view?usp=drivesdk"
+                "start_time": "0-20-43.670000",
+                "end_time": "0-20-44.880000",
+                "url": "https://drive.google.com/file/d/1_GYjIbcncSeJwIgJyzV27-aps2Gu-2Y5/view?usp=drivesdk"
             },
             {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Iris...",
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "I'm sorry, I have to go.",
                 "line": 308,
-                "start_time": "0-20-02.750000",
-                "end_time": "0-20-03.750000",
-                "url": "https://drive.google.com/file/d/11uMiunRebgIkPVeT8VQm5Q5un69l4w9C/view?usp=drivesdk"
+                "start_time": "0-20-45.420000",
+                "end_time": "0-20-48.130000",
+                "url": "https://drive.google.com/file/d/15PCmvmml-ZoBsiuikZmTwjQr7AKUnVKK/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "Either way, I cannot run from this.",
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "I won't try to stop you.",
                 "line": 309,
-                "start_time": "0-20-04.500000",
-                "end_time": "0-20-06.710000",
-                "url": "https://drive.google.com/file/d/19BRj_1y9wWG6DsD5E_g3YXGdhDtdhfJK/view?usp=drivesdk"
+                "start_time": "0-20-50.580000",
+                "end_time": "0-20-51.920000",
+                "url": "https://drive.google.com/file/d/1gwDhW6TR4IEgdRQwvKJGtIuz6q2JSXja/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "If they appear at the Bushin Festival, we merely have to defeat them:",
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "I don't have the right to stop you.",
                 "line": 310,
-                "start_time": "0-20-07.540000",
-                "end_time": "0-20-11",
-                "url": "https://drive.google.com/file/d/1HcC784xFA5SLprWwh507_8zp9eXrkbc1/view?usp=drivesdk"
+                "start_time": "0-20-53.750000",
+                "end_time": "0-20-56.670000",
+                "url": "https://drive.google.com/file/d/1cz-NeBDX6xnQNvpBuj_yHvz9J7_y_CPm/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "the Cult, and Shadow Garden.",
+                "name": "Rose Oriana",
+                "name_variant": "Rose Oriana",
+                "subtitle": "Miss Natsume?",
                 "line": 311,
-                "start_time": "0-20-11",
-                "end_time": "0-20-13.710000",
-                "url": "https://drive.google.com/file/d/17H7P4Gvshm-tIcc_MkvfhTr2QeWx8fNR/view?usp=drivesdk"
+                "start_time": "0-20-57.130000",
+                "end_time": "0-20-58.460000",
+                "url": "https://drive.google.com/file/d/1_YLAe2KD7gTkfOScmIrNd_sfZhBXY4xa/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "By the way, Alexia.",
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "But I am a little surprised.",
                 "line": 312,
-                "start_time": "0-20-16.170000",
-                "end_time": "0-20-17.540000",
-                "url": "https://drive.google.com/file/d/1RiUG17BjumuTQ_-VMY281NfBpe6vsiE6/view?usp=drivesdk"
+                "start_time": "0-20-59",
+                "end_time": "0-21-00.830000",
+                "url": "https://drive.google.com/file/d/1ULwR1XGk83nsMi1R6oOsUc3dAntnM8SR/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "Might I ask why you went after them in the Sacred Land?",
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "I suppose even fools try in their own foolish way to find the best solutions.",
                 "line": 313,
-                "start_time": "0-20-17.790000",
-                "end_time": "0-20-20.460000",
-                "url": "https://drive.google.com/file/d/12WySfRrOX-F0HbuRVbOH42c04tBrt2r0/view?usp=drivesdk"
+                "start_time": "0-21-01.290000",
+                "end_time": "0-21-03.880000",
+                "url": "https://drive.google.com/file/d/1BcGfSRZ25kdBD9AQ2KdBko9cx9BEMhbK/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "I only authorized you to audit the archbishop.",
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "We each have different nationalities, different affiliations, different creeds,",
                 "line": 314,
-                "start_time": "0-20-21.170000",
-                "end_time": "0-20-23.710000",
-                "url": "https://drive.google.com/file/d/1ErvsXVePJPPB6CbPeIBXaKhJNGBQeuf_/view?usp=drivesdk"
+                "start_time": "0-21-04.420000",
+                "end_time": "0-21-08.500000",
+                "url": "https://drive.google.com/file/d/1cy8FyLZbYRjWXYQ41yw2PGPtxI_-WUSh/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "Nothing else.",
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "but maybe the ideals we strive for are the same.",
                 "line": 315,
-                "start_time": "0-20-23.710000",
-                "end_time": "0-20-25",
-                "url": "https://drive.google.com/file/d/10pzNJ7q7b-coXHrNf_LwlSnL0NuegZxV/view?usp=drivesdk"
+                "start_time": "0-21-08.500000",
+                "end_time": "0-21-11.580000",
+                "url": "https://drive.google.com/file/d/1M-DP3_uRqznTsplza7rF2M7cEege0BP2/view?usp=drivesdk"
             },
             {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "When did I tell you to follow a suspicious organization and barge into questionable locations?",
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "It's possible that this alliance of ours wasn't such a bad idea after all.",
                 "line": 316,
-                "start_time": "0-20-25.210000",
-                "end_time": "0-20-30.380000",
-                "url": "https://drive.google.com/file/d/1ax_d0TMA0HCH7EeiuddcZHe4IoqRajcZ/view?usp=drivesdk"
+                "start_time": "0-21-12.290000",
+                "end_time": "0-21-16.460000",
+                "url": "https://drive.google.com/file/d/1wSepuufHuXaYk63s2vT0nzoU1PWtXicV/view?usp=drivesdk"
             },
             {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "W-well, I didn't exactly follow them because I wanted to.",
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "I wish you success.",
                 "line": 317,
-                "start_time": "0-20-30.710000",
-                "end_time": "0-20-34.460000",
-                "url": "https://drive.google.com/file/d/1jiDra6OdErhapvQ095nHcJPe9JIdjn3z/view?usp=drivesdk"
+                "start_time": "0-21-17.210000",
+                "end_time": "0-21-18.710000",
+                "url": "https://drive.google.com/file/d/1oKx8YuleLjbYFBauZsKMiftlFnbIid43/view?usp=drivesdk"
             },
             {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "It was an emergency evacuation, or...",
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "I suspect our paths will cross again before too long.",
                 "line": 318,
-                "start_time": "0-20-35",
-                "end_time": "0-20-36.920000",
-                "url": "https://drive.google.com/file/d/1lztVo7twL3f4alaNWmJmInc-5d2_06OC/view?usp=drivesdk"
+                "start_time": "0-21-19",
+                "end_time": "0-21-22.880000",
+                "url": "https://drive.google.com/file/d/11k_bKF5SguqF5tzE0u-XW_4AAICpWJcu/view?usp=drivesdk"
             },
             {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Willful negligence...",
+                "name": "Beta",
+                "name_variant": "Natsume Kafka",
+                "subtitle": "Is this what you've chosen, Lord Shadow?",
                 "line": 319,
-                "start_time": "0-20-37.170000",
-                "end_time": "0-20-39",
-                "url": "https://drive.google.com/file/d/1STu5bVjl0jNuCUZXEEwT9sXj7nesVEpI/view?usp=drivesdk"
+                "start_time": "0-21-31.250000",
+                "end_time": "0-21-36.210000",
+                "url": "https://drive.google.com/file/d/1lxq_x9AV0ul_7w4flw7S-WFLVEeytnu9/view?usp=drivesdk"
             },
             {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Oops! I think I'm getting lightheaded!",
+                "name": "Soldier",
+                "name_variant": "Soldier",
+                "subtitle": "Yes, it just disappeared.",
                 "line": 320,
-                "start_time": "0-20-39.630000",
-                "end_time": "0-20-41.420000",
-                "url": "https://drive.google.com/file/d/1MOyNOo62VeSYCIncoh6Ua8TVKzmsiS2x/view?usp=drivesdk"
+                "start_time": "0-21-40.420000",
+                "end_time": "0-21-42.710000",
+                "url": "https://drive.google.com/file/d/1ER6GndX3FIAZv7zlZQbTucA8duvoEZQq/view?usp=drivesdk"
             },
             {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "I'm off to the cold water bath!",
+                "name": "Soldier",
+                "name_variant": "Soldier",
+                "subtitle": "And in broad daylight? How strange.",
                 "line": 321,
-                "start_time": "0-20-41.420000",
-                "end_time": "0-20-43.080000",
-                "url": "https://drive.google.com/file/d/1brQU75slU_kFLePkDt0scqnAnEf4klRk/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "My Crimson Knights lost their strongest members so soon after they were organized,",
-                "line": 322,
-                "start_time": "0-20-47.880000",
-                "end_time": "0-20-51.500000",
-                "url": "https://drive.google.com/file/d/1zcaZ8e-uy5dTRtow0Y_cGmWkHVJklwoz/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "and I see no hope of rebuilding.",
-                "line": 323,
-                "start_time": "0-20-51.500000",
-                "end_time": "0-20-53.130000",
-                "url": "https://drive.google.com/file/d/16QK3K3Yp8_aT4G9oOd0M3dWnORoGz4lg/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "The Knight Order used to give me their support,",
-                "line": 324,
-                "start_time": "0-20-53.790000",
-                "end_time": "0-20-56.290000",
-                "url": "https://drive.google.com/file/d/1py4qGYGJNtOUrN4gY_XEmY47ODHKbVMl/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "but even they are skeptical of me now.",
-                "line": 325,
-                "start_time": "0-20-56.290000",
-                "end_time": "0-20-58",
-                "url": "https://drive.google.com/file/d/1d7SD7VuWKQ9LHsK_zwDgBYNnp-nPXkBe/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "I insisted on taking their best knights and then just let them die.",
-                "line": 326,
-                "start_time": "0-20-58.880000",
-                "end_time": "0-21-02.710000",
-                "url": "https://drive.google.com/file/d/1aQs-xNTS_60UiU7mzKpwx1diwrVw_DFY/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "Of course they hate me.",
-                "line": 327,
-                "start_time": "0-21-03.040000",
-                "end_time": "0-21-04.250000",
-                "url": "https://drive.google.com/file/d/16dZkHTcl3RbdyUDIYWuWdZjvpFSsPyot/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "I have to win the tournament.",
-                "line": 328,
-                "start_time": "0-21-05.080000",
-                "end_time": "0-21-06.500000",
-                "url": "https://drive.google.com/file/d/1C2q7SJ2zK8stE-v-BfeB67V2W2ZiVPoW/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "I'll show them my power and cut open a path.",
-                "line": 329,
-                "start_time": "0-21-06.960000",
-                "end_time": "0-21-09.540000",
-                "url": "https://drive.google.com/file/d/1sz-wUHxf7itQwBKZowiWfjUTKTBN8FVd/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "Just like before.",
-                "line": 330,
-                "start_time": "0-21-09.880000",
-                "end_time": "0-21-11.170000",
-                "url": "https://drive.google.com/file/d/11HUZILFULZfQKnvV0z5qNrc7HdJ9g1lW/view?usp=drivesdk"
-            },
-            {
-                "name": "Iris Midgar",
-                "name_variant": "Iris Midgar",
-                "subtitle": "It's my only choice.",
-                "line": 331,
-                "start_time": "0-21-11.580000",
-                "end_time": "0-21-12.750000",
-                "url": "https://drive.google.com/file/d/1_CJoTu9kBLq1zrszQZF57kvbI_cd_KWL/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "No...",
-                "line": 332,
-                "start_time": "0-21-42.290000",
-                "end_time": "0-21-43.290000",
-                "url": "https://drive.google.com/file/d/1CqxJMijOAOqdXBG059WzRpCZJEH-CeYX/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "His fencing that day...",
-                "line": 333,
-                "start_time": "0-21-44.040000",
+                "start_time": "0-21-42.830000",
                 "end_time": "0-21-45.460000",
-                "url": "https://drive.google.com/file/d/1hOdPin4LWQTXFIASrj27FRxJYvEX7IP1/view?usp=drivesdk"
+                "url": "https://drive.google.com/file/d/1T6Q4aE1rvK5EAyGzbMNRSvS4MnskXAUN/view?usp=drivesdk"
             },
             {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "That beautiful fencing...",
-                "line": 334,
-                "start_time": "0-21-47.210000",
-                "end_time": "0-21-49.210000",
-                "url": "https://drive.google.com/file/d/1mQwOSw0067gsUXFLD585bS-aQ4rnzc4n/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "A melody that echoes through the darkness...",
+                "line": 322,
+                "start_time": "0-21-46.630000",
+                "end_time": "0-21-48.670000",
+                "url": "https://drive.google.com/file/d/1Xq_67U7_8uq_p5Nn0Cr3GJYvWEVYUl2o/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "The words that spring like a song from the mouth of the Eminence in Shadow...",
+                "line": 323,
+                "start_time": "0-21-48.920000",
+                "end_time": "0-21-52.330000",
+                "url": "https://drive.google.com/file/d/1gEhFVEDowlubMF9o0XvpRqQ3bgMlr8tQ/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "Yes, I think that went quite well.",
+                "line": 324,
+                "start_time": "0-21-52.670000",
+                "end_time": "0-21-55.290000",
+                "url": "https://drive.google.com/file/d/1_1hzi5-DWSMv-XGR2C4SV8oSAzUCe_c-/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "I always knew a piano was an excellent set piece.",
+                "line": 325,
+                "start_time": "0-21-55.790000",
+                "end_time": "0-21-59.210000",
+                "url": "https://drive.google.com/file/d/1xJ46Kfrmj_7K5WyxzSNRCPILOxWhosa6/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid Kagenou",
+                "subtitle": "I really wish I had my own so I didn't have to borrow one.",
+                "line": 326,
+                "start_time": "0-21-59.580000",
+                "end_time": "0-22-02.580000",
+                "url": "https://drive.google.com/file/d/1SbNG7cI4r0ZeVPZLp85V5zOVoyLX7CsO/view?usp=drivesdk"
             }
         ]
     }
 }
-let setDoc = db.collection('data').doc('an_s1_e14').set(data['s1']);
+let setDoc = db.collection('data').doc('an_s1_e17').set(data['s1']);
 
 //let setDoc = db.collection('data').doc('ssc_p2_c3-4').set(data['p3']['c3-4']);
 
