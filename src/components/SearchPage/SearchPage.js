@@ -2994,8 +2994,8 @@ function SearchPage() {
                                     "Beta & Epsilon (Beta)": false,
                                     "Beta & Gamma (Beta)": false,
                                     "Beta & Delta & Zeta (Beta)": false,
-                                    "Beta (Fictional Zenon)": false,
-                                    "Beta (Fictional Shadow)": false,
+                                    "Fictional Zenon": false,
+                                    "Fictional Shadow": false,
                                     "checked": false,
                                     "open": false
                                 },
@@ -3276,7 +3276,7 @@ function SearchPage() {
                             "checked": false,
                             "open": false
                         },
-                        "Rapheal Oriana": {
+                        "Raphael Oriana": {
                             "checked": false,
                         }
                     }
@@ -3798,10 +3798,7 @@ function SearchPage() {
                                 "Scientist": {
                                     "checked": false
                                 },
-                                "Solider": {
-                                    "checked": false
-                                },
-                                "Spectator Woman": {
+                                "Soldier": {
                                     "checked": false
                                 },
                                 "Veteran Paladin": {
@@ -3815,6 +3812,9 @@ function SearchPage() {
                             open: false,
                             filters: '',
                             characters: {
+                                "Bandit": {
+                                    "checked": false,
+                                },
                                 "Bandits": {
                                     "checked": false,
                                 },
@@ -3920,6 +3920,9 @@ function SearchPage() {
                                 "Children": {
                                     "checked": false,
                                 },
+                                "Boy": {
+                                    "checked": false,
+                                },
                                 "Boys": {
                                     "checked": false,
                                 },
@@ -4002,12 +4005,18 @@ function SearchPage() {
                                 "Bearded Participant": {
                                     "checked": false,
                                 },
+                                "Spectator": {
+                                    "checked": false,
+                                },
                                 "Spectator A": {
                                     "checked": false,
                                 },
                                 "Spectator B": {
                                     "checked": false,
-                                }
+                                },
+                                "Spectator Woman": {
+                                    "checked": false
+                                },
                             }
                         },
                         "Knights": {
@@ -4285,84 +4294,86 @@ function SearchPage() {
     ];
 
     const nameMap = {
-        'Cid Kagenou (All)': ['Cid', 'Cid Kagenou', 'Minoru Kageno', 'Shadow', 'Stylish Ruffian Slayer', '??? (Stylish Bandit Slayer)', '??? (Cid Kagenou)',
+        'Cid Kagenou (All)': ['Cid', 'Cid Kagenou', 'Mundane Mann', 'Minoru Kageno', 'Shadow', 'Stylish Ruffian Slayer', '??? (Stylish Bandit Slayer)', '??? (Cid Kagenou)',
             '??? (Minoru Kageno)', 'Minoru Kageno', 'Nuru', '??? (Nuru)', 'Sunraku & Shadow (Shadow)', 'Cid & Sunraku (Cid)'
         ],
-        'Cid Kagenou': ['Cid', '??? (Cid Kagenou)'],
+        'Cid Kagenou': ['Cid Kagenou', 'Cid', '??? (Cid Kagenou)'],
         '??? (Shadow)': ['???? (Shadow)'],
-        'Claire Kagenou (All)': ['Claire', '??? (Claire Kagenou)', "Alexia & Claire (Claire Kagenou)"],
-        'Claire Kagenou': ['Claire', '??? (Claire Kagenou)'],
-        'Alexia Midgar (All)': ['Alexia', '????? (Alexia Midgar)', 'Shelly and Alexia (Alexia Midgar)', "??? (Alexia Midgar)", "Alexia & Claire (Alexia Midgar)", 'Alexia Midgar & Natsume Kafka (Alexia Midgar)'],
-        'Alexia Midgar': ['Alexia', 'Shelly and Alexia (Alexia Midgar)', "??? (Alexia Midgar)"],
+        'Claire Kagenou (All)': ['Claire Kagenou', 'Claire', '??? (Claire Kagenou)', "Alexia & Claire (Claire Kagenou)"],
+        'Claire Kagenou': ['Claire Kagenou', 'Claire', '??? (Claire Kagenou)'],
+        'Alexia Midgar (All)': ['Alexia Midgar', 'Alexia', '????? (Alexia Midgar)', 'Shelly and Alexia (Alexia Midgar)', "??? (Alexia Midgar)", "Alexia & Claire (Alexia Midgar)", 'Alexia Midgar & Natsume Kafka (Alexia Midgar)'],
+        'Alexia Midgar': ['Alexia Midgar', 'Alexia', 'Shelly and Alexia (Alexia Midgar)', "??? (Alexia Midgar)"],
         '??? (Alexia Midgar)': ['????? (Alexia Midgar)'],
-        'Iris Midgar': ['Iris'],
-        'Sherry Barnett (All)': ['Sherry', 'Shelly and Alexia (Sherry Barnett)'],
-        'Sherry Barnett': ['Sherry', 'Shelly and Alexia (Sherry Barnett)'],
-        'Po Tato (All)': ['Po', 'Skel & Po (Po)'],
-        'Po Tato': ['Po'],
+        'Iris Midgar': ['Iris Midgar', 'Iris'],
+        'Sherry Barnett (All)': ['Sherry Barnett', 'Sherry', 'Shelly and Alexia (Sherry Barnett)'],
+        'Sherry Barnett': ['Sherry Barnett', 'Sherry', 'Shelly and Alexia (Sherry Barnett)'],
+        'Po Tato (All)': ['Po Tato', 'Po', 'Skel & Po (Po)'],
+        'Po Tato': ['Po Tato', 'Po'],
         'Skel Etal (All)': ['Skel Etal', 'Skel & Po (Skel)'],
-        'Skel Etal': ['Skel'],
+        'Skel Etal': ['Skel Etal', 'Skel'],
         'Rose Oriana (All)': ['Rose Oriana', 'Rose', 'No.666'],
-        'Rose Oriana': ['Rose'],
+        'Rose Oriana': ['Rose Oriana', 'Rose'],
         'No. 666': ['No. 666', 'No.666'],
         'Alpha (All)': ['Alpha', '??? (Alpha)', 'None (Alpha)', 'Everyone (Alpha)', 'Alpha & Zeta (Alpha)', 'Alpha & Beta (Alpha)', 'Seven Shadows (Alpha)'],
-        'Alpha': ['??? (Alpha)', 'None (Alpha)'],
+        'Alpha': ['Alpha', '??? (Alpha)', 'None (Alpha)'],
         'Beta (All)': ['Beta', 'Natsume Kafka', 'Natsume', '??? (Natsume Kafka)', '??? (Natsume)', 'None (Beta)', 'Everyone (Beta)', 'Beta & Epsilon (Beta)', 
             'Alpha & Beta (Beta)', 'Beta & Gamma (Beta)', '??? (Beta)', 'Seven Shadows (Beta)', 'Beta & Delta & Zeta (Beta)', 'Alexia Midgar & Natsume Kafka (Natsume Kafka)',
-        'Beta (Fictional Shadow)', 'Beta (Fictional Zenon)'],
-        'Beta': ['??? (Beta)', 'None (Beta)'],
-        'Natsume Kafka': ['Natsume'],
+        'Fictional Shadow', 'Fictional Zenon'],
+        'Beta': ['Natsume Kafka', 'Beta', '??? (Beta)', 'None (Beta)'],
+        'Natsume Kafka': ['Natsume Kafka', 'Natsume'],
         '??? (Natsume Kafka)': ['??? (Natsume)'],
         'Gamma (All)': ['Gamma', 'Everyone (Gamma)', '??? (Gamma)', 'Seven Shadows (Gamma)', 'None (Gamma)', 'Beta & Gamma (Gamma)', 
             'Gamma& Epsilon & Eta (Gamma)', 'Gamma & Epsilon (Gamma)', 'Luna'],
-        'Gamma': ['??? (Gamma)', 'None (Gamma)'],
+        'Gamma': ['Gamma', '??? (Gamma)', 'None (Gamma)'],
         "Delta (All)": ['Delta', 'Everyone (Delta)', '??? (Delta)', 'Seven Shadows (Delta)', 'Delta & Zeta (Delta)', 'Beta & Delta & Zeta (Delta)'],
-        "Delta": ['??? (Delta)'],
+        "Delta": ['Delta', '??? (Delta)'],
         'Epsilon (All)': ['Epsilon', 'Everyone (Epsilon)', 'Beta & Epsilon (Epsilon)', '??? (Epsilon)', 'Seven Shadows (Epsilon)', 
             'Gamma& Epsilon & Eta (Epsilon)', 'Gamma & Epsilon (Epsilon)'],
-        'Epsilon': ['??? (Epsilon)'],
+        'Epsilon': ['Epsilon', '??? (Epsilon)'],
         'Zeta (All)': ['Zeta', 'Everyone (Zeta)', 'Alpha & Zeta (Zeta)', 'Zeta & Eta (Zeta)', '??? (Zeta)', 'Seven Shadows (Zeta)', 'Delta & Zeta (Zeta)', 'Beta & Delta & Zeta (Zeta)'],
-        'Zeta': ['??? (Zeta)'],
+        'Zeta': ['Zeta', '??? (Zeta)'],
         'Eta (All)': ['Eta', 'Everyone (Eta)', 'Zeta & Eta (Eta)', 'Seven Shadows (Eta)', '??? (Eta)', 'Gamma& Epsilon & Eta (Eta)'],
         'Gamma & Epsilon & Eta (Eta)': ['Gamma& Epsilon & Eta (Eta)'],
         'Gamma & Epsilon & Eta (Gamma)': ['Gamma& Epsilon & Eta (Gamma)'],
         'Gamma & Epsilon & Eta (Epsilon)': ['Gamma& Epsilon & Eta (Epsilon)'],
-        'Eta': ['??? (Eta)'],
+        'Eta': ['Eta', '??? (Eta)'],
         'Chi (All)': ["Chi", "Chi & Omega (Chi)", "Karen", "??? (Karen)", "No. 111", "No. 111 & No. 122 (No. 111)"],
         'Omega (All)': ["Omega", "Chi & Omega (Omega)", "Possessed (Omega)", "No. 111 & No. 122 (No. 122)", "No. 122"],
         'Lambda (All)': ['Lambda', 'Tawny Elf (Lambda)', 'None (Lambda)'],
-        'Lambda': ['None (Lambda)'],
+        'Lambda': ['Lambda', 'None (Lambda)'],
         'Diablos': ['Massive Mound of Magic'],
         'Olivier (All)': ['Olivier', 'Alpha Look-alike', '??? (Olivier)'],
-        'Olivier': ['Alpha Look-alike', '??? (Olivier)'],
+        'Olivier': ['Olivier', 'Alpha Look-alike', '??? (Olivier)'],
         'Duet (All)': ['Duet', 'Beta Look-alike'],
-        'Duet': ['Beta Look-alike'],
+        'Duet': ['Duet', 'Beta Look-alike'],
         'Pente (All)': ['Pente', 'Epsilon Look-alike'],
-        'Pente': ['Epsilon Look-alike'],
+        'Pente': ['Pente', 'Epsilon Look-alike'],
         'Freya (All)': ['Freya', '??? (Freya)'],
-        'Freya': ['??? (Freya)'],
+        'Freya': ['Freya', '??? (Freya)'],
+        'Aurora (All)': ['Aurora', '??? (Aurora)'],
+        'Aurora': ['Aurora', '??? (Aurora)'],
         'Nanigashi (All)': ['Nanigashi', '??? (Nanigashi)'],
-        'Nanigashi': ['??? (Nanigashi)'],
+        'Nanigashi': ['Nanigashi', '??? (Nanigashi)'],
         'Victoria (All)': ['Victoria', 'No. 559', '??? (Victoria)'],
-        'Victoria': ['??? (Victoria)'],
+        'Victoria': ['Victoria', '??? (Victoria)'],
         'Nu (All)': ['Nu', '93', 'No. 93', '??? (No. 93)'],
         'No. 93': ['93', 'No. 93', '??? (No. 93)'],
         'Shishiodoshi (All)': ['Shishiodoshi', 'Shishi(?)'],
         'Customer (All)': ['Customer', '??? (Customer)'],
         'Customer': ['??? (Customer)'],
         'King (All)': ['King', '??? (King)'],
-        'King': ['??? (King)'],
+        'King': ['King', '??? (King)'],
         'Joker (All)': ['Joker', '??? (Joker)'],
-        'Joker': ['??? (Joker)'],
+        'Joker': ['Joker', '??? (Joker)'],
         'Dog T-thrope Priest': ['Dog T.thrope Priest'],
         'Wethermon (All)': ['Wethermon', '??? (Wethermon)'],
-        'Wethermon': ['??? (Wethermon)'],
+        'Wethermon': ['Wethermon', '??? (Wethermon)'],
         'Sunraku (All)': ['Sunraku', '??? (Sunraku)', 'Cid & Sunraku (Sunraku)', 'Sunraku & Shadow (Sunraku)'],
-        'Sunraku': ['??? (Sunraku)'],
+        'Sunraku': ['Sunraku', '??? (Sunraku)'],
         'Mist Dragon (All)': ['Mist Dragon', '??? (Mist Dragon)', 'None (Mist Dragon)'],
-        'Mist Dragon': ['??? (Mist Dragon)', 'None (Mist Dragon)'],
+        'Mist Dragon': ['Mist Dragon', '??? (Mist Dragon)', 'None (Mist Dragon)'],
         'Templar (All)': ['Templar', '????? (Templar)'],
-        'Templar': ['????? (Templar)'],
+        'Templar': ['Templar', '????? (Templar)'],
         'Cult Member A (All)': ['Cult Member A', 'Cult Member A & B (Cult Member A)'],
         'Cult Member B (All)': ['Cult Member B', 'Cult Member A & B (Cult Member B)'],
         'Marco Granger (All)': ['Marco Granger', 'Dark Knight Trainee'],
@@ -4371,8 +4382,8 @@ function SearchPage() {
         'Sergey': ['Sergei'],
         'Bishop Drake (All)': ['Bishop Drake', 'Bishop of Orum'],
         'Curie Oso': ['Curious Noblewoman'],
-        'Annerose Nichtsehen (All)': ['Annerose', 'None (Annerose)'],
-        'Annerose Nichtsehen': ['Annerose', 'None (Annerose)'],
+        'Annerose Nichtsehen (All)': ['Annerose Nichtsehen', 'Annerose', 'None (Annerose)'],
+        'Annerose Nichtsehen': ['Annerose Nichtsehen', 'Annerose', 'None (Annerose)'],
         'Lutheran Barnett (All)': ['Lutheran Barnett', 'Sir Gaunt'],
         'None': ['']
     };

@@ -1347,7 +1347,7 @@ let data = {
             {
                 "name": "Epsilon",
                 "name_variant": "Epsilon",
-                "subtitle": "Y-you're too kind! Humble Epsilon is still nowhere near...",
+                "subtitle": "Y-You're too kind! Humble Epsilon is still nowhere near...",
                 "line": 135,
                 "start_time": "0-08-15.460000",
                 "end_time": "0-08-18.710000",

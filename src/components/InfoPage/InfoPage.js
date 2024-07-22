@@ -8436,7 +8436,7 @@ function InfoPage() {
             <h1 className="filters-header">INFORMATION</h1>
             <div className="info-content">
                 <h1 className="info-header">MEDIUMS</h1>
-                <p>Paragraphs: {formatNumber(all_info.line_count)}</p>
+                <p>Lines: {formatNumber(all_info.line_count)}</p>
                 <p>Approximate Word Count: {formatNumber(all_info.word_count)}</p>
                 <p>Character Count: {formatNumber(all_info.char_count)}</p>
                 <br />
