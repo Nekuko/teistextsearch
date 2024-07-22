@@ -19,6 +19,7 @@ export function searchAnime(keys, text, keywords, nameMap, characters = [], case
 
     // Get the list of sentences for this key
     let sentences = text[medium][season][episode];
+    console.log(medium, season, episode)
 
     // Filter the sentences based on the keywords and character names
     let filteredSentences = sentences.filter(sentence => {

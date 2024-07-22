@@ -2250,7 +2250,7 @@ function SearchPage() {
                     },
                     "v4c76": {
                         "checked": false,
-                        "title": "The Basics of Human Relationsh.i.p.s Is Abandonment Play"
+                        "title": "The Basics of Human Relationships Is Abandonment Play"
                     },
                     "v4c77": {
                         "checked": false,
@@ -2520,7 +2520,7 @@ function SearchPage() {
                     },
                     "v6c142": {
                         "checked": false,
-                        "title": "The b.l.o.o.d.y Demon King who betrayed his dream"
+                        "title": "The bloody Demon King who betrayed his dream"
                     }
                 },
                 "Volume 7": {
@@ -3209,6 +3209,23 @@ function SearchPage() {
                                     "Skel & Po (Skel)": false,
                                     "open": false,
                                     "checked": false,
+                                },
+                            },
+                            "General": {
+                                openGroup: false,
+                                checked: false,
+                                open: false,
+                                filters: '',
+                                characters: {
+                                    "Captain's Daughter": {
+                                        "checked": false,
+                                    },
+                                    "Duke's Second Son": {
+                                        "checked": false,
+                                    },
+                                    "Knight Captain": {
+                                        "checked": false,
+                                    }
                                 }
                             }
                         },
@@ -3757,6 +3774,9 @@ function SearchPage() {
                                 "Maid": {
                                     "checked": false,
                                 },
+                                "Manager": {
+                                    "checked": false,
+                                },
                                 "Margrave": {
                                     "checked": false,
                                 },
@@ -3860,6 +3880,9 @@ function SearchPage() {
                                 "Soup Stall Owner": {
                                     "checked": false,
                                 },
+                                "Sailor": {
+                                    "checked": false,    
+                                },
                                 "Staff": {
                                     "checked": false
                                 }
@@ -3956,6 +3979,9 @@ function SearchPage() {
                             filters: '',
                             characters: {
                                 "Announcer": {
+                                    "checked": false,
+                                },
+                                "Aristocrat": {
                                     "checked": false,
                                 },
                                 "Audience": {
