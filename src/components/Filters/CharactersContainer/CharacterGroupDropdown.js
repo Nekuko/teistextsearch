@@ -17,51 +17,51 @@ function CharacterGroupDropdown({
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-            if (event.target.type !== 'checkbox') {
-                // Close all open dropdowns
-                setDropdownStates((prevState) => {
-                    const updatedState = { ...prevState };
-                    setFilter('');
-                    for (const name in updatedState) {
-                        updatedState[name].open = false;
-                        updatedState[name].filters = '';
-                        // Reset other state properties as needed
-                        if (updatedState[name].groups) {
-                            for (const groupName in updatedState[name].groups) {
-                                updatedState[name].groups[groupName].open = false;
-                                // Reset other group properties as needed
-                            }
-                        }
-                        if (updatedState[name].characters) {
-                            for (const charName in updatedState[name].characters) {
-                                const character = updatedState[name].characters[charName];
-                                for (const key in character) {
-                                    if (key === 'open') {
-                                        character[key] = false;
-                                    }
-                                }
-                            }
-                        }
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        if (event.target.type !== 'checkbox') {
+          // Close all open dropdowns
+          setDropdownStates((prevState) => {
+            const updatedState = { ...prevState };
+            setFilter('');
+            for (const name in updatedState) {
+              updatedState[name].open = false;
+              updatedState[name].filters = '';
+              // Reset other state properties as needed
+              if (updatedState[name].groups) {
+                for (const groupName in updatedState[name].groups) {
+                  updatedState[name].groups[groupName].open = false;
+                  // Reset other group properties as needed
+                }
+              }
+              if (updatedState[name].characters) {
+                for (const charName in updatedState[name].characters) {
+                  const character = updatedState[name].characters[charName];
+                  for (const key in character) {
+                    if (key === 'open') {
+                      character[key] = false;
                     }
-                    return updatedState;
-                });
+                  }
+                }
+              }
             }
+            return updatedState;
+          });
         }
+      }
     };
 
     // Add event listener if the dropdown is open
     if (selectedGroup.open) {
-        document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('mousedown', handleClickOutside);
     } else {
-        document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     }
 
     return () => {
-        // Clean up event listener on component unmount or when dropdown closes
-        document.removeEventListener('mousedown', handleClickOutside);
+      // Clean up event listener on component unmount or when dropdown closes
+      document.removeEventListener('mousedown', handleClickOutside);
     };
-}, [selectedGroup.open, dropdownName, setDropdownStates]);
+  }, [selectedGroup.open, dropdownName, setDropdownStates]);
 
 
 
@@ -103,23 +103,42 @@ function CharacterGroupDropdown({
 
   // Filter subgroups based on the filter value
   const filteredGroups = Object.keys(selectedGroup.groups || {}).filter((groupName) => {
-    const groupCharacters = selectedGroup.groups[groupName].characters || {};
-    return Object.keys(groupCharacters).some((characterName) =>
-      characterName.toLowerCase().includes(filter.toLowerCase())
-    );
+    const group = selectedGroup.groups[groupName];
+    const groupCharacters = group.characters || {};
+    return groupName.toLowerCase().includes(filter.toLowerCase()) || Object.keys(groupCharacters).some((characterName) => {
+      if (Object.keys(groupCharacters[characterName]).length > 2) {
+        let charKeys = Object.keys(groupCharacters[characterName]);
+        charKeys = charKeys.some((key) => key !== "checked" && key !== "open" && key.toLowerCase().includes(filter.toLowerCase()));
+        return charKeys;
+      } else {
+        return characterName.toLowerCase().includes(filter.toLowerCase());
+      }
+      return false;
+    });
   });
 
   // Filter characters based on the filter value
-  const filteredCharacters = Object.keys(selectedGroup.characters || {}).filter((characterName) =>
-    characterName.toLowerCase().includes(filter.toLowerCase())
-  );
+  const filteredCharacters = Object.keys(selectedGroup.characters || {}).filter((characterName) => {
+    if (selectedGroup.open === true) {
+      if (Object.keys(selectedGroup.characters[characterName]).length > 2) {
+        let charKeys = Object.keys(selectedGroup.characters[characterName]);
+        charKeys = charKeys.some((key) => key !== "checked" && key !== "open" && key.toLowerCase().includes(filter.toLowerCase()));
+        return charKeys
+      } else {
+        return characterName.toLowerCase().includes(filter.toLowerCase());
+      }
+    }
+    return {};
+
+  });
+
 
   return (
-      <div className="dropdown" ref={dropdownRef}>
-          <div onClick={handleGroupClick}>
-            <span className={selectedGroup.checked ? '' : 'dimmed'}>{dropdownName}</span>
-            <FontAwesomeIcon className="dropdown-icon-main" icon={selectedGroup.open ? faChevronUp : faChevronDown} />
-          </div>
+    <div className="dropdown" ref={dropdownRef}>
+      <div onClick={handleGroupClick}>
+        <span className={selectedGroup.checked ? '' : 'dimmed'}>{dropdownName}</span>
+        <FontAwesomeIcon className="dropdown-icon-main" icon={selectedGroup.open ? faChevronUp : faChevronDown} />
+      </div>
       {selectedGroup.open && (
         <div className="dropdown-menu">
           <input
@@ -153,7 +172,7 @@ function CharacterGroupDropdown({
             </div>
           ))}
 
-          
+
         </div>
       )}
     </div>

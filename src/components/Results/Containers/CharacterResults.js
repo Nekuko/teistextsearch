@@ -92,7 +92,7 @@ function CharacterResults({ anData, sscData, esData, apoData, images, filterStat
   return (
     <div className="characters-trigger">
       <Collapsible trigger={`Characters (Total: ${totalCharacters})`}>
-        {Object.keys(combinedData).map((character, index) => {
+        {Object.keys(combinedData).sort((a, b) => combinedData[b].count - combinedData[a].count).map((character, index) => {
           const characterData = combinedData[character];
           const mediums = characterData.mediums;
           let characterImageName = character;

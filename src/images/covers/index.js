@@ -8,6 +8,9 @@ export { default as LNV6Cover } from './LNV6Cover.webp';
 export { default as ANS1Cover } from './ANS1Cover.webp';
 export { default as ANS2Cover } from './ANS2Cover.webp';
 
+export { default as KJ1Cover } from './KJ1Cover.webp';
+export { default as KJ2Cover } from './KJ2Cover.webp';
+
 export { default as SSCCover } from './SSCCover.webp';
 export { default as SSC11Cover } from './SSC1-1Cover.webp'
 export { default as SSC12Cover } from './SSC1-2Cover.webp'

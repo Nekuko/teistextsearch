@@ -783,7 +783,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
   };
 
   const getSelectedAnimeList = () => {
-    const totalEpisodes = { 'an_s1': 20, 'an_s2': 12 };
+    const totalEpisodes = { 'an_s1': 20, 'an_s2': 12, "an_s101": 17, "an_s102": 12 };
     const countEpisodes = animeCheckedItems.reduce((acc, item) => {
       const season = item.split('_e')[0];
       acc[season] = (acc[season] || 0) + 1;
@@ -791,15 +791,23 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     }, {});
 
     let newList = [];
-    if (countEpisodes['an_s1'] === totalEpisodes['an_s1'] && countEpisodes['an_s2'] === totalEpisodes['an_s2']) {
+    if (countEpisodes['an_s1'] === totalEpisodes['an_s1'] && countEpisodes['an_s2'] === totalEpisodes['an_s2'] 
+      && countEpisodes['an_s101'] === totalEpisodes['an_s101'] && countEpisodes['an_s102'] === totalEpisodes['an_s102']) {
       newList.push({ text: 'Anime', hoverText: 'Anime' });
     } else {
-      ['an_s1', 'an_s2'].forEach(season => {
+      ['an_s1', 'an_s2', 'an_s101', 'an_s102'].forEach(season => {
         const seasonNumber = season.split('_s')[1]; // Extract the season number correctly
         if (countEpisodes[season] === totalEpisodes[season]) {
-          newList.push({ text: `Anime Season ${seasonNumber}`, hoverText: `Anime Season ${seasonNumber}` });
+          if (seasonNumber === '101') {
+            newList.push({ text: `Kage-Jitsu!`, hoverText: `Kage-Jitsu!` });
+          } else if (seasonNumber === '102') {
+            newList.push({ text: `Kage-Jitsu! 2nd`, hoverText: `Kage-Jitsu! 2nd` });
+          } else {
+            newList.push({ text: `Anime Season ${seasonNumber}`, hoverText: `Anime Season ${seasonNumber}` });
+          }
+
         } else {
-          const episodes = animeCheckedItems.filter(item => item.includes(season)).map(item => parseInt(item.split('_e')[1]));
+          const episodes = animeCheckedItems.filter(item => item.split("_e")[0] === season).map(item => parseInt(item.split('_e')[1]));
           episodes.sort((a, b) => a - b);
 
           let start = episodes[0];
@@ -808,13 +816,28 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
             if (episodes[i] === end + 1) {
               end = episodes[i];
             } else {
-              newList.push({ text: `AN S${seasonNumber} E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Anime Season ${seasonNumber}, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
+              if (seasonNumber === '101') {
+                newList.push({ text: `KJ1 E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Kage-Jitsu!, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
+              } else if (seasonNumber === '102') {
+                newList.push({ text: `KJ2 E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Kage-Jitsu! 2nd, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
+              } else{
+                newList.push({ text: `AN S${seasonNumber} E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Anime Season ${seasonNumber}, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
+              }
+
+              
               start = episodes[i];
               end = start;
             }
           }
           if (start <= end) {
-            newList.push({ text: `AN S${seasonNumber} E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Anime Season ${seasonNumber}, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
+            if (seasonNumber === '101') {
+              newList.push({ text: `KJ1 E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Kage-Jitsu!, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
+            } else if (seasonNumber === '102') {
+              newList.push({ text: `KJ2 E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Kage-Jitsu! 2nd, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
+            } else {
+              newList.push({ text: `AN S${seasonNumber} E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Anime Season ${seasonNumber}, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
+            }
+            
           }
         }
       });

@@ -57,4 +57,10 @@ export { default as GlenIcon } from './GlenIcon.webp';
 export { default as MrKagenouIcon } from './MrKagenouIcon.webp';
 export { default as MrsKagenouIcon } from './MrsKagenouIcon.webp';
 export { default as RexIcon } from './RexIcon.webp';
+export { default as No664Icon } from './664Icon.webp';
+export { default as No665Icon } from './665Icon.webp';
+export { default as PervAsshatIcon } from './PervAsshatIcon.webp';
+export { default as KlausMidgarIcon } from './KlausMidgarIcon.webp';
+export { default as MordredIcon } from './MordredIcon.webp';
+export { default as RaphaelOrianaIcon } from './RaphaelOrianaIcon.webp';
 

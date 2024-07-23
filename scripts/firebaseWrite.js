@@ -10,3074 +10,2880 @@ admin.initializeApp({
 let db = admin.firestore();
 
 let data = {
-    "s1": {
-        "e17": [
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Mundane Mann",
-                "subtitle": "There's something I think you should know.",
-                "line": 1,
-                "start_time": "0-00-11.040000",
-                "end_time": "0-00-13",
-                "url": "https://drive.google.com/file/d/1ZSSFujKsEK9dFkugPIjm9M8KEqZ-u_Tk/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Mundane Mann",
-                "subtitle": "I've only shown you 22 milliwatts of my power...",
-                "line": 2,
-                "start_time": "0-00-13.500000",
-                "end_time": "0-00-16.500000",
-                "url": "https://drive.google.com/file/d/1blqIOrEwJrxIa3yFFeaB0SvH9nYT3FDr/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Mundane Mann",
-                "subtitle": "No, 32.45 grams?",
-                "line": 3,
-                "start_time": "0-00-16.960000",
-                "end_time": "0-00-19.080000",
-                "url": "https://drive.google.com/file/d/1ooUHled8ykmNquXfKyMV1OxlgkVrpbB7/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Mundane Mann",
-                "subtitle": "Three yards, eight pounds...",
-                "line": 4,
-                "start_time": "0-00-19.580000",
-                "end_time": "0-00-21.750000",
-                "url": "https://drive.google.com/file/d/1dmvdOnaNlg4H2ZFLfN5UPaLGofHeZAHR/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Mundane Mann",
-                "subtitle": "Knots? Gauss? Candelae?",
-                "line": 5,
-                "start_time": "0-00-22.290000",
-                "end_time": "0-00-25.630000",
-                "url": "https://drive.google.com/file/d/1H8zPpKsQOl1Tpzx5sRmfin36J6WJXvVC/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Mundane Mann",
-                "subtitle": "Newtons...",
-                "line": 6,
-                "start_time": "0-00-25.960000",
-                "end_time": "0-00-27.170000",
-                "url": "https://drive.google.com/file/d/1uPzA7cLEuACdVQwe2D1DbTc8ek-bWF0h/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "It's hopeless!",
-                "line": 7,
-                "start_time": "0-00-29.130000",
-                "end_time": "0-00-30.330000",
-                "url": "https://drive.google.com/file/d/1CSkKxflRvUcV3xGvWGZ9An5lCimBgawu/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "I'm getting so hung up on the right units of measure that I'm starting to confuse myself.",
-                "line": 8,
-                "start_time": "0-00-30.630000",
-                "end_time": "0-00-33.500000",
-                "url": "https://drive.google.com/file/d/1onIDqD9ColMWcGZJWoOSy12XBZc3531k/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "I need to hone the image in my mind better.",
-                "line": 9,
-                "start_time": "0-00-33.500000",
-                "end_time": "0-00-36.130000",
-                "url": "https://drive.google.com/file/d/17QpCADeKEha8FM3ysdBXvMOdqHiIdT3Y/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Hey, Cid!",
-                "line": 10,
-                "start_time": "0-00-37.290000",
-                "end_time": "0-00-38.500000",
-                "url": "https://drive.google.com/file/d/14Cm8WPTDcMV4u5e6B8ArcB2TgwjLDiUT/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "I have an offer you can't refuse! Open up!",
-                "line": 11,
-                "start_time": "0-00-38.500000",
-                "end_time": "0-00-40.420000",
-                "url": "https://drive.google.com/file/d/1rBNR35NwlynoufzCKJDj7k1AUevcVqaE/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Hey, Cid! Open up!",
-                "line": 12,
-                "start_time": "0-00-40.420000",
-                "end_time": "0-00-41.040000",
-                "url": "https://drive.google.com/file/d/1-_R89aJHCz6rE90j7dYgYcGse-jyhcsS/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "As long as people interact with one another,",
-                "line": 13,
-                "start_time": "0-00-41.040000",
-                "end_time": "0-00-42.380000",
-                "url": "https://drive.google.com/file/d/1aPyr_yFfYICPcwhrcHNd6Jf9kRnGUTAh/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Hey, Cid! Open up!",
-                "line": 13,
-                "start_time": "0-00-41.040000",
-                "end_time": "0-00-42.380000",
-                "url": "https://drive.google.com/file/d/1aPyr_yFfYICPcwhrcHNd6Jf9kRnGUTAh/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "As long as people interact with one another,",
-                "line": 14,
-                "start_time": "0-00-42.380000",
-                "end_time": "0-00-42.830000",
-                "url": "https://drive.google.com/file/d/1ua8OvSvOnEl2M9xIbJH6NVIj3aHqMwfj/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Come on, open up!",
-                "line": 14,
-                "start_time": "0-00-42.380000",
-                "end_time": "0-00-42.830000",
-                "url": "https://drive.google.com/file/d/1ua8OvSvOnEl2M9xIbJH6NVIj3aHqMwfj/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "that interaction will breed annoyance.",
-                "line": 15,
-                "start_time": "0-00-42.830000",
-                "end_time": "0-00-45",
-                "url": "https://drive.google.com/file/d/1H1VlKmtX7fJh5DWQSDjsaMiSeiB9R6d3/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Come on, open up!",
-                "line": 15,
-                "start_time": "0-00-42.830000",
-                "end_time": "0-00-45",
-                "url": "https://drive.google.com/file/d/1H1VlKmtX7fJh5DWQSDjsaMiSeiB9R6d3/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Why do people continue to seek the company of others",
-                "line": 16,
-                "start_time": "0-00-45",
-                "end_time": "0-00-46.540000",
-                "url": "https://drive.google.com/file/d/1e-pCA8HtL46vbgpY71F9ElmaID444ZXC/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Do you hear me?",
-                "line": 16,
-                "start_time": "0-00-45",
-                "end_time": "0-00-46.540000",
-                "url": "https://drive.google.com/file/d/1e-pCA8HtL46vbgpY71F9ElmaID444ZXC/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Why do people continue to seek the company of others",
-                "line": 17,
-                "start_time": "0-00-46.540000",
-                "end_time": "0-00-47.420000",
-                "url": "https://drive.google.com/file/d/1pwWBCry4eCnoqejB_oT8zlEqF996Uo2M/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Hey! Come on!",
-                "line": 17,
-                "start_time": "0-00-46.540000",
-                "end_time": "0-00-47.420000",
-                "url": "https://drive.google.com/file/d/1pwWBCry4eCnoqejB_oT8zlEqF996Uo2M/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "when they know it will be so annoying?",
-                "line": 18,
-                "start_time": "0-00-47.420000",
-                "end_time": "0-00-48.540000",
-                "url": "https://drive.google.com/file/d/1ZqBrMKa41FbFbYTGwgN8K11YIT9cHu83/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Hey! Come on!",
-                "line": 18,
-                "start_time": "0-00-47.420000",
-                "end_time": "0-00-48.540000",
-                "url": "https://drive.google.com/file/d/1ZqBrMKa41FbFbYTGwgN8K11YIT9cHu83/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "when they know it will be so annoying?",
-                "line": 19,
-                "start_time": "0-00-48.540000",
-                "end_time": "0-00-49.380000",
-                "url": "https://drive.google.com/file/d/1atUt8soAq63cPV5mpEG0GCnYHpDq8Wer/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Hey!",
-                "line": 19,
-                "start_time": "0-00-48.540000",
-                "end_time": "0-00-49.380000",
-                "url": "https://drive.google.com/file/d/1atUt8soAq63cPV5mpEG0GCnYHpDq8Wer/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Hey, hey!",
-                "line": 20,
-                "start_time": "0-00-49.500000",
-                "end_time": "0-00-51",
-                "url": "https://drive.google.com/file/d/1LSXIkyfGfy-ndpgXpnBgRhs4nNNAbAS0/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "We're gonna strike it rich!",
-                "line": 21,
-                "start_time": "0-00-51",
-                "end_time": "0-00-52.580000",
-                "url": "https://drive.google.com/file/d/1DAdMx0S6x0GuFXVtTzJ_I8oGP25k4w0l/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Look! Student Council President Rose is a wanted criminal!",
-                "line": 22,
-                "start_time": "0-00-52.580000",
-                "end_time": "0-00-55.250000",
-                "url": "https://drive.google.com/file/d/1wU0ZM09-5QZzvflWBLvwfERFTeuA--8g/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "We get 10 million zeni if we bring her in alive!",
-                "line": 23,
-                "start_time": "0-00-57.380000",
-                "end_time": "0-00-59.380000",
-                "url": "https://drive.google.com/file/d/1gsHQMMup14qby-3LNa31nlwm1-Aa2oBT/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "500 thousand if we can give them any useful information!",
-                "line": 24,
-                "start_time": "0-00-59.380000",
-                "end_time": "0-01-01.880000",
-                "url": "https://drive.google.com/file/d/17ZV2DDx0GOpMHtgUsyjAh2xpIVwe38P_/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Let's go catch her!",
-                "line": 25,
-                "start_time": "0-01-02.210000",
-                "end_time": "0-01-03.880000",
-                "url": "https://drive.google.com/file/d/1nOyM-DN4u8iAXcCKo8YtECXc4ZQ8xlLN/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Why?",
-                "line": 26,
-                "start_time": "0-01-03.880000",
-                "end_time": "0-01-05.080000",
-                "url": "https://drive.google.com/file/d/16tAmnk7h-9rlLZ8PvixUQ5wsk9jpXAo5/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Because I'm broke!",
-                "line": 27,
-                "start_time": "0-01-05.580000",
-                "end_time": "0-01-06.960000",
-                "url": "https://drive.google.com/file/d/1Tk9wexra4L09noQLPqrt5Y7YKL-RTN13/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "I thought you were gonna make a killing on a bet you couldn't lose.",
-                "line": 28,
-                "start_time": "0-01-08.130000",
-                "end_time": "0-01-11.080000",
-                "url": "https://drive.google.com/file/d/1ZxhDIPefwKgcCJsb1HR7t_axTwVmwf5N/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Shut up! Just shut up!",
-                "line": 29,
-                "start_time": "0-01-11.080000",
-                "end_time": "0-01-12.670000",
-                "url": "https://drive.google.com/file/d/1bqHiykSpck_pp7hhGAVx8lzPUloFpRRz/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "I'm broke, so I'm not going to go into all the reasons.",
-                "line": 30,
-                "start_time": "0-01-12.670000",
-                "end_time": "0-01-15.380000",
-                "url": "https://drive.google.com/file/d/1BN8V6-7VwSR_8wFXePdVwJ15WoEWuQWU/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "But the point is, I have no money!",
-                "line": 31,
-                "start_time": "0-01-15.380000",
-                "end_time": "0-01-17.420000",
-                "url": "https://drive.google.com/file/d/1L-Tsmo-RS9jDhx6d1Gzl9v6aSKn6LCJX/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Ergo, for no reason in particular, I need money!",
-                "line": 32,
-                "start_time": "0-01-17.420000",
-                "end_time": "0-01-20.580000",
-                "url": "https://drive.google.com/file/d/1lN-ebgagNSE74sqExH_HEC7dNOHBN54D/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Uh-huh.",
-                "line": 33,
-                "start_time": "0-01-20.580000",
-                "end_time": "0-01-21.580000",
-                "url": "https://drive.google.com/file/d/1uZB6pRA2XgWO9dGN67O86khc3DCqF1UT/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Of course we'll split the reward fifty-fifty.",
-                "line": 34,
-                "start_time": "0-01-21.750000",
-                "end_time": "0-01-24.080000",
-                "url": "https://drive.google.com/file/d/1EtjN7KQb8Cd0iOJUj8_ZO5hYHNRdfQqM/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Or that's what I'd like to say,",
-                "line": 35,
-                "start_time": "0-01-24.080000",
-                "end_time": "0-01-25.830000",
-                "url": "https://drive.google.com/file/d/1PMsa72PL5m9EIBBNulAQtl2tgZtAfmmb/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "But the thing is, I'm in favor of her running away.",
-                "line": 36,
-                "start_time": "0-01-25.830000",
-                "end_time": "0-01-28.210000",
-                "url": "https://drive.google.com/file/d/149deo1secvChhoLziUomI8I21LZVViM7/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "but you're my best friend, and I believe in you!",
-                "line": 36,
-                "start_time": "0-01-25.830000",
-                "end_time": "0-01-28.210000",
-                "url": "https://drive.google.com/file/d/149deo1secvChhoLziUomI8I21LZVViM7/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "But the thing is, I'm in favor of her running away.",
-                "line": 37,
-                "start_time": "0-01-28.210000",
-                "end_time": "0-01-29.540000",
-                "url": "https://drive.google.com/file/d/1wJBcbDZfkRhkP94Tx69-fji-JZzhOX0d/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "In your kindness, and in your desire",
-                "line": 37,
-                "start_time": "0-01-28.210000",
-                "end_time": "0-01-29.540000",
-                "url": "https://drive.google.com/file/d/1wJBcbDZfkRhkP94Tx69-fji-JZzhOX0d/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "to let your broke friend keep all the money!",
-                "line": 38,
-                "start_time": "0-01-29.540000",
-                "end_time": "0-01-30.630000",
-                "url": "https://drive.google.com/file/d/1M_w_vtI5LKVN4ITE8kAxwwSX4g6Wv_rg/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "She's a rebel who would try and kill a fiance",
-                "line": 39,
-                "start_time": "0-01-30.630000",
-                "end_time": "0-01-33",
-                "url": "https://drive.google.com/file/d/1RYMxHk6YdBYF_N_buddAQkVmwVKGPP0Y/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "to let your broke friend keep all the money!",
-                "line": 39,
-                "start_time": "0-01-30.630000",
-                "end_time": "0-01-33",
-                "url": "https://drive.google.com/file/d/1RYMxHk6YdBYF_N_buddAQkVmwVKGPP0Y/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "that she doesn't want to marry.",
-                "line": 40,
-                "start_time": "0-01-33",
-                "end_time": "0-01-34.540000",
-                "url": "https://drive.google.com/file/d/1MkUQyQP57NJ-AbIH-Rb7NZxhgocidwmG/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "If we look for her together,",
-                "line": 40,
-                "start_time": "0-01-33",
-                "end_time": "0-01-34.540000",
-                "url": "https://drive.google.com/file/d/1MkUQyQP57NJ-AbIH-Rb7NZxhgocidwmG/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "That takes chutzpah! I really admire that!",
-                "line": 41,
-                "start_time": "0-01-34.540000",
-                "end_time": "0-01-36.670000",
-                "url": "https://drive.google.com/file/d/1xlfxJD5PrpiJ7DuKaSELvxYBKk0RdQdP/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "we double our chances!",
-                "line": 41,
-                "start_time": "0-01-34.540000",
-                "end_time": "0-01-36.670000",
-                "url": "https://drive.google.com/file/d/1xlfxJD5PrpiJ7DuKaSELvxYBKk0RdQdP/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "and the percentage of my cut!",
-                "line": 42,
-                "start_time": "0-01-36.670000",
-                "end_time": "0-01-37.380000",
-                "url": "https://drive.google.com/file/d/19Su9oavLkfJ6EfMX3D_pE9drq8VGhFpU/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "You don't see that every day.",
-                "line": 43,
-                "start_time": "0-01-37.380000",
-                "end_time": "0-01-38.580000",
-                "url": "https://drive.google.com/file/d/1pg8q2pltU_MvXesfS4M0HwOuNRHo67_4/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "and the percentage of my cut!",
-                "line": 43,
-                "start_time": "0-01-37.380000",
-                "end_time": "0-01-38.580000",
-                "url": "https://drive.google.com/file/d/1pg8q2pltU_MvXesfS4M0HwOuNRHo67_4/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "I wish she had let me be there to watch.",
-                "line": 44,
-                "start_time": "0-01-38.580000",
-                "end_time": "0-01-40.830000",
-                "url": "https://drive.google.com/file/d/1AGhihjA_WSBDScbeUOhHKC-373UWOMq7/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "You get the joy of looking for your dear Rose!",
-                "line": 44,
-                "start_time": "0-01-38.580000",
-                "end_time": "0-01-40.830000",
-                "url": "https://drive.google.com/file/d/1AGhihjA_WSBDScbeUOhHKC-373UWOMq7/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "And I get the joy of the cash reward!",
-                "line": 45,
-                "start_time": "0-01-40.830000",
-                "end_time": "0-01-42.460000",
-                "url": "https://drive.google.com/file/d/1Qr4ya9xFqrq2iUrS_O4fNjaP-UtJPJPC/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "It's a win-win!",
-                "line": 46,
-                "start_time": "0-01-42.460000",
-                "end_time": "0-01-43.790000",
-                "url": "https://drive.google.com/file/d/1DIJQVtnX-AaNsVPw2sPkbWX4VzESvkmQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Don't even worry!",
-                "line": 47,
-                "start_time": "0-01-43.790000",
-                "end_time": "0-01-45.080000",
-                "url": "https://drive.google.com/file/d/16iERxYsdzswGZW02g__Ey4xcVRKqpQ2u/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Your personal reward will always be with you, living on in your heart.",
-                "line": 48,
-                "start_time": "0-01-45.210000",
-                "end_time": "0-01-48.750000",
-                "url": "https://drive.google.com/file/d/1qVhvfxXZ6jRXxGA9VWONpJhjeUHFQL6O/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "The shining memories of frolicking frantically across the capital under the summer sky",
-                "line": 49,
-                "start_time": "0-01-48.750000",
-                "end_time": "0-01-52.630000",
-                "url": "https://drive.google.com/file/d/1-Lio-WwUq65afkumBgQZ5bcyEK9XQXfs/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "so that I can get the cash reward:",
-                "line": 50,
-                "start_time": "0-01-52.630000",
-                "end_time": "0-01-54.380000",
-                "url": "https://drive.google.com/file/d/1R9OMkfVxoHjF27bo3Lf23hnBqqvVcWuh/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "That will be the greatest treasure!",
-                "line": 51,
-                "start_time": "0-01-54.380000",
-                "end_time": "0-01-55.710000",
-                "url": "https://drive.google.com/file/d/1VCg4ToAazGGUixcfqXPmcG7FrueAWW7W/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Memories are the ultimate reward!",
-                "line": 52,
-                "start_time": "0-01-55.710000",
-                "end_time": "0-01-57.670000",
-                "url": "https://drive.google.com/file/d/10aZy6u8JJsnQ5UuD9MyuO0dmGlVka_AB/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "So of course you understand, Cid!",
-                "line": 53,
-                "start_time": "0-01-57.670000",
-                "end_time": "0-01-58.880000",
-                "url": "https://drive.google.com/file/d/1rarH0AeberR4a4Oo5pCKp8sHZyUe-NQJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "I'm saying all this for my own benefit-",
-                "line": 54,
-                "start_time": "0-01-58.880000",
-                "end_time": "0-02-00.830000",
-                "url": "https://drive.google.com/file/d/1sFN3k3CV1uoop5MxJuHjxJpfPFstOKX1/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "All right, time to start Operation: Capture the Student Council President.",
-                "line": 55,
-                "start_time": "0-02-02.170000",
-                "end_time": "0-02-05",
-                "url": "https://drive.google.com/file/d/1ElZkJERgvB61NWROjp6s1J2u1WWxMvRC/view?usp=drivesdk"
-            },
-            {
-                "name": "Skel Etal",
-                "name_variant": "Skel Etal",
-                "subtitle": "Start operation, but-",
-                "line": 56,
-                "start_time": "0-02-05",
-                "end_time": "0-02-06.290000",
-                "url": "https://drive.google.com/file/d/1TVT6yYuAAU4WNwiyCK0KSfm3Nah_Yhjz/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Don't wanna waste time. Let's go.",
-                "line": 57,
-                "start_time": "0-02-06.290000",
-                "end_time": "0-02-08.580000",
-                "url": "https://drive.google.com/file/d/1XMqNSGDlL9IY9ymDoIyQK-7F5Y_RJGnM/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "For now, I just need to buy some time while I wait for my sister to cool her head.",
-                "line": 58,
-                "start_time": "0-03-58.750000",
-                "end_time": "0-04-02.500000",
-                "url": "https://drive.google.com/file/d/1CPjQjuHJ7G6qtDEvYlReBxclVDMosemj/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "I wonder if Rose managed to get away safe and sound?",
-                "line": 59,
-                "start_time": "0-04-03.420000",
-                "end_time": "0-04-06.170000",
-                "url": "https://drive.google.com/file/d/1HSDo-y-FQKzMHpjtCNLnetanDikW6IuS/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "If I'd had my wish, I would have liked to ask her in person what inspired her",
-                "line": 60,
-                "start_time": "0-04-08.580000",
-                "end_time": "0-04-12.250000",
-                "url": "https://drive.google.com/file/d/1QT61yWdNnPoU7a_sC78aBjm-_QBeJryz/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "to do something so rock'n'roll as to stab her fiance.",
-                "line": 61,
-                "start_time": "0-04-12.250000",
-                "end_time": "0-04-14.290000",
-                "url": "https://drive.google.com/file/d/1xX-H3FpPP9sww1gWd0tPy1VlCllA56LC/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "They're pretty good.",
-                "line": 62,
-                "start_time": "0-04-21.420000",
-                "end_time": "0-04-22.830000",
-                "url": "https://drive.google.com/file/d/1zqoy5QNt1aBLPeCRg5PpUzfTfbkCey-X/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "In my past life, as part of my family's educational policy,",
-                "line": 63,
-                "start_time": "0-04-25",
-                "end_time": "0-04-28.040000",
-                "url": "https://drive.google.com/file/d/1skztrHqS_2W-qZwWaWoau05p9tERvtxl/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "I was forced to learn the piano.",
-                "line": 64,
-                "start_time": "0-04-28.040000",
-                "end_time": "0-04-29.540000",
-                "url": "https://drive.google.com/file/d/1DFRKck9QQr4C0-2bWlRuDYC50EfQADAi/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Frankly, I would have much rather spent my time training to become the Eminence in Shadow",
-                "line": 65,
-                "start_time": "0-04-30.540000",
-                "end_time": "0-04-35.290000",
-                "url": "https://drive.google.com/file/d/1GrqJXe86DqRXu-SrpcvFXy0F0Um57PWg/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "than wasting it on that nonsense.",
-                "line": 66,
-                "start_time": "0-04-35.290000",
-                "end_time": "0-04-37.210000",
-                "url": "https://drive.google.com/file/d/1GsiJsMd7fXnUMZoDwwF8eWgT0NlcxRbg/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "But after a while, I started thinking the piano's not so bad.",
-                "line": 67,
-                "start_time": "0-04-38.130000",
-                "end_time": "0-04-41.210000",
-                "url": "https://drive.google.com/file/d/1QTylMk3DxEryuzDZofsTZ8WFpE3_ae4I/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "When you get good at the piano, everybody around you starts to assume,",
-                "line": 68,
-                "start_time": "0-04-41.960000",
-                "end_time": "0-04-44.540000",
-                "url": "https://drive.google.com/file/d/1cCkVqnC0tftr2W7Bxzt5vSYY0fivm4Eh/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "\"Oh, he's busy practicing,\" so they don't bother you.",
-                "line": 69,
-                "start_time": "0-04-44.540000",
-                "end_time": "0-04-47.630000",
-                "url": "https://drive.google.com/file/d/1z7j13F7VBUaZvGlKFHNB4PHOSJA2iqUH/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "As someone who wanted to keep friendly interactions to a minimum",
-                "line": 70,
-                "start_time": "0-04-48.170000",
-                "end_time": "0-04-51.210000",
-                "url": "https://drive.google.com/file/d/15EiTBcfF9F5tWCSr-6OU00gGYEd-JWAV/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "in my quest to be the Eminence in Shadow,",
-                "line": 71,
-                "start_time": "0-04-51.210000",
-                "end_time": "0-04-53.540000",
-                "url": "https://drive.google.com/file/d/1ZnJHrgPnz-GU9saeb_q4p2iwvgRLfXzA/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "I appreciated this misunderstanding.",
-                "line": 72,
-                "start_time": "0-04-53.540000",
-                "end_time": "0-04-55.380000",
-                "url": "https://drive.google.com/file/d/1DR1IlwAz4yVD-Ct375p8zSptB6dVwlj_/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "But most of all, I simply realized that the piano is just really cool.",
-                "line": 73,
-                "start_time": "0-04-55.920000",
-                "end_time": "0-04-59.420000",
-                "url": "https://drive.google.com/file/d/1s17UooE-lyWPMUkn5_2pPKH-GMor0eIi/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "The Eminence in Shadow, playing the piano in the light of the moon...",
-                "line": 74,
-                "start_time": "0-05-00.080000",
-                "end_time": "0-05-03.250000",
-                "url": "https://drive.google.com/file/d/1Qzp1LY09us0ADQM_Umsj82U7HpNoqBIT/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Awesome, right?",
-                "line": 75,
-                "start_time": "0-05-03.790000",
-                "end_time": "0-05-05.040000",
-                "url": "https://drive.google.com/file/d/1KezF1rSG7RwgaDMuddzexAdgxrVbm7ra/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "It shows the world that I'm not just about pure power.",
-                "line": 76,
-                "start_time": "0-05-05.460000",
-                "end_time": "0-05-08.080000",
-                "url": "https://drive.google.com/file/d/1BPkJrWk0Ky0V-NOY7YvJYw8tw3AE4JBG/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "I'm also an amazing artiste.",
-                "line": 77,
-                "start_time": "0-05-08.080000",
-                "end_time": "0-05-09.920000",
-                "url": "https://drive.google.com/file/d/1VKM4yavMXfa9dA7wBB3SoaYyc3rZkvmA/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "So cool...",
-                "line": 78,
-                "start_time": "0-05-10.290000",
-                "end_time": "0-05-11.500000",
-                "url": "https://drive.google.com/file/d/1MlkAcOKor5m2Z8nYhvp-sR3lNMRKSARg/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "The next thing I knew, I was pretty hardcore about the piano.",
-                "line": 79,
-                "start_time": "0-05-11.880000",
-                "end_time": "0-05-15.330000",
-                "url": "https://drive.google.com/file/d/101DMn5uM5Isgkt7uHKTi7pa0zScW-jNk/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Of course training to be Eminence in Shadow was my number one priority.",
-                "line": 80,
-                "start_time": "0-05-16",
-                "end_time": "0-05-19.920000",
-                "url": "https://drive.google.com/file/d/1sEeodm5rpR-j3nNIU89CVccZiACiQNhB/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "But the idea of creating the mood for a battle with some sweet piano music...",
-                "line": 81,
-                "start_time": "0-05-20.580000",
-                "end_time": "0-05-23.960000",
-                "url": "https://drive.google.com/file/d/1qYXtIjYdu-msRVIKCmT723n7Lm-dsFiz/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "That was hard to give up.",
-                "line": 82,
-                "start_time": "0-05-24.330000",
-                "end_time": "0-05-25.630000",
-                "url": "https://drive.google.com/file/d/1aY0slqI9vCZpgiJ1BY2zba5SJJWgSPNN/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Beethoven's Piano Sonata Number 14,",
-                "line": 83,
-                "start_time": "0-05-28.500000",
-                "end_time": "0-05-31.500000",
-                "url": "https://drive.google.com/file/d/1Q4OrqXmzVPpRu6M1HFFBm7TSPFTntLx9/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "the \"Moonlight Sonata.\"",
-                "line": 84,
-                "start_time": "0-05-31.500000",
-                "end_time": "0-05-32.960000",
-                "url": "https://drive.google.com/file/d/14spjJGNhcJ4JBcNACO1RvPDzsol1Cs77/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Even under the hot summer sun,",
-                "line": 85,
-                "start_time": "0-05-33.460000",
-                "end_time": "0-05-35.210000",
-                "url": "https://drive.google.com/file/d/1ljaBfKrpMVwEp4kWpCCGSO_Wg8_YN5zM/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "it conjures images of the moon shining in the dark night.",
-                "line": 86,
-                "start_time": "0-05-35.210000",
-                "end_time": "0-05-38.080000",
-                "url": "https://drive.google.com/file/d/1kVM30b8CxH6hh3G8VLHqEoPOUIGHtDIV/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "It's my favorite piece.",
-                "line": 87,
-                "start_time": "0-05-38.630000",
-                "end_time": "0-05-40.380000",
-                "url": "https://drive.google.com/file/d/1WkIXh2P7HPWg2qYMAsCCOewJ26cBmBlo/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "In fact, I love it so much,",
-                "line": 88,
-                "start_time": "0-05-41",
-                "end_time": "0-05-43.250000",
-                "url": "https://drive.google.com/file/d/1U2QuUqqHlgYyiHuXCvjO_ephMC_d_S0Y/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "I think it's the only piece that could be considered the best piece for an Eminence in Shadow.",
-                "line": 89,
-                "start_time": "0-05-43.250000",
-                "end_time": "0-05-46.960000",
-                "url": "https://drive.google.com/file/d/1lChTPh14AZbd4YpSLr1EBVIrtWDeQSC_/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "But how does the \"Moonlight Sonata\" exist in this world?",
-                "line": 90,
-                "start_time": "0-05-47.540000",
-                "end_time": "0-05-50.500000",
-                "url": "https://drive.google.com/file/d/1VJUAd4c5pywSl6AC12XDFGfYUCk-mIOC/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Maybe there really is someone else who's been reincarnated.",
-                "line": 91,
-                "start_time": "0-05-52.330000",
-                "end_time": "0-05-55.210000",
-                "url": "https://drive.google.com/file/d/1aLIwy7RKcoboop5lk4KAjOZyBj_9BPMh/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "It looks like she's wearing a nice summer dress,",
-                "line": 92,
-                "start_time": "0-06-08.540000",
-                "end_time": "0-06-10.420000",
-                "url": "https://drive.google.com/file/d/1vVEO2pm8m5ImaY7CyX7FGBwI-eVo9OGm/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "which also happens to perfectly cover her slime-enhanced chest and legs.",
-                "line": 93,
-                "start_time": "0-06-10.420000",
-                "end_time": "0-06-14",
-                "url": "https://drive.google.com/file/d/1i5deuDosCRotTOluGj42IVS8TNOeHHj5/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "That's Epsilon the Precise for you.",
-                "line": 94,
-                "start_time": "0-06-14.830000",
-                "end_time": "0-06-16.880000",
-                "url": "https://drive.google.com/file/d/1vUuJWYvH2adMAKhxhlpgJzjQjGY99xmf/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "First Gamma, then Beta, now Epsilon.",
-                "line": 95,
-                "start_time": "0-06-27.290000",
-                "end_time": "0-06-29.920000",
-                "url": "https://drive.google.com/file/d/1RFK3YuGgdtMyZNWuUi2CicbVXjB73CnZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I never would have dreamed that you would come to hear me play, My Lord.",
-                "line": 96,
-                "start_time": "0-06-33.170000",
-                "end_time": "0-06-36.540000",
-                "url": "https://drive.google.com/file/d/1zR2lERVD6430ZUCCWEJh8TBnQAdy_qou/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I'm not worthy of this honor.",
-                "line": 97,
-                "start_time": "0-06-36.540000",
-                "end_time": "0-06-38.130000",
-                "url": "https://drive.google.com/file/d/1QO2c4Pj5b0MJHBytaD54VBqiQ-G0ZWss/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "That piece, it was the \"Moonlight Sonata,\" wasn't it?",
-                "line": 98,
-                "start_time": "0-06-38.130000",
-                "end_time": "0-06-40.380000",
-                "url": "https://drive.google.com/file/d/1XReDGlgUKr27gosdPVT2dGRRa2fSCeGc/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Yes!",
-                "line": 99,
-                "start_time": "0-06-40.380000",
-                "end_time": "0-06-41.380000",
-                "url": "https://drive.google.com/file/d/17h_Cusnm8_Z35sfnPUXymoj_x6DFDNk9/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Of the many pieces you so graciously taught me, it is the one I like the very best.",
-                "line": 100,
-                "start_time": "0-06-41.880000",
-                "end_time": "0-06-47.290000",
-                "url": "https://drive.google.com/file/d/1p-GLFCe79UjO33gPiIJJBh-5tPCcxc_q/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "I didn't mean to teach you anything.",
-                "line": 101,
-                "start_time": "0-06-47.960000",
-                "end_time": "0-06-49.960000",
-                "url": "https://drive.google.com/file/d/1lU8II4Tk28aJiGeTIkxHpM6IbEvFbFkA/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "But I guess I can be pleased to hear someone else say she likes something I like.",
-                "line": 102,
-                "start_time": "0-06-50.670000",
-                "end_time": "0-06-56.290000",
-                "url": "https://drive.google.com/file/d/1sYKExx7odL2G4dUfLPoUtZ_coOJpMs1j/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Thanks to your wisdom, My Lord,",
-                "line": 103,
-                "start_time": "0-06-57",
-                "end_time": "0-06-59",
-                "url": "https://drive.google.com/file/d/1YuF-xZdYWOEhedAfFvCXsEI5qs-l-Wsk/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I am building connections with influential people as a pianist and as a composer.",
-                "line": 104,
-                "start_time": "0-06-59",
-                "end_time": "0-07-03.630000",
-                "url": "https://drive.google.com/file/d/1_phEb8BYG_-BK84zVbtEXf60k46RyF40/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "A composer?",
-                "line": 105,
-                "start_time": "0-07-04.670000",
-                "end_time": "0-07-05.960000",
-                "url": "https://drive.google.com/file/d/11SOilo48Zisg4K_pwlDvVI82lR8TNpI7/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Yes, My Lord!",
-                "line": 106,
-                "start_time": "0-07-05.960000",
-                "end_time": "0-07-06.960000",
-                "url": "https://drive.google.com/file/d/1kbIKz-OLGOATRkUngrdSAHU34CS-x5Ly/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "The \"Moonlight Sonata,\" the \"Turkish March,\" the \"Minute Waltz\"...",
-                "line": 107,
-                "start_time": "0-07-06.960000",
-                "end_time": "0-07-10.670000",
-                "url": "https://drive.google.com/file/d/10PxzQa6VThDYQO_qC5LBqZp-dkFTt3VB/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "They're very popular among the nobility,",
-                "line": 108,
-                "start_time": "0-07-10.670000",
-                "end_time": "0-07-12.420000",
-                "url": "https://drive.google.com/file/d/1lJMGeY6bt8JQL6rmebtq6MEA4cD9WJal/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "and the Royal Capital has even given me awards.",
-                "line": 109,
-                "start_time": "0-07-12.420000",
-                "end_time": "0-07-14.580000",
-                "url": "https://drive.google.com/file/d/15bgsEcqkLiwtFVxHLJcVVP2uMUTwKiSm/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Have they now?",
-                "line": 110,
-                "start_time": "0-07-15",
-                "end_time": "0-07-16.210000",
-                "url": "https://drive.google.com/file/d/14VxpAJ_doC7P04SQ4uQBjRmYR1RGJXsp/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Accepting awards for plagiarized music?",
-                "line": 111,
-                "start_time": "0-07-16.630000",
-                "end_time": "0-07-18.170000",
-                "url": "https://drive.google.com/file/d/1fZE_xtiemUiZ3FmTDZ66JUyX_sA-qQld/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "That's the most shameless thing I've ever heard.",
-                "line": 112,
-                "start_time": "0-07-18.170000",
-                "end_time": "0-07-20.130000",
-                "url": "https://drive.google.com/file/d/1OG9pteSGwliEkljLu6THtmmDJwWXSidZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "The Oriana Kingdom, the kingdom of art and culture,",
-                "line": 113,
-                "start_time": "0-07-20.420000",
-                "end_time": "0-07-22.630000",
-                "url": "https://drive.google.com/file/d/1STbDjRBsynql6shPiiFg2wdzy-UxdsYU/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "has invited me to visit as an up-and-coming composer.",
-                "line": 114,
-                "start_time": "0-07-22.630000",
-                "end_time": "0-07-25.790000",
-                "url": "https://drive.google.com/file/d/1gYNOOLk-UwQJj56qo8oY5IoyR-EMlyPk/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "My apologies to all the great composers.",
-                "line": 115,
-                "start_time": "0-07-25.790000",
-                "end_time": "0-07-28.540000",
-                "url": "https://drive.google.com/file/d/1yDbNJ-Fv5cJ4mmWyeh1WuhBlPpQqZZKG/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "As I'm sure you are aware,",
-                "line": 116,
-                "start_time": "0-07-28.710000",
-                "end_time": "0-07-30.040000",
-                "url": "https://drive.google.com/file/d/1BZGod7Hsr2j3t_20hX7Mm7yC7XuKHXUY/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "there is a lot of profitable work to be done in the Oriana Kingdom right now.",
-                "line": 117,
-                "start_time": "0-07-30.040000",
-                "end_time": "0-07-34.420000",
-                "url": "https://drive.google.com/file/d/1551URMdkH5amtyzlDzMZ_KLOTtK4PJi_/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "They are the kingdom of art and culture.",
-                "line": 118,
-                "start_time": "0-07-34.420000",
-                "end_time": "0-07-36.420000",
-                "url": "https://drive.google.com/file/d/1I3GC1wKuYnqaqtdhBut6GcEdl9jaOnj-/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Yes, My Lord.",
-                "line": 119,
-                "start_time": "0-07-36.420000",
-                "end_time": "0-07-37.420000",
-                "url": "https://drive.google.com/file/d/1aifBCXy7dqP6iiehtXmUFs9_fiyXLltr/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "This time, I think there is an especially worthwhile job to be done.",
-                "line": 120,
-                "start_time": "0-07-37.630000",
-                "end_time": "0-07-40.710000",
-                "url": "https://drive.google.com/file/d/1YBJjWhL1RruOue10m-gqhQXwMWlW6nEd/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Good luck with that.",
-                "line": 121,
-                "start_time": "0-07-41",
-                "end_time": "0-07-42.210000",
-                "url": "https://drive.google.com/file/d/1QAhm8UQi1aUi43l0Ktjd2LELDxIrAr5l/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I shall perform my duty and and my music in a way worthy of the sublime masterpieces",
-                "line": 122,
-                "start_time": "0-07-42.460000",
-                "end_time": "0-07-46.210000",
-                "url": "https://drive.google.com/file/d/1OGdli3vWmu-0tYTVKBld6rXPiAR4YTAc/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "you have bestowed upon me, My Lord.",
-                "line": 123,
-                "start_time": "0-07-46.210000",
-                "end_time": "0-07-47.960000",
-                "url": "https://drive.google.com/file/d/1_jhxYSKWGqb3L4PRPS-UDXqeGGtsexgh/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Good luck with that.",
-                "line": 124,
-                "start_time": "0-07-47.960000",
-                "end_time": "0-07-49.330000",
-                "url": "https://drive.google.com/file/d/1Zh-xFvEUVTWu8RJLnH_EJljKephqyYne/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "That reminds me.",
-                "line": 125,
-                "start_time": "0-07-50.170000",
-                "end_time": "0-07-51.380000",
-                "url": "https://drive.google.com/file/d/1muRCig1nkmZ2bbSF93fXxZtq9f1mXL-A/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Do you happen to know where Oriana's Princess Rose ran off to?",
-                "line": 126,
-                "start_time": "0-07-51.380000",
-                "end_time": "0-07-53.880000",
-                "url": "https://drive.google.com/file/d/1I4QeSvN2MuQU09rilqnTZGhV_xIO7F9T/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Princess Rose, My Lord?",
-                "line": 127,
-                "start_time": "0-07-54.130000",
-                "end_time": "0-07-56.580000",
-                "url": "https://drive.google.com/file/d/1bO6EEQuKAIFZb-Ec5wrO4gUNhCq7Pea7/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Beta is responsible for that particular case, so I don't know any details.",
-                "line": 128,
-                "start_time": "0-07-57",
-                "end_time": "0-08-00.830000",
-                "url": "https://drive.google.com/file/d/1WUx6CiO89_HrmdQTy9pQJWVIXDkWnigp/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "But I have heard that she has taken refuge in the tunnels under the Royal Capital.",
-                "line": 129,
-                "start_time": "0-08-01.460000",
-                "end_time": "0-08-04.750000",
-                "url": "https://drive.google.com/file/d/1m_RI9jSuQ_5EeXb9iYWYCIssgLsq5RFZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Underground, huh?",
-                "line": 130,
-                "start_time": "0-08-05.170000",
-                "end_time": "0-08-06.380000",
-                "url": "https://drive.google.com/file/d/15ufWAikvsCYFw4T_XY6DbZVDyGfWd7Aj/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I'll send a messenger to Beta-",
-                "line": 131,
-                "start_time": "0-08-07",
-                "end_time": "0-08-08.500000",
-                "url": "https://drive.google.com/file/d/1iwIccqVG60e_bN72TVA_Pl2381c8N8Pi/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "That's okay.",
-                "line": 132,
-                "start_time": "0-08-08.500000",
-                "end_time": "0-08-09.750000",
-                "url": "https://drive.google.com/file/d/1PI_9ekFUhjwb84PFeoqXvJPITGCFZ05U/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "You've given me all I need to know.",
-                "line": 133,
-                "start_time": "0-08-09.750000",
-                "end_time": "0-08-11.460000",
-                "url": "https://drive.google.com/file/d/1h5ybKnuRL6ZkkvkhExAEqMXm8DhAwpkt/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Your figure is as lovely as ever today, Epsilon.",
-                "line": 134,
-                "start_time": "0-08-12.290000",
-                "end_time": "0-08-14.880000",
-                "url": "https://drive.google.com/file/d/1F6M4mVp1g-qmI1LMo5C5t-KtEKGgpHpH/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Y-You're too kind! Humble Epsilon is still nowhere near...",
-                "line": 135,
-                "start_time": "0-08-15.460000",
-                "end_time": "0-08-18.710000",
-                "url": "https://drive.google.com/file/d/13atAwHqGGTK0loOX_IBFR727zS-EVgbA/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Plagiarism issues aside,",
-                "line": 136,
-                "start_time": "0-08-20.420000",
-                "end_time": "0-08-22.130000",
-                "url": "https://drive.google.com/file/d/1oz0k30GXhcJfCTi1vdBXIWoU-f6slDjv/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "she made me happy by telling me she likes the \"Moonlight Sonata.\"",
-                "line": 137,
-                "start_time": "0-08-22.130000",
-                "end_time": "0-08-25.790000",
-                "url": "https://drive.google.com/file/d/1iiyEVnN3DYyR0VrONm3AjaQa48NBZulV/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "So I ought to tell her something to make her happy, too.",
-                "line": 138,
-                "start_time": "0-08-26.330000",
-                "end_time": "0-08-29.540000",
-                "url": "https://drive.google.com/file/d/1Z76Obfk3xneQjh1tAnmVd1VTflEGyJRb/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "My sister Iris thanks you for the information you provided.",
-                "line": 139,
-                "start_time": "0-08-39.920000",
-                "end_time": "0-08-44.170000",
-                "url": "https://drive.google.com/file/d/1fl2N57ueWB-XbI4Wu7vwqA2vrvfpaTEZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "She says she hopes you'll help us again in the future.",
-                "line": 140,
-                "start_time": "0-08-44.540000",
-                "end_time": "0-08-46.750000",
-                "url": "https://drive.google.com/file/d/1yspeQ1dyN_ykUSFk8jD3CXv3iY38AfPe/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "I'm honored.",
-                "line": 141,
-                "start_time": "0-08-46.750000",
-                "end_time": "0-08-47.960000",
-                "url": "https://drive.google.com/file/d/1nGZX5ZwMvPbSObbIhhIRZLIBUYUGcYi_/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "So I was right, we should assume that Perv Asshat is working with the Cult.",
-                "line": 142,
-                "start_time": "0-08-51.380000",
-                "end_time": "0-08-55.920000",
-                "url": "https://drive.google.com/file/d/1yqUahxoOY_Th-JAFw-VNUuqJMLgrwRQL/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "Yes, if we follow his dubious personal history, I believe there is no room for doubt.",
-                "line": 143,
-                "start_time": "0-08-55.920000",
-                "end_time": "0-08-59.920000",
-                "url": "https://drive.google.com/file/d/1-tYgn4JZN6yRlyo7vpb-LpyWQyyGsm5z/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "The problem is that we have no evidence.",
-                "line": 144,
-                "start_time": "0-09-00.080000",
-                "end_time": "0-09-02.250000",
-                "url": "https://drive.google.com/file/d/1XIioFiEZD-VJO9nPdH1Miu1VdgkC7EsJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "Indeed.",
-                "line": 145,
-                "start_time": "0-09-02.250000",
-                "end_time": "0-09-03.460000",
-                "url": "https://drive.google.com/file/d/1R2lr3flQYXdFY-qeMIybQBPyFGRor6EY/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "This matter involves the government and the Church,",
-                "line": 146,
-                "start_time": "0-09-03.790000",
-                "end_time": "0-09-06.790000",
-                "url": "https://drive.google.com/file/d/1PWaOKTJOFLk9NGFPqXuz2uslfXzl7Hku/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "so normal evidence will not be enough.",
-                "line": 147,
-                "start_time": "0-09-06.790000",
-                "end_time": "0-09-08.630000",
-                "url": "https://drive.google.com/file/d/1Jrycgi7tedz8F8FR3dAaFerB96OmD3y9/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Yeah, I know.",
-                "line": 148,
-                "start_time": "0-09-08.790000",
-                "end_time": "0-09-10.130000",
-                "url": "https://drive.google.com/file/d/1uvEXbJfF4e0p0HWiss_SrzMFe2m4C8QP/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Even Father broke his usual silence to give me a stern warning.",
-                "line": 149,
-                "start_time": "0-09-10.460000",
-                "end_time": "0-09-13.170000",
-                "url": "https://drive.google.com/file/d/19NQMObSpbS2JOvXDHndJxOPu0DlLHNzb/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "He's all, \"If you want to tie the Divine Teachings to the Cult of Diablos,",
-                "line": 150,
-                "start_time": "0-09-14.040000",
-                "end_time": "0-09-17.210000",
-                "url": "https://drive.google.com/file/d/1MoHeoQOcB_UeApVHxzOF5zOhi-vB19sD/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "you're going to need to convince all our people, and the neighboring governments.\"",
-                "line": 151,
-                "start_time": "0-09-17.210000",
-                "end_time": "0-09-20.960000",
-                "url": "https://drive.google.com/file/d/1717L_pp5hR4klWQ5s8TSbyukP6xYpizg/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "And if they brand us as heretics, it's all over.",
-                "line": 152,
-                "start_time": "0-09-20.960000",
-                "end_time": "0-09-23.880000",
-                "url": "https://drive.google.com/file/d/1OL52P2v8jvXcEIAkn9QNU9GFeE-lY_CM/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Father keeps insisting that I not mess with the Divine Teachings.",
-                "line": 153,
-                "start_time": "0-09-24.080000",
-                "end_time": "0-09-27.210000",
-                "url": "https://drive.google.com/file/d/1zdpY_fJ-erSIAnrcRfntUxqubPkriCkA/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "How in the world does he plan to put a stop to all the chaos the Cult of Diablos has caused?",
-                "line": 154,
-                "start_time": "0-09-28.080000",
-                "end_time": "0-09-32.210000",
-                "url": "https://drive.google.com/file/d/1rVFVdV5jU7IWmzeurSn3NGm-UpYv7vF3/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "I believe he plans to ignore it as he always has.",
-                "line": 155,
-                "start_time": "0-09-32.710000",
-                "end_time": "0-09-35.170000",
-                "url": "https://drive.google.com/file/d/13j1BBiqQMleAqjGkEXAKO9dZlnuEgIFD/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "\"Always has\"?",
-                "line": 156,
-                "start_time": "0-09-35.790000",
-                "end_time": "0-09-37.420000",
-                "url": "https://drive.google.com/file/d/1RKcSviBgMlC4OQVUdbvwrvCPDTDloUc4/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "Just my own speculation.",
-                "line": 157,
-                "start_time": "0-09-37.420000",
-                "end_time": "0-09-39.210000",
-                "url": "https://drive.google.com/file/d/1RBE1zYVKxAFCzpuFdHs-_24CKZfXk-vI/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "Please forget I said anything.",
-                "line": 158,
-                "start_time": "0-09-39.210000",
-                "end_time": "0-09-40.540000",
-                "url": "https://drive.google.com/file/d/1ZOM1OR1Fu_mdGXshL-0-Xa2DkkODfwQS/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Fine, whatever.",
-                "line": 159,
-                "start_time": "0-09-41.080000",
-                "end_time": "0-09-42.290000",
-                "url": "https://drive.google.com/file/d/1A6r1S1IRC7wMN--uHkxaVLCu9KKxwcbN/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Anyway, Iris said something that's been bothering me.",
-                "line": 160,
-                "start_time": "0-09-42.670000",
-                "end_time": "0-09-45.380000",
-                "url": "https://drive.google.com/file/d/1FDaGS5auPO_VbzySJzyYAxDRIKvz4LAe/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "She had an audience with King Oriana, but he seemed somewhat vacant.",
-                "line": 161,
-                "start_time": "0-09-45.880000",
-                "end_time": "0-09-49.960000",
-                "url": "https://drive.google.com/file/d/1rnWWgXi2dP2JkWm0Hgf2DaRBOfq4gfMO/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "\"Vacant\"?",
-                "line": 162,
-                "start_time": "0-09-49.960000",
-                "end_time": "0-09-51.170000",
-                "url": "https://drive.google.com/file/d/1ifJbSZl1FuS7BAtuDKZe7basVII9aEDg/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "It makes sense that he would be distracted by his daughter's act of violence,",
-                "line": 163,
-                "start_time": "0-09-51.710000",
-                "end_time": "0-09-54.750000",
-                "url": "https://drive.google.com/file/d/1l8thaBc7WvR0a7-gvSNKkqLSvBmYF548/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "but Iris said it wasn't like that.",
-                "line": 164,
-                "start_time": "0-09-54.750000",
-                "end_time": "0-09-56.880000",
-                "url": "https://drive.google.com/file/d/1l_C_0ki0DswziRDaQNK8wrG-Iut4a6iR/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "And apparently there was a sweet smell.",
-                "line": 165,
-                "start_time": "0-09-57.420000",
-                "end_time": "0-09-59.500000",
-                "url": "https://drive.google.com/file/d/1tHRmVEqBlXI_v0o2gJ-tcstaMU5xLM5O/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "It may already be too late.",
-                "line": 166,
-                "start_time": "0-10-00.830000",
-                "end_time": "0-10-02.920000",
-                "url": "https://drive.google.com/file/d/1g7ANsESBf3QEUUYCNZO5auca5vCi_nv7/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "The Cult is still out there working its evil.",
-                "line": 167,
-                "start_time": "0-10-04.500000",
-                "end_time": "0-10-06.580000",
-                "url": "https://drive.google.com/file/d/1doJT8yANDX7--ydUVc_Bf3t8MMq49uYU/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "The way Father does things, eventually they'll get to our kingdom, too.",
-                "line": 168,
-                "start_time": "0-10-07",
-                "end_time": "0-10-10.040000",
-                "url": "https://drive.google.com/file/d/1pcJwskfcdfNEujtV5-MDkA0OwIAIcO_N/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "Might I ask, where does this stairway lead?",
-                "line": 169,
-                "start_time": "0-10-13.380000",
-                "end_time": "0-10-16.710000",
-                "url": "https://drive.google.com/file/d/1ZknLlTFy_j_Pd0bOx7tJTTz_tmDuMQd3/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "To an entrance to the Royal Capital's underground passages.",
-                "line": 170,
-                "start_time": "0-10-16.710000",
-                "end_time": "0-10-19.460000",
-                "url": "https://drive.google.com/file/d/1xdjfA8KHGk9TGePugIdwabQcdIGZcHsq/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "But you already know all about those.",
-                "line": 171,
-                "start_time": "0-10-20.170000",
-                "end_time": "0-10-21.960000",
-                "url": "https://drive.google.com/file/d/1QI5Vm-RrPMcAQ_46DhXAl5BIzaiDp8_P/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "Yes, you mean the underground labyrinth built across the entire Capital ages ago,",
-                "line": 172,
-                "start_time": "0-10-22.380000",
-                "end_time": "0-10-27.040000",
-                "url": "https://drive.google.com/file/d/11I7HlS2D2f6sb1OSyCH7u6z5NtFkDEBu/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "allegedly to help the royal family escape.",
-                "line": 173,
-                "start_time": "0-10-27.040000",
-                "end_time": "0-10-29.960000",
-                "url": "https://drive.google.com/file/d/1vUXJ_igkfcl5py1d0CW8fZEfTBhrgZ3s/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "A labyrinth...",
-                "line": 174,
-                "start_time": "0-10-30.460000",
-                "end_time": "0-10-31.670000",
-                "url": "https://drive.google.com/file/d/17Mcw1E9wra_SINbHhzS0bHaCY6nR0H_C/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Yeah, it is.",
-                "line": 175,
-                "start_time": "0-10-31.880000",
-                "end_time": "0-10-32.920000",
-                "url": "https://drive.google.com/file/d/1g0XLc61mcReIlJ3FQwYlJNgvnwjjZZ9u/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "All the maps, keys, codes, and everything were lost a long time ago,",
-                "line": 176,
-                "start_time": "0-10-32.920000",
-                "end_time": "0-10-36.460000",
-                "url": "https://drive.google.com/file/d/1_MlnrbzixoWELE5q87KeXAAkG1c0bRfT/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "so now it is nothing but a giant maze.",
-                "line": 177,
-                "start_time": "0-10-36.460000",
-                "end_time": "0-10-38.540000",
-                "url": "https://drive.google.com/file/d/1CvXr-JLyxFgFaTN30HaFV47vs6qIS_Gz/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "So why are we heading to these passages now?",
-                "line": 178,
-                "start_time": "0-10-38.540000",
-                "end_time": "0-10-40.790000",
-                "url": "https://drive.google.com/file/d/1ZlMqETX-3qg9av4MKo2N51-wwzn8pxWk/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "To dispose of your body.",
-                "line": 179,
-                "start_time": "0-10-41.170000",
-                "end_time": "0-10-43.130000",
-                "url": "https://drive.google.com/file/d/1UZF7D-xqMei18hlrbzfDH8SrsJHmACoe/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "That was a joke.",
-                "line": 180,
-                "start_time": "0-10-45.170000",
-                "end_time": "0-10-46.420000",
-                "url": "https://drive.google.com/file/d/19PJTycu6o2zw6Ifp66Yiia-6Ujhs6KKL/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "You're not even a little bit scared.",
-                "line": 181,
-                "start_time": "0-10-46.880000",
-                "end_time": "0-10-48.420000",
-                "url": "https://drive.google.com/file/d/1fb-RgPtzKic4Ph6geFoPE4CitTQ6HeKn/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "Don't kill me!",
-                "line": 182,
-                "start_time": "0-10-49.330000",
-                "end_time": "0-10-51.420000",
-                "url": "https://drive.google.com/file/d/19hJZh8E7Xpgz9bxm0nnw1m-S_VwCSwCC/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "It's possible that Rose has escaped into the underground passages.",
-                "line": 183,
-                "start_time": "0-10-52.460000",
-                "end_time": "0-10-55.920000",
-                "url": "https://drive.google.com/file/d/1aawQUOPVOrb74IOZmMMVtb4YhMojlMT8/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "So we're going there to look for her.",
-                "line": 184,
-                "start_time": "0-10-56.250000",
-                "end_time": "0-10-58",
-                "url": "https://drive.google.com/file/d/1zND7J9pVq-_WU6gnug-Eud91SqPDuhYT/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "Excuse me a moment.",
-                "line": 185,
-                "start_time": "0-10-58",
-                "end_time": "0-10-59.540000",
-                "url": "https://drive.google.com/file/d/1kEl47r-oJezeKaKp0YcnTh-zTOkyeBpV/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "What?",
-                "line": 186,
-                "start_time": "0-10-59.540000",
-                "end_time": "0-11-00.380000",
-                "url": "https://drive.google.com/file/d/1aZkRhiWiGzjBB80N8NvUZseN4oKB_MMX/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "Have you told anyone about this?",
-                "line": 187,
-                "start_time": "0-11-00.380000",
-                "end_time": "0-11-02.460000",
-                "url": "https://drive.google.com/file/d/1WvGLqK3GjZZ4QQDJ-Fh7G8mtr9XuUp03/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Why would I tell anybody?",
-                "line": 188,
-                "start_time": "0-11-02.710000",
-                "end_time": "0-11-04.290000",
-                "url": "https://drive.google.com/file/d/1sQcl9FkeMifYeHpWg9itTf3Fg3GWxizt/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "They would try and stop me.",
-                "line": 189,
-                "start_time": "0-11-04.290000",
-                "end_time": "0-11-05.500000",
-                "url": "https://drive.google.com/file/d/1_sjJVRi_J_XFL9ZKN7G0CMRsNM7zzxoo/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "You just said that this was a maze.",
-                "line": 190,
-                "start_time": "0-11-05.500000",
-                "end_time": "0-11-07.580000",
-                "url": "https://drive.google.com/file/d/1HYs-0fA0OgQ9CsGNVriw1eYLhp2-21-f/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "How can you be sure that we'll make it back out?",
-                "line": 191,
-                "start_time": "0-11-07.580000",
-                "end_time": "0-11-09.920000",
-                "url": "https://drive.google.com/file/d/16_p0FrDhS118IPg-tBcr43ZCAqNOAZMi/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "We just have to go back the way we came in, right?",
-                "line": 192,
-                "start_time": "0-11-09.920000",
-                "end_time": "0-11-12.380000",
-                "url": "https://drive.google.com/file/d/18AmLrIgDC_kCira37bTirgKCtpTAUZMc/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "Excuse me, would you please refrain from dragging people",
-                "line": 193,
-                "start_time": "0-11-13.080000",
-                "end_time": "0-11-15.500000",
-                "url": "https://drive.google.com/file/d/1qBslpy8j8U5512FT0EWdgw0zoWV25Z3J/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "into your spur-of-the-moment reckless schemes?",
-                "line": 194,
-                "start_time": "0-11-15.500000",
-                "end_time": "0-11-17.130000",
-                "url": "https://drive.google.com/file/d/16DmRsLfItQzIk76G0hGkOG0CzJgoiwXS/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "If you have a problem with it, you can leave.",
-                "line": 195,
-                "start_time": "0-11-18.330000",
-                "end_time": "0-11-20.540000",
-                "url": "https://drive.google.com/file/d/1QXPkXrvNHZ9lPM0JwSWsJOH7RJl7cORE/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "Babysitting is part of the job, Beta.",
-                "line": 196,
-                "start_time": "0-11-23.670000",
-                "end_time": "0-11-25.920000",
-                "url": "https://drive.google.com/file/d/1X0HuIh6f9WIuLeqUsP7-9WHCX0TlGf4R/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "What was I supposed to do back there?",
-                "line": 197,
-                "start_time": "0-11-35.500000",
-                "end_time": "0-11-38.750000",
-                "url": "https://drive.google.com/file/d/1VygBOH4zeRFT7_epuQ0iyLScR1MJPpcG/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "What was the right thing?",
-                "line": 198,
-                "start_time": "0-11-39.710000",
-                "end_time": "0-11-41.250000",
-                "url": "https://drive.google.com/file/d/1_minnYbgYeT9Jw6z_KbBi-K5OPwRlV1W/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "What would have been the best course of action?",
-                "line": 199,
-                "start_time": "0-11-41.250000",
-                "end_time": "0-11-43.080000",
-                "url": "https://drive.google.com/file/d/1_zJ-NW9hl6wakLe5_5bXwxZia6vi4kwV/view?usp=drivesdk"
-            },
-            {
-                "name": "Civil Servant",
-                "name_variant": "Civil Servant",
-                "subtitle": "Please welcome His Royal Majesty.",
-                "line": 200,
-                "start_time": "0-11-45.920000",
-                "end_time": "0-11-47.540000",
-                "url": "https://drive.google.com/file/d/1PgcaL6I52rJOGehN6zE4L9SpoeFVoQBB/view?usp=drivesdk"
-            },
-            {
-                "name": "Perv Asshat",
-                "name_variant": "Perv Asshat",
-                "subtitle": "Go on, Your Majesty.",
-                "line": 201,
-                "start_time": "0-11-58.250000",
-                "end_time": "0-11-59.540000",
-                "url": "https://drive.google.com/file/d/17ZLpMepkbH-bECefhbfUJaGjlJHhcSOa/view?usp=drivesdk"
-            },
-            {
-                "name": "Raphael Oriana",
-                "name_variant": "Raphael Oriana",
-                "subtitle": "You may raise your head...",
-                "line": 202,
-                "start_time": "0-11-59.540000",
-                "end_time": "0-12-02.880000",
-                "url": "https://drive.google.com/file/d/1c-QWSkv41PHgKjvxMO5yrGuYQt5nhO7z/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "It is good to see you again, Your Majesty.",
-                "line": 203,
-                "start_time": "0-12-03.170000",
-                "end_time": "0-12-05.210000",
-                "url": "https://drive.google.com/file/d/1gawXuUmyCO2KQ9t2z8CR4FfDe3wg_WM9/view?usp=drivesdk"
-            },
-            {
-                "name": "Raphael Oriana",
-                "name_variant": "Raphael Oriana",
-                "subtitle": "It is good to see you...",
-                "line": 204,
-                "start_time": "0-12-11.500000",
-                "end_time": "0-12-15.080000",
-                "url": "https://drive.google.com/file/d/1990RLpSacDgeumj-qa27cdERXDvx3Vr6/view?usp=drivesdk"
-            },
-            {
-                "name": "Raphael Oriana",
-                "name_variant": "Raphael Oriana",
-                "subtitle": "Rose...",
-                "line": 205,
-                "start_time": "0-12-15.790000",
-                "end_time": "0-12-18.080000",
-                "url": "https://drive.google.com/file/d/1ozR6htaBHvIcx4yKCrBF0_Tn_SXOKOAn/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Father!",
-                "line": 206,
-                "start_time": "0-12-18.460000",
-                "end_time": "0-12-19.670000",
-                "url": "https://drive.google.com/file/d/1jwlDPsmkiz4oGl1NiwgKKnvpevDH9ZO0/view?usp=drivesdk"
-            },
-            {
-                "name": "Civil Servants",
-                "name_variant": "Civil Servants",
-                "subtitle": "Princess Rose has gone mad!",
-                "line": 207,
-                "start_time": "0-12-38.380000",
-                "end_time": "0-12-40.790000",
-                "url": "https://drive.google.com/file/d/1BvOQw6AUDY-qbaLZ340jXfcBs3t6W1eZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "At the time, I thought I had made a rational decision.",
-                "line": 208,
-                "start_time": "0-12-47.130000",
-                "end_time": "0-12-50.580000",
-                "url": "https://drive.google.com/file/d/1Gj3g_0CWFXU2FWekq1redGmnu4Os6mHa/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "If I could have settled the matter then and there,",
-                "line": 209,
-                "start_time": "0-12-51.960000",
-                "end_time": "0-12-54.250000",
-                "url": "https://drive.google.com/file/d/1OGsP6VYPzibw2Z_ftRg8PiihG-q4mYyS/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "we could have treated it all as a domestic affair within the Oriana Kingdom.",
-                "line": 210,
-                "start_time": "0-12-54.250000",
-                "end_time": "0-12-57.330000",
-                "url": "https://drive.google.com/file/d/1btq3jMBlCck8RCvSDniBazqIuPUCoVQx/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "We could have stopped the problem from spreading to other nations,",
-                "line": 211,
-                "start_time": "0-12-58.170000",
-                "end_time": "0-13-02.830000",
-                "url": "https://drive.google.com/file/d/1kwQXJT80Xm8Q7uMt-qb-BJYCq2RI6vsl/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "like the Midgar Kingdom.",
-                "line": 212,
-                "start_time": "0-13-02.830000",
-                "end_time": "0-13-04.580000",
-                "url": "https://drive.google.com/file/d/19sQSxoHo1XTwlm89S1xxx6jJXYAaHGx_/view?usp=drivesdk"
-            },
-            {
-                "name": "Perv Asshat",
-                "name_variant": "Perv Asshat",
-                "subtitle": "Turn yourself in before the Bushin Festival is over!",
-                "line": 213,
-                "start_time": "0-13-09.790000",
-                "end_time": "0-13-12.040000",
-                "url": "https://drive.google.com/file/d/1O0MOPOXtpO3VD8Esr1MJGgR9L7n36ATP/view?usp=drivesdk"
-            },
-            {
-                "name": "Perv Asshat",
-                "name_variant": "Perv Asshat",
-                "subtitle": "Otherwise, I'll make your father kill one of the other guests of honor!",
-                "line": 214,
-                "start_time": "0-13-12.040000",
-                "end_time": "0-13-15.790000",
-                "url": "https://drive.google.com/file/d/1DqI440owwGYmEHZ0AQ1LRXMk5tYkOylA/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "But what I did was not a rational thing to do.",
-                "line": 215,
-                "start_time": "0-13-18.250000",
-                "end_time": "0-13-20.540000",
-                "url": "https://drive.google.com/file/d/1KY3q--Qm5kfHpSt9IYNEBusl811acYvt/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I was only acting on my anger and desperation.",
-                "line": 216,
-                "start_time": "0-13-21.540000",
-                "end_time": "0-13-24.960000",
-                "url": "https://drive.google.com/file/d/1Ev4PzQ1-CvAD16hWisSYu5T0UzHa4d29/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I wanted to protect them...",
-                "line": 217,
-                "start_time": "0-13-25.880000",
-                "end_time": "0-13-27.250000",
-                "url": "https://drive.google.com/file/d/1vmbVipiuXBwfZYwLGjJtcviBTDnzue4q/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "My one and only father, my one and only homeland.",
-                "line": 218,
-                "start_time": "0-13-27.630000",
-                "end_time": "0-13-32.040000",
-                "url": "https://drive.google.com/file/d/1o864JG3vg3IwxGUwrIIJOQZ9xDSoMInx/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Perv is just one of the Cult's disposable pawns.",
-                "line": 219,
-                "start_time": "0-13-32.540000",
-                "end_time": "0-13-34.630000",
-                "url": "https://drive.google.com/file/d/15orI5yWkOvBh0BIqIkVitbr8XzZS-rC-/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Killing him won't change anything.",
-                "line": 220,
-                "start_time": "0-13-35.290000",
-                "end_time": "0-13-37.040000",
-                "url": "https://drive.google.com/file/d/1sdyCxNdscb31rARjLSl2BDCsTXxVtEcv/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "The Cult's roots have already spread too deep within the Oriana Kingdom.",
-                "line": 221,
-                "start_time": "0-13-37.040000",
-                "end_time": "0-13-40.130000",
-                "url": "https://drive.google.com/file/d/1LkhYJwk4AuMaxnq3LAwlnEGUNBbborbe/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "If I do manage to get away, what then?",
-                "line": 222,
-                "start_time": "0-13-45.460000",
-                "end_time": "0-13-47.290000",
-                "url": "https://drive.google.com/file/d/1hT-GCn6s_M66OOaw_z5EXdmtqLu91jim/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I'm hurting the knights of my own kingdom, pointlessly making the problem worse.",
-                "line": 223,
-                "start_time": "0-13-47.830000",
-                "end_time": "0-13-52.460000",
-                "url": "https://drive.google.com/file/d/1eHRdpX3tdLvznmuBfadI0s_n-9-OXFq2/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "What good will that do?",
-                "line": 224,
-                "start_time": "0-13-52.790000",
-                "end_time": "0-13-54.130000",
-                "url": "https://drive.google.com/file/d/1s_B92a1j1kfWsBZ-YKU3A94OjKSEPNQI/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Maybe I should just turn myself in.",
-                "line": 225,
-                "start_time": "0-13-55.210000",
-                "end_time": "0-13-57.710000",
-                "url": "https://drive.google.com/file/d/1moxiNgbdYtAh8RVqBmA2dKQRYJNXxwSS/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Then we can at least avoid a war.",
-                "line": 226,
-                "start_time": "0-13-58.330000",
-                "end_time": "0-14-01.210000",
-                "url": "https://drive.google.com/file/d/1-dk8MhC8LABpZNjUqQfk0e3EHJF6tYXO/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "And Father...",
-                "line": 227,
-                "start_time": "0-14-01.630000",
-                "end_time": "0-14-02.830000",
-                "url": "https://drive.google.com/file/d/1WGZppTELbG1pAHr9jAhhhsBca1Dm97AA/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Would you keep believing in me, come what may?",
-                "line": 228,
-                "start_time": "0-14-08.710000",
-                "end_time": "0-14-12.130000",
-                "url": "https://drive.google.com/file/d/1VM8uWuJ8aEAAJMEtuRQB3spmeLjOvolb/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Okay, I will.",
-                "line": 229,
-                "start_time": "0-14-12.460000",
-                "end_time": "0-14-14.710000",
-                "url": "https://drive.google.com/file/d/1e4Ng8PmQPTVZaRqIHmyqgVmPrkJMdme4/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Oh, Cid, surely you know what's happened by now.",
-                "line": 230,
-                "start_time": "0-14-16.540000",
-                "end_time": "0-14-20.380000",
-                "url": "https://drive.google.com/file/d/139eQROnpacKLbeQ2z4cgouZPiZuWvtmz/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Do you still believe in me?",
-                "line": 231,
-                "start_time": "0-14-21.170000",
-                "end_time": "0-14-24.380000",
-                "url": "https://drive.google.com/file/d/1KiH8f3nLrjiiNEgsaEJQKmbvZN7rDneO/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I wish I could eliminate Perv and his ilk, and get my father back.",
-                "line": 232,
-                "start_time": "0-14-26.580000",
-                "end_time": "0-14-30.130000",
-                "url": "https://drive.google.com/file/d/1D_Y-Zf6Vt5Kz6ek_pA53RCtfwje_BUZW/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Then I'd marry you and live happily ever after.",
-                "line": 233,
-                "start_time": "0-14-30.670000",
-                "end_time": "0-14-32.380000",
-                "url": "https://drive.google.com/file/d/1_4zkxmDw4zpfj77_rwPuyoB2tzAqEOQE/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "If only such fairy tale endings were real...",
-                "line": 234,
-                "start_time": "0-14-33.170000",
-                "end_time": "0-14-35.580000",
-                "url": "https://drive.google.com/file/d/1ch9t-b-Zhgg5kxAdLvI3xHhLi8k1Rgah/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "But in reality, I'm possessed.",
-                "line": 235,
-                "start_time": "0-14-40.670000",
-                "end_time": "0-14-42.580000",
-                "url": "https://drive.google.com/file/d/1un2MMF4CkNN9HXSCyUK36NZ2LwX5jV_3/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "None of my dreams were ever meant to come true.",
-                "line": 236,
-                "start_time": "0-14-43.170000",
-                "end_time": "0-14-46.460000",
-                "url": "https://drive.google.com/file/d/1jn73nWt6rRmWqq1CGjrN5-NpSbieiUmb/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "The \"Moonlight Sonata\"?",
-                "line": 237,
-                "start_time": "0-15-04",
-                "end_time": "0-15-05.210000",
-                "url": "https://drive.google.com/file/d/1nmgFBFY5FT5xl1L4L3iPLaqq4nCdq7ju/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "It's you...",
-                "line": 238,
-                "start_time": "0-15-51.670000",
-                "end_time": "0-15-52.880000",
-                "url": "https://drive.google.com/file/d/1cn_vMfzL7EpvnjwUmhyf1VA1Up_E8vtz/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Shadow!",
-                "line": 239,
-                "start_time": "0-15-54.380000",
-                "end_time": "0-15-55.580000",
-                "url": "https://drive.google.com/file/d/1UuCqF3jGcD9xWB8v209x-vXt0a7_8l1d/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I've heard the \"Moonlight Sonata\" many times,",
-                "line": 240,
-                "start_time": "0-16-25.670000",
-                "end_time": "0-16-27.710000",
-                "url": "https://drive.google.com/file/d/1HWb09_uS_lsSJx2_MILXc8rP1DW-K4nI/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "but that is without a doubt the best performance I've ever experienced.",
-                "line": 241,
-                "start_time": "0-16-27.710000",
-                "end_time": "0-16-30.170000",
-                "url": "https://drive.google.com/file/d/1Wg97cc701VFX76b2sNijpdn1SuJZGd70/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "What do you hope to accomplish?",
-                "line": 242,
-                "start_time": "0-16-31.170000",
-                "end_time": "0-16-32.920000",
-                "url": "https://drive.google.com/file/d/10GAn66H9GCSqs_1GmMzRH25sH0AHoVk3/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I wanted to protect them.",
-                "line": 243,
-                "start_time": "0-16-39.380000",
-                "end_time": "0-16-41.830000",
-                "url": "https://drive.google.com/file/d/15IB1HxccNPnO1Jn5DKG8D2bkJE5DcJhw/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "But I couldn't...",
-                "line": 244,
-                "start_time": "0-16-43.290000",
-                "end_time": "0-16-44.500000",
-                "url": "https://drive.google.com/file/d/1dhu7hil1AcRLYWsP5lAFk7lvXpaZWLOX/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I couldn't do anything.",
-                "line": 245,
-                "start_time": "0-16-44.830000",
-                "end_time": "0-16-46.290000",
-                "url": "https://drive.google.com/file/d/1q0Mz3SisxoKv50BD59frs4iwSgZnv9wV/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "And you would let it end there?",
-                "line": 246,
-                "start_time": "0-16-46.710000",
-                "end_time": "0-16-48.210000",
-                "url": "https://drive.google.com/file/d/1Pa3RqVw4yMfLQnvyIo_LY-qCUwa0e211/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "You would put down your sword and stop fighting?",
-                "line": 247,
-                "start_time": "0-16-49.710000",
-                "end_time": "0-16-52.500000",
-                "url": "https://drive.google.com/file/d/1VZ7Rp-8WYykv3nnpRM0xn5baWmQAHgRq/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "It's not like I wanted it to end this way!",
-                "line": 248,
-                "start_time": "0-16-53.040000",
-                "end_time": "0-16-55.630000",
-                "url": "https://drive.google.com/file/d/1WVZaibsOqd3_HyYwM5pB-4l9z6RTPTnG/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I wanted to win the brightest future for everyone!",
-                "line": 249,
-                "start_time": "0-16-56.210000",
-                "end_time": "0-16-58.330000",
-                "url": "https://drive.google.com/file/d/1PiiyU03P3J75FAJAr5KKZ5b6OK4LwDlt/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "If you have any desire to keep up the fight...",
-                "line": 250,
-                "start_time": "0-17-00.580000",
-                "end_time": "0-17-03.290000",
-                "url": "https://drive.google.com/file/d/123HJ4jfz1sfMUNk62ZRTxeGfah1bxP8-/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "I will give you power.",
-                "line": 251,
-                "start_time": "0-17-04.330000",
-                "end_time": "0-17-05.960000",
-                "url": "https://drive.google.com/file/d/1jauNZECByIC38MOwKmCYdJixeMcsKFAo/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "If I use that power...",
-                "line": 252,
-                "start_time": "0-17-08.920000",
-                "end_time": "0-17-10.580000",
-                "url": "https://drive.google.com/file/d/1TnGh62dpv_JWorm5M9YOV-MTvzfS5uOY/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "will I be able to change the future?",
-                "line": 253,
-                "start_time": "0-17-11.790000",
-                "end_time": "0-17-13.750000",
-                "url": "https://drive.google.com/file/d/1wC0j7gEyGPSBzTnCrvFDop3exOt1iNDO/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "That depends on you.",
-                "line": 254,
-                "start_time": "0-17-14.500000",
-                "end_time": "0-17-15.960000",
-                "url": "https://drive.google.com/file/d/1Ew7tIgEC1iIiXwnckJtjt5bIsjM9fkgH/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I...",
-                "line": 255,
-                "start_time": "0-17-17.750000",
-                "end_time": "0-17-18.960000",
-                "url": "https://drive.google.com/file/d/1UFwBLXqv50RZamoL55tQA9QjAIkyeUNk/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I am the Princess of Oriana, and as such, there are things that I must do!",
-                "line": 256,
-                "start_time": "0-17-18.960000",
-                "end_time": "0-17-22.500000",
-                "url": "https://drive.google.com/file/d/1_jRCOHoAyPB7cQPvg26AurEkcJqbEybs/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "As Rose Oriana, there are hopes I want to keep alive!",
-                "line": 257,
-                "start_time": "0-17-22.500000",
-                "end_time": "0-17-25.460000",
-                "url": "https://drive.google.com/file/d/1tHxvYLemS5U4l94Lc57WuBFXkVR3_YjB/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I want the power to achieve that!",
-                "line": 258,
-                "start_time": "0-17-25.790000",
-                "end_time": "0-17-27.830000",
-                "url": "https://drive.google.com/file/d/1rTab777vXS7PtRefB_S1JPvxkN_-cSbA/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "What's happening?",
-                "line": 259,
-                "start_time": "0-17-30.460000",
-                "end_time": "0-17-31.670000",
-                "url": "https://drive.google.com/file/d/1tGYTcFr0SgXH6muodEhbD3IhdipS2K29/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Incredible...",
-                "line": 260,
-                "start_time": "0-17-36.960000",
-                "end_time": "0-17-38.170000",
-                "url": "https://drive.google.com/file/d/1DHWE6k9g6kdca6dO8_zDFev62o2xJiJB/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "This is Shadow's magic?",
-                "line": 261,
-                "start_time": "0-17-38.380000",
-                "end_time": "0-17-40.210000",
-                "url": "https://drive.google.com/file/d/18Lhz95Rl4kLdQ0MN5sAKqXNShBpR1x-H/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "Rise up.",
-                "line": 262,
-                "start_time": "0-17-40.960000",
-                "end_time": "0-17-42.210000",
-                "url": "https://drive.google.com/file/d/1JFYcBrhMeqY4HAScHaNmqVIbNsgvV4vy/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "And prove to me that you are willing to keep up the fight.",
-                "line": 263,
-                "start_time": "0-17-42.92000",
-                "end_time": "0-17-46.500000",
-                "url": "https://drive.google.com/file/d/1jqpXbyEwaS4QGUkCI5KCtd2omfbyK5M_/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "Never forget:",
-                "line": 264,
-                "start_time": "0-17-47.580000",
-                "end_time": "0-17-48.790000",
-                "url": "https://drive.google.com/file/d/1nkhSO5X6DJIbGwTu59jWv2uXA0VdS-Jc/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "True strength lies not in one's power, but in one's way of being.",
-                "line": 265,
-                "start_time": "0-17-49",
-                "end_time": "0-17-53.380000",
-                "url": "https://drive.google.com/file/d/1yVOxadyeSATtpq6n5GirEsS3UoGhYvqW/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Those uniforms...",
-                "line": 266,
-                "start_time": "0-18-03.080000",
-                "end_time": "0-18-04.500000",
-                "url": "https://drive.google.com/file/d/1M697DqacjhvlURnImf5hx5v2JyfkCK7A/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "So you belong to the Cult of Diablos.",
-                "line": 267,
-                "start_time": "0-18-04.670000",
-                "end_time": "0-18-06.630000",
-                "url": "https://drive.google.com/file/d/1yAm5hs1_GVQ5HBZ-pSxy2TrCD3tOR1NU/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "The fact that you are appearing here, at this particular moment means...",
-                "line": 268,
-                "start_time": "0-18-09.330000",
-                "end_time": "0-18-12.540000",
-                "url": "https://drive.google.com/file/d/1AZtyfolGfnsUNvmXspa3eaYfIRJDcnJO/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Shadow...",
-                "line": 269,
-                "start_time": "0-18-20.130000",
-                "end_time": "0-18-21.330000",
-                "url": "https://drive.google.com/file/d/1dLPTN7VpY7o7B8JmKehPHv1J5vVY3pck/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "He is a ray of moonlight that pierces the darkness.",
-                "line": 270,
-                "start_time": "0-18-21.830000",
-                "end_time": "0-18-24.500000",
-                "url": "https://drive.google.com/file/d/1vNcQ0a8pYYiNaqm-zhoEvKSC74qID6UD/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "If I could have my wish, I, too...",
-                "line": 271,
-                "start_time": "0-18-25.290000",
-                "end_time": "0-18-27.500000",
-                "url": "https://drive.google.com/file/d/15A7B_bc4O6jQVIlsnSdKBgvX8kgOOTic/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "What was that enormous burst of magical energy?",
-                "line": 272,
-                "start_time": "0-18-30.330000",
-                "end_time": "0-18-32.170000",
-                "url": "https://drive.google.com/file/d/1vOinpHKcbeCPKRBl-b9WED6_v8KRM-iU/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Rose!",
-                "line": 273,
-                "start_time": "0-18-38.960000",
-                "end_time": "0-18-40.170000",
-                "url": "https://drive.google.com/file/d/1xAKowgkK5I_Andfcr28DVnaczxohD3DA/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Alexia...",
-                "line": 274,
-                "start_time": "0-18-41.330000",
-                "end_time": "0-18-42.540000",
-                "url": "https://drive.google.com/file/d/1HwbNEQDS0CvtW9NtL5CElBfdXuSjwddX/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Look at you!",
-                "line": 275,
-                "start_time": "0-18-42.960000",
-                "end_time": "0-18-44.210000",
-                "url": "https://drive.google.com/file/d/1jTDDlzAh-s6ZiRXD2wm1SlCL2R4cV26x/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "What was that burst of magic?",
-                "line": 276,
-                "start_time": "0-18-44.880000",
-                "end_time": "0-18-46.380000",
-                "url": "https://drive.google.com/file/d/1DXpmyfJQ9lNjuv_KqGDOe2taEGOFK-CM/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Rose?",
-                "line": 277,
-                "start_time": "0-18-47.040000",
-                "end_time": "0-18-48.250000",
-                "url": "https://drive.google.com/file/d/1rtkCzpO_zlQhJUqohwzu2m3n099-RhMT/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I have obtained power.",
-                "line": 278,
-                "start_time": "0-18-49",
-                "end_time": "0-18-50.420000",
-                "url": "https://drive.google.com/file/d/11OgwyexZC7ofgSyQmtinRFRCS-06ti-C/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I will follow the path I believe in.",
-                "line": 279,
-                "start_time": "0-18-51.210000",
-                "end_time": "0-18-53.670000",
-                "url": "https://drive.google.com/file/d/17nTSgAGaof8Wx6ZE7G9sJrkjo9TfFqRy/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Wait a minute!",
-                "line": 280,
-                "start_time": "0-18-53.670000",
-                "end_time": "0-18-54.880000",
-                "url": "https://drive.google.com/file/d/1o6EghibulMYruKZgLqRdT4G19i4Kq0jq/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "What are you talking about?",
-                "line": 281,
-                "start_time": "0-18-55.170000",
-                "end_time": "0-18-56.420000",
-                "url": "https://drive.google.com/file/d/14a4DMOC72Xn01tSC3GOPIu0t8ncPa0md/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Why did you stab your fiance?",
-                "line": 282,
-                "start_time": "0-18-56.420000",
-                "end_time": "0-18-58.210000",
-                "url": "https://drive.google.com/file/d/1Ikm7s2RUo2k1X3L1QkpWKH-6DR3kMFNs/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I'm sorry.",
-                "line": 283,
-                "start_time": "0-18-58.960000",
-                "end_time": "0-19-00.170000",
-                "url": "https://drive.google.com/file/d/1VsNMyVDTuVW3EMFWsk3M9JzG6bNn-AHb/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I don't want to drag you into this.",
-                "line": 284,
-                "start_time": "0-19-00.670000",
-                "end_time": "0-19-02.250000",
-                "url": "https://drive.google.com/file/d/1AsNZ0GdHOqlXxBDg0uUocvp65qEIqqRl/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "That doesn't tell me anything!",
-                "line": 285,
-                "start_time": "0-19-02.250000",
-                "end_time": "0-19-04.040000",
-                "url": "https://drive.google.com/file/d/1qf6J81wVZQIXxGEtTY4EjEY41u3fBcCz/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Answer the question!",
-                "line": 286,
-                "start_time": "0-19-04.040000",
-                "end_time": "0-19-05.580000",
-                "url": "https://drive.google.com/file/d/1bPx4sAb34qstEBgxWlafL6sbpif3R5Ee/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "If I tell you, you will get dragged into it.",
-                "line": 287,
-                "start_time": "0-19-08.960000",
-                "end_time": "0-19-10.880000",
-                "url": "https://drive.google.com/file/d/1Sq1LraTMTuhhnjxy69L450Qmc7J92DQW/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Back at the Sanctuary, we promised each other.",
-                "line": 288,
-                "start_time": "0-19-12.250000",
-                "end_time": "0-19-15.130000",
-                "url": "https://drive.google.com/file/d/1BhfcjiyNODwBVqv7OYL-4KWwT3lGCQbU/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "If we're never more than spectators, someday we'll lose everything we care about.",
-                "line": 289,
-                "start_time": "0-19-15.710000",
-                "end_time": "0-19-19.960000",
-                "url": "https://drive.google.com/file/d/15-02CqY1l_qTwOl5QspQ39qRUvsSJuqw/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "That's why we promised each other that we'd protect those things together.",
-                "line": 290,
-                "start_time": "0-19-20.380000",
-                "end_time": "0-19-23.580000",
-                "url": "https://drive.google.com/file/d/1d-rVrcPAeWIXrceSKUr4m_8C8SaLgDg5/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "So how can you talk to me like this?",
-                "line": 291,
-                "start_time": "0-19-23.960000",
-                "end_time": "0-19-26.080000",
-                "url": "https://drive.google.com/file/d/1VsCgcS744gARhPFx3I80tgKrCIj8dN6H/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Do you think I'm only good as a spectator, too?",
-                "line": 292,
-                "start_time": "0-19-26.080000",
-                "end_time": "0-19-29.170000",
-                "url": "https://drive.google.com/file/d/1-MbuCqxA885ZOONHRk7LBdU5j7NuQiCx/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I'm sorry.",
-                "line": 293,
-                "start_time": "0-19-30.630000",
-                "end_time": "0-19-31.630000",
-                "url": "https://drive.google.com/file/d/1xQUEHMEIWISifTgdlEfEXay8VQEqCTEx/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Answer me!",
-                "line": 294,
-                "start_time": "0-19-31.630000",
-                "end_time": "0-19-32.920000",
-                "url": "https://drive.google.com/file/d/1UOiVnW422BWrLIIWuMAkbYI9vcN2arb-/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "There's no turning back for me now.",
-                "line": 295,
-                "start_time": "0-19-33.210000",
-                "end_time": "0-19-35.080000",
-                "url": "https://drive.google.com/file/d/1hTh_LqpO9vx-OvvE4pR2a5enPHtQr7iS/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "And I envy you.",
-                "line": 296,
-                "start_time": "0-19-35.080000",
-                "end_time": "0-19-36.880000",
-                "url": "https://drive.google.com/file/d/16SW1_qbAymJ50OyIz9T_K-A8mLTtBrcA/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Why?",
-                "line": 297,
-                "start_time": "0-19-37.250000",
-                "end_time": "0-19-38.460000",
-                "url": "https://drive.google.com/file/d/1jjgHXPbYOovyEKMBfqtFrdSkQxnxgQWg/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I've lost a number of things already, and I'm going to lose more.",
-                "line": 298,
-                "start_time": "0-19-38.750000",
-                "end_time": "0-19-42.920000",
-                "url": "https://drive.google.com/file/d/1P0SY6ephlZoyVqkhdStVupRYAckWsMaN/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Everyone will reject me, denounce me as evil.",
-                "line": 299,
-                "start_time": "0-19-43.420000",
-                "end_time": "0-19-46.920000",
-                "url": "https://drive.google.com/file/d/1mNqCeuWqQADto_v7OXOUb7Yu3YyP_Tlw/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "Yeah, so what?",
-                "line": 300,
-                "start_time": "0-19-47.460000",
-                "end_time": "0-19-49.710000",
-                "url": "https://drive.google.com/file/d/1LAuKd7oQYF_MF1wOE7kG_kX4NtkXRxB7/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I'm sorry.",
-                "line": 301,
-                "start_time": "0-19-50.460000",
-                "end_time": "0-19-52",
-                "url": "https://drive.google.com/file/d/1VbWbwnHLVm2tFcjyGKygoPooUYXMs-uL/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I have to go.",
-                "line": 302,
-                "start_time": "0-19-52",
-                "end_time": "0-19-53.580000",
-                "url": "https://drive.google.com/file/d/1Jo0vU3naVYY0fL8_ZYoVyq2i7gf1WXDV/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "All right, fine!",
-                "line": 303,
-                "start_time": "0-19-53.580000",
-                "end_time": "0-19-54.580000",
-                "url": "https://drive.google.com/file/d/1C0CQqjamIcWBlicQWDqAm-oKgTmPcaPN/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "If you won't give me the answers, I'll force them out of you!",
-                "line": 304,
-                "start_time": "0-19-54.580000",
-                "end_time": "0-19-56.920000",
-                "url": "https://drive.google.com/file/d/1-nFo8bACxXC7Cj3lTbx88yIDIAenWMRT/view?usp=drivesdk"
-            },
-            {
-                "name": "Alexia Midgar",
-                "name_variant": "Alexia Midgar",
-                "subtitle": "I'm not just a spectator anymore!",
-                "line": 305,
-                "start_time": "0-20-06.040000",
-                "end_time": "0-20-08.210000",
-                "url": "https://drive.google.com/file/d/1dGPy3RDhQhpniUG6EVPYKbfYnkM_7pfO/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Alexia, when did you get to be this strong?",
-                "line": 306,
-                "start_time": "0-20-38.080000",
-                "end_time": "0-20-41.880000",
-                "url": "https://drive.google.com/file/d/1splW4KYvRgTxf1wqFgGHgEqCJuU_2jhf/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Miss Natsume...",
-                "line": 307,
-                "start_time": "0-20-43.670000",
-                "end_time": "0-20-44.880000",
-                "url": "https://drive.google.com/file/d/1_GYjIbcncSeJwIgJyzV27-aps2Gu-2Y5/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "I'm sorry, I have to go.",
-                "line": 308,
-                "start_time": "0-20-45.420000",
-                "end_time": "0-20-48.130000",
-                "url": "https://drive.google.com/file/d/15PCmvmml-ZoBsiuikZmTwjQr7AKUnVKK/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "I won't try to stop you.",
-                "line": 309,
-                "start_time": "0-20-50.580000",
-                "end_time": "0-20-51.920000",
-                "url": "https://drive.google.com/file/d/1gwDhW6TR4IEgdRQwvKJGtIuz6q2JSXja/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "I don't have the right to stop you.",
-                "line": 310,
-                "start_time": "0-20-53.750000",
-                "end_time": "0-20-56.670000",
-                "url": "https://drive.google.com/file/d/1cz-NeBDX6xnQNvpBuj_yHvz9J7_y_CPm/view?usp=drivesdk"
-            },
-            {
-                "name": "Rose Oriana",
-                "name_variant": "Rose Oriana",
-                "subtitle": "Miss Natsume?",
-                "line": 311,
-                "start_time": "0-20-57.130000",
-                "end_time": "0-20-58.460000",
-                "url": "https://drive.google.com/file/d/1_YLAe2KD7gTkfOScmIrNd_sfZhBXY4xa/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "But I am a little surprised.",
-                "line": 312,
-                "start_time": "0-20-59",
-                "end_time": "0-21-00.830000",
-                "url": "https://drive.google.com/file/d/1ULwR1XGk83nsMi1R6oOsUc3dAntnM8SR/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "I suppose even fools try in their own foolish way to find the best solutions.",
-                "line": 313,
-                "start_time": "0-21-01.290000",
-                "end_time": "0-21-03.880000",
-                "url": "https://drive.google.com/file/d/1BcGfSRZ25kdBD9AQ2KdBko9cx9BEMhbK/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "We each have different nationalities, different affiliations, different creeds,",
-                "line": 314,
-                "start_time": "0-21-04.420000",
-                "end_time": "0-21-08.500000",
-                "url": "https://drive.google.com/file/d/1cy8FyLZbYRjWXYQ41yw2PGPtxI_-WUSh/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "but maybe the ideals we strive for are the same.",
-                "line": 315,
-                "start_time": "0-21-08.500000",
-                "end_time": "0-21-11.580000",
-                "url": "https://drive.google.com/file/d/1M-DP3_uRqznTsplza7rF2M7cEege0BP2/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "It's possible that this alliance of ours wasn't such a bad idea after all.",
-                "line": 316,
-                "start_time": "0-21-12.290000",
-                "end_time": "0-21-16.460000",
-                "url": "https://drive.google.com/file/d/1wSepuufHuXaYk63s2vT0nzoU1PWtXicV/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "I wish you success.",
-                "line": 317,
-                "start_time": "0-21-17.210000",
-                "end_time": "0-21-18.710000",
-                "url": "https://drive.google.com/file/d/1oKx8YuleLjbYFBauZsKMiftlFnbIid43/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "I suspect our paths will cross again before too long.",
-                "line": 318,
-                "start_time": "0-21-19",
-                "end_time": "0-21-22.880000",
-                "url": "https://drive.google.com/file/d/11k_bKF5SguqF5tzE0u-XW_4AAICpWJcu/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Natsume Kafka",
-                "subtitle": "Is this what you've chosen, Lord Shadow?",
-                "line": 319,
-                "start_time": "0-21-31.250000",
-                "end_time": "0-21-36.210000",
-                "url": "https://drive.google.com/file/d/1lxq_x9AV0ul_7w4flw7S-WFLVEeytnu9/view?usp=drivesdk"
-            },
-            {
-                "name": "Soldier",
-                "name_variant": "Soldier",
-                "subtitle": "Yes, it just disappeared.",
-                "line": 320,
-                "start_time": "0-21-40.420000",
-                "end_time": "0-21-42.710000",
-                "url": "https://drive.google.com/file/d/1ER6GndX3FIAZv7zlZQbTucA8duvoEZQq/view?usp=drivesdk"
-            },
-            {
-                "name": "Soldier",
-                "name_variant": "Soldier",
-                "subtitle": "And in broad daylight? How strange.",
-                "line": 321,
-                "start_time": "0-21-42.830000",
-                "end_time": "0-21-45.460000",
-                "url": "https://drive.google.com/file/d/1T6Q4aE1rvK5EAyGzbMNRSvS4MnskXAUN/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "A melody that echoes through the darkness...",
-                "line": 322,
-                "start_time": "0-21-46.630000",
-                "end_time": "0-21-48.670000",
-                "url": "https://drive.google.com/file/d/1Xq_67U7_8uq_p5Nn0Cr3GJYvWEVYUl2o/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "The words that spring like a song from the mouth of the Eminence in Shadow...",
-                "line": 323,
-                "start_time": "0-21-48.920000",
-                "end_time": "0-21-52.330000",
-                "url": "https://drive.google.com/file/d/1gEhFVEDowlubMF9o0XvpRqQ3bgMlr8tQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "Yes, I think that went quite well.",
-                "line": 324,
-                "start_time": "0-21-52.670000",
-                "end_time": "0-21-55.290000",
-                "url": "https://drive.google.com/file/d/1_1hzi5-DWSMv-XGR2C4SV8oSAzUCe_c-/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "I always knew a piano was an excellent set piece.",
-                "line": 325,
-                "start_time": "0-21-55.790000",
-                "end_time": "0-21-59.210000",
-                "url": "https://drive.google.com/file/d/1xJ46Kfrmj_7K5WyxzSNRCPILOxWhosa6/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid Kagenou",
-                "subtitle": "I really wish I had my own so I didn't have to borrow one.",
-                "line": 326,
-                "start_time": "0-21-59.580000",
-                "end_time": "0-22-02.580000",
-                "url": "https://drive.google.com/file/d/1SbNG7cI4r0ZeVPZLp85V5zOVoyLX7CsO/view?usp=drivesdk"
-            }
-        ]
+    "p2": {
+        "c2-5": {
+            "e1": [
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "...",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/1qqkEqTnUESptGrarz6flhqt-t7jRmVu1/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...",
+                    "line": 2,
+                    "url": "https://drive.google.com/file/d/12FuCyf_skpWcpfG0lGg99iNor3iQt91d/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Hehehe... I can't wait...",
+                    "line": 3,
+                    "url": "https://drive.google.com/file/d/1hGnUFjS5PrDmyNbD5kQ97ogp3V7gOd_T/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Enter.",
+                    "line": 4,
+                    "url": "https://drive.google.com/file/d/1UGIpokFAzMWuJbO6cI1vsp0t3BcpEiQ7/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Pardon me.",
+                    "line": 5,
+                    "url": "https://drive.google.com/file/d/1qp-3f80ZXDZ8msdOkQ-Sglskdjcv3SKq/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Lambda...?",
+                    "line": 6,
+                    "url": "https://drive.google.com/file/d/1dc5bdjis_dZs28bqllB6Z9jk1QEYILux/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Aah! I knew it! Just as Lady Gamma feared...",
+                    "line": 7,
+                    "url": "https://drive.google.com/file/d/1TORB7j48nrfJXpv4Hv8Atbsd3MuWQi_U/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Jeez... I haven't even started any experiments yet.",
+                    "line": 8,
+                    "url": "https://drive.google.com/file/d/1e_XlwJnYnzE-W1TbQ3HhpMEcjy-JAjF_/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "I've just brought her to my lab and let her sleep here...so that I can start at any time!",
+                    "line": 9,
+                    "url": "https://drive.google.com/file/d/1eaw0XgBcQV27rcIQFvHd8yX5kMLwhNQU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Ulp... That may be so, but please at least wait for Lady Alpha's decision!",
+                    "line": 10,
+                    "url": "https://drive.google.com/file/d/1XZnuV2RzRaq4VyUJbmSXxWNhGoFhgQvs/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Ugh...",
+                    "line": 11,
+                    "url": "https://drive.google.com/file/d/1x_TLpQDXaWR1eSvupOIOXFwK6dTV7Ixv/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Even if this possessed turns out to be one of the Cult's pawns\u2014",
+                    "line": 12,
+                    "url": "https://drive.google.com/file/d/1Klh8oZxb34ISZKT6vI6x0pX6LUUW3aCE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...Hmm?!",
+                    "line": 13,
+                    "url": "https://drive.google.com/file/d/1CLFXPnCOe1d847TBFC4nefew_s3l7tkU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Lambda...?",
+                    "line": 14,
+                    "url": "https://drive.google.com/file/d/1G-AnPHQNUoQhCwAl_cfggl_2j5YJ6lEu/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "This woman... It can't be!",
+                    "line": 15,
+                    "url": "https://drive.google.com/file/d/1774aYMjksDawkxyh3HJ_AhqMiUomvtZ3/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "You know her?",
+                    "line": 16,
+                    "url": "https://drive.google.com/file/d/1yCVt2vYg_n8hdkiPldWgYXUpcYtM9vv-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "N-No...not personally, but...!",
+                    "line": 17,
+                    "url": "https://drive.google.com/file/d/1XVSxXZXOkMeIRKw6pQRdzyhF2frRdOSK/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Anyway, I must report to the other Seven Shadows immediately!",
+                    "line": 18,
+                    "url": "https://drive.google.com/file/d/1GsqRFfvIoY_-xUKNDG6FEUpwhztNPgAX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "...They're all at a meeting in the castle.",
+                    "line": 19,
+                    "url": "https://drive.google.com/file/d/1KtjWN6WGi3QMASkXwUheDAEEbQxiaacJ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...",
+                    "line": 20,
+                    "url": "https://drive.google.com/file/d/1zf_-Lu1Qz84wVa7cCUDsi5kC_0srObVX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Lady Eta...please, I implore you, don't do anything just yet!",
+                    "line": 21,
+                    "url": "https://drive.google.com/file/d/19zha7SUgeQAVmK4K7cb9VooG_bd0_rze/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Jeez...",
+                    "line": 22,
+                    "url": "https://drive.google.com/file/d/1KgfvF6huJg0LIdlFfJXBj3rRlpDFG3zO/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Please! At least until we can confirm the necessary details!",
+                    "line": 23,
+                    "url": "https://drive.google.com/file/d/12gJMShwTvlAprgT-YYOXf5f-N1rJ8pkK/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "...You sound just like Gamma...",
+                    "line": 24,
+                    "url": "https://drive.google.com/file/d/1sycfgJcVHhEGcoAbUrGDmh12cJkvRVr-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Fine... I'll hold off for a bit longer.",
+                    "line": 25,
+                    "url": "https://drive.google.com/file/d/1Ic8sKCeWR15BpK_MwkO7gOI3h5PGeDvC/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "I am eternally grateful! Well then, if you'll excuse me!",
+                    "line": 26,
+                    "url": "https://drive.google.com/file/d/1Zo2K2nMwkaWaSBiuOk9J2oE-RNcKzli-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "...",
+                    "line": 27,
+                    "url": "https://drive.google.com/file/d/1cci-FrV24eQDV_C8-AOFKaF4ze5kz8o4/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...",
+                    "line": 28,
+                    "url": "https://drive.google.com/file/d/1IeeSjUtep0N4JeqWbeBHC5BKVo_rYCFt/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "...I might not get to...experiment on you...",
+                    "line": 29,
+                    "url": "https://drive.google.com/file/d/1F80V9sZtUnlbIY9QPMjcfGLcJwNM_UUY/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "...Karen von Herzog's condition has stabilized. She's currently in a deep sleep due to exhaustion.",
+                    "line": 30,
+                    "url": "https://drive.google.com/file/d/16C5jSUoKb2JBirxBP21rB2CY1mgK-g9z/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Her right leg is back to normal, but her right eye injury appears unrelated to the sarcoma from the possession...",
+                    "line": 31,
+                    "url": "https://drive.google.com/file/d/1tz9jCIuUqJp5Tvykpc8qksgKKKydenhX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "If Lord Shadow were here, he could heal her old wounds as well...but I lack the ability!",
+                    "line": 32,
+                    "url": "https://drive.google.com/file/d/11MscsArENFFHeEiBXs2taYDPcDwddXaV/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Don't be too hard on yourself, Epsilon. Even I can't heal without leaving any marks, especially if it's a deep scar.",
+                    "line": 33,
+                    "url": "https://drive.google.com/file/d/1sJqTC1Ou4D0dk2jjQLJF74ku_tZzT-lu/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "According to Gamma's report, she used her afflicted right leg as a shield to block the greatsword thrown at her... So long as the leg carries no residual effects, then it was a great success.",
+                    "line": 34,
+                    "url": "https://drive.google.com/file/d/1Z4UQ0QTtpa33hszkBNMGYELIIXG_3NzG/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Lady Alpha... Thank you.",
+                    "line": 35,
+                    "url": "https://drive.google.com/file/d/1p5D5iFtN2SmJQCDtjghJBfdskciIides/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "...That said, a possessed leader from the Cult of Diablos, huh?",
+                    "line": 36,
+                    "url": "https://drive.google.com/file/d/1uCN7xZ3ddtZTK4DkFswhN8YtkxEW9HjE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "We could extract intel from her and prevent her from leaking our secrets by...",
+                    "line": 37,
+                    "url": "https://drive.google.com/file/d/1wM_GD2kBWcfZ22q2FIT0h5-CLawEgwD8/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Hold on, Beta! She defended me in a life-or-death situation!",
+                    "line": 38,
+                    "url": "https://drive.google.com/file/d/1YYxYePYuxfia0KIrWm_7E0CsACybO2e5/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "We can't just kill her without a second thought!",
+                    "line": 39,
+                    "url": "https://drive.google.com/file/d/1wuk9jwzK9TlI_bWzjr2F0yvyhLcI0Wqj/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "I-I'm just talking hypothetically...and I never said we should kill her! But the Cult is our enemy, so we need to consider other scenarios\u2014",
+                    "line": 40,
+                    "url": "https://drive.google.com/file/d/1QG94goKpjGT0uPbt5XP1peK5f5tCjizz/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Maybe so, but we shouldn't be talking like that when we're still unsure if she really is the enemy!",
+                    "line": 41,
+                    "url": "https://drive.google.com/file/d/1tT_rFQPpUku4eFk0rJFnmhhrd-pCR0aC/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "The other swordsman...Sergey knew about the Shadow Garden, didn't he?",
+                    "line": 42,
+                    "url": "https://drive.google.com/file/d/1JFbIMzrelfnNDJrhT1Mg7GLLRa1UprKZ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Perhaps it's a ploy to send a spy into the Garden under the pretense of a falling out...",
+                    "line": 43,
+                    "url": "https://drive.google.com/file/d/1o7-M_aPqSG7ld92crVOtilbn8GbOrGSS/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Absolutely not, Beta!",
+                    "line": 44,
+                    "url": "https://drive.google.com/file/d/1F2SYH4O04C0Y00knpQsLntYAqK-n4dpC/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Both of you, calm down.",
+                    "line": 45,
+                    "url": "https://drive.google.com/file/d/15mpd-ioAdfU6OQjqLycDh9O_ZVo4CMGM/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "I was the one who ultimately instructed Gamma to bring her to Alexandria to recover.",
+                    "line": 46,
+                    "url": "https://drive.google.com/file/d/1Y27iM8H4K8y3kJPO4yrwY86fPu8rYVQa/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Lady Alpha...",
+                    "line": 47,
+                    "url": "https://drive.google.com/file/d/1nB-BRiqNG5BEhnQ8YzC38KOEjOSXggER/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Now that I think about it, curing the possessed can be done anywhere so long as Lady Alpha or I am there.",
+                    "line": 48,
+                    "url": "https://drive.google.com/file/d/1wuSqt_n5Jj2PkJi09DJlBVI6kvz3a8ug/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "That's right, but I brought her here to the Garden for a specific reason.",
+                    "line": 49,
+                    "url": "https://drive.google.com/file/d/1N4AiYIwNzvWsNdQbR78grdjGORbwi5eu/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "A reason...specific to the Garden?",
+                    "line": 50,
+                    "url": "https://drive.google.com/file/d/1OTzrWl0mvPtVXciYXRrims1ThooqPDfk/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "If she's indeed a leader abandoned by the Cult for becoming possessed... We, the Shadow Garden, will present ourselves openly and provide her with a choice.",
+                    "line": 51,
+                    "url": "https://drive.google.com/file/d/1Zvt0okGCUJlCO5QdkzlusBAbINzYgYSn/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "If we obtain secret intel on the Cult along with a competent subordinate as a result...that will further clarify the Garden's position.",
+                    "line": 52,
+                    "url": "https://drive.google.com/file/d/1nA2vZUQ35fEQ_nP39W46rouA7lGY3vSm/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Should the Cult not tolerate the possessed under any circumstances, then it carries great significance for the Shadow Garden to show the opposite path.",
+                    "line": 53,
+                    "url": "https://drive.google.com/file/d/12JO_UyV6Vn06Q2jsGOcv9DcHv52Xg5_w/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Lady Alpha\u2014",
+                    "line": 54,
+                    "url": "https://drive.google.com/file/d/1QJwyZ-_ivgMt29p6L39fz8rXB_ZXLcB4/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...But it will be her decision whether to follow the path shown to her by the Shadow Garden.",
+                    "line": 55,
+                    "url": "https://drive.google.com/file/d/1Z59KMuUo1xdwHQIEzYI6GJX94bRbFPUi/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "If necessary, I am prepared to take responsibility and dispose of her with my own hands.",
+                    "line": 56,
+                    "url": "https://drive.google.com/file/d/1cjc8ExsBcy6kAcHJ0NR-9Tq3umJV8D-k/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta & Gamma (Beta)",
+                    "subtitle": "Whaaat?!",
+                    "line": 57,
+                    "url": "https://drive.google.com/file/d/1K6CHQU3LuPRdeLymuTBxpgPEQUWKeadI/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Beta & Gamma (Gamma)",
+                    "subtitle": "Whaaat?!",
+                    "line": 57,
+                    "url": "https://drive.google.com/file/d/1K6CHQU3LuPRdeLymuTBxpgPEQUWKeadI/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Heheh. Even you seem surprised, Beta.",
+                    "line": 58,
+                    "url": "https://drive.google.com/file/d/1HuvVoMfDMRRDj2DCoENOg-qYUKz6OCHW/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "N-No... It's just that...if that's the case, then you won't hear anything more from me for now.",
+                    "line": 59,
+                    "url": "https://drive.google.com/file/d/1iZSPLxlfhXTUVqOP9ITobquLjgoqqBEq/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "In other words, even if they're saying the same thing, Lady Alpha's words carry much more weight than Beta's!",
+                    "line": 60,
+                    "url": "https://drive.google.com/file/d/19IBObmgEaN_-lnAc44b7co18gPDkiw_G/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Members of the Seven Shadows! Excuse me for interrupting your meeting!",
+                    "line": 61,
+                    "url": "https://drive.google.com/file/d/193WEx0_6OPMJMmFC3yXwGxDD5CLAS_Yx/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Lambda? I thought I asked you to check on Eta\u2014",
+                    "line": 62,
+                    "url": "https://drive.google.com/file/d/1JgBHp2NjykU-HhpJhVS0y1C1JlMARkUF/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Indeed! I've come to report urgent intel regarding the possessed Cult leader!",
+                    "line": 63,
+                    "url": "https://drive.google.com/file/d/1b2U8lq3-T5V0NxDGJLp1-TpVX0zOQkfE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...You know something about her?",
+                    "line": 64,
+                    "url": "https://drive.google.com/file/d/1aJMANwP0I3OzJMxFk7iows7KCbo2XWJs/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Indeed! I do!",
+                    "line": 65,
+                    "url": "https://drive.google.com/file/d/1cnk8lW3Wdv9LPlCTYJKCmdq6NvqFmEfI/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "She is Karen von Herzog!",
+                    "line": 66,
+                    "url": "https://drive.google.com/file/d/18H3iGlwIr1DAJ76QpxBJVV4T5ODC1k72/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Heiress to the Herzog Family, one of the oldest and most prestigious aristocratic families in Velgalta...with territories in the Empire since ancient times, and she is also one of Velgalta's Seven Blades!",
+                    "line": 67,
+                    "url": "https://drive.google.com/file/d/1FRENKld4QJTkLpUTbmM3Uu2Xmq2t7wdz/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "...If only it were just that...",
+                    "line": 68,
+                    "url": "https://drive.google.com/file/d/1FRGdn897tGOrLxybelaBgmi29YwlHko2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Lady Gamma?",
+                    "line": 69,
+                    "url": "https://drive.google.com/file/d/1rVRSjU7_22f2I3JI7DYoHevWWdesoB36/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...Lambda. Can you tell us what you know about Karen von Herzog and the Herzog Family from your perspective as a former soldier of the Velgalta Empire?",
+                    "line": 70,
+                    "url": "https://drive.google.com/file/d/1c7VzkRtN4JUwlNAv2KRFIO7Mk2FzYk6p/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "And I would also like to hear your opinion on what we are up against.",
+                    "line": 71,
+                    "url": "https://drive.google.com/file/d/10q8WeqGDjaLiDGxaFfJTKjiPCF-Oc2Wo/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Sir! Yes sir!",
+                    "line": 72,
+                    "url": "https://drive.google.com/file/d/1PZwv3qK9qY8FlOG6QcOGAFYVzsJGXUfl/view?usp=drivesdk"
+                }
+            ],
+            "e2": [
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Unbelievable! Are you saying that not only Lady Karen but also Sergey of the Seven Blades are leaders within the Cult?!",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/1oHHF665IDioRZXRCeWbusJJEhhYHhF0E/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "It's just speculation based on our exchange during the rescue mission. Nothing is confirmed yet, but...",
+                    "line": 2,
+                    "url": "https://drive.google.com/file/d/1Q1aV2Ag0RLvQtpA2muzVQ627IO57a0qM/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "At the very least, Sergey knew about the Garden, and was trying to kill Lady Karen.",
+                    "line": 3,
+                    "url": "https://drive.google.com/file/d/1aykodRQ97q5Y315wCxMs0sHvLt66PYk3/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "And Lady Karen, on her part, seemed unable to accept she had been abandoned by the Cult after becoming possessed.",
+                    "line": 4,
+                    "url": "https://drive.google.com/file/d/1K4kKaDdZdo81aQW_o3HrcMqHj3FIVl4d/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...I understand the Herzog Family comes from a prestigious and longstanding noble lineage within the Empire, known for their virtue and fairness, but...",
+                    "line": 5,
+                    "url": "https://drive.google.com/file/d/1zMlbcH8f68HUELXf5QlgU98OVA8qlD0e/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Specifically, what aspects of their conduct are highly regarded?",
+                    "line": 6,
+                    "url": "https://drive.google.com/file/d/1o3TgUIMxJbHgR-sU6DCtoT0H3vFcLHMx/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Indeed! The governance of the territories by the aristocrats who are vassals to the Empire varies significantly from region to region.",
+                    "line": 7,
+                    "url": "https://drive.google.com/file/d/1p_X04N1XjeWKSZvLU6nEBieis_HycahW/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Yet the Herzog Family has maintained stability over their governed lands.",
+                    "line": 8,
+                    "url": "https://drive.google.com/file/d/1xqKbfrtSGP0hGqdfaPO7Xjf7PG8cFVav/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "They are proactive in addressing the petitions of their residents, and although small in size, their army is highly disciplined... Not to mention, each successor has been a skilled dark knight.",
+                    "line": 9,
+                    "url": "https://drive.google.com/file/d/1uB-MDgyLUowumvOHFQbxevgCklolQsaP/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "As for Lady Karen, she was chosen as one of Velgalta's Seven Blades because of her skill not only with the sword but also with the spear.",
+                    "line": 10,
+                    "url": "https://drive.google.com/file/d/1u2TyO83XLlE2Zb95N1eN4GK9gdPMlzv9/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Externally, they seem like exemplary rulers in both war and peace.",
+                    "line": 11,
+                    "url": "https://drive.google.com/file/d/1sSfqcgvMyac0YeP3yt68db1fS_nAuL0i/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Such admirable rulers, yet behind the scenes... Their people are unwittingly being controlled by the Cult.",
+                    "line": 12,
+                    "url": "https://drive.google.com/file/d/1Ou_56fcwcecXFVS2LROhvGvZFP9mUw0b/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "It seems we'll need to get more details directly from her, including the truth of this matter...",
+                    "line": 13,
+                    "url": "https://drive.google.com/file/d/1b7AuF57G1PBCngmT9xVmJRj4rCx6RhBL/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...",
+                    "line": 14,
+                    "url": "https://drive.google.com/file/d/1vEsj4yL4iWonVThKlqfeozldQW-goNnr/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...Why haven't you killed me?",
+                    "line": 15,
+                    "url": "https://drive.google.com/file/d/1Inj-BFTcT21FIfAt6CdkILms3C29_9uk/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Oh, would you like us to kill you?",
+                    "line": 16,
+                    "url": "https://drive.google.com/file/d/1GqJlz5wl8R-5McyWuKwjC0yfqGQoGHe1/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "*gasp*",
+                    "line": 17,
+                    "url": "https://drive.google.com/file/d/1nVUVcB4sypmRbDTFRlzWjHDyunkmp24-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Wait, if we're going to kill her anyway, I wanna use her as a test subject...",
+                    "line": 18,
+                    "url": "https://drive.google.com/file/d/1vLX-PVugnMCU_lQ4Z4ASwybMj-YUxkYb/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Um, Eta?!",
+                    "line": 19,
+                    "url": "https://drive.google.com/file/d/13GMCOivPefoxleQ5EumlN3ORtPO7ulVP/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Test subject... Test subject...",
+                    "line": 20,
+                    "url": "https://drive.google.com/file/d/1JpZqlGBDjA7kj2tTGvgIoq8M4QydUlgl/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Eta.",
+                    "line": 21,
+                    "url": "https://drive.google.com/file/d/1Z6SyW5zOZMf44BRMEsBD_gGpcV-xVfkp/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Mnhh...",
+                    "line": 22,
+                    "url": "https://drive.google.com/file/d/1ptXNQqVly8nIuPqrOQHQ8uLb2VEkabz0/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...There are so many things I don't understand about this place and all of you.",
+                    "line": 23,
+                    "url": "https://drive.google.com/file/d/1r1NcXyNQv3HHiuyVO5TikrlVhAbDeO9k/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "And...I still can't believe my symptoms of possession have actually been cured!",
+                    "line": 24,
+                    "url": "https://drive.google.com/file/d/1AJWmfDXXRtYKn7774fleUjZ5MhBDEP2Y/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Heheh... You know it better than anyone, don't you?",
+                    "line": 25,
+                    "url": "https://drive.google.com/file/d/17ENs3lqO2GNcK_cacTRq3ujRjk76g9TE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...Lady Karen von Herzog.",
+                    "line": 26,
+                    "url": "https://drive.google.com/file/d/1maKn6sqHTN8BiGw15cVr5JNg8YfF9L8Q/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "If you are indeed a leader of the Cult of Diablos, two paths are laid out before you.",
+                    "line": 27,
+                    "url": "https://drive.google.com/file/d/1C1Ca4MOZpH600Ap_dagP3zdSWsevOf2S/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "One is to tell us everything you know about the Cult, leave it all behind, and join us...the Shadow Garden.",
+                    "line": 28,
+                    "url": "https://drive.google.com/file/d/1kYVs5hJjkchRQ6PQ-3cbQKpknUn5-k1h/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "And the other...is to tell us everything you know about the Cult\u2014right here, right now. And then...",
+                    "line": 29,
+                    "url": "https://drive.google.com/file/d/19dw4-ZQgQLc00nM_XfbFJHFBMF3vaOcW/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "That life of yours that was saved from possession will be ended by my sword.",
+                    "line": 30,
+                    "url": "https://drive.google.com/file/d/1wa17bblsUVgxHI5kzKcCDUC-ZQWmyMfj/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...",
+                    "line": 31,
+                    "url": "https://drive.google.com/file/d/1lBB_Asn68GPKj7TDeX5hdC8SV5ZFdpV2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Have you not considered a third path, where I become a martyr for the Cult and take my own life?",
+                    "line": 32,
+                    "url": "https://drive.google.com/file/d/1BWrzwItQvmB5_ZI5SCOd2l1iMuEHRT7A/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "You were fleeing from your pursuers. You used your spear as a walking stick, even as you were consumed by the symptoms of possession.",
+                    "line": 33,
+                    "url": "https://drive.google.com/file/d/17uhMp0my4Z9Z1OjlNDXGE4NJwah9TOCh/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "It was because you wanted to survive. Because you wanted to rebel against your fate.",
+                    "line": 34,
+                    "url": "https://drive.google.com/file/d/1sIx-MtN1GE0oN8sPQ0GkpIcu9ssKTYAQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "While you risked being killed by those chasing you, would you really take your own life?",
+                    "line": 35,
+                    "url": "https://drive.google.com/file/d/1w2CpBhWb76dDK9DrxR0-VjJxket7sieD/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "It's unlikely, even if you weren't unarmed right now. If you'd like, I can lend you a spear to stab yourself with.",
+                    "line": 36,
+                    "url": "https://drive.google.com/file/d/18bzCFjH_sroYEt6ufbv-Ky4XbXS3sB1U/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Y-You...",
+                    "line": 37,
+                    "url": "https://drive.google.com/file/d/1hjYStcMGcoO__0oIqObHCfgyGsx5ff64/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Lady Karen, do not underestimate this individual despite her childlike appearance.",
+                    "line": 38,
+                    "url": "https://drive.google.com/file/d/18NzLar5242Ps48hwN92EMZI-j3Y2whVQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "That stance... Are you a Velgalta soldier?",
+                    "line": 39,
+                    "url": "https://drive.google.com/file/d/1-usYjqDmRwBhsyI-_1Vg4OOx9v50KNqb/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "And also a former possessed, just like you, who has lost everything but her life.",
+                    "line": 40,
+                    "url": "https://drive.google.com/file/d/1lcnk-nNyk-cc-VIBOWHbYCkBNvmwmjjY/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Mnhh!",
+                    "line": 41,
+                    "url": "https://drive.google.com/file/d/11nignt0Ou9kCer2ZyOORvvFT0K9z-2JQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Lady Karen...I don't believe you're evil.",
+                    "line": 42,
+                    "url": "https://drive.google.com/file/d/1On6qMNCK65KuAis2A7XAPqS5FZKB1OBp/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "For you to defend me in a situation like that, it's not something anyone could do, even if they wanted to.",
+                    "line": 43,
+                    "url": "https://drive.google.com/file/d/17mzWMMHJsqsPTZ0Y-ipjHfeuFSVOd3Mw/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "You may have been working for the Cult...but I feel you have a sense of duty and pride toward your position as an aristocrat.",
+                    "line": 44,
+                    "url": "https://drive.google.com/file/d/1bXxi6tOFa6ffp3PyKlN3CVjqo1NDwOrw/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Could you explain it to us?",
+                    "line": 45,
+                    "url": "https://drive.google.com/file/d/1VCLm2jrtQbPCNvKSgY_A6OlzC5BzIbsQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "About who you were to the Cult and the role you played?",
+                    "line": 46,
+                    "url": "https://drive.google.com/file/d/1iBRjsQmHq8decuqEIvDfou7lvWD4blr7/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...Even if it means torturing it out of me or resorting to drugging me...?",
+                    "line": 47,
+                    "url": "https://drive.google.com/file/d/1kDZPEJfIHgpRuaXmJDbdzIggKPhbNH6f/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "I would prefer those to be final resorts. Let's try to make this a positive encounter for both of us.",
+                    "line": 48,
+                    "url": "https://drive.google.com/file/d/1T-HZOqwNPH25vBQ8mqfSXDBjJL52n1HI/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "After all, we may have a long relationship ahead of us, although it would be that of a superior and her subordinate.",
+                    "line": 49,
+                    "url": "https://drive.google.com/file/d/1yGp9AZCnXxiod_01BrZ8WJTu2ILlP5xb/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "What a sales pitch!",
+                    "line": 50,
+                    "url": "https://drive.google.com/file/d/1NIcOGDycNoVO77FbUjT_ZEQXvkI8gSCY/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Alpha applies pressure, and Gamma appeases... I see.",
+                    "line": 51,
+                    "url": "https://drive.google.com/file/d/1RV7qVeHMfEYG9_2A54C7Ybs-OzYu7MZt/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...",
+                    "line": 52,
+                    "url": "https://drive.google.com/file/d/1UA6JVmLZ7Pw8OC1YKcxxiyo_0T8d7VWz/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...Very well.",
+                    "line": 53,
+                    "url": "https://drive.google.com/file/d/1nIQCp1GgDm5VdvXz0sMc8pyrKonmNzOo/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "There is nothing left for me anymore. It might be worth relinquishing everything, pride and all.",
+                    "line": 54,
+                    "url": "https://drive.google.com/file/d/1Og2wBbZwMXEsRhI8HlYbCJFnwHtofwML/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "There's always something left.",
+                    "line": 55,
+                    "url": "https://drive.google.com/file/d/1b39ZkBVtAdjnEGlNHnxFmgAo1ad9RPiu/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Because we are also here. And you are here too...aren't you?",
+                    "line": 56,
+                    "url": "https://drive.google.com/file/d/1RIXq01UrPReY6jkbJ4PR9yk8OIg8sl0Q/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Wait... Were all of you also once possessed?!",
+                    "line": 57,
+                    "url": "https://drive.google.com/file/d/1pMejQDCZG_q6ATs0pS_dUBOfbwdeq4IV/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "That's right.",
+                    "line": 58,
+                    "url": "https://drive.google.com/file/d/1tSM7ietjgUetTZijB2n5yFqlmByPFXqU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "And the Shadow Garden operates all across the world with a mission to save the possessed.",
+                    "line": 59,
+                    "url": "https://drive.google.com/file/d/1JGX6wrY2NsVD8b8xbdx0s1Pd2ICYSc7M/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...And to destroy the Cult of Diablos while we're at it.",
+                    "line": 60,
+                    "url": "https://drive.google.com/file/d/1qsgoqBmE_Xxt7zLPy79BvLrG-OWc9IbX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...",
+                    "line": 61,
+                    "url": "https://drive.google.com/file/d/1hEwgtNnyURboTKG_B2NvQ1fmkyA3p-Hl/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "I see...",
+                    "line": 62,
+                    "url": "https://drive.google.com/file/d/1KGOB5BafCvpJS_3RiQLSU1yVAHC9pOH7/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "If that's the case...",
+                    "line": 63,
+                    "url": "https://drive.google.com/file/d/19NL5oBg90UTBjMb-Bf56WzbKEK4UezIW/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...I'll tell you everything I know. After that, you can do what you want with my life.",
+                    "line": 64,
+                    "url": "https://drive.google.com/file/d/1vaD9uE0n7JXcoWhs3IXE0hykP_GetNcX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Then...be my test subject...later...",
+                    "line": 65,
+                    "url": "https://drive.google.com/file/d/1xkxgkb2r_9AiXctizrNaQtSRA4GQadjk/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "That...I'll have to turn down. I've got an incredibly bad feeling about agreeing to that.",
+                    "line": 66,
+                    "url": "https://drive.google.com/file/d/1bJfnp4AuDUNJhftnNdztxS8sw2J_2MCw/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Jeez...",
+                    "line": 67,
+                    "url": "https://drive.google.com/file/d/1UhPE-nUQ-r-pM1LKZVOw8ljSYWz7KH4-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Heheh.",
+                    "line": 68,
+                    "url": "https://drive.google.com/file/d/1yspAAoDzTF519awzwUifeLfBVu3FV02K/view?usp=drivesdk"
+                }
+            ],
+            "e3": [
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "First...I'd like you to briefly tell me what you know about the Cult of Diablos.",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/1sCl81zzpmnO6ZB8Kdo5ZhPIYS1_HxkH8/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "So you won't need to reiterate what we already know?",
+                    "line": 2,
+                    "url": "https://drive.google.com/file/d/1HlanASI8GJVD4Ob-zPmXhjR0j-3M-aNL/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...They control this world from the shadows.",
+                    "line": 3,
+                    "url": "https://drive.google.com/file/d/1eyTdPigv2pY6V0bxecHlZynBLaJh33nR/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "They abduct those who are possessed and use them as test subjects, to serve some purpose.",
+                    "line": 4,
+                    "url": "https://drive.google.com/file/d/1GHP6ceTfA1L_mzXnCdEs3RlZ5hszULPy/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "They have deep ties with the Church and a tenuous relationship with the Templars, who serve as the Church's inquisitors.",
+                    "line": 5,
+                    "url": "https://drive.google.com/file/d/1qFk5XGbg0o_FWpkEyHN0wNMP8unJIBrv/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Above all, the Cult's structural powers are so vast that even their subordinates cannot obtain satisfactory intel on its workings... Something along those lines.",
+                    "line": 6,
+                    "url": "https://drive.google.com/file/d/1AEiTgBw1f110jnucvsbjXSTg7mcPajQR/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...If you know all that, it wouldn't be a stretch to say you're more knowledgeable than any other outsider concerning the Cult.",
+                    "line": 7,
+                    "url": "https://drive.google.com/file/d/1kQ3GDQ4bbFItmi5Fj26EohMw0Oyu7z-P/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Even more so than those of the aristocracy, which the Cult has deeply infiltrated!",
+                    "line": 8,
+                    "url": "https://drive.google.com/file/d/16xGJjsMEzvEIUvvl98-gZXIEre0d_3xD/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Who told you all of this?",
+                    "line": 9,
+                    "url": "https://drive.google.com/file/d/14IWtHYf8zrVJDbtVsKr46rUT-iYD6wrO/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "We're the ones asking the questions.",
+                    "line": 10,
+                    "url": "https://drive.google.com/file/d/1W5tvwwpIg9JBZiCZa1BZigFQyahHNR-v/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "A slime sword!",
+                    "line": 11,
+                    "url": "https://drive.google.com/file/d/1ZQaNtxkFymO1LAu7Mli6Y7G3aYDi1VTY/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "The Cult of Diablos has been active in the shadows of history since ancient times.",
+                    "line": 12,
+                    "url": "https://drive.google.com/file/d/1uZCSDld53eMbL34G4f-YPuIj-cCg-XFz/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "They even played a significant role in the formation of the Velgalta Empire.",
+                    "line": 13,
+                    "url": "https://drive.google.com/file/d/1jt9L0iREVAVnH9M7Hb37e5bau0H_WO8K/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "As I recall, until the unification of the Empire, many local lords were vying for power.",
+                    "line": 14,
+                    "url": "https://drive.google.com/file/d/1jWEV58MnimuTEqVpK0z-F57EjT9uhMfe/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "They say there were frequent skirmishes between the lords throughout the continent.",
+                    "line": 15,
+                    "url": "https://drive.google.com/file/d/1bNay7MwQAYe9huDEeNGTGz5clhMpYY20/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "That's right. And none of the hidden details have been recorded in the history passed down amongst the people.",
+                    "line": 16,
+                    "url": "https://drive.google.com/file/d/12oLZkx9hhLuUH-x6Ek5qvpgAsSik__rp/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...For example, the fact that aristocrats like the Herzog Family, who became pawns of the Cult, played an important role?",
+                    "line": 17,
+                    "url": "https://drive.google.com/file/d/1dL-9yoAM1BRs2vTezrhGH7N6OUf_O3ly/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Everyone was exhausted by the wars that raged on across the continent...until the land was finally unified under the Velgalta Empire.",
+                    "line": 18,
+                    "url": "https://drive.google.com/file/d/1Vtq_lU3saSXgAy-grn8sqr2bAVAz_QcX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "And most of the lords lacked ambition, willing to serve any ruler so long as they were guaranteed autonomy.",
+                    "line": 19,
+                    "url": "https://drive.google.com/file/d/19Cf_2llhwC9EzLYmn5APPKlbUMeDAX3A/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "The Cult effortlessly infiltrated the inner circles of such aristocrats.",
+                    "line": 20,
+                    "url": "https://drive.google.com/file/d/1741kkUy3TSyiqbdP3CTbLeCfbHJ0-PuM/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "The Herzogs were one of the aristocratic families who accepted the power of the Cult and submitted to them.",
+                    "line": 21,
+                    "url": "https://drive.google.com/file/d/1ZcFaNz643oFeu4zreOsJTUptd4k55Fnf/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "So, as the head of such an aristocratic family, you were born a member of the Cult?",
+                    "line": 22,
+                    "url": "https://drive.google.com/file/d/1WZYyFZmdzMPye757GfK8SE-z3y4JT9p3/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...Control works best when it goes undetected.",
+                    "line": 23,
+                    "url": "https://drive.google.com/file/d/1_lf2FYVKPl6mnsNUsAc-N-uAIyBFPh-B/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Besides, when war breaks out, the common folk of the land are the first to suffer.",
+                    "line": 24,
+                    "url": "https://drive.google.com/file/d/11lFJ4QxcZNXBLHjZZRG7RSndGvdAksKE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "My ancestors understood what needed to be done to avoid unnecessary bloodshed.",
+                    "line": 25,
+                    "url": "https://drive.google.com/file/d/18DOHEOEHpInWFxUFes5BNBK3nCg-91Dj/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "That's why the Herzog Family has long played their part in maintaining peace within the Velgalta Empire, restraining those brash individuals who only seek conflict, and protecting the lives of their people.",
+                    "line": 26,
+                    "url": "https://drive.google.com/file/d/1pJ69Y36qkIKNNtPoCGxGFymyHSy8IU9F/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...",
+                    "line": 27,
+                    "url": "https://drive.google.com/file/d/1XgKffCJlp_8xoTRoZ2Ru-eAsVSnfI9LR/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "That's the typical arrogant mentality of those who control others.",
+                    "line": 28,
+                    "url": "https://drive.google.com/file/d/11bBbgDth_8LFPgZ5TyFGiQAX_WgIL-LA/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Arrogant, you say?!",
+                    "line": 29,
+                    "url": "https://drive.google.com/file/d/1KEKAcDpaxx_07V-X4LY7GO9oJqXAUR8D/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "I'm not wrong, am I? You're depriving the people you claim to protect...the opportunity to walk on their own two feet and grow.",
+                    "line": 30,
+                    "url": "https://drive.google.com/file/d/1wEyVkWev3SgN5D3RJtO4tnLlRaDxt2OO/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "The opportunity to grow? That's nothing more than an idealistic notion! Not everyone can possess power and lead the lives they desire!",
+                    "line": 31,
+                    "url": "https://drive.google.com/file/d/1aB3x4b2H2O_sYewLDZ0SDyzPVRmzx4e7/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "So you'll deny people the chance to fail? Surely that's the epitome of \"controlling\" them.",
+                    "line": 32,
+                    "url": "https://drive.google.com/file/d/1OBhedK4pPH7e3JfJsUnZLAZ8bzMwN2QU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "And you yourself are being \"controlled.\" After all, you're acting out the will of the Cult.",
+                    "line": 33,
+                    "url": "https://drive.google.com/file/d/1tJZnMfaos2_omWPHpsCKLCcfO36EGm4E/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Not only that. Despite being fully aware of what is happening, you genuinely believe you are correct in your thinking...",
+                    "line": 34,
+                    "url": "https://drive.google.com/file/d/1eqI0bpLj6mdkNi30v0xNdUGIjHtTtnIE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "You've turned your back on your beliefs and boast about the shackles that bind you, urging others to wear them as well... You are a slave to power.",
+                    "line": 35,
+                    "url": "https://drive.google.com/file/d/17cDfUkW-2xTRL9DcO3ifvGP6nX33lS_I/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...Say what you will.",
+                    "line": 36,
+                    "url": "https://drive.google.com/file/d/1NfMO7lZlmh3aJiVh0tm5rI7njJZ4qsFq/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "I...my family...believed it was the best way, and we have fulfilled our duty as the Herzog Family until now.",
+                    "line": 37,
+                    "url": "https://drive.google.com/file/d/1biXK-jU_R75TJJJvqjJjAuWvYjhY1pMi/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "But that duty no longer exists, does it? I heard Sergey annihilated your entire family.",
+                    "line": 38,
+                    "url": "https://drive.google.com/file/d/15QZLfjsTxvV0apRl5754gYsAZjQa9VuJ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...",
+                    "line": 39,
+                    "url": "https://drive.google.com/file/d/1FxAQyl3gXQYqaaWnvzYNCGW3UO8fbQ0Y/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "Who is this Sergey? Is Velgalta's Seven Blades itself an organization of the Cult?",
+                    "line": 40,
+                    "url": "https://drive.google.com/file/d/1b6mD2APXEkbLF8J4A5_RxKnZ672EUHm6/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "No, that's not the case.",
+                    "line": 41,
+                    "url": "https://drive.google.com/file/d/1BYEN7z4cLw_B42xLeTJqXSitA-KJl5U7/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Velgalta's Seven Blades is a title given to knights highly regarded in the Empire for their pure martial prowess and ability to utilize it.",
+                    "line": 42,
+                    "url": "https://drive.google.com/file/d/1AWCen6cqJ8iU1aLEdqioURMNR1Hf5uJ0/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...And Sergey Gorman is a knight who dueled and defeated one of Velgalta's Seven Blades, who also was one of the \"Children,\" earning him both titles.",
+                    "line": 43,
+                    "url": "https://drive.google.com/file/d/1nR9ntX7pWXE5rGcsgDlDVQ4AI9CZdhbQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "One of the \"Children\"! You also called him that.",
+                    "line": 44,
+                    "url": "https://drive.google.com/file/d/1QmIF4jMOB5SPnkwly__CuauyiMJy1zDI/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Being a large organization, I guess it's natural for the Cult to have words indicating positions within its hierarchal structure.",
+                    "line": 45,
+                    "url": "https://drive.google.com/file/d/1SYLKz1p9TS9BqJy-InwK801qvanYMkPM/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "I'll be blunt. Do you know who is at the head of the Cult?",
+                    "line": 46,
+                    "url": "https://drive.google.com/file/d/1OpTwy7i2eJ4PtFGkqnJLpIOlzthJZo4T/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...",
+                    "line": 47,
+                    "url": "https://drive.google.com/file/d/1Yz0ev66ohO5_nP3P5Y7E-z9ZlrqWJDO-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "There are individuals who are known as the \"Knights of Rounds,\" or simply the \"Rounds,\" who are members of the Round Table Committee...",
+                    "line": 48,
+                    "url": "https://drive.google.com/file/d/1sxZ3VpGsHdn9fLzP6BaeSGIyuju5LMgD/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...in charge of determining the Cult of Diablos\u2019 policies and governing its central operations.",
+                    "line": 49,
+                    "url": "https://drive.google.com/file/d/1i3O4_suHTFYsJDXryVQN4IPKJrHlC44p/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "The Rounds! So you're saying the Cult is controlled by a collective, not an individual?",
+                    "line": 50,
+                    "url": "https://drive.google.com/file/d/1VvHE3bsSahnYcMUt_sqczbwRkhLzy913/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Even my long-standing aristocratic family lacked knowledge about who the Rounds are, how many there are, or the details of their hierarchal structure.",
+                    "line": 51,
+                    "url": "https://drive.google.com/file/d/1PSbsZ31zExWp8YHQe8fOnrD0sg6J7xEl/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "It's a secret organization where even aristocrats are treated as underlings...",
+                    "line": 52,
+                    "url": "https://drive.google.com/file/d/1WJK9NcC3lLG3HAJz87eSHbNfNb9wFUWZ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "The four Rounds known to the Herzog Family are \"Fenrir,\" \"Loki,\" \"Hel,\" and \"Jormungandr.\"",
+                    "line": 53,
+                    "url": "https://drive.google.com/file/d/13_BN1Lkj7d--JGZPP-Hy6F4OW2dUy6t1/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "It seems they each hold a specific rank, but I am only aware that Fenrir is ranked \"Sixth of the Round Table.\"",
+                    "line": 54,
+                    "url": "https://drive.google.com/file/d/1GqDyvw9XNA0VOeyBBCCxrDJwymTD3s27/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "They all match the names of the factions of the Cult in Midgar Kingdom.",
+                    "line": 55,
+                    "url": "https://drive.google.com/file/d/1dOMUiOc8Mhh7E06xDmyLaohjvidOcBte/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Perhaps because of conflicts between the Cult's factions in Midgar, even many of their subordinates know their names.",
+                    "line": 56,
+                    "url": "https://drive.google.com/file/d/112W0QdCswQeKairQXztTRvuSCYVB2t-T/view?usp=drivesdk"
+                },
+                {
+                    "name": "Epsilon",
+                    "name_variant": "Epsilon",
+                    "subtitle": "I heard you were called a \"Child.\" Is that also some sort of title within the Cult?",
+                    "line": 57,
+                    "url": "https://drive.google.com/file/d/1B2hLxoR53KQ6mH1EMshRFIvviu2eE50G/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...Those of us who possess power and serve the Cult, such as I did, are generally called the \"Children of Diablos.\"",
+                    "line": 58,
+                    "url": "https://drive.google.com/file/d/1AocGZW_PDtyuFCHPE8zW4l3NPNQsLyXB/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Children!",
+                    "line": 59,
+                    "url": "https://drive.google.com/file/d/11Q9kWmEp8SPgb-MDZDZfeS9uvly570XX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "There are distinctions between the First, Second, and Third. Those below the Third are treated as ordinary members or foot soldiers of the Cult.",
+                    "line": 60,
+                    "url": "https://drive.google.com/file/d/1_Kml00rfUQv157nugmH1m9uaesnLWcyP/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Those who were born and raised Children, like me, and those who joined the Cult and became Children, like Sergey, are rare.",
+                    "line": 61,
+                    "url": "https://drive.google.com/file/d/1QoL8ib-oNxmcNMUoKzolTjUNtRr7mxsP/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "More common is finding orphans with no relatives or children of poor commoners with high magic aptitude and raising them in special facilities.",
+                    "line": 62,
+                    "url": "https://drive.google.com/file/d/1tCTTVs04oknjbsjkyDm0G3J51r9Bq9D0/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "This is because they undergo rigorous combat training, educated as members of the Cult, and administered drugs to enhance them.",
+                    "line": 63,
+                    "url": "https://drive.google.com/file/d/1PzgY2H-nuzQrGEyA3q6Tqj_XdiOt7qL0/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Well, that's one way of putting it. In other words, the orphans and children are abducted from their homes and brainwashed through education and drugs, correct?",
+                    "line": 64,
+                    "url": "https://drive.google.com/file/d/1BpJiip_7HUuB0I2OSSz06qITDKd0Aq9c/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Th-That may be true...but we're not like other aristocratic families and subordinate organizations!",
+                    "line": 65,
+                    "url": "https://drive.google.com/file/d/1-mHObNkOYDtUlMFnpuFGCBf7AC0y5e4T/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "The Herzog Family merely offers a means of escape from poverty by becoming a Child\u2014",
+                    "line": 66,
+                    "url": "https://drive.google.com/file/d/1rx-8akHCYxyvSuaRE6UG4qBvOmTrdxB0/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Let's give you the benefit of the doubt and say it was all done out of the goodness of your heart. You're still essentially saying you only save those with talent.",
+                    "line": 67,
+                    "url": "https://drive.google.com/file/d/1-3SGcmss1p8AMHuE4WaM0VaeRed1sNyK/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "You're selecting lives to be saved based on practical conditions before even considering whether they want to be saved.",
+                    "line": 68,
+                    "url": "https://drive.google.com/file/d/1F8wQS_EJhY4CfA44fANhTZZpZTShvrlo/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Tsk... You're thinking in ideals yourself! People are not that intelligent!",
+                    "line": 69,
+                    "url": "https://drive.google.com/file/d/1evdJ22vNtgq7tW9z4YBDIZpZE1w4dR9N/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Now, now... So what do the different ranks for the Children mean?",
+                    "line": 70,
+                    "url": "https://drive.google.com/file/d/13EYenfe6wQzhvNZk0U-nqgUcDNv4kLqA/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "......The Third is a general term for Children whose minds couldn't withstand the enhancements. They are soley used for basic combat.",
+                    "line": 71,
+                    "url": "https://drive.google.com/file/d/1kxCf155F9jrFPq8IFPYFqP_I11wRB_pO/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "You mean, because they're mentally broken, there's no risk of them leaking intel?",
+                    "line": 72,
+                    "url": "https://drive.google.com/file/d/1-6fZrbamHbM0JIy0DUkzUJnIBqagnVss/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Still, even those Children possess combat abilities far surpassing your standard knight.",
+                    "line": 73,
+                    "url": "https://drive.google.com/file/d/1iPRFp-fKfD_02Om15tNnuihhPhY8AoST/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "The Second Children are those with stable mental states. Most of the Cult's leaders belong to these Second Children.",
+                    "line": 74,
+                    "url": "https://drive.google.com/file/d/1hy2-XzAI7IfLOegahJ6Ly9z6qibzDMOZ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "And the First distinguishes Children like me...who possess undeniable strength.",
+                    "line": 75,
+                    "url": "https://drive.google.com/file/d/1ur_GdNN_NSZDB859TSDNLGPCuuhq4GCX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Are there any individuals among these Children who become, for example, members of the Rounds?",
+                    "line": 76,
+                    "url": "https://drive.google.com/file/d/1ncUifVGxqqSNKdpTWM0uphyeCXBRshYq/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...It is said there are.",
+                    "line": 77,
+                    "url": "https://drive.google.com/file/d/1W_DmZf0vs9v7mbjQNEAcEnUPvnPYkUsz/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Children who show promise or make significant contributions to the Cult are given two titles and are referred to as \"Named\" individuals.",
+                    "line": 78,
+                    "url": "https://drive.google.com/file/d/1mHLzLTBtbrYxD6of_ab1m-wXo4UdFSC9/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Most are First Children, but some are Second Children who become Named.",
+                    "line": 79,
+                    "url": "https://drive.google.com/file/d/1kSVnxQTa7szwjtRFtyOT-ODA5Xlt0rT9/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Within the Cult, becoming Named is said to be a gateway to joining the Rounds...",
+                    "line": 80,
+                    "url": "https://drive.google.com/file/d/11VbKFjb_aTpXo-anH4hr_CbMXg3R0Zfj/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Wait...is Sergey...? But he can't be!",
+                    "line": 81,
+                    "url": "https://drive.google.com/file/d/1Xi7k1PhfxEIpp2KvMnnrDKjAIPBk7iK9/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Training Children while dangling the position of power known as the Rounds... It's precisely what those in control would do.",
+                    "line": 82,
+                    "url": "https://drive.google.com/file/d/1y9C305M3zPok2fMTnZbOYDUIYdUbIp4f/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "You've been raised in an environment that blinded you to the contradictions inherent in those actions...",
+                    "line": 83,
+                    "url": "https://drive.google.com/file/d/1WQJtC-jOOl1OsmZtVRTC9J4mXnIxTAMd/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Or perhaps you knew how distorted that hierarchical structure was but turned a blind eye in order to reap its benefits.",
+                    "line": 84,
+                    "url": "https://drive.google.com/file/d/1GuufeKgA5yrQAe1uwh81eznCIpcfimSE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...!",
+                    "line": 85,
+                    "url": "https://drive.google.com/file/d/1g0Tu-zMFr4QzfldrJhLUpdp67f0pf-Bu/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Karen, First Child of Diablos, the Shooting Star.",
+                    "line": 86,
+                    "url": "https://drive.google.com/file/d/1cn4FMyIfF1e62kAPf-9H4BsJExSxux8h/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "As a token of appreciation for sharing intel with us, we'll give you time to reflect on yourself.",
+                    "line": 87,
+                    "url": "https://drive.google.com/file/d/1MsYHOGGQmxuw2WRkTaAQ6SdBXaI2I0y1/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "I'm sure your experience as a possessed has helped you understand the reality that the Cult's domination of the world is built on lies and deception.",
+                    "line": 88,
+                    "url": "https://drive.google.com/file/d/1CB0lE28W6MjDOrMblDAq_J3FtMxDgmzm/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...",
+                    "line": 89,
+                    "url": "https://drive.google.com/file/d/15Vv1n6Du3W0ADKDCX4QfMj4m3VeuBJSP/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "If you're willing to discard everything that has made you who you are until now, then we're ready to welcome you as a member of the Garden.",
+                    "line": 90,
+                    "url": "https://drive.google.com/file/d/176TuH3-_AMd5ymN0axUrSLShIPzAkKYG/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...That is if you really can discard everything.",
+                    "line": 91,
+                    "url": "https://drive.google.com/file/d/1bbnFSzNHuLOU8U7ZvOlQccCASUY0pCUq/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Um!",
+                    "line": 92,
+                    "url": "https://drive.google.com/file/d/12BtJmqRrT82KLmvmYyktxW2QCVM39W90/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Lambda. While she remains our guest here, treat her accordingly.",
+                    "line": 93,
+                    "url": "https://drive.google.com/file/d/14KfArvP7w66w6ICfx0zAvfRWWibHpeON/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Yes sir!",
+                    "line": 94,
+                    "url": "https://drive.google.com/file/d/1IiZvhI2Utm6bs0URJr0MhU6oBZ3n-SOK/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Come along now, you who were once Lady Karen. If you're going to do any thinking, you'll need a place to sleep, won't you?",
+                    "line": 95,
+                    "url": "https://drive.google.com/file/d/1pR-AYsdzEcXqYE2glKHtML_IREFMmNN5/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Mnhh...",
+                    "line": 96,
+                    "url": "https://drive.google.com/file/d/1itjbrFX_YoBXn-lGfGLll4-qDP6UaRpn/view?usp=drivesdk"
+                }
+            ],
+            "e4": [
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...Well then, if you could fill me in on the report.",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/1oWx3q-WtxA6Z6TlZJ0Ap5OIQb0Vhor7U/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Sir! Yes sir!",
+                    "line": 2,
+                    "url": "https://drive.google.com/file/d/1rPCAe2BJXevtC_b1VfM58IUSa6UYP0vY/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...There have been no significant movements from Lady Karen.",
+                    "line": 3,
+                    "url": "https://drive.google.com/file/d/1yCRV0ypp9WuV0mHoIjmmqkQiutLaQXqz/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Following your instructions, she's been wandering around Alexandria, but there are no signs of any internal reconnaissance.",
+                    "line": 4,
+                    "url": "https://drive.google.com/file/d/1DB4Hxn1jp99odkfq5Y0S_EViRNW4sGOv/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "I see... How does she usually spend her time?",
+                    "line": 5,
+                    "url": "https://drive.google.com/file/d/1_d7vvNYtxYiEWEeAO-C7aq0PfNCiYU6U/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Right. Lady Eta mostly has her tag along on her experiments. I'm closely monitoring her to ensure she doesn't lose her life during one of them.",
+                    "line": 6,
+                    "url": "https://drive.google.com/file/d/1KkqzcMgohTSIXlqO1LRk5ImyMZZMW3Mq/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Heheh... Classic Eta.",
+                    "line": 7,
+                    "url": "https://drive.google.com/file/d/1wd9h3zpDrbi2aIADvoi5-0OuHVDrxlDL/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Once Lady Karen becomes our ally, Eta won't be able to use her as a test subject so openly. That's why she's putting her through the rounds now.",
+                    "line": 8,
+                    "url": "https://drive.google.com/file/d/15qYx3X0XCoW34XYzysUIFJMhhiak1Ahv/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...",
+                    "line": 9,
+                    "url": "https://drive.google.com/file/d/1OOqcHSAn8T8Tjo4Om-Bj2ROxhpUY3vsc/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Lady Alpha?",
+                    "line": 10,
+                    "url": "https://drive.google.com/file/d/19_7bVDjMs0vuGOUnm8K-gcJUsI55kQZ7/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Say, Lambda, was my approach to Lady Karen the right one?",
+                    "line": 11,
+                    "url": "https://drive.google.com/file/d/1AQTNgVlArMeu3oPeJ52LtYu_Q98mOSjp/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Looking back, it might not have been the best choice to confront her with the Garden's interests and then outright deny her way of life up to that point.",
+                    "line": 12,
+                    "url": "https://drive.google.com/file/d/1jcq790gD2ovtPUxKp_WuVUYMP_LvvsBi/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "At the very least, I think there could have been a better way to handle it.",
+                    "line": 13,
+                    "url": "https://drive.google.com/file/d/1Rlpv-A07pLyKeySu2j6wnlZ5uv8IvUlA/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Lady Alpha...",
+                    "line": 14,
+                    "url": "https://drive.google.com/file/d/1p_kJ4PGPF_Aujje4jo7qs_b3QFKtmkeH/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...If I may be so bold, I believe your actions at that time were the right ones.",
+                    "line": 15,
+                    "url": "https://drive.google.com/file/d/1DE_dktNIojdZbwL2q4a6rHTRTnp3Is7E/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "The Shadow Garden is an organization that ultimately aims to destroy the Cult of Diablos.",
+                    "line": 16,
+                    "url": "https://drive.google.com/file/d/1r870nJcx_L7uEoEbJuhFTKurI8BwUVAR/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Showing kindness and bending your iron will to display compassion is unnecessary, even to pacify the enemy. And besides\u2014",
+                    "line": 17,
+                    "url": "https://drive.google.com/file/d/1qnAs11GGfPuXYdeocf5-Xm1h4hTKlIxL/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Besides?",
+                    "line": 18,
+                    "url": "https://drive.google.com/file/d/1_bmYaBVomWBjALqcyT-h3fAdWdvtpIEC/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Lady Gamma is looking after Lady Karen.",
+                    "line": 19,
+                    "url": "https://drive.google.com/file/d/1745sA9kgUxAh4DWMS0G1wq1PDHPxV0fU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "The harsher your words, Lady Alpha, the more effective Lady Gamma's gentle words sound.",
+                    "line": 20,
+                    "url": "https://drive.google.com/file/d/1-3Oyo6nI4KBhD_qH2qv-RTk1MeeGHQ01/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "So you're saying, for Lady Karen, Gamma and I are like the carrot and stick.",
+                    "line": 21,
+                    "url": "https://drive.google.com/file/d/14RNS9X5bGP2HzOaktE9m0PNg5JGCuJ3I/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "As an aristocrat of the Velgalta Empire with a fundamental understanding of reason, Lady Karen should already know logically...",
+                    "line": 22,
+                    "url": "https://drive.google.com/file/d/1qKZGwT4W3KMPzx3QDz6yZJX0bzx4Mq3r/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "...that her current situation proves your words.",
+                    "line": 23,
+                    "url": "https://drive.google.com/file/d/1Yp9Tio0DIziaNxHb7xAKeHdQUl9TU97q/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "I guess it's part of a leader's responsibility to play the role of a tough egg to crack.",
+                    "line": 24,
+                    "url": "https://drive.google.com/file/d/1YJgokGe0Hw24sm-MC5Uw3LolXo4IvoL_/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "If Lady Karen is unsure of how to cast off her past self...",
+                    "line": 25,
+                    "url": "https://drive.google.com/file/d/1IwlLLMicMf6QRKc8SH-luVM0pUdke9ZX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "I must help her. Of course, in a way appropriate to my position.",
+                    "line": 26,
+                    "url": "https://drive.google.com/file/d/1t13reoNvmABehYVmIOp201LCwevKaEiO/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Faster... Peddle...faster!",
+                    "line": 27,
+                    "url": "https://drive.google.com/file/d/1Z6kBRjMtK9qrnXrdCkCQDmQuCzazU1nJ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Huff...huff...huff...huff!",
+                    "line": 28,
+                    "url": "https://drive.google.com/file/d/1G13oM29cZSHCt6-7aY28Ge-KTde8Lu1K/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Come on, faster... Pedal to the metal! Or it won't generate power!",
+                    "line": 29,
+                    "url": "https://drive.google.com/file/d/1J08oRPyO0TzUUxhhV7zauQsM5pU7vap1/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Wh-Why am I doing...such grueling work?!",
+                    "line": 30,
+                    "url": "https://drive.google.com/file/d/1T9Of0Huf4UWmtjP4NU_PA46c8MtJDZWB/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Pedal...or you'll become a test subject!",
+                    "line": 31,
+                    "url": "https://drive.google.com/file/d/1BKYbEJnpjtoroxJ8Quvtugk28-GuTyFz/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "How is this any different from already being a test subject?!",
+                    "line": 32,
+                    "url": "https://drive.google.com/file/d/1vRt6Ma1mV1xI31ButWeWgYiTOs6qAaIT/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Wha?! The machine is spewing fire!",
+                    "line": 33,
+                    "url": "https://drive.google.com/file/d/1_WVjEuijJs9bkwtJtHTiURqEf2IGVnxO/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Doesn't matter. Keep going.",
+                    "line": 34,
+                    "url": "https://drive.google.com/file/d/1uTbRCec01ixSC1mwLCjKH_2fgE8R-EDa/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "It matters to me!",
+                    "line": 35,
+                    "url": "https://drive.google.com/file/d/1urdidBJeTQpq7nu3ZL6lvMkWpf-BSEiL/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Don't worry about it\u2014",
+                    "line": 36,
+                    "url": "https://drive.google.com/file/d/13LXKK8lThQUCyVddcjzu6a7ToiBKhLly/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Wh-What's this?! Hey, Eta!",
+                    "line": 37,
+                    "url": "https://drive.google.com/file/d/1be3fxxJVHIR9xyE4dKKXo0kw5eHsfAxv/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Hmph... We've been interrupted...",
+                    "line": 38,
+                    "url": "https://drive.google.com/file/d/1yyhmSigePPOE474RDvZA8n5kZPtj56pJ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "What are you making our guest do? Stop this now!",
+                    "line": 39,
+                    "url": "https://drive.google.com/file/d/1ep8srxQmlZCuV8k_V-m5O2kbJ6COY2zB/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Fine... Stop pedaling.",
+                    "line": 40,
+                    "url": "https://drive.google.com/file/d/15ZVqssqrH8YCldlA1QXDCk3U6CM1Go9i/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Huff...huff...",
+                    "line": 41,
+                    "url": "https://drive.google.com/file/d/1tPjvsB0p2CQDq4vEfhlZIt_KEKN1zB5W/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Are you okay, Lady Karen?",
+                    "line": 42,
+                    "url": "https://drive.google.com/file/d/1hNliDrsj3kpwS_IbLY5d0CA454FKO3AM/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Y-Yes... I'm unharmed...",
+                    "line": 43,
+                    "url": "https://drive.google.com/file/d/12vie1MFmrNYARxwtiLYF7Ou8vi2dCpNK/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "...",
+                    "line": 44,
+                    "url": "https://drive.google.com/file/d/1cyRarmpQlnle_prVQVlpkEcv1JqODQwZ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "How about we step outside for some fresh air?",
+                    "line": 45,
+                    "url": "https://drive.google.com/file/d/1koA1CS1rNxC7ZlR6wijRoZrbAM_Qehwr/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...",
+                    "line": 46,
+                    "url": "https://drive.google.com/file/d/1-uXWVOdnrzdXiE6vt4FfuTgDHx8Iw5Bi/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "...",
+                    "line": 47,
+                    "url": "https://drive.google.com/file/d/1LAgdCKjh1bXa-AMicYsfqTPv_8N7z08S/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...Aren't you going to ask me anything?",
+                    "line": 48,
+                    "url": "https://drive.google.com/file/d/1SHGpaGxwiKL7GjzYmBqjOrcZjxhWY7xx/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "What would you like me to ask?",
+                    "line": 49,
+                    "url": "https://drive.google.com/file/d/1E4p3vdqJQag_612suzQSmSEyU6SyVrr-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Well...",
+                    "line": 50,
+                    "url": "https://drive.google.com/file/d/1dCSqrkDvx_kCivnttuPPcRjkh9HjX8nj/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...Why do you keep treating me as a guest?",
+                    "line": 51,
+                    "url": "https://drive.google.com/file/d/1UK28L99UBE64Kn_t8zoqMDIX9OdPcWai/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "That's because you are a guest, Lady Karen.",
+                    "line": 52,
+                    "url": "https://drive.google.com/file/d/1v2Pw7FLBQUb9zVR9YOR8wDnpKJy6BHlf/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "That's not what I'm asking. The fact remains that I'm your enemy.",
+                    "line": 53,
+                    "url": "https://drive.google.com/file/d/1yF6ORYy5kWIpqeG_U-K3fHIBPYBxel-u/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Yes, but you became possessed and lost everything. Your status, honor, family, and your future... Everything but your life.",
+                    "line": 54,
+                    "url": "https://drive.google.com/file/d/15ftQ7r8cQ-wM9obeOtJLXh5sVpArtz8J/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "While the Shadow Garden's objective is to destroy the Cult of Diablos...",
+                    "line": 55,
+                    "url": "https://drive.google.com/file/d/1DZysXHwHE5VH7WNfk1HL0HSNCCueUD8u/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Rescuing and protecting the possessed is an equally important mission.",
+                    "line": 56,
+                    "url": "https://drive.google.com/file/d/1Mipb0fZRupYX2Ty303Re4Ij_dojP9SuL/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...And what if I collect intel and bring it back to the Cult?",
+                    "line": 57,
+                    "url": "https://drive.google.com/file/d/1SxpjoilYdRUQtLhqFt8t7xgUglmS-3od/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "If you planned to do that, you wouldn't be crazy enough to go along with Eta's experiments, would you?",
+                    "line": 58,
+                    "url": "https://drive.google.com/file/d/1YBJevnNJOHk_8Yd-cR_HxwFeTk_Td0eU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "With all due respect, Lady Karen, you seem to care little for your own well-being.",
+                    "line": 59,
+                    "url": "https://drive.google.com/file/d/1o9rJ_zMh6pmhq1clCB0kx241AwhoPlP_/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "On the other hand, you also want to transform yourself.",
+                    "line": 60,
+                    "url": "https://drive.google.com/file/d/18MvWAKBSM6Qp2aoJL8mD9gTOvh1Y_4s5/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "That is why you've gone along with Eta's dangerous invitations without a second thought...",
+                    "line": 61,
+                    "url": "https://drive.google.com/file/d/1jXaitKMAkY9BrMaX-sVSgZmSpkjPVHBQ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "When you get involved in her experiments, your desire to survive naturally emerges...doesn't it?",
+                    "line": 62,
+                    "url": "https://drive.google.com/file/d/1nO0KVDe67HlxnecX3x7VMbFfS8SfXrNA/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...",
+                    "line": 63,
+                    "url": "https://drive.google.com/file/d/1xY929EhMbjNGLa7h1xG1KjkKaYC_E3Bp/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...I'm speechless. You seem to know me better than I know myself.",
+                    "line": 64,
+                    "url": "https://drive.google.com/file/d/1lMK_mALDxL0jma5fFwf7Unvsii6RicgV/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...I have no idea what I'm supposed to do.",
+                    "line": 65,
+                    "url": "https://drive.google.com/file/d/1NfpM2EZTWot_WDtJleClih79JUmJ_7Jb/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "I feel resentment and sadness over my fate and a sense of retribution for the Herzog Family turning a blind eye to reality.",
+                    "line": 66,
+                    "url": "https://drive.google.com/file/d/1DZxq5SWcrSxm917aVzr7l8Zd7kFit5dq/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "But...more than anything, my heart just feels empty.",
+                    "line": 67,
+                    "url": "https://drive.google.com/file/d/1BMMSsYUKgI55bxfC6h5Wwrrcw5Hnb4Wg/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "If you've come to that realization, then you can rise again and start anew.",
+                    "line": 68,
+                    "url": "https://drive.google.com/file/d/1s9F2epG6mxy8Q5CLSLLjO987JKIwvkoU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...You're quite articulate.",
+                    "line": 69,
+                    "url": "https://drive.google.com/file/d/1yQ8L557PzCKX7fqN54zdu1JDGqZ5419Y/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Well, I am a merchant, after all. I can be quite convincing. And now, rather than trying to convince you, I'll make you a proposal.",
+                    "line": 70,
+                    "url": "https://drive.google.com/file/d/1bMHWrmPRLVNQTmNjeZt0YHhIkQS2aOPU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Lady Karen. You must live.",
+                    "line": 71,
+                    "url": "https://drive.google.com/file/d/1bIZy4Bcbm3XY-jvDuxvFXbiumUE8NNg-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "I must...live?!",
+                    "line": 72,
+                    "url": "https://drive.google.com/file/d/14fuH1_2bLCgzCl37jVPU5PUbwY1whsus/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "You saved my life, so I ask you to witness how the future of this world unfolds...and the pivotal role that the Shadow Garden will play.",
+                    "line": 73,
+                    "url": "https://drive.google.com/file/d/1XoS5vTFxZ4UvarL4h1qyjWc6Ck279IIi/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Witness, you say?",
+                    "line": 74,
+                    "url": "https://drive.google.com/file/d/14HS4CSu7UtYimvGW-mCjr0iiDqSmAJBe/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Yes, and to do that, you would be best served joining the Shadow Garden.",
+                    "line": 75,
+                    "url": "https://drive.google.com/file/d/1FuOLd4QHINaSkID4D0WibzaVUf1zQMaH/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...",
+                    "line": 76,
+                    "url": "https://drive.google.com/file/d/1sfoa8dKOEaQCBQMXKxHH_uH9g7Y01Ifq/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Are you talking me into it by making it sound so matter-of-fact?",
+                    "line": 77,
+                    "url": "https://drive.google.com/file/d/168Qj-o8ZBYPEBIDP_bOk1rOKLB1BV5xh/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Yes, exactly.",
+                    "line": 78,
+                    "url": "https://drive.google.com/file/d/1QPexiNAkXybtb4u0Z91vq0ILfP5-Pa4b/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "And it's not just a matter of fact. It's the truth.",
+                    "line": 79,
+                    "url": "https://drive.google.com/file/d/1tJCv19mgDM4Ob1PxrMp03XRL2sIzRUhE/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Heh...",
+                    "line": 80,
+                    "url": "https://drive.google.com/file/d/1gYCWRFdufTrB_pAiXlUb_08IUX1z8V1K/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...It's true that I lost everything.",
+                    "line": 81,
+                    "url": "https://drive.google.com/file/d/1DeIawH8rlKPrbRIDc6UZdibxlPHkUj_Z/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "But there is still something that defines me which I have yet to lose!",
+                    "line": 82,
+                    "url": "https://drive.google.com/file/d/1mQc1QE2F-Q-NrlMoOzbFepIdxeonY5hM/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...I see. So that one thing is your skill with the spear.",
+                    "line": 83,
+                    "url": "https://drive.google.com/file/d/1EVpa1Y8ytuBLukt_O0kOsfdNX4t3-tCM/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Yes. If I were ever defeated head-on in spear combat, it would truly mean I have lost everything.",
+                    "line": 84,
+                    "url": "https://drive.google.com/file/d/12YW4vGpQxAh3EbEbQwwrBX-mUrYPL910/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "I am no longer the person I was when pursued by Sergey. I am now in perfect condition...thanks to all of you.",
+                    "line": 85,
+                    "url": "https://drive.google.com/file/d/1RdHzdQ3LkibWQ9LZc3Pu1FSfs3AFxgM6/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "I thank you for that. And while accepting your kindness, I also ask your forgiveness for pointing my spear at you.",
+                    "line": 86,
+                    "url": "https://drive.google.com/file/d/1lq4GcGIK7VnoTuTcMqJzlbYBfsKZYA6b/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "It's alright. Don't worry about it.",
+                    "line": 87,
+                    "url": "https://drive.google.com/file/d/12Zow21ya94irFE3FFZbF3oLAeMp3XxXX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "It seems this is your way to find and resurrect yourself, and start anew.",
+                    "line": 88,
+                    "url": "https://drive.google.com/file/d/1JlLySSI4oGJKLepMfO0-EMFBKGcKVf2G/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "But, Lady Karen...let me tell you the conclusion up front.",
+                    "line": 89,
+                    "url": "https://drive.google.com/file/d/1jjkyBLjZ0hPUVdaI-DtSxZjF_KobT1VX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "If I defeat you, and you truly lose everything, you'll pledge your loyalty to the Shadow Garden.",
+                    "line": 90,
+                    "url": "https://drive.google.com/file/d/1nlQJ58RrM0JnAZigSMbaPh3JbgCE3w_I/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "*gasp*",
+                    "line": 91,
+                    "url": "https://drive.google.com/file/d/1AfmEl0hK2JvrypiA4fF31GpMBEdHOqHH/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Former member of Velgata's Seven Blades. Former First Child.",
+                    "line": 92,
+                    "url": "https://drive.google.com/file/d/1es6wflgMUEtpsWhTSIGLA19RCoSW6Gqk/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Now witness the spear of Karen the \"Shooting Star\"... Witness the proof of my life!",
+                    "line": 93,
+                    "url": "https://drive.google.com/file/d/19HCZxk6r3ElN1B8QuO6X99KQQiVj1CYd/view?usp=drivesdk"
+                }
+            ],
+            "e5": [
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...Hyah!",
+                    "line": 1,
+                    "url": "https://drive.google.com/file/d/1RkUNmzNfdfRw6IoQy4Mn_kCKuRQF6X-G/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "A feint, huh?",
+                    "line": 2,
+                    "url": "https://drive.google.com/file/d/1fpzSufkhYdmFxyIYoMdjWzGRWa2RqxsX/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "You seem to be using your spear's range to reduce my awareness...but it's pointless.",
+                    "line": 3,
+                    "url": "https://drive.google.com/file/d/13ZBcPsAbWQSn-0MDK6t9vfKTZfLiNcRJ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "You're ignoring my feints and narrowly evading my actual strikes!",
+                    "line": 4,
+                    "url": "https://drive.google.com/file/d/18aD8KI-vMccNbA0PR5ImHuDB6MXeUmGy/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Indeed, you are strong\u2014far beyond the level of an ordinary swordsman or knight.",
+                    "line": 5,
+                    "url": "https://drive.google.com/file/d/1LYILQfYDoLAcjG-_6RhGeEVwjX8ym0Hh/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "You've mastered exceptional techniques, and your combat instincts allow you to wield those techniques with precision, earning you the title of one of \"Velgalta's Seven Blades\"...",
+                    "line": 6,
+                    "url": "https://drive.google.com/file/d/1lqGC5JeoHEJ7AjUsBbQ3-3Xh9MTS1kFj/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "But such an assessment is only surface deep...",
+                    "line": 7,
+                    "url": "https://drive.google.com/file/d/1Fjsl51OEMNtbuWQ7GZp4IKN-qEv7SmHL/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Ack!",
+                    "line": 8,
+                    "url": "https://drive.google.com/file/d/1zbFZygdEUjLOvsmagH295UusDB5I5euW/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Tsk!",
+                    "line": 9,
+                    "url": "https://drive.google.com/file/d/1dd62iTbUP6XlTcl5repzKCmUfax6vhl4/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "She dodged that?!",
+                    "line": 10,
+                    "url": "https://drive.google.com/file/d/15RGlH7NynDbQMTwCvbI5MzIlOux1Apxc/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "No, Alpha must have let her.",
+                    "line": 11,
+                    "url": "https://drive.google.com/file/d/1GsHE1RCSiwKHc3PEz8uzRgAuU71f1UYm/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "An opening!",
+                    "line": 12,
+                    "url": "https://drive.google.com/file/d/1ayM65_NQ6nWBxv7C-tw6Y2iw1x1Gzjep/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Sure about that?",
+                    "line": 13,
+                    "url": "https://drive.google.com/file/d/1TaHoogiKZtNaw2C855FlQ8a3ZuMoQxRz/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Huh?!",
+                    "line": 14,
+                    "url": "https://drive.google.com/file/d/1LFGR0fChVuTTk0MOL82NMW2YPF7WEyxq/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Aghh?!",
+                    "line": 15,
+                    "url": "https://drive.google.com/file/d/1vQf-vP0ESpuKlDtKnXsITkqVJcT7V53q/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Lady Alpha using a head butt?!",
+                    "line": 16,
+                    "url": "https://drive.google.com/file/d/1TDosqTofOtYyXi08s7yKkNnfXZu0euqh/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "She intentionally hit her right eye... Well played...",
+                    "line": 17,
+                    "url": "https://drive.google.com/file/d/1klc2vziXlsNJRQRC_uEVaE63pnMO-tih/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Lady Karen knew about the slime sword's properties. She anticipated Lady Alpha would throw her sword and follow it with a melee attack.",
+                    "line": 18,
+                    "url": "https://drive.google.com/file/d/12n081SNYqLY6towdcSOGDFgAqsoYz1CV/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "But Lady Alpha instantly picked up on Lady Karen's response, closed their distance past sword range, and countered with a close-quarter physical attack...",
+                    "line": 19,
+                    "url": "https://drive.google.com/file/d/1b6R1BAwfyIFmf9_TY7fBIFq8qt2i90it/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "When push comes to shove, even Lady Alpha can resort to close-quarter combat like Lady Delta, using brute force to overpower her opponent!",
+                    "line": 20,
+                    "url": "https://drive.google.com/file/d/1R3gIgV0REzbC7pi1q82DaoRfdgHnvMSu/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...The fight is over.",
+                    "line": 21,
+                    "url": "https://drive.google.com/file/d/1as4H3SzZgXs-DfgL0DvHnNAN5zaN4Tc5/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...",
+                    "line": 22,
+                    "url": "https://drive.google.com/file/d/10zSm3L_O-WVMF9Cg_qOEAr6r4pNuyYdf/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "How did this happen?! I...was powerless!",
+                    "line": 23,
+                    "url": "https://drive.google.com/file/d/1g2VRhv3eDHNPUWDj9CTKSqNHFuCwYmHS/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "So long as you're \"Karen,\" you won't be able to defeat me, the other Seven Shadows, or even the Garden's Numbers.",
+                    "line": 24,
+                    "url": "https://drive.google.com/file/d/1dIAk7xluNb-NYHGnThxin9si2l2kb0fo/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "This disparity in skill will make you face reality, as will our slime swords and slime suits...",
+                    "line": 25,
+                    "url": "https://drive.google.com/file/d/1ZlpLtLxO_iZ6G9sahNbMuJCXH-vDfRhP/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "The Garden's swordsmanship utilizes not just blades but also fists, kicks, elbows, and knees as part of a comprehensive attack...",
+                    "line": 26,
+                    "url": "https://drive.google.com/file/d/1nQc6I2uIQyo1O7T8AJ0vrp1EkGX8MXs1/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "And we also have the power to heal the possessed, as we did with you...",
+                    "line": 27,
+                    "url": "https://drive.google.com/file/d/1MEMIoBzi03OvEMgqDFTX61wCK-W-Xcvk/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "All of this is due to the \"Shadow Wisdom,\" bestowed upon us by Shadow, the leader of the Shadow Garden.",
+                    "line": 28,
+                    "url": "https://drive.google.com/file/d/1slvxRu84MDlz1iYssqo1nmyUa_Z9JBdb/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Shadow...!",
+                    "line": 29,
+                    "url": "https://drive.google.com/file/d/1H48z9nV2JEK9H8TBx9Y9Q2S6pD_Or2i2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "The Shadow Garden exists to carry out his will...by destroying the Cult of Diablos and restoring this world to its natural form.",
+                    "line": 30,
+                    "url": "https://drive.google.com/file/d/1tgVCAB_hncLqarOrzxZKzuE7m66EcS_M/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "Lady Karen von Herzog. Discard your name, join the Shadow Garden, and pledge your allegiance to Shadow.",
+                    "line": 31,
+                    "url": "https://drive.google.com/file/d/1SSWmbW75JQxAZ1q1wzIk9rVbYPBMAyP1/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "For there is nothing left of what made you who you were.",
+                    "line": 32,
+                    "url": "https://drive.google.com/file/d/1cSiAu_uhuzy_Ae6LOoQSqqG_YNXrVWnT/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...",
+                    "line": 33,
+                    "url": "https://drive.google.com/file/d/14dc6rS2LEgErF921whSwZn4acED4YK7Z/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "...Aah...",
+                    "line": 34,
+                    "url": "https://drive.google.com/file/d/1RNBpqw3l8XPObKjVRytnk1LYvcC2kH5A/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Uaaaaaagghh!!",
+                    "line": 35,
+                    "url": "https://drive.google.com/file/d/1SyI_iLLfNTCrEC7ak5ZyK_Kl1TDI9ZTF/view?usp=drivesdk"
+                },
+                {
+                    "name": "Eta",
+                    "name_variant": "Eta",
+                    "subtitle": "Oh, now she's crying...",
+                    "line": 36,
+                    "url": "https://drive.google.com/file/d/14nJFluBmPq5tF2q5B1MyTTrbjMJq5UFB/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Alpha really beat her through and through!",
+                    "line": 37,
+                    "url": "https://drive.google.com/file/d/1IbPvsXMtcIj1_LtpH7ItSDLMyg-5y_Uu/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "...But I think it was for the best.",
+                    "line": 38,
+                    "url": "https://drive.google.com/file/d/1E7IwpiluVQAGuc8qnN3tZmGcvM-exuWK/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Lady Gamma...",
+                    "line": 39,
+                    "url": "https://drive.google.com/file/d/1tE-JiEgORnRk2cNMI-QQtDUWPqod09Lb/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "If you know there is something within you that you just can't let go of, and it's hindering you from progressing...",
+                    "line": 40,
+                    "url": "https://drive.google.com/file/d/1Oagt_52ZOUq61jQeJpmZ6L4FVCDSaHA9/view?usp=drivesdk"
+                },
+                {
+                    "name": "Gamma",
+                    "name_variant": "Gamma",
+                    "subtitle": "Then having someone else sever that connection you're clinging to can allow you to move forward...",
+                    "line": 41,
+                    "url": "https://drive.google.com/file/d/1txlDMKcHWaqMDHiEHeM5lu-C18CpkJnG/view?usp=drivesdk"
+                },
+                {
+                    "name": "Alpha",
+                    "name_variant": "Alpha",
+                    "subtitle": "...Lambda. I leave the rest to you.",
+                    "line": 42,
+                    "url": "https://drive.google.com/file/d/1oaYxR6hEwmzesYPgQaarBj57UB3V1GZf/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Sir! Yes sir! I'll start preparing immediately!",
+                    "line": 43,
+                    "url": "https://drive.google.com/file/d/1wA8NO9rqyZg4Gk645skrvkTD2deu6--f/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "Now get up, maggot! Your time as a guest is over!",
+                    "line": 44,
+                    "url": "https://drive.google.com/file/d/1gzAVyi7SFcBLM4OtHfJXdEj580fbZ4p4/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "Agh!",
+                    "line": 45,
+                    "url": "https://drive.google.com/file/d/1xrfbDMDMC2b2enzKBySEYnxgEAk7D3R4/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "From now on, you're \"No. 111\"! Discard everything and become an honest soldier!",
+                    "line": 46,
+                    "url": "https://drive.google.com/file/d/1_C4cH9iqmZQA3IDmDP0qRygRXhTWe_oJ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "U-Understood... I haven't been treated like this since I was a Velgalta infantry trainee... How I've fallen...",
+                    "line": 47,
+                    "url": "https://drive.google.com/file/d/1rkNlBxHiKsNg8NhZ4YYsVVNIkZtcMZ0u/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "We'll see how long that attitude lasts. You'll come to realize your days as an infantry recruit were heaven compared to what's in store for you.",
+                    "line": 48,
+                    "url": "https://drive.google.com/file/d/1Xk0KjnuvQB3xbLLuY8cTRy3gphdDE566/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "After three days, you'll forget all about laughing and crying.",
+                    "line": 49,
+                    "url": "https://drive.google.com/file/d/1AhcOyHDJT5DffdMI-IoD9mPLmqTSi0yx/view?usp=drivesdk"
+                },
+                {
+                    "name": "Lambda",
+                    "name_variant": "Lambda",
+                    "subtitle": "After a week, you'll likely regret having survived!",
+                    "line": 50,
+                    "url": "https://drive.google.com/file/d/1MtrtmsUm-wDVAFb1rdfzQp_WcL_LLyW3/view?usp=drivesdk"
+                },
+                {
+                    "name": "Chi",
+                    "name_variant": "Karen",
+                    "subtitle": "I... I have a bad feeling about this! What are you going to do to me?!",
+                    "line": 51,
+                    "url": "https://drive.google.com/file/d/116nwN60Jc2r8viNv1j2nXydNfbfRzFOZ/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "...And so, this former Cult of Diablos leader joined the Shadow Garden...",
+                    "line": 52,
+                    "url": "https://drive.google.com/file/d/1PpTacEp1NHTLk0r71F0KT_9bE_91zI55/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Um...my lord. Did I read too much into it?",
+                    "line": 53,
+                    "url": "https://drive.google.com/file/d/1YW8-tkkf-Lrr4emagZo2yNAK0S-8aQkg/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "...",
+                    "line": 54,
+                    "url": "https://drive.google.com/file/d/1hOBaHRUO_A4aQBuzn02gQ67LrVU5EGrI/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(Um... Beta... This is definitely, um, one of those classic cases of going overboard!)",
+                    "line": 55,
+                    "url": "https://drive.google.com/file/d/1fVIs7Jkn6MGesFxFnilwam9T-4hwiAnj/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(Where delusions and storylines get all mixed up, making things more and more complex, resulting in a severe case of self-delusion where every idea turns into some kind of conspiracy theory!)",
+                    "line": 56,
+                    "url": "https://drive.google.com/file/d/1fS5KbekJ1fp4fVpBvAi1UNSSqRmYQT4o/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(How do you go from some random bandits falling out to it actually being an undercover infiltration mission? It's way too unrealistic!)",
+                    "line": 57,
+                    "url": "https://drive.google.com/file/d/1bG3cBf_CU5XKn5BAbyuPEtCPuWzSIZTG/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(It's only natural to panic and backpedal after things progress into such a grand spectacle epic saga with intricate storylines and foreshadowing!)",
+                    "line": 58,
+                    "url": "https://drive.google.com/file/d/1K0x5YeW3wa3eugwpvcnwvqf6eD1Zovw2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(I mean, come on! The Shadow Garden's actual battles are really just against bandits and random armed groups!)",
+                    "line": 59,
+                    "url": "https://drive.google.com/file/d/1U6GUjhEBWVyinbbIikYKG8wrIJJlmaNU/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "...Beta.",
+                    "line": 60,
+                    "url": "https://drive.google.com/file/d/1zP7a4G72Xdf1UiRe-T-7S6DP2okN0NA9/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Yes!",
+                    "line": 61,
+                    "url": "https://drive.google.com/file/d/1HwqnvGo2JTee4gRKEMwNqR-I2R6ZYlAa/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "Try to keep things simple.",
+                    "line": 62,
+                    "url": "https://drive.google.com/file/d/1fmgJ9pVuIfURxNt900kp8NtpW17doKal/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Simple, my lord?",
+                    "line": 63,
+                    "url": "https://drive.google.com/file/d/1aKImPwNAcadioIMwd3P29a2AM0Qg4x8A/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "That's right. Simple. It's essential to be straight-forward and keep to the basics, just like with my sword technique.",
+                    "line": 64,
+                    "url": "https://drive.google.com/file/d/1SUw2KEbdu1MXtOrVoer3T2swMcQeDnrV/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Well...aren't there two sides to every coin?",
+                    "line": 65,
+                    "url": "https://drive.google.com/file/d/1jJ836_Yxerjnv9837At4sO-lojR-jZQh/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "The reverse of tails is ultimately heads, and the reverse of heads is ultimately tails.",
+                    "line": 66,
+                    "url": "https://drive.google.com/file/d/1uWyw4SPj0qaZQW-yI8YEhFoN0kGSjc0L/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "In other words, no matter how much you overanalyze something, the outcome will always be one or the other. Either heads or tails...",
+                    "line": 67,
+                    "url": "https://drive.google.com/file/d/16srJ0zMw9NJUfg3TAwofMFdC23xlpw9q/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "And yet, why try to see beyond the reverse of tails? Ultimately, it will still be heads or tails, nothing more.",
+                    "line": 68,
+                    "url": "https://drive.google.com/file/d/1iOJeHoI5ZhyWhWBdWe96hCisZapoLUKm/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Oh!",
+                    "line": 69,
+                    "url": "https://drive.google.com/file/d/11IN9GsWqhz5sn5Gxafi8-h-7pj3CN9mT/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "Isn't it nonsensical to needlessly complicate the interpretation of things and lose sight of their essence?",
+                    "line": 70,
+                    "url": "https://drive.google.com/file/d/1gwQQYguGs0NdEI-nmc-4ugNhfddQ2Zz2/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "...Tr-True!",
+                    "line": 71,
+                    "url": "https://drive.google.com/file/d/1FCSegobRBOlLDkvdZ-mrVH7Z9rG6U00G/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "To obtain closure, you can't obsess over something endlessly... It's essential to firmly draw the line at the initial point of division!",
+                    "line": 72,
+                    "url": "https://drive.google.com/file/d/1-YSta1CEFG0KqsOXz-dIluMKcfHXFXhA/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(I just blurted out a bunch of matter-of-fact lines to make it sound convincing, but it seems like she somehow managed to get my point.)",
+                    "line": 73,
+                    "url": "https://drive.google.com/file/d/11BKrl0jmVmvBP1G_2GJgNbV1pYwjhTU-/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(When self-delusions like this are left unchecked, they can become the \"I get it now... The world is... Magic is...\" sort of nonsense. And things start spiraling out of control in your head.)",
+                    "line": 74,
+                    "url": "https://drive.google.com/file/d/1f0x5Q-wTaq1Uwq3RBVoJr3HGoSNcmauy/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "(Yeah, I learned the hard way from my previous life before reincarnation. It's definitely worth avoiding certain thoughts!)",
+                    "line": 75,
+                    "url": "https://drive.google.com/file/d/16znv8yW4UmY1YY5JmNupDbTYM7NN_1Sn/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Ooh... I could even apply this when coming up with storylines for my novels!",
+                    "line": 76,
+                    "url": "https://drive.google.com/file/d/1hgiWmboeDFqx2CMTKje9vO8DS5is64Ju/view?usp=drivesdk"
+                },
+                {
+                    "name": "Cid Kagenou",
+                    "name_variant": "Cid",
+                    "subtitle": "Exactly. Keep things simple, Beta.",
+                    "line": 77,
+                    "url": "https://drive.google.com/file/d/1M_BzzsCRK4dMfnu9myA7rgxsjai6E1oC/view?usp=drivesdk"
+                },
+                {
+                    "name": "Beta",
+                    "name_variant": "Beta",
+                    "subtitle": "Yes, my lord!",
+                    "line": 78,
+                    "url": "https://drive.google.com/file/d/199f37JEZ8JVZz_GwT7-o7desznAMFuzz/view?usp=drivesdk"
+                }
+            ]
+        }
     }
 }
-let setDoc = db.collection('data').doc('an_s1_e17').set(data['s1']);
+//let setDoc = db.collection('data').doc('an_s1_e20').set(data['s1']);
 
-//let setDoc = db.collection('data').doc('ssc_p2_c3-4').set(data['p3']['c3-4']);
+let setDoc = db.collection('data').doc('ssc_p2_c2-5').set(data['p2']['c2-5']);
 
 //let setDoc = db.collection('data').doc('es_ssitw').set(data['ssitw']);
 

@@ -3,10 +3,6 @@ export function searchES(keys, text, keywords, nameMap, characters = [], caseSen
     console.log(characters)
     let results = {};
 
-    if (keywords.length === 0) {
-        return {};
-    }
-
     // Initialize a counter for the total number of matches
     let totalMatches = 0;
 
@@ -19,25 +15,24 @@ export function searchES(keys, text, keywords, nameMap, characters = [], caseSen
 
         // Get the list of sentences for this key
         let sentences = text[medium][season][episode];
-        console.log(sentences)
 
         // Filter the sentences based on the keywords and character names
         let filteredSentences = sentences.filter(sentence => {
             let sentenceToCheck = caseSensitive ? sentence.subtitle : sentence.subtitle.toLowerCase();
-            let allKeywordsFound = true;
+            let allKeywordsFound = keywords.length === 0 ? true : false;
             for (let keyword of keywords) {
                 let keywordToCheck = caseSensitive ? keyword : keyword.toLowerCase();
                 if (exactMatch) {
                     // If exact match is required, check if the sentence contains the keyword as a whole word
                     let regex = new RegExp(`\\b${keywordToCheck}\\b`);
-                    if (!regex.test(sentenceToCheck)) {
-                        allKeywordsFound = false;
+                    if (regex.test(sentenceToCheck)) {
+                        allKeywordsFound = true;
                         break;
                     }
                 } else {
                     // If exact match is not required, check if the sentence includes the keyword
-                    if (!sentenceToCheck.includes(keywordToCheck)) {
-                        allKeywordsFound = false;
+                    if (sentenceToCheck.includes(keywordToCheck)) {
+                        allKeywordsFound = true;
                         break;
                     }
                 }

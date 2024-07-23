@@ -169,6 +169,128 @@ function SearchPage() {
                         "checked": false
                     },
                     "checked": false
+                },
+                "Kage-Jitsu!": {
+                    "s101e1": {
+                        "title": "1 | The Seven Shadows want their operation to succeed!",
+                        "checked": false
+                    },
+                    "s101e2": {
+                        "title": "2 | The Seven Shadows want to finish up an amazing war chronicle!",
+                        "checked": false
+                    },
+                    "s101e3": {
+                        "title": "3 | The Seven Shadows want to make delicious chocolate!",
+                        "checked": false
+                    },
+                    "s101e4": {
+                        "title": "4 | The Seven Shadows want to procure the legendary coffee!",
+                        "checked": false
+                    },
+                    "s101e5": {
+                        "title": "5 | The Seven Shadows want to create an Artifact!",
+                        "checked": false
+                    },
+                    "s101e6": {
+                        "title": "6 | The Seven Shadows want to recommend cute underwear!",
+                        "checked": false
+                    },
+                    "s101e7": {
+                        "title": "7 | The Seven Shadows want to select cute underwear!",
+                        "checked": false
+                    },
+                    "s101e8": {
+                        "title": "8 | The Seven Shadows want to bathe in the finest hot spa!",
+                        "checked": false
+                    },
+                    "s101e9": {
+                        "title": "9 | The Seven Shadows want to get along together!",
+                        "checked": false
+                    },
+                    "s101e10": {
+                        "title": "10 | The Seven Shadows want to gain awesome muscles!",
+                        "checked": false
+                    },
+                    "s101e11": {
+                        "title": "11 | The Seven Shadows want to understand what \"Bubble\" means!",
+                        "checked": false
+                    },
+                    "s101e12": {
+                        "title": "12 | The Seven Shadows want to create a new taste!",
+                        "checked": false
+                    },
+                    "s101e13": {
+                        "title": "13 | The Seven Shadows want to see friendliness being displayed!",
+                        "checked": false
+                    },
+                    "s101e14": {
+                        "title": "14 | The Seven Shadows want to receive words of praise!",
+                        "checked": false
+                    },
+                    "s101e15": {
+                        "title": "15 | The Seven Shadows want to enjoy pleasant music!",
+                        "checked": false
+                    },
+                    "s101e16": {
+                        "title": "16 | The Seven Shadows want to put on amazing underwear!",
+                        "checked": false
+                    },
+                    "s101e17": {
+                        "title": "17 | The Seven Shadows want to continue this operation!",
+                        "checked": false
+                    },
+                    "checked": false
+                },
+                "Kage-Jitsu! 2nd": {
+                    "s102e1": {
+                        "title": "1 | The Seven Shadows want to improve their branding!",
+                        "checked": false
+                    },
+                    "s102e2": {
+                        "title": "2 | Shichikage wants to develop cute clothes!",
+                        "checked": false
+                    },
+                    "s102e3": {
+                        "title": "3 | The Seven Shadows want to create a trend!",
+                        "checked": false
+                    },
+                    "s102e4": {
+                        "title": "4 | The Seven Shadows want to make awesome banknotes!",
+                        "checked": false
+                    },
+                    "s102e5": {
+                        "title": "5 | The Seven Shadows want to be praised for their success!",
+                        "checked": false
+                    },
+                    "s102e6": {
+                        "title": "6 | The Seven Shadows want to hunt in the Lawless City!",
+                        "checked": false
+                    },
+                    "s102e7": {
+                        "title": "7 | The Seven Shadows want to follow the Lord they believe in!",
+                        "checked": false
+                    },
+                    "s102e8": {
+                        "title": "8 | The Seven Shadows want to blather on once in a while!",
+                        "checked": false
+                    },
+                    "s102e9": {
+                        "title": "9 | The Seven Shadows want to be seen as a bit smarter!",
+                        "checked": false
+                    },
+                    "s102e10": {
+                        "title": "10 | The Seven Shadows want to get more familiar with music!",
+                        "checked": false
+                    },
+                    "s102e11": {
+                        "title": "11 | The Seven Shadows want to show off their growth!",
+                        "checked": false
+                    },
+                    "s102e12": {
+                        "title": "12 | The Seven Shadows won't be shaken no matter what!",
+                        "checked": false
+                    },
+                    "checked": false
                 }
             },
             episodeFilters: {}
@@ -2857,7 +2979,14 @@ function SearchPage() {
             "Glen": characterCovers.GlenIcon,
             "Mr. Kagenou": characterCovers.MrKagenouIcon,
             "Mrs. Kagenou": characterCovers.MrsKagenouIcon,
-            "Rex": characterCovers.RexIcon
+            "Rex": characterCovers.RexIcon,
+            "Perv Asshat": characterCovers.PervAsshatIcon,
+            "Mordred": characterCovers.MordredIcon,
+            "No. 664": characterCovers.No664Icon,
+            "No. 665": characterCovers.No665Icon,
+            "Klaus Midgar": characterCovers.KlausMidgarIcon,
+            "Raphael Oriana": characterCovers.RaphaelOrianaIcon,
+
         },
         "lnCoverImages": {
             "v1": covers.LNV1Cover,
@@ -2869,7 +2998,9 @@ function SearchPage() {
         },
         "animeCoverImages": {
             "s1": covers.ANS1Cover,
-            "s2": covers.ANS2Cover
+            "s2": covers.ANS2Cover,
+            "Kage-Jitsu!": covers.KJ1Cover,
+            "Kage-Jitsu! 2nd": covers.KJ2Cover,
         },
         "sscCoverImages": {
             "ssc": covers.SSCCover,
@@ -3112,6 +3243,12 @@ function SearchPage() {
                                     "checked": false,
                                     "open": false
                                 },
+                                "No. 664": {
+                                    "checked": false,
+                                },
+                                "No. 665": {
+                                    "checked": false,
+                                },
                                 "Garden Member": {
                                     "checked": false
                                 },
@@ -3210,23 +3347,6 @@ function SearchPage() {
                                     "open": false,
                                     "checked": false,
                                 },
-                            },
-                            "General": {
-                                openGroup: false,
-                                checked: false,
-                                open: false,
-                                filters: '',
-                                characters: {
-                                    "Captain's Daughter": {
-                                        "checked": false,
-                                    },
-                                    "Duke's Second Son": {
-                                        "checked": false,
-                                    },
-                                    "Knight Captain": {
-                                        "checked": false,
-                                    }
-                                }
                             }
                         },
                         "Midgar Kingdom": {
@@ -3235,6 +3355,9 @@ function SearchPage() {
                             open: false,
                             filters: '',
                             characters: {
+                                "Klaus Midgar": {
+                                    "checked": false,
+                                },
                                 "Mr. Kagenou": {
                                     "checked": false,
                                 },
@@ -3243,6 +3366,23 @@ function SearchPage() {
                                 },
                             }
                         },
+                        "General": {
+                            openGroup: false,
+                            checked: false,
+                            open: false,
+                            filters: '',
+                            characters: {
+                                "Captain's Daughter": {
+                                    "checked": false,
+                                },
+                                "Duke's Second Son": {
+                                    "checked": false,
+                                },
+                                "Knight Captain": {
+                                    "checked": false,
+                                }
+                            }
+                        }
                     }
                 },
                 'ORIANA': {
@@ -3352,6 +3492,9 @@ function SearchPage() {
                                     "Sir Gaunt": false,
                                     "checked": false,
                                     "open": false
+                                },
+                                "Mordred": {
+                                    "checked": false,
                                 },
                                 "Sergey Gorman": {
                                     "Sergey Gorman": false,
@@ -3708,6 +3851,12 @@ function SearchPage() {
                                 "Announcer": {
                                     "checked": false,
                                 },
+                                "Aristocrat": {
+                                    "checked": false,
+                                },
+                                "Aristocrats": {
+                                    "checked": false,
+                                },
                                 "Attendees": {
                                     "checked": false,
                                 },
@@ -3795,6 +3944,9 @@ function SearchPage() {
                                 "Researcher": {
                                     "checked": false,
                                 },
+                                "Sailor": {
+                                    "checked": false
+                                },
                                 "Scientist": {
                                     "checked": false
                                 },
@@ -3849,7 +4001,7 @@ function SearchPage() {
                                 },
                                 "Clerk": {
                                     "checked": false,
-                                },              
+                                },
                                 "Merchant A": {
                                     "checked": false,
                                 },
@@ -3881,7 +4033,7 @@ function SearchPage() {
                                     "checked": false,
                                 },
                                 "Sailor": {
-                                    "checked": false,    
+                                    "checked": false,
                                 },
                                 "Staff": {
                                     "checked": false
@@ -3984,10 +4136,10 @@ function SearchPage() {
                                 "Announcer": {
                                     "checked": false,
                                 },
-                                "Aristocrat": {
+                                "Audience": {
                                     "checked": false,
                                 },
-                                "Audience": {
+                                "Crowd": {
                                     "checked": false,
                                 },
                                 "Participant": {
@@ -4129,7 +4281,7 @@ function SearchPage() {
                                 },
                                 "Mysterious Man D": {
                                     "checked": false,
-                                }, 
+                                },
                                 "Mysterious Soldiers": {
                                     "checked": false,
                                 },
@@ -4316,18 +4468,18 @@ function SearchPage() {
         'No. 666': ['No. 666', 'No.666'],
         'Alpha (All)': ['Alpha', '??? (Alpha)', 'None (Alpha)', 'Everyone (Alpha)', 'Alpha & Zeta (Alpha)', 'Alpha & Beta (Alpha)', 'Seven Shadows (Alpha)'],
         'Alpha': ['Alpha', '??? (Alpha)', 'None (Alpha)'],
-        'Beta (All)': ['Beta', 'Natsume Kafka', 'Natsume', '??? (Natsume Kafka)', '??? (Natsume)', 'None (Beta)', 'Everyone (Beta)', 'Beta & Epsilon (Beta)', 
+        'Beta (All)': ['Beta', 'Natsume Kafka', 'Natsume', '??? (Natsume Kafka)', '??? (Natsume)', 'None (Beta)', 'Everyone (Beta)', 'Beta & Epsilon (Beta)',
             'Alpha & Beta (Beta)', 'Beta & Gamma (Beta)', '??? (Beta)', 'Seven Shadows (Beta)', 'Beta & Delta & Zeta (Beta)', 'Alexia Midgar & Natsume Kafka (Natsume Kafka)',
-        'Fictional Shadow', 'Fictional Zenon'],
+            'Fictional Shadow', 'Fictional Zenon'],
         'Beta': ['Natsume Kafka', 'Beta', '??? (Beta)', 'None (Beta)'],
         'Natsume Kafka': ['Natsume Kafka', 'Natsume'],
         '??? (Natsume Kafka)': ['??? (Natsume)'],
-        'Gamma (All)': ['Gamma', 'Everyone (Gamma)', '??? (Gamma)', 'Seven Shadows (Gamma)', 'None (Gamma)', 'Beta & Gamma (Gamma)', 
+        'Gamma (All)': ['Gamma', 'Everyone (Gamma)', '??? (Gamma)', 'Seven Shadows (Gamma)', 'None (Gamma)', 'Beta & Gamma (Gamma)',
             'Gamma& Epsilon & Eta (Gamma)', 'Gamma & Epsilon (Gamma)', 'Luna'],
         'Gamma': ['Gamma', '??? (Gamma)', 'None (Gamma)'],
         "Delta (All)": ['Delta', 'Everyone (Delta)', '??? (Delta)', 'Seven Shadows (Delta)', 'Delta & Zeta (Delta)', 'Beta & Delta & Zeta (Delta)'],
         "Delta": ['Delta', '??? (Delta)'],
-        'Epsilon (All)': ['Epsilon', 'Everyone (Epsilon)', 'Beta & Epsilon (Epsilon)', '??? (Epsilon)', 'Seven Shadows (Epsilon)', 
+        'Epsilon (All)': ['Epsilon', 'Everyone (Epsilon)', 'Beta & Epsilon (Epsilon)', '??? (Epsilon)', 'Seven Shadows (Epsilon)',
             'Gamma& Epsilon & Eta (Epsilon)', 'Gamma & Epsilon (Epsilon)'],
         'Epsilon': ['Epsilon', '??? (Epsilon)'],
         'Zeta (All)': ['Zeta', 'Everyone (Zeta)', 'Alpha & Zeta (Zeta)', 'Zeta & Eta (Zeta)', '??? (Zeta)', 'Seven Shadows (Zeta)', 'Delta & Zeta (Zeta)', 'Beta & Delta & Zeta (Zeta)'],
@@ -4450,8 +4602,6 @@ function SearchPage() {
                     })
             );
 
-        let anCheckedData = await fetchANData(animeCheckedItems, versionData, setVersionData);
-
         const lnCheckedItems = Object.entries(lnDropdownState.volumesChecked)
             .flatMap(([volume, chapters]) =>
                 Object.entries(chapters)
@@ -4460,11 +4610,6 @@ function SearchPage() {
                         return `ln_${chapter.split("c")[0]}_c${chapter.split("c")[1]}`;
                     })
             );
-
-
-        let lnCheckedData = await fetchLNData(lnCheckedItems, versionData, setVersionData);
-
-
 
         const wnCheckedItems = Object.entries(wnDropdownState.volumesChecked)
             .flatMap(([volume, chapters]) =>
@@ -4475,7 +4620,6 @@ function SearchPage() {
                     })
             );
 
-        let wnCheckedData = await fetchWNData(wnCheckedItems, versionData, setVersionData);
 
         // Helper function to get checked character entries
         const getCheckedCharacterEntries = (character, { checked, ...subnames }) => {
@@ -4540,7 +4684,7 @@ function SearchPage() {
             }
         }
 
-        let sscCheckedData = await fetchSSCData(sscCheckedItems, versionData, setVersionData);
+        
 
         let apoCheckedItems = [];
         for (let group in mogDropdownState.partsChecked) {
@@ -4559,7 +4703,6 @@ function SearchPage() {
             }
         }
 
-        let apoCheckedData = await fetchAPOData(apoCheckedItems, versionData, setVersionData);
 
 
         // For Event Stories
@@ -4576,7 +4719,39 @@ function SearchPage() {
             }
         }
 
-        let esCheckedData = await fetchESData(esCheckedItems, versionData, setVersionData);
+        let anCheckedData;
+        let lnCheckedData;
+        let wnCheckedData;
+        let apoCheckedData;
+        let sscCheckedData;
+        let esCheckedData;
+
+        if (animeCheckedItems.length > 0) {
+            anCheckedData = await fetchANData(animeCheckedItems, versionData, setVersionData);
+        }
+
+        if (lnCheckedItems.length > 0) {
+            lnCheckedData = await fetchLNData(lnCheckedItems, versionData, setVersionData);
+        }
+
+        if (wnCheckedItems.length > 0) {
+            wnCheckedData = await fetchWNData(wnCheckedItems, versionData, setVersionData);
+        }
+
+        if (esCheckedItems.length > 0) {
+            esCheckedData = await fetchESData(esCheckedItems, versionData, setVersionData);
+        }
+
+        if (apoCheckedItems.length > 0) {
+            apoCheckedData = await fetchAPOData(apoCheckedItems, versionData, setVersionData);
+        }
+
+        if (sscCheckedItems.length > 0) {
+            sscCheckedData = await fetchSSCData(sscCheckedItems, versionData, setVersionData); 
+        }
+
+
+
 
         // Initialize separate objects to hold the anime and light novel results
         let animeResults = {};
@@ -4594,11 +4769,6 @@ function SearchPage() {
         const apoText = { "apo": { ...apoCheckedData } }
 
         let resultsKeyString = '';
-
-        if (filterState.keywords.length === 0) {
-            setKeywordsFlash(true);
-            resultsKeyString = resultsKeyString + "1";
-        }
 
         if (lnCheckedItems.length === 0 &&
             wnCheckedItems.length === 0 &&
@@ -4621,7 +4791,6 @@ function SearchPage() {
         } else {
             setResultsKey(0);
         }
-        console.log(resultsKeyString)
 
         if (Object.keys(lnText.ln).length === 0 &&
             Object.keys(wntext.wn).length === 0 &&

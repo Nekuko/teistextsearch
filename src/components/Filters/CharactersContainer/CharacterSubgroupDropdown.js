@@ -140,9 +140,19 @@ function CharacterSubgroupDropdown({
         setFilter(event.target.value);
     };
 
-    const filteredCharacters = Object.keys(selectedGroup.characters || {}).filter((characterName) =>
-        characterName.toLowerCase().includes(filter.toLowerCase())
-    );
+    const filteredCharacters = Object.keys(selectedGroup.characters || {}).filter((characterName) => {
+        if (selectedGroup.open === true) {
+          if (Object.keys(selectedGroup.characters[characterName]).length > 2) {
+            let charKeys = Object.keys(selectedGroup.characters[characterName]);
+            charKeys = charKeys.some((key) => key !== "checked" && key !== "open" && key.toLowerCase().includes(filter.toLowerCase()));
+            return charKeys
+          } else {
+            return characterName.toLowerCase().includes(filter.toLowerCase());
+          }
+        }
+        return {};
+    
+      });
 
 
 
