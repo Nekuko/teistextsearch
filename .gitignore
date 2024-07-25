@@ -4,10 +4,6 @@
 /node_modules
 /.pnp
 .pnp.js
-serviceAccountKey.json
-/src/images/*
-/src/jsons/*
-/src/svgs/*
 
 # testing
 /coverage
@@ -25,3 +21,9 @@ serviceAccountKey.json
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+serviceAccountKey.json
+src/images/
+src/jsons/
+src/svgs/
+
