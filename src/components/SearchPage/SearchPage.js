@@ -1784,7 +1784,7 @@ function SearchPage() {
             lnMainChecked: false,
             lnFilter: '',
             openVolumes: {},
-            versions: VERSIONS['lnDropdownState'],
+            version: VERSIONS['lnDropdownState'],
             volumesChecked: {
                 "Volume 1": {
                     "checked": false,
@@ -1962,31 +1962,31 @@ function SearchPage() {
                     "checked": false,
                     "v5c1": {
                         "checked": false,
-                        "title": "P | The Darkness that Lurks in the Academy, Cases of Missing Students!"
+                        "title": "P | The Case of the Missing Students and the Not-So-Peaceful Academy!"
                     },
                     "v5c2": {
                         "checked": false,
-                        "title": "1 | Nee-san's Return and the Progress of her Illness...!"
+                        "title": "1 | Claire's Back, and Her Symptoms Are Worse Than Ever!"
                     },
                     "v5c3": {
                         "checked": false,
-                        "title": "2 | On a Shocking Morning, the School Murder Case!"
+                        "title": "2 | Morning Comes, and There's an Impaler on the Loose!!"
                     },
                     "v5c4": {
                         "checked": false,
-                        "title": "3 | Case Closed, Let's Talk About Old Tales!"
+                        "title": "3 | The Case Is Closed, So It's Time for a Flashback!"
                     },
                     "v5c5": {
                         "checked": false,
-                        "title": "4 | Today the World is at Peace Again!"
+                        "title": "4 | Peace in Our Time!"
                     },
                     "v5c6": {
                         "checked": false,
-                        "title": "5 | An Unexpected Terrorists Attack in the Academy Again!!!"
+                        "title": "5 | Terrorists Attack the School...Again!!"
                     },
                     "v5c7": {
                         "checked": false,
-                        "title": "E | If I Could Get it, I Wouldn't Hesitate to Destroy the World."
+                        "title": "E | I'd Let the Whole World Burn, If That's What It Took!"
                     },
                     "v5c8": {
                         "checked": false,

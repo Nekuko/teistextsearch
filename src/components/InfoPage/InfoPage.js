@@ -20,7 +20,7 @@ const lnCoverImages = {
     "Volume 2": covers.LNV2Cover,
     "Volume 3": covers.LNV3Cover,
     "Volume 4": covers.LNV4Cover,
-    "Volume 5 [Fan-Translation]": covers.LNV5Cover,
+    "Volume 5": covers.LNV5Cover,
     "Volume 6 [Fan-Translation]": covers.LNV6Cover
 }
 
@@ -106,9 +106,9 @@ const sscCoverImages = {
 
 const ln_info = {
     "total": {
-        "line_count": 26002,
-        "word_count": 337323,
-        "char_count": 1887497
+        "line_count": 24986,
+        "word_count": 343965,
+        "char_count": 1923515
     },
     "v1": {
         "c1": {
@@ -384,58 +384,58 @@ const ln_info = {
     },
     "v5": {
         "c1": {
-            "line_count": 662,
-            "word_count": 6750,
-            "char_count": 37081,
-            "title": "Prologue | The Darkness that Lurks in the Academy, Cases of Missing Students!"
+            "line_count": 552,
+            "word_count": 7082,
+            "char_count": 38970,
+            "title": "Prologue | The Case of the Missing Students and the Not-So-Peaceful Academy!"
         },
         "c2": {
-            "line_count": 875,
-            "word_count": 9448,
-            "char_count": 51316,
-            "title": "Chapter 1 | Nee-san's Return and the Progress of her Illness...!"
+            "line_count": 714,
+            "word_count": 10452,
+            "char_count": 57098,
+            "title": "Chapter 1 | Claire's Back, and Her Symptoms Are Worse Than Ever!"
         },
         "c3": {
-            "line_count": 883,
-            "word_count": 7941,
-            "char_count": 44769,
-            "title": "Chapter 2 | On a Shocking Morning, the School Murder Case!"
+            "line_count": 731,
+            "word_count": 9174,
+            "char_count": 51320,
+            "title": "Chapter 2 | Morning Comes, and There's an Impaler on the Loose!!"
         },
         "c4": {
-            "line_count": 747,
-            "word_count": 7063,
-            "char_count": 39372,
-            "title": "Chapter 3 | Case Closed, Let's Talk About Old Tales!"
+            "line_count": 591,
+            "word_count": 8008,
+            "char_count": 44804,
+            "title": "Chapter 3 | The Case Is Closed, So It's Time for a Flashback!"
         },
         "c5": {
-            "line_count": 285,
-            "word_count": 3525,
-            "char_count": 19613,
-            "title": "Chapter 4 | Today the World is at Peace Again!"
+            "line_count": 210,
+            "word_count": 4090,
+            "char_count": 22677,
+            "title": "Chapter 4 | Peace in Our Time!"
         },
         "c6": {
-            "line_count": 812,
-            "word_count": 8481,
-            "char_count": 48056,
-            "title": "Chapter 5 | An Unexpected Terrorists Attack in the Academy Again!!!"
+            "line_count": 613,
+            "word_count": 9746,
+            "char_count": 54385,
+            "title": "Chapter 5 | Terrorists Attack the School...Again!!"
         },
         "c7": {
-            "line_count": 790,
-            "word_count": 7183,
-            "char_count": 40880,
-            "title": "Epilogue | If I Could Get it, I Wouldn't Hesitate to Destroy the World."
+            "line_count": 609,
+            "word_count": 8273,
+            "char_count": 46843,
+            "title": "Epilogue | I'd Let the Whole World Burn, If That's What It Took!"
         },
         "c8": {
-            "line_count": 23,
-            "word_count": 492,
-            "char_count": 2813,
+            "line_count": 41,
+            "word_count": 700,
+            "char_count": 3821,
             "title": "Appendix | Eta's Research Journal"
         },
         "total": {
-            "line_count": 5077,
-            "word_count": 50883,
-            "char_count": 283900,
-            "title": "Volume 5 [Fan-Translation]"
+            "line_count": 4061,
+            "word_count": 57525,
+            "char_count": 319918,
+            "title": "Volume 5"
         }
     },
     "v6": {
