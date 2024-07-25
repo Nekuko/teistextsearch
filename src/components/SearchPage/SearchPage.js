@@ -3001,6 +3001,8 @@ function SearchPage() {
             "s2": covers.ANS2Cover,
             "Kage-Jitsu!": covers.KJ1Cover,
             "Kage-Jitsu! 2nd": covers.KJ2Cover,
+            "s101": covers.KJ1Cover,
+            "s102": covers.KJ2Cover,
         },
         "sscCoverImages": {
             "ssc": covers.SSCCover,
@@ -4725,6 +4727,8 @@ function SearchPage() {
         let apoCheckedData;
         let sscCheckedData;
         let esCheckedData;
+
+        console.log(animeCheckedItems)
 
         if (animeCheckedItems.length > 0) {
             anCheckedData = await fetchANData(animeCheckedItems, versionData, setVersionData);

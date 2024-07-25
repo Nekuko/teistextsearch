@@ -817,7 +817,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
               end = episodes[i];
             } else {
               if (seasonNumber === '101') {
-                newList.push({ text: `KJ1 E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Kage-Jitsu!, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
+                newList.push({ text: `KJ E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Kage-Jitsu!, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
               } else if (seasonNumber === '102') {
                 newList.push({ text: `KJ2 E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Kage-Jitsu! 2nd, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
               } else{
@@ -831,7 +831,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
           }
           if (start <= end) {
             if (seasonNumber === '101') {
-              newList.push({ text: `KJ1 E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Kage-Jitsu!, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
+              newList.push({ text: `KJ E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Kage-Jitsu!, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
             } else if (seasonNumber === '102') {
               newList.push({ text: `KJ2 E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Kage-Jitsu! 2nd, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
             } else {

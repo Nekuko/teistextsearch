@@ -352,10 +352,62 @@ export async function fetchESData(esCheckedItems, versionData, setVersionData) {
     return esCheckedData;
 }
 
+export async function fetchKJData(uniqueKJParts, uniqueKJPartsSeasons, versionDocSnap, db, anCheckedData) {
+    for (let part of uniqueKJPartsSeasons) {
+        let firestoreVersion = versionDocSnap.data().an[part]; // Update to 'an' instead of 'es'
+
+        let indexedDBVersion = await db.get('firestore-cache', `data-versions-an-${part}`); // Update to 'an' instead of 'es'
+
+        let data;
+        if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
+            console.log(part)
+            console.log("Newer version found or no version in IndexedDB.");
+            const dataDocRef = doc(firestore, 'data', `an_${part}`); // Update to 'an' instead of 'es'
+            let dataDocSnap = await getDoc(dataDocRef);
+            data = dataDocSnap.data();
+
+            // Store the data in IndexedDB for future use
+            await db.put('firestore-cache', data, `data-an-${part}`); // Update to 'an' instead of 'es'
+            console.log("Data retrieved from firebase and saved to IndexedDB.");
+        } else if (firestoreVersion === indexedDBVersion) {
+            console.log("Same version found.");
+            // Fetch data from IndexedDB
+            data = await db.get('firestore-cache', `data-an-${part}`); // Update to 'an' instead of 'es'
+            console.log("Data retrieved from IndexedDB.");
+        }
+
+        for (let item of uniqueKJParts) { // Update to 'an' instead of 'es'
+            let [partChecked, episode] = item.split('_');
+            let split_part = part.split("_")[0];
+            if (split_part === partChecked && data[episode]) {
+                if (!anCheckedData[split_part]) {
+                    anCheckedData[split_part] = {};
+                }
+                anCheckedData[split_part][episode] = data[episode];
+            }
+        }
+
+        // Store the version number in IndexedDB for future use
+        if (firestoreVersion !== indexedDBVersion) {
+            await db.put('firestore-cache', firestoreVersion, `data-versions-an-${part}`); // Update to 'an' instead of 'es'
+            console.log("New version saved to indexedDB.");
+        }
+    }
+    return anCheckedData;
+}
+
+
 export async function fetchANData(anCheckedItems, versionData, setVersionData) {
     let anCheckedData = {};
-    let uniqueParts = [...new Set(anCheckedItems.map(item => `${item.split('_')[1]}_${item.split('_')[2]}`))];
-    console.log(uniqueParts)
+    let allUniqueParts = [...new Set(anCheckedItems.map(item => `${item.split('_')[1]}_${item.split('_')[2]}`))];
+    console.log(allUniqueParts)
+    let uniqueParts = allUniqueParts.filter(item => parseInt(item.split('_')[0].replace("s", "")) <= 100);
+    let uniqueKJParts = allUniqueParts.filter(item => parseInt(item.split('_')[0].replace("s", "")) > 100);
+    let uniqueKJPartsSeasons = [];
+    if (uniqueKJParts.length > 0) {
+        uniqueKJPartsSeasons = [...new Set(uniqueKJParts.map(item => item.split("_")[0]))]
+    }
+
     const db = await openDB('firestore-cache-db', 1, {
         upgrade(db) {
             db.createObjectStore('firestore-cache');
@@ -371,6 +423,10 @@ export async function fetchANData(anCheckedItems, versionData, setVersionData) {
         versionDocSnap = await getDoc(versionDocRef);
         setVersionData(versionDocSnap);
         console.log("Version retrieved from firebase.");
+    }
+
+    if (uniqueKJPartsSeasons.length > 0) {
+        anCheckedData = await fetchKJData(uniqueKJParts, uniqueKJPartsSeasons, versionDocSnap, db, anCheckedData);
     }
 
     for (let part of uniqueParts) {
@@ -402,7 +458,6 @@ export async function fetchANData(anCheckedItems, versionData, setVersionData) {
 
         for (let item of anCheckedItems) { // Update to 'an' instead of 'es'
             let [_, partChecked, episode] = item.split('_');
-            console.log(item)
             let split_part = part.split("_")[0];
             if (split_part === partChecked && data[episode]) {
                 if (!anCheckedData[split_part]) {
@@ -418,7 +473,6 @@ export async function fetchANData(anCheckedItems, versionData, setVersionData) {
             console.log("New version saved to indexedDB.");
         }
     }
-    console.log(anCheckedData);
 
     return anCheckedData;
 }

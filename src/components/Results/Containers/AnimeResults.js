@@ -103,10 +103,17 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
     <div className="anime-trigger">
       {Object.entries(anData.seasons).map(([seasonKey, seasonValue]) => {
         // Get the season title from the mapping
-        const mapKey = seasonKey.replace("s", "Season ");
-        const seasonTitle = partsChecked[mapKey]?.title || `Season ${seasonKey.slice(1)}`;
+        let mapKey = seasonKey.replace("s", "Season ");
+        let seasonTitle = partsChecked[mapKey]?.title || `Season ${seasonKey.slice(1)}`;
         // Calculate the total count for each season
         const seasonCount = Object.values(seasonValue.episodes).reduce((total, episode) => total + episode.count, 0);
+        if (mapKey.split(" ")[1] === "101") {
+          mapKey = "Kage-Jitsu!"
+          seasonTitle = "Kage-Jitsu!"
+        } else if (mapKey.split(" ")[1] === "102") {
+          mapKey = "Kage-Jitsu! 2nd"
+          seasonTitle = "Kage-Jitsu! 2nd"
+        }
 
         return (
           <div key={seasonTitle}>
