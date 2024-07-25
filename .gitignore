@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 serviceAccountKey.json
+src/images/*
+src/jsons/*
+src/svgs/*
 
 # testing
 /coverage
