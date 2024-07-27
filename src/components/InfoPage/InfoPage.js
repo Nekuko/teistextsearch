@@ -8444,6 +8444,9 @@ function InfoPage() {
                 <br />
                 {generateCollapsiblesWN(wn_info)}
                 <br />
+                <Collapsible trigger="Anime">
+                </Collapsible>
+                <br />
                 <Collapsible trigger="Master of Garden">
                     <p>Paragraphs: {formatNumber(mg_info.line_count)}</p>
                     <p>Approximate Word Count: {formatNumber(mg_info.word_count)}</p>

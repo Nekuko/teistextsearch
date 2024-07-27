@@ -2986,6 +2986,7 @@ function SearchPage() {
             "No. 665": characterCovers.No665Icon,
             "Klaus Midgar": characterCovers.KlausMidgarIcon,
             "Raphael Oriana": characterCovers.RaphaelOrianaIcon,
+            "Elisabeth": characterCovers.ElisabethIcon
 
         },
         "lnCoverImages": {
@@ -3110,6 +3111,8 @@ function SearchPage() {
                                     "Seven Shadows (Alpha)": false,
                                     "None (Alpha)": false,
                                     "Alpha & Beta (Alpha)": false,
+                                    "Alpha & Eta (Alpha)": false,
+                                    "Alpha & Gamma (Alpha)": false,
                                     "Alpha & Zeta (Alpha)": false,
                                     "checked": false,
                                     "open": false
@@ -3139,6 +3142,7 @@ function SearchPage() {
                                     "Luna": false,
                                     "Everyone (Gamma)": false,
                                     "Seven Shadows (Gamma)": false,
+                                    "Alpha & Gamma (Gamma)": false,
                                     "Beta & Gamma (Gamma)": false,
                                     "Gamma & Epsilon (Gamma)": false,
                                     "Gamma & Epsilon & Eta (Gamma)": false,
@@ -3183,6 +3187,7 @@ function SearchPage() {
                                     "??? (Eta)": false,
                                     "Everyone (Eta)": false,
                                     "Seven Shadows (Eta)": false,
+                                    "Alpha & Eta (Eta)": false,
                                     "Zeta & Eta (Eta)": false,
                                     "Gamma & Epsilon & Eta (Eta)": false,
                                     "checked": false,
@@ -3656,7 +3661,37 @@ function SearchPage() {
                             open: false,
                             filters: '',
                             characters: {
+                                "Claudia": {
+                                    "checked": false,
+                                },
+                                "Crimson": {
+                                    "checked": false,
+                                },
+                                "Elisabeth": {
+                                    "checked": false,
+                                },
+                                "Juggernaut": {
+                                    "checked": false,
+                                },
+                                "Kana": {
+                                    "checked": false,
+                                },
+                                "Marie": {
+                                    "checked": false,
+                                },
+                                "Mary": {
+                                    "checked": false,
+                                },
+                                "Natsu": {
+                                    "checked": false,
+                                },
+                                "Vampire": {
+                                    "checked": false,
+                                },
                                 "Yukime": {
+                                    "checked": false,
+                                },
+                                "White Demon": {
                                     "checked": false,
                                 }
                             }
@@ -3880,6 +3915,9 @@ function SearchPage() {
                                 "Civilian": {
                                     "checked": false,
                                 },
+                                "Coworker": {
+                                    "checked": false,
+                                },
                                 "Disciple": {
                                     "checked": false,
                                 },
@@ -3922,6 +3960,9 @@ function SearchPage() {
                                 "Passerby D": {
                                     "checked": false,
                                 },
+                                "Pickpocket": {
+                                    "checked": false,
+                                },
                                 "Maid": {
                                     "checked": false,
                                 },
@@ -3953,6 +3994,9 @@ function SearchPage() {
                                     "checked": false
                                 },
                                 "Soldier": {
+                                    "checked": false
+                                },
+                                "Subordinate": {
                                     "checked": false
                                 },
                                 "Veteran Paladin": {
@@ -4002,6 +4046,9 @@ function SearchPage() {
                                     "open": false,
                                 },
                                 "Clerk": {
+                                    "checked": false,
+                                },
+                                "Merchant": {
                                     "checked": false,
                                 },
                                 "Merchant A": {
@@ -4252,6 +4299,9 @@ function SearchPage() {
                                 "Merry Whip": {
                                     "checked": false
                                 },
+                                "Little Cuckoo-kun": {
+                                    "checked": false
+                                },
                                 "Mr. Vendy": {
                                     "checked": false
                                 },
@@ -4468,7 +4518,7 @@ function SearchPage() {
         'Rose Oriana (All)': ['Rose Oriana', 'Rose', 'No.666'],
         'Rose Oriana': ['Rose Oriana', 'Rose'],
         'No. 666': ['No. 666', 'No.666'],
-        'Alpha (All)': ['Alpha', '??? (Alpha)', 'None (Alpha)', 'Everyone (Alpha)', 'Alpha & Zeta (Alpha)', 'Alpha & Beta (Alpha)', 'Seven Shadows (Alpha)'],
+        'Alpha (All)': ['Alpha', '??? (Alpha)', 'Alpha & Eta (Alpha)', 'None (Alpha)', 'Everyone (Alpha)', 'Alpha & Gamma (Alpha)', 'Alpha & Zeta (Alpha)', 'Alpha & Beta (Alpha)', 'Seven Shadows (Alpha)'],
         'Alpha': ['Alpha', '??? (Alpha)', 'None (Alpha)'],
         'Beta (All)': ['Beta', 'Natsume Kafka', 'Natsume', '??? (Natsume Kafka)', '??? (Natsume)', 'None (Beta)', 'Everyone (Beta)', 'Beta & Epsilon (Beta)',
             'Alpha & Beta (Beta)', 'Beta & Gamma (Beta)', '??? (Beta)', 'Seven Shadows (Beta)', 'Beta & Delta & Zeta (Beta)', 'Alexia Midgar & Natsume Kafka (Natsume Kafka)',
@@ -4477,7 +4527,7 @@ function SearchPage() {
         'Natsume Kafka': ['Natsume Kafka', 'Natsume'],
         '??? (Natsume Kafka)': ['??? (Natsume)'],
         'Gamma (All)': ['Gamma', 'Everyone (Gamma)', '??? (Gamma)', 'Seven Shadows (Gamma)', 'None (Gamma)', 'Beta & Gamma (Gamma)',
-            'Gamma& Epsilon & Eta (Gamma)', 'Gamma & Epsilon (Gamma)', 'Luna'],
+            'Gamma& Epsilon & Eta (Gamma)', 'Gamma & Epsilon (Gamma)', 'Luna', 'Alpha & Gamma (Gamma)',],
         'Gamma': ['Gamma', '??? (Gamma)', 'None (Gamma)'],
         "Delta (All)": ['Delta', 'Everyone (Delta)', '??? (Delta)', 'Seven Shadows (Delta)', 'Delta & Zeta (Delta)', 'Beta & Delta & Zeta (Delta)'],
         "Delta": ['Delta', '??? (Delta)'],
@@ -4486,7 +4536,7 @@ function SearchPage() {
         'Epsilon': ['Epsilon', '??? (Epsilon)'],
         'Zeta (All)': ['Zeta', 'Everyone (Zeta)', 'Alpha & Zeta (Zeta)', 'Zeta & Eta (Zeta)', '??? (Zeta)', 'Seven Shadows (Zeta)', 'Delta & Zeta (Zeta)', 'Beta & Delta & Zeta (Zeta)'],
         'Zeta': ['Zeta', '??? (Zeta)'],
-        'Eta (All)': ['Eta', 'Everyone (Eta)', 'Zeta & Eta (Eta)', 'Seven Shadows (Eta)', '??? (Eta)', 'Gamma& Epsilon & Eta (Eta)'],
+        'Eta (All)': ['Eta', 'Everyone (Eta)', 'Zeta & Eta (Eta)', 'Seven Shadows (Eta)', '??? (Eta)', 'Gamma& Epsilon & Eta (Eta)', 'Alpha & Eta (Eta)'],
         'Gamma & Epsilon & Eta (Eta)': ['Gamma& Epsilon & Eta (Eta)'],
         'Gamma & Epsilon & Eta (Gamma)': ['Gamma& Epsilon & Eta (Gamma)'],
         'Gamma & Epsilon & Eta (Epsilon)': ['Gamma& Epsilon & Eta (Epsilon)'],
