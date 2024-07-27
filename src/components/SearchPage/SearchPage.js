@@ -2986,7 +2986,10 @@ function SearchPage() {
             "No. 665": characterCovers.No665Icon,
             "Klaus Midgar": characterCovers.KlausMidgarIcon,
             "Raphael Oriana": characterCovers.RaphaelOrianaIcon,
-            "Elisabeth": characterCovers.ElisabethIcon
+            "Elisabeth": characterCovers.ElisabethIcon,
+            "Juggernaut": characterCovers.JuggernautIcon,
+            "Kana": characterCovers.KanaIcon,
+            "Natsu": characterCovers.NatsuIcon
 
         },
         "lnCoverImages": {
