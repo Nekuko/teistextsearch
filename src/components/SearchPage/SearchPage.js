@@ -2989,7 +2989,9 @@ function SearchPage() {
             "Elisabeth": characterCovers.ElisabethIcon,
             "Juggernaut": characterCovers.JuggernautIcon,
             "Kana": characterCovers.KanaIcon,
-            "Natsu": characterCovers.NatsuIcon
+            "Natsu": characterCovers.NatsuIcon,
+            "Garter Kikuchi": characterCovers.GarterIcon,
+            "Gettan": characterCovers.GettanIcon
 
         },
         "lnCoverImages": {
@@ -3541,6 +3543,9 @@ function SearchPage() {
                             open: false,
                             filters: '',
                             characters: {
+                                "Gettan": {
+                                    "checked": false,
+                                },
                                 "Grease": {
                                     "checked": false,
                                 },
@@ -3697,6 +3702,20 @@ function SearchPage() {
                                 "White Demon": {
                                     "checked": false,
                                 }
+                            }
+                        },
+                        "MCA": {
+                            openGroup: false,
+                            checked: false,
+                            open: false,
+                            filters: '',
+                            characters: {
+                                "Garter Kikuchi": {
+                                    "checked": false,
+                                },
+                                "Zabra": {
+                                    "checked": false
+                                },
                             }
                         },
                         "Shangri-La Frontier": {
@@ -4518,7 +4537,7 @@ function SearchPage() {
         'Po Tato': ['Po Tato', 'Po'],
         'Skel Etal (All)': ['Skel Etal', 'Skel & Po (Skel)'],
         'Skel Etal': ['Skel Etal', 'Skel'],
-        'Rose Oriana (All)': ['Rose Oriana', 'Rose', 'No.666'],
+        'Rose Oriana (All)': ['Rose Oriana', 'Rose', 'No.666', 'No. 666'],
         'Rose Oriana': ['Rose Oriana', 'Rose'],
         'No. 666': ['No. 666', 'No.666'],
         'Alpha (All)': ['Alpha', '??? (Alpha)', 'Alpha & Eta (Alpha)', 'None (Alpha)', 'Everyone (Alpha)', 'Alpha & Gamma (Alpha)', 'Alpha & Zeta (Alpha)', 'Alpha & Beta (Alpha)', 'Seven Shadows (Alpha)'],
