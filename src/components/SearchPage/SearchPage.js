@@ -3118,6 +3118,7 @@ function SearchPage() {
                                     "Alpha & Beta (Alpha)": false,
                                     "Alpha & Eta (Alpha)": false,
                                     "Alpha & Gamma (Alpha)": false,
+                                    "Alpha & Nu (Alpha)": false,
                                     "Alpha & Zeta (Alpha)": false,
                                     "checked": false,
                                     "open": false
@@ -3218,6 +3219,7 @@ function SearchPage() {
                                     "Nu": false,
                                     "No. 93": false,
                                     "??? (No. 93)": false,
+                                    "Alpha & Nu (Nu)": false,
                                     "open": false,
                                     "checked": false,
                                 },
@@ -3284,8 +3286,9 @@ function SearchPage() {
                             "Stylish Ruffian Slayer": false,
                             "Stylish Bandit Slayer": false,
                             "??? (Stylish Bandit Slayer)": false,
-                            "Sunraku & Shadow (Shadow)": false,
                             "Cid & Sunraku (Cid)": false,
+                            "John Smith & Yukime (John Smith)": false,
+                            "Sunraku & Shadow (Shadow)": false,
                             "Nuru": false,
                             "??? (Nuru)": false,
                             "checked": false,
@@ -3697,6 +3700,9 @@ function SearchPage() {
                                     "checked": false,
                                 },
                                 "Yukime": {
+                                    "Yukime": false,
+                                    "John Smith & Yukime (Yukime)": false,
+                                    "open": false,
                                     "checked": false,
                                 },
                                 "White Demon": {
@@ -3712,6 +3718,15 @@ function SearchPage() {
                             characters: {
                                 "Garter Kikuchi": {
                                     "checked": false,
+                                },
+                                "Leaf One": {
+                                    "checked": false
+                                },
+                                "Leaf Two": {
+                                    "checked": false
+                                },
+                                "Leaf Three": {
+                                    "checked": false
                                 },
                                 "Zabra": {
                                     "checked": false
@@ -4521,7 +4536,7 @@ function SearchPage() {
 
     const nameMap = {
         'Cid Kagenou (All)': ['Cid', 'Cid Kagenou', 'Mundane Mann', 'Minoru Kageno', 'Shadow', 'Stylish Ruffian Slayer', '??? (Stylish Bandit Slayer)', '??? (Cid Kagenou)',
-            '??? (Minoru Kageno)', 'Minoru Kageno', 'Nuru', '??? (Nuru)', 'Sunraku & Shadow (Shadow)', 'Cid & Sunraku (Cid)'
+            '??? (Minoru Kageno)', 'Minoru Kageno', 'Nuru', '??? (Nuru)', 'Sunraku & Shadow (Shadow)', 'Cid & Sunraku (Cid)', 'John Smith & Yukime (John Smith)'
         ],
         'Cid Kagenou': ['Cid Kagenou', 'Cid', '??? (Cid Kagenou)'],
         '??? (Shadow)': ['???? (Shadow)'],
@@ -4540,7 +4555,7 @@ function SearchPage() {
         'Rose Oriana (All)': ['Rose Oriana', 'Rose', 'No.666', 'No. 666'],
         'Rose Oriana': ['Rose Oriana', 'Rose'],
         'No. 666': ['No. 666', 'No.666'],
-        'Alpha (All)': ['Alpha', '??? (Alpha)', 'Alpha & Eta (Alpha)', 'None (Alpha)', 'Everyone (Alpha)', 'Alpha & Gamma (Alpha)', 'Alpha & Zeta (Alpha)', 'Alpha & Beta (Alpha)', 'Seven Shadows (Alpha)'],
+        'Alpha (All)': ['Alpha', '??? (Alpha)', 'Alpha & Nu (Alpha)', 'Alpha & Eta (Alpha)', 'None (Alpha)', 'Everyone (Alpha)', 'Alpha & Gamma (Alpha)', 'Alpha & Zeta (Alpha)', 'Alpha & Beta (Alpha)', 'Seven Shadows (Alpha)'],
         'Alpha': ['Alpha', '??? (Alpha)', 'None (Alpha)'],
         'Beta (All)': ['Beta', 'Natsume Kafka', 'Natsume', '??? (Natsume Kafka)', '??? (Natsume)', 'None (Beta)', 'Everyone (Beta)', 'Beta & Epsilon (Beta)',
             'Alpha & Beta (Beta)', 'Beta & Gamma (Beta)', '??? (Beta)', 'Seven Shadows (Beta)', 'Beta & Delta & Zeta (Beta)', 'Alexia Midgar & Natsume Kafka (Natsume Kafka)',
@@ -4582,7 +4597,8 @@ function SearchPage() {
         'Nanigashi': ['Nanigashi', '??? (Nanigashi)'],
         'Victoria (All)': ['Victoria', 'No. 559', '??? (Victoria)'],
         'Victoria': ['Victoria', '??? (Victoria)'],
-        'Nu (All)': ['Nu', '93', 'No. 93', '??? (No. 93)'],
+        'Yukime (All)': ['Yukime', 'No. 559', '??? (Victoria)', 'John Smith & Yukime (Yukime)'],
+        'Nu (All)': ['Nu', '93', 'No. 93', '??? (No. 93)', 'Alpha & Nu (Nu)'],
         'No. 93': ['93', 'No. 93', '??? (No. 93)'],
         'Shishiodoshi (All)': ['Shishiodoshi', 'Shishi(?)'],
         'Customer (All)': ['Customer', '??? (Customer)'],
