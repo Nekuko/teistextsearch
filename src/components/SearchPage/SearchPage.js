@@ -1039,6 +1039,29 @@ function SearchPage() {
                             },
                             "checked": false
                         },
+                        "3-4 | Influencers Ahoy!": {
+                            "e1": {
+                                "checked": false,
+                                "title": "A Bodacious Debut"
+                            },
+                            "e2": {
+                                "checked": false,
+                                "title": "Problematic Property"
+                            },
+                            "e3": {
+                                "checked": false,
+                                "title": "An Aristocratic List"
+                            },
+                            "e4": {
+                                "checked": false,
+                                "title": "A Thief of the Cult"
+                            },
+                            "e5": {
+                                "checked": false,
+                                "title": "A Manor House Reborn"
+                            },
+                            "checked": false
+                        },
                         "checked": false
                     },
                     "checked": false
@@ -2991,7 +3014,8 @@ function SearchPage() {
             "Kana": characterCovers.KanaIcon,
             "Natsu": characterCovers.NatsuIcon,
             "Garter Kikuchi": characterCovers.GarterIcon,
-            "Gettan": characterCovers.GettanIcon
+            "Gettan": characterCovers.GettanIcon,
+            "Iota": characterCovers.IotaIcon
 
         },
         "lnCoverImages": {
@@ -3042,7 +3066,8 @@ function SearchPage() {
             "2-13": covers.SSC213Cover,
             "3-1": covers.SSC31Cover,
             "3-2": covers.SSC32Cover,
-            "3-3": covers.SSC33Cover
+            "3-3": covers.SSC33Cover,
+            "3-4": covers.SSC34Cover
         },
         "esCoverImages": {
             "Event Stories": covers.ESCover,
@@ -3152,6 +3177,7 @@ function SearchPage() {
                                     "Beta & Gamma (Gamma)": false,
                                     "Gamma & Epsilon (Gamma)": false,
                                     "Gamma & Epsilon & Eta (Gamma)": false,
+                                    "Gamma & Iota (Gamma)": false,
                                     "checked": false,
                                     "open": false
                                 },
@@ -3207,6 +3233,13 @@ function SearchPage() {
                             open: false,
                             filters: '',
                             characters: {
+                                "Iota": {
+                                    "Iota": false,
+                                    "None (Iota)": false,
+                                    "Gamma & Iota (Iota)": false,
+                                    "checked": false,
+                                    "open": false,
+                                },
                                 "Lambda": {
                                     "Lambda": false,
                                     "Mound of Flesh (Lambda)": false,
@@ -4535,7 +4568,7 @@ function SearchPage() {
     ];
 
     const nameMap = {
-        'Cid Kagenou (All)': ['Cid', 'Cid Kagenou', 'Mundane Mann', 'Minoru Kageno', 'Shadow', 'Stylish Ruffian Slayer', '??? (Stylish Bandit Slayer)', '??? (Cid Kagenou)',
+        'Cid Kagenou (All)': ['Cid', 'Cid Kagenou', 'John Smith', 'Mundane Mann', 'Minoru Kageno', 'Shadow', 'Stylish Ruffian Slayer', '??? (Stylish Bandit Slayer)', '??? (Cid Kagenou)',
             '??? (Minoru Kageno)', 'Minoru Kageno', 'Nuru', '??? (Nuru)', 'Sunraku & Shadow (Shadow)', 'Cid & Sunraku (Cid)', 'John Smith & Yukime (John Smith)'
         ],
         'Cid Kagenou': ['Cid Kagenou', 'Cid', '??? (Cid Kagenou)'],
@@ -4564,7 +4597,7 @@ function SearchPage() {
         'Natsume Kafka': ['Natsume Kafka', 'Natsume'],
         '??? (Natsume Kafka)': ['??? (Natsume)'],
         'Gamma (All)': ['Gamma', 'Everyone (Gamma)', '??? (Gamma)', 'Seven Shadows (Gamma)', 'None (Gamma)', 'Beta & Gamma (Gamma)',
-            'Gamma& Epsilon & Eta (Gamma)', 'Gamma & Epsilon (Gamma)', 'Luna', 'Alpha & Gamma (Gamma)',],
+            'Gamma& Epsilon & Eta (Gamma)', 'Gamma & Epsilon (Gamma)', 'Luna', 'Alpha & Gamma (Gamma)', "Gamma & Iota (Iota)"],
         'Gamma': ['Gamma', '??? (Gamma)', 'None (Gamma)'],
         "Delta (All)": ['Delta', 'Everyone (Delta)', '??? (Delta)', 'Seven Shadows (Delta)', 'Delta & Zeta (Delta)', 'Beta & Delta & Zeta (Delta)'],
         "Delta": ['Delta', '??? (Delta)'],
@@ -4582,6 +4615,8 @@ function SearchPage() {
         'Omega (All)': ["Omega", "Chi & Omega (Omega)", "Possessed (Omega)", "No. 111 & No. 122 (No. 122)", "No. 122"],
         'Lambda (All)': ['Lambda', 'Tawny Elf (Lambda)', 'None (Lambda)'],
         'Lambda': ['Lambda', 'None (Lambda)'],
+        'Iota (All)': ['Iota', 'None (Iota)', 'Gamma & Iota (Iota)'],
+        'Iota': ['Iota', 'None (Iota)'],
         'Diablos': ['Massive Mound of Magic'],
         'Olivier (All)': ['Olivier', 'Alpha Look-alike', '??? (Olivier)'],
         'Olivier': ['Olivier', 'Alpha Look-alike', '??? (Olivier)'],
@@ -4618,6 +4653,7 @@ function SearchPage() {
         'Templar': ['Templar', '????? (Templar)'],
         'Cult Member A (All)': ['Cult Member A', 'Cult Member A & B (Cult Member A)'],
         'Cult Member B (All)': ['Cult Member B', 'Cult Member A & B (Cult Member B)'],
+        'Cult Member': ['Cult Member', 'Bandit?'],
         'Marco Granger (All)': ['Marco Granger', 'Dark Knight Trainee'],
         'Mercenary A (All)': ['Mercenary A', '??? (Mercenary A)'],
         'Sergey Gorman (All)': ['Sergey Gorman', '??? (Sergey Gorman)', "Sergey", "Sergei"],

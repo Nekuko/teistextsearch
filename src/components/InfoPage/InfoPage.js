@@ -12,7 +12,7 @@ const scrollToTop = () => {
 };
 
 
-const sscMap = { 'p1': 'Part 1 | Rise of Garden', 'p1_c1-1': 'Chapter 1-1 | Shadow Garden, Mobilize!', 'p1_c1-1_e1': 'Episode 1 - Prelude', 'p1_c1-1_e2': 'Episode 2 - Garden Policy', 'p1_c1-1_e3': 'Episode 3 - Shadow Garden Covert Op', 'p1_c1-1_e4': 'Episode 4 - Possessed Search', 'p1_c1-1_e5': 'Episode 5 - After the Rescue', 'p1_c1-2': 'Chapter 1-2 | Ancient Dragon of Alexandria', 'p1_c1-2_e1': 'Episode 1 - The Lost City', 'p1_c1-2_e2': 'Episode 2 - Abyss Woods', 'p1_c1-2_e3': 'Episode 3 - Tale of Ruin', 'p1_c1-2_e4': "Episode 4 - Shadow's Sword", 'p1_c1-2_e5': 'Episode 5 - Future Unlocked', 'p1_c1-3': "Chapter 1-3 | Have Mercy! Eta's Protocol", 'p1_c1-3_e1': "Episode 1 - Eta's Scheme", 'p1_c1-3_e2': 'Episode 2 - Defense System', 'p1_c1-3_e3': 'Episode 3 - Magic Gear', 'p1_c1-3_e4': 'Episode 4 - Try, Try Again', 'p1_c1-3_e5': "Episode 5 - The Gear's Value", 'p1_c1-4': 'Chapter 1-4 | Behold! Tuna Chaos', 'p1_c1-4_e1': 'Episode 1 - Day Off Together', 'p1_c1-4_e2': 'Episode 2 - Going Fishing', 'p1_c1-4_e3': 'Episode 3 - Tasty Tuna Sammy', 'p1_c1-4_e4': 'Episode 4 - Victory Formula', 'p1_c1-4_e5': 'Episode 5 - A King is Born', 'p1_c1-5': 'Chapter 1-5 | Here Comes Trouble', 'p1_c1-5_e1': 'Episode 1 - News Beginnings', 'p1_c1-5_e2': 'Episode 2 - Open the Door', 'p1_c1-5_e3': 'Episode 3 - N. Kafka is Born', 'p1_c1-5_e4': 'Episode 4 - Mystery Paladin', 'p1_c1-5_e5': 'Episode 5 - Point Blank', 'p1_c1-6': 'Chapter 1-6 | Intense! Unstoppable Alpha', 'p1_c1-6_e1': 'Episode 1 - Poking the Bear', 'p1_c1-6_e2': 'Episode 2 - Re-Infiltration', 'p1_c1-6_e3': 'Episode 3 - BBQ Provocation', 'p1_c1-6_e4': 'Episode 4 - Merciless Probe', 'p1_c1-6_e5': 'Episode 5 - Grace Thy Blade', 'p1_c1-7': "Chapter 1-7 | Brutal! Delta's Night Hunt", 'p1_c1-7_e1': 'Episode 1 - Mountaineering', 'p1_c1-7_e2': 'Episode 2 - As Cats and Dogs', 'p1_c1-7_e3': 'Episode 3 - Begin the Hunt', 'p1_c1-7_e4': 'Episode 4 - Brutal Diplomacy', 'p1_c1-7_e5': 'Episode 5 - My Fangs Rejoice', 'p1_c1-8': 'Chapter 1-8 | She is Beauty, She is Grace!', 'p1_c1-8_e1': 'Episode 1 - Inspired by Ire', 'p1_c1-8_e2': 'Episode 2 - Presentation Row', 'p1_c1-8_e3': 'Episode 3 - Shadow Power!', 'p1_c1-8_e4': "Episode 4 - Epsilon's Justice", 'p1_c1-8_e5': 'Episode 5 - Pianist Shiron', 'p1_c1-9': 'Chapter 1-9 | Watch Out, Gamma!', 'p1_c1-9_e1': 'Episode 1 - Morning Shopping', 'p1_c1-9_e2': "Episode 2 - Luna's Past", 'p1_c1-9_e3': 'Episode 3 - Luna: The Truth', 'p1_c1-9_e4': 'Episode 4 - Gamma Capriccio', 'p1_c1-9_e5': 'Episode 5 - Shadow World Foe', 'p1_c1-10': 'Chapter 1-10 | Mitsugoshi, Ltd. is Open!', 'p1_c1-10_e1': 'Episode 1 - Info Wars Begin', 'p1_c1-10_e2': 'Episode 2 - Plot at A-Okay Co.', 'p1_c1-10_e3': 'Episode 3 - Deception Op', 'p1_c1-10_e4': 'Episode 4 - Mitsugoshi Credo', 'p1_c1-10_e5': 'Episode 5 - No Shadows Left', 'p1_c1-11': 'Chapter 1-11 | Deal! Arranged Booking', 'p1_c1-11_e1': 'Episode 1 - Beta Reminisces', 'p1_c1-11_e2': 'Episode 2 - Harsh Happenings', 'p1_c1-11_e3': 'Episode 3 - 2 Birds 1 Stone', 'p1_c1-11_e4': "Episode 4 - Sponsor's Intent", 'p1_c1-11_e5': 'Episode 5 - Ebony Swirl', 'p1_c1-12': 'Chapter 1-12 | Natsume & Shiron Hang Out!', 'p1_c1-12_e1': 'Episode 1 - City-State Duo', 'p1_c1-12_e2': 'Episode 2 - Fleeting Vacance', 'p1_c1-12_e3': 'Episode 3 - Jugang Ruins', 'p1_c1-12_e4': 'Episode 4 - Beta—Behind You!', 'p1_c1-12_e5': 'Episode 5 - Great Collapse', 'p1_c1-13': 'Chapter 1-13 | Visions... Zeta and the Prophet', 'p1_c1-13_e1': 'Episode 1 - Spy Request', 'p1_c1-13_e2': 'Episode 2 - Saintly Prayer', 'p1_c1-13_e3': 'Episode 3 - Secret Cathedral', 'p1_c1-13_e4': 'Episode 4 - Wonky Background', 'p1_c1-13_e5': 'Episode 5 - Victoria—Prophet', 'p1_c1-14': 'Chapter 1-14 | The Garden on the Eve of Battle!', 'p1_c1-14_e1': 'Episode 1 - Can You Lift?', 'p1_c1-14_e2': 'Episode 2 - Research & Hair', 'p1_c1-14_e3': "Episode 3 - Garden's Enemy", 'p1_c1-14_e4': 'Episode 4 - Cherish Shadow', 'p1_c1-14_e5': 'Episode 5 - To the Prelude', 'p1_c1-15': 'Chapter 1-15 | Final Battle! Templar Fanatics', 'p1_c1-15_e1': 'Episode 1 - Battlefront: Part 1', 'p1_c1-15_e2': 'Episode 2 - Battlefront: Part 2', 'p1_c1-15_e3': 'Episode 3 - Battlefront: Part 3', 'p1_c1-15_e4': 'Episode 4 - Reunion in Flame', 'p1_c1-15_e5': 'Episode 5 - Prelude to a New Battle', 'p2': 'Part 2 | Sturm of Velgalta', 'p2_c2-1': 'Chapter 2-1 | Operation: Rescue & Recover', 'p2_c2-1_e1': "Episode 1 - Zeta's Departure", 'p2_c2-1_e2': 'Episode 2 - Lurk in Darkness, Hunt Down Shadows', 'p2_c2-1_e3': 'Episode 3 - Possessed Heiress', 'p2_c2-1_e4': 'Episode 4 - Nicoletta Marquez', 'p2_c2-1_e5': 'Episode 5 - Opeartion: Rescue', 'p2_c2-2': 'Chapter 2-2 | A Brilliant Mission!', 'p2_c2-2_e1': 'Episode 1 - Slow and Slay', 'p2_c2-2_e2': 'Episode 2 - The Weakest Link', 'p2_c2-2_e3': 'Episode 3 - Pitfall Experiments', 'p2_c2-2_e4': "Episode 4 - Prophetess' Doubt", 'p2_c2-2_e5': 'Episode 5 - Destined Numbers', 'p2_c2-3': 'Chapter 2-3 | Investigation! In Search of Oil', 'p2_c2-3_e1': 'Episode 1 - Buried Black Gold', 'p2_c2-3_e2': 'Episode 2 - The Land of Madlid', 'p2_c2-3_e3': 'Episode 3 - Nyle River Trouble', 'p2_c2-3_e4': 'Episode 4 - Malak the Malevolent', 'p2_c2-3_e5': 'Episode 5 - The Perfect Base', 'p2_c2-4': 'Chapter 2-4 | Possessed Cult Leader', 'p2_c2-4_e1': 'Episode 1 - Keep Investigating', 'p2_c2-4_e2': 'Episode 2 - Two "Seven Blades"', 'p2_c2-4_e3': 'Episode 3 - Confronting Sergey', 'p2_c2-4_e4': 'Episode 4 - Not Even a Scratch', 'p2_c2-4_e5': 'Episode 5 - Glorious Escape', 'p2_c2-5': 'Chapter 2-5 |  Cult Secrets Revealed!', 'p2_c2-5_e1': 'Episode 1 - Possessed Lady Karen', 'p2_c2-5_e2': 'Episode 2 - Two Ruthless Choices', 'p2_c2-5_e3': 'Episode 3 - Cult Secrets Unveiled', 'p2_c2-5_e4': 'Episode 4 - To Know Thyself', 'p2_c2-5_e5': 'Episode 5 - Loss and Rebirth', 'p2_c2-6': 'Chapter 2-6 | The Garden Heads North', 'p2_c2-6_e1': 'Episode 1 - Mysterious "Tears"', 'p2_c2-6_e2': 'Episode 2 - Countering Regeneration', 'p2_c2-6_e3': 'Episode 3 - Altered History', 'p2_c2-6_e4': 'Episode 4 - Vengeance is Mine', 'p2_c2-6_e5': 'Episode 5 - Journey to the North', 'p2_c2-7': 'Chapter 2-7 | Blood Pact! Unlikely Pair', 'p2_c2-7_e1': 'Episode 1 - Secret Villa Seizure', 'p2_c2-7_e2': 'Episode 2 - Secret Fund in Laugus', 'p2_c2-7_e3': 'Episode 3 - RIP Mundane Man', 'p2_c2-7_e4': 'Episode 4 - Authorized Savagery', 'p2_c2-7_e5': 'Episode 5 - Without Loyalties', 'p2_c2-8': 'Chapter 2-8 | Seven Blades Swordswoman', 'p2_c2-8_e1': 'Episode 1 - Her Name is Annerose', 'p2_c2-8_e2': 'Episode 2 - Naive Swordswoman', 'p2_c2-8_e3': 'Episode 3 - Luna & Annerose', 'p2_c2-8_e4': "Episode 4 - A Knight's Honor", 'p2_c2-8_e5': 'Episode 5 - What is Passed Down', 'p2_c2-9': 'Chapter 2-9 | The Ones We Protect', 'p2_c2-9_e1': 'Episode 1 - Fallout', 'p2_c2-9_e2': 'Episode 2 - Painted Lies', 'p2_c2-9_e3': 'Episode 3 - Reason to Fight', 'p2_c2-9_e4': 'Episode 4 - The Ones We Protect', 'p2_c2-9_e5': 'Episode 5 - Embarkment', 'p2_c2-10': 'Chapter 2-10 | Duel! Defeat Malak!', 'p2_c2-10_e1': 'Episode 1 - Path of the Dragon', 'p2_c2-10_e2': 'Episode 2 - Evolutionary Dead-End', 'p2_c2-10_e3': 'Episode 3 - Muscles Are Stored', 'p2_c2-10_e4': 'Episode 4 - Break Apart!', 'p2_c2-10_e5': 'Episode 5 - White Diamond', 'p2_c2-11': 'Chapter 2-11 | Faith and Conviction', 'p2_c2-11_e1': 'Episode 1 - People in the Stands', 'p2_c2-11_e2': 'Episode 2 - Shadow Actress', 'p2_c2-11_e3': "Episode 3 - Trust's Companion", 'p2_c2-11_e4': 'Episode 4 - A Saint Gone Mad', 'p2_c2-11_e5': 'Episode 5 - False Oracles', 'p2_c2-12': "Chapter 2-12 | Evil Ambition's End", 'p2_c2-12_e1': 'Episode 1 - The First Child', 'p2_c2-12_e2': 'Episode 2 - Numbers Advantage', 'p2_c2-12_e3': 'Episode 3 - "He" is Here', 'p2_c2-12_e4': 'Episode 4 - Dragon Awakes', 'p2_c2-12_e5': 'Episode 5 - Summit of Strength', 'p2_c2-13': 'Chapter 2-13 | Hero...... Lured by Illusions', 'p2_c2-13_e1': 'Episode 1 - A New Journey', 'p2_c2-13_e2': "Episode 2 - Sergey's Hideout", 'p2_c2-13_e3': 'Episode 3 - Artificial Dragons', 'p2_c2-13_e4': "Episode 4 - Ambition's End", 'p2_c2-13_e5': 'Episode 5 - A Mysterious Elf', 'p3': 'Part 3 | Secret of Sacra', 'p3_c3-1': 'Chapter 3-1 | Shadow Garden Revamp', 'p3_c3-1_e1': 'Episode 1 - A Bitter Retreat', 'p3_c3-1_e2': 'Episode 2 - Reorganizing', 'p3_c3-1_e3': 'Episode 3 - Girls Reshuffled', 'p3_c3-1_e4': "Episode 4 - Lambda's Favorite", 'p3_c3-1_e5': 'Episode 5 - Take No One Lightly', 'p3_c3-2': 'Chapter 3-2 | The Hero Revealed!', 'p3_c3-2_e1': 'Episode 1 - Secret of the Heroes', 'p3_c3-2_e2': 'Episode 2 - Church and Heroes', 'p3_c3-2_e3': 'Episode 3 - Truth Amidst Lies', 'p3_c3-2_e4': 'Episode 4 - The Lost Tribe', 'p3_c3-2_e5': "Episode 5 - Olivier's Face", 'p3_c3-3': 'Chapter 3-3 | Alexandria Rebellion', 'p3_c3-3_e1': 'Episode 1 - The Situation Begins', 'p3_c3-3_e2': "Episode 2 - I Won't Hurt You...", 'p3_c3-3_e3': 'Episode 3 - Override Experiment', 'p3_c3-3_e4': 'Episode 4 - Outcome of the Duel', 'p3_c3-3_e5': 'Episode 5 - End of Scenario' }
+const sscMap = { 'p1': 'Part 1 | Rise of Garden', 'p1_c1-1': 'Chapter 1-1 | Shadow Garden, Mobilize!', 'p1_c1-1_e1': 'Episode 1 - Prelude', 'p1_c1-1_e2': 'Episode 2 - Garden Policy', 'p1_c1-1_e3': 'Episode 3 - Shadow Garden Covert Op', 'p1_c1-1_e4': 'Episode 4 - Possessed Search', 'p1_c1-1_e5': 'Episode 5 - After the Rescue', 'p1_c1-2': 'Chapter 1-2 | Ancient Dragon of Alexandria', 'p1_c1-2_e1': 'Episode 1 - The Lost City', 'p1_c1-2_e2': 'Episode 2 - Abyss Woods', 'p1_c1-2_e3': 'Episode 3 - Tale of Ruin', 'p1_c1-2_e4': "Episode 4 - Shadow's Sword", 'p1_c1-2_e5': 'Episode 5 - Future Unlocked', 'p1_c1-3': "Chapter 1-3 | Have Mercy! Eta's Protocol", 'p1_c1-3_e1': "Episode 1 - Eta's Scheme", 'p1_c1-3_e2': 'Episode 2 - Defense System', 'p1_c1-3_e3': 'Episode 3 - Magic Gear', 'p1_c1-3_e4': 'Episode 4 - Try, Try Again', 'p1_c1-3_e5': "Episode 5 - The Gear's Value", 'p1_c1-4': 'Chapter 1-4 | Behold! Tuna Chaos', 'p1_c1-4_e1': 'Episode 1 - Day Off Together', 'p1_c1-4_e2': 'Episode 2 - Going Fishing', 'p1_c1-4_e3': 'Episode 3 - Tasty Tuna Sammy', 'p1_c1-4_e4': 'Episode 4 - Victory Formula', 'p1_c1-4_e5': 'Episode 5 - A King is Born', 'p1_c1-5': 'Chapter 1-5 | Here Comes Trouble', 'p1_c1-5_e1': 'Episode 1 - News Beginnings', 'p1_c1-5_e2': 'Episode 2 - Open the Door', 'p1_c1-5_e3': 'Episode 3 - N. Kafka is Born', 'p1_c1-5_e4': 'Episode 4 - Mystery Paladin', 'p1_c1-5_e5': 'Episode 5 - Point Blank', 'p1_c1-6': 'Chapter 1-6 | Intense! Unstoppable Alpha', 'p1_c1-6_e1': 'Episode 1 - Poking the Bear', 'p1_c1-6_e2': 'Episode 2 - Re-Infiltration', 'p1_c1-6_e3': 'Episode 3 - BBQ Provocation', 'p1_c1-6_e4': 'Episode 4 - Merciless Probe', 'p1_c1-6_e5': 'Episode 5 - Grace Thy Blade', 'p1_c1-7': "Chapter 1-7 | Brutal! Delta's Night Hunt", 'p1_c1-7_e1': 'Episode 1 - Mountaineering', 'p1_c1-7_e2': 'Episode 2 - As Cats and Dogs', 'p1_c1-7_e3': 'Episode 3 - Begin the Hunt', 'p1_c1-7_e4': 'Episode 4 - Brutal Diplomacy', 'p1_c1-7_e5': 'Episode 5 - My Fangs Rejoice', 'p1_c1-8': 'Chapter 1-8 | She is Beauty, She is Grace!', 'p1_c1-8_e1': 'Episode 1 - Inspired by Ire', 'p1_c1-8_e2': 'Episode 2 - Presentation Row', 'p1_c1-8_e3': 'Episode 3 - Shadow Power!', 'p1_c1-8_e4': "Episode 4 - Epsilon's Justice", 'p1_c1-8_e5': 'Episode 5 - Pianist Shiron', 'p1_c1-9': 'Chapter 1-9 | Watch Out, Gamma!', 'p1_c1-9_e1': 'Episode 1 - Morning Shopping', 'p1_c1-9_e2': "Episode 2 - Luna's Past", 'p1_c1-9_e3': 'Episode 3 - Luna: The Truth', 'p1_c1-9_e4': 'Episode 4 - Gamma Capriccio', 'p1_c1-9_e5': 'Episode 5 - Shadow World Foe', 'p1_c1-10': 'Chapter 1-10 | Mitsugoshi, Ltd. is Open!', 'p1_c1-10_e1': 'Episode 1 - Info Wars Begin', 'p1_c1-10_e2': 'Episode 2 - Plot at A-Okay Co.', 'p1_c1-10_e3': 'Episode 3 - Deception Op', 'p1_c1-10_e4': 'Episode 4 - Mitsugoshi Credo', 'p1_c1-10_e5': 'Episode 5 - No Shadows Left', 'p1_c1-11': 'Chapter 1-11 | Deal! Arranged Booking', 'p1_c1-11_e1': 'Episode 1 - Beta Reminisces', 'p1_c1-11_e2': 'Episode 2 - Harsh Happenings', 'p1_c1-11_e3': 'Episode 3 - 2 Birds 1 Stone', 'p1_c1-11_e4': "Episode 4 - Sponsor's Intent", 'p1_c1-11_e5': 'Episode 5 - Ebony Swirl', 'p1_c1-12': 'Chapter 1-12 | Natsume & Shiron Hang Out!', 'p1_c1-12_e1': 'Episode 1 - City-State Duo', 'p1_c1-12_e2': 'Episode 2 - Fleeting Vacance', 'p1_c1-12_e3': 'Episode 3 - Jugang Ruins', 'p1_c1-12_e4': 'Episode 4 - Beta—Behind You!', 'p1_c1-12_e5': 'Episode 5 - Great Collapse', 'p1_c1-13': 'Chapter 1-13 | Visions... Zeta and the Prophet', 'p1_c1-13_e1': 'Episode 1 - Spy Request', 'p1_c1-13_e2': 'Episode 2 - Saintly Prayer', 'p1_c1-13_e3': 'Episode 3 - Secret Cathedral', 'p1_c1-13_e4': 'Episode 4 - Wonky Background', 'p1_c1-13_e5': 'Episode 5 - Victoria—Prophet', 'p1_c1-14': 'Chapter 1-14 | The Garden on the Eve of Battle!', 'p1_c1-14_e1': 'Episode 1 - Can You Lift?', 'p1_c1-14_e2': 'Episode 2 - Research & Hair', 'p1_c1-14_e3': "Episode 3 - Garden's Enemy", 'p1_c1-14_e4': 'Episode 4 - Cherish Shadow', 'p1_c1-14_e5': 'Episode 5 - To the Prelude', 'p1_c1-15': 'Chapter 1-15 | Final Battle! Templar Fanatics', 'p1_c1-15_e1': 'Episode 1 - Battlefront: Part 1', 'p1_c1-15_e2': 'Episode 2 - Battlefront: Part 2', 'p1_c1-15_e3': 'Episode 3 - Battlefront: Part 3', 'p1_c1-15_e4': 'Episode 4 - Reunion in Flame', 'p1_c1-15_e5': 'Episode 5 - Prelude to a New Battle', 'p2': 'Part 2 | Sturm of Velgalta', 'p2_c2-1': 'Chapter 2-1 | Operation: Rescue & Recover', 'p2_c2-1_e1': "Episode 1 - Zeta's Departure", 'p2_c2-1_e2': 'Episode 2 - Lurk in Darkness, Hunt Down Shadows', 'p2_c2-1_e3': 'Episode 3 - Possessed Heiress', 'p2_c2-1_e4': 'Episode 4 - Nicoletta Marquez', 'p2_c2-1_e5': 'Episode 5 - Opeartion: Rescue', 'p2_c2-2': 'Chapter 2-2 | A Brilliant Mission!', 'p2_c2-2_e1': 'Episode 1 - Slow and Slay', 'p2_c2-2_e2': 'Episode 2 - The Weakest Link', 'p2_c2-2_e3': 'Episode 3 - Pitfall Experiments', 'p2_c2-2_e4': "Episode 4 - Prophetess' Doubt", 'p2_c2-2_e5': 'Episode 5 - Destined Numbers', 'p2_c2-3': 'Chapter 2-3 | Investigation! In Search of Oil', 'p2_c2-3_e1': 'Episode 1 - Buried Black Gold', 'p2_c2-3_e2': 'Episode 2 - The Land of Madlid', 'p2_c2-3_e3': 'Episode 3 - Nyle River Trouble', 'p2_c2-3_e4': 'Episode 4 - Malak the Malevolent', 'p2_c2-3_e5': 'Episode 5 - The Perfect Base', 'p2_c2-4': 'Chapter 2-4 | Possessed Cult Leader', 'p2_c2-4_e1': 'Episode 1 - Keep Investigating', 'p2_c2-4_e2': 'Episode 2 - Two "Seven Blades"', 'p2_c2-4_e3': 'Episode 3 - Confronting Sergey', 'p2_c2-4_e4': 'Episode 4 - Not Even a Scratch', 'p2_c2-4_e5': 'Episode 5 - Glorious Escape', 'p2_c2-5': 'Chapter 2-5 |  Cult Secrets Revealed!', 'p2_c2-5_e1': 'Episode 1 - Possessed Lady Karen', 'p2_c2-5_e2': 'Episode 2 - Two Ruthless Choices', 'p2_c2-5_e3': 'Episode 3 - Cult Secrets Unveiled', 'p2_c2-5_e4': 'Episode 4 - To Know Thyself', 'p2_c2-5_e5': 'Episode 5 - Loss and Rebirth', 'p2_c2-6': 'Chapter 2-6 | The Garden Heads North', 'p2_c2-6_e1': 'Episode 1 - Mysterious "Tears"', 'p2_c2-6_e2': 'Episode 2 - Countering Regeneration', 'p2_c2-6_e3': 'Episode 3 - Altered History', 'p2_c2-6_e4': 'Episode 4 - Vengeance is Mine', 'p2_c2-6_e5': 'Episode 5 - Journey to the North', 'p2_c2-7': 'Chapter 2-7 | Blood Pact! Unlikely Pair', 'p2_c2-7_e1': 'Episode 1 - Secret Villa Seizure', 'p2_c2-7_e2': 'Episode 2 - Secret Fund in Laugus', 'p2_c2-7_e3': 'Episode 3 - RIP Mundane Man', 'p2_c2-7_e4': 'Episode 4 - Authorized Savagery', 'p2_c2-7_e5': 'Episode 5 - Without Loyalties', 'p2_c2-8': 'Chapter 2-8 | Seven Blades Swordswoman', 'p2_c2-8_e1': 'Episode 1 - Her Name is Annerose', 'p2_c2-8_e2': 'Episode 2 - Naive Swordswoman', 'p2_c2-8_e3': 'Episode 3 - Luna & Annerose', 'p2_c2-8_e4': "Episode 4 - A Knight's Honor", 'p2_c2-8_e5': 'Episode 5 - What is Passed Down', 'p2_c2-9': 'Chapter 2-9 | The Ones We Protect', 'p2_c2-9_e1': 'Episode 1 - Fallout', 'p2_c2-9_e2': 'Episode 2 - Painted Lies', 'p2_c2-9_e3': 'Episode 3 - Reason to Fight', 'p2_c2-9_e4': 'Episode 4 - The Ones We Protect', 'p2_c2-9_e5': 'Episode 5 - Embarkment', 'p2_c2-10': 'Chapter 2-10 | Duel! Defeat Malak!', 'p2_c2-10_e1': 'Episode 1 - Path of the Dragon', 'p2_c2-10_e2': 'Episode 2 - Evolutionary Dead-End', 'p2_c2-10_e3': 'Episode 3 - Muscles Are Stored', 'p2_c2-10_e4': 'Episode 4 - Break Apart!', 'p2_c2-10_e5': 'Episode 5 - White Diamond', 'p2_c2-11': 'Chapter 2-11 | Faith and Conviction', 'p2_c2-11_e1': 'Episode 1 - People in the Stands', 'p2_c2-11_e2': 'Episode 2 - Shadow Actress', 'p2_c2-11_e3': "Episode 3 - Trust's Companion", 'p2_c2-11_e4': 'Episode 4 - A Saint Gone Mad', 'p2_c2-11_e5': 'Episode 5 - False Oracles', 'p2_c2-12': "Chapter 2-12 | Evil Ambition's End", 'p2_c2-12_e1': 'Episode 1 - The First Child', 'p2_c2-12_e2': 'Episode 2 - Numbers Advantage', 'p2_c2-12_e3': 'Episode 3 - "He" is Here', 'p2_c2-12_e4': 'Episode 4 - Dragon Awakes', 'p2_c2-12_e5': 'Episode 5 - Summit of Strength', 'p2_c2-13': 'Chapter 2-13 | Hero...... Lured by Illusions', 'p2_c2-13_e1': 'Episode 1 - A New Journey', 'p2_c2-13_e2': "Episode 2 - Sergey's Hideout", 'p2_c2-13_e3': 'Episode 3 - Artificial Dragons', 'p2_c2-13_e4': "Episode 4 - Ambition's End", 'p2_c2-13_e5': 'Episode 5 - A Mysterious Elf', 'p3': 'Part 3 | Secret of Sacra', 'p3_c3-1': 'Chapter 3-1 | Shadow Garden Revamp', 'p3_c3-1_e1': 'Episode 1 - A Bitter Retreat', 'p3_c3-1_e2': 'Episode 2 - Reorganizing', 'p3_c3-1_e3': 'Episode 3 - Girls Reshuffled', 'p3_c3-1_e4': "Episode 4 - Lambda's Favorite", 'p3_c3-1_e5': 'Episode 5 - Take No One Lightly', 'p3_c3-2': 'Chapter 3-2 | The Hero Revealed!', 'p3_c3-2_e1': 'Episode 1 - Secret of the Heroes', 'p3_c3-2_e2': 'Episode 2 - Church and Heroes', 'p3_c3-2_e3': 'Episode 3 - Truth Amidst Lies', 'p3_c3-2_e4': 'Episode 4 - The Lost Tribe', 'p3_c3-2_e5': "Episode 5 - Olivier's Face", 'p3_c3-3': 'Chapter 3-3 | Alexandria Rebellion', 'p3_c3-3_e1': 'Episode 1 - The Situation Begins', 'p3_c3-3_e2': "Episode 2 - I Won't Hurt You...", 'p3_c3-3_e3': 'Episode 3 - Override Experiment', 'p3_c3-3_e4': 'Episode 4 - Outcome of the Duel', 'p3_c3-3_e5': 'Episode 5 - End of Scenario', 'p3_c3-4': 'Chapter 3-4 | Influencers Ahoy!', 'p3_c3-4_e1': 'Episode 1 - A Bodacious Debut', 'p3_c3-4_e2': 'Episode 2 - Problematic Property', 'p3_c3-4_e3': 'Episode 3 - An Aristocratic Property', 'p3_c3-4_e4': 'Episode 4 - A Thief of the Cult', 'p3_c3-4_e5': 'Episode 5 - A Manor House Reborn'   }
 
 const apoMap = { 'p1': 'Part 1 | Requiem for Scattered Shadows', 'c1-1': 'Chapter 1-1 | Millenium Past' }
 const lnCoverImages = {
@@ -100,7 +100,8 @@ const sscCoverImages = {
     "c2-13": covers.SSC213Cover,
     "c3-1": covers.SSC31Cover,
     "c3-2": covers.SSC32Cover,
-    "c3-3": covers.SSC33Cover
+    "c3-3": covers.SSC33Cover,
+    "c3-4": covers.SSC34Cover
 }
 
 
@@ -4912,12 +4913,12 @@ const es_info = {
 
 const ssc_info = {
     "part_count": 3,
-    "line_count": 9649,
-    "word_count": 101958,
-    "char_count": 584523,
+    "line_count": 9976,
+    "word_count": 106214,
+    "char_count": 608309,
     "characters": {
-        "Alpha": 1258,
-        "None": 51,
+        "Alpha": 1320,
+        "None": 53,
         "Mysterious Captain": 26,
         "Mysterious Soldier A": 10,
         "Alpha (??? (Alpha))": 5,
@@ -4928,7 +4929,7 @@ const ssc_info = {
         "Epsilon": 883,
         "Mysterious Soldier D": 4,
         "Zeta": 936,
-        "Gamma": 1053,
+        "Gamma": 1140,
         "Mysterious Soldier E": 6,
         "Beta": 943,
         "Mysterious Soldiers": 2,
@@ -4940,8 +4941,8 @@ const ssc_info = {
         "Cultist F": 3,
         "Lambda (Mound of Flesh (Lambda))": 1,
         "Lambda (Tawny Elf (Lambda))": 15,
-        "Cid Kagenou (Cid)": 574,
-        "Lambda": 370,
+        "Cid Kagenou (Cid)": 589,
+        "Lambda": 379,
         "Merchant B": 11,
         "Merchant A Secretary": 10,
         "Merchant C": 2,
@@ -5014,7 +5015,7 @@ const ssc_info = {
         "Mercenary Boss": 20,
         "Alpha Wolf": 8,
         "Cult Leader": 26,
-        "Cult Member": 7,
+        "Cult Member": 35,
         "Zeta (??? (Zeta))": 1,
         "Alpha (Everyone (Alpha))": 1,
         "Beta (Everyone (Beta))": 1,
@@ -5079,7 +5080,13 @@ const ssc_info = {
         "Garden Member": 2,
         "Chi (Chi & Omega (Chi))": 1,
         "Omega (Chi & Omega (Omega))": 1,
-        "Lambda (None (Lambda))": 1
+        "Lambda (None (Lambda))": 1,
+        "Iota (None (Iota))": 16,
+        "Iota": 92,
+        "Gamma (Gamma & Iota (Gamma))": 2,
+        "Iota (Gamma & Iota (Iota))": 3,
+        "Gamma (Gamma &  (Gamma))": 1,
+        "Bandit?": 10
     },
     "parts": {
         "p1": {
@@ -7774,15 +7781,15 @@ const ssc_info = {
             }
         },
         "p3": {
-            "chapter_count": 3,
-            "line_count": 886,
-            "word_count": 9831,
-            "char_count": 56485,
+            "chapter_count": 4,
+            "line_count": 1213,
+            "word_count": 14087,
+            "char_count": 80271,
             "characters": {
                 "Olivier (??? (Olivier))": 10,
-                "Alpha": 155,
+                "Alpha": 217,
                 "Beta": 117,
-                "Gamma": 54,
+                "Gamma": 141,
                 "Epsilon": 22,
                 "Zeta": 54,
                 "Delta": 39,
@@ -7794,11 +7801,11 @@ const ssc_info = {
                 "Epsilon (Seven Shadows (Epsilon))": 2,
                 "Zeta (Seven Shadows (Zeta))": 2,
                 "Eta (Seven Shadows (Eta))": 2,
-                "Lambda": 63,
+                "Lambda": 72,
                 "Omega": 80,
                 "Chi": 63,
                 "Nu (93)": 21,
-                "Cid Kagenou (Cid)": 56,
+                "Cid Kagenou (Cid)": 71,
                 "Beta (None (Beta))": 8,
                 "Fan Passerby": 9,
                 "Alpha (Alpha & Beta (Alpha))": 1,
@@ -7812,7 +7819,15 @@ const ssc_info = {
                 "Chi (Chi & Omega (Chi))": 1,
                 "Omega (Chi & Omega (Omega))": 1,
                 "Alpha (??? (Alpha))": 1,
-                "Lambda (None (Lambda))": 1
+                "Lambda (None (Lambda))": 1,
+                "Iota (None (Iota))": 16,
+                "Iota": 92,
+                "Gamma (Gamma & Iota (Gamma))": 2,
+                "Iota (Gamma & Iota (Iota))": 3,
+                "Gamma (Gamma &  (Gamma))": 1,
+                "None": 2,
+                "Bandit?": 10,
+                "Cult Member": 28
             },
             "chapters": {
                 "c3-1": {
@@ -8094,6 +8109,91 @@ const ssc_info = {
                             }
                         }
                     }
+                },
+                "c3-4": {
+                    "episode_count": 5,
+                    "line_count": 327,
+                    "word_count": 4256,
+                    "char_count": 23786,
+                    "characters": {
+                        "Iota (None (Iota))": 16,
+                        "Iota": 92,
+                        "Gamma": 87,
+                        "Alpha": 62,
+                        "Gamma (Gamma & Iota (Gamma))": 2,
+                        "Iota (Gamma & Iota (Iota))": 3,
+                        "Gamma (Gamma &  (Gamma))": 1,
+                        "None": 2,
+                        "Bandit?": 10,
+                        "Cult Member": 28,
+                        "Lambda": 9,
+                        "Cid Kagenou (Cid)": 15
+                    },
+                    "episodes": {
+                        "e1": {
+                            "line_count": 47,
+                            "word_count": 651,
+                            "char_count": 3604,
+                            "characters": {
+                                "Iota (None (Iota))": 7,
+                                "Iota": 20,
+                                "Gamma": 14,
+                                "Alpha": 6
+                            }
+                        },
+                        "e2": {
+                            "line_count": 50,
+                            "word_count": 908,
+                            "char_count": 5155,
+                            "characters": {
+                                "Iota": 28,
+                                "Gamma": 15,
+                                "Alpha": 6,
+                                "Gamma (Gamma & Iota (Gamma))": 1,
+                                "Iota (Gamma & Iota (Iota))": 1
+                            }
+                        },
+                        "e3": {
+                            "line_count": 86,
+                            "word_count": 932,
+                            "char_count": 5274,
+                            "characters": {
+                                "Alpha": 25,
+                                "Iota": 25,
+                                "Gamma": 34,
+                                "Gamma (Gamma &  (Gamma))": 1,
+                                "Iota (Gamma & Iota (Iota))": 2,
+                                "Gamma (Gamma & Iota (Gamma))": 1
+                            }
+                        },
+                        "e4": {
+                            "line_count": 67,
+                            "word_count": 726,
+                            "char_count": 3899,
+                            "characters": {
+                                "None": 2,
+                                "Bandit?": 10,
+                                "Alpha": 17,
+                                "Iota": 7,
+                                "Gamma": 10,
+                                "Cult Member": 21
+                            }
+                        },
+                        "e5": {
+                            "line_count": 74,
+                            "word_count": 1039,
+                            "char_count": 5854,
+                            "characters": {
+                                "Gamma": 14,
+                                "Iota": 12,
+                                "Alpha": 8,
+                                "Cult Member": 7,
+                                "Iota (None (Iota))": 9,
+                                "Lambda": 9,
+                                "Cid Kagenou (Cid)": 15
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -8296,7 +8396,7 @@ const generateCollapsiblesSSC = (all_counts) => {
             {parts.map(part => (
                 <Collapsible key={part} trigger={`${sscMap[part]}`}>
                     <p>Chapters: {Object.keys(all_counts.parts[part].chapters).length}</p>
-                    <p>Paragraphs:{formatNumber(all_counts.parts[part].line_count)}</p>
+                    <p>Paragraphs: {formatNumber(all_counts.parts[part].line_count)}</p>
                     <p>Approximate Word Count: {formatNumber(all_counts.parts[part].word_count)}</p>
                     <p>Character Count: {formatNumber(all_counts.parts[part].char_count)}</p>
                     <Collapsible trigger="Characters">

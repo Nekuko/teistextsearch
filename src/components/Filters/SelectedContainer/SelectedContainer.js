@@ -323,7 +323,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
         groupedMainParts.push({ text: "MOG SSC Rise of Garden", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 1 Rise of Garden" })
       } else if (item.text === "MOG SSC SOV C2-1-13") {
         groupedMainParts.push({ text: "MOG SSC Sturm of Velgalta", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 2 Sturm of Velgalta" })
-      } else if (item.text === "MOG SSC SOS C3-1-3") {
+      } else if (item.text === "MOG SSC SOS C3-1-4") {
         groupedMainParts.push({ text: "MOG SSC Secret of Sacra", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 3 Secret of Sacra" })
       } else {
         groupedMainParts.push(item)
