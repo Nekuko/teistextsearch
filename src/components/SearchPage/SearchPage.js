@@ -2968,10 +2968,12 @@ function SearchPage() {
             "Gamma": characterCovers.GammaIcon,
             "Iris Midgar": characterCovers.IrisMidgarIcon,
             "Po Tato": characterCovers.PoTatoIcon,
+            "Po": characterCovers.PoTatoIcon,
             "Rose Oriana": characterCovers.RoseOrianaIcon,
             "No. 666": characterCovers.No666Icon,
             "Sherry Barnett": characterCovers.SherryBarnettIcon,
             "Skel Etal": characterCovers.SkelEtalIcon,
+            "Skel": characterCovers.SkelEtalIcon,
             "Zeta": characterCovers.ZetaIcon,
             "Nu": characterCovers.NuIcon,
             "Lambda": characterCovers.LambdaIcon,
@@ -3015,7 +3017,9 @@ function SearchPage() {
             "Natsu": characterCovers.NatsuIcon,
             "Garter Kikuchi": characterCovers.GarterIcon,
             "Gettan": characterCovers.GettanIcon,
-            "Iota": characterCovers.IotaIcon
+            "Iota": characterCovers.IotaIcon,
+            "Kouadoi": characterCovers.KouadoiIcon,
+            "Reina Oriana": characterCovers.ReinaOrianaIcon
 
         },
         "lnCoverImages": {
@@ -3161,6 +3165,7 @@ function SearchPage() {
                                     "Beta & Epsilon (Beta)": false,
                                     "Beta & Gamma (Beta)": false,
                                     "Beta & Delta & Zeta (Beta)": false,
+                                    "Zeta & Beta (Beta)": false,
                                     "Fictional Zenon": false,
                                     "Fictional Shadow": false,
                                     "checked": false,
@@ -3183,6 +3188,7 @@ function SearchPage() {
                                 },
                                 "Delta": {
                                     "Delta": false,
+                                    "Deltan": false,
                                     "??? (Delta)": false,
                                     "Everyone (Delta)": false,
                                     "Seven Shadows (Delta)": false,
@@ -3199,16 +3205,20 @@ function SearchPage() {
                                     "Beta & Epsilon (Epsilon)": false,
                                     "Gamma & Epsilon (Epsilon)": false,
                                     "Gamma & Epsilon & Eta (Epsilon)": false,
+                                    "Zeta & Epsilon (Epsilon)": false,
                                     "checked": false,
                                     "open": false
                                 },
                                 "Zeta": {
                                     "Zeta": false,
                                     "??? (Zeta)": false,
+                                    "Zetan": false,
                                     "Everyone (Zeta)": false,
                                     "Seven Shadows (Zeta)": false,
                                     "Alpha & Zeta (Zeta)": false,
                                     "Delta & Zeta (Zeta)": false,
+                                    "Zeta & Beta (Zeta)": false,
+                                    "Zeta & Epsilon (Zeta)": false,
                                     "Zeta & Eta (Zeta)": false,
                                     "Beta & Delta & Zeta (Zeta)": false,
                                     "checked": false,
@@ -3251,6 +3261,7 @@ function SearchPage() {
                                 "Nu": {
                                     "Nu": false,
                                     "No. 93": false,
+                                    "Characterised Alpha": false,
                                     "??? (No. 93)": false,
                                     "Alpha & Nu (Nu)": false,
                                     "open": false,
@@ -3260,6 +3271,9 @@ function SearchPage() {
                                     "Chi": false,
                                     "No. 111": false,
                                     "Karen": false,
+                                    "Characterised Cult Member": false,
+                                    "Characterised Eta": false,
+                                    "Characterised Shadow": false,
                                     "??? (Karen)": false,
                                     "Chi & Omega (Chi)": false,
                                     "No. 111 & No. 122 (No. 111)": false,
@@ -3270,6 +3284,8 @@ function SearchPage() {
                                     "Omega": false,
                                     "No. 122": false,
                                     "Possessed (Omega)": false,
+                                    "Characterised Gamma": false,
+                                    "Characterised Zeta": false,
                                     "Chi & Omega (Omega)": false,
                                     "No. 111 & No. 122 (No. 122)": false,
                                     "checked": false,
@@ -3455,6 +3471,32 @@ function SearchPage() {
                                     "checked": false,
                                 }
                             }
+                        },
+                        "Oriana Kingdom": {
+                            openGroup: false,
+                            checked: false,
+                            open: false,
+                            filters: '',
+                            characters: {
+                                "Kevin": {
+                                    "checked": false,
+                                },
+                                "Margaret": {
+                                    "checked": false,
+                                },
+                                "Newwealth": {
+                                    "checked": false,
+                                },
+                                "Parton": {
+                                    "checked": false,
+                                },
+                                "Raphael Oriana": {
+                                    "checked": false,
+                                },
+                                "Reina Oriana": {
+                                    "checked": false,
+                                },
+                            }
                         }
                     },
                     characters: {
@@ -3463,9 +3505,6 @@ function SearchPage() {
                             "No. 666": false,
                             "checked": false,
                             "open": false
-                        },
-                        "Raphael Oriana": {
-                            "checked": false,
                         }
                     }
                 },
@@ -3559,6 +3598,9 @@ function SearchPage() {
                             open: false,
                             filters: '',
                             characters: {
+                                "Kouadoi": {
+                                    "checked": false,
+                                },
                                 "Maximilian": {
                                     "checked": false,
                                 },
@@ -4583,7 +4625,7 @@ function SearchPage() {
         'Sherry Barnett': ['Sherry Barnett', 'Sherry', 'Shelly and Alexia (Sherry Barnett)'],
         'Po Tato (All)': ['Po Tato', 'Po', 'Skel & Po (Po)'],
         'Po Tato': ['Po Tato', 'Po'],
-        'Skel Etal (All)': ['Skel Etal', 'Skel & Po (Skel)'],
+        'Skel Etal (All)': ['Skel Etal', 'Skel & Po (Skel)', 'Skel'],
         'Skel Etal': ['Skel Etal', 'Skel'],
         'Rose Oriana (All)': ['Rose Oriana', 'Rose', 'No.666', 'No. 666'],
         'Rose Oriana': ['Rose Oriana', 'Rose'],
@@ -4592,27 +4634,29 @@ function SearchPage() {
         'Alpha': ['Alpha', '??? (Alpha)', 'None (Alpha)'],
         'Beta (All)': ['Beta', 'Natsume Kafka', 'Natsume', '??? (Natsume Kafka)', '??? (Natsume)', 'None (Beta)', 'Everyone (Beta)', 'Beta & Epsilon (Beta)',
             'Alpha & Beta (Beta)', 'Beta & Gamma (Beta)', '??? (Beta)', 'Seven Shadows (Beta)', 'Beta & Delta & Zeta (Beta)', 'Alexia Midgar & Natsume Kafka (Natsume Kafka)',
-            'Fictional Shadow', 'Fictional Zenon'],
+            'Fictional Shadow', 'Fictional Zenon', 'Zeta & Beta (Beta)'],
         'Beta': ['Natsume Kafka', 'Beta', '??? (Beta)', 'None (Beta)'],
         'Natsume Kafka': ['Natsume Kafka', 'Natsume'],
         '??? (Natsume Kafka)': ['??? (Natsume)'],
         'Gamma (All)': ['Gamma', 'Everyone (Gamma)', '??? (Gamma)', 'Seven Shadows (Gamma)', 'None (Gamma)', 'Beta & Gamma (Gamma)',
             'Gamma& Epsilon & Eta (Gamma)', 'Gamma & Epsilon (Gamma)', 'Luna', 'Alpha & Gamma (Gamma)', "Gamma & Iota (Iota)"],
         'Gamma': ['Gamma', '??? (Gamma)', 'None (Gamma)'],
-        "Delta (All)": ['Delta', 'Everyone (Delta)', '??? (Delta)', 'Seven Shadows (Delta)', 'Delta & Zeta (Delta)', 'Beta & Delta & Zeta (Delta)'],
+        "Delta (All)": ['Delta', 'Everyone (Delta)', '??? (Delta)', 'Seven Shadows (Delta)', 'Delta & Zeta (Delta)', 'Beta & Delta & Zeta (Delta)', "Deltan"],
         "Delta": ['Delta', '??? (Delta)'],
         'Epsilon (All)': ['Epsilon', 'Everyone (Epsilon)', 'Beta & Epsilon (Epsilon)', '??? (Epsilon)', 'Seven Shadows (Epsilon)',
-            'Gamma& Epsilon & Eta (Epsilon)', 'Gamma & Epsilon (Epsilon)'],
+            'Gamma& Epsilon & Eta (Epsilon)', 'Gamma & Epsilon (Epsilon)', 'Zeta & Epsilon (Epsilon)'],
         'Epsilon': ['Epsilon', '??? (Epsilon)'],
-        'Zeta (All)': ['Zeta', 'Everyone (Zeta)', 'Alpha & Zeta (Zeta)', 'Zeta & Eta (Zeta)', '??? (Zeta)', 'Seven Shadows (Zeta)', 'Delta & Zeta (Zeta)', 'Beta & Delta & Zeta (Zeta)'],
+        'Zeta (All)': ['Zeta', 'Everyone (Zeta)', 'Alpha & Zeta (Zeta)', 'Zeta & Eta (Zeta)', '??? (Zeta)', 'Seven Shadows (Zeta)', 'Delta & Zeta (Zeta)', 'Beta & Delta & Zeta (Zeta)', "Zetan",
+            "Zeta & Epsilon (Zeta)", 'Zeta & Beta (Zeta)'
+        ],
         'Zeta': ['Zeta', '??? (Zeta)'],
         'Eta (All)': ['Eta', 'Everyone (Eta)', 'Zeta & Eta (Eta)', 'Seven Shadows (Eta)', '??? (Eta)', 'Gamma& Epsilon & Eta (Eta)', 'Alpha & Eta (Eta)'],
         'Gamma & Epsilon & Eta (Eta)': ['Gamma& Epsilon & Eta (Eta)'],
         'Gamma & Epsilon & Eta (Gamma)': ['Gamma& Epsilon & Eta (Gamma)'],
         'Gamma & Epsilon & Eta (Epsilon)': ['Gamma& Epsilon & Eta (Epsilon)'],
         'Eta': ['Eta', '??? (Eta)'],
-        'Chi (All)': ["Chi", "Chi & Omega (Chi)", "Karen", "??? (Karen)", "No. 111", "No. 111 & No. 122 (No. 111)"],
-        'Omega (All)': ["Omega", "Chi & Omega (Omega)", "Possessed (Omega)", "No. 111 & No. 122 (No. 122)", "No. 122"],
+        'Chi (All)': ["Chi", "Chi & Omega (Chi)", "Karen", "??? (Karen)", "No. 111", "No. 111 & No. 122 (No. 111)", "Characterised Shadow", "Characterised Eta", "Characterised Cult Member"],
+        'Omega (All)': ["Omega", "Chi & Omega (Omega)", "Possessed (Omega)", "No. 111 & No. 122 (No. 122)", "No. 122", "Characterised Zeta", "Characterised Gamma"],
         'Lambda (All)': ['Lambda', 'Tawny Elf (Lambda)', 'None (Lambda)'],
         'Lambda': ['Lambda', 'None (Lambda)'],
         'Iota (All)': ['Iota', 'None (Iota)', 'Gamma & Iota (Iota)'],
@@ -4633,7 +4677,7 @@ function SearchPage() {
         'Victoria (All)': ['Victoria', 'No. 559', '??? (Victoria)'],
         'Victoria': ['Victoria', '??? (Victoria)'],
         'Yukime (All)': ['Yukime', 'No. 559', '??? (Victoria)', 'John Smith & Yukime (Yukime)'],
-        'Nu (All)': ['Nu', '93', 'No. 93', '??? (No. 93)', 'Alpha & Nu (Nu)'],
+        'Nu (All)': ['Nu', '93', 'No. 93', '??? (No. 93)', 'Alpha & Nu (Nu)', 'Characterised Alpha'],
         'No. 93': ['93', 'No. 93', '??? (No. 93)'],
         'Shishiodoshi (All)': ['Shishiodoshi', 'Shishi(?)'],
         'Customer (All)': ['Customer', '??? (Customer)'],
@@ -4810,7 +4854,7 @@ function SearchPage() {
             }
         }
 
-        
+
 
         let apoCheckedItems = [];
         for (let group in mogDropdownState.partsChecked) {
@@ -4875,7 +4919,7 @@ function SearchPage() {
         }
 
         if (sscCheckedItems.length > 0) {
-            sscCheckedData = await fetchSSCData(sscCheckedItems, versionData, setVersionData); 
+            sscCheckedData = await fetchSSCData(sscCheckedItems, versionData, setVersionData);
         }
 
 
