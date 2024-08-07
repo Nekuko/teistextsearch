@@ -4,7 +4,12 @@ import './SelectedContainer.css';
 
 function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownState, lnDropdownState, dropdownStates, namedActive, canonActive }) {
   let animeCheckedItems = [];
+  if (!Object.keys(lnDropdownState).length || !Object.keys(mogDropdownState).length || !Object.keys(animeDropdownState).length || !Object.keys(wnDropdownState).length) {
+    return;
+  }
+
   const apoCheckedItems = mogDropdownState.partsChecked["Apocrypha"];
+  
 
 
   if (animeDropdownState && animeDropdownState.seasonsChecked) {
@@ -119,6 +124,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     };
     let sscList = [];
     let groupedEpisodes = {};
+    sscCheckedItems = sscCheckedItems.sort();
 
     sscCheckedItems.forEach(item => {
       let parts = item.split('_');

@@ -46,6 +46,33 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, openA
     }
   }, [seasonsChecked]);
 
+  const filteredSeasons = useMemo(() => {
+    // Convert the seasons object to an array
+    let seasonsArray = Object.keys(seasonsChecked).map(season => ({
+      name: season,
+      episodes: Object.keys(seasonsChecked[season])
+        .filter(key => key !== 'checked')
+        .sort((a, b) => {
+          const episodeA = parseInt(a.split("e")[1], 10);
+          const episodeB = parseInt(b.split("e")[1], 10);
+          return episodeA - episodeB;
+        })
+        .map(episode => ({
+          id: episode,
+          name: seasonsChecked[season][episode].title
+        }))
+    }));
+
+    const customOrder = ["Season 1", "Season 2", "Kage-Jitsu!", "Kage-Jitsu! 2nd"];
+    seasonsArray = seasonsArray.sort((a, b) => {
+      const aIndex = customOrder.indexOf(a.name);
+      const bIndex = customOrder.indexOf(b.name);
+      return aIndex - bIndex;
+    });
+
+    if (!filter) return seasonsArray;
+    return seasonsArray.filter(season => season.name.toLowerCase().includes(filter.toLowerCase()));
+  }, [seasonsChecked, filter]);
 
   const handleAnimeClick = () => {
     updateAnimeDropdownState('openSeasons', {});
@@ -134,19 +161,6 @@ function AnimeDropdownMenu({ animeDropdownState, updateAnimeDropdownState, openA
     }
   };
 
-  const filteredSeasons = useMemo(() => {
-    // Convert the seasons object to an array
-    const seasonsArray = Object.keys(seasonsChecked).map(season => ({
-      name: season,
-      episodes: Object.keys(seasonsChecked[season]).filter(key => key !== 'checked').map(episode => ({
-        id: episode,
-        name: seasonsChecked[season][episode].title
-      }))
-    }));
-
-    if (!filter) return seasonsArray;
-    return seasonsArray.filter(season => season.name.toLowerCase().includes(filter.toLowerCase()));
-  }, [seasonsChecked, filter]);
 
 
   return (

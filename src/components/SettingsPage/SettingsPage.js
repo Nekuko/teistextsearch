@@ -1,16 +1,16 @@
 // HowToUsePage.js
 import React from 'react';
-import './ChangePage.css'; // Import the CSS file
+import './SettingsPage.css'; // Import the CSS file
 
-function ChangePage() {
+function SettingsPage() {
   return (
     <div className="change-page">
       <div className="change-content">
         {/* Add your info content here */}
-        <h1>This is the Changelog Page</h1>
+        <h1>This is the Settings Page</h1>
       </div>
     </div>
   );
 }
 
-export default ChangePage;
+export default SettingsPage;

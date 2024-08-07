@@ -105,27 +105,35 @@ function ApocryphaDropdown({
                                             </div>
                                             {openParts[part]?.[section] && (
                                                 <div className="episode-list">
-                                                    {Object.keys(partsChecked[part][section]).filter(episode => episode !== 'checked' && episode.startsWith('e')).map((episode, index) => {
-                                                        const episodeNumber = episode.split("e")[1];
-                                                        const episodeName = partsChecked[part][section][episode].title;
-                                                        const imageKey = `${part.split(' | ')[0]}-${sectionName.split(' | ')[0]}-${episodeNumber}`
-                                                        return (
-                                                            <div key={index} className="episode-item">
-                                                                <div className="episode-name">
-                                                                    {images[imageKey] && <img className="cover-image-apo-small" src={images[imageKey]} alt={episodeName} />}
-                                                                    <span className={partsChecked[part][section][episode].checked ? "episode-checked" : "episode-unchecked"}>
-                                                                        <span style={{ color: 'red' }}>{episodeNumber} </span>
-                                                                        <span className="episode-text" title={episodeName}>| {episodeName}</span>
-                                                                    </span>
+                                                    {Object.keys(partsChecked[part][section]).filter(episode => episode !== 'checked' && episode.startsWith('e')).sort((a, b) => {
+                                                        const [partA, subpartA] = a.slice(1).split('-').map(Number); // Extract part and subpart
+                                                        const [partB, subpartB] = b.slice(1).split('-').map(Number);
+                                                        if (partA === partB) {
+                                                            return subpartA - subpartB; // Sort by subpart if parts are equal
+                                                        }
+                                                        return partA - partB; // Otherwise, sort by part
+                                                    })
+                                                        .map((episode, index) => {
+                                                            const episodeNumber = episode.split("e")[1];
+                                                            const episodeName = partsChecked[part][section][episode].title;
+                                                            const imageKey = `${part.split(' | ')[0]}-${sectionName.split(' | ')[0]}-${episodeNumber}`
+                                                            return (
+                                                                <div key={index} className="episode-item">
+                                                                    <div className="episode-name">
+                                                                        {images[imageKey] && <img className="cover-image-apo-small" src={images[imageKey]} alt={episodeName} />}
+                                                                        <span className={partsChecked[part][section][episode].checked ? "episode-checked" : "episode-unchecked"}>
+                                                                            <span style={{ color: 'red' }}>{episodeNumber} </span>
+                                                                            <span className="episode-text" title={episodeName}>| {episodeName}</span>
+                                                                        </span>
+                                                                    </div>
+                                                                    <input
+                                                                        type="checkbox"
+                                                                        checked={!!partsChecked[part][section][episode].checked}
+                                                                        onChange={(event) => handleEpisodeCheck(event, part, section, episode)}
+                                                                    />
                                                                 </div>
-                                                                <input
-                                                                    type="checkbox"
-                                                                    checked={!!partsChecked[part][section][episode].checked}
-                                                                    onChange={(event) => handleEpisodeCheck(event, part, section, episode)}
-                                                                />
-                                                            </div>
-                                                        );
-                                                    })}
+                                                            );
+                                                        })}
 
                                                 </div>
                                             )}

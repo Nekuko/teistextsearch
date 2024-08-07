@@ -104,6 +104,21 @@ const sscCoverImages = {
     "c3-4": covers.SSC34Cover
 }
 
+const kjCoverImages = {
+    "kj1": covers.KJ1Cover,
+    "kj2": covers.KJ2Cover
+}
+
+const animeCoverImages = {
+    "1": covers.ANS1Cover,
+    "2": covers.ANS2Cover
+}
+
+const kjMap = {
+    "kj1": "Kage-Jitsu!",
+    "kj2": "Kage-Jitsu! 2nd"
+}
+
 
 const ln_info = {
     "total": {
@@ -8200,6 +8215,2563 @@ const ssc_info = {
     }
 }
 
+const kj_info = {
+    "season_count": 2,
+    "line_count": 1224,
+    "word_count": 6662,
+    "char_count": 36647,
+    "characters": {
+        "Alpha": 177,
+        "Beta": 179,
+        "Gamma": 184,
+        "Delta": 192,
+        "Epsilon": 167,
+        "Zeta": 115,
+        "Eta": 132,
+        "Beta (Seven Shadows (Beta))": 8,
+        "Gamma (Seven Shadows (Gamma))": 8,
+        "Delta (Seven Shadows (Delta))": 8,
+        "Epsilon (Seven Shadows (Epsilon))": 8,
+        "Zeta (Seven Shadows (Zeta))": 8,
+        "Eta (Seven Shadows (Eta))": 5,
+        "Delta (Delta & Zeta (Delta))": 2,
+        "Zeta (Delta & Zeta (Zeta))": 2,
+        "Alpha (Alpha & Gamma (Alpha))": 1,
+        "Gamma (Alpha & Gamma (Gamma))": 1,
+        "Little Cuckoo-kun": 2,
+        "Alpha (Alpha & Eta (Alpha))": 1,
+        "Eta (Alpha & Eta (Eta))": 1,
+        "Nu": 29,
+        "Alpha (Seven Shadows (Alpha))": 3,
+        "Alpha (Alpha & Zeta (Alpha))": 1,
+        "Zeta (Alpha & Zeta (Zeta))": 1,
+        "Beta (Beta & Epsilon (Beta))": 2,
+        "Epsilon (Beta & Epsilon (Epsilon))": 2,
+        "Chi": 11,
+        "Omega": 17,
+        "Chi (Chi & Omega (Chi))": 1,
+        "Omega (Chi & Omega (Omega))": 1,
+        "Juggernaut": 4,
+        "Subordinate": 1,
+        "Beta (Beta & Gamma (Beta))": 3,
+        "Gamma (Beta & Gamma (Gamma))": 3,
+        "Beta (Beta & Gamma & Epsilon (Beta))": 1,
+        "Gamma (Beta & Gamma & Epsilon (Gamma))": 1,
+        "Epsilon (Beta & Gamma & Epsilon (Epsilon))": 1,
+        "Beta (Beta & Zeta (Beta))": 2,
+        "Zeta (Beta & Zeta (Zeta))": 2,
+        "Cid Kagenou (Shadow)": 1
+    },
+    "seasons": {
+        "kj1": {
+            "episode_count": 17,
+            "line_count": 746,
+            "word_count": 4217,
+            "char_count": 23604,
+            "characters": {
+                "Alpha": 121,
+                "Beta": 114,
+                "Gamma": 115,
+                "Delta": 130,
+                "Epsilon": 114,
+                "Zeta": 68,
+                "Eta": 76,
+                "Beta (Seven Shadows (Beta))": 2,
+                "Gamma (Seven Shadows (Gamma))": 2,
+                "Delta (Seven Shadows (Delta))": 2,
+                "Epsilon (Seven Shadows (Epsilon))": 2,
+                "Zeta (Seven Shadows (Zeta))": 2,
+                "Eta (Seven Shadows (Eta))": 2,
+                "Delta (Delta & Zeta (Delta))": 2,
+                "Zeta (Delta & Zeta (Zeta))": 2,
+                "Alpha (Alpha & Gamma (Alpha))": 1,
+                "Gamma (Alpha & Gamma (Gamma))": 1,
+                "Little Cuckoo-kun": 1,
+                "Alpha (Alpha & Eta (Alpha))": 1,
+                "Eta (Alpha & Eta (Eta))": 1,
+                "Nu": 6
+            },
+            "episodes": {
+                "e1": {
+                    "word_count": 247,
+                    "char_count": 1424,
+                    "line_count": 41,
+                    "characters": {
+                        "Alpha": 11,
+                        "Beta": 7,
+                        "Gamma": 6,
+                        "Delta": 7,
+                        "Epsilon": 3,
+                        "Zeta": 4,
+                        "Eta": 2,
+                        "Beta (Seven Shadows (Beta))": 1,
+                        "Gamma (Seven Shadows (Gamma))": 1,
+                        "Delta (Seven Shadows (Delta))": 1,
+                        "Epsilon (Seven Shadows (Epsilon))": 1,
+                        "Zeta (Seven Shadows (Zeta))": 1,
+                        "Eta (Seven Shadows (Eta))": 1
+                    }
+                },
+                "e2": {
+                    "word_count": 239,
+                    "char_count": 1277,
+                    "line_count": 41,
+                    "characters": {
+                        "Beta": 23,
+                        "Alpha": 18
+                    }
+                },
+                "e3": {
+                    "word_count": 222,
+                    "char_count": 1209,
+                    "line_count": 34,
+                    "characters": {
+                        "Alpha": 13,
+                        "Gamma": 16,
+                        "Eta": 5
+                    }
+                },
+                "e4": {
+                    "word_count": 270,
+                    "char_count": 1462,
+                    "line_count": 46,
+                    "characters": {
+                        "Delta": 17,
+                        "Gamma": 15,
+                        "Zeta": 12,
+                        "Delta (Delta & Zeta (Delta))": 2,
+                        "Zeta (Delta & Zeta (Zeta))": 2
+                    }
+                },
+                "e5": {
+                    "word_count": 226,
+                    "char_count": 1224,
+                    "line_count": 53,
+                    "characters": {
+                        "Alpha": 18,
+                        "Delta": 30,
+                        "Eta": 7
+                    }
+                },
+                "e6": {
+                    "word_count": 247,
+                    "char_count": 1390,
+                    "line_count": 44,
+                    "characters": {
+                        "Alpha": 16,
+                        "Gamma": 21,
+                        "Zeta": 6,
+                        "Alpha (Alpha & Gamma (Alpha))": 1,
+                        "Gamma (Alpha & Gamma (Gamma))": 1
+                    }
+                },
+                "e7": {
+                    "word_count": 240,
+                    "char_count": 1382,
+                    "line_count": 42,
+                    "characters": {
+                        "Beta": 19,
+                        "Epsilon": 23
+                    }
+                },
+                "e8": {
+                    "word_count": 217,
+                    "char_count": 1244,
+                    "line_count": 40,
+                    "characters": {
+                        "Beta": 13,
+                        "Eta": 15,
+                        "Epsilon": 11,
+                        "Little Cuckoo-kun": 1
+                    }
+                },
+                "e9": {
+                    "word_count": 198,
+                    "char_count": 1071,
+                    "line_count": 38,
+                    "characters": {
+                        "Delta": 17,
+                        "Zeta": 10,
+                        "Alpha": 12
+                    }
+                },
+                "e10": {
+                    "word_count": 176,
+                    "char_count": 1086,
+                    "line_count": 42,
+                    "characters": {
+                        "Delta": 24,
+                        "Eta": 18
+                    }
+                },
+                "e11": {
+                    "word_count": 323,
+                    "char_count": 1863,
+                    "line_count": 43,
+                    "characters": {
+                        "Gamma": 24,
+                        "Epsilon": 20
+                    }
+                },
+                "e12": {
+                    "word_count": 281,
+                    "char_count": 1702,
+                    "line_count": 48,
+                    "characters": {
+                        "Eta": 13,
+                        "Alpha": 22,
+                        "Gamma": 12,
+                        "Alpha (Alpha & Eta (Alpha))": 1,
+                        "Eta (Alpha & Eta (Eta))": 1
+                    }
+                },
+                "e13": {
+                    "word_count": 343,
+                    "char_count": 1806,
+                    "line_count": 49,
+                    "characters": {
+                        "Beta": 19,
+                        "Gamma": 19,
+                        "Zeta": 11
+                    }
+                },
+                "e14": {
+                    "word_count": 283,
+                    "char_count": 1454,
+                    "line_count": 56,
+                    "characters": {
+                        "Epsilon": 22,
+                        "Delta": 18,
+                        "Beta": 11,
+                        "Nu": 6
+                    }
+                },
+                "e15": {
+                    "word_count": 293,
+                    "char_count": 1593,
+                    "line_count": 53,
+                    "characters": {
+                        "Zeta": 23,
+                        "Epsilon": 16,
+                        "Delta": 14
+                    }
+                },
+                "e16": {
+                    "word_count": 231,
+                    "char_count": 1350,
+                    "line_count": 47,
+                    "characters": {
+                        "Beta": 17,
+                        "Eta": 13,
+                        "Epsilon": 17
+                    }
+                },
+                "e17": {
+                    "word_count": 181,
+                    "char_count": 1067,
+                    "line_count": 29,
+                    "characters": {
+                        "Alpha": 11,
+                        "Beta": 5,
+                        "Gamma": 2,
+                        "Epsilon": 2,
+                        "Zeta": 2,
+                        "Eta": 3,
+                        "Beta (Seven Shadows (Beta))": 1,
+                        "Gamma (Seven Shadows (Gamma))": 1,
+                        "Delta (Seven Shadows (Delta))": 1,
+                        "Epsilon (Seven Shadows (Epsilon))": 1,
+                        "Zeta (Seven Shadows (Zeta))": 1,
+                        "Eta (Seven Shadows (Eta))": 1,
+                        "Delta": 3
+                    }
+                }
+            }
+        },
+        "kj2": {
+            "episode_count": 12,
+            "line_count": 478,
+            "word_count": 2445,
+            "char_count": 13043,
+            "characters": {
+                "Gamma": 69,
+                "Beta": 65,
+                "Zeta": 47,
+                "Alpha": 56,
+                "Epsilon": 53,
+                "Eta": 56,
+                "Alpha (Seven Shadows (Alpha))": 3,
+                "Beta (Seven Shadows (Beta))": 6,
+                "Gamma (Seven Shadows (Gamma))": 6,
+                "Delta (Seven Shadows (Delta))": 6,
+                "Epsilon (Seven Shadows (Epsilon))": 6,
+                "Zeta (Seven Shadows (Zeta))": 6,
+                "Alpha (Alpha & Zeta (Alpha))": 1,
+                "Zeta (Alpha & Zeta (Zeta))": 1,
+                "Beta (Beta & Epsilon (Beta))": 2,
+                "Epsilon (Beta & Epsilon (Epsilon))": 2,
+                "Chi": 11,
+                "Omega": 17,
+                "Chi (Chi & Omega (Chi))": 1,
+                "Omega (Chi & Omega (Omega))": 1,
+                "Delta": 62,
+                "Juggernaut": 4,
+                "Subordinate": 1,
+                "Beta (Beta & Gamma (Beta))": 3,
+                "Gamma (Beta & Gamma (Gamma))": 3,
+                "Beta (Beta & Gamma & Epsilon (Beta))": 1,
+                "Gamma (Beta & Gamma & Epsilon (Gamma))": 1,
+                "Epsilon (Beta & Gamma & Epsilon (Epsilon))": 1,
+                "Nu": 23,
+                "Beta (Beta & Zeta (Beta))": 2,
+                "Zeta (Beta & Zeta (Zeta))": 2,
+                "Little Cuckoo-kun": 1,
+                "Eta (Seven Shadows (Eta))": 3,
+                "Cid Kagenou (Shadow)": 1
+            },
+            "episodes": {
+                "e1": {
+                    "word_count": 177,
+                    "char_count": 956,
+                    "line_count": 32,
+                    "characters": {
+                        "Gamma": 9,
+                        "Beta": 5,
+                        "Zeta": 3,
+                        "Alpha": 4,
+                        "Epsilon": 4,
+                        "Eta": 6,
+                        "Alpha (Seven Shadows (Alpha))": 1,
+                        "Beta (Seven Shadows (Beta))": 1,
+                        "Gamma (Seven Shadows (Gamma))": 1,
+                        "Delta (Seven Shadows (Delta))": 1,
+                        "Epsilon (Seven Shadows (Epsilon))": 1,
+                        "Zeta (Seven Shadows (Zeta))": 1
+                    }
+                },
+                "e2": {
+                    "word_count": 200,
+                    "char_count": 1099,
+                    "line_count": 39,
+                    "characters": {
+                        "Gamma": 19,
+                        "Zeta": 12,
+                        "Alpha": 7,
+                        "Alpha (Alpha & Zeta (Alpha))": 1,
+                        "Zeta (Alpha & Zeta (Zeta))": 1
+                    }
+                },
+                "e3": {
+                    "word_count": 216,
+                    "char_count": 1148,
+                    "line_count": 35,
+                    "characters": {
+                        "Eta": 15,
+                        "Epsilon": 8,
+                        "Beta": 10,
+                        "Beta (Beta & Epsilon (Beta))": 2,
+                        "Epsilon (Beta & Epsilon (Epsilon))": 2
+                    }
+                },
+                "e4": {
+                    "word_count": 181,
+                    "char_count": 1048,
+                    "line_count": 36,
+                    "characters": {
+                        "Alpha": 17,
+                        "Eta": 19
+                    }
+                },
+                "e5": {
+                    "word_count": 190,
+                    "char_count": 1032,
+                    "line_count": 48,
+                    "characters": {
+                        "Gamma": 19,
+                        "Chi": 11,
+                        "Omega": 17,
+                        "Chi (Chi & Omega (Chi))": 1,
+                        "Omega (Chi & Omega (Omega))": 1
+                    }
+                },
+                "e6": {
+                    "word_count": 177,
+                    "char_count": 907,
+                    "line_count": 35,
+                    "characters": {
+                        "Delta": 28,
+                        "Gamma": 2,
+                        "Juggernaut": 4,
+                        "Subordinate": 1
+                    }
+                },
+                "e7": {
+                    "word_count": 192,
+                    "char_count": 1040,
+                    "line_count": 47,
+                    "characters": {
+                        "Gamma": 15,
+                        "Beta": 11,
+                        "Beta (Beta & Gamma (Beta))": 3,
+                        "Gamma (Beta & Gamma (Gamma))": 3,
+                        "Epsilon": 16,
+                        "Alpha": 2,
+                        "Beta (Beta & Gamma & Epsilon (Beta))": 1,
+                        "Gamma (Beta & Gamma & Epsilon (Gamma))": 1,
+                        "Epsilon (Beta & Gamma & Epsilon (Epsilon))": 1
+                    }
+                },
+                "e8": {
+                    "word_count": 194,
+                    "char_count": 998,
+                    "line_count": 40,
+                    "characters": {
+                        "Nu": 23,
+                        "Beta": 17
+                    }
+                },
+                "e9": {
+                    "word_count": 247,
+                    "char_count": 1315,
+                    "line_count": 37,
+                    "characters": {
+                        "Zeta": 14,
+                        "Beta": 11,
+                        "Delta": 13,
+                        "Beta (Beta & Zeta (Beta))": 2,
+                        "Zeta (Beta & Zeta (Zeta))": 2
+                    }
+                },
+                "e10": {
+                    "word_count": 212,
+                    "char_count": 1131,
+                    "line_count": 44,
+                    "characters": {
+                        "Alpha": 12,
+                        "Zeta": 15,
+                        "Delta": 17
+                    }
+                },
+                "e11": {
+                    "word_count": 211,
+                    "char_count": 1106,
+                    "line_count": 40,
+                    "characters": {
+                        "Beta": 10,
+                        "Eta": 7,
+                        "Epsilon": 22,
+                        "Little Cuckoo-kun": 1
+                    }
+                },
+                "e12": {
+                    "word_count": 248,
+                    "char_count": 1263,
+                    "line_count": 45,
+                    "characters": {
+                        "Epsilon": 3,
+                        "Alpha": 14,
+                        "Gamma": 5,
+                        "Delta": 4,
+                        "Zeta": 3,
+                        "Beta (Seven Shadows (Beta))": 5,
+                        "Gamma (Seven Shadows (Gamma))": 5,
+                        "Delta (Seven Shadows (Delta))": 5,
+                        "Epsilon (Seven Shadows (Epsilon))": 5,
+                        "Zeta (Seven Shadows (Zeta))": 5,
+                        "Eta (Seven Shadows (Eta))": 3,
+                        "Eta": 9,
+                        "Alpha (Seven Shadows (Alpha))": 2,
+                        "Cid Kagenou (Shadow)": 1,
+                        "Beta": 1
+                    }
+                }
+            }
+        }
+    }
+}
+
+const an_info = {
+    "season_count": 2,
+    "line_count": 11144,
+    "word_count": 77526,
+    "char_count": 412078,
+    "characters": {
+        "Akane Nishino": 88,
+        "Akane's Butler": 1,
+        "Classmate": 11,
+        "Cid Kagenou (Minoru Kageno)": 67,
+        "Teacher": 4,
+        "Student": 92,
+        "Kidnapper 1": 28,
+        "Kidnapper 2": 29,
+        "Cid Kagenou (Stylish Ruffian Slayer)": 35,
+        "News Reporter": 6,
+        "Cid Kagenou (Shadow)": 509,
+        "Alpha": 501,
+        "Gamma": 225,
+        "Beta": 321,
+        "Delta": 119,
+        "Zeta": 47,
+        "Epsilon": 232,
+        "Cid Kagenou": 1939,
+        "Mr. Kagenou": 15,
+        "Mrs. Kagenou": 12,
+        "Bandit": 34,
+        "Bandit Boss": 3,
+        "Claire Kagenou": 242,
+        "Maid": 6,
+        "Grease": 47,
+        "Soldier": 37,
+        "Girl": 1,
+        "Skel Etal": 335,
+        "Po Tato": 175,
+        "Alexia Midgar": 609,
+        "Zenon Griffey": 104,
+        "Skel (Skel & Po (Skel))": 12,
+        "Po (Skel & Po (Po))": 12,
+        "Scientist": 46,
+        "Knight": 116,
+        "Iris Midgar": 398,
+        "Rose Oriana": 500,
+        "Civilian": 55,
+        "Glen": 11,
+        "Marco Granger": 9,
+        "Sherry Barnett": 191,
+        "Cult Member": 51,
+        "Lutheran Barnett": 113,
+        "Nu": 181,
+        "Rex": 50,
+        "Lutheran Barnett (Sir Gaunt)": 18,
+        "Referee": 39,
+        "Bookie": 13,
+        "Medic": 8,
+        "Garden Members": 5,
+        "Garden Member": 7,
+        "Beta (Fictional Zenon)": 9,
+        "Beta (Fictional Shadow)": 6,
+        "Gamma (Luna)": 76,
+        "Church Member": 5,
+        "Beta (Natsume Kafka)": 134,
+        "Paladin": 6,
+        "Jack Nelson": 226,
+        "Spectator": 54,
+        "Announcer": 6,
+        "Toppe Batterius": 2,
+        "Alexia Midgar (Alexia Midgar & Natsume Kafka (Alexia Midgar))": 1,
+        "Natsume Kafka (Alexia Midgar & Natsume Kafka (Natsume Kafka))": 1,
+        "Aurora": 211,
+        "Chi": 27,
+        "Omega": 18,
+        "Rude": 26,
+        "Mitsugoshi Staff": 1,
+        "Participant": 13,
+        "Boy": 3,
+        "Cid Kagenou (Mundane Mann)": 85,
+        "Annerose Nichtsehen": 154,
+        "Quinton": 84,
+        "Heckler": 7,
+        "Clerk": 8,
+        "Shop Staff": 13,
+        "Cid Kagenou (Stylish Bandit Slayer)": 13,
+        "Goldy Gilded": 88,
+        "Beatrix": 71,
+        "Perv Asshat": 266,
+        "Raphael Oriana": 48,
+        "Civil Servant": 7,
+        "Civil Servants": 1,
+        "Manager": 2,
+        "Duke's Second Son": 18,
+        "Captain's Daughter": 16,
+        "Knight Captain": 5,
+        "Klaus Midgar": 22,
+        "Aristocrat": 60,
+        "Crowd": 10,
+        "Aristocrats": 2,
+        "Mordred": 169,
+        "Eta": 58,
+        "Sailor": 2,
+        "Lambda": 55,
+        "No. 665": 37,
+        "No. 664": 76,
+        "White Demon": 45,
+        "Merchant": 27,
+        "Pickpocket": 5,
+        "Mary": 127,
+        "Marie": 81,
+        "Coworker": 10,
+        "Yukime": 222,
+        "Natsu": 12,
+        "Kana": 6,
+        "Subordinate": 1,
+        "Juggernaut": 51,
+        "Claudia": 5,
+        "Vampire": 8,
+        "Crimson": 18,
+        "Rose Oriana (No. 666)": 58,
+        "Elisabeth": 5,
+        "Cid Kagenou (John Smith)": 189,
+        "Customer": 2,
+        "Po": 1,
+        "Gettan": 129,
+        "Garter Kikuchi": 48,
+        "Zabra": 13,
+        "Alpha (Alpha & Nu (Alpha))": 1,
+        "Nu (Alpha & Nu (Nu))": 1,
+        "Leaf Three": 1,
+        "Leaf Two": 1,
+        "Leaf One": 37,
+        "Chi (Chi & Omega (Chi))": 1,
+        "Omega (Chi & Omega (Omega))": 1,
+        "Cid Kagenou (John Smith & Yukime (John Smith))": 1,
+        "Yukime (John Smith & Yukime (Yukime))": 1,
+        "Chi (Characterised Shadow)": 8,
+        "Nu (Characterised Alpha)": 11,
+        "Chi (Characterised Eta)": 3,
+        "Chi (Characterised Cult Member)": 3,
+        "Omega (Characterised Zeta)": 2,
+        "Omega (Characterised Gamma)": 2,
+        "Alpha (Seven Shadows (Alpha))": 1,
+        "Beta (Seven Shadows (Beta))": 2,
+        "Gamma (Seven Shadows (Gamma))": 2,
+        "Delta (Seven Shadows (Delta))": 1,
+        "Epsilon (Seven Shadows (Epsilon))": 2,
+        "Zeta (Seven Shadows (Zeta))": 2,
+        "Eta (Seven Shadows (Eta))": 1,
+        "Zeta (Zetan)": 3,
+        "Delta (Deltan)": 1,
+        "Zeta (Zeta & Epsilon (Zeta))": 1,
+        "Epsilon (Zeta & Epsilon (Epsilon))": 1,
+        "Zeta (Zeta & Beta (Zeta))": 1,
+        "Beta (Zeta & Beta (Beta))": 1,
+        "Victoria (No. 559)": 77,
+        "Kouadoi": 27,
+        "Reina Oriana": 25,
+        "Epsilon (Shiron)": 47,
+        "Parton": 5,
+        "Newwealth": 3,
+        "Margaret": 81,
+        "Kevin": 32,
+        "Goldy (Goldy & Quinton (Goldy))": 1,
+        "Quinton (Goldy & Quinton (Quinton))": 1,
+        "Priest": 6,
+        "Knights": 1,
+        "Beta (Beta & Epsilon (Beta))": 2,
+        "Epsilon (Beta & Epsilon (Epsilon))": 2,
+        "Kidnapper A": 21,
+        "Kidnapper B": 21
+    },
+    "seasons": {
+        "1": {
+            "episode_count": 20,
+            "line_count": 6557,
+            "word_count": 45103,
+            "char_count": 239659,
+            "characters": {
+                "Akane Nishino": 64,
+                "Akane's Butler": 1,
+                "Classmate": 11,
+                "Cid Kagenou (Minoru Kageno)": 67,
+                "Teacher": 4,
+                "Student": 92,
+                "Kidnapper 1": 28,
+                "Kidnapper 2": 29,
+                "Cid Kagenou (Stylish Ruffian Slayer)": 35,
+                "News Reporter": 6,
+                "Cid Kagenou (Shadow)": 257,
+                "Alpha": 269,
+                "Gamma": 86,
+                "Beta": 79,
+                "Delta": 15,
+                "Zeta": 2,
+                "Epsilon": 122,
+                "Cid Kagenou": 1376,
+                "Mr. Kagenou": 15,
+                "Mrs. Kagenou": 12,
+                "Bandit": 7,
+                "Bandit Boss": 3,
+                "Claire Kagenou": 63,
+                "Maid": 3,
+                "Grease": 47,
+                "Soldier": 10,
+                "Girl": 1,
+                "Skel Etal": 235,
+                "Po Tato": 77,
+                "Alexia Midgar": 568,
+                "Zenon Griffey": 104,
+                "Skel (Skel & Po (Skel))": 2,
+                "Po (Skel & Po (Po))": 2,
+                "Scientist": 46,
+                "Knight": 96,
+                "Iris Midgar": 392,
+                "Rose Oriana": 348,
+                "Civilian": 28,
+                "Glen": 11,
+                "Marco Granger": 6,
+                "Sherry Barnett": 191,
+                "Cult Member": 41,
+                "Lutheran Barnett": 113,
+                "Nu": 100,
+                "Rex": 50,
+                "Lutheran Barnett (Sir Gaunt)": 18,
+                "Referee": 35,
+                "Bookie": 13,
+                "Medic": 8,
+                "Garden Members": 4,
+                "Garden Member": 7,
+                "Beta (Fictional Zenon)": 9,
+                "Beta (Fictional Shadow)": 6,
+                "Gamma (Luna)": 37,
+                "Church Member": 5,
+                "Beta (Natsume Kafka)": 129,
+                "Paladin": 6,
+                "Jack Nelson": 226,
+                "Spectator": 54,
+                "Announcer": 6,
+                "Toppe Batterius": 2,
+                "Alexia Midgar (Alexia Midgar & Natsume Kafka (Alexia Midgar))": 1,
+                "Natsume Kafka (Alexia Midgar & Natsume Kafka (Natsume Kafka))": 1,
+                "Aurora": 142,
+                "Chi": 12,
+                "Omega": 7,
+                "Rude": 26,
+                "Mitsugoshi Staff": 1,
+                "Participant": 13,
+                "Boy": 3,
+                "Cid Kagenou (Mundane Mann)": 85,
+                "Annerose Nichtsehen": 154,
+                "Quinton": 73,
+                "Heckler": 7,
+                "Clerk": 8,
+                "Shop Staff": 1,
+                "Cid Kagenou (Stylish Bandit Slayer)": 13,
+                "Goldy Gilded": 72,
+                "Beatrix": 71,
+                "Perv Asshat": 166,
+                "Raphael Oriana": 12,
+                "Civil Servant": 7,
+                "Civil Servants": 1,
+                "Manager": 2,
+                "Duke's Second Son": 18,
+                "Captain's Daughter": 16,
+                "Knight Captain": 5,
+                "Klaus Midgar": 22,
+                "Aristocrat": 37,
+                "Crowd": 8,
+                "Aristocrats": 1,
+                "Mordred": 3,
+                "Eta": 5,
+                "Sailor": 2,
+                "Lambda": 11,
+                "No. 665": 1,
+                "No. 664": 1
+            },
+            "episodes": {
+                "s1e1": {
+                    "line_count": 262,
+                    "word_count": 1736,
+                    "char_count": 9294,
+                    "characters": {
+                        "Akane Nishino": 64,
+                        "Akane's Butler": 1,
+                        "Classmate": 11,
+                        "Cid Kagenou (Minoru Kageno)": 55,
+                        "Teacher": 4,
+                        "Student": 2,
+                        "Kidnapper 1": 28,
+                        "Kidnapper 2": 29,
+                        "Cid Kagenou (Stylish Ruffian Slayer)": 35,
+                        "News Reporter": 6,
+                        "Cid Kagenou (Shadow)": 19,
+                        "Alpha": 3,
+                        "Gamma": 1,
+                        "Beta": 1,
+                        "Delta": 1,
+                        "Zeta": 1,
+                        "Epsilon": 1
+                    },
+                    "episodes": {
+                        "e1": {
+                            "word_count": 1736,
+                            "char_count": 9294,
+                            "line_count": 262,
+                            "characters": {
+                                "Akane Nishino": 64,
+                                "Akane's Butler": 1,
+                                "Classmate": 11,
+                                "Cid Kagenou (Minoru Kageno)": 55,
+                                "Teacher": 4,
+                                "Student": 2,
+                                "Kidnapper 1": 28,
+                                "Kidnapper 2": 29,
+                                "Cid Kagenou (Stylish Ruffian Slayer)": 35,
+                                "News Reporter": 6,
+                                "Cid Kagenou (Shadow)": 19,
+                                "Alpha": 3,
+                                "Gamma": 1,
+                                "Beta": 1,
+                                "Delta": 1,
+                                "Zeta": 1,
+                                "Epsilon": 1
+                            }
+                        }
+                    }
+                },
+                "s1e2": {
+                    "line_count": 338,
+                    "word_count": 2230,
+                    "char_count": 11861,
+                    "characters": {
+                        "Cid Kagenou": 113,
+                        "Alpha": 35,
+                        "Cid Kagenou (Minoru Kageno)": 4,
+                        "Mr. Kagenou": 10,
+                        "Mrs. Kagenou": 8,
+                        "Cid Kagenou (Shadow)": 66,
+                        "Bandit": 2,
+                        "Bandit Boss": 3,
+                        "Claire Kagenou": 19,
+                        "Maid": 3,
+                        "Beta": 21,
+                        "Grease": 47,
+                        "Soldier": 6,
+                        "Gamma": 1,
+                        "Epsilon": 1
+                    },
+                    "episodes": {
+                        "e2": {
+                            "word_count": 2230,
+                            "char_count": 11861,
+                            "line_count": 338,
+                            "characters": {
+                                "Cid Kagenou": 113,
+                                "Alpha": 35,
+                                "Cid Kagenou (Minoru Kageno)": 4,
+                                "Mr. Kagenou": 10,
+                                "Mrs. Kagenou": 8,
+                                "Cid Kagenou (Shadow)": 66,
+                                "Bandit": 2,
+                                "Bandit Boss": 3,
+                                "Claire Kagenou": 19,
+                                "Maid": 3,
+                                "Beta": 21,
+                                "Grease": 47,
+                                "Soldier": 6,
+                                "Gamma": 1,
+                                "Epsilon": 1
+                            }
+                        }
+                    }
+                },
+                "s1e3": {
+                    "line_count": 356,
+                    "word_count": 2592,
+                    "char_count": 13768,
+                    "characters": {
+                        "Cid Kagenou": 178,
+                        "Girl": 1,
+                        "Cid Kagenou (Minoru Kageno)": 8,
+                        "Skel Etal": 25,
+                        "Po Tato": 17,
+                        "Student": 15,
+                        "Alexia Midgar": 89,
+                        "Zenon Griffey": 23,
+                        "Skel (Skel & Po (Skel))": 2,
+                        "Po (Skel & Po (Po))": 2
+                    },
+                    "episodes": {
+                        "e3": {
+                            "word_count": 2592,
+                            "char_count": 13768,
+                            "line_count": 356,
+                            "characters": {
+                                "Cid Kagenou": 178,
+                                "Girl": 1,
+                                "Cid Kagenou (Minoru Kageno)": 8,
+                                "Skel Etal": 25,
+                                "Po Tato": 17,
+                                "Student": 15,
+                                "Alexia Midgar": 89,
+                                "Zenon Griffey": 23,
+                                "Skel (Skel & Po (Skel))": 2,
+                                "Po (Skel & Po (Po))": 2
+                            }
+                        }
+                    }
+                },
+                "s1e4": {
+                    "line_count": 330,
+                    "word_count": 2411,
+                    "char_count": 12907,
+                    "characters": {
+                        "Alexia Midgar": 40,
+                        "Scientist": 46,
+                        "Knight": 44,
+                        "Cid Kagenou": 37,
+                        "Iris Midgar": 28,
+                        "Zenon Griffey": 42,
+                        "Claire Kagenou": 17,
+                        "Student": 5,
+                        "Rose Oriana": 12,
+                        "Alpha": 30,
+                        "Cid Kagenou (Shadow)": 26,
+                        "Beta": 22,
+                        "Civilian": 4
+                    },
+                    "episodes": {
+                        "e4": {
+                            "word_count": 2411,
+                            "char_count": 12907,
+                            "line_count": 330,
+                            "characters": {
+                                "Alexia Midgar": 40,
+                                "Scientist": 46,
+                                "Knight": 44,
+                                "Cid Kagenou": 37,
+                                "Iris Midgar": 28,
+                                "Zenon Griffey": 42,
+                                "Claire Kagenou": 17,
+                                "Student": 5,
+                                "Rose Oriana": 12,
+                                "Alpha": 30,
+                                "Cid Kagenou (Shadow)": 26,
+                                "Beta": 22,
+                                "Civilian": 4
+                            }
+                        }
+                    }
+                },
+                "s1e5": {
+                    "line_count": 223,
+                    "word_count": 1333,
+                    "char_count": 7160,
+                    "characters": {
+                        "Zenon Griffey": 37,
+                        "Cid Kagenou (Shadow)": 30,
+                        "Alexia Midgar": 40,
+                        "Knight": 20,
+                        "Soldier": 1,
+                        "Iris Midgar": 37,
+                        "Alpha": 15,
+                        "Cid Kagenou": 14,
+                        "Beta": 10,
+                        "Delta": 1,
+                        "Epsilon": 3,
+                        "Gamma": 4,
+                        "Glen": 3,
+                        "Marco Granger": 1,
+                        "Sherry Barnett": 7
+                    },
+                    "episodes": {
+                        "e5": {
+                            "word_count": 1333,
+                            "char_count": 7160,
+                            "line_count": 223,
+                            "characters": {
+                                "Zenon Griffey": 37,
+                                "Cid Kagenou (Shadow)": 30,
+                                "Alexia Midgar": 40,
+                                "Knight": 20,
+                                "Soldier": 1,
+                                "Iris Midgar": 37,
+                                "Alpha": 15,
+                                "Cid Kagenou": 14,
+                                "Beta": 10,
+                                "Delta": 1,
+                                "Epsilon": 3,
+                                "Gamma": 4,
+                                "Glen": 3,
+                                "Marco Granger": 1,
+                                "Sherry Barnett": 7
+                            }
+                        }
+                    }
+                },
+                "s1e6": {
+                    "line_count": 331,
+                    "word_count": 2069,
+                    "char_count": 10839,
+                    "characters": {
+                        "Cult Member": 10,
+                        "Civilian": 1,
+                        "Skel Etal": 28,
+                        "Cid Kagenou": 87,
+                        "Po Tato": 32,
+                        "Iris Midgar": 29,
+                        "Sherry Barnett": 23,
+                        "Alexia Midgar": 27,
+                        "Lutheran Barnett": 27,
+                        "Glen": 1,
+                        "Nu": 15,
+                        "Gamma": 32,
+                        "Cid Kagenou (Shadow)": 6,
+                        "Rex": 2,
+                        "Lutheran Barnett (Sir Gaunt)": 3,
+                        "Student": 11
+                    },
+                    "episodes": {
+                        "e6": {
+                            "word_count": 2069,
+                            "char_count": 10839,
+                            "line_count": 331,
+                            "characters": {
+                                "Cult Member": 10,
+                                "Civilian": 1,
+                                "Skel Etal": 28,
+                                "Cid Kagenou": 87,
+                                "Po Tato": 32,
+                                "Iris Midgar": 29,
+                                "Sherry Barnett": 23,
+                                "Alexia Midgar": 27,
+                                "Lutheran Barnett": 27,
+                                "Glen": 1,
+                                "Nu": 15,
+                                "Gamma": 32,
+                                "Cid Kagenou (Shadow)": 6,
+                                "Rex": 2,
+                                "Lutheran Barnett (Sir Gaunt)": 3,
+                                "Student": 11
+                            }
+                        }
+                    }
+                },
+                "s1e7": {
+                    "line_count": 318,
+                    "word_count": 2153,
+                    "char_count": 11376,
+                    "characters": {
+                        "Lutheran Barnett": 9,
+                        "Sherry Barnett": 47,
+                        "Cid Kagenou": 95,
+                        "Nu": 29,
+                        "Skel Etal": 17,
+                        "Po Tato": 15,
+                        "Referee": 10,
+                        "Student": 23,
+                        "Bookie": 13,
+                        "Rose Oriana": 22,
+                        "Medic": 8,
+                        "Alexia Midgar": 30,
+                        "Marco Granger": 1,
+                        "Lutheran Barnett (Sir Gaunt)": 1,
+                        "Cult Member": 11
+                    },
+                    "episodes": {
+                        "e7": {
+                            "word_count": 2153,
+                            "char_count": 11376,
+                            "line_count": 318,
+                            "characters": {
+                                "Lutheran Barnett": 9,
+                                "Sherry Barnett": 47,
+                                "Cid Kagenou": 95,
+                                "Nu": 29,
+                                "Skel Etal": 17,
+                                "Po Tato": 15,
+                                "Referee": 10,
+                                "Student": 23,
+                                "Bookie": 13,
+                                "Rose Oriana": 22,
+                                "Medic": 8,
+                                "Alexia Midgar": 30,
+                                "Marco Granger": 1,
+                                "Lutheran Barnett (Sir Gaunt)": 1,
+                                "Cult Member": 11
+                            }
+                        }
+                    }
+                },
+                "s1e8": {
+                    "line_count": 322,
+                    "word_count": 2423,
+                    "char_count": 12986,
+                    "characters": {
+                        "Student": 7,
+                        "Cid Kagenou": 138,
+                        "Cult Member": 8,
+                        "Rose Oriana": 14,
+                        "Sherry Barnett": 59,
+                        "Rex": 48,
+                        "Glen": 6,
+                        "Marco Granger": 4,
+                        "Lutheran Barnett (Sir Gaunt)": 9,
+                        "Nu": 38
+                    },
+                    "episodes": {
+                        "e8": {
+                            "word_count": 2423,
+                            "char_count": 12986,
+                            "line_count": 322,
+                            "characters": {
+                                "Student": 7,
+                                "Cid Kagenou": 138,
+                                "Cult Member": 8,
+                                "Rose Oriana": 14,
+                                "Sherry Barnett": 59,
+                                "Rex": 48,
+                                "Glen": 6,
+                                "Marco Granger": 4,
+                                "Lutheran Barnett (Sir Gaunt)": 9,
+                                "Nu": 38
+                            }
+                        }
+                    }
+                },
+                "s1e9": {
+                    "line_count": 285,
+                    "word_count": 1796,
+                    "char_count": 9430,
+                    "characters": {
+                        "Knight": 14,
+                        "Rose Oriana": 31,
+                        "Sherry Barnett": 44,
+                        "Cid Kagenou": 39,
+                        "Lutheran Barnett": 77,
+                        "Lutheran Barnett (Sir Gaunt)": 5,
+                        "Cult Member": 7,
+                        "Student": 21,
+                        "Cid Kagenou (Shadow)": 18,
+                        "Garden Members": 3,
+                        "Gamma": 8,
+                        "Garden Member": 1,
+                        "Iris Midgar": 7,
+                        "Nu": 1,
+                        "Alpha": 10
+                    },
+                    "episodes": {
+                        "e9": {
+                            "word_count": 1796,
+                            "char_count": 9430,
+                            "line_count": 285,
+                            "characters": {
+                                "Knight": 14,
+                                "Rose Oriana": 31,
+                                "Sherry Barnett": 44,
+                                "Cid Kagenou": 39,
+                                "Lutheran Barnett": 77,
+                                "Lutheran Barnett (Sir Gaunt)": 5,
+                                "Cult Member": 7,
+                                "Student": 21,
+                                "Cid Kagenou (Shadow)": 18,
+                                "Garden Members": 3,
+                                "Gamma": 8,
+                                "Garden Member": 1,
+                                "Iris Midgar": 7,
+                                "Nu": 1,
+                                "Alpha": 10
+                            }
+                        }
+                    }
+                },
+                "s1e10": {
+                    "line_count": 364,
+                    "word_count": 2449,
+                    "char_count": 13040,
+                    "characters": {
+                        "Cid Kagenou": 100,
+                        "Delta": 1,
+                        "Epsilon": 31,
+                        "Beta (Fictional Zenon)": 9,
+                        "Beta (Fictional Shadow)": 6,
+                        "Beta": 13,
+                        "Garden Members": 1,
+                        "Nu": 2,
+                        "Iris Midgar": 42,
+                        "Alexia Midgar": 54,
+                        "Gamma (Luna)": 20,
+                        "Knight": 10,
+                        "Rose Oriana": 53,
+                        "Church Member": 5,
+                        "Beta (Natsume Kafka)": 6,
+                        "Alpha": 11,
+                        "Paladin": 4
+                    },
+                    "episodes": {
+                        "e10": {
+                            "word_count": 2449,
+                            "char_count": 13040,
+                            "line_count": 364,
+                            "characters": {
+                                "Cid Kagenou": 100,
+                                "Delta": 1,
+                                "Epsilon": 31,
+                                "Beta (Fictional Zenon)": 9,
+                                "Beta (Fictional Shadow)": 6,
+                                "Beta": 13,
+                                "Garden Members": 1,
+                                "Nu": 2,
+                                "Iris Midgar": 42,
+                                "Alexia Midgar": 54,
+                                "Gamma (Luna)": 20,
+                                "Knight": 10,
+                                "Rose Oriana": 53,
+                                "Church Member": 5,
+                                "Beta (Natsume Kafka)": 6,
+                                "Alpha": 11,
+                                "Paladin": 4
+                            }
+                        }
+                    }
+                },
+                "s1e11": {
+                    "line_count": 284,
+                    "word_count": 2250,
+                    "char_count": 12154,
+                    "characters": {
+                        "Cid Kagenou": 65,
+                        "Alexia Midgar": 78,
+                        "Jack Nelson": 55,
+                        "Spectator": 19,
+                        "Beta (Natsume Kafka)": 30,
+                        "Announcer": 6,
+                        "Toppe Batterius": 2,
+                        "Rose Oriana": 6,
+                        "Alexia Midgar (Alexia Midgar & Natsume Kafka (Alexia Midgar))": 1,
+                        "Natsume Kafka (Alexia Midgar & Natsume Kafka (Natsume Kafka))": 1,
+                        "Cid Kagenou (Shadow)": 23,
+                        "Alpha": 3
+                    },
+                    "episodes": {
+                        "e11": {
+                            "word_count": 2250,
+                            "char_count": 12154,
+                            "line_count": 284,
+                            "characters": {
+                                "Cid Kagenou": 65,
+                                "Alexia Midgar": 78,
+                                "Jack Nelson": 55,
+                                "Spectator": 19,
+                                "Beta (Natsume Kafka)": 30,
+                                "Announcer": 6,
+                                "Toppe Batterius": 2,
+                                "Rose Oriana": 6,
+                                "Alexia Midgar (Alexia Midgar & Natsume Kafka (Alexia Midgar))": 1,
+                                "Natsume Kafka (Alexia Midgar & Natsume Kafka (Natsume Kafka))": 1,
+                                "Cid Kagenou (Shadow)": 23,
+                                "Alpha": 3
+                            }
+                        }
+                    }
+                },
+                "s1e12": {
+                    "line_count": 356,
+                    "word_count": 2389,
+                    "char_count": 12487,
+                    "characters": {
+                        "Cid Kagenou": 49,
+                        "Spectator": 2,
+                        "Rose Oriana": 28,
+                        "Alexia Midgar": 35,
+                        "Jack Nelson": 64,
+                        "Paladin": 2,
+                        "Beta (Natsume Kafka)": 10,
+                        "Alpha": 88,
+                        "Epsilon": 27,
+                        "Delta": 4,
+                        "Cid Kagenou (Shadow)": 1,
+                        "Aurora": 50
+                    },
+                    "episodes": {
+                        "e12": {
+                            "word_count": 2389,
+                            "char_count": 12487,
+                            "line_count": 356,
+                            "characters": {
+                                "Cid Kagenou": 49,
+                                "Spectator": 2,
+                                "Rose Oriana": 28,
+                                "Alexia Midgar": 35,
+                                "Jack Nelson": 64,
+                                "Paladin": 2,
+                                "Beta (Natsume Kafka)": 10,
+                                "Alpha": 88,
+                                "Epsilon": 27,
+                                "Delta": 4,
+                                "Cid Kagenou (Shadow)": 1,
+                                "Aurora": 50
+                            }
+                        }
+                    }
+                },
+                "s1e13": {
+                    "line_count": 300,
+                    "word_count": 1840,
+                    "char_count": 9666,
+                    "characters": {
+                        "Rose Oriana": 2,
+                        "Alexia Midgar": 11,
+                        "Beta (Natsume Kafka)": 4,
+                        "Epsilon": 19,
+                        "Alpha": 24,
+                        "Jack Nelson": 73,
+                        "Delta": 7,
+                        "Aurora": 70,
+                        "Cid Kagenou": 73,
+                        "Chi": 10,
+                        "Omega": 5,
+                        "Garden Member": 2
+                    },
+                    "episodes": {
+                        "e13": {
+                            "word_count": 1840,
+                            "char_count": 9666,
+                            "line_count": 300,
+                            "characters": {
+                                "Rose Oriana": 2,
+                                "Alexia Midgar": 11,
+                                "Beta (Natsume Kafka)": 4,
+                                "Epsilon": 19,
+                                "Alpha": 24,
+                                "Jack Nelson": 73,
+                                "Delta": 7,
+                                "Aurora": 70,
+                                "Cid Kagenou": 73,
+                                "Chi": 10,
+                                "Omega": 5,
+                                "Garden Member": 2
+                            }
+                        }
+                    }
+                },
+                "s1e14": {
+                    "line_count": 334,
+                    "word_count": 2406,
+                    "char_count": 12861,
+                    "characters": {
+                        "Jack Nelson": 34,
+                        "Cid Kagenou": 55,
+                        "Aurora": 22,
+                        "Alexia Midgar": 60,
+                        "Rose Oriana": 16,
+                        "Beta (Natsume Kafka)": 9,
+                        "Epsilon": 15,
+                        "Alpha": 26,
+                        "Rude": 26,
+                        "Gamma (Luna)": 15,
+                        "Nu": 7,
+                        "Mitsugoshi Staff": 1,
+                        "Beta": 1,
+                        "Chi": 1,
+                        "Omega": 1,
+                        "Gamma": 4,
+                        "Iris Midgar": 47
+                    },
+                    "episodes": {
+                        "e14": {
+                            "word_count": 2406,
+                            "char_count": 12861,
+                            "line_count": 334,
+                            "characters": {
+                                "Jack Nelson": 34,
+                                "Cid Kagenou": 55,
+                                "Aurora": 22,
+                                "Alexia Midgar": 60,
+                                "Rose Oriana": 16,
+                                "Beta (Natsume Kafka)": 9,
+                                "Epsilon": 15,
+                                "Alpha": 26,
+                                "Rude": 26,
+                                "Gamma (Luna)": 15,
+                                "Nu": 7,
+                                "Mitsugoshi Staff": 1,
+                                "Beta": 1,
+                                "Chi": 1,
+                                "Omega": 1,
+                                "Gamma": 4,
+                                "Iris Midgar": 47
+                            }
+                        }
+                    }
+                },
+                "s1e15": {
+                    "line_count": 437,
+                    "word_count": 2931,
+                    "char_count": 15524,
+                    "characters": {
+                        "Civilian": 12,
+                        "Participant": 13,
+                        "Cid Kagenou": 86,
+                        "Boy": 3,
+                        "Gamma": 36,
+                        "Nu": 2,
+                        "Cid Kagenou (Mundane Mann)": 52,
+                        "Annerose Nichtsehen": 26,
+                        "Quinton": 15,
+                        "Heckler": 7,
+                        "Clerk": 4,
+                        "Skel Etal": 82,
+                        "Shop Staff": 1,
+                        "Rose Oriana": 33,
+                        "Cid Kagenou (Stylish Bandit Slayer)": 2,
+                        "Spectator": 11,
+                        "Goldy Gilded": 49,
+                        "Referee": 8
+                    },
+                    "episodes": {
+                        "e15": {
+                            "word_count": 2931,
+                            "char_count": 15524,
+                            "line_count": 437,
+                            "characters": {
+                                "Civilian": 12,
+                                "Participant": 13,
+                                "Cid Kagenou": 86,
+                                "Boy": 3,
+                                "Gamma": 36,
+                                "Nu": 2,
+                                "Cid Kagenou (Mundane Mann)": 52,
+                                "Annerose Nichtsehen": 26,
+                                "Quinton": 15,
+                                "Heckler": 7,
+                                "Clerk": 4,
+                                "Skel Etal": 82,
+                                "Shop Staff": 1,
+                                "Rose Oriana": 33,
+                                "Cid Kagenou (Stylish Bandit Slayer)": 2,
+                                "Spectator": 11,
+                                "Goldy Gilded": 49,
+                                "Referee": 8
+                            }
+                        }
+                    }
+                },
+                "s1e16": {
+                    "line_count": 366,
+                    "word_count": 2667,
+                    "char_count": 14176,
+                    "characters": {
+                        "Alexia Midgar": 31,
+                        "Beta (Natsume Kafka)": 37,
+                        "Garden Member": 4,
+                        "Referee": 7,
+                        "Cid Kagenou": 35,
+                        "Skel Etal": 23,
+                        "Beatrix": 20,
+                        "Quinton": 57,
+                        "Annerose Nichtsehen": 81,
+                        "Goldy Gilded": 19,
+                        "Iris Midgar": 5,
+                        "Perv Asshat": 17,
+                        "Raphael Oriana": 2,
+                        "Spectator": 16,
+                        "Po Tato": 1,
+                        "Cid Kagenou (Mundane Mann)": 14,
+                        "Rose Oriana": 2,
+                        "Knight": 4
+                    },
+                    "episodes": {
+                        "e16": {
+                            "word_count": 2667,
+                            "char_count": 14176,
+                            "line_count": 366,
+                            "characters": {
+                                "Alexia Midgar": 31,
+                                "Beta (Natsume Kafka)": 37,
+                                "Garden Member": 4,
+                                "Referee": 7,
+                                "Cid Kagenou": 35,
+                                "Skel Etal": 23,
+                                "Beatrix": 20,
+                                "Quinton": 57,
+                                "Annerose Nichtsehen": 81,
+                                "Goldy Gilded": 19,
+                                "Iris Midgar": 5,
+                                "Perv Asshat": 17,
+                                "Raphael Oriana": 2,
+                                "Spectator": 16,
+                                "Po Tato": 1,
+                                "Cid Kagenou (Mundane Mann)": 14,
+                                "Rose Oriana": 2,
+                                "Knight": 4
+                            }
+                        }
+                    }
+                },
+                "s1e17": {
+                    "line_count": 326,
+                    "word_count": 2549,
+                    "char_count": 13351,
+                    "characters": {
+                        "Cid Kagenou (Mundane Mann)": 6,
+                        "Cid Kagenou": 86,
+                        "Skel Etal": 43,
+                        "Epsilon": 23,
+                        "Alexia Midgar": 56,
+                        "Beta (Natsume Kafka)": 33,
+                        "Rose Oriana": 73,
+                        "Civil Servant": 1,
+                        "Perv Asshat": 3,
+                        "Raphael Oriana": 3,
+                        "Civil Servants": 1,
+                        "Cid Kagenou (Shadow)": 10,
+                        "Soldier": 2
+                    },
+                    "episodes": {
+                        "e17": {
+                            "word_count": 2549,
+                            "char_count": 13351,
+                            "line_count": 326,
+                            "characters": {
+                                "Cid Kagenou (Mundane Mann)": 6,
+                                "Cid Kagenou": 86,
+                                "Skel Etal": 43,
+                                "Epsilon": 23,
+                                "Alexia Midgar": 56,
+                                "Beta (Natsume Kafka)": 33,
+                                "Rose Oriana": 73,
+                                "Civil Servant": 1,
+                                "Perv Asshat": 3,
+                                "Raphael Oriana": 3,
+                                "Civil Servants": 1,
+                                "Cid Kagenou (Shadow)": 10,
+                                "Soldier": 2
+                            }
+                        }
+                    }
+                },
+                "s1e18": {
+                    "line_count": 373,
+                    "word_count": 2816,
+                    "char_count": 14880,
+                    "characters": {
+                        "Cid Kagenou": 87,
+                        "Claire Kagenou": 23,
+                        "Alexia Midgar": 9,
+                        "Manager": 2,
+                        "Duke's Second Son": 15,
+                        "Iris Midgar": 88,
+                        "Captain's Daughter": 15,
+                        "Referee": 4,
+                        "Beatrix": 18,
+                        "Perv Asshat": 53,
+                        "Annerose Nichtsehen": 46,
+                        "Cid Kagenou (Mundane Mann)": 5,
+                        "Cult Member": 4,
+                        "Skel Etal": 13,
+                        "Soldier": 1,
+                        "Rose Oriana": 1
+                    },
+                    "episodes": {
+                        "e18": {
+                            "word_count": 2816,
+                            "char_count": 14880,
+                            "line_count": 373,
+                            "characters": {
+                                "Cid Kagenou": 87,
+                                "Claire Kagenou": 23,
+                                "Alexia Midgar": 9,
+                                "Manager": 2,
+                                "Duke's Second Son": 15,
+                                "Iris Midgar": 88,
+                                "Captain's Daughter": 15,
+                                "Referee": 4,
+                                "Beatrix": 18,
+                                "Perv Asshat": 53,
+                                "Annerose Nichtsehen": 46,
+                                "Cid Kagenou (Mundane Mann)": 5,
+                                "Cult Member": 4,
+                                "Skel Etal": 13,
+                                "Soldier": 1,
+                                "Rose Oriana": 1
+                            }
+                        }
+                    }
+                },
+                "s1e19": {
+                    "line_count": 379,
+                    "word_count": 2367,
+                    "char_count": 12815,
+                    "characters": {
+                        "Zenon Griffey": 2,
+                        "Glen": 1,
+                        "Alexia Midgar": 1,
+                        "Referee": 6,
+                        "Student": 3,
+                        "Knight Captain": 5,
+                        "Civilian": 5,
+                        "Alpha": 2,
+                        "Iris Midgar": 81,
+                        "Knight": 2,
+                        "Klaus Midgar": 12,
+                        "Cid Kagenou": 32,
+                        "Clerk": 4,
+                        "Beatrix": 16,
+                        "Aristocrat": 37,
+                        "Duke's Second Son": 3,
+                        "Captain's Daughter": 1,
+                        "Perv Asshat": 85,
+                        "Cult Member": 1,
+                        "Raphael Oriana": 7,
+                        "Crowd": 8,
+                        "Claire Kagenou": 1,
+                        "Cid Kagenou (Mundane Mann)": 6,
+                        "Rose Oriana": 36,
+                        "Beta": 2,
+                        "Spectator": 6,
+                        "Aristocrats": 1,
+                        "Cid Kagenou (Shadow)": 6,
+                        "Cid Kagenou (Stylish Bandit Slayer)": 11,
+                        "Bandit": 5
+                    },
+                    "episodes": {
+                        "e19": {
+                            "word_count": 2367,
+                            "char_count": 12815,
+                            "line_count": 379,
+                            "characters": {
+                                "Zenon Griffey": 2,
+                                "Glen": 1,
+                                "Alexia Midgar": 1,
+                                "Referee": 6,
+                                "Student": 3,
+                                "Knight Captain": 5,
+                                "Civilian": 5,
+                                "Alpha": 2,
+                                "Iris Midgar": 81,
+                                "Knight": 2,
+                                "Klaus Midgar": 12,
+                                "Cid Kagenou": 32,
+                                "Clerk": 4,
+                                "Beatrix": 16,
+                                "Aristocrat": 37,
+                                "Duke's Second Son": 3,
+                                "Captain's Daughter": 1,
+                                "Perv Asshat": 85,
+                                "Cult Member": 1,
+                                "Raphael Oriana": 7,
+                                "Crowd": 8,
+                                "Claire Kagenou": 1,
+                                "Cid Kagenou (Mundane Mann)": 6,
+                                "Rose Oriana": 36,
+                                "Beta": 2,
+                                "Spectator": 6,
+                                "Aristocrats": 1,
+                                "Cid Kagenou (Shadow)": 6,
+                                "Cid Kagenou (Stylish Bandit Slayer)": 11,
+                                "Bandit": 5
+                            }
+                        }
+                    }
+                },
+                "s1e20": {
+                    "line_count": 273,
+                    "word_count": 1696,
+                    "char_count": 9084,
+                    "characters": {
+                        "Iris Midgar": 28,
+                        "Rose Oriana": 19,
+                        "Alpha": 22,
+                        "Alexia Midgar": 7,
+                        "Cid Kagenou (Mundane Mann)": 2,
+                        "Civilian": 6,
+                        "Knight": 2,
+                        "Klaus Midgar": 10,
+                        "Civil Servant": 6,
+                        "Beatrix": 17,
+                        "Cid Kagenou (Shadow)": 52,
+                        "Claire Kagenou": 3,
+                        "Annerose Nichtsehen": 1,
+                        "Cid Kagenou": 7,
+                        "Sherry Barnett": 11,
+                        "Mordred": 3,
+                        "Perv Asshat": 8,
+                        "Goldy Gilded": 4,
+                        "Quinton": 1,
+                        "Gamma (Luna)": 2,
+                        "Nu": 6,
+                        "Beta": 9,
+                        "Epsilon": 2,
+                        "Eta": 5,
+                        "Chi": 1,
+                        "Omega": 1,
+                        "Delta": 1,
+                        "Student": 5,
+                        "Po Tato": 12,
+                        "Skel Etal": 4,
+                        "Sailor": 2,
+                        "Zeta": 1,
+                        "Mr. Kagenou": 5,
+                        "Mrs. Kagenou": 4,
+                        "Lambda": 11,
+                        "No. 665": 1,
+                        "No. 664": 1
+                    },
+                    "episodes": {
+                        "e20": {
+                            "word_count": 1696,
+                            "char_count": 9084,
+                            "line_count": 273,
+                            "characters": {
+                                "Iris Midgar": 28,
+                                "Rose Oriana": 19,
+                                "Alpha": 22,
+                                "Alexia Midgar": 7,
+                                "Cid Kagenou (Mundane Mann)": 2,
+                                "Civilian": 6,
+                                "Knight": 2,
+                                "Klaus Midgar": 10,
+                                "Civil Servant": 6,
+                                "Beatrix": 17,
+                                "Cid Kagenou (Shadow)": 52,
+                                "Claire Kagenou": 3,
+                                "Annerose Nichtsehen": 1,
+                                "Cid Kagenou": 7,
+                                "Sherry Barnett": 11,
+                                "Mordred": 3,
+                                "Perv Asshat": 8,
+                                "Goldy Gilded": 4,
+                                "Quinton": 1,
+                                "Gamma (Luna)": 2,
+                                "Nu": 6,
+                                "Beta": 9,
+                                "Epsilon": 2,
+                                "Eta": 5,
+                                "Chi": 1,
+                                "Omega": 1,
+                                "Delta": 1,
+                                "Student": 5,
+                                "Po Tato": 12,
+                                "Skel Etal": 4,
+                                "Sailor": 2,
+                                "Zeta": 1,
+                                "Mr. Kagenou": 5,
+                                "Mrs. Kagenou": 4,
+                                "Lambda": 11,
+                                "No. 665": 1,
+                                "No. 664": 1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "2": {
+            "episode_count": 12,
+            "line_count": 4587,
+            "word_count": 32423,
+            "char_count": 172419,
+            "characters": {
+                "Beta": 242,
+                "Gamma": 139,
+                "Epsilon": 110,
+                "Zeta": 45,
+                "Eta": 53,
+                "Cid Kagenou (Shadow)": 252,
+                "Lambda": 44,
+                "Nu": 81,
+                "Alpha": 232,
+                "Goldy Gilded": 16,
+                "Quinton": 11,
+                "White Demon": 45,
+                "Cid Kagenou": 563,
+                "Claire Kagenou": 179,
+                "Referee": 4,
+                "Merchant": 27,
+                "Pickpocket": 5,
+                "Civilian": 27,
+                "Mary": 127,
+                "Skel Etal": 100,
+                "Po Tato": 98,
+                "Skel (Skel & Po (Skel))": 10,
+                "Po (Skel & Po (Po))": 10,
+                "Marie": 81,
+                "Coworker": 10,
+                "Yukime": 222,
+                "Natsu": 12,
+                "Kana": 6,
+                "Subordinate": 1,
+                "Juggernaut": 51,
+                "Knight": 20,
+                "Claudia": 5,
+                "Vampire": 8,
+                "Crimson": 18,
+                "No. 665": 36,
+                "No. 664": 75,
+                "Rose Oriana (No. 666)": 58,
+                "Elisabeth": 5,
+                "Aurora": 69,
+                "Bandit": 27,
+                "Chi": 15,
+                "Omega": 11,
+                "Cid Kagenou (John Smith)": 189,
+                "Shop Staff": 12,
+                "Customer": 2,
+                "Po": 1,
+                "Delta": 104,
+                "Gettan": 129,
+                "Garter Kikuchi": 48,
+                "Zabra": 13,
+                "Alpha (Alpha & Nu (Alpha))": 1,
+                "Nu (Alpha & Nu (Nu))": 1,
+                "Leaf Three": 1,
+                "Leaf Two": 1,
+                "Leaf One": 37,
+                "Gamma (Luna)": 39,
+                "Chi (Chi & Omega (Chi))": 1,
+                "Omega (Chi & Omega (Omega))": 1,
+                "Alexia Midgar": 41,
+                "Cid Kagenou (John Smith & Yukime (John Smith))": 1,
+                "Yukime (John Smith & Yukime (Yukime))": 1,
+                "Cult Member": 10,
+                "Iris Midgar": 6,
+                "Marco Granger": 3,
+                "Chi (Characterised Shadow)": 8,
+                "Nu (Characterised Alpha)": 11,
+                "Chi (Characterised Eta)": 3,
+                "Chi (Characterised Cult Member)": 3,
+                "Omega (Characterised Zeta)": 2,
+                "Omega (Characterised Gamma)": 2,
+                "Alpha (Seven Shadows (Alpha))": 1,
+                "Beta (Seven Shadows (Beta))": 2,
+                "Gamma (Seven Shadows (Gamma))": 2,
+                "Delta (Seven Shadows (Delta))": 1,
+                "Epsilon (Seven Shadows (Epsilon))": 2,
+                "Zeta (Seven Shadows (Zeta))": 2,
+                "Eta (Seven Shadows (Eta))": 1,
+                "Beta (Natsume Kafka)": 5,
+                "Zeta (Zetan)": 3,
+                "Delta (Deltan)": 1,
+                "Zeta (Zeta & Epsilon (Zeta))": 1,
+                "Epsilon (Zeta & Epsilon (Epsilon))": 1,
+                "Zeta (Zeta & Beta (Zeta))": 1,
+                "Beta (Zeta & Beta (Beta))": 1,
+                "Rose Oriana": 152,
+                "Raphael Oriana": 36,
+                "Victoria (No. 559)": 77,
+                "Kouadoi": 27,
+                "Reina Oriana": 25,
+                "Soldier": 27,
+                "Epsilon (Shiron)": 47,
+                "Perv Asshat": 100,
+                "Aristocrat": 23,
+                "Parton": 5,
+                "Newwealth": 3,
+                "Margaret": 81,
+                "Kevin": 32,
+                "Mordred": 166,
+                "Goldy (Goldy & Quinton (Goldy))": 1,
+                "Quinton (Goldy & Quinton (Quinton))": 1,
+                "Crowd": 2,
+                "Maid": 3,
+                "Priest": 6,
+                "Aristocrats": 1,
+                "Garden Members": 1,
+                "Knights": 1,
+                "Beta (Beta & Epsilon (Beta))": 2,
+                "Epsilon (Beta & Epsilon (Epsilon))": 2,
+                "Akane Nishino": 24,
+                "Kidnapper A": 21,
+                "Kidnapper B": 21
+            },
+            "episodes": {
+                "s2e1": {
+                    "line_count": 412,
+                    "word_count": 2870,
+                    "char_count": 14889,
+                    "characters": {
+                        "Beta": 16,
+                        "Gamma": 6,
+                        "Epsilon": 5,
+                        "Zeta": 2,
+                        "Eta": 4,
+                        "Cid Kagenou (Shadow)": 40,
+                        "Lambda": 1,
+                        "Nu": 2,
+                        "Alpha": 6,
+                        "Goldy Gilded": 12,
+                        "Quinton": 10,
+                        "White Demon": 10,
+                        "Cid Kagenou": 75,
+                        "Claire Kagenou": 62,
+                        "Referee": 4,
+                        "Merchant": 27,
+                        "Pickpocket": 5,
+                        "Civilian": 11,
+                        "Mary": 8,
+                        "Skel Etal": 11,
+                        "Po Tato": 9,
+                        "Skel (Skel & Po (Skel))": 1,
+                        "Po (Skel & Po (Po))": 1,
+                        "Marie": 39,
+                        "Coworker": 10,
+                        "Yukime": 7,
+                        "Natsu": 1,
+                        "Kana": 1,
+                        "Subordinate": 1,
+                        "Juggernaut": 7,
+                        "Knight": 7,
+                        "Claudia": 5,
+                        "Vampire": 8,
+                        "Crimson": 8
+                    },
+                    "episodes": {
+                        "e1": {
+                            "word_count": 2870,
+                            "char_count": 14889,
+                            "line_count": 412,
+                            "characters": {
+                                "Beta": 16,
+                                "Gamma": 6,
+                                "Epsilon": 5,
+                                "Zeta": 2,
+                                "Eta": 4,
+                                "Cid Kagenou (Shadow)": 40,
+                                "Lambda": 1,
+                                "Nu": 2,
+                                "Alpha": 6,
+                                "Goldy Gilded": 12,
+                                "Quinton": 10,
+                                "White Demon": 10,
+                                "Cid Kagenou": 75,
+                                "Claire Kagenou": 62,
+                                "Referee": 4,
+                                "Merchant": 27,
+                                "Pickpocket": 5,
+                                "Civilian": 11,
+                                "Mary": 8,
+                                "Skel Etal": 11,
+                                "Po Tato": 9,
+                                "Skel (Skel & Po (Skel))": 1,
+                                "Po (Skel & Po (Po))": 1,
+                                "Marie": 39,
+                                "Coworker": 10,
+                                "Yukime": 7,
+                                "Natsu": 1,
+                                "Kana": 1,
+                                "Subordinate": 1,
+                                "Juggernaut": 7,
+                                "Knight": 7,
+                                "Claudia": 5,
+                                "Vampire": 8,
+                                "Crimson": 8
+                            }
+                        }
+                    }
+                },
+                "s2e2": {
+                    "line_count": 345,
+                    "word_count": 2422,
+                    "char_count": 12857,
+                    "characters": {
+                        "White Demon": 35,
+                        "Juggernaut": 30,
+                        "Cid Kagenou (Shadow)": 45,
+                        "Yukime": 8,
+                        "Beta": 41,
+                        "Mary": 91,
+                        "Claire Kagenou": 72,
+                        "No. 665": 2,
+                        "No. 664": 2,
+                        "Rose Oriana (No. 666)": 6,
+                        "Elisabeth": 4,
+                        "Crimson": 10
+                    },
+                    "episodes": {
+                        "e2": {
+                            "word_count": 2422,
+                            "char_count": 12857,
+                            "line_count": 345,
+                            "characters": {
+                                "White Demon": 35,
+                                "Juggernaut": 30,
+                                "Cid Kagenou (Shadow)": 45,
+                                "Yukime": 8,
+                                "Beta": 41,
+                                "Mary": 91,
+                                "Claire Kagenou": 72,
+                                "No. 665": 2,
+                                "No. 664": 2,
+                                "Rose Oriana (No. 666)": 6,
+                                "Elisabeth": 4,
+                                "Crimson": 10
+                            }
+                        }
+                    }
+                },
+                "s2e3": {
+                    "line_count": 304,
+                    "word_count": 1811,
+                    "char_count": 9687,
+                    "characters": {
+                        "Cid Kagenou (Shadow)": 25,
+                        "Claire Kagenou": 45,
+                        "Mary": 28,
+                        "No. 664": 5,
+                        "Beta": 60,
+                        "Rose Oriana (No. 666)": 9,
+                        "No. 665": 3,
+                        "Yukime": 13,
+                        "Juggernaut": 14,
+                        "Aurora": 69,
+                        "Elisabeth": 1,
+                        "Goldy Gilded": 3,
+                        "Skel Etal": 1,
+                        "Po Tato": 1,
+                        "Quinton": 1,
+                        "Cid Kagenou": 31
+                    },
+                    "episodes": {
+                        "e3": {
+                            "word_count": 1811,
+                            "char_count": 9687,
+                            "line_count": 304,
+                            "characters": {
+                                "Cid Kagenou (Shadow)": 25,
+                                "Claire Kagenou": 45,
+                                "Mary": 28,
+                                "No. 664": 5,
+                                "Beta": 60,
+                                "Rose Oriana (No. 666)": 9,
+                                "No. 665": 3,
+                                "Yukime": 13,
+                                "Juggernaut": 14,
+                                "Aurora": 69,
+                                "Elisabeth": 1,
+                                "Goldy Gilded": 3,
+                                "Skel Etal": 1,
+                                "Po Tato": 1,
+                                "Quinton": 1,
+                                "Cid Kagenou": 31
+                            }
+                        }
+                    }
+                },
+                "s2e4": {
+                    "line_count": 386,
+                    "word_count": 3004,
+                    "char_count": 16246,
+                    "characters": {
+                        "Nu": 12,
+                        "Bandit": 13,
+                        "Chi": 2,
+                        "Omega": 2,
+                        "Alpha": 6,
+                        "Po Tato": 24,
+                        "Skel Etal": 24,
+                        "Skel (Skel & Po (Skel))": 3,
+                        "Po (Skel & Po (Po))": 3,
+                        "Cid Kagenou": 88,
+                        "Cid Kagenou (John Smith)": 45,
+                        "Yukime": 66,
+                        "Shop Staff": 10,
+                        "Customer": 2,
+                        "Po": 1,
+                        "Gamma": 1,
+                        "Beta": 1,
+                        "Eta": 2,
+                        "Delta": 36,
+                        "Gettan": 14,
+                        "Garter Kikuchi": 15,
+                        "Cid Kagenou (Shadow)": 15,
+                        "Zabra": 13
+                    },
+                    "episodes": {
+                        "e4": {
+                            "word_count": 3004,
+                            "char_count": 16246,
+                            "line_count": 386,
+                            "characters": {
+                                "Nu": 12,
+                                "Bandit": 13,
+                                "Chi": 2,
+                                "Omega": 2,
+                                "Alpha": 6,
+                                "Po Tato": 24,
+                                "Skel Etal": 24,
+                                "Skel (Skel & Po (Skel))": 3,
+                                "Po (Skel & Po (Po))": 3,
+                                "Cid Kagenou": 88,
+                                "Cid Kagenou (John Smith)": 45,
+                                "Yukime": 66,
+                                "Shop Staff": 10,
+                                "Customer": 2,
+                                "Po": 1,
+                                "Gamma": 1,
+                                "Beta": 1,
+                                "Eta": 2,
+                                "Delta": 36,
+                                "Gettan": 14,
+                                "Garter Kikuchi": 15,
+                                "Cid Kagenou (Shadow)": 15,
+                                "Zabra": 13
+                            }
+                        }
+                    }
+                },
+                "s2e5": {
+                    "line_count": 352,
+                    "word_count": 2411,
+                    "char_count": 12985,
+                    "characters": {
+                        "Gamma": 28,
+                        "Alpha": 36,
+                        "Nu": 3,
+                        "Alpha (Alpha & Nu (Alpha))": 1,
+                        "Nu (Alpha & Nu (Nu))": 1,
+                        "Leaf Three": 1,
+                        "Leaf Two": 1,
+                        "Leaf One": 37,
+                        "Gamma (Luna)": 39,
+                        "Cid Kagenou": 13,
+                        "Chi": 2,
+                        "Omega": 1,
+                        "Chi (Chi & Omega (Chi))": 1,
+                        "Omega (Chi & Omega (Omega))": 1,
+                        "Gettan": 47,
+                        "Garter Kikuchi": 14,
+                        "Alexia Midgar": 19,
+                        "Natsu": 2,
+                        "Shop Staff": 2,
+                        "Cid Kagenou (John Smith)": 30,
+                        "Yukime": 33,
+                        "Cid Kagenou (John Smith & Yukime (John Smith))": 1,
+                        "Yukime (John Smith & Yukime (Yukime))": 1,
+                        "No. 664": 25,
+                        "Rose Oriana (No. 666)": 15,
+                        "No. 665": 7
+                    },
+                    "episodes": {
+                        "e5": {
+                            "word_count": 2411,
+                            "char_count": 12985,
+                            "line_count": 352,
+                            "characters": {
+                                "Gamma": 28,
+                                "Alpha": 36,
+                                "Nu": 3,
+                                "Alpha (Alpha & Nu (Alpha))": 1,
+                                "Nu (Alpha & Nu (Nu))": 1,
+                                "Leaf Three": 1,
+                                "Leaf Two": 1,
+                                "Leaf One": 37,
+                                "Gamma (Luna)": 39,
+                                "Cid Kagenou": 13,
+                                "Chi": 2,
+                                "Omega": 1,
+                                "Chi (Chi & Omega (Chi))": 1,
+                                "Omega (Chi & Omega (Omega))": 1,
+                                "Gettan": 47,
+                                "Garter Kikuchi": 14,
+                                "Alexia Midgar": 19,
+                                "Natsu": 2,
+                                "Shop Staff": 2,
+                                "Cid Kagenou (John Smith)": 30,
+                                "Yukime": 33,
+                                "Cid Kagenou (John Smith & Yukime (John Smith))": 1,
+                                "Yukime (John Smith & Yukime (Yukime))": 1,
+                                "No. 664": 25,
+                                "Rose Oriana (No. 666)": 15,
+                                "No. 665": 7
+                            }
+                        }
+                    }
+                },
+                "s2e6": {
+                    "line_count": 379,
+                    "word_count": 2704,
+                    "char_count": 14447,
+                    "characters": {
+                        "No. 664": 7,
+                        "Alpha": 49,
+                        "Gamma": 28,
+                        "Rose Oriana (No. 666)": 8,
+                        "No. 665": 3,
+                        "Cid Kagenou (John Smith)": 70,
+                        "Delta": 26,
+                        "Cult Member": 7,
+                        "Gettan": 25,
+                        "Garter Kikuchi": 4,
+                        "Knight": 6,
+                        "Alexia Midgar": 21,
+                        "Iris Midgar": 4,
+                        "Beta": 33,
+                        "Cid Kagenou (Shadow)": 21,
+                        "Natsu": 2,
+                        "Bandit": 14,
+                        "Yukime": 56
+                    },
+                    "episodes": {
+                        "e6": {
+                            "word_count": 2704,
+                            "char_count": 14447,
+                            "line_count": 379,
+                            "characters": {
+                                "No. 664": 7,
+                                "Alpha": 49,
+                                "Gamma": 28,
+                                "Rose Oriana (No. 666)": 8,
+                                "No. 665": 3,
+                                "Cid Kagenou (John Smith)": 70,
+                                "Delta": 26,
+                                "Cult Member": 7,
+                                "Gettan": 25,
+                                "Garter Kikuchi": 4,
+                                "Knight": 6,
+                                "Alexia Midgar": 21,
+                                "Iris Midgar": 4,
+                                "Beta": 33,
+                                "Cid Kagenou (Shadow)": 21,
+                                "Natsu": 2,
+                                "Bandit": 14,
+                                "Yukime": 56
+                            }
+                        }
+                    }
+                },
+                "s2e7": {
+                    "line_count": 383,
+                    "word_count": 2655,
+                    "char_count": 14124,
+                    "characters": {
+                        "Alpha": 76,
+                        "Civilian": 7,
+                        "Gettan": 43,
+                        "Garter Kikuchi": 15,
+                        "Gamma": 39,
+                        "Nu": 7,
+                        "Beta": 14,
+                        "Cid Kagenou": 68,
+                        "Delta": 25,
+                        "Cid Kagenou (John Smith)": 44,
+                        "Natsu": 7,
+                        "Kana": 5,
+                        "Yukime": 38,
+                        "Iris Midgar": 2,
+                        "Marco Granger": 3
+                    },
+                    "episodes": {
+                        "e7": {
+                            "word_count": 2655,
+                            "char_count": 14124,
+                            "line_count": 383,
+                            "characters": {
+                                "Alpha": 76,
+                                "Civilian": 7,
+                                "Gettan": 43,
+                                "Garter Kikuchi": 15,
+                                "Gamma": 39,
+                                "Nu": 7,
+                                "Beta": 14,
+                                "Cid Kagenou": 68,
+                                "Delta": 25,
+                                "Cid Kagenou (John Smith)": 44,
+                                "Natsu": 7,
+                                "Kana": 5,
+                                "Yukime": 38,
+                                "Iris Midgar": 2,
+                                "Marco Granger": 3
+                            }
+                        }
+                    }
+                },
+                "s2e8": {
+                    "line_count": 450,
+                    "word_count": 3325,
+                    "char_count": 17966,
+                    "characters": {
+                        "Skel Etal": 64,
+                        "Po Tato": 64,
+                        "Skel (Skel & Po (Skel))": 6,
+                        "Po (Skel & Po (Po))": 6,
+                        "Nu": 32,
+                        "Alpha": 53,
+                        "Zeta": 35,
+                        "Eta": 45,
+                        "Epsilon": 25,
+                        "Chi (Characterised Shadow)": 8,
+                        "Nu (Characterised Alpha)": 11,
+                        "Chi (Characterised Eta)": 3,
+                        "Chi (Characterised Cult Member)": 3,
+                        "Omega (Characterised Zeta)": 2,
+                        "Chi": 5,
+                        "Omega (Characterised Gamma)": 2,
+                        "Beta": 46,
+                        "Gamma": 17,
+                        "Delta": 17,
+                        "Alpha (Seven Shadows (Alpha))": 1,
+                        "Beta (Seven Shadows (Beta))": 2,
+                        "Gamma (Seven Shadows (Gamma))": 2,
+                        "Delta (Seven Shadows (Delta))": 1,
+                        "Epsilon (Seven Shadows (Epsilon))": 2,
+                        "Zeta (Seven Shadows (Zeta))": 2,
+                        "Eta (Seven Shadows (Eta))": 1,
+                        "Beta (Natsume Kafka)": 5,
+                        "Zeta (Zetan)": 3,
+                        "Delta (Deltan)": 1,
+                        "Zeta (Zeta & Epsilon (Zeta))": 1,
+                        "Epsilon (Zeta & Epsilon (Epsilon))": 1,
+                        "Zeta (Zeta & Beta (Zeta))": 1,
+                        "Beta (Zeta & Beta (Beta))": 1,
+                        "Lambda": 27,
+                        "Omega": 1
+                    },
+                    "episodes": {
+                        "e8": {
+                            "word_count": 3325,
+                            "char_count": 17966,
+                            "line_count": 450,
+                            "characters": {
+                                "Skel Etal": 64,
+                                "Po Tato": 64,
+                                "Skel (Skel & Po (Skel))": 6,
+                                "Po (Skel & Po (Po))": 6,
+                                "Nu": 32,
+                                "Alpha": 53,
+                                "Zeta": 35,
+                                "Eta": 45,
+                                "Epsilon": 25,
+                                "Chi (Characterised Shadow)": 8,
+                                "Nu (Characterised Alpha)": 11,
+                                "Chi (Characterised Eta)": 3,
+                                "Chi (Characterised Cult Member)": 3,
+                                "Omega (Characterised Zeta)": 2,
+                                "Chi": 5,
+                                "Omega (Characterised Gamma)": 2,
+                                "Beta": 46,
+                                "Gamma": 17,
+                                "Delta": 17,
+                                "Alpha (Seven Shadows (Alpha))": 1,
+                                "Beta (Seven Shadows (Beta))": 2,
+                                "Gamma (Seven Shadows (Gamma))": 2,
+                                "Delta (Seven Shadows (Delta))": 1,
+                                "Epsilon (Seven Shadows (Epsilon))": 2,
+                                "Zeta (Seven Shadows (Zeta))": 2,
+                                "Eta (Seven Shadows (Eta))": 1,
+                                "Beta (Natsume Kafka)": 5,
+                                "Zeta (Zetan)": 3,
+                                "Delta (Deltan)": 1,
+                                "Zeta (Zeta & Epsilon (Zeta))": 1,
+                                "Epsilon (Zeta & Epsilon (Epsilon))": 1,
+                                "Zeta (Zeta & Beta (Zeta))": 1,
+                                "Beta (Zeta & Beta (Beta))": 1,
+                                "Lambda": 27,
+                                "Omega": 1
+                            }
+                        }
+                    }
+                },
+                "s2e9": {
+                    "line_count": 391,
+                    "word_count": 2814,
+                    "char_count": 14715,
+                    "characters": {
+                        "Marie": 42,
+                        "Cid Kagenou": 83,
+                        "No. 665": 20,
+                        "No. 664": 35,
+                        "Rose Oriana": 10,
+                        "Raphael Oriana": 3,
+                        "Rose Oriana (No. 666)": 20,
+                        "Victoria (No. 559)": 62,
+                        "Cult Member": 1,
+                        "Kouadoi": 27,
+                        "Reina Oriana": 8,
+                        "Nu": 22,
+                        "Gamma": 19,
+                        "Soldier": 25,
+                        "Cid Kagenou (Shadow)": 24
+                    },
+                    "episodes": {
+                        "e9": {
+                            "word_count": 2814,
+                            "char_count": 14715,
+                            "line_count": 391,
+                            "characters": {
+                                "Marie": 42,
+                                "Cid Kagenou": 83,
+                                "No. 665": 20,
+                                "No. 664": 35,
+                                "Rose Oriana": 10,
+                                "Raphael Oriana": 3,
+                                "Rose Oriana (No. 666)": 20,
+                                "Victoria (No. 559)": 62,
+                                "Cult Member": 1,
+                                "Kouadoi": 27,
+                                "Reina Oriana": 8,
+                                "Nu": 22,
+                                "Gamma": 19,
+                                "Soldier": 25,
+                                "Cid Kagenou (Shadow)": 24
+                            }
+                        }
+                    }
+                },
+                "s2e10": {
+                    "line_count": 435,
+                    "word_count": 3265,
+                    "char_count": 17237,
+                    "characters": {
+                        "Chi": 6,
+                        "Lambda": 16,
+                        "Omega": 7,
+                        "Civilian": 6,
+                        "Cid Kagenou": 130,
+                        "Epsilon (Shiron)": 41,
+                        "Perv Asshat": 40,
+                        "Aristocrat": 6,
+                        "Parton": 5,
+                        "Newwealth": 3,
+                        "Margaret": 50,
+                        "Kevin": 32,
+                        "Rose Oriana": 40,
+                        "Epsilon": 39,
+                        "Victoria (No. 559)": 12,
+                        "Mordred": 10,
+                        "Reina Oriana": 4
+                    },
+                    "episodes": {
+                        "e10": {
+                            "word_count": 3265,
+                            "char_count": 17237,
+                            "line_count": 435,
+                            "characters": {
+                                "Chi": 6,
+                                "Lambda": 16,
+                                "Omega": 7,
+                                "Civilian": 6,
+                                "Cid Kagenou": 130,
+                                "Epsilon (Shiron)": 41,
+                                "Perv Asshat": 40,
+                                "Aristocrat": 6,
+                                "Parton": 5,
+                                "Newwealth": 3,
+                                "Margaret": 50,
+                                "Kevin": 32,
+                                "Rose Oriana": 40,
+                                "Epsilon": 39,
+                                "Victoria (No. 559)": 12,
+                                "Mordred": 10,
+                                "Reina Oriana": 4
+                            }
+                        }
+                    }
+                },
+                "s2e11": {
+                    "line_count": 382,
+                    "word_count": 2576,
+                    "char_count": 13356,
+                    "characters": {
+                        "Zeta": 8,
+                        "Cult Member": 2,
+                        "Cid Kagenou": 75,
+                        "Margaret": 23,
+                        "Epsilon (Shiron)": 6,
+                        "Epsilon": 18,
+                        "Goldy Gilded": 1,
+                        "Goldy (Goldy & Quinton (Goldy))": 1,
+                        "Quinton (Goldy & Quinton (Quinton))": 1,
+                        "Crowd": 2,
+                        "Aristocrat": 17,
+                        "Reina Oriana": 13,
+                        "Perv Asshat": 60,
+                        "Rose Oriana": 73,
+                        "Cid Kagenou (Shadow)": 20,
+                        "Civilian": 3,
+                        "Soldier": 2,
+                        "Mordred": 27,
+                        "Maid": 3,
+                        "Priest": 6,
+                        "Raphael Oriana": 33,
+                        "Aristocrats": 1
+                    },
+                    "episodes": {
+                        "e11": {
+                            "word_count": 2576,
+                            "char_count": 13356,
+                            "line_count": 382,
+                            "characters": {
+                                "Zeta": 8,
+                                "Cult Member": 2,
+                                "Cid Kagenou": 75,
+                                "Margaret": 23,
+                                "Epsilon (Shiron)": 6,
+                                "Epsilon": 18,
+                                "Goldy Gilded": 1,
+                                "Goldy (Goldy & Quinton (Goldy))": 1,
+                                "Quinton (Goldy & Quinton (Quinton))": 1,
+                                "Crowd": 2,
+                                "Aristocrat": 17,
+                                "Reina Oriana": 13,
+                                "Perv Asshat": 60,
+                                "Rose Oriana": 73,
+                                "Cid Kagenou (Shadow)": 20,
+                                "Civilian": 3,
+                                "Soldier": 2,
+                                "Mordred": 27,
+                                "Maid": 3,
+                                "Priest": 6,
+                                "Raphael Oriana": 33,
+                                "Aristocrats": 1
+                            }
+                        }
+                    }
+                },
+                "s2e12": {
+                    "line_count": 368,
+                    "word_count": 2566,
+                    "char_count": 13910,
+                    "characters": {
+                        "Mordred": 129,
+                        "Cid Kagenou (Shadow)": 62,
+                        "Nu": 3,
+                        "Alpha": 6,
+                        "Eta": 2,
+                        "Garden Members": 1,
+                        "Rose Oriana": 29,
+                        "Beta": 31,
+                        "Epsilon": 23,
+                        "Knight": 7,
+                        "Margaret": 8,
+                        "No. 664": 1,
+                        "No. 665": 1,
+                        "Knights": 1,
+                        "Victoria (No. 559)": 3,
+                        "Alexia Midgar": 1,
+                        "Yukime": 1,
+                        "Gamma": 1,
+                        "Beta (Beta & Epsilon (Beta))": 2,
+                        "Epsilon (Beta & Epsilon (Epsilon))": 2,
+                        "Akane Nishino": 24,
+                        "Kidnapper A": 21,
+                        "Kidnapper B": 21
+                    },
+                    "episodes": {
+                        "e12": {
+                            "word_count": 2566,
+                            "char_count": 13910,
+                            "line_count": 368,
+                            "characters": {
+                                "Mordred": 129,
+                                "Cid Kagenou (Shadow)": 62,
+                                "Nu": 3,
+                                "Alpha": 6,
+                                "Eta": 2,
+                                "Garden Members": 1,
+                                "Rose Oriana": 29,
+                                "Beta": 31,
+                                "Epsilon": 23,
+                                "Knight": 7,
+                                "Margaret": 8,
+                                "No. 664": 1,
+                                "No. 665": 1,
+                                "Knights": 1,
+                                "Victoria (No. 559)": 3,
+                                "Alexia Midgar": 1,
+                                "Yukime": 1,
+                                "Gamma": 1,
+                                "Beta (Beta & Epsilon (Beta))": 2,
+                                "Epsilon (Beta & Epsilon (Epsilon))": 2,
+                                "Akane Nishino": 24,
+                                "Kidnapper A": 21,
+                                "Kidnapper B": 21
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 const mg_info = {
     "line_count": apo_info["line_count"] + ssc_info["line_count"] + es_info["line_count"],
     "word_count": apo_info["word_count"] + ssc_info["word_count"] + es_info["word_count"],
@@ -8213,10 +10785,23 @@ for (const info of [apo_info, ssc_info, es_info]) {
     }
 }
 
+const all_an_info = {
+    "line_count": an_info["line_count"] + kj_info["line_count"],
+    "word_count": an_info["word_count"] + kj_info["word_count"],
+    "char_count": an_info["char_count"] + kj_info["char_count"],
+    characters: {},
+}
+
+for (const info of [an_info, kj_info]) {
+    for (const [character, count] of Object.entries(info.characters)) {
+        all_an_info.characters[character] = (all_an_info.characters[character] || 0) + count;
+    }
+}
+
 const all_info = {
-    "line_count": mg_info["line_count"] + ln_info["total"]["line_count"] + wn_info["total"]["line_count"],
-    "word_count": mg_info["word_count"] + ln_info["total"]["word_count"] + wn_info["total"]["word_count"],
-    "char_count": mg_info["char_count"] + ln_info["total"]["char_count"] + wn_info["total"]["char_count"],
+    "line_count": mg_info["line_count"] + ln_info["total"]["line_count"] + wn_info["total"]["line_count"] + all_an_info["line_count"],
+    "word_count": mg_info["word_count"] + ln_info["total"]["word_count"] + wn_info["total"]["word_count"] + all_an_info["word_count"],
+    "char_count": mg_info["char_count"] + ln_info["total"]["char_count"] + wn_info["total"]["char_count"] + all_an_info["char_count"],
 }
 
 
@@ -8528,6 +11113,134 @@ const generateCollapsiblesES = (all_counts) => {
     );
 };
 
+const generateCollapsiblesKJ = (all_counts) => {
+    const parts = Object.keys(all_counts.seasons); // Get all part keys
+    return (
+        <Collapsible trigger="Kage-Jitsu!">
+            <p>Seasons: {formatNumber(all_counts.season_count)}</p>
+            <p>Subtitles: {formatNumber(all_counts.line_count)}</p>
+            <p>Approximate Word Count: {formatNumber(all_counts.word_count)}</p>
+            <p>Character Count: {formatNumber(all_counts.char_count)}</p>
+            <Collapsible trigger="Characters">
+                {Object.keys(all_counts.characters).sort().map(character => (
+                    <div key={character}>
+                        <span>{character}: </span>
+                        <span>{all_counts.characters[character]}</span>
+                    </div>
+                ))}
+            </Collapsible>
+            {parts.map(part => (
+                <Collapsible key={part} trigger={
+                    <>
+                        <div className="volume-trigger">
+                            {kjCoverImages[part] && <img className="cover-image" src={kjCoverImages[part]} alt={`kj-${part}`} />}
+                            {kjMap[part]}
+                        </div>
+                    </>
+                }>
+                    <p>Episodes: {Object.keys(all_counts.seasons[part].episodes).length}</p>
+                    <p>Subtitles: {formatNumber(all_counts.seasons[part].line_count)}</p>
+                    <p>Approximate Word Count: {formatNumber(all_counts.seasons[part].word_count)}</p>
+                    <p>Character Count: {formatNumber(all_counts.seasons[part].char_count)}</p>
+                    <Collapsible trigger="Characters">
+                        {Object.keys(all_counts.seasons[part].characters).sort().map(character => (
+                            <div key={character}>
+                                <span>{character}: </span>
+                                <span>{all_counts.seasons[part].characters[character]}</span>
+                            </div>
+                        ))}
+                    </Collapsible>
+                    {Object.keys(all_counts.seasons[part].episodes).map(episode => (
+                        <Collapsible key={episode} trigger={
+                            <>
+                                <div className="volume-trigger">
+                                    {`Episode ${episode.replace("e", "")}`}
+                                </div>
+                            </>
+                        }>
+                            <p>Subtitles: {formatNumber(all_counts.seasons[part].episodes[episode].line_count)}</p>
+                            <p>Approximate Word Count: {formatNumber(all_counts.seasons[part].episodes[episode].word_count)}</p>
+                            <p>Character Count: {formatNumber(all_counts.seasons[part].episodes[episode].char_count)}</p>
+                            <Collapsible trigger="Characters">
+                                {Object.keys(all_counts.seasons[part].episodes[episode].characters).sort().map(character => (
+                                    <div key={character}>
+                                        <span>{character}: </span>
+                                        <span>{all_counts.seasons[part].episodes[episode].characters[character]}</span>
+                                    </div>
+                                ))}
+                            </Collapsible>
+                        </Collapsible>
+                    ))}
+                </Collapsible>
+            ))}
+        </Collapsible>
+    );
+};
+
+const generateCollapsiblesAN = (all_counts) => {
+    const parts = Object.keys(all_counts.seasons); // Get all part keys
+    return (
+        <Collapsible trigger="Seasons">
+            <p>Seasons: {formatNumber(all_counts.season_count)}</p>
+            <p>Subtitles: {formatNumber(all_counts.line_count)}</p>
+            <p>Approximate Word Count: {formatNumber(all_counts.word_count)}</p>
+            <p>Character Count: {formatNumber(all_counts.char_count)}</p>
+            <Collapsible trigger="Characters">
+                {Object.keys(all_counts.characters).sort().map(character => (
+                    <div key={character}>
+                        <span>{character}: </span>
+                        <span>{all_counts.characters[character]}</span>
+                    </div>
+                ))}
+            </Collapsible>
+            {parts.map(part => (
+                <Collapsible key={part} trigger={
+                    <>
+                        <div className="volume-trigger">
+                            {animeCoverImages[`${part}`] && <img className="cover-image" src={animeCoverImages[`${part}`]} alt={`an-${part}`} />}
+                            {`Season ${part}`}
+                        </div>
+                    </>
+                }>
+                    <p>Episodes: {Object.keys(all_counts.seasons[part].episodes).length}</p>
+                    <p>Subtitles: {formatNumber(all_counts.seasons[part].line_count)}</p>
+                    <p>Approximate Word Count: {formatNumber(all_counts.seasons[part].word_count)}</p>
+                    <p>Character Count: {formatNumber(all_counts.seasons[part].char_count)}</p>
+                    <Collapsible trigger="Characters">
+                        {Object.keys(all_counts.seasons[part].characters).sort().map(character => (
+                            <div key={character}>
+                                <span>{character}: </span>
+                                <span>{all_counts.seasons[part].characters[character]}</span>
+                            </div>
+                        ))}
+                    </Collapsible>
+                    {Object.keys(all_counts.seasons[part].episodes).map(episode => (
+                        <Collapsible key={episode} trigger={
+                            <>
+                                <div className="volume-trigger">
+                                    {`Episode ${episode.split("e")[1]}`}
+                                </div>
+                            </>
+                        }>
+                            <p>Subtitles: {formatNumber(all_counts.seasons[part].episodes[episode].line_count)}</p>
+                            <p>Approximate Word Count: {formatNumber(all_counts.seasons[part].episodes[episode].word_count)}</p>
+                            <p>Character Count: {formatNumber(all_counts.seasons[part].episodes[episode].char_count)}</p>
+                            <Collapsible trigger="Characters">
+                                {Object.keys(all_counts.seasons[part].episodes[episode].characters).sort().map(character => (
+                                    <div key={character}>
+                                        <span>{character}: </span>
+                                        <span>{all_counts.seasons[part].episodes[episode].characters[character]}</span>
+                                    </div>
+                                ))}
+                            </Collapsible>
+                        </Collapsible>
+                    ))}
+                </Collapsible>
+            ))}
+        </Collapsible>
+    );
+};
+
 
 
 function InfoPage() {
@@ -8545,6 +11258,22 @@ function InfoPage() {
                 {generateCollapsiblesWN(wn_info)}
                 <br />
                 <Collapsible trigger="Anime">
+                <p>Seasons: {formatNumber(4)}</p>
+                <p>Subtitles: {formatNumber(all_an_info.line_count)}</p>
+                    <p>Approximate Word Count: {formatNumber(all_an_info.word_count)}</p>
+                    <p>Character Count: {formatNumber(all_an_info.char_count)}</p>
+                    <Collapsible trigger="Characters">
+                        {Object.keys(all_an_info.characters).sort().map(character => (
+                            <div key={character}>
+                                <span>{character}: </span>
+                                <span>{all_an_info.characters[character]}</span>
+                            </div>
+                        ))}
+                    </Collapsible>
+                    <br />
+                {generateCollapsiblesAN(an_info)}
+                <br />
+                {generateCollapsiblesKJ(kj_info)}
                 </Collapsible>
                 <br />
                 <Collapsible trigger="Master of Garden">

@@ -136,7 +136,7 @@ function WNDropdownMenu({ wnDropdownState, updateWNDropdownState, openWN, setOpe
             {openWN && (
                 <div className="dropdown-menu">
                     <input type="text" value={wnFilter} onChange={handleFilterChange} placeholder="Search volumes..." />
-                    {wnFilteredVolumes.map((volume, index) => (
+                    {wnFilteredVolumes.sort().map((volume, index) => (
                         <div key={index}>
                             <div className="item-header">
                                 <div className="volume-trigger-drop">
@@ -159,24 +159,29 @@ function WNDropdownMenu({ wnDropdownState, updateWNDropdownState, openWN, setOpe
                                 <div>
                                     <input type="text" value={chapterFilters[volume] || ''} onChange={(event) => handleFilterChange(event, volume)} placeholder="Search chapters..." />
                                     <div className="chapter-list">
-                                        {Object.keys(volumesChecked[volume]).filter(chapter => chapter !== 'checked' && (!chapterFilters[volume] || chapter.toLowerCase().includes(chapterFilters[volume].toLowerCase()) || volumesChecked[volume][chapter].title.toLowerCase().includes(chapterFilters[volume].toLowerCase()))).map((chapter, index) => {
-                                            const chapterTitle = volumesChecked[volume][chapter].title;
-                                            return (
-                                                <div key={index} className="chapter-item">
-                                                    <div className="episode-name">
-                                                        <span className={volumesChecked[volume]?.[chapter]?.checked ? "chapter-checked" : "chapter-unchecked"}>
-                                                            <span style={{ color: 'red' }}>{chapter.split("c")[1]} </span>
-                                                            <span className="episode-text" title={chapterTitle}>| {chapterTitle}</span>
-                                                        </span>
+                                        {Object.keys(volumesChecked[volume]).filter(chapter => chapter !== 'checked' && (!chapterFilters[volume] || chapter.toLowerCase().includes(chapterFilters[volume].toLowerCase()) || volumesChecked[volume][chapter].title.toLowerCase().includes(chapterFilters[volume].toLowerCase()))).sort((a, b) => {
+                                            const chapterA = a.split("c")[1];
+                                            const chapterB = b.split("c")[1];
+                                            return chapterA - chapterB; // Otherwise, sort by part
+                                        })
+                                            .map((chapter, index) => {
+                                                const chapterTitle = volumesChecked[volume][chapter].title;
+                                                return (
+                                                    <div key={index} className="chapter-item">
+                                                        <div className="episode-name">
+                                                            <span className={volumesChecked[volume]?.[chapter]?.checked ? "chapter-checked" : "chapter-unchecked"}>
+                                                                <span style={{ color: 'red' }}>{chapter.split("c")[1]} </span>
+                                                                <span className="episode-text" title={chapterTitle}>| {chapterTitle}</span>
+                                                            </span>
+                                                        </div>
+                                                        <input
+                                                            type="checkbox"
+                                                            checked={!!volumesChecked[volume]?.[chapter]?.checked}
+                                                            onChange={() => handleChapterCheck(volume, chapter)}
+                                                        />
                                                     </div>
-                                                    <input
-                                                        type="checkbox"
-                                                        checked={!!volumesChecked[volume]?.[chapter]?.checked}
-                                                        onChange={() => handleChapterCheck(volume, chapter)}
-                                                    />
-                                                </div>
-                                            );
-                                        })}
+                                                );
+                                            })}
                                     </div>
                                 </div>
                             )}

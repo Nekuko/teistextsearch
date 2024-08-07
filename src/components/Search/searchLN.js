@@ -18,6 +18,7 @@ export function searchLN(keys, text, keywords, caseSensitive = false, exactMatch
     // Filter the sentences based on the keywords
     let filteredSentences = sentences.filter(sentenceObj => {
       // If case sensitivity is turned off, convert the sentence and keywords to lowercase
+      console.log(sentenceObj.text)
       let sentenceToCheck = caseSensitive ? sentenceObj.text : sentenceObj.text.toLowerCase();
       let allKeywordsFound = true;
       for (let keyword of keywords) {

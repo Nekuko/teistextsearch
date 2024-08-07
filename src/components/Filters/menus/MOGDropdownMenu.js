@@ -52,7 +52,6 @@ function MOGDropdownMenu({ mogDropdownState, setMogDropdownState, openMOG, setOp
     setMogDropdownState(prevState => {
       // Get all the parts from the previous state
       const { openParts, partsChecked } = prevState;
-      console.log(openParts)
 
       // Create a new object with all parts closed
       const newOpenParts = Object.keys(openParts).reduce((acc, key) => {

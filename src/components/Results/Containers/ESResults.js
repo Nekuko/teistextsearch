@@ -87,6 +87,8 @@ function ESResults({ anData, images, highlight, filterState, main }) {
     return null;
   }
 
+  const customOrder = Object.keys(ESMAP);
+
   function showPopup(seasonIndex, episodeIndex, sentenceIndex) {
     // Use a unique ID for each popup
     const popup = document.getElementById(`popup-${seasonIndex}-${episodeIndex}-${sentenceIndex}`);
@@ -100,7 +102,11 @@ function ESResults({ anData, images, highlight, filterState, main }) {
 
   return (
     <div className="anime-trigger">
-      {Object.entries(anData.seasons).map(([seasonKey, seasonValue]) => {
+      {Object.entries(anData.seasons).sort((a, b) => {
+                    const aIndex = customOrder.indexOf(a[0]);
+                    const bIndex = customOrder.indexOf(b[0]);
+                    return aIndex - bIndex;
+                }).map(([seasonKey, seasonValue]) => {
         // Get the season title from the mapping
         const seasonTitle = `${seasonKey}`;
         // Calculate the total count for each season
@@ -116,7 +122,12 @@ function ESResults({ anData, images, highlight, filterState, main }) {
                 </div>
               </>
             }>
-              {Object.entries(seasonValue.episodes).map(([episodeKey, episodeValue]) => {
+              {Object.entries(seasonValue.episodes).sort((a, b) => {
+                const episodeA = parseInt(a[0].split("e")[1], 10);
+                const episodeB = parseInt(b[0].split("e")[1], 10);
+                return episodeA - episodeB;
+              })
+                .map(([episodeKey, episodeValue]) => {
                 const sentencesPerPage = 15;
                 const uniqueChapterKey = `${seasonKey}-${episodeKey}`;
                 // Get the episode title from the mapping

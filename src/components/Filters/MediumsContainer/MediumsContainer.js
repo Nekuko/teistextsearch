@@ -31,6 +31,10 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
     }
   }, [mediumFlash, setMediumFlash]);
 
+  if (animeDropdownState.length === 0) {
+    return;
+  }
+
 
 
   const handleReset = () => {
@@ -385,15 +389,9 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
     updateWNDropdownState('volumesChecked', updatedVolumesChecked);
   };
 
-
-
-
-
-
-
-
-
-
+  if (!Object.keys(lnDropdownState).length || !Object.keys(mogDropdownState).length || !Object.keys(animeDropdownState).length || !Object.keys(wnDropdownState).length) {
+    return;
+  }
 
   return (
     <div className={`mediums-container ${mediumFlash ? 'flash-selected' : ''}`}>

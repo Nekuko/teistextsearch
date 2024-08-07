@@ -396,7 +396,6 @@ export async function fetchKJData(uniqueKJParts, uniqueKJPartsSeasons, versionDo
     return anCheckedData;
 }
 
-
 export async function fetchANData(anCheckedItems, versionData, setVersionData) {
     let anCheckedData = {};
     let allUniqueParts = [...new Set(anCheckedItems.map(item => `${item.split('_')[1]}_${item.split('_')[2]}`))];
@@ -476,5 +475,58 @@ export async function fetchANData(anCheckedItems, versionData, setVersionData) {
 
     return anCheckedData;
 }
+
+export async function fetchDropdowns(versionData, setVersionData) {
+    const db = await openDB('firestore-cache-db', 1, {
+        upgrade(db) {
+            db.createObjectStore('firestore-cache');
+        },
+    });
+
+    const versionDocRef = doc(firestore, 'data', 'versions');
+    let versionDocSnap;
+    if (versionData) {
+        console.log("Version already stored locally (not indexedb).");
+        versionDocSnap = versionData;
+    } else {
+        versionDocSnap = await getDoc(versionDocRef);
+        setVersionData(versionDocSnap);
+        console.log("Version retrieved from Firebase.");
+    }
+
+    let firestoreVersion = versionDocSnap.data().info["dropdowns"];
+    let indexedDBVersion = await db.get('firestore-cache', `data-versions-info-dropdowns`);
+
+    let data;
+    let versionUpdated = false; // Initialize the boolean flag
+
+    if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
+        console.log("Newer version found or no version in IndexedDB.");
+        const dataDocRef = doc(firestore, 'data', `dropdowns`);
+        let dataDocSnap = await getDoc(dataDocRef);
+        data = dataDocSnap.data();
+
+        // Store the data in IndexedDB for future use
+        await db.put('firestore-cache', data, `data-dropdowns`);
+        console.log("Data retrieved from Firebase and saved to IndexedDB.");
+        versionUpdated = true; // Set the flag to true
+    } else if (firestoreVersion === indexedDBVersion) {
+        console.log("Same version found.");
+        // Fetch data from IndexedDB
+        data = await db.get('firestore-cache', `data-dropdowns`);
+        console.log("Data retrieved from IndexedDB.");
+    }
+
+    console.log(data);
+
+    // Store the version number in IndexedDB for future use
+    if (firestoreVersion !== indexedDBVersion) {
+        await db.put('firestore-cache', firestoreVersion, `data-versions-info-dropdowns`);
+        console.log("New version saved to IndexedDB.");
+    }
+
+    return { data, versionUpdated }; // Return both data and the boolean flag
+}
+
 
 

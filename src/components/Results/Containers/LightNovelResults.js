@@ -22,7 +22,7 @@ function LightNovelResults({ lnData, volumeImages, highlight, filterState, lnDro
     });
     setCurrentPage(initialPages);
   }, [lnData]);
-  
+
 
 
   const iconRefs = useRef({});
@@ -89,7 +89,7 @@ function LightNovelResults({ lnData, volumeImages, highlight, filterState, lnDro
 
   return (
     <div className="anime-trigger">
-      {Object.entries(lnData.volumes).map(([volumeKey, volumeValue]) => {
+      {Object.entries(lnData.volumes).sort().map(([volumeKey, volumeValue]) => {
         // Get the volume title from lnDropdownState
         const volumeTitle = lnDropdownState.volumesChecked[`Volume ${volumeKey.slice(1)}`]?.title || `Volume ${volumeKey.slice(1)}`;
         // Calculate the total count for each volume
@@ -104,66 +104,71 @@ function LightNovelResults({ lnData, volumeImages, highlight, filterState, lnDro
               </div>
             </>
           } key={volumeKey}>
-            {Object.entries(volumeValue.chapters).map(([chapterKey, chapterValue]) => {
-              // Get the chapter title from lnDropdownState
-              const sentencesPerPage = 15;
-              const uniqueChapterKey = `${volumeKey}-${chapterKey}`;
-              const chapterName = lnDropdownState.volumesChecked[`Volume ${volumeKey.slice(1)}`][`${volumeKey}${chapterKey}`].title
+            {Object.entries(volumeValue.chapters).sort((a, b) => {
+              const chapterA = a[0].split("c")[1];
+              const chapterB = b[0].split("c")[1];
+              return chapterA - chapterB; // Otherwise, sort by part
+            })
+              .map(([chapterKey, chapterValue]) => {
+                // Get the chapter title from lnDropdownState
+                const sentencesPerPage = 15;
+                const uniqueChapterKey = `${volumeKey}-${chapterKey}`;
+                const chapterName = lnDropdownState.volumesChecked[`Volume ${volumeKey.slice(1)}`][`${volumeKey}${chapterKey}`].title
 
-              const chapterTitle = `${titleMapping[chapterName.split("|")[0]]} | ${chapterName.split("|")[1]}` || `Chapter ${chapterKey.slice(1)}`;
-              return (
-                <Collapsible trigger={`${chapterTitle} (Total: ${chapterValue.count})`} key={chapterKey}>
-                  <div className="sentences-container">
-                    {chapterValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentenceObj, index) => (
-                      <div className="sentence-box" key={index}>
-                        <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentenceObj.text) : sentenceObj.text }} />
-                        <div className="icon-container">
-                          <CopyToClipboard text={sentenceObj.text}>
-                            <div className="copy-icon" onClick={() => showPopup(volumeKey, chapterKey, index)}>
-                              <FontAwesomeIcon icon={faCopy} />
-                              {/* Ensure the ID is unique for each popup */}
-                              <div className="popup" id={`popup-${volumeKey}-${chapterKey}-${index}`}>
-                                Copied!
+                const chapterTitle = `${titleMapping[chapterName.split("|")[0]]} | ${chapterName.split("|")[1]}` || `Chapter ${chapterKey.slice(1)}`;
+                return (
+                  <Collapsible trigger={`${chapterTitle} (Total: ${chapterValue.count})`} key={chapterKey}>
+                    <div className="sentences-container">
+                      {chapterValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentenceObj, index) => (
+                        <div className="sentence-box" key={index}>
+                          <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentenceObj.text) : sentenceObj.text }} />
+                          <div className="icon-container">
+                            <CopyToClipboard text={sentenceObj.text}>
+                              <div className="copy-icon" onClick={() => showPopup(volumeKey, chapterKey, index)}>
+                                <FontAwesomeIcon icon={faCopy} />
+                                {/* Ensure the ID is unique for each popup */}
+                                <div className="popup" id={`popup-${volumeKey}-${chapterKey}-${index}`}>
+                                  Copied!
+                                </div>
                               </div>
+                            </CopyToClipboard>
+                            <SlashLine className="icon-slashline" />
+                            <div className="info-icon-container"
+                              onMouseEnter={() => handleMouseEnterInfo(volumeKey, chapterKey, index,
+                                chapterTitle, sentenceObj.line)}
+                              onMouseLeave={() => setPreviewText(null)}
+                              ref={ref => iconRefs.current[`${volumeKey}-${chapterKey}-${index}-info`] = ref}
+                            >
+                              {sentenceObj.text && (
+                                <FontAwesomeIcon className="info-icon" icon={faCircleInfo} />
+                              )}
                             </div>
-                          </CopyToClipboard>
-                          <SlashLine className="icon-slashline" />
-                          <div className="info-icon-container"
-                            onMouseEnter={() => handleMouseEnterInfo(volumeKey, chapterKey, index,
-                              chapterTitle, sentenceObj.line)}
-                            onMouseLeave={() => setPreviewText(null)}
-                            ref={ref => iconRefs.current[`${volumeKey}-${chapterKey}-${index}-info`] = ref}
-                          >
-                            {sentenceObj.text && (
-                              <FontAwesomeIcon className="info-icon" icon={faCircleInfo} />
-                            )}
                           </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
 
-                    {chapterValue.sentences.length > sentencesPerPage && (
-                      <div className="pagination-controls">
-                        <button title={`Page 1`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: 1 }))}>
-                          <FontAwesomeIcon icon={faAnglesLeft} />
-                        </button>
-                        <button title={`Page ${Math.max(currentPage[uniqueChapterKey] - 1, 1)}`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.max((oldPages[uniqueChapterKey] || 1) - 1, 1) }))}>
-                          <FontAwesomeIcon icon={faAngleLeft} />
-                        </button>
-                        <input type="number" min="1" max={Math.ceil(chapterValue.sentences.length / sentencesPerPage)} value={currentPage[uniqueChapterKey] || 1} onChange={e => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min(Math.max(Number(e.target.value), 1), Math.ceil(chapterValue.sentences.length / sentencesPerPage)) }))} />
-                        <button title={`Page ${Math.min(currentPage[uniqueChapterKey] + 1, Math.ceil(chapterValue.sentences.length / sentencesPerPage))}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(chapterValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min((oldPages[uniqueChapterKey] || 1) + 1, Math.ceil(chapterValue.sentences.length / sentencesPerPage)) }))}>
-                          <FontAwesomeIcon icon={faAngleRight} />
-                        </button>
-                        <button title={`Page ${Math.ceil(chapterValue.sentences.length / sentencesPerPage)}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(chapterValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.ceil(chapterValue.sentences.length / sentencesPerPage) }))}>
-                          <FontAwesomeIcon icon={faAnglesRight} />
-                        </button>
-                      </div>
-                    )}
+                      {chapterValue.sentences.length > sentencesPerPage && (
+                        <div className="pagination-controls">
+                          <button title={`Page 1`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: 1 }))}>
+                            <FontAwesomeIcon icon={faAnglesLeft} />
+                          </button>
+                          <button title={`Page ${Math.max(currentPage[uniqueChapterKey] - 1, 1)}`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.max((oldPages[uniqueChapterKey] || 1) - 1, 1) }))}>
+                            <FontAwesomeIcon icon={faAngleLeft} />
+                          </button>
+                          <input type="number" min="1" max={Math.ceil(chapterValue.sentences.length / sentencesPerPage)} value={currentPage[uniqueChapterKey] || 1} onChange={e => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min(Math.max(Number(e.target.value), 1), Math.ceil(chapterValue.sentences.length / sentencesPerPage)) }))} />
+                          <button title={`Page ${Math.min(currentPage[uniqueChapterKey] + 1, Math.ceil(chapterValue.sentences.length / sentencesPerPage))}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(chapterValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min((oldPages[uniqueChapterKey] || 1) + 1, Math.ceil(chapterValue.sentences.length / sentencesPerPage)) }))}>
+                            <FontAwesomeIcon icon={faAngleRight} />
+                          </button>
+                          <button title={`Page ${Math.ceil(chapterValue.sentences.length / sentencesPerPage)}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(chapterValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.ceil(chapterValue.sentences.length / sentencesPerPage) }))}>
+                            <FontAwesomeIcon icon={faAnglesRight} />
+                          </button>
+                        </div>
+                      )}
 
-                  </div>
-                </Collapsible>
-              );
-            })}
+                    </div>
+                  </Collapsible>
+                );
+              })}
           </Collapsible>
         );
       })}

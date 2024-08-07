@@ -32,6 +32,7 @@ function Filters({
   keywordsFlash,
   setKeywordsFlash
 }) {
+  
   return (
     <div>
       <h1 className="filters-header">FILTERS</h1>

@@ -43,10 +43,10 @@ function Header() {
             <SlashLine className="nav-separator" />
             <li className='desktop-nav-li'>
               <NavLink
-                to="/change"
+                to="/settings"
                 className={({ isActive }) => (isActive ? 'active-link' : '')}
               >
-                DISCORD
+                SETTINGS
               </NavLink>
             </li>
           </ul>
@@ -80,10 +80,10 @@ function Header() {
               </li>
               <li className='mobile-nav-li'>
                 <NavLink
-                  to="/change"
+                  to="/settings"
                   className={({ isActive }) => (isActive ? 'active-link' : '')}
                 >
-                  DISCORD
+                  SETTINGS
                 </NavLink>
               </li>
             </ul>

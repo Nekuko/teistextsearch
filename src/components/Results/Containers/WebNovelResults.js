@@ -84,7 +84,12 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
               </div>
             </>
           } key={volumeKey}>
-            {Object.entries(volumeValue.chapters).map(([chapterKey, chapterValue]) => {
+            {Object.entries(volumeValue.chapters).sort((a, b) => {
+              const chapterA = a[0].split("c")[1];
+              const chapterB = b[0].split("c")[1];
+              return chapterA - chapterB; // Otherwise, sort by part
+            })
+              .map(([chapterKey, chapterValue]) => {
 
               const sentencesPerPage = 15;
               const uniqueChapterKey = `${volumeKey}-${chapterKey}`;
