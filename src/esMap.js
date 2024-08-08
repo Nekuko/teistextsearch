@@ -19,7 +19,8 @@ export const ESMAP = {
     "tghms": "Trash-Game Hunter Meets Shadow",
     "hd2": "HIGHEST DREAM II",
     "tpis": "The Producer in Shadow!",
-    "ssitw": "Stranded! Summer in the Wild?!"
+    "ssitw": "Stranded! Summer in the Wild?!",
+    "adswy": "A Dreamy Summer with You"
 };
 
 const ESMAPREVERSE = {};

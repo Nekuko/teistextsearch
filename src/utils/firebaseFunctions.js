@@ -528,5 +528,24 @@ export async function fetchDropdowns(versionData, setVersionData) {
     return { data, versionUpdated }; // Return both data and the boolean flag
 }
 
+export async function fetchVersionData(versionData) {
+    const db = await openDB('firestore-cache-db', 1, {
+        upgrade(db) {
+            db.createObjectStore('firestore-cache');
+        },
+    });
+
+    const versionDocRef = doc(firestore, 'data', 'versions');
+    let versionDocSnap;
+    if (versionData) {
+        console.log("Version already stored locally (not indexedb).");
+        versionDocSnap = versionData;
+    } else {
+        versionDocSnap = (await getDoc(versionDocRef)).data();
+        console.log("Version retrieved from firebase.");
+    }
+
+    return versionDocSnap;
+}
 
 

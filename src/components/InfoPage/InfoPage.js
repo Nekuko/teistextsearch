@@ -65,7 +65,8 @@ const esCoverImages = {
     "es-tghms": covers.ESTGHMSCover,
     "es-hd2": covers.ESHD2Cover,
     "es-tpis": covers.ESTPISCover,
-    "es-ssitw": covers.ESSSITWCover
+    "es-ssitw": covers.ESSSITWCover,
+    'es-adswy': covers.ESADSWYCover
 }
 
 const sscCoverImages = {
@@ -2221,10 +2222,10 @@ const apo_info = {
 }
 
 const es_info = {
-    "stories": 21,
-    "line_count": 9344,
-    "word_count": 104198,
-    "char_count": 580689,
+    "stories": 22,
+    "line_count": 9707,
+    "word_count": 109081,
+    "char_count": 606479,
     "characters": {
         "Alexia Midgar (Alexia)": 489,
         "Committee Member": 3,
@@ -2232,7 +2233,7 @@ const es_info = {
         "Committee Person": 5,
         "Po Tato (Po)": 19,
         "Skel Etal (Skel)": 36,
-        "Cid Kagenou (Cid)": 1059,
+        "Cid Kagenou (Cid)": 1215,
         "None": 527,
         "Alexia Midgar (????? (Alexia Midgar))": 1,
         "Rose Oriana (Rose)": 141,
@@ -2311,7 +2312,7 @@ const es_info = {
         "Margrave": 12,
         "Customer (??? (Customer))": 1,
         "Customer": 4,
-        "Staff": 15,
+        "Staff": 18,
         "King (??? (King))": 1,
         "King": 39,
         "Alexia Midgar (??? (Alexia Midgar))": 2,
@@ -2371,7 +2372,7 @@ const es_info = {
         "Disciple": 4,
         "Junior": 8,
         "Noblewoman": 12,
-        "Aurora": 14,
+        "Aurora": 100,
         "Maximilian": 27,
         "Aurora (??? (Aurora))": 2,
         "Omega": 43,
@@ -2402,7 +2403,15 @@ const es_info = {
         "Beta (??? (Natsume))": 1,
         "Beta (Natsume)": 13,
         "Male Student A": 2,
-        "Female Student A": 2
+        "Female Student A": 2,
+        "Elisabeth": 92,
+        "Deceased Man": 2,
+        "Deceased Elderly": 5,
+        "Deceased Child": 5,
+        "Deceased Woman": 13,
+        "Cid Kagenou (3 People (Cid))": 1,
+        "Aurora (3 People (Aurora))": 1,
+        "Elisabeth (3 People (Elisabeth))": 1
     },
     "parts": {
         "hr": {
@@ -4919,6 +4928,105 @@ const es_info = {
                         "Alpha": 10,
                         "Cid Kagenou (Cid)": 29,
                         "Beta": 10
+                    }
+                }
+            }
+        },
+        "adswy": {
+            "line_count": 363,
+            "word_count": 4883,
+            "char_count": 25790,
+            "characters": {
+                "Cid Kagenou (Cid)": 156,
+                "Elisabeth": 92,
+                "Aurora": 86,
+                "Deceased Man": 2,
+                "Deceased Elderly": 5,
+                "Deceased Child": 5,
+                "Deceased Woman": 13,
+                "Staff": 3,
+                "Cid Kagenou (3 People (Cid))": 1,
+                "Aurora (3 People (Aurora))": 1,
+                "Elisabeth (3 People (Elisabeth))": 1
+            },
+            "episodes": {
+                "e1": {
+                    "word_count": 490,
+                    "char_count": 2658,
+                    "line_count": 44,
+                    "characters": {
+                        "Cid Kagenou (Cid)": 26,
+                        "Elisabeth": 15,
+                        "Aurora": 3
+                    }
+                },
+                "e2": {
+                    "word_count": 716,
+                    "char_count": 3871,
+                    "line_count": 53,
+                    "characters": {
+                        "Cid Kagenou (Cid)": 28,
+                        "Elisabeth": 8,
+                        "Aurora": 17
+                    }
+                },
+                "e3": {
+                    "word_count": 1040,
+                    "char_count": 5421,
+                    "line_count": 72,
+                    "characters": {
+                        "Aurora": 17,
+                        "Cid Kagenou (Cid)": 33,
+                        "Elisabeth": 20,
+                        "Deceased Man": 2
+                    }
+                },
+                "e4": {
+                    "word_count": 630,
+                    "char_count": 3339,
+                    "line_count": 52,
+                    "characters": {
+                        "Aurora": 14,
+                        "Elisabeth": 16,
+                        "Cid Kagenou (Cid)": 22
+                    }
+                },
+                "e5": {
+                    "word_count": 695,
+                    "char_count": 3633,
+                    "line_count": 42,
+                    "characters": {
+                        "Elisabeth": 13,
+                        "Aurora": 16,
+                        "Cid Kagenou (Cid)": 13
+                    }
+                },
+                "e6": {
+                    "word_count": 706,
+                    "char_count": 3638,
+                    "line_count": 47,
+                    "characters": {
+                        "Elisabeth": 6,
+                        "Deceased Elderly": 5,
+                        "Aurora": 8,
+                        "Deceased Child": 5,
+                        "Cid Kagenou (Cid)": 15,
+                        "Deceased Woman": 8
+                    }
+                },
+                "e7": {
+                    "word_count": 606,
+                    "char_count": 3230,
+                    "line_count": 53,
+                    "characters": {
+                        "Cid Kagenou (Cid)": 19,
+                        "Deceased Woman": 5,
+                        "Aurora": 11,
+                        "Elisabeth": 14,
+                        "Staff": 3,
+                        "Cid Kagenou (3 People (Cid))": 1,
+                        "Aurora (3 People (Aurora))": 1,
+                        "Elisabeth (3 People (Elisabeth))": 1
                     }
                 }
             }

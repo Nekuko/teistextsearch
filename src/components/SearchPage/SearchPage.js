@@ -14,12 +14,13 @@ import * as covers from '../../images/covers';
 import { fetchLNData, fetchWNData, fetchAPOData, fetchESData, fetchSSCData, fetchANData, fetchDropdowns } from '../../utils/firebaseFunctions';
 import { VERSIONS } from '../../versions';
 import { ESMAPREVERSE } from '../../esMap';
+import { faGaugeSimpleMed } from '@fortawesome/free-solid-svg-icons';
 
 
 function SearchPage() {
+    const [versionData, setVersionData] = useState(false);
     const [mediumFlash, setMediumFlash] = useState(false);
     const [keywordsFlash, setKeywordsFlash] = useState(false);
-    const [versionData, setVersionData] = useState(null);
     const [dropdowns, setDropdowns] = useState();
     const [fetchCount, setFetchCount] = useState(0);
 
@@ -284,7 +285,8 @@ function SearchPage() {
             "tghms": covers.ESTGHMSCover,
             "hd2": covers.ESHD2Cover,
             "tpis": covers.ESTPISCover,
-            "ssitw": covers.ESSSITWCover
+            "ssitw": covers.ESSSITWCover,
+            "adswy": covers.ESADSWYCover
         },
         "apoCoverImages": {
             "Apocrypha": covers.APOCover,
@@ -528,6 +530,7 @@ function SearchPage() {
                             "Cid & Sunraku (Cid)": false,
                             "John Smith & Yukime (John Smith)": false,
                             "Sunraku & Shadow (Shadow)": false,
+                            "3 People (Cid)": false,
                             "Nuru": false,
                             "??? (Nuru)": false,
                             "checked": false,
@@ -892,6 +895,7 @@ function SearchPage() {
                         "Aurora": {
                             "Aurora": false,
                             "??? (Aurora)": false,
+                            "3 People (Aurora)": false,
                             "checked": false,
                             "open": false
                         },
@@ -950,6 +954,9 @@ function SearchPage() {
                                     "checked": false,
                                 },
                                 "Elisabeth": {
+                                    "Elisabeth": false,
+                                    "3 People (Elisabeth)": false,
+                                    "open": false,
                                     "checked": false,
                                 },
                                 "Juggernaut": {
@@ -1224,6 +1231,18 @@ function SearchPage() {
                                     "checked": false,
                                 },
                                 "Coworker": {
+                                    "checked": false,
+                                },
+                                "Deceased Child": {
+                                    "checked": false,
+                                },
+                                "Deceased Elderly": {
+                                    "checked": false,
+                                },
+                                "Deceased Man": {
+                                    "checked": false,
+                                },
+                                "Deceased Woman": {
                                     "checked": false,
                                 },
                                 "Disciple": {
@@ -1813,7 +1832,7 @@ function SearchPage() {
 
     const nameMap = {
         'Cid Kagenou (All)': ['Cid', 'Cid Kagenou', 'John Smith', 'Mundane Mann', 'Minoru Kageno', 'Shadow', 'Stylish Ruffian Slayer', '??? (Stylish Bandit Slayer)', '??? (Cid Kagenou)',
-            '??? (Minoru Kageno)', 'Minoru Kageno', 'Nuru', '??? (Nuru)', 'Sunraku & Shadow (Shadow)', 'Cid & Sunraku (Cid)', 'John Smith & Yukime (John Smith)'
+            '??? (Minoru Kageno)', 'Minoru Kageno', 'Nuru', '??? (Nuru)', 'Sunraku & Shadow (Shadow)', 'Cid & Sunraku (Cid)', 'John Smith & Yukime (John Smith)', '3 People (Cid)'
         ],
         'Cid Kagenou': ['Cid Kagenou', 'Cid', '??? (Cid Kagenou)'],
         '??? (Shadow)': ['???? (Shadow)'],
@@ -1872,8 +1891,9 @@ function SearchPage() {
         'Pente': ['Pente', 'Epsilon Look-alike'],
         'Freya (All)': ['Freya', '??? (Freya)'],
         'Freya': ['Freya', '??? (Freya)'],
-        'Aurora (All)': ['Aurora', '??? (Aurora)'],
+        'Aurora (All)': ['Aurora', '??? (Aurora)', '3 People (Aurora)'],
         'Aurora': ['Aurora', '??? (Aurora)'],
+        'Elisabeth (All)': ['Elisabeth', '3 People (Elisabeth)'],
         'Nanigashi (All)': ['Nanigashi', '??? (Nanigashi)'],
         'Nanigashi': ['Nanigashi', '??? (Nanigashi)'],
         'Victoria (All)': ['Victoria', 'No. 559', '??? (Victoria)'],
@@ -2097,8 +2117,6 @@ function SearchPage() {
         let apoCheckedData;
         let sscCheckedData;
         let esCheckedData;
-
-        console.log(animeCheckedItems)
 
         if (animeCheckedItems.length > 0) {
             anCheckedData = await fetchANData(animeCheckedItems, versionData, setVersionData);

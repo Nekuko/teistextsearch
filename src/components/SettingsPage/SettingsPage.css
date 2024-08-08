@@ -1,16 +1,31 @@
-/* ChangePage.css */
-.change-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: red;
-  }
-  
-  .change-content {
-    width: 50%;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
+.settings-page {
+  padding: 20px;
+  color: white;
+}
+
+.settings-content {
+  max-height: 400px; /* Adjust the height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+  padding: 10px;
+}
+
+.settings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.settings-table th, .settings-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.settings-table th {
+  background-color: #f2f2f2;
+}
+
+.red-text {
+  color: #c8000f;
+  /* Add any other styling properties you need */
+}
