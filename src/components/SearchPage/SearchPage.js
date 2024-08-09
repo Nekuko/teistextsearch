@@ -11,47 +11,79 @@ import { searchWN } from '../Search/searchWN';
 import { searchAPO } from '../Search/searchAPO';
 import * as characterCovers from '../../images/characterIcons';
 import * as covers from '../../images/covers';
-import { fetchLNData, fetchWNData, fetchAPOData, fetchESData, fetchSSCData, fetchANData, fetchDropdowns } from '../../utils/firebaseFunctions';
+import { fetchLNData, fetchWNData, fetchAPOData, fetchESData, fetchSSCData, fetchANData, fetchDropdowns, fetchVersionData } from '../../utils/firebaseFunctions';
 import { VERSIONS } from '../../versions';
 import { ESMAPREVERSE } from '../../esMap';
 import { faGaugeSimpleMed } from '@fortawesome/free-solid-svg-icons';
 
 
 function SearchPage() {
-    const [versionData, setVersionData] = useState(false);
+    const [versionData, setVersionData] = useState();
     const [mediumFlash, setMediumFlash] = useState(false);
     const [keywordsFlash, setKeywordsFlash] = useState(false);
     const [dropdowns, setDropdowns] = useState();
-    const [fetchCount, setFetchCount] = useState(0);
+    const [loading, setLoading] = useState(true);
+    const [resultsText, setResultsText] = useState('');
 
-    async function fetchAllDropdowns() {
-        if (fetchCount > 0) {
-            return; // If fetchCount is greater than 0, return early
-        }
-        setFetchCount(fetchCount + 1);
-    
-        try {
-            let dropdownData = await fetchDropdowns(versionData, setVersionData);
-            setDropdowns(dropdownData.data);
-            if (dropdownData.versionUpdated) {
-                // Update dropdown states based on the data
-                setAnimeDropdownState(dropdownData.data["anime"]);
-                setMogDropdownState(dropdownData.data["mog"]);
-                setLNDropdownState(dropdownData.data["ln"]);
-                setWNDropdownState(dropdownData.data["wn"]);
-    
-                // Save data to sessionStorage
+    useEffect(() => {
+        async function fetchData() {
+            try {
+                let versionDataTemp;
+                const storedVersionData = sessionStorage.getItem('versionData');
+                if (storedVersionData) {
+                    const parsedData = JSON.parse(storedVersionData);
+                    const currentTime = Date.now();
+                    const expirationTime = 5 * 60 * 1000; // Set expiration to 5 minutes
+
+                    if (parsedData.timestamp && currentTime - parsedData.timestamp < expirationTime) {
+                        // Data is still valid, use it
+                        setVersionData(parsedData.data);
+                        versionDataTemp = parsedData.data;
+                    } else {
+                        // Fetch new data
+                        const data = await fetchVersionData(versionData);
+                        versionDataTemp = data;
+                        setVersionData(data);
+                        sessionStorage.setItem('versionData', JSON.stringify({ data, timestamp: currentTime }));
+                    }
+                } else {
+                    // Fetch data if not found in session storage
+                    const data = await fetchVersionData(versionData);
+                    versionDataTemp = data;
+                    setVersionData(data);
+                    sessionStorage.setItem('versionData', JSON.stringify({ data, timestamp: Date.now() }));
+                }
+
+                // Fetch dropdown data
+                let dropdownData = await fetchDropdowns(versionDataTemp, setVersionData);
+                if (dropdownData.versionUpdated && dropdownData !== undefined) {
+                    // Update dropdown states based on the data
+                    setAnimeDropdownState(dropdownData.data["anime"]);
+                    setMogDropdownState(dropdownData.data["mog"]);
+                    setLNDropdownState(dropdownData.data["ln"]);
+                    setWNDropdownState(dropdownData.data["wn"]);
+
+                    // Save data to sessionStorage
+                    sessionStorage.setItem("animeDropdown", JSON.stringify(dropdownData.data["anime"]));
+                    sessionStorage.setItem("lnDropdown", JSON.stringify(dropdownData.data["ln"]));
+                    sessionStorage.setItem("mogDropdown", JSON.stringify(dropdownData.data["mog"]));
+                    sessionStorage.setItem("wnDropdown", JSON.stringify(dropdownData.data["wn"]));
+                }
+                setDropdowns(dropdownData.data);
                 sessionStorage.setItem("animeDropdown", JSON.stringify(dropdownData.data["anime"]));
                 sessionStorage.setItem("lnDropdown", JSON.stringify(dropdownData.data["ln"]));
                 sessionStorage.setItem("mogDropdown", JSON.stringify(dropdownData.data["mog"]));
                 sessionStorage.setItem("wnDropdown", JSON.stringify(dropdownData.data["wn"]));
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            } finally {
+                setLoading(false);
             }
-            
-        } catch (error) {
-            console.error("Error fetching dropdown data:", error);
-            // Handle any errors that might occur during the asynchronous operations
         }
-    }
+
+        fetchData();
+    }, []);
+
 
     const [animeDropdownState, setAnimeDropdownState] = useState(() => {
         const savedState = sessionStorage.getItem('animeDropdown');
@@ -59,7 +91,6 @@ function SearchPage() {
             const parsedState = JSON.parse(savedState);
             return parsedState;
         }
-
         return {}
     });
 
@@ -76,7 +107,7 @@ function SearchPage() {
 
         return {}
     });
-    
+
     useEffect(() => {
         sessionStorage.setItem('lnDropdown', JSON.stringify(lnDropdownState));
     }, [lnDropdownState]);
@@ -107,7 +138,7 @@ function SearchPage() {
     useEffect(() => {
         sessionStorage.setItem('mogDropdown', JSON.stringify(mogDropdownState));
     }, [mogDropdownState]);
-    
+
 
     const [filterState, setFilterState] = useState(() => {
         // Try to get the state from sessionStorage
@@ -2119,27 +2150,27 @@ function SearchPage() {
         let esCheckedData;
 
         if (animeCheckedItems.length > 0) {
-            anCheckedData = await fetchANData(animeCheckedItems, versionData, setVersionData);
+            anCheckedData = await fetchANData(animeCheckedItems, versionData, setVersionData, setResultsText);
         }
 
         if (lnCheckedItems.length > 0) {
-            lnCheckedData = await fetchLNData(lnCheckedItems, versionData, setVersionData);
+            lnCheckedData = await fetchLNData(lnCheckedItems, versionData, setVersionData, setResultsText);
         }
 
         if (wnCheckedItems.length > 0) {
-            wnCheckedData = await fetchWNData(wnCheckedItems, versionData, setVersionData);
+            wnCheckedData = await fetchWNData(wnCheckedItems, versionData, setVersionData, setResultsText);
         }
 
         if (esCheckedItems.length > 0) {
-            esCheckedData = await fetchESData(esCheckedItems, versionData, setVersionData);
+            esCheckedData = await fetchESData(esCheckedItems, versionData, setVersionData, setResultsText);
         }
 
         if (apoCheckedItems.length > 0) {
-            apoCheckedData = await fetchAPOData(apoCheckedItems, versionData, setVersionData);
+            apoCheckedData = await fetchAPOData(apoCheckedItems, versionData, setVersionData, setResultsText);
         }
 
         if (sscCheckedItems.length > 0) {
-            sscCheckedData = await fetchSSCData(sscCheckedItems, versionData, setVersionData);
+            sscCheckedData = await fetchSSCData(sscCheckedItems, versionData, setVersionData, setResultsText);
         }
 
 
@@ -2173,15 +2204,15 @@ function SearchPage() {
         }
 
         if (resultsKeyString === "1") {
-            setResultsKey(1);
+            setResultsText('No Keywords Selected.')
 
         } else if (resultsKeyString === "2") {
-            setResultsKey(2);
+            setResultsText('No Mediums Selected.')
 
         } else if (resultsKeyString === "12") {
-            setResultsKey(3);
+            setResultsText('No Mediums or Keywords Selected.')
         } else {
-            setResultsKey(0);
+            setResultsText('No Results.')
         }
 
         if (Object.keys(lnText.ln).length === 0 &&
@@ -2206,14 +2237,9 @@ function SearchPage() {
         }
     }
 
-    useEffect(() => {
-        fetchAllDropdowns();
-    }, [dropdowns]);
-
-    if (dropdowns === undefined) {
-        return;
+    if (loading) {
+        return <div>Loading...</div>; // Display a loading message or spinner
     }
-
 
     // Add a button in your JSX to trigger the search
     return (
@@ -2245,6 +2271,8 @@ function SearchPage() {
                 setKeywordsFlash={setKeywordsFlash}
             />
             <Results
+                resultsText={resultsText}
+                setResultsText={setResultsText}
                 setSearchResults={setSearchResults}
                 wnDropdownState={wnDropdownState}
                 lnDropdownState={lnDropdownState}

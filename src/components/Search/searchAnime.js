@@ -116,16 +116,7 @@ export function searchAnime(keys, text, keywords, nameMap, characters = [], case
       }
     }
 
-    // Log the progress
-    console.log(`Progress: ${((i + 1) / keys.length * 100).toFixed(2)}%`);
   }
-
-  // Log the total number of matches
-  console.log(`Total matches: ${totalMatches}`);
-
-  // Convert the results to a JSON string
-  let jsonResults = JSON.stringify(results);
-  //console.log(jsonResults)
 
   return results;
 }

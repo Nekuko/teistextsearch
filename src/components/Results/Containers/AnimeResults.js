@@ -30,8 +30,45 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
     setCurrentPage(initialPages);
   }, [anData]);
 
+  const [sentencesPerPage, setSentencesPerPage] = useState(() => {
+    const savedState = sessionStorage.getItem('sentencesPerPage');
+    if (savedState) {
+      const parsedState = JSON.parse(savedState);
+      return parsedState;
+    }
+    return 15;
+  });
+
+  useEffect(() => {
+    sessionStorage.setItem('sentencesPerPage', JSON.stringify(sentencesPerPage));
+  }, [sentencesPerPage]);
+
+  function doSentencesPerPage(inputValue) {
+    let value = parseInt(inputValue);
+    if (!isNaN(value) && value > 0) {
+      // Update the global variable sentencesPerPage
+      setSentencesPerPage(value);
+    } else {
+      value = 15;
+      setSentencesPerPage(15);
+    }
+    let newCurrentPages = { ...currentPage };
+    Object.keys(anData.seasons).forEach(seasonKey => {
+      Object.keys(anData.seasons[seasonKey].episodes).forEach(episodeKey => {
+        // Create a unique key for each chapter
+        const uniqueChapterKey = `${seasonKey}-${episodeKey}`;
+        const len = anData.seasons[seasonKey].episodes[episodeKey].sentences.length
+        if (currentPage[uniqueChapterKey] > Math.ceil(len / value)) {
+          newCurrentPages[uniqueChapterKey] = Math.ceil(len / value)
+        }
+      });
+    });
+    setCurrentPage(newCurrentPages);
+  }
+  
   const characterImages = images.characterImages;
   const coverImages = images.animeCoverImages;
+  const customOrder = ["s1", "s2", "s101", "s102"];
 
   function handleMouseEnterInfo(seasonKey, episodeKey, index, seasonTitle, episodeTitle, start_time, end_time, name, name_variant, line) {
     let nameFinal;
@@ -83,6 +120,7 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
     }
   }
 
+ 
 
   if (Object.keys(anData.seasons).length === 0) {
     return null;
@@ -101,7 +139,11 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
 
   return (
     <div className="anime-trigger">
-      {Object.entries(anData.seasons).map(([seasonKey, seasonValue]) => {
+      {Object.entries(anData.seasons).sort((a, b) => {
+        const aIndex = customOrder.indexOf(a[0]);
+        const bIndex = customOrder.indexOf(b[0]);
+        return aIndex - bIndex;
+      }).map(([seasonKey, seasonValue]) => {
         // Get the season title from the mapping
         let mapKey = seasonKey.replace("s", "Season ");
         let seasonTitle = partsChecked[mapKey]?.title || `Season ${seasonKey.slice(1)}`;
@@ -131,9 +173,7 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
                 return episodeA - episodeB;
               })
                 .map(([episodeKey, episodeValue]) => {
-                  const sentencesPerPage = 15;
                   const uniqueChapterKey = `${seasonKey}-${episodeKey}`;
-
                   // Get the episode title from the mapping
                   const episodeTitle = partsChecked[mapKey][`${seasonKey}${episodeKey}`].title || `Episode ${episodeKey.slice(1)}`;
                   return (
@@ -192,21 +232,31 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
                         ))}
                       </div>
                       {
-                        episodeValue.sentences.length > sentencesPerPage && (
-                          <div className="pagination-controls">
-                            <button title={`Page 1`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: 1 }))}>
-                              <FontAwesomeIcon icon={faAnglesLeft} />
-                            </button>
-                            <button title={`Page ${Math.max(currentPage[uniqueChapterKey] - 1, 1)}`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.max((oldPages[uniqueChapterKey] || 1) - 1, 1) }))}>
-                              <FontAwesomeIcon icon={faAngleLeft} />
-                            </button>
-                            <input type="number" min="1" max={Math.ceil(episodeValue.sentences.length / sentencesPerPage)} value={currentPage[uniqueChapterKey] || 1} onChange={e => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min(Math.max(Number(e.target.value), 1), Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))} />
-                            <button title={`Page ${Math.min(currentPage[uniqueChapterKey] + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage))}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min((oldPages[uniqueChapterKey] || 1) + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))}>
-                              <FontAwesomeIcon icon={faAngleRight} />
-                            </button>
-                            <button title={`Page ${Math.ceil(episodeValue.sentences.length / sentencesPerPage)}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.ceil(episodeValue.sentences.length / sentencesPerPage) }))}>
-                              <FontAwesomeIcon icon={faAnglesRight} />
-                            </button>
+                        sentencesPerPage && (
+                          <div className='page-settings'>
+                            <div className="pagination-controls">
+                              <button title={`Page 1`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: 1 }))}>
+                                <FontAwesomeIcon icon={faAnglesLeft} />
+                              </button>
+                              <button title={`Page ${Math.max(currentPage[uniqueChapterKey] - 1, 1)}`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.max((oldPages[uniqueChapterKey] || 1) - 1, 1) }))}>
+                                <FontAwesomeIcon icon={faAngleLeft} />
+                              </button>
+                              <input type="number" min="1" max={Math.ceil(episodeValue.sentences.length / sentencesPerPage)} value={currentPage[uniqueChapterKey] || 1} onChange={e => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min(Math.max(Number(e.target.value), 1), Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))} />
+                              <button title={`Page ${Math.min(currentPage[uniqueChapterKey] + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage))}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min((oldPages[uniqueChapterKey] || 1) + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))}>
+                                <FontAwesomeIcon icon={faAngleRight} />
+                              </button>
+                              <button title={`Page ${Math.ceil(episodeValue.sentences.length / sentencesPerPage)}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.ceil(episodeValue.sentences.length / sentencesPerPage) }))}>
+                                <FontAwesomeIcon icon={faAnglesRight} />
+                              </button>
+
+                            </div>
+                            <input
+                              type="number"
+                              value={sentencesPerPage}
+                              onChange={(e) => doSentencesPerPage(parseInt(e.target.value))}
+                              className="settings-spp"
+                            />
+
                           </div>
                         )
                       }

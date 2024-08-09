@@ -1,6 +1,5 @@
 export function searchES(keys, text, keywords, nameMap, characters = [], caseSensitive = false, exactMatch = false, namedActive = false, namedCharacters = []) {
     // Initialize an empty object to hold the results
-    console.log(characters)
     let results = {};
 
     // Initialize a counter for the total number of matches
@@ -118,15 +117,7 @@ export function searchES(keys, text, keywords, nameMap, characters = [], caseSen
             }
         }
 
-        // Log the progress
-        console.log(`Progress: ${((i + 1) / keys.length * 100).toFixed(2)}%`);
     }
-
-    // Log the total number of matches
-    console.log(`Total matches: ${totalMatches}`);
-
-    // Convert the results to a JSON string
-    let jsonResults = JSON.stringify(results);
 
     return results;
 }

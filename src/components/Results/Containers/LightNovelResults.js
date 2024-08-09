@@ -23,6 +23,42 @@ function LightNovelResults({ lnData, volumeImages, highlight, filterState, lnDro
     setCurrentPage(initialPages);
   }, [lnData]);
 
+  const [sentencesPerPage, setSentencesPerPage] = useState(() => {
+    const savedState = sessionStorage.getItem('sentencesPerPage');
+    if (savedState) {
+      const parsedState = JSON.parse(savedState);
+      return parsedState;
+    }
+    return 15;
+  });
+
+  useEffect(() => {
+    sessionStorage.setItem('sentencesPerPage', JSON.stringify(sentencesPerPage));
+  }, [sentencesPerPage]);
+
+  function doSentencesPerPage(inputValue) {
+    let value = parseInt(inputValue);
+    if (!isNaN(value) && value > 0) {
+      // Update the global variable sentencesPerPage
+      setSentencesPerPage(value);
+    } else {
+      value = 15;
+      setSentencesPerPage(15);
+    }
+    let newCurrentPages = { ...currentPage };
+    Object.keys(lnData.volumes).forEach(volumeKey => {
+      Object.keys(lnData.volumes[volumeKey].chapters).forEach(chapterKey => {
+        // Create a unique key for each chapter
+        const uniqueChapterKey = `${volumeKey}-${chapterKey}`;
+        const len = lnData.volumes[volumeKey].chapters[chapterKey].sentences.length
+        if (currentPage[uniqueChapterKey] > Math.ceil(len / value)) {
+          newCurrentPages[uniqueChapterKey] = Math.ceil(len / value)
+        }
+      });
+    });
+    setCurrentPage(newCurrentPages);
+  }
+
 
 
   const iconRefs = useRef({});
@@ -111,7 +147,6 @@ function LightNovelResults({ lnData, volumeImages, highlight, filterState, lnDro
             })
               .map(([chapterKey, chapterValue]) => {
                 // Get the chapter title from lnDropdownState
-                const sentencesPerPage = 15;
                 const uniqueChapterKey = `${volumeKey}-${chapterKey}`;
                 const chapterName = lnDropdownState.volumesChecked[`Volume ${volumeKey.slice(1)}`][`${volumeKey}${chapterKey}`].title
 
@@ -147,21 +182,29 @@ function LightNovelResults({ lnData, volumeImages, highlight, filterState, lnDro
                         </div>
                       ))}
 
-                      {chapterValue.sentences.length > sentencesPerPage && (
-                        <div className="pagination-controls">
-                          <button title={`Page 1`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: 1 }))}>
-                            <FontAwesomeIcon icon={faAnglesLeft} />
-                          </button>
-                          <button title={`Page ${Math.max(currentPage[uniqueChapterKey] - 1, 1)}`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.max((oldPages[uniqueChapterKey] || 1) - 1, 1) }))}>
-                            <FontAwesomeIcon icon={faAngleLeft} />
-                          </button>
-                          <input type="number" min="1" max={Math.ceil(chapterValue.sentences.length / sentencesPerPage)} value={currentPage[uniqueChapterKey] || 1} onChange={e => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min(Math.max(Number(e.target.value), 1), Math.ceil(chapterValue.sentences.length / sentencesPerPage)) }))} />
-                          <button title={`Page ${Math.min(currentPage[uniqueChapterKey] + 1, Math.ceil(chapterValue.sentences.length / sentencesPerPage))}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(chapterValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min((oldPages[uniqueChapterKey] || 1) + 1, Math.ceil(chapterValue.sentences.length / sentencesPerPage)) }))}>
-                            <FontAwesomeIcon icon={faAngleRight} />
-                          </button>
-                          <button title={`Page ${Math.ceil(chapterValue.sentences.length / sentencesPerPage)}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(chapterValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.ceil(chapterValue.sentences.length / sentencesPerPage) }))}>
-                            <FontAwesomeIcon icon={faAnglesRight} />
-                          </button>
+                      {sentencesPerPage && (
+                        <div className='page-settings'>
+                          <div className="pagination-controls">
+                            <button title={`Page 1`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: 1 }))}>
+                              <FontAwesomeIcon icon={faAnglesLeft} />
+                            </button>
+                            <button title={`Page ${Math.max(currentPage[uniqueChapterKey] - 1, 1)}`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.max((oldPages[uniqueChapterKey] || 1) - 1, 1) }))}>
+                              <FontAwesomeIcon icon={faAngleLeft} />
+                            </button>
+                            <input type="number" min="1" max={Math.ceil(chapterValue.sentences.length / sentencesPerPage)} value={currentPage[uniqueChapterKey] || 1} onChange={e => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min(Math.max(Number(e.target.value), 1), Math.ceil(chapterValue.sentences.length / sentencesPerPage)) }))} />
+                            <button title={`Page ${Math.min(currentPage[uniqueChapterKey] + 1, Math.ceil(chapterValue.sentences.length / sentencesPerPage))}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(chapterValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min((oldPages[uniqueChapterKey] || 1) + 1, Math.ceil(chapterValue.sentences.length / sentencesPerPage)) }))}>
+                              <FontAwesomeIcon icon={faAngleRight} />
+                            </button>
+                            <button title={`Page ${Math.ceil(chapterValue.sentences.length / sentencesPerPage)}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(chapterValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.ceil(chapterValue.sentences.length / sentencesPerPage) }))}>
+                              <FontAwesomeIcon icon={faAnglesRight} />
+                            </button>
+                          </div>
+                          <input
+                              type="number"
+                              value={sentencesPerPage}
+                              onChange={(e) => doSentencesPerPage(parseInt(e.target.value))}
+                              className="settings-spp"
+                            />
                         </div>
                       )}
 

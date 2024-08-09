@@ -18,7 +18,6 @@ export function searchLN(keys, text, keywords, caseSensitive = false, exactMatch
     // Filter the sentences based on the keywords
     let filteredSentences = sentences.filter(sentenceObj => {
       // If case sensitivity is turned off, convert the sentence and keywords to lowercase
-      console.log(sentenceObj.text)
       let sentenceToCheck = caseSensitive ? sentenceObj.text : sentenceObj.text.toLowerCase();
       let allKeywordsFound = true;
       for (let keyword of keywords) {
@@ -64,15 +63,7 @@ export function searchLN(keys, text, keywords, caseSensitive = false, exactMatch
       };
     }
 
-    // Log the progress
-    console.log(`Progress: ${((i + 1) / keys.length * 100).toFixed(2)}%`);
   }
-
-  // Log the total number of matches
-  console.log(`Total matches: ${totalMatches}`);
-
-  // Convert the results to a JSON string
-  let jsonResults = JSON.stringify(results);
 
   return results;
 }

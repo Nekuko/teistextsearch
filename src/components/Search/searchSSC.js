@@ -124,17 +124,8 @@ export function searchSSC(keys, text, keywords, nameMap, characters = [], caseSe
           };
         }
       }
-  
-      // Log the progress
-      console.log(`Progress: ${((i + 1) / keys.length * 100).toFixed(2)}%`);
     }
-  
-    // Log the total number of matches
-    console.log(`Total matches: ${totalMatches}`);
-  
-    // Convert the sscResults to a JSON string
-    let jsonResults = JSON.stringify(sscResults);
-    console.log(sscResults)
+
     return sscResults;
   }
   

@@ -11,7 +11,7 @@ import WNDropdownMenu from '../menus/WNDropdownMenu';
 function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdownState, updateAnimeDropdownState, lnDropdownState, updateLNDropdownState, mogDropdownState, setMogDropdownState, images, canonActive, setCanonActive, canonES, mediumFlash, setMediumFlash }) {
   const { mainChecked } = animeDropdownState;
   const { lnMainChecked } = lnDropdownState;
-  const { mogMainChecked } = mogDropdownState; // parts derived from mogDropdownState
+  const { mogMainChecked } = mogDropdownState;
   const { wnMainChecked } = wnDropdownState;
   const [openAnime, setOpenAnime] = useState(false);
   const [openLN, setOpenLN] = useState(false);
@@ -31,8 +31,22 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
     }
   }, [mediumFlash, setMediumFlash]);
 
-  if (animeDropdownState.length === 0) {
-    return;
+  const [loading, setLoading] = useState(true); // Initialize loading state
+
+  useEffect(() => {
+    // Check if all dropdown states are present and not empty objects
+    if (
+      Object.keys(wnDropdownState).length > 0 &&
+      Object.keys(animeDropdownState).length > 0 &&
+      Object.keys(lnDropdownState).length > 0 &&
+      Object.keys(mogDropdownState).length > 0
+    ) {
+      setLoading(false); // Set loading to false when all dropdown states are available
+    }
+  }, [wnDropdownState, animeDropdownState, lnDropdownState, mogDropdownState]);
+
+  if (loading) {
+    return <div>Loading...</div>; // Display a loading message or spinner
   }
 
 
@@ -388,10 +402,6 @@ function MediumsContainer({ wnDropdownState, updateWNDropdownState, animeDropdow
 
     updateWNDropdownState('volumesChecked', updatedVolumesChecked);
   };
-
-  if (!Object.keys(lnDropdownState).length || !Object.keys(mogDropdownState).length || !Object.keys(animeDropdownState).length || !Object.keys(wnDropdownState).length) {
-    return;
-  }
 
   return (
     <div className={`mediums-container ${mediumFlash ? 'flash-selected' : ''}`}>

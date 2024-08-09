@@ -11,28 +11,9 @@ import SSCResults from './Containers/SSCResults';
 import ESResults from './Containers/ESResults';
 import APOResults from './Containers/APOResults';
 
-function Results({ results, images, filterState, animeDropdownState, lnDropdownState, wnDropdownState, mogDropdownState, setSearchResults, resultsKey, setResultsKey }) {
-
-  const [resultsText, setResultsText] = useState('');
-
-  const resultsTextMap = {
-    0: 'No Results.',
-    1: 'No Keywords Selected.',
-    2: 'No Mediums Selected.',
-    3: 'No Mediums or Keywords Selected.',
-    4: 'No Matching Keywords.',
-    5: 'No Results.'
-  };
-
-  // Add a useEffect to update 'resultsText' when 'resultsKey' changes
-  useEffect(() => {
-    setResultsText(resultsTextMap[resultsKey]);
-  }, [resultsKey]);
-
+function Results({ resultsText, setResultsText, results, images, filterState, animeDropdownState, lnDropdownState, wnDropdownState, mogDropdownState, setSearchResults, resultsKey, setResultsKey }) {
   const noResults = Object.keys(results).every(key => Object.keys(results[key]).length === 0);
-  if (noResults && resultsKey !== 1 && resultsKey !== 2 && resultsKey !== 3 && resultsKey !== 5) {
-    setResultsKey(4);
-  }
+
   const lnResults = results && results.ln ? results.ln.ln : null;
   const wnResults = results && results.wn ? results.wn.wn : null;
   const anResults = results && results.anime ? results.anime.an : null;
@@ -48,7 +29,7 @@ function Results({ results, images, filterState, animeDropdownState, lnDropdownS
 
   const resetResults = () => {
     setSearchResults({});
-    setResultsKey(5);
+    setResultsText('');
   }
 
   const scrollToTop = () => {
@@ -74,6 +55,8 @@ function Results({ results, images, filterState, animeDropdownState, lnDropdownS
     }
   }
 
+  
+
   return (
     <div>
       <h1 className="results-header">RESULTS</h1>
@@ -93,21 +76,7 @@ function Results({ results, images, filterState, animeDropdownState, lnDropdownS
         <div className="content-wrapper">
           {noResults ? (
             <div>
-              {resultsKey === 4 ? (
-                <>
-                  No results found{filterState.keywords.length === 0 ? '.' : ''}
-                  {filterState.keywords.length > 0 &&
-                    <span> for
-                      <span style={{ color: 'red' }}>
-                        {` ${filterState.keywords.join(', ')}`}
-                      </span>
-                      <span>.</span>
-                    </span>
-                  }
-                </>
-              ) : (
                 <p>{resultsText}</p>
-              )}
             </div>
           ) : (
             <>
