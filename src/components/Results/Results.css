@@ -486,7 +486,8 @@ input[type=number] {
 
 
 .results-header,
-.filters-header {
+.filters-header,
+.info-header {
   font-family: 'Noto Serif JP';
   font-size: calc(1.2em + 2.4vw);
   color: #c8000f;

@@ -11,10 +11,62 @@ import { searchWN } from '../Search/searchWN';
 import { searchAPO } from '../Search/searchAPO';
 import * as characterCovers from '../../images/characterIcons';
 import * as covers from '../../images/covers';
-import { fetchLNData, fetchWNData, fetchAPOData, fetchESData, fetchSSCData, fetchANData, fetchDropdowns, fetchVersionData } from '../../utils/firebaseFunctions';
+import { fetchLNData, fetchWNData, fetchAPOData, fetchESData, fetchSSCData, fetchANData, fetchDropdowns, fetchVersionData, fetchCharactersData } from '../../utils/firebaseFunctions';
 import { VERSIONS } from '../../versions';
 import { ESMAPREVERSE } from '../../esMap';
 import { faGaugeSimpleMed } from '@fortawesome/free-solid-svg-icons';
+
+function createCharacterDropdowns(data) {
+    let dropdowns = {};
+    const groups = data.groups;
+    const characters = data.characters;
+    for (const [key, value] of Object.entries(groups).sort((a, b) => {
+        const groupA = parseInt(a[1]['order'], 10);
+        const groupB = parseInt(b[1]['order'], 10);
+        return groupA - groupB;
+    })) {
+        if (key !== 'order') {
+            dropdowns[key.toUpperCase()] = {
+                openGroup: false,
+                checked: false,
+                open: false,
+                filters: '',
+                groups: {},
+                characters: {},
+            }
+            for (const [groupKey, groupValue] of Object.entries(value).sort((a, b) => {
+                const groupA = parseInt(a[1]['order'], 10);
+                const groupB = parseInt(b[1]['order'], 10);
+                return groupA - groupB;
+            })) {
+
+                if (groupKey !== 'order') {
+                    console.log(groupKey === 'order')
+                    dropdowns[key.toUpperCase()].groups[groupKey] = {
+                        openGroup: false,
+                        checked: false,
+                        open: false,
+                        filters: '',
+                        characters: {}
+                    }
+                    for (const character of groupValue.characters) {
+                        dropdowns[key.toUpperCase()].groups[groupKey].characters[character] = {
+                            "cheked": false
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    // go through characters and insert by group and subgroup
+    // create characteres if no subgroup
+    // insert in order of order if sort if -1
+    // if name_variants add original name and open
+    // can ignore mirrors for now
+    // double check json
+
+}
 
 
 function SearchPage() {
@@ -74,6 +126,13 @@ function SearchPage() {
                 sessionStorage.setItem("lnDropdown", JSON.stringify(dropdownData.data["ln"]));
                 sessionStorage.setItem("mogDropdown", JSON.stringify(dropdownData.data["mog"]));
                 sessionStorage.setItem("wnDropdown", JSON.stringify(dropdownData.data["wn"]));
+
+                let characterData = await fetchCharactersData(versionDataTemp, setVersionData);
+                if (characterData.versionUpdated && characterData !== undefined) {
+                    console.log(characterData)
+                }
+                console.log(characterData)
+                let characterDropdowns = createCharacterDropdowns(characterData.data);
             } catch (error) {
                 console.error('Error fetching data:', error);
             } finally {
@@ -1865,25 +1924,18 @@ function SearchPage() {
         'Cid Kagenou (All)': ['Cid', 'Cid Kagenou', 'John Smith', 'Mundane Mann', 'Minoru Kageno', 'Shadow', 'Stylish Ruffian Slayer', '??? (Stylish Bandit Slayer)', '??? (Cid Kagenou)',
             '??? (Minoru Kageno)', 'Minoru Kageno', 'Nuru', '??? (Nuru)', 'Sunraku & Shadow (Shadow)', 'Cid & Sunraku (Cid)', 'John Smith & Yukime (John Smith)', '3 People (Cid)'
         ],
-        'Cid Kagenou': ['Cid Kagenou', 'Cid', '??? (Cid Kagenou)'],
         '??? (Shadow)': ['???? (Shadow)'],
         'Claire Kagenou (All)': ['Claire Kagenou', 'Claire', '??? (Claire Kagenou)', "Alexia & Claire (Claire Kagenou)"],
-        'Claire Kagenou': ['Claire Kagenou', 'Claire', '??? (Claire Kagenou)'],
         'Alexia Midgar (All)': ['Alexia Midgar', 'Alexia', '????? (Alexia Midgar)', 'Shelly and Alexia (Alexia Midgar)', "??? (Alexia Midgar)", "Alexia & Claire (Alexia Midgar)", 'Alexia Midgar & Natsume Kafka (Alexia Midgar)'],
         'Alexia Midgar': ['Alexia Midgar', 'Alexia', 'Shelly and Alexia (Alexia Midgar)', "??? (Alexia Midgar)"],
         '??? (Alexia Midgar)': ['????? (Alexia Midgar)'],
         'Iris Midgar': ['Iris Midgar', 'Iris'],
         'Sherry Barnett (All)': ['Sherry Barnett', 'Sherry', 'Shelly and Alexia (Sherry Barnett)'],
-        'Sherry Barnett': ['Sherry Barnett', 'Sherry', 'Shelly and Alexia (Sherry Barnett)'],
         'Po Tato (All)': ['Po Tato', 'Po', 'Skel & Po (Po)'],
-        'Po Tato': ['Po Tato', 'Po'],
         'Skel Etal (All)': ['Skel Etal', 'Skel & Po (Skel)', 'Skel'],
-        'Skel Etal': ['Skel Etal', 'Skel'],
         'Rose Oriana (All)': ['Rose Oriana', 'Rose', 'No.666', 'No. 666'],
-        'Rose Oriana': ['Rose Oriana', 'Rose'],
         'No. 666': ['No. 666', 'No.666'],
         'Alpha (All)': ['Alpha', '??? (Alpha)', 'Alpha & Nu (Alpha)', 'Alpha & Eta (Alpha)', 'None (Alpha)', 'Everyone (Alpha)', 'Alpha & Gamma (Alpha)', 'Alpha & Zeta (Alpha)', 'Alpha & Beta (Alpha)', 'Seven Shadows (Alpha)'],
-        'Alpha': ['Alpha', '??? (Alpha)', 'None (Alpha)'],
         'Beta (All)': ['Beta', 'Natsume Kafka', 'Natsume', '??? (Natsume Kafka)', '??? (Natsume)', 'None (Beta)', 'Everyone (Beta)', 'Beta & Epsilon (Beta)',
             'Alpha & Beta (Beta)', 'Beta & Gamma (Beta)', '??? (Beta)', 'Seven Shadows (Beta)', 'Beta & Delta & Zeta (Beta)', 'Alexia Midgar & Natsume Kafka (Natsume Kafka)',
             'Fictional Shadow', 'Fictional Zenon', 'Zeta & Beta (Beta)'],
@@ -1892,27 +1944,22 @@ function SearchPage() {
         '??? (Natsume Kafka)': ['??? (Natsume)'],
         'Gamma (All)': ['Gamma', 'Everyone (Gamma)', '??? (Gamma)', 'Seven Shadows (Gamma)', 'None (Gamma)', 'Beta & Gamma (Gamma)',
             'Gamma& Epsilon & Eta (Gamma)', 'Gamma & Epsilon (Gamma)', 'Luna', 'Alpha & Gamma (Gamma)', "Gamma & Iota (Iota)"],
-        'Gamma': ['Gamma', '??? (Gamma)', 'None (Gamma)'],
         "Delta (All)": ['Delta', 'Everyone (Delta)', '??? (Delta)', 'Seven Shadows (Delta)', 'Delta & Zeta (Delta)', 'Beta & Delta & Zeta (Delta)', "Deltan"],
-        "Delta": ['Delta', '??? (Delta)'],
         'Epsilon (All)': ['Epsilon', 'Everyone (Epsilon)', 'Beta & Epsilon (Epsilon)', '??? (Epsilon)', 'Seven Shadows (Epsilon)',
             'Gamma& Epsilon & Eta (Epsilon)', 'Gamma & Epsilon (Epsilon)', 'Zeta & Epsilon (Epsilon)', 'Shiron'],
         'Epsilon': ['Epsilon', '??? (Epsilon)', 'Shiron'],
         'Zeta (All)': ['Zeta', 'Everyone (Zeta)', 'Alpha & Zeta (Zeta)', 'Zeta & Eta (Zeta)', '??? (Zeta)', 'Seven Shadows (Zeta)', 'Delta & Zeta (Zeta)', 'Beta & Delta & Zeta (Zeta)', "Zetan",
             "Zeta & Epsilon (Zeta)", 'Zeta & Beta (Zeta)'
         ],
-        'Zeta': ['Zeta', '??? (Zeta)'],
         'Eta (All)': ['Eta', 'Everyone (Eta)', 'Zeta & Eta (Eta)', 'Seven Shadows (Eta)', '??? (Eta)', 'Gamma& Epsilon & Eta (Eta)', 'Alpha & Eta (Eta)'],
         'Gamma & Epsilon & Eta (Eta)': ['Gamma& Epsilon & Eta (Eta)'],
         'Gamma & Epsilon & Eta (Gamma)': ['Gamma& Epsilon & Eta (Gamma)'],
         'Gamma & Epsilon & Eta (Epsilon)': ['Gamma& Epsilon & Eta (Epsilon)'],
-        'Eta': ['Eta', '??? (Eta)'],
         'Chi (All)': ["Chi", "Chi & Omega (Chi)", "Karen", "??? (Karen)", "No. 111", "No. 111 & No. 122 (No. 111)", "Characterised Shadow", "Characterised Eta", "Characterised Cult Member"],
         'Omega (All)': ["Omega", "Chi & Omega (Omega)", "Possessed (Omega)", "No. 111 & No. 122 (No. 122)", "No. 122", "Characterised Zeta", "Characterised Gamma"],
         'Lambda (All)': ['Lambda', 'Tawny Elf (Lambda)', 'None (Lambda)'],
         'Lambda': ['Lambda', 'None (Lambda)'],
         'Iota (All)': ['Iota', 'None (Iota)', 'Gamma & Iota (Iota)'],
-        'Iota': ['Iota', 'None (Iota)'],
         'Diablos': ['Massive Mound of Magic'],
         'Olivier (All)': ['Olivier', 'Alpha Look-alike', '??? (Olivier)'],
         'Olivier': ['Olivier', 'Alpha Look-alike', '??? (Olivier)'],
@@ -2149,6 +2196,8 @@ function SearchPage() {
         let sscCheckedData;
         let esCheckedData;
 
+
+        console.log(esCheckedItems)
         if (animeCheckedItems.length > 0) {
             anCheckedData = await fetchANData(animeCheckedItems, versionData, setVersionData, setResultsText);
         }

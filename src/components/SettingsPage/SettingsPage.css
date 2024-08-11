@@ -1,29 +1,33 @@
 .settings-page {
-  padding: 20px;
   color: white;
-}
-
-.settings-content {
-  max-height: 400px; /* Adjust the height as needed */
-  overflow-y: auto; /* Enable vertical scrolling */
-  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
-  padding: 10px;
 }
 
 .settings-table {
   width: 100%;
-  border-collapse: collapse;
+  overflow-y: scroll;
+  height: 300px;
 }
 
 .settings-table th, .settings-table td {
-  border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
+  border-bottom: 1px solid #4d5050;
+}
+
+.settings-table-content {
+  height: 300px;
+  overflow: auto;
 }
 
 .settings-table th {
-  background-color: #f2f2f2;
+  font-size: large;
+  position: sticky;
+  top: 0;
+  background-color: #1f2224;
+  z-index: 1;
+  font-weight: bold;
 }
+
 
 .red-text {
   color: #c8000f;
@@ -35,4 +39,81 @@
   display: flex;
   gap: 10px;
   align-items: center;
+}
+
+.settings-title {
+  font-family: 'Noto Serif JP';
+  font-size: calc(0.6em + 1.4vw);
+  color: #c8000f;
+  font-weight: 100;
+  letter-spacing: 0.07em;
+  align-items: center;
+  position: flex; /* Position relative to the Header component */
+  border-radius: 5px;
+  display: flex; /* Use flexbox to arrange children in a row */
+  position: relative;
+  margin-top: 1%;
+  margin-bottom: 2px;
+}
+
+.settings-header {
+  font-family: 'Noto Serif JP';
+  font-size: calc(1.2em + 2.4vw);
+  color: #c8000f;
+  font-weight: 100;
+  letter-spacing: 0.07em;
+  align-items: center;
+  position: flex; /* Position relative to the Header component */
+  border-radius: 5px;
+  display: flex; /* Use flexbox to arrange children in a row */
+  position: relative;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.settings-content {
+  position: relative; /* Position relative to the Header component */
+  width: 75%;
+  background-color: #1f2224;
+  padding: 20px;
+  padding-top: 0px;
+  border-radius: 5px;
+  margin: auto;
+  color: white;
+  display: flex; /* Use flexbox to arrange children in a row */
+  flex-direction: column; /* Align children horizontally */
+  margin-bottom: 5%;
+}
+
+.settings-update {
+  font-size: 80%;
+  color: #c8000f;
+  cursor: pointer;
+  margin-left: 1%;
+  transition: transform 0.3s ease;
+}
+
+.settings-update.rotate {
+  animation: rotate 2s infinite linear;
+  color: red;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.settings-update-blank {
+  font-size: 80%;
+  color: #c8000f;
+  margin-left: 1%;
+  animation: rotate 2s infinite linear;
+}
+
+.settings-update:hover {
+  color: red;
 }

@@ -18,37 +18,48 @@ export async function fetchLNData(lnCheckedItems, versionData, setVersionData, s
     const versionDocRef = doc(firestore, 'data', 'versions');
     let versionDocSnap;
     if (versionData) {
-        setResultsText('Retrieved Version Information.')
+        if (setResultsText) {
+            setResultsText('Retrieved Version Information.')
+        }
+
         versionDocSnap = versionData;
     } else {
-        setResultsText('Downloading Version Information.')
+        if (setResultsText) {
+            setResultsText('Downloading Version Information.')
+        }
         versionDocSnap = (await getDoc(versionDocRef)).data();
         setVersionData(versionDocSnap);
     }
 
     for (let volume of uniqueVolumes) {
         let firestoreVersion = versionDocSnap.ln[volume];
-        
+
         let indexedDBVersion = await db.get('firestore-cache', `data-versions-ln-${volume}`);
 
         let data;
         if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
-            setResultsText(`Downloading data for ln_${volume}`)
+            if (setResultsText) {
+                setResultsText(`Downloading data for ln_${volume}`)
+            }
             const dataDocRef = doc(firestore, 'data', `ln_${volume}`);
             let dataDocSnap = await getDoc(dataDocRef);
             data = dataDocSnap.data();
-            
+
 
             // Store the data in IndexedDB for future use
-            setResultsText(`Saving data for ln_${volume}`)
+            if (setResultsText) {
+                setResultsText(`Saving data for ln_${volume}`)
+            }
             await db.put('firestore-cache', data, `data-ln-${volume}`);
-            
+
 
         } else if (firestoreVersion === indexedDBVersion) {
             // Fetch data from IndexedDB
-            setResultsText(`Retrieving data for ln_${volume}`)
+            if (setResultsText) {
+                setResultsText(`Retrieving data for ln_${volume}`)
+            }
             data = await db.get('firestore-cache', `data-ln-${volume}`);
-            
+
         }
 
         for (let item of lnCheckedItems) {
@@ -63,9 +74,11 @@ export async function fetchLNData(lnCheckedItems, versionData, setVersionData, s
 
         // Store the version number in IndexedDB for future use
         if (firestoreVersion !== indexedDBVersion) {
-            setResultsText(`Saving data for ln_${volume}`)
+            if (setResultsText) {
+                setResultsText(`Saving data for ln_${volume}`)
+            }
             await db.put('firestore-cache', firestoreVersion, `data-versions-ln-${volume}`);
-            
+
         }
     }
 
@@ -84,41 +97,51 @@ export async function fetchWNData(wnCheckedItems, versionData, setVersionData, s
     const versionDocRef = doc(firestore, 'data', 'versions');
     let versionDocSnap;
     if (versionData) {
-        setResultsText('Retrieved Version Information.')
+        if (setResultsText) {
+            setResultsText('Retrieved Version Information.')
+        }
         versionDocSnap = versionData;
     } else {
-        setResultsText('Downloading Version Information.')
+        if (setResultsText) {
+            setResultsText('Downloading Version Information.')
+        }
         versionDocSnap = (await getDoc(versionDocRef)).data();
         setVersionData(versionDocSnap);
-        
+
     }
 
     for (let volume of uniqueVolumes) {
         let firestoreVersion = versionDocSnap.wn[volume];
-        
+
         let indexedDBVersion = await db.get('firestore-cache', `data-versions-wn-${volume}`);
 
         let data;
         if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
-            setResultsText(`Downloading data for wn_${volume}`)
+            if (setResultsText) {
+                setResultsText(`Downloading data for wn_${volume}`)
+            }
             const dataDocRef = doc(firestore, 'data', `wn_v${volume}`);
             let dataDocSnap = await getDoc(dataDocRef);
             data = dataDocSnap.data();
-            
+
 
             // Store the data in IndexedDB for future use
-            setResultsText(`Saving data for wn_${volume}`)
+            if (setResultsText) {
+                setResultsText(`Saving data for wn_${volume}`)
+            }
             await db.put('firestore-cache', data, `data-wn-${volume}`);
-            
+
 
         } else if (firestoreVersion === indexedDBVersion) {
             // Fetch data from IndexedDB
-            setResultsText(`Retrieving data for wn_${volume}`)
+            if (setResultsText) {
+                setResultsText(`Retrieving data for wn_${volume}`)
+            }
             data = await db.get('firestore-cache', `data-wn-${volume}`);
-            
+
 
         }
-        
+
 
         for (let item of wnCheckedItems) {
             let [_, volumeChecked, chapter] = item.split('_');
@@ -132,9 +155,11 @@ export async function fetchWNData(wnCheckedItems, versionData, setVersionData, s
 
         // Store the version number in IndexedDB for future use
         if (firestoreVersion !== indexedDBVersion) {
-            setResultsText(`Saving data for wn_${volume}`)
+            if (setResultsText) {
+                setResultsText(`Saving data for wn_${volume}`)
+            }
             await db.put('firestore-cache', firestoreVersion, `data-versions-wn-${volume}`);
-            
+
         }
     }
 
@@ -152,17 +177,21 @@ export async function fetchAPOData(apoCheckedItems, versionData, setVersionData,
     const versionDocRef = doc(firestore, 'data', 'versions');
     let versionDocSnap;
     if (versionData) {
-        setResultsText('Retrieved Version Information.')
+        if (setResultsText) {
+            setResultsText('Retrieved Version Information.')
+        }
         versionDocSnap = versionData;
     } else {
-        setResultsText('Downloading Version Information.')
+        if (setResultsText) {
+            setResultsText('Downloading Version Information.')
+        }
         versionDocSnap = (await getDoc(versionDocRef)).data();
         setVersionData(versionDocSnap);
     }
 
     for (let item of apoCheckedItems) {
         let [_, part, chapter] = item.split('_');
-        
+
         // Ensure the data structure is initialized properly
         if (!apoCheckedData[part]) {
             apoCheckedData[part] = {};
@@ -172,22 +201,27 @@ export async function fetchAPOData(apoCheckedItems, versionData, setVersionData,
         }
 
         let firestoreVersion = versionDocSnap.apo[`${part}_${chapter}`];
-        
+
         let indexedDBVersion = await db.get('firestore-cache', `data-versions-apo-${part}-${chapter}`);
 
         let data;
         if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
-            setResultsText(`Downloading data for apo_${part}_${chapter}`)
+            if (setResultsText) {
+                setResultsText(`Downloading data for apo_${part}_${chapter}`)
+            }
             const dataDocRef = doc(firestore, 'data', `apo_${part}_${chapter}`);
             let dataDocSnap = await getDoc(dataDocRef);
             data = dataDocSnap.data();
 
-            // Store the data in IndexedDB for future use
-            setResultsText(`Saving data for apo_${part}_${chapter}`)
+            if (setResultsText) {
+                setResultsText(`Saving data for apo_${part}_${chapter}`)
+            }
             await db.put('firestore-cache', data, `data-apo-${part}-${chapter}`);
 
         } else if (firestoreVersion === indexedDBVersion) {
-            setResultsText(`Retrieving data for apo_${part}_${chapter}`)
+            if (setResultsText) {
+                setResultsText(`Retrieving data for apo_${part}_${chapter}`)
+            }
             // Fetch data from IndexedDB
             data = await db.get('firestore-cache', `data-apo-${part}-${chapter}`);
         }
@@ -201,7 +235,9 @@ export async function fetchAPOData(apoCheckedItems, versionData, setVersionData,
 
         // Store the version number in IndexedDB for future use
         if (firestoreVersion !== indexedDBVersion) {
-            setResultsText(`Saving data for apo_${part}_${chapter}`)
+            if (setResultsText) {
+                setResultsText(`Saving data for apo_${part}_${chapter}`)
+            }
             await db.put('firestore-cache', firestoreVersion, `data-versions-apo-${part}-${chapter}`);
         }
     }
@@ -220,17 +256,21 @@ export async function fetchSSCData(sscCheckedItems, versionData, setVersionData,
     const versionDocRef = doc(firestore, 'data', 'versions');
     let versionDocSnap;
     if (versionData) {
-        setResultsText('Retrieved Version Information.')
+        if (setResultsText) {
+            setResultsText('Retrieved Version Information.')
+        }
         versionDocSnap = versionData;
     } else {
-        setResultsText('Downloading Version Information.')
+        if (setResultsText) {
+            setResultsText('Downloading Version Information.')
+        }
         versionDocSnap = (await getDoc(versionDocRef)).data();
         setVersionData(versionDocSnap);
     }
 
     for (let item of sscCheckedItems) {
         let [_, part, chapter] = item.split('_');
-        
+
         // Ensure the data structure is initialized properly
         if (!sscCheckedData[part]) {
             sscCheckedData[part] = {};
@@ -240,23 +280,27 @@ export async function fetchSSCData(sscCheckedItems, versionData, setVersionData,
         }
 
         let firestoreVersion = versionDocSnap.ssc[`${part}_${chapter}`];
-        
+
         let indexedDBVersion = await db.get('firestore-cache', `data-versions-ssc-${part}-${chapter}`);
 
         let data;
         if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
-            setResultsText(`Downloading data for ssc_${part}_${chapter}`)
+            if (setResultsText) {
+                setResultsText(`Downloading data for ssc_${part}_${chapter}`)
+            }
             const dataDocRef = doc(firestore, 'data', `ssc_${part}_${chapter}`);
             let dataDocSnap = await getDoc(dataDocRef);
             data = dataDocSnap.data();
 
-            // Store the data in IndexedDB for future use
-            setResultsText(`Saving data for ssc_${part}_${chapter}`)
+            if (setResultsText) {
+                setResultsText(`Saving data for ssc_${part}_${chapter}`)
+            }
             await db.put('firestore-cache', data, `data-ssc-${part}-${chapter}`);
 
         } else if (firestoreVersion === indexedDBVersion) {
-            // Fetch data from IndexedDB
-            setResultsText(`Retrieving data for ssc_${part}_${chapter}`)
+            if (setResultsText) {
+                setResultsText(`Retrieving data for ssc_${part}_${chapter}`)
+            }
             data = await db.get('firestore-cache', `data-ssc-${part}-${chapter}`);
         }
 
@@ -267,7 +311,9 @@ export async function fetchSSCData(sscCheckedItems, versionData, setVersionData,
 
         // Store the version number in IndexedDB for future use
         if (firestoreVersion !== indexedDBVersion) {
-            setResultsText(`Saving data for ssc_${part}_${chapter}`)
+            if (setResultsText) {
+                setResultsText(`Saving data for ssc_${part}_${chapter}`)
+            }
             await db.put('firestore-cache', firestoreVersion, `data-versions-ssc-${part}-${chapter}`);
         }
     }
@@ -287,10 +333,14 @@ export async function fetchESData(esCheckedItems, versionData, setVersionData, s
     const versionDocRef = doc(firestore, 'data', 'versions');
     let versionDocSnap;
     if (versionData) {
-        setResultsText('Retrieved Version Information.')
+        if (setResultsText) {
+            setResultsText('Retrieved Version Information.')
+        }
         versionDocSnap = versionData;
     } else {
-        setResultsText('Downloading Version Information.')
+        if (setResultsText) {
+            setResultsText('Downloading Version Information.')
+        }
         versionDocSnap = (await getDoc(versionDocRef)).data();
         setVersionData(versionDocSnap);
     }
@@ -302,16 +352,22 @@ export async function fetchESData(esCheckedItems, versionData, setVersionData, s
 
         let data;
         if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
-            setResultsText(`Downloading data for es_${part}`)
+            if (setResultsText) {
+                setResultsText(`Downloading data for es_${part}`)
+            }
             const dataDocRef = doc(firestore, 'data', `es_${part}`);
             let dataDocSnap = await getDoc(dataDocRef);
             data = dataDocSnap.data();
 
-            setResultsText(`Saving data for es_${part}`)
+            if (setResultsText) {
+                setResultsText(`Saving data for es_${part}`)
+            }
             await db.put('firestore-cache', data, `data-es-${part}`);
 
         } else if (firestoreVersion === indexedDBVersion) {
-            setResultsText(`Retrieving data for es_${part}`)
+            if (setResultsText) {
+                setResultsText(`Retrieving data for es_${part}`)
+            }
             // Fetch data from IndexedDB
             data = await db.get('firestore-cache', `data-es-${part}`);
         }
@@ -328,7 +384,9 @@ export async function fetchESData(esCheckedItems, versionData, setVersionData, s
 
         // Store the version number in IndexedDB for future use
         if (firestoreVersion !== indexedDBVersion) {
-            setResultsText(`Saving data for es_${part}`)
+            if (setResultsText) {
+                setResultsText(`Saving data for es_${part}`)
+            }
             await db.put('firestore-cache', firestoreVersion, `data-versions-es-${part}`);
         }
     }
@@ -344,16 +402,22 @@ export async function fetchKJData(uniqueKJParts, uniqueKJPartsSeasons, versionDo
 
         let data;
         if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
-            setResultsText(`Downloading data for kj_${part}`)
+            if (setResultsText) {
+                setResultsText(`Downloading data for kj_${part}`)
+            }
             const dataDocRef = doc(firestore, 'data', `an_${part}`); // Update to 'an' instead of 'es'
             let dataDocSnap = await getDoc(dataDocRef);
             data = dataDocSnap.data();
 
-            setResultsText(`Saving data for kj_${part}`)
+            if (setResultsText) {
+                setResultsText(`Saving data for kj_${part}`)
+            }
             await db.put('firestore-cache', data, `data-an-${part}`); // Update to 'an' instead of 'es'
         } else if (firestoreVersion === indexedDBVersion) {
             // Fetch data from IndexedDB
-            setResultsText(`Retrieving data for kj_${part}`)
+            if (setResultsText) {
+                setResultsText(`Retrieving data for kj_${part}`)
+            }
             data = await db.get('firestore-cache', `data-an-${part}`); // Update to 'an' instead of 'es'
         }
 
@@ -370,7 +434,9 @@ export async function fetchKJData(uniqueKJParts, uniqueKJPartsSeasons, versionDo
 
         // Store the version number in IndexedDB for future use
         if (firestoreVersion !== indexedDBVersion) {
-            setResultsText(`Saving data for kj_${part}`)
+            if (setResultsText) {
+                setResultsText(`Saving data for kj_${part}`)
+            }
             await db.put('firestore-cache', firestoreVersion, `data-versions-an-${part}`); // Update to 'an' instead of 'es'
         }
     }
@@ -396,10 +462,14 @@ export async function fetchANData(anCheckedItems, versionData, setVersionData, s
     const versionDocRef = doc(firestore, 'data', 'versions');
     let versionDocSnap;
     if (versionData) {
-        setResultsText('Retrieved Version Information.')
+        if (setResultsText) {
+            setResultsText('Retrieved Version Information.')
+        }
         versionDocSnap = versionData;
     } else {
-        setResultsText('Downloading Version Information.')
+        if (setResultsText) {
+            setResultsText('Downloading Version Information.')
+        }
         versionDocSnap = (await getDoc(versionDocRef)).data();
         setVersionData(versionDocSnap);
     }
@@ -415,17 +485,23 @@ export async function fetchANData(anCheckedItems, versionData, setVersionData, s
 
         let data;
         if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
-            setResultsText(`Downloading data for an_${part}`)
+            if (setResultsText) {
+                setResultsText(`Downloading data for an_${part}`)
+            }
             const dataDocRef = doc(firestore, 'data', `an_${part}`); // Update to 'an' instead of 'es'
             let dataDocSnap = await getDoc(dataDocRef);
             data = dataDocSnap.data();
 
             // Store the data in IndexedDB for future use
-            setResultsText(`Saving data for an_${part}`)
+            if (setResultsText) {
+                setResultsText(`Saving data for an_${part}`)
+            }
             await db.put('firestore-cache', data, `data-an-${part}`); // Update to 'an' instead of 'es'
         } else if (firestoreVersion === indexedDBVersion) {
             // Fetch data from IndexedDB
-            setResultsText(`Retrieving data for an_${part}`)
+            if (setResultsText) {
+                setResultsText(`Retrieving data for an_${part}`)
+            }
             data = await db.get('firestore-cache', `data-an-${part}`); // Update to 'an' instead of 'es'
         }
 
@@ -443,7 +519,9 @@ export async function fetchANData(anCheckedItems, versionData, setVersionData, s
 
         // Store the version number in IndexedDB for future use
         if (firestoreVersion !== indexedDBVersion) {
-            setResultsText(`Saving data for an_${part}`)
+            if (setResultsText) {
+                setResultsText(`Saving data for an_${part}`)
+            }
             await db.put('firestore-cache', firestoreVersion, `data-versions-an-${part}`); // Update to 'an' instead of 'es'
         }
     }
@@ -488,6 +566,48 @@ export async function fetchDropdowns(versionData) {
     // Store the version number in IndexedDB for future use
     if (firestoreVersion !== indexedDBVersion) {
         await db.put('firestore-cache', firestoreVersion, `data-versions-info-dropdowns`);
+    }
+
+    return { data, versionUpdated }; // Return both data and the boolean flag
+}
+
+export async function fetchCharactersData(versionData) {
+    const db = await openDB('firestore-cache-db', 1, {
+        upgrade(db) {
+            db.createObjectStore('firestore-cache');
+        },
+    });
+
+    const versionDocRef = doc(firestore, 'data', 'versions');
+    let versionDocSnap;
+    if (versionData) {
+        versionDocSnap = versionData;
+    } else {
+        versionDocSnap = (await getDoc(versionDocRef)).data();
+    }
+
+    let firestoreVersion = versionDocSnap.info["characters"];
+    let indexedDBVersion = await db.get('firestore-cache', `data-versions-info-characters`);
+
+    let data;
+    let versionUpdated = false; // Initialize the boolean flag
+
+    if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
+        const dataDocRef = doc(firestore, 'data', `characters`);
+        let dataDocSnap = await getDoc(dataDocRef);
+        data = dataDocSnap.data();
+
+        // Store the data in IndexedDB for future use
+        await db.put('firestore-cache', data, `data-characters`);
+        versionUpdated = true; // Set the flag to true
+    } else if (firestoreVersion === indexedDBVersion) {
+        data = await db.get('firestore-cache', `data-characters`);
+    }
+
+
+    // Store the version number in IndexedDB for future use
+    if (firestoreVersion !== indexedDBVersion) {
+        await db.put('firestore-cache', firestoreVersion, `data-versions-info-characters`);
     }
 
     return { data, versionUpdated }; // Return both data and the boolean flag
