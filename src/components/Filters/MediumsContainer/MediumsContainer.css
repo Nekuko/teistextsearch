@@ -1,3 +1,20 @@
+@media (min-width: 1025px) {
+  .dropdown-menu {
+    min-width: 400px;
+  }
+
+  .reset-button:hover {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .canon-button:hover {
+    color: red;
+    cursor: pointer;
+    opacity: 100%;
+  }
+}
+
 .item-header {
   display: flex;
   justify-content: space-between;
@@ -38,13 +55,8 @@ input[type="checkbox"] {
   color: #c8000f;
   font-size: small;
   opacity: 40%;
-  /* Add additional styles for the button as needed */
-}
-
-.canon-button:hover {
-  color: red;
   cursor: pointer;
-  opacity: 100%;
+  /* Add additional styles for the button as needed */
 }
 
 .canon-button.active {
@@ -59,9 +71,4 @@ input[type="checkbox"] {
   right: 10px;
   color: #c8000f
     /* Add additional styles for the button as needed */
-}
-
-.reset-button:hover {
-  color: red;
-  cursor: pointer;
 }

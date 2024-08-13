@@ -18,6 +18,11 @@
   .filters-search {
     display: none;
   }
+
+  .search-button:hover {
+    color: red;
+    cursor: pointer;
+  }
 }
 
 /* Hide desktop navigation on screens smaller than or equal to 768px */
@@ -66,10 +71,7 @@
   transition: 0.1s;
 }
 
-.search-button:hover {
-  color: red;
-  cursor: pointer;
-}
+
 
 .search-button:active {
   transform: translateY(2px); /* Move the button down by 2px when it's clicked */

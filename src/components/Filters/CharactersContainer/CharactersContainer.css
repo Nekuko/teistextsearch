@@ -5,6 +5,23 @@
   }
 }
 
+@media (min-width: 1025px) {
+  .dropdown-menu {
+    min-width: 400px;
+  }
+
+  .reset-button:hover {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .named-button:hover {
+    color: red;
+    cursor: pointer;
+    opacity: 100%;
+  }
+}
+
 /* Hide desktop navigation on screens smaller than or equal to 768px */
 @media (max-width: 768px) {
   .dropdown-menu {
@@ -44,7 +61,8 @@ input[type="checkbox"] {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  color: #c8000f
+  color: #c8000f;
+  cursor: pointer;
     /* Add additional styles for the button as needed */
 }
 
@@ -55,18 +73,8 @@ input[type="checkbox"] {
   color: #c8000f;
   font-size: small;
   opacity: 40%;
+  cursor: pointer;
   /* Add additional styles for the button as needed */
-}
-
-.reset-button:hover {
-  color: red;
-  cursor: pointer;
-}
-
-.named-button:hover {
-  color: red;
-  cursor: pointer;
-  opacity: 100%;
 }
 
 .named-button.active {

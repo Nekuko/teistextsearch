@@ -70,17 +70,28 @@ function ESResults({ anData, images, highlight, filterState, main }) {
 
   const highlightKeywords = (text) => {
     let highlightedText = text;
-    filterState.keywords.forEach(keyword => {
-      let regex;
-      if (filterState.exactMatch) {
-        // If exactMatch is true, match the keyword exactly as it is
-        regex = new RegExp(`\\b${keyword}\\b`, filterState.caseSensitive ? 'g' : 'gi');
-      } else {
-        // If exactMatch is false, match any occurrence of the keyword
-        regex = new RegExp(keyword, filterState.caseSensitive ? 'g' : 'gi');
-      }
+    if (filterState.regex) {
+      const regex = new RegExp(filterState.expression);
       highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
-    });
+    } else {
+      filterState.keywords.forEach(keyword => {
+        let regex;
+        if (filterState.regex) {
+          // If regex is true, use the keyword as a regular expression
+          regex = new RegExp(keyword, filterState.caseSensitive ? 'g' : 'gi');
+        } else if (filterState.exactMatch) {
+          // If exactMatch is true, match the keyword exactly as it is
+          regex = new RegExp(`\\b${keyword}\\b`, filterState.caseSensitive ? 'g' : 'gi');
+        } else {
+          // Otherwise, match any occurrence of the keyword
+          regex = new RegExp(keyword, filterState.caseSensitive ? 'g' : 'gi');
+        }
+
+        // Highlight matches
+        highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
+      });
+    }
+
     return highlightedText;
   };
   //seasonKey, episodeKey, index, seasonTitle, episodeTitle, sentence.line, sentence.name, sentence.name_variant

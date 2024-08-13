@@ -924,7 +924,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
 
   const selectedMediumList = [...selectedLNList, ...selectedWNList, ...selectedAnimeList, ...mogCombined]
   if (selectedMediumList.length === 0) {
-    const mediumText = canonActive ? 'Any Canon Medium' : 'No Medium';
+    const mediumText = 'No Medium';
     selectedMediumList.push({ text: mediumText, hoverText: mediumText });
   }
 

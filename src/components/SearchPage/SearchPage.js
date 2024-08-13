@@ -12,7 +12,6 @@ import { searchAPO } from '../Search/searchAPO';
 import * as characterCovers from '../../images/characterIcons';
 import * as covers from '../../images/covers';
 import { fetchLNData, fetchWNData, fetchAPOData, fetchESData, fetchSSCData, fetchANData, fetchDropdowns, fetchVersionData, fetchCharactersData } from '../../utils/firebaseFunctions';
-import { VERSIONS } from '../../versions';
 import { ESMAPREVERSE } from '../../esMap';
 import { faGaugeSimpleMed } from '@fortawesome/free-solid-svg-icons';
 
@@ -62,7 +61,7 @@ function createCharacterDropdowns(data) {
 
 
     for (const [key, value] of Object.entries(characters.reverse())) {
-        let {group, name, name_mirrors, name_variants, order, subgroup} = value;
+        let { group, name, name_mirrors, name_variants, subgroup } = value;
         let route;
         if (subgroup) {
             route = dropdowns[group.toUpperCase()].groups[subgroup].characters;
@@ -81,7 +80,7 @@ function createCharacterDropdowns(data) {
             newRoute[name].checked = false;
             newRoute[name].open = false;
 
-        } else{
+        } else {
             newRoute[name] = {
                 "checked": false
             }
@@ -106,11 +105,10 @@ function createCharacterDropdowns(data) {
         } else {
             route = dropdowns[group.toUpperCase()].characters = newRoute;
         }
-        
+
     }
 
-
-    return {"dropdowns": dropdowns, "names": names};
+    return { "dropdowns": dropdowns, "names": names };
 
 }
 
@@ -119,7 +117,6 @@ function SearchPage() {
     const [versionData, setVersionData] = useState();
     const [mediumFlash, setMediumFlash] = useState(false);
     const [keywordsFlash, setKeywordsFlash] = useState(false);
-    const [dropdowns, setDropdowns] = useState();
     const [loading, setLoading] = useState(true);
     const [resultsText, setResultsText] = useState('');
 
@@ -154,7 +151,25 @@ function SearchPage() {
 
                 // Fetch dropdown data
                 let dropdownData = await fetchDropdowns(versionDataTemp, setVersionData);
-                if (dropdownData.versionUpdated && dropdownData !== undefined) {
+                let animeDropdown = sessionStorage.getItem("animeDropdown");
+                let lnDropdown = sessionStorage.getItem("lnDropdown");
+                let mogDropdown = sessionStorage.getItem("mogDropdown");
+                let wnDropdown = sessionStorage.getItem("wnDropdown");
+                if (animeDropdown) {
+                    animeDropdown = JSON.parse(animeDropdown);
+                }
+                if (lnDropdown) {
+                    lnDropdown = JSON.parse(lnDropdown);
+                }
+                if (mogDropdown) {
+                    mogDropdown = JSON.parse(mogDropdown);
+                }
+                if (wnDropdown) {
+                    wnDropdown = JSON.parse(wnDropdown);
+                }
+                if (dropdownData.versionUpdated || Object.keys(animeDropdown).length === 0 ||
+                    Object.keys(lnDropdown).length === 0 || Object.keys(mogDropdown).length === 0
+                    || Object.keys(wnDropdown).length === 0) {
                     // Update dropdown states based on the data
                     setAnimeDropdownState(dropdownData.data["anime"]);
                     setMogDropdownState(dropdownData.data["mog"]);
@@ -167,14 +182,22 @@ function SearchPage() {
                     sessionStorage.setItem("mogDropdown", JSON.stringify(dropdownData.data["mog"]));
                     sessionStorage.setItem("wnDropdown", JSON.stringify(dropdownData.data["wn"]));
                 }
-                setDropdowns(dropdownData.data);
                 sessionStorage.setItem("animeDropdown", JSON.stringify(dropdownData.data["anime"]));
                 sessionStorage.setItem("lnDropdown", JSON.stringify(dropdownData.data["ln"]));
                 sessionStorage.setItem("mogDropdown", JSON.stringify(dropdownData.data["mog"]));
                 sessionStorage.setItem("wnDropdown", JSON.stringify(dropdownData.data["wn"]));
 
                 let characterData = await fetchCharactersData(versionDataTemp, setVersionData);
-                if (characterData.versionUpdated && characterData !== undefined) {
+                let savedCharacterDropdowns = sessionStorage.getItem('characterDropdowns');
+                let savedNameMap = sessionStorage.getItem('nameMap');
+                if (savedCharacterDropdowns) {
+                    savedCharacterDropdowns = JSON.parse(savedCharacterDropdowns);
+                }
+                if (savedNameMap) {
+                    savedNameMap = JSON.parse(savedNameMap);
+                }
+                if (characterData.versionUpdated || Object.keys(savedCharacterDropdowns).length === 0 ||
+                    Object.keys(savedNameMap).length === 0) {
                     let characterDropdownData = createCharacterDropdowns(characterData.data);
                     setCharacterDropdowns(characterDropdownData.dropdowns);
                     setNameMap(characterDropdownData.names);
@@ -185,7 +208,7 @@ function SearchPage() {
                     sessionStorage.setItem("characterDropdowns", JSON.stringify(characterDropdownData.dropdowns));
                     sessionStorage.setItem("nameMap", JSON.stringify(characterDropdownData.names));
                 }
-                
+
 
             } catch (error) {
                 console.error('Error fetching data:', error);
@@ -261,7 +284,7 @@ function SearchPage() {
             return JSON.parse(savedState);
         } else {
             // If not found, return the initial state
-            return { keywords: [], caseSensitive: false, exactMatch: false };
+            return { keywords: [], caseSensitive: false, exactMatch: false, regex: false, expression: '' };
         }
     });
 
@@ -269,6 +292,23 @@ function SearchPage() {
     useEffect(() => {
         sessionStorage.setItem('filterState', JSON.stringify(filterState));
     }, [filterState]);
+
+    const [resultState, setResultState] = useState(() => {
+        // Try to get the state from sessionStorage
+        const savedState = sessionStorage.getItem('resultState');
+        if (savedState) {
+            // If found, parse and return the saved state
+            return JSON.parse(savedState);
+        } else {
+            // If not found, return the initial state
+            return { highlight: false, sortMode: 0, sortAsc: true };
+        }
+    });
+
+    // Use an effect to update sessionStorage whenever the state changes
+    useEffect(() => {
+        sessionStorage.setItem('resultState', JSON.stringify(resultState));
+    }, [resultState]);
 
 
     const images = {
@@ -462,13 +502,14 @@ function SearchPage() {
 
         return {}
     });
-    
+
     useEffect(() => {
         sessionStorage.setItem('characterDropdowns', JSON.stringify(characterDropdowns));
     }, [characterDropdowns]);
 
     const [nameMap, setNameMap] = useState(() => {
         const savedState = sessionStorage.getItem('nameMap');
+
         if (savedState) {
             const parsedState = JSON.parse(savedState);
             return parsedState;
@@ -476,7 +517,7 @@ function SearchPage() {
 
         return {}
     });
-    
+
     useEffect(() => {
         sessionStorage.setItem('nameMap', JSON.stringify(nameMap));
     }, [nameMap]);
@@ -493,7 +534,7 @@ function SearchPage() {
         sessionStorage.setItem('namedActive', JSON.stringify(namedActive));
     }, [namedActive]);
 
-    const namedCharacters = ["Akane Nishino", "Alexia Midgar", "Alpha", "Annerose Nichtsehen", "Aurora", 
+    const namedCharacters = ["Akane Nishino", "Alexia Midgar", "Alpha", "Annerose Nichtsehen", "Aurora",
         "Beatrix", "Beta", "Chi", "Cid Kagenou", "Claire Kagenou", "Claudia", "Crimson", "Delta", "Duet",
         "Elisabeth", "Epsilon", "Eta", "Freya", "Gamma", "Garter Kikuchi", "Gettan", "Glen", "Goldy Gilded",
         "Grease", "Iota", "Iris Midgar", "Jack Nelson", "Juggernaut", "Kana", "Kevin", "Klaus Midgar",
@@ -554,6 +595,14 @@ function SearchPage() {
     async function handleSearch() {
         clearResults();
         setSavedFilterState(filterState);
+        if (filterState.regex) {
+            try {
+                new RegExp(filterState.expression);
+              } catch (error) {
+                setResultsText(error.message);
+                return;
+              }
+        }
         // Collect all checked items from animeDropdownState
         const animeCheckedItems = Object.entries(animeDropdownState.seasonsChecked)
             .flatMap(([season, episodes]) =>
@@ -690,7 +739,6 @@ function SearchPage() {
         let esCheckedData;
 
 
-        console.log(esCheckedItems)
         if (animeCheckedItems.length > 0) {
             anCheckedData = await fetchANData(animeCheckedItems, versionData, setVersionData, setResultsText);
         }
@@ -768,12 +816,18 @@ function SearchPage() {
             setMediumFlash(true);
             return;
         } else {
-            animeResults = searchAnime(animeCheckedItems, animeText, filterState.keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, namedActive, namedCharacters);
-            lnResults = searchLN(lnCheckedItems, lnText, filterState.keywords, filterState.caseSensitive, filterState.exactMatch);
-            wnResults = searchWN(wnCheckedItems, wntext, filterState.keywords, filterState.caseSensitive, filterState.exactMatch);
-            sscResults = searchSSC(sscCheckedItems, sscText, filterState.keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, namedActive, namedCharacters);
-            esResults = searchES(esCheckedItems, esText, filterState.keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, namedActive, namedCharacters);
-            apoResults = searchAPO(apoCheckedItems, apoText, filterState.keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, namedActive, namedCharacters)
+            let keywords;
+            if (filterState.regex) {
+                keywords = [filterState.expression]
+            } else {
+                keywords = filterState.keywords;
+            }
+            animeResults = searchAnime(animeCheckedItems, animeText, keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, filterState.regex, namedActive, namedCharacters);
+            lnResults = searchLN(lnCheckedItems, lnText,keywords, filterState.caseSensitive, filterState.exactMatch, filterState.regex);
+            wnResults = searchWN(wnCheckedItems, wntext, keywords, filterState.caseSensitive, filterState.exactMatch, filterState.regex);
+            sscResults = searchSSC(sscCheckedItems, sscText, keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, filterState.regex, namedActive, namedCharacters);
+            esResults = searchES(esCheckedItems, esText, keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, filterState.regex, namedActive, namedCharacters);
+            apoResults = searchAPO(apoCheckedItems, apoText, keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, filterState.regex, namedActive, namedCharacters)
             // Update the state with the search results
             setSearchResults({ anime: animeResults, ln: lnResults, wn: wnResults, ssc: { ...sscResults }, es: { ...esResults }, apo: { ...apoResults } });
         }
@@ -823,6 +877,8 @@ function SearchPage() {
                 results={searchResults}
                 images={images}
                 filterState={savedFilterState}
+                resultState={resultState}
+                setResultState={setResultState}
                 resultsKey={resultsKey}
                 setResultsKey={setResultsKey}
             />

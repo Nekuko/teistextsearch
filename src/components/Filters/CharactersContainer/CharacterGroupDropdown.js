@@ -67,26 +67,9 @@ function CharacterGroupDropdown({
 
   const [filter, setFilter] = useState(''); // State for the filter input
   const handleGroupClick = () => {
-    // Implement your logic for handling group click here
-    // For example, toggle the 'open' property
     const updatedGroup = {
       ...selectedGroup,
       open: !selectedGroup.open,
-    };
-
-    // Update the state with the modified group
-    setDropdownStates((prevState) => ({
-      ...prevState,
-      [dropdownName]: updatedGroup,
-    }));
-  };
-
-  const handleGroupChange = (groupKey) => {
-    // Implement your logic for handling group selection here
-    // For example, toggle the 'checked' property
-    const updatedGroup = {
-      ...selectedGroup,
-      checked: !selectedGroup.checked,
     };
 
     // Update the state with the modified group
@@ -113,7 +96,6 @@ function CharacterGroupDropdown({
       } else {
         return characterName.toLowerCase().includes(filter.toLowerCase());
       }
-      return false;
     });
   });
 

@@ -11,7 +11,7 @@ import SSCResults from './Containers/SSCResults';
 import ESResults from './Containers/ESResults';
 import APOResults from './Containers/APOResults';
 
-function Results({ resultsText, setResultsText, results, images, filterState, animeDropdownState, lnDropdownState, wnDropdownState, mogDropdownState, setSearchResults, resultsKey, setResultsKey }) {
+function Results({ resultsText, setResultsText, results, images, filterState, resultState, setResultState, animeDropdownState, lnDropdownState, wnDropdownState, mogDropdownState, setSearchResults }) {
   const noResults = Object.keys(results).every(key => Object.keys(results[key]).length === 0);
 
   const lnResults = results && results.ln ? results.ln.ln : null;
@@ -21,10 +21,11 @@ function Results({ resultsText, setResultsText, results, images, filterState, an
   const esResults = results && results.es ? results.es.es : null;
   const apoResults = results && results.apo ? results.apo.apo : null;
 
-  const [highlight, setHighlight] = useState(false);
+  const [highlight, setHighlight] = useState(resultState.highlight);
 
   const toggleHighlight = () => {
     setHighlight(!highlight);
+    setResultState(prevState => ({ ...prevState, highlight: !highlight }));
   };
 
   const resetResults = () => {

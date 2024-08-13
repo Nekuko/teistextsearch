@@ -89,37 +89,28 @@ function CharacterDropdown({
 
 
   const handleCheckboxChangeOption = (optionKey) => {
-    setDropdownStates((prevState) => {
-      const updatedCharacters = { ...prevState[dropdownName].characters };
-      const updatedGroups = { ...prevState[dropdownName].groups };
+    const updatedCharacters = { ...dropdownStates[dropdownName].characters };
+    updatedCharacters[characterName][optionKey] = !updatedCharacters[characterName][optionKey];
 
-      // Toggle the option's checked state
-      updatedCharacters[characterName][optionKey] = !updatedCharacters[characterName][optionKey];
+    // Determine if any options are checked
+    const isAnyOptionChecked = Object.keys(updatedCharacters[characterName]).some(
+      (key) => key !== 'checked' && key !== 'open' && updatedCharacters[characterName][key]
+    );
 
-      // Determine if any options are checked
-      const isAnyOptionChecked = Object.keys(updatedCharacters[characterName]).some(
-        (key) => key !== 'checked' && key !== 'open' && updatedCharacters[characterName][key]
-      );
+    // Update the character's checked state based on options
+    updatedCharacters[characterName].checked = isAnyOptionChecked;
 
-      // Update the character's checked state based on options
-      updatedCharacters[characterName].checked = isAnyOptionChecked;
+    // Determine if any main characters are checked
+    const isAnyMainCharacterChecked = Object.values(updatedCharacters).some(character => character.checked);
 
-      const isAnyGroupChecked = Object.values(updatedGroups).some(group => group.checked);
-
-
-      // Determine if any main characters are checked
-      const isAnyMainCharacterChecked = Object.values(updatedCharacters).some(character => character.checked);
-
-      return {
-        ...prevState,
-        [dropdownName]: {
-          ...prevState[dropdownName],
-          checked: isAnyGroupChecked || isAnyMainCharacterChecked,
-          groups: updatedGroups,
-          characters: updatedCharacters,
-        },
-      };
-    });
+    setDropdownStates((prevState) => ({
+      ...prevState,
+      [dropdownName]: {
+        ...prevState[dropdownName],
+        checked: isAnyMainCharacterChecked,
+        characters: updatedCharacters,
+      },
+    }));
   };
 
 
@@ -174,11 +165,14 @@ function CharacterDropdown({
             .map((optionKey, index) => (
               <div key={index} className="item-header">
                 <div className="volume-trigger-drop">
-                  {characterImages[optionKey] && (
+                  {characterImages[optionKey] ? (
                     <img className="characters-container-image-small" src={characterImages[optionKey]} alt={optionKey || 'None'} />
-                  ) || (characterImages[characterName] && (
-                    <img className="characters-container-image-small" src={characterImages[characterName]} alt={characterName || 'None'} />
-                  ))}
+                  ) : (
+                    characterImages[characterName] && (
+                      <img className="characters-container-image-small" src={characterImages[characterName]} alt={characterName || 'None'} />
+                    )
+                  )}
+
                   <span
                     className={
                       characterData[optionKey]

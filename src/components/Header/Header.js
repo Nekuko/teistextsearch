@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 import { ReactComponent as SlashLine } from '../../svgs/nav_separator.svg';
-import Logo from '../../images/icons/logo.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import Logo from '../../images/icons/Asset_4.webp'
 import { ReactComponent as Menu } from '../../svgs/codicon--menu.svg';
 
 function Header() {

@@ -81,19 +81,30 @@ function SSCResults({ sscData, images, highlight, filterState, main, partsChecke
 
     const highlightKeywords = (text) => {
         let highlightedText = text;
-        filterState.keywords.forEach(keyword => {
+        if (filterState.regex) {
+          const regex = new RegExp(filterState.expression);
+          highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
+        } else {
+          filterState.keywords.forEach(keyword => {
             let regex;
-            if (filterState.exactMatch) {
-                // If exactMatch is true, match the keyword exactly as it is
-                regex = new RegExp(`\\b${keyword}\\b`, filterState.caseSensitive ? 'g' : 'gi');
+            if (filterState.regex) {
+              // If regex is true, use the keyword as a regular expression
+              regex = new RegExp(keyword, filterState.caseSensitive ? 'g' : 'gi');
+            } else if (filterState.exactMatch) {
+              // If exactMatch is true, match the keyword exactly as it is
+              regex = new RegExp(`\\b${keyword}\\b`, filterState.caseSensitive ? 'g' : 'gi');
             } else {
-                // If exactMatch is false, match any occurrence of the keyword
-                regex = new RegExp(keyword, filterState.caseSensitive ? 'g' : 'gi');
+              // Otherwise, match any occurrence of the keyword
+              regex = new RegExp(keyword, filterState.caseSensitive ? 'g' : 'gi');
             }
+    
+            // Highlight matches
             highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
-        });
+          });
+        }
+    
         return highlightedText;
-    };
+      };
 
     function handleMouseEnter(id, partKey, episodeKey, index) {
         return;

@@ -33,11 +33,6 @@
   z-index: 3;
 }
 
-.burger-icon:hover {
-  color: #c8000f;
-  cursor: pointer;
-}
-
 .burger-open {
   color: #c8000f;
 }
@@ -147,7 +142,7 @@
 
 /* Header.css */
 .logo {
-  width: 150px; /* Adjust as needed */
+  width: 200px; /* Adjust as needed */
   height: auto; /* Keeps the aspect ratio */
   transition: opacity 0.3s ease; /* Adds a smooth transition */
 }

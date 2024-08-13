@@ -104,6 +104,32 @@
   }
 }
 
+@media (min-width: 1025px) {
+  .scroll-top-button:hover {
+    color: red;
+    cursor: pointer;
+  }
+
+  .pagination-controls button:hover {
+    color: red;
+  }
+
+  .reset-icon:hover {
+    color: red;
+  }
+
+  .copy-button:hover {
+    background-color: #ff0000;
+  }
+
+  .copy-icon:hover,
+  .image-icon:hover,
+  .info-icon:hover {
+    color: red;
+    cursor: pointer;
+  }
+}
+
 .results-container {
   align-items: center;
   position: relative;
@@ -139,10 +165,7 @@
   right: 5px;
 }
 
-.scroll-top-button:hover {
-  color: red;
-  cursor: pointer;
-}
+
 
 .content-wrapper {
   overflow-y: auto;
@@ -184,14 +207,6 @@
   /* The red color you specified */
   cursor: pointer;
   /* Change the cursor to a pointer when hovering over the icon */
-}
-
-.reset-icon:hover {
-  color: red;
-}
-
-.copy-button:hover {
-  background-color: #ff0000;
 }
 
 .chapter-section {
@@ -379,12 +394,7 @@
   margin-left: 3px;
 }
 
-.copy-icon:hover,
-.image-icon:hover,
-.info-icon:hover {
-  color: red;
-  cursor: pointer;
-}
+
 
 .Collapsible__trigger {
   display: block;
@@ -582,11 +592,6 @@ input[type=number] {
   text-align: center;
 }
 
-
-
-.pagination-controls button:hover {
-  color: red;
-}
 
 .pagination-controls button:disabled {
   color: #999999;

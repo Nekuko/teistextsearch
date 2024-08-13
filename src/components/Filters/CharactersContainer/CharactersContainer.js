@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './CharactersContainer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRotateRight, faN } from '@fortawesome/free-solid-svg-icons';
@@ -113,7 +113,7 @@ function CharactersContainer({
         const dropdown = updatedState[dropdownName];
         let allUnchecked = true; // Flag to track if all characters are unchecked
 
-        if (dropdown.characters) {
+        if (Object.keys(dropdown.characters).length > 0) {
           for (const charName in dropdown.characters) {
             const character = dropdown.characters[charName];
             if (character.checked) {
@@ -121,6 +121,8 @@ function CharactersContainer({
               break; // Exit loop if any character is checked
             }
           }
+        } else {
+          allUnchecked = false;
         }
 
         if (allUnchecked) {
@@ -160,13 +162,11 @@ function CharactersContainer({
   const handleCheckboxChange = (groupName) => {
     setDropdownStates((prevState) => {
       const updateCheckedState = (items, newCheckedState) => {
-        console.log(items)
         return Object.keys(items).reduce((updatedItems, itemName) => {
           const item = items[itemName];
           const updatedItem = { ...item, checked: newCheckedState };
 
           if (namedActive) {
-            console.log(Object.keys(updatedItem))
             if (Object.keys(updatedItem).length === 1) {
               if (namedCharacters.includes(itemName)) {
                 updatedItem.checked = newCheckedState
@@ -207,7 +207,6 @@ function CharactersContainer({
             updatedItem.characters = updateCheckedState(updatedItem.characters, newCheckedState);
             if (namedActive) {
               Object.keys(updatedItem.characters).forEach((characterName) => {
-                console.log(characterName)
                 const character = updatedItem.characters[characterName];
                 if (typeof character === 'object') {
                   if (namedCharacters.includes(characterName)) {

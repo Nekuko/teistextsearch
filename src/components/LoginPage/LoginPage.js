@@ -15,7 +15,6 @@ function LoginPage() {
     try {
       const result = await signInWithPopup(auth, provider);
       // The signed-in user info.
-      const user = result.user;
     } catch (error) {
       console.log(`Error ${error.code}: ${error.message}`);
     }
@@ -26,23 +25,40 @@ function LoginPage() {
     const db = getFirestore();
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       if (user) {
-        const docRef = doc(db, "allowedEmails", "emails");
-        const docSnap = await getDoc(docRef);
-
-        if (docSnap.exists() && docSnap.data().emailArray.includes(user.email)) {
-          // If the user's email is in the emailArray, navigate to '/'
-          navigate('/');
-        } else {
-          // If the user's email is not in the emailArray, log them out and navigate to '/noauth'
+        try {
+          // Get the user document from the "users" collection based on their email
+          const userDocRef = doc(db, "users", user.email);
+          const userDocSnap = await getDoc(userDocRef);
+  
+          if (userDocSnap.exists()) {
+            // If the user document exists, check the "auth" field
+            const userData = userDocSnap.data();
+            if (userData.auth) {
+              // If "auth" is true, navigate to '/'
+              navigate('/');
+            } else {
+              // If "auth" is false, sign the user out and navigate to '/noauth'
+              auth.signOut();
+              navigate('/noauth');
+            }
+          } else {
+            // If the user document does not exist, sign the user out and navigate to '/noauth'
+            auth.signOut();
+            navigate('/noauth');
+          }
+        } catch (error) {
+          console.error("Error fetching user data:", error);
           auth.signOut();
           navigate('/noauth');
+          // Handle any errors (e.g., network issues, document not found)
+          // You might want to log the user out or show an error message
         }
       } else {
         // If the user is null (account deleted), navigate to '/login'
         navigate('/login');
       }
     });
-
+  
     // Clean up the subscription
     return () => unsubscribe();
   }, [auth, navigate]);

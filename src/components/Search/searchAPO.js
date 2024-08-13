@@ -1,9 +1,6 @@
-export function searchAPO(keys, text, keywords, nameMap, characters = [], caseSensitive = false, exactMatch = false, namedActive = false, namedCharacters = []) {
+export function searchAPO(keys, text, keywords, nameMap, characters = [], caseSensitive = false, exactMatch = false, regex = false, namedActive = false, namedCharacters = []) {
     // Initialize an empty object to hold the apoResults
     let apoResults = {};
-  
-    // Initialize a counter for the total number of matches
-    let totalMatches = 0;
   
     // Iterate over the keys
     for (let i = 0; i < keys.length; i++) {
@@ -19,20 +16,25 @@ export function searchAPO(keys, text, keywords, nameMap, characters = [], caseSe
       let filteredSentences = sentences.filter(sentence => {
         let sentenceToCheck = caseSensitive ? sentence.subtitle : sentence.subtitle.toLowerCase();
         let allKeywordsFound = true
-        for (let keyword of keywords) {
-          let keywordToCheck = caseSensitive ? keyword : keyword.toLowerCase();
-          if (exactMatch) {
-            // If exact match is required, check if the sentence contains the keyword as a whole word
-            let regex = new RegExp(`\\b${keywordToCheck}\\b`);
-            if (!regex.test(sentenceToCheck)) {
-              allKeywordsFound = false;
-              break;
-            }
-          } else {
-            // If exact match is not required, check if the sentence includes the keyword
-            if (!sentenceToCheck.includes(keywordToCheck)) {
-              allKeywordsFound = false;
-              break;
+        if (regex) {
+          const regexToTest = new RegExp(keywords[0]);
+          allKeywordsFound = regexToTest.test(sentenceToCheck);
+        } else {
+          for (let keyword of keywords) {
+            let keywordToCheck = caseSensitive ? keyword : keyword.toLowerCase();
+            if (exactMatch) {
+              // If exact match is required, check if the sentence contains the keyword as a whole word
+              let regex = new RegExp(`\\b${keywordToCheck}\\b`);
+              if (!regex.test(sentenceToCheck)) {
+                allKeywordsFound = false;
+                break;
+              }
+            } else {
+              // If exact match is not required, check if the sentence includes the keyword
+              if (!sentenceToCheck.includes(keywordToCheck)) {
+                allKeywordsFound = false;
+                break;
+              }
             }
           }
         }
@@ -50,7 +52,6 @@ export function searchAPO(keys, text, keywords, nameMap, characters = [], caseSe
             }
           }
           if (!characterFound) {
-            totalMatches++;
             return true;
           }
         } else if (allKeywordsFound && characters.length > 0) {
@@ -66,11 +67,9 @@ export function searchAPO(keys, text, keywords, nameMap, characters = [], caseSe
 
           }
           if (characterFound) {
-            totalMatches++;
             return true;
           }
         } else if (allKeywordsFound) {
-          totalMatches++;
           return true;
         }
         return false;

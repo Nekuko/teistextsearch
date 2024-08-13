@@ -1,3 +1,9 @@
+@media (min-width: 1025px) {
+  .settings-update:hover {
+    color: red;
+  }
+}
+
 .settings-page {
   color: white;
 }
@@ -24,7 +30,7 @@
   position: sticky;
   top: 0;
   background-color: #1f2224;
-  z-index: 1;
+  z-index: 0;
   font-weight: bold;
 }
 
@@ -112,8 +118,4 @@
   color: #c8000f;
   margin-left: 1%;
   animation: rotate 2s infinite linear;
-}
-
-.settings-update:hover {
-  color: red;
 }

@@ -11,12 +11,6 @@
   }
 }
 
-
-.reset-button:hover {
-  color: red;
-  cursor: pointer;
-}
-
 .selected-container {
   display: flex;
   flex-direction: column;
