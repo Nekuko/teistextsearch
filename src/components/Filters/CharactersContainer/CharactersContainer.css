@@ -57,6 +57,16 @@ input[type="checkbox"] {
   accent-color: #c8000f;
 }
 
+.character-list {
+  max-height: 500px; /* Adjust this value as needed */
+  overflow-y: auto; /* This will add a vertical scrollbar */
+  overflow-x: hidden;
+  padding-left: 2px;
+  padding-right: 4%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
 .reset-button {
   position: absolute;
   bottom: 10px;

@@ -17,6 +17,14 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
   const iconRefs = useRef({});
   const [currentPage, setCurrentPage] = useState({});
   const partsChecked = animeDropdownState.seasonsChecked;
+  const [openMenus, setOpenMenus] = useState({});
+
+  function handleMenu(name) {
+    setOpenMenus((prevOpenMenus) => ({
+      ...prevOpenMenus,
+      [name]: !prevOpenMenus[name],
+    }));
+  }
 
   useEffect(() => {
     const initialPages = {};
@@ -65,7 +73,7 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
     });
     setCurrentPage(newCurrentPages);
   }
-  
+
   const characterImages = images.characterImages;
   const coverImages = images.animeCoverImages;
   const customOrder = ["s1", "s2", "s101", "s102"];
@@ -87,7 +95,7 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
   const highlightKeywords = (text) => {
     let highlightedText = text;
     if (filterState.regex) {
-      const regex = new RegExp(filterState.expression);
+      const regex = new RegExp(filterState.expression, 'g');
       highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
     } else {
       filterState.keywords.forEach(keyword => {
@@ -131,7 +139,7 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
     }
   }
 
- 
+
 
   if (Object.keys(anData.seasons).length === 0) {
     return null;
@@ -170,7 +178,7 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
 
         return (
           <div key={seasonTitle}>
-            <Collapsible className="medium-margin" trigger={
+            <Collapsible onOpening={() => handleMenu(seasonKey)} onClose={() => handleMenu(seasonKey)} className="medium-margin" trigger={
               <>
                 <div className="season-trigger">
                   {coverImages[seasonKey] && <img className="cover-image" src={coverImages[seasonKey]} alt={seasonTitle} />}
@@ -178,104 +186,114 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
                 </div>
               </>
             }>
-              {Object.entries(seasonValue.episodes).sort((a, b) => {
-                const episodeA = parseInt(a[0].split("e")[1], 10);
-                const episodeB = parseInt(b[0].split("e")[1], 10);
-                return episodeA - episodeB;
-              })
-                .map(([episodeKey, episodeValue]) => {
-                  const uniqueChapterKey = `${seasonKey}-${episodeKey}`;
-                  // Get the episode title from the mapping
-                  const episodeTitle = partsChecked[mapKey][`${seasonKey}${episodeKey}`].title || `Episode ${episodeKey.slice(1)}`;
-                  return (
-                    <Collapsible trigger={`Episode ${episodeTitle} (Total: ${episodeValue.count})`} key={uniqueChapterKey}>
-                      <div className="sentences-container">
-                        {episodeValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
-                          <div className="sentence-character-container" key={index}>
-                            <div className="sentence-box-image">
-                              <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
-                              <div className="icon-container-triple">
-                                <CopyToClipboard text={sentence.subtitle}>
-                                  <div className="copy-icon" onClick={() => showPopup(seasonKey, episodeKey, index)}>
-                                    <FontAwesomeIcon icon={faCopy} />
-                                    {/* Ensure the ID is unique for each popup */}
-                                    <div className="popup" id={`popup-${seasonKey}-${episodeKey}-${index}`}>
-                                      Copied!
+              {openMenus[seasonKey] && (
+                <>
+
+                  {Object.entries(seasonValue.episodes).sort((a, b) => {
+                    const episodeA = parseInt(a[0].split("e")[1], 10);
+                    const episodeB = parseInt(b[0].split("e")[1], 10);
+                    return episodeA - episodeB;
+                  })
+                    .map(([episodeKey, episodeValue]) => {
+                      const uniqueChapterKey = `${seasonKey}-${episodeKey}`;
+                      // Get the episode title from the mapping
+                      const episodeTitle = partsChecked[mapKey][`${seasonKey}${episodeKey}`].title || `Episode ${episodeKey.slice(1)}`;
+                      return (
+                        <Collapsible onOpening={() => handleMenu(`${seasonKey}-${episodeKey}`)} onClose={() => handleMenu(`${seasonKey}-${episodeKey}`)}
+                          trigger={`Episode ${episodeTitle} (Total: ${episodeValue.count})`} key={uniqueChapterKey}>
+                          {openMenus[`${seasonKey}-${episodeKey}`] && (
+                            <>
+                              <div className="sentences-container">
+                                {episodeValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
+                                  <div className="sentence-character-container" key={index}>
+                                    <div className="sentence-box-image">
+                                      <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
+                                      <div className="icon-container-triple">
+                                        <CopyToClipboard text={sentence.subtitle}>
+                                          <div className="copy-icon" onClick={() => showPopup(seasonKey, episodeKey, index)}>
+                                            <FontAwesomeIcon icon={faCopy} />
+                                            {/* Ensure the ID is unique for each popup */}
+                                            <div className="popup" id={`popup-${seasonKey}-${episodeKey}-${index}`}>
+                                              Copied!
+                                            </div>
+                                          </div>
+                                        </CopyToClipboard>
+                                        <SlashLine className="icon-slashline" />
+                                        <div className="image-icon-container"
+                                          onMouseEnter={() => handleMouseEnter(sentence.url, seasonKey, episodeKey, index)}
+                                          onMouseLeave={() => setPreviewImage(null)}
+                                          ref={ref => iconRefs.current[`${seasonKey}-${episodeKey}-${index}`] = ref}
+                                        >
+                                          {sentence.url && (
+                                            <a href={`https://drive.google.com/file/d/${sentence.url.split('/d/')[1].split('/view')[0]}/view`} target="_blank" rel="noopener noreferrer">
+                                              <FontAwesomeIcon className="image-icon" icon={faFileImage} />
+                                            </a>
+                                          )}
+                                        </div>
+                                        <SlashLine className="icon-slashline" />
+                                        <div className="info-icon-container"
+                                          onMouseEnter={() => handleMouseEnterInfo(seasonKey, episodeKey, index, seasonTitle, episodeTitle, sentence.start_time, sentence.end_time, sentence.name, sentence.name_variant, sentence.line)}
+                                          onMouseLeave={() => setPreviewText(null)}
+                                          ref={ref => iconRefs.current[`${seasonKey}-${episodeKey}-${index}-info`] = ref}
+                                        >
+                                          {sentence && (
+                                            <FontAwesomeIcon className="info-icon" icon={faCircleInfo} />
+                                          )}
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                    <div className="character-box">
+                                      {characterImages[sentence.name_variant] && (
+                                        <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant || 'None'} />
+                                      ) || (characterImages[sentence.name] && (
+                                        <img src={characterImages[sentence.name]} alt={sentence.name || 'None'} />
+                                      ))}
+                                      <p title={sentence.name !== sentence.name_variant ? `${sentence.name_variant} (${sentence.name})` : sentence.name}>
+                                        {sentence.name !== sentence.name_variant ? `${sentence.name_variant}` : sentence.name}
+                                      </p>
                                     </div>
                                   </div>
-                                </CopyToClipboard>
-                                <SlashLine className="icon-slashline" />
-                                <div className="image-icon-container"
-                                  onMouseEnter={() => handleMouseEnter(sentence.url, seasonKey, episodeKey, index)}
-                                  onMouseLeave={() => setPreviewImage(null)}
-                                  ref={ref => iconRefs.current[`${seasonKey}-${episodeKey}-${index}`] = ref}
-                                >
-                                  {sentence.url && (
-                                    <a href={`https://drive.google.com/file/d/${sentence.url.split('/d/')[1].split('/view')[0]}/view`} target="_blank" rel="noopener noreferrer">
-                                      <FontAwesomeIcon className="image-icon" icon={faFileImage} />
-                                    </a>
-                                  )}
-                                </div>
-                                <SlashLine className="icon-slashline" />
-                                <div className="info-icon-container"
-                                  onMouseEnter={() => handleMouseEnterInfo(seasonKey, episodeKey, index, seasonTitle, episodeTitle, sentence.start_time, sentence.end_time, sentence.name, sentence.name_variant, sentence.line)}
-                                  onMouseLeave={() => setPreviewText(null)}
-                                  ref={ref => iconRefs.current[`${seasonKey}-${episodeKey}-${index}-info`] = ref}
-                                >
-                                  {sentence && (
-                                    <FontAwesomeIcon className="info-icon" icon={faCircleInfo} />
-                                  )}
-                                </div>
-
+                                ))}
                               </div>
-                            </div>
-                            <div className="character-box">
-                              {characterImages[sentence.name_variant] && (
-                                <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant || 'None'} />
-                              ) || (characterImages[sentence.name] && (
-                                <img src={characterImages[sentence.name]} alt={sentence.name || 'None'} />
-                              ))}
-                              <p title={sentence.name !== sentence.name_variant ? `${sentence.name_variant} (${sentence.name})` : sentence.name}>
-                                {sentence.name !== sentence.name_variant ? `${sentence.name_variant}` : sentence.name}
-                              </p>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                      {
-                        sentencesPerPage && (
-                          <div className='page-settings'>
-                            <div className="pagination-controls">
-                              <button title={`Page 1`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: 1 }))}>
-                                <FontAwesomeIcon icon={faAnglesLeft} />
-                              </button>
-                              <button title={`Page ${Math.max(currentPage[uniqueChapterKey] - 1, 1)}`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.max((oldPages[uniqueChapterKey] || 1) - 1, 1) }))}>
-                                <FontAwesomeIcon icon={faAngleLeft} />
-                              </button>
-                              <input type="number" min="1" max={Math.ceil(episodeValue.sentences.length / sentencesPerPage)} value={currentPage[uniqueChapterKey] || 1} onChange={e => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min(Math.max(Number(e.target.value), 1), Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))} />
-                              <button title={`Page ${Math.min(currentPage[uniqueChapterKey] + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage))}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min((oldPages[uniqueChapterKey] || 1) + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))}>
-                                <FontAwesomeIcon icon={faAngleRight} />
-                              </button>
-                              <button title={`Page ${Math.ceil(episodeValue.sentences.length / sentencesPerPage)}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.ceil(episodeValue.sentences.length / sentencesPerPage) }))}>
-                                <FontAwesomeIcon icon={faAnglesRight} />
-                              </button>
+                              {
+                                sentencesPerPage && (
+                                  <div className='page-settings'>
+                                    <div className="pagination-controls">
+                                      <button title={`Page 1`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: 1 }))}>
+                                        <FontAwesomeIcon icon={faAnglesLeft} />
+                                      </button>
+                                      <button title={`Page ${Math.max(currentPage[uniqueChapterKey] - 1, 1)}`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.max((oldPages[uniqueChapterKey] || 1) - 1, 1) }))}>
+                                        <FontAwesomeIcon icon={faAngleLeft} />
+                                      </button>
+                                      <input type="number" min="1" max={Math.ceil(episodeValue.sentences.length / sentencesPerPage)} value={currentPage[uniqueChapterKey] || 1} onChange={e => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min(Math.max(Number(e.target.value), 1), Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))} />
+                                      <button title={`Page ${Math.min(currentPage[uniqueChapterKey] + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage))}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min((oldPages[uniqueChapterKey] || 1) + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))}>
+                                        <FontAwesomeIcon icon={faAngleRight} />
+                                      </button>
+                                      <button title={`Page ${Math.ceil(episodeValue.sentences.length / sentencesPerPage)}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.ceil(episodeValue.sentences.length / sentencesPerPage) }))}>
+                                        <FontAwesomeIcon icon={faAnglesRight} />
+                                      </button>
 
-                            </div>
-                            <input
-                              type="number"
-                              value={sentencesPerPage}
-                              onChange={(e) => doSentencesPerPage(parseInt(e.target.value))}
-                              className="settings-spp"
-                            />
+                                    </div>
+                                    <input
+                                      type="number"
+                                      value={sentencesPerPage}
+                                      onChange={(e) => doSentencesPerPage(parseInt(e.target.value))}
+                                      className="settings-spp"
+                                    />
 
-                          </div>
-                        )
-                      }
-                    </Collapsible>
+                                  </div>
+                                )
+                              }
+                            </>
+                          )}
+                        </Collapsible>
 
-                  );
+                      );
 
-                })}
+                    })}
+                </>
+              )}
             </Collapsible>
           </div>
         );

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import './Keywords.css'; // Import the CSS file
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes, faXmark, faRotateRight } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { VscCaseSensitive } from "react-icons/vsc";
 import { ReactComponent as WholeWord } from '../../../svgs/codicon--whole-word.svg';
 import { ReactComponent as Regex } from '../../../svgs/codicon--regex.svg';

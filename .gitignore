@@ -24,6 +24,5 @@ yarn-error.log*
 
 serviceAccountKey.json
 src/images/
-src/jsons/
 src/svgs/
 

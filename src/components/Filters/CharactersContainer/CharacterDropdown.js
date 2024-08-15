@@ -125,7 +125,7 @@ function CharacterDropdown({
   );
 
   return (
-    <div className="episode-list">
+    <div className="character-list">
       <div className="item-header">
         <div className="volume-trigger-drop">
           {characterImages[characterName] && <img className="characters-container-image" src={characterImages[characterName]} alt={characterName} />}
@@ -135,7 +135,7 @@ function CharacterDropdown({
             }
           >
 
-            <div className="episode-name">
+            <div onClick={handleOpenToggle} className="episode-name">
               <span className="season-title" title={characterName}>
                 {characterName}
               </span>

@@ -3,6 +3,11 @@
   .dropdown-menu {
     min-width: 400px;
   }
+
+  .dropdown-icon-main:hover, .dropdown-icon:hover {
+    color: red;
+    cursor: pointer;
+  }
 }
 
 /* Hide desktop navigation on screens smaller than or equal to 768px */
@@ -10,6 +15,11 @@
   .dropdown-menu {
     min-width: none;
     width: 90%;
+  }
+
+  .dropdown-icon-main:hover, .dropdown-icon:hover {
+    color: red;
+    cursor: pointer;
   }
 }
 

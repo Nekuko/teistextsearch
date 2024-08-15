@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Collapsible from 'react-collapsible';
 import LightNovelResults from './Containers/LightNovelResults';
 import WebNovelResults from './Containers/WebNovelResults';

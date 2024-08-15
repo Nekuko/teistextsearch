@@ -1,6 +1,7 @@
 // firebaseFunctions.js
 
 import { getFirestore, doc, getDoc } from 'firebase/firestore';
+import { getStorage, ref, getDownloadURL, updateMetadata } from "firebase/storage";
 import { openDB } from 'idb';
 import { app } from '../firebase.js';
 
@@ -37,7 +38,7 @@ export async function fetchLNData(lnCheckedItems, versionData, setVersionData, s
         let indexedDBVersion = await db.get('firestore-cache', `data-versions-ln-${volume}`);
 
         let data;
-        if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
+        if (!indexedDBVersion || firestoreVersion !== indexedDBVersion) {
             if (setResultsText) {
                 setResultsText(`Downloading data for ln_${volume}`)
             }
@@ -116,7 +117,7 @@ export async function fetchWNData(wnCheckedItems, versionData, setVersionData, s
         let indexedDBVersion = await db.get('firestore-cache', `data-versions-wn-${volume}`);
 
         let data;
-        if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
+        if (!indexedDBVersion || firestoreVersion !== indexedDBVersion) {
             if (setResultsText) {
                 setResultsText(`Downloading data for wn_${volume}`)
             }
@@ -205,7 +206,7 @@ export async function fetchAPOData(apoCheckedItems, versionData, setVersionData,
         let indexedDBVersion = await db.get('firestore-cache', `data-versions-apo-${part}-${chapter}`);
 
         let data;
-        if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
+        if (!indexedDBVersion || firestoreVersion !== indexedDBVersion) {
             if (setResultsText) {
                 setResultsText(`Downloading data for apo_${part}_${chapter}`)
             }
@@ -284,7 +285,7 @@ export async function fetchSSCData(sscCheckedItems, versionData, setVersionData,
         let indexedDBVersion = await db.get('firestore-cache', `data-versions-ssc-${part}-${chapter}`);
 
         let data;
-        if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
+        if (!indexedDBVersion || firestoreVersion !== indexedDBVersion) {
             if (setResultsText) {
                 setResultsText(`Downloading data for ssc_${part}_${chapter}`)
             }
@@ -351,7 +352,7 @@ export async function fetchESData(esCheckedItems, versionData, setVersionData, s
         let indexedDBVersion = await db.get('firestore-cache', `data-versions-es-${part}`);
 
         let data;
-        if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
+        if (!indexedDBVersion || firestoreVersion !== indexedDBVersion) {
             if (setResultsText) {
                 setResultsText(`Downloading data for es_${part}`)
             }
@@ -401,7 +402,7 @@ export async function fetchKJData(uniqueKJParts, uniqueKJPartsSeasons, versionDo
         let indexedDBVersion = await db.get('firestore-cache', `data-versions-an-${part}`); // Update to 'an' instead of 'es'
 
         let data;
-        if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
+        if (!indexedDBVersion || firestoreVersion !== indexedDBVersion) {
             if (setResultsText) {
                 setResultsText(`Downloading data for kj_${part}`)
             }
@@ -484,7 +485,7 @@ export async function fetchANData(anCheckedItems, versionData, setVersionData, s
         let indexedDBVersion = await db.get('firestore-cache', `data-versions-an-${part}`); // Update to 'an' instead of 'es'
 
         let data;
-        if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
+        if (!indexedDBVersion || firestoreVersion !== indexedDBVersion) {
             if (setResultsText) {
                 setResultsText(`Downloading data for an_${part}`)
             }
@@ -550,7 +551,7 @@ export async function fetchDropdowns(versionData) {
     let data;
     let versionUpdated = false; // Initialize the boolean flag
 
-    if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
+    if (!indexedDBVersion || firestoreVersion !== indexedDBVersion) {
         const dataDocRef = doc(firestore, 'data', `dropdowns`);
         let dataDocSnap = await getDoc(dataDocRef);
         data = dataDocSnap.data();
@@ -592,7 +593,7 @@ export async function fetchCharactersData(versionData) {
     let data;
     let versionUpdated = false; // Initialize the boolean flag
 
-    if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
+    if (!indexedDBVersion || firestoreVersion !== indexedDBVersion) {
         const dataDocRef = doc(firestore, 'data', `characters`);
         let dataDocSnap = await getDoc(dataDocRef);
         data = dataDocSnap.data();
@@ -653,7 +654,7 @@ export async function fetchInformationData(versionData, setVersionData) {
     let data;
     let versionUpdated = false; // Initialize the boolean flag
 
-    if (!indexedDBVersion || firestoreVersion > indexedDBVersion) {
+    if (!indexedDBVersion || firestoreVersion !== indexedDBVersion) {
         const dataDocRef = doc(firestore, 'data', `info`);
         let dataDocSnap = await getDoc(dataDocRef);
         data = dataDocSnap.data();
@@ -673,6 +674,89 @@ export async function fetchInformationData(versionData, setVersionData) {
     }
 
     return { data, versionUpdated }; // Return both data and the boolean flag
+}
+
+export async function fetchMediumImageData(versionData, setVersionData) {
+
+    const db = await openDB('firestore-cache-db', 1, {
+        upgrade(db) {
+            db.createObjectStore('firestore-cache');
+        },
+    });
+    const versionDocRef = doc(firestore, 'data', 'versions');
+    let versionDocSnap;
+    if (versionData) {
+        versionDocSnap = versionData;
+    } else {
+        versionDocSnap = (await getDoc(versionDocRef)).data();
+        setVersionData(versionDocSnap);
+    }
+
+    let firestoreVersion = versionDocSnap.info["medium_images"];
+    let indexedDBVersion = await db.get('firestore-cache', `data-versions-info-medium_images`);
+
+    let data;
+    let versionUpdated = false; // Initialize the boolean flag
+
+    if (!indexedDBVersion || firestoreVersion !== indexedDBVersion) {
+        const dataDocRef = doc(firestore, 'data', `medium_images`);
+        let dataDocSnap = await getDoc(dataDocRef);
+        data = dataDocSnap.data();
+
+        // Store the data in IndexedDB for future use
+        await db.put('firestore-cache', data, `data-medium_images`);
+        versionUpdated = true; // Set the flag to true
+    } else if (firestoreVersion === indexedDBVersion) {
+        // Fetch data from IndexedDB
+        data = await db.get('firestore-cache', `data-medium_images`);
+    }
+
+
+    // Store the version number in IndexedDB for future use
+    if (firestoreVersion !== indexedDBVersion) {
+        await db.put('firestore-cache', firestoreVersion, `data-versions-info-medium_images`);
+    }
+
+    return { data, versionUpdated }; // Return both data and the boolean flag
+}
+
+export async function fetchCharacterImages(urls) {
+    const storage = getStorage();
+    const imageMap = {};
+
+    // Create an array of promises for each URL
+    const downloadPromises = urls.map(async (reference) => {
+        try {
+            const url = await getDownloadURL(ref(storage, `gs://teistextsearch.appspot.com/${reference}`));
+            imageMap[reference] = url;
+        } catch (error) {
+            console.error(`Error fetching URL for ${reference}:`, error);
+        }
+    });
+
+    // Wait for all promises to resolve
+    await Promise.all(downloadPromises);
+    return imageMap;
+}
+
+export async function fetchMediumImages(urls) {
+    const storage = getStorage();
+    const imageMap = {};
+    // Create an array of promises for each URL
+    const downloadPromises = urls.map(async (reference) => {
+        try {
+            const url = await getDownloadURL(ref(storage, `gs://teistextsearch.appspot.com/coverImages/${reference.url}`));
+            if (!imageMap[reference.group]) {
+                imageMap[reference.group] = {};
+            }
+            imageMap[reference.group][reference.key] = url;
+        } catch (error) {
+            console.error(`Error fetching URL for ${reference.url}:`, error);
+        }
+    });
+    // Wait for all promises to resolve
+    await Promise.all(downloadPromises);
+    return imageMap;
 }
 
 

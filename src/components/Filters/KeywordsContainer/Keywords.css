@@ -12,6 +12,7 @@
     color: #c8000f;
     margin-right: 20px;
     margin-top: 30px;
+    cursor: pointer;
   }
   
   .keywords-container {
@@ -157,6 +158,10 @@
     color: #c8000f; /* Adjust color as needed */
     font-size: x-small;
     margin: 0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
   
   .keywords-input {

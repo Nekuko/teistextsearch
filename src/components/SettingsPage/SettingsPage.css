@@ -1,28 +1,60 @@
 @media (min-width: 1025px) {
-  .settings-update:hover {
+  .settings-update:hover, .suggestion-icon:hover, .dropdown-icon-settings:hover {
     color: red;
+    cursor: pointer;
   }
+  
 }
 
 .settings-page {
   color: white;
 }
 
-.settings-table {
+.settings-table,
+.character-settings-table {
   width: 100%;
   overflow-y: scroll;
   height: 300px;
 }
 
-.settings-table th, .settings-table td {
+.settings-table th,
+.settings-table td {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid #4d5050;
 }
 
-.settings-table-content {
+.character-settings-table th {
+  padding: 8px;
+  border-bottom: 1px solid #4d5050;
+  width: 100%;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  justify-content: space-between;
+}
+
+.character-settings-table td {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  border-bottom: 1px solid #4d5050;
+  width: 100%;
+}
+
+.settings-table-content,
+.character-table-content {
   height: 300px;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #17181a;
+}
+
+.character-th {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .settings-table th {
@@ -30,8 +62,73 @@
   position: sticky;
   top: 0;
   background-color: #1f2224;
-  z-index: 0;
+  z-index: 1;
   font-weight: bold;
+}
+
+.character-settings-table th {
+  font-size: large;
+  position: sticky;
+  top: 0;
+  background-color: #1f2224;
+  font-weight: bold;
+}
+
+.table-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.suggestions {
+  max-height: 200px;
+  width: 15.6%;
+  background-color: #181a1b;
+  overflow-y: auto;
+
+  display: block;
+  position: absolute;
+  padding-left: 0.5%;
+  font-size: small;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.suggestion-image {
+  width: 25px;
+  margin-right: 2%;
+}
+.suggestion-image-div {
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.settings-table th {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.settings-image-data {
+  display: flex;
+  align-items: center;
+}
+
+.suggestion-icon {
+  color: #c8000f;
+  height: 15px;
+  margin-left: 5%;
+}
+
+.named-search {
+  width: 20%;
+  margin-right: 10px;
+  float: right;
+  text-align: left;
 }
 
 
@@ -49,17 +146,29 @@
 
 .settings-title {
   font-family: 'Noto Serif JP';
-  font-size: calc(0.6em + 1.4vw);
+  font-size: calc(0.8em + 1.4vw);
   color: #c8000f;
   font-weight: 100;
   letter-spacing: 0.07em;
   align-items: center;
-  position: flex; /* Position relative to the Header component */
+  position: flex;
+  /* Position relative to the Header component */
   border-radius: 5px;
-  display: flex; /* Use flexbox to arrange children in a row */
+  display: flex;
+  /* Use flexbox to arrange children in a row */
   position: relative;
   margin-top: 1%;
   margin-bottom: 2px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.dropdown-icon-settings {
+  color: #c8000f;
+  height: 17px;
+  margin-left: 5px;
 }
 
 .settings-header {
@@ -69,16 +178,23 @@
   font-weight: 100;
   letter-spacing: 0.07em;
   align-items: center;
-  position: flex; /* Position relative to the Header component */
+  position: flex;
+  /* Position relative to the Header component */
   border-radius: 5px;
-  display: flex; /* Use flexbox to arrange children in a row */
+  display: flex;
+  /* Use flexbox to arrange children in a row */
   position: relative;
   margin-top: 1%;
   margin-bottom: 1%;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .settings-content {
-  position: relative; /* Position relative to the Header component */
+  position: relative;
+  /* Position relative to the Header component */
   width: 75%;
   background-color: #1f2224;
   padding: 20px;
@@ -86,8 +202,10 @@
   border-radius: 5px;
   margin: auto;
   color: white;
-  display: flex; /* Use flexbox to arrange children in a row */
-  flex-direction: column; /* Align children horizontally */
+  display: flex;
+  /* Use flexbox to arrange children in a row */
+  flex-direction: column;
+  /* Align children horizontally */
   margin-bottom: 5%;
 }
 
@@ -108,6 +226,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }

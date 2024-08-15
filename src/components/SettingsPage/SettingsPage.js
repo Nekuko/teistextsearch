@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './SettingsPage.css'; // Import the CSS file
 import { readVersions } from '../../utils/indexedDBFunctions';
 import { ESMAP } from '../../esMap';
-import { fetchVersionData, fetchInformationData, fetchLNData, fetchWNData, fetchANData, fetchDropdowns, fetchSSCData, fetchAPOData, fetchESData, fetchCharactersData } from '../../utils/firebaseFunctions';
-import { faArrowsRotate } from '@fortawesome/free-solid-svg-icons';
+import { fetchVersionData, fetchInformationData, fetchLNData, fetchWNData, fetchANData, fetchDropdowns, fetchSSCData, fetchAPOData, fetchESData, fetchCharactersData, fetchMediumImageData } from '../../utils/firebaseFunctions';
+import { faArrowsRotate, faChevronDown, faChevronUp, faXmark, faPlus, faMinus, faRotateRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 let correctOrder = [];
@@ -67,22 +67,52 @@ function populateOrders() {
 
   correctOrder.push(`Information Data`);
   correctKeys.push(`info-info`)
+
+  correctOrder.push(`Medium Image Data`);
+  correctKeys.push(`info-medium_images`)
 }
 populateOrders()
+
+function getAllCharacters(data) {
+  let allCharacters = [];
+  const groups = data.groups;
+  const characters = data.characters;
+  for (const [key, value] of Object.entries(groups)) {
+    if (key !== 'order') {
+      for (const [groupKey, groupValue] of Object.entries(value).sort()) {
+        if (groupKey !== 'order') {
+          for (const character of groupValue.characters) {
+            allCharacters.push(character)
+          }
+        }
+      }
+    }
+
+  }
+
+
+  for (const [key, value] of Object.entries(characters)) {
+    allCharacters.push(value.name);
+  }
+
+  return allCharacters;
+}
 
 function SettingsPage() {
   const [versionValues, setVersionValues] = useState(new Map());
   const [versionData, setVersionData] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [errors, setErrors] = useState(false);
   const [tableData, setTableData] = useState();
   const [updating, setUpdating] = useState(false);
-
-
+  const [nameAsc, setNameAsc] = useState(true);
+  const [inputValue, setInputValue] = useState('');
+  const [allCharacters, setAllCharacters] = useState();
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const data = await readVersions();
+        let data = await readVersions();
         const cleanedData = new Map();
         data.forEach((value, key) => {
           let cleanedKey = key;
@@ -113,6 +143,8 @@ function SettingsPage() {
             cleanedKey = "Information Data"
           } else if (key.includes('data-versions-info-characters')) {
             cleanedKey = "Character Data"
+          } else if (key.includes('data-versions-info-medium_images')) {
+            cleanedKey = "Medium Image Data"
           }
           else if (key.includes('data-versions-ssc')) {
             cleanedKey = key.replace('data-versions-ssc-', 'Seven Shadow Chronicles ').replace(' v', ' ').replace(' p', ' Part ').replace('-c', ', Chapter ');
@@ -126,29 +158,30 @@ function SettingsPage() {
         setVersionValues(cleanedData);
 
         const storedVersionData = sessionStorage.getItem('versionData');
-        let verisonDataTemp;
+        let versionDataTemp;
         if (storedVersionData) {
           const parsedData = JSON.parse(storedVersionData);
           const currentTime = Date.now();
-          const expirationTime = 5 * 60 * 1000; // Set expiration to 5 minutes
+          const expirationTime = 30 * 60 * 1000; // Set expiration to 5 minutes
 
-          if (false) {
+          if (parsedData.timestamp && currentTime - parsedData.timestamp < expirationTime) {
             // Data is still valid, use it
             setVersionData(parsedData.data);
-            verisonDataTemp = parsedData.data;
+            versionDataTemp = parsedData.data;
           } else {
             // Fetch new data
             const data = await fetchVersionData(versionData);
             setVersionData(data);
             sessionStorage.setItem('versionData', JSON.stringify({ data, timestamp: currentTime }));
-            verisonDataTemp = data;
+            versionDataTemp = data;
           }
         } else {
           // Fetch data if not found in session storage
-          const data = await fetchVersionData(versionData);
+          let data = await fetchVersionData(versionData);
+          
           setVersionData(data);
           sessionStorage.setItem('versionData', JSON.stringify({ data, timestamp: Date.now() }));
-          verisonDataTemp = data;
+          versionDataTemp = data;
         }
 
         const validKeys = [...cleanedData].map(([key, value]) => { return value.cleanedKey })
@@ -156,27 +189,29 @@ function SettingsPage() {
         let finalVersionData = [...cleanedData].map(([key, value]) => {
           let dataValue = -1;
           if (key.includes('data-versions-an')) {
-            dataValue = verisonDataTemp['an'][key.replace('data-versions-an', '').split("-")[1]]
+            dataValue = versionDataTemp['an'][key.replace('data-versions-an', '').split("-")[1]]
           } else if (key.includes('data-versions-wn')) {
-            dataValue = verisonDataTemp['wn'][key.replace('data-versions-wn', '').split("-")[1]]
+            dataValue = versionDataTemp['wn'][key.replace('data-versions-wn', '').split("-")[1]]
           } else if (key.includes('data-versions-ln')) {
-            dataValue = verisonDataTemp['ln'][key.replace('data-versions-ln', '').split("-")[1]]
+            dataValue = versionDataTemp['ln'][key.replace('data-versions-ln', '').split("-")[1]]
           } else if (key.includes('data-versions-info-dropdowns')) {
-            dataValue = verisonDataTemp['info']['dropdowns']
+            dataValue = versionDataTemp['info']['dropdowns']
           } else if (key.includes('data-versions-info-info')) {
-            dataValue = verisonDataTemp['info']['info']
+            dataValue = versionDataTemp['info']['info']
           } else if (key.includes('data-versions-info-characters')) {
-            dataValue = verisonDataTemp['info']['characters']
+            dataValue = versionDataTemp['info']['characters']
+          } else if (key.includes('data-versions-info-medium_images')) {
+            dataValue = versionDataTemp['info']['medium_images']
           } else if (key.includes('data-versions-ssc')) {
             dataValue = key.replace('data-versions-ssc-', '');
             let [start, end] = dataValue.split('c')
-            dataValue = verisonDataTemp['ssc'][`${start.replace('-', '')}_c${end}`]
+            dataValue = versionDataTemp['ssc'][`${start.replace('-', '')}_c${end}`]
           } else if (key.includes('data-versions-es')) {
-            dataValue = verisonDataTemp['es'][key.replace('data-versions-es-', '')]
+            dataValue = versionDataTemp['es'][key.replace('data-versions-es-', '')]
           } else if (key.includes('data-versions-apo')) {
             dataValue = key.replace('data-versions-apo-', '');
             let [start, end] = dataValue.split('c')
-            dataValue = verisonDataTemp['apo'][`${start.replace('-', '')}_c${end}`]
+            dataValue = versionDataTemp['apo'][`${start.replace('-', '')}_c${end}`]
           }
           return { 'key': key, 'value': value, 'dataValue': dataValue }
         })
@@ -189,32 +224,34 @@ function SettingsPage() {
           let key = missingValue.key;
           if (!validKeys.includes(missingValue.name)) {
             if (missingValue.key.includes('ln')) {
-              dataValue = verisonDataTemp['ln'][key.split("_")[1]];
+              dataValue = versionDataTemp['ln'][key.split("_")[1]];
             } else if (missingValue.key.includes('wn')) {
-              dataValue = verisonDataTemp['wn'][key.split("_")[1]];
+              dataValue = versionDataTemp['wn'][key.split("_")[1]];
             } else if (missingValue.key.includes('an_')) {
               if (missingValue.key.includes('s101')) {
-                dataValue = verisonDataTemp['an']['s101'];
+                dataValue = versionDataTemp['an']['s101'];
               } else if (missingValue.key.includes('s102')) {
-                dataValue = verisonDataTemp['an']['s102'];
+                dataValue = versionDataTemp['an']['s102'];
               } else {
-                dataValue = verisonDataTemp['an'][`${key.split("_")[1]}_${key.split("_")[2]}`];
+                dataValue = versionDataTemp['an'][`${key.split("_")[1]}_${key.split("_")[2]}`];
               }
 
             } else if (missingValue.key.includes('info-dropdowns')) {
-              dataValue = verisonDataTemp['info']['dropdowns'];
+              dataValue = versionDataTemp['info']['dropdowns'];
             } else if (missingValue.key.includes('info-info')) {
-              dataValue = verisonDataTemp['info']['info'];
+              dataValue = versionDataTemp['info']['info'];
             } else if (missingValue.key.includes('info-characters')) {
-              dataValue = verisonDataTemp['info']['characters'];
+              dataValue = versionDataTemp['info']['characters'];
+            } else if (missingValue.key.includes('info-medium_images')) {
+              dataValue = versionDataTemp['info']['medium_images'];
             } else if (missingValue.key.includes('ssc_')) {
               let [start, end] = missingValue.key.replace('ssc_', '').split('c')
-              dataValue = verisonDataTemp['ssc'][`${start.replace('-', '')}c${end}`]
+              dataValue = versionDataTemp['ssc'][`${start.replace('-', '')}c${end}`]
             } else if (missingValue.key.includes('apo_')) {
               let [start, end] = missingValue.key.replace('apo_', '').split('c')
-              dataValue = verisonDataTemp['apo'][`${start.replace('-', '')}c${end}`]
+              dataValue = versionDataTemp['apo'][`${start.replace('-', '')}c${end}`]
             } else {
-              dataValue = verisonDataTemp['es'][missingValue.key]
+              dataValue = versionDataTemp['es'][missingValue.key]
             }
             finalVersionData.push({
               key: key,
@@ -224,8 +261,12 @@ function SettingsPage() {
           }
         }
         setTableData(finalVersionData);
+        let characterData = await fetchCharactersData(versionDataTemp, setVersionData);
+        setAllCharacters(getAllCharacters(characterData.data));
+
       } catch (error) {
         console.error('Error fetching data:', error);
+        setErrors(true)
       } finally {
         setLoading(false);
       }
@@ -233,12 +274,123 @@ function SettingsPage() {
     fetchData();
   }, []);
 
-  if (loading) {
-    return <div>Loading...</div>; // Display a loading message or spinner
-  }
+  const [characterDropdowns, setCharacterDropdowns] = useState(() => {
+    const savedState = sessionStorage.getItem('characterDropdowns');
+    if (savedState) {
+      const parsedState = JSON.parse(savedState);
+      return parsedState;
+    }
 
-  if (!versionValues.size) {
-    return <div>No data available</div>; // Display a message if no data is available
+    return {}
+  });
+
+  useEffect(() => {
+    sessionStorage.setItem('characterDropdowns', JSON.stringify(characterDropdowns));
+  }, [characterDropdowns]);
+
+  const [characterImages, setCharacterImages] = useState(() => {
+    const savedState = sessionStorage.getItem('characterImages');
+    if (savedState) {
+      const parsedState = JSON.parse(savedState);
+      return parsedState;
+    }
+
+    return {}
+  });
+
+  useEffect(() => {
+    sessionStorage.setItem('characterImages', JSON.stringify(characterImages));
+  }, [characterImages]);
+
+  const [namedCharacters, setNamedCharacters] = useState(() => {
+    // Get the initial value from sessionStorage or default to false
+    const savedState = sessionStorage.getItem('namedCharacters');
+    if (savedState) {
+      const parsedState = JSON.parse(savedState);
+      return parsedState;
+    }
+
+    return ["Akane Nishino", "Alexia Midgar", "Alpha", "Annerose Nichtsehen", "Aurora",
+      "Beatrix", "Beta", "Chi", "Cid Kagenou", "Claire Kagenou", "Claudia", "Crimson", "Delta", "Duet",
+      "Elisabeth", "Epsilon", "Eta", "Freya", "Gamma", "Garter Kikuchi", "Gettan", "Glen", "Goldy Gilded",
+      "Grease", "Iota", "Iris Midgar", "Jack Nelson", "Juggernaut", "Kana", "Kevin", "Klaus Midgar",
+      "Kouadoi", "Lambda", "Lili", "Lutheran Barnett", "Marco Granger", "Margaret", "Marie", "Mary",
+      "Mist Dragon", "Mordred", "Mr. Kagenou", "Mrs. Kagenou", "Natsu", "No. 664", "No. 665", "Nu", "Olivier",
+      "Omega", "Pente", "Perv Asshat", "Po Tato", "Quinton", "Raphael Oriana", "Reina Oriana", "Rex",
+      "Rose Oriana", "Sergey Gorman", "Sherry Barnett", "Skel Etal", "Victoria", "White Demon", "Yukime",
+      "Zenon Griffey", "Zeta"]
+  });
+
+  // Use an effect to update sessionStorage when namedActive changes
+  useEffect(() => {
+    sessionStorage.setItem('namedCharacters', JSON.stringify(namedCharacters));
+  }, [namedCharacters]);
+
+  if (loading || errors) {
+    return (
+      <div className="settings-page">
+        <h1 className='filters-header'>SETTINGS</h1>
+        <div className="settings-content">
+          <h1 className='settings-title'>"NAMED CHARACTERS"</h1>
+          <div className='character-table-content'>
+            <table className="character-settings-table">
+              <thead>
+                <tr>
+                  <th>
+                    <div className="character-th">
+                      <div>
+                        Name
+                        <FontAwesomeIcon
+                          className="dropdown-icon-settings"
+                          icon={nameAsc ? faChevronDown : faChevronUp}
+                        />
+                      </div>
+                      <div className="named-search">
+                        <input
+                          type="text"
+                          defaultValue=''
+                          placeholder="Search..."
+                        />
+                        <FontAwesomeIcon
+                          className="suggestion-icon"
+                          icon={faRotateRight}
+                          title={"Reset"}
+                        />
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <br />
+          <h1 className='settings-title'>VERSIONS</h1>
+          <div className='settings-table-content'>
+            <table className="settings-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Local Version</th>
+                  <th>
+                    Cloud Version{" "}
+                    <FontAwesomeIcon
+                      icon={faArrowsRotate}
+                      className={`settings-update ${updating ? 'rotate' : ''}`}
+                      title='Check for updates'
+                    />
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+      </div>
+    );
   }
 
   async function checkUpdates() {
@@ -273,19 +425,36 @@ function SettingsPage() {
             } else {
               await fetchANData([`${value.key.replace('data-versions-', '').replace('an_', 'an_')}`], versionData, setVersionData, null);
             }
+          } else if (value.key.includes('an-')) {
+            if (value.key.includes('s101')) {
+              await fetchANData([`${value.key.replace('data-versions-', '').replace('an-', 'an_')}_e1`], versionData, setVersionData, null);
+            } else if (value.key.includes('s102')) {
+              await fetchANData([`${value.key.replace('data-versions-', '').replace('an-', 'an_')}_e1`], versionData, setVersionData, null);
+            } else {
+              await fetchANData([`${value.key.replace('data-versions-', '').replace('an-', 'an_')}`], versionData, setVersionData, null);
+            }
 
-          
+
           } else if (value.key.includes('info-info')) {
             await fetchInformationData(versionData, setVersionData);
           } else if (value.key.includes('info-characters')) {
             await fetchCharactersData(versionData, setVersionData);
+          } else if (value.key.includes('info-medium_images')) {
+            await fetchMediumImageData(versionData, setVersionData);
 
           } else if (value.key.includes('ssc_')) {
-            await fetchSSCData([`${value.key.replace('data-versions-', '').replace('ssc_', 'ssc_').replace('-c', '_c')}_e1`], versionData, setVersionData, null);
+            await fetchSSCData([`${value.key.replace('data-versions-', '').replace('ssc_', 'ssc_').replace('_c', '_c')}_e1`], versionData, setVersionData, null);
+
+          } else if (value.key.includes('ssc-')) {
+            await fetchSSCData([`${value.key.replace('data-versions-', '').replace('ssc-', 'ssc_').replace('-c', '_c')}_e1`], versionData, setVersionData, null);
 
           } else if (value.key.includes('apo_')) {
             await fetchAPOData([`${value.key.replace('data-versions-', '').replace('apo_', 'apo_').replace('-c', '_c')}_e1`], versionData, setVersionData, null);
 
+          } else if (value.key.includes('apo-')) {
+            await fetchAPOData([`${value.key.replace('data-versions-', '').replace('apo-', 'apo_').replace('-c', '_c')}_e1`], versionData, setVersionData, null);
+          } else if (value.key.includes('es-')) {
+            await fetchESData([`${value.key.replace('data-versions-', '').replace('es-', 'es_')}_e1`], versionData, setVersionData, null);
           } else {
             await fetchESData([`es_${value.key.replace('data-versions-', '')}_e1`], versionData, setVersionData, null);
           }
@@ -302,12 +471,122 @@ function SettingsPage() {
     setUpdating(false);
   }
 
+  function handleNameFilterClick() {
+    setNameAsc(!nameAsc);
+  }
+
+  function removeNamed(name) {
+    setNamedCharacters(namedCharacters.filter(item => item !== name));
+  }
+
+  function handleSuggestionClick(name) {
+    if (namedCharacters.map((char) => char.toLowerCase()).includes(name.toLowerCase())) {
+      setNamedCharacters(namedCharacters.filter(item => item !== name));
+    } else {
+      setNamedCharacters([...namedCharacters, name]);
+    }
+  }
+
+  function resetNamed() {
+    setNamedCharacters(["Akane Nishino", "Alexia Midgar", "Alpha", "Annerose Nichtsehen", "Aurora",
+      "Beatrix", "Beta", "Chi", "Cid Kagenou", "Claire Kagenou", "Claudia", "Crimson", "Delta", "Duet",
+      "Elisabeth", "Epsilon", "Eta", "Freya", "Gamma", "Garter Kikuchi", "Gettan", "Glen", "Goldy Gilded",
+      "Grease", "Iota", "Iris Midgar", "Jack Nelson", "Juggernaut", "Kana", "Kevin", "Klaus Midgar",
+      "Kouadoi", "Lambda", "Lili", "Lutheran Barnett", "Marco Granger", "Margaret", "Marie", "Mary",
+      "Mist Dragon", "Mordred", "Mr. Kagenou", "Mrs. Kagenou", "Natsu", "No. 664", "No. 665", "Nu", "Olivier",
+      "Omega", "Pente", "Perv Asshat", "Po Tato", "Quinton", "Raphael Oriana", "Reina Oriana", "Rex",
+      "Rose Oriana", "Sergey Gorman", "Sherry Barnett", "Skel Etal", "Victoria", "White Demon", "Yukime",
+      "Zenon Griffey", "Zeta"]);
+    setInputValue('');
+  }
 
   return (
     <div className="settings-page">
       <h1 className='filters-header'>SETTINGS</h1>
       <div className="settings-content">
         <h1 className='settings-title'>"NAMED CHARACTERS"</h1>
+        <div className='character-table-content'>
+          <table className="character-settings-table">
+            <thead>
+              <tr>
+                <th>
+                  <div className="character-th">
+                    <div>
+                      Name
+                      <FontAwesomeIcon
+                        className="dropdown-icon-settings"
+                        icon={nameAsc ? faChevronDown : faChevronUp}
+                        onClick={handleNameFilterClick} // Add onClick event here
+                      />
+                    </div>
+                    <div className="named-search">
+                      <input
+                        type="text"
+                        value={inputValue}
+                        placeholder="Search..."
+                        onChange={(e) => setInputValue(e.target.value)}
+                      />
+                      <FontAwesomeIcon
+                        className="suggestion-icon"
+                        icon={faRotateRight}
+                        title={"Reset"}
+                        onClick={() => resetNamed()}
+                      />
+                      {inputValue && (
+                        <div className="suggestions">
+                          {allCharacters
+                            .filter((suggestion) =>
+                              suggestion.toLowerCase().includes(inputValue.toLowerCase())
+                            )
+                            .sort().map((suggestion, index) => (
+                              <div className="suggestion-image-div" key={index}>
+                                {characterImages[suggestion] && (
+                                  <img
+                                    className="suggestion-image"
+                                    src={characterImages[suggestion]}
+                                    alt={suggestion || 'None'}
+                                  />
+                                )}
+                                {suggestion}
+                                <FontAwesomeIcon
+                                  className="suggestion-icon"
+                                  icon={namedCharacters.map((char) => char.toLowerCase()).includes(suggestion.toLowerCase()) ? faMinus : faPlus}
+                                  onClick={() => handleSuggestionClick(suggestion)}
+                                />
+                              </div>
+                            ))}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {namedCharacters
+                .sort((a, b) => (nameAsc ? a.localeCompare(b) : b.localeCompare(a)))
+                .map((character) => (
+                  <tr className='settings-image-data' key={character}>
+                    <td>
+                      {characterImages[character] &&
+                        <img
+                          className="characters-container-image-small"
+                          src={characterImages[character]}
+                          alt={character || 'None'}
+                        />
+                      }
+                      <div>{character}</div>
+                      <button className="remove-keyword" onClick={() => removeNamed(character)}>
+                        <FontAwesomeIcon title="Remove" className="remove-keyword-icon" icon={faXmark} />
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+            </tbody>
+
+          </table>
+        </div>
+        <br />
         <h1 className='settings-title'>VERSIONS</h1>
         <div className='settings-table-content'>
           <table className="settings-table">
@@ -333,9 +612,8 @@ function SettingsPage() {
                 let valueComparisonA = a.dataValue - a.value['value'];
                 let valueComparisonB = b.dataValue - b.value['value'];
                 if (valueComparisonA !== valueComparisonB) {
-                  return valueComparisonB - valueComparisonA
+                  return Math.abs(valueComparisonB) - Math.abs(valueComparisonA)
                 }
-
 
                 let aIndex = correctOrder.indexOf(a.value['cleanedKey']);
                 let bIndex = correctOrder.indexOf(b.value['cleanedKey']);
@@ -345,8 +623,8 @@ function SettingsPage() {
               }).map(({ key, value, dataValue }) => (
                 <tr key={key}>
                   <td>{value['cleanedKey']}</td>
-                  <td>{parseFloat(value['value'])}</td>
-                  <td className={dataValue > value['value'] ? 'red-text' : ''}>
+                  <td>{isNaN(parseFloat(value['value'])) ? 'N/A' : parseFloat(value['value'])}</td>
+                  <td className={dataValue !== value['value'] ? 'red-text' : ''}>
                     {dataValue === 999 ? (
                       <FontAwesomeIcon icon={faArrowsRotate} className='settings-update-blank' />
                     ) : (

@@ -62,6 +62,7 @@ function Header() {
             <ul className='mobile-nav-ul'>
               <li className='mobile-nav-li'>
                 <NavLink
+                  onClick={toggleMenu}
                   to="/"
                   className={({ isActive }) => (isActive ? 'active-link' : '')}
                 >
@@ -70,6 +71,7 @@ function Header() {
               </li>
               <li className='mobile-nav-li'>
                 <NavLink
+                  onClick={toggleMenu}
                   to="/info"
                   className={({ isActive }) => (isActive ? 'active-link' : '')}
                 >
@@ -78,6 +80,7 @@ function Header() {
               </li>
               <li className='mobile-nav-li'>
                 <NavLink
+                  onClick={toggleMenu}
                   to="/settings"
                   className={({ isActive }) => (isActive ? 'active-link' : '')}
                 >

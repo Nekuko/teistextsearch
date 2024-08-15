@@ -101,7 +101,7 @@ function CharacterResults({ anData, sscData, esData, apoData, images, filterStat
           }
 
           return (
-            <div key={character}>
+            <div>
               <Collapsible trigger={
                 <>
                   <div className="character-trigger" title={character}>
@@ -119,17 +119,17 @@ function CharacterResults({ anData, sscData, esData, apoData, images, filterStat
                       <Collapsible trigger={`Master of Garden (Total: ${mediumData.count})`}>
                         <div className="medium-trigger">
                           {mediumData['ssc'] && (
-                            <Collapsible key={'ssc'} trigger={`Seven Shadows Chronicles (Total: ${mediumData['ssc'].count})`}>
+                            <Collapsible key={`${character}-ssc`} trigger={`Seven Shadows Chronicles (Total: ${mediumData['ssc'].count})`}>
                               <SSCResults main={false} sscData={mediumData['ssc']} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Seven Shadows Chronicles']}/>
                             </Collapsible>
                           )}
                           {mediumData['es'] && (
-                            <Collapsible key={'es'} trigger={`Event Stories (Total: ${mediumData['es'].count})`}>
+                            <Collapsible key={`${character}-es`} trigger={`Event Stories (Total: ${mediumData['es'].count})`}>
                               <ESResults main={false} anData={mediumData['es']} images={images} filterState={filterState} highlight={highlight} />
                             </Collapsible>
                           )}
                           {mediumData['apo'] && (
-                            <Collapsible key={'apo'} trigger={`Apocrypha (Total: ${mediumData['apo'].count})`}>
+                            <Collapsible key={`${character}-apo`} trigger={`Apocrypha (Total: ${mediumData['apo'].count})`}>
                               <APOResults main={false} sscData={mediumData['apo']} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Apocrypha']}/>
                             </Collapsible>
                           )}
@@ -141,7 +141,7 @@ function CharacterResults({ anData, sscData, esData, apoData, images, filterStat
                   if (medium === 'an') {
                     return (
                       <div className="medium-trigger">
-                        <Collapsible key={medium} trigger={`${mediumName} (Total: ${mediumData.count})`}>
+                        <Collapsible key={`${character}-an`} trigger={`${mediumName} (Total: ${mediumData.count})`}>
                           <AnimeResults animeDropdownState={animeDropdownState} main={false} anData={mediumData} images={images} filterState={filterState} highlight={highlight} />
                         </Collapsible>
                       </div>

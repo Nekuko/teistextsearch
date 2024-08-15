@@ -42,6 +42,10 @@
     height: 42px;
     padding: 2px 2px 2px 2px;
     margin-right: 2%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
 
   .character-box-text {
@@ -96,6 +100,10 @@
     height: 42px;
     margin-right: 1%;
     padding-top: 5%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
 
   .results-container {
@@ -221,6 +229,10 @@
   max-height: 400px;
   padding-right: 10px;
   overflow-y: auto;
+  user-select: text;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
 }
 
 .sentence-character-container {
@@ -232,7 +244,6 @@
 
 .image-icon-container {
   position: relative;
-  /* This is needed for absolute positioning of children */
 }
 
 
@@ -408,6 +419,17 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+br {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .Collapsible__trigger:hover {

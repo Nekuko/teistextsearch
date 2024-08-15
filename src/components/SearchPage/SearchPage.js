@@ -9,15 +9,18 @@ import { searchSSC } from '../Search/searchSSC';
 import { searchES } from '../Search/searchES';
 import { searchWN } from '../Search/searchWN';
 import { searchAPO } from '../Search/searchAPO';
-import * as characterCovers from '../../images/characterIcons';
-import * as covers from '../../images/covers';
-import { fetchLNData, fetchWNData, fetchAPOData, fetchESData, fetchSSCData, fetchANData, fetchDropdowns, fetchVersionData, fetchCharactersData } from '../../utils/firebaseFunctions';
+import { fetchLNData, fetchWNData, fetchAPOData, fetchESData, fetchSSCData, fetchANData, fetchDropdowns, fetchVersionData, fetchCharactersData, fetchCharacterImages, fetchMediumImageData, fetchMediumImages } from '../../utils/firebaseFunctions';
 import { ESMAPREVERSE } from '../../esMap';
-import { faGaugeSimpleMed } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashCan, faLightbulb, faC, faRotateRight, faN, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { VscCaseSensitive } from "react-icons/vsc";
+import { ReactComponent as WholeWord } from '../../svgs/codicon--whole-word.svg';
+import { ReactComponent as Regex } from '../../svgs/codicon--regex.svg';
 
 function createCharacterDropdowns(data) {
     let dropdowns = {};
     let names = {};
+    let characterImages = {};
     const groups = data.groups;
     const characters = data.characters;
     for (const [key, value] of Object.entries(groups).sort((a, b) => {
@@ -61,7 +64,7 @@ function createCharacterDropdowns(data) {
 
 
     for (const [key, value] of Object.entries(characters.reverse())) {
-        let { group, name, name_mirrors, name_variants, subgroup } = value;
+        let { group, name, name_mirrors, name_variants, subgroup, url } = value;
         let route;
         if (subgroup) {
             route = dropdowns[group.toUpperCase()].groups[subgroup].characters;
@@ -83,6 +86,33 @@ function createCharacterDropdowns(data) {
         } else {
             newRoute[name] = {
                 "checked": false
+            }
+        }
+        if (typeof url === 'string') {
+            if (url) {
+                let variant = name;
+                characterImages[name] = url;
+                for (const name_variant of name_variants) {
+                    if (variant === name_variant) {
+                        characterImages[variant] = url
+                    } else if (name_variant.includes(`(${variant})`)) {
+                        characterImages[name_variant] = url;
+                    }
+                }
+            }
+        } else {
+            for (const name_variant of name_variants) {
+                for (const variant of Object.keys(url)) {
+                    if (variant !== 'base') {
+                        if (variant === name_variant) {
+                            characterImages[variant] = url[variant]
+                        } else if (name_variant.includes(`(${variant})`)) {
+                            characterImages[name_variant] = url[variant];
+                        }
+                    } else {
+                        characterImages[name] = url.base;
+                    }
+                }
             }
         }
 
@@ -108,7 +138,7 @@ function createCharacterDropdowns(data) {
 
     }
 
-    return { "dropdowns": dropdowns, "names": names };
+    return { "dropdowns": dropdowns, "names": names, "characterImages": characterImages };
 
 }
 
@@ -118,17 +148,19 @@ function SearchPage() {
     const [mediumFlash, setMediumFlash] = useState(false);
     const [keywordsFlash, setKeywordsFlash] = useState(false);
     const [loading, setLoading] = useState(true);
+    const [errors, setErrors] = useState(false);
     const [resultsText, setResultsText] = useState('');
+
 
     useEffect(() => {
         async function fetchData() {
             try {
                 let versionDataTemp;
-                const storedVersionData = sessionStorage.getItem('versionData');
+                let storedVersionData = sessionStorage.getItem('versionData');
                 if (storedVersionData) {
                     const parsedData = JSON.parse(storedVersionData);
                     const currentTime = Date.now();
-                    const expirationTime = 5 * 60 * 1000; // Set expiration to 5 minutes
+                    const expirationTime = 30 * 60 * 1000;
 
                     if (parsedData.timestamp && currentTime - parsedData.timestamp < expirationTime) {
                         // Data is still valid, use it
@@ -196,9 +228,18 @@ function SearchPage() {
                 if (savedNameMap) {
                     savedNameMap = JSON.parse(savedNameMap);
                 }
+
                 if (characterData.versionUpdated || Object.keys(savedCharacterDropdowns).length === 0 ||
                     Object.keys(savedNameMap).length === 0) {
                     let characterDropdownData = createCharacterDropdowns(characterData.data);
+                    let uniqueURLS = Array.from(new Set(Object.values(characterDropdownData.characterImages)));
+                    let imageURLS = await fetchCharacterImages(uniqueURLS);
+                    let newCharacterImages = {};
+                    for (const [key, value] of Object.entries(characterDropdownData.characterImages)) {
+                        newCharacterImages[key] = imageURLS[value];
+                    }
+                    setCharacterImages(newCharacterImages);
+                    sessionStorage.setItem("characterImages", JSON.stringify(newCharacterImages));
                     setCharacterDropdowns(characterDropdownData.dropdowns);
                     setNameMap(characterDropdownData.names);
                     sessionStorage.setItem("characterDropdowns", JSON.stringify(characterDropdownData.dropdowns));
@@ -209,9 +250,28 @@ function SearchPage() {
                     sessionStorage.setItem("nameMap", JSON.stringify(characterDropdownData.names));
                 }
 
+                let mediumImageData = await fetchMediumImageData(versionDataTemp, setVersionData);
+                let savedMediumImages = sessionStorage.getItem('mediumImages');
+                if (savedMediumImages) {
+                    savedMediumImages = JSON.parse(savedMediumImages);
+                }
+
+                let urls = [];
+                for (const [group, subgroup] of Object.entries(mediumImageData.data)) {
+                    for (const [key, url] of Object.entries(subgroup)) {
+                        urls.push({ url: url, key: key, group: group });
+                    }
+                }
+                if (mediumImageData.versionUpdated || Object.keys(savedMediumImages).length === 0) {
+                    let imageURLS = await fetchMediumImages(urls);
+                    setMediumImages(imageURLS);
+                    sessionStorage.setItem("mediumImages", JSON.stringify(imageURLS));
+                }
+
 
             } catch (error) {
                 console.error('Error fetching data:', error);
+                setErrors(true);
             } finally {
                 setLoading(false);
             }
@@ -233,6 +293,19 @@ function SearchPage() {
     useEffect(() => {
         sessionStorage.setItem('animeDropdown', JSON.stringify(animeDropdownState));
     }, [animeDropdownState]);
+
+    const [mediumImages, setMediumImages] = useState(() => {
+        const savedState = sessionStorage.getItem('mediumImages');
+        if (savedState) {
+            const parsedState = JSON.parse(savedState);
+            return parsedState;
+        }
+        return {}
+    });
+
+    useEffect(() => {
+        sessionStorage.setItem('mediumImages', JSON.stringify(mediumImages));
+    }, [mediumImages]);
 
     const [lnDropdownState, setLNDropdownState] = useState(() => {
         const savedState = sessionStorage.getItem('lnDropdown');
@@ -311,187 +384,7 @@ function SearchPage() {
     }, [resultState]);
 
 
-    const images = {
-        "characterImages": {
-            "Shadow": characterCovers.ShadowIcon,
-            "??? (Shadow)": characterCovers.ShadowIcon,
-            "Sunraku & Shadow (Shadow)": characterCovers.ShadowIcon,
-            "Cid Kagenou": characterCovers.CidKagenouIcon,
-            "Minoru Kageno": characterCovers.MinoruKagenoIcon,
-            "??? (Minoru Kageno)": characterCovers.MinoruKagenoIcon,
-            "Stylish Ruffian Slayer": characterCovers.StylishRuffianSlayerIcon,
-            "Mundane Mann": characterCovers.MundaneMannIcon,
-            "John Smith": characterCovers.JohnSmithIcon,
-            "Stylish Bandit Slayer": characterCovers.StylishBanditSlayerIcon,
-            "??? (Stylish Bandit Slayer)": characterCovers.StylishBanditSlayerIcon,
-            "Nuru": characterCovers.NuruIcon,
-            "??? (Nuru)": characterCovers.NuruIcon,
-            "Aurora": characterCovers.AuroraIcon,
-            "Annerose Nichtsehen": characterCovers.AnneroseNichtsehenIcon,
-            "Akane Nishino": characterCovers.AkaneNishinoIcon,
-            "Alexia Midgar": characterCovers.AlexiaMidgarIcon,
-            "Alpha": characterCovers.AlphaIcon,
-            "Beatrix": characterCovers.BeatrixIcon,
-            "Beta": characterCovers.BetaIcon,
-            "Natsume Kafka": characterCovers.NatsumeKafkaIcon,
-            "??? (Natsume Kafka)": characterCovers.NatsumeKafkaIcon,
-            "Claire Kagenou": characterCovers.ClaireKagenouIcon,
-            "Delta": characterCovers.DeltaIcon,
-            "Epsilon": characterCovers.EpsilonIcon,
-            "Eta": characterCovers.EtaIcon,
-            "Gamma": characterCovers.GammaIcon,
-            "Iris Midgar": characterCovers.IrisMidgarIcon,
-            "Po Tato": characterCovers.PoTatoIcon,
-            "Po": characterCovers.PoTatoIcon,
-            "Rose Oriana": characterCovers.RoseOrianaIcon,
-            "No. 666": characterCovers.No666Icon,
-            "Sherry Barnett": characterCovers.SherryBarnettIcon,
-            "Skel Etal": characterCovers.SkelEtalIcon,
-            "Skel": characterCovers.SkelEtalIcon,
-            "Zeta": characterCovers.ZetaIcon,
-            "Nu": characterCovers.NuIcon,
-            "Lambda": characterCovers.LambdaIcon,
-            "Yukime": characterCovers.YukimeIcon,
-            "Victoria": characterCovers.VictoriaIcon,
-            "Lili": characterCovers.LiliIcon,
-            "Olivier": characterCovers.OlivierIcon,
-            "Pente": characterCovers.PenteIcon,
-            "Duet": characterCovers.DuetIcon,
-            "Freya": characterCovers.FreyaIcon,
-            "Chi": characterCovers.ChiIcon,
-            "Claudia": characterCovers.ClaudiaIcon,
-            "Crimson": characterCovers.CrimsonIcon,
-            "Goldy Gilded": characterCovers.GoldyGildedIcon,
-            "Grease": characterCovers.GreaseIcon,
-            "Jack Nelson": characterCovers.JackNelsonIcon,
-            "Lutheran Barnett": characterCovers.LutheranBarnettIcon,
-            "Marco Granger": characterCovers.MarcoGrangerIcon,
-            "Marie": characterCovers.MarieIcon,
-            "Mary": characterCovers.MaryIcon,
-            "Mist Dragon": characterCovers.MistDragonIcon,
-            "Omega": characterCovers.OmegaIcon,
-            "Quinton": characterCovers.QuintonIcon,
-            "Sergey Gorman": characterCovers.SergeyGormanIcon,
-            "Sir Gaunt": characterCovers.SirGauntIcon,
-            "White Demon": characterCovers.WhiteDemonIcon,
-            "Zenon Griffey": characterCovers.ZenonGriffeyIcon,
-            "Glen": characterCovers.GlenIcon,
-            "Mr. Kagenou": characterCovers.MrKagenouIcon,
-            "Mrs. Kagenou": characterCovers.MrsKagenouIcon,
-            "Rex": characterCovers.RexIcon,
-            "Perv Asshat": characterCovers.PervAsshatIcon,
-            "Mordred": characterCovers.MordredIcon,
-            "No. 664": characterCovers.No664Icon,
-            "No. 665": characterCovers.No665Icon,
-            "Klaus Midgar": characterCovers.KlausMidgarIcon,
-            "Raphael Oriana": characterCovers.RaphaelOrianaIcon,
-            "Elisabeth": characterCovers.ElisabethIcon,
-            "Juggernaut": characterCovers.JuggernautIcon,
-            "Kana": characterCovers.KanaIcon,
-            "Natsu": characterCovers.NatsuIcon,
-            "Garter Kikuchi": characterCovers.GarterIcon,
-            "Gettan": characterCovers.GettanIcon,
-            "Iota": characterCovers.IotaIcon,
-            "Kouadoi": characterCovers.KouadoiIcon,
-            "Reina Oriana": characterCovers.ReinaOrianaIcon
 
-        },
-        "lnCoverImages": {
-            "v1": covers.LNV1Cover,
-            "v2": covers.LNV2Cover,
-            "v3": covers.LNV3Cover,
-            "v4": covers.LNV4Cover,
-            "v5": covers.LNV5Cover,
-            "v6": covers.LNV6Cover
-        },
-        "animeCoverImages": {
-            "s1": covers.ANS1Cover,
-            "s2": covers.ANS2Cover,
-            "Kage-Jitsu!": covers.KJ1Cover,
-            "Kage-Jitsu! 2nd": covers.KJ2Cover,
-            "s101": covers.KJ1Cover,
-            "s102": covers.KJ2Cover,
-        },
-        "sscCoverImages": {
-            "ssc": covers.SSCCover,
-            "1-1": covers.SSC11Cover,
-            "1-2": covers.SSC12Cover,
-            "1-3": covers.SSC13Cover,
-            "1-4": covers.SSC14Cover,
-            "1-5": covers.SSC15Cover,
-            "1-6": covers.SSC16Cover,
-            "1-7": covers.SSC17Cover,
-            "1-8": covers.SSC18Cover,
-            "1-9": covers.SSC19Cover,
-            "1-10": covers.SSC110Cover,
-            "1-11": covers.SSC111Cover,
-            "1-12": covers.SSC112Cover,
-            "1-13": covers.SSC113Cover,
-            "1-14": covers.SSC114Cover,
-            "1-15": covers.SSC1FCover,
-            "2-1": covers.SSC21Cover,
-            "2-2": covers.SSC22Cover,
-            "2-3": covers.SSC23Cover,
-            "2-4": covers.SSC24Cover,
-            "2-5": covers.SSC25Cover,
-            "2-6": covers.SSC26Cover,
-            "2-7": covers.SSC27Cover,
-            "2-8": covers.SSC28Cover,
-            "2-9": covers.SSC29Cover,
-            "2-10": covers.SSC210Cover,
-            "2-11": covers.SSC211Cover,
-            "2-12": covers.SSC212Cover,
-            "2-13": covers.SSC213Cover,
-            "3-1": covers.SSC31Cover,
-            "3-2": covers.SSC32Cover,
-            "3-3": covers.SSC33Cover,
-            "3-4": covers.SSC34Cover
-        },
-        "esCoverImages": {
-            "Event Stories": covers.ESCover,
-            "hr": covers.ESHRCover,
-            "ftgi": covers.ESFTGICover,
-            "nvacs": covers.ESNvACSCover,
-            "rog": covers.ESROGCover,
-            "hd": covers.ESHDCover,
-            "clbg": covers.ESCLBGCover,
-            "sulp": covers.ESSULPCover,
-            "ts": covers.ESTSCover,
-            "mt": covers.ESMTCover,
-            "dss": covers.ESDSSCover,
-            "i": covers.ESICover,
-            "lshn": covers.ESLSHNCover,
-            "ana": covers.ESANACover,
-            "agfms": covers.ESAGFMSCover,
-            "rtgi2": covers.ESRTGI2Cover,
-            "m": covers.ESMCover,
-            "bmsv": covers.ESBMSVCover,
-            "tghms": covers.ESTGHMSCover,
-            "hd2": covers.ESHD2Cover,
-            "tpis": covers.ESTPISCover,
-            "ssitw": covers.ESSSITWCover,
-            "adswy": covers.ESADSWYCover
-        },
-        "apoCoverImages": {
-            "Apocrypha": covers.APOCover,
-            "1": covers.APO1Cover,
-            "1-1": covers.APO11Cover,
-            "1-1-1": covers.APO111Cover,
-            "1-1-2": covers.APO112Cover,
-            "1-1-3-1": covers.APO1131Cover,
-            "1-1-3-2": covers.APO1132Cover,
-            "1-1-3-3": covers.APO1133Cover,
-            "1-1-4-1": covers.APO1141Cover,
-            "1-1-4-2": covers.APO1142Cover,
-            "1-1-5-1": covers.APO1151Cover,
-            "1-1-5-2": covers.APO1152Cover,
-            "1-1-5-3": covers.APO1153Cover,
-            "1-1-6": covers.APO116Cover,
-            "1-1-7": covers.APO117Cover,
-            "1-1-8-1": covers.APO1181Cover,
-            "1-1-8-2": covers.APO1182Cover,
-        }
-    };
 
     const [characterDropdowns, setCharacterDropdowns] = useState(() => {
         const savedState = sessionStorage.getItem('characterDropdowns');
@@ -506,6 +399,20 @@ function SearchPage() {
     useEffect(() => {
         sessionStorage.setItem('characterDropdowns', JSON.stringify(characterDropdowns));
     }, [characterDropdowns]);
+
+    const [characterImages, setCharacterImages] = useState(() => {
+        const savedState = sessionStorage.getItem('characterImages');
+        if (savedState) {
+            const parsedState = JSON.parse(savedState);
+            return parsedState;
+        }
+
+        return {}
+    });
+
+    useEffect(() => {
+        sessionStorage.setItem('characterImages', JSON.stringify(characterImages));
+    }, [characterImages]);
 
     const [nameMap, setNameMap] = useState(() => {
         const savedState = sessionStorage.getItem('nameMap');
@@ -534,15 +441,30 @@ function SearchPage() {
         sessionStorage.setItem('namedActive', JSON.stringify(namedActive));
     }, [namedActive]);
 
-    const namedCharacters = ["Akane Nishino", "Alexia Midgar", "Alpha", "Annerose Nichtsehen", "Aurora",
-        "Beatrix", "Beta", "Chi", "Cid Kagenou", "Claire Kagenou", "Claudia", "Crimson", "Delta", "Duet",
-        "Elisabeth", "Epsilon", "Eta", "Freya", "Gamma", "Garter Kikuchi", "Gettan", "Glen", "Goldy Gilded",
-        "Grease", "Iota", "Iris Midgar", "Jack Nelson", "Juggernaut", "Kana", "Kevin", "Klaus Midgar",
-        "Kouadoi", "Lambda", "Lili", "Lutheran Barnett", "Marco Granger", "Margaret", "Marie", "Mary",
-        "Mist Dragon", "Mordred", "Mr. Kagenou", "Mrs. Kagenou", "Natsu", "No. 664", "No. 665", "Nu", "Olivier",
-        "Omega", "Pente", "Perv Asshat", "Po Tato", "Quinton", "Raphael Oriana", "Reina Oriana", "Rex",
-        "Rose Oriana", "Sergey Gorman", "Sherry Barnett", "Skel Etal", "Victoria", "White Demon", "Yukime",
-        "Zenon Griffey", "Zeta"];
+
+    const [namedCharacters, setNamedCharacters] = useState(() => {
+        // Get the initial value from sessionStorage or default to false
+        const savedState = sessionStorage.getItem('namedCharacters');
+        if (savedState) {
+            const parsedState = JSON.parse(savedState);
+            return parsedState;
+        }
+
+        return ["Akane Nishino", "Alexia Midgar", "Alpha", "Annerose Nichtsehen", "Aurora",
+            "Beatrix", "Beta", "Chi", "Cid Kagenou", "Claire Kagenou", "Claudia", "Crimson", "Delta", "Duet",
+            "Elisabeth", "Epsilon", "Eta", "Freya", "Gamma", "Garter Kikuchi", "Gettan", "Glen", "Goldy Gilded",
+            "Grease", "Iota", "Iris Midgar", "Jack Nelson", "Juggernaut", "Kana", "Kevin", "Klaus Midgar",
+            "Kouadoi", "Lambda", "Lili", "Lutheran Barnett", "Marco Granger", "Margaret", "Marie", "Mary",
+            "Mist Dragon", "Mordred", "Mr. Kagenou", "Mrs. Kagenou", "Natsu", "No. 664", "No. 665", "Nu", "Olivier",
+            "Omega", "Pente", "Perv Asshat", "Po Tato", "Quinton", "Raphael Oriana", "Reina Oriana", "Rex",
+            "Rose Oriana", "Sergey Gorman", "Sherry Barnett", "Skel Etal", "Victoria", "White Demon", "Yukime",
+            "Zenon Griffey", "Zeta"]
+    });
+
+    // Use an effect to update sessionStorage when namedActive changes
+    useEffect(() => {
+        sessionStorage.setItem('namedCharacters', JSON.stringify(namedCharacters));
+    }, [namedCharacters]);
 
     const [canonActive, setCanonActive] = useState(() => {
         // Get the initial value from sessionStorage or default to false
@@ -589,6 +511,15 @@ function SearchPage() {
         setSearchResults({});
     }
 
+    const images = {
+        "characterImages": characterImages,
+        "lnCoverImages": mediumImages.lnCoverImages,
+        "animeCoverImages": mediumImages.animeCoverImages,
+        "sscCoverImages": mediumImages.sscCoverImages,
+        "esCoverImages": mediumImages.esCoverImages,
+        "apoCoverImages": mediumImages.apoCoverImages
+    };
+
 
 
 
@@ -598,10 +529,10 @@ function SearchPage() {
         if (filterState.regex) {
             try {
                 new RegExp(filterState.expression);
-              } catch (error) {
+            } catch (error) {
                 setResultsText(error.message);
                 return;
-              }
+            }
         }
         // Collect all checked items from animeDropdownState
         const animeCheckedItems = Object.entries(animeDropdownState.seasonsChecked)
@@ -823,7 +754,7 @@ function SearchPage() {
                 keywords = filterState.keywords;
             }
             animeResults = searchAnime(animeCheckedItems, animeText, keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, filterState.regex, namedActive, namedCharacters);
-            lnResults = searchLN(lnCheckedItems, lnText,keywords, filterState.caseSensitive, filterState.exactMatch, filterState.regex);
+            lnResults = searchLN(lnCheckedItems, lnText, keywords, filterState.caseSensitive, filterState.exactMatch, filterState.regex);
             wnResults = searchWN(wnCheckedItems, wntext, keywords, filterState.caseSensitive, filterState.exactMatch, filterState.regex);
             sscResults = searchSSC(sscCheckedItems, sscText, keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, filterState.regex, namedActive, namedCharacters);
             esResults = searchES(esCheckedItems, esText, keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, filterState.regex, namedActive, namedCharacters);
@@ -833,8 +764,107 @@ function SearchPage() {
         }
     }
 
-    if (loading) {
-        return <div>Loading...</div>; // Display a loading message or spinner
+    if (loading || errors) {
+        return (
+            <div className="search-page">
+                <h1 className="filters-header">FILTERS</h1>
+                <div className="filters">
+                    <div className="row-container">
+                        <div className={`mediums-container ${mediumFlash ? 'flash-selected' : ''}`}>
+                            <h2 className={`mediums-title ${mediumFlash ? 'flash' : ''}`}>MEDIUMS</h2>
+                            <p>Failed to Load.</p>
+                            <FontAwesomeIcon
+                                icon={faC}
+                                className={`canon-button ${true ? 'active' : ''}`}
+                                title='Canon Only'
+                            />
+                            <FontAwesomeIcon
+                                icon={faRotateRight}
+                                className="reset-button"
+                                title="Reset"
+                            />
+                        </div>
+                        <div className="characters-container">
+                            <h2 className="characters-title">CHARACTERS</h2>
+                            <p>Failed to Load.</p>
+                            <div className="checkbox-container">
+                            </div>
+                            <FontAwesomeIcon
+                                icon={faN}
+                                className={`named-button ${true ? 'active' : ''}`}
+                                title='"Named" Only'
+                            />
+                            <FontAwesomeIcon
+                                icon={faRotateRight}
+                                className="reset-button"
+                                title="Reset"
+                            />
+                        </div>
+
+                        <div className={`selected-container`}>
+                            <h2 className="selected-title">SELECTED</h2>
+                            <p>Failed to Load.</p>
+                        </div>
+                    </div>
+                    <div className={`keywords-container ${keywordsFlash ? 'flash-selected' : ''}`}>
+                        <h2 className={`keywords-title ${keywordsFlash ? 'flash' : ''}`}>KEYWORDS</h2>
+                        <div className="keywords-input-wrapper">
+                            <div className="keywords-input-container">
+                                <input
+                                    type="text"
+                                    className="keywords-input"
+                                    placeholder="Enter keywords / phrases..."
+                                    defaultValue=''
+                                />
+                            </div>
+                            <div className="icons-container">
+                                <VscCaseSensitive
+                                    className={`case-sensitive-icon ${filterState.caseSensitive ? 'active' : ''}`}
+                                    title="Match Case"
+                                />
+                                <WholeWord
+                                    className={`whole-word-icon ${filterState.exactMatch ? 'active' : ''}`}
+                                    title="Match Whole Word(s)"
+                                />
+                                <Regex
+                                    className={`regex-icon ${false ? 'active' : ''}`}
+                                    title="Regular Expression"
+                                />
+
+                                <button className="delete-all" title="Delete all">
+                                    <FontAwesomeIcon className="delete-all-icon" icon={faTimes} />
+                                </button>
+                            </div>
+
+
+                        </div>
+                        <p className="input-instructions">Press enter after each keyword/phrase</p>
+                    </div>
+                    <div className="keywords-search">
+                        <button className="search-button">SEARCH</button> {/* Search button */}
+
+                    </div>
+                </div>
+                <div>
+                    <h1 className="results-header">RESULTS</h1>
+                    <div className="results-container">
+                        <FontAwesomeIcon
+                            icon={faLightbulb}
+                            className={`highlight-icon ${true ? 'active' : ''}`}
+                            title="Highlight Keywords"
+                        />
+                        <FontAwesomeIcon
+                            icon={faTrashCan}
+                            className={`reset-icon`}
+                            title="Clear Results"
+                        />
+                        <div className="content-wrapper">
+                        </div>
+                    </div>
+                </div>
+
+            </div >
+        );
     }
 
     // Add a button in your JSX to trigger the search

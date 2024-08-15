@@ -15,6 +15,15 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
     const [previewText, setPreviewText] = useState(null);
     const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
     const [currentPage, setCurrentPage] = useState({});
+    const [openMenus, setOpenMenus] = useState({});
+
+    function handleMenu(name) {
+        setOpenMenus((prevOpenMenus) => ({
+            ...prevOpenMenus,
+            [name]: !prevOpenMenus[name],
+        }));
+    }
+
     useEffect(() => {
         const initialPages = {};
         Object.keys(sscData.parts).forEach(partKey => {
@@ -77,29 +86,29 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
     const highlightKeywords = (text) => {
         let highlightedText = text;
         if (filterState.regex) {
-          const regex = new RegExp(filterState.expression);
-          highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
-        } else {
-          filterState.keywords.forEach(keyword => {
-            let regex;
-            if (filterState.regex) {
-              // If regex is true, use the keyword as a regular expression
-              regex = new RegExp(keyword, filterState.caseSensitive ? 'g' : 'gi');
-            } else if (filterState.exactMatch) {
-              // If exactMatch is true, match the keyword exactly as it is
-              regex = new RegExp(`\\b${keyword}\\b`, filterState.caseSensitive ? 'g' : 'gi');
-            } else {
-              // Otherwise, match any occurrence of the keyword
-              regex = new RegExp(keyword, filterState.caseSensitive ? 'g' : 'gi');
-            }
-    
-            // Highlight matches
+            const regex = new RegExp(filterState.expression, 'g');
             highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
-          });
+        } else {
+            filterState.keywords.forEach(keyword => {
+                let regex;
+                if (filterState.regex) {
+                    // If regex is true, use the keyword as a regular expression
+                    regex = new RegExp(keyword, filterState.caseSensitive ? 'g' : 'gi');
+                } else if (filterState.exactMatch) {
+                    // If exactMatch is true, match the keyword exactly as it is
+                    regex = new RegExp(`\\b${keyword}\\b`, filterState.caseSensitive ? 'g' : 'gi');
+                } else {
+                    // Otherwise, match any occurrence of the keyword
+                    regex = new RegExp(keyword, filterState.caseSensitive ? 'g' : 'gi');
+                }
+
+                // Highlight matches
+                highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
+            });
         }
-    
+
         return highlightedText;
-      };
+    };
 
     function handleMouseEnter(id, partKey, episodeKey, index) {
         return;
@@ -158,7 +167,6 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
     return (
         <div className="anime-trigger">
             {Object.entries(sscData.parts).map(([partKey, chapters]) => {
-                const partKeyInt = parseInt(partKey.split("p")[1]) - 1;
                 const partkeys = Object.keys(partsChecked);
                 let partTitle = "Cannot find.";
                 for (let i = 0; i < partkeys.length; i++) {
@@ -176,142 +184,158 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
 
                 return (
                     <div key={partTitle}>
-                        <Collapsible className="medium-margin" trigger={
-                            <>
-                                <div className="volume-trigger">
+                        <Collapsible onOpening={() => handleMenu(`apo-${partKey}`)} onClose={() => handleMenu(`apo-${partKey}`)}
+                            className="medium-margin" trigger={
+                                <>
+                                    <div className="volume-trigger">
 
-                                    {`${partTitle.split("|")[1]} (Total: ${partCount})`}
-                                </div>
-                            </>
-                        }>
-                            {Object.entries(chapters.chapters).map(([chapterKey, chapterValue]) => {
-                                const chapterKeys = Object.keys(partsChecked[partTitle]);
-                                let chapterTitle = "Cannot find.";
-                                for (let i = 0; i < chapterKeys.length; i++) {
-                                    if (chapterKeys[i].startsWith(`${chapterKey.slice(3)}`)) {
-                                        chapterTitle = chapterKeys[i];
+                                        {`${partTitle.split("|")[1]} (Total: ${partCount})`}
+                                    </div>
+                                </>
+                            }>
+                            {openMenus[`apo-${partKey}`] && (
+                                <>
+                                    {Object.entries(chapters.chapters).map(([chapterKey, chapterValue]) => {
+                                        const chapterKeys = Object.keys(partsChecked[partTitle]);
+                                        let chapterTitle = "Cannot find.";
+                                        for (let i = 0; i < chapterKeys.length; i++) {
+                                            if (chapterKeys[i].startsWith(`${chapterKey.slice(3)}`)) {
+                                                chapterTitle = chapterKeys[i];
 
-                                        break;
-                                    }
-                                }
-                                const chapterCount = Object.values(chapterValue.episodes).reduce((total, episode) => total + episode.sentences.length, 0);
-                                return (
-                                    <Collapsible className="medium-margin" trigger={
-                                        <>
-                                            <div className="volume-trigger">
-                                                {coverImages[chapterKey.split("c")[1]] && <img className="cover-image-ssc" src={coverImages[chapterKey.split("c")[1]]} alt={chapterTitle} />}
-                                                {`Chapter ${chapterTitle} (Total: ${chapterCount})`}
-                                            </div>
-                                        </>
-                                    }>
-                                        {Object.entries(chapterValue.episodes).sort().map(([episodeKey, episodeValue]) => {
-                                            let episodeTitle = partsChecked[partTitle][chapterTitle][`e${episodeKey.slice(1)}`].title;
-                                            const imageKey = `${chapterKey.split("c")[1]}-${episodeKey.replace("e", "")}`
-                                            const uniqueChapterKey = `${partKey}-${chapterKey}-${episodeKey}`;
-                                            return (
-                                                <Collapsible trigger={
+                                                break;
+                                            }
+                                        }
+                                        const chapterCount = Object.values(chapterValue.episodes).reduce((total, episode) => total + episode.sentences.length, 0);
+                                        return (
+                                            <Collapsible onOpening={() => handleMenu(`apo-${partKey}-${chapterKey}`)} onClose={() => handleMenu(`apo-${partKey}-${chapterKey}`)}
+                                                className="medium-margin" trigger={
                                                     <>
                                                         <div className="volume-trigger">
-                                                            {coverImages[imageKey] && <img className="cover-image-apo-small" src={coverImages[imageKey]} alt={episodeTitle} />}
-                                                            {`${episodeTitle} (Total: ${episodeValue.sentences.length})`}
+                                                            {coverImages[chapterKey.split("c")[1]] && <img className="cover-image-ssc" src={coverImages[chapterKey.split("c")[1]]} alt={chapterTitle} />}
+                                                            {`Chapter ${chapterTitle} (Total: ${chapterCount})`}
                                                         </div>
                                                     </>
-                                                } key={episodeKey}>
-                                                    <div className="sentences-container">
-                                                        {episodeValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
-                                                            <div className="sentence-character-container" key={index}>
-                                                                <div className="sentence-box-image">
-                                                                    <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
-                                                                    <div className="icon-container-triple">
-                                                                        <CopyToClipboard text={sentence.subtitle}>
-                                                                            <div className="copy-icon" onClick={() => showPopup(partKey, chapterKey, index)}>
-                                                                                <FontAwesomeIcon icon={faCopy} />
-                                                                                <div className="popup" id={`popup-${partKey}-${chapterKey}-${index}`}>
-                                                                                    Copied!
-                                                                                </div>
+                                                }>
+                                                {openMenus[`apo-${partKey}-${chapterKey}`] && (
+                                                    <>
+
+                                                        {Object.entries(chapterValue.episodes).sort().map(([episodeKey, episodeValue]) => {
+                                                            let episodeTitle = partsChecked[partTitle][chapterTitle][`e${episodeKey.slice(1)}`].title;
+                                                            const imageKey = `${chapterKey.split("c")[1]}-${episodeKey.replace("e", "")}`
+                                                            const uniqueChapterKey = `${partKey}-${chapterKey}-${episodeKey}`;
+                                                            return (
+                                                                <Collapsible onOpening={() => handleMenu(`apo-${partKey}-${chapterKey}-${episodeKey}`)} onClose={() => handleMenu(`apo-${partKey}-${chapterKey}-${episodeKey}`)}
+                                                                    trigger={
+                                                                        <>
+                                                                            <div className="volume-trigger">
+                                                                                {coverImages[imageKey] && <img className="cover-image-apo-small" src={coverImages[imageKey]} alt={episodeTitle} />}
+                                                                                {`${episodeTitle} (Total: ${episodeValue.sentences.length})`}
                                                                             </div>
-                                                                        </CopyToClipboard>
-                                                                        <SlashLine className="icon-slashline" />
-                                                                        <div className="image-icon-container"
-                                                                            onMouseEnter={() => handleMouseEnter(sentence.url, partKey, chapterKey, index)}
-                                                                            onMouseLeave={() => setPreviewImage(null)}
-                                                                            ref={ref => iconRefs.current[`${partKey}-${chapterKey}-${index}`] = ref}
-                                                                        >
-                                                                            {sentence.url && (
-                                                                                <a href={`https://drive.google.com/file/d/${sentence.url.split('/d/')[1].split('/view')[0]}/view`} target="_blank" rel="noopener noreferrer">
-                                                                                    <FontAwesomeIcon className="image-icon" icon={faFileImage} />
-                                                                                </a>
+                                                                        </>
+                                                                    } key={`apo-${partKey}-${chapterKey}-${episodeKey}`}>
+                                                                    {openMenus[`apo-${partKey}-${chapterKey}-${episodeKey}`] && (
+                                                                        <>
+                                                                            <div className="sentences-container">
+                                                                                {episodeValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
+                                                                                    <div className="sentence-character-container" key={index}>
+                                                                                        <div className="sentence-box-image">
+                                                                                            <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
+                                                                                            <div className="icon-container-triple">
+                                                                                                <CopyToClipboard text={sentence.subtitle}>
+                                                                                                    <div className="copy-icon" onClick={() => showPopup(partKey, chapterKey, index)}>
+                                                                                                        <FontAwesomeIcon icon={faCopy} />
+                                                                                                        <div className="popup" id={`popup-${partKey}-${chapterKey}-${index}`}>
+                                                                                                            Copied!
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </CopyToClipboard>
+                                                                                                <SlashLine className="icon-slashline" />
+                                                                                                <div className="image-icon-container"
+                                                                                                    onMouseEnter={() => handleMouseEnter(sentence.url, partKey, chapterKey, index)}
+                                                                                                    onMouseLeave={() => setPreviewImage(null)}
+                                                                                                    ref={ref => iconRefs.current[`${partKey}-${chapterKey}-${index}`] = ref}
+                                                                                                >
+                                                                                                    {sentence.url && (
+                                                                                                        <a href={`https://drive.google.com/file/d/${sentence.url.split('/d/')[1].split('/view')[0]}/view`} target="_blank" rel="noopener noreferrer">
+                                                                                                            <FontAwesomeIcon className="image-icon" icon={faFileImage} />
+                                                                                                        </a>
 
-                                                                            )}
-                                                                        </div>
-                                                                        <SlashLine className="icon-slashline" />
-                                                                        <div className="info-icon-container"
-                                                                            onMouseEnter={() => handleMouseEnterInfo(partKey, chapterKey, episodeKey, index, partTitle,
-                                                                                chapterTitle, episodeTitle, sentence.line, sentence.name, sentence.name_variant)}
-                                                                            onMouseLeave={() => setPreviewText(null)}
-                                                                            ref={ref => iconRefs.current[`${partKey}-${chapterKey}-${episodeKey}-${index}-info`] = ref}
-                                                                        >
-                                                                            {sentence && (
-                                                                                <FontAwesomeIcon className="info-icon" icon={faCircleInfo} />
-                                                                            )}
-                                                                        </div>
+                                                                                                    )}
+                                                                                                </div>
+                                                                                                <SlashLine className="icon-slashline" />
+                                                                                                <div className="info-icon-container"
+                                                                                                    onMouseEnter={() => handleMouseEnterInfo(partKey, chapterKey, episodeKey, index, partTitle,
+                                                                                                        chapterTitle, episodeTitle, sentence.line, sentence.name, sentence.name_variant)}
+                                                                                                    onMouseLeave={() => setPreviewText(null)}
+                                                                                                    ref={ref => iconRefs.current[`${partKey}-${chapterKey}-${episodeKey}-${index}-info`] = ref}
+                                                                                                >
+                                                                                                    {sentence && (
+                                                                                                        <FontAwesomeIcon className="info-icon" icon={faCircleInfo} />
+                                                                                                    )}
+                                                                                                </div>
 
-                                                                    </div>
-                                                                </div>
-                                                                <div className="character-box">
-                                                                    {characterImages[sentence.name_variant] && (
-                                                                        <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant || 'None'} />
-                                                                    ) || (characterImages[sentence.name] && (
-                                                                        <img src={characterImages[sentence.name]} alt={sentence.name || 'None'} />
-                                                                    ))}
-                                                                    <p title={sentence.name_variant || 'None'}>
-                                                                        {
-                                                                            sentence.name && sentence.name_variant ? (
-                                                                                sentence.name !== sentence.name_variant ? (
-                                                                                    sentence.name_variant
-                                                                                ) : sentence.name
-                                                                            ) : 'None'
-                                                                        }
-                                                                    </p>
-                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div className="character-box">
+                                                                                            {characterImages[sentence.name_variant] && (
+                                                                                                <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant || 'None'} />
+                                                                                            ) || (characterImages[sentence.name] && (
+                                                                                                <img src={characterImages[sentence.name]} alt={sentence.name || 'None'} />
+                                                                                            ))}
+                                                                                            <p title={sentence.name_variant || 'None'}>
+                                                                                                {
+                                                                                                    sentence.name && sentence.name_variant ? (
+                                                                                                        sentence.name !== sentence.name_variant ? (
+                                                                                                            sentence.name_variant
+                                                                                                        ) : sentence.name
+                                                                                                    ) : 'None'
+                                                                                                }
+                                                                                            </p>
+                                                                                        </div>
 
 
 
-                                                            </div>
-                                                        ))}
-                                                        {sentencesPerPage && (
-                                                            <div className='page-settings'>
-                                                                <div className="pagination-controls">
-                                                                    <button title={`Page 1`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: 1 }))}>
-                                                                        <FontAwesomeIcon icon={faAnglesLeft} />
-                                                                    </button>
-                                                                    <button title={`Page ${Math.max(currentPage[uniqueChapterKey] - 1, 1)}`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.max((oldPages[uniqueChapterKey] || 1) - 1, 1) }))}>
-                                                                        <FontAwesomeIcon icon={faAngleLeft} />
-                                                                    </button>
-                                                                    <input type="number" min="1" max={Math.ceil(episodeValue.sentences.length / sentencesPerPage)} value={currentPage[uniqueChapterKey] || 1} onChange={e => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min(Math.max(Number(e.target.value), 1), Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))} />
-                                                                    <button title={`Page ${Math.min(currentPage[uniqueChapterKey] + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage))}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min((oldPages[uniqueChapterKey] || 1) + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))}>
-                                                                        <FontAwesomeIcon icon={faAngleRight} />
-                                                                    </button>
-                                                                    <button title={`Page ${Math.ceil(episodeValue.sentences.length / sentencesPerPage)}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.ceil(episodeValue.sentences.length / sentencesPerPage) }))}>
-                                                                        <FontAwesomeIcon icon={faAnglesRight} />
-                                                                    </button>
-                                                                </div>
-                                                                <input
-                                                                    type="number"
-                                                                    value={sentencesPerPage}
-                                                                    onChange={(e) => doSentencesPerPage(parseInt(e.target.value))}
-                                                                    className="settings-spp"
-                                                                />
+                                                                                    </div>
+                                                                                ))}
+                                                                                {sentencesPerPage && (
+                                                                                    <div className='page-settings'>
+                                                                                        <div className="pagination-controls">
+                                                                                            <button title={`Page 1`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: 1 }))}>
+                                                                                                <FontAwesomeIcon icon={faAnglesLeft} />
+                                                                                            </button>
+                                                                                            <button title={`Page ${Math.max(currentPage[uniqueChapterKey] - 1, 1)}`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.max((oldPages[uniqueChapterKey] || 1) - 1, 1) }))}>
+                                                                                                <FontAwesomeIcon icon={faAngleLeft} />
+                                                                                            </button>
+                                                                                            <input type="number" min="1" max={Math.ceil(episodeValue.sentences.length / sentencesPerPage)} value={currentPage[uniqueChapterKey] || 1} onChange={e => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min(Math.max(Number(e.target.value), 1), Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))} />
+                                                                                            <button title={`Page ${Math.min(currentPage[uniqueChapterKey] + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage))}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min((oldPages[uniqueChapterKey] || 1) + 1, Math.ceil(episodeValue.sentences.length / sentencesPerPage)) }))}>
+                                                                                                <FontAwesomeIcon icon={faAngleRight} />
+                                                                                            </button>
+                                                                                            <button title={`Page ${Math.ceil(episodeValue.sentences.length / sentencesPerPage)}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(episodeValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.ceil(episodeValue.sentences.length / sentencesPerPage) }))}>
+                                                                                                <FontAwesomeIcon icon={faAnglesRight} />
+                                                                                            </button>
+                                                                                        </div>
+                                                                                        <input
+                                                                                            type="number"
+                                                                                            value={sentencesPerPage}
+                                                                                            onChange={(e) => doSentencesPerPage(parseInt(e.target.value))}
+                                                                                            className="settings-spp"
+                                                                                        />
 
-                                                            </div>
-                                                        )}
-                                                    </div>
-                                                </Collapsible>
-                                            );
-                                        })}
-                                    </Collapsible>
-                                );
-                            })}
+                                                                                    </div>
+                                                                                )}
+                                                                            </div>
+                                                                        </>
+                                                                    )}
+                                                                </Collapsible>
+                                                            );
+                                                        })}
+                                                    </>
+                                                )}
+                                            </Collapsible>
+                                        );
+                                    })}
+                                </>
+                            )}
                         </Collapsible>
                     </div>
                 );

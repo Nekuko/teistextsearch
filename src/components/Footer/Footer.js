@@ -8,7 +8,6 @@ const Footer = () => {
 
     const handleLogout = () => {
         signOut(auth).then(() => {
-            console.log("User signed out");
         }).catch((error) => {
             console.error("Error signing out: ", error);
         });
@@ -16,7 +15,7 @@ const Footer = () => {
 
     return (
         <div className="footer">
-            <button onClick={handleLogout} className="logout">Logout</button>
+            <button onClick={handleLogout} className="logout">LOGOUT</button>
         </div>
     );
 };

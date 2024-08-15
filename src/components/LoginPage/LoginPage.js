@@ -16,7 +16,7 @@ function LoginPage() {
       const result = await signInWithPopup(auth, provider);
       // The signed-in user info.
     } catch (error) {
-      console.log(`Error ${error.code}: ${error.message}`);
+      console.error(`Error ${error.code}: ${error.message}`);
     }
   };
 

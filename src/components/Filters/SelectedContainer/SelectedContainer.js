@@ -944,9 +944,12 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
           </div>
         ))}
       </div>
+      <br/>
       <p className="selected-subtitle-char">CHARACTERS</p>
       <div className="selected-input-container">
-        {selectedCharacterList.map((item, index) => (
+        {selectedCharacterList.sort((a, b) => {
+          return a.text.localeCompare(b.text);
+        }).map((item, index) => (
           <div className="selected-bubble" key={index} title={item.hoverText}>
             {item.text}
           </div>

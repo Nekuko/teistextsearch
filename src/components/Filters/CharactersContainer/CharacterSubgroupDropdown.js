@@ -160,7 +160,7 @@ function CharacterSubgroupDropdown({
 
 
     return (
-        <div className="episode-list">
+        <div className="character-list">
           <div className="item-header">
             <div className="volume-trigger-drop">
               <div onClick={handleGroupClick}>
@@ -180,7 +180,7 @@ function CharacterSubgroupDropdown({
             <input
               type="checkbox"
               checked={selectedGroup.checked}
-              onChange={(event) => handleGroupCheck(selectedGroup)}
+              onChange={() => handleGroupCheck(selectedGroup)}
               disabled={
                 namedCharacters.length > 0 &&
                 Object.keys(selectedGroup.characters).every(

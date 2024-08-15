@@ -3,10 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { getAnalytics } from "firebase/analytics";
-import { app } from './firebase'; // Import app from firebaseApp.js
-
-const analytics = getAnalytics(app);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
