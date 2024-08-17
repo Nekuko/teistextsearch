@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 import { ReactComponent as SlashLine } from '../../svgs/nav_separator.svg';
@@ -7,10 +7,32 @@ import { ReactComponent as Menu } from '../../svgs/codicon--menu.svg';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   }
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        // Ignore clicks on the checkbox
+        if (event.target.type !== 'checkbox') {
+          setIsOpen(false);
+        }
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
     <header className="Header">
@@ -51,7 +73,7 @@ function Header() {
         </nav>
       </div>
 
-      <div className="mobile-nav">
+      <div className="mobile-nav" ref={menuRef}>
         <Menu
           className={`burger-icon ${isOpen ? 'burger-open' : ''}`}
           onClick={toggleMenu}

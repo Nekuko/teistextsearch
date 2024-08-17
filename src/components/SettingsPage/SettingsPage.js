@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './SettingsPage.css'; // Import the CSS file
 import { readVersions } from '../../utils/indexedDBFunctions';
 import { ESMAP } from '../../esMap';
@@ -108,6 +108,27 @@ function SettingsPage() {
   const [nameAsc, setNameAsc] = useState(true);
   const [inputValue, setInputValue] = useState('');
   const [allCharacters, setAllCharacters] = useState();
+  const suggestionRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (suggestionRef.current && !suggestionRef.current.contains(event.target)) {
+        if (event.target.type !== 'checkbox') {
+          setInputValue('');
+        }
+      }
+    };
+
+    if (inputValue) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [inputValue]);
 
   useEffect(() => {
     async function fetchData() {
@@ -533,7 +554,7 @@ function SettingsPage() {
                         onClick={() => resetNamed()}
                       />
                       {inputValue && (
-                        <div className="suggestions">
+                        <div className="suggestions" ref={suggestionRef}>
                           {allCharacters
                             .filter((suggestion) =>
                               suggestion.toLowerCase().includes(inputValue.toLowerCase())

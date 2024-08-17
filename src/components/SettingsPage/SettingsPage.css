@@ -107,6 +107,7 @@
   padding-left: 0.5%;
   font-size: small;
   border-radius: 0px 0px 5px 5px;
+  overflow-x:hidden;
 }
 
 .suggestion-image {
@@ -119,6 +120,7 @@
   align-items: center;
   margin-top: 2%;
   margin-bottom: 3%;
+  padding-right: 15px;
 }
 
 .settings-table th {

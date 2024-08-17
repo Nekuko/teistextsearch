@@ -524,6 +524,100 @@ function SearchPage() {
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     };
 
+    async function getAllMediums() {
+        const animeCheckedItems = Object.entries(animeDropdownState.seasonsChecked)
+            .flatMap(([season, episodes]) =>
+                Object.entries(episodes)
+                    .filter(([episodeId, episodeData]) => !episodeData.checked && episodeId !== 'checked')
+                    .map(([episodeId]) => {
+                        const [season, ep] = episodeId.split('e');
+                        return `an_${season}_e${ep}`;
+                    })
+            );
+
+        const lnCheckedItems = Object.entries(lnDropdownState.volumesChecked)
+            .flatMap(([volume, chapters]) =>
+                Object.entries(chapters)
+                    .filter(([chapter, value]) => !value.checked && chapter !== 'checked')
+                    .map(([chapter, value]) => {
+                        return `ln_${chapter.split("c")[0]}_c${chapter.split("c")[1]}`;
+                    })
+            );
+
+        const wnCheckedItems = Object.entries(wnDropdownState.volumesChecked)
+            .flatMap(([volume, chapters]) =>
+                Object.entries(chapters)
+                    .filter(([chapter, value]) => !value.checked && chapter !== 'checked')
+                    .map(([chapter, value]) => {
+                        return `wn_${chapter.split("c")[0].replace("v", "")}_${chapter.split("c")[1]}`;
+                    })
+            );
+
+        let sscCheckedItems = [];
+        for (let group in mogDropdownState.partsChecked) {
+            if (group === "Seven Shadows Chronicles") {
+                for (let part in mogDropdownState.partsChecked[group]) {
+                    for (let section in mogDropdownState.partsChecked[group][part]) {
+                        if (section !== 'checked') {
+                            for (let episode in mogDropdownState.partsChecked[group][part][section]) {
+                                if (episode !== 'checked' && !mogDropdownState.partsChecked[group][part][section][episode].checked) {
+                                    sscCheckedItems.push(`ssc_p${part.split(" ")[1]}_c${section.split("|")[0].trim().replace(" Final", "-15")}_${episode}`);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        let apoCheckedItems = [];
+        for (let group in mogDropdownState.partsChecked) {
+            if (group === "Apocrypha") {
+                for (let part in mogDropdownState.partsChecked[group]) {
+                    for (let section in mogDropdownState.partsChecked[group][part]) {
+                        if (section !== 'checked') {
+                            for (let episode in mogDropdownState.partsChecked[group][part][section]) {
+                                if (episode !== 'checked' && !mogDropdownState.partsChecked[group][part][section][episode].checked) {
+                                    apoCheckedItems.push(`apo_p${part.split(" | ")[0]}_c${part.split(" | ")[0]}-${section.split("|")[0].trim().replace(" Final", "-15")}_${episode}`);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+        // For Event Stories
+        let esCheckedItems = [];
+        for (let group in mogDropdownState.partsChecked) {
+            if (group === "Event Stories") {
+                for (let part in mogDropdownState.partsChecked[group]) {
+                    for (let episode in mogDropdownState.partsChecked[group][part]) {
+                        if (episode !== 'checked' && !mogDropdownState.partsChecked[group][part][episode].checked) {
+                            if (canonActive) {
+                                if (canonES.includes(part)) {
+                                    esCheckedItems.push(`es_${ESMAPREVERSE[part]}_${episode}`);
+                                }  
+                            } else {
+                                esCheckedItems.push(`es_${ESMAPREVERSE[part]}_${episode}`);
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+        return {
+            animeCheckedItems: animeCheckedItems, wnCheckedItems: wnCheckedItems, esCheckedItems: esCheckedItems, apoCheckedItems: apoCheckedItems,
+            lnCheckedItems: lnCheckedItems, sscCheckedItems: sscCheckedItems
+        }
+    }
+
 
 
     async function handleSearch(addedWord) {
@@ -538,7 +632,7 @@ function SearchPage() {
             }
         }
         // Collect all checked items from animeDropdownState
-        const animeCheckedItems = Object.entries(animeDropdownState.seasonsChecked)
+        let animeCheckedItems = Object.entries(animeDropdownState.seasonsChecked)
             .flatMap(([season, episodes]) =>
                 Object.entries(episodes)
                     .filter(([episodeId, episodeData]) => episodeData.checked && episodeId !== 'checked')
@@ -548,7 +642,7 @@ function SearchPage() {
                     })
             );
 
-        const lnCheckedItems = Object.entries(lnDropdownState.volumesChecked)
+        let lnCheckedItems = Object.entries(lnDropdownState.volumesChecked)
             .flatMap(([volume, chapters]) =>
                 Object.entries(chapters)
                     .filter(([chapter, value]) => value.checked && chapter !== 'checked')
@@ -557,7 +651,7 @@ function SearchPage() {
                     })
             );
 
-        const wnCheckedItems = Object.entries(wnDropdownState.volumesChecked)
+        let wnCheckedItems = Object.entries(wnDropdownState.volumesChecked)
             .flatMap(([volume, chapters]) =>
                 Object.entries(chapters)
                     .filter(([chapter, value]) => value.checked && chapter !== 'checked')
@@ -671,6 +765,21 @@ function SearchPage() {
         let apoCheckedData;
         let sscCheckedData;
         let esCheckedData;
+
+        if (animeCheckedItems.length === 0
+            && lnCheckedItems.length === 0
+            && wnCheckedItems.length === 0
+            && esCheckedItems.length === 0
+            && apoCheckedItems.length === 0
+            && sscCheckedItems.length === 0) {
+            let data = await getAllMediums();
+            lnCheckedItems = data.lnCheckedItems;
+            wnCheckedItems = data.wnCheckedItems;
+            esCheckedItems = data.esCheckedItems;
+            apoCheckedItems = data.apoCheckedItems;
+            sscCheckedItems = data.sscCheckedItems;
+            animeCheckedItems = data.animeCheckedItems;
+        }
 
 
         if (animeCheckedItems.length > 0) {

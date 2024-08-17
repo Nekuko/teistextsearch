@@ -1,5 +1,5 @@
 // SelectedContainer.js
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import './SelectedContainer.css';
 
 function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownState, lnDropdownState, dropdownStates, namedActive, canonActive }) {
@@ -9,7 +9,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
   }
 
   const apoCheckedItems = mogDropdownState.partsChecked["Apocrypha"];
-  
+
 
 
   if (animeDropdownState && animeDropdownState.seasonsChecked) {
@@ -797,7 +797,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     }, {});
 
     let newList = [];
-    if (countEpisodes['an_s1'] === totalEpisodes['an_s1'] && countEpisodes['an_s2'] === totalEpisodes['an_s2'] 
+    if (countEpisodes['an_s1'] === totalEpisodes['an_s1'] && countEpisodes['an_s2'] === totalEpisodes['an_s2']
       && countEpisodes['an_s101'] === totalEpisodes['an_s101'] && countEpisodes['an_s102'] === totalEpisodes['an_s102']) {
       newList.push({ text: 'Anime', hoverText: 'Anime' });
     } else {
@@ -826,11 +826,11 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
                 newList.push({ text: `KJ E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Kage-Jitsu!, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
               } else if (seasonNumber === '102') {
                 newList.push({ text: `KJ2 E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Kage-Jitsu! 2nd, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
-              } else{
+              } else {
                 newList.push({ text: `AN S${seasonNumber} E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Anime Season ${seasonNumber}, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
               }
 
-              
+
               start = episodes[i];
               end = start;
             }
@@ -843,7 +843,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
             } else {
               newList.push({ text: `AN S${seasonNumber} E${start}${start !== end ? `-${end}` : ''}`, hoverText: `Anime Season ${seasonNumber}, Episode${start !== end ? `s ${start}-${end}` : ` ${start}`}` });
             }
-            
+
           }
         }
       });
@@ -924,12 +924,12 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
 
   const selectedMediumList = [...selectedLNList, ...selectedWNList, ...selectedAnimeList, ...mogCombined]
   if (selectedMediumList.length === 0) {
-    const mediumText = 'No Medium';
+    const mediumText = canonActive ? 'Any Canon Medium' : 'Any Medium';
     selectedMediumList.push({ text: mediumText, hoverText: mediumText });
   }
 
   if (selectedCharacterList.length === 0) {
-    const characterText = namedActive ? 'No Character' : 'No Character';
+    const characterText = namedActive ? 'Any "Named" Character' : 'Any Character';
     selectedCharacterList.push({ text: characterText, hoverText: characterText });
   }
 
@@ -944,7 +944,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
           </div>
         ))}
       </div>
-      <br/>
+      <br />
       <p className="selected-subtitle-char">CHARACTERS</p>
       <div className="selected-input-container">
         {selectedCharacterList.sort((a, b) => {

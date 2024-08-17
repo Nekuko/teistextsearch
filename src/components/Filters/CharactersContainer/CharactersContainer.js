@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './CharactersContainer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRotateRight, faN } from '@fortawesome/free-solid-svg-icons';
@@ -10,10 +10,97 @@ function CharactersContainer({
   namedCharacters,
   namedActive,
   setNamedActive,
-  characterImages, 
+  characterImages,
 }) {
 
 
+  useEffect(() => {
+    if (namedActive) {
+      // Assuming you have a list of character names called namedCharacters
+      const namedCharacterSet = new Set(namedCharacters);
+
+      // Update the state to uncheck characters not in the namedCharacters list
+      setDropdownStates((prevState) => {
+        const updatedState = { ...prevState };
+        for (const dropdownName in updatedState) {
+          const dropdown = updatedState[dropdownName];
+          if (dropdown.characters) {
+            for (const charName in dropdown.characters) {
+              const character = dropdown.characters[charName];
+              if (character.checked && !namedCharacterSet.has(charName)) {
+                for (const key in character) {
+                  if (typeof character[key] === 'boolean') {
+                    character[key] = false;
+                  }
+                }
+              }
+            }
+          }
+          if (dropdown.groups) {
+            for (const groupName in dropdown.groups) {
+              const group = dropdown.groups[groupName];
+              if (group.characters) {
+                for (const charName in group.characters) {
+                  const character = group.characters[charName];
+                  if (character.checked && !namedCharacterSet.has(charName)) {
+                    for (const key in character) {
+                      if (typeof character[key] === 'boolean') {
+                        character[key] = false;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        for (const dropdownName in updatedState) {
+          const dropdown = updatedState[dropdownName];
+          let allUnchecked = true; // Flag to track if all characters are unchecked
+
+          if (Object.keys(dropdown.characters).length > 0) {
+            for (const charName in dropdown.characters) {
+              const character = dropdown.characters[charName];
+              if (character.checked) {
+                allUnchecked = false;
+                break; // Exit loop if any character is checked
+              }
+            }
+          } else {
+            allUnchecked = false;
+          }
+
+          if (allUnchecked) {
+            // Uncheck the entire dropdown
+            dropdown.checked = false;
+          }
+
+          if (dropdown.groups) {
+            for (const groupName in dropdown.groups) {
+              const group = dropdown.groups[groupName];
+              let allGroupUnchecked = true; // Flag to track if all characters in the group are unchecked
+
+              if (group.characters) {
+                for (const charName in group.characters) {
+                  const character = group.characters[charName];
+                  if (character.checked) {
+                    allGroupUnchecked = false;
+                    break; // Exit loop if any character in the group is checked
+                  }
+                }
+              }
+
+              if (allGroupUnchecked) {
+                // Uncheck the entire group
+                group.checked = false;
+              }
+            }
+          }
+        }
+        return updatedState;
+      });
+    }
+  }, [namedCharacters]);
 
   const handleReset = () => {
     setNamedActive(false);
@@ -159,6 +246,7 @@ function CharactersContainer({
 
 
 
+
   const handleCheckboxChange = (groupName) => {
     setDropdownStates((prevState) => {
       const updateCheckedState = (items, newCheckedState) => {
@@ -175,7 +263,7 @@ function CharactersContainer({
               }
 
             } else if (!Object.keys(updatedItem).includes('openGroup')) {
-              
+
               if (namedCharacters.includes(itemName)) {
                 updatedItem.checked = newCheckedState;
                 Object.keys(updatedItem).forEach((object) => {
@@ -276,7 +364,7 @@ function CharactersContainer({
         const characters = dropdownStates[group].characters; // Assuming this is where the characters are stored
         let allGroupsBad = true; // Initialize to true, assuming all groups are bad initially
         let allCharactersBad = false;
-        
+
         if (namedActive) {
           if (groups) {
             for (const groupName in groups) {
@@ -284,7 +372,7 @@ function CharactersContainer({
               const groupHasBadCharacter = Object.keys(groupCharacters).every(key =>
                 !namedCharacters.includes(key)
               );
-        
+
               if (!groupHasBadCharacter) {
                 allGroupsBad = false; // Set to false if any group has a good character
                 break;
@@ -293,7 +381,7 @@ function CharactersContainer({
           } else {
             allGroupsBad = false; // No groups, so set to false
           }
-        
+
           if (characters) {
             allCharactersBad = Object.keys(characters).every(key =>
               !namedCharacters.includes(key)
@@ -302,9 +390,9 @@ function CharactersContainer({
             allCharactersBad = true; // No characters, so assume all are bad
           }
         }
-        
+
         const updatedCheckedState = allGroupsBad && allCharactersBad;
-  
+
         return (
           <div key={index} className="checkbox-container">
             <CharacterGroupDropdown
@@ -338,7 +426,7 @@ function CharactersContainer({
       />
     </div>
   );
-  
+
 }
 
 export default CharactersContainer;

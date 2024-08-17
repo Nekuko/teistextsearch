@@ -1,36 +1,3 @@
-@media (min-width: 1025px) {
-  .selected-container {
-    max-width: 270px;
-    width: 25vw;
-  }
-}
-
-/* Hide desktop navigation on screens smaller than or equal to 768px */
-@media (max-width: 768px) {
-  .selected-container {
-    width: auto;
-    min-height: 200px;
-  }
-}
-
-.selected-container {
-  display: flex;
-  flex-direction: column;
-  background-color: #2c2f33;
-  position: relative;
-  height: auto;
-}
-
-.selected-title {
-  font-family: 'Noto Serif JP';
-  font-size: calc(0.9em + 1.8vw);
-  color: #c8000f;
-  font-weight: 100;
-  letter-spacing: 0.07em;
-  margin-bottom: 10px;
-  border-bottom: 1px solid white;
-}
-
 .selected-subtitle {
   margin-top: -8px;
   font-family: 'Noto Serif JP';
@@ -51,22 +18,41 @@
   margin-bottom: 0px;
 }
 
-.selected-input-container {
+.selected-title {
+  font-family: 'Noto Serif JP';
+  font-size: calc(0.9em + 1.8vw);
+  color: #c8000f;
+  font-weight: 100;
+  letter-spacing: 0.07em;
+  margin-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
+.selected-container {
+  flex-direction: column;
+  background-color: #2c2f33;
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  height: auto;
+}
+
+.selected-input-container {
   border: 1px solid #c8000f;
   border-radius: 4px;
   padding: 10px;
   min-height: 6.5vh;
   max-height: 8vh;
-  height: auto;
   overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 5px;
 }
 
+
 .selected-bubble {
+  text-wrap: nowrap;
   display: flex;
+  text-align: center;
   align-items: center;
   background-color: #1f2224;
   font-size: small;
@@ -74,27 +60,48 @@
   padding: 5px 10px;
   border-radius: 20px;
   max-height: 20px;
+
 }
 
 @keyframes flash-selected {
-  0% { background-color: #2c2f33;
-    }
-  50% { background-color: #363a3e;
-  } /* Change this to the color you want */
-  100% { background-color: #2c2f33;
+  0% {
+    background-color: #2c2f33;
+  }
+
+  50% {
+    background-color: #363a3e;
+  }
+
+  /* Change this to the color you want */
+  100% {
+    background-color: #2c2f33;
   }
 }
 
-.flash-selected  {
+.flash-selected {
   animation: flash-selected 1s infinite;
 }
 
 @keyframes flash {
-  0% { color: #c8000f; }
-  50% { color: #ff0112 } /* Change this to the color you want */
-  100% { color: #c8000f; }
+  0% {
+    color: #c8000f;
+  }
+
+  50% {
+    color: #ff0112
+  }
+
+  /* Change this to the color you want */
+  100% {
+    color: #c8000f;
+  }
 }
 
 .flash {
   animation: flash 1s infinite;
+}
+
+.selected-bubble>div {
+  display: table-cell;
+  vertical-align: middle;
 }

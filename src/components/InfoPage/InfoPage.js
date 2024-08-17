@@ -66,7 +66,7 @@ function InfoPage() {
                     let infoData = await fetchInformationData(versionDataTemp, setVersionData);
                     setInformationData(infoData.data);
                 }
-                
+
             } catch (error) {
                 console.error('Error fetching data:', error);
                 setErrors(true);
@@ -123,6 +123,19 @@ function InfoPage() {
             "Rose Oriana", "Sergey Gorman", "Sherry Barnett", "Skel Etal", "Victoria", "White Demon", "Yukime",
             "Zenon Griffey", "Zeta"]
     });
+
+    const [animeDropdownState, setAnimeDropdownState] = useState(() => {
+        const savedState = sessionStorage.getItem('animeDropdown');
+        if (savedState) {
+            const parsedState = JSON.parse(savedState);
+            return parsedState;
+        }
+        return {}
+    });
+
+    useEffect(() => {
+        sessionStorage.setItem('animeDropdown', JSON.stringify(animeDropdownState));
+    }, [animeDropdownState]);
 
     // Use an effect to update sessionStorage when namedActive changes
     useEffect(() => {
@@ -255,7 +268,9 @@ function InfoPage() {
                         <p>Character Count: {formatNumber(all_counts.char_count)}</p>
                         <Collapsible trigger="Characters">
                             <div className='info-character-box-small'>
-                                {Object.keys(all_counts.characters).sort().map(character => (
+                                {Object.keys(all_counts.characters).sort((a, b) => {
+                                    return all_counts.characters[b] - all_counts.characters[a]
+                                }).map(character => (
                                     <div key={character}>
                                         <span>{character}: </span>
                                         <span>{all_counts.characters[character]}</span>
@@ -279,7 +294,9 @@ function InfoPage() {
                                         <p>Character Count: {formatNumber(all_counts.parts[part].char_count)}</p>
                                         <Collapsible trigger="Characters">
                                             <div className='info-character-box-small'>
-                                                {Object.keys(all_counts.parts[part].characters).sort().map(character => (
+                                                {Object.keys(all_counts.parts[part].characters).sort((a, b) => {
+                                                    return all_counts.parts[part].characters[b] - all_counts.parts[part].characters[a]
+                                                }).map(character => (
                                                     <div key={character}>
                                                         <span>{character}: </span>
                                                         <span>{all_counts.parts[part].characters[character]}</span>
@@ -311,7 +328,9 @@ function InfoPage() {
                                                             <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].char_count)}</p>
                                                             <Collapsible trigger="Characters">
                                                                 <div className='info-character-box-small'>
-                                                                    {Object.keys(all_counts.parts[part].chapters[chapter].characters).map(character => (
+                                                                    {Object.keys(all_counts.parts[part].chapters[chapter].characters).sort((a, b) => {
+                                                                        return all_counts.parts[part].chapters[chapter].characters[b] - all_counts.parts[part].chapters[chapter].characters[a]
+                                                                    }).map(character => (
                                                                         <div key={character}>
                                                                             <span>{character}: </span>
                                                                             <span>{all_counts.parts[part].chapters[chapter].characters[character]}</span>
@@ -333,7 +352,9 @@ function InfoPage() {
                                                                     <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].char_count)}</p>
                                                                     <Collapsible trigger="Characters">
                                                                         <div className='info-character-box-small'>
-                                                                            {Object.keys(all_counts.parts[part].chapters[chapter].episodes[episode].characters).sort().map(character => (
+                                                                            {Object.keys(all_counts.parts[part].chapters[chapter].episodes[episode].characters).sort((a, b) => {
+                                                                                return all_counts.parts[part].chapters[chapter].episodes[episode].characters[b] - all_counts.parts[part].chapters[chapter].episodes[episode].characters[a]
+                                                                            }).map(character => (
                                                                                 <div key={character}>
                                                                                     <span>{character}: </span>
                                                                                     <span>{all_counts.parts[part].chapters[chapter].episodes[episode].characters[character]}</span>
@@ -369,7 +390,9 @@ function InfoPage() {
                         <p>Character Count: {formatNumber(all_counts.char_count)}</p>
                         <Collapsible trigger="Characters">
                             <div className='info-character-box-small'>
-                                {Object.keys(all_counts.characters).sort().map(character => (
+                                {Object.keys(all_counts.characters).sort((a, b) => {
+                                    return all_counts.characters[b] - all_counts.characters[a]
+                                }).map(character => (
                                     <div key={character}>
                                         <span>{character}: </span>
                                         <span>{all_counts.characters[character]}</span>
@@ -387,7 +410,9 @@ function InfoPage() {
                                         <p>Character Count: {formatNumber(all_counts.parts[part].char_count)}</p>
                                         <Collapsible trigger="Characters">
                                             <div className='info-character-box-small'>
-                                                {Object.keys(all_counts.parts[part].characters).sort().map(character => (
+                                                {Object.keys(all_counts.parts[part].characters).sort((a, b) => {
+                                                    return all_counts.parts[part].characters[b] - all_counts.parts[part].characters[a]
+                                                }).map(character => (
                                                     <div key={character}>
                                                         <span>{character}: </span>
                                                         <span>{all_counts.parts[part].characters[character]}</span>
@@ -419,7 +444,9 @@ function InfoPage() {
                                                             <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].char_count)}</p>
                                                             <Collapsible trigger="Characters">
                                                                 <div className='info-character-box-small'>
-                                                                    {Object.keys(all_counts.parts[part].chapters[chapter].characters).map(character => (
+                                                                    {Object.keys(all_counts.parts[part].chapters[chapter].characters).sort((a, b) => {
+                                                                        return all_counts.parts[part].chapters[chapter].characters[b] - all_counts.parts[part].chapters[chapter].characters[a]
+                                                                    }).map(character => (
                                                                         <div key={character}>
                                                                             <span>{character}: </span>
                                                                             <span>{all_counts.parts[part].chapters[chapter].characters[character]}</span>
@@ -440,7 +467,9 @@ function InfoPage() {
                                                                     <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].char_count)}</p>
                                                                     <Collapsible trigger="Characters">
                                                                         <div className='info-character-box-small'>
-                                                                            {Object.keys(all_counts.parts[part].chapters[chapter].episodes[episode].characters).sort().map(character => (
+                                                                            {Object.keys(all_counts.parts[part].chapters[chapter].episodes[episode].characters).sort((a, b) => {
+                                                                                return all_counts.parts[part].chapters[chapter].episodes[episode].characters[b] - all_counts.parts[part].chapters[chapter].episodes[episode].characters[a]
+                                                                            }).map(character => (
                                                                                 <div key={character}>
                                                                                     <span>{character}: </span>
                                                                                     <span>{all_counts.parts[part].chapters[chapter].episodes[episode].characters[character]}</span>
@@ -476,7 +505,9 @@ function InfoPage() {
                         <p>Character Count: {formatNumber(all_counts.char_count)}</p>
                         <Collapsible trigger="Characters">
                             <div className='info-character-box-small'>
-                                {Object.keys(all_counts.characters).sort().map(character => (
+                                {Object.keys(all_counts.characters).sort((a, b) => {
+                                    return all_counts.characters[b] - all_counts.characters[a]
+                                }).map(character => (
                                     <div key={character}>
                                         <span>{character}: </span>
                                         <span>{all_counts.characters[character]}</span>
@@ -505,7 +536,9 @@ function InfoPage() {
                                         <p>Character Count: {formatNumber(all_counts.parts[part].char_count)}</p>
                                         <Collapsible trigger="Characters">
                                             <div className='info-character-box-small'>
-                                                {Object.keys(all_counts.parts[part].characters).sort().map(character => (
+                                                {Object.keys(all_counts.parts[part].characters).sort((a, b) => {
+                                                    return all_counts.parts[part].characters[b] - all_counts.parts[part].characters[a]
+                                                }).map(character => (
                                                     <div key={character}>
                                                         <span>{character}: </span>
                                                         <span>{all_counts.parts[part].characters[character]}</span>
@@ -526,7 +559,9 @@ function InfoPage() {
                                                 <p>Character Count: {formatNumber(all_counts.parts[part].episodes[episode].char_count)}</p>
                                                 <Collapsible trigger="Characters">
                                                     <div className='info-character-box-small'>
-                                                        {Object.keys(all_counts.parts[part].episodes[episode].characters).sort().map(character => (
+                                                        {Object.keys(all_counts.parts[part].episodes[episode].characters).sort((a, b) => {
+                                                            return all_counts.parts[part].episodes[episode].characters[b] - all_counts.parts[part].episodes[episode].characters[a]
+                                                        }).map(character => (
                                                             <div key={character}>
                                                                 <span>{character}: </span>
                                                                 <span>{all_counts.parts[part].episodes[episode].characters[character]}</span>
@@ -556,7 +591,9 @@ function InfoPage() {
                 <p>Character Count: {formatNumber(all_counts.char_count)}</p>
                 <Collapsible trigger="Characters">
                     <div className='info-character-box-small'>
-                        {Object.keys(all_counts.characters).sort().map(character => (
+                        {Object.keys(all_counts.characters).sort((a, b) => {
+                            return all_counts.characters[b] - all_counts.characters[a]
+                        }).map(character => (
                             <div key={character}>
                                 <span>{character}: </span>
                                 <span>{all_counts.characters[character]}</span>
@@ -579,7 +616,9 @@ function InfoPage() {
                         <p>Character Count: {formatNumber(all_counts.seasons[part].char_count)}</p>
                         <Collapsible trigger="Characters">
                             <div className='info-character-box-small'>
-                                {Object.keys(all_counts.seasons[part].characters).sort().map(character => (
+                                {Object.keys(all_counts.seasons[part].characters).sort((a, b) => {
+                                    return all_counts.seasons[part].characters[b] - all_counts.seasons[part].characters[a]
+                                }).map(character => (
                                     <div key={character}>
                                         <span>{character}: </span>
                                         <span>{all_counts.seasons[part].characters[character]}</span>
@@ -595,7 +634,7 @@ function InfoPage() {
                             <Collapsible key={episode} trigger={
                                 <>
                                     <div className="volume-trigger">
-                                        {`Episode ${episode.replace("e", "")}`}
+                                    {`Episode ${animeDropdownState.seasonsChecked[part === 'kj1' ? 'Kage-Jitsu!' : 'Kage-Jitsu! 2nd'][`${part === 'kj1' ? 's101' : 's102'}${episode}`].title}`}
                                     </div>
                                 </>
                             }>
@@ -603,7 +642,9 @@ function InfoPage() {
                                 <p>Approximate Word Count: {formatNumber(all_counts.seasons[part].episodes[episode].word_count)}</p>
                                 <p>Character Count: {formatNumber(all_counts.seasons[part].episodes[episode].char_count)}</p>
                                 <Collapsible trigger="Characters">
-                                    {Object.keys(all_counts.seasons[part].episodes[episode].characters).sort().map(character => (
+                                    {Object.keys(all_counts.seasons[part].episodes[episode].characters).sort((a, b) => {
+                                        return all_counts.seasons[part].episodes[episode].characters[b] - all_counts.seasons[part].episodes[episode].characters[a]
+                                    }).map(character => (
                                         <div key={character}>
                                             <span>{character}: </span>
                                             <span>{all_counts.seasons[part].episodes[episode].characters[character]}</span>
@@ -628,7 +669,9 @@ function InfoPage() {
                 <p>Character Count: {formatNumber(all_counts.char_count)}</p>
                 <Collapsible trigger="Characters">
                     <div className='info-character-box-small'>
-                        {Object.keys(all_counts.characters).sort().map(character => (
+                        {Object.keys(all_counts.characters).sort((a, b) => {
+                            return all_counts.characters[b] - all_counts.characters[a]
+                        }).map(character => (
                             <div key={character}>
                                 <span>{character}: </span>
                                 <span>{all_counts.characters[character]}</span>
@@ -652,7 +695,9 @@ function InfoPage() {
 
                         <Collapsible trigger="Characters">
                             <div className='info-character-box-small'>
-                                {Object.keys(all_counts.seasons[part].characters).sort().map(character => (
+                                {Object.keys(all_counts.seasons[part].characters).sort((a, b) => {
+                                    return all_counts.seasons[part].characters[b] - all_counts.seasons[part].characters[a]
+                                }).map(character => (
                                     <div key={character}>
                                         <span>{character}: </span>
                                         <span>{all_counts.seasons[part].characters[character]}</span>
@@ -668,7 +713,7 @@ function InfoPage() {
                             <Collapsible key={episode} trigger={
                                 <>
                                     <div className="volume-trigger">
-                                        {`Episode ${episode.split("e")[1]}`}
+                                        {`Episode ${animeDropdownState.seasonsChecked[`Season ${part}`][episode].title}`}
                                     </div>
                                 </>
                             }>
@@ -677,7 +722,9 @@ function InfoPage() {
                                 <p>Character Count: {formatNumber(all_counts.seasons[part].episodes[episode].char_count)}</p>
                                 <Collapsible trigger="Characters">
                                     <div className='info-character-box-small'>
-                                        {Object.keys(all_counts.seasons[part].episodes[episode].characters).sort().map(character => (
+                                        {Object.keys(all_counts.seasons[part].episodes[episode].characters).sort((a, b) => {
+                                            return all_counts.seasons[part].episodes[episode].characters[b] - all_counts.seasons[part].episodes[episode].characters[a]
+                                        }).map(character => (
                                             <div key={character}>
                                                 <span>{character}: </span>
                                                 <span>{all_counts.seasons[part].episodes[episode].characters[character]}</span>
@@ -812,7 +859,9 @@ function InfoPage() {
                                     <p>Character Count: {formatNumber(all_an_info.char_count)}</p>
                                     <Collapsible trigger="Characters">
                                         <div className='info-character-box-small'>
-                                            {Object.keys(all_an_info.characters).sort().map(character => (
+                                            {Object.keys(all_an_info.characters).sort((a, b) => {
+                                                return all_an_info.characters[b] - all_an_info.characters[a]
+                                            }).map(character => (
                                                 <div key={character}>
                                                     <span>{character}: </span>
                                                     <span>{all_an_info.characters[character]}</span>
@@ -838,7 +887,9 @@ function InfoPage() {
                                     <p>Character Count: {formatNumber(mg_info.char_count)}</p>
                                     <Collapsible trigger="Characters">
                                         <div className='info-character-box-small'>
-                                            {Object.keys(mg_info.characters).sort().map(character => (
+                                            {Object.keys(mg_info.characters).sort((a, b) => {
+                                                return mg_info.characters[b] - mg_info.characters[a]
+                                            }).map(character => (
                                                 <div key={character}>
                                                     <span>{character}: </span>
                                                     <span>{mg_info.characters[character]}</span>
