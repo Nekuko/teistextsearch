@@ -178,7 +178,7 @@ function SettingsPage() {
         } else {
           // Fetch data if not found in session storage
           let data = await fetchVersionData(versionData);
-          
+
           setVersionData(data);
           sessionStorage.setItem('versionData', JSON.stringify({ data, timestamp: Date.now() }));
           versionDataTemp = data;
@@ -595,15 +595,17 @@ function SettingsPage() {
                 <th>Name</th>
                 <th>Local Version</th>
                 <th>
-                  Cloud Version{" "}
-                  <FontAwesomeIcon
-                    icon={faArrowsRotate}
-                    className={`settings-update ${updating ? 'rotate' : ''}`}
-                    title='Check for updates'
-                    onClick={() => {
-                      checkUpdates();
-                    }}
-                  />
+                  <div className="settings-cloud-version">
+                    Cloud Version{" "}
+                    <FontAwesomeIcon
+                      icon={faArrowsRotate}
+                      className={`settings-update ${updating ? 'rotate' : ''}`}
+                      title='Check for updates'
+                      onClick={() => {
+                        checkUpdates();
+                      }}
+                    />
+                  </div>
                 </th>
               </tr>
             </thead>
@@ -640,6 +642,7 @@ function SettingsPage() {
         </div>
       </div>
     </div>
+
   );
 }
 

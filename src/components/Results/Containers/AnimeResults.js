@@ -178,7 +178,7 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
 
         return (
           <div key={seasonTitle}>
-            <Collapsible onOpening={() => handleMenu(seasonKey)} onClose={() => handleMenu(seasonKey)} className="medium-margin" trigger={
+            <Collapsible key={seasonTitle} onOpening={() => handleMenu(seasonKey)} onClose={() => handleMenu(seasonKey)} className="medium-margin" trigger={
               <>
                 <div className="season-trigger">
                   {coverImages[seasonKey] && <img className="cover-image" src={coverImages[seasonKey]} alt={seasonTitle} />}
@@ -210,8 +210,10 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
                                       <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
                                       <div className="icon-container-triple">
                                         <CopyToClipboard text={sentence.subtitle}>
-                                          <div className="copy-icon" onClick={() => showPopup(seasonKey, episodeKey, index)}>
-                                            <FontAwesomeIcon icon={faCopy} />
+                                          <div className="copy-icon">
+                                            <FontAwesomeIcon 
+                                            onClick={() => showPopup(seasonKey, episodeKey, index)}
+                                            icon={faCopy} />
                                             {/* Ensure the ID is unique for each popup */}
                                             <div className="popup" id={`popup-${seasonKey}-${episodeKey}-${index}`}>
                                               Copied!
@@ -246,9 +248,11 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
                                     <div className="character-box">
                                       {characterImages[sentence.name_variant] && (
                                         <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant || 'None'} />
-                                      ) || (characterImages[sentence.name] && (
-                                        <img src={characterImages[sentence.name]} alt={sentence.name || 'None'} />
-                                      ))}
+                                      ) || (
+                                          characterImages[sentence.name] && (
+                                            <img src={characterImages[sentence.name]} alt={sentence.name || 'None'} />
+                                          )
+                                        )}
                                       <p title={sentence.name !== sentence.name_variant ? `${sentence.name_variant} (${sentence.name})` : sentence.name}>
                                         {sentence.name !== sentence.name_variant ? `${sentence.name_variant}` : sentence.name}
                                       </p>

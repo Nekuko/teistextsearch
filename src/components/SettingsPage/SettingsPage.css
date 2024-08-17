@@ -6,6 +6,13 @@
   
 }
 
+
+@media (max-width: 400px) {
+  .named-search {
+    width: 120px;
+  }
+  
+}
 .settings-page {
   color: white;
 }
@@ -21,7 +28,14 @@
 .settings-table td {
   padding: 8px;
   text-align: left;
+  font-size: medium;
   border-bottom: 1px solid #4d5050;
+}
+
+.settings-cloud-version {
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
 
 .character-settings-table th {
@@ -49,6 +63,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   background-color: #17181a;
+  border-radius: 2px;
 }
 
 .character-th {
@@ -84,10 +99,9 @@
 
 .suggestions {
   max-height: 200px;
-  width: 15.6%;
+  width: calc(18vh, 0.5em);
   background-color: #181a1b;
   overflow-y: auto;
-
   display: block;
   position: absolute;
   padding-left: 0.5%;
@@ -99,6 +113,7 @@
   width: 25px;
   margin-right: 2%;
 }
+
 .suggestion-image-div {
   display: flex;
   align-items: center;
@@ -124,12 +139,7 @@
   margin-left: 5%;
 }
 
-.named-search {
-  width: 20%;
-  margin-right: 10px;
-  float: right;
-  text-align: left;
-}
+
 
 
 .red-text {

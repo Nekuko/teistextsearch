@@ -24,6 +24,16 @@ function Keywords({ filterState, setFilterState, handleSearch, keywordsFlash, se
     }
   }, [keywordsFlash, setKeywordsFlash]);
 
+  useEffect(() => {
+    try {
+      new RegExp(regexValue);
+      setValidRegex(true);
+    } catch (error) {
+      setValidRegex(false);
+    } finally {
+    }
+  }, [validRegex]);
+
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
@@ -42,6 +52,7 @@ function Keywords({ filterState, setFilterState, handleSearch, keywordsFlash, se
       }));
     }
   }
+
   const handleInputKeyDown = (e) => {
     if (e.key === 'Enter' && inputValue.trim()) {
       setFilterState(prevState => ({
@@ -51,6 +62,7 @@ function Keywords({ filterState, setFilterState, handleSearch, keywordsFlash, se
       setInputValue('');
     }
   };
+
 
   const removeKeyword = (index) => {
     setFilterState(prevState => ({
@@ -79,6 +91,19 @@ function Keywords({ filterState, setFilterState, handleSearch, keywordsFlash, se
   const toggleRegex = () => {
     setFilterState(prevState => ({ ...prevState, regex: !prevState.regex }));
   };
+
+  function startSearch() {
+    let added;
+    if (inputValue) {
+      setFilterState(prevState => ({
+        ...prevState,
+        keywords: [...prevState.keywords, inputValue.trim()]
+      }));
+      added = JSON.parse(JSON.stringify(inputValue));
+      setInputValue('');
+    }
+    handleSearch(added);
+  }
 
 
 
@@ -163,8 +188,7 @@ function Keywords({ filterState, setFilterState, handleSearch, keywordsFlash, se
       </div>
       )}
       <div className="keywords-search">
-        <button className="search-button" onClick={handleSearch}>SEARCH</button> {/* Search button */}
-
+        <button className="search-button" onClick={startSearch}>SEARCH</button> {/* Search button */}
       </div>
     </div>
   );

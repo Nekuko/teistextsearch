@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import './InfoPage.css'; // Import the CSS file
 import Collapsible from 'react-collapsible';
-import * as covers from '../../images/covers';
 import { ESMAP } from '../../esMap';
 import { fetchInformationData, fetchVersionData } from '../../utils/firebaseFunctions';
 
@@ -734,7 +733,7 @@ function InfoPage() {
                                         return b[1] - a[1];
                                     }).map(([name, amount]) => (
                                         <>
-                                            <div className="volume-trigger">
+                                            <div key={name} className="volume-trigger">
                                                 {`${name} (Total: ${amount})`}
                                             </div>
                                         </>

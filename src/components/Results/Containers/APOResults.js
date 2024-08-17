@@ -242,8 +242,10 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
                                                                                             <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
                                                                                             <div className="icon-container-triple">
                                                                                                 <CopyToClipboard text={sentence.subtitle}>
-                                                                                                    <div className="copy-icon" onClick={() => showPopup(partKey, chapterKey, index)}>
-                                                                                                        <FontAwesomeIcon icon={faCopy} />
+                                                                                                    <div className="copy-icon">
+                                                                                                        <FontAwesomeIcon 
+                                                                                                        onClick={() => showPopup(partKey, chapterKey, index)}
+                                                                                                        icon={faCopy} />
                                                                                                         <div className="popup" id={`popup-${partKey}-${chapterKey}-${index}`}>
                                                                                                             Copied!
                                                                                                         </div>

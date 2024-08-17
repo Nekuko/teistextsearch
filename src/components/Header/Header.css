@@ -2,6 +2,10 @@
   .mobile-nav {
     display: none;
   }
+
+  .burger-open:hover {
+    color: white;
+  }
 }
 
 /* Hide desktop navigation on screens smaller than or equal to 768px */
@@ -9,6 +13,11 @@
   .desktop-nav {
     display: none;
   }
+
+  .burger-open:hover {
+    color: #c8000f;
+  }
+  
 }
 
 .overlay-menu {
@@ -37,10 +46,6 @@
 
 .burger-open {
   color: #c8000f;
-}
-
-.burger-open:hover {
-  color: white;
 }
 
 .Header {

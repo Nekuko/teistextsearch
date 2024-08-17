@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import Collapsible from 'react-collapsible';
 import AnimeResults from './AnimeResults';
 import SSCResults from './SSCResults'; // Import SSCResults
@@ -92,7 +92,7 @@ function CharacterResults({ anData, sscData, esData, apoData, images, filterStat
   return (
     <div className="characters-trigger">
       <Collapsible trigger={`Characters (Total: ${totalCharacters})`}>
-        {Object.keys(combinedData).sort((a, b) => combinedData[b].count - combinedData[a].count).map((character, index) => {
+        {Object.keys(combinedData).sort((a, b) => combinedData[b].count - combinedData[a].count).map((character, i) => {
           const characterData = combinedData[character];
           const mediums = characterData.mediums;
           let characterImageName = character;
@@ -110,7 +110,7 @@ function CharacterResults({ anData, sscData, esData, apoData, images, filterStat
                   </div>
                 </>
               }>
-                {Object.keys(mediums).map((medium) => {
+                {Object.keys(mediums).map((medium, index) => {
                   const mediumData = mediums[medium];
                   const mediumName = mediumNames[medium] || medium;
 
@@ -119,18 +119,18 @@ function CharacterResults({ anData, sscData, esData, apoData, images, filterStat
                       <Collapsible trigger={`Master of Garden (Total: ${mediumData.count})`}>
                         <div className="medium-trigger">
                           {mediumData['ssc'] && (
-                            <Collapsible key={`${character}-ssc`} trigger={`Seven Shadows Chronicles (Total: ${mediumData['ssc'].count})`}>
-                              <SSCResults main={false} sscData={mediumData['ssc']} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Seven Shadows Chronicles']}/>
+                            <Collapsible trigger={`Seven Shadows Chronicles (Total: ${mediumData['ssc'].count})`}>
+                              <SSCResults main={false} sscData={mediumData['ssc']} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Seven Shadows Chronicles']} />
                             </Collapsible>
                           )}
                           {mediumData['es'] && (
-                            <Collapsible key={`${character}-es`} trigger={`Event Stories (Total: ${mediumData['es'].count})`}>
+                            <Collapsible trigger={`Event Stories (Total: ${mediumData['es'].count})`}>
                               <ESResults main={false} anData={mediumData['es']} images={images} filterState={filterState} highlight={highlight} />
                             </Collapsible>
                           )}
                           {mediumData['apo'] && (
-                            <Collapsible key={`${character}-apo`} trigger={`Apocrypha (Total: ${mediumData['apo'].count})`}>
-                              <APOResults main={false} sscData={mediumData['apo']} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Apocrypha']}/>
+                            <Collapsible trigger={`Apocrypha (Total: ${mediumData['apo'].count})`}>
+                              <APOResults main={false} sscData={mediumData['apo']} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Apocrypha']} />
                             </Collapsible>
                           )}
                         </div>
@@ -141,15 +141,17 @@ function CharacterResults({ anData, sscData, esData, apoData, images, filterStat
                   if (medium === 'an') {
                     return (
                       <div className="medium-trigger">
-                        <Collapsible key={`${character}-an`} trigger={`${mediumName} (Total: ${mediumData.count})`}>
+                        <Collapsible trigger={`${mediumName} (Total: ${mediumData.count})`}>
                           <AnimeResults animeDropdownState={animeDropdownState} main={false} anData={mediumData} images={images} filterState={filterState} highlight={highlight} />
                         </Collapsible>
                       </div>
                     );
+                  } else {
+                    return null;
                   }
                 })}
               </Collapsible>
-              <br/>
+              <br />
             </div>
 
           );

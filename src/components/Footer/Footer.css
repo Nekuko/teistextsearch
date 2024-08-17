@@ -1,4 +1,16 @@
 /* Footer.css */
+@media (max-width: 768px) {
+    .footer {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: block;
+    }
+}
+
 .footer {
     position: relative;
     background-color: rgba(255, 255, 255, 0.1);

@@ -4,6 +4,24 @@
   .keywords-search-container {
     width: 90%;
   }
+  .case-sensitive-icon {
+    top: 8px;
+    font-size: 2.5vh;
+    right: 93px; /* Adjust this value as needed */
+  }
+
+  .delete-all-icon {
+    font-size: 2vh;
+  }
+
+  .whole-word-icon {
+    top: 8px;
+    font-size: 2.5vh;
+  }
+
+  .regex-icon {
+    font-size: 2.25vh;
+  }
   
   .keywords-search {
     display: flex;
@@ -51,6 +69,24 @@
 
 /* Hide desktop navigation on screens smaller than or equal to 768px */
 @media (max-width: 1024px) {
+  .case-sensitive-icon {
+    top: 10px;
+    font-size: calc(0.7em + 1.3vw);
+    right: 88px; /* Adjust this value as needed */
+  }
+
+  .delete-all-icon {
+    font-size: calc(0.7em + 1.3vw);
+  }
+
+  .whole-word-icon {
+    top: 10px;
+    font-size: calc(0.5em + 1.3vw);
+  }
+
+  .regex-icon {
+    font-size: calc(0.7em + 1.4vw);
+  }
   .keywords-search-container {
     width: 100%;
   }
@@ -182,8 +218,8 @@
 
   .delete-all {
     position: absolute;
-    top: 10px; /* Adjust this value as needed */
-    right: 10px; /* Adjust this value as needed */
+    top: 10px;
+    right: 10px;
     background-color: transparent;
     border: none;
     color: white;
@@ -194,8 +230,6 @@
 
  .case-sensitive-icon {
     position: absolute;
-    top: 8px; /* Adjust this value as needed */
-    right: 93px; /* Adjust this value as needed */
     background-color: transparent;
     border: none;
     color: white;
@@ -204,12 +238,10 @@
     opacity: 40%;
     cursor: pointer;
     position: absolute;
-    font-size: 2.5vh;
   }
 
   .whole-word-icon {
     position: absolute;
-    top: 8px; /* Adjust this value as needed */
     right: 64px; /* Adjust this value as needed */
     background-color: transparent;
     border: none;
@@ -218,7 +250,6 @@
     color: #c8000f;
     opacity: 40%;
     cursor: pointer;
-    font-size: 2.5vh;
   }
 
   .regex-icon {
@@ -232,7 +263,6 @@
     color: #c8000f;
     opacity: 40%;
     cursor: pointer;
-    font-size: 2.25vh;
   }
 
   .case-sensitive-icon.active, .whole-word-icon.active, .regex-icon.active {
@@ -247,10 +277,6 @@
     align-items: center;
   }
 
-  .delete-all-icon {
-    font-size: 2vh;
-  }
-  
   .reset-button {
     position: absolute;
     bottom: 5px;

@@ -1,4 +1,4 @@
-import { Navigate, useLocation } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { getAuth } from "firebase/auth";
 import { app } from '../firebase'; // adjust the path as needed

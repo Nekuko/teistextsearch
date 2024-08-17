@@ -2,7 +2,7 @@
 .info-preview-content {
     position: fixed;
     padding: 0.5%;
-    transform: translate(-80px, 30px);
+    transform: translate(-60px, 30px);
     border: 1px solid red;
     max-width: 300px;
     z-index: 1; /* Ensure the preview is on top of everything else */

@@ -182,8 +182,10 @@ function LightNovelResults({ lnData, volumeImages, highlight, filterState, lnDro
                               <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentenceObj.text) : sentenceObj.text }} />
                               <div className="icon-container">
                                 <CopyToClipboard text={sentenceObj.text}>
-                                  <div className="copy-icon" onClick={() => showPopup(volumeKey, chapterKey, index)}>
-                                    <FontAwesomeIcon icon={faCopy} />
+                                  <div className="copy-icon" >
+                                    <FontAwesomeIcon 
+                                    onClick={() => showPopup(volumeKey, chapterKey, index)}
+                                    icon={faCopy} />
                                     {/* Ensure the ID is unique for each popup */}
                                     <div className="popup" id={`popup-${volumeKey}-${chapterKey}-${index}`}>
                                       Copied!

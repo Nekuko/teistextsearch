@@ -199,8 +199,10 @@ function ESResults({ anData, images, highlight, filterState, main }) {
                                       <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
                                       <div className="icon-container-triple">
                                         <CopyToClipboard text={sentence.subtitle}>
-                                          <div className="copy-icon" onClick={() => showPopup(seasonKey, episodeKey, index)}>
-                                            <FontAwesomeIcon icon={faCopy} />
+                                          <div className="copy-icon">
+                                            <FontAwesomeIcon 
+                                            onClick={() => showPopup(seasonKey, episodeKey, index)}
+                                            icon={faCopy} />
                                             {/* Ensure the ID is unique for each popup */}
                                             <div className="popup" id={`popup-${seasonKey}-${episodeKey}-${index}`}>
                                               Copied!

@@ -520,10 +520,13 @@ function SearchPage() {
         "apoCoverImages": mediumImages.apoCoverImages
     };
 
+    const scrollToBottom = () => {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    };
 
 
 
-    async function handleSearch() {
+    async function handleSearch(addedWord) {
         clearResults();
         setSavedFilterState(filterState);
         if (filterState.regex) {
@@ -753,6 +756,9 @@ function SearchPage() {
             } else {
                 keywords = filterState.keywords;
             }
+            if (typeof addedWord === 'string' && addedWord && (!filterState.regex)) {
+                keywords.push(addedWord);
+            }
             animeResults = searchAnime(animeCheckedItems, animeText, keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, filterState.regex, namedActive, namedCharacters);
             lnResults = searchLN(lnCheckedItems, lnText, keywords, filterState.caseSensitive, filterState.exactMatch, filterState.regex);
             wnResults = searchWN(wnCheckedItems, wntext, keywords, filterState.caseSensitive, filterState.exactMatch, filterState.regex);
@@ -761,6 +767,7 @@ function SearchPage() {
             apoResults = searchAPO(apoCheckedItems, apoText, keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, filterState.regex, namedActive, namedCharacters)
             // Update the state with the search results
             setSearchResults({ anime: animeResults, ln: lnResults, wn: wnResults, ssc: { ...sscResults }, es: { ...esResults }, apo: { ...apoResults } });
+            scrollToBottom();
         }
     }
 
@@ -772,7 +779,7 @@ function SearchPage() {
                     <div className="row-container">
                         <div className={`mediums-container ${mediumFlash ? 'flash-selected' : ''}`}>
                             <h2 className={`mediums-title ${mediumFlash ? 'flash' : ''}`}>MEDIUMS</h2>
-                            <p>Failed to Load.</p>
+                            <p>Loading...</p>
                             <FontAwesomeIcon
                                 icon={faC}
                                 className={`canon-button ${true ? 'active' : ''}`}
@@ -786,7 +793,7 @@ function SearchPage() {
                         </div>
                         <div className="characters-container">
                             <h2 className="characters-title">CHARACTERS</h2>
-                            <p>Failed to Load.</p>
+                            <p>Loading...</p>
                             <div className="checkbox-container">
                             </div>
                             <FontAwesomeIcon
@@ -803,7 +810,7 @@ function SearchPage() {
 
                         <div className={`selected-container`}>
                             <h2 className="selected-title">SELECTED</h2>
-                            <p>Failed to Load.</p>
+                            <p>Loading...</p>
                         </div>
                     </div>
                     <div className={`keywords-container ${keywordsFlash ? 'flash-selected' : ''}`}>
