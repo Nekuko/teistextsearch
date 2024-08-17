@@ -407,7 +407,7 @@ function InfoPage() {
                                                     <>
                                                         <div className="volume-trigger">
                                                             {sscCoverImages[`${chapter.replace('c', '')}`] && <img className="cover-image-ssc" src={sscCoverImages[`${chapter.replace('c', '')}`]} alt={`${part}-${chapter}`} />}
-                                                            {`${sscMap[`${part}_${chapter}`]}-${chapter}`}
+                                                            {`${sscMap[`${part}_${chapter}`]}`}
                                                         </div>
                                                     </>
                                                 }>
