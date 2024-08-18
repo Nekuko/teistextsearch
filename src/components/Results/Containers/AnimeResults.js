@@ -26,6 +26,20 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
     }));
   }
 
+  function openMenu(name) {
+    setOpenMenus((prevOpenMenus) => ({
+      ...prevOpenMenus,
+      [name]: true,
+    }));
+  }
+
+  function closeMenu(name) {
+    setOpenMenus((prevOpenMenus) => ({
+      ...prevOpenMenus,
+      [name]: false,
+    }));
+  }
+
   useEffect(() => {
     const initialPages = {};
     Object.keys(anData.seasons).forEach(seasonKey => {
@@ -176,9 +190,13 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
           seasonTitle = "Kage-Jitsu! 2nd"
         }
 
+        if (Object.keys(anData.seasons).length === 1 && !openMenus[seasonKey]) {
+          openMenu(seasonKey);
+        }
+
         return (
           <div key={seasonTitle}>
-            <Collapsible key={seasonTitle} onOpening={() => handleMenu(seasonKey)} onClose={() => handleMenu(seasonKey)} className="medium-margin" trigger={
+            <Collapsible open={openMenus[seasonKey]} key={seasonTitle} onOpening={() => openMenu(seasonKey)} onClose={() => closeMenu(seasonKey)} className="medium-margin" trigger={
               <>
                 <div className="season-trigger">
                   {coverImages[seasonKey] && <img className="cover-image" src={coverImages[seasonKey]} alt={seasonTitle} />}
@@ -198,8 +216,11 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
                       const uniqueChapterKey = `${seasonKey}-${episodeKey}`;
                       // Get the episode title from the mapping
                       const episodeTitle = partsChecked[mapKey][`${seasonKey}${episodeKey}`].title || `Episode ${episodeKey.slice(1)}`;
+                      if (Object.keys(seasonValue.episodes).length === 1 && !openMenus[`${seasonKey}-${episodeKey}`]) {
+                        openMenu(`${seasonKey}-${episodeKey}`);
+                      }
                       return (
-                        <Collapsible onOpening={() => handleMenu(`${seasonKey}-${episodeKey}`)} onClose={() => handleMenu(`${seasonKey}-${episodeKey}`)}
+                        <Collapsible open={openMenus[`${seasonKey}-${episodeKey}`]} onOpening={() => openMenu(`${seasonKey}-${episodeKey}`)} onClose={() => closeMenu(`${seasonKey}-${episodeKey}`)}
                           trigger={`Episode ${episodeTitle} (Total: ${episodeValue.count})`} key={uniqueChapterKey}>
                           {openMenus[`${seasonKey}-${episodeKey}`] && (
                             <>

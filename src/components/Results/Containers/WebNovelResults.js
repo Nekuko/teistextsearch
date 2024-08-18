@@ -14,12 +14,20 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
   const [currentPage, setCurrentPage] = useState({});
   const [openMenus, setOpenMenus] = useState({});
 
-  function handleMenu(name) {
+  function openMenu(name) {
     setOpenMenus((prevOpenMenus) => ({
       ...prevOpenMenus,
-      [name]: !prevOpenMenus[name],
+      [name]: true,
     }));
   }
+
+  function closeMenu(name) {
+    setOpenMenus((prevOpenMenus) => ({
+      ...prevOpenMenus,
+      [name]: false,
+    }));
+  }
+  
   useEffect(() => {
     const initialPages = {};
     Object.keys(wnData.volumes).forEach(volumeKey => {
@@ -130,8 +138,13 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
         // Calculate the total count for each volume
         const volumeCount = Object.values(volumeValue.chapters).reduce((total, chapter) => total + chapter.count, 0);
 
+
+        if (Object.keys(wnData.volumes).length === 1 && !openMenus[`wn-${volumeKey}`]) {
+          openMenu(`wn-${volumeKey}`)
+        }
+
         return (
-          <Collapsible onOpening={() => handleMenu(`wn-${volumeKey}`)} onClose={() => handleMenu(`wn-${volumeKey}`)} className="medium-margin" trigger={
+          <Collapsible open={openMenus[`wn-${volumeKey}`]} onOpening={() => openMenu(`wn-${volumeKey}`)} onClose={() => closeMenu(`wn-${volumeKey}`)} className="medium-margin" trigger={
             <>
               <div className="volume-trigger">
                 {volumeImages[volumeKey] && <img className="cover-image" src={volumeImages[volumeKey]} alt={volumeTitle} />}
@@ -151,9 +164,12 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
                     const uniqueChapterKey = `${volumeKey}-${chapterKey}`;
                     // Get the chapter title from wnDropdownState
                     const chapterTitle = wnDropdownState.volumesChecked[`Volume ${volumeKey}`][`v${volumeKey}c${chapterKey}`].title || `Chapter ${chapterKey.slice(1)}`;
+                    if (Object.keys(volumeValue.chapters).length === 1 && !openMenus[`wn-${uniqueChapterKey}`]) {
+                      openMenu(`wn-${uniqueChapterKey}`)
+                    }
 
                     return (
-                      <Collapsible onOpening={() => handleMenu(`wn-${uniqueChapterKey}`)} onClose={() => handleMenu(`wn-${uniqueChapterKey}`)} trigger={`Chapter ${chapterKey} | ${chapterTitle} (Total: ${chapterValue.count})`} key={chapterKey}>
+                      <Collapsible open={openMenus[`wn-${uniqueChapterKey}`]} onOpening={() => openMenu(`wn-${uniqueChapterKey}`)} onClose={() => closeMenu(`wn-${uniqueChapterKey}`)} trigger={`Chapter ${chapterKey} | ${chapterTitle} (Total: ${chapterValue.count})`} key={chapterKey}>
                         {openMenus[`wn-${uniqueChapterKey}`] && (
                           <>
                             <div className="sentences-container">
@@ -163,9 +179,9 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
                                   <div className="icon-container">
                                     <CopyToClipboard text={sentence.text}>
                                       <div className="copy-icon">
-                                        <FontAwesomeIcon 
-                                        onClick={() => showPopup(volumeKey, chapterKey, index)}
-                                        icon={faCopy} />
+                                        <FontAwesomeIcon
+                                          onClick={() => showPopup(volumeKey, chapterKey, index)}
+                                          icon={faCopy} />
                                         {/* Ensure the ID is unique for each popup */}
                                         <div className="popup" id={`popup-${volumeKey}-${chapterKey}-${index}`}>
                                           Copied!

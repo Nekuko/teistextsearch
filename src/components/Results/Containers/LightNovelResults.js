@@ -13,12 +13,20 @@ function LightNovelResults({ lnData, volumeImages, highlight, filterState, lnDro
   const [currentPage, setCurrentPage] = useState({});
   const [openMenus, setOpenMenus] = useState({});
 
-  function handleMenu(name) {
+  function openMenu(name) {
     setOpenMenus((prevOpenMenus) => ({
       ...prevOpenMenus,
-      [name]: !prevOpenMenus[name],
+      [name]: true,
     }));
   }
+
+  function closeMenu(name) {
+    setOpenMenus((prevOpenMenus) => ({
+      ...prevOpenMenus,
+      [name]: false,
+    }));
+  }
+  
   useEffect(() => {
     const initialPages = {};
     Object.keys(lnData.volumes).forEach(volumeKey => {
@@ -150,8 +158,12 @@ function LightNovelResults({ lnData, volumeImages, highlight, filterState, lnDro
         // Calculate the total count for each volume
         const volumeCount = Object.values(volumeValue.chapters).reduce((total, chapter) => total + chapter.count, 0);
 
+        if (Object.keys(lnData.volumes).length === 1 && !openMenus[`ln-${volumeKey}`]) {
+          openMenu(`ln-${volumeKey}`);
+        }
+
         return (
-          <Collapsible onOpening={() => handleMenu(`ln-${volumeKey}`)} onClose={() => handleMenu(`ln-${volumeKey}`)} className="medium-margin" trigger={
+          <Collapsible open={openMenus[`ln-${volumeKey}`]} onOpening={() => openMenu(`ln-${volumeKey}`)} onClose={() => closeMenu(`ln-${volumeKey}`)} className="medium-margin" trigger={
             <>
               <div className="volume-trigger">
                 {volumeImages[volumeKey] && <img className="cover-image" src={volumeImages[volumeKey]} alt={volumeTitle} />}
@@ -172,8 +184,12 @@ function LightNovelResults({ lnData, volumeImages, highlight, filterState, lnDro
                     const chapterName = lnDropdownState.volumesChecked[`Volume ${volumeKey.slice(1)}`][`${volumeKey}${chapterKey}`].title
 
                     const chapterTitle = `${titleMapping[chapterName.split("|")[0]]} | ${chapterName.split("|")[1]}` || `Chapter ${chapterKey.slice(1)}`;
+                    if (Object.keys(volumeValue.chapters).length === 1 && !openMenus[`ln-${volumeKey}-${chapterKey}`]) {
+                      openMenu(`ln-${volumeKey}-${chapterKey}`);
+                    }
+                    
                     return (
-                      <Collapsible onOpening={() => handleMenu(`ln-${volumeKey}-${chapterKey}`)} onClose={() => handleMenu(`ln-${volumeKey}-${chapterKey}`)} trigger={`${chapterTitle} (Total: ${chapterValue.count})`} key={chapterKey}>
+                      <Collapsible open={openMenus[`ln-${volumeKey}-${chapterKey}`]} onOpening={() => openMenu(`ln-${volumeKey}-${chapterKey}`)} onClose={() => closeMenu(`ln-${volumeKey}-${chapterKey}`)} trigger={`${chapterTitle} (Total: ${chapterValue.count})`} key={chapterKey}>
                         {openMenus[`ln-${volumeKey}-${chapterKey}`] && (
                         <>
                         <div className="sentences-container">

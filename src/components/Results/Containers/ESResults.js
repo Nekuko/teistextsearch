@@ -18,12 +18,20 @@ function ESResults({ anData, images, highlight, filterState, main }) {
   const [currentPage, setCurrentPage] = useState({});
   const [openMenus, setOpenMenus] = useState({});
 
-  function handleMenu(name) {
+  function openMenu(name) {
     setOpenMenus((prevOpenMenus) => ({
       ...prevOpenMenus,
-      [name]: !prevOpenMenus[name],
+      [name]: true,
     }));
   }
+
+  function closeMenu(name) {
+    setOpenMenus((prevOpenMenus) => ({
+      ...prevOpenMenus,
+      [name]: false,
+    }));
+  }
+  
   useEffect(() => {
     const initialPages = {};
     Object.keys(anData.seasons).forEach(seasonKey => {
@@ -167,9 +175,12 @@ function ESResults({ anData, images, highlight, filterState, main }) {
         // Calculate the total count for each season
         const seasonCount = Object.values(seasonValue.episodes).reduce((total, episode) => total + episode.count, 0);
 
+        if (Object.keys(anData.seasons).length === 1 && !openMenus[`es-${seasonKey}`]) {
+          openMenu(`es-${seasonKey}`)
+        }
         return (
           <div key={`${seasonKey}`}>
-            <Collapsible onOpening={() => handleMenu(`es-${seasonKey}`)} onClose={() => handleMenu(`es-${seasonKey}`)} className="medium-margin" trigger={
+            <Collapsible open={openMenus[`es-${seasonKey}`]} onOpening={() => openMenu(`es-${seasonKey}`)} onClose={() => closeMenu(`es-${seasonKey}`)} className="medium-margin" trigger={
               <>
                 <div className="season-trigger">
                   {coverImages[seasonKey] && <img className="cover-image-es" src={coverImages[seasonKey]} alt={seasonTitle} />}
@@ -188,8 +199,11 @@ function ESResults({ anData, images, highlight, filterState, main }) {
                       const uniqueChapterKey = `${seasonKey}-${episodeKey}`;
                       // Get the episode title from the mapping
                       const episodeTitle = `Episode ${episodeKey.slice(1)}`;
+                      if (Object.keys(seasonValue.episodes).length === 1 && !openMenus[`es-${seasonKey}-${episodeKey}`]) {
+                        openMenu(`es-${seasonKey}-${episodeKey}`)
+                      }
                       return (
-                        <Collapsible onOpening={() => handleMenu(`es-${seasonKey}-${episodeKey}`)} onClose={() => handleMenu(`es-${seasonKey}-${episodeKey}`)} trigger={`${episodeTitle} (Total: ${episodeValue.count})`} key={uniqueChapterKey}>
+                        <Collapsible open={openMenus[`es-${seasonKey}-${episodeKey}`]} onOpening={() => openMenu(`es-${seasonKey}-${episodeKey}`)} onClose={() => closeMenu(`es-${seasonKey}-${episodeKey}`)} trigger={`${episodeTitle} (Total: ${episodeValue.count})`} key={uniqueChapterKey}>
                           {openMenus[`es-${seasonKey}-${episodeKey}`] && (
                             <>
                               <div className="sentences-container">

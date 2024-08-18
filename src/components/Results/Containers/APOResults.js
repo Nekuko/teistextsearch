@@ -16,13 +16,20 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
     const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
     const [currentPage, setCurrentPage] = useState({});
     const [openMenus, setOpenMenus] = useState({});
-
-    function handleMenu(name) {
+    
+    function openMenu(name) {
         setOpenMenus((prevOpenMenus) => ({
-            ...prevOpenMenus,
-            [name]: !prevOpenMenus[name],
+          ...prevOpenMenus,
+          [name]: true,
         }));
-    }
+      }
+    
+      function closeMenu(name) {
+        setOpenMenus((prevOpenMenus) => ({
+          ...prevOpenMenus,
+          [name]: false,
+        }));
+      }
 
     useEffect(() => {
         const initialPages = {};
@@ -182,9 +189,12 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
                 }, 0);
                 //                                    {main && coverImages[partKey.replace("p", "")] && <img className="apo-part-image" src={coverImages[partKey.replace("p", "")]} alt={partTitle} />}
 
+                if (Object.keys(sscData.parts).length === 1 && !openMenus[`apo-${partKey}`]) {
+                    openMenu(`apo-${partKey}`);
+                }
                 return (
                     <div key={partTitle}>
-                        <Collapsible onOpening={() => handleMenu(`apo-${partKey}`)} onClose={() => handleMenu(`apo-${partKey}`)}
+                        <Collapsible open={openMenus[`apo-${partKey}`]} onOpening={() => openMenu(`apo-${partKey}`)} onClose={() => closeMenu(`apo-${partKey}`)}
                             className="medium-margin" trigger={
                                 <>
                                     <div className="volume-trigger">
@@ -206,8 +216,11 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
                                             }
                                         }
                                         const chapterCount = Object.values(chapterValue.episodes).reduce((total, episode) => total + episode.sentences.length, 0);
+                                        if (Object.keys(chapters.chapters).length === 1 && !openMenus[`apo-${partKey}-${chapterKey}`]) {
+                                            openMenu(`apo-${partKey}-${chapterKey}`)
+                                        }
                                         return (
-                                            <Collapsible onOpening={() => handleMenu(`apo-${partKey}-${chapterKey}`)} onClose={() => handleMenu(`apo-${partKey}-${chapterKey}`)}
+                                            <Collapsible open={openMenus[`apo-${partKey}-${chapterKey}`]} onOpening={() => openMenu(`apo-${partKey}-${chapterKey}`)} onClose={() => closeMenu(`apo-${partKey}-${chapterKey}`)}
                                                 className="medium-margin" trigger={
                                                     <>
                                                         <div className="volume-trigger">
@@ -223,8 +236,11 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
                                                             let episodeTitle = partsChecked[partTitle][chapterTitle][`e${episodeKey.slice(1)}`].title;
                                                             const imageKey = `${chapterKey.split("c")[1]}-${episodeKey.replace("e", "")}`
                                                             const uniqueChapterKey = `${partKey}-${chapterKey}-${episodeKey}`;
+                                                            if (Object.keys(chapterValue.episodes).length === 1 && !openMenus[`apo-${partKey}-${chapterKey}-${episodeKey}`]) {
+                                                                openMenu(`apo-${partKey}-${chapterKey}-${episodeKey}`);
+                                                            }
                                                             return (
-                                                                <Collapsible onOpening={() => handleMenu(`apo-${partKey}-${chapterKey}-${episodeKey}`)} onClose={() => handleMenu(`apo-${partKey}-${chapterKey}-${episodeKey}`)}
+                                                                <Collapsible open={openMenus[`apo-${partKey}-${chapterKey}-${episodeKey}`]} onOpening={() => openMenu(`apo-${partKey}-${chapterKey}-${episodeKey}`)} onClose={() => closeMenu(`apo-${partKey}-${chapterKey}-${episodeKey}`)}
                                                                     trigger={
                                                                         <>
                                                                             <div className="volume-trigger">

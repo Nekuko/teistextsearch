@@ -17,12 +17,20 @@ function SSCResults({ sscData, images, highlight, filterState, main, partsChecke
     const [currentPage, setCurrentPage] = useState({});
     const [openMenus, setOpenMenus] = useState({});
 
-    function handleMenu(name) {
+    function openMenu(name) {
         setOpenMenus((prevOpenMenus) => ({
             ...prevOpenMenus,
-            [name]: !prevOpenMenus[name],
+            [name]: true,
         }));
     }
+
+    function closeMenu(name) {
+        setOpenMenus((prevOpenMenus) => ({
+            ...prevOpenMenus,
+            [name]: false,
+        }));
+    }
+
     useEffect(() => {
         const initialPages = {};
         Object.keys(sscData.parts).forEach(partKey => {
@@ -190,10 +198,13 @@ function SSCResults({ sscData, images, highlight, filterState, main, partsChecke
                             return total + episode.sentences.length;
                         }, 0);
                     }, 0);
+                    if (Object.keys(sscData.parts).length === 1 && !openMenus[`ssc-${partKey}`]) {
+                        openMenu(`ssc-${partKey}`)
+                    }
 
                     return (
                         <div key={partKey}>
-                            <Collapsible onOpening={() => handleMenu(`ssc-${partKey}`)} onClose={() => handleMenu(`ssc-${partKey}`)} className="medium-margin" trigger={
+                            <Collapsible open={openMenus[`ssc-${partKey}`]} onOpening={() => openMenu(`ssc-${partKey}`)} onClose={() => closeMenu(`ssc-${partKey}`)} className="medium-margin" trigger={
                                 <>
                                     <div className="medium-trigger">
                                         {main && coverImages[partKey] && <img className="cover-image" src={coverImages[partKey]} alt={partTitle} />}
@@ -229,8 +240,11 @@ function SSCResults({ sscData, images, highlight, filterState, main, partsChecke
                                                     }
                                                 }
                                                 const chapterCount = Object.values(chapterValue.episodes).reduce((total, episode) => total + episode.sentences.length, 0);
+                                                if (Object.keys(chapters.chapters).length === 1 && !openMenus[`ssc-${partKey}-${chapterKey}`]) {
+                                                    openMenu(`ssc-${partKey}-${chapterKey}`)
+                                                }
                                                 return (
-                                                    <Collapsible onOpening={() => handleMenu(`ssc-${partKey}-${chapterKey}`)} onClose={() => handleMenu(`ssc-${partKey}-${chapterKey}`)} className="medium-margin" trigger={
+                                                    <Collapsible open={openMenus[`ssc-${partKey}-${chapterKey}`]} onOpening={() => openMenu(`ssc-${partKey}-${chapterKey}`)} onClose={() => closeMenu(`ssc-${partKey}-${chapterKey}`)} className="medium-margin" trigger={
                                                         <>
                                                             <div className="volume-trigger">
                                                                 {coverImages[imageKey.split("c")[1]] && <img className="cover-image-ssc" src={coverImages[imageKey.split("c")[1]]} alt={chapterTitle} />}
@@ -248,8 +262,12 @@ function SSCResults({ sscData, images, highlight, filterState, main, partsChecke
                                                                     .map(([episodeKey, episodeValue]) => {
                                                                         let episodeTitle = partsChecked[partTitle][chapterTitle][`e${episodeKey.slice(1)}`].title;
                                                                         const uniqueChapterKey = `${partKey}-${chapterKey}-${episodeKey}`;
+
+                                                                        if (Object.keys(chapterValue.episodes).length === 1 && !openMenus[uniqueChapterKey]) {
+                                                                            openMenu(uniqueChapterKey);
+                                                                        }
                                                                         return (
-                                                                            <Collapsible onOpening={() => handleMenu(uniqueChapterKey)} onClose={() => handleMenu(uniqueChapterKey)} trigger={`Episode ${episodeKey.slice(1)} | ${episodeTitle} (Total: ${episodeValue.sentences.length})`} key={episodeKey}>
+                                                                            <Collapsible open={openMenus[uniqueChapterKey]} onOpening={() => openMenu(uniqueChapterKey)} onClose={() => closeMenu(uniqueChapterKey)} trigger={`Episode ${episodeKey.slice(1)} | ${episodeTitle} (Total: ${episodeValue.sentences.length})`} key={episodeKey}>
                                                                                 {openMenus[uniqueChapterKey] && (
                                                                                     <>
                                                                                         <div className="sentences-container">
