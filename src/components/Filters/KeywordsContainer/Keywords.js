@@ -7,8 +7,7 @@ import { VscCaseSensitive } from "react-icons/vsc";
 import { ReactComponent as WholeWord } from '../../../svgs/codicon--whole-word.svg';
 import { ReactComponent as Regex } from '../../../svgs/codicon--regex.svg';
 
-function Keywords({ filterState, setFilterState, handleSearch, keywordsFlash, setKeywordsFlash }) {
-  const [inputValue, setInputValue] = useState('');
+function Keywords({ inputValue, setInputValue, filterState, setFilterState, keywordsFlash, setKeywordsFlash, startSearch }) {
   const [regexValue, setRegexValue] = useState(filterState.expression);
   const [validRegex, setValidRegex] = useState(false);
 
@@ -91,19 +90,6 @@ function Keywords({ filterState, setFilterState, handleSearch, keywordsFlash, se
   const toggleRegex = () => {
     setFilterState(prevState => ({ ...prevState, regex: !prevState.regex }));
   };
-
-  function startSearch() {
-    let added;
-    if (inputValue) {
-      setFilterState(prevState => ({
-        ...prevState,
-        keywords: [...prevState.keywords, inputValue.trim()]
-      }));
-      added = JSON.parse(JSON.stringify(inputValue));
-      setInputValue('');
-    }
-    handleSearch(added);
-  }
 
 
 
@@ -188,7 +174,7 @@ function Keywords({ filterState, setFilterState, handleSearch, keywordsFlash, se
       </div>
       )}
       <div className="keywords-search">
-        <button className="search-button" onClick={startSearch}>SEARCH</button> {/* Search button */}
+        <button value={inputValue} className="search-button" onClick={startSearch}>SEARCH</button>
       </div>
     </div>
   );

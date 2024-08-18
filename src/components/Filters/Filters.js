@@ -1,5 +1,5 @@
 // Filters.js
-import React from 'react';
+import React, { useState } from 'react';
 import './Filters.css';
 import MediumsContainer from './MediumsContainer/MediumsContainer';
 import Keywords from './KeywordsContainer/Keywords'; // Import the Keywords component
@@ -32,7 +32,23 @@ function Filters({
   keywordsFlash,
   setKeywordsFlash
 }) {
-  
+
+  const [inputValue, setInputValue] = useState('');
+
+  function startSearch() {
+    let added;
+    if (inputValue) {
+      setFilterState(prevState => ({
+        ...prevState,
+        keywords: [...prevState.keywords, inputValue.trim()]
+      }));
+      added = JSON.parse(JSON.stringify(inputValue));
+      setInputValue('');
+    }
+
+    handleSearch(added)
+  }
+
   return (
     <div>
       <h1 className="filters-header">FILTERS</h1>
@@ -73,11 +89,11 @@ function Filters({
           />
         </div>
         <div className="row-container-center">
-          <Keywords handleSearch={handleSearch} filterState={filterState} setFilterState={setFilterState} keywordsFlash={keywordsFlash} setKeywordsFlash={setKeywordsFlash} />
+          <Keywords inputValue={inputValue} setInputValue={setInputValue} startSearch={startSearch} handleSearch={handleSearch} filterState={filterState} setFilterState={setFilterState} keywordsFlash={keywordsFlash} setKeywordsFlash={setKeywordsFlash} />
         </div>
         <div className="row-container-center">
           <div className="filters-search">
-            <button className="search-button" onClick={handleSearch}>SEARCH</button> {/* Search button */}
+            <button value={inputValue} className="search-button" onClick={startSearch}>SEARCH</button>
           </div>
         </div>
       </div>

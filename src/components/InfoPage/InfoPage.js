@@ -11,11 +11,6 @@ const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
-
-const sscMap = { 'p1': 'Part 1 | Rise of Garden', 'p1_c1-1': 'Chapter 1-1 | Shadow Garden, Mobilize!', 'p1_c1-1_e1': 'Episode 1 - Prelude', 'p1_c1-1_e2': 'Episode 2 - Garden Policy', 'p1_c1-1_e3': 'Episode 3 - Shadow Garden Covert Op', 'p1_c1-1_e4': 'Episode 4 - Possessed Search', 'p1_c1-1_e5': 'Episode 5 - After the Rescue', 'p1_c1-2': 'Chapter 1-2 | Ancient Dragon of Alexandria', 'p1_c1-2_e1': 'Episode 1 - The Lost City', 'p1_c1-2_e2': 'Episode 2 - Abyss Woods', 'p1_c1-2_e3': 'Episode 3 - Tale of Ruin', 'p1_c1-2_e4': "Episode 4 - Shadow's Sword", 'p1_c1-2_e5': 'Episode 5 - Future Unlocked', 'p1_c1-3': "Chapter 1-3 | Have Mercy! Eta's Protocol", 'p1_c1-3_e1': "Episode 1 - Eta's Scheme", 'p1_c1-3_e2': 'Episode 2 - Defense System', 'p1_c1-3_e3': 'Episode 3 - Magic Gear', 'p1_c1-3_e4': 'Episode 4 - Try, Try Again', 'p1_c1-3_e5': "Episode 5 - The Gear's Value", 'p1_c1-4': 'Chapter 1-4 | Behold! Tuna Chaos', 'p1_c1-4_e1': 'Episode 1 - Day Off Together', 'p1_c1-4_e2': 'Episode 2 - Going Fishing', 'p1_c1-4_e3': 'Episode 3 - Tasty Tuna Sammy', 'p1_c1-4_e4': 'Episode 4 - Victory Formula', 'p1_c1-4_e5': 'Episode 5 - A King is Born', 'p1_c1-5': 'Chapter 1-5 | Here Comes Trouble', 'p1_c1-5_e1': 'Episode 1 - News Beginnings', 'p1_c1-5_e2': 'Episode 2 - Open the Door', 'p1_c1-5_e3': 'Episode 3 - N. Kafka is Born', 'p1_c1-5_e4': 'Episode 4 - Mystery Paladin', 'p1_c1-5_e5': 'Episode 5 - Point Blank', 'p1_c1-6': 'Chapter 1-6 | Intense! Unstoppable Alpha', 'p1_c1-6_e1': 'Episode 1 - Poking the Bear', 'p1_c1-6_e2': 'Episode 2 - Re-Infiltration', 'p1_c1-6_e3': 'Episode 3 - BBQ Provocation', 'p1_c1-6_e4': 'Episode 4 - Merciless Probe', 'p1_c1-6_e5': 'Episode 5 - Grace Thy Blade', 'p1_c1-7': "Chapter 1-7 | Brutal! Delta's Night Hunt", 'p1_c1-7_e1': 'Episode 1 - Mountaineering', 'p1_c1-7_e2': 'Episode 2 - As Cats and Dogs', 'p1_c1-7_e3': 'Episode 3 - Begin the Hunt', 'p1_c1-7_e4': 'Episode 4 - Brutal Diplomacy', 'p1_c1-7_e5': 'Episode 5 - My Fangs Rejoice', 'p1_c1-8': 'Chapter 1-8 | She is Beauty, She is Grace!', 'p1_c1-8_e1': 'Episode 1 - Inspired by Ire', 'p1_c1-8_e2': 'Episode 2 - Presentation Row', 'p1_c1-8_e3': 'Episode 3 - Shadow Power!', 'p1_c1-8_e4': "Episode 4 - Epsilon's Justice", 'p1_c1-8_e5': 'Episode 5 - Pianist Shiron', 'p1_c1-9': 'Chapter 1-9 | Watch Out, Gamma!', 'p1_c1-9_e1': 'Episode 1 - Morning Shopping', 'p1_c1-9_e2': "Episode 2 - Luna's Past", 'p1_c1-9_e3': 'Episode 3 - Luna: The Truth', 'p1_c1-9_e4': 'Episode 4 - Gamma Capriccio', 'p1_c1-9_e5': 'Episode 5 - Shadow World Foe', 'p1_c1-10': 'Chapter 1-10 | Mitsugoshi, Ltd. is Open!', 'p1_c1-10_e1': 'Episode 1 - Info Wars Begin', 'p1_c1-10_e2': 'Episode 2 - Plot at A-Okay Co.', 'p1_c1-10_e3': 'Episode 3 - Deception Op', 'p1_c1-10_e4': 'Episode 4 - Mitsugoshi Credo', 'p1_c1-10_e5': 'Episode 5 - No Shadows Left', 'p1_c1-11': 'Chapter 1-11 | Deal! Arranged Booking', 'p1_c1-11_e1': 'Episode 1 - Beta Reminisces', 'p1_c1-11_e2': 'Episode 2 - Harsh Happenings', 'p1_c1-11_e3': 'Episode 3 - 2 Birds 1 Stone', 'p1_c1-11_e4': "Episode 4 - Sponsor's Intent", 'p1_c1-11_e5': 'Episode 5 - Ebony Swirl', 'p1_c1-12': 'Chapter 1-12 | Natsume & Shiron Hang Out!', 'p1_c1-12_e1': 'Episode 1 - City-State Duo', 'p1_c1-12_e2': 'Episode 2 - Fleeting Vacance', 'p1_c1-12_e3': 'Episode 3 - Jugang Ruins', 'p1_c1-12_e4': 'Episode 4 - Beta—Behind You!', 'p1_c1-12_e5': 'Episode 5 - Great Collapse', 'p1_c1-13': 'Chapter 1-13 | Visions... Zeta and the Prophet', 'p1_c1-13_e1': 'Episode 1 - Spy Request', 'p1_c1-13_e2': 'Episode 2 - Saintly Prayer', 'p1_c1-13_e3': 'Episode 3 - Secret Cathedral', 'p1_c1-13_e4': 'Episode 4 - Wonky Background', 'p1_c1-13_e5': 'Episode 5 - Victoria—Prophet', 'p1_c1-14': 'Chapter 1-14 | The Garden on the Eve of Battle!', 'p1_c1-14_e1': 'Episode 1 - Can You Lift?', 'p1_c1-14_e2': 'Episode 2 - Research & Hair', 'p1_c1-14_e3': "Episode 3 - Garden's Enemy", 'p1_c1-14_e4': 'Episode 4 - Cherish Shadow', 'p1_c1-14_e5': 'Episode 5 - To the Prelude', 'p1_c1-15': 'Chapter 1-15 | Final Battle! Templar Fanatics', 'p1_c1-15_e1': 'Episode 1 - Battlefront: Part 1', 'p1_c1-15_e2': 'Episode 2 - Battlefront: Part 2', 'p1_c1-15_e3': 'Episode 3 - Battlefront: Part 3', 'p1_c1-15_e4': 'Episode 4 - Reunion in Flame', 'p1_c1-15_e5': 'Episode 5 - Prelude to a New Battle', 'p2': 'Part 2 | Sturm of Velgalta', 'p2_c2-1': 'Chapter 2-1 | Operation: Rescue & Recover', 'p2_c2-1_e1': "Episode 1 - Zeta's Departure", 'p2_c2-1_e2': 'Episode 2 - Lurk in Darkness, Hunt Down Shadows', 'p2_c2-1_e3': 'Episode 3 - Possessed Heiress', 'p2_c2-1_e4': 'Episode 4 - Nicoletta Marquez', 'p2_c2-1_e5': 'Episode 5 - Opeartion: Rescue', 'p2_c2-2': 'Chapter 2-2 | A Brilliant Mission!', 'p2_c2-2_e1': 'Episode 1 - Slow and Slay', 'p2_c2-2_e2': 'Episode 2 - The Weakest Link', 'p2_c2-2_e3': 'Episode 3 - Pitfall Experiments', 'p2_c2-2_e4': "Episode 4 - Prophetess' Doubt", 'p2_c2-2_e5': 'Episode 5 - Destined Numbers', 'p2_c2-3': 'Chapter 2-3 | Investigation! In Search of Oil', 'p2_c2-3_e1': 'Episode 1 - Buried Black Gold', 'p2_c2-3_e2': 'Episode 2 - The Land of Madlid', 'p2_c2-3_e3': 'Episode 3 - Nyle River Trouble', 'p2_c2-3_e4': 'Episode 4 - Malak the Malevolent', 'p2_c2-3_e5': 'Episode 5 - The Perfect Base', 'p2_c2-4': 'Chapter 2-4 | Possessed Cult Leader', 'p2_c2-4_e1': 'Episode 1 - Keep Investigating', 'p2_c2-4_e2': 'Episode 2 - Two "Seven Blades"', 'p2_c2-4_e3': 'Episode 3 - Confronting Sergey', 'p2_c2-4_e4': 'Episode 4 - Not Even a Scratch', 'p2_c2-4_e5': 'Episode 5 - Glorious Escape', 'p2_c2-5': 'Chapter 2-5 |  Cult Secrets Revealed!', 'p2_c2-5_e1': 'Episode 1 - Possessed Lady Karen', 'p2_c2-5_e2': 'Episode 2 - Two Ruthless Choices', 'p2_c2-5_e3': 'Episode 3 - Cult Secrets Unveiled', 'p2_c2-5_e4': 'Episode 4 - To Know Thyself', 'p2_c2-5_e5': 'Episode 5 - Loss and Rebirth', 'p2_c2-6': 'Chapter 2-6 | The Garden Heads North', 'p2_c2-6_e1': 'Episode 1 - Mysterious "Tears"', 'p2_c2-6_e2': 'Episode 2 - Countering Regeneration', 'p2_c2-6_e3': 'Episode 3 - Altered History', 'p2_c2-6_e4': 'Episode 4 - Vengeance is Mine', 'p2_c2-6_e5': 'Episode 5 - Journey to the North', 'p2_c2-7': 'Chapter 2-7 | Blood Pact! Unlikely Pair', 'p2_c2-7_e1': 'Episode 1 - Secret Villa Seizure', 'p2_c2-7_e2': 'Episode 2 - Secret Fund in Laugus', 'p2_c2-7_e3': 'Episode 3 - RIP Mundane Man', 'p2_c2-7_e4': 'Episode 4 - Authorized Savagery', 'p2_c2-7_e5': 'Episode 5 - Without Loyalties', 'p2_c2-8': 'Chapter 2-8 | Seven Blades Swordswoman', 'p2_c2-8_e1': 'Episode 1 - Her Name is Annerose', 'p2_c2-8_e2': 'Episode 2 - Naive Swordswoman', 'p2_c2-8_e3': 'Episode 3 - Luna & Annerose', 'p2_c2-8_e4': "Episode 4 - A Knight's Honor", 'p2_c2-8_e5': 'Episode 5 - What is Passed Down', 'p2_c2-9': 'Chapter 2-9 | The Ones We Protect', 'p2_c2-9_e1': 'Episode 1 - Fallout', 'p2_c2-9_e2': 'Episode 2 - Painted Lies', 'p2_c2-9_e3': 'Episode 3 - Reason to Fight', 'p2_c2-9_e4': 'Episode 4 - The Ones We Protect', 'p2_c2-9_e5': 'Episode 5 - Embarkment', 'p2_c2-10': 'Chapter 2-10 | Duel! Defeat Malak!', 'p2_c2-10_e1': 'Episode 1 - Path of the Dragon', 'p2_c2-10_e2': 'Episode 2 - Evolutionary Dead-End', 'p2_c2-10_e3': 'Episode 3 - Muscles Are Stored', 'p2_c2-10_e4': 'Episode 4 - Break Apart!', 'p2_c2-10_e5': 'Episode 5 - White Diamond', 'p2_c2-11': 'Chapter 2-11 | Faith and Conviction', 'p2_c2-11_e1': 'Episode 1 - People in the Stands', 'p2_c2-11_e2': 'Episode 2 - Shadow Actress', 'p2_c2-11_e3': "Episode 3 - Trust's Companion", 'p2_c2-11_e4': 'Episode 4 - A Saint Gone Mad', 'p2_c2-11_e5': 'Episode 5 - False Oracles', 'p2_c2-12': "Chapter 2-12 | Evil Ambition's End", 'p2_c2-12_e1': 'Episode 1 - The First Child', 'p2_c2-12_e2': 'Episode 2 - Numbers Advantage', 'p2_c2-12_e3': 'Episode 3 - "He" is Here', 'p2_c2-12_e4': 'Episode 4 - Dragon Awakes', 'p2_c2-12_e5': 'Episode 5 - Summit of Strength', 'p2_c2-13': 'Chapter 2-13 | Hero...... Lured by Illusions', 'p2_c2-13_e1': 'Episode 1 - A New Journey', 'p2_c2-13_e2': "Episode 2 - Sergey's Hideout", 'p2_c2-13_e3': 'Episode 3 - Artificial Dragons', 'p2_c2-13_e4': "Episode 4 - Ambition's End", 'p2_c2-13_e5': 'Episode 5 - A Mysterious Elf', 'p3': 'Part 3 | Secret of Sacra', 'p3_c3-1': 'Chapter 3-1 | Shadow Garden Revamp', 'p3_c3-1_e1': 'Episode 1 - A Bitter Retreat', 'p3_c3-1_e2': 'Episode 2 - Reorganizing', 'p3_c3-1_e3': 'Episode 3 - Girls Reshuffled', 'p3_c3-1_e4': "Episode 4 - Lambda's Favorite", 'p3_c3-1_e5': 'Episode 5 - Take No One Lightly', 'p3_c3-2': 'Chapter 3-2 | The Hero Revealed!', 'p3_c3-2_e1': 'Episode 1 - Secret of the Heroes', 'p3_c3-2_e2': 'Episode 2 - Church and Heroes', 'p3_c3-2_e3': 'Episode 3 - Truth Amidst Lies', 'p3_c3-2_e4': 'Episode 4 - The Lost Tribe', 'p3_c3-2_e5': "Episode 5 - Olivier's Face", 'p3_c3-3': 'Chapter 3-3 | Alexandria Rebellion', 'p3_c3-3_e1': 'Episode 1 - The Situation Begins', 'p3_c3-3_e2': "Episode 2 - I Won't Hurt You...", 'p3_c3-3_e3': 'Episode 3 - Override Experiment', 'p3_c3-3_e4': 'Episode 4 - Outcome of the Duel', 'p3_c3-3_e5': 'Episode 5 - End of Scenario', 'p3_c3-4': 'Chapter 3-4 | Influencers Ahoy!', 'p3_c3-4_e1': 'Episode 1 - A Bodacious Debut', 'p3_c3-4_e2': 'Episode 2 - Problematic Property', 'p3_c3-4_e3': 'Episode 3 - An Aristocratic Property', 'p3_c3-4_e4': 'Episode 4 - A Thief of the Cult', 'p3_c3-4_e5': 'Episode 5 - A Manor House Reborn' }
-
-const apoMap = { 'p1': 'Part 1 | Requiem for Scattered Shadows', 'c1-1': 'Chapter 1-1 | Millenium Past' }
-
 const kjMap = {
     "kj1": "Kage-Jitsu!",
     "kj2": "Kage-Jitsu! 2nd",
@@ -104,6 +99,19 @@ function InfoPage() {
     useEffect(() => {
         sessionStorage.setItem('characterImages', JSON.stringify(characterImages));
     }, [characterImages]);
+
+    const [mogDropdownState, setMogDropdownState] = useState(() => {
+        const savedState = sessionStorage.getItem('mogDropdown');
+        if (savedState) {
+            const parsedState = JSON.parse(savedState);
+            return parsedState;
+        }
+
+        return {}
+    });
+    useEffect(() => {
+        sessionStorage.setItem('mogDropdown', JSON.stringify(mogDropdownState));
+    }, [mogDropdownState]);
 
     const [namedCharacters, setNamedCharacters] = useState(() => {
         // Get the initial value from sessionStorage or default to false
@@ -258,6 +266,7 @@ function InfoPage() {
 
     const generateCollapsiblesAPO = (all_counts) => {
         const parts = Object.keys(all_counts.parts); // Get all part keys
+        const apo = mogDropdownState.partsChecked['Apocrypha'];
         return (
             <Collapsible onOpening={() => handleMenu('apo')} onClose={() => handleMenu('apo')} trigger="Apocrypha">
                 {openMenus['apo'] && (
@@ -278,100 +287,106 @@ function InfoPage() {
                                 ))}
                             </div>
                         </Collapsible>
-                        {parts.map(part => (
-                            <Collapsible onOpening={() => handleMenu(`apo-${part}`)} onClose={() => handleMenu(`apo-${part}`)} key={`apo-${part}`} trigger={
-                                <>
-                                    <div className="volume-trigger">
-                                        {`${apoMap[part]}`}
-                                    </div>
-                                </>
-                            }>
-                                {openMenus[`apo-${part}`] && (
+                        {parts.map(part => {
+                            const partTitle = Object.keys(apo).find(key => key.startsWith(`${part.replace('p', '')} |`));
+                            return (
+                                <Collapsible onOpening={() => handleMenu(`apo-${part}`)} onClose={() => handleMenu(`apo-${part}`)} key={`apo-${part}`} trigger={
                                     <>
-                                        <p>Chapters: {Object.keys(all_counts.parts[part].chapters).length}</p>
-                                        <p>Paragraphs:{formatNumber(all_counts.parts[part].line_count)}</p>
-                                        <p>Approximate Word Count: {formatNumber(all_counts.parts[part].word_count)}</p>
-                                        <p>Character Count: {formatNumber(all_counts.parts[part].char_count)}</p>
-                                        <Collapsible trigger="Characters">
-                                            <div className='info-character-box-small'>
-                                                {Object.keys(all_counts.parts[part].characters).sort((a, b) => {
-                                                    return all_counts.parts[part].characters[b] - all_counts.parts[part].characters[a]
-                                                }).map(character => (
-                                                    <div key={character}>
-                                                        <span>{character}: </span>
-                                                        <span>{all_counts.parts[part].characters[character]}</span>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </Collapsible>
-                                        {Object.keys(all_counts.parts[part].chapters)
-                                            .sort((a, b) => {
-                                                // Extract the numeric part of the chapter keys
-                                                const aNum = parseInt(a.split('-')[1]);
-                                                const bNum = parseInt(b.split('-')[1]);
-                                                return aNum - bNum;
-                                            })
-                                            .map(chapter => (
-                                                <Collapsible onOpening={() => handleMenu(`apo-${part}-${chapter}`)} onClose={() => handleMenu(`apo-${part}-${chapter}`)} trigger={
-                                                    <>
-                                                        <div className="volume-trigger">
-                                                            {apoCoverImages[`${chapter.replace('c', '')}`] && <img className="cover-image-apo-chapter-small" src={apoCoverImages[`${chapter.replace('c', '')}`]} alt={`${part}-${chapter}`} />}
-                                                            {`${apoMap[chapter]}`}
+                                        <div className="volume-trigger">
+                                            {`Part ${partTitle}`}
+                                        </div>
+                                    </>
+                                }>
+                                    {openMenus[`apo-${part}`] && (
+                                        <>
+                                            <p>Chapters: {Object.keys(all_counts.parts[part].chapters).length}</p>
+                                            <p>Paragraphs:{formatNumber(all_counts.parts[part].line_count)}</p>
+                                            <p>Approximate Word Count: {formatNumber(all_counts.parts[part].word_count)}</p>
+                                            <p>Character Count: {formatNumber(all_counts.parts[part].char_count)}</p>
+                                            <Collapsible trigger="Characters">
+                                                <div className='info-character-box-small'>
+                                                    {Object.keys(all_counts.parts[part].characters).sort((a, b) => {
+                                                        return all_counts.parts[part].characters[b] - all_counts.parts[part].characters[a]
+                                                    }).map(character => (
+                                                        <div key={character}>
+                                                            <span>{character}: </span>
+                                                            <span>{all_counts.parts[part].characters[character]}</span>
                                                         </div>
-                                                    </>
-                                                }>
-                                                    {openMenus[`apo-${part}-${chapter}`] && (
-                                                        <>
-                                                            <p>Episodes: {Object.keys(all_counts.parts[part].chapters[chapter].episodes).length}</p>
-                                                            <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].line_count)}</p>
-                                                            <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].word_count)}</p>
-                                                            <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].char_count)}</p>
-                                                            <Collapsible trigger="Characters">
-                                                                <div className='info-character-box-small'>
-                                                                    {Object.keys(all_counts.parts[part].chapters[chapter].characters).sort((a, b) => {
-                                                                        return all_counts.parts[part].chapters[chapter].characters[b] - all_counts.parts[part].chapters[chapter].characters[a]
-                                                                    }).map(character => (
-                                                                        <div key={character}>
-                                                                            <span>{character}: </span>
-                                                                            <span>{all_counts.parts[part].chapters[chapter].characters[character]}</span>
-                                                                        </div>
-                                                                    ))}
+                                                    ))}
+                                                </div>
+                                            </Collapsible>
+                                            {Object.keys(all_counts.parts[part].chapters)
+                                                .sort((a, b) => {
+                                                    // Extract the numeric part of the chapter keys
+                                                    const aNum = parseInt(a.split('-')[1]);
+                                                    const bNum = parseInt(b.split('-')[1]);
+                                                    return aNum - bNum;
+                                                })
+                                                .map(chapter => {
+                                                    const chapterTitle = Object.keys(apo[partTitle]).find(key => key.startsWith(`${chapter.split("-")[1]} |`));
+                                                    return (
+                                                        <Collapsible onOpening={() => handleMenu(`apo-${part}-${chapter}`)} onClose={() => handleMenu(`apo-${part}-${chapter}`)} trigger={
+                                                            <>
+                                                                <div className="volume-trigger">
+                                                                    {apoCoverImages[`${chapter.replace('c', '')}`] && <img className="cover-image-apo-chapter-small" src={apoCoverImages[`${chapter.replace('c', '')}`]} alt={`${part}-${chapter}`} />}
+                                                                    {`Chapter ${part.replace('p', '')}-${chapterTitle}`}
                                                                 </div>
-                                                            </Collapsible>
-                                                            {Object.keys(all_counts.parts[part].chapters[chapter].episodes).sort().map(episode => (
-                                                                <Collapsible key={`apo-${part}-${chapter}-${episode}`} trigger={
-                                                                    <>
-                                                                        <div className="volume-trigger">
-                                                                            {apoCoverImages[`${chapter.replace('c', '')}-${episode.replace('e', '')}`] && <img className="cover-image-apo-small" src={apoCoverImages[`${chapter.replace('c', '')}-${episode.replace('e', '')}`]} alt={`${chapter}-${episode}`} />}
-                                                                            {`Episode ${episode.replace("e", "")}`}
-                                                                        </div>
-                                                                    </>
-                                                                }>
-                                                                    <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].line_count)}</p>
-                                                                    <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].word_count)}</p>
-                                                                    <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].char_count)}</p>
+                                                            </>
+                                                        }>
+                                                            {openMenus[`apo-${part}-${chapter}`] && (
+                                                                <>
+                                                                    <p>Episodes: {Object.keys(all_counts.parts[part].chapters[chapter].episodes).length}</p>
+                                                                    <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].line_count)}</p>
+                                                                    <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].word_count)}</p>
+                                                                    <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].char_count)}</p>
                                                                     <Collapsible trigger="Characters">
                                                                         <div className='info-character-box-small'>
-                                                                            {Object.keys(all_counts.parts[part].chapters[chapter].episodes[episode].characters).sort((a, b) => {
-                                                                                return all_counts.parts[part].chapters[chapter].episodes[episode].characters[b] - all_counts.parts[part].chapters[chapter].episodes[episode].characters[a]
+                                                                            {Object.keys(all_counts.parts[part].chapters[chapter].characters).sort((a, b) => {
+                                                                                return all_counts.parts[part].chapters[chapter].characters[b] - all_counts.parts[part].chapters[chapter].characters[a]
                                                                             }).map(character => (
                                                                                 <div key={character}>
                                                                                     <span>{character}: </span>
-                                                                                    <span>{all_counts.parts[part].chapters[chapter].episodes[episode].characters[character]}</span>
+                                                                                    <span>{all_counts.parts[part].chapters[chapter].characters[character]}</span>
                                                                                 </div>
                                                                             ))}
                                                                         </div>
                                                                     </Collapsible>
-                                                                </Collapsible>
-                                                            ))}
-                                                        </>
-                                                    )}
-                                                </Collapsible>
-                                            ))}
-                                    </>
-                                )}
-                            </Collapsible>
-                        ))}
+                                                                    {Object.keys(all_counts.parts[part].chapters[chapter].episodes).sort().map(episode => (
+                                                                        <Collapsible key={`apo-${part}-${chapter}-${episode}`} trigger={
+                                                                            <>
+                                                                                <div className="volume-trigger">
+                                                                                    {apoCoverImages[`${chapter.replace('c', '')}-${episode.replace('e', '')}`] && <img className="cover-image-apo-small" src={apoCoverImages[`${chapter.replace('c', '')}-${episode.replace('e', '')}`]} alt={`${chapter}-${episode}`} />}
+                                                                                    {`Episode ${episode.replace("e", "")}`}
+                                                                                </div>
+                                                                            </>
+                                                                        }>
+                                                                            <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].line_count)}</p>
+                                                                            <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].word_count)}</p>
+                                                                            <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].char_count)}</p>
+                                                                            <Collapsible trigger="Characters">
+                                                                                <div className='info-character-box-small'>
+                                                                                    {Object.keys(all_counts.parts[part].chapters[chapter].episodes[episode].characters).sort((a, b) => {
+                                                                                        return all_counts.parts[part].chapters[chapter].episodes[episode].characters[b] - all_counts.parts[part].chapters[chapter].episodes[episode].characters[a]
+                                                                                    }).map(character => (
+                                                                                        <div key={character}>
+                                                                                            <span>{character}: </span>
+                                                                                            <span>{all_counts.parts[part].chapters[chapter].episodes[episode].characters[character]}</span>
+                                                                                        </div>
+                                                                                    ))}
+                                                                                </div>
+                                                                            </Collapsible>
+                                                                        </Collapsible>
+                                                                    ))}
+                                                                </>
+                                                            )}
+                                                        </Collapsible>
+                                                    );
+                                                })}
+                                        </>
+                                    )}
+                                </Collapsible>
+                            );
+                        })}
                     </>
                 )}
             </Collapsible>
@@ -380,6 +395,7 @@ function InfoPage() {
 
     const generateCollapsiblesSSC = (all_counts) => {
         const parts = Object.keys(all_counts.parts); // Get all part keys
+        const ssc = mogDropdownState.partsChecked['Seven Shadows Chronicles'];
         return (
             <Collapsible onOpening={() => handleMenu('ssc')} onClose={() => handleMenu('ssc')} trigger="Seven Shadows Chronicles">
                 {openMenus['ssc'] && (
@@ -400,93 +416,102 @@ function InfoPage() {
                                 ))}
                             </div>
                         </Collapsible>
-                        {parts.sort().map(part => (
-                            <Collapsible onOpening={() => handleMenu(`ssc-${part}`)} onClose={() => handleMenu(`ssc-${part}`)} key={part} trigger={`${sscMap[part]}`}>
-                                {openMenus[`ssc-${part}`] && (
-                                    <>
-                                        <p>Chapters: {Object.keys(all_counts.parts[part].chapters).length}</p>
-                                        <p>Paragraphs: {formatNumber(all_counts.parts[part].line_count)}</p>
-                                        <p>Approximate Word Count: {formatNumber(all_counts.parts[part].word_count)}</p>
-                                        <p>Character Count: {formatNumber(all_counts.parts[part].char_count)}</p>
-                                        <Collapsible trigger="Characters">
-                                            <div className='info-character-box-small'>
-                                                {Object.keys(all_counts.parts[part].characters).sort((a, b) => {
-                                                    return all_counts.parts[part].characters[b] - all_counts.parts[part].characters[a]
-                                                }).map(character => (
-                                                    <div key={character}>
-                                                        <span>{character}: </span>
-                                                        <span>{all_counts.parts[part].characters[character]}</span>
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        </Collapsible>
-                                        {Object.keys(all_counts.parts[part].chapters)
-                                            .sort((a, b) => {
-                                                // Extract the numeric part of the chapter keys
-                                                const aNum = parseInt(a.split('-')[1]);
-                                                const bNum = parseInt(b.split('-')[1]);
-                                                return aNum - bNum;
-                                            })
-                                            .map(chapter => (
-                                                <Collapsible onOpening={() => handleMenu(`ssc-${part}-${chapter}`)} onClose={() => handleMenu(`ssc-${part}-${chapter}`)} key={chapter} trigger={
-                                                    <>
-                                                        <div className="volume-trigger">
-                                                            {sscCoverImages[`${chapter.replace('c', '')}`] && <img className="cover-image-ssc" src={sscCoverImages[`${chapter.replace('c', '')}`]} alt={`${part}-${chapter}`} />}
-                                                            {`${sscMap[`${part}_${chapter}`]}`}
+                        {parts.sort().map(part => {
+                            const partTitle = Object.keys(ssc).find(key => key.startsWith(`${part.replace('p', 'Part ')} |`));
+                            return (
+                                <Collapsible onOpening={() => handleMenu(`ssc-${part}`)} onClose={() => handleMenu(`ssc-${part}`)} key={part} trigger={partTitle}>
+                                    {openMenus[`ssc-${part}`] && (
+                                        <>
+                                            <p>Chapters: {Object.keys(all_counts.parts[part].chapters).length}</p>
+                                            <p>Paragraphs: {formatNumber(all_counts.parts[part].line_count)}</p>
+                                            <p>Approximate Word Count: {formatNumber(all_counts.parts[part].word_count)}</p>
+                                            <p>Character Count: {formatNumber(all_counts.parts[part].char_count)}</p>
+                                            <Collapsible trigger="Characters">
+                                                <div className='info-character-box-small'>
+                                                    {Object.keys(all_counts.parts[part].characters).sort((a, b) => {
+                                                        return all_counts.parts[part].characters[b] - all_counts.parts[part].characters[a]
+                                                    }).map(character => (
+                                                        <div key={character}>
+                                                            <span>{character}: </span>
+                                                            <span>{all_counts.parts[part].characters[character]}</span>
                                                         </div>
-                                                    </>
-                                                }>
-                                                    {openMenus[`ssc-${part}-${chapter}`] && (
-                                                        <>
-                                                            <p>Episodes: {Object.keys(all_counts.parts[part].chapters[chapter].episodes).length}</p>
-                                                            <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].line_count)}</p>
-                                                            <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].word_count)}</p>
-                                                            <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].char_count)}</p>
-                                                            <Collapsible trigger="Characters">
-                                                                <div className='info-character-box-small'>
-                                                                    {Object.keys(all_counts.parts[part].chapters[chapter].characters).sort((a, b) => {
-                                                                        return all_counts.parts[part].chapters[chapter].characters[b] - all_counts.parts[part].chapters[chapter].characters[a]
-                                                                    }).map(character => (
-                                                                        <div key={character}>
-                                                                            <span>{character}: </span>
-                                                                            <span>{all_counts.parts[part].chapters[chapter].characters[character]}</span>
-                                                                        </div>
-                                                                    ))}
+                                                    ))}
+                                                </div>
+                                            </Collapsible>
+                                            {Object.keys(all_counts.parts[part].chapters)
+                                                .sort((a, b) => {
+                                                    // Extract the numeric part of the chapter keys
+                                                    const aNum = parseInt(a.split('-')[1]);
+                                                    const bNum = parseInt(b.split('-')[1]);
+                                                    return aNum - bNum;
+                                                })
+                                                .map(chapter => {
+                                                    const chapterTitle = Object.keys(ssc[partTitle]).find(key => key.startsWith(`${chapter.replace('c', '').replace('1-15', '1 Final')} |`));
+                                                    return (
+                                                        <Collapsible onOpening={() => handleMenu(`ssc-${part}-${chapter}`)} onClose={() => handleMenu(`ssc-${part}-${chapter}`)} key={chapter} trigger={
+                                                            <>
+                                                                <div className="volume-trigger">
+                                                                    {sscCoverImages[`${chapter.replace('c', '')}`] && <img className="cover-image-ssc" src={sscCoverImages[`${chapter.replace('c', '')}`]} alt={`${part}-${chapter}`} />}
+                                                                    {`Chapter ${chapterTitle}`}
                                                                 </div>
-                                                            </Collapsible>
-                                                            {Object.keys(all_counts.parts[part].chapters[chapter].episodes).sort().map(episode => (
-                                                                <Collapsible key={episode} trigger={
-                                                                    <>
-                                                                        <div className="volume-trigger">
-                                                                            {sscMap[`${part}_${chapter}_${episode}`]}
-                                                                        </div>
-                                                                    </>
-                                                                }>
-                                                                    <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].line_count)}</p>
-                                                                    <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].word_count)}</p>
-                                                                    <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].char_count)}</p>
+                                                            </>
+                                                        }>
+                                                            {openMenus[`ssc-${part}-${chapter}`] && (
+                                                                <>
+                                                                    <p>Episodes: {Object.keys(all_counts.parts[part].chapters[chapter].episodes).length}</p>
+                                                                    <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].line_count)}</p>
+                                                                    <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].word_count)}</p>
+                                                                    <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].char_count)}</p>
                                                                     <Collapsible trigger="Characters">
                                                                         <div className='info-character-box-small'>
-                                                                            {Object.keys(all_counts.parts[part].chapters[chapter].episodes[episode].characters).sort((a, b) => {
-                                                                                return all_counts.parts[part].chapters[chapter].episodes[episode].characters[b] - all_counts.parts[part].chapters[chapter].episodes[episode].characters[a]
+                                                                            {Object.keys(all_counts.parts[part].chapters[chapter].characters).sort((a, b) => {
+                                                                                return all_counts.parts[part].chapters[chapter].characters[b] - all_counts.parts[part].chapters[chapter].characters[a]
                                                                             }).map(character => (
                                                                                 <div key={character}>
                                                                                     <span>{character}: </span>
-                                                                                    <span>{all_counts.parts[part].chapters[chapter].episodes[episode].characters[character]}</span>
+                                                                                    <span>{all_counts.parts[part].chapters[chapter].characters[character]}</span>
                                                                                 </div>
                                                                             ))}
                                                                         </div>
                                                                     </Collapsible>
-                                                                </Collapsible>
-                                                            ))}
-                                                        </>
-                                                    )}
-                                                </Collapsible>
-                                            ))}
-                                    </>
-                                )}
-                            </Collapsible>
-                        ))}
+                                                                    {Object.keys(all_counts.parts[part].chapters[chapter].episodes).sort().map(episode => {
+                                                                        const episodeTitle = ssc[partTitle][chapterTitle][episode].title;
+                                                                        return (
+                                                                            <Collapsible key={episode} trigger={
+                                                                                <>
+                                                                                    <div className="volume-trigger">
+                                                                                        {`${episode.replace('e', 'Episode ')} | ${episodeTitle}`}
+                                                                                    </div>
+                                                                                </>
+                                                                            }>
+                                                                                <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].line_count)}</p>
+                                                                                <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].word_count)}</p>
+                                                                                <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].char_count)}</p>
+                                                                                <Collapsible trigger="Characters">
+                                                                                    <div className='info-character-box-small'>
+                                                                                        {Object.keys(all_counts.parts[part].chapters[chapter].episodes[episode].characters).sort((a, b) => {
+                                                                                            return all_counts.parts[part].chapters[chapter].episodes[episode].characters[b] - all_counts.parts[part].chapters[chapter].episodes[episode].characters[a]
+                                                                                        }).map(character => (
+                                                                                            <div key={character}>
+                                                                                                <span>{character}: </span>
+                                                                                                <span>{all_counts.parts[part].chapters[chapter].episodes[episode].characters[character]}</span>
+                                                                                            </div>
+                                                                                        ))}
+                                                                                    </div>
+                                                                                </Collapsible>
+                                                                            </Collapsible>
+                                                                        );
+                                                                    })}
+                                                                </>
+                                                            )}
+                                                        </Collapsible>
+                                                    );
+                                                })}
+                                        </>
+                                    )}
+                                </Collapsible>
+                            );
+                        })}
                     </>
                 )}
             </Collapsible>
@@ -634,7 +659,7 @@ function InfoPage() {
                             <Collapsible key={episode} trigger={
                                 <>
                                     <div className="volume-trigger">
-                                    {`Episode ${animeDropdownState.seasonsChecked[part === 'kj1' ? 'Kage-Jitsu!' : 'Kage-Jitsu! 2nd'][`${part === 'kj1' ? 's101' : 's102'}${episode}`].title}`}
+                                        {`Episode ${animeDropdownState.seasonsChecked[part === 'kj1' ? 'Kage-Jitsu!' : 'Kage-Jitsu! 2nd'][`${part === 'kj1' ? 's101' : 's102'}${episode}`].title}`}
                                     </div>
                                 </>
                             }>
