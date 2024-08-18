@@ -99,7 +99,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
       });
     }
 
-    if (selectedList.length === 22 && Object.keys(selectedList).every(key => !selectedList[key].text.includes("Episode"))) {
+    if (selectedList.length === Object.keys(mogDropdownState.partsChecked['Event Stories']).length - 1 && Object.keys(selectedList).every(key => !selectedList[key].text.includes("Episode"))) {
       return [{ text: "MOG Event Stories", hoverText: "Master of Garden, Event Stories" }]
     }
 
@@ -111,9 +111,6 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
 
     return selectedList;
   }
-
-
-
 
   const getSelectedSSCList = () => {
     const shortNames = {
@@ -215,7 +212,6 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     let currentText = null;
     let currentHover = null;
     let groupCount = 0;
-
     sscList.forEach(item => {
       let text = item.text;
       let hoverText = item.hoverText;
@@ -453,7 +449,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
         } else {
           let episodeGroups = {};
           // Group episodes by their main episode number, ensuring title exists
-          Object.entries(episodes).forEach(([episodeKey, episodeValue]) => {
+          Object.entries(episodes).sort().forEach(([episodeKey, episodeValue]) => {
             if (episodeValue && episodeValue.title) {
               const mainEpisodeNumber = episodeKey.includes('-') ? episodeKey.split('-')[0] : episodeKey;
               if (!episodeGroups[mainEpisodeNumber]) {
@@ -578,23 +574,9 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
 
   };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   const getSelectedWNList = () => {
     let wnList = [];
-    const volumesChecked = wnDropdownState.volumesChecked;
+    const volumesChecked = wnDropdownState.volumesChecked
     const totalVolumes = Object.keys(volumesChecked).length;
     const checkedVolumes = Object.values(volumesChecked).filter(volume => {
       // Get only the chapters from the volume
@@ -606,8 +588,14 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     if (wnDropdownState.wnMainChecked && totalVolumes === checkedVolumes) {
       wnList.push({ text: 'Web Novel', hoverText: 'Web Novel' });
     } else {
-      Object.entries(volumesChecked).forEach(([volumeName, volume]) => {
-        const checkedChapters = Object.entries(volume).filter(([chapterKey, chapter]) => chapter.checked);
+      Object.entries(volumesChecked).sort((a, b) => {
+        return a[0].localeCompare(b[0])
+      }).forEach(([volumeName, volume]) => {
+        const checkedChapters = Object.entries(volume).filter(([chapterKey, chapter]) => chapter.checked).sort((a, b) => {
+          const aNum = parseInt(a[0].split("c")[1], 10)
+          const bNum = parseInt(b[0].split("c")[1], 10)
+          return aNum - bNum;
+        });
         if (checkedChapters.length === Object.keys(volume).length - 1) {
           wnList.push({ text: `Web Novel Volume ${volumeName.split(' ')[1]}`, hoverText: `Web Novel Volume ${volumeName.split(' ')[1]}` });
         }
@@ -640,31 +628,29 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     return wnList;
   };
 
-
-
-
-
-
-
-
-
-
   const getSelectedLNList = () => {
     let lnList = [];
     const volumesChecked = lnDropdownState.volumesChecked;
     const totalVolumes = Object.keys(volumesChecked).length;
     const checkedVolumes = Object.values(volumesChecked).filter(volume => {
-      // Get only the chapters from the volume
       const chapters = Object.entries(volume).filter(([key]) => key.startsWith('v'));
-      // Check if all chapters are checked
       return chapters.every(([, chapter]) => chapter.checked);
     }).length;
 
     if (lnDropdownState.lnMainChecked && totalVolumes === checkedVolumes) {
       lnList.push({ text: 'Light Novel', hoverText: 'Light Novel' });
     } else {
-      Object.entries(volumesChecked).forEach(([volumeName, volume]) => {
-        const checkedChapters = Object.values(volume).filter(chapter => chapter.checked);
+      Object.entries(volumesChecked).sort((a, b) => {
+        return a[0].localeCompare(b[0])
+      }).forEach(([volumeName]) => {
+        const volume = volumesChecked[volumeName];
+        const checkedChapters = Object.values(volume).filter(chapter => chapter.checked).sort((a, b) => {
+          const aKey = Object.keys(volume).find(key => volume[key].title === a.title);
+          const bKey = Object.keys(volume).find(key => volume[key].title === b.title);
+          const aNum = parseInt(aKey.split("c")[1], 10)
+          const bNum = parseInt(bKey.split("c")[1], 10)
+          return aNum - bNum;
+        });
         if (checkedChapters.length === Object.keys(volume).length - 1) {
           lnList.push({ text: `Light Novel Volume ${volumeName.split(' ')[1]}`, hoverText: `Light Novel Volume ${volumeName.split(' ')[1]}` });
         }
@@ -763,24 +749,11 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
               rangeEnd = null;
             }
           }
+
           // Add this to handle the case where the last chapter is checked but not added to the range
           if (rangeStart !== null) {
             ranges.push(`C${rangeStart}${rangeStart !== rangeEnd ? `-${rangeEnd}` : ''}`);
           }
-          ranges.sort((a, b) => {
-            const typeA = typeof a === 'string' ? a.split('C')[1] : a.type;
-            const typeB = typeof b === 'string' ? b.split('C')[1] : b.type;
-
-            if (typeA === 'Appendix' || typeA === 'A') return 1;
-            if (typeB === 'Appendix' || typeB === 'A') return -1;
-            if (typeA === 'Final Chapter' || typeA === 'F') return 1;
-            if (typeB === 'Final Chapter' || typeB === 'F') return -1;
-            if (typeA === 'Epilogue' || typeA === 'E') return 1;
-            if (typeB === 'Epilogue' || typeB === 'E') return -1;
-
-
-            return parseInt(typeA) - parseInt(typeB);
-          });
           lnList.push(...ranges.map(range => typeof range === 'string' ? { text: `LN V${volumeName.split(' ')[1]} ${range}`, hoverText: `Light Novel, Volume ${volumeName.split(' ')[1]}, ${range.includes('-') ? 'Chapters' : 'Chapter'} ${range.split('C')[1].replace('-F', '-Final').replace('-E', '-Epilogue')}` } : { text: `LN V${volumeName.split(' ')[1]} ${range.type}`, hoverText: `Light Novel Volume ${volumeName.split(' ')[1]} ${range.type}` }));
         }
       });
