@@ -1,3 +1,11 @@
+@media (min-width: 1025px) {
+  .selected-container {
+    width: min-content;
+  }
+}
+
+
+
 .selected-subtitle {
   margin-top: -8px;
   font-family: 'Noto Serif JP';
@@ -99,9 +107,4 @@
 
 .flash {
   animation: flash 1s infinite;
-}
-
-.selected-bubble>div {
-  display: table-cell;
-  vertical-align: middle;
 }
