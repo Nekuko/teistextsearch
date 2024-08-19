@@ -755,6 +755,43 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
             ranges.push(`C${rangeStart}${rangeStart !== rangeEnd ? `-${rangeEnd}` : ''}`);
           }
           lnList.push(...ranges.map(range => typeof range === 'string' ? { text: `LN V${volumeName.split(' ')[1]} ${range}`, hoverText: `Light Novel, Volume ${volumeName.split(' ')[1]}, ${range.includes('-') ? 'Chapters' : 'Chapter'} ${range.split('C')[1].replace('-F', '-Final').replace('-E', '-Epilogue')}` } : { text: `LN V${volumeName.split(' ')[1]} ${range.type}`, hoverText: `Light Novel Volume ${volumeName.split(' ')[1]} ${range.type}` }));
+          lnList = lnList.sort((a, b) => {
+            let [aLN, aVol, aName] = a.text.split(" ");
+            let [bLN, bVol, bName] = b.text.split(" ");
+
+            if (aVol !== bVol) {
+              return bVol - aVol;
+            }
+
+            const isAE = aName.includes("-E") || aName === 'Epilogue';
+            const isBE = bName.includes("-E") || bName === 'Epilogue';
+            const isAppendixA = aName === 'Appendix';
+            const isAppendixB = bName === 'Appendix';
+        
+            if (isAppendixA && isAppendixB) {
+                return 0;
+            }
+        
+            if (isAppendixA) {
+                return 1;
+            }
+            if (isAppendixB) {
+                return -1;
+            }
+        
+            if (isAE && isBE) {
+                return 0;
+            }
+        
+            if (isAE) {
+                return 1;
+            }
+            if (isBE) {
+                return -1;
+            }
+        
+            return 0;
+          });
         }
       });
     }
