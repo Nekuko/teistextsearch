@@ -773,8 +773,11 @@ function SearchPage() {
             && apoCheckedItems.length === 0
             && sscCheckedItems.length === 0) {
             let data = await getAllMediums();
-            lnCheckedItems = data.lnCheckedItems;
-            wnCheckedItems = data.wnCheckedItems;
+            if (checkedCharacters.length === 0) {
+                lnCheckedItems = data.lnCheckedItems;
+                wnCheckedItems = data.wnCheckedItems;
+            }
+            
             esCheckedItems = data.esCheckedItems;
             apoCheckedItems = data.apoCheckedItems;
             sscCheckedItems = data.sscCheckedItems;

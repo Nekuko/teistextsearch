@@ -16,20 +16,20 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
     const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
     const [currentPage, setCurrentPage] = useState({});
     const [openMenus, setOpenMenus] = useState({});
-    
+
     function openMenu(name) {
         setOpenMenus((prevOpenMenus) => ({
-          ...prevOpenMenus,
-          [name]: true,
+            ...prevOpenMenus,
+            [name]: true,
         }));
-      }
-    
-      function closeMenu(name) {
+    }
+
+    function closeMenu(name) {
         setOpenMenus((prevOpenMenus) => ({
-          ...prevOpenMenus,
-          [name]: false,
+            ...prevOpenMenus,
+            [name]: false,
         }));
-      }
+    }
 
     useEffect(() => {
         const initialPages = {};
@@ -193,12 +193,11 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
                     openMenu(`apo-${partKey}`);
                 }
                 return (
-                    <div key={partTitle}>
-                        <Collapsible open={openMenus[`apo-${partKey}`]} onOpening={() => openMenu(`apo-${partKey}`)} onClose={() => closeMenu(`apo-${partKey}`)}
+                    <div key={`apo-${partKey}`}>
+                        <Collapsible key={`apo-${partKey}`} open={openMenus[`apo-${partKey}`]} onOpening={() => openMenu(`apo-${partKey}`)} onClose={() => closeMenu(`apo-${partKey}`)}
                             className="medium-margin" trigger={
                                 <>
                                     <div className="volume-trigger">
-
                                         {`${partTitle.split("|")[1]} (Total: ${partCount})`}
                                     </div>
                                 </>
@@ -220,7 +219,7 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
                                             openMenu(`apo-${partKey}-${chapterKey}`)
                                         }
                                         return (
-                                            <Collapsible open={openMenus[`apo-${partKey}-${chapterKey}`]} onOpening={() => openMenu(`apo-${partKey}-${chapterKey}`)} onClose={() => closeMenu(`apo-${partKey}-${chapterKey}`)}
+                                            <Collapsible key={`apo-${partKey}-${chapterKey}`} open={openMenus[`apo-${partKey}-${chapterKey}`]} onOpening={() => openMenu(`apo-${partKey}-${chapterKey}`)} onClose={() => closeMenu(`apo-${partKey}-${chapterKey}`)}
                                                 className="medium-margin" trigger={
                                                     <>
                                                         <div className="volume-trigger">
@@ -259,9 +258,9 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
                                                                                             <div className="icon-container-triple">
                                                                                                 <CopyToClipboard text={sentence.subtitle}>
                                                                                                     <div className="copy-icon">
-                                                                                                        <FontAwesomeIcon 
-                                                                                                        onClick={() => showPopup(partKey, chapterKey, index)}
-                                                                                                        icon={faCopy} />
+                                                                                                        <FontAwesomeIcon
+                                                                                                            onClick={() => showPopup(partKey, chapterKey, index)}
+                                                                                                            icon={faCopy} />
                                                                                                         <div className="popup" id={`popup-${partKey}-${chapterKey}-${index}`}>
                                                                                                             Copied!
                                                                                                         </div>

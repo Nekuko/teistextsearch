@@ -792,7 +792,7 @@ function InfoPage() {
                         return b[1].total - a[1].total;
                     }).map(([character, value]) => (
                         <>
-                            <Collapsible onOpening={() => handleMenu(`char-${character}`)} onClose={() => handleMenu(`char-${character}`)} key={`char-${character}`} trigger={
+                            <Collapsible key={`char-${character}`} onOpening={() => handleMenu(`char-${character}`)} onClose={() => handleMenu(`char-${character}`)} trigger={
                                 <>
                                     <div className="volume-trigger">
                                         {characterImages[character] && <img className="characters-container-image" src={characterImages[character]} alt={character} />}
@@ -805,7 +805,7 @@ function InfoPage() {
                                         return b[1] - a[1];
                                     }).map(([name, amount]) => (
                                         <>
-                                            <div key={name} className="volume-trigger">
+                                            <div key={`char-${character}-${name}`} className="volume-trigger">
                                                 {`${name} (Total: ${amount})`}
                                             </div>
                                         </>

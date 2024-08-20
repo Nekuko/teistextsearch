@@ -101,7 +101,7 @@ function CharacterResults({ anData, sscData, esData, apoData, images, filterStat
           }
 
           return (
-            <div>
+            <div key={`${mediums}-${character}`}>
               <Collapsible trigger={
                 <>
                   <div className="character-trigger" title={character}>
@@ -116,7 +116,7 @@ function CharacterResults({ anData, sscData, esData, apoData, images, filterStat
 
                   if (medium === 'mg') {
                     return (
-                      <Collapsible trigger={`Master of Garden (Total: ${mediumData.count})`}>
+                      <Collapsible key={`${mediums}-${character}-mog`} trigger={`Master of Garden (Total: ${mediumData.count})`}>
                         <div className="medium-trigger">
                           {mediumData['ssc'] && (
                             <Collapsible trigger={`Seven Shadows Chronicles (Total: ${mediumData['ssc'].count})`}>
@@ -140,7 +140,7 @@ function CharacterResults({ anData, sscData, esData, apoData, images, filterStat
 
                   if (medium === 'an') {
                     return (
-                      <div className="medium-trigger">
+                      <div key={`${mediums}-${character}-an`} className="medium-trigger">
                         <Collapsible trigger={`${mediumName} (Total: ${mediumData.count})`}>
                           <AnimeResults animeDropdownState={animeDropdownState} main={false} anData={mediumData} images={images} filterState={filterState} highlight={highlight} />
                         </Collapsible>
