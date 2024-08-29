@@ -4910,25 +4910,25 @@
     },
     "ssc": {
         "part_count": 3,
-        "line_count": 9976,
-        "word_count": 106214,
-        "char_count": 608309,
+        "line_count": 10345,
+        "word_count": 109680,
+        "char_count": 627343,
         "characters": {
-            "Alpha": 1320,
+            "Alpha": 1335,
             "None": 53,
             "Mysterious Captain": 26,
             "Mysterious Soldier A": 10,
             "Alpha (??? (Alpha))": 5,
             "Mysterious Soldier B": 4,
-            "Delta": 545,
-            "Eta": 606,
+            "Delta": 550,
+            "Eta": 643,
             "Mysterious Soldier C": 6,
-            "Epsilon": 883,
+            "Epsilon": 1007,
             "Mysterious Soldier D": 4,
-            "Zeta": 936,
-            "Gamma": 1140,
+            "Zeta": 949,
+            "Gamma": 1150,
             "Mysterious Soldier E": 6,
-            "Beta": 943,
+            "Beta": 957,
             "Mysterious Soldiers": 2,
             "Cultist A": 8,
             "Cultist B": 5,
@@ -4938,7 +4938,7 @@
             "Cultist F": 3,
             "Lambda (Mound of Flesh (Lambda))": 1,
             "Lambda (Tawny Elf (Lambda))": 15,
-            "Cid Kagenou (Cid)": 589,
+            "Cid Kagenou (Cid)": 613,
             "Lambda": 379,
             "Merchant B": 11,
             "Merchant A Secretary": 10,
@@ -5042,8 +5042,8 @@
             "Chi (No. 111 & No. 122 (No. 111))": 5,
             "Omega (No. 111 & No. 122 (No. 122))": 5,
             "Annerose Nichtsehen (None (Annerose))": 4,
-            "Chi": 74,
-            "Omega": 88,
+            "Chi": 136,
+            "Omega": 142,
             "Malaks": 1,
             "Sergey Gorman (None (Sergey Gorman))": 32,
             "Gamma (Gamma & Epsilon (Gamma))": 1,
@@ -5075,14 +5075,17 @@
             "Nu (??? (No. 93))": 1,
             "Nu (No. 93)": 19,
             "Garden Member": 2,
-            "Chi (Chi & Omega (Chi))": 1,
-            "Omega (Chi & Omega (Omega))": 1,
+            "Chi (Chi & Omega (Chi))": 5,
+            "Omega (Chi & Omega (Omega))": 5,
             "Lambda (None (Lambda))": 1,
             "Iota (None (Iota))": 16,
             "Iota": 92,
             "Gamma (Gamma & Iota (Gamma))": 3,
             "Iota (Gamma & Iota (Iota))": 3,
-            "Bandit?": 10
+            "Bandit?": 10,
+            "Epsilon (Epsilon & Chi & Omega (Epsilon))": 1,
+            "Chi (Epsilon & Chi & Omega (Chi))": 1,
+            "Omega (Epsilon & Chi & Omega (Omega))": 1
         },
         "parts": {
             "p1": {
@@ -7777,19 +7780,19 @@
                 }
             },
             "p3": {
-                "chapter_count": 4,
-                "line_count": 1213,
-                "word_count": 14087,
-                "char_count": 80271,
+                "chapter_count": 5,
+                "line_count": 1582,
+                "word_count": 17553,
+                "char_count": 99305,
                 "characters": {
                     "Olivier (??? (Olivier))": 10,
-                    "Alpha": 217,
-                    "Beta": 117,
-                    "Gamma": 141,
-                    "Epsilon": 22,
-                    "Zeta": 54,
-                    "Delta": 39,
-                    "Eta": 79,
+                    "Alpha": 232,
+                    "Beta": 131,
+                    "Gamma": 151,
+                    "Epsilon": 146,
+                    "Zeta": 67,
+                    "Delta": 44,
+                    "Eta": 116,
                     "Alpha (Seven Shadows (Alpha))": 2,
                     "Beta (Seven Shadows (Beta))": 2,
                     "Gamma (Seven Shadows (Gamma))": 2,
@@ -7798,10 +7801,10 @@
                     "Zeta (Seven Shadows (Zeta))": 2,
                     "Eta (Seven Shadows (Eta))": 2,
                     "Lambda": 72,
-                    "Omega": 80,
-                    "Chi": 63,
+                    "Omega": 134,
+                    "Chi": 125,
                     "Nu (93)": 21,
-                    "Cid Kagenou (Cid)": 71,
+                    "Cid Kagenou (Cid)": 95,
                     "Beta (None (Beta))": 8,
                     "Fan Passerby": 9,
                     "Alpha (Alpha & Beta (Alpha))": 1,
@@ -7812,8 +7815,8 @@
                     "Nu (No. 93)": 19,
                     "Garden Member": 2,
                     "Delta (??? (Delta))": 1,
-                    "Chi (Chi & Omega (Chi))": 1,
-                    "Omega (Chi & Omega (Omega))": 1,
+                    "Chi (Chi & Omega (Chi))": 5,
+                    "Omega (Chi & Omega (Omega))": 5,
                     "Alpha (??? (Alpha))": 1,
                     "Lambda (None (Lambda))": 1,
                     "Iota (None (Iota))": 16,
@@ -7822,7 +7825,10 @@
                     "Iota (Gamma & Iota (Iota))": 3,
                     "None": 2,
                     "Bandit?": 10,
-                    "Cult Member": 28
+                    "Cult Member": 28,
+                    "Epsilon (Epsilon & Chi & Omega (Epsilon))": 1,
+                    "Chi (Epsilon & Chi & Omega (Chi))": 1,
+                    "Omega (Epsilon & Chi & Omega (Omega))": 1
                 },
                 "chapters": {
                     "c3-1": {
@@ -8184,6 +8190,99 @@
                                     "Iota (None (Iota))": 9,
                                     "Lambda": 9,
                                     "Cid Kagenou (Cid)": 15
+                                }
+                            }
+                        }
+                    },
+                    "c3-5": {
+                        "episode_count": 5,
+                        "line_count": 369,
+                        "word_count": 3466,
+                        "char_count": 19034,
+                        "characters": {
+                            "Epsilon": 124,
+                            "Chi": 62,
+                            "Omega": 54,
+                            "Eta": 37,
+                            "Epsilon (Epsilon & Chi & Omega (Epsilon))": 1,
+                            "Chi (Epsilon & Chi & Omega (Chi))": 1,
+                            "Omega (Epsilon & Chi & Omega (Omega))": 1,
+                            "Chi (Chi & Omega (Chi))": 4,
+                            "Omega (Chi & Omega (Omega))": 4,
+                            "Zeta": 13,
+                            "Delta": 5,
+                            "Gamma": 10,
+                            "Beta": 14,
+                            "Cid Kagenou (Cid)": 24,
+                            "Alpha": 15
+                        },
+                        "episodes": {
+                            "e1": {
+                                "line_count": 76,
+                                "word_count": 774,
+                                "char_count": 4484,
+                                "characters": {
+                                    "Epsilon": 28,
+                                    "Chi": 20,
+                                    "Omega": 21,
+                                    "Eta": 6,
+                                    "Epsilon (Epsilon & Chi & Omega (Epsilon))": 1,
+                                    "Chi (Epsilon & Chi & Omega (Chi))": 1,
+                                    "Omega (Epsilon & Chi & Omega (Omega))": 1
+                                }
+                            },
+                            "e2": {
+                                "line_count": 58,
+                                "word_count": 453,
+                                "char_count": 2616,
+                                "characters": {
+                                    "Eta": 22,
+                                    "Chi (Chi & Omega (Chi))": 2,
+                                    "Omega (Chi & Omega (Omega))": 2,
+                                    "Epsilon": 19,
+                                    "Omega": 6,
+                                    "Chi": 9
+                                }
+                            },
+                            "e3": {
+                                "line_count": 64,
+                                "word_count": 710,
+                                "char_count": 3835,
+                                "characters": {
+                                    "Chi": 22,
+                                    "Omega": 17,
+                                    "Epsilon": 24,
+                                    "Chi (Chi & Omega (Chi))": 1,
+                                    "Omega (Chi & Omega (Omega))": 1
+                                }
+                            },
+                            "e4": {
+                                "line_count": 79,
+                                "word_count": 746,
+                                "char_count": 4005,
+                                "characters": {
+                                    "Zeta": 13,
+                                    "Epsilon": 24,
+                                    "Omega": 8,
+                                    "Chi": 9,
+                                    "Delta": 5,
+                                    "Eta": 9,
+                                    "Gamma": 10,
+                                    "Chi (Chi & Omega (Chi))": 1,
+                                    "Omega (Chi & Omega (Omega))": 1
+                                }
+                            },
+                            "e5": {
+                                "line_count": 86,
+                                "word_count": 783,
+                                "char_count": 4094,
+                                "characters": {
+                                    "Beta": 14,
+                                    "Epsilon": 29,
+                                    "Omega": 2,
+                                    "Chi": 2,
+                                    "Cid Kagenou (Cid)": 24,
+                                    "Alpha": 15
                                 }
                             }
                         }
@@ -10747,9 +10846,9 @@
     },
     "chars": {
         "Alpha": {
-            "total": 3437,
+            "total": 3452,
             "names": {
-                "Alpha": 3395,
+                "Alpha": 3410,
                 "Alpha & Gamma (Alpha)": 1,
                 "Alpha & Eta (Alpha)": 1,
                 "Seven Shadows (Alpha)": 8,
@@ -10762,9 +10861,9 @@
             }
         },
         "Beta": {
-            "total": 2324,
+            "total": 2338,
             "names": {
-                "Beta": 2086,
+                "Beta": 2100,
                 "Seven Shadows (Beta)": 14,
                 "Beta & Epsilon (Beta)": 28,
                 "Beta & Gamma (Beta)": 5,
@@ -10784,9 +10883,9 @@
             }
         },
         "Gamma": {
-            "total": 2025,
+            "total": 2035,
             "names": {
-                "Gamma": 1894,
+                "Gamma": 1904,
                 "Seven Shadows (Gamma)": 14,
                 "Alpha & Gamma (Gamma)": 1,
                 "Beta & Gamma (Gamma)": 5,
@@ -10801,9 +10900,9 @@
             }
         },
         "Delta": {
-            "total": 1469,
+            "total": 1474,
             "names": {
-                "Delta": 1437,
+                "Delta": 1442,
                 "Seven Shadows (Delta)": 13,
                 "Delta & Zeta (Delta)": 4,
                 "Deltan": 1,
@@ -10813,9 +10912,9 @@
             }
         },
         "Epsilon": {
-            "total": 1936,
+            "total": 2061,
             "names": {
-                "Epsilon": 1835,
+                "Epsilon": 1959,
                 "Seven Shadows (Epsilon)": 14,
                 "Beta & Epsilon (Epsilon)": 28,
                 "Beta & Gamma & Epsilon (Epsilon)": 1,
@@ -10824,13 +10923,14 @@
                 "Everyone (Epsilon)": 6,
                 "Gamma& Epsilon & Eta (Epsilon)": 1,
                 "Gamma & Epsilon (Epsilon)": 1,
+                "Epsilon & Chi & Omega (Epsilon)": 1,
                 "??? (Epsilon)": 2
             }
         },
         "Zeta": {
-            "total": 1955,
+            "total": 1968,
             "names": {
-                "Zeta": 1917,
+                "Zeta": 1930,
                 "Seven Shadows (Zeta)": 14,
                 "Delta & Zeta (Zeta)": 4,
                 "Alpha & Zeta (Zeta)": 3,
@@ -10844,9 +10944,9 @@
             }
         },
         "Eta": {
-            "total": 1320,
+            "total": 1357,
             "names": {
-                "Eta": 1296,
+                "Eta": 1333,
                 "Seven Shadows (Eta)": 10,
                 "Alpha & Eta (Eta)": 1,
                 "Everyone (Eta)": 6,
@@ -10873,29 +10973,31 @@
             }
         },
         "Chi": {
-            "total": 657,
+            "total": 724,
             "names": {
-                "Chi": 161,
-                "Chi & Omega (Chi)": 6,
+                "Chi": 223,
+                "Chi & Omega (Chi)": 10,
                 "Characterised Shadow": 8,
                 "Characterised Eta": 3,
                 "Characterised Cult Member": 3,
                 "??? (Karen)": 13,
                 "Karen": 180,
                 "No. 111": 278,
-                "No. 111 & No. 122 (No. 111)": 5
+                "No. 111 & No. 122 (No. 111)": 5,
+                "Epsilon & Chi & Omega (Chi)": 1
             }
         },
         "Omega": {
-            "total": 385,
+            "total": 444,
             "names": {
-                "Omega": 166,
-                "Chi & Omega (Omega)": 6,
+                "Omega": 220,
+                "Chi & Omega (Omega)": 10,
                 "Characterised Zeta": 2,
                 "Characterised Gamma": 2,
                 "Possessed (Omega)": 4,
                 "No. 122": 200,
-                "No. 111 & No. 122 (No. 122)": 5
+                "No. 111 & No. 122 (No. 122)": 5,
+                "Epsilon & Chi & Omega (Omega)": 1
             }
         },
         "Juggernaut": {
@@ -10911,7 +11013,7 @@
             }
         },
         "Cid Kagenou": {
-            "total": 5096,
+            "total": 5120,
             "names": {
                 "Shadow": 729,
                 "Minoru Kageno": 74,
@@ -10921,7 +11023,7 @@
                 "Stylish Bandit Slayer": 13,
                 "John Smith": 189,
                 "John Smith & Yukime (John Smith)": 1,
-                "Cid": 1839,
+                "Cid": 1863,
                 "???? (Shadow)": 3,
                 "None (Cid Kagenou)": 12,
                 "??? (Stylish Bandit Slayer)": 1,

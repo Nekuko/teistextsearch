@@ -1014,6 +1014,29 @@
                         },
                         "checked": false
                     },
+                    "3-5 | Snaps of the Seven": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Going Nowhere"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "The Rolapoid Mk. 1"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Pictures of Us?!"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Check it!"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Memories in Photos"
+                        },
+                        "checked": false
+                    },
                     "checked": false
                 },
                 "checked": false

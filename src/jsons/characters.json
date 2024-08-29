@@ -751,7 +751,8 @@
                 "Gamma & Epsilon (Epsilon)",
                 "Zeta & Epsilon (Epsilon)",
                 "Beta & Gamma & Epsilon (Epsilon)",
-                "Gamma & Epsilon & Eta (Epsilon)"
+                "Gamma & Epsilon & Eta (Epsilon)",
+                "Epsilon & Chi & Omega (Epsilon)"
             ],
             "name_mirrors": [
                 {
@@ -864,7 +865,8 @@
                 "Characterised Eta",
                 "Characterised Shadow",
                 "Chi & Omega (Chi)",
-                "No. 111 & No. 122 (No. 111)"
+                "No. 111 & No. 122 (No. 111)",
+                "Epsilon & Chi & Omega (Chi)"
             ],
             "name_mirrors": [],
             "group": "Shadow Garden",
@@ -880,7 +882,8 @@
                 "Characterised Zeta",
                 "Possessed (Omega)",
                 "Chi & Omega (Omega)",
-                "No. 111 & No. 122 (No. 122)"
+                "No. 111 & No. 122 (No. 122)",
+                "Epsilon & Chi & Omega (Omega)"
             ],
             "name_mirrors": [],
             "group": "Shadow Garden",
