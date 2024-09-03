@@ -16,6 +16,8 @@ import { faTrashCan, faLightbulb, faC, faRotateRight, faN, faTimes } from '@fort
 import { VscCaseSensitive } from "react-icons/vsc";
 import { ReactComponent as WholeWord } from '../../svgs/codicon--whole-word.svg';
 import { ReactComponent as Regex } from '../../svgs/codicon--regex.svg';
+import { analytics } from '../../firebase';
+import { logEvent } from 'firebase/analytics'
 
 function createCharacterDropdowns(data) {
     let dropdowns = {};
