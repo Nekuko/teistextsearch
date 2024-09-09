@@ -212,7 +212,10 @@
                     "Soldier",
                     "Subordinate",
                     "Vampire",
-                    "Veteran Paladin"
+                    "Veteran Paladin",
+                    "Villager A",
+                    "Villager B",
+                    "Villager C"
                 ]
             },
             "Bandits": {
@@ -445,6 +448,7 @@
                 "??? (Alexia Midgar)",
                 "Alexia & Claire (Alexia)",
                 "Alexia Midgar & Natsume Kafka (Alexia Midgar)",
+                "Rose & Alexia (Alexia)",
                 "Sherry & Alexia (Alexia)"
             ],
             "name_mirrors": [
@@ -650,6 +654,7 @@
                 "Seven Shadows (Alpha)",
                 "Alpha & Beta (Alpha)",
                 "Alpha & Eta (Alpha)",
+                "Alpha & Freya (Alpha)",
                 "Alpha & Gamma (Alpha)",
                 "Alpha & Nu (Alpha)",
                 "Alpha & Zeta (Alpha)",
@@ -670,11 +675,20 @@
                 "Everyone (Beta)",
                 "None (Beta)",
                 "Seven Shadows (Beta)",
+                "Fictional Alpha",
+                "Fictional Delta",
+                "Fictional Epsilon",
+                "Fictional Eta",
+                "Fictional Freya",
+                "Fictional Gamma",
+                "Fictional Lili",
+                "Fictional Olivier",
                 "Fictional Shadow",
                 "Fictional Zenon",
                 "Alexia Midgar & Natsume Kafka (Natsume Kafka)",
                 "Alpha & Beta (Beta)",
                 "Beta & Epsilon (Beta)",
+                "Beta & Eta (Beta)",
                 "Beta & Gamma (Beta)",
                 "Beta & Zeta (Beta)",
                 "Beta & Delta & Zeta (Beta)",
@@ -688,6 +702,10 @@
                 {
                     "base": "??? (Natsume Kafka)",
                     "alt": "??? (Natsume)"
+                },
+                {
+                    "base": "Beta & Zeta (Beta)",
+                    "alt": "Zeta & Beta (Beta)"
                 }
             ],
             "group": "Shadow Garden",
@@ -781,8 +799,8 @@
             ],
             "name_mirrors": [
                 {
-                    "base": "Gamma & Epsilon & Eta (Epsilon)",
-                    "alt": "Gamma& Epsilon & Eta (Epsilon)"
+                    "base": "Beta & Zeta (Zeta)",
+                    "alt": "Zeta & Beta (Zeta)"
                 }
             ],
             "group": "Shadow Garden",
@@ -797,6 +815,7 @@
                 "Everyone (Eta)",
                 "Seven Shadows (Eta)",
                 "Alpha & Eta (Eta)",
+                "Beta & Eta (Eta)",
                 "Zeta & Eta (Eta)",
                 "Gamma & Epsilon & Eta (Eta)"
             ],
@@ -1072,7 +1091,8 @@
         {
             "name": "Freya",
             "name_variants": [
-                "??? (Freya)"
+                "??? (Freya)",
+                "Alpha & Freya (Freya)"
             ],
             "name_mirrors": [],
             "group": "Others",
@@ -1101,6 +1121,15 @@
             "url": "characterIcons/DuetIcon.webp"
         },
         {
+            "name": "Sarasa",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Apocrypha",
+            "order": 5,
+            "url": "characterIcons/SarasaIcon.webp"
+        },
+        {
             "name": "Pente",
             "name_variants": [
                 "Epsilon Look-alike"
@@ -1108,8 +1137,26 @@
             "name_mirrors": [],
             "group": "Others",
             "subgroup": "Apocrypha",
-            "order": 5,
+            "order": 6,
             "url": "characterIcons/PenteIcon.webp"
+        },
+        {
+            "name": "Nonna",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Apocrypha",
+            "order": 7,
+            "url": "characterIcons/NonnaIcon.webp"
+        },
+        {
+            "name": "Rouge",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Apocrypha",
+            "order": 8,
+            "url": "characterIcons/RougeIcon.webp"
         },
         {
             "name": "Mordred",
@@ -1434,7 +1481,8 @@
         {
             "name": "Rose Oriana",
             "name_variants": [
-                "No. 666"
+                "No. 666",
+                "Rose & Alexia (Rose)"
             ],
             "name_mirrors": [
                 {

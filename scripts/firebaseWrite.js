@@ -1692,25 +1692,25 @@ let data = {
     },
     "apo": {
         "part_count": 1,
-        "line_count": 793,
-        "word_count": 6645,
-        "char_count": 38195,
+        "line_count": 1978,
+        "word_count": 16573,
+        "char_count": 93649,
         "characters": {
             "Bandit Boss": 6,
             "Bandit A": 1,
             "Bandits": 2,
             "Cid Kagenou (Cid)": 35,
             "Bandit B": 2,
-            "Alpha": 235,
+            "Alpha": 496,
             "Nanigashi (??? (Nanigashi))": 2,
             "Nanigashi": 5,
             "Mysterious Voice": 2,
-            "Delta": 82,
-            "Eta": 29,
-            "Epsilon": 47,
-            "Beta": 44,
-            "Gamma": 41,
-            "Zeta": 29,
+            "Delta": 100,
+            "Eta": 44,
+            "Epsilon": 93,
+            "Beta": 174,
+            "Gamma": 84,
+            "Zeta": 89,
             "Beta (Everyone (Beta))": 1,
             "Gamma (Everyone (Gamma))": 1,
             "Delta (Everyone (Delta))": 1,
@@ -1721,48 +1721,72 @@ let data = {
             "Pente (Epsilon Look-alike)": 2,
             "Aurora (Massive Mound of Magic)": 14,
             "Olivier (Alpha Look-alike)": 7,
-            "Lili": 17,
+            "Lili": 67,
             "Freya (??? (Freya))": 1,
-            "Freya": 21,
-            "Yukime": 7,
-            "Claire Kagenou (Claire)": 11,
-            "Victoria (No. 559)": 7,
-            "Rose Oriana (Rose)": 2,
-            "Alexia Midgar (Alexia)": 24,
+            "Freya": 133,
+            "Yukime": 10,
+            "Claire Kagenou (Claire)": 62,
+            "Victoria (No. 559)": 40,
+            "Rose Oriana (Rose)": 8,
+            "Alexia Midgar (Alexia)": 116,
             "None": 13,
-            "Duet": 21,
-            "Olivier": 45,
+            "Duet": 24,
+            "Olivier": 138,
             "Alpha (None (Alpha))": 4,
             "Beta (Beta & Epsilon (Beta))": 1,
             "Epsilon (Beta & Epsilon (Epsilon))": 1,
-            "Pente": 20,
-            "Mysterious Man A": 1,
-            "Mysterious Man B": 1,
-            "Mysterious Man C": 1,
-            "Mysterious Man D": 1
+            "Pente": 22,
+            "Mysterious Man A": 2,
+            "Mysterious Man B": 2,
+            "Mysterious Man C": 2,
+            "Mysterious Man D": 3,
+            "Beta (Beta & Eta (Beta))": 1,
+            "Eta (Beta & Eta (Eta))": 1,
+            "Zeta (Zeta & Beta (Zeta))": 1,
+            "Beta (Zeta & Beta (Beta))": 1,
+            "Rose (Rose & Alexia (Rose))": 1,
+            "Alexia (Rose & Alexia (Alexia))": 1,
+            "Beta (Fictional Gamma)": 11,
+            "Beta (Fictional Delta)": 2,
+            "Beta (Fictional Olivier)": 4,
+            "Beta (Fictional Lili)": 1,
+            "Beta (Fictional Freya)": 1,
+            "Beta (Fictional Shadow)": 17,
+            "Beta (Fictional Alpha)": 1,
+            "Beta (Fictional Epsilon)": 1,
+            "Beta (Fictional Eta)": 1,
+            "Sarasa": 24,
+            "Alpha (Alpha & Freya (Alpha))": 1,
+            "Freya (Alpha & Freya (Freya))": 1,
+            "Rouge": 21,
+            "Nonna": 46,
+            "Villager A": 16,
+            "Villager B": 2,
+            "Villager C": 2,
+            "Vampire": 4
         },
         "parts": {
             "p1": {
-                "chapter_count": 1,
-                "line_count": 793,
-                "word_count": 6645,
-                "char_count": 38195,
+                "chapter_count": 2,
+                "line_count": 1978,
+                "word_count": 16573,
+                "char_count": 93649,
                 "characters": {
                     "Bandit Boss": 6,
                     "Bandit A": 1,
                     "Bandits": 2,
                     "Cid Kagenou (Cid)": 35,
                     "Bandit B": 2,
-                    "Alpha": 235,
+                    "Alpha": 496,
                     "Nanigashi (??? (Nanigashi))": 2,
                     "Nanigashi": 5,
                     "Mysterious Voice": 2,
-                    "Delta": 82,
-                    "Eta": 29,
-                    "Epsilon": 47,
-                    "Beta": 44,
-                    "Gamma": 41,
-                    "Zeta": 29,
+                    "Delta": 100,
+                    "Eta": 44,
+                    "Epsilon": 93,
+                    "Beta": 174,
+                    "Gamma": 84,
+                    "Zeta": 89,
                     "Beta (Everyone (Beta))": 1,
                     "Gamma (Everyone (Gamma))": 1,
                     "Delta (Everyone (Delta))": 1,
@@ -1773,25 +1797,49 @@ let data = {
                     "Pente (Epsilon Look-alike)": 2,
                     "Aurora (Massive Mound of Magic)": 14,
                     "Olivier (Alpha Look-alike)": 7,
-                    "Lili": 17,
+                    "Lili": 67,
                     "Freya (??? (Freya))": 1,
-                    "Freya": 21,
-                    "Yukime": 7,
-                    "Claire Kagenou (Claire)": 11,
-                    "Victoria (No. 559)": 7,
-                    "Rose Oriana (Rose)": 2,
-                    "Alexia Midgar (Alexia)": 24,
+                    "Freya": 133,
+                    "Yukime": 10,
+                    "Claire Kagenou (Claire)": 62,
+                    "Victoria (No. 559)": 40,
+                    "Rose Oriana (Rose)": 8,
+                    "Alexia Midgar (Alexia)": 116,
                     "None": 13,
-                    "Duet": 21,
-                    "Olivier": 45,
+                    "Duet": 24,
+                    "Olivier": 138,
                     "Alpha (None (Alpha))": 4,
                     "Beta (Beta & Epsilon (Beta))": 1,
                     "Epsilon (Beta & Epsilon (Epsilon))": 1,
-                    "Pente": 20,
-                    "Mysterious Man A": 1,
-                    "Mysterious Man B": 1,
-                    "Mysterious Man C": 1,
-                    "Mysterious Man D": 1
+                    "Pente": 22,
+                    "Mysterious Man A": 2,
+                    "Mysterious Man B": 2,
+                    "Mysterious Man C": 2,
+                    "Mysterious Man D": 3,
+                    "Beta (Beta & Eta (Beta))": 1,
+                    "Eta (Beta & Eta (Eta))": 1,
+                    "Zeta (Zeta & Beta (Zeta))": 1,
+                    "Beta (Zeta & Beta (Beta))": 1,
+                    "Rose (Rose & Alexia (Rose))": 1,
+                    "Alexia (Rose & Alexia (Alexia))": 1,
+                    "Beta (Fictional Gamma)": 11,
+                    "Beta (Fictional Delta)": 2,
+                    "Beta (Fictional Olivier)": 4,
+                    "Beta (Fictional Lili)": 1,
+                    "Beta (Fictional Freya)": 1,
+                    "Beta (Fictional Shadow)": 17,
+                    "Beta (Fictional Alpha)": 1,
+                    "Beta (Fictional Epsilon)": 1,
+                    "Beta (Fictional Eta)": 1,
+                    "Sarasa": 24,
+                    "Alpha (Alpha & Freya (Alpha))": 1,
+                    "Freya (Alpha & Freya (Freya))": 1,
+                    "Rouge": 21,
+                    "Nonna": 46,
+                    "Villager A": 16,
+                    "Villager B": 2,
+                    "Villager C": 2,
+                    "Vampire": 4
                 },
                 "chapters": {
                     "c1-1": {
@@ -2099,6 +2147,349 @@ let data = {
                                     "Delta": 2,
                                     "Alpha": 1,
                                     "None": 2
+                                }
+                            }
+                        }
+                    },
+                    "c1-2": {
+                        "episode_count": 16,
+                        "line_count": 1185,
+                        "word_count": 9928,
+                        "char_count": 55454,
+                        "characters": {
+                            "Gamma": 43,
+                            "Epsilon": 46,
+                            "Delta": 18,
+                            "Alpha": 261,
+                            "Claire Kagenou (Claire)": 51,
+                            "Rose Oriana (Rose)": 6,
+                            "Zeta": 60,
+                            "Beta (Beta & Eta (Beta))": 1,
+                            "Eta (Beta & Eta (Eta))": 1,
+                            "Beta": 130,
+                            "Eta": 15,
+                            "Duet": 3,
+                            "Pente": 2,
+                            "Olivier": 93,
+                            "Alexia Midgar (Alexia)": 92,
+                            "Freya": 112,
+                            "Lili": 50,
+                            "Zeta (Zeta & Beta (Zeta))": 1,
+                            "Beta (Zeta & Beta (Beta))": 1,
+                            "Rose (Rose & Alexia (Rose))": 1,
+                            "Alexia (Rose & Alexia (Alexia))": 1,
+                            "Beta (Fictional Gamma)": 11,
+                            "Beta (Fictional Delta)": 2,
+                            "Beta (Fictional Olivier)": 4,
+                            "Beta (Fictional Lili)": 1,
+                            "Beta (Fictional Freya)": 1,
+                            "Beta (Fictional Shadow)": 17,
+                            "Beta (Fictional Alpha)": 1,
+                            "Beta (Fictional Epsilon)": 1,
+                            "Beta (Fictional Eta)": 1,
+                            "Yukime": 3,
+                            "Sarasa": 24,
+                            "Alpha (Alpha & Freya (Alpha))": 1,
+                            "Freya (Alpha & Freya (Freya))": 1,
+                            "Rouge": 21,
+                            "Victoria (No. 559)": 33,
+                            "Nonna": 46,
+                            "Mysterious Man A": 1,
+                            "Mysterious Man B": 1,
+                            "Mysterious Man C": 1,
+                            "Mysterious Man D": 2,
+                            "Villager A": 16,
+                            "Villager B": 2,
+                            "Villager C": 2,
+                            "Vampire": 4
+                        },
+                        "episodes": {
+                            "eA1": {
+                                "line_count": 175,
+                                "word_count": 1276,
+                                "char_count": 7131,
+                                "characters": {
+                                    "Gamma": 42,
+                                    "Epsilon": 14,
+                                    "Delta": 15,
+                                    "Alpha": 43,
+                                    "Claire Kagenou (Claire)": 8,
+                                    "Rose Oriana (Rose)": 5,
+                                    "Zeta": 9,
+                                    "Beta (Beta & Eta (Beta))": 1,
+                                    "Eta (Beta & Eta (Eta))": 1,
+                                    "Beta": 3,
+                                    "Eta": 4,
+                                    "Duet": 3,
+                                    "Pente": 2,
+                                    "Olivier": 15,
+                                    "Alexia Midgar (Alexia)": 4,
+                                    "Freya": 1,
+                                    "Lili": 4,
+                                    "Zeta (Zeta & Beta (Zeta))": 1,
+                                    "Beta (Zeta & Beta (Beta))": 1,
+                                    "Rose (Rose & Alexia (Rose))": 1,
+                                    "Alexia (Rose & Alexia (Alexia))": 1
+                                }
+                            },
+                            "eA2": {
+                                "line_count": 116,
+                                "word_count": 1299,
+                                "char_count": 7310,
+                                "characters": {
+                                    "Beta (Fictional Gamma)": 11,
+                                    "Beta (Fictional Delta)": 2,
+                                    "Beta": 21,
+                                    "Beta (Fictional Olivier)": 4,
+                                    "Beta (Fictional Lili)": 1,
+                                    "Beta (Fictional Freya)": 1,
+                                    "Beta (Fictional Shadow)": 7,
+                                    "Beta (Fictional Alpha)": 1,
+                                    "Beta (Fictional Epsilon)": 1,
+                                    "Beta (Fictional Eta)": 1,
+                                    "Alpha": 22,
+                                    "Claire Kagenou (Claire)": 3,
+                                    "Zeta": 6,
+                                    "Epsilon": 3,
+                                    "Yukime": 1,
+                                    "Freya": 14,
+                                    "Lili": 5,
+                                    "Sarasa": 3,
+                                    "Alpha (Alpha & Freya (Alpha))": 1,
+                                    "Freya (Alpha & Freya (Freya))": 1,
+                                    "Olivier": 4,
+                                    "Rouge": 2,
+                                    "Delta": 1,
+                                    "Alexia Midgar (Alexia)": 1
+                                }
+                            },
+                            "eA3": {
+                                "line_count": 95,
+                                "word_count": 817,
+                                "char_count": 4455,
+                                "characters": {
+                                    "Olivier": 20,
+                                    "Freya": 19,
+                                    "Alexia Midgar (Alexia)": 17,
+                                    "Claire Kagenou (Claire)": 8,
+                                    "Rose Oriana (Rose)": 1,
+                                    "Victoria (No. 559)": 1,
+                                    "Yukime": 1,
+                                    "Alpha": 21,
+                                    "Epsilon": 1,
+                                    "Delta": 2,
+                                    "Rouge": 1,
+                                    "Nonna": 1,
+                                    "Zeta": 2
+                                }
+                            },
+                            "eA4": {
+                                "line_count": 70,
+                                "word_count": 693,
+                                "char_count": 4003,
+                                "characters": {
+                                    "Alpha": 26,
+                                    "Eta": 2,
+                                    "Epsilon": 2,
+                                    "Rouge": 11,
+                                    "Victoria (No. 559)": 1,
+                                    "Alexia Midgar (Alexia)": 3,
+                                    "Nonna": 25
+                                }
+                            },
+                            "eA5": {
+                                "line_count": 74,
+                                "word_count": 501,
+                                "char_count": 2910,
+                                "characters": {
+                                    "Alexia Midgar (Alexia)": 21,
+                                    "Alpha": 24,
+                                    "Rouge": 7,
+                                    "Nonna": 9,
+                                    "Eta": 2,
+                                    "Victoria (No. 559)": 5,
+                                    "Epsilon": 6
+                                }
+                            },
+                            "eA6-1": {
+                                "line_count": 30,
+                                "word_count": 214,
+                                "char_count": 1169,
+                                "characters": {
+                                    "Alexia Midgar (Alexia)": 1,
+                                    "Alpha": 14,
+                                    "Nonna": 2,
+                                    "Victoria (No. 559)": 1,
+                                    "Eta": 1,
+                                    "Epsilon": 2,
+                                    "Beta": 8,
+                                    "Olivier": 1
+                                }
+                            },
+                            "eA6-2": {
+                                "line_count": 19,
+                                "word_count": 194,
+                                "char_count": 1105,
+                                "characters": {
+                                    "Alexia Midgar (Alexia)": 3,
+                                    "Alpha": 11,
+                                    "Eta": 1,
+                                    "Victoria (No. 559)": 4,
+                                    "Epsilon": 1
+                                }
+                            },
+                            "eA7-1": {
+                                "line_count": 38,
+                                "word_count": 285,
+                                "char_count": 1478,
+                                "characters": {
+                                    "Alpha": 10,
+                                    "Victoria (No. 559)": 11,
+                                    "Alexia Midgar (Alexia)": 10,
+                                    "Epsilon": 3,
+                                    "Nonna": 1,
+                                    "Beta": 2,
+                                    "Eta": 1
+                                }
+                            },
+                            "eA7-2": {
+                                "line_count": 82,
+                                "word_count": 535,
+                                "char_count": 2954,
+                                "characters": {
+                                    "Victoria (No. 559)": 3,
+                                    "Alpha": 27,
+                                    "Beta": 19,
+                                    "Epsilon": 4,
+                                    "Freya": 3,
+                                    "Sarasa": 1,
+                                    "Olivier": 13,
+                                    "Lili": 2,
+                                    "Alexia Midgar (Alexia)": 10
+                                }
+                            },
+                            "eA6-3": {
+                                "line_count": 48,
+                                "word_count": 424,
+                                "char_count": 2342,
+                                "characters": {
+                                    "Alexia Midgar (Alexia)": 9,
+                                    "Alpha": 27,
+                                    "Nonna": 3,
+                                    "Eta": 1,
+                                    "Victoria (No. 559)": 5,
+                                    "Epsilon": 3
+                                }
+                            },
+                            "eA7-3": {
+                                "line_count": 53,
+                                "word_count": 559,
+                                "char_count": 2942,
+                                "characters": {
+                                    "Alexia Midgar (Alexia)": 5,
+                                    "Beta": 7,
+                                    "Olivier": 7,
+                                    "Zeta": 4,
+                                    "Alpha": 4,
+                                    "Freya": 10,
+                                    "Claire Kagenou (Claire)": 3,
+                                    "Epsilon": 3,
+                                    "Sarasa": 1,
+                                    "Eta": 1,
+                                    "Lili": 8
+                                }
+                            },
+                            "eA8": {
+                                "line_count": 47,
+                                "word_count": 344,
+                                "char_count": 1961,
+                                "characters": {
+                                    "Zeta": 3,
+                                    "Alpha": 15,
+                                    "Epsilon": 2,
+                                    "Alexia Midgar (Alexia)": 4,
+                                    "Claire Kagenou (Claire)": 1,
+                                    "Victoria (No. 559)": 1,
+                                    "Eta": 1,
+                                    "Beta": 12,
+                                    "Olivier": 3,
+                                    "Sarasa": 2,
+                                    "Lili": 1,
+                                    "Freya": 2
+                                }
+                            },
+                            "eA9": {
+                                "line_count": 52,
+                                "word_count": 413,
+                                "char_count": 2341,
+                                "characters": {
+                                    "Eta": 1,
+                                    "Alpha": 16,
+                                    "Epsilon": 2,
+                                    "Zeta": 4,
+                                    "Lili": 5,
+                                    "Freya": 7,
+                                    "Nonna": 5,
+                                    "Olivier": 3,
+                                    "Sarasa": 1,
+                                    "Yukime": 1,
+                                    "Victoria (No. 559)": 1,
+                                    "Gamma": 1,
+                                    "Mysterious Man A": 1,
+                                    "Mysterious Man B": 1,
+                                    "Mysterious Man C": 1,
+                                    "Mysterious Man D": 2
+                                }
+                            },
+                            "eB1": {
+                                "line_count": 163,
+                                "word_count": 1469,
+                                "char_count": 8305,
+                                "characters": {
+                                    "Beta": 32,
+                                    "Beta (Fictional Shadow)": 4,
+                                    "Sarasa": 11,
+                                    "Freya": 43,
+                                    "Zeta": 13,
+                                    "Lili": 15,
+                                    "Olivier": 9,
+                                    "Claire Kagenou (Claire)": 16,
+                                    "Villager A": 16,
+                                    "Villager B": 2,
+                                    "Villager C": 2
+                                }
+                            },
+                            "eB2": {
+                                "line_count": 64,
+                                "word_count": 514,
+                                "char_count": 2849,
+                                "characters": {
+                                    "Beta (Fictional Shadow)": 4,
+                                    "Beta": 13,
+                                    "Zeta": 8,
+                                    "Freya": 10,
+                                    "Lili": 7,
+                                    "Olivier": 8,
+                                    "Claire Kagenou (Claire)": 8,
+                                    "Sarasa": 2,
+                                    "Vampire": 4
+                                }
+                            },
+                            "eB3": {
+                                "line_count": 54,
+                                "word_count": 391,
+                                "char_count": 2199,
+                                "characters": {
+                                    "Freya": 3,
+                                    "Zeta": 11,
+                                    "Olivier": 10,
+                                    "Beta": 13,
+                                    "Beta (Fictional Shadow)": 2,
+                                    "Claire Kagenou (Claire)": 4,
+                                    "Lili": 3,
+                                    "Sarasa": 3,
+                                    "Alexia Midgar (Alexia)": 4,
+                                    "Alpha": 1
                                 }
                             }
                         }
@@ -10857,9 +11248,9 @@ let data = {
     },
     "chars": {
         "Alpha": {
-            "total": 3452,
+            "total": 3714,
             "names": {
-                "Alpha": 3410,
+                "Alpha": 3671,
                 "Alpha & Gamma (Alpha)": 1,
                 "Alpha & Eta (Alpha)": 1,
                 "Seven Shadows (Alpha)": 8,
@@ -10868,35 +11259,46 @@ let data = {
                 "??? (Alpha)": 5,
                 "None (Alpha)": 16,
                 "Everyone (Alpha)": 5,
-                "Alpha & Beta (Alpha)": 2
+                "Alpha & Beta (Alpha)": 2,
+                "Alpha & Freya (Alpha)": 1
             }
         },
         "Beta": {
-            "total": 2338,
+            "total": 2509,
             "names": {
-                "Beta": 2100,
+                "Beta": 2230,
                 "Seven Shadows (Beta)": 14,
                 "Beta & Epsilon (Beta)": 28,
                 "Beta & Gamma (Beta)": 5,
                 "Beta & Gamma & Epsilon (Beta)": 1,
                 "Beta & Zeta (Beta)": 3,
                 "Fictional Zenon": 9,
-                "Fictional Shadow": 6,
+                "Fictional Shadow": 23,
                 "Natsume Kafka": 134,
                 "Alexia Midgar & Natsume Kafka (Natsume Kafka)": 1,
                 "Everyone (Beta)": 6,
                 "Beta & Delta & Zeta (Beta)": 1,
                 "None (Beta)": 11,
                 "Alpha & Beta (Beta)": 2,
+                "Beta & Eta (Beta)": 1,
+                "Zeta & Beta (Beta)": 1,
+                "Fictional Gamma": 11,
+                "Fictional Delta": 2,
+                "Fictional Olivier": 4,
+                "Fictional Lili": 1,
+                "Fictional Freya": 1,
+                "Fictional Alpha": 1,
+                "Fictional Epsilon": 1,
+                "Fictional Eta": 1,
                 "??? (Beta)": 3,
                 "??? (Natsume)": 1,
                 "Natsume": 13
             }
         },
         "Gamma": {
-            "total": 2035,
+            "total": 2078,
             "names": {
-                "Gamma": 1904,
+                "Gamma": 1947,
                 "Seven Shadows (Gamma)": 14,
                 "Alpha & Gamma (Gamma)": 1,
                 "Beta & Gamma (Gamma)": 5,
@@ -10911,9 +11313,9 @@ let data = {
             }
         },
         "Delta": {
-            "total": 1474,
+            "total": 1492,
             "names": {
-                "Delta": 1442,
+                "Delta": 1460,
                 "Seven Shadows (Delta)": 13,
                 "Delta & Zeta (Delta)": 4,
                 "Deltan": 1,
@@ -10923,9 +11325,9 @@ let data = {
             }
         },
         "Epsilon": {
-            "total": 2061,
+            "total": 2107,
             "names": {
-                "Epsilon": 1959,
+                "Epsilon": 2005,
                 "Seven Shadows (Epsilon)": 14,
                 "Beta & Epsilon (Epsilon)": 28,
                 "Beta & Gamma & Epsilon (Epsilon)": 1,
@@ -10939,9 +11341,9 @@ let data = {
             }
         },
         "Zeta": {
-            "total": 1968,
+            "total": 2029,
             "names": {
-                "Zeta": 1930,
+                "Zeta": 1990,
                 "Seven Shadows (Zeta)": 14,
                 "Delta & Zeta (Zeta)": 4,
                 "Alpha & Zeta (Zeta)": 3,
@@ -10951,17 +11353,19 @@ let data = {
                 "??? (Zeta)": 3,
                 "Beta & Delta & Zeta (Zeta)": 1,
                 "Everyone (Zeta)": 5,
+                "Zeta & Beta (Zeta)": 1,
                 "Zeta & Eta (Zeta)": 1
             }
         },
         "Eta": {
-            "total": 1357,
+            "total": 1373,
             "names": {
-                "Eta": 1333,
+                "Eta": 1348,
                 "Seven Shadows (Eta)": 10,
                 "Alpha & Eta (Eta)": 1,
                 "Everyone (Eta)": 6,
                 "Gamma& Epsilon & Eta (Eta)": 1,
+                "Beta & Eta (Eta)": 1,
                 "Zeta & Eta (Eta)": 1,
                 "??? (Eta)": 5
             }
@@ -11120,10 +11524,10 @@ let data = {
             }
         },
         "Claire Kagenou": {
-            "total": 599,
+            "total": 650,
             "names": {
                 "Claire Kagenou": 242,
-                "Claire": 352,
+                "Claire": 403,
                 "??? (Claire Kagenou)": 4,
                 "Alexia & Claire (Claire)": 1
             }
@@ -11169,11 +11573,11 @@ let data = {
             }
         },
         "Alexia Midgar": {
-            "total": 1128,
+            "total": 1220,
             "names": {
                 "Alexia Midgar": 609,
                 "Alexia Midgar & Natsume Kafka (Alexia Midgar)": 1,
-                "Alexia": 513,
+                "Alexia": 605,
                 "????? (Alexia Midgar)": 1,
                 "Shelly and Alexia (Alexia)": 1,
                 "??? (Alexia Midgar)": 2,
@@ -11206,11 +11610,11 @@ let data = {
             }
         },
         "Rose Oriana": {
-            "total": 956,
+            "total": 962,
             "names": {
                 "Rose Oriana": 500,
                 "No. 666": 176,
-                "Rose": 143,
+                "Rose": 149,
                 "No.666": 137
             }
         },
@@ -11545,9 +11949,9 @@ let data = {
             }
         },
         "Yukime": {
-            "total": 230,
+            "total": 233,
             "names": {
-                "Yukime": 229,
+                "Yukime": 232,
                 "John Smith & Yukime (Yukime)": 1
             }
         },
@@ -11570,9 +11974,9 @@ let data = {
             }
         },
         "Vampire": {
-            "total": 8,
+            "total": 12,
             "names": {
-                "Vampire": 8
+                "Vampire": 12
             }
         },
         "Crimson": {
@@ -11632,9 +12036,9 @@ let data = {
             }
         },
         "Victoria": {
-            "total": 207,
+            "total": 240,
             "names": {
-                "No. 559": 84,
+                "No. 559": 117,
                 "??? (Victoria)": 10,
                 "Victoria": 113
             }
@@ -12160,10 +12564,10 @@ let data = {
             }
         },
         "Olivier": {
-            "total": 74,
+            "total": 167,
             "names": {
                 "??? (Olivier)": 12,
-                "Olivier": 55,
+                "Olivier": 148,
                 "Alpha Look-alike": 7
             }
         },
@@ -12213,54 +12617,103 @@ let data = {
             }
         },
         "Duet": {
-            "total": 24,
+            "total": 27,
             "names": {
                 "Beta Look-alike": 3,
-                "Duet": 21
+                "Duet": 24
             }
         },
         "Pente": {
-            "total": 22,
+            "total": 24,
             "names": {
                 "Epsilon Look-alike": 2,
-                "Pente": 20
+                "Pente": 22
             }
         },
         "Lili": {
-            "total": 17,
+            "total": 67,
             "names": {
-                "Lili": 17
+                "Lili": 67
             }
         },
         "Freya": {
-            "total": 22,
+            "total": 135,
             "names": {
                 "??? (Freya)": 1,
-                "Freya": 21
+                "Freya": 133,
+                "Alpha & Freya (Freya)": 1
             }
         },
         "Mysterious Man A": {
-            "total": 4,
+            "total": 5,
             "names": {
-                "Mysterious Man A": 4
+                "Mysterious Man A": 5
             }
         },
         "Mysterious Man B": {
-            "total": 7,
+            "total": 8,
             "names": {
-                "Mysterious Man B": 7
+                "Mysterious Man B": 8
             }
         },
         "Mysterious Man C": {
-            "total": 4,
+            "total": 5,
             "names": {
-                "Mysterious Man C": 4
+                "Mysterious Man C": 5
             }
         },
         "Mysterious Man D": {
-            "total": 3,
+            "total": 5,
             "names": {
-                "Mysterious Man D": 3
+                "Mysterious Man D": 5
+            }
+        },
+        "Rose": {
+            "total": 1,
+            "names": {
+                "Rose & Alexia (Rose)": 1
+            }
+        },
+        "Alexia": {
+            "total": 1,
+            "names": {
+                "Rose & Alexia (Alexia)": 1
+            }
+        },
+        "Sarasa": {
+            "total": 24,
+            "names": {
+                "Sarasa": 24
+            }
+        },
+        "Rouge": {
+            "total": 21,
+            "names": {
+                "Rouge": 21
+            }
+        },
+        "Nonna": {
+            "total": 46,
+            "names": {
+                "Nonna": 46
+            }
+        },
+        "Villager A": {
+            "total": 16,
+            "names": {
+                "Villager A": 16
+            }
+        },
+        "Villager B": {
+            "total": 2,
+            "names": {
+                "Villager B": 2
+            }
+        },
+        "Villager C": {
+            "total": 2,
+            "names": {
+                "Villager C": 2
             }
         },
         "Committee Member": {
@@ -12780,7 +13233,7 @@ let data = {
 
 //let setDoc = db.collection('data').doc('ssc_p3_c3-5').set(data['p3']['c3-5']);
 
-//let setDoc = db.collection('data').doc('apo_p1_c1-1').set(data['p1']['c1-1']);
+//let setDoc = db.collection('data').doc('apo_p1_c1-2').set(data['p1']['c1-2']);
 
 // let setDoc = db.collection('data').doc('es_dss').set(data['dss']);
 
@@ -12788,9 +13241,13 @@ let data = {
 
 // let setDoc = db.collection('data').doc('an_s101').set(data['kj1']);
 
-// let setDoc = db.collection('data').doc('info').set(data);
-
 let setDoc = db.collection('data').doc('info').set(data);
+
+//let setDoc = db.collection('data').doc('characters').set(data);
+
+//let setDoc = db.collection('data').doc('medium_images').set(data);
+
+// setDoc = db.collection('data').doc('dropdowns').set(data);
 
 setDoc.then(() => {
   console.log('Document successfully written!');

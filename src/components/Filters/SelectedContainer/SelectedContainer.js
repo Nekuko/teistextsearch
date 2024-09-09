@@ -379,7 +379,8 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     let apoList = [];
     const shortName = {
       "1 | Requiem for Scattered Shadows": "RFSS",
-      "1 | Millennium Past": "MP"
+      "1 | Millennium Past": "MP",
+      "2 | Heroes of Time": "HOT"
     };
 
     // Check if all parts, chapters, and episodes are checked

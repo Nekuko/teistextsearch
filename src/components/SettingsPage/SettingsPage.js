@@ -54,7 +54,7 @@ function populateOrders() {
     correctKeys.push(key)
   }
 
-  for (let i = 1; i <= 1; i++) {
+  for (let i = 1; i <= 2; i++) {
     correctOrder.push(`Apocrypha Part 1, Chapter 1-${i}`);
     correctKeys.push(`apo_p1_c1-${i}`)
   }
@@ -331,15 +331,12 @@ function SettingsPage() {
       return parsedState;
     }
 
-    return ["Akane Nishino", "Alexia Midgar", "Alpha", "Annerose Nichtsehen", "Aurora",
-      "Beatrix", "Beta", "Chi", "Cid Kagenou", "Claire Kagenou", "Claudia", "Crimson", "Delta", "Duet",
-      "Elisabeth", "Epsilon", "Eta", "Freya", "Gamma", "Garter Kikuchi", "Gettan", "Glen", "Goldy Gilded",
-      "Grease", "Iota", "Iris Midgar", "Jack Nelson", "Juggernaut", "Kana", "Kevin", "Klaus Midgar",
-      "Kouadoi", "Lambda", "Lili", "Lutheran Barnett", "Marco Granger", "Margaret", "Marie", "Mary",
-      "Mist Dragon", "Mordred", "Mr. Kagenou", "Mrs. Kagenou", "Natsu", "No. 664", "No. 665", "Nu", "Olivier",
-      "Omega", "Pente", "Perv Asshat", "Po Tato", "Quinton", "Raphael Oriana", "Reina Oriana", "Rex",
-      "Rose Oriana", "Sergey Gorman", "Sherry Barnett", "Skel Etal", "Victoria", "White Demon", "Yukime",
-      "Zenon Griffey", "Zeta"]
+    return ['Akane Nishino', 'Alexia Midgar', 'Alpha', 'Annerose Nichtsehen', 'Aurora', 'Beatrix', 'Beta', 'Chi', 'Cid Kagenou', 'Claire Kagenou', 'Claudia', 
+      'Crimson', 'Delta', 'Duet', 'Elisabeth', 'Epsilon', 'Eta', 'Freya', 'Gamma', 'Garter Kikuchi', 'Gettan', 'Glen', 'Goldy Gilded', 'Grease', 'Iota', 
+      'Iris Midgar', 'Jack Nelson', 'Juggernaut', 'Kana', 'Kevin', 'Klaus Midgar', 'Kouadoi', 'Lambda', 'Lili', 'Lutheran Barnett', 'Marco Granger', 
+      'Margaret', 'Marie', 'Mary', 'Mist Dragon', 'Mordred', 'Mr. Kagenou', 'Mrs. Kagenou', 'Natsu', 'No. 664', 'No. 665', 'Nonna', 'Nu', 'Olivier', 
+      'Omega', 'Pente', 'Perv Asshat', 'Po Tato', 'Quinton', 'Raphael Oriana', 'Reina Oriana', 'Rex', 'Rose Oriana', 'Rouge', 'Sarasa', 'Sergey Gorman', 
+      'Sherry Barnett', 'Skel Etal', 'Victoria', 'White Demon', 'Yukime', 'Zenon Griffey', 'Zeta']
   });
 
   // Use an effect to update sessionStorage when namedActive changes
@@ -509,15 +506,12 @@ function SettingsPage() {
   }
 
   function resetNamed() {
-    setNamedCharacters(["Akane Nishino", "Alexia Midgar", "Alpha", "Annerose Nichtsehen", "Aurora",
-      "Beatrix", "Beta", "Chi", "Cid Kagenou", "Claire Kagenou", "Claudia", "Crimson", "Delta", "Duet",
-      "Elisabeth", "Epsilon", "Eta", "Freya", "Gamma", "Garter Kikuchi", "Gettan", "Glen", "Goldy Gilded",
-      "Grease", "Iota", "Iris Midgar", "Jack Nelson", "Juggernaut", "Kana", "Kevin", "Klaus Midgar",
-      "Kouadoi", "Lambda", "Lili", "Lutheran Barnett", "Marco Granger", "Margaret", "Marie", "Mary",
-      "Mist Dragon", "Mordred", "Mr. Kagenou", "Mrs. Kagenou", "Natsu", "No. 664", "No. 665", "Nu", "Olivier",
-      "Omega", "Pente", "Perv Asshat", "Po Tato", "Quinton", "Raphael Oriana", "Reina Oriana", "Rex",
-      "Rose Oriana", "Sergey Gorman", "Sherry Barnett", "Skel Etal", "Victoria", "White Demon", "Yukime",
-      "Zenon Griffey", "Zeta"]);
+    setNamedCharacters(['Akane Nishino', 'Alexia Midgar', 'Alpha', 'Annerose Nichtsehen', 'Aurora', 'Beatrix', 'Beta', 'Chi', 'Cid Kagenou', 'Claire Kagenou', 'Claudia', 
+      'Crimson', 'Delta', 'Duet', 'Elisabeth', 'Epsilon', 'Eta', 'Freya', 'Gamma', 'Garter Kikuchi', 'Gettan', 'Glen', 'Goldy Gilded', 'Grease', 'Iota', 
+      'Iris Midgar', 'Jack Nelson', 'Juggernaut', 'Kana', 'Kevin', 'Klaus Midgar', 'Kouadoi', 'Lambda', 'Lili', 'Lutheran Barnett', 'Marco Granger', 
+      'Margaret', 'Marie', 'Mary', 'Mist Dragon', 'Mordred', 'Mr. Kagenou', 'Mrs. Kagenou', 'Natsu', 'No. 664', 'No. 665', 'Nonna', 'Nu', 'Olivier', 
+      'Omega', 'Pente', 'Perv Asshat', 'Po Tato', 'Quinton', 'Raphael Oriana', 'Reina Oriana', 'Rex', 'Rose Oriana', 'Rouge', 'Sarasa', 'Sergey Gorman', 
+      'Sherry Barnett', 'Skel Etal', 'Victoria', 'White Demon', 'Yukime', 'Zenon Griffey', 'Zeta']);
     setInputValue('');
   }
 

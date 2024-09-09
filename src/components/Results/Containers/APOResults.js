@@ -204,7 +204,17 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
                             }>
                             {openMenus[`apo-${partKey}`] && (
                                 <>
-                                    {Object.entries(chapters.chapters).map(([chapterKey, chapterValue]) => {
+                                    {Object.entries(chapters.chapters).sort((a, b) => {
+                                            let [partA, subpartA] = a[0].split("-"); // Extract part and subpart
+                                            let [partB, subpartB] = b[0].split("-");
+                                            partA = partA.replace("c", "");
+                                            partB = partB.replace("c", "");
+                                            if (partA === partB) {
+                                                return parseInt(subpartA) - parseInt(subpartB); // Sort by subpart if parts are equal
+                                            }
+                                            return partA - partB; // Otherwise, sort by part
+                                        })
+                                            .map(([chapterKey, chapterValue]) => {
                                         const chapterKeys = Object.keys(partsChecked[partTitle]);
                                         let chapterTitle = "Cannot find.";
                                         for (let i = 0; i < chapterKeys.length; i++) {

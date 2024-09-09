@@ -80,66 +80,100 @@ function ApocryphaDropdown({
                         <div>
                             <input type="text" value={sectionFilters[part] || ''} onChange={(event) => handleFilterChange(event, part)} placeholder="Search chapters..." />
                             <div className="section-list">
-                                {Object.keys(partsChecked[part]).filter(section => section !== 'checked' && (!sectionFilters[part] || section.toLowerCase().includes(sectionFilters[part].toLowerCase()))).map((section, index) => {
-                                    const sectionName = section;
-                                    const sectionKey = `${part.split(' | ')[0]}-${sectionName.split(' | ')[0]}`;
-                                    return (
-                                        <div key={index}>
-                                            <div className="item-header">
-                                                <div className="volume-trigger-drop">
-                                                    <span
-                                                        className={`section-title ${partsChecked[part][section]?.checked ? '' : 'dimmed'}`}
-                                                        title={sectionName.split(' | ')[1]}
-                                                        onClick={(event) => handleSectionClick(event, part, section)}
-                                                    >
-                                                        <span style={{ color: 'red' }}>{part.split(' | ')[0]}-{sectionName.split(' | ')[0]}&nbsp;</span>
-                                                        <span> | {sectionName.split(' | ')[1]}</span>
-                                                    </span>
-                                                    <FontAwesomeIcon className="dropdown-icon" icon={openParts[part]?.[section] ? faChevronUp : faChevronDown} onClick={(event) => handleSectionClick(event, part, section)} />
+                                {Object.keys(partsChecked[part]).filter(section => section !== 'checked' && (!sectionFilters[part] || section.toLowerCase().includes(sectionFilters[part].toLowerCase()))).sort((a, b) => {
+                                    const [partA, subpartA] = a.split('|')[0].split("-"); // Extract part and subpart
+                                    const [partB, subpartB] = b.split('|')[0].split("-");
+                                    if (partA === '1 Final ') return 1;
+                                    if (partB === '1 Final ') return -1;
+                                    if (partA === partB) {
+                                        return subpartA - subpartB; // Sort by subpart if parts are equal
+                                    }
+                                    return partA - partB; // Otherwise, sort by part
+                                })
+                                    .map((section, index) => {
+                                        const sectionName = section;
+                                        const sectionKey = `${part.split(' | ')[0]}-${sectionName.split(' | ')[0]}`;
+                                        return (
+                                            <div key={index}>
+                                                <div className="item-header">
+                                                    <div className="volume-trigger-drop">
+                                                        <span
+                                                            className={`section-title ${partsChecked[part][section]?.checked ? '' : 'dimmed'}`}
+                                                            title={sectionName.split(' | ')[1]}
+                                                            onClick={(event) => handleSectionClick(event, part, section)}
+                                                        >
+                                                            <span style={{ color: 'red' }}>{part.split(' | ')[0]}-{sectionName.split(' | ')[0]}&nbsp;</span>
+                                                            <span> | {sectionName.split(' | ')[1]}</span>
+                                                        </span>
+                                                        <FontAwesomeIcon className="dropdown-icon" icon={openParts[part]?.[section] ? faChevronUp : faChevronDown} onClick={(event) => handleSectionClick(event, part, section)} />
+                                                    </div>
+                                                    <input
+                                                        type="checkbox"
+                                                        checked={!!partsChecked[part][section]?.checked}
+                                                        onChange={(event) => handleSectionCheck(event, part, section)}
+                                                    />
                                                 </div>
-                                                <input
-                                                    type="checkbox"
-                                                    checked={!!partsChecked[part][section]?.checked}
-                                                    onChange={(event) => handleSectionCheck(event, part, section)}
-                                                />
-                                            </div>
-                                            {openParts[part]?.[section] && (
-                                                <div className="episode-list">
-                                                    {Object.keys(partsChecked[part][section]).filter(episode => episode !== 'checked' && episode.startsWith('e')).sort((a, b) => {
-                                                        const [partA, subpartA] = a.slice(1).split('-').map(Number); // Extract part and subpart
-                                                        const [partB, subpartB] = b.slice(1).split('-').map(Number);
-                                                        if (partA === partB) {
-                                                            return subpartA - subpartB; // Sort by subpart if parts are equal
-                                                        }
-                                                        return partA - partB; // Otherwise, sort by part
-                                                    })
-                                                        .map((episode, index) => {
-                                                            const episodeNumber = episode.split("e")[1];
-                                                            const episodeName = partsChecked[part][section][episode].title;
-                                                            const imageKey = `${part.split(' | ')[0]}-${sectionName.split(' | ')[0]}-${episodeNumber}`
-                                                            return (
-                                                                <div key={index} className="episode-item">
-                                                                    <div className="episode-name">
-                                                                        {images[imageKey] && <img className="cover-image-apo-small" src={images[imageKey]} alt={episodeName} />}
-                                                                        <span className={partsChecked[part][section][episode].checked ? "episode-checked" : "episode-unchecked"}>
-                                                                            <span style={{ color: 'red' }}>{episodeNumber} </span>
-                                                                            <span className="episode-text" title={episodeName}>| {episodeName}</span>
-                                                                        </span>
-                                                                    </div>
-                                                                    <input
-                                                                        type="checkbox"
-                                                                        checked={!!partsChecked[part][section][episode].checked}
-                                                                        onChange={(event) => handleEpisodeCheck(event, part, section, episode)}
-                                                                    />
-                                                                </div>
-                                                            );
-                                                        })}
+                                                {openParts[part]?.[section] && (
+                                                    <div className="episode-list">
+                                                        {Object.keys(partsChecked[part][section]).filter(episode => episode !== 'checked' && episode.startsWith('e')).sort((a, b) => {
+                                                            const [partA, subpartA] = a.replace('A', '').replace('B', '').slice(1).split('-').map(Number);
+                                                            const [partB, subpartB] = b.replace('A', '').replace('B', '').slice(1).split('-').map(Number);
 
-                                                </div>
-                                            )}
-                                        </div>
-                                    );
-                                })}
+                                                            // Check if either part contains "A" or "B"
+                                                            const aHasA = a.includes('A');
+                                                            const bHasA = b.includes('A');
+                                                            const aHasB = a.includes('B');
+                                                            const bHasB = b.includes('B');
+
+                                                            // If both parts have "A" or both parts have "B", use the original sorting logic
+                                                            if ((aHasA && bHasA) || (aHasB && bHasB)) {
+                                                                if (partA === partB) {
+                                                                    return subpartA - subpartB; // Sort by subpart if parts are equal
+                                                                }
+                                                                return partA - partB; // Otherwise, sort by part
+                                                            }
+
+                                                            // If only one part has "A", prioritize it
+                                                            if (aHasA && !bHasA) {
+                                                                return -1; // a comes before b
+                                                            }
+                                                            if (bHasA && !aHasA) {
+                                                                return 1; // b comes before a
+                                                            }
+
+                                                            // If neither part has "A" or "B", use the original sorting logic
+                                                            if (partA === partB) {
+                                                                return subpartA - subpartB; // Sort by subpart if parts are equal
+                                                            }
+                                                            return partA - partB; // Otherwise, sort by part
+                                                        })
+                                                            .map((episode, index) => {
+                                                                const episodeNumber = episode.split("e")[1];
+                                                                const episodeName = partsChecked[part][section][episode].title;
+                                                                const imageKey = `${part.split(' | ')[0]}-${sectionName.split(' | ')[0]}-${episodeNumber}`
+                                                                return (
+                                                                    <div key={index} className="episode-item">
+                                                                        <div className="episode-name">
+                                                                            {images[imageKey] && <img className="cover-image-apo-small" src={images[imageKey]} alt={episodeName} />}
+                                                                            <span className={partsChecked[part][section][episode].checked ? "episode-checked" : "episode-unchecked"}>
+                                                                                <span style={{ color: 'red' }}>{episodeNumber} </span>
+                                                                                <span className="episode-text" title={episodeName}>| {episodeName}</span>
+                                                                            </span>
+                                                                        </div>
+                                                                        <input
+                                                                            type="checkbox"
+                                                                            checked={!!partsChecked[part][section][episode].checked}
+                                                                            onChange={(event) => handleEpisodeCheck(event, part, section, episode)}
+                                                                        />
+                                                                    </div>
+                                                                );
+                                                            })}
+
+                                                    </div>
+                                                )}
+                                            </div>
+                                        );
+                                    })}
 
                             </div>
                         </div>

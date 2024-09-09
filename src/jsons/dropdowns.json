@@ -1786,6 +1786,72 @@
                             "title": "Episode 8-2"
                         }
                     },
+                    "2 | Heroes of Time": {
+                        "eA1": {
+                            "checked": false,
+                            "title": "Episode A1"
+                        },
+                        "eA2": {
+                            "checked": false,
+                            "title": "Episode A2"
+                        },
+                        "eA3": {
+                            "checked": false,
+                            "title": "Episode A3"
+                        },
+                        "eA4": {
+                            "checked": false,
+                            "title": "Episode A4"
+                        },
+                        "eA5": {
+                            "checked": false,
+                            "title": "Episode A5"
+                        },
+                        "eA6-1": {
+                            "checked": false,
+                            "title": "Episode A6-1"
+                        },
+                        "eA6-2": {
+                            "checked": false,
+                            "title": "Episode A6-2"
+                        },
+                        "eA6-3": {
+                            "checked": false,
+                            "title": "Episode A6-3"
+                        },
+                        "eA7-1": {
+                            "checked": false,
+                            "title": "Episode A7-1"
+                        },
+                        "eA7-2": {
+                            "checked": false,
+                            "title": "Episode A7-2"
+                        },
+                        "eA7-3": {
+                            "checked": false,
+                            "title": "Episode A7-3"
+                        },
+                        "eA8": {
+                            "checked": false,
+                            "title": "Episode A8"
+                        },
+                        "eA9": {
+                            "checked": false,
+                            "title": "Episode A9"
+                        },
+                        "eB1": {
+                            "checked": false,
+                            "title": "Episode B1"
+                        },
+                        "eB2": {
+                            "checked": false,
+                            "title": "Episode B2"
+                        },
+                        "eB3": {
+                            "checked": false,
+                            "title": "Episode B3"
+                        }
+                    },
                     "checked": false
                 },
                 "checked": false
