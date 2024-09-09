@@ -1733,8 +1733,8 @@
             "Eta (Beta & Eta (Eta))": 1,
             "Zeta (Zeta & Beta (Zeta))": 1,
             "Beta (Zeta & Beta (Beta))": 1,
-            "Rose (Rose & Alexia (Rose))": 1,
-            "Alexia (Rose & Alexia (Alexia))": 1,
+            "Rose Oriana (Rose & Alexia (Rose))": 1,
+            "Alexia Midgar (Rose & Alexia (Alexia))": 1,
             "Beta (Fictional Gamma)": 11,
             "Beta (Fictional Delta)": 2,
             "Beta (Fictional Olivier)": 4,
@@ -1809,8 +1809,8 @@
                     "Eta (Beta & Eta (Eta))": 1,
                     "Zeta (Zeta & Beta (Zeta))": 1,
                     "Beta (Zeta & Beta (Beta))": 1,
-                    "Rose (Rose & Alexia (Rose))": 1,
-                    "Alexia (Rose & Alexia (Alexia))": 1,
+                    "Rose Oriana (Rose & Alexia (Rose))": 1,
+                    "Alexia Midgar (Rose & Alexia (Alexia))": 1,
                     "Beta (Fictional Gamma)": 11,
                     "Beta (Fictional Delta)": 2,
                     "Beta (Fictional Olivier)": 4,
@@ -2165,8 +2165,8 @@
                             "Lili": 50,
                             "Zeta (Zeta & Beta (Zeta))": 1,
                             "Beta (Zeta & Beta (Beta))": 1,
-                            "Rose (Rose & Alexia (Rose))": 1,
-                            "Alexia (Rose & Alexia (Alexia))": 1,
+                            "Rose Oriana (Rose & Alexia (Rose))": 1,
+                            "Alexia Midgar (Rose & Alexia (Alexia))": 1,
                             "Beta (Fictional Gamma)": 11,
                             "Beta (Fictional Delta)": 2,
                             "Beta (Fictional Olivier)": 4,
@@ -2217,8 +2217,8 @@
                                     "Lili": 4,
                                     "Zeta (Zeta & Beta (Zeta))": 1,
                                     "Beta (Zeta & Beta (Beta))": 1,
-                                    "Rose (Rose & Alexia (Rose))": 1,
-                                    "Alexia (Rose & Alexia (Alexia))": 1
+                                    "Rose Oriana (Rose & Alexia (Rose))": 1,
+                                    "Alexia Midgar (Rose & Alexia (Alexia))": 1
                                 }
                             },
                             "eA2": {
@@ -11562,11 +11562,12 @@
             }
         },
         "Alexia Midgar": {
-            "total": 1220,
+            "total": 1221,
             "names": {
                 "Alexia Midgar": 609,
                 "Alexia Midgar & Natsume Kafka (Alexia Midgar)": 1,
                 "Alexia": 605,
+                "Rose & Alexia (Alexia)": 1,
                 "????? (Alexia Midgar)": 1,
                 "Shelly and Alexia (Alexia)": 1,
                 "??? (Alexia Midgar)": 2,
@@ -11599,11 +11600,12 @@
             }
         },
         "Rose Oriana": {
-            "total": 962,
+            "total": 963,
             "names": {
                 "Rose Oriana": 500,
                 "No. 666": 176,
                 "Rose": 149,
+                "Rose & Alexia (Rose)": 1,
                 "No.666": 137
             }
         },
@@ -12655,18 +12657,6 @@
             "total": 5,
             "names": {
                 "Mysterious Man D": 5
-            }
-        },
-        "Rose": {
-            "total": 1,
-            "names": {
-                "Rose & Alexia (Rose)": 1
-            }
-        },
-        "Alexia": {
-            "total": 1,
-            "names": {
-                "Rose & Alexia (Alexia)": 1
             }
         },
         "Sarasa": {

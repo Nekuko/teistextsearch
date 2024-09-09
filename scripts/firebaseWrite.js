@@ -1744,8 +1744,8 @@ let data = {
             "Eta (Beta & Eta (Eta))": 1,
             "Zeta (Zeta & Beta (Zeta))": 1,
             "Beta (Zeta & Beta (Beta))": 1,
-            "Rose (Rose & Alexia (Rose))": 1,
-            "Alexia (Rose & Alexia (Alexia))": 1,
+            "Rose Oriana (Rose & Alexia (Rose))": 1,
+            "Alexia Midgar (Rose & Alexia (Alexia))": 1,
             "Beta (Fictional Gamma)": 11,
             "Beta (Fictional Delta)": 2,
             "Beta (Fictional Olivier)": 4,
@@ -1820,8 +1820,8 @@ let data = {
                     "Eta (Beta & Eta (Eta))": 1,
                     "Zeta (Zeta & Beta (Zeta))": 1,
                     "Beta (Zeta & Beta (Beta))": 1,
-                    "Rose (Rose & Alexia (Rose))": 1,
-                    "Alexia (Rose & Alexia (Alexia))": 1,
+                    "Rose Oriana (Rose & Alexia (Rose))": 1,
+                    "Alexia Midgar (Rose & Alexia (Alexia))": 1,
                     "Beta (Fictional Gamma)": 11,
                     "Beta (Fictional Delta)": 2,
                     "Beta (Fictional Olivier)": 4,
@@ -2176,8 +2176,8 @@ let data = {
                             "Lili": 50,
                             "Zeta (Zeta & Beta (Zeta))": 1,
                             "Beta (Zeta & Beta (Beta))": 1,
-                            "Rose (Rose & Alexia (Rose))": 1,
-                            "Alexia (Rose & Alexia (Alexia))": 1,
+                            "Rose Oriana (Rose & Alexia (Rose))": 1,
+                            "Alexia Midgar (Rose & Alexia (Alexia))": 1,
                             "Beta (Fictional Gamma)": 11,
                             "Beta (Fictional Delta)": 2,
                             "Beta (Fictional Olivier)": 4,
@@ -2228,8 +2228,8 @@ let data = {
                                     "Lili": 4,
                                     "Zeta (Zeta & Beta (Zeta))": 1,
                                     "Beta (Zeta & Beta (Beta))": 1,
-                                    "Rose (Rose & Alexia (Rose))": 1,
-                                    "Alexia (Rose & Alexia (Alexia))": 1
+                                    "Rose Oriana (Rose & Alexia (Rose))": 1,
+                                    "Alexia Midgar (Rose & Alexia (Alexia))": 1
                                 }
                             },
                             "eA2": {
@@ -11573,11 +11573,12 @@ let data = {
             }
         },
         "Alexia Midgar": {
-            "total": 1220,
+            "total": 1221,
             "names": {
                 "Alexia Midgar": 609,
                 "Alexia Midgar & Natsume Kafka (Alexia Midgar)": 1,
                 "Alexia": 605,
+                "Rose & Alexia (Alexia)": 1,
                 "????? (Alexia Midgar)": 1,
                 "Shelly and Alexia (Alexia)": 1,
                 "??? (Alexia Midgar)": 2,
@@ -11610,11 +11611,12 @@ let data = {
             }
         },
         "Rose Oriana": {
-            "total": 962,
+            "total": 963,
             "names": {
                 "Rose Oriana": 500,
                 "No. 666": 176,
                 "Rose": 149,
+                "Rose & Alexia (Rose)": 1,
                 "No.666": 137
             }
         },
@@ -12668,18 +12670,6 @@ let data = {
                 "Mysterious Man D": 5
             }
         },
-        "Rose": {
-            "total": 1,
-            "names": {
-                "Rose & Alexia (Rose)": 1
-            }
-        },
-        "Alexia": {
-            "total": 1,
-            "names": {
-                "Rose & Alexia (Alexia)": 1
-            }
-        },
         "Sarasa": {
             "total": 24,
             "names": {
@@ -13241,7 +13231,7 @@ let data = {
 
 // let setDoc = db.collection('data').doc('an_s101').set(data['kj1']);
 
-let setDoc = db.collection('data').doc('info').set(data);
+// let setDoc = db.collection('data').doc('info').set(data);
 
 //let setDoc = db.collection('data').doc('characters').set(data);
 

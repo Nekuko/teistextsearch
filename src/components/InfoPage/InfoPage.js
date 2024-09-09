@@ -121,11 +121,11 @@ function InfoPage() {
             return parsedState;
         }
 
-        return ['Akane Nishino', 'Alexia Midgar', 'Alpha', 'Annerose Nichtsehen', 'Aurora', 'Beatrix', 'Beta', 'Chi', 'Cid Kagenou', 'Claire Kagenou', 'Claudia', 
-            'Crimson', 'Delta', 'Duet', 'Elisabeth', 'Epsilon', 'Eta', 'Freya', 'Gamma', 'Garter Kikuchi', 'Gettan', 'Glen', 'Goldy Gilded', 'Grease', 'Iota', 
-            'Iris Midgar', 'Jack Nelson', 'Juggernaut', 'Kana', 'Kevin', 'Klaus Midgar', 'Kouadoi', 'Lambda', 'Lili', 'Lutheran Barnett', 'Marco Granger', 
-            'Margaret', 'Marie', 'Mary', 'Mist Dragon', 'Mordred', 'Mr. Kagenou', 'Mrs. Kagenou', 'Natsu', 'No. 664', 'No. 665', 'Nonna', 'Nu', 'Olivier', 
-            'Omega', 'Pente', 'Perv Asshat', 'Po Tato', 'Quinton', 'Raphael Oriana', 'Reina Oriana', 'Rex', 'Rose Oriana', 'Rouge', 'Sarasa', 'Sergey Gorman', 
+        return ['Akane Nishino', 'Alexia Midgar', 'Alpha', 'Annerose Nichtsehen', 'Aurora', 'Beatrix', 'Beta', 'Chi', 'Cid Kagenou', 'Claire Kagenou', 'Claudia',
+            'Crimson', 'Delta', 'Duet', 'Elisabeth', 'Epsilon', 'Eta', 'Freya', 'Gamma', 'Garter Kikuchi', 'Gettan', 'Glen', 'Goldy Gilded', 'Grease', 'Iota',
+            'Iris Midgar', 'Jack Nelson', 'Juggernaut', 'Kana', 'Kevin', 'Klaus Midgar', 'Kouadoi', 'Lambda', 'Lili', 'Lutheran Barnett', 'Marco Granger',
+            'Margaret', 'Marie', 'Mary', 'Mist Dragon', 'Mordred', 'Mr. Kagenou', 'Mrs. Kagenou', 'Natsu', 'No. 664', 'No. 665', 'Nonna', 'Nu', 'Olivier',
+            'Omega', 'Pente', 'Perv Asshat', 'Po Tato', 'Quinton', 'Raphael Oriana', 'Reina Oriana', 'Rex', 'Rose Oriana', 'Rouge', 'Sarasa', 'Sergey Gorman',
             'Sherry Barnett', 'Skel Etal', 'Victoria', 'White Demon', 'Yukime', 'Zenon Griffey', 'Zeta']
     });
 
@@ -275,6 +275,9 @@ function InfoPage() {
                         <Collapsible trigger="Characters">
                             <div className='info-character-box-small'>
                                 {Object.keys(all_counts.characters).sort((a, b) => {
+                                    if (all_counts.characters[b] === all_counts.characters[a]) {
+                                        return a.localeCompare(b);
+                                    }
                                     return all_counts.characters[b] - all_counts.characters[a]
                                 }).map(character => (
                                     <div key={character}>
@@ -297,12 +300,15 @@ function InfoPage() {
                                     {openMenus[`apo-${part}`] && (
                                         <>
                                             <p>Chapters: {Object.keys(all_counts.parts[part].chapters).length}</p>
-                                            <p>Paragraphs:{formatNumber(all_counts.parts[part].line_count)}</p>
+                                            <p>Paragraphs: {formatNumber(all_counts.parts[part].line_count)}</p>
                                             <p>Approximate Word Count: {formatNumber(all_counts.parts[part].word_count)}</p>
                                             <p>Character Count: {formatNumber(all_counts.parts[part].char_count)}</p>
                                             <Collapsible trigger="Characters">
                                                 <div className='info-character-box-small'>
                                                     {Object.keys(all_counts.parts[part].characters).sort((a, b) => {
+                                                        if (all_counts.parts[part].characters[b] === all_counts.parts[part].characters[a]) {
+                                                            return a.localeCompare(b);
+                                                        }
                                                         return all_counts.parts[part].characters[b] - all_counts.parts[part].characters[a]
                                                     }).map(character => (
                                                         <div key={character}>
@@ -339,6 +345,9 @@ function InfoPage() {
                                                                     <Collapsible trigger="Characters">
                                                                         <div className='info-character-box-small'>
                                                                             {Object.keys(all_counts.parts[part].chapters[chapter].characters).sort((a, b) => {
+                                                                                if (all_counts.parts[part].chapters[chapter].characters[b] === all_counts.parts[part].chapters[chapter].characters[a]) {
+                                                                                    return a.localeCompare(b);
+                                                                                }
                                                                                 return all_counts.parts[part].chapters[chapter].characters[b] - all_counts.parts[part].chapters[chapter].characters[a]
                                                                             }).map(character => (
                                                                                 <div key={character}>
@@ -363,6 +372,9 @@ function InfoPage() {
                                                                             <Collapsible trigger="Characters">
                                                                                 <div className='info-character-box-small'>
                                                                                     {Object.keys(all_counts.parts[part].chapters[chapter].episodes[episode].characters).sort((a, b) => {
+                                                                                        if (all_counts.parts[part].chapters[chapter].episodes[episode].characters[b] === all_counts.parts[part].chapters[chapter].episodes[episode].characters[a]) {
+                                                                                            return a.localeCompare(b);
+                                                                                        }
                                                                                         return all_counts.parts[part].chapters[chapter].episodes[episode].characters[b] - all_counts.parts[part].chapters[chapter].episodes[episode].characters[a]
                                                                                     }).map(character => (
                                                                                         <div key={character}>
@@ -404,6 +416,9 @@ function InfoPage() {
                         <Collapsible trigger="Characters">
                             <div className='info-character-box-small'>
                                 {Object.keys(all_counts.characters).sort((a, b) => {
+                                    if (all_counts.characters[b] === all_counts.characters[a]) {
+                                        return a.localeCompare(b);
+                                    }
                                     return all_counts.characters[b] - all_counts.characters[a]
                                 }).map(character => (
                                     <div key={character}>
@@ -426,6 +441,9 @@ function InfoPage() {
                                             <Collapsible trigger="Characters">
                                                 <div className='info-character-box-small'>
                                                     {Object.keys(all_counts.parts[part].characters).sort((a, b) => {
+                                                        if (all_counts.parts[part].characters[b] === all_counts.parts[part].characters[a]) {
+                                                            return a.localeCompare(b);
+                                                        }
                                                         return all_counts.parts[part].characters[b] - all_counts.parts[part].characters[a]
                                                     }).map(character => (
                                                         <div key={character}>
@@ -462,6 +480,9 @@ function InfoPage() {
                                                                     <Collapsible trigger="Characters">
                                                                         <div className='info-character-box-small'>
                                                                             {Object.keys(all_counts.parts[part].chapters[chapter].characters).sort((a, b) => {
+                                                                                if (all_counts.parts[part].chapters[chapter].characters[b] === all_counts.parts[part].chapters[chapter].characters[a]) {
+                                                                                    return a.localeCompare(b);
+                                                                                }
                                                                                 return all_counts.parts[part].chapters[chapter].characters[b] - all_counts.parts[part].chapters[chapter].characters[a]
                                                                             }).map(character => (
                                                                                 <div key={character}>
@@ -487,6 +508,9 @@ function InfoPage() {
                                                                                 <Collapsible trigger="Characters">
                                                                                     <div className='info-character-box-small'>
                                                                                         {Object.keys(all_counts.parts[part].chapters[chapter].episodes[episode].characters).sort((a, b) => {
+                                                                                            if (all_counts.parts[part].chapters[chapter].episodes[episode].characters[b] === all_counts.parts[part].chapters[chapter].episodes[episode].characters[a]) {
+                                                                                                return a.localeCompare(b);
+                                                                                            }
                                                                                             return all_counts.parts[part].chapters[chapter].episodes[episode].characters[b] - all_counts.parts[part].chapters[chapter].episodes[episode].characters[a]
                                                                                         }).map(character => (
                                                                                             <div key={character}>
@@ -528,6 +552,9 @@ function InfoPage() {
                         <Collapsible trigger="Characters">
                             <div className='info-character-box-small'>
                                 {Object.keys(all_counts.characters).sort((a, b) => {
+                                    if (all_counts.characters[b] === all_counts.characters[a]) {
+                                        return a.localeCompare(b);
+                                    }
                                     return all_counts.characters[b] - all_counts.characters[a]
                                 }).map(character => (
                                     <div key={character}>
@@ -559,6 +586,9 @@ function InfoPage() {
                                         <Collapsible trigger="Characters">
                                             <div className='info-character-box-small'>
                                                 {Object.keys(all_counts.parts[part].characters).sort((a, b) => {
+                                                    if (all_counts.parts[part].characters[b] === all_counts.parts[part].characters[a]) {
+                                                        return a.localeCompare(b);
+                                                    }
                                                     return all_counts.parts[part].characters[b] - all_counts.parts[part].characters[a]
                                                 }).map(character => (
                                                     <div key={character}>
@@ -582,6 +612,9 @@ function InfoPage() {
                                                 <Collapsible trigger="Characters">
                                                     <div className='info-character-box-small'>
                                                         {Object.keys(all_counts.parts[part].episodes[episode].characters).sort((a, b) => {
+                                                            if (all_counts.parts[part].episodes[episode].characters[b] === all_counts.parts[part].episodes[episode].characters[a]) {
+                                                                return a.localeCompare(b);
+                                                            }
                                                             return all_counts.parts[part].episodes[episode].characters[b] - all_counts.parts[part].episodes[episode].characters[a]
                                                         }).map(character => (
                                                             <div key={character}>
@@ -614,6 +647,9 @@ function InfoPage() {
                 <Collapsible trigger="Characters">
                     <div className='info-character-box-small'>
                         {Object.keys(all_counts.characters).sort((a, b) => {
+                            if (all_counts.characters[b] === all_counts.characters[a]) {
+                                return a.localeCompare(b);
+                            }
                             return all_counts.characters[b] - all_counts.characters[a]
                         }).map(character => (
                             <div key={character}>
@@ -639,6 +675,9 @@ function InfoPage() {
                         <Collapsible trigger="Characters">
                             <div className='info-character-box-small'>
                                 {Object.keys(all_counts.seasons[part].characters).sort((a, b) => {
+                                    if (all_counts.seasons[part].characters[b] === all_counts.seasons[part].characters[a]) {
+                                        return a.localeCompare(b);
+                                    }
                                     return all_counts.seasons[part].characters[b] - all_counts.seasons[part].characters[a]
                                 }).map(character => (
                                     <div key={character}>
@@ -665,6 +704,9 @@ function InfoPage() {
                                 <p>Character Count: {formatNumber(all_counts.seasons[part].episodes[episode].char_count)}</p>
                                 <Collapsible trigger="Characters">
                                     {Object.keys(all_counts.seasons[part].episodes[episode].characters).sort((a, b) => {
+                                        if (all_counts.seasons[part].episodes[episode].characters[b] === all_counts.seasons[part].episodes[episode].characters[a]) {
+                                            return a.localeCompare(b);
+                                        }
                                         return all_counts.seasons[part].episodes[episode].characters[b] - all_counts.seasons[part].episodes[episode].characters[a]
                                     }).map(character => (
                                         <div key={character}>
@@ -692,6 +734,9 @@ function InfoPage() {
                 <Collapsible trigger="Characters">
                     <div className='info-character-box-small'>
                         {Object.keys(all_counts.characters).sort((a, b) => {
+                            if (all_counts.characters[b] === all_counts.characters[a]) {
+                                return a.localeCompare(b);
+                            }
                             return all_counts.characters[b] - all_counts.characters[a]
                         }).map(character => (
                             <div key={character}>
@@ -718,6 +763,9 @@ function InfoPage() {
                         <Collapsible trigger="Characters">
                             <div className='info-character-box-small'>
                                 {Object.keys(all_counts.seasons[part].characters).sort((a, b) => {
+                                    if (all_counts.seasons[part].characters[b] === all_counts.seasons[part].characters[a]) {
+                                        return a.localeCompare(b);
+                                    }
                                     return all_counts.seasons[part].characters[b] - all_counts.seasons[part].characters[a]
                                 }).map(character => (
                                     <div key={character}>
@@ -745,6 +793,9 @@ function InfoPage() {
                                 <Collapsible trigger="Characters">
                                     <div className='info-character-box-small'>
                                         {Object.keys(all_counts.seasons[part].episodes[episode].characters).sort((a, b) => {
+                                            if (all_counts.seasons[part].episodes[episode].characters[b] === all_counts.seasons[part].episodes[episode].characters[a]) {
+                                                return a.localeCompare(b);
+                                            }
                                             return all_counts.seasons[part].episodes[episode].characters[b] - all_counts.seasons[part].episodes[episode].characters[a]
                                         }).map(character => (
                                             <div key={character}>
@@ -779,6 +830,10 @@ function InfoPage() {
                         const bIndex = namedCharacters.indexOf(b[0]);
 
                         if (aIndex !== -1 && bIndex !== -1) {
+                            console.log(a[1].total, b[1].total)
+                            if (b[1].total === a[1].total) {
+                                return a[0].localeCompare(b[0]);
+                            }
                             return b[1].total - a[1].total;
                         } else if (aIndex !== -1) {
                             return -1; // Choose a because it has an index
@@ -786,6 +841,9 @@ function InfoPage() {
                             return 1; // Choose b because it has an index
                         }
 
+                        if (b[1].total === a[1].total) {
+                            return a[0].localeCompare(b[0]);
+                        }
                         return b[1].total - a[1].total;
                     }).map(([character, value]) => (
                         <>
@@ -799,6 +857,9 @@ function InfoPage() {
                             }>
                                 <div className='info-character-box-small'>
                                     {Object.entries(value.names).sort((a, b) => {
+                                        if (b[1] === a[1]) {
+                                            return (a[0].localeCompare(b[0]));
+                                        }
                                         return b[1] - a[1];
                                     }).map(([name, amount]) => (
                                         <>
@@ -882,6 +943,9 @@ function InfoPage() {
                                     <Collapsible trigger="Characters">
                                         <div className='info-character-box-small'>
                                             {Object.keys(all_an_info.characters).sort((a, b) => {
+                                                if (all_an_info.characters[b] === all_an_info.characters[a]) {
+                                                    return a.localeCompare(b);
+                                                }
                                                 return all_an_info.characters[b] - all_an_info.characters[a]
                                             }).map(character => (
                                                 <div key={character}>
@@ -910,6 +974,9 @@ function InfoPage() {
                                     <Collapsible trigger="Characters">
                                         <div className='info-character-box-small'>
                                             {Object.keys(mg_info.characters).sort((a, b) => {
+                                                if (mg_info.characters[b] === mg_info.characters[a]) {
+                                                    return a.localeCompare(b);
+                                                }
                                                 return mg_info.characters[b] - mg_info.characters[a]
                                             }).map(character => (
                                                 <div key={character}>
