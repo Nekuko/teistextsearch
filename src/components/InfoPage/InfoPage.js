@@ -830,7 +830,6 @@ function InfoPage() {
                         const bIndex = namedCharacters.indexOf(b[0]);
 
                         if (aIndex !== -1 && bIndex !== -1) {
-                            console.log(a[1].total, b[1].total)
                             if (b[1].total === a[1].total) {
                                 return a[0].localeCompare(b[0]);
                             }

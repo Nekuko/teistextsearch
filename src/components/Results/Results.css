@@ -329,6 +329,16 @@
   height: 39px;
 }
 
+.sentence-dimmed {
+  opacity: 0.5; /* Dimmed effect */
+  color: #999999; /* Gray dimmed color */
+}
+
+.sentence-dimmed:hover {
+  opacity: 1; /* Increase opacity to 100% on hover */
+  color: white;
+}
+
 .cover-image-apo-chapter-small {
   width: 90px;
   height: 23px;

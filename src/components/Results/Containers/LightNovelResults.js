@@ -7,11 +7,13 @@ import { faCopy, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngle
 import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
 import InfoPreview from './InfoPreview/InfoPreview';
 
-function LightNovelResults({ lnData, volumeImages, highlight, filterState, lnDropdownState }) {
+function LightNovelResults({ lnData, images, highlight, filterState, lnDropdownState }) {
   const [previewText, setPreviewText] = useState(null);
   const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
   const [currentPage, setCurrentPage] = useState({});
   const [openMenus, setOpenMenus] = useState({});
+
+  const volumeImages = images.lnCoverImages;
 
   function openMenu(name) {
     setOpenMenus((prevOpenMenus) => ({

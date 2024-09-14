@@ -38,6 +38,7 @@ function Results({ resultsText, setResultsText, results, images, filterState, re
   };
 
   // Check if .an key exists in results.anime and if there are any characters to show
+  const lnCharacter = results && results.ln && !results.ln.ln && Object.keys(results.ln).length > 0;
   const anCharacter = results && results.anime && !results.anime.an && Object.keys(results.anime).length > 0;
   const sscCharacter = results && results.ssc && !results.ssc.ssc && Object.keys(results.ssc).length > 0;
   const apoCharacter = results && results.apo && !results.apo.apo && Object.keys(results.apo).length > 0;
@@ -81,14 +82,6 @@ function Results({ resultsText, setResultsText, results, images, filterState, re
             </div>
           ) : (
             <>
-              {lnResults && (
-                <>
-                  <Collapsible className="ln-results" trigger={`Light Novel (Total: ${lnResults.count})`}>
-                    <LightNovelResults lnDropdownState={lnDropdownState} lnData={lnResults} volumeImages={images.lnCoverImages} highlight={highlight} filterState={filterState} />
-                  </Collapsible>
-                  <br />
-                </>
-              )}
               {wnResults && (
                 <>
                   <Collapsible className="ln-results" trigger={`Web Novel (Total: ${wnResults.count})`}>
@@ -97,12 +90,20 @@ function Results({ resultsText, setResultsText, results, images, filterState, re
                   <br />
                 </>
               )}
-              {((anCharacter || esCharacter || sscCharacter || apoCharacter) && (
+              {((anCharacter || esCharacter || sscCharacter || apoCharacter || lnCharacter) && (
                 <>
-                  <CharacterResults animeDropdownState={animeDropdownState} anData={results.anime} sscData={results.ssc} esData={results.es} apoData={results.apo} images={images} highlight={highlight} filterState={filterState} mogDropdownState={mogDropdownState} />
+                  <CharacterResults lnData={results.ln} lnDropdownState={lnDropdownState} animeDropdownState={animeDropdownState} anData={results.anime} sscData={results.ssc} esData={results.es} apoData={results.apo} images={images} highlight={highlight} filterState={filterState} mogDropdownState={mogDropdownState} />
                   <br />
                 </>
               ))}
+              {lnResults && (
+                <>
+                  <Collapsible className="ln-results" trigger={`Light Novel (Total: ${lnResults.count})`}>
+                    <LightNovelResults lnDropdownState={lnDropdownState} lnData={lnResults} images={images} highlight={highlight} filterState={filterState} />
+                  </Collapsible>
+                  <br />
+                </>
+              )}
               {anResults && (
                 <>
                   <Collapsible className="an-results" trigger={`Anime (Total: ${anResults.count})`}>

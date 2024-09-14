@@ -4,8 +4,9 @@ import AnimeResults from './AnimeResults';
 import SSCResults from './SSCResults'; // Import SSCResults
 import ESResults from './ESResults';
 import APOResults from './APOResults';
+import LightNovelCharacterResults from './LightNovelCharacterResults';
 
-function CharacterResults({ anData, sscData, esData, apoData, images, filterState, highlight, mogDropdownState, animeDropdownState }) {
+function CharacterResults({ lnDropdownState, lnData, anData, sscData, esData, apoData, images, filterState, highlight, mogDropdownState, animeDropdownState }) {
   const mediumNames = {
     'an': 'Anime',
     'ssc': 'Seven Shadows Chronicles',
@@ -14,16 +15,28 @@ function CharacterResults({ anData, sscData, esData, apoData, images, filterStat
   };
 
 
-  function combineData(sscData, anData, esData, apoData) {
+  function combineData(sscData, anData, esData, apoData, lnData) {
     let sscDataCopy = JSON.parse(JSON.stringify(sscData));
     let anDataCopy = JSON.parse(JSON.stringify(anData));
     let esDataCopy = JSON.parse(JSON.stringify(esData));
     let apoDataCopy = JSON.parse(JSON.stringify(apoData));
+    let lnDataCopy = JSON.parse(JSON.stringify(lnData));
 
     let combinedData = { ...sscDataCopy };
 
     if (typeof sscDataCopy === 'undefined') {
       combinedData = {};
+    }
+
+    if (typeof lnDataCopy !== 'undefined') {
+      for (let character in lnData) {
+        if (combinedData[character]) {
+          combinedData[character].count += lnDataCopy[character].count;
+          combinedData[character].mediums = { ...combinedData[character].mediums, ...lnDataCopy[character].mediums };
+        } else {
+          combinedData[character] = lnDataCopy[character];
+        }
+      }
     }
 
     if (typeof anDataCopy !== 'undefined') {
@@ -84,7 +97,8 @@ function CharacterResults({ anData, sscData, esData, apoData, images, filterStat
     return combinedData;
   }
 
-  const combinedData = combineData(sscData, anData, esData, apoData);
+  const combinedData = combineData(sscData, anData, esData, apoData, lnData);
+
   const characterImages = images.characterImages;
 
   const totalCharacters = Object.values(combinedData).reduce((total, characterData) => total + characterData.count, 0);
@@ -113,6 +127,15 @@ function CharacterResults({ anData, sscData, esData, apoData, images, filterStat
                 {Object.keys(mediums).map((medium, index) => {
                   const mediumData = mediums[medium];
                   const mediumName = mediumNames[medium] || medium;
+                  if (medium === 'ln') {
+                    return (
+                      <div key={`${mediums}-${character}-an`} className="medium-trigger">
+                        <Collapsible trigger={`Light Novel (Total: ${mediumData.count})`}>
+                          <LightNovelCharacterResults character={characterImageName} lnDropdownState={lnDropdownState} lnData={mediumData} images={images} filterState={filterState} highlight={highlight} />
+                        </Collapsible>
+                      </div>
+                    );
+                  }
 
                   if (medium === 'mg') {
                     return (
