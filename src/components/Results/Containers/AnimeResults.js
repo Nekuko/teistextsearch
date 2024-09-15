@@ -163,9 +163,11 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
     // Use a unique ID for each popup
     const popup = document.getElementById(`popup-${seasonIndex}-${episodeIndex}-${sentenceIndex}`);
     if (popup) {
+      popup.classList.remove('hidden');
       popup.classList.add('show');
       setTimeout(() => {
         popup.classList.remove('show');
+        popup.classList.add('hidden');
       }, 1000); // The popup will be shown for 2 seconds
     }
   }
@@ -235,8 +237,7 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
                                             <FontAwesomeIcon 
                                             onClick={() => showPopup(seasonKey, episodeKey, index)}
                                             icon={faCopy} />
-                                            {/* Ensure the ID is unique for each popup */}
-                                            <div className="popup" id={`popup-${seasonKey}-${episodeKey}-${index}`}>
+                                            <div className="popup hidden" id={`popup-${seasonKey}-${episodeKey}-${index}`}>
                                               Copied!
                                             </div>
                                           </div>
@@ -268,10 +269,10 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
                                     </div>
                                     <div className="character-box">
                                       {characterImages[sentence.name_variant] && (
-                                        <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant || 'None'} />
+                                        <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant || 'Narrator'} />
                                       ) || (
                                           characterImages[sentence.name] && (
-                                            <img src={characterImages[sentence.name]} alt={sentence.name || 'None'} />
+                                            <img src={characterImages[sentence.name]} alt={sentence.name || 'Narrator'} />
                                           )
                                         )}
                                       <p title={sentence.name !== sentence.name_variant ? `${sentence.name_variant} (${sentence.name})` : sentence.name}>

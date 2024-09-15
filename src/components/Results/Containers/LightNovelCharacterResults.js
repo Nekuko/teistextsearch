@@ -2,16 +2,20 @@ import React, { useState, useRef, useEffect } from 'react';
 import Collapsible from 'react-collapsible';
 import '../Results.css'; // Import the CSS file
 import InfoPreview from './InfoPreview/InfoPreview';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCopy, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import MultiCharacterSentence from './MultiCharacterSentence/MultiCharacterSentence';
 
-function LightNovelCharacterResults({ character, lnData, images, highlight, filterState, lnDropdownState }) {
+function LightNovelCharacterResults({ lnCount, character, lnData, images, highlight, filterState, lnDropdownState }) {
   const [previewText, setPreviewText] = useState(null);
   const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
   const [currentPage, setCurrentPage] = useState({});
   const [openMenus, setOpenMenus] = useState({});
-
   const characterImages = images.characterImages;
   const volumeImages = images.lnCoverImages;
+  if (character) {
+    lnCount = 1;
+  }
 
   function openMenu(name) {
     setOpenMenus((prevOpenMenus) => ({
@@ -101,24 +105,44 @@ function LightNovelCharacterResults({ character, lnData, images, highlight, filt
     return null;
   }
 
-  function handleMouseEnterInfo(volumeKey, chapterKey, index, chapterTitle, line) {
+  function handleMouseEnterInfo(volumeKey, chapterKey, index, chapterTitle, sentence) {
     const rect = iconRefs.current[`${volumeKey}-${chapterKey}-${index}-info`].getBoundingClientRect();
-    console.log(rect)
-  
+    const characterInformation = [];
+    for (character of sentence.characters) {
+      let nameFinal;
+      let start = character.start;
+      let end = character.end;
+      if (character.name === character.name_variant) {
+        nameFinal = character.name;
+      } else {
+        nameFinal = `${character.name_variant} | (${character.name})`;
+      }
+      let substring = sentence.text.substring(start, end + 1);
+      if (substring.charAt(0) === " ") {
+        start++;
+      }
+      if (substring.charAt(substring.length - 1) === " ") {
+        end--;
+      }
+      characterInformation.push(`${nameFinal} [${start}, ${end + 1}]`)
+    }
+
     setPreviewPosition({ top: rect.top, left: rect.left });
 
     // Set the text data directly as the preview text
     setPreviewText(`Light Novel<br />${volumeKey.replace("v", " Volume ")}<br />
-     ${chapterTitle.replace("|", "-")}<br />Paragraph ${line}`);
+     ${chapterTitle.replace("|", "-")}<br />Paragraph ${sentence.line}<br />${characterInformation.join('<br />')}`);
   }
 
   function showPopup(volumeIndex, chapterIndex, sentenceIndex) {
     // Use a unique ID for each popup
     const popup = document.getElementById(`popup-${volumeIndex}-${chapterIndex}-${sentenceIndex}`);
     if (popup) {
+      popup.classList.remove('hidden');
       popup.classList.add('show');
       setTimeout(() => {
         popup.classList.remove('show');
+        popup.classList.add('hidden');
       }, 1000); // The popup will be shown for 2 seconds
     }
   }
@@ -131,7 +155,7 @@ function LightNovelCharacterResults({ character, lnData, images, highlight, filt
         // Calculate the total count for each volume
         const volumeCount = Object.values(volumeValue.chapters).reduce((total, chapter) => total + chapter.count, 0);
 
-        if (Object.keys(lnData.volumes).length === 1 && !openMenus[`ln-${volumeKey}`]) {
+        if (lnCount === 1 && !openMenus[`ln-${volumeKey}`]) {
           openMenu(`ln-${volumeKey}`);
         }
 
@@ -191,6 +215,32 @@ function LightNovelCharacterResults({ character, lnData, images, highlight, filt
                                   highlight={highlight}
                                 />
                               ))}
+
+                              {sentencesPerPage && (
+                                <div className='page-settings'>
+                                  <div className="pagination-controls">
+                                    <button title={`Page 1`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: 1 }))}>
+                                      <FontAwesomeIcon icon={faAnglesLeft} />
+                                    </button>
+                                    <button title={`Page ${Math.max(currentPage[uniqueChapterKey] - 1, 1)}`} disabled={currentPage[uniqueChapterKey] === 1} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.max((oldPages[uniqueChapterKey] || 1) - 1, 1) }))}>
+                                      <FontAwesomeIcon icon={faAngleLeft} />
+                                    </button>
+                                    <input type="number" min="1" max={Math.ceil(chapterValue.sentences.length / sentencesPerPage)} value={currentPage[uniqueChapterKey] || 1} onChange={e => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min(Math.max(Number(e.target.value), 1), Math.ceil(chapterValue.sentences.length / sentencesPerPage)) }))} />
+                                    <button title={`Page ${Math.min(currentPage[uniqueChapterKey] + 1, Math.ceil(chapterValue.sentences.length / sentencesPerPage))}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(chapterValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.min((oldPages[uniqueChapterKey] || 1) + 1, Math.ceil(chapterValue.sentences.length / sentencesPerPage)) }))}>
+                                      <FontAwesomeIcon icon={faAngleRight} />
+                                    </button>
+                                    <button title={`Page ${Math.ceil(chapterValue.sentences.length / sentencesPerPage)}`} disabled={currentPage[uniqueChapterKey] === Math.ceil(chapterValue.sentences.length / sentencesPerPage)} onClick={() => setCurrentPage(oldPages => ({ ...oldPages, [uniqueChapterKey]: Math.ceil(chapterValue.sentences.length / sentencesPerPage) }))}>
+                                      <FontAwesomeIcon icon={faAnglesRight} />
+                                    </button>
+                                  </div>
+                                  <input
+                                    type="number"
+                                    value={sentencesPerPage}
+                                    onChange={(e) => doSentencesPerPage(parseInt(e.target.value))}
+                                    className="settings-spp"
+                                  />
+                                </div>
+                              )}
                             </div>
                           </>
                         )}

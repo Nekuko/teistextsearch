@@ -129,7 +129,7 @@ function CharacterResults({ lnDropdownState, lnData, anData, sscData, esData, ap
                   const mediumName = mediumNames[medium] || medium;
                   if (medium === 'ln') {
                     return (
-                      <div key={`${mediums}-${character}-an`} className="medium-trigger">
+                      <div key={`${medium}-${character}-ln`} className="medium-trigger">
                         <Collapsible trigger={`Light Novel (Total: ${mediumData.count})`}>
                           <LightNovelCharacterResults character={characterImageName} lnDropdownState={lnDropdownState} lnData={mediumData} images={images} filterState={filterState} highlight={highlight} />
                         </Collapsible>

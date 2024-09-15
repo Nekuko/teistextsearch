@@ -42,27 +42,42 @@ export function searchAnime(keys, text, keywords, nameMap, characters = [], case
         allKeywordsFound = true;
       }
       if (allKeywordsFound && namedActive && characters.length === 0) {
-        let characterFound = true;
-        for (let character of namedCharacters) {
-          let characterToCheck = character.toLowerCase();
-          if (characterToCheck === sentence.name_variant.toLowerCase()) {
-            characterFound = false;
-
-            break;
-          }
-        }
-        if (!characterFound) {
-          return true;
-        }
-      } else if (allKeywordsFound && characters.length > 0) {
         let characterFound = false;
-        for (let character of characters) {
-          let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [character.toLowerCase()];
+        for (let character of namedCharacters) {
+          let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character} (All)`];
+          if (nameMap[`${character} (All)`]) {
+            characterToCheck = nameMap[`${character} (All)`].map(name => name.toLowerCase());
+          }
+
           for (let checkCharacter of characterToCheck) {
             if (checkCharacter === sentence.name_variant.toLowerCase()) {
               characterFound = true;
               break;
             }
+          }
+          if (characterFound) {
+            return true;
+          }
+        }
+        if (characterFound) {
+          return true;
+        }
+      } else if (allKeywordsFound && characters.length > 0) {
+        let characterFound = false;
+        for (let character of characters) {
+          let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character} (All)`];
+
+          if (nameMap[`${character} (All)`]) {
+            characterToCheck = nameMap[`${character} (All)`].map(name => name.toLowerCase());
+          }
+          for (let checkCharacter of characterToCheck) {
+            if (checkCharacter === sentence.name_variant.toLowerCase()) {
+              characterFound = true;
+              break;
+            }
+          }
+          if (characterFound) {
+            return true;
           }
         }
         if (characterFound) {

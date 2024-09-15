@@ -4,6 +4,7 @@ import './SearchPage.css'; // Import the CSS file
 import Filters from '../Filters/Filters'; // Import the Filters component
 import Results from '../Results/Results' // Import the Results component
 import { searchLN } from '../Search/searchLN';
+import { searchLNChars } from '../Search/searchLNChars';
 import { searchAnime } from '../Search/searchAnime';
 import { searchSSC } from '../Search/searchSSC';
 import { searchES } from '../Search/searchES';
@@ -451,12 +452,12 @@ function SearchPage() {
             return parsedState;
         }
 
-        return ['Akane Nishino', 'Alexia Midgar', 'Alpha', 'Annerose Nichtsehen', 'Aurora', 'Beatrix', 'Beta', 'Chi', 'Cid Kagenou', 'Claire Kagenou', 'Claudia', 
-      'Crimson', 'Delta', 'Duet', 'Elisabeth', 'Epsilon', 'Eta', 'Freya', 'Gamma', 'Garter Kikuchi', 'Gettan', 'Glen', 'Goldy Gilded', 'Grease', 'Iota', 
-      'Iris Midgar', 'Jack Nelson', 'Juggernaut', 'Kana', 'Kevin', 'Klaus Midgar', 'Kouadoi', 'Lambda', 'Lili', 'Lutheran Barnett', 'Marco Granger', 
-      'Margaret', 'Marie', 'Mary', 'Mist Dragon', 'Mordred', 'Mr. Kagenou', 'Mrs. Kagenou', 'Natsu', 'No. 664', 'No. 665', 'Nonna', 'Nu', 'Olivier', 
-      'Omega', 'Pente', 'Perv Asshat', 'Po Tato', 'Quinton', 'Raphael Oriana', 'Reina Oriana', 'Rex', 'Rose Oriana', 'Rouge', 'Sarasa', 'Sergey Gorman', 
-      'Sherry Barnett', 'Skel Etal', 'Victoria', 'White Demon', 'Yukime', 'Zenon Griffey', 'Zeta']
+        return ['Akane Nishino', 'Alexia Midgar', 'Alpha', 'Annerose Nichtsehen', 'Aurora', 'Beatrix', 'Beta', 'Chi', 'Cid Kagenou', 'Claire Kagenou', 'Claudia',
+            'Crimson', 'Delta', 'Duet', 'Elisabeth', 'Epsilon', 'Eta', 'Freya', 'Gamma', 'Garter Kikuchi', 'Gettan', 'Glen', 'Goldy Gilded', 'Grease', 'Iota',
+            'Iris Midgar', 'Jack Nelson', 'Juggernaut', 'Kana', 'Kevin', 'Klaus Midgar', 'Kouadoi', 'Lambda', 'Lili', 'Lutheran Barnett', 'Marco Granger',
+            'Margaret', 'Marie', 'Mary', 'Mist Dragon', 'Mordred', 'Mr. Kagenou', 'Mrs. Kagenou', 'Natsu', 'No. 664', 'No. 665', 'Nonna', 'Nu', 'Olivier',
+            'Omega', 'Pente', 'Perv Asshat', 'Po Tato', 'Quinton', 'Raphael Oriana', 'Reina Oriana', 'Rex', 'Rose Oriana', 'Rouge', 'Sarasa', 'Sergey Gorman',
+            'Sherry Barnett', 'Skel Etal', 'Victoria', 'White Demon', 'Yukime', 'Zenon Griffey', 'Zeta']
     });
 
     // Use an effect to update sessionStorage when namedActive changes
@@ -541,6 +542,7 @@ function SearchPage() {
                         return `ln_${chapter.split("c")[0]}_c${chapter.split("c")[1]}`;
                     })
             );
+            
 
         const wnCheckedItems = Object.entries(wnDropdownState.volumesChecked)
             .flatMap(([volume, chapters]) =>
@@ -599,11 +601,11 @@ function SearchPage() {
                             if (canonActive) {
                                 if (canonES.includes(part)) {
                                     esCheckedItems.push(`es_${ESMAPREVERSE[part]}_${episode}`);
-                                }  
+                                }
                             } else {
                                 esCheckedItems.push(`es_${ESMAPREVERSE[part]}_${episode}`);
                             }
-                            
+
                         }
                     }
                 }
@@ -759,6 +761,7 @@ function SearchPage() {
 
         let anCheckedData;
         let lnCheckedData;
+        let lnCheckedCharacterData;
         let wnCheckedData;
         let apoCheckedData;
         let sscCheckedData;
@@ -772,10 +775,10 @@ function SearchPage() {
             && sscCheckedItems.length === 0) {
             let data = await getAllMediums();
             if (checkedCharacters.length === 0) {
-                lnCheckedItems = data.lnCheckedItems;
                 wnCheckedItems = data.wnCheckedItems;
             }
-            
+
+            lnCheckedItems = data.lnCheckedItems;
             esCheckedItems = data.esCheckedItems;
             apoCheckedItems = data.apoCheckedItems;
             sscCheckedItems = data.sscCheckedItems;
@@ -787,9 +790,26 @@ function SearchPage() {
             anCheckedData = await fetchANData(animeCheckedItems, versionData, setVersionData, setResultsText);
         }
 
+        let lnCheckedCharacterItems = [];
         if (lnCheckedItems.length > 0) {
             lnCheckedData = await fetchLNData(lnCheckedItems, versionData, setVersionData, setResultsText);
-            
+            lnCheckedCharacterData = {};
+            for (const key in lnCheckedData) {
+                const volume = lnCheckedData[key];
+                const firstKey = Object.keys(volume)[0];
+                const firstKeyOfFirstKey = Object.keys(volume[firstKey])[0];
+                if (Object.keys(volume[firstKey][firstKeyOfFirstKey]).includes('characters')) {
+                    lnCheckedCharacterData[key] = volume;
+                }
+            }
+            lnCheckedCharacterItems = lnCheckedItems.filter(item => {
+                return Object.keys(lnCheckedCharacterData).includes(item.split("_")[1]);
+            });
+
+            lnCheckedItems = lnCheckedItems.filter(item => {
+                return !Object.keys(lnCheckedCharacterData).includes(item.split("_")[1]);
+            });
+
         }
 
         if (wnCheckedItems.length > 0) {
@@ -814,12 +834,14 @@ function SearchPage() {
         // Initialize separate objects to hold the anime and light novel results
         let animeResults = {};
         let lnResults = {};
+        let lnCharacterResults = {};
         let sscResults = {};
         let esResults = {};
         let wnResults = {};
         let apoResults = {};
 
         const lnText = { "ln": { ...lnCheckedData } }
+        const lnCharacterText = { "ln": { ...lnCheckedCharacterData } }
         const wntext = { "wn": { ...wnCheckedData } }
         const animeText = { "an": { ...anCheckedData } }
         const sscText = { "ssc": { ...sscCheckedData } }
@@ -829,6 +851,7 @@ function SearchPage() {
         let resultsKeyString = '';
 
         if (lnCheckedItems.length === 0 &&
+            lnCheckedCharacterItems === 0 &&
             wnCheckedItems.length === 0 &&
             animeCheckedItems.length === 0 &&
             sscCheckedItems.length === 0 &&
@@ -851,6 +874,7 @@ function SearchPage() {
         }
 
         if (Object.keys(lnText.ln).length === 0 &&
+            Object.keys(lnCharacterText.ln).length === 0 &&
             Object.keys(wntext.wn).length === 0 &&
             Object.keys(animeText.an).length === 0 &&
             Object.keys(sscText.ssc).length === 0 &&
@@ -870,14 +894,21 @@ function SearchPage() {
             if (typeof addedWord === 'string' && addedWord && (!filterState.regex)) {
                 keywords.push(addedWord);
             }
+
+
             animeResults = searchAnime(animeCheckedItems, animeText, keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, filterState.regex, namedActive, namedCharacters);
-            lnResults = searchLN(lnCheckedItems, lnText, keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, filterState.regex, namedActive, namedCharacters);
+            lnResults = searchLN(lnCheckedItems, lnText, keywords, filterState.caseSensitive, filterState.exactMatch, filterState.regex);
+            lnCharacterResults = searchLNChars(lnCheckedCharacterItems, lnCharacterText, keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, filterState.regex, namedActive, namedCharacters);
             wnResults = searchWN(wnCheckedItems, wntext, keywords, filterState.caseSensitive, filterState.exactMatch, filterState.regex);
             sscResults = searchSSC(sscCheckedItems, sscText, keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, filterState.regex, namedActive, namedCharacters);
             esResults = searchES(esCheckedItems, esText, keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, filterState.regex, namedActive, namedCharacters);
             apoResults = searchAPO(apoCheckedItems, apoText, keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, filterState.regex, namedActive, namedCharacters)
+
+            if (Object.keys(lnCharacterResults).length > 0 && !lnCharacterResults.ln) {
+                lnResults = [];
+            }
             // Update the state with the search results
-            setSearchResults({ anime: animeResults, ln: lnResults, wn: wnResults, ssc: { ...sscResults }, es: { ...esResults }, apo: { ...apoResults } });
+            setSearchResults({ anime: animeResults, ln: lnResults, lnChar: lnCharacterResults, wn: wnResults, ssc: { ...sscResults }, es: { ...esResults }, apo: { ...apoResults } });
             scrollToBottom();
         }
     }

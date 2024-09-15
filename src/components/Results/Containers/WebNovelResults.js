@@ -123,9 +123,11 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
     // Use a unique ID for each popup
     const popup = document.getElementById(`popup-${volumeIndex}-${chapterIndex}-${sentenceIndex}`);
     if (popup) {
+      popup.classList.remove('hidden');
       popup.classList.add('show');
       setTimeout(() => {
         popup.classList.remove('show');
+        popup.classList.add('hidden');
       }, 1000); // The popup will be shown for 2 seconds
     }
   }
@@ -183,7 +185,7 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
                                           onClick={() => showPopup(volumeKey, chapterKey, index)}
                                           icon={faCopy} />
                                         {/* Ensure the ID is unique for each popup */}
-                                        <div className="popup" id={`popup-${volumeKey}-${chapterKey}-${index}`}>
+                                        <div className="popup hidden" id={`popup-${volumeKey}-${chapterKey}-${index}`}>
                                           Copied!
                                         </div>
                                       </div>

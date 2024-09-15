@@ -1,9 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy, faFileImage, faCircleInfo, faSlashLine } from '@fortawesome/free-solid-svg-icons';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { ReactComponent as SlashLine } from '../../../../svgs/nav_separator.svg';
 import '../../Results.css'; // Import the CSS file
+import MultiCharacterBox from '../MultiCharacterBox/MultiCharacterBox';
 
 const MultiCharacterSentence = ({
     sentence,
@@ -20,6 +21,44 @@ const MultiCharacterSentence = ({
     highlight,
     filterState // Index of the sentence (used for unique popup IDs)
 }) => {
+
+    const [characters, setCharacters] = useState([]);
+    const [activeCharacter, setActiveCharacter] = useState({ name: 'Loading', name_variant: 'Loading' });
+    useEffect(() => {
+        if (sentence.characters) {
+            const uniqueCharacters = [...new Set(sentence.characters.map(item => ({ name: item.name, name_variant: item.name_variant })))];
+            setCharacters(uniqueCharacters);
+            if (uniqueCharacters.length === 1) {
+                setActiveCharacter(uniqueCharacters[0]);
+            } else {
+                let nonNarrator = false;
+                for (let character of uniqueCharacters) {
+                    if (characterName) {
+                        if (characterName === character.name_variant || characterName === character.name) {
+                            setActiveCharacter(character);
+                            break;
+                        }
+                    } else {
+                        if (!(['Cid Kagenou', 'Narrator'].includes(character.name))) {
+                            setActiveCharacter(character);
+                            nonNarrator = true;
+                            break;
+                        }
+                        if (!nonNarrator) {
+                            if (!(['Narrator'].includes(character.name))) {
+                                setActiveCharacter(character);
+                                nonNarrator = true;
+                                break;
+                            }
+                        }
+                        if (!nonNarrator) {
+                            setActiveCharacter(uniqueCharacters[0]);
+                        }
+                    }
+                }
+            }
+        }
+    }, [sentence]);
 
     const highlightKeywords = (sentence) => {
         sentence.characters.forEach((character) => {
@@ -48,7 +87,7 @@ const MultiCharacterSentence = ({
                 });
             }
 
-            if (character.name !== characterName) {
+            if (character.name !== activeCharacter.name) {
                 substringText = `<span class="sentence-dimmed">${substringText}</span>`
             }
 
@@ -63,30 +102,44 @@ const MultiCharacterSentence = ({
     };
 
     function highlightSubstrings(sentence) {
-        let highlightedText = sentence.text;
+        sentence.characters.forEach((character) => {
+            const startIndex = character.start;
+            const endIndex = character.end;
+            let substringText = sentence.text.substring(startIndex, endIndex + 1); // Use substringText instead of substring and highlightedText
+            if (character.name !== activeCharacter.name) {
+                substringText = `<span class="sentence-dimmed">${substringText}</span>`
+            }
 
-        for (const char of sentence.characters) {
-            if (char.name !== characterName) {
-                const start = char.start;
-                const end = char.end + 1;
-                highlightedText = highlightedText.substring(0, start) + `<span class="sentence-dimmed">${highlightedText.substring(start, end)}</span>` + highlightedText.substring(end);
+            character.substring = substringText;
+        });
+        let combined = '';
+        for (let character of sentence.characters.sort((a, b) => a.start - b.start)) {
+            combined += character.substring;
+        }
+        return combined;
+    }
+
+    function changeActive(event) {
+        if (event.target && event.target.classList.contains('sentence-dimmed')) {
+            for (let character of characters) {
+                if (character.name_variant !== activeCharacter.name_variant) {
+                    setActiveCharacter(character)
+                    break;
+                }
             }
         }
-
-        return highlightedText;
     }
 
     return (
         <div className="sentence-character-container" key={index}>
             <div className="sentence-box-image">
-                <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence) : highlightSubstrings(sentence) }} />
+                <p onClick={(event) => changeActive(event)} dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence) : highlightSubstrings(sentence) }} />
                 <div className="icon-container-triple">
                     <CopyToClipboard text={sentence.text}>
                         <div className="copy-icon">
                             <FontAwesomeIcon icon={faCopy} onClick={() => showPopup(volumeKey, chapterKey, index)} />
-                            {/* Ensure unique ID based on provided keys or index */}
                             {showPopup && (
-                                <div className="popup" id={`popup-${volumeKey}-${chapterKey}-${index}`}>
+                                <div className="popup hidden" id={`popup-${volumeKey}-${chapterKey}-${index}`}>
                                     Copied!
                                 </div>
                             )}
@@ -95,7 +148,7 @@ const MultiCharacterSentence = ({
                     <SlashLine className="icon-slashline" />
                     <div
                         className="info-icon-container"
-                        onMouseEnter={() => handleMouseEnterInfo(volumeKey, chapterKey, index, chapterTitle, sentence.line)}
+                        onMouseEnter={() => handleMouseEnterInfo(volumeKey, chapterKey, index, chapterTitle, sentence)}
                         onMouseLeave={() => setPreviewText(null)}
                         ref={ref => iconRefs.current[`${volumeKey}-${chapterKey}-${index}-info`] = ref}
                     >
@@ -105,17 +158,7 @@ const MultiCharacterSentence = ({
                     </div>
                 </div>
             </div>
-            <div className="character-box">
-                {characterImages[sentence.name_variant] && (
-                    <img src={characterImages[sentence.name_variant]} alt={sentence.name_variant || 'None'} />
-                )}
-                {(!characterImages[sentence.name_variant] && characterImages[sentence.name]) && (
-                    <img src={characterImages[sentence.name]} alt={sentence.name || 'None'} />
-                )}
-                <p title={sentence.name !== sentence.name_variant ? `${sentence.name_variant} (${sentence.name})` : sentence.name}>
-                    {sentence.name !== sentence.name_variant ? `${sentence.name_variant}` : sentence.name}
-                </p>
-            </div>
+            <MultiCharacterBox characters={characters} activeCharacter={activeCharacter} sentence={sentence} characterImages={characterImages}></MultiCharacterBox>
         </div>
     );
 };

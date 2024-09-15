@@ -7,7 +7,7 @@ import { faCopy, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngle
 import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
 import InfoPreview from './InfoPreview/InfoPreview';
 
-function LightNovelResults({ lnData, images, highlight, filterState, lnDropdownState }) {
+function LightNovelResults({ lnCount, lnData, images, highlight, filterState, lnDropdownState }) {
   const [previewText, setPreviewText] = useState(null);
   const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
   const [currentPage, setCurrentPage] = useState({});
@@ -145,9 +145,11 @@ function LightNovelResults({ lnData, images, highlight, filterState, lnDropdownS
     // Use a unique ID for each popup
     const popup = document.getElementById(`popup-${volumeIndex}-${chapterIndex}-${sentenceIndex}`);
     if (popup) {
+      popup.classList.remove('hidden');
       popup.classList.add('show');
       setTimeout(() => {
         popup.classList.remove('show');
+        popup.classList.add('hidden');
       }, 1000); // The popup will be shown for 2 seconds
     }
   }
@@ -160,7 +162,7 @@ function LightNovelResults({ lnData, images, highlight, filterState, lnDropdownS
         // Calculate the total count for each volume
         const volumeCount = Object.values(volumeValue.chapters).reduce((total, chapter) => total + chapter.count, 0);
 
-        if (Object.keys(lnData.volumes).length === 1 && !openMenus[`ln-${volumeKey}`]) {
+        if (lnCount === 1 && !openMenus[`ln-${volumeKey}`]) {
           openMenu(`ln-${volumeKey}`);
         }
 
@@ -205,7 +207,7 @@ function LightNovelResults({ lnData, images, highlight, filterState, lnDropdownS
                                     onClick={() => showPopup(volumeKey, chapterKey, index)}
                                     icon={faCopy} />
                                     {/* Ensure the ID is unique for each popup */}
-                                    <div className="popup" id={`popup-${volumeKey}-${chapterKey}-${index}`}>
+                                    <div className="popup hidden" id={`popup-${volumeKey}-${chapterKey}-${index}`}>
                                       Copied!
                                     </div>
                                   </div>

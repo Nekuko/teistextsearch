@@ -420,11 +420,11 @@
     },
     "characters": [
         {
-            "name": "None",
+            "name": "Narrator",
             "name_variants": [],
             "name_mirrors": [
                 {
-                    "base": "None",
+                    "base": "Narrator",
                     "alt": ""
                 }
             ],
@@ -1206,7 +1206,10 @@
             "group": "Cult of Diablos",
             "subgroup": "Knights of Rounds",
             "order": 3,
-            "url": "characterIcons/LutheranBarnettIcon.webp"
+            "url": {
+                "base": "characterIcons/LutheranBarnett.webp",
+                "Sir Guant": "characterIcons/SirGuant.webp"
+            }
         },
         {
             "name": "Gettan",

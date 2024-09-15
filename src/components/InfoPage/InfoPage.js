@@ -142,6 +142,20 @@ function InfoPage() {
         sessionStorage.setItem('animeDropdown', JSON.stringify(animeDropdownState));
     }, [animeDropdownState]);
 
+    const [lnDropdownState, setLNDropdownState] = useState(() => {
+        const savedState = sessionStorage.getItem('lnDropdown');
+        if (savedState) {
+            const parsedState = JSON.parse(savedState);
+            return parsedState;
+        }
+
+        return {}
+    });
+
+    useEffect(() => {
+        sessionStorage.setItem('lnDropdown', JSON.stringify(lnDropdownState));
+    }, [lnDropdownState]);
+
     // Use an effect to update sessionStorage when namedActive changes
     useEffect(() => {
         sessionStorage.setItem('namedCharacters', JSON.stringify(namedCharacters));
@@ -175,6 +189,24 @@ function InfoPage() {
         );
     }
 
+    const titleMapping = {
+        "P": "Prologue",
+        "1": "Chapter 1",
+        "2": "Chapter 2",
+        "3": "Chapter 3",
+        "4": "Chapter 4",
+        "5": "Chapter 5",
+        "6": "Chapter 6",
+        "7": "Chapter 7",
+        "8": "Chapter 8",
+        "9": "Chapter 9",
+        "X": "Auxiliary Chapter",
+        "F": "Final Chapter",
+        "A": "Appendix",
+        "E": "Epilogue",
+        "I": "Intermission"
+    }
+
     const lnCoverImages = mediumImages.lnCoverImages;
     const animeCoverImages = mediumImages.animeCoverImages;
     const sscCoverImages = mediumImages.sscCoverImages;
@@ -182,46 +214,108 @@ function InfoPage() {
     const apoCoverImages = mediumImages.apoCoverImages;
 
     const generateCollapsiblesLN = (all_counts) => {
-        const volumes = Object.keys(all_counts).filter(key => key !== 'total'); // Exclude the 'total' key
+        const volumes = Object.keys(all_counts.volumes); // Get all part keys
         return (
             <Collapsible onOpening={() => handleMenu('ln')} onClose={() => handleMenu('ln')} trigger="Light Novel">
-                <div className="info-collapse">
-                    {openMenus['ln'] && (
-                        <>
-                            <p>Volumes: {formatNumber(volumes.length)}</p>
-                            <p>Approximate Paragraphs: {formatNumber(all_counts.total.line_count)}</p>
-                            <p>Approximate Word Count: {formatNumber(all_counts.total.word_count)}</p>
-                            <p>Character Count: {formatNumber(all_counts.total.char_count)}</p>
-                            {volumes.sort().map(volume => (
-                                <Collapsible key={volume} trigger={
+                {openMenus['ln'] && (
+                    <>
+                        <p>Volumes: {formatNumber(all_counts.volume_count)}</p>
+                        <p>Paragraphs: {formatNumber(all_counts.line_count)}</p>
+                        <p>Approximate Word Count: {formatNumber(all_counts.word_count)}</p>
+                        <p>Character Count: {formatNumber(all_counts.char_count)}</p>
+                        <Collapsible trigger="Characters">
+                            <div className='info-character-box-small'>
+                                {Object.keys(all_counts.characters).sort((a, b) => {
+                                    if (all_counts.characters[b] === all_counts.characters[a]) {
+                                        return a.localeCompare(b);
+                                    }
+                                    return all_counts.characters[b] - all_counts.characters[a]
+                                }).map(character => (
+                                    <div key={character}>
+                                        <span>{character}: </span>
+                                        <span>{all_counts.characters[character]}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </Collapsible>
+                        {volumes.sort().map(volume => (
+                            <Collapsible onOpening={() => handleMenu(`ln-${volume}`)} onClose={() => handleMenu(`ln-${volume}`)} key={volume} trigger={
+                                <>
+                                    <div className="volume-trigger">
+                                        {lnCoverImages[volume] && <img className="cover-image" src={lnCoverImages[volume]} alt={all_counts[volume]} />}
+                                        {`${volume.replace("v", "Volume ") === 'Volume 6' ? "Volume 6 [Fan-TL]" : volume.replace("v", "Volume ")}`}
+                                    </div>
+                                </>
+                            }>
+                                {openMenus[`ln-${volume}`] && (
                                     <>
-                                        <div className="volume-trigger">
-                                            {lnCoverImages[volume] && <img className="cover-image" src={lnCoverImages[volume]} alt={all_counts[volume].total.title} />}
-                                            {`${all_counts[volume].total.title}`}
-                                        </div>
-                                    </>
-                                }>
-                                    <p>Chapters: {formatNumber(Object.keys(all_counts[volume]).length - 1)}</p> {/* Exclude the 'total' key */}
-                                    <p>Approximate Paragraphs: {formatNumber(all_counts[volume].total.line_count)}</p>
-                                    <p>Approximate Word Count: {formatNumber(all_counts[volume].total.word_count)}</p>
-                                    <p>Character Count: {formatNumber(all_counts[volume].total.char_count)}</p>
-                                    {Object.keys(all_counts[volume]).filter(key => key !== 'total').sort((a, b) => {
-                                        const chapterA = a.split("c")[1];
-                                        const chapterB = b.split("c")[1];
-                                        return chapterA - chapterB; // Otherwise, sort by part
-                                    })
-                                        .map(chapter => (
-                                            <Collapsible key={chapter} trigger={`${all_counts[volume][chapter].title}`}>
-                                                <p>Approximate Paragraphs: {formatNumber(all_counts[volume][chapter].line_count)}</p>
-                                                <p>Approximate Word Count: {formatNumber(all_counts[volume][chapter].word_count)}</p>
-                                                <p>Character Count: {formatNumber(all_counts[volume][chapter].char_count)}</p>
+                                        <p>Chapters: {Object.keys(all_counts.volumes[volume].chapters).length}</p>
+                                        <p>Paragraphs: {formatNumber(all_counts.volumes[volume].line_count)}</p>
+                                        <p>Approximate Word Count: {formatNumber(all_counts.volumes[volume].word_count)}</p>
+                                        <p>Character Count: {formatNumber(all_counts.volumes[volume].char_count)}</p>
+                                        {Object.keys(all_counts.volumes[volume].characters).length > 0 && (
+                                            <Collapsible trigger="Characters">
+                                                <div className='info-character-box-small'>
+                                                    {Object.keys(all_counts.volumes[volume].characters).sort((a, b) => {
+                                                        if (all_counts.volumes[volume].characters[b] === all_counts.volumes[volume].characters[a]) {
+                                                            return a.localeCompare(b);
+                                                        }
+                                                        return all_counts.volumes[volume].characters[b] - all_counts.volumes[volume].characters[a]
+                                                    }).map(character => (
+                                                        <div key={character}>
+                                                            <span>{character}: </span>
+                                                            <span>{all_counts.volumes[volume].characters[character]}</span>
+                                                        </div>
+                                                    ))}
+                                                </div>
                                             </Collapsible>
-                                        ))}
-                                </Collapsible>
-                            ))}
-                        </>
-                    )}
-                </div>
+                                        )}
+                                        {Object.keys(all_counts.volumes[volume].chapters).sort((a, b) => {
+                                            const chapterA = a.split("c")[1];
+                                            const chapterB = b.split("c")[1];
+                                            return chapterA - chapterB; // Otherwise, sort by part
+                                        })
+                                            .map(chapter => {
+                                                let volumeTitleFull = lnDropdownState.volumesChecked[`${volume.replace("v", "Volume ")}`][`${volume}${chapter}`].title
+                                                let [tag, title] = volumeTitleFull.split(" | ");
+                                                let volumeTitle = `${titleMapping[tag]} | ${title}`
+                                                return (
+                                                    <Collapsible key={chapter} trigger={
+                                                        <>
+                                                            <div className="volume-trigger">
+                                                                {`${volumeTitle}`}
+                                                            </div>
+                                                        </>
+                                                    }>
+                                                        <p>Paragraphs: {formatNumber(all_counts.volumes[volume].chapters[chapter].line_count)}</p>
+                                                        <p>Approximate Word Count: {formatNumber(all_counts.volumes[volume].chapters[chapter].word_count)}</p>
+                                                        <p>Character Count: {formatNumber(all_counts.volumes[volume].chapters[chapter].char_count)}</p>
+                                                        {Object.keys(all_counts.volumes[volume].chapters[chapter].characters).length > 0 && (
+                                                            <Collapsible trigger="Characters">
+                                                                <div className='info-character-box-small'>
+                                                                    {Object.keys(all_counts.volumes[volume].chapters[chapter].characters).sort((a, b) => {
+                                                                        if (all_counts.volumes[volume].chapters[chapter].characters[b] === all_counts.volumes[volume].chapters[chapter].characters[a]) {
+                                                                            return a.localeCompare(b);
+                                                                        }
+                                                                        return all_counts.volumes[volume].chapters[chapter].characters[b] - all_counts.volumes[volume].chapters[chapter].characters[a]
+                                                                    }).map(character => (
+                                                                        <div key={character}>
+                                                                            <span>{character}: </span>
+                                                                            <span>{all_counts.volumes[volume].chapters[chapter].characters[character]}</span>
+                                                                        </div>
+                                                                    ))}
+                                                                </div>
+                                                            </Collapsible>
+                                                        )}
+                                                    </Collapsible>
+                                                );
+                                            })}
+                                    </>
+                                )}
+                            </Collapsible>
+                        ))}
+                    </>
+                )}
             </Collapsible>
         );
     };
@@ -904,9 +998,9 @@ function InfoPage() {
     }
 
     const all_info = {
-        "line_count": mg_info["line_count"] + informationData['ln']["total"]["line_count"] + informationData['wn']["total"]["line_count"] + all_an_info["line_count"],
-        "word_count": mg_info["word_count"] + informationData['ln']["total"]["word_count"] + informationData['wn']["total"]["word_count"] + all_an_info["word_count"],
-        "char_count": mg_info["char_count"] + informationData['ln']["total"]["char_count"] + informationData['wn']["total"]["char_count"] + all_an_info["char_count"],
+        "line_count": mg_info["line_count"] + informationData['ln']["line_count"] + informationData['wn']["total"]["line_count"] + all_an_info["line_count"],
+        "word_count": mg_info["word_count"] + informationData['ln']["word_count"] + informationData['wn']["total"]["word_count"] + all_an_info["word_count"],
+        "char_count": mg_info["char_count"] + informationData['ln']["char_count"] + informationData['wn']["total"]["char_count"] + all_an_info["char_count"],
     }
 
     function handleMenu(name) {
