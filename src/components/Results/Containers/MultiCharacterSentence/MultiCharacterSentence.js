@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faFileImage, faCircleInfo, faSlashLine } from '@fortawesome/free-solid-svg-icons';
+import { faCopy, faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { ReactComponent as SlashLine } from '../../../../svgs/nav_separator.svg';
 import '../../Results.css'; // Import the CSS file
@@ -32,7 +32,17 @@ const MultiCharacterSentence = ({
                 setActiveCharacter(uniqueCharacters[0]);
             } else {
                 let nonNarrator = false;
-                for (let character of uniqueCharacters) {
+                for (let character of uniqueCharacters.sort((a, b) => {
+                    if (['Cid Kagenou', 'Narrator'].includes(a.name)) {
+                        return -1;
+                      }
+                      if (['Cid Kagenou', 'Narrator'].includes(a.name)) {
+                        return 1;
+                      }
+                    
+                      // Otherwise, sort in descending order
+                      return b.name.localeCompare(a.name);
+                  })) {
                     if (characterName) {
                         if (characterName === character.name_variant || characterName === character.name) {
                             setActiveCharacter(character);
@@ -45,14 +55,17 @@ const MultiCharacterSentence = ({
                             break;
                         }
                         if (!nonNarrator) {
-                            if (!(['Narrator'].includes(character.name))) {
-                                setActiveCharacter(character);
-                                nonNarrator = true;
-                                break;
-                            }
-                        }
-                        if (!nonNarrator) {
-                            setActiveCharacter(uniqueCharacters[0]);
+                            setActiveCharacter(uniqueCharacters.sort((a, b) => {
+                                if (['Cid Kagenou', 'Narrator'].includes(a.name)) {
+                                    return -1;
+                                  }
+                                  if (['Cid Kagenou', 'Narrator'].includes(a.name)) {
+                                    return 1;
+                                  }
+                                
+                                  // Otherwise, sort in descending order
+                                  return b.name.localeCompare(a.name);
+                              })[0]);
                         }
                     }
                 }

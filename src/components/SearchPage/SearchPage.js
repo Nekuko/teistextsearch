@@ -107,6 +107,7 @@ function createCharacterDropdowns(data) {
             for (const name_variant of name_variants) {
                 for (const variant of Object.keys(url)) {
                     if (variant !== 'base') {
+                        console.log(variant)
                         if (variant === name_variant) {
                             characterImages[variant] = url[variant]
                         } else if (name_variant.includes(`(${variant})`)) {
@@ -230,7 +231,8 @@ function SearchPage() {
                 if (savedNameMap) {
                     savedNameMap = JSON.parse(savedNameMap);
                 }
-
+                
+                characterData.versionUpdated = true;
                 if (characterData.versionUpdated || Object.keys(savedCharacterDropdowns).length === 0 ||
                     Object.keys(savedNameMap).length === 0) {
                     let characterDropdownData = createCharacterDropdowns(characterData.data);

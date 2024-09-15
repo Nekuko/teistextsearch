@@ -1207,8 +1207,8 @@
             "subgroup": "Knights of Rounds",
             "order": 3,
             "url": {
-                "base": "characterIcons/LutheranBarnett.webp",
-                "Sir Guant": "characterIcons/SirGuant.webp"
+                "base": "characterIcons/LutheranBarnettIcon.webp",
+                "Sir Gaunt": "characterIcons/SirGauntIcon.webp"
             }
         },
         {
