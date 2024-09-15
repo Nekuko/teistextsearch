@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Collapsible from 'react-collapsible';
+import LightNovelCharacterResults from './Containers/LightNovelCharacterResults';
 import LightNovelResults from './Containers/LightNovelResults';
 import WebNovelResults from './Containers/WebNovelResults';
 import AnimeResults from './Containers/AnimeResults';
@@ -14,7 +15,8 @@ import APOResults from './Containers/APOResults';
 function Results({ resultsText, setResultsText, results, images, filterState, resultState, setResultState, animeDropdownState, lnDropdownState, wnDropdownState, mogDropdownState, setSearchResults }) {
   const noResults = Object.keys(results).every(key => Object.keys(results[key]).length === 0);
 
-  const lnResults = results && results.ln ? results.ln.ln : null;
+  let lnResults = results && results.ln ? results.ln.ln : null;
+  const lnCharacterResults = results && results.lnChar ? results.lnChar.ln : null;
   const wnResults = results && results.wn ? results.wn.wn : null;
   const anResults = results && results.anime ? results.anime.an : null;
   const sscResults = results && results.ssc ? results.ssc.ssc : null;
@@ -38,6 +40,7 @@ function Results({ resultsText, setResultsText, results, images, filterState, re
   };
 
   // Check if .an key exists in results.anime and if there are any characters to show
+  const lnCharacter = results && results.lnChar && !results.lnChar.ln && Object.keys(results.lnChar).length > 0;
   const anCharacter = results && results.anime && !results.anime.an && Object.keys(results.anime).length > 0;
   const sscCharacter = results && results.ssc && !results.ssc.ssc && Object.keys(results.ssc).length > 0;
   const apoCharacter = results && results.apo && !results.apo.apo && Object.keys(results.apo).length > 0;
@@ -56,7 +59,24 @@ function Results({ resultsText, setResultsText, results, images, filterState, re
     }
   }
 
-  
+  let lnCount = 0;
+  let lnVolumeCount = 0;
+  if (lnResults) {
+    lnVolumeCount = lnVolumeCount + Object.keys(lnResults.volumes).length
+  }
+  if (lnCharacterResults) {
+    lnVolumeCount = lnVolumeCount + Object.keys(lnCharacterResults.volumes).length
+  }
+  if (lnCharacter === false && lnCharacterResults) {
+    let lnCharacterCopy = JSON.parse(JSON.stringify(lnCharacterResults))
+    lnCount = lnCount + lnCharacterCopy.count;
+  }
+
+  if (lnResults) {
+    lnCount = lnCount + lnResults.count;
+  }
+
+
 
   return (
     <div>
@@ -77,14 +97,82 @@ function Results({ resultsText, setResultsText, results, images, filterState, re
         <div className="content-wrapper">
           {noResults ? (
             <div>
-                <p>{resultsText}</p>
+              <p>{resultsText}</p>
             </div>
           ) : (
             <>
-              {lnResults && (
+              {((anCharacter || esCharacter || sscCharacter || apoCharacter || lnCharacter) && (
                 <>
-                  <Collapsible className="ln-results" trigger={`Light Novel (Total: ${lnResults.count})`}>
-                    <LightNovelResults lnDropdownState={lnDropdownState} lnData={lnResults} volumeImages={images.lnCoverImages} highlight={highlight} filterState={filterState} />
+                  <CharacterResults lnData={results.lnChar} lnDropdownState={lnDropdownState} animeDropdownState={animeDropdownState} anData={results.anime} sscData={results.ssc} esData={results.es} apoData={results.apo} images={images} highlight={highlight} filterState={filterState} mogDropdownState={mogDropdownState} />
+                  <br />
+                </>
+              ))}
+              {(lnResults || lnCharacterResults) && (
+                <>
+                  <Collapsible className="ln-results" trigger={`Light Novel (Total: ${lnCount})`}>
+                    {lnCharacterResults && (
+                      <LightNovelCharacterResults lnCount={lnVolumeCount} lnDropdownState={lnDropdownState} lnData={lnCharacterResults} images={images} filterState={filterState} highlight={highlight} />
+                    )}
+                    {lnResults && (
+                      <LightNovelResults lnCount={lnVolumeCount} lnDropdownState={lnDropdownState} lnData={lnResults} images={images} highlight={highlight} filterState={filterState} />
+                    )}
+                  </Collapsible>
+                  <br />
+                </>
+              )}
+              {anResults && (
+                <>
+                  <Collapsible className="an-results" trigger={`Anime (Total: ${anResults.count})`}>
+                    <AnimeResults animeDropdownState={animeDropdownState} anData={anResults} images={images} highlight={highlight} filterState={filterState} main={true} />
+                  </Collapsible>
+                  <br />
+                </>
+              )}
+              {((sscResults || esResults || apoResults) && (mgCount > 0)) && (
+                <>
+                  <Collapsible trigger={`Master of Garden (Total: ${mgCount})`}>
+                    {sscResults && (
+                      <>
+                        <Collapsible key={'ssc'} trigger={
+                          <>
+                            <div className="season-trigger">
+                              {images.sscCoverImages["ssc"] && <img className="ssc-image" src={images.sscCoverImages["ssc"]} alt={"Seven Shadows Chronicles"} />}
+                              {`Seven Shadows Chronicles (Total: ${sscResults.count})`}
+                            </div>
+                          </>
+                        }>
+                          <SSCResults main={true} sscData={sscResults} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Seven Shadows Chronicles']} />
+                        </Collapsible>
+                        <br />
+                      </>
+                    )}
+                    {esResults && (
+                      <>
+                        <Collapsible key={'es'} trigger={
+                          <>
+                            <div className="season-trigger">
+                              {images.esCoverImages["Event Stories"] && <img className="es-image" src={images.esCoverImages["Event Stories"]} alt={"Event Stories"} />}
+                              {`Event Stories (Total: ${esResults.count})`}
+                            </div>
+                          </>
+                        }>
+                          <ESResults main={true} anData={esResults} images={images} filterState={filterState} highlight={highlight} />
+                        </Collapsible>
+                        <br />
+                      </>
+                    )}
+                    {apoResults && (
+                      <Collapsible key={'apo'} trigger={
+                        <>
+                          <div className="season-trigger">
+                            {images.apoCoverImages["Apocrypha"] && <img className="apo-image-small" src={images.apoCoverImages["Apocrypha"]} alt={"Apocrypha"} />}
+                            {`Apocrypha (Total: ${apoResults.count})`}
+                          </div>
+                        </>
+                      }>
+                        <APOResults main={true} sscData={apoResults} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Apocrypha']} />
+                      </Collapsible>
+                    )}
                   </Collapsible>
                   <br />
                 </>
@@ -96,66 +184,6 @@ function Results({ resultsText, setResultsText, results, images, filterState, re
                   </Collapsible>
                   <br />
                 </>
-              )}
-              {((anCharacter || esCharacter || sscCharacter || apoCharacter) && (
-                <>
-                  <CharacterResults animeDropdownState={animeDropdownState} anData={results.anime} sscData={results.ssc} esData={results.es} apoData={results.apo} images={images} highlight={highlight} filterState={filterState} mogDropdownState={mogDropdownState} />
-                  <br />
-                </>
-              ))}
-              {anResults && (
-                <>
-                  <Collapsible className="an-results" trigger={`Anime (Total: ${anResults.count})`}>
-                    <AnimeResults animeDropdownState={animeDropdownState} anData={anResults} images={images} highlight={highlight} filterState={filterState} main={true} />
-                  </Collapsible>
-                  <br />
-                </>
-              )}
-              {((sscResults || esResults || apoResults) && (mgCount > 0)) && (
-                <Collapsible trigger={`Master of Garden (Total: ${mgCount})`}>
-                  {sscResults && (
-                    <>
-                      <Collapsible key={'ssc'} trigger={
-                        <>
-                          <div className="season-trigger">
-                            {images.sscCoverImages["ssc"] && <img className="ssc-image" src={images.sscCoverImages["ssc"]} alt={"Seven Shadows Chronicles"} />}
-                            {`Seven Shadows Chronicles (Total: ${sscResults.count})`}
-                          </div>
-                        </>
-                      }>
-                        <SSCResults main={true} sscData={sscResults} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Seven Shadows Chronicles']} />
-                      </Collapsible>
-                      <br />
-                    </>
-                  )}
-                  {esResults && (
-                    <>
-                      <Collapsible key={'es'} trigger={
-                        <>
-                          <div className="season-trigger">
-                            {images.esCoverImages["Event Stories"] && <img className="es-image" src={images.esCoverImages["Event Stories"]} alt={"Event Stories"} />}
-                            {`Event Stories (Total: ${esResults.count})`}
-                          </div>
-                        </>
-                      }>
-                        <ESResults main={true} anData={esResults} images={images} filterState={filterState} highlight={highlight} />
-                      </Collapsible>
-                      <br />
-                    </>
-                  )}
-                  {apoResults && (
-                    <Collapsible key={'apo'} trigger={
-                      <>
-                        <div className="season-trigger">
-                          {images.apoCoverImages["Apocrypha"] && <img className="apo-image-small" src={images.apoCoverImages["Apocrypha"]} alt={"Apocrypha"} />}
-                          {`Apocrypha (Total: ${apoResults.count})`}
-                        </div>
-                      </>
-                    }>
-                      <APOResults main={true} sscData={apoResults} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Apocrypha']} />
-                    </Collapsible>
-                  )}
-                </Collapsible>
               )}
             </>
           )}

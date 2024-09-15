@@ -1,18 +1,21 @@
-// WebNovelResults.js
 import React, { useState, useRef, useEffect } from 'react';
 import Collapsible from 'react-collapsible';
 import '../Results.css'; // Import the CSS file
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+import InfoPreview from './InfoPreview/InfoPreview';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
-import InfoPreview from './InfoPreview/InfoPreview';
+import MultiCharacterSentence from './MultiCharacterSentence/MultiCharacterSentence';
 
-function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropdownState }) {
+function LightNovelCharacterResults({ lnCount, character, lnData, images, highlight, filterState, lnDropdownState }) {
   const [previewText, setPreviewText] = useState(null);
   const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
   const [currentPage, setCurrentPage] = useState({});
   const [openMenus, setOpenMenus] = useState({});
+  const characterImages = images.characterImages;
+  const volumeImages = images.lnCoverImages;
+  if (character) {
+    lnCount = 1;
+  }
 
   function openMenu(name) {
     setOpenMenus((prevOpenMenus) => ({
@@ -27,18 +30,18 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
       [name]: false,
     }));
   }
-  
+
   useEffect(() => {
     const initialPages = {};
-    Object.keys(wnData.volumes).forEach(volumeKey => {
-      Object.keys(wnData.volumes[volumeKey].chapters).forEach(chapterKey => {
+    Object.keys(lnData.volumes).forEach(volumeKey => {
+      Object.keys(lnData.volumes[volumeKey].chapters).forEach(chapterKey => {
         // Create a unique key for each chapter
         const uniqueChapterKey = `${volumeKey}-${chapterKey}`;
         initialPages[uniqueChapterKey] = 1;
       });
     });
     setCurrentPage(initialPages);
-  }, [wnData]);
+  }, [lnData]);
 
   const [sentencesPerPage, setSentencesPerPage] = useState(() => {
     const savedState = sessionStorage.getItem('sentencesPerPage');
@@ -63,11 +66,11 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
       setSentencesPerPage(15);
     }
     let newCurrentPages = { ...currentPage };
-    Object.keys(wnData.volumes).forEach(volumeKey => {
-      Object.keys(wnData.volumes[volumeKey].chapters).forEach(chapterKey => {
+    Object.keys(lnData.volumes).forEach(volumeKey => {
+      Object.keys(lnData.volumes[volumeKey].chapters).forEach(chapterKey => {
         // Create a unique key for each chapter
         const uniqueChapterKey = `${volumeKey}-${chapterKey}`;
-        const len = wnData.volumes[volumeKey].chapters[chapterKey].sentences.length
+        const len = lnData.volumes[volumeKey].chapters[chapterKey].sentences.length
         if (currentPage[uniqueChapterKey] > Math.ceil(len / value)) {
           newCurrentPages[uniqueChapterKey] = Math.ceil(len / value)
         }
@@ -77,47 +80,59 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
   }
 
 
+
   const iconRefs = useRef({});
-  // If wnData is empty, return nothing
-  if (Object.keys(wnData.volumes).length === 0) {
+  // If lnData is empty, return nothing
+  const titleMapping = {
+    "P ": "Prologue",
+    "1 ": "Chapter 1",
+    "2 ": "Chapter 2",
+    "3 ": "Chapter 3",
+    "4 ": "Chapter 4",
+    "5 ": "Chapter 5",
+    "6 ": "Chapter 6",
+    "7 ": "Chapter 7",
+    "8 ": "Chapter 8",
+    "9 ": "Chapter 9",
+    "X ": "Auxiliary Chapter",
+    "F ": "Final Chapter",
+    "A ": "Appendix",
+    "E ": "Epilogue",
+    "I ": "Intermission"
+  }
+
+  if (Object.keys(lnData.volumes).length === 0) {
     return null;
   }
 
-  function handleMouseEnterInfo(volumeKey, chapterKey, index, chapterTitle, line) {
+  function handleMouseEnterInfo(volumeKey, chapterKey, index, chapterTitle, sentence) {
     const rect = iconRefs.current[`${volumeKey}-${chapterKey}-${index}-info`].getBoundingClientRect();
+    const characterInformation = [];
+    for (character of sentence.characters) {
+      let nameFinal;
+      let start = character.start;
+      let end = character.end;
+      if (character.name === character.name_variant) {
+        nameFinal = character.name;
+      } else {
+        nameFinal = `${character.name_variant} | (${character.name})`;
+      }
+      let substring = sentence.text.substring(start, end + 1);
+      if (substring.charAt(0) === " ") {
+        start++;
+      }
+      if (substring.charAt(substring.length - 1) === " ") {
+        end--;
+      }
+      characterInformation.push(`${nameFinal} [${start}, ${end + 1}]`)
+    }
+
     setPreviewPosition({ top: rect.top, left: rect.left });
 
     // Set the text data directly as the preview text
-    setPreviewText(`Web Novel<br />Volume ${volumeKey}<br />
-    Chapter ${chapterKey} - ${chapterTitle}<br />Paragraph ${line}`);
+    setPreviewText(`Light Novel<br />${volumeKey.replace("v", " Volume ")}<br />
+     ${chapterTitle.replace("|", "-")}<br />Paragraph ${sentence.line}<br />${characterInformation.join('<br />')}`);
   }
-
-  const highlightKeywords = (text) => {
-    let highlightedText = text;
-    if (filterState.regex) {
-      const regex = new RegExp(filterState.expression, 'g');
-      highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
-    } else {
-      filterState.keywords.forEach(keyword => {
-        let regex;
-        if (filterState.regex) {
-          // If regex is true, use the keyword as a regular expression
-          regex = new RegExp(keyword, filterState.caseSensitive ? 'g' : 'gi');
-        } else if (filterState.exactMatch) {
-          // If exactMatch is true, match the keyword exactly as it is
-          regex = new RegExp(`\\b${keyword}\\b`, filterState.caseSensitive ? 'g' : 'gi');
-        } else {
-          // Otherwise, match any occurrence of the keyword
-          regex = new RegExp(keyword, filterState.caseSensitive ? 'g' : 'gi');
-        }
-
-        // Highlight matches
-        highlightedText = highlightedText.replace(regex, '<span class="highlight">$&</span>');
-      });
-    }
-
-    return highlightedText;
-  };
 
   function showPopup(volumeIndex, chapterIndex, sentenceIndex) {
     // Use a unique ID for each popup
@@ -134,19 +149,18 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
 
   return (
     <div className="anime-trigger">
-      {Object.entries(wnData.volumes).map(([volumeKey, volumeValue]) => {
-        // Get the volume title from wnDropdownState
-        const volumeTitle = `Volume ${volumeKey}` || `Volume ${volumeKey.slice(1)}`;
+      {Object.entries(lnData.volumes).sort().map(([volumeKey, volumeValue]) => {
+        // Get the volume title from lnDropdownState
+        const volumeTitle = lnDropdownState.volumesChecked[`Volume ${volumeKey.slice(1)}`]?.title || `Volume ${volumeKey.slice(1)}`;
         // Calculate the total count for each volume
         const volumeCount = Object.values(volumeValue.chapters).reduce((total, chapter) => total + chapter.count, 0);
 
-
-        if (Object.keys(wnData.volumes).length === 1 && !openMenus[`wn-${volumeKey}`]) {
-          openMenu(`wn-${volumeKey}`)
+        if (lnCount === 1 && !openMenus[`ln-${volumeKey}`]) {
+          openMenu(`ln-${volumeKey}`);
         }
 
         return (
-          <Collapsible open={openMenus[`wn-${volumeKey}`]} onOpening={() => openMenu(`wn-${volumeKey}`)} onClose={() => closeMenu(`wn-${volumeKey}`)} className="medium-margin" trigger={
+          <Collapsible open={openMenus[`ln-${volumeKey}`]} onOpening={() => openMenu(`ln-${volumeKey}`)} onClose={() => closeMenu(`ln-${volumeKey}`)} className="medium-margin" trigger={
             <>
               <div className="volume-trigger">
                 {volumeImages[volumeKey] && <img className="cover-image" src={volumeImages[volumeKey]} alt={volumeTitle} />}
@@ -154,7 +168,7 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
               </div>
             </>
           } key={volumeKey}>
-            {openMenus[`wn-${volumeKey}`] && (
+            {openMenus[`ln-${volumeKey}`] && (
               <>
                 {Object.entries(volumeValue.chapters).sort((a, b) => {
                   const chapterA = a[0].split("c")[1];
@@ -162,48 +176,46 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
                   return chapterA - chapterB; // Otherwise, sort by part
                 })
                   .map(([chapterKey, chapterValue]) => {
-
+                    // Get the chapter title from lnDropdownState
                     const uniqueChapterKey = `${volumeKey}-${chapterKey}`;
-                    // Get the chapter title from wnDropdownState
-                    const chapterTitle = wnDropdownState.volumesChecked[`Volume ${volumeKey}`][`v${volumeKey}c${chapterKey}`].title || `Chapter ${chapterKey.slice(1)}`;
-                    if (Object.keys(volumeValue.chapters).length === 1 && !openMenus[`wn-${uniqueChapterKey}`]) {
-                      openMenu(`wn-${uniqueChapterKey}`)
+                    const chapterName = lnDropdownState.volumesChecked[`Volume ${volumeKey.slice(1)}`][`${volumeKey}${chapterKey}`].title
+
+                    const chapterTitle = `${titleMapping[chapterName.split("|")[0]]} | ${chapterName.split("|")[1]}` || `Chapter ${chapterKey.slice(1)}`;
+                    if (Object.keys(volumeValue.chapters).length === 1 && !openMenus[`ln-${volumeKey}-${chapterKey}`]) {
+                      openMenu(`ln-${volumeKey}-${chapterKey}`);
                     }
 
                     return (
-                      <Collapsible open={openMenus[`wn-${uniqueChapterKey}`]} onOpening={() => openMenu(`wn-${uniqueChapterKey}`)} onClose={() => closeMenu(`wn-${uniqueChapterKey}`)} trigger={`Chapter ${chapterKey} | ${chapterTitle} (Total: ${chapterValue.count})`} key={chapterKey}>
-                        {openMenus[`wn-${uniqueChapterKey}`] && (
+                      <Collapsible
+                        open={openMenus[`ln-${volumeKey}-${chapterKey}`]}
+                        onOpening={() => openMenu(`ln-${volumeKey}-${chapterKey}`)}
+                        onClose={() => closeMenu(`ln-${volumeKey}-${chapterKey}`)}
+                        trigger={`${chapterTitle} (Total: ${chapterValue.count})`}
+                        key={chapterKey}
+                      >
+                        {openMenus[`ln-${volumeKey}-${chapterKey}`] && (
                           <>
                             <div className="sentences-container">
                               {chapterValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
-                                <div className="sentence-box" key={index}>
-                                  <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.text) : sentence.text }} />
-                                  <div className="icon-container">
-                                    <CopyToClipboard text={sentence.text}>
-                                      <div className="copy-icon">
-                                        <FontAwesomeIcon
-                                          onClick={() => showPopup(volumeKey, chapterKey, index)}
-                                          icon={faCopy} />
-                                        {/* Ensure the ID is unique for each popup */}
-                                        <div className="popup hidden" id={`popup-${volumeKey}-${chapterKey}-${index}`}>
-                                          Copied!
-                                        </div>
-                                      </div>
-                                    </CopyToClipboard>
-                                    <SlashLine className="icon-slashline" />
-                                    <div className="info-icon-container"
-                                      onMouseEnter={() => handleMouseEnterInfo(volumeKey, chapterKey, index,
-                                        chapterTitle, sentence.line)}
-                                      onMouseLeave={() => setPreviewText(null)}
-                                      ref={ref => iconRefs.current[`${volumeKey}-${chapterKey}-${index}-info`] = ref}
-                                    >
-                                      {sentence && (
-                                        <FontAwesomeIcon className="info-icon" icon={faCircleInfo} />
-                                      )}
-                                    </div>
-                                  </div>
-                                </div>
+                                <MultiCharacterSentence
+                                  key={index}
+                                  sentence={sentence}
+                                  filterState={filterState}
+                                  characterImages={characterImages}
+                                  showPopup={showPopup}
+                                  handleMouseEnterInfo={handleMouseEnterInfo}
+                                  volumeKey={volumeKey}
+                                  chapterKey={chapterKey}
+                                  chapterTitle={chapterTitle}
+                                  iconRefs={iconRefs}
+                                  previewText={previewText}
+                                  setPreviewText={setPreviewText}
+                                  index={index}
+                                  characterName={character}
+                                  highlight={highlight}
+                                />
                               ))}
+
                               {sentencesPerPage && (
                                 <div className='page-settings'>
                                   <div className="pagination-controls">
@@ -233,7 +245,6 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
                           </>
                         )}
                       </Collapsible>
-
                     );
                   })}
               </>
@@ -246,4 +257,4 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
   );
 }
 
-export default WebNovelResults;
+export default LightNovelCharacterResults;

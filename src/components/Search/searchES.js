@@ -19,45 +19,57 @@ export function searchES(keys, text, keywords, nameMap, characters = [], caseSen
             if (regex) {
                 const regexToTest = new RegExp(keywords[0]);
                 allKeywordsFound = regexToTest.test(sentenceToCheck);
-              } else {
+            } else {
                 for (let keyword of keywords) {
-                  let keywordToCheck = caseSensitive ? keyword : keyword.toLowerCase();
-                  if (exactMatch) {
-                    // If exact match is required, check if the sentence contains the keyword as a whole word
-                    let regex = new RegExp(`\\b${keywordToCheck}\\b`);
-                    if (!regex.test(sentenceToCheck)) {
-                      allKeywordsFound = false;
-                      break;
+                    let keywordToCheck = caseSensitive ? keyword : keyword.toLowerCase();
+                    if (exactMatch) {
+                        // If exact match is required, check if the sentence contains the keyword as a whole word
+                        let regex = new RegExp(`\\b${keywordToCheck}\\b`);
+                        if (!regex.test(sentenceToCheck)) {
+                            allKeywordsFound = false;
+                            break;
+                        }
+                    } else {
+                        // If exact match is not required, check if the sentence includes the keyword
+                        if (!sentenceToCheck.includes(keywordToCheck)) {
+                            allKeywordsFound = false;
+                            break;
+                        }
                     }
-                  } else {
-                    // If exact match is not required, check if the sentence includes the keyword
-                    if (!sentenceToCheck.includes(keywordToCheck)) {
-                      allKeywordsFound = false;
-                      break;
-                    }
-                  }
                 }
-              }
+            }
             if (keywords.length === 0) {
                 allKeywordsFound = true;
             }
             if (allKeywordsFound && namedActive && characters.length === 0) {
-                let characterFound = true;
+                let characterFound = false;
                 for (let character of namedCharacters) {
-                    let characterToCheck = character.toLowerCase();
-                    if (characterToCheck === sentence.name_variant.toLowerCase()) {
-                        characterFound = false;
-
-                        break;
+                  let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character} (All)`];
+                  if (nameMap[`${character} (All)`]) {
+                    characterToCheck = nameMap[`${character} (All)`].map(name => name.toLowerCase());
+                  }
+        
+                  for (let checkCharacter of characterToCheck) {
+                    if (checkCharacter === sentence.name_variant.toLowerCase()) {
+                      characterFound = true;
+                      break;
                     }
-                }
-                if (!characterFound) {
+                  }
+                  if (characterFound) {
                     return true;
+                  }
                 }
-            } else if (allKeywordsFound && characters.length > 0) {
+                if (characterFound) {
+                  return true;
+                }
+              } else if (allKeywordsFound && characters.length > 0) {
                 let characterFound = false;
                 for (let character of characters) {
-                    let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [character.toLowerCase()];
+                    let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character} (All)`];
+
+                    if (nameMap[`${character} (All)`]) {
+                        characterToCheck = nameMap[`${character} (All)`].map(name => name.toLowerCase());
+                    }
                     for (let checkCharacter of characterToCheck) {
                         if (checkCharacter === sentence.name_variant.toLowerCase()) {
                             characterFound = true;

@@ -172,10 +172,12 @@
 
   .copy-icon:hover,
   .image-icon:hover,
-  .info-icon:hover {
+  .info-icon:hover,
+  .swap-character-icon:hover {
     color: red;
     cursor: pointer;
   }
+
 }
 
 .results-container {
@@ -329,6 +331,17 @@
   height: 39px;
 }
 
+.sentence-dimmed {
+  opacity: 0.5; /* Dimmed effect */
+  color: #999999; /* Gray dimmed color */
+}
+
+.sentence-dimmed:hover {
+  opacity: 1; /* Increase opacity to 100% on hover */
+  color: white;
+  cursor: pointer;
+}
+
 .cover-image-apo-chapter-small {
   width: 90px;
   height: 23px;
@@ -396,7 +409,13 @@
 }
 
 .show {
+  display: block;
   opacity: 1;
+}
+
+.hidden {
+  transition: display 0.2s;
+  display: none;
 }
 
 
@@ -420,6 +439,7 @@
   margin: 0px;
   margin-right: 5px;
   padding: 0px;
+  margin-left: 3px;
   justify-content: center;
   align-items: center;
 }
@@ -430,6 +450,16 @@
   color: #c8000f;
   cursor: pointer;
   position: relative;
+}
+
+.swap-character-icon {
+  color: #c8000f;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-top: 0.1px;
+  font-size: 10px;
 }
 
 .copy-icon {
