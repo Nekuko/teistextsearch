@@ -107,7 +107,6 @@ function createCharacterDropdowns(data) {
             for (const name_variant of name_variants) {
                 for (const variant of Object.keys(url)) {
                     if (variant !== 'base') {
-                        console.log(variant)
                         if (variant === name_variant) {
                             characterImages[variant] = url[variant]
                         } else if (name_variant.includes(`(${variant})`)) {

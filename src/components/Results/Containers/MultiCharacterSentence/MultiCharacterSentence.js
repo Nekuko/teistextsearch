@@ -29,55 +29,33 @@ const MultiCharacterSentence = ({
 
     useEffect(() => {
         if (sentence.characters) {
-            const uniqueCharacters = [...new Set(sentence.characters.map(item => ({ name: item.name, name_variant: item.name_variant })))];
+            const uniqueCharacters = [...new Set(sentence.characters.map(item => ({ name: item.name, name_variant: item.name_variant, match: item.match })))];
+            const allMatch = uniqueCharacters.every(matchItem => matchItem.match);
             setCharacters(uniqueCharacters);
             if (uniqueCharacters.length === 1) {
                 setActiveCharacter(uniqueCharacters[0]);
+            } else if (characterName) {
+                setActiveCharacter(uniqueCharacters.filter(character => character.name === characterName || character.name_variant === characterName)[0]);
             } else {
-                let nonNarrator = false;
-                for (let character of uniqueCharacters.sort((a, b) => {
-                    if (['Cid Kagenou', 'Narrator'].includes(a.name)) {
-                        return -1;
-                      }
-                      if (['Cid Kagenou', 'Narrator'].includes(a.name)) {
-                        return 1;
-                      }
-                    
-                      // Otherwise, sort in descending order
-                      return b.name.localeCompare(a.name);
-                  })) {
-                    if (characterName) {
-                        if (characterName === character.name_variant || characterName === character.name) {
-                            setActiveCharacter(character);
-                            break;
-                        }
-                    } else {
-                        if (character.name === 'Cid Kagenou' && namedActive) {
-                            setActiveCharacter(character);
-                            nonNarrator = true;
-                            break;
-                        }
-                        if (!(['Cid Kagenou', 'Narrator'].includes(character.name))) {
-                            setActiveCharacter(character);
-                            nonNarrator = true;
-                            break;
-                        }
-                        if (!nonNarrator) {
-                            setActiveCharacter(uniqueCharacters.sort((a, b) => {
-                                if (['Cid Kagenou', 'Narrator'].includes(a.name)) {
-                                    return -1;
-                                  }
-                                  if (['Cid Kagenou', 'Narrator'].includes(a.name)) {
-                                    return 1;
-                                  }
-                                
-                                  // Otherwise, sort in descending order
-                                  return b.name.localeCompare(a.name);
-                              })[0]);
-                        }
+                if (!allMatch) {
+                    setActiveCharacter(uniqueCharacters.filter(character => character.match)[0]);
+                } else {
+                    let nonNarrating = uniqueCharacters.filter(character => !["Cid Kagenou", "Narrator"].includes(character.name))[0];
+                    let narrating = uniqueCharacters.filter(character => ["Cid Kagenou", "Narrator"].includes(character.name))[0];
+                    if (!nonNarrating) {
+                        nonNarrating = uniqueCharacters.filter(character => character.name === "Cid Kagenou")[0];
+                        narrating = uniqueCharacters.filter(character => character.name !== "Cid Kagenou")[0];
                     }
+                    if (namedActive && narrating.name === "Cid Kagenou" && !namedCharacters.includes(nonNarrating.name)) {
+                        setActiveCharacter(narrating)
+                    } else {
+                        setActiveCharacter(nonNarrating)
+                    }
+                    
                 }
+                
             }
+
         }
     }, [sentence]);
 

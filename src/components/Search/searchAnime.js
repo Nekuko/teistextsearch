@@ -66,7 +66,7 @@ export function searchAnime(keys, text, keywords, nameMap, characters = [], case
         let characterFound = false;
         for (let character of characters) {
           let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character.toLowerCase()}`];
-
+          characterToCheck.push(character.toLowerCase())
           if (nameMap[`${character} (All)`]) {
             characterToCheck = nameMap[`${character} (All)`].map(name => name.toLowerCase());
           }
@@ -94,6 +94,7 @@ export function searchAnime(keys, text, keywords, nameMap, characters = [], case
       if (characters.length > 0) {
         for (let character of characters) {
           let characterToCheck = nameMap[character] ? nameMap[character].map(name => name) : [character];
+          characterToCheck.push(character)
           let characterSentences = filteredSentences.filter(sentence => characterToCheck.some(name => sentence.name_variant === name));
           if (characterSentences.length > 0) {
             if (!results[character]) {

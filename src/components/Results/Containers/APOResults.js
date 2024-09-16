@@ -167,10 +167,10 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
             popup.classList.remove('hidden');
             popup.classList.add('show');
             setTimeout(() => {
-              popup.classList.remove('show');
-              popup.classList.add('hidden');
+                popup.classList.remove('show');
+                popup.classList.add('hidden');
             }, 1000); // The popup will be shown for 2 seconds
-          }
+        }
     }
 
     return (
@@ -268,8 +268,8 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
                                                                                             <div className="sentence-box-image">
                                                                                                 <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
                                                                                                 <div className="icon-container-triple">
-                                                                                                    <div className="copy-icon">
-                                                                                                        <CopyToClipboard text={sentence.subtitle}>
+                                                                                                    <CopyToClipboard text={sentence.subtitle}>
+                                                                                                        <div className="copy-icon">
                                                                                                             <FontAwesomeIcon
                                                                                                                 onClick={() => showPopup(partKey, chapterKey, index)}
                                                                                                                 icon={faCopy}
@@ -277,8 +277,8 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
                                                                                                             <div className="popup hidden" id={`popup-${partKey}-${chapterKey}-${index}`}>
                                                                                                                 Copied!
                                                                                                             </div>
-                                                                                                        </CopyToClipboard>
-                                                                                                    </div>
+                                                                                                        </div>
+                                                                                                    </CopyToClipboard>
                                                                                                     <SlashLine className="icon-slashline" />
                                                                                                     <div className="image-icon-container"
                                                                                                         onMouseEnter={() => handleMouseEnter(sentence.url, partKey, chapterKey, index)}
