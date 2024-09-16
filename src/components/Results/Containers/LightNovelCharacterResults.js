@@ -3,10 +3,10 @@ import Collapsible from 'react-collapsible';
 import '../Results.css'; // Import the CSS file
 import InfoPreview from './InfoPreview/InfoPreview';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import MultiCharacterSentence from './MultiCharacterSentence/MultiCharacterSentence';
 
-function LightNovelCharacterResults({ lnCount, character, lnData, images, highlight, filterState, lnDropdownState }) {
+function LightNovelCharacterResults({ namedCharacters, namedActive, lnCount, character, lnData, images, highlight, filterState, lnDropdownState }) {
   const [previewText, setPreviewText] = useState(null);
   const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
   const [currentPage, setCurrentPage] = useState({});
@@ -213,6 +213,8 @@ function LightNovelCharacterResults({ lnCount, character, lnData, images, highli
                                   index={index}
                                   characterName={character}
                                   highlight={highlight}
+                                  namedCharacters={namedCharacters}
+                                  namedActive={namedActive}
                                 />
                               ))}
 

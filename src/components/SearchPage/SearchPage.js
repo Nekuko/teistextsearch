@@ -231,7 +231,7 @@ function SearchPage() {
                 if (savedNameMap) {
                     savedNameMap = JSON.parse(savedNameMap);
                 }
-                
+
                 characterData.versionUpdated = true;
                 if (characterData.versionUpdated || Object.keys(savedCharacterDropdowns).length === 0 ||
                     Object.keys(savedNameMap).length === 0) {
@@ -544,7 +544,7 @@ function SearchPage() {
                         return `ln_${chapter.split("c")[0]}_c${chapter.split("c")[1]}`;
                     })
             );
-            
+
 
         const wnCheckedItems = Object.entries(wnDropdownState.volumesChecked)
             .flatMap(([volume, chapters]) =>
@@ -1046,8 +1046,11 @@ function SearchPage() {
                 setMediumFlash={setMediumFlash}
                 keywordsFlash={keywordsFlash}
                 setKeywordsFlash={setKeywordsFlash}
+
             />
             <Results
+                namedCharacters={namedCharacters}
+                namedActive={namedActive}
                 resultsText={resultsText}
                 setResultsText={setResultsText}
                 setSearchResults={setSearchResults}

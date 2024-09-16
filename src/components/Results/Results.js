@@ -12,7 +12,7 @@ import SSCResults from './Containers/SSCResults';
 import ESResults from './Containers/ESResults';
 import APOResults from './Containers/APOResults';
 
-function Results({ resultsText, setResultsText, results, images, filterState, resultState, setResultState, animeDropdownState, lnDropdownState, wnDropdownState, mogDropdownState, setSearchResults }) {
+function Results({ namedCharacters, namedActive, resultsText, setResultsText, results, images, filterState, resultState, setResultState, animeDropdownState, lnDropdownState, wnDropdownState, mogDropdownState, setSearchResults }) {
   const noResults = Object.keys(results).every(key => Object.keys(results[key]).length === 0);
 
   let lnResults = results && results.ln ? results.ln.ln : null;
@@ -103,7 +103,7 @@ function Results({ resultsText, setResultsText, results, images, filterState, re
             <>
               {((anCharacter || esCharacter || sscCharacter || apoCharacter || lnCharacter) && (
                 <>
-                  <CharacterResults lnData={results.lnChar} lnDropdownState={lnDropdownState} animeDropdownState={animeDropdownState} anData={results.anime} sscData={results.ssc} esData={results.es} apoData={results.apo} images={images} highlight={highlight} filterState={filterState} mogDropdownState={mogDropdownState} />
+                  <CharacterResults namedCharacters={namedCharacters} namedActive={namedActive} lnData={results.lnChar} lnDropdownState={lnDropdownState} animeDropdownState={animeDropdownState} anData={results.anime} sscData={results.ssc} esData={results.es} apoData={results.apo} images={images} highlight={highlight} filterState={filterState} mogDropdownState={mogDropdownState} />
                   <br />
                 </>
               ))}
@@ -111,7 +111,7 @@ function Results({ resultsText, setResultsText, results, images, filterState, re
                 <>
                   <Collapsible className="ln-results" trigger={`Light Novel (Total: ${lnCount})`}>
                     {lnCharacterResults && (
-                      <LightNovelCharacterResults lnCount={lnVolumeCount} lnDropdownState={lnDropdownState} lnData={lnCharacterResults} images={images} filterState={filterState} highlight={highlight} />
+                      <LightNovelCharacterResults namedCharacters={namedCharacters} namedActive={namedActive} lnCount={lnVolumeCount} lnDropdownState={lnDropdownState} lnData={lnCharacterResults} images={images} filterState={filterState} highlight={highlight} />
                     )}
                     {lnResults && (
                       <LightNovelResults lnCount={lnVolumeCount} lnDropdownState={lnDropdownState} lnData={lnResults} images={images} highlight={highlight} filterState={filterState} />

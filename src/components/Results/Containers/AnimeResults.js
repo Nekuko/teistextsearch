@@ -19,13 +19,6 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
   const partsChecked = animeDropdownState.seasonsChecked;
   const [openMenus, setOpenMenus] = useState({});
 
-  function handleMenu(name) {
-    setOpenMenus((prevOpenMenus) => ({
-      ...prevOpenMenus,
-      [name]: !prevOpenMenus[name],
-    }));
-  }
-
   function openMenu(name) {
     setOpenMenus((prevOpenMenus) => ({
       ...prevOpenMenus,

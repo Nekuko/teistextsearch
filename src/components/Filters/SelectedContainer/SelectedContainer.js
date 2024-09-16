@@ -1,5 +1,5 @@
 // SelectedContainer.js
-import React, { useRef, useState, useEffect } from 'react';
+import React from 'react';
 import './SelectedContainer.css';
 
 function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownState, lnDropdownState, dropdownStates, namedActive, canonActive }) {

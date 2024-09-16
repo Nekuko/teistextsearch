@@ -10,6 +10,8 @@ const MultiCharacterSentence = ({
     sentence,
     iconRefs,
     characterName,
+    namedCharacters,
+    namedActive,
     setPreviewText,
     characterImages = {}, // Object mapping character names to image URLs
     showPopup, // Function to handle popup display (if provided)
@@ -24,6 +26,7 @@ const MultiCharacterSentence = ({
 
     const [characters, setCharacters] = useState([]);
     const [activeCharacter, setActiveCharacter] = useState({ name: 'Loading', name_variant: 'Loading' });
+
     useEffect(() => {
         if (sentence.characters) {
             const uniqueCharacters = [...new Set(sentence.characters.map(item => ({ name: item.name, name_variant: item.name_variant })))];
@@ -49,6 +52,11 @@ const MultiCharacterSentence = ({
                             break;
                         }
                     } else {
+                        if (character.name === 'Cid Kagenou' && namedActive) {
+                            setActiveCharacter(character);
+                            nonNarrator = true;
+                            break;
+                        }
                         if (!(['Cid Kagenou', 'Narrator'].includes(character.name))) {
                             setActiveCharacter(character);
                             nonNarrator = true;

@@ -43,7 +43,7 @@ export function searchSSC(keys, text, keywords, nameMap, characters = [], caseSe
       if (allKeywordsFound && namedActive && characters.length === 0) {
         let characterFound = false;
         for (let character of namedCharacters) {
-          let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character} (All)`];
+          let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character.toLowerCase()}`];
           if (nameMap[`${character} (All)`]) {
             characterToCheck = nameMap[`${character} (All)`].map(name => name.toLowerCase());
           }
@@ -64,7 +64,7 @@ export function searchSSC(keys, text, keywords, nameMap, characters = [], caseSe
       } else if (allKeywordsFound && characters.length > 0) {
         let characterFound = false;
         for (let character of characters) {
-          let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character} (All)`];
+          let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character.toLowerCase()}`];
 
           if (nameMap[`${character} (All)`]) {
             characterToCheck = nameMap[`${character} (All)`].map(name => name.toLowerCase());
