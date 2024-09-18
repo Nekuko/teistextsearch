@@ -6,42 +6,69 @@
         "char_count": 1923515,
         "characters": {
             "Cid Kagenou (Minoru Kageno)": 44,
-            "Cid Kagenou": 1075,
-            "Cid Kagenou (Shadow)": 183,
-            "Bandit": 2,
-            "Bandit Boss": 10,
-            "Alpha": 77,
+            "Cid Kagenou": 1932,
+            "Cid Kagenou (Shadow)": 308,
+            "Bandit": 9,
+            "Bandit Boss": 15,
+            "Alpha": 177,
             "Mr. Kagenou": 3,
             "Mrs. Kagenou": 2,
-            "Beta": 63,
-            "Narrator": 1423,
+            "Beta": 125,
+            "Narrator": 3441,
             "Grease": 55,
             "Soldier": 7,
-            "Claire Kagenou": 23,
+            "Claire Kagenou": 44,
             "Garden Member": 1,
-            "Alexia Midgar": 262,
-            "Skel Etal": 49,
+            "Alexia Midgar": 368,
+            "Skel Etal": 91,
             "Po Tato": 41,
             "Student": 19,
             "Zenon Griffey": 71,
             "Knight": 23,
-            "Iris Midgar": 107,
+            "Iris Midgar": 185,
             "Scientist": 20,
             "Cult Member": 27,
-            "Mitsugoshi Staff": 1,
-            "Gamma (Luna)": 18,
+            "Mitsugoshi Staff": 4,
+            "Gamma (Luna)": 28,
             "Sherry Barnett": 143,
             "Lutheran Barnett": 86,
             "Glen": 13,
-            "Nu": 49,
-            "Gamma": 26,
-            "Referee": 4,
-            "Rose Oriana": 32,
+            "Nu": 61,
+            "Gamma": 42,
+            "Referee": 11,
+            "Rose Oriana": 176,
             "Teacher": 1,
             "Marco Granger": 5,
             "Rex": 42,
             "Lutheran Barnett (Sir Gaunt)": 10,
-            "Medic": 3
+            "Medic": 3,
+            "Beta (Natsume Kafka)": 78,
+            "Epsilon": 53,
+            "Announcer": 2,
+            "Jack Nelson": 98,
+            "Aurora": 86,
+            "Delta": 24,
+            "Rude": 9,
+            "Cid Kagenou (Mundane Mann)": 134,
+            "Annerose Nichtsehen": 74,
+            "Quinton": 46,
+            "Heckler": 10,
+            "Goldy Gilded": 31,
+            "Spectator": 3,
+            "Supervisor": 2,
+            "Perv Asshat": 48,
+            "Captain's Daughter": 9,
+            "Duke's Second Son": 8,
+            "Beatrix": 43,
+            "Clerk": 1,
+            "Aristocrat": 11,
+            "Klaus Midgar": 1,
+            "Raphael Oriana": 2,
+            "Cid Kagenou (Stylish Bandit Slayer)": 10,
+            "Lambda": 12,
+            "No. 665": 1,
+            "No. 664": 4,
+            "Rose Oriana (No. 666)": 4
         },
         "volumes": {
             "v1": {
@@ -247,73 +274,244 @@
                 "line_count": 4073,
                 "word_count": 58035,
                 "char_count": 325229,
-                "characters": {},
+                "characters": {
+                    "Cid Kagenou": 857,
+                    "Alpha": 100,
+                    "Rose Oriana": 144,
+                    "Beta (Natsume Kafka)": 78,
+                    "Alexia Midgar": 106,
+                    "Narrator": 2018,
+                    "Cid Kagenou (Shadow)": 125,
+                    "Epsilon": 53,
+                    "Announcer": 2,
+                    "Jack Nelson": 98,
+                    "Aurora": 86,
+                    "Delta": 24,
+                    "Rude": 9,
+                    "Gamma (Luna)": 10,
+                    "Nu": 12,
+                    "Beta": 62,
+                    "Mitsugoshi Staff": 3,
+                    "Gamma": 16,
+                    "Cid Kagenou (Mundane Mann)": 134,
+                    "Annerose Nichtsehen": 74,
+                    "Quinton": 46,
+                    "Heckler": 10,
+                    "Skel Etal": 42,
+                    "Goldy Gilded": 31,
+                    "Referee": 7,
+                    "Spectator": 3,
+                    "Supervisor": 2,
+                    "Perv Asshat": 48,
+                    "Claire Kagenou": 21,
+                    "Iris Midgar": 78,
+                    "Captain's Daughter": 9,
+                    "Duke's Second Son": 8,
+                    "Beatrix": 43,
+                    "Clerk": 1,
+                    "Aristocrat": 11,
+                    "Klaus Midgar": 1,
+                    "Raphael Oriana": 2,
+                    "Bandit Boss": 5,
+                    "Bandit": 7,
+                    "Cid Kagenou (Stylish Bandit Slayer)": 10,
+                    "Lambda": 12,
+                    "No. 665": 1,
+                    "No. 664": 4,
+                    "Rose Oriana (No. 666)": 4
+                },
                 "chapters": {
                     "c1": {
                         "word_count": 5362,
                         "char_count": 29052,
                         "line_count": 271,
-                        "characters": {}
+                        "characters": {
+                            "Cid Kagenou": 174,
+                            "Alpha": 5,
+                            "Rose Oriana": 31,
+                            "Beta (Natsume Kafka)": 4,
+                            "Alexia Midgar": 17,
+                            "Narrator": 14,
+                            "Cid Kagenou (Shadow)": 33,
+                            "Epsilon": 6
+                        }
                     },
                     "c2": {
                         "word_count": 4995,
                         "char_count": 28174,
                         "line_count": 246,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 129,
+                            "Beta (Natsume Kafka)": 11,
+                            "Cid Kagenou": 37,
+                            "Announcer": 2,
+                            "Cid Kagenou (Shadow)": 63,
+                            "Alexia Midgar": 6,
+                            "Rose Oriana": 5,
+                            "Jack Nelson": 12
+                        }
                     },
                     "c3": {
                         "word_count": 9287,
                         "char_count": 52575,
                         "line_count": 641,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 372,
+                            "Rose Oriana": 18,
+                            "Jack Nelson": 53,
+                            "Cid Kagenou": 147,
+                            "Alexia Midgar": 14,
+                            "Alpha": 57,
+                            "Epsilon": 11,
+                            "Beta (Natsume Kafka)": 4,
+                            "Cid Kagenou (Shadow)": 1,
+                            "Aurora": 44,
+                            "Delta": 12
+                        }
                     },
                     "c4": {
                         "word_count": 8208,
                         "char_count": 46512,
                         "line_count": 604,
-                        "characters": {}
+                        "characters": {
+                            "Cid Kagenou": 101,
+                            "Aurora": 42,
+                            "Jack Nelson": 33,
+                            "Narrator": 380,
+                            "Epsilon": 27,
+                            "Alpha": 17,
+                            "Rose Oriana": 8,
+                            "Beta (Natsume Kafka)": 11,
+                            "Alexia Midgar": 11,
+                            "Rude": 9,
+                            "Gamma (Luna)": 10,
+                            "Nu": 3,
+                            "Delta": 12,
+                            "Cid Kagenou (Shadow)": 4,
+                            "Beta": 15
+                        }
                     },
                     "c5": {
                         "word_count": 5666,
                         "char_count": 31110,
                         "line_count": 376,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 117,
+                            "Rose Oriana": 17,
+                            "Cid Kagenou": 74,
+                            "Mitsugoshi Staff": 3,
+                            "Gamma": 16,
+                            "Nu": 9,
+                            "Cid Kagenou (Mundane Mann)": 97,
+                            "Annerose Nichtsehen": 13,
+                            "Quinton": 10,
+                            "Heckler": 10,
+                            "Skel Etal": 2,
+                            "Alexia Midgar": 20,
+                            "Beta (Natsume Kafka)": 20
+                        }
                     },
                     "c6": {
                         "word_count": 4000,
                         "char_count": 22975,
                         "line_count": 303,
-                        "characters": {}
+                        "characters": {
+                            "Cid Kagenou": 28,
+                            "Skel Etal": 28,
+                            "Goldy Gilded": 31,
+                            "Cid Kagenou (Mundane Mann)": 28,
+                            "Narrator": 126,
+                            "Referee": 4,
+                            "Spectator": 3,
+                            "Quinton": 36,
+                            "Annerose Nichtsehen": 44
+                        }
                     },
                     "c7": {
                         "word_count": 5155,
                         "char_count": 28773,
                         "line_count": 384,
-                        "characters": {}
+                        "characters": {
+                            "Cid Kagenou": 100,
+                            "Skel Etal": 12,
+                            "Supervisor": 2,
+                            "Alexia Midgar": 38,
+                            "Narrator": 181,
+                            "Beta (Natsume Kafka)": 28,
+                            "Epsilon": 9,
+                            "Perv Asshat": 1,
+                            "Rose Oriana": 28,
+                            "Cid Kagenou (Shadow)": 8
+                        }
                     },
                     "c8": {
                         "word_count": 5561,
                         "char_count": 30656,
                         "line_count": 446,
-                        "characters": {}
+                        "characters": {
+                            "Cid Kagenou": 153,
+                            "Claire Kagenou": 21,
+                            "Iris Midgar": 46,
+                            "Captain's Daughter": 8,
+                            "Duke's Second Son": 7,
+                            "Beatrix": 17,
+                            "Narrator": 165,
+                            "Perv Asshat": 30,
+                            "Referee": 2,
+                            "Annerose Nichtsehen": 17,
+                            "Cid Kagenou (Mundane Mann)": 4
+                        }
                     },
                     "c9": {
                         "word_count": 4275,
                         "char_count": 24097,
                         "line_count": 329,
-                        "characters": {}
+                        "characters": {
+                            "Cid Kagenou": 43,
+                            "Iris Midgar": 21,
+                            "Clerk": 1,
+                            "Aristocrat": 11,
+                            "Narrator": 227,
+                            "Beatrix": 13,
+                            "Duke's Second Son": 1,
+                            "Captain's Daughter": 1,
+                            "Perv Asshat": 13,
+                            "Klaus Midgar": 1,
+                            "Referee": 1,
+                            "Cid Kagenou (Mundane Mann)": 4,
+                            "Rose Oriana": 6,
+                            "Raphael Oriana": 2
+                        }
                     },
                     "c10": {
                         "word_count": 4565,
                         "char_count": 25738,
                         "line_count": 426,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 307,
+                            "Rose Oriana": 31,
+                            "Cid Kagenou (Mundane Mann)": 1,
+                            "Bandit Boss": 5,
+                            "Bandit": 7,
+                            "Cid Kagenou (Stylish Bandit Slayer)": 10,
+                            "Cid Kagenou (Shadow)": 16,
+                            "Perv Asshat": 4,
+                            "Beatrix": 13,
+                            "Iris Midgar": 11,
+                            "Alpha": 21,
+                            "Lambda": 12,
+                            "No. 665": 1,
+                            "No. 664": 4,
+                            "Rose Oriana (No. 666)": 4
+                        }
                     },
                     "c11": {
                         "word_count": 961,
                         "char_count": 5567,
                         "line_count": 47,
-                        "characters": {}
+                        "characters": {
+                            "Beta": 47
+                        }
                     }
                 }
             },
@@ -11414,9 +11612,9 @@
     },
     "chars": {
         "Alpha": {
-            "total": 3791,
+            "total": 3891,
             "names": {
-                "Alpha": 3748,
+                "Alpha": 3848,
                 "Alpha & Gamma (Alpha)": 1,
                 "Alpha & Eta (Alpha)": 1,
                 "Seven Shadows (Alpha)": 8,
@@ -11430,9 +11628,9 @@
             }
         },
         "Beta": {
-            "total": 2572,
+            "total": 2712,
             "names": {
-                "Beta": 2293,
+                "Beta": 2355,
                 "Seven Shadows (Beta)": 14,
                 "Beta & Epsilon (Beta)": 28,
                 "Beta & Gamma (Beta)": 5,
@@ -11440,7 +11638,7 @@
                 "Beta & Zeta (Beta)": 3,
                 "Fictional Zenon": 9,
                 "Fictional Shadow": 23,
-                "Natsume Kafka": 134,
+                "Natsume Kafka": 212,
                 "Alexia Midgar & Natsume Kafka (Natsume Kafka)": 1,
                 "Everyone (Beta)": 6,
                 "Beta & Delta & Zeta (Beta)": 1,
@@ -11462,14 +11660,14 @@
             }
         },
         "Gamma": {
-            "total": 2122,
+            "total": 2148,
             "names": {
-                "Gamma": 1973,
+                "Gamma": 1989,
                 "Seven Shadows (Gamma)": 14,
                 "Alpha & Gamma (Gamma)": 1,
                 "Beta & Gamma (Gamma)": 5,
                 "Beta & Gamma & Epsilon (Gamma)": 1,
-                "Luna": 94,
+                "Luna": 104,
                 "Everyone (Gamma)": 6,
                 "None (Gamma)": 21,
                 "??? (Gamma)": 2,
@@ -11479,9 +11677,9 @@
             }
         },
         "Delta": {
-            "total": 1492,
+            "total": 1516,
             "names": {
-                "Delta": 1460,
+                "Delta": 1484,
                 "Seven Shadows (Delta)": 13,
                 "Delta & Zeta (Delta)": 4,
                 "Deltan": 1,
@@ -11491,9 +11689,9 @@
             }
         },
         "Epsilon": {
-            "total": 2107,
+            "total": 2160,
             "names": {
-                "Epsilon": 2005,
+                "Epsilon": 2058,
                 "Seven Shadows (Epsilon)": 14,
                 "Beta & Epsilon (Epsilon)": 28,
                 "Beta & Gamma & Epsilon (Epsilon)": 1,
@@ -11543,9 +11741,9 @@
             }
         },
         "Nu": {
-            "total": 511,
+            "total": 523,
             "names": {
-                "Nu": 458,
+                "Nu": 470,
                 "Alpha & Nu (Nu)": 1,
                 "Characterised Alpha": 11,
                 "93": 21,
@@ -11594,14 +11792,14 @@
             }
         },
         "Cid Kagenou": {
-            "total": 6422,
+            "total": 7548,
             "names": {
-                "Shadow": 912,
+                "Shadow": 1037,
                 "Minoru Kageno": 118,
                 "Stylish Ruffian Slayer": 35,
-                "Cid Kagenou": 3014,
-                "Mundane Mann": 85,
-                "Stylish Bandit Slayer": 13,
+                "Cid Kagenou": 3871,
+                "Mundane Mann": 219,
+                "Stylish Bandit Slayer": 23,
                 "John Smith": 189,
                 "John Smith & Yukime (John Smith)": 1,
                 "Cid": 1863,
@@ -11678,21 +11876,21 @@
             }
         },
         "Bandit": {
-            "total": 36,
+            "total": 43,
             "names": {
-                "Bandit": 36
+                "Bandit": 43
             }
         },
         "Bandit Boss": {
-            "total": 44,
+            "total": 49,
             "names": {
-                "Bandit Boss": 44
+                "Bandit Boss": 49
             }
         },
         "Claire Kagenou": {
-            "total": 673,
+            "total": 694,
             "names": {
-                "Claire Kagenou": 265,
+                "Claire Kagenou": 286,
                 "Claire": 403,
                 "??? (Claire Kagenou)": 4,
                 "Alexia & Claire (Claire)": 1
@@ -11723,9 +11921,9 @@
             }
         },
         "Skel Etal": {
-            "total": 433,
+            "total": 475,
             "names": {
-                "Skel Etal": 384,
+                "Skel Etal": 426,
                 "Skel & Po (Skel)": 13,
                 "Skel": 36
             }
@@ -11739,9 +11937,9 @@
             }
         },
         "Alexia Midgar": {
-            "total": 1483,
+            "total": 1589,
             "names": {
-                "Alexia Midgar": 871,
+                "Alexia Midgar": 977,
                 "Alexia Midgar & Natsume Kafka (Alexia Midgar)": 1,
                 "Alexia": 605,
                 "Rose & Alexia (Alexia)": 1,
@@ -11770,17 +11968,17 @@
             }
         },
         "Iris Midgar": {
-            "total": 663,
+            "total": 741,
             "names": {
-                "Iris Midgar": 505,
+                "Iris Midgar": 583,
                 "Iris": 158
             }
         },
         "Rose Oriana": {
-            "total": 995,
+            "total": 1143,
             "names": {
-                "Rose Oriana": 532,
-                "No. 666": 176,
+                "Rose Oriana": 676,
+                "No. 666": 180,
                 "Rose": 149,
                 "Rose & Alexia (Rose)": 1,
                 "No.666": 137
@@ -11832,9 +12030,9 @@
             }
         },
         "Referee": {
-            "total": 43,
+            "total": 50,
             "names": {
-                "Referee": 43
+                "Referee": 50
             }
         },
         "Bookie": {
@@ -11874,21 +12072,21 @@
             }
         },
         "Jack Nelson": {
-            "total": 226,
+            "total": 324,
             "names": {
-                "Jack Nelson": 226
+                "Jack Nelson": 324
             }
         },
         "Spectator": {
-            "total": 54,
+            "total": 57,
             "names": {
-                "Spectator": 54
+                "Spectator": 57
             }
         },
         "Announcer": {
-            "total": 46,
+            "total": 48,
             "names": {
-                "Announcer": 46
+                "Announcer": 48
             }
         },
         "Toppe Batterius": {
@@ -11898,24 +12096,24 @@
             }
         },
         "Aurora": {
-            "total": 328,
+            "total": 414,
             "names": {
-                "Aurora": 311,
+                "Aurora": 397,
                 "Massive Mound of Magic": 14,
                 "??? (Aurora)": 2,
                 "3 People (Aurora)": 1
             }
         },
         "Rude": {
-            "total": 26,
+            "total": 35,
             "names": {
-                "Rude": 26
+                "Rude": 35
             }
         },
         "Mitsugoshi Staff": {
-            "total": 2,
+            "total": 5,
             "names": {
-                "Mitsugoshi Staff": 2
+                "Mitsugoshi Staff": 5
             }
         },
         "Participant": {
@@ -11931,30 +12129,30 @@
             }
         },
         "Annerose Nichtsehen": {
-            "total": 258,
+            "total": 332,
             "names": {
-                "Annerose Nichtsehen": 154,
+                "Annerose Nichtsehen": 228,
                 "Annerose": 100,
                 "None (Annerose)": 4
             }
         },
         "Quinton": {
-            "total": 85,
+            "total": 131,
             "names": {
-                "Quinton": 84,
+                "Quinton": 130,
                 "Goldy & Quinton (Quinton)": 1
             }
         },
         "Heckler": {
-            "total": 7,
+            "total": 17,
             "names": {
-                "Heckler": 7
+                "Heckler": 17
             }
         },
         "Clerk": {
-            "total": 8,
+            "total": 9,
             "names": {
-                "Clerk": 8
+                "Clerk": 9
             }
         },
         "Shop Staff": {
@@ -11964,27 +12162,27 @@
             }
         },
         "Goldy Gilded": {
-            "total": 143,
+            "total": 174,
             "names": {
-                "Goldy Gilded": 143
+                "Goldy Gilded": 174
             }
         },
         "Beatrix": {
-            "total": 169,
+            "total": 212,
             "names": {
-                "Beatrix": 169
+                "Beatrix": 212
             }
         },
         "Perv Asshat": {
-            "total": 266,
+            "total": 314,
             "names": {
-                "Perv Asshat": 266
+                "Perv Asshat": 314
             }
         },
         "Raphael Oriana": {
-            "total": 48,
+            "total": 50,
             "names": {
-                "Raphael Oriana": 48
+                "Raphael Oriana": 50
             }
         },
         "Civil Servant": {
@@ -12006,15 +12204,15 @@
             }
         },
         "Duke's Second Son": {
-            "total": 18,
+            "total": 26,
             "names": {
-                "Duke's Second Son": 18
+                "Duke's Second Son": 26
             }
         },
         "Captain's Daughter": {
-            "total": 16,
+            "total": 25,
             "names": {
-                "Captain's Daughter": 16
+                "Captain's Daughter": 25
             }
         },
         "Knight Captain": {
@@ -12024,15 +12222,15 @@
             }
         },
         "Klaus Midgar": {
-            "total": 22,
+            "total": 23,
             "names": {
-                "Klaus Midgar": 22
+                "Klaus Midgar": 23
             }
         },
         "Aristocrat": {
-            "total": 60,
+            "total": 71,
             "names": {
-                "Aristocrat": 60
+                "Aristocrat": 71
             }
         },
         "Crowd": {
@@ -12060,24 +12258,24 @@
             }
         },
         "Lambda": {
-            "total": 678,
+            "total": 690,
             "names": {
-                "Lambda": 661,
+                "Lambda": 673,
                 "Mound of Flesh (Lambda)": 1,
                 "Tawny Elf (Lambda)": 15,
                 "None (Lambda)": 1
             }
         },
         "No. 665": {
-            "total": 37,
+            "total": 38,
             "names": {
-                "No. 665": 37
+                "No. 665": 38
             }
         },
         "No. 664": {
-            "total": 76,
+            "total": 80,
             "names": {
-                "No. 664": 76
+                "No. 664": 80
             }
         },
         "White Demon": {
@@ -12266,9 +12464,9 @@
             }
         },
         "Narrator": {
-            "total": 2016,
+            "total": 4034,
             "names": {
-                "Narrator": 2016
+                "Narrator": 4034
             }
         },
         "Mysterious Captain": {
@@ -13381,6 +13579,12 @@
             "total": 13,
             "names": {
                 "Deceased Woman": 13
+            }
+        },
+        "Supervisor": {
+            "total": 2,
+            "names": {
+                "Supervisor": 2
             }
         }
     }
