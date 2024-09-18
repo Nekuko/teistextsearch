@@ -231,7 +231,6 @@ function SearchPage() {
                     savedNameMap = JSON.parse(savedNameMap);
                 }
 
-                characterData.versionUpdated = true;
                 if (characterData.versionUpdated || Object.keys(savedCharacterDropdowns).length === 0 ||
                     Object.keys(savedNameMap).length === 0) {
                     let characterDropdownData = createCharacterDropdowns(characterData.data);
@@ -392,10 +391,8 @@ function SearchPage() {
     const [characterDropdowns, setCharacterDropdowns] = useState(() => {
         const savedState = sessionStorage.getItem('characterDropdowns');
         if (savedState) {
-            const parsedState = JSON.parse(savedState);
-            return parsedState;
+            return JSON.parse(savedState);
         }
-
         return {}
     });
 
