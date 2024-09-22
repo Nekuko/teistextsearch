@@ -4,7 +4,7 @@ import Collapsible from 'react-collapsible';
 import '../Results.css'; // Import the CSS file
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faCopy, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
 import InfoPreview from './InfoPreview/InfoPreview';
 
@@ -27,7 +27,7 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
       [name]: false,
     }));
   }
-  
+
   useEffect(() => {
     const initialPages = {};
     Object.keys(wnData.volumes).forEach(volumeKey => {
@@ -119,9 +119,15 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
     return highlightedText;
   };
 
-  function showPopup(volumeIndex, chapterIndex, sentenceIndex) {
+  function showPopup(volumeIndex, chapterIndex, sentenceIndex, quote) {
     // Use a unique ID for each popup
-    const popup = document.getElementById(`popup-${volumeIndex}-${chapterIndex}-${sentenceIndex}`);
+    let popup;
+    if (quote) {
+      popup = document.getElementById(`popup-${volumeIndex}-${chapterIndex}-${sentenceIndex}-quote`);
+    } else {
+      popup = document.getElementById(`popup-${volumeIndex}-${chapterIndex}-${sentenceIndex}`);
+    }
+
     if (popup) {
       popup.classList.remove('hidden');
       popup.classList.add('show');
@@ -130,6 +136,10 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
         popup.classList.add('hidden');
       }, 1000); // The popup will be shown for 2 seconds
     }
+  }
+
+  function generateCitation(volume, chapterKey, chapter, sentence) {
+    return `Web Novel, ${volume}, Chapter ${chapterKey}: ${chapter}`
   }
 
   return (
@@ -186,6 +196,18 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
                                           icon={faCopy} />
                                         {/* Ensure the ID is unique for each popup */}
                                         <div className="popup hidden" id={`popup-${volumeKey}-${chapterKey}-${index}`}>
+                                          Copied!
+                                        </div>
+                                      </div>
+                                    </CopyToClipboard>
+                                    <SlashLine className="icon-slashline" />
+                                    <CopyToClipboard text={generateCitation(volumeTitle, chapterKey, chapterTitle, sentence)}>
+                                      <div className="quote-icon" >
+                                        <FontAwesomeIcon
+                                          onClick={() => showPopup(volumeKey, chapterKey, index, true)}
+                                          icon={faQuoteRight} />
+                                        {/* Ensure the ID is unique for each popup */}
+                                        <div className="popup hidden" id={`popup-${volumeKey}-${chapterKey}-${index}-quote`}>
                                           Copied!
                                         </div>
                                       </div>

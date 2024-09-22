@@ -134,9 +134,15 @@ function LightNovelCharacterResults({ namedCharacters, namedActive, lnCount, cha
      ${chapterTitle.replace("|", "-")}<br />Paragraph ${sentence.line}<br />${characterInformation.join('<br />')}`);
   }
 
-  function showPopup(volumeIndex, chapterIndex, sentenceIndex) {
+  function showPopup(volumeIndex, chapterIndex, sentenceIndex, quote) {
     // Use a unique ID for each popup
-    const popup = document.getElementById(`popup-${volumeIndex}-${chapterIndex}-${sentenceIndex}`);
+    let popup;
+    if (quote) {
+      popup = document.getElementById(`popup-${volumeIndex}-${chapterIndex}-${sentenceIndex}-quote`);
+    } else {
+      popup = document.getElementById(`popup-${volumeIndex}-${chapterIndex}-${sentenceIndex}`);
+    }
+    
     if (popup) {
       popup.classList.remove('hidden');
       popup.classList.add('show');
@@ -145,6 +151,10 @@ function LightNovelCharacterResults({ namedCharacters, namedActive, lnCount, cha
         popup.classList.add('hidden');
       }, 1000); // The popup will be shown for 2 seconds
     }
+  }
+
+  function generateCitation(volume, chapter, sentence){
+    return `Light Novel, ${volume}, ${chapter.replace(" | ", ":")}`
   }
 
   return (
@@ -215,6 +225,8 @@ function LightNovelCharacterResults({ namedCharacters, namedActive, lnCount, cha
                                   highlight={highlight}
                                   namedCharacters={namedCharacters}
                                   namedActive={namedActive}
+                                  generateCitation={generateCitation}
+                                  volumeTitle={volumeTitle}
                                 />
                               ))}
 

@@ -173,6 +173,7 @@
   .copy-icon:hover,
   .image-icon:hover,
   .info-icon:hover,
+  .quote-icon:hover,
   .swap-character-icon:hover {
     color: red;
     cursor: pointer;
@@ -446,6 +447,7 @@
 
 .copy-icon,
 .image-icon,
+.quote-icon,
 .info-icon {
   color: #c8000f;
   cursor: pointer;
@@ -464,6 +466,12 @@
 
 .copy-icon {
   margin-top: 4px;
+}
+
+.quote-icon {
+  margin-top: 6px;
+  margin-left: 2px;
+  font-size: medium;
 }
 
 .image-icon {

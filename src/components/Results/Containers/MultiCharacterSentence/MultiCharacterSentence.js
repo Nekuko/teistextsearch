@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faCircleInfo } from '@fortawesome/free-solid-svg-icons';
+import { faCopy, faCircleInfo, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { ReactComponent as SlashLine } from '../../../../svgs/nav_separator.svg';
 import '../../Results.css'; // Import the CSS file
@@ -18,10 +18,12 @@ const MultiCharacterSentence = ({
     handleMouseEnterInfo, // Function to handle mouse enter for info icon (if provided)
     volumeKey, // Key for volume data (if used in popup)
     chapterKey,
+    volumeTitle,
     chapterTitle, // Key for chapter data (if used in popup)
     index,
     highlight,
-    filterState // Index of the sentence (used for unique popup IDs)
+    filterState,
+    generateCitation // Index of the sentence (used for unique popup IDs)
 }) => {
 
     const [characters, setCharacters] = useState([]);
@@ -51,9 +53,9 @@ const MultiCharacterSentence = ({
                     } else {
                         setActiveCharacter(nonNarrating)
                     }
-                    
+
                 }
-                
+
             }
 
         }
@@ -142,6 +144,18 @@ const MultiCharacterSentence = ({
                                     Copied!
                                 </div>
                             )}
+                        </div>
+                    </CopyToClipboard>
+                    <SlashLine className="icon-slashline" />
+                    <CopyToClipboard text={generateCitation(volumeTitle, chapterTitle, sentence)}>
+                        <div className="quote-icon" >
+                            <FontAwesomeIcon
+                                onClick={() => showPopup(volumeKey, chapterKey, index, true)}
+                                icon={faQuoteRight} />
+                            {/* Ensure the ID is unique for each popup */}
+                            <div className="popup hidden" id={`popup-${volumeKey}-${chapterKey}-${index}-quote`}>
+                                Copied!
+                            </div>
                         </div>
                     </CopyToClipboard>
                     <SlashLine className="icon-slashline" />
