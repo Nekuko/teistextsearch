@@ -4,7 +4,7 @@ import Collapsible from 'react-collapsible';
 import '../Results.css'; // Import the CSS file
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faFileImage, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faCopy, faFileImage, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
 import ImagePreview from './ImagePreview/ImagePreview'; // Adjust the path as needed
 import InfoPreview from './InfoPreview/InfoPreview';
@@ -31,7 +31,7 @@ function ESResults({ anData, images, highlight, filterState, main }) {
       [name]: false,
     }));
   }
-  
+
   useEffect(() => {
     const initialPages = {};
     Object.keys(anData.seasons).forEach(seasonKey => {
@@ -152,9 +152,15 @@ function ESResults({ anData, images, highlight, filterState, main }) {
 
   const customOrder = Object.keys(ESMAP);
 
-  function showPopup(seasonIndex, episodeIndex, sentenceIndex) {
+  function showPopup(seasonIndex, episodeIndex, sentenceIndex, quote) {
     // Use a unique ID for each popup
-    const popup = document.getElementById(`popup-${seasonIndex}-${episodeIndex}-${sentenceIndex}`);
+    let popup;
+    if (quote) {
+      popup = document.getElementById(`popup-${seasonIndex}-${episodeIndex}-${sentenceIndex}-quote`);
+    } else {
+      popup = document.getElementById(`popup-${seasonIndex}-${episodeIndex}-${sentenceIndex}`);
+    }
+
     if (popup) {
       popup.classList.remove('hidden');
       popup.classList.add('show');
@@ -163,6 +169,10 @@ function ESResults({ anData, images, highlight, filterState, main }) {
         popup.classList.add('hidden');
       }, 1000); // The popup will be shown for 2 seconds
     }
+  }
+
+  function generateCitation(season, episode, sentence) {
+    return `Event Stories, ${season}, ${episode.replace(" | ", ": ")}`
   }
 
   return (
@@ -216,11 +226,23 @@ function ESResults({ anData, images, highlight, filterState, main }) {
                                       <div className="icon-container-triple">
                                         <CopyToClipboard text={sentence.subtitle}>
                                           <div className="copy-icon">
-                                            <FontAwesomeIcon 
-                                            onClick={() => showPopup(seasonKey, episodeKey, index)}
-                                            icon={faCopy} />
+                                            <FontAwesomeIcon
+                                              onClick={() => showPopup(seasonKey, episodeKey, index)}
+                                              icon={faCopy} />
                                             {/* Ensure the ID is unique for each popup */}
                                             <div className="popup hidden" id={`popup-${seasonKey}-${episodeKey}-${index}`}>
+                                              Copied!
+                                            </div>
+                                          </div>
+                                        </CopyToClipboard>
+                                        <SlashLine className="icon-slashline" />
+                                        <CopyToClipboard text={generateCitation(ESMAP[seasonTitle], episodeTitle, sentence)}>
+                                          <div className="quote-icon" >
+                                            <FontAwesomeIcon
+                                              onClick={() => showPopup(seasonKey, episodeKey, index, true)}
+                                              icon={faQuoteRight} />
+                                            {/* Ensure the ID is unique for each popup */}
+                                            <div className="popup hidden" id={`popup-${seasonKey}-${episodeKey}-${index}-quote`}>
                                               Copied!
                                             </div>
                                           </div>

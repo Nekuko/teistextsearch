@@ -13,7 +13,6 @@ function CharactersContainer({
   characterImages,
 }) {
 
-
   useEffect(() => {
     if (namedActive) {
       // Assuming you have a list of character names called namedCharacters

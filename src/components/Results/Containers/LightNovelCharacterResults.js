@@ -3,10 +3,10 @@ import Collapsible from 'react-collapsible';
 import '../Results.css'; // Import the CSS file
 import InfoPreview from './InfoPreview/InfoPreview';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import MultiCharacterSentence from './MultiCharacterSentence/MultiCharacterSentence';
 
-function LightNovelCharacterResults({ lnCount, character, lnData, images, highlight, filterState, lnDropdownState }) {
+function LightNovelCharacterResults({ namedCharacters, namedActive, lnCount, character, lnData, images, highlight, filterState, lnDropdownState }) {
   const [previewText, setPreviewText] = useState(null);
   const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
   const [currentPage, setCurrentPage] = useState({});
@@ -134,9 +134,15 @@ function LightNovelCharacterResults({ lnCount, character, lnData, images, highli
      ${chapterTitle.replace("|", "-")}<br />Paragraph ${sentence.line}<br />${characterInformation.join('<br />')}`);
   }
 
-  function showPopup(volumeIndex, chapterIndex, sentenceIndex) {
+  function showPopup(volumeIndex, chapterIndex, sentenceIndex, quote) {
     // Use a unique ID for each popup
-    const popup = document.getElementById(`popup-${volumeIndex}-${chapterIndex}-${sentenceIndex}`);
+    let popup;
+    if (quote) {
+      popup = document.getElementById(`popup-${volumeIndex}-${chapterIndex}-${sentenceIndex}-quote`);
+    } else {
+      popup = document.getElementById(`popup-${volumeIndex}-${chapterIndex}-${sentenceIndex}`);
+    }
+    
     if (popup) {
       popup.classList.remove('hidden');
       popup.classList.add('show');
@@ -145,6 +151,10 @@ function LightNovelCharacterResults({ lnCount, character, lnData, images, highli
         popup.classList.add('hidden');
       }, 1000); // The popup will be shown for 2 seconds
     }
+  }
+
+  function generateCitation(volume, chapter, sentence){
+    return `Light Novel, ${volume}, ${chapter.replace(" | ", ":")}`
   }
 
   return (
@@ -213,6 +223,10 @@ function LightNovelCharacterResults({ lnCount, character, lnData, images, highli
                                   index={index}
                                   characterName={character}
                                   highlight={highlight}
+                                  namedCharacters={namedCharacters}
+                                  namedActive={namedActive}
+                                  generateCitation={generateCitation}
+                                  volumeTitle={volumeTitle}
                                 />
                               ))}
 

@@ -63,7 +63,7 @@ export function searchLNChars(keys, text, keywords, nameMap, characters = [], ca
       if (anyMatch && namedActive && characters.length === 0) {
         let characterFound = false;
         for (let character of namedCharacters) {
-          let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character} (All)`];
+          let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character.toLowerCase()}`];
 
           if (nameMap[`${character} (All)`]) {
             characterToCheck = nameMap[`${character} (All)`].map(name => name.toLowerCase());
@@ -91,7 +91,8 @@ export function searchLNChars(keys, text, keywords, nameMap, characters = [], ca
       } else if (anyMatch && characters.length > 0) {
         let characterFound = false;
         for (let character of characters) {
-          let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character} (All)`];
+          let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character.toLowerCase()}`];
+          characterToCheck.push(character.toLowerCase())
 
           if (nameMap[`${character} (All)`]) {
             characterToCheck = nameMap[`${character} (All)`].map(name => name.toLowerCase());
@@ -99,8 +100,6 @@ export function searchLNChars(keys, text, keywords, nameMap, characters = [], ca
           for (let checkCharacter of characterToCheck) {
             for (let range of rangesToCheck) {
               if (checkCharacter === range.name_variant.toLowerCase()) {
-                if (range.name_variant.toLowerCase() === 'rose oriana') {
-                }
                 characterFound = true;
                 break;
               }
@@ -129,6 +128,7 @@ export function searchLNChars(keys, text, keywords, nameMap, characters = [], ca
       if (characters.length > 0) {
         for (let character of characters) {
           let characterToCheck = nameMap[character] ? nameMap[character].map(name => name) : [character];
+          characterToCheck.push(character)
           let characterSentences = filteredSentences.filter(sentence => {
             return characterToCheck.some(name => {
               return sentence.characters.some(range => range.name_variant === name && range.match);

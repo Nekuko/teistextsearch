@@ -6,7 +6,7 @@ import ESResults from './ESResults';
 import APOResults from './APOResults';
 import LightNovelCharacterResults from './LightNovelCharacterResults';
 
-function CharacterResults({ lnDropdownState, lnData, anData, sscData, esData, apoData, images, filterState, highlight, mogDropdownState, animeDropdownState }) {
+function CharacterResults({ namedCharacters, namedActive, lnDropdownState, lnData, anData, sscData, esData, apoData, images, filterState, highlight, mogDropdownState, animeDropdownState }) {
   const mediumNames = {
     'an': 'Anime',
     'ssc': 'Seven Shadows Chronicles',
@@ -131,7 +131,7 @@ function CharacterResults({ lnDropdownState, lnData, anData, sscData, esData, ap
                     return (
                       <div key={`${medium}-${character}-ln`} className="medium-trigger">
                         <Collapsible trigger={`Light Novel (Total: ${mediumData.count})`}>
-                          <LightNovelCharacterResults character={characterImageName} lnDropdownState={lnDropdownState} lnData={mediumData} images={images} filterState={filterState} highlight={highlight} />
+                          <LightNovelCharacterResults namedCharacters={namedCharacters} namedActive={namedActive} character={characterImageName} lnDropdownState={lnDropdownState} lnData={mediumData} images={images} filterState={filterState} highlight={highlight} />
                         </Collapsible>
                       </div>
                     );

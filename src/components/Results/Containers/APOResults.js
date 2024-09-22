@@ -4,7 +4,7 @@ import Collapsible from 'react-collapsible';
 import '../Results.css'; // Import the CSS file
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faFileImage, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { faCopy, faFileImage, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
 import ImagePreview from './ImagePreview/ImagePreview'; // Adjust the path as needed
 import InfoPreview from './InfoPreview/InfoPreview';
@@ -160,17 +160,26 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
     }
 
 
-    function showPopup(partIndex, episodeIndex, sentenceIndex) {
+    function showPopup(partIndex, episodeIndex, sentenceIndex, quote) {
         // Use a unique ID for each popup
-        const popup = document.getElementById(`popup-${partIndex}-${episodeIndex}-${sentenceIndex}`);
+        let popup;
+        if (quote) {
+            popup = document.getElementById(`popup-${partIndex}-${episodeIndex}-${sentenceIndex}-quote`);
+        } else {
+            popup = document.getElementById(`popup-${partIndex}-${episodeIndex}-${sentenceIndex}`);
+        }
         if (popup) {
             popup.classList.remove('hidden');
             popup.classList.add('show');
             setTimeout(() => {
-              popup.classList.remove('show');
-              popup.classList.add('hidden');
+                popup.classList.remove('show');
+                popup.classList.add('hidden');
             }, 1000); // The popup will be shown for 2 seconds
-          }
+        }
+    }
+
+    function generateCitation(part, chapter, episode, episodeKey, sentence) {
+        return `Apocrypha, Part ${part.replace(" | ", ": ")}, Chapter ${chapter.replace(" | ", ": ")}, ${episode}`
     }
 
     return (
@@ -268,8 +277,8 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
                                                                                             <div className="sentence-box-image">
                                                                                                 <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
                                                                                                 <div className="icon-container-triple">
-                                                                                                    <div className="copy-icon">
-                                                                                                        <CopyToClipboard text={sentence.subtitle}>
+                                                                                                    <CopyToClipboard text={sentence.subtitle}>
+                                                                                                        <div className="copy-icon">
                                                                                                             <FontAwesomeIcon
                                                                                                                 onClick={() => showPopup(partKey, chapterKey, index)}
                                                                                                                 icon={faCopy}
@@ -277,8 +286,20 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
                                                                                                             <div className="popup hidden" id={`popup-${partKey}-${chapterKey}-${index}`}>
                                                                                                                 Copied!
                                                                                                             </div>
-                                                                                                        </CopyToClipboard>
-                                                                                                    </div>
+                                                                                                        </div>
+                                                                                                    </CopyToClipboard>
+                                                                                                    <SlashLine className="icon-slashline" />
+                                                                                                    <CopyToClipboard text={generateCitation(partTitle, chapterTitle, episodeTitle, episodeKey, sentence)}>
+                                                                                                        <div className="quote-icon" >
+                                                                                                            <FontAwesomeIcon
+                                                                                                                onClick={() => showPopup(partKey, chapterKey, index, true)}
+                                                                                                                icon={faQuoteRight} />
+                                                                                                            {/* Ensure the ID is unique for each popup */}
+                                                                                                            <div className="popup hidden" id={`popup-${partKey}-${chapterKey}-${index}-quote`}>
+                                                                                                                Copied!
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </CopyToClipboard>
                                                                                                     <SlashLine className="icon-slashline" />
                                                                                                     <div className="image-icon-container"
                                                                                                         onMouseEnter={() => handleMouseEnter(sentence.url, partKey, chapterKey, index)}

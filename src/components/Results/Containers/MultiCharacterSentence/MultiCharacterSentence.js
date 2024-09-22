@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faFileImage, faCircleInfo, faSlashLine } from '@fortawesome/free-solid-svg-icons';
+import { faCopy, faCircleInfo, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { ReactComponent as SlashLine } from '../../../../svgs/nav_separator.svg';
 import '../../Results.css'; // Import the CSS file
@@ -10,53 +10,54 @@ const MultiCharacterSentence = ({
     sentence,
     iconRefs,
     characterName,
+    namedCharacters,
+    namedActive,
     setPreviewText,
     characterImages = {}, // Object mapping character names to image URLs
     showPopup, // Function to handle popup display (if provided)
     handleMouseEnterInfo, // Function to handle mouse enter for info icon (if provided)
     volumeKey, // Key for volume data (if used in popup)
     chapterKey,
+    volumeTitle,
     chapterTitle, // Key for chapter data (if used in popup)
     index,
     highlight,
-    filterState // Index of the sentence (used for unique popup IDs)
+    filterState,
+    generateCitation // Index of the sentence (used for unique popup IDs)
 }) => {
 
     const [characters, setCharacters] = useState([]);
     const [activeCharacter, setActiveCharacter] = useState({ name: 'Loading', name_variant: 'Loading' });
+
     useEffect(() => {
         if (sentence.characters) {
-            const uniqueCharacters = [...new Set(sentence.characters.map(item => ({ name: item.name, name_variant: item.name_variant })))];
+            const uniqueCharacters = [...new Set(sentence.characters.map(item => ({ name: item.name, name_variant: item.name_variant, match: item.match })))];
+            const allMatch = uniqueCharacters.every(matchItem => matchItem.match);
             setCharacters(uniqueCharacters);
             if (uniqueCharacters.length === 1) {
                 setActiveCharacter(uniqueCharacters[0]);
+            } else if (characterName) {
+                setActiveCharacter(uniqueCharacters.filter(character => character.name === characterName || character.name_variant === characterName)[0]);
             } else {
-                let nonNarrator = false;
-                for (let character of uniqueCharacters) {
-                    if (characterName) {
-                        if (characterName === character.name_variant || characterName === character.name) {
-                            setActiveCharacter(character);
-                            break;
-                        }
-                    } else {
-                        if (!(['Cid Kagenou', 'Narrator'].includes(character.name))) {
-                            setActiveCharacter(character);
-                            nonNarrator = true;
-                            break;
-                        }
-                        if (!nonNarrator) {
-                            if (!(['Narrator'].includes(character.name))) {
-                                setActiveCharacter(character);
-                                nonNarrator = true;
-                                break;
-                            }
-                        }
-                        if (!nonNarrator) {
-                            setActiveCharacter(uniqueCharacters[0]);
-                        }
+                if (!allMatch) {
+                    setActiveCharacter(uniqueCharacters.filter(character => character.match)[0]);
+                } else {
+                    let nonNarrating = uniqueCharacters.filter(character => !["Cid Kagenou", "Narrator"].includes(character.name))[0];
+                    let narrating = uniqueCharacters.filter(character => ["Cid Kagenou", "Narrator"].includes(character.name))[0];
+                    if (!nonNarrating) {
+                        nonNarrating = uniqueCharacters.filter(character => character.name === "Cid Kagenou")[0];
+                        narrating = uniqueCharacters.filter(character => character.name !== "Cid Kagenou")[0];
                     }
+                    if (namedActive && narrating.name === "Cid Kagenou" && !namedCharacters.includes(nonNarrating.name)) {
+                        setActiveCharacter(narrating)
+                    } else {
+                        setActiveCharacter(nonNarrating)
+                    }
+
                 }
+
             }
+
         }
     }, [sentence]);
 
@@ -143,6 +144,18 @@ const MultiCharacterSentence = ({
                                     Copied!
                                 </div>
                             )}
+                        </div>
+                    </CopyToClipboard>
+                    <SlashLine className="icon-slashline" />
+                    <CopyToClipboard text={generateCitation(volumeTitle, chapterTitle, sentence)}>
+                        <div className="quote-icon" >
+                            <FontAwesomeIcon
+                                onClick={() => showPopup(volumeKey, chapterKey, index, true)}
+                                icon={faQuoteRight} />
+                            {/* Ensure the ID is unique for each popup */}
+                            <div className="popup hidden" id={`popup-${volumeKey}-${chapterKey}-${index}-quote`}>
+                                Copied!
+                            </div>
                         </div>
                     </CopyToClipboard>
                     <SlashLine className="icon-slashline" />

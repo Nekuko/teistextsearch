@@ -391,10 +391,8 @@ function SearchPage() {
     const [characterDropdowns, setCharacterDropdowns] = useState(() => {
         const savedState = sessionStorage.getItem('characterDropdowns');
         if (savedState) {
-            const parsedState = JSON.parse(savedState);
-            return parsedState;
+            return JSON.parse(savedState);
         }
-
         return {}
     });
 
@@ -542,7 +540,7 @@ function SearchPage() {
                         return `ln_${chapter.split("c")[0]}_c${chapter.split("c")[1]}`;
                     })
             );
-            
+
 
         const wnCheckedItems = Object.entries(wnDropdownState.volumesChecked)
             .flatMap(([volume, chapters]) =>
@@ -1043,8 +1041,11 @@ function SearchPage() {
                 setMediumFlash={setMediumFlash}
                 keywordsFlash={keywordsFlash}
                 setKeywordsFlash={setKeywordsFlash}
+
             />
             <Results
+                namedCharacters={namedCharacters}
+                namedActive={namedActive}
                 resultsText={resultsText}
                 setResultsText={setResultsText}
                 setSearchResults={setSearchResults}
