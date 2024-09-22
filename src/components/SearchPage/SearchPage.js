@@ -744,7 +744,6 @@ function SearchPage() {
         }
 
 
-
         // For Event Stories
         let esCheckedItems = [];
         for (let group in mogDropdownState.partsChecked) {
