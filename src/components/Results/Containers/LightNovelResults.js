@@ -161,7 +161,7 @@ function LightNovelResults({ full, manageContextData, lnCount, lnData, images, h
   }
 
   function generateCitation(volume, chapter, sentence) {
-    return `Light Novel, ${volume}, ${chapter.replace(" | ", ":")}`
+    return `Light Novel, ${volume}, ${chapter.replace(" | ", ": ")}`
   }
 
   return (
