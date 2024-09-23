@@ -4,13 +4,13 @@ import Collapsible from 'react-collapsible';
 import '../Results.css'; // Import the CSS file
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faFileImage, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import { faCopy, faFileImage, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight, faQuoteRight, faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
 import ImagePreview from './ImagePreview/ImagePreview'; // Adjust the path as needed
 import InfoPreview from './InfoPreview/InfoPreview';
 import { ESMAP } from '../../../esMap';
 
-function ESResults({ anData, images, highlight, filterState, main }) {
+function ESResults({ full, manageContextData, anData, images, highlight, filterState, main }) {
   const [imageCache, setImageCache] = useState({});
   const [previewImage, setPreviewImage] = useState(null);
   const [previewText, setPreviewText] = useState(null);
@@ -222,6 +222,10 @@ function ESResults({ anData, images, highlight, filterState, main }) {
                                 {episodeValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
                                   <div className="sentence-character-container" key={`${uniqueChapterKey}-${index}`}>
                                     <div className="sentence-box-image">
+                                    <FontAwesomeIcon
+                                        className="context-icon"
+                                        onClick={() => manageContextData({ full: full, sentence: sentence, seasonKey: seasonKey, episodeKey: episodeKey, seasonTitle: ESMAP[seasonTitle], episodeTitle: episodeTitle }, 'es')}
+                                        icon={faUpRightAndDownLeftFromCenter} />
                                       <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
                                       <div className="icon-container-triple">
                                         <CopyToClipboard text={sentence.subtitle}>

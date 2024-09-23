@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import MultiCharacterSentence from './MultiCharacterSentence/MultiCharacterSentence';
 
-function LightNovelCharacterResults({ namedCharacters, namedActive, lnCount, character, lnData, images, highlight, filterState, lnDropdownState }) {
+function LightNovelCharacterResults({ full, manageContextData, namedCharacters, namedActive, lnCount, character, lnData, images, highlight, filterState, lnDropdownState }) {
   const [previewText, setPreviewText] = useState(null);
   const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
   const [currentPage, setCurrentPage] = useState({});
@@ -190,7 +190,7 @@ function LightNovelCharacterResults({ namedCharacters, namedActive, lnCount, cha
                     const uniqueChapterKey = `${volumeKey}-${chapterKey}`;
                     const chapterName = lnDropdownState.volumesChecked[`Volume ${volumeKey.slice(1)}`][`${volumeKey}${chapterKey}`].title
 
-                    const chapterTitle = `${titleMapping[chapterName.split("|")[0]]} | ${chapterName.split("|")[1]}` || `Chapter ${chapterKey.slice(1)}`;
+                    const chapterTitle = `${titleMapping[chapterName.split("|")[0]]} |${chapterName.split("|")[1]}` || `Chapter ${chapterKey.slice(1)}`;
                     if (Object.keys(volumeValue.chapters).length === 1 && !openMenus[`ln-${volumeKey}-${chapterKey}`]) {
                       openMenu(`ln-${volumeKey}-${chapterKey}`);
                     }
@@ -227,6 +227,8 @@ function LightNovelCharacterResults({ namedCharacters, namedActive, lnCount, cha
                                   namedActive={namedActive}
                                   generateCitation={generateCitation}
                                   volumeTitle={volumeTitle}
+                                  manageContextData={manageContextData}
+                                  full={full}
                                 />
                               ))}
 

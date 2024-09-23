@@ -4,12 +4,12 @@ import Collapsible from 'react-collapsible';
 import '../Results.css'; // Import the CSS file
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faFileImage, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import { faCopy, faFileImage, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight, faQuoteRight, faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
 import ImagePreview from './ImagePreview/ImagePreview'; // Adjust the path as needed
 import InfoPreview from './InfoPreview/InfoPreview';
 
-function APOResults({ sscData, images, highlight, filterState, main, partsChecked }) {
+function APOResults({ full, manageContextData, sscData, images, highlight, filterState, main, partsChecked }) {
     const [imageCache, setImageCache] = useState({});
     const [previewImage, setPreviewImage] = useState(null);
     const [previewText, setPreviewText] = useState(null);
@@ -275,6 +275,10 @@ function APOResults({ sscData, images, highlight, filterState, main, partsChecke
                                                                                     {episodeValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
                                                                                         <div className="sentence-character-container" key={index}>
                                                                                             <div className="sentence-box-image">
+                                                                                                <FontAwesomeIcon
+                                                                                                    className="context-icon"
+                                                                                                    onClick={() => manageContextData({ full: full, sentence: sentence, partKey: partKey, chapterKey: chapterKey, episodeKey: episodeKey, episodeTitle: episodeTitle, partTitle: partTitle, chapterTitle: chapterTitle }, 'apo')}
+                                                                                                    icon={faUpRightAndDownLeftFromCenter} />
                                                                                                 <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
                                                                                                 <div className="icon-container-triple">
                                                                                                     <CopyToClipboard text={sentence.subtitle}>

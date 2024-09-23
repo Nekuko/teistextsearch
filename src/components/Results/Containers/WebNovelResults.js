@@ -4,11 +4,11 @@ import Collapsible from 'react-collapsible';
 import '../Results.css'; // Import the CSS file
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import { faCopy, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight, faQuoteRight, faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
 import InfoPreview from './InfoPreview/InfoPreview';
 
-function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropdownState }) {
+function WebNovelResults({ full, manageContextData, wnData, volumeImages, highlight, filterState, wnDropdownState }) {
   const [previewText, setPreviewText] = useState(null);
   const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
   const [currentPage, setCurrentPage] = useState({});
@@ -187,6 +187,10 @@ function WebNovelResults({ wnData, volumeImages, highlight, filterState, wnDropd
                             <div className="sentences-container">
                               {chapterValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
                                 <div className="sentence-box" key={index}>
+                                  <FontAwesomeIcon
+                                    className="context-icon"
+                                    onClick={() => manageContextData({ full: full, sentence: sentence, volumeKey: volumeKey, chapterKey: chapterKey, volumeTitle: volumeTitle, chapterTitle: chapterTitle }, 'wn')}
+                                    icon={faUpRightAndDownLeftFromCenter} />
                                   <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.text) : sentence.text }} />
                                   <div className="icon-container">
                                     <CopyToClipboard text={sentence.text}>

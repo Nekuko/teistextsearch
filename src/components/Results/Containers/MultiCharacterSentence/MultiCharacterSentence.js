@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faCircleInfo, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import { faCopy, faCircleInfo, faQuoteRight, faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { ReactComponent as SlashLine } from '../../../../svgs/nav_separator.svg';
 import '../../Results.css'; // Import the CSS file
@@ -13,17 +13,19 @@ const MultiCharacterSentence = ({
     namedCharacters,
     namedActive,
     setPreviewText,
-    characterImages = {}, // Object mapping character names to image URLs
-    showPopup, // Function to handle popup display (if provided)
-    handleMouseEnterInfo, // Function to handle mouse enter for info icon (if provided)
-    volumeKey, // Key for volume data (if used in popup)
+    characterImages = {},
+    showPopup,
+    handleMouseEnterInfo,
+    volumeKey,
     chapterKey,
     volumeTitle,
-    chapterTitle, // Key for chapter data (if used in popup)
+    chapterTitle,
     index,
     highlight,
     filterState,
-    generateCitation // Index of the sentence (used for unique popup IDs)
+    generateCitation,
+    manageContextData,
+    full
 }) => {
 
     const [characters, setCharacters] = useState([]);
@@ -134,6 +136,10 @@ const MultiCharacterSentence = ({
     return (
         <div className="sentence-character-container" key={index}>
             <div className="sentence-box-image">
+                <FontAwesomeIcon
+                    className="context-icon"
+                    onClick={() => manageContextData({ full: full, sentence: sentence, volumeKey: volumeKey, chapterKey: chapterKey, volumeTitle: volumeTitle, chapterTitle: chapterTitle }, 'ln')}
+                    icon={faUpRightAndDownLeftFromCenter} />
                 <p onClick={(event) => changeActive(event)} dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence) : highlightSubstrings(sentence) }} />
                 <div className="icon-container-triple">
                     <CopyToClipboard text={sentence.text}>
