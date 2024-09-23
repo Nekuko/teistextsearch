@@ -154,7 +154,7 @@ function LightNovelCharacterResults({ full, manageContextData, namedCharacters, 
   }
 
   function generateCitation(volume, chapter, sentence){
-    return `Light Novel, ${volume}, ${chapter.replace(" | ", ":")}`
+    return `Light Novel, ${volume}, ${chapter.replace(" | ", ": ")}`
   }
 
   return (
