@@ -6,13 +6,10 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy, faFileImage, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight, faQuoteRight, faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
-import ImagePreview from './ImagePreview/ImagePreview'; // Adjust the path as needed
 import InfoPreview from './InfoPreview/InfoPreview';
 import { ESMAP } from '../../../esMap';
 
 function ESResults({ full, manageContextData, anData, images, highlight, filterState, main }) {
-  const [imageCache, setImageCache] = useState({});
-  const [previewImage, setPreviewImage] = useState(null);
   const [previewText, setPreviewText] = useState(null);
   const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
   const [currentPage, setCurrentPage] = useState({});
@@ -125,27 +122,6 @@ function ESResults({ full, manageContextData, anData, images, highlight, filterS
     setPreviewText(`Master of Garden<br />Event Stories<br />${ESMAP[seasonTitle]}<br />${episodeTitle}<br />Line ${line}<br />${nameFinal}`);
   }
 
-  function handleMouseEnter(id, seasonKey, episodeKey, index) {
-    return;
-    const rect = iconRefs.current[`${seasonKey}-${episodeKey}-${index}`].getBoundingClientRect();
-    setPreviewPosition({ top: rect.top, left: rect.left });
-    const url = `https://lh3.googleusercontent.com/d/${id.split('/d/')[1].split('/view')[0]}`;
-
-    // Check if the image is already in the cache
-    if (imageCache[url]) {
-      setPreviewImage(imageCache[url]);
-    } else {
-      // If not, download the image and add it to the cache
-      const img = new Image();
-      img.onload = () => {
-        setImageCache(prevCache => ({ ...prevCache, [url]: img.src }));
-        setPreviewImage(img.src);
-      };
-      img.src = url;
-    }
-  }
-
-
   if (Object.keys(anData.seasons).length === 0) {
     return null;
   }
@@ -253,8 +229,6 @@ function ESResults({ full, manageContextData, anData, images, highlight, filterS
                                         </CopyToClipboard>
                                         <SlashLine className="icon-slashline" />
                                         <div className="image-icon-container"
-                                          onMouseEnter={() => handleMouseEnter(sentence.url, seasonKey, episodeKey, index)}
-                                          onMouseLeave={() => setPreviewImage(null)}
                                           ref={ref => iconRefs.current[`${seasonKey}-${episodeKey}-${index}`] = ref}
                                         >
                                           {sentence.url && (
@@ -332,7 +306,6 @@ function ESResults({ full, manageContextData, anData, images, highlight, filterS
           </div>
         );
       })}
-      {previewImage && <ImagePreview src={previewImage} position={previewPosition} />}
       {previewText && <InfoPreview info={previewText} position={previewPosition} />}
     </div>
   );

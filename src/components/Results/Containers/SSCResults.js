@@ -6,12 +6,9 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy, faFileImage, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight, faQuoteRight, faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
-import ImagePreview from './ImagePreview/ImagePreview'; // Adjust the path as needed
 import InfoPreview from './InfoPreview/InfoPreview';
 
 function SSCResults({ full, manageContextData, sscData, images, highlight, filterState, main, partsChecked }) {
-    const [imageCache, setImageCache] = useState({});
-    const [previewImage, setPreviewImage] = useState(null);
     const [previewText, setPreviewText] = useState(null);
     const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
     const [currentPage, setCurrentPage] = useState({});
@@ -122,25 +119,6 @@ function SSCResults({ full, manageContextData, sscData, images, highlight, filte
         return highlightedText;
     };
 
-    function handleMouseEnter(id, partKey, episodeKey, index) {
-        return;
-        const rect = iconRefs.current[`${partKey}-${episodeKey}-${index}`].getBoundingClientRect();
-        setPreviewPosition({ top: rect.top, left: rect.left });
-        const url = `https://lh3.googleusercontent.com/d/${id.split('/d/')[1].split('/view')[0]}`;
-
-        // Check if the image is already in the cache
-        if (imageCache[url]) {
-            setPreviewImage(imageCache[url]);
-        } else {
-            // If not, download the image and add it to the cache
-            const img = new Image();
-            img.onload = () => {
-                setImageCache(prevCache => ({ ...prevCache, [url]: img.src }));
-                setPreviewImage(img.src);
-            };
-            img.src = url;
-        }
-    }
 
     function handleMouseEnterInfo(partKey, chapterKey, episodeKey, index, chapterTitle, partTitle, episodeTitle, line, name, name_variant) {
         let nameFinal;
@@ -315,8 +293,6 @@ function SSCResults({ full, manageContextData, sscData, images, highlight, filte
                                                                                                             </CopyToClipboard>
                                                                                                             <SlashLine className="icon-slashline" />
                                                                                                             <div className="image-icon-container"
-                                                                                                                onMouseEnter={() => handleMouseEnter(sentence.url, partKey, chapterKey, index)}
-                                                                                                                onMouseLeave={() => setPreviewImage(null)}
                                                                                                                 ref={ref => iconRefs.current[`${partKey}-${chapterKey}-${index}`] = ref}
                                                                                                             >
                                                                                                                 {sentence.url && (
@@ -403,7 +379,6 @@ function SSCResults({ full, manageContextData, sscData, images, highlight, filte
                         </div>
                     );
                 })}
-            {previewImage && <ImagePreview src={previewImage} position={previewPosition} />}
             {previewText && <InfoPreview info={previewText} position={previewPosition} />}
         </div>
     );
