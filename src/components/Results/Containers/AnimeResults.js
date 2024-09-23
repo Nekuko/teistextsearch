@@ -4,12 +4,12 @@ import Collapsible from 'react-collapsible';
 import '../Results.css'; // Import the CSS file
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy, faFileImage, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
+import { faCopy, faFileImage, faCircleInfo, faAnglesLeft, faAnglesRight, faAngleLeft, faAngleRight, faQuoteRight, faUpRightAndDownLeftFromCenter } from '@fortawesome/free-solid-svg-icons';
 import { ReactComponent as SlashLine } from '../../../svgs/nav_separator.svg';
 import ImagePreview from './ImagePreview/ImagePreview'; // Adjust the path as needed
 import InfoPreview from './InfoPreview/InfoPreview';
 
-function AnimeResults({ anData, images, highlight, filterState, animeDropdownState }) {
+function AnimeResults({ full, manageContextData, anData, images, highlight, filterState, animeDropdownState }) {
   const [imageCache, setImageCache] = useState({});
   const [previewImage, setPreviewImage] = useState(null);
   const [previewPosition, setPreviewPosition] = useState({ top: 0, left: 0 })
@@ -160,7 +160,7 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
     } else {
       popup = document.getElementById(`popup-${seasonIndex}-${episodeIndex}-${sentenceIndex}`);
     }
-    
+
     if (popup) {
       popup.classList.remove('hidden');
       popup.classList.add('show');
@@ -171,7 +171,7 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
     }
   }
 
-  function generateCitation(season, episode, sentence){
+  function generateCitation(season, episode, sentence) {
     if (season.includes("Kage")) {
       return `${season}, Episode ${episode.replace(" | ", ": ")}`
     }
@@ -236,6 +236,10 @@ function AnimeResults({ anData, images, highlight, filterState, animeDropdownSta
                                 {episodeValue.sentences.slice((currentPage[uniqueChapterKey] - 1) * sentencesPerPage, currentPage[uniqueChapterKey] * sentencesPerPage).map((sentence, index) => (
                                   <div className="sentence-character-container" key={index}>
                                     <div className="sentence-box-image">
+                                      <FontAwesomeIcon
+                                        className="context-icon"
+                                        onClick={() => manageContextData({ full: full, sentence: sentence, seasonKey: seasonKey, episodeKey: episodeKey, seasonTitle: seasonTitle, episodeTitle: episodeTitle }, 'an')}
+                                        icon={faUpRightAndDownLeftFromCenter} />
                                       <p dangerouslySetInnerHTML={{ __html: highlight ? highlightKeywords(sentence.subtitle) : sentence.subtitle }} />
                                       <div className="icon-container-triple">
                                         <CopyToClipboard text={sentence.subtitle}>

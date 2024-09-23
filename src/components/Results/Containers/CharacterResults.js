@@ -6,7 +6,7 @@ import ESResults from './ESResults';
 import APOResults from './APOResults';
 import LightNovelCharacterResults from './LightNovelCharacterResults';
 
-function CharacterResults({ namedCharacters, namedActive, lnDropdownState, lnData, anData, sscData, esData, apoData, images, filterState, highlight, mogDropdownState, animeDropdownState }) {
+function CharacterResults({ full, manageContextData, namedCharacters, namedActive, lnDropdownState, lnData, anData, sscData, esData, apoData, images, filterState, highlight, mogDropdownState, animeDropdownState }) {
   const mediumNames = {
     'an': 'Anime',
     'ssc': 'Seven Shadows Chronicles',
@@ -131,7 +131,7 @@ function CharacterResults({ namedCharacters, namedActive, lnDropdownState, lnDat
                     return (
                       <div key={`${medium}-${character}-ln`} className="medium-trigger">
                         <Collapsible trigger={`Light Novel (Total: ${mediumData.count})`}>
-                          <LightNovelCharacterResults namedCharacters={namedCharacters} namedActive={namedActive} character={characterImageName} lnDropdownState={lnDropdownState} lnData={mediumData} images={images} filterState={filterState} highlight={highlight} />
+                          <LightNovelCharacterResults full={full.ln} manageContextData={manageContextData} namedCharacters={namedCharacters} namedActive={namedActive} character={characterImageName} lnDropdownState={lnDropdownState} lnData={mediumData} images={images} filterState={filterState} highlight={highlight} />
                         </Collapsible>
                       </div>
                     );
@@ -143,17 +143,17 @@ function CharacterResults({ namedCharacters, namedActive, lnDropdownState, lnDat
                         <div className="medium-trigger">
                           {mediumData['ssc'] && (
                             <Collapsible trigger={`Seven Shadows Chronicles (Total: ${mediumData['ssc'].count})`}>
-                              <SSCResults main={false} sscData={mediumData['ssc']} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Seven Shadows Chronicles']} />
+                              <SSCResults full={full.ssc} manageContextData={manageContextData} main={false} sscData={mediumData['ssc']} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Seven Shadows Chronicles']} />
                             </Collapsible>
                           )}
                           {mediumData['es'] && (
                             <Collapsible trigger={`Event Stories (Total: ${mediumData['es'].count})`}>
-                              <ESResults main={false} anData={mediumData['es']} images={images} filterState={filterState} highlight={highlight} />
+                              <ESResults full={full.es} manageContextData={manageContextData} main={false} anData={mediumData['es']} images={images} filterState={filterState} highlight={highlight} />
                             </Collapsible>
                           )}
                           {mediumData['apo'] && (
                             <Collapsible trigger={`Apocrypha (Total: ${mediumData['apo'].count})`}>
-                              <APOResults main={false} sscData={mediumData['apo']} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Apocrypha']} />
+                              <APOResults full={full.apo} manageContextData={manageContextData} main={false} sscData={mediumData['apo']} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Apocrypha']} />
                             </Collapsible>
                           )}
                         </div>
@@ -165,7 +165,7 @@ function CharacterResults({ namedCharacters, namedActive, lnDropdownState, lnDat
                     return (
                       <div key={`${mediums}-${character}-an`} className="medium-trigger">
                         <Collapsible trigger={`${mediumName} (Total: ${mediumData.count})`}>
-                          <AnimeResults animeDropdownState={animeDropdownState} main={false} anData={mediumData} images={images} filterState={filterState} highlight={highlight} />
+                          <AnimeResults full={full.an} manageContextData={manageContextData} animeDropdownState={animeDropdownState} main={false} anData={mediumData} images={images} filterState={filterState} highlight={highlight} />
                         </Collapsible>
                       </div>
                     );

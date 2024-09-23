@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Collapsible from 'react-collapsible';
 import LightNovelCharacterResults from './Containers/LightNovelCharacterResults';
+import ContextOverlay from './Containers/ContextOverlay/ContextOverlay';
 import LightNovelResults from './Containers/LightNovelResults';
 import WebNovelResults from './Containers/WebNovelResults';
 import AnimeResults from './Containers/AnimeResults';
@@ -24,6 +25,14 @@ function Results({ namedCharacters, namedActive, resultsText, setResultsText, re
   const apoResults = results && results.apo ? results.apo.apo : null;
 
   const [highlight, setHighlight] = useState(resultState.highlight);
+  const [contextOpen, setContextOpen] = useState(false);
+  const [contextData, setContextData] = useState({title: "Context"});
+
+  useEffect(() => {
+    if (!contextOpen) {
+      setContextData({ title: "Context" }); // Reset context data to default
+    }
+  }, [contextOpen]);
 
   const toggleHighlight = () => {
     setHighlight(!highlight);
@@ -38,6 +47,35 @@ function Results({ namedCharacters, namedActive, resultsText, setResultsText, re
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  function manageContextData(data, reference) {
+    if (reference === 'ln') {
+      let volumeKey = data.volumeKey;
+      let chapterKey = data.chapterKey;
+      setContextData({reference: reference, title: `${data.volumeTitle}, ${data.chapterTitle}`, surrounding: data.full[volumeKey][chapterKey], current: data.sentence.line});
+    } else if (reference === 'wn') {
+      let volumeKey = data.volumeKey;
+      let chapterKey = data.chapterKey;
+      setContextData({reference: reference, title: `${data.volumeTitle}, Chapter ${chapterKey} | ${data.chapterTitle}`, surrounding: data.full[volumeKey][chapterKey], current: data.sentence.line});
+    } else if (reference === 'an') {
+      let seasonKey = data.seasonKey;
+      let episodeKey = data.episodeKey;
+      setContextData({reference: reference, title: `${data.seasonTitle}, Episode ${data.episodeTitle}`, surrounding: data.full[seasonKey][episodeKey], current: data.sentence.line});
+    } else if (reference === 'es') {
+      let seasonKey = data.seasonKey;
+      let episodeKey = data.episodeKey;
+      setContextData({reference: reference, title: `${data.seasonTitle}, ${data.episodeTitle}`, surrounding: data.full[seasonKey][episodeKey], current: data.sentence.line});
+    } else if (reference === 'ssc') {
+      let chapterKey = data.chapterKey;
+      let episodeKey = data.episodeKey;
+      setContextData({reference: reference, title: `${data.partTitle}, Chapter ${data.chapterTitle}, Episode ${episodeKey.replace("e", "")} | ${data.episodeTitle}`, surrounding: data.full[data.partKey][chapterKey][episodeKey], current: data.sentence.line});
+    } else if (reference === 'apo') {
+      let chapterKey = data.chapterKey;
+      let episodeKey = data.episodeKey;
+      setContextData({reference: reference, title: `Part ${data.partTitle}, Chapter ${data.chapterTitle}, ${data.episodeTitle}`, surrounding: data.full[data.partKey][chapterKey][episodeKey], current: data.sentence.line});
+    }
+    setContextOpen(true);
+  }
 
   // Check if .an key exists in results.anime and if there are any characters to show
   const lnCharacter = results && results.lnChar && !results.lnChar.ln && Object.keys(results.lnChar).length > 0;
@@ -103,7 +141,7 @@ function Results({ namedCharacters, namedActive, resultsText, setResultsText, re
             <>
               {((anCharacter || esCharacter || sscCharacter || apoCharacter || lnCharacter) && (
                 <>
-                  <CharacterResults namedCharacters={namedCharacters} namedActive={namedActive} lnData={results.lnChar} lnDropdownState={lnDropdownState} animeDropdownState={animeDropdownState} anData={results.anime} sscData={results.ssc} esData={results.es} apoData={results.apo} images={images} highlight={highlight} filterState={filterState} mogDropdownState={mogDropdownState} />
+                  <CharacterResults manageContextData={manageContextData} full={results.full} namedCharacters={namedCharacters} namedActive={namedActive} lnData={results.lnChar} lnDropdownState={lnDropdownState} animeDropdownState={animeDropdownState} anData={results.anime} sscData={results.ssc} esData={results.es} apoData={results.apo} images={images} highlight={highlight} filterState={filterState} mogDropdownState={mogDropdownState} />
                   <br />
                 </>
               ))}
@@ -111,10 +149,10 @@ function Results({ namedCharacters, namedActive, resultsText, setResultsText, re
                 <>
                   <Collapsible className="ln-results" trigger={`Light Novel (Total: ${lnCount})`}>
                     {lnCharacterResults && (
-                      <LightNovelCharacterResults namedCharacters={namedCharacters} namedActive={namedActive} lnCount={lnVolumeCount} lnDropdownState={lnDropdownState} lnData={lnCharacterResults} images={images} filterState={filterState} highlight={highlight} />
+                      <LightNovelCharacterResults manageContextData={manageContextData} full={results.full.ln} namedCharacters={namedCharacters} namedActive={namedActive} lnCount={lnVolumeCount} lnDropdownState={lnDropdownState} lnData={lnCharacterResults} images={images} filterState={filterState} highlight={highlight} />
                     )}
                     {lnResults && (
-                      <LightNovelResults lnCount={lnVolumeCount} lnDropdownState={lnDropdownState} lnData={lnResults} images={images} highlight={highlight} filterState={filterState} />
+                      <LightNovelResults manageContextData={manageContextData} full={results.full.ln} lnCount={lnVolumeCount} lnDropdownState={lnDropdownState} lnData={lnResults} images={images} highlight={highlight} filterState={filterState} />
                     )}
                   </Collapsible>
                   <br />
@@ -123,7 +161,7 @@ function Results({ namedCharacters, namedActive, resultsText, setResultsText, re
               {anResults && (
                 <>
                   <Collapsible className="an-results" trigger={`Anime (Total: ${anResults.count})`}>
-                    <AnimeResults animeDropdownState={animeDropdownState} anData={anResults} images={images} highlight={highlight} filterState={filterState} main={true} />
+                    <AnimeResults manageContextData={manageContextData} full={results.full.an} animeDropdownState={animeDropdownState} anData={anResults} images={images} highlight={highlight} filterState={filterState} main={true} />
                   </Collapsible>
                   <br />
                 </>
@@ -141,7 +179,7 @@ function Results({ namedCharacters, namedActive, resultsText, setResultsText, re
                             </div>
                           </>
                         }>
-                          <SSCResults main={true} sscData={sscResults} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Seven Shadows Chronicles']} />
+                          <SSCResults full={results.full.ssc} manageContextData={manageContextData} main={true} sscData={sscResults} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Seven Shadows Chronicles']} />
                         </Collapsible>
                         <br />
                       </>
@@ -156,7 +194,7 @@ function Results({ namedCharacters, namedActive, resultsText, setResultsText, re
                             </div>
                           </>
                         }>
-                          <ESResults main={true} anData={esResults} images={images} filterState={filterState} highlight={highlight} />
+                          <ESResults full={results.full.es} manageContextData={manageContextData} main={true} anData={esResults} images={images} filterState={filterState} highlight={highlight} />
                         </Collapsible>
                         <br />
                       </>
@@ -170,7 +208,7 @@ function Results({ namedCharacters, namedActive, resultsText, setResultsText, re
                           </div>
                         </>
                       }>
-                        <APOResults main={true} sscData={apoResults} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Apocrypha']} />
+                        <APOResults full={results.full.apo} manageContextData={manageContextData} main={true} sscData={apoResults} images={images} filterState={filterState} highlight={highlight} partsChecked={mogDropdownState.partsChecked['Apocrypha']} />
                       </Collapsible>
                     )}
                   </Collapsible>
@@ -180,7 +218,7 @@ function Results({ namedCharacters, namedActive, resultsText, setResultsText, re
               {wnResults && (
                 <>
                   <Collapsible className="ln-results" trigger={`Web Novel (Total: ${wnResults.count})`}>
-                    <WebNovelResults wnDropdownState={wnDropdownState} wnData={wnResults} volumeImages={images.lnCoverImages} highlight={highlight} filterState={filterState} />
+                    <WebNovelResults manageContextData={manageContextData} full={results.full.wn} wnDropdownState={wnDropdownState} wnData={wnResults} volumeImages={images.lnCoverImages} highlight={highlight} filterState={filterState} />
                   </Collapsible>
                   <br />
                 </>
@@ -192,6 +230,9 @@ function Results({ namedCharacters, namedActive, resultsText, setResultsText, re
           <button title={"To Top"} className="scroll-top-button" onClick={scrollToTop}>UP</button>
         )}
       </div>
+      {contextOpen && (
+        <ContextOverlay images={images} contextData={contextData} contextOpen={contextOpen} setContextOpen={setContextOpen} />
+      )}
     </div>
   );
 }

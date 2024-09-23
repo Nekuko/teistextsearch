@@ -756,12 +756,23 @@ function SearchPage() {
             }
         }
 
+        let fullANData;
         let anCheckedData;
+
+        let fullLNData;
         let lnCheckedData;
         let lnCheckedCharacterData;
+
+        let fullWNData;
         let wnCheckedData;
+
+        let fullAPOData;
         let apoCheckedData;
+
+        let fullSSCData;
         let sscCheckedData;
+
+        let fullESData;
         let esCheckedData;
 
         if (animeCheckedItems.length === 0
@@ -785,11 +796,13 @@ function SearchPage() {
 
         if (animeCheckedItems.length > 0) {
             anCheckedData = await fetchANData(animeCheckedItems, versionData, setVersionData, setResultsText);
+            fullANData = JSON.parse(JSON.stringify(anCheckedData));
         }
 
         let lnCheckedCharacterItems = [];
         if (lnCheckedItems.length > 0) {
             lnCheckedData = await fetchLNData(lnCheckedItems, versionData, setVersionData, setResultsText);
+            fullLNData = JSON.parse(JSON.stringify(lnCheckedData));
             lnCheckedCharacterData = {};
             for (const key in lnCheckedData) {
                 const volume = lnCheckedData[key];
@@ -811,18 +824,22 @@ function SearchPage() {
 
         if (wnCheckedItems.length > 0) {
             wnCheckedData = await fetchWNData(wnCheckedItems, versionData, setVersionData, setResultsText);
+            fullWNData = JSON.parse(JSON.stringify(wnCheckedData));
         }
 
         if (esCheckedItems.length > 0) {
             esCheckedData = await fetchESData(esCheckedItems, versionData, setVersionData, setResultsText);
+            fullESData = JSON.parse(JSON.stringify(esCheckedData));
         }
 
         if (apoCheckedItems.length > 0) {
             apoCheckedData = await fetchAPOData(apoCheckedItems, versionData, setVersionData, setResultsText);
+            fullAPOData = JSON.parse(JSON.stringify(apoCheckedData));
         }
 
         if (sscCheckedItems.length > 0) {
             sscCheckedData = await fetchSSCData(sscCheckedItems, versionData, setVersionData, setResultsText);
+            fullSSCData = JSON.parse(JSON.stringify(sscCheckedData));
         }
 
 
@@ -905,7 +922,7 @@ function SearchPage() {
                 lnResults = [];
             }
             // Update the state with the search results
-            setSearchResults({ anime: animeResults, ln: lnResults, lnChar: lnCharacterResults, wn: wnResults, ssc: { ...sscResults }, es: { ...esResults }, apo: { ...apoResults } });
+            setSearchResults({ full: {ln: fullLNData, wn: fullWNData, an: fullANData, ssc: fullSSCData, apo: fullAPOData, es: fullESData}, anime: animeResults, ln: lnResults, lnChar: lnCharacterResults, wn: wnResults, ssc: { ...sscResults }, es: { ...esResults }, apo: { ...apoResults } });
             scrollToBottom();
         }
     }
