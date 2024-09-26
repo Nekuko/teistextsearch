@@ -1037,6 +1037,29 @@
                         },
                         "checked": false
                     },
+                    "3-6 | Beast Gods & Fake Legends": {
+                        "e1": {
+                            "checked": false,
+                            "title": "A Hero's Traces"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "The Lakshmi Clan"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Saurva the Beast God"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Grave-robbing"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "A Hero's Confession"
+                        },
+                        "checked": false
+                    },
                     "checked": false
                 },
                 "checked": false

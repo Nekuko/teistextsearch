@@ -216,7 +216,8 @@
                     "Veteran Paladin",
                     "Villager A",
                     "Villager B",
-                    "Villager C"
+                    "Villager C",
+                    "Villagers"
                 ]
             },
             "Bandits": {
@@ -349,7 +350,8 @@
                     "Little Cuckoo-kun",
                     "Merry Whip",
                     "Monster",
-                    "Mr. Vendy"
+                    "Mr. Vendy",
+                    "Saurva"
                 ]
             },
             "Mysterious": {
@@ -790,6 +792,7 @@
                 "Zetan",
                 "??? (Zeta)",
                 "Everyone (Zeta)",
+                "None (Zeta)",
                 "Seven Shadows (Zeta)",
                 "Alpha & Zeta (Zeta)",
                 "Beta & Zeta (Zeta)",
@@ -1025,7 +1028,8 @@
         {
             "name": "Aurora",
             "name_variants": [
-                "??? (Aurora)",
+                "Witch Claire",
+                "??? (Witch Claire)",
                 "Massive Mound of Magic",
                 "3 People (Aurora)"
             ],

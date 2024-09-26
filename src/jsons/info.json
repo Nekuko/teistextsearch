@@ -5676,12 +5676,12 @@
     },
     "ssc": {
         "part_count": 3,
-        "line_count": 10345,
-        "word_count": 109680,
-        "char_count": 627343,
+        "line_count": 10630,
+        "word_count": 113209,
+        "char_count": 646619,
         "characters": {
-            "Alpha": 1335,
-            "Narrator": 53,
+            "Alpha": 1344,
+            "Narrator": 55,
             "Mysterious Captain": 26,
             "Mysterious Soldier A": 10,
             "Alpha (??? (Alpha))": 5,
@@ -5691,7 +5691,7 @@
             "Mysterious Soldier C": 6,
             "Epsilon": 1007,
             "Mysterious Soldier D": 4,
-            "Zeta": 949,
+            "Zeta": 1119,
             "Gamma": 1150,
             "Mysterious Soldier E": 6,
             "Beta": 957,
@@ -5718,7 +5718,7 @@
             "Victoria (??? (Victoria))": 10,
             "Follower A": 3,
             "Follower B": 1,
-            "Victoria": 113,
+            "Victoria": 120,
             "Reporter": 29,
             "Beta (Beta & Epsilon (Beta))": 7,
             "Epsilon (Beta & Epsilon (Epsilon))": 7,
@@ -5729,7 +5729,7 @@
             "Female Pilgrim": 1,
             "Paladin": 10,
             "Veteran Paladin": 1,
-            "Alpha (None (Alpha))": 12,
+            "Alpha (None (Alpha))": 22,
             "Templar Leader A": 17,
             "Templar": 19,
             "Templars": 4,
@@ -5816,7 +5816,7 @@
             "Epsilon (Gamma & Epsilon (Epsilon))": 1,
             "Olivier (??? (Olivier))": 12,
             "Bishop Drake (Bishop of Orum)": 10,
-            "Bishop Drake": 6,
+            "Bishop Drake": 15,
             "Gamma (None (Gamma))": 21,
             "Sergey Gorman (??? (Sergey Gorman))": 1,
             "Chi (??? (Karen))": 13,
@@ -5851,7 +5851,13 @@
             "Bandit?": 10,
             "Epsilon (Epsilon & Chi & Omega (Epsilon))": 1,
             "Chi (Epsilon & Chi & Omega (Chi))": 1,
-            "Omega (Epsilon & Chi & Omega (Omega))": 1
+            "Omega (Epsilon & Chi & Omega (Omega))": 1,
+            "Villager A": 23,
+            "Villager B": 17,
+            "Villager C": 15,
+            "Saurva": 7,
+            "Villagers": 1,
+            "Zeta (None (Zeta))": 15
         },
         "parts": {
             "p1": {
@@ -8546,17 +8552,17 @@
                 }
             },
             "p3": {
-                "chapter_count": 5,
-                "line_count": 1582,
-                "word_count": 17553,
-                "char_count": 99305,
+                "chapter_count": 6,
+                "line_count": 1867,
+                "word_count": 21082,
+                "char_count": 118581,
                 "characters": {
                     "Olivier (??? (Olivier))": 10,
-                    "Alpha": 232,
+                    "Alpha": 241,
                     "Beta": 131,
                     "Gamma": 151,
                     "Epsilon": 146,
-                    "Zeta": 67,
+                    "Zeta": 237,
                     "Delta": 44,
                     "Eta": 116,
                     "Alpha (Seven Shadows (Alpha))": 2,
@@ -8589,12 +8595,21 @@
                     "Iota": 92,
                     "Gamma (Gamma & Iota (Gamma))": 3,
                     "Iota (Gamma & Iota (Iota))": 3,
-                    "Narrator": 2,
+                    "Narrator": 4,
                     "Bandit?": 10,
                     "Cult Member": 28,
                     "Epsilon (Epsilon & Chi & Omega (Epsilon))": 1,
                     "Chi (Epsilon & Chi & Omega (Chi))": 1,
-                    "Omega (Epsilon & Chi & Omega (Omega))": 1
+                    "Omega (Epsilon & Chi & Omega (Omega))": 1,
+                    "Villager A": 23,
+                    "Villager B": 17,
+                    "Villager C": 15,
+                    "Saurva": 7,
+                    "Villagers": 1,
+                    "Zeta (None (Zeta))": 15,
+                    "Alpha (None (Alpha))": 10,
+                    "Victoria": 7,
+                    "Bishop Drake": 9
                 },
                 "chapters": {
                     "c3-1": {
@@ -9049,6 +9064,82 @@
                                     "Chi": 2,
                                     "Cid Kagenou (Cid)": 24,
                                     "Alpha": 15
+                                }
+                            }
+                        }
+                    },
+                    "c3-6": {
+                        "episode_count": 5,
+                        "line_count": 285,
+                        "word_count": 3529,
+                        "char_count": 19276,
+                        "characters": {
+                            "Zeta": 170,
+                            "Villager A": 23,
+                            "Villager B": 17,
+                            "Villager C": 15,
+                            "Saurva": 7,
+                            "Narrator": 2,
+                            "Villagers": 1,
+                            "Alpha": 9,
+                            "Zeta (None (Zeta))": 15,
+                            "Alpha (None (Alpha))": 10,
+                            "Victoria": 7,
+                            "Bishop Drake": 9
+                        },
+                        "episodes": {
+                            "e1": {
+                                "line_count": 31,
+                                "word_count": 447,
+                                "char_count": 2452,
+                                "characters": {
+                                    "Zeta": 31
+                                }
+                            },
+                            "e2": {
+                                "line_count": 76,
+                                "word_count": 940,
+                                "char_count": 5040,
+                                "characters": {
+                                    "Villager A": 19,
+                                    "Zeta": 43,
+                                    "Villager B": 14
+                                }
+                            },
+                            "e3": {
+                                "line_count": 53,
+                                "word_count": 523,
+                                "char_count": 2929,
+                                "characters": {
+                                    "Zeta": 35,
+                                    "Villager C": 11,
+                                    "Saurva": 7
+                                }
+                            },
+                            "e4": {
+                                "line_count": 62,
+                                "word_count": 714,
+                                "char_count": 3791,
+                                "characters": {
+                                    "Villager A": 4,
+                                    "Villager B": 3,
+                                    "Villager C": 4,
+                                    "Narrator": 2,
+                                    "Zeta": 48,
+                                    "Villagers": 1
+                                }
+                            },
+                            "e5": {
+                                "line_count": 63,
+                                "word_count": 905,
+                                "char_count": 5064,
+                                "characters": {
+                                    "Alpha": 9,
+                                    "Zeta": 13,
+                                    "Zeta (None (Zeta))": 15,
+                                    "Alpha (None (Alpha))": 10,
+                                    "Victoria": 7,
+                                    "Bishop Drake": 9
                                 }
                             }
                         }
@@ -11612,16 +11703,16 @@
     },
     "chars": {
         "Alpha": {
-            "total": 3891,
+            "total": 3910,
             "names": {
-                "Alpha": 3848,
+                "Alpha": 3857,
                 "Alpha & Gamma (Alpha)": 1,
                 "Alpha & Eta (Alpha)": 1,
                 "Seven Shadows (Alpha)": 8,
                 "Alpha & Zeta (Alpha)": 3,
                 "Alpha & Nu (Alpha)": 1,
                 "??? (Alpha)": 5,
-                "None (Alpha)": 16,
+                "None (Alpha)": 26,
                 "Everyone (Alpha)": 5,
                 "Alpha & Beta (Alpha)": 2,
                 "Alpha & Freya (Alpha)": 1
@@ -11705,9 +11796,9 @@
             }
         },
         "Zeta": {
-            "total": 2029,
+            "total": 2214,
             "names": {
-                "Zeta": 1990,
+                "Zeta": 2160,
                 "Seven Shadows (Zeta)": 14,
                 "Delta & Zeta (Zeta)": 4,
                 "Alpha & Zeta (Zeta)": 3,
@@ -11716,6 +11807,7 @@
                 "Zeta & Epsilon (Zeta)": 1,
                 "??? (Zeta)": 3,
                 "Beta & Delta & Zeta (Zeta)": 1,
+                "None (Zeta)": 15,
                 "Everyone (Zeta)": 5,
                 "Zeta & Beta (Zeta)": 1,
                 "Zeta & Eta (Zeta)": 1
@@ -12098,9 +12190,10 @@
         "Aurora": {
             "total": 414,
             "names": {
-                "Aurora": 397,
+                "Aurora": 357,
+                "Witch Claire": 40,
                 "Massive Mound of Magic": 14,
-                "??? (Aurora)": 2,
+                "??? (Witch Claire)": 2,
                 "3 People (Aurora)": 1
             }
         },
@@ -12402,11 +12495,11 @@
             }
         },
         "Victoria": {
-            "total": 240,
+            "total": 247,
             "names": {
                 "No. 559": 117,
                 "??? (Victoria)": 10,
-                "Victoria": 113
+                "Victoria": 120
             }
         },
         "Kouadoi": {
@@ -12464,9 +12557,9 @@
             }
         },
         "Narrator": {
-            "total": 4034,
+            "total": 4036,
             "names": {
-                "Narrator": 4034
+                "Narrator": 4036
             }
         },
         "Mysterious Captain": {
@@ -12836,10 +12929,10 @@
             }
         },
         "Bishop Drake": {
-            "total": 16,
+            "total": 25,
             "names": {
                 "Bishop of Orum": 10,
-                "Bishop Drake": 6
+                "Bishop Drake": 15
             }
         },
         "Malak": {
@@ -12957,6 +13050,36 @@
                 "Bandit?": 10
             }
         },
+        "Villager A": {
+            "total": 39,
+            "names": {
+                "Villager A": 39
+            }
+        },
+        "Villager B": {
+            "total": 19,
+            "names": {
+                "Villager B": 19
+            }
+        },
+        "Villager C": {
+            "total": 17,
+            "names": {
+                "Villager C": 17
+            }
+        },
+        "Saurva": {
+            "total": 7,
+            "names": {
+                "Saurva": 7
+            }
+        },
+        "Villagers": {
+            "total": 1,
+            "names": {
+                "Villagers": 1
+            }
+        },
         "Bandits": {
             "total": 2,
             "names": {
@@ -13050,24 +13173,6 @@
             "total": 46,
             "names": {
                 "Nonna": 46
-            }
-        },
-        "Villager A": {
-            "total": 16,
-            "names": {
-                "Villager A": 16
-            }
-        },
-        "Villager B": {
-            "total": 2,
-            "names": {
-                "Villager B": 2
-            }
-        },
-        "Villager C": {
-            "total": 2,
-            "names": {
-                "Villager C": 2
             }
         },
         "Committee Member": {
