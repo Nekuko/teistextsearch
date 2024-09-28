@@ -14,7 +14,7 @@ import ESResults from './Containers/ESResults';
 import APOResults from './Containers/APOResults';
 
 function Results({ namedCharacters, namedActive, resultsText, setResultsText, results, images, filterState, resultState, setResultState, animeDropdownState, lnDropdownState, wnDropdownState, mogDropdownState, setSearchResults }) {
-  const noResults = Object.keys(results).every(key => Object.keys(results[key]).length === 0);
+  const noResults = Object.keys(results).filter(key => key !== 'full').every(key => Object.keys(results[key]).length === 0);
 
   let lnResults = results && results.ln ? results.ln.ln : null;
   const lnCharacterResults = results && results.lnChar ? results.lnChar.ln : null;
