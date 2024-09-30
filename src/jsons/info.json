@@ -2,29 +2,29 @@
     "ln": {
         "volume_count": 6,
         "line_count": 24986,
-        "word_count": 343965,
-        "char_count": 1923515,
+        "word_count": 343977,
+        "char_count": 1923593,
         "characters": {
             "Cid Kagenou (Minoru Kageno)": 44,
-            "Cid Kagenou": 1932,
-            "Cid Kagenou (Shadow)": 308,
-            "Bandit": 9,
+            "Cid Kagenou": 2376,
+            "Cid Kagenou (Shadow)": 526,
+            "Bandit": 34,
             "Bandit Boss": 15,
-            "Alpha": 177,
+            "Alpha": 278,
             "Mr. Kagenou": 3,
             "Mrs. Kagenou": 2,
-            "Beta": 125,
-            "Narrator": 3441,
+            "Beta": 295,
+            "Narrator": 5573,
             "Grease": 55,
-            "Soldier": 7,
-            "Claire Kagenou": 44,
+            "Soldier": 13,
+            "Claire Kagenou": 275,
             "Garden Member": 1,
-            "Alexia Midgar": 368,
-            "Skel Etal": 91,
-            "Po Tato": 41,
+            "Alexia Midgar": 380,
+            "Skel Etal": 94,
+            "Po Tato": 50,
             "Student": 19,
             "Zenon Griffey": 71,
-            "Knight": 23,
+            "Knight": 29,
             "Iris Midgar": 185,
             "Scientist": 20,
             "Cult Member": 27,
@@ -33,8 +33,8 @@
             "Sherry Barnett": 143,
             "Lutheran Barnett": 86,
             "Glen": 13,
-            "Nu": 61,
-            "Gamma": 42,
+            "Nu": 75,
+            "Gamma": 117,
             "Referee": 11,
             "Rose Oriana": 176,
             "Teacher": 1,
@@ -46,14 +46,14 @@
             "Epsilon": 53,
             "Announcer": 2,
             "Jack Nelson": 98,
-            "Aurora": 86,
-            "Delta": 24,
+            "Aurora": 108,
+            "Delta": 114,
             "Rude": 9,
             "Cid Kagenou (Mundane Mann)": 134,
             "Annerose Nichtsehen": 74,
-            "Quinton": 46,
+            "Quinton": 70,
             "Heckler": 10,
-            "Goldy Gilded": 31,
+            "Goldy Gilded": 46,
             "Spectator": 3,
             "Supervisor": 2,
             "Perv Asshat": 48,
@@ -64,11 +64,39 @@
             "Aristocrat": 11,
             "Klaus Midgar": 1,
             "Raphael Oriana": 2,
-            "Cid Kagenou (Stylish Bandit Slayer)": 10,
+            "Cid Kagenou (Stylish Bandit Slayer)": 11,
             "Lambda": 12,
-            "No. 665": 1,
-            "No. 664": 4,
-            "Rose Oriana (No. 666)": 4
+            "No. 665": 10,
+            "No. 664": 31,
+            "Rose Oriana (No. 666)": 21,
+            "Ghoul": 3,
+            "White Demon": 30,
+            "Merchant": 12,
+            "Civilian": 12,
+            "Mary": 104,
+            "Coworker": 8,
+            "Marie": 25,
+            "Claudia": 15,
+            "Vampire": 8,
+            "Crimson": 22,
+            "Juggernaut": 59,
+            "Yukime": 151,
+            "Elisabeth": 3,
+            "No. 664 (No. 664 & No. 665 & No. 666 (No. 664))": 1,
+            "No. 665 (No. 664 & No. 665 & No. 666 (No. 665))": 1,
+            "Rose Oriana (No. 664 & No. 665 & No. 666 (No. 666))": 1,
+            "Aurora (Witch Claire)": 12,
+            "Scarface": 14,
+            "Natsu (Natsu & Kana (Natsu))": 2,
+            "Kana (Natsu & Kana (Kana))": 2,
+            "Cid Kagenou (John Smith)": 403,
+            "Shop Staff": 1,
+            "Zabra": 9,
+            "Gettan": 91,
+            "Garter Kikuchi": 15,
+            "Leaf One": 12,
+            "Natsu": 7,
+            "Kana": 2
         },
         "volumes": {
             "v1": {
@@ -517,69 +545,248 @@
             },
             "v3": {
                 "line_count": 4376,
-                "word_count": 59207,
-                "char_count": 333136,
-                "characters": {},
+                "word_count": 59219,
+                "char_count": 333214,
+                "characters": {
+                    "Cid Kagenou": 444,
+                    "Claire Kagenou": 231,
+                    "Ghoul": 3,
+                    "Cid Kagenou (Shadow)": 218,
+                    "Beta": 170,
+                    "Narrator": 2132,
+                    "Quinton": 24,
+                    "Goldy Gilded": 15,
+                    "White Demon": 30,
+                    "Merchant": 12,
+                    "Civilian": 12,
+                    "Mary": 104,
+                    "Coworker": 8,
+                    "Marie": 25,
+                    "Knight": 6,
+                    "Claudia": 15,
+                    "Vampire": 8,
+                    "Crimson": 22,
+                    "Juggernaut": 59,
+                    "Yukime": 151,
+                    "Rose Oriana (No. 666)": 17,
+                    "No. 664": 27,
+                    "No. 665": 9,
+                    "Elisabeth": 3,
+                    "No. 664 (No. 664 & No. 665 & No. 666 (No. 664))": 1,
+                    "No. 665 (No. 664 & No. 665 & No. 666 (No. 665))": 1,
+                    "Rose Oriana (No. 664 & No. 665 & No. 666 (No. 666))": 1,
+                    "Aurora": 22,
+                    "Aurora (Witch Claire)": 12,
+                    "Bandit": 25,
+                    "Scarface": 14,
+                    "Natsu (Natsu & Kana (Natsu))": 2,
+                    "Kana (Natsu & Kana (Kana))": 2,
+                    "Alpha": 101,
+                    "Cid Kagenou (John Smith)": 403,
+                    "Shop Staff": 1,
+                    "Po Tato": 9,
+                    "Skel Etal": 3,
+                    "Delta": 90,
+                    "Zabra": 9,
+                    "Gettan": 91,
+                    "Garter Kikuchi": 15,
+                    "Gamma": 75,
+                    "Nu": 14,
+                    "Leaf One": 12,
+                    "Alexia Midgar": 12,
+                    "Natsu": 7,
+                    "Soldier": 6,
+                    "Cid Kagenou (Stylish Bandit Slayer)": 1,
+                    "Kana": 2
+                },
                 "chapters": {
                     "c1": {
                         "word_count": 4491,
                         "char_count": 25183,
                         "line_count": 322,
-                        "characters": {}
+                        "characters": {
+                            "Cid Kagenou": 112,
+                            "Claire Kagenou": 46,
+                            "Ghoul": 2,
+                            "Cid Kagenou (Shadow)": 51,
+                            "Beta": 21,
+                            "Narrator": 64,
+                            "Quinton": 22,
+                            "Goldy Gilded": 13,
+                            "White Demon": 17
+                        }
                     },
                     "c2": {
                         "word_count": 6905,
                         "char_count": 38730,
                         "line_count": 479,
-                        "characters": {}
+                        "characters": {
+                            "Cid Kagenou": 112,
+                            "Claire Kagenou": 47,
+                            "Merchant": 12,
+                            "Goldy Gilded": 2,
+                            "Quinton": 2,
+                            "Narrator": 204,
+                            "Civilian": 12,
+                            "Ghoul": 1,
+                            "Mary": 33,
+                            "Coworker": 8,
+                            "Marie": 25,
+                            "Cid Kagenou (Shadow)": 27,
+                            "Knight": 6,
+                            "Claudia": 15,
+                            "Vampire": 6,
+                            "Crimson": 11
+                        }
                     },
                     "c3": {
                         "word_count": 7070,
                         "char_count": 39593,
                         "line_count": 489,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 327,
+                            "Juggernaut": 34,
+                            "Yukime": 15,
+                            "Cid Kagenou (Shadow)": 6,
+                            "White Demon": 13,
+                            "Claire Kagenou": 67,
+                            "Mary": 45,
+                            "Beta": 25,
+                            "Rose Oriana (No. 666)": 4,
+                            "No. 664": 2,
+                            "No. 665": 1,
+                            "Vampire": 2,
+                            "Elisabeth": 2
+                        }
                     },
                     "c4": {
-                        "word_count": 9043,
-                        "char_count": 50805,
+                        "word_count": 9047,
+                        "char_count": 50831,
                         "line_count": 726,
-                        "characters": {}
+                        "characters": {
+                            "Cid Kagenou (Shadow)": 50,
+                            "Crimson": 11,
+                            "Narrator": 469,
+                            "Claire Kagenou": 38,
+                            "Mary": 26,
+                            "Beta": 42,
+                            "No. 665": 2,
+                            "No. 664 (No. 664 & No. 665 & No. 666 (No. 664))": 1,
+                            "No. 665 (No. 664 & No. 665 & No. 666 (No. 665))": 1,
+                            "Rose Oriana (No. 664 & No. 665 & No. 666 (No. 666))": 1,
+                            "No. 664": 3,
+                            "Yukime": 21,
+                            "Juggernaut": 25,
+                            "Rose Oriana (No. 666)": 4,
+                            "Aurora": 22,
+                            "Aurora (Witch Claire)": 12,
+                            "Elisabeth": 1,
+                            "Cid Kagenou": 41
+                        }
                     },
                     "c5": {
                         "word_count": 2467,
                         "char_count": 13686,
                         "line_count": 216,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 125,
+                            "Cid Kagenou": 40,
+                            "Claire Kagenou": 33,
+                            "Bandit": 17,
+                            "Scarface": 14
+                        }
                     },
                     "c6": {
-                        "word_count": 7304,
-                        "char_count": 41130,
+                        "word_count": 7310,
+                        "char_count": 41169,
                         "line_count": 501,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 149,
+                            "Yukime": 40,
+                            "Natsu (Natsu & Kana (Natsu))": 1,
+                            "Kana (Natsu & Kana (Kana))": 1,
+                            "Cid Kagenou (Shadow)": 70,
+                            "Beta": 3,
+                            "Alpha": 10,
+                            "Bandit": 8,
+                            "Cid Kagenou (John Smith)": 76,
+                            "Cid Kagenou": 103,
+                            "Shop Staff": 1,
+                            "Po Tato": 9,
+                            "Skel Etal": 3,
+                            "Delta": 41,
+                            "Zabra": 9
+                        }
                     },
                     "c7": {
                         "word_count": 4478,
                         "char_count": 25241,
                         "line_count": 331,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 150,
+                            "Gettan": 16,
+                            "Garter Kikuchi": 5,
+                            "Gamma": 27,
+                            "Alpha": 6,
+                            "Nu": 9,
+                            "Leaf One": 12,
+                            "Cid Kagenou": 36,
+                            "Alexia Midgar": 12,
+                            "Cid Kagenou (John Smith)": 64,
+                            "Natsu": 2,
+                            "Yukime": 16
+                        }
                     },
                     "c8": {
                         "word_count": 7211,
                         "char_count": 41117,
                         "line_count": 573,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 330,
+                            "Gamma": 21,
+                            "Alpha": 50,
+                            "Gettan": 10,
+                            "Garter Kikuchi": 3,
+                            "Cid Kagenou (John Smith)": 95,
+                            "No. 664": 22,
+                            "Rose Oriana (No. 666)": 9,
+                            "No. 665": 6,
+                            "Delta": 19,
+                            "Cid Kagenou (Shadow)": 13,
+                            "Beta": 21,
+                            "Soldier": 6
+                        }
                     },
                     "c9": {
-                        "word_count": 9037,
-                        "char_count": 50737,
+                        "word_count": 9039,
+                        "char_count": 50750,
                         "line_count": 690,
-                        "characters": {}
+                        "characters": {
+                            "Cid Kagenou (John Smith)": 168,
+                            "Yukime": 59,
+                            "Narrator": 314,
+                            "Gettan": 65,
+                            "Cid Kagenou (Stylish Bandit Slayer)": 1,
+                            "Garter Kikuchi": 7,
+                            "Gamma": 27,
+                            "Alpha": 35,
+                            "Nu": 5,
+                            "Beta": 9,
+                            "Cid Kagenou (Shadow)": 1,
+                            "Delta": 30,
+                            "Natsu (Natsu & Kana (Natsu))": 1,
+                            "Kana (Natsu & Kana (Kana))": 1,
+                            "Natsu": 5,
+                            "Kana": 2
+                        }
                     },
                     "c10": {
                         "word_count": 1201,
                         "char_count": 6914,
                         "line_count": 49,
-                        "characters": {}
+                        "characters": {
+                            "Beta": 49
+                        }
                     }
                 }
             },
@@ -11703,9 +11910,9 @@
     },
     "chars": {
         "Alpha": {
-            "total": 3910,
+            "total": 4011,
             "names": {
-                "Alpha": 3857,
+                "Alpha": 3958,
                 "Alpha & Gamma (Alpha)": 1,
                 "Alpha & Eta (Alpha)": 1,
                 "Seven Shadows (Alpha)": 8,
@@ -11719,9 +11926,9 @@
             }
         },
         "Beta": {
-            "total": 2712,
+            "total": 2882,
             "names": {
-                "Beta": 2355,
+                "Beta": 2525,
                 "Seven Shadows (Beta)": 14,
                 "Beta & Epsilon (Beta)": 28,
                 "Beta & Gamma (Beta)": 5,
@@ -11751,9 +11958,9 @@
             }
         },
         "Gamma": {
-            "total": 2148,
+            "total": 2223,
             "names": {
-                "Gamma": 1989,
+                "Gamma": 2064,
                 "Seven Shadows (Gamma)": 14,
                 "Alpha & Gamma (Gamma)": 1,
                 "Beta & Gamma (Gamma)": 5,
@@ -11768,9 +11975,9 @@
             }
         },
         "Delta": {
-            "total": 1516,
+            "total": 1606,
             "names": {
-                "Delta": 1484,
+                "Delta": 1574,
                 "Seven Shadows (Delta)": 13,
                 "Delta & Zeta (Delta)": 4,
                 "Deltan": 1,
@@ -11833,9 +12040,9 @@
             }
         },
         "Nu": {
-            "total": 523,
+            "total": 537,
             "names": {
-                "Nu": 470,
+                "Nu": 484,
                 "Alpha & Nu (Nu)": 1,
                 "Characterised Alpha": 11,
                 "93": 21,
@@ -11872,9 +12079,9 @@
             }
         },
         "Juggernaut": {
-            "total": 55,
+            "total": 114,
             "names": {
-                "Juggernaut": 55
+                "Juggernaut": 114
             }
         },
         "Subordinate": {
@@ -11884,15 +12091,15 @@
             }
         },
         "Cid Kagenou": {
-            "total": 7548,
+            "total": 8614,
             "names": {
-                "Shadow": 1037,
+                "Shadow": 1255,
                 "Minoru Kageno": 118,
                 "Stylish Ruffian Slayer": 35,
-                "Cid Kagenou": 3871,
+                "Cid Kagenou": 4315,
                 "Mundane Mann": 219,
-                "Stylish Bandit Slayer": 23,
-                "John Smith": 189,
+                "Stylish Bandit Slayer": 24,
+                "John Smith": 592,
                 "John Smith & Yukime (John Smith)": 1,
                 "Cid": 1863,
                 "???? (Shadow)": 3,
@@ -11968,9 +12175,9 @@
             }
         },
         "Bandit": {
-            "total": 43,
+            "total": 68,
             "names": {
-                "Bandit": 43
+                "Bandit": 68
             }
         },
         "Bandit Boss": {
@@ -11980,9 +12187,9 @@
             }
         },
         "Claire Kagenou": {
-            "total": 694,
+            "total": 925,
             "names": {
-                "Claire Kagenou": 286,
+                "Claire Kagenou": 517,
                 "Claire": 403,
                 "??? (Claire Kagenou)": 4,
                 "Alexia & Claire (Claire)": 1
@@ -12001,9 +12208,9 @@
             }
         },
         "Soldier": {
-            "total": 44,
+            "total": 50,
             "names": {
-                "Soldier": 44
+                "Soldier": 50
             }
         },
         "Girl": {
@@ -12013,25 +12220,25 @@
             }
         },
         "Skel Etal": {
-            "total": 475,
+            "total": 478,
             "names": {
-                "Skel Etal": 426,
+                "Skel Etal": 429,
                 "Skel & Po (Skel)": 13,
                 "Skel": 36
             }
         },
         "Po Tato": {
-            "total": 249,
+            "total": 258,
             "names": {
-                "Po Tato": 216,
+                "Po Tato": 225,
                 "Skel & Po (Po)": 13,
                 "Po": 20
             }
         },
         "Alexia Midgar": {
-            "total": 1589,
+            "total": 1601,
             "names": {
-                "Alexia Midgar": 977,
+                "Alexia Midgar": 989,
                 "Alexia Midgar & Natsume Kafka (Alexia Midgar)": 1,
                 "Alexia": 605,
                 "Rose & Alexia (Alexia)": 1,
@@ -12054,9 +12261,9 @@
             }
         },
         "Knight": {
-            "total": 145,
+            "total": 151,
             "names": {
-                "Knight": 145
+                "Knight": 151
             }
         },
         "Iris Midgar": {
@@ -12067,19 +12274,20 @@
             }
         },
         "Rose Oriana": {
-            "total": 1143,
+            "total": 1161,
             "names": {
                 "Rose Oriana": 676,
-                "No. 666": 180,
+                "No. 666": 197,
                 "Rose": 149,
                 "Rose & Alexia (Rose)": 1,
-                "No.666": 137
+                "No.666": 137,
+                "No. 664 & No. 665 & No. 666 (No. 666)": 1
             }
         },
         "Civilian": {
-            "total": 55,
+            "total": 67,
             "names": {
-                "Civilian": 55
+                "Civilian": 67
             }
         },
         "Glen": {
@@ -12188,10 +12396,10 @@
             }
         },
         "Aurora": {
-            "total": 414,
+            "total": 448,
             "names": {
-                "Aurora": 357,
-                "Witch Claire": 40,
+                "Aurora": 379,
+                "Witch Claire": 52,
                 "Massive Mound of Magic": 14,
                 "??? (Witch Claire)": 2,
                 "3 People (Aurora)": 1
@@ -12230,9 +12438,9 @@
             }
         },
         "Quinton": {
-            "total": 131,
+            "total": 155,
             "names": {
-                "Quinton": 130,
+                "Quinton": 154,
                 "Goldy & Quinton (Quinton)": 1
             }
         },
@@ -12249,15 +12457,15 @@
             }
         },
         "Shop Staff": {
-            "total": 22,
+            "total": 23,
             "names": {
-                "Shop Staff": 22
+                "Shop Staff": 23
             }
         },
         "Goldy Gilded": {
-            "total": 174,
+            "total": 189,
             "names": {
-                "Goldy Gilded": 174
+                "Goldy Gilded": 189
             }
         },
         "Beatrix": {
@@ -12360,27 +12568,29 @@
             }
         },
         "No. 665": {
-            "total": 38,
+            "total": 48,
             "names": {
-                "No. 665": 38
+                "No. 665": 47,
+                "No. 664 & No. 665 & No. 666 (No. 665)": 1
             }
         },
         "No. 664": {
-            "total": 80,
+            "total": 108,
             "names": {
-                "No. 664": 80
+                "No. 664": 107,
+                "No. 664 & No. 665 & No. 666 (No. 664)": 1
             }
         },
         "White Demon": {
-            "total": 45,
+            "total": 75,
             "names": {
-                "White Demon": 45
+                "White Demon": 75
             }
         },
         "Merchant": {
-            "total": 27,
+            "total": 39,
             "names": {
-                "Merchant": 27
+                "Merchant": 39
             }
         },
         "Pickpocket": {
@@ -12390,64 +12600,66 @@
             }
         },
         "Mary": {
-            "total": 127,
+            "total": 231,
             "names": {
-                "Mary": 127
+                "Mary": 231
             }
         },
         "Marie": {
-            "total": 81,
+            "total": 106,
             "names": {
-                "Marie": 81
+                "Marie": 106
             }
         },
         "Coworker": {
-            "total": 10,
+            "total": 18,
             "names": {
-                "Coworker": 10
+                "Coworker": 18
             }
         },
         "Yukime": {
-            "total": 233,
+            "total": 384,
             "names": {
-                "Yukime": 232,
+                "Yukime": 383,
                 "John Smith & Yukime (Yukime)": 1
             }
         },
         "Natsu": {
-            "total": 12,
+            "total": 21,
             "names": {
-                "Natsu": 12
+                "Natsu": 19,
+                "Natsu & Kana (Natsu)": 2
             }
         },
         "Kana": {
-            "total": 6,
+            "total": 10,
             "names": {
-                "Kana": 6
+                "Kana": 8,
+                "Natsu & Kana (Kana)": 2
             }
         },
         "Claudia": {
-            "total": 5,
+            "total": 20,
             "names": {
-                "Claudia": 5
+                "Claudia": 20
             }
         },
         "Vampire": {
-            "total": 12,
+            "total": 20,
             "names": {
-                "Vampire": 12
+                "Vampire": 20
             }
         },
         "Crimson": {
-            "total": 18,
+            "total": 40,
             "names": {
-                "Crimson": 18
+                "Crimson": 40
             }
         },
         "Elisabeth": {
-            "total": 98,
+            "total": 101,
             "names": {
-                "Elisabeth": 97,
+                "Elisabeth": 100,
                 "3 People (Elisabeth)": 1
             }
         },
@@ -12459,21 +12671,21 @@
             }
         },
         "Gettan": {
-            "total": 129,
+            "total": 220,
             "names": {
-                "Gettan": 129
+                "Gettan": 220
             }
         },
         "Garter Kikuchi": {
-            "total": 48,
+            "total": 63,
             "names": {
-                "Garter Kikuchi": 48
+                "Garter Kikuchi": 63
             }
         },
         "Zabra": {
-            "total": 13,
+            "total": 22,
             "names": {
-                "Zabra": 13
+                "Zabra": 22
             }
         },
         "Leaf Three": {
@@ -12489,9 +12701,9 @@
             }
         },
         "Leaf One": {
-            "total": 37,
+            "total": 49,
             "names": {
-                "Leaf One": 37
+                "Leaf One": 49
             }
         },
         "Victoria": {
@@ -12557,9 +12769,9 @@
             }
         },
         "Narrator": {
-            "total": 4036,
+            "total": 6168,
             "names": {
-                "Narrator": 4036
+                "Narrator": 6168
             }
         },
         "Mysterious Captain": {
@@ -13455,9 +13667,9 @@
             }
         },
         "Ghoul": {
-            "total": 2,
+            "total": 5,
             "names": {
-                "Ghoul": 2
+                "Ghoul": 5
             }
         },
         "Branch Manager": {
@@ -13690,6 +13902,12 @@
             "total": 2,
             "names": {
                 "Supervisor": 2
+            }
+        },
+        "Scarface": {
+            "total": 14,
+            "names": {
+                "Scarface": 14
             }
         }
     }

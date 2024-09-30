@@ -168,7 +168,8 @@
             "General": {
                 "order": 9,
                 "characters": [
-                    "Toppe Batterius"
+                    "Toppe Batterius",
+                    "Scarface"
                 ]
             }
         },
@@ -928,7 +929,7 @@
         },
         {
             "name": "No. 664",
-            "name_variants": [],
+            "name_variants": ["No. 664 & No. 665 & No. 666 (No. 664)"],
             "name_mirrors": [],
             "group": "Shadow Garden",
             "subgroup": "Members",
@@ -936,7 +937,7 @@
             "url": "characterIcons/664Icon.webp"
         },
         {
-            "name": "No. 665",
+            "name": "No. 664 & No. 665 & No. 666 (No. 665)",
             "name_variants": [],
             "name_mirrors": [],
             "group": "Shadow Garden",
@@ -1376,7 +1377,7 @@
         },
         {
             "name": "Kana",
-            "name_variants": [],
+            "name_variants": ["Natsu & Kana (Kana)"],
             "name_mirrors": [],
             "group": "Others",
             "subgroup": "Lawless City",
@@ -1385,7 +1386,7 @@
         },
         {
             "name": "Natsu",
-            "name_variants": [],
+            "name_variants": ["Natsu & Kana (Natsu)"],
             "name_mirrors": [],
             "group": "Others",
             "subgroup": "Lawless City",
@@ -1490,7 +1491,8 @@
             "name": "Rose Oriana",
             "name_variants": [
                 "No. 666",
-                "Rose & Alexia (Rose)"
+                "Rose & Alexia (Rose)",
+                "No. 664 & No. 665 & No. 666 (No. 666)"
             ],
             "name_mirrors": [
                 {
