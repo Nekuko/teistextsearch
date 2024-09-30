@@ -937,8 +937,8 @@
             "url": "characterIcons/664Icon.webp"
         },
         {
-            "name": "No. 664 & No. 665 & No. 666 (No. 665)",
-            "name_variants": [],
+            "name": "No. 665",
+            "name_variants": ["No. 664 & No. 665 & No. 666 (No. 665)"],
             "name_mirrors": [],
             "group": "Shadow Garden",
             "subgroup": "Members",
