@@ -171,7 +171,7 @@ function InfoPage() {
                         <div className="info-info">
                             <p>Lines: 0</p>
                             <p>Approximate Word Count: 0</p>
-                            <p>Character Count: 0</p>
+                            <p>Approximate Character Count: 0</p>
                         </div>
                     </div>
                     <br /><br />
@@ -222,7 +222,7 @@ function InfoPage() {
                         <p>Volumes: {formatNumber(all_counts.volume_count)}</p>
                         <p>Paragraphs: {formatNumber(all_counts.line_count)}</p>
                         <p>Approximate Word Count: {formatNumber(all_counts.word_count)}</p>
-                        <p>Character Count: {formatNumber(all_counts.char_count)}</p>
+                        <p>Approximate Character Count: {formatNumber(all_counts.char_count)}</p>
                         <Collapsible trigger="Characters">
                             <div className='info-character-box-small'>
                                 {Object.keys(all_counts.characters).sort((a, b) => {
@@ -252,7 +252,7 @@ function InfoPage() {
                                         <p>Chapters: {Object.keys(all_counts.volumes[volume].chapters).length}</p>
                                         <p>Paragraphs: {formatNumber(all_counts.volumes[volume].line_count)}</p>
                                         <p>Approximate Word Count: {formatNumber(all_counts.volumes[volume].word_count)}</p>
-                                        <p>Character Count: {formatNumber(all_counts.volumes[volume].char_count)}</p>
+                                        <p>Approximate Character Count: {formatNumber(all_counts.volumes[volume].char_count)}</p>
                                         {Object.keys(all_counts.volumes[volume].characters).length > 0 && (
                                             <Collapsible trigger="Characters">
                                                 <div className='info-character-box-small'>
@@ -289,7 +289,7 @@ function InfoPage() {
                                                     }>
                                                         <p>Paragraphs: {formatNumber(all_counts.volumes[volume].chapters[chapter].line_count)}</p>
                                                         <p>Approximate Word Count: {formatNumber(all_counts.volumes[volume].chapters[chapter].word_count)}</p>
-                                                        <p>Character Count: {formatNumber(all_counts.volumes[volume].chapters[chapter].char_count)}</p>
+                                                        <p>Approximate Character Count: {formatNumber(all_counts.volumes[volume].chapters[chapter].char_count)}</p>
                                                         {Object.keys(all_counts.volumes[volume].chapters[chapter].characters).length > 0 && (
                                                             <Collapsible trigger="Characters">
                                                                 <div className='info-character-box-small'>
@@ -330,18 +330,18 @@ function InfoPage() {
                             <p>Volumes: {formatNumber(volumes.length)}</p>
                             <p>Approximate Paragraphs: {formatNumber(all_counts.total.line_count)}</p>
                             <p>Approximate Word Count: {formatNumber(all_counts.total.word_count)}</p>
-                            <p>Character Count: {formatNumber(all_counts.total.char_count)}</p>
+                            <p>Approximate Character Count: {formatNumber(all_counts.total.char_count)}</p>
                             {volumes.sort().map(volume => (
                                 <Collapsible key={volume} trigger={`${all_counts[volume].total.title}`}>
                                     <p>Chapters: {formatNumber(Object.keys(all_counts[volume]).length - 1)}</p> {/* Exclude the 'total' key */}
                                     <p>Approximate Paragraphs: {formatNumber(all_counts[volume].total.line_count)}</p>
                                     <p>Approximate Word Count: {formatNumber(all_counts[volume].total.word_count)}</p>
-                                    <p>Character Count: {formatNumber(all_counts[volume].total.char_count)}</p>
+                                    <p>Approximate Character Count: {formatNumber(all_counts[volume].total.char_count)}</p>
                                     {Object.keys(all_counts[volume]).filter(key => key !== 'total').map(chapter => (
                                         <Collapsible key={chapter} trigger={`${chapter} | ${all_counts[volume][chapter].title}`}>
                                             <p>Approximate Paragraphs: {formatNumber(all_counts[volume][chapter].line_count)}</p>
                                             <p>Approximate Word Count: {formatNumber(all_counts[volume][chapter].word_count)}</p>
-                                            <p>Character Count: {formatNumber(all_counts[volume][chapter].char_count)}</p>
+                                            <p>Approximate Character Count: {formatNumber(all_counts[volume][chapter].char_count)}</p>
                                         </Collapsible>
                                     ))}
                                     <br />
@@ -365,7 +365,7 @@ function InfoPage() {
                         <p>Parts: {formatNumber(all_counts.part_count)}</p>
                         <p>Paragraphs: {formatNumber(all_counts.line_count)}</p>
                         <p>Approximate Word Count: {formatNumber(all_counts.word_count)}</p>
-                        <p>Character Count: {formatNumber(all_counts.char_count)}</p>
+                        <p>Approximate Character Count: {formatNumber(all_counts.char_count)}</p>
                         <Collapsible trigger="Characters">
                             <div className='info-character-box-small'>
                                 {Object.keys(all_counts.characters).sort((a, b) => {
@@ -396,7 +396,7 @@ function InfoPage() {
                                             <p>Chapters: {Object.keys(all_counts.parts[part].chapters).length}</p>
                                             <p>Paragraphs: {formatNumber(all_counts.parts[part].line_count)}</p>
                                             <p>Approximate Word Count: {formatNumber(all_counts.parts[part].word_count)}</p>
-                                            <p>Character Count: {formatNumber(all_counts.parts[part].char_count)}</p>
+                                            <p>Approximate Character Count: {formatNumber(all_counts.parts[part].char_count)}</p>
                                             <Collapsible trigger="Characters">
                                                 <div className='info-character-box-small'>
                                                     {Object.keys(all_counts.parts[part].characters).sort((a, b) => {
@@ -435,7 +435,7 @@ function InfoPage() {
                                                                     <p>Episodes: {Object.keys(all_counts.parts[part].chapters[chapter].episodes).length}</p>
                                                                     <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].line_count)}</p>
                                                                     <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].word_count)}</p>
-                                                                    <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].char_count)}</p>
+                                                                    <p>Approximate Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].char_count)}</p>
                                                                     <Collapsible trigger="Characters">
                                                                         <div className='info-character-box-small'>
                                                                             {Object.keys(all_counts.parts[part].chapters[chapter].characters).sort((a, b) => {
@@ -462,7 +462,7 @@ function InfoPage() {
                                                                         }>
                                                                             <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].line_count)}</p>
                                                                             <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].word_count)}</p>
-                                                                            <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].char_count)}</p>
+                                                                            <p>Approximate Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].char_count)}</p>
                                                                             <Collapsible trigger="Characters">
                                                                                 <div className='info-character-box-small'>
                                                                                     {Object.keys(all_counts.parts[part].chapters[chapter].episodes[episode].characters).sort((a, b) => {
@@ -506,7 +506,7 @@ function InfoPage() {
                         <p>Parts: {formatNumber(all_counts.part_count)}</p>
                         <p>Paragraphs: {formatNumber(all_counts.line_count)}</p>
                         <p>Approximate Word Count: {formatNumber(all_counts.word_count)}</p>
-                        <p>Character Count: {formatNumber(all_counts.char_count)}</p>
+                        <p>Approximate Character Count: {formatNumber(all_counts.char_count)}</p>
                         <Collapsible trigger="Characters">
                             <div className='info-character-box-small'>
                                 {Object.keys(all_counts.characters).sort((a, b) => {
@@ -531,7 +531,7 @@ function InfoPage() {
                                             <p>Chapters: {Object.keys(all_counts.parts[part].chapters).length}</p>
                                             <p>Paragraphs: {formatNumber(all_counts.parts[part].line_count)}</p>
                                             <p>Approximate Word Count: {formatNumber(all_counts.parts[part].word_count)}</p>
-                                            <p>Character Count: {formatNumber(all_counts.parts[part].char_count)}</p>
+                                            <p>Approximate Character Count: {formatNumber(all_counts.parts[part].char_count)}</p>
                                             <Collapsible trigger="Characters">
                                                 <div className='info-character-box-small'>
                                                     {Object.keys(all_counts.parts[part].characters).sort((a, b) => {
@@ -570,7 +570,7 @@ function InfoPage() {
                                                                     <p>Episodes: {Object.keys(all_counts.parts[part].chapters[chapter].episodes).length}</p>
                                                                     <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].line_count)}</p>
                                                                     <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].word_count)}</p>
-                                                                    <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].char_count)}</p>
+                                                                    <p>Approximate Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].char_count)}</p>
                                                                     <Collapsible trigger="Characters">
                                                                         <div className='info-character-box-small'>
                                                                             {Object.keys(all_counts.parts[part].chapters[chapter].characters).sort((a, b) => {
@@ -598,7 +598,7 @@ function InfoPage() {
                                                                             }>
                                                                                 <p>Paragraphs: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].line_count)}</p>
                                                                                 <p>Approximate Word Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].word_count)}</p>
-                                                                                <p>Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].char_count)}</p>
+                                                                                <p>Approximate Character Count: {formatNumber(all_counts.parts[part].chapters[chapter].episodes[episode].char_count)}</p>
                                                                                 <Collapsible trigger="Characters">
                                                                                     <div className='info-character-box-small'>
                                                                                         {Object.keys(all_counts.parts[part].chapters[chapter].episodes[episode].characters).sort((a, b) => {
@@ -642,7 +642,7 @@ function InfoPage() {
                         <p>Stories: {formatNumber(all_counts.stories)}</p>
                         <p>Paragraphs: {formatNumber(all_counts.line_count)}</p>
                         <p>Approximate Word Count: {formatNumber(all_counts.word_count)}</p>
-                        <p>Character Count: {formatNumber(all_counts.char_count)}</p>
+                        <p>Approximate Character Count: {formatNumber(all_counts.char_count)}</p>
                         <Collapsible trigger="Characters">
                             <div className='info-character-box-small'>
                                 {Object.keys(all_counts.characters).sort((a, b) => {
@@ -676,7 +676,7 @@ function InfoPage() {
                                         <p>Episodes: {Object.keys(all_counts.parts[part].episodes).length}</p>
                                         <p>Paragraphs: {formatNumber(all_counts.parts[part].line_count)}</p>
                                         <p>Approximate Word Count: {formatNumber(all_counts.parts[part].word_count)}</p>
-                                        <p>Character Count: {formatNumber(all_counts.parts[part].char_count)}</p>
+                                        <p>Approximate Character Count: {formatNumber(all_counts.parts[part].char_count)}</p>
                                         <Collapsible trigger="Characters">
                                             <div className='info-character-box-small'>
                                                 {Object.keys(all_counts.parts[part].characters).sort((a, b) => {
@@ -702,7 +702,7 @@ function InfoPage() {
                                             }>
                                                 <p>Paragraphs: {formatNumber(all_counts.parts[part].episodes[episode].line_count)}</p>
                                                 <p>Approximate Word Count: {formatNumber(all_counts.parts[part].episodes[episode].word_count)}</p>
-                                                <p>Character Count: {formatNumber(all_counts.parts[part].episodes[episode].char_count)}</p>
+                                                <p>Approximate Character Count: {formatNumber(all_counts.parts[part].episodes[episode].char_count)}</p>
                                                 <Collapsible trigger="Characters">
                                                     <div className='info-character-box-small'>
                                                         {Object.keys(all_counts.parts[part].episodes[episode].characters).sort((a, b) => {
@@ -737,7 +737,7 @@ function InfoPage() {
                 <p>Seasons: {formatNumber(all_counts.season_count)}</p>
                 <p>Subtitles: {formatNumber(all_counts.line_count)}</p>
                 <p>Approximate Word Count: {formatNumber(all_counts.word_count)}</p>
-                <p>Character Count: {formatNumber(all_counts.char_count)}</p>
+                <p>Approximate Character Count: {formatNumber(all_counts.char_count)}</p>
                 <Collapsible trigger="Characters">
                     <div className='info-character-box-small'>
                         {Object.keys(all_counts.characters).sort((a, b) => {
@@ -765,7 +765,7 @@ function InfoPage() {
                         <p>Episodes: {Object.keys(all_counts.seasons[part].episodes).length}</p>
                         <p>Subtitles: {formatNumber(all_counts.seasons[part].line_count)}</p>
                         <p>Approximate Word Count: {formatNumber(all_counts.seasons[part].word_count)}</p>
-                        <p>Character Count: {formatNumber(all_counts.seasons[part].char_count)}</p>
+                        <p>Approximate Character Count: {formatNumber(all_counts.seasons[part].char_count)}</p>
                         <Collapsible trigger="Characters">
                             <div className='info-character-box-small'>
                                 {Object.keys(all_counts.seasons[part].characters).sort((a, b) => {
@@ -795,7 +795,7 @@ function InfoPage() {
                             }>
                                 <p>Subtitles: {formatNumber(all_counts.seasons[part].episodes[episode].line_count)}</p>
                                 <p>Approximate Word Count: {formatNumber(all_counts.seasons[part].episodes[episode].word_count)}</p>
-                                <p>Character Count: {formatNumber(all_counts.seasons[part].episodes[episode].char_count)}</p>
+                                <p>Approximate Character Count: {formatNumber(all_counts.seasons[part].episodes[episode].char_count)}</p>
                                 <Collapsible trigger="Characters">
                                     {Object.keys(all_counts.seasons[part].episodes[episode].characters).sort((a, b) => {
                                         if (all_counts.seasons[part].episodes[episode].characters[b] === all_counts.seasons[part].episodes[episode].characters[a]) {
@@ -824,7 +824,7 @@ function InfoPage() {
                 <p>Seasons: {formatNumber(all_counts.season_count)}</p>
                 <p>Subtitles: {formatNumber(all_counts.line_count)}</p>
                 <p>Approximate Word Count: {formatNumber(all_counts.word_count)}</p>
-                <p>Character Count: {formatNumber(all_counts.char_count)}</p>
+                <p>Approximate Character Count: {formatNumber(all_counts.char_count)}</p>
                 <Collapsible trigger="Characters">
                     <div className='info-character-box-small'>
                         {Object.keys(all_counts.characters).sort((a, b) => {
@@ -852,7 +852,7 @@ function InfoPage() {
                         <p>Episodes: {Object.keys(all_counts.seasons[part].episodes).length}</p>
                         <p>Subtitles: {formatNumber(all_counts.seasons[part].line_count)}</p>
                         <p>Approximate Word Count: {formatNumber(all_counts.seasons[part].word_count)}</p>
-                        <p>Character Count: {formatNumber(all_counts.seasons[part].char_count)}</p>
+                        <p>Approximate Character Count: {formatNumber(all_counts.seasons[part].char_count)}</p>
 
                         <Collapsible trigger="Characters">
                             <div className='info-character-box-small'>
@@ -883,7 +883,7 @@ function InfoPage() {
                             }>
                                 <p>Subtitles: {formatNumber(all_counts.seasons[part].episodes[episode].line_count)}</p>
                                 <p>Approximate Word Count: {formatNumber(all_counts.seasons[part].episodes[episode].word_count)}</p>
-                                <p>Character Count: {formatNumber(all_counts.seasons[part].episodes[episode].char_count)}</p>
+                                <p>Approximate Character Count: {formatNumber(all_counts.seasons[part].episodes[episode].char_count)}</p>
                                 <Collapsible trigger="Characters">
                                     <div className='info-character-box-small'>
                                         {Object.keys(all_counts.seasons[part].episodes[episode].characters).sort((a, b) => {
@@ -1019,7 +1019,7 @@ function InfoPage() {
                     <div className="info-info">
                         <p>Lines: {formatNumber(all_info.line_count)}</p>
                         <p>Approximate Word Count: {formatNumber(all_info.word_count)}</p>
-                        <p>Character Count: {formatNumber(all_info.char_count)}</p>
+                        <p>Approximate Character Count: {formatNumber(all_info.char_count)}</p>
                     </div>
                     {generateCollapsiblesLN(informationData['ln'])}
                     <br />
@@ -1032,7 +1032,7 @@ function InfoPage() {
                                     <p>Seasons: {formatNumber(4)}</p>
                                     <p>Subtitles: {formatNumber(all_an_info.line_count)}</p>
                                     <p>Approximate Word Count: {formatNumber(all_an_info.word_count)}</p>
-                                    <p>Character Count: {formatNumber(all_an_info.char_count)}</p>
+                                    <p>Approximate Character Count: {formatNumber(all_an_info.char_count)}</p>
                                     <Collapsible trigger="Characters">
                                         <div className='info-character-box-small'>
                                             {Object.keys(all_an_info.characters).sort((a, b) => {
@@ -1063,7 +1063,7 @@ function InfoPage() {
                                 <>
                                     <p>Paragraphs: {formatNumber(mg_info.line_count)}</p>
                                     <p>Approximate Word Count: {formatNumber(mg_info.word_count)}</p>
-                                    <p>Character Count: {formatNumber(mg_info.char_count)}</p>
+                                    <p>Approximate Character Count: {formatNumber(mg_info.char_count)}</p>
                                     <Collapsible trigger="Characters">
                                         <div className='info-character-box-small'>
                                             {Object.keys(mg_info.characters).sort((a, b) => {

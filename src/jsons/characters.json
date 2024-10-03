@@ -71,9 +71,7 @@
             },
             "Children": {
                 "order": 3,
-                "characters": [
-                    "Maximilian"
-                ]
+                "characters": []
             },
             "Generic": {
                 "order": 4,
@@ -130,12 +128,16 @@
                     "Kidnapper B"
                 ]
             },
-            "Lawless City": {
+            "Fire Force": {
                 "order": 4,
                 "characters": []
             },
-            "Major Corporate Alliance": {
+            "Lawless City": {
                 "order": 5,
+                "characters": []
+            },
+            "Major Corporate Alliance": {
+                "order": 6,
                 "characters": [
                     "Leaf One",
                     "Leaf Two",
@@ -144,11 +146,11 @@
                 ]
             },
             "Shangri-La Frontier": {
-                "order": 6,
+                "order": 7,
                 "characters": []
             },
             "Templars": {
-                "order": 7,
+                "order": 8,
                 "characters": [
                     "Templar A",
                     "Templar B",
@@ -162,11 +164,11 @@
                 ]
             },
             "Vampires": {
-                "order": 8,
+                "order": 9,
                 "characters": []
             },
             "General": {
-                "order": 9,
+                "order": 10,
                 "characters": [
                     "Toppe Batterius",
                     "Scarface"
@@ -196,6 +198,7 @@
                     "Heckler",
                     "Junior",
                     "Maid",
+                    "Man A",
                     "Manager",
                     "Medic",
                     "Mother",
@@ -218,7 +221,8 @@
                     "Villager A",
                     "Villager B",
                     "Villager C",
-                    "Villagers"
+                    "Villagers",
+                    "Woman A"
                 ]
             },
             "Bandits": {
@@ -622,6 +626,8 @@
                 "None (Cid Kagenou)",
                 "Cid & Sunraku (Cid)",
                 "John Smith & Yukime (John Smith)",
+                "Cid & Beta & Epsilon (Cid)",
+                "Shadow & Benimaru (Shadow)",
                 "Sunraku & Shadow (Shadow)",
                 "3 People (Cid)"
             ],
@@ -633,6 +639,10 @@
                 {
                     "base": "Cid Kagenou",
                     "alt": "Cid"
+                },
+                {
+                    "base": "Shadow & Benimaru (Shadow)",
+                    "alt": "Shadow&Benimaru (Shadow)"
                 }
             ],
             "group": "Shadow Garden",
@@ -696,7 +706,8 @@
                 "Beta & Gamma (Beta)",
                 "Beta & Zeta (Beta)",
                 "Beta & Delta & Zeta (Beta)",
-                "Beta & Gamma & Epsilon (Beta)"
+                "Beta & Gamma & Epsilon (Beta)",
+                "Cid & Beta & Epsilon (Beta)"
             ],
             "name_mirrors": [
                 {
@@ -773,6 +784,7 @@
                 "Gamma & Epsilon (Epsilon)",
                 "Zeta & Epsilon (Epsilon)",
                 "Beta & Gamma & Epsilon (Epsilon)",
+                "Cid & Beta & Epsilon (Epsilon)",
                 "Gamma & Epsilon & Eta (Epsilon)",
                 "Epsilon & Chi & Omega (Epsilon)"
             ],
@@ -929,7 +941,9 @@
         },
         {
             "name": "No. 664",
-            "name_variants": ["No. 664 & No. 665 & No. 666 (No. 664)"],
+            "name_variants": [
+                "No. 664 & No. 665 & No. 666 (No. 664)"
+            ],
             "name_mirrors": [],
             "group": "Shadow Garden",
             "subgroup": "Members",
@@ -938,7 +952,9 @@
         },
         {
             "name": "No. 665",
-            "name_variants": ["No. 664 & No. 665 & No. 666 (No. 665)"],
+            "name_variants": [
+                "No. 664 & No. 665 & No. 666 (No. 665)"
+            ],
             "name_mirrors": [],
             "group": "Shadow Garden",
             "subgroup": "Members",
@@ -985,13 +1001,51 @@
             "url": ""
         },
         {
+            "name": "Benimaru",
+            "name_variants": [
+                "Shadow & Benimaru (Benimaru)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "Shadow & Benimaru (Benimaru)",
+                    "alt": "Shadow&Benimaru (Benimaru)"
+                }
+            ],
+            "group": "Others",
+            "subgroup": "Fire Force",
+            "order": 1,
+            "url": "characterIcons/BenimaruIcon.webp"
+        },
+        {
+            "name": "Shinra",
+            "name_variants": [
+                "Shinra & Tamaki (Shinra)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Fire Force",
+            "order": 2,
+            "url": "characterIcons/ShinraIcon.webp"
+        },
+        {
+            "name": "Tamaki",
+            "name_variants": [
+                "Shinra & Tamaki (Tamaki)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Fire Force",
+            "order": 1,
+            "url": "characterIcons/TamakiIcon.webp"
+        },
+        {
             "name": "Arthur Pencilgon",
             "name_variants": [],
             "name_mirrors": [],
             "group": "Others",
             "subgroup": "Shangri-La Frontier",
             "order": 1,
-            "url": ""
+            "url": "characterIcons/ArthurPencilgonIcon.webp"
         },
         {
             "name": "OiKatzo",
@@ -1000,7 +1054,7 @@
             "group": "Others",
             "subgroup": "Shangri-La Frontier",
             "order": 2,
-            "url": ""
+            "url": "characterIcons/OiKatzoIcon.webp"
         },
         {
             "name": "Sunraku",
@@ -1013,7 +1067,7 @@
             "group": "Others",
             "subgroup": "Shangri-La Frontier",
             "order": 3,
-            "url": ""
+            "url": "characterIcons/SunrakuIcon.webp"
         },
         {
             "name": "Wethermon",
@@ -1254,13 +1308,44 @@
             "url": "characterIcons/ZenonGriffeyIcon.webp"
         },
         {
+            "name": "Chuvi",
+            "name_variants": [
+                "??? (Chuvi)"
+            ],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Children",
+            "order": 1,
+            "url": ""
+        },
+        {
+            "name": "Kanen",
+            "name_variants": [
+                "??? (Kanen)"
+            ],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Children",
+            "order": 2,
+            "url": ""
+        },
+        {
             "name": "Kouadoi",
             "name_variants": [],
             "name_mirrors": [],
             "group": "Cult of Diablos",
             "subgroup": "Children",
-            "order": 1,
+            "order": 3,
             "url": "characterIcons/KouadoiIcon.webp"
+        },
+        {
+            "name": "Maximilian",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Children",
+            "order": 4,
+            "url": ""
         },
         {
             "name": "Nanigashi",
@@ -1270,7 +1355,7 @@
             "name_mirrors": [],
             "group": "Cult of Diablos",
             "subgroup": "Children",
-            "order": 2,
+            "order": 5,
             "url": ""
         },
         {
@@ -1279,7 +1364,7 @@
             "name_mirrors": [],
             "group": "Cult of Diablos",
             "subgroup": "Children",
-            "order": 3,
+            "order": 6,
             "url": "characterIcons/RexIcon.webp"
         },
         {
@@ -1377,7 +1462,9 @@
         },
         {
             "name": "Kana",
-            "name_variants": ["Natsu & Kana (Kana)"],
+            "name_variants": [
+                "Natsu & Kana (Kana)"
+            ],
             "name_mirrors": [],
             "group": "Others",
             "subgroup": "Lawless City",
@@ -1386,7 +1473,9 @@
         },
         {
             "name": "Natsu",
-            "name_variants": ["Natsu & Kana (Natsu)"],
+            "name_variants": [
+                "Natsu & Kana (Natsu)"
+            ],
             "name_mirrors": [],
             "group": "Others",
             "subgroup": "Lawless City",

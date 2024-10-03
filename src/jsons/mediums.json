@@ -75,7 +75,8 @@
         "hd2": "ESHD2Cover.webp",
         "tpis": "ESTPISCover.webp",
         "ssitw": "ESSSITWCover.webp",
-        "adswy": "ESADSWYCover.webp"
+        "adswy": "ESADSWYCover.webp",
+        "bheif": "ESBHEIFCover.webp"
     },
     "apoCoverImages": {
         "Apocrypha": "APOCover.webp",

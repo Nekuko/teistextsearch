@@ -3070,10 +3070,10 @@
         }
     },
     "es": {
-        "stories": 22,
-        "line_count": 9707,
-        "word_count": 109081,
-        "char_count": 606479,
+        "stories": 23,
+        "line_count": 10192,
+        "word_count": 113855,
+        "char_count": 633704,
         "characters": {
             "Alexia Midgar (Alexia)": 489,
             "Committee Member": 3,
@@ -3081,7 +3081,7 @@
             "Committee Person": 5,
             "Po Tato (Po)": 19,
             "Skel Etal (Skel)": 36,
-            "Cid Kagenou (Cid)": 1215,
+            "Cid Kagenou (Cid)": 1315,
             "Narrator": 527,
             "Alexia Midgar (????? (Alexia Midgar))": 1,
             "Rose Oriana (Rose)": 141,
@@ -3097,11 +3097,11 @@
             "Sherry Barnett (Shelly and Alexia (Sherry))": 1,
             "Alexia Midgar (Shelly and Alexia (Alexia))": 1,
             "Gamma": 304,
-            "Eta": 471,
-            "Zeta": 790,
-            "Alpha": 1162,
+            "Eta": 479,
+            "Zeta": 797,
+            "Alpha": 1171,
             "Delta": 499,
-            "Beta": 599,
+            "Beta": 632,
             "Nu": 199,
             "Rabbit T-thrope": 14,
             "Fox T-thrope": 1,
@@ -3121,7 +3121,7 @@
             "Shishiodoshi (Shishi(?))": 1,
             "Shishiodoshi": 9,
             "T-thrope Spectators": 4,
-            "Epsilon": 506,
+            "Epsilon": 539,
             "Alpha (Everyone (Alpha))": 4,
             "Beta (Everyone (Beta))": 4,
             "Gamma (Everyone (Gamma))": 4,
@@ -3131,8 +3131,8 @@
             "Eta (Everyone (Eta))": 4,
             "Beta (None (Beta))": 3,
             "Cid Kagenou (None (Cid Kagenou))": 5,
-            "Beta (Beta & Epsilon (Beta))": 16,
-            "Epsilon (Beta & Epsilon (Epsilon))": 16,
+            "Beta (Beta & Epsilon (Beta))": 17,
+            "Epsilon (Beta & Epsilon (Epsilon))": 17,
             "Mysterious Man A": 3,
             "Mysterious Man B": 6,
             "Mysterious Man C": 3,
@@ -3145,7 +3145,7 @@
             "Rose Oriana (No.666)": 137,
             "Lambda": 227,
             "Cid Kagenou (??? (Stylish Bandit Slayer))": 1,
-            "Cid Kagenou (Shadow)": 62,
+            "Cid Kagenou (Shadow)": 74,
             "Cid Kagenou (??? (Cid Kagenou))": 4,
             "Teacher": 12,
             "Classmate": 2,
@@ -3220,9 +3220,10 @@
             "Disciple": 4,
             "Junior": 8,
             "Noblewoman": 12,
-            "Aurora": 100,
+            "Aurora": 88,
             "Maximilian": 27,
-            "Aurora (??? (Aurora))": 2,
+            "Aurora (??? (Witch Claire))": 2,
+            "Aurora (Witch Claire)": 12,
             "Omega": 43,
             "Chi": 49,
             "Chi (Chi & Omega (Chi))": 3,
@@ -3259,7 +3260,23 @@
             "Deceased Woman": 13,
             "Cid Kagenou (3 People (Cid))": 1,
             "Aurora (3 People (Aurora))": 1,
-            "Elisabeth (3 People (Elisabeth))": 1
+            "Elisabeth (3 People (Elisabeth))": 1,
+            "Shinra": 79,
+            "Tamaki": 52,
+            "Benimaru": 74,
+            "Shinra (Shinra & Tamaki (Shinra))": 2,
+            "Tamaki (Shinra & Tamaki (Tamaki))": 2,
+            "Woman A": 3,
+            "Man A": 3,
+            "Chuvi (??? (Chuvi))": 1,
+            "Kanen (??? (Kanen))": 4,
+            "Kanen": 50,
+            "Cid Kagenou (Cid & Beta & Epsilon (Cid))": 1,
+            "Beta (Cid & Beta & Epsilon (Beta))": 1,
+            "Epsilon (Cid & Beta & Epsilon (Epsilon))": 1,
+            "Chuvi": 12,
+            "Cid Kagenou (Shadow&Benimaru (Shadow))": 1,
+            "Benimaru (Shadow&Benimaru (Benimaru))": 1
         },
         "parts": {
             "hr": {
@@ -5103,11 +5120,12 @@
                     "Rose Oriana (No. 666)": 13,
                     "Narrator": 3,
                     "Noblewoman": 12,
-                    "Aurora": 14,
+                    "Aurora": 2,
                     "Cid Kagenou (Cid)": 1,
                     "Claire Kagenou (??? (Claire Kagenou))": 1,
                     "Maximilian": 27,
-                    "Aurora (??? (Aurora))": 2
+                    "Aurora (??? (Witch Claire))": 2,
+                    "Aurora (Witch Claire)": 12
                 },
                 "episodes": {
                     "e1": {
@@ -5173,8 +5191,8 @@
                             "Maximilian": 22,
                             "Nu": 15,
                             "Claire Kagenou (Claire)": 16,
-                            "Aurora (??? (Aurora))": 2,
-                            "Aurora": 5
+                            "Aurora (??? (Witch Claire))": 2,
+                            "Aurora (Witch Claire)": 5
                         }
                     },
                     "e7": {
@@ -5183,7 +5201,7 @@
                         "line_count": 45,
                         "characters": {
                             "Maximilian": 2,
-                            "Aurora": 7,
+                            "Aurora (Witch Claire)": 7,
                             "Nu": 13,
                             "Claire Kagenou (Claire)": 22,
                             "Narrator": 1
@@ -5875,6 +5893,162 @@
                             "Cid Kagenou (3 People (Cid))": 1,
                             "Aurora (3 People (Aurora))": 1,
                             "Elisabeth (3 People (Elisabeth))": 1
+                        }
+                    }
+                }
+            },
+            "bheif": {
+                "line_count": 485,
+                "word_count": 4774,
+                "char_count": 27225,
+                "characters": {
+                    "Cid Kagenou (Cid)": 100,
+                    "Zeta": 7,
+                    "Eta": 8,
+                    "Shinra": 79,
+                    "Tamaki": 52,
+                    "Benimaru": 74,
+                    "Shinra (Shinra & Tamaki (Shinra))": 2,
+                    "Tamaki (Shinra & Tamaki (Tamaki))": 2,
+                    "Woman A": 3,
+                    "Man A": 3,
+                    "Chuvi (??? (Chuvi))": 1,
+                    "Kanen (??? (Kanen))": 4,
+                    "Kanen": 50,
+                    "Alpha": 9,
+                    "Beta": 33,
+                    "Epsilon": 33,
+                    "Cid Kagenou (Cid & Beta & Epsilon (Cid))": 1,
+                    "Beta (Cid & Beta & Epsilon (Beta))": 1,
+                    "Epsilon (Cid & Beta & Epsilon (Epsilon))": 1,
+                    "Chuvi": 12,
+                    "Beta (Beta & Epsilon (Beta))": 1,
+                    "Epsilon (Beta & Epsilon (Epsilon))": 1,
+                    "Cid Kagenou (Shadow)": 12,
+                    "Cid Kagenou (Shadow&Benimaru (Shadow))": 1,
+                    "Benimaru (Shadow&Benimaru (Benimaru))": 1
+                },
+                "episodes": {
+                    "e1": {
+                        "word_count": 756,
+                        "char_count": 4382,
+                        "line_count": 78,
+                        "characters": {
+                            "Cid Kagenou (Cid)": 9,
+                            "Zeta": 2,
+                            "Eta": 6,
+                            "Shinra": 19,
+                            "Tamaki": 11,
+                            "Benimaru": 18,
+                            "Shinra (Shinra & Tamaki (Shinra))": 1,
+                            "Tamaki (Shinra & Tamaki (Tamaki))": 1,
+                            "Woman A": 2,
+                            "Man A": 2,
+                            "Chuvi (??? (Chuvi))": 1,
+                            "Kanen (??? (Kanen))": 2,
+                            "Kanen": 5
+                        }
+                    },
+                    "e2": {
+                        "word_count": 1069,
+                        "char_count": 6183,
+                        "line_count": 83,
+                        "characters": {
+                            "Alpha": 9,
+                            "Eta": 2,
+                            "Cid Kagenou (Cid)": 21,
+                            "Zeta": 5,
+                            "Beta": 14,
+                            "Epsilon": 9,
+                            "Shinra": 10,
+                            "Benimaru": 5,
+                            "Tamaki": 5,
+                            "Cid Kagenou (Cid & Beta & Epsilon (Cid))": 1,
+                            "Beta (Cid & Beta & Epsilon (Beta))": 1,
+                            "Epsilon (Cid & Beta & Epsilon (Epsilon))": 1,
+                            "Kanen (??? (Kanen))": 2
+                        }
+                    },
+                    "e3": {
+                        "word_count": 711,
+                        "char_count": 4022,
+                        "line_count": 66,
+                        "characters": {
+                            "Beta": 6,
+                            "Shinra": 6,
+                            "Epsilon": 5,
+                            "Tamaki": 11,
+                            "Benimaru": 6,
+                            "Cid Kagenou (Cid)": 14,
+                            "Kanen": 13,
+                            "Chuvi": 4,
+                            "Shinra (Shinra & Tamaki (Shinra))": 1,
+                            "Tamaki (Shinra & Tamaki (Tamaki))": 1
+                        }
+                    },
+                    "e4": {
+                        "word_count": 431,
+                        "char_count": 2458,
+                        "line_count": 57,
+                        "characters": {
+                            "Benimaru": 24,
+                            "Cid Kagenou (Cid)": 17,
+                            "Beta": 2,
+                            "Epsilon": 3,
+                            "Shinra": 5,
+                            "Beta (Beta & Epsilon (Beta))": 1,
+                            "Epsilon (Beta & Epsilon (Epsilon))": 1,
+                            "Cid Kagenou (Shadow)": 3,
+                            "Tamaki": 2
+                        }
+                    },
+                    "e5": {
+                        "word_count": 789,
+                        "char_count": 4472,
+                        "line_count": 82,
+                        "characters": {
+                            "Tamaki": 11,
+                            "Benimaru": 6,
+                            "Epsilon": 9,
+                            "Beta": 6,
+                            "Shinra": 13,
+                            "Cid Kagenou (Cid)": 16,
+                            "Kanen": 13,
+                            "Chuvi": 8
+                        }
+                    },
+                    "e6": {
+                        "word_count": 451,
+                        "char_count": 2494,
+                        "line_count": 48,
+                        "characters": {
+                            "Tamaki": 6,
+                            "Shinra": 8,
+                            "Epsilon": 3,
+                            "Beta": 1,
+                            "Kanen": 12,
+                            "Benimaru": 8,
+                            "Cid Kagenou (Shadow)": 5,
+                            "Cid Kagenou (Cid)": 4,
+                            "Cid Kagenou (Shadow&Benimaru (Shadow))": 1,
+                            "Benimaru (Shadow&Benimaru (Benimaru))": 1
+                        }
+                    },
+                    "e7": {
+                        "word_count": 567,
+                        "char_count": 3214,
+                        "line_count": 71,
+                        "characters": {
+                            "Kanen": 7,
+                            "Shinra": 18,
+                            "Benimaru": 7,
+                            "Cid Kagenou (Shadow)": 4,
+                            "Cid Kagenou (Cid)": 19,
+                            "Tamaki": 6,
+                            "Epsilon": 4,
+                            "Beta": 4,
+                            "Man A": 1,
+                            "Woman A": 1
                         }
                     }
                 }
@@ -11910,9 +12084,9 @@
     },
     "chars": {
         "Alpha": {
-            "total": 4011,
+            "total": 4020,
             "names": {
-                "Alpha": 3958,
+                "Alpha": 3967,
                 "Alpha & Gamma (Alpha)": 1,
                 "Alpha & Eta (Alpha)": 1,
                 "Seven Shadows (Alpha)": 8,
@@ -11926,11 +12100,11 @@
             }
         },
         "Beta": {
-            "total": 2882,
+            "total": 2917,
             "names": {
-                "Beta": 2525,
+                "Beta": 2558,
                 "Seven Shadows (Beta)": 14,
-                "Beta & Epsilon (Beta)": 28,
+                "Beta & Epsilon (Beta)": 29,
                 "Beta & Gamma (Beta)": 5,
                 "Beta & Gamma & Epsilon (Beta)": 1,
                 "Beta & Zeta (Beta)": 3,
@@ -11954,7 +12128,8 @@
                 "Fictional Eta": 1,
                 "??? (Beta)": 3,
                 "??? (Natsume)": 1,
-                "Natsume": 13
+                "Natsume": 13,
+                "Cid & Beta & Epsilon (Beta)": 1
             }
         },
         "Gamma": {
@@ -11987,11 +12162,11 @@
             }
         },
         "Epsilon": {
-            "total": 2160,
+            "total": 2195,
             "names": {
-                "Epsilon": 2058,
+                "Epsilon": 2091,
                 "Seven Shadows (Epsilon)": 14,
-                "Beta & Epsilon (Epsilon)": 28,
+                "Beta & Epsilon (Epsilon)": 29,
                 "Beta & Gamma & Epsilon (Epsilon)": 1,
                 "Zeta & Epsilon (Epsilon)": 1,
                 "Shiron": 47,
@@ -11999,13 +12174,14 @@
                 "Gamma& Epsilon & Eta (Epsilon)": 1,
                 "Gamma & Epsilon (Epsilon)": 1,
                 "Epsilon & Chi & Omega (Epsilon)": 1,
-                "??? (Epsilon)": 2
+                "??? (Epsilon)": 2,
+                "Cid & Beta & Epsilon (Epsilon)": 1
             }
         },
         "Zeta": {
-            "total": 2214,
+            "total": 2221,
             "names": {
-                "Zeta": 2160,
+                "Zeta": 2167,
                 "Seven Shadows (Zeta)": 14,
                 "Delta & Zeta (Zeta)": 4,
                 "Alpha & Zeta (Zeta)": 3,
@@ -12021,9 +12197,9 @@
             }
         },
         "Eta": {
-            "total": 1373,
+            "total": 1381,
             "names": {
-                "Eta": 1348,
+                "Eta": 1356,
                 "Seven Shadows (Eta)": 10,
                 "Alpha & Eta (Eta)": 1,
                 "Everyone (Eta)": 6,
@@ -12091,9 +12267,9 @@
             }
         },
         "Cid Kagenou": {
-            "total": 8614,
+            "total": 8728,
             "names": {
-                "Shadow": 1255,
+                "Shadow": 1267,
                 "Minoru Kageno": 118,
                 "Stylish Ruffian Slayer": 35,
                 "Cid Kagenou": 4315,
@@ -12101,7 +12277,7 @@
                 "Stylish Bandit Slayer": 24,
                 "John Smith": 592,
                 "John Smith & Yukime (John Smith)": 1,
-                "Cid": 1863,
+                "Cid": 1963,
                 "???? (Shadow)": 3,
                 "None (Cid Kagenou)": 12,
                 "??? (Stylish Bandit Slayer)": 1,
@@ -12111,7 +12287,9 @@
                 "??? (Minoru Kageno)": 2,
                 "Sunraku & Shadow (Shadow)": 1,
                 "Cid & Sunraku (Cid)": 1,
-                "3 People (Cid)": 1
+                "3 People (Cid)": 1,
+                "Cid & Beta & Epsilon (Cid)": 1,
+                "Shadow&Benimaru (Shadow)": 1
             }
         },
         "Akane Nishino": {
@@ -13896,6 +14074,53 @@
             "total": 13,
             "names": {
                 "Deceased Woman": 13
+            }
+        },
+        "Shinra": {
+            "total": 81,
+            "names": {
+                "Shinra": 79,
+                "Shinra & Tamaki (Shinra)": 2
+            }
+        },
+        "Tamaki": {
+            "total": 54,
+            "names": {
+                "Tamaki": 52,
+                "Shinra & Tamaki (Tamaki)": 2
+            }
+        },
+        "Benimaru": {
+            "total": 75,
+            "names": {
+                "Benimaru": 74,
+                "Shadow&Benimaru (Benimaru)": 1
+            }
+        },
+        "Woman A": {
+            "total": 3,
+            "names": {
+                "Woman A": 3
+            }
+        },
+        "Man A": {
+            "total": 3,
+            "names": {
+                "Man A": 3
+            }
+        },
+        "Chuvi": {
+            "total": 13,
+            "names": {
+                "??? (Chuvi)": 1,
+                "Chuvi": 12
+            }
+        },
+        "Kanen": {
+            "total": 54,
+            "names": {
+                "??? (Kanen)": 4,
+                "Kanen": 50
             }
         },
         "Supervisor": {

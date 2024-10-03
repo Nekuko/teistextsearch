@@ -107,11 +107,20 @@ function createCharacterDropdowns(data) {
             for (const name_variant of name_variants) {
                 for (const variant of Object.keys(url)) {
                     if (variant !== 'base') {
-                        if (variant === name_variant) {
-                            characterImages[variant] = url[variant]
-                        } else if (name_variant.includes(`(${variant})`)) {
-                            characterImages[name_variant] = url[variant];
+                        if (name_mirrors.some(mirror => mirror.base === name_variant)) {
+                            if (variant === name_variant || name_variant.includes(`(${variant})`)) {
+                                const mirror = name_mirrors.find(mirror => mirror.base.includes(name_variant));
+                                characterImages[mirror['base']] = url[variant]
+                                characterImages[mirror['alt']] = url[variant]
+                            }
+                        } else {
+                            if (variant === name_variant) {
+                                characterImages[variant] = url[variant]
+                            } else if (name_variant.includes(`(${variant})`)) {
+                                characterImages[name_variant] = url[variant];
+                            }
                         }
+                        
                     } else {
                         characterImages[name] = url.base;
                     }
@@ -230,7 +239,6 @@ function SearchPage() {
                 if (savedNameMap) {
                     savedNameMap = JSON.parse(savedNameMap);
                 }
-
                 if (characterData.versionUpdated || Object.keys(savedCharacterDropdowns).length === 0 ||
                     Object.keys(savedNameMap).length === 0) {
                     let characterDropdownData = createCharacterDropdowns(characterData.data);
@@ -922,7 +930,7 @@ function SearchPage() {
                 lnResults = [];
             }
             // Update the state with the search results
-            setSearchResults({ full: {ln: fullLNData, wn: fullWNData, an: fullANData, ssc: fullSSCData, apo: fullAPOData, es: fullESData}, anime: animeResults, ln: lnResults, lnChar: lnCharacterResults, wn: wnResults, ssc: { ...sscResults }, es: { ...esResults }, apo: { ...apoResults } });
+            setSearchResults({ full: { ln: fullLNData, wn: fullWNData, an: fullANData, ssc: fullSSCData, apo: fullAPOData, es: fullESData }, anime: animeResults, ln: lnResults, lnChar: lnCharacterResults, wn: wnResults, ssc: { ...sscResults }, es: { ...esResults }, apo: { ...apoResults } });
             scrollToBottom();
         }
     }
