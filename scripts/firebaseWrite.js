@@ -10,3456 +10,2365 @@ admin.initializeApp({
 let db = admin.firestore();
 
 let data = {
-    "bheif": {
+    "s1": {
         "e1": [
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Whoa, is this the thing?",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "I must have fallen asleep.",
                 "line": 1,
-                "url": "https://drive.google.com/file/d/1kBTFcuo4Ulo_lE7n9YG4e2_QCJue-lmk/view?usp=drivesdk"
+                "start_time": "0-00-24.380000",
+                "end_time": "0-00-26.710000",
+                "url": "https://drive.google.com/file/d/1Aitol8rnBFHtiOPSGzekleuuGD4_IUIz/view?usp=drivesdk"
             },
             {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Yeah, that's it. It's the artifact left behind by Laugus. We found it in an abandoned research facility.",
+                "name": "Butler",
+                "name_variant": "Butler",
+                "subtitle": "Miss?",
                 "line": 2,
-                "url": "https://drive.google.com/file/d/1-FIYUV5W5HZK2eKPZjII6gC7_-nOfWNt/view?usp=drivesdk"
+                "start_time": "0-01-12.750000",
+                "end_time": "0-01-13.750000",
+                "url": "https://drive.google.com/file/d/1_jh9FzYawqnw12d6xHoG4L7QC_aJe-cR/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Laugus? Wasn't he someone important from the past? Let me see this thing...",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "It's nothing.",
                 "line": 3,
-                "url": "https://drive.google.com/file/d/1Ugf_u3iQdze6EvToW42hiCJQ4AOAV6s1/view?usp=drivesdk"
+                "start_time": "0-01-21.790000",
+                "end_time": "0-01-23",
+                "url": "https://drive.google.com/file/d/182zIlk7gTN8xs8ADQGL0YkFuEjsk9PKn/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Master...do you know what it is...?",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Let's go.",
                 "line": 4,
-                "url": "https://drive.google.com/file/d/1IoPZj9T8W2iUFb-C8VbKSXPtaZw71Gtp/view?usp=drivesdk"
+                "start_time": "0-01-25.500000",
+                "end_time": "0-01-26.710000",
+                "url": "https://drive.google.com/file/d/1RqBuPURtcnRLAhxu2GSThqFuRSN-VSKX/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Hmm... Looks like junk at first glance.",
+                "name": "Classmate",
+                "name_variant": "Classmate",
+                "subtitle": "Good morning, Nishino-san.",
                 "line": 5,
-                "url": "https://drive.google.com/file/d/1XiIZg5GKnvnezShbDK09GRuaVTD7f6qT/view?usp=drivesdk"
+                "start_time": "0-01-46.710000",
+                "end_time": "0-01-48.250000",
+                "url": "https://drive.google.com/file/d/15Epwe1h7mrETNsqlwtY3QDmuWne3RSAP/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "You're right... Unfortunately...it really is just junk...",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Good morning to you, too!",
                 "line": 6,
-                "url": "https://drive.google.com/file/d/1eEMFx0-gecuzMuJzYsTDF25YlZoBSvss/view?usp=drivesdk"
+                "start_time": "0-01-48.250000",
+                "end_time": "0-01-49.630000",
+                "url": "https://drive.google.com/file/d/1TNwU9t32u5xjcmcExwRuU-vb3y3sSzcG/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "By using a large amount of magic...this artifact can connect to another world.",
+                "name": "Classmate",
+                "name_variant": "Classmate",
+                "subtitle": "Good morning, Senpai!",
                 "line": 7,
-                "url": "https://drive.google.com/file/d/1zsbadkzZHlIxOxiAb8BVrrK2mNFPPfId/view?usp=drivesdk"
+                "start_time": "0-01-49.880000",
+                "end_time": "0-01-51.830000",
+                "url": "https://drive.google.com/file/d/1caMD7jmET7xyigzFCacI18RFzN0astOl/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Connecting to another world sounds like an amazing function. Doesn't seem like junk to me...",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Thank you, good morning.",
                 "line": 8,
-                "url": "https://drive.google.com/file/d/1vomkkfztJyA9TMIo_2wU1h-cvbq8jabB/view?usp=drivesdk"
+                "start_time": "0-01-51.830000",
+                "end_time": "0-01-53.460000",
+                "url": "https://drive.google.com/file/d/1yDfcZBfsUe_YwoT4pzurzykICJqwPd2w/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "But...it's uncontrollable... According to the documents...apparently...you can summon someone from another world to somewhere in this world.",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "There was a boy that I despised.",
                 "line": 9,
-                "url": "https://drive.google.com/file/d/1tKOtyIKojJHpeQlTcsSGOc-yk2gOM6Vk/view?usp=drivesdk"
+                "start_time": "0-02-00.290000",
+                "end_time": "0-02-03.040000",
+                "url": "https://drive.google.com/file/d/1UAkdSgZTOdHSnKPVTyL_zuKze1g6gzme/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "It consumes...a large amount of magic...and you don't know who will be summoned...or where. There's no way to verify it, and it's not worth the effort...",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Good morning, Kageno-kun.",
                 "line": 10,
-                "url": "https://drive.google.com/file/d/1HB54sJhrClypaioL3G3qo1WC_o7tzuoH/view?usp=drivesdk"
+                "start_time": "0-02-05.080000",
+                "end_time": "0-02-06.540000",
+                "url": "https://drive.google.com/file/d/1qol5M_oMgFABehzGHPA_Jv9C9hSuG__F/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Hmmm... I see.",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "His grades were just below average.",
                 "line": 11,
-                "url": "https://drive.google.com/file/d/1hDS7U8Qfa6zGqjlbnPipVu10uCHN_pzr/view?usp=drivesdk"
+                "start_time": "0-02-06.790000",
+                "end_time": "0-02-08.420000",
+                "url": "https://drive.google.com/file/d/1YTTTnHHOfZnHoXjVvBPS8SH7CpcndPaN/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Damn, sounds interesting! I want to summon someone from another world! It would be a shame to waste this opportunity!)",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Athletically, he was just below average.",
                 "line": 12,
-                "url": "https://drive.google.com/file/d/15LOfjKOglgiwuDNOpa4H8mX6MA_YfepL/view?usp=drivesdk"
+                "start_time": "0-02-08.540000",
+                "end_time": "0-02-10.130000",
+                "url": "https://drive.google.com/file/d/1Gpip4AtJqsdwde_vuqibpaDSQfPZbcu7/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Summoning someone from another world usually means they become a hero! Which means I can make my shadowbroker move. In that case\u2014)",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "His looks were exceedingly ordinary.",
                 "line": 13,
-                "url": "https://drive.google.com/file/d/1I4j1fux7L3OSM6htRvXm4BbJVbg8eUrY/view?usp=drivesdk"
+                "start_time": "0-02-10.130000",
+                "end_time": "0-02-12.250000",
+                "url": "https://drive.google.com/file/d/1siH4oIgSSntSvfzwRsVlQQ62mt1uI2J0/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "I can provide the large amount of magic. Isn't it worth trying?",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "Good morning,",
                 "line": 14,
-                "url": "https://drive.google.com/file/d/1okH-CgqmXTUMWx-iWJ8NxlzcFRrshJTb/view?usp=drivesdk"
+                "start_time": "0-02-12.250000",
+                "end_time": "0-02-13.460000",
+                "url": "https://drive.google.com/file/d/1bczjzYW1sMOHogUIc4Wwphw95yJcLtg3/view?usp=drivesdk"
             },
             {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Heheh... Just as planned. I thought you might say that...Master.",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "Nishimura-san.",
                 "line": 15,
-                "url": "https://drive.google.com/file/d/1vzpCcv6FOBxAeV3urWEIXS3VROvJaTxF/view?usp=drivesdk"
+                "start_time": "0-02-13.460000",
+                "end_time": "0-02-14.670000",
+                "url": "https://drive.google.com/file/d/1U_1ZpOkCW11boEkaJkql-wYbN7nvSdaH/view?usp=drivesdk"
             },
             {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Oh, nice. Sounds like fun. Give it a try.",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Excuse me, Kageno-kun.",
                 "line": 16,
-                "url": "https://drive.google.com/file/d/1IpB6-bcABNuVHa3m6GAC2-YUn15LkJVc/view?usp=drivesdk"
+                "start_time": "0-02-19.960000",
+                "end_time": "0-02-21.790000",
+                "url": "https://drive.google.com/file/d/1mAZnmqIUxCVFJV2-tDLCKWBauaCq9vtT/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Alright, let's get started! I just need to infuse it with my magic, right? Here goes...",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "What is it, Nishimura-san?",
                 "line": 17,
-                "url": "https://drive.google.com/file/d/1S43I11aX7-y9mVeSsuIUoeRqH6A65xZJ/view?usp=drivesdk"
+                "start_time": "0-02-21.790000",
+                "end_time": "0-02-23.670000",
+                "url": "https://drive.google.com/file/d/1FgHjS8GWwUc6kU_7nELo9nIW4Ff1NbVV/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "*huff, huff*",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "My name...",
                 "line": 18,
-                "url": "https://drive.google.com/file/d/1Zp5CtRCvNJZUCmf_BkodSpraEcGqYXsy/view?usp=drivesdk"
+                "start_time": "0-02-23.670000",
+                "end_time": "0-02-25.040000",
+                "url": "https://drive.google.com/file/d/1ZtedoSjcmVMsqEMrCBIcSMThdfkrxtK_/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "I'm exhausted...",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "It isn't Nishimura.",
                 "line": 19,
-                "url": "https://drive.google.com/file/d/1PLL8r76Do8LiCX7kADF115Ypkm3j6Qig/view?usp=drivesdk"
+                "start_time": "0-02-25.040000",
+                "end_time": "0-02-26.880000",
+                "url": "https://drive.google.com/file/d/1VWA5cJD6jkb4lQVwnXuV12lD6ZG8LfME/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Come on, this is nothing. Guess you've still got a long way to go.",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "What?",
                 "line": 20,
-                "url": "https://drive.google.com/file/d/1XYBLNM2xteyUOq-SKp5XiI_1vhMCEH6v/view?usp=drivesdk"
+                "start_time": "0-02-28.710000",
+                "end_time": "0-02-29.710000",
+                "url": "https://drive.google.com/file/d/1wfsfzzK_-VXD7oIxlo_ZHpwHQJnl94t2/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Well, that's it for today. The food should be ready soon.",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "My name....",
                 "line": 21,
-                "url": "https://drive.google.com/file/d/1x_E9QgqZan6fnjwyGwRlHalsbJLZJ2qM/view?usp=drivesdk"
+                "start_time": "0-02-33.920000",
+                "end_time": "0-02-35.130000",
+                "url": "https://drive.google.com/file/d/1M9qsuXlSq3OJuX15OHmNGTnEZ9mg9eMm/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra & Tamaki (Shinra)",
-                "subtitle": "Thank you...!",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "It isn't Nishimura.",
                 "line": 22,
-                "url": "https://drive.google.com/file/d/1o-DyHO86MX-BtX3tsru257zhHys7EA1y/view?usp=drivesdk"
+                "start_time": "0-02-35.130000",
+                "end_time": "0-02-36.920000",
+                "url": "https://drive.google.com/file/d/1JJxF3ERfZwyCB42a1N2dau4DXUgtg4ro/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Shinra & Tamaki (Tamaki)",
-                "subtitle": "Thank you...!",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1o-DyHO86MX-BtX3tsru257zhHys7EA1y/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "*sigh* I'm starving... I wonder what's for dinner.",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "What?",
                 "line": 23,
-                "url": "https://drive.google.com/file/d/1e4wLVkidvdmQiX8LTPTkVg_jKrxDbguu/view?usp=drivesdk"
+                "start_time": "0-02-37.540000",
+                "end_time": "0-02-38.540000",
+                "url": "https://drive.google.com/file/d/1ONJtqXUtgjLgi1IYYShlHuywhLWta3Sq/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "I hope it's fish! Arthur must also be waiting. Let's hurry back!",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "It's not Nishimura.",
                 "line": 24,
-                "url": "https://drive.google.com/file/d/14iXl04Vy2r08d194f5qr5Kgu01OVCgHE/view?usp=drivesdk"
+                "start_time": "0-02-39.080000",
+                "end_time": "0-02-40.960000",
+                "url": "https://drive.google.com/file/d/1dkS45QWfLD1vxjqvmEyqH08eVUmUtnf5/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Wasn't he off training today? He's probably already had dinner\u2014",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "Oh, I got it wrong?",
                 "line": 25,
-                "url": "https://drive.google.com/file/d/1dJkU1iJtPm-LjE7aJRBTgR9f7POlDccM/view?usp=drivesdk"
+                "start_time": "0-02-41.540000",
+                "end_time": "0-02-43.330000",
+                "url": "https://drive.google.com/file/d/1N6sG475fXqnpbcTlrJOYpkPe4aaJNGaM/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...?! Something's coming... Be careful, you two!",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Yes, my name is-",
                 "line": 26,
-                "url": "https://drive.google.com/file/d/1-mMFp1zd_UXGjE5wE427ndQuM7yMtRrI/view?usp=drivesdk"
+                "start_time": "0-02-43.500000",
+                "end_time": "0-02-45.330000",
+                "url": "https://drive.google.com/file/d/1nC_DygK6Bx0Q0lRx7sQQ2iIT3DcLSDPH/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "What do you mean, \"Something's coming\"... Wha?! What's with this light...?!",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "Oh, hold on, I remember now.",
                 "line": 27,
-                "url": "https://drive.google.com/file/d/1c6oEE_I4NzZVfT4OC04D6xiU51CPRfVD/view?usp=drivesdk"
+                "start_time": "0-02-45.330000",
+                "end_time": "0-02-47.330000",
+                "url": "https://drive.google.com/file/d/1OphcAk1UjOsKPUxNovGpiN0CAyfG0qjq/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "My body... I'm being sucked into it...?!",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "You were technically a named NPC, weren't you?",
                 "line": 28,
-                "url": "https://drive.google.com/file/d/1PyPfZEdF34OwbSoatgz285oR5OFyfYBs/view?usp=drivesdk"
+                "start_time": "0-02-48.290000",
+                "end_time": "0-02-51.170000",
+                "url": "https://drive.google.com/file/d/1T5f1EMq_Gq2IyWD-OElEiAF10Plho8nq/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Shinra! Tamaki!",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "\"Named\" what?",
                 "line": 29,
-                "url": "https://drive.google.com/file/d/1vjpTVgAjCS1l1K9isAuRDYPCogjSHImh/view?usp=drivesdk"
+                "start_time": "0-02-51.500000",
+                "end_time": "0-02-53.170000",
+                "url": "https://drive.google.com/file/d/1HgxsI3-lLosuzwqChxueZDGy71TSjs_K/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "(That pillar of light... Could it be the White-Clad's doing? No time to think.)",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "Sorry, talking to myself.",
                 "line": 30,
-                "url": "https://drive.google.com/file/d/1tIbiLchcI1EU9pwipcFA7LOz7HQfZa3Y/view?usp=drivesdk"
+                "start_time": "0-02-53.170000",
+                "end_time": "0-02-54.710000",
+                "url": "https://drive.google.com/file/d/1tUTRR6vt1_CFRpOK56AfNxzdJ7RA1cO3/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Their lives...are in my hands.",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "I'm pretty good at remembering the names of all the important characters.",
                 "line": 31,
-                "url": "https://drive.google.com/file/d/1kXIR30z4rO7gnksYXnQSeK_Epkex5iT-/view?usp=drivesdk"
+                "start_time": "0-02-55.460000",
+                "end_time": "0-02-59.380000",
+                "url": "https://drive.google.com/file/d/1nZJURKS7TuEtnLp_Nbt5VQ-J94FOsPIL/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "(Where are we...?)",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "But I haven't been getting enough sleep.",
                 "line": 32,
-                "url": "https://drive.google.com/file/d/1x2FbxrGecbhF44io360iS2K6CklBfDyp/view?usp=drivesdk"
+                "start_time": "0-02-59.380000",
+                "end_time": "0-03-01.130000",
+                "url": "https://drive.google.com/file/d/1bG2Nk7kDTARFd9H4Kgcc5MzsoXEviKmv/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Captain Shinmon?! Did you follow us into the light...?",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "So I guess I got careless.",
                 "line": 33,
-                "url": "https://drive.google.com/file/d/1beU0LActFoYtYTx78AamDjqA2oZzmygW/view?usp=drivesdk"
+                "start_time": "0-03-01.670000",
+                "end_time": "0-03-03.380000",
+                "url": "https://drive.google.com/file/d/1Djr9SDiTXXT3NpzNp99YWQMutamFnCdg/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...Who knows. Anyway, are you both alright?",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "A careless mistake, I see.",
                 "line": 34,
-                "url": "https://drive.google.com/file/d/1qDwBJZprbncMfQCpcZCOMB_OF5YnAafC/view?usp=drivesdk"
+                "start_time": "0-03-04.290000",
+                "end_time": "0-03-05.920000",
+                "url": "https://drive.google.com/file/d/1GcI2cX1Bu-apxBTlx7huIR3gY2NMxReL/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Yes, Tamaki and I are okay!",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "You have been in my class, sitting right next to me for three months.",
                 "line": 35,
-                "url": "https://drive.google.com/file/d/1024Tr9XqueZEeicxlRd-NQqHDoOcyrsn/view?usp=drivesdk"
+                "start_time": "0-03-05.920000",
+                "end_time": "0-03-08.880000",
+                "url": "https://drive.google.com/file/d/1UcdliE_X44TENq0k-3SnPGZbhsoU5QYo/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "But there are no signs of the White-Clad... We don't know if they're involved or not. Besides...",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Three months!",
                 "line": 36,
-                "url": "https://drive.google.com/file/d/19hT4TL53RZCirYUXrO1_rl0neMXvoSnd/view?usp=drivesdk"
+                "start_time": "0-03-08.880000",
+                "end_time": "0-03-10.210000",
+                "url": "https://drive.google.com/file/d/1t9B8l5k0q8uZu6D7wxU4FhHkKiMowdOG/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "What is this town...? It doesn't look like Asakusa\u2014",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "That's okay, everybody makes mistakes.",
                 "line": 37,
-                "url": "https://drive.google.com/file/d/1bOdfK4SqqBWD0stLXAl-YbpruEJ7sRaY/view?usp=drivesdk"
+                "start_time": "0-03-10.630000",
+                "end_time": "0-03-13.710000",
+                "url": "https://drive.google.com/file/d/16UG87IEe9bmVFZYoIeTP1Uh_BM4EJX9B/view?usp=drivesdk"
             },
             {
-                "name": "Woman A",
-                "name_variant": "Woman A",
-                "subtitle": "Eeeeek!!!",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "Yeah, sorry...",
                 "line": 38,
-                "url": "https://drive.google.com/file/d/1qjnbvkM-M1RO8dcZ4Pfmc2LvPu70QMgf/view?usp=drivesdk"
+                "start_time": "0-03-14",
+                "end_time": "0-03-15.460000",
+                "url": "https://drive.google.com/file/d/1SC8HgG55I8x1Zzh0EMXOcoonraGY28KU/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Screaming?! It's coming from over there!",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "Nishitani-san.",
                 "line": 39,
-                "url": "https://drive.google.com/file/d/14oXi6JdYnz9-q-LDjZdOXdopzDAzwikl/view?usp=drivesdk"
+                "start_time": "0-03-15.920000",
+                "end_time": "0-03-17.130000",
+                "url": "https://drive.google.com/file/d/1_QfE2RJuGqc15TdP3g7cZ6hRY0veGr3U/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "H-Hey! Don't rush off on your own! Captain Shinmon, what should we do?",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "I ain't Nishitani, jerk!",
                 "line": 40,
-                "url": "https://drive.google.com/file/d/1NLgW4VLvikglrHRGRcPMbgBw-glk4eJA/view?usp=drivesdk"
+                "start_time": "0-03-17.130000",
+                "end_time": "0-03-18.830000",
+                "url": "https://drive.google.com/file/d/1Pt6KbBHtNWUnqjt0jEtC0ROdn_EBP43u/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Whatever the case, we're going too!",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "It's Nishino.",
                 "line": 41,
-                "url": "https://drive.google.com/file/d/1O80nWqCAQwrUA4i_aGyVyT6lCQgJgyeJ/view?usp=drivesdk"
+                "start_time": "0-03-19.170000",
+                "end_time": "0-03-20.380000",
+                "url": "https://drive.google.com/file/d/1ifR2jmqAaNZ7ebezh030TgxoJ10_pJQD/view?usp=drivesdk"
             },
             {
-                "name": "Man A",
-                "name_variant": "Man A",
-                "subtitle": "The old man from the bakery just suddenly caught fire! What's going on?!",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "I'm Akane Nishino.",
                 "line": 42,
-                "url": "https://drive.google.com/file/d/1xP9-_M5jbCN9K27LHDx4BbhvuKTEiT_o/view?usp=drivesdk"
+                "start_time": "0-03-20.880000",
+                "end_time": "0-03-23",
+                "url": "https://drive.google.com/file/d/1jPpUGYnxehfAfh-Lqsr9zGoyR4m8PUMQ/view?usp=drivesdk"
             },
             {
-                "name": "Woman A",
-                "name_variant": "Woman A",
-                "subtitle": "It's coming this way! We've got to run...!",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "Oh, well, see you later, Nishimura-san.",
                 "line": 43,
-                "url": "https://drive.google.com/file/d/1wjV_stArhbL8Jwzg-LroDn8gqboq8Bjx/view?usp=drivesdk"
+                "start_time": "0-03-29.420000",
+                "end_time": "0-03-31.290000",
+                "url": "https://drive.google.com/file/d/1s0Ajs5uhwca6YstFP9QwZfKcqtk4hH-C/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "That's...an \"Infernal\"...!",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "It's Nishino! You went backwards!",
                 "line": 44,
-                "url": "https://drive.google.com/file/d/1zn0KcmcvUGwN_MHyTG3PovFx3lsvC6vT/view?usp=drivesdk"
+                "start_time": "0-03-31.290000",
+                "end_time": "0-03-33.790000",
+                "url": "https://drive.google.com/file/d/1oUMBVdfiA76FKPvNCsTRTDeNAxI9QsTl/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "...Hey, Kusakabe! What's the situation? Where's the Special Fire Force?",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "His most unforgivable crime was not his failure to get my name right.",
                 "line": 45,
-                "url": "https://drive.google.com/file/d/1U-GqpFp3hOBmSWYACAfBJ7szPZG3P1Vm/view?usp=drivesdk"
+                "start_time": "0-03-38.500000",
+                "end_time": "0-03-42.670000",
+                "url": "https://drive.google.com/file/d/1-z-aiQ8vgYW8v1d5jHl5VtJEz04zQXPC/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "We're the only ones here!",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "He never looked at me.",
                 "line": 46,
-                "url": "https://drive.google.com/file/d/1JZmCwAcwk3CmUYeVuTSTuts9OTJC33VN/view?usp=drivesdk"
+                "start_time": "0-03-43.170000",
+                "end_time": "0-03-45.540000",
+                "url": "https://drive.google.com/file/d/1a98ZbazSISiaWnZsmkYhjuWB6lMSSbhL/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Then there's only one thing to do. Are you guys ready?",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "He turned his eyes in my direction, but they were always distant,",
                 "line": 47,
-                "url": "https://drive.google.com/file/d/1Yp1UHy22_JAXRxc3yMNt8O6ANYcF7fcl/view?usp=drivesdk"
+                "start_time": "0-03-46.250000",
+                "end_time": "0-03-50.080000",
+                "url": "https://drive.google.com/file/d/1JbP3SsTnVhzc_Hgfqq4HI49xhnjneMmF/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Y-Yes! I'll put it to rest!",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "like he was looking at some different, far-off place.",
                 "line": 48,
-                "url": "https://drive.google.com/file/d/1Rke0xARpPPC4uxLx0bn8kr29ahhEmgNc/view?usp=drivesdk"
+                "start_time": "0-03-50.080000",
+                "end_time": "0-03-52.250000",
+                "url": "https://drive.google.com/file/d/1nCdzNAwT0H7Unhbx4q7HsEslYTAdIJ_H/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "The flame is the soul's breath... The black smoke is the soul's release...",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "When I realized that about him, my hatred was complete.",
                 "line": 49,
-                "url": "https://drive.google.com/file/d/1JdDBaYAmqYd0Kl2Vo4iaEen3DnkQCVF-/view?usp=drivesdk"
+                "start_time": "0-03-52.790000",
+                "end_time": "0-03-56.250000",
+                "url": "https://drive.google.com/file/d/1yWnb9VpXN0rGGRlXJChyUfRJXsVxPn6o/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Ashes thou wert and art... May thy soul return to the great flame of fire.",
+                "name": "Classmate",
+                "name_variant": "Classmate",
+                "subtitle": "Akane! You're playing the lead in the upcoming Monday-night drama, right?",
                 "line": 50,
-                "url": "https://drive.google.com/file/d/1ngE-SC6GQKwtP0Y6otixrsM2UsYWoA6J/view?usp=drivesdk"
+                "start_time": "0-03-56.420000",
+                "end_time": "0-03-59.540000",
+                "url": "https://drive.google.com/file/d/1t-C-AgpOe8SHrUj_fxjYXNwbFSI1Al4h/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...That should do it!",
+                "name": "Classmate",
+                "name_variant": "Classmate",
+                "subtitle": "That's so cool!",
                 "line": 51,
-                "url": "https://drive.google.com/file/d/1g8D-YveWmiwTmXpjLIg1bdX15nLhsKSy/view?usp=drivesdk"
+                "start_time": "0-03-59.540000",
+                "end_time": "0-04-00.830000",
+                "url": "https://drive.google.com/file/d/1f7Ayw8B9Sz9mvguv5r9TazXED2tMDMbI/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "L\u00e1tom...",
+                "name": "Classmate",
+                "name_variant": "Classmate",
+                "subtitle": "How many shows have you done now?",
                 "line": 52,
-                "url": "https://drive.google.com/file/d/1vGyVIeySo5TQC57mzoYNZJ6zEu5KaJaW/view?usp=drivesdk"
+                "start_time": "0-04-00.830000",
+                "end_time": "0-04-02.250000",
+                "url": "https://drive.google.com/file/d/1jTe3B6bYbskxm2nbiFsMsPaFZx3VfhRJ/view?usp=drivesdk"
             },
             {
-                "name": "Chuvi",
-                "name_variant": "??? (Chuvi)",
-                "subtitle": "Wh-What is that phenomenon...?",
+                "name": "Classmate",
+                "name_variant": "Classmate",
+                "subtitle": "You're even busier than you were last year!",
                 "line": 53,
-                "url": "https://drive.google.com/file/d/1ric3pCY9YW3jKBTSyhQT6suyykYYGY-v/view?usp=drivesdk"
+                "start_time": "0-04-02.250000",
+                "end_time": "0-04-04.420000",
+                "url": "https://drive.google.com/file/d/1mqVQEBNjmS0Uf4Ce-TdEPuuU3KylhC4_/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "??? (Kanen)",
-                "subtitle": "An unknown power... They're using it to create and control the flames...",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Please! I'm so nervous about it, I could die!",
                 "line": 54,
-                "url": "https://drive.google.com/file/d/1hpX8_4CBB6mLW5D1jrrg_BB07SU3B5K3/view?usp=drivesdk"
+                "start_time": "0-04-04.420000",
+                "end_time": "0-04-07.830000",
+                "url": "https://drive.google.com/file/d/1PVVHGsMSA8D2rHvyrXxQwKdS8qexpvtK/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "A pillar of light, an unfamiliar place...an Infernal appears, and there's no sign of the Special Fire Force... What's going on?",
+                "name": "Classmate",
+                "name_variant": "Classmate",
+                "subtitle": "I'm definitely gonna watch!",
                 "line": 55,
-                "url": "https://drive.google.com/file/d/1kGoFpmQpgd5gUrVADo9328iZiaoRFnei/view?usp=drivesdk"
+                "start_time": "0-04-07.830000",
+                "end_time": "0-04-09.210000",
+                "url": "https://drive.google.com/file/d/1_bgWTwPwIiVEUK25ekFZF2SaqPHrH7QI/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Hey. Let me ask you something.",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "I had done everything in my power to avoid associating with Kageno-kun.",
                 "line": 56,
-                "url": "https://drive.google.com/file/d/1oKF4FCeDCnnID-Z74DrfvqE092WayMsX/view?usp=drivesdk"
+                "start_time": "0-04-10.630000",
+                "end_time": "0-04-14.040000",
+                "url": "https://drive.google.com/file/d/17QDfS1gLs6NYX8WdKh4Ls2oQebwPVsvA/view?usp=drivesdk"
             },
             {
-                "name": "Man A",
-                "name_variant": "Man A",
-                "subtitle": "Y-Yes...",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "If I could have had my way, I would have ignored him entirely.",
                 "line": 57,
-                "url": "https://drive.google.com/file/d/1CIuHoZRjQ-zjrKG3uI_tEp35d1CFbRge/view?usp=drivesdk"
+                "start_time": "0-04-14.630000",
+                "end_time": "0-04-17.170000",
+                "url": "https://drive.google.com/file/d/1qYKEH1X6IRWJmfA4kVorrDL2YxeQgBK_/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "The people here don't seem to know about Spontaneous Human Combustion or the Special Fire Force...",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "But there were reasons that I wanted to avoid making a big deal of it.",
                 "line": 58,
-                "url": "https://drive.google.com/file/d/1-skjkyCCq-xNFEF-8jWXsGLHbahY981_/view?usp=drivesdk"
+                "start_time": "0-04-17.330000",
+                "end_time": "0-04-20.080000",
+                "url": "https://drive.google.com/file/d/1XFENdgO3lXcR69qH2Oxj1RRdt6TWj0Ro/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "And they keep mentioning a bunch of places we've never heard of... I'm honestly getting confused.",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "20,553... 20,554... 20 thousand-",
                 "line": 59,
-                "url": "https://drive.google.com/file/d/1Y1nGJBGgDR60iggC8ZUJemeDABYqYl5c/view?usp=drivesdk"
+                "start_time": "0-04-21",
+                "end_time": "0-04-24.790000",
+                "url": "https://drive.google.com/file/d/1l2S4opnB4GWS6APxmnlR0ks5hE05jyqi/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "This definitely isn't a place we're familiar with.",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "When I was in middle school,",
                 "line": 60,
-                "url": "https://drive.google.com/file/d/1582exu7FMkOvaB1FmO1qg8dRoxh-HLOI/view?usp=drivesdk"
+                "start_time": "0-04-36.130000",
+                "end_time": "0-04-37.920000",
+                "url": "https://drive.google.com/file/d/1p4JU3uIZ8r1qMGpqDNzKjBPZK6ev0nyE/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Since we were swallowed by that light in Asakusa and ended up here, if it shows up again, we might be able to get back...!",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "I had to take a break from show business because of a scandal.",
                 "line": 61,
-                "url": "https://drive.google.com/file/d/14sB0XzB7A192EhN8la5T4IG-rQDuwlQR/view?usp=drivesdk"
+                "start_time": "0-04-37.920000",
+                "end_time": "0-04-41.540000",
+                "url": "https://drive.google.com/file/d/1eYdJjuxqlevwb7Ubml8-ud-Oub0X9IL_/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "No guarantees...but standing around won't help. Let's gather information.",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Ever since the incident...",
                 "line": 62,
-                "url": "https://drive.google.com/file/d/1N5jC0JlJFTe4ghbpzcXTso1ve93Ee5c_/view?usp=drivesdk"
+                "start_time": "0-04-45.210000",
+                "end_time": "0-04-46.960000",
+                "url": "https://drive.google.com/file/d/1yrf87bIJq5-sXMhWdb0x3VDGiyrEfv9l/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "??? (Kanen)",
-                "subtitle": "Excuse me... Could I have a moment, please?",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "I've been hiding behind a mask.",
                 "line": 63,
-                "url": "https://drive.google.com/file/d/1R8-CnMNc5hKCW7OU4ZIM2LjN08mWNLN8/view?usp=drivesdk"
+                "start_time": "0-04-47.420000",
+                "end_time": "0-04-50.710000",
+                "url": "https://drive.google.com/file/d/1Vb37nLBqwiiArl712evwPIdgilRCAycn/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...What is it?",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "Nuclear...",
                 "line": 64,
-                "url": "https://drive.google.com/file/d/1u3-Y2MXg1E_BWOPMVY9zQ3M1h0li7dRJ/view?usp=drivesdk"
+                "start_time": "0-04-51.500000",
+                "end_time": "0-04-52.540000",
+                "url": "https://drive.google.com/file/d/1pLk_rPjbeoyZNUL76Pu8HhiegSVdwkBZ/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "My name is Kanen... Thank you for your help earlier.",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "The limits of living things...",
                 "line": 65,
-                "url": "https://drive.google.com/file/d/1N6AXmZcrUIsik-CslcX7e9-VtqObnKB6/view?usp=drivesdk"
+                "start_time": "0-04-52.540000",
+                "end_time": "0-04-54.250000",
+                "url": "https://drive.google.com/file/d/16dJfl5cqal7VmkbBNbDcSPTIJ-J3-QDx/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "We're the Special Fire Force. Protecting civilians is what we do\u2014",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "More power...",
                 "line": 66,
-                "url": "https://drive.google.com/file/d/17pUy2B4QHelFB35l1yy1hcx_V8Z2AW4m/view?usp=drivesdk"
+                "start_time": "0-04-59.830000",
+                "end_time": "0-05-02.130000",
+                "url": "https://drive.google.com/file/d/1TfqxqSWX7-YeVzurktQGCyFEZ7VtWrx8/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "No, it's not just that. That burning humanoid monster was...my friend.",
+                "name": "Teacher",
+                "name_variant": "Teacher",
+                "subtitle": "Will anyone volunteer to tally up the school festival survey answers?",
                 "line": 67,
-                "url": "https://drive.google.com/file/d/1bS-xo88urM5BQNStyiX98tUXcyfKLDBi/view?usp=drivesdk"
+                "start_time": "0-05-04.080000",
+                "end_time": "0-05-07.250000",
+                "url": "https://drive.google.com/file/d/1Ri17YRpu6fJvxPm4UFz8he5EMA6I7TIr/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "I see...",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Oh, Sensei, I can-",
                 "line": 68,
-                "url": "https://drive.google.com/file/d/1X30MU5sXQAGOmX805-IrlriBfZc4AG62/view?usp=drivesdk"
+                "start_time": "0-05-07.250000",
+                "end_time": "0-05-09.330000",
+                "url": "https://drive.google.com/file/d/1n-CcZXqSm5abyhRoCzIau5Kx23JyNUvm/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "I don't know why it happened... One moment he was engulfed in flames and the next he started rampaging...",
+                "name": "Teacher",
+                "name_variant": "Teacher",
+                "subtitle": "Oh, but Nishino-san, you have makeup lessons right now.",
                 "line": 69,
-                "url": "https://drive.google.com/file/d/1CL6d1M6WmcrUdu84DxnLntJAxrxt8AMR/view?usp=drivesdk"
+                "start_time": "0-05-09.330000",
+                "end_time": "0-05-12.210000",
+                "url": "https://drive.google.com/file/d/1aq8AEUgZAIMg8CohQ-T7REAQ8QNI0Lnr/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Thank you so much for stopping him before he could hurt anyone.",
+                "name": "Classmate",
+                "name_variant": "Classmate",
+                "subtitle": "Because you've been so busy lately.",
                 "line": 70,
-                "url": "https://drive.google.com/file/d/1o4B5__l4w2tg7OrhOJcYtCdmcO4lR6WX/view?usp=drivesdk"
+                "start_time": "0-05-15",
+                "end_time": "0-05-17.420000",
+                "url": "https://drive.google.com/file/d/1iIwnvAVI_4lhxGEsdIzDYLyKVAO6KSwC/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "I heard that you all seem to be in some kind of trouble. Could I help you in some way?",
+                "name": "Classmate",
+                "name_variant": "Classmate",
+                "subtitle": "This is what makes you so darn lovable, Akane.",
                 "line": 71,
-                "url": "https://drive.google.com/file/d/1qmxcJQRKe1Z0_Wu-_XRGqCv-A1NiNzY0/view?usp=drivesdk"
+                "start_time": "0-05-17.420000",
+                "end_time": "0-05-19.960000",
+                "url": "https://drive.google.com/file/d/1390kOZBdK9lPtq9-fiqYRrc5Hr43fMCr/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Really?! It would be great to have some local help!",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Come on, don't laugh so much.",
                 "line": 72,
-                "url": "https://drive.google.com/file/d/1LeBhdtCz1Qw75zf3zGNI53UzTczNlCTf/view?usp=drivesdk"
+                "start_time": "0-05-19.960000",
+                "end_time": "0-05-21.920000",
+                "url": "https://drive.google.com/file/d/1gFhxRa0StSNFtDmOUirKLFAvitmDQOE5/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "What do you think, Tamaki, Captain Shinmon?",
+                "name": "Teacher",
+                "name_variant": "Teacher",
+                "subtitle": "Then, um, you, sitting next to her.",
                 "line": 73,
-                "url": "https://drive.google.com/file/d/1VR_SSech_S7_ThmOiXZDBoXxtHmf2db4/view?usp=drivesdk"
+                "start_time": "0-05-21.920000",
+                "end_time": "0-05-23.500000",
+                "url": "https://drive.google.com/file/d/1lhjnIcPFbkWV34nwIz7HBRCysAl6sWMP/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Why not? We don't know anyone here anyway...",
+                "name": "Teacher",
+                "name_variant": "Teacher",
+                "subtitle": "If you would?",
                 "line": 74,
-                "url": "https://drive.google.com/file/d/1994Swtb8yGt86U9PLXVkLUmDEYpgOV-k/view?usp=drivesdk"
+                "start_time": "0-05-23.500000",
+                "end_time": "0-05-24.880000",
+                "url": "https://drive.google.com/file/d/12tj-G9mXcsIXxstVgB5tm2u31hFMpTir/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...",
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "Yes, ma'am.",
                 "line": 75,
-                "url": "https://drive.google.com/file/d/1Oe1Jv1KJmahcBuxlLVrRzlOc7ajEI78a/view?usp=drivesdk"
+                "start_time": "0-05-24.880000",
+                "end_time": "0-05-25.880000",
+                "url": "https://drive.google.com/file/d/16XDNkvoeNuproAFD6vBMJVs-eLuVf6Vc/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Captain Shinmon?",
+                "name": "Student",
+                "name_variant": "Student",
+                "subtitle": "Okay, time for club!",
                 "line": 76,
-                "url": "https://drive.google.com/file/d/1mCrpaXmyb8rXbKbgAES7f1Ye5Fwi6rbw/view?usp=drivesdk"
+                "start_time": "0-05-26.750000",
+                "end_time": "0-05-28.460000",
+                "url": "https://drive.google.com/file/d/1K8Ofsi6fI_SLfgfAMpq2vKy-b_yO0dHg/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...Well, sure. It wouldn't hurt to have a local's help.",
+                "name": "Student",
+                "name_variant": "Student",
+                "subtitle": "Wanna stop by Mitsugoshi on the way home?",
                 "line": 77,
-                "url": "https://drive.google.com/file/d/1kiLgYPTpPla5KEvA5eP-4iI-Wzh00SPH/view?usp=drivesdk"
+                "start_time": "0-05-28.460000",
+                "end_time": "0-05-30.630000",
+                "url": "https://drive.google.com/file/d/1tQxR1M626q8ualMmla6VCOSBWtB6P9KN/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Then it's settled. Please start by telling us about this world!",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "I play the teacher's pet so the teachers will like me.",
                 "line": 78,
-                "url": "https://drive.google.com/file/d/1YyRFv0Ss27Np1Db7gSxEonc1ZURTEm8o/view?usp=drivesdk"
-            }
-        ],
-        "e2": [
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "...I can't believe you let him use an unknown artifact without even reporting it to me... That was utterly reckless.",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/1YTkwc_C-VJb5gSLmpXuygIRs0HqHGnsK/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "I'm sorry...sort of.",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/1UzhzwnBYSjr3v4GNDXBB0r2h6i6PZrOH/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Sort of, huh? Is there really any point in talking until you're truly sorry?",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1uRYsp_6wnv6sGqhFKR8V6dW3GslYPzq3/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Well, I was totally on board as well, but...I'll just keep quiet until Alpha finishes scolding her.)",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/1bvmeoDQODqZT7OBLH18jZHZuQszZ5RQG/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Ah, looks like you're in the heat of it, but...I'm here to report on the said artifact.",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1QCP3Z0BZyYMNtX_TwO-91x5JKSinDGXP/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "If I recall correctly, you were involved in this too... Anyway, fine, let's hear it.",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/18-XBEVmVKDAqzSfXlW7f31EF2TYZLNuK/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "To get straight to the point...it seems we really did summon people from another world.",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1OWjpypohvNixsJ3czAZQA4k_GGx1E9px/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Huh, really? Are they here?",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/1NbjntlUilSz_L5Xck1QjMNoQFrQOxMs4/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "They're a group of four who appear to be otherworldly visitors. One of them is likely a local ally, arranging their lodging and meals.",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/1gB6sbA9l4aV31xtSHxJfsuGC72stMv3t/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Also...since they showed up, humanoid monsters engulfed in flames have been showing up at night. The otherworldly visitors are handling them with fire.",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/1h-6cgbd4q_shZ5G-asd63WxNfqlq_frn/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "At first, people were suspicious of them, but now they're treated like heroes and have been completely accepted by the local residents.",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/1WeruCLW9IWp-NnrJ-E4wbOEiRnJYiOET/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Humanoid monsters engulfed in flames and otherworldly visitors who control fire... They seem related somehow.",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1-QLt15c7fxf0mVO1rBgYMETPZ6vI-22k/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "We can't deny the possibility of the Cult being involved... These monsters...might be caused by a magical overload...",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1sfhNyohgm94HdTryNnLxeyyzQZXrsDSc/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "I'm also curious about the sudden appearance of these allies. ...It might be best to get in touch with them and find out firsthand.",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/1QcKnc6HbtU6QkcORu5R8AlbZQxc_Z5lb/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "In that case, it might be best to send Beta and Epsilon, who can operate both publicly and secretly. I'll have them go immediately\u2014",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1GDnxMWo8NXt-ogywaeHjZIWHGlu_ZgcE/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "I'll go too.",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1j301xA2H8FMVKI6C9kBR5P6chsAYXOgx/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "No, this is just an investigation. I don't want to trouble you.",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1F8FXa18RkS4qpTXRIDm9KqHoxvvT0Gjp/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Oh no you don't. We're talking about heroes from another world! It's a perfect chance for some shadowbroker play! In that case...)",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1NWYXrDnY1U4KIzZTvDq9mDYa37bX2iJf/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...Don't you see? This is a turning point. I must witness the great wave that will engulf the world...",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/1ElULdlFFd0Y8VkQhZiDyfb2QgR32XR5Y/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "This incident is a prelude to that...? What kind of future do you see...?",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1UhTVRlktZ61tyTmDQJbUc9aFBY4DenxS/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "In that case, I'll leave this matter to you. Please take Beta and Epsilon and head there.",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1aMAG3r-fw43FBNy1AZtm_M195OqTx4xb/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Yes, managed to persuade her! That said...didn't Alpha give in a little too easy?)",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1ZG_ukfYjqsLdmBwmYCOrddbPptzfYeaS/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "This is the town mentioned in the report. I'll get right onto finding the otherworld visitors!",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1y89ijmA2mY7IHP0MlH63hss6HrNDUE2o/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "No, my lord! The basics of investigation start with gathering intel. Leave it to me!",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1yWJtEHR8Ycgy0x3TBWeYgLkS2a99XhoR/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Hahah... Both of you are so reliable.",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1OkDVd2MV1icN9OLbbpfBsUt_FzSfdwSx/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...Wait, what is that? Could that thing burning over there be\u2014",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/14KBzr3NznIP0uCs3qZJwAMeOnZsHJMru/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "The humanoid monsters Zeta mentioned...! Epsilon, prepare for battle!",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1ejn8Ntq1nHbHAJdRTNfxGrAZe6GPqa4g/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Wait a minute. It looks like it's being chased. Could it be\u2014",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1hWFO_vtBRuuUtXulfADtEikZ8Zr_WXc6/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "May thy soul...",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1PmTO-SnT5nhR1dK0R5XT-8qsy5PJ2Zx6/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "return to the great flame of fire...!",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1W_MsACgbLXB6z-nYLo38ulYizTDGS-GX/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Oh, nice kick.",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/1L36AQcfpXkKiETSQGqM_uhpnr2Bc1nFJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "He took it down with one blow. And those flames he used... It matches the intel from Zeta's report.",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/15RSPaB2DfoxtfWbbtv0bu4-tdIpztHkl/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Including those two behind him, those three must be the otherworld visitors.",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1KoCheo9qqGiLjzWEPm97Wv7XSXHIw3BD/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "...They're coming this way. Epsilon, let's use our public personas just in case.",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/1kiKwkWGpzgOBAEi88gutY1yG5DjJWZ82/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Hey, are you alright? Did any of you get caught up in what just happened?",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/19EF29er1EsC1H06JH5dk0tf4x0FTdP0W/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "We're all fine. Thank you.",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1GsNhC01kqT3mh45V4OB2Sk79uo3mnQM4/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Whoa, your ears are so long! And those outfits... You're not from this town, are you?",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/18ib6oN7gHdQOvBeoGYKA0qxK4M9WfA5K/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Well, I'm an elf. My name is Natsume, an associate of Mitsugoshi. This is...sort of a uniform.",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1Vi1D_OX0pfGQB6hvKab-qleiylnzgUJE/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Mitsugoshi... Wait, I've heard of it. It's a big company in the city, right? So that's their uniform, huh?",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1H5LGGrs7x9Y_aCWRnrGQEEcgfrwT5BiH/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Getting caught in my slime suit was unexpected...but they seem to be buying it.)",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1T_dEULZlYHzXAM0iGVW-Ri24OUzEhHyh/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I'm Shiron, also an associate of Mitsugoshi. And this is\u2014",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1X51U58U_UKIWEDAJ0BXsjmnXnYq_wwDM/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Uh, I'm Cid. Nice to meet you.",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1n0CGhYuI1lY5GpxE7ZPf5EbHrjCqHIgM/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "...",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1DjOaH22HhncPjBnx0qqO99OZOIvs6px6/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "...My lord, why is that guy grinning and looking down the whole time... Who is he?",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1rtid-XQZY9ZTm1k-5JJ0uy1iOOi8dMlv/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Don't worry, he's not a bad guy. He just helped take down that monster.",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1IeQ4UL05IJQ-m6SxZwSfPZopKEwB8S03/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(A smile is a prerequisite of a hero. Plus, controlling fire makes him look even more like a protagonist! Perfect!)",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1XWNni2xaID4tx14mH-RnZ_QCbp-y6GQA/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "We heard monsters were showing up in this town of late and came to investigate. That thing engulfed in flames must have been one of them.",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1AC-Bde5v6pe8UYtkAZG6Zw0fwdq8Nj5N/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "That's an Infernal. Not a monster.",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1t6e21jGthYWpTxZarmbeIUGf83UYVxUc/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...What do you mean? If it's not a monster, then what is it...?",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/12EzUa0qvmP3oQimTUu0S0JyjT3pv5o8E/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "...It's a phenomenon called Spontaneous Human Combustion. People suddenly burst into flames, lose their minds, suffer and rampage until they die...",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1uEPLsX8g-SSv7Ng0VnfEk9SBmdho8h0Q/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "We call them Infernals.",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1ReCFbqKrN5WhecWJDWXrB4cd1K3kPkRG/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "So that thing earlier was\u2014",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1Z50M4Nmw5sUPsb2PaVmz-BA1SXlyZPXO/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "...Someone from this town.",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1v2miY9KqemZxeuMvfv6UK8vb0qo3TQCY/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "That's terrible...",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1wjTylPewoOGKPkgkbffQGvb4fregiZKb/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "But don't worry. Our job as the Special Fire Force is to put Infernals to rest and solve the mystery of Spontaneous Human Combustion.",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/14cli2V02OgHaWUVQqiKzjN84aYBpHyJs/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Spontaneous Human Combustion and the Special Fire Force... I don't understand these terms. Where are you all from...?",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1QL40gRPm4idi9BkKvLdESG1UiaXw7KqI/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "You might not believe this, but...we're from another world... Somewhere different from here. We think so, at least...",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1mOXLr6ZFUExmYFxRpA8JsVu-3SZSFGMn/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "A-Another world?!",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1iTF_QCrLZGxCMEzhNZUHKgqcdZPQQZxI/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Yup, just as I thought! It's better to hear it straight from the horse's mouth to avoid any confusion later.)",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1umsENzmIBaA_PWyMo-vXHssmpqfWHF-C/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "...I see. If you're from another world, you must have run into a lot of difficulties.",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1aFt89MhKG7pD2jj4nUdQiX0_tfkTjL60/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "And your mission is to deal with these Infernals, right? Maybe we can cooperate.",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1tpot9YU3kVU2V_GxIhb-VTM7ps5pFNwn/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "You share intel about these Infernals, and we'll support your activities and help gather intel to return you to your world.",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1sD6fIiBQInLnLEj6rDsAbzt50SylK-OT/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "With Mitsugoshi's network, we can gather a wide and deep range of intel. I don't think it's a bad deal.",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/1Gg7PPCf19A1EhA8KRs10MnQj5ZwMjld1/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...Sounds too convenient. Are you hiding something?",
-                "line": 64,
-                "url": "https://drive.google.com/file/d/1Ad1f6GukMtYdgw4Yrnuk886qOOa8kAHO/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid & Beta & Epsilon (Cid)",
-                "subtitle": "What?!",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/1tP_74RtyApG2NJzkPMFIlF8eAOxqObAj/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Cid & Beta & Epsilon (Beta)",
-                "subtitle": "What?!",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/1tP_74RtyApG2NJzkPMFIlF8eAOxqObAj/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Cid & Beta & Epsilon (Epsilon)",
-                "subtitle": "What?!",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/1tP_74RtyApG2NJzkPMFIlF8eAOxqObAj/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "(Is he talking about the Shadow Garden...?!)",
-                "line": 66,
-                "url": "https://drive.google.com/file/d/1Pt9sZe9tPNRFBMvOFwavUkEXbeeboHPE/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Is he talking about the artifact...?!)",
-                "line": 67,
-                "url": "https://drive.google.com/file/d/1E9Q1BT2cmNTBZ-t_6BZTwU2tZH7y5SxZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Is he talking about my chest...?!)",
-                "line": 68,
-                "url": "https://drive.google.com/file/d/1uCt-TUnGJevikwPumzfxQQ5II1GBfqL5/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...Well, anyway, we'll decide if we can trust you based on your actions.",
-                "line": 69,
-                "url": "https://drive.google.com/file/d/1lqa3JBftdZRNXy1DoyCTdOg-X5kF89sC/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "O-Okay... For now, let's establish a cooperative relationship. Looking forward to working with you, uh\u2014",
-                "line": 70,
-                "url": "https://drive.google.com/file/d/1t1OHOrEr3KxuDt-2J2UhK8aXW1a5GVtZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Oh, right, we haven't introduced ourselves... I'm Shinra.",
-                "line": 71,
-                "url": "https://drive.google.com/file/d/1k2T9FKx4YixcakEep1r0jJkMnRj_JQRB/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...Shinmon Benimaru.",
-                "line": 72,
-                "url": "https://drive.google.com/file/d/1FjRrSmWERuvmymFvSzIUMo4vke3o378W/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "I'm Tamaki. I'll teach you about putting Infernals to rest! Especially you, Cid. You seem a bit absent-minded, so pay attention!",
-                "line": 73,
-                "url": "https://drive.google.com/file/d/1l1seLeU5GCENPkh_qvGiOAHvT8--KQcm/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "First of all... Nyaa?!",
-                "line": 74,
-                "url": "https://drive.google.com/file/d/1GQsNGZ8YEjJpBcH0EJS6hyZb-DaHM1nq/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Wha\u2014?!",
-                "line": 75,
-                "url": "https://drive.google.com/file/d/1ukD5_MYNo8j2xf3et7tMjIOpY-JRBHcA/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Tamaki tripped and ended up in a compromising position with Shinra...?! Oh my... Memo, memo!",
-                "line": 76,
-                "url": "https://drive.google.com/file/d/1QSLyo8M9JHWmLz1YGc_Giyzxbm0TxgTZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "H-Hold on... Shouldn't the \"Lucky Lecher Lure\" have targeted Cid...?!",
-                "line": 77,
-                "url": "https://drive.google.com/file/d/1v9q4uRVejJF7Vo5PSaaAnVDoDdtHyGhl/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(These kinds of happenings are for the protagonist. I'll stay out of them, thank you very much..)",
-                "line": 78,
-                "url": "https://drive.google.com/file/d/1JiTjXvrAdfDV6b4RdOXDR9tl73eRPfPH/view?usp=drivesdk"
+                "start_time": "0-05-31.130000",
+                "end_time": "0-05-35.380000",
+                "url": "https://drive.google.com/file/d/1mHHyf_PzahfdPwsGBef10iHHTF-KwX_J/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(And now I see... With these protagonists around, my shadowbroker moves will be even more effective!)",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "I play the popular girl so the students will like me.",
                 "line": 79,
-                "url": "https://drive.google.com/file/d/1WH7Yhcc5n5rX9OhmCmQVI-4BIvfuU6DD/view?usp=drivesdk"
+                "start_time": "0-05-35.630000",
+                "end_time": "0-05-38.830000",
+                "url": "https://drive.google.com/file/d/1G4_OzVMPX3SWdf1ypve6xY7lZ5-J2zGS/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Nice to meet you three. Wait...three?",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "I've been very careful to make sure no one hates me.",
                 "line": 80,
-                "url": "https://drive.google.com/file/d/17aijjULuZBgWqlgc-xxNIeB0dzCopHCW/view?usp=drivesdk"
+                "start_time": "0-05-39.420000",
+                "end_time": "0-05-42.540000",
+                "url": "https://drive.google.com/file/d/1KEUiKQi-tK-3vKbExg5LEqLoQLoDCvLV/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(The report mentioned a local ally... Well, whatever.)",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "That's how I've lived my life up to this point.",
                 "line": 81,
-                "url": "https://drive.google.com/file/d/1z1A1fK9Ntny9x6wc_GO7ohyj5iRyt3Ui/view?usp=drivesdk"
+                "start_time": "0-05-43.710000",
+                "end_time": "0-05-46.630000",
+                "url": "https://drive.google.com/file/d/1mO7v9CFPI4HW7xC1JM5-yspUQtsPimvP/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "??? (Kanen)",
-                "subtitle": "Those black outfits and weapons... Could they be...?",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "He's not answering.",
                 "line": 82,
-                "url": "https://drive.google.com/file/d/1L-FiegJ88kX9A-VTGR6mzUW-j2agAZFu/view?usp=drivesdk"
+                "start_time": "0-06-54.500000",
+                "end_time": "0-06-55.710000",
+                "url": "https://drive.google.com/file/d/1aGQeXGYbca-_ceS67sc8XWejg02hZENl/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "??? (Kanen)",
-                "subtitle": "If I defeat them here, I might be able to join the Rounds... Hehehe... I need to hurry with the research on this \"Bug.\"",
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "I haven't walked home since the incident.",
                 "line": 83,
-                "url": "https://drive.google.com/file/d/1gzsUTDefzNHCnw9p7VV_AruKrfQRntG2/view?usp=drivesdk"
-            }
-        ],
-        "e3": [
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "I didn't notice last night, but so many houses are destroyed... The Infernals have done extensive damage.",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/1zn0LShob8XTCEao-YfJQ42aDzqYJuzgP/view?usp=drivesdk"
+                "start_time": "0-07-12.790000",
+                "end_time": "0-07-15.790000",
+                "url": "https://drive.google.com/file/d/1-dRpQ2yIb29XowNLigoKcUwxkD7SBN2k/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Uh? No, Captain Shinmon did that...",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/1lDN07UbxL6HBD4dVWKtBxZg2mIYhzQgW/view?usp=drivesdk"
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "Akane Nishino, I presume?",
+                "line": 84,
+                "start_time": "0-07-35.790000",
+                "end_time": "0-07-37.830000",
+                "url": "https://drive.google.com/file/d/12Avi3ZHAFG7pfWeYaDE9vGmWwbtq_82B/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Benimaru destroyed them? Why would he...",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1yhk3w70wwPHq9KI326KJpLS2ER5APxqb/view?usp=drivesdk"
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Why?! How?!",
+                "line": 85,
+                "start_time": "0-07-40.040000",
+                "end_time": "0-07-41.460000",
+                "url": "https://drive.google.com/file/d/1nKPdRu-DCX7CpuDBJuMLXMKXrdB-ItpN/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "That's his way of putting them to rest. Rampaging, destroying things, and sending off the dead with a bang is the Asakusa way of honoring them.",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/1WBtWvcjCtpcVzH_FA688TA9l1P8Sk5m3/view?usp=drivesdk"
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Not again!",
+                "line": 86,
+                "start_time": "0-07-42.250000",
+                "end_time": "0-07-43.460000",
+                "url": "https://drive.google.com/file/d/1llTSEwSrg7YFlrZhsQnvgA2YJ6fQ6xQE/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I kind of get it, but not really... Are the townspeople okay with it?",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1ID_CyZKDhtyzttoZBbWmioBmTBr1LnrO/view?usp=drivesdk"
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "No!",
+                "line": 87,
+                "start_time": "0-07-49.250000",
+                "end_time": "0-07-50.250000",
+                "url": "https://drive.google.com/file/d/1sOpW57ufPpWzwRI-9W7sxER39jb04lbu/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Captain Shinmon isn't just about destruction. Look\u2014",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/1i3wG7WJjoC2VFFDYQmzYcLZDBxUba_bK/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "Come on, stop struggling.",
+                "line": 88,
+                "start_time": "0-07-54.170000",
+                "end_time": "0-07-55.710000",
+                "url": "https://drive.google.com/file/d/11lBmGKcBbZnX6mDpkcQYOgc7R3f2XeQw/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Cid! Help me carry this wood! Let's get this house built by today!",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1CiEl-e0uWEPHx8V8PTfozUfoC2cOZIfu/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "It finally kicked in.",
+                "line": 89,
+                "start_time": "0-08-09.630000",
+                "end_time": "0-08-11.330000",
+                "url": "https://drive.google.com/file/d/1obeEfAA_PDHQ3v9VeP0gZfJ-ZN5amwEj/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "G-Got it... Ugh...",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/1uUrgJNHU0oqM5sRRzPk7lkyo5YED11em/view?usp=drivesdk"
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "All right, get her in the car.",
+                "line": 90,
+                "start_time": "0-08-11.330000",
+                "end_time": "0-08-13",
+                "url": "https://drive.google.com/file/d/11Co1pr6oBv4WxbTDG9wIbWaESdwLcm-O/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "...I see. Repairing the damage is part of it too.",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/1A2X3El72zs3CLWr4IC9WbNRTuevFeDTh/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "Huh? Don't order me around, outsider.",
+                "line": 91,
+                "start_time": "0-08-13",
+                "end_time": "0-08-15.710000",
+                "url": "https://drive.google.com/file/d/1m9GmSoJv6Qi9th_5Wp6Nr7U4ScnX1s-8/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Well, let's leave them to it... Natsume, Shiron. Let me teach you about putting Infernals to rest!",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/1SN28AZ4LHJD9I-qwVyzfBp3rf1ZbxMJH/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "You know you shouldn't do that:",
+                "line": 92,
+                "start_time": "0-08-42.080000",
+                "end_time": "0-08-43.710000",
+                "url": "https://drive.google.com/file/d/1D2s1oJpLgY57aH0VTXkIzjZaoaw6twhA/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Yes, please!",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/1GVoFRJ5-JuTElK1Z1jxXzkMCtPZDM4fi/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "The daughter of the head of the Nishino Conglomerate, wandering the streets alone at night.",
+                "line": 93,
+                "start_time": "0-08-43.710000",
+                "end_time": "0-08-48.670000",
+                "url": "https://drive.google.com/file/d/1yaCXtSRVe1XYWCHr-HsbctbGcfmrao12/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "To stop an Infernal, you need to destroy the core in its heart.",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1N2cZ4eu2TvXhZ7Ujo1qYJsoPB7WGkQ81/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "You might get caught by some unsavory characters.",
+                "line": 94,
+                "start_time": "0-08-48.670000",
+                "end_time": "0-08-51.290000",
+                "url": "https://drive.google.com/file/d/1qe07pK_VtWfpD-t-Y_RmiUVq8YspvDl6/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "If you take too long, it prolongs their suffering. So if you have the chance, finish it in one hit.",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1pELOBLS_SMiTx8HGYN6R0Fi6uysyqCfL/view?usp=drivesdk"
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "Just stay there and don't try anything. We sent the ransom note.",
+                "line": 95,
+                "start_time": "0-08-51.540000",
+                "end_time": "0-08-54",
+                "url": "https://drive.google.com/file/d/1UYXJ3HZ79vq8Hz9WlbkU9iBZMsxqdZ-r/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I see. That's the compassionate thing to do for Infernals.",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/1Ctkd1c-UKLeK54zpAd3-yx7Peth7-TDw/view?usp=drivesdk"
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "As soon as we get the money, you're free to go.",
+                "line": 96,
+                "start_time": "0-08-54",
+                "end_time": "0-08-55.750000",
+                "url": "https://drive.google.com/file/d/1vm7ZdwTExcMXCRzcCKCFZ36WlMnXL8u-/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Exactly. So, let's practice targeting the core! Watch my movements closely\u2014",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1Ij21lxsOpVzjfos_QSRSPUKevXqEDn6f/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "Or that's the cover story, anyway.",
+                "line": 97,
+                "start_time": "0-08-55.750000",
+                "end_time": "0-08-58.040000",
+                "url": "https://drive.google.com/file/d/1orwiyKSwBx3UgZ0P1gBkt4dj-5opZP9E/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "...Nyaa?!",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1clEKz2mTENftc4vxmSG3y-fl3rPs8Lht/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "Seems like your old man's made a lot of enemies.",
+                "line": 98,
+                "start_time": "0-08-58.040000",
+                "end_time": "0-09-01.380000",
+                "url": "https://drive.google.com/file/d/1nLMfkODGqRmH1oPMbDIeDcGEq62rJzyn/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Wha\u2014?! Why are you dragging me into this again?!",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1wfLEP0zMJaJvhwbTzyuLklm75jNmmzm-/view?usp=drivesdk"
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "Hey, shut it.",
+                "line": 99,
+                "start_time": "0-09-01.380000",
+                "end_time": "0-09-02.630000",
+                "url": "https://drive.google.com/file/d/1E1xWS2v9X-x2DQmR7KC6YQP3hBP1yx6E/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Oh, another compromising position! I want to learn more about this than putting Infernals to rest!",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1lhyqlYHMlUYcOBCYjTBObk-0R_gOcKWY/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "Huh?",
+                "line": 100,
+                "start_time": "0-09-02.630000",
+                "end_time": "0-09-03.830000",
+                "url": "https://drive.google.com/file/d/17BgQPVK593DEUdRwSO-Mi2cMu61MyRRS/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "You've been saying that since yesterday...",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/17WUiYPqX7X6VgbTfrRVvXymRvMfawGLv/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "You shut it, outsider.",
+                "line": 101,
+                "start_time": "0-09-04",
+                "end_time": "0-09-05.330000",
+                "url": "https://drive.google.com/file/d/1bZApEqqeP43DiBeP3NbPZGmjce7_SmPd/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "It's not a technique! Get off, Kusakabe!",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1Zw84GFieUin9vsDq_Z7mMDaou6rKVNuC/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "You think you can talk down to me?",
+                "line": 102,
+                "start_time": "0-09-05.330000",
+                "end_time": "0-09-07.040000",
+                "url": "https://drive.google.com/file/d/1ydxolfeiZhQXQ1hlKGeNxDheHCSod1vr/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(They seem lively over there... Meanwhile, here...)",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1MuM9FljGOkc1zd6zbjp4IMrIRx3d8lNC/view?usp=drivesdk"
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "I said stop talking, you outdated gangster clich\u00e9.",
+                "line": 103,
+                "start_time": "0-09-07.040000",
+                "end_time": "0-09-10.500000",
+                "url": "https://drive.google.com/file/d/1qyIF1QpIKnrTJqQOTr4u3FZHVhtkB9c0/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Hey, quit slacking off.",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1LsbWZMzyBLRX7S_f9PC70B6fDDszd4n0/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "This is so annoying.",
+                "line": 104,
+                "start_time": "0-09-29.460000",
+                "end_time": "0-09-31.630000",
+                "url": "https://drive.google.com/file/d/1z37ZetD3-B9fJSBE2FY9bPugnxoUjfxU/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Yes, sir...",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1MaVOxCiTPKguxiz1kT9uXuh-qAmwUWow/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "I finally caught my lucky break, and now it's all ruined.",
+                "line": 105,
+                "start_time": "0-09-32.830000",
+                "end_time": "0-09-36.040000",
+                "url": "https://drive.google.com/file/d/1HA45kiPzeuH0X-AfnlouQFQ0ELx9_P45/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Good work. Why don't you take a break?",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1cu-eWg9jbZTDP6ShF8u2PAShb2-WLjM9/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "Why don't you help me feel better?",
+                "line": 106,
+                "start_time": "0-09-37.210000",
+                "end_time": "0-09-39.210000",
+                "url": "https://drive.google.com/file/d/1Y8tt_lqhYURaC0PWiKGRzoZD8CtqLtDx/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...Oh, it's you. Have you found a way back to our world?",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/13oKM5XmjJSLiDZXtjOOzsPxCS8E37HLt/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "Gimme a little fan service.",
+                "line": 107,
+                "start_time": "0-09-39.210000",
+                "end_time": "0-09-41",
+                "url": "https://drive.google.com/file/d/19o126arvPDDB1DDRM30FJ-JHibStv6bc/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Unfortunately, not yet... I'll continue to investigate.",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/1MfMbKHZU4aBNUY32M4an0IZHvmJKTT0b/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "I'll start with that pretty little mouth of yours.",
+                "line": 108,
+                "start_time": "0-09-41",
+                "end_time": "0-09-43.290000",
+                "url": "https://drive.google.com/file/d/1XXwe31BkdUCID5DkOGS7q6V6yX78D4Rj/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "I see. In that case, I'll get back to work.",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1DEGwqsxfC39lGhTaeHzwAp-Swiq7kbPh/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "Don't you dare fight me!",
+                "line": 109,
+                "start_time": "0-09-45.250000",
+                "end_time": "0-09-47.750000",
+                "url": "https://drive.google.com/file/d/1-71mH4v-qMeM5leE6FLlMpddUJcI6koE/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(...There he goes. He's one brusque guy.)",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1z02bUHCusk0o04rrg3V1UROa77xnSUIx/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "This should be old hat for you.",
+                "line": 110,
+                "start_time": "0-09-51.790000",
+                "end_time": "0-09-53.420000",
+                "url": "https://drive.google.com/file/d/1ndNRWSVcRlM5mKgkABaTZ2t-92pYxo0K/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Is this the local ally? He could at least give an introduction...)",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1_Yghq0B3gUccuguVgMrUYqAETKeNqb1a/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "It's your second time being kidnapped, after all.",
+                "line": 111,
+                "start_time": "0-09-53.420000",
+                "end_time": "0-09-56.420000",
+                "url": "https://drive.google.com/file/d/1zPLedcFXfh_hklevvJOZJf1LmiTTR87i/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "What a cold individual. And you are...?",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1gSVAFeEXYEad00LSiQiZlSHsF4rfuNBY/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "And the last guy was a stalker? Right?",
+                "line": 112,
+                "start_time": "0-09-57.630000",
+                "end_time": "0-10-00.750000",
+                "url": "https://drive.google.com/file/d/1RXL-HusfhlBHknktRzOAf0LmmfiR7IWT/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Oh, we came to investigate the monsters around here.",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/1oTbDXVETMu4AlMNiopfKSxgUVSyoDyoL/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "I'll give you much better memories than that other guy.",
+                "line": 113,
+                "start_time": "0-10-01",
+                "end_time": "0-10-04.080000",
+                "url": "https://drive.google.com/file/d/13f-Z99SPriDdnMk2TVJ6axSFuUO3srOu/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "We met Benimaru and his team last night and decided to work together.",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/1uvroW6rxCSABAHWginALLS4vrx7on6xF/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "Stop struggling!",
+                "line": 114,
+                "start_time": "0-10-05.790000",
+                "end_time": "0-10-07.210000",
+                "url": "https://drive.google.com/file/d/1atQWNwrKp_y3qQVYMmnxvxj7x_aRkAmc/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "We... You mean those girls with Tamaki?",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1BIimg8FhnK3GpBn2fU1b0pn7BBdibikG/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "You know no one's coming.",
+                "line": 115,
+                "start_time": "0-10-07.210000",
+                "end_time": "0-10-08.830000",
+                "url": "https://drive.google.com/file/d/1YX9HxCiPHunX2wWD6gusASazypz6tVkO/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Yes, they're with me. And you are...?",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/1bV69GHuqvjoHPllVwSL9r7Dyf5CP4L6M/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "What?",
+                "line": 116,
+                "start_time": "0-10-17.210000",
+                "end_time": "0-10-18.210000",
+                "url": "https://drive.google.com/file/d/1kIt34lt59k7rJdowZN1IjDnXYsMTs2Q-/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "I'm Kanen. I'm also researching these monsters. How about we also work together?",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/16KxnaEqXgD0q55fMm-_w_OzeGV_E3sJi/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "I mean, who's there?!",
+                "line": 117,
+                "start_time": "0-10-18.210000",
+                "end_time": "0-10-19.580000",
+                "url": "https://drive.google.com/file/d/1G1BW3Ojedcek28iz9qYh96qi4a87Os-8/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Hmm, maybe if the opportunity arises.",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1pZnrwMmJ14E37DeLp8ku4o0kIqq1RS9W/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Please do consider it. Well then, I'll be off...",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/1dbyDjM1WetmE_qbdDV-Wab196Esf4nVK/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1jYlH56zGW94vXxWri6E1BQ-ShNIv2QJc/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Hey, Cid! Looks like it's lunchtime.",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1YjvixW-6MHq5HNE0s6Mvn85ympiCvwT6/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...Okay!",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/13V7mB9ln-jw_2VyhnCURBJUAsyQ7wiUn/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Did you find out anything about that \"Bug\"?",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1RY1XQENp8Q9DCXsl7acyFivMtCiczL9m/view?usp=drivesdk"
-            },
-            {
-                "name": "Chuvi",
-                "name_variant": "Chuvi",
-                "subtitle": "This \"Bug\" appeared with the otherworld visitors. It turns people into Infernals. Beyond that, we don't know much yet...",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1GsU7WbMXN_Ve5RZbLcgfvzQJcNKAi1SL/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Then get more test subjects. Experiments are all about numbers. The otherworld visitors will likely remain in town to investigate. Use Infernals to test them.",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1LQnhmyLrNWmLh1lY6REq5bevmu443fZG/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "First, test if the strength of the subject affects the strength of an Infernal. If it does, mass-produce stronger Infernals.",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1-DmQtbjKbgEs89YzNd-6rE82J3gsGidL/view?usp=drivesdk"
-            },
-            {
-                "name": "Chuvi",
-                "name_variant": "Chuvi",
-                "subtitle": "Understood.",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1xMTPjnBF6a5IQpKDrIw4rF2JfD-Lmlne/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "One of their companions looks weak. We don't know why they brought him...but we should also test turning someone as weak as him into an Infernal.",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1Vl6CUc_ovT0Osfklbi8f06rGmYj5CMXT/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "If someone close to them turns into an Infernal, they'll be shaken. When they let their guard down, even we may be able to take him out.",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1BDiGTgYwHhj5soq16qlB2vnergaiFkXx/view?usp=drivesdk"
-            },
-            {
-                "name": "Chuvi",
-                "name_variant": "Chuvi",
-                "subtitle": "As you wish.",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/18xuEQHr64SEOdIf6fIXyS9Go7d8Zu1f2/view?usp=drivesdk"
-            },
-            {
-                "name": "Chuvi",
-                "name_variant": "Chuvi",
-                "subtitle": "You discovered me when I was a mere Third Child and raised me to a Second. To repay that debt, please command me as you wish.",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1xii5igWaV_AGaJRmwaZns8_vz2bj-3I_/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Then go. We'll operate separately for the time being. Report any findings.",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1J1MG8V-racrKeoXBoxYtIgDZ85sphpDZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "...A third-rate individual who can do nothing more than follow orders. Oh well, a useful disposable tool.",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1Dru1tzA3e6H-iB6euI44MxM_grS_Vfw_/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "Who the hell do you think you are?!",
+                "line": 118,
+                "start_time": "0-10-36.580000",
+                "end_time": "0-10-38.630000",
+                "url": "https://drive.google.com/file/d/1h6EAdezi2AWbMHpocQvuAgI7Qh7MCTks/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Whew, talk about reviving... If you work hard, you have to eat hard as well.",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1td634O6zyGAV-1MzSld30Qgnw-N4L4hN/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "By the way, Mast...Cid, who were you talking to earlier?",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1D4j5JRirlYqyl-HlXx0AkTfB6HBg0usj/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...Kanen. He's our ally here. He's separately investigating a way for us to get back to our world.",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/175N2tsXfzP73Roqs3lleTEru4XeI7g5u/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "Me?",
+                "line": 119,
+                "start_time": "0-10-38.630000",
+                "end_time": "0-10-39.830000",
+                "url": "https://drive.google.com/file/d/1PVQafQkJeMZ1jh0a6WLFzuv0PQiSTt-S/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "He said he wanted to cooperate with us as well. Wasn't sure, so I gave him a vague answer, but... Oh, more rice, please.",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1GnvEjpqZgbQQw7xiR4kv6NOPOK_3h-SZ/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "I'm just a Stylish Ruffian Slayer.",
+                "line": 120,
+                "start_time": "0-10-39.830000",
+                "end_time": "0-10-43.960000",
+                "url": "https://drive.google.com/file/d/1ercioREE7D43uDnXTnVO3GvGL5mDxyfj/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "If you eat that much, you won't be able to work in the afternoon!",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1J8vU-yVE4JTFBpeIDjkyEj94DYvHsS84/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "Stylish...",
+                "line": 121,
+                "start_time": "0-10-44.920000",
+                "end_time": "0-10-46.420000",
+                "url": "https://drive.google.com/file/d/1F6LuEpn7VXkvStQknRRjCL4u8EOoiiYA/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Hey! Since you're here, let me teach you about putting Infernals to rest! It'll help you work off your meal!",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1qIp8clf60cUeAMgHGGe-PVE2hLn-JtoX/view?usp=drivesdk"
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "...Ruffian Slayer?",
+                "line": 122,
+                "start_time": "0-10-46.420000",
+                "end_time": "0-10-48.330000",
+                "url": "https://drive.google.com/file/d/18e9PxtE_lb54tZ42pvsEyBGa1lWVMpiC/view?usp=drivesdk"
+            },
+            {
+                "name": "Kidnapper B",
+                "name_variant": "Kidnapper B",
+                "subtitle": "Don't get cute with us, dammit!",
+                "line": 123,
+                "start_time": "0-10-49.420000",
+                "end_time": "0-10-52",
+                "url": "https://drive.google.com/file/d/1mXrGJM7X-OgaxChx5p_S5vUD8CQHwr8r/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Uhh...I'll pass\u2014",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1XaRdAvFEQhXKGnH8_sQnw9DVeUrJq9tg/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "Too much pointless movement. Your guard is way down.",
+                "line": 124,
+                "start_time": "0-10-53.750000",
+                "end_time": "0-10-56.250000",
+                "url": "https://drive.google.com/file/d/1SUV31bOrjCNYWhxGP3dhr_Fm3lBmJHf_/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "I'll train you.",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1ULwBBZIAWkdIOQHcMKwwihi-WhNB-ERA/view?usp=drivesdk"
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "I see...",
+                "line": 125,
+                "start_time": "0-11-03.040000",
+                "end_time": "0-11-04.040000",
+                "url": "https://drive.google.com/file/d/1L4I4OkzdC8oo5AbKFeLXwLKRgnrp8E2p/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra & Tamaki (Shinra)",
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "It looks like you have some idea what you're doing,",
+                "line": 126,
+                "start_time": "0-11-04.500000",
+                "end_time": "0-11-06.540000",
+                "url": "https://drive.google.com/file/d/1afwEtLeiK0c-3Da6HG4T7f_EaHed-Jdm/view?usp=drivesdk"
+            },
+            {
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "Stylish Ruffian Slayer.",
+                "line": 127,
+                "start_time": "0-11-06.540000",
+                "end_time": "0-11-09.460000",
+                "url": "https://drive.google.com/file/d/1T_v_Ph810EvIRcamfyWeNw_S_4KD0ERm/view?usp=drivesdk"
+            },
+            {
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "You know, I've been awfully bored since I was booted from the army.",
+                "line": 128,
+                "start_time": "0-11-12.210000",
+                "end_time": "0-11-16.170000",
+                "url": "https://drive.google.com/file/d/1XQcspU6u6oa6aTgGFzkV31f_LHaZou8c/view?usp=drivesdk"
+            },
+            {
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "Doing these little kiddy abductions, partnering with a lowlife amateur...",
+                "line": 129,
+                "start_time": "0-11-16.330000",
+                "end_time": "0-11-20.830000",
+                "url": "https://drive.google.com/file/d/1xEEkDNcEnXvtDXdYZs3a9iMer4ym0zME/view?usp=drivesdk"
+            },
+            {
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "This country is too damn peaceful.",
+                "line": 130,
+                "start_time": "0-11-21.790000",
+                "end_time": "0-11-23.790000",
+                "url": "https://drive.google.com/file/d/1kqQJGeAsKtprmtpC4eUz_4ytIwPfDOra/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "I see, this is perfect.",
+                "line": 131,
+                "start_time": "0-11-24.170000",
+                "end_time": "0-11-25.790000",
+                "url": "https://drive.google.com/file/d/1YqkoSj9dVIawyj7Sn95wO-ahsGV9vRLw/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "I've always wanted to fight a military man.",
+                "line": 132,
+                "start_time": "0-11-25.790000",
+                "end_time": "0-11-28.380000",
+                "url": "https://drive.google.com/file/d/1i6g_lMgtrmd42ohVpBXo5G-AEOMiR4gk/view?usp=drivesdk"
+            },
+            {
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "I welcome the challenge, Stylish Ruffian Slayer!",
+                "line": 133,
+                "start_time": "0-11-29.460000",
+                "end_time": "0-11-33.500000",
+                "url": "https://drive.google.com/file/d/1jNdDVA_gmVRtSRl2wUu7Jjd8b1WUUfeS/view?usp=drivesdk"
+            },
+            {
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "Welcome to my crazy, messed up world!",
+                "line": 134,
+                "start_time": "0-11-33.880000",
+                "end_time": "0-11-37.170000",
+                "url": "https://drive.google.com/file/d/1WB_lGFDAeTsieJpfQpq-TNEymA5DGG2a/view?usp=drivesdk"
+            },
+            {
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "I can't go back now that I know...",
+                "line": 135,
+                "start_time": "0-11-42.500000",
+                "end_time": "0-11-45.130000",
+                "url": "https://drive.google.com/file/d/1WHjBiqv0Kr76dFyPFkGqXdlnmnwwRfnm/view?usp=drivesdk"
+            },
+            {
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "how good this feels!",
+                "line": 136,
+                "start_time": "0-11-47.040000",
+                "end_time": "0-11-49.500000",
+                "url": "https://drive.google.com/file/d/1OS7HRT7i7vcxFrELTGohkNy3B4rxaGMK/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "Crowbars are great, Mr. Ex-Military.",
+                "line": 137,
+                "start_time": "0-11-57.250000",
+                "end_time": "0-11-59.420000",
+                "url": "https://drive.google.com/file/d/1cNmNyv1LbbieHc3MkAL4TxPj2e2WF3SN/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "They're sturdy and don't break.",
+                "line": 138,
+                "start_time": "0-11-59.670000",
+                "end_time": "0-12-01.130000",
+                "url": "https://drive.google.com/file/d/1nmNBugB3LzX1VE7jOhal5osACzzmfzzl/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "They're easy to carry around.",
+                "line": 139,
+                "start_time": "0-12-01.130000",
+                "end_time": "0-12-02.630000",
+                "url": "https://drive.google.com/file/d/1sWyTuN9Uq_8tOTHTjbmXh6HOGgow_LR6/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "If you end up in police questioning, you might be able to make excuses.",
+                "line": 140,
+                "start_time": "0-12-02.630000",
+                "end_time": "0-12-05.500000",
+                "url": "https://drive.google.com/file/d/1gWSYkxfY7EYaZ2qpf6yN1EjCQNCYUHLm/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "And best of all...",
+                "line": 141,
+                "start_time": "0-12-06.790000",
+                "end_time": "0-12-08.080000",
+                "url": "https://drive.google.com/file/d/1phB-ik6CUKueULf-LkSZHtoud_eaQrEq/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "you can use them like tonfa batons.",
+                "line": 142,
+                "start_time": "0-12-08.670000",
+                "end_time": "0-12-10.880000",
+                "url": "https://drive.google.com/file/d/1F_9Gt_35ngA5Owpkj_vmVk1s5A0ZGYKS/view?usp=drivesdk"
+            },
+            {
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "Dammit!",
+                "line": 143,
+                "start_time": "0-12-11.130000",
+                "end_time": "0-12-12.330000",
+                "url": "https://drive.google.com/file/d/1zxMTtrhXweNM-If6uzynpyu9sjyXFUWQ/view?usp=drivesdk"
+            },
+            {
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "You're definitely a good fighter.",
+                "line": 144,
+                "start_time": "0-12-12.330000",
+                "end_time": "0-12-14.130000",
+                "url": "https://drive.google.com/file/d/196r4uxWYQCEZVimj9t9BxsTF7M5tX835/view?usp=drivesdk"
+            },
+            {
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "But you have a major weakness.",
+                "line": 145,
+                "start_time": "0-12-14.130000",
+                "end_time": "0-12-15.830000",
+                "url": "https://drive.google.com/file/d/17Sc9ZomLS0wIIxZsnLAP3w8fKB2HG82g/view?usp=drivesdk"
+            },
+            {
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "And it's the fact that I'm big enough to crush you!",
+                "line": 146,
+                "start_time": "0-12-16.250000",
+                "end_time": "0-12-19.380000",
+                "url": "https://drive.google.com/file/d/14Bz8qlIXuSaIK6JOaNgvRrIz2B-tDZI1/view?usp=drivesdk"
+            },
+            {
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "I just have to protect my head and I'm fine,",
+                "line": 147,
+                "start_time": "0-12-23.960000",
+                "end_time": "0-12-26.460000",
+                "url": "https://drive.google.com/file/d/1kRLdJaI5Ub1Eqo8U9IiqEOeSyfQ3DnAz/view?usp=drivesdk"
+            },
+            {
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "but if you take one hit from me, you're done.",
+                "line": 148,
+                "start_time": "0-12-26.460000",
+                "end_time": "0-12-29.040000",
+                "url": "https://drive.google.com/file/d/1-pY6wQV2VvnODIpCIWWnBIgWeKaa3h6e/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "You make a good point.",
+                "line": 149,
+                "start_time": "0-12-29.630000",
+                "end_time": "0-12-30.880000",
+                "url": "https://drive.google.com/file/d/12GOD9JU2x-tNfajIlC6m8egkCxs5AOLj/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "At my current level, an ex-military guy is still a bit of a challenge.",
+                "line": 150,
+                "start_time": "0-12-31.790000",
+                "end_time": "0-12-35.080000",
+                "url": "https://drive.google.com/file/d/1BTin0ZMKTUkxwKjJYBAN8qUS16jucfdN/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "That's the reality.",
+                "line": 151,
+                "start_time": "0-12-35.460000",
+                "end_time": "0-12-36.920000",
+                "url": "https://drive.google.com/file/d/1boIz6fyL9GOatLAA08cj2loc3Ubq3jxd/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "So I should get a little more serious about this.",
+                "line": 152,
+                "start_time": "0-12-38.460000",
+                "end_time": "0-12-40.330000",
+                "url": "https://drive.google.com/file/d/1tncZ_Kot4zPTFpsO-QEFtEZXQ5h7QghN/view?usp=drivesdk"
+            },
+            {
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
                 "subtitle": "What?!",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1tgo6l6ZJu-Ovcg7_goMNY9Uw4b1Xo6hg/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Shinra & Tamaki (Tamaki)",
-                "subtitle": "What?!",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1tgo6l6ZJu-Ovcg7_goMNY9Uw4b1Xo6hg/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "I-If Captain Shinmon trains him, Cid will die!",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1TkRvsaua0y-RA3t1mC-qNbstcUxlLfWU/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Exactly! He was exhausted just from the morning work...!",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/10SeJZTkyLUrrfkyy2kePL64qN8uF0LYH/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "...Ahem. Leaving Cid's stamina aside...how strong are you, Benimaru?",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/1yGaB8SrFc_btOti5ucp5UAA8miu7dYpe/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "If you're going to train someone, you need to be in an appropriate position to do so.",
-                "line": 64,
-                "url": "https://drive.google.com/file/d/12sHIKm4JcX9ETUSKflWuPNrizw9MMSr0/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "There's no problem in that regard.",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/1Zxz02a6oFl3sAH_Axp21Ui0EaYmhsqMu/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Tamaki's right. Captain Shinmon is...the ultimate Fire Soldier.",
-                "line": 66,
-                "url": "https://drive.google.com/file/d/1IskUDgGMDjSjp5KQ2CcLVkrMTqDsB9W4/view?usp=drivesdk"
-            }
-        ],
-        "e4": [
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "This spot should do.",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/1DcXB8jTzCWqlOWFCYTZRa-AmqF7nTeDb/view?usp=drivesdk"
+                "line": 153,
+                "start_time": "0-12-45.330000",
+                "end_time": "0-12-46.540000",
+                "url": "https://drive.google.com/file/d/1Y5cMe_6Io20gq8TymjOAlBQAcdCmxsg6/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Um...Are we really doing this? I have no talent for swordsmanship, so I think this is pointless...",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/1xh0kQf6mSJCCKNzBvI4hw5eMf_BZgFw4/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Shut up. Swing your sword.",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/10zLTP1LHO_DTiPOGjYmbVXHFNHkI7ajh/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "I discovered the real potential of crowbars.",
+                "line": 154,
+                "start_time": "0-12-47.630000",
+                "end_time": "0-12-50.250000",
+                "url": "https://drive.google.com/file/d/1XlJBiUb-YrRHjRjUKsH8y22TrRYl7dc5/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(...Oh well. I guess I have to go along until Benimaru is satisfied.)",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/1aLqmKrSRm2BngGkMcWEqTlmpzDrMZVLA/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "They're shaped very much like tonfa.",
+                "line": 155,
+                "start_time": "0-12-50.250000",
+                "end_time": "0-12-52.290000",
+                "url": "https://drive.google.com/file/d/1Op8l6OTfc3rUx3Z3Ayl-ezN_OxJCVsRf/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Hyah. Hah.",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1UNgSwsRqgdNv3Fl62zjm2z1aaxkQAjko/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "That's not good enough.",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/18R7a3L4jR5MdA0hGL3TWrehGJxRqMtGt/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "They're heavy, sturdy, and portable.",
+                "line": 156,
+                "start_time": "0-12-52.290000",
+                "end_time": "0-12-55.210000",
+                "url": "https://drive.google.com/file/d/1NvHoQHTm6kP5_TqaoPPhgE1mnl4YlhG-/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "I'm swinging it the best I can...!",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1qcf-2Vda5jJwmOllZPfSXpZYOuViRzaM/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "No excuses. Continue.",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/18Ezx6VR56o8g0Nl6x97atqFsfVosEc9b/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "Everything about them has immense potential.",
+                "line": 157,
+                "start_time": "0-12-55.210000",
+                "end_time": "0-12-57.830000",
+                "url": "https://drive.google.com/file/d/1dvtDL-sOOYbHmyPAfaoZg2OE2UNQY3MF/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...Yes, sir...",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/1J2lLH3BfK0GoIVUVlOzhdsMiogjQp8Fp/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "Then I made it a regular practice to beat up the motorcycle gangs",
+                "line": 158,
+                "start_time": "0-12-58.130000",
+                "end_time": "0-13-01.330000",
+                "url": "https://drive.google.com/file/d/1MrUHL-YL42wHu-0tfSQ1gCzUYz4TFde1/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "*pant, pant* Are we gonna keep on going...?",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/19KwC669QHkDwOR5P96EGM8DAgJLPvRcQ/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "that disturbed the peace night after night.",
+                "line": 159,
+                "start_time": "0-13-01.330000",
+                "end_time": "0-13-02.790000",
+                "url": "https://drive.google.com/file/d/1TjFBG1ZyY49TPu5aWV03b4ZPXnaUQuUv/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Yeah.",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/1UWs2C9t4UyMGQxPkqRUiSE6ULSMzqL3u/view?usp=drivesdk"
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "You...",
+                "line": 160,
+                "start_time": "0-13-06.460000",
+                "end_time": "0-13-07.460000",
+                "url": "https://drive.google.com/file/d/1-LqOeSFLRUhDOu010L8ypN2eJ-oYTKlW/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "I can't go on... My arms won't move anymore... This is too tough... I wanna go home...!!!",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1-uonyL9t5T9_eaGQpwP8xUuVdxrzriNR/view?usp=drivesdk"
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "You beat up bikers with a crowbar?",
+                "line": 161,
+                "start_time": "0-13-07.960000",
+                "end_time": "0-13-11.080000",
+                "url": "https://drive.google.com/file/d/1SJW8CeYuAYVAKH-_Rmpn5WGWzcNquxAZ/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Shut up and get serious.",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/16hx39PaACdgJ12Lw992TjKq_zRj7IttW/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "You're not listening to anything I'm saying...",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/138vBoAdcU_fOfSVVeLiJl-G-XqLSp2x5/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "It's completely dark now... They're still not back.",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1eYnNKJj1Vz09-Jk7-Ec_mtAYg-x6jWun/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "... I'm starting to get worried. Should we go check on them?",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1FVoOFGGmupDW84AQPjOOyTDVpX5wJp7G/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Could you please wait a little longer? Captain Shinmon's actions are hard to understand...but I'm sure it's for a good reason.",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1ufvEiSw8-dTnahxEz2gtRsnf4Zk6I_mJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta & Epsilon (Beta)",
-                "subtitle": "...",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/12im0uSr2k_K-H2SpbuCNZ_4l8zerT52-/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Beta & Epsilon (Epsilon)",
-                "subtitle": "...",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/12im0uSr2k_K-H2SpbuCNZ_4l8zerT52-/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "You trust him a lot, don't you? If you insist, we'll wait a little longer.",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/1_x_K1Tfaz78nL-LrC6OMeFWRLXQ-lJ0q/view?usp=drivesdk"
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "You're the Balaclava Berserker?!",
+                "line": 162,
+                "start_time": "0-13-11.920000",
+                "end_time": "0-13-14.500000",
+                "url": "https://drive.google.com/file/d/1ayfmcUAQkYB7vTNvd-hpB-dzKPUY0g0M/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Umm... Don't you think it's time we head back?",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1pIf5tTzk8-Buu4qqnge6jfuqn8sdgU3W/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...When we first met, I asked if you were hiding something.",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1WfgmnmqIg0KwzxbPofGxYJBPF72aZglj/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "They recently started wearing helmets,",
+                "line": 163,
+                "start_time": "0-13-16.710000",
+                "end_time": "0-13-19.580000",
+                "url": "https://drive.google.com/file/d/1NJH4_5UhtvmYQdJ8Y0asl6M58Zc9DSDu/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "R-Right...",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1QWGaugpOrBpSlVIe2k9eqTzWLp8sYZFx/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Now I know. What you're hiding is...",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1rSApk2lQ6cRyeFluqAjyPbMzCIQpjJgP/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...overwhelming power.",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1-_0lmRUHYKDXSBowd48Jfwgbxc_4O-bb/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "so it wouldn't kill them if I hit them in the head.",
+                "line": 164,
+                "start_time": "0-13-19.920000",
+                "end_time": "0-13-22.540000",
+                "url": "https://drive.google.com/file/d/1PvJ1LSuJKIu7zGANisDKDWnxr0I4DAXJ/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1slLWgMCKK1f_aCwKLnb_GkMhXdruyqns/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "I don't know why you're holding back, but...show me your true power.",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/11nAvVJ-Puy63CIbUq-Gw_GQbpYezxgmZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "If you won't do it willingly, I'll make you. Only by clashing can we understand each other.",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1qrLeySO-QIY3qvE1WtIr9onzoaCF_Tc-/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "And...",
+                "line": 165,
+                "start_time": "0-13-23.630000",
+                "end_time": "0-13-24.630000",
+                "url": "https://drive.google.com/file/d/1MMQ22PxQXipqpfpCB7yyQbu-PbngoqRL/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Huh? Y-You want to fight?!",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1O_3teQnfo_4sMoRSrsePGZ-vNJ089R6Z/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "That's right.",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1kbcV3t1Tc-wOWs-jmqPBYxgkK1-CvJXe/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "the solution I found to that problem...",
+                "line": 166,
+                "start_time": "0-13-24.920000",
+                "end_time": "0-13-27.210000",
+                "url": "https://drive.google.com/file/d/1kihUp3dAqmVhcvSMcDSne9u4-FQB60JQ/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(It's troublesome, but maybe he's the type...to communicate through fighting?)",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1fBhaLzLj6M2u8hRJd-HIEx-78GUh4F3x/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "was to stop using the crowbars like tonfa.",
+                "line": 167,
+                "start_time": "0-13-29.960000",
+                "end_time": "0-13-32.580000",
+                "url": "https://drive.google.com/file/d/1nPO8orHHq_sZA6UDETwOP0tV6IHEYBOl/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(...I see, fine then! A glimpse of power is important for a shadowbroker move!)",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/1cV6yiS4rJJQNmzJrrtRa_JXBcpiRJjwH/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Here goes.",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/1uOnfM7egThe5Nv3wPHxhr0GfbGngND5F/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Iai Hand-Sword, First Form... \"Fire Moon\"!",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1f2tMW7UpCUjTcJsE7qL0OG5ynpdxjMvB/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "Because using it like a regular club...",
+                "line": 168,
+                "start_time": "0-13-36.330000",
+                "end_time": "0-13-38.580000",
+                "url": "https://drive.google.com/file/d/1lzCwmJOphFdHG-tmp0jef-WUfvImTjEz/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "The crimson flames burn away the night's veil...but even so, the shadow remains.",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/141OE-Po3T0H65xoiK1JKa48MQU6pean0/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...So that's your true form.",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/1OV0vLfkDwhpl654hP9OxP_GLYoe-uTAB/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "...is more effective!",
+                "line": 169,
+                "start_time": "0-13-40.040000",
+                "end_time": "0-13-41.290000",
+                "url": "https://drive.google.com/file/d/1bJw6f0UJA9BSNOZwipHZRvb70fj0fJY6/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "Sorry to keep you waiting. Now, let's begin.",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1SSfHbsTuJA1AyyjcuP2rKGZZCoOdLGBz/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Heh... A worthy opponent. Come at me with everything you've got!",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/1Cxky0UJ3w7pfQa4MMr6WNgmGahvRHhza/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...Hmph. Well, guess we can call it a day.",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1RHz9vYcLd1yO7PI6CM8GaVNstt8k4aq2/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "That is the potential of a crowbar.",
+                "line": 170,
+                "start_time": "0-13-43.880000",
+                "end_time": "0-13-46",
+                "url": "https://drive.google.com/file/d/1NPPpKfM-GtB5am134Qgo-2WawySvgvVZ/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "Had enough?",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1tr8Wo7N4rfzW4RLA5-mbPSgdQl4NMqNF/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Yeah, that's enough. Fighting you told me everything I needed to know.",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1Jh_kT_Qx_GjhNva02V31c6aheXavPtmo/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...Well, I'll be counting on you until we get back to our world.",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1jyj-hIPsy6ysrU0diCffKrA1hmw5uJ_Z/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "The trick is to hit with the heel of the \"L...\"",
+                "line": 171,
+                "start_time": "0-13-46.580000",
+                "end_time": "0-13-48.750000",
+                "url": "https://drive.google.com/file/d/1kwK0tqnPdIxDufbqVXfT6GYutFjPNq_E/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Uh, sure... Likewise.",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1O2XxqgRjN9l6MjF7nTuxZFW7WNeXb_mn/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "...because it magnifies the shock.",
+                "line": 172,
+                "start_time": "0-13-51.040000",
+                "end_time": "0-13-53.170000",
+                "url": "https://drive.google.com/file/d/1pKM1nIGooGJQ3B8HCI7-Ctwircu0Mv0L/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Right then, let's head back.",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1_-0Yle88DpSuLnqMpWscfm2eUBrD2OHo/view?usp=drivesdk"
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "N-No, don't!",
+                "line": 173,
+                "start_time": "0-13-57.380000",
+                "end_time": "0-13-58.960000",
+                "url": "https://drive.google.com/file/d/1MM_bD9VoCoLcJeq3hUNP7uoA5evxVC6O/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Th-This guy... He really is...brusque!)",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1ZMAYRkUgS_6y_bzfntfHBXm-g2_oYLZG/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...Huh? Isn't the sky over there kinda red...?",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1PHU-J7yjnhM9xNR_aXG2XPVJSRFw5Gdv/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...It's an Infernal. Let's hurry.",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1Tc8vpjpJXqs2a_zkenBgM5DL7RyDyUzN/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Shinra, Tamaki. Report the situation.",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1Pz4OfWw6Jsvu-Hzqzm9QJRKzXIadkT0g/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Yes, sir! An Infernal just showed up. We rushed to the scene and have already put it to rest!",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1CIoiyHJ6h3Rt4-qYk65PBMBmyEnUfQeB/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "That was quick.",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1E9nR3fH5gooSmTF7MapkvCymqlRpez2U/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "It's thanks to Natsume and Shiron! They're both incredible!",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1rhRVdhXDo_LqKrfb5AHZPA1c4Gt7BkSn/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "No, no, it's thanks to your excellent teaching.",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1UwHlBWCRJDZqBDqRc1sd0umTcfPDibFI/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "R-Right... Hehe...",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1_JQptgsOt5eoj5TGcuZDi90CLaMHzsIn/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "The damage was minimal as well. Not bad, huh?",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/16kHgmCvQT32ACLazhNufxRGFEGaxe9yn/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "...",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1lwvktHc92zpYpQH82A4m6oMQin2Xb8F8/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Shinra, what's wrong?",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1-i7ianSTHYEyC824ZZnaRTGd7HwRBhgf/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Since we came here, we've put several Infernals to rest.",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1QGmGDfmoAC2-jSjPtplNduOLZlP22sXX/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Maybe it's just my imagination, but...they seem to be getting stronger.",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1xeIPFpedGsDHhwdqDrMaq-3yRY9qHU2h/view?usp=drivesdk"
-            }
-        ],
-        "e5": [
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "...L\u00e1tom.",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/1braGzEKDlZPwFO0aABeLn4HtKgBDtGx3/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "*sigh* That's the second one today. Something feels off...",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/1GBvde_uimU6hHe8tJe0CDCpvsDup5Nyp/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "This world didn't have Spontaneous Human Combustion or Infernals, right? Why are they suddenly showing up around us?",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1fGRJPTsCtfZkcDX__JO95T4-KqiBeOtZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Infernals started showing up near us...after we joined up with you, Natsume, and Shiron.",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/1sMeL9FzPT_wGOmQgOv3hwTAybnQT1p0k/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "And their appearances during my and Cid's absences are suspicious.",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1DC8OoP2ABgqi7BaXUvZs9l1wNQSZMNpj/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Right... It's almost like someone's targeting us.",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/1FXQNuBin2ZICs3X4Ad0F3pmwr-gx4wGZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "But the cause of Spontaneous Human Combustion is unknown, right? Can it really be controlled that way?",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1886wyNu3RCkDydtLodXl-SHB2jfhYzMO/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Controlling Spontaneous Human Combustion... It can't be!",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/1uWjQu4MWbW4Ik0t0SXw8ZBUdJzXrwcbX/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Could the \"Bug\" be in this world as well...?",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/1OcpbU_Gi-fZCJrOoaO5-2TTuTD-K8Mtz/view?usp=drivesdk"
+                "name": "Kidnapper A",
+                "name_variant": "Kidnapper A",
+                "subtitle": "Stop...",
+                "line": 174,
+                "start_time": "0-14-04.670000",
+                "end_time": "0-14-05.880000",
+                "url": "https://drive.google.com/file/d/12A9xdm_J8yve3eyIuYh9d8QAesX7wnJB/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "What's that?",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/11KCZnxlY0Fcrqkr-aDFMW3OB3kB6HWi1/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "Next time, be more careful walking home.",
+                "line": 175,
+                "start_time": "0-14-50.830000",
+                "end_time": "0-14-53",
+                "url": "https://drive.google.com/file/d/1Xf6yNgx-NF5oVA3tf_WZtrq9sygR7-NM/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "We don't know much either. But with that \"Bug,\" Spontaneous Human Combustion can be artificially caused.",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/1vf0iicrTn1P7Gjpea1aWyfJoDr3cr6XF/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "In our world, a certain individual used that \"Bug\" to create Infernals... Ohh, I don't even want to remember it!",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1BHcR13bqBCF9KmxqWl7ZnMzTVg0_Vwv_/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "I see... Someone here might also be using this \"Bug.\"",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1ktPSbKBQ707oIDsF_QjXzNmZZl5sB3Z2/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "So, why are we being targeted?",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/143AM_hMQKswz_bcIThGWHTW0xoThedtq/view?usp=drivesdk"
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "What?",
+                "line": 176,
+                "start_time": "0-15-09.630000",
+                "end_time": "0-15-10.830000",
+                "url": "https://drive.google.com/file/d/18j_OP2rEsoqKPUZ1LEO2WUnHuBpGpu4F/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Hmm...",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1WgImG-MAdzk20mg7wBsqRmQa0julzRzx/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "It's no good.",
+                "line": 177,
+                "start_time": "0-15-17.210000",
+                "end_time": "0-15-18.420000",
+                "url": "https://drive.google.com/file/d/1anzyRmkb2lZ6dMYIGZvmLlV4T_2MlY-Q/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(If I think about it realistically...maybe it's be a business rival of Mitsugoshi? After all, Beta and Epsilon introduced themselves as Mitsugoshi employees...)",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1F5OIzMrr2pqSQcnn4NGVx5q_ty-NfMr-/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "If that's how I do against an ex-soldier, I'll never make it.",
+                "line": 178,
+                "start_time": "0-15-18.750000",
+                "end_time": "0-15-22.540000",
+                "url": "https://drive.google.com/file/d/1xJiowknNFOCuGtTzZ8urUGdw4DWj21S5/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(But with them and Shinra around, the culprits won't show themselves that easily. In that case\u2014)",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1NamnQ0TSTesZbA7IPko3LhXT5RCpGjhG/view?usp=drivesdk"
+                "name_variant": "Stylish Ruffian Slayer",
+                "subtitle": "I'll never be the Eminence in Shadow.",
+                "line": 179,
+                "start_time": "0-15-24.380000",
+                "end_time": "0-15-26.080000",
+                "url": "https://drive.google.com/file/d/1BG7Tup91D3s4_gJvv2sUtO2dkqBSd7W7/view?usp=drivesdk"
+            },
+            {
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "After that, I called the police, and things got pretty hectic.",
+                "line": 180,
+                "start_time": "0-15-29.710000",
+                "end_time": "0-15-33.710000",
+                "url": "https://drive.google.com/file/d/1FXX0Mj_BtPGGI0tqeO67mZGDR-xggcQh/view?usp=drivesdk"
+            },
+            {
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "But Daddy pulled some strings,",
+                "line": 181,
+                "start_time": "0-15-34.290000",
+                "end_time": "0-15-35.960000",
+                "url": "https://drive.google.com/file/d/1TDNbEmhCMOlHRl16JMKKgBh6uOSo2HwK/view?usp=drivesdk"
+            },
+            {
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "and the public never found out about what happened.",
+                "line": 182,
+                "start_time": "0-15-35.960000",
+                "end_time": "0-15-38.460000",
+                "url": "https://drive.google.com/file/d/11xJx6DUTq0Y93xQsioctT4EPJwkk8iiS/view?usp=drivesdk"
+            },
+            {
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "In the end, I never did discover the true identity of the Stylish Ruffian Slayer.",
+                "line": 183,
+                "start_time": "0-15-39.210000",
+                "end_time": "0-15-44.830000",
+                "url": "https://drive.google.com/file/d/1wulwORPwZ1bngG6C4NuGYrY1WCAy9jCG/view?usp=drivesdk"
+            },
+            {
+                "name": "Classmate",
+                "name_variant": "Classmate",
+                "subtitle": "Good morning, Nishino-san!",
+                "line": 184,
+                "start_time": "0-15-49.960000",
+                "end_time": "0-15-51.250000",
+                "url": "https://drive.google.com/file/d/1X_so33VBVi4xGr-nlivrm3LZh_-twRCz/view?usp=drivesdk"
+            },
+            {
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Good morning to you, too!",
+                "line": 185,
+                "start_time": "0-15-51.250000",
+                "end_time": "0-15-53.040000",
+                "url": "https://drive.google.com/file/d/15HbCkWWwQAI3BQeaAKvexrYDyDyswVB7/view?usp=drivesdk"
+            },
+            {
+                "name": "Classmate",
+                "name_variant": "Classmate",
+                "subtitle": "Good morning, Senpai!",
+                "line": 186,
+                "start_time": "0-15-53.040000",
+                "end_time": "0-15-54.920000",
+                "url": "https://drive.google.com/file/d/1C1l1XKfCDFgkVvI0KASlYGioHdXP6Sv0/view?usp=drivesdk"
+            },
+            {
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Thank you, good morning.",
+                "line": 187,
+                "start_time": "0-15-54.920000",
+                "end_time": "0-15-56.630000",
+                "url": "https://drive.google.com/file/d/1UKBuMphP9pCKaD35eLLBxg2ABcoBgNcU/view?usp=drivesdk"
+            },
+            {
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Good morning, Kageno-kun.",
+                "line": 188,
+                "start_time": "0-16-04.330000",
+                "end_time": "0-16-05.790000",
+                "url": "https://drive.google.com/file/d/1x6LI7YUUvVdkT6dctpooUbXvsdfjxvd7/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "I have an idea... How about we set a trap for the culprit?",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1W1Ww-86un7UKxpUEVQvHo5l-46979SRW/view?usp=drivesdk"
+                "name_variant": "Minoru Kageno",
+                "subtitle": "Good morning,",
+                "line": 189,
+                "start_time": "0-16-07.920000",
+                "end_time": "0-16-09.130000",
+                "url": "https://drive.google.com/file/d/1rB66bqGdK86vrm86sqxC30Ci7QQvfl6t/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "*sigh* I'm exhausted...",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/1g9RnSGU3Q-Gl3nuQWr66Fa02v6SyL7Wj/view?usp=drivesdk"
+                "name_variant": "Minoru Kageno",
+                "subtitle": "Nishino-san.",
+                "line": 190,
+                "start_time": "0-16-09.210000",
+                "end_time": "0-16-10",
+                "url": "https://drive.google.com/file/d/1KoSW0VcTUqCGX5MmgrncgZCTsKyTpc4L/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Um...are you alone right now?",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1nBFsUQTXUl3cBhoqHTuCM0fidFX65GAm/view?usp=drivesdk"
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "Okay, okay, my name isn't Nishino-",
+                "line": 191,
+                "start_time": "0-16-11.250000",
+                "end_time": "0-16-13.710000",
+                "url": "https://drive.google.com/file/d/18aaMgL1c9RAroZrbT0QrssNT6YPUE3H1/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Yeah, sort of. Everyone else is out investigating, and I'm on watch duty.",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1rkUQbN1juKEyWRoH0-o3wagQoRjVn3S8/view?usp=drivesdk"
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "He didn't get my name wrong.",
+                "line": 192,
+                "start_time": "0-16-15.710000",
+                "end_time": "0-16-18.130000",
+                "url": "https://drive.google.com/file/d/1Aqa9HU9cT_cE6yFD5Mh0tjIv_nCoufv0/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "I see, I see... How convenient.",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1dq-zfvZASDZOP_mqImJJDw6IDR99zjXd/view?usp=drivesdk"
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "And I got the feeling his eyes were looking directly at me.",
+                "line": 193,
+                "start_time": "0-16-18.670000",
+                "end_time": "0-16-22.460000",
+                "url": "https://drive.google.com/file/d/1FyBwKD3JAAuRrif4kTMqRI64QaBx9M6b/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "If you turn into an Infernal, the others will be confused. I don't expect much from you, but at least try to buy me some time\u2014",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1AMHx_XygPsjg0929ySEdvRIj9cC5m1k8/view?usp=drivesdk"
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "\"Kageno-kun is like me. He lives his life hiding behind a mask.\"",
+                "line": 194,
+                "start_time": "0-16-23.250000",
+                "end_time": "0-16-28.210000",
+                "url": "https://drive.google.com/file/d/1V53i1RMhb-fjrnJWIV2Z_3kRHdXEeh_U/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Not on my watch!",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/13evCJTBqapRQCAk5JIGa2eq-w6vakpvK/view?usp=drivesdk"
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "That's the thought that crossed my mind.",
+                "line": 195,
+                "start_time": "0-16-28.710000",
+                "end_time": "0-16-30.710000",
+                "url": "https://drive.google.com/file/d/15_jAOJFiazbp8FuVfxLYAKJeGDLB5NJL/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Ughh...?! From where...?!",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1__PC5-GhXdL4F2idIFH8mNChAuPTLh8Z/view?usp=drivesdk"
+                "name": "Akane Nishino",
+                "name_variant": "Akane Nishino",
+                "subtitle": "But now there's no way to ever know for sure.",
+                "line": 196,
+                "start_time": "0-16-31.460000",
+                "end_time": "0-16-34.330000",
+                "url": "https://drive.google.com/file/d/1ivJRNUKYDh5_K97s6hcWb_zi0k3rsGpO/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Master... Cid, are you alright?!",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/1p8fkXwzOvA1Zq8hzMXqP4_26Mg9ZxBOd/view?usp=drivesdk"
+                "name": "News Reporter",
+                "name_variant": "News Reporter",
+                "subtitle": "On to our next story.",
+                "line": 197,
+                "start_time": "0-16-36.500000",
+                "end_time": "0-16-37.750000",
+                "url": "https://drive.google.com/file/d/10haUWCBptIcXXrUN4WV5IZlQ0EqjnB3V/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Yeah, I'm fine. Nothing to worry about.",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1a0JKhWk6Slrhd2r8iMNQ3cUa8qghbHrr/view?usp=drivesdk"
+                "name": "News Reporter",
+                "name_variant": "News Reporter",
+                "subtitle": "Just before dawn this morning, on a city road in Sakurazaka,",
+                "line": 198,
+                "start_time": "0-16-38.170000",
+                "end_time": "0-16-41.330000",
+                "url": "https://drive.google.com/file/d/1iwJVLTV7Y-C41x8Ln9JJyQLlChH9RCAi/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Whew... Th-Thank goodness...! Shinra, are you okay?",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1BiQVohUxEyifC9Grq_a1Uu-mTMc5B7U-/view?usp=drivesdk"
+                "name": "News Reporter",
+                "name_variant": "News Reporter",
+                "subtitle": "local high school student Minoru Kageno-san was hit by a truck.",
+                "line": 199,
+                "start_time": "0-16-41.330000",
+                "end_time": "0-16-46",
+                "url": "https://drive.google.com/file/d/1zAHueNSRikWNfIQmqi55OCkkWHkxJiUJ/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Y-Yeah! A hero must always be ready to save their comrades!",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1qMBosNg4Xx-hnJx0FEVd1qDcqXqnkB0U/view?usp=drivesdk"
+                "name": "News Reporter",
+                "name_variant": "News Reporter",
+                "subtitle": "He did not survive.",
+                "line": 200,
+                "start_time": "0-16-46",
+                "end_time": "0-16-47.250000",
+                "url": "https://drive.google.com/file/d/12-4Jw58be-Qitloo19vS5SxZRRdtTgt0/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "(What was that sensation just now...? I feel like I've felt it before... But right now\u2014)",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1y-7mlNKI1NxUT3y1ABtdRzUwzgrjq5O1/view?usp=drivesdk"
+                "name": "News Reporter",
+                "name_variant": "News Reporter",
+                "subtitle": "The police have determined that the driver was not watching the road,",
+                "line": 201,
+                "start_time": "0-16-47.670000",
+                "end_time": "0-16-51.790000",
+                "url": "https://drive.google.com/file/d/1OzD4dUanyp_SL-mLJptYajehH0MU-EwL/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Kanen...so you were the one using the \"Bug,\" huh?!",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/1N6r9pQfAeB1exZULfs1d-vTkXBRxdNQF/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Don't try to deny it now. We saw the \"Bug\" in that bottle and your attempt to use it.",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/1_LWTf9PlImREjNmT5BCkAq2vPiGY9S-f/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "...You set me up...?!",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1JtP8qlb12n_IxzxHax2NSQMCp-u5iEjh/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "I'll be the bait.",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/1LL4xfffr7kizPUXOUROnEQRuPIlbIMw6/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...What?",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/1lD5kxCgdcVN1wT0_KGEjfZotnqX5a4oz/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "The enemy is after Natsume and Shiron, but I'm assuming they can't attack them directly. So, to confuse the two of them...",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1E9rIu9J2CsWqS5gdrrujHiGtoxc0kvU7/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "They want to turn you, their companion, into an Infernal...?!",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/19BF58db1QFFnsWXgslWEQ3u6ZiLmy4fM/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "No way, that's too dangerous!",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1dIcywojPXDmKPRr1rBjik6lvGfrGeLrM/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...He'll be fine.",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1lNVrQRQeVHRvq8IH9ADLu5nG-qAOBgFX/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "How can you agree with him, Captain Shinmon...?!",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1OyuV9IjKPWMWEbrxl1RepsVdbBUSTtjt/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "If we don't make it in time, Cid might really turn into an Infernal!",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1f7Oo591X4LVa3c3p97UPxe0nGaQt861A/view?usp=drivesdk"
+                "name": "News Reporter",
+                "name_variant": "News Reporter",
+                "subtitle": "and have begun to investigate-",
+                "line": 202,
+                "start_time": "0-16-51.790000",
+                "end_time": "0-16-53.540000",
+                "url": "https://drive.google.com/file/d/1Wa6RDDIj4UCyluaGVNRAcyGbfQOdkZve/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "You'll make it.",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1lSWK-B8nR1igq3KVH51UQmqkj1Q0r1e5/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "...",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1as1aKgKjSoPF7dcL5BLpol6ToEpa6xjt/view?usp=drivesdk"
+                "name_variant": "Minoru Kageno",
+                "subtitle": "I don't remember how it started.",
+                "line": 203,
+                "start_time": "0-17-57.040000",
+                "end_time": "0-17-59.380000",
+                "url": "https://drive.google.com/file/d/1ZoiNG-Ig_Y5LWJM1utPRCqAIbcvlY9EI/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "I believe in you guys. Let's end this before anyone else gets hurt.",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1Hf7jjr2rnmywT_wxuwRF2_sH1sUPhPQI/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "... Fine. If you're that determined...I'll accept. Let's do it.",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1cgqT5u4YIGqVUglWYAI9JVIN-AY05Qvl/view?usp=drivesdk"
+                "name_variant": "Minoru Kageno",
+                "subtitle": "As far back as I can remember, it's what I always wanted to be.",
+                "line": 204,
+                "start_time": "0-18-00.210000",
+                "end_time": "0-18-03.670000",
+                "url": "https://drive.google.com/file/d/1Ij_Kbx1EjmpFFRsvQ1ibLhHpsnqcOt1G/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(My job is to highlight the hero...! Make my rescue flashy, Shinra!)",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/12euJkAss5xiAs0bSTRwrQ3wTMUkVvzck/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Are you two okay with this, Natsume, Shiron...?",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1cWbO414OS5X5PUtUZYx9HElZW_9ezJGa/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "...I'm honestly really worried. It's frustrating to leave it to him like this. But\u2014",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1pWdgTvnLClEMe3WIhPiPL23rZPCrgGob/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "We have no choice but to trust him.",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1pp6CQOlaMX8Rw1XLTRHzpk-uCpK5-y0A/view?usp=drivesdk"
+                "name_variant": "Minoru Kageno",
+                "subtitle": "Like how everybody dreams of being a hero when they're a kid.",
+                "line": 205,
+                "start_time": "0-18-04.380000",
+                "end_time": "0-18-07.710000",
+                "url": "https://drive.google.com/file/d/1HArfiKGzjgcUVuHdchSKbuhaYevStx0e/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Thank you. Alright, everyone, I'm counting on you!",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1xdkzMuOTAKd1iu9QT-tbFikfwBrncJ7q/view?usp=drivesdk"
+                "name_variant": "Minoru Kageno",
+                "subtitle": "That's what I wanted to be.",
+                "line": 206,
+                "start_time": "0-18-08.170000",
+                "end_time": "0-18-10.170000",
+                "url": "https://drive.google.com/file/d/1WQm9OcPhOPbw7u9m-ICIJtQt2U035PB5/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(...Wait, huh? Am I kinda standing out too much?)",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1rR3_Mi3ZQRk-Y9JM8PiuYt_vVb7ZHfkD/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "The moment you targeted him, your fate was sealed. It's over.",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1Kexjd2xwe5vRyMTa7U5VX8fAGOm5OUI8/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "...I knew it wouldn't be so straightforward when it comes to the Shadow Garden...",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1F7pOYjabvt2rvOTGaUzJF8etid98H-eh/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "...So, you're affiliated with the Cult after all.",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1lMg6tnwdpt0fvwFhqoMAoGRR-MnJObAi/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Indeed. I'm Doctor Kanen, First Child of the Cult of Diablos.",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1vggA4hsndTra9SXvT-RM0Dz2R-G_xnUL/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "The Cult of Diablos? And what is the Shadow Garden...?",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1zRl--6HV-nGZErg06dBZvsGCS4eMHaY3/view?usp=drivesdk"
+                "name_variant": "Minoru Kageno",
+                "subtitle": "But what made me different from other kids,",
+                "line": 207,
+                "start_time": "0-18-12",
+                "end_time": "0-18-14.960000",
+                "url": "https://drive.google.com/file/d/1WjK56wMChb2OQecfqDK8ybUhn5jD6z1Q/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Of course they're confused. Wait, when did they become extras...?)",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1rJgWUAsW-Sm-s2S0oOHsYF2YEjw8ZjKh/view?usp=drivesdk"
+                "name_variant": "Minoru Kageno",
+                "subtitle": "is that my passion was far from a temporary phase.",
+                "line": 208,
+                "start_time": "0-18-14.960000",
+                "end_time": "0-18-18.460000",
+                "url": "https://drive.google.com/file/d/1Z4WAxd5-W5ObiUXqzNI3vRBo1r2f206h/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "If you're with the Cult, then that simplifies things. We'll kill you and end all of this.",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1CpgwwZTKDqceXyfbSNuv9opR-yWcFp-y/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "It kept burning, deep, deep inside my heart.",
+                "line": 209,
+                "start_time": "0-18-18.750000",
+                "end_time": "0-18-21.330000",
+                "url": "https://drive.google.com/file/d/1lza8ZvLeHrFwQCtYVIHjg3YgQV_fZqG-/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Huh...? Kill...?!",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/16kYj5qq0eprxxyem4DKwviCjTuDsn2yZ/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "The flame never went out. It kept driving me forward.",
+                "line": 210,
+                "start_time": "0-18-21.330000",
+                "end_time": "0-18-25.210000",
+                "url": "https://drive.google.com/file/d/12UPWaY3vh6PcZFfcJV0M6v7bxXTzhI1y/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "H-Hold on! I don't really get what's going on, but can't we just capture her?!",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1xtAGT3GIZ8ui9bUuCEyzJIOA32WFY_Ve/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "I did everything I could to master every skill I needed to be stronger.",
+                "line": 211,
+                "start_time": "0-18-26.170000",
+                "end_time": "0-18-30.330000",
+                "url": "https://drive.google.com/file/d/1wfo89UG6RXkwZIIT62fUlurRgcYgILHW/view?usp=drivesdk"
             },
             {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "I'm sorry, but please don't get involved. This is our problem.",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/11HurUUtii0FQVR468h7-j85E3ifnVu_k/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "At school, I was the stubbornly ordinary,",
+                "line": 212,
+                "start_time": "0-18-31.330000",
+                "end_time": "0-18-33.750000",
+                "url": "https://drive.google.com/file/d/1ZW4mG-m-8z1mLood2a78EfzkrgPMeSds/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Shinra, Tamaki...! It's true that I used the \"Bug\" to cause harm, but I'm ready to atone for my sins!",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1PqYCj4pf3Vy0GQOCQgJ2W-Ui6B9MRW_G/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "never conspicuous, utterly harmless, Background Character A.",
+                "line": 213,
+                "start_time": "0-18-33.750000",
+                "end_time": "0-18-36.920000",
+                "url": "https://drive.google.com/file/d/1jpLyzGf3sS5e6H5B807l0xwwHQ_iXDXZ/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "If you let me die here, you won't be able to return to your world... Are you okay with that?!",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/1dmMmtP2LhnPMdOxar_Jmqn7kkI0Lsrbd/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "But behind the mask, I gave everything to my training.",
+                "line": 214,
+                "start_time": "0-18-37.330000",
+                "end_time": "0-18-40.630000",
+                "url": "https://drive.google.com/file/d/1IYm6AKelq6R1gRIYGv-FzvpPH1HU7RR7/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "He's just trying to buy time. Don't listen to this man's nonsense.",
-                "line": 64,
-                "url": "https://drive.google.com/file/d/1AvE-smKvzbgh0FbbvmdKEYBO-G48kGMI/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "As everyone around me grew up and forgot about the heroes they dreamed of becoming,",
+                "line": 215,
+                "start_time": "0-18-41.040000",
+                "end_time": "0-18-46.250000",
+                "url": "https://drive.google.com/file/d/1JnP9nlxUPCgBYzzCmbofoleZzmR_fvoN/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "I'm a researcher! By studying the \"Bug,\" I can help you and your friends!",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/1OvvLNJ1IVgTOGCWr-SAzw2V8G8HrOiwp/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "I started to feel a little - just a very little - sentimental.",
+                "line": 216,
+                "start_time": "0-18-46.250000",
+                "end_time": "0-18-51.080000",
+                "url": "https://drive.google.com/file/d/1KZxODZAjrU3AXZiOS9W6qwFl6XCQ3lrf/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "...I...",
-                "line": 66,
-                "url": "https://drive.google.com/file/d/1O77k_8Ijwvz2_v3jI-v7q-W51xV8FIbB/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "But I kept going, I kept working,",
+                "line": 217,
+                "start_time": "0-18-51.420000",
+                "end_time": "0-18-53.290000",
+                "url": "https://drive.google.com/file/d/1I-JZr2fq6RD3lZYKCnjZkMfb5ntE-tQp/view?usp=drivesdk"
             },
             {
-                "name": "Chuvi",
-                "name_variant": "Chuvi",
-                "subtitle": "Step away from Doctor Kanen, you Shadow Garden dogs!",
-                "line": 67,
-                "url": "https://drive.google.com/file/d/1FQ1tI5g2rCBQ43Tfkks8vcZ2PZElq5hF/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "for the day I knew would come.",
+                "line": 218,
+                "start_time": "0-18-54.330000",
+                "end_time": "0-18-56.920000",
+                "url": "https://drive.google.com/file/d/1LZ_CDROozgot8tMgEOl4vNx8Rz95gnqx/view?usp=drivesdk"
             },
             {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Wh-Who goes there?! At a time like this!",
-                "line": 68,
-                "url": "https://drive.google.com/file/d/1K5mpu_UqNjIS4TwsgWj-r5Iez4_f4Uja/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "But the time has come for me to face reality.",
+                "line": 219,
+                "start_time": "0-18-58.210000",
+                "end_time": "0-19-01.460000",
+                "url": "https://drive.google.com/file/d/1kll_eQCdr0K4jog25Ky4ACt13QlRIfJx/view?usp=drivesdk"
             },
             {
-                "name": "Chuvi",
-                "name_variant": "Chuvi",
-                "subtitle": "Doctor, I'll save\u2014",
-                "line": 69,
-                "url": "https://drive.google.com/file/d/1w_A_2QL9fUePZ8m5KNfNqK31j0_8rZUs/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "None of this is going to mean anything.",
+                "line": 220,
+                "start_time": "0-19-02.170000",
+                "end_time": "0-19-04.330000",
+                "url": "https://drive.google.com/file/d/1SqSDpDT5RL3pQbdlpFEnXpbyZOlV7OOu/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Out of the way!",
-                "line": 70,
-                "url": "https://drive.google.com/file/d/19iuNEOf-eQ2G-Yj6wpFPqfFJ89Bx0OVb/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "The world is overflowing with martial arts, and I can learn all of them,",
+                "line": 221,
+                "start_time": "0-19-04.750000",
+                "end_time": "0-19-07.880000",
+                "url": "https://drive.google.com/file/d/1fiU4Fs1Hf-d1KxMS8D7rOd00eocc9GLO/view?usp=drivesdk"
             },
             {
-                "name": "Chuvi",
-                "name_variant": "Chuvi",
-                "subtitle": "Ughh...!",
-                "line": 71,
-                "url": "https://drive.google.com/file/d/1K8EiQx7d9Twm7zdkaJ4Kg3oOVfA54RL1/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "but I'll never get the kind of overwhelming power you hear about in all the stories.",
+                "line": 222,
+                "start_time": "0-19-07.880000",
+                "end_time": "0-19-11.080000",
+                "url": "https://drive.google.com/file/d/1SGXdfSvCD72h5SBiaxSv54VITSEDIKqM/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "He appears to be your subordinate. A moth drawn to the flame, I guess.",
-                "line": 72,
-                "url": "https://drive.google.com/file/d/175SMLpbzoUuddu-3YfrNa9G36Z0nJC-5/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "The best I can do is bust a few delinquent heads.",
+                "line": 223,
+                "start_time": "0-19-11.460000",
+                "end_time": "0-19-14.830000",
+                "url": "https://drive.google.com/file/d/1i2bgpgIAQtcVBUYPJTreXQFA0eHjCJD1/view?usp=drivesdk"
             },
             {
-                "name": "Chuvi",
-                "name_variant": "Chuvi",
-                "subtitle": "U-Ughh...Doctor... Now's your chance. Please, run while you\u2014",
-                "line": 73,
-                "url": "https://drive.google.com/file/d/1o0x6wTgX3T9tyhoeMY3xJuak-f-ZB16f/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "If, for example, I was surrounded by fully armed soldiers,",
+                "line": 224,
+                "start_time": "0-19-17.630000",
+                "end_time": "0-19-20.630000",
+                "url": "https://drive.google.com/file/d/1Epa69kfrIc_feOhETZsyenietnXD0lEy/view?usp=drivesdk"
             },
             {
-                "name": "Chuvi",
-                "name_variant": "Chuvi",
-                "subtitle": "...Wh-What?! Th-This bottle...?",
-                "line": 74,
-                "url": "https://drive.google.com/file/d/1Vtoq4qimRlcna3ytgck69ZNMiNUTMrPq/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "that would be it for me.",
+                "line": 225,
+                "start_time": "0-19-20.630000",
+                "end_time": "0-19-21.830000",
+                "url": "https://drive.google.com/file/d/1KaDXvDgDqFFaG7HxzUL3TCoVZaJQUQ5o/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Useless bastard.",
-                "line": 75,
-                "url": "https://drive.google.com/file/d/1Eb0dAiaH2UECqtrl3Stjm7cpD0Jth0m6/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "Well, if I became the strongest martial artist in the world,",
+                "line": 226,
+                "start_time": "0-19-24",
+                "end_time": "0-19-27.460000",
+                "url": "https://drive.google.com/file/d/1bAcYTLJhdehX8VQ7LSaEXj6U-mhR5hYU/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "You wanted to be useful to me, right? Try and buy me some time as an Infernal.",
-                "line": 76,
-                "url": "https://drive.google.com/file/d/1MWf8OaTXm-G03ar3_PCJDxE3YfLGjwyK/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "there's a chance I'd be able to rough 'em up some.",
+                "line": 227,
+                "start_time": "0-19-27.460000",
+                "end_time": "0-19-30.130000",
+                "url": "https://drive.google.com/file/d/1yFDRmI3esIr9XRqUBKrMAmTAgQ0sTGa0/view?usp=drivesdk"
             },
             {
-                "name": "Chuvi",
-                "name_variant": "Chuvi",
-                "subtitle": "D-Doctor...???",
-                "line": 77,
-                "url": "https://drive.google.com/file/d/1wBNsBC90w_qvEUdw6iSBsIWD_ClJ_Urf/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "But then what?",
+                "line": 228,
+                "start_time": "0-19-32.830000",
+                "end_time": "0-19-34.670000",
+                "url": "https://drive.google.com/file/d/1eyCO7oFOVcRaFWPNiXQ0kXHoZllxPIyR/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "You worthless, incompetent man. At least be useful to me at the end of your life.",
-                "line": 78,
-                "url": "https://drive.google.com/file/d/1XDwiDTWKcSoNBfVuSZ4SWHPoGPZ5X4UX/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "What if a nuclear missile fell from the sky?",
+                "line": 229,
+                "start_time": "0-19-37",
+                "end_time": "0-19-39.630000",
+                "url": "https://drive.google.com/file/d/1xRYewzUxhubyXfHpzyw7IPfx-ieg8BwU/view?usp=drivesdk"
             },
             {
-                "name": "Chuvi",
-                "name_variant": "Chuvi",
-                "subtitle": "A-Ah... Aaahhh\u2014",
-                "line": 79,
-                "url": "https://drive.google.com/file/d/1YjvlSy7X3KeaEVWaRrbqags6ybmqLXDW/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "I can tone my muscles, I can hone my mind, I can polish my skills all I want.",
+                "line": 230,
+                "start_time": "0-19-40.420000",
+                "end_time": "0-19-44.830000",
+                "url": "https://drive.google.com/file/d/1ey9A3Ze2HFC4s8s5ldFmVYnHW1580EJ8/view?usp=drivesdk"
             },
             {
-                "name": "Chuvi",
-                "name_variant": "Chuvi",
-                "subtitle": "AAAAAAHHHHH!!!",
-                "line": 80,
-                "url": "https://drive.google.com/file/d/1f-8elfJqvVNh55eA9AKWJmgMVPM-Unkq/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "But if a nuclear bomb hits, all I can do is evaporate.",
+                "line": 231,
+                "start_time": "0-19-45.500000",
+                "end_time": "0-19-48.670000",
+                "url": "https://drive.google.com/file/d/1V_4gksRhW9E92GlHYZ65WS9jBfvr39dP/view?usp=drivesdk"
             },
             {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "He turned his ally into an Infernal?!",
-                "line": 81,
-                "url": "https://drive.google.com/file/d/1bBviJcVWVDLwZjRFltMaCI7d673P7Cbz/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "That's what it is to be human.",
+                "line": 232,
+                "start_time": "0-19-49.420000",
+                "end_time": "0-19-50.960000",
+                "url": "https://drive.google.com/file/d/1QBC2EYHDRS2m6Z2Ugd5jJnaHM-arAKgS/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "I don't know what grudge you have against Shiron and the others, but as a firefighter of the Special Fire Force, I'll bring salvation to your soul!",
-                "line": 82,
-                "url": "https://drive.google.com/file/d/1Q4u3IIZfdtZORANBgXfrAQ2jWeyY6PgH/view?usp=drivesdk"
-            }
-        ],
-        "e6": [
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "The flame is the soul's breath... The black smoke is the soul's release...",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/1MoKdpYRd19xdYE50CpV1XUe79rmSEjZG/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "I have to overcome those limits.",
+                "line": 233,
+                "start_time": "0-19-57.080000",
+                "end_time": "0-19-59.210000",
+                "url": "https://drive.google.com/file/d/1eb1rBxljq-8fI0SQShe1Zsj2mnwxNHAr/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Ashes thou wert and art... May thy soul return to the great flame of fire!",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/12EgzIz1VdeILiQs8SrAHeH3uFASAmLI0/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "The being that I want to be",
+                "line": 234,
+                "start_time": "0-20-00.210000",
+                "end_time": "0-20-02.250000",
+                "url": "https://drive.google.com/file/d/1A52P_iSg5rN0rVGkB2f_YEqN33wA2c86/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "L\u00e1tom...",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1JbuEPoM1TG3mc8ogAIlPNHUcJ6iyoHjs/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "...It's over. Kanen escaped, but\u2014",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/1IHWDFqd-QESNXjUgYaYo_K1t4F8MKGTq/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "...Wait, where are Captain Shinmon and Cid?",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1zK41AoD0tZH5k5Sx4W_NdV_DpRNeA9rP/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Now that you mention it, I haven't see them in a bit... Don't tell me they both went chasing after Kanen!",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/1cm4wYrWaaOsNjQiCcMkVfAveXyj_wpyr/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Don't worry. They must have some kind of plan\u2014",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1bLTVWpQYiyXx_TpoU9FekT2MYMiivMDD/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "I'm going after him as well! I can't let a guy who burns his own buddies get away with it!",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/1WLQADiN-ynLtztBTIXAWPfhk-zPIFW_q/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Kusakabe?! ...And he's gone.",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/1zdPg8gLYlwsOEhk7ul5G2IYvA8ofh-JX/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...He's like an aspiring hero incarnate.",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/1YTGhMIV2cR-_RDYzbhcHYxWqU9nrnKtR/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "He'd love to hear you say that.",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/1aUetLJrC6lcKdEVN7tglaYeAHWcU7vOv/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I wasn't trying to compliment him.",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/15akbSCMmt-WrT5t0rYFCRGPH0nNLc5hU/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Let's follow after them. If this is heading toward its conclusion, we must but there to witness our lord's success.",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1V1tAX6OlVSOkf0y4FSMIBAscNFUYdY5m/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Right! ...Wait, \"our lord\"?",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/1_ulWwFjSavvC6sRN0ohLfjuu5jjshW5z/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Looks like...I'm not being pursued. Hmph. I bought time with that idiot.",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1NsuITUO8iAR7mKkWxRFNewn33d_eMv1N/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "My plan has been derailed, but no matter. I'll turn some random knight into an Infernal next\u2014",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/11e6DZRYQpq8SEhgWFtGhpNdMtdL-U1TR/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Not on my watch.",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1hLLEIgyDBhPgF-fukkavmS5rrVoG8Ywv/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "What?! You've caught up with me already?!",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1WOWgrX41DCKJpjg2Od5F7Zxk4-ED1j3D/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "No way I'm letting scum like you escape.",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/10Q0LAwX8eGPGlO-N06QkHrWNNI-Bkb_u/view?usp=drivesdk"
+                "name": "Cid Kagenou",
+                "name_variant": "Minoru Kageno",
+                "subtitle": "would not evaporate in a nuclear explosion.",
+                "line": 235,
+                "start_time": "0-20-02.250000",
+                "end_time": "0-20-04.130000",
+                "url": "https://drive.google.com/file/d/1TF5M8EKmxlGIuAFMA7THPERa1YE0cOSk/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
                 "name_variant": "Shadow",
-                "subtitle": "Next is your turn.",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1MSbJjRwXhBXHJyDt2phBjRqlJo0qaauy/view?usp=drivesdk"
+                "subtitle": "Compromise is not an option.",
+                "line": 236,
+                "start_time": "0-20-06.380000",
+                "end_time": "0-20-08.170000",
+                "url": "https://drive.google.com/file/d/1-Bpg5bxsCI5PtS0r2npNwfxv0o0AO03d/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "That form... Are you Shadow?!",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1QiaGl95j1RQrPPN4LKrzXasjlVEoi-o2/view?usp=drivesdk"
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Don't worry.",
+                "line": 237,
+                "start_time": "0-20-24.290000",
+                "end_time": "0-20-25.580000",
+                "url": "https://drive.google.com/file/d/10m7g6wZNj6KXii0GXnePCiMAmztn5sdu/view?usp=drivesdk"
             },
             {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Go on then, tell us how to get back to our world.",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1ktH5juAdO4VC5fiX_rANX0X-nIPdDVzo/view?usp=drivesdk"
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "We have them completely surrounded.",
+                "line": 238,
+                "start_time": "0-20-28.790000",
+                "end_time": "0-20-31.080000",
+                "url": "https://drive.google.com/file/d/1249PA-dGtBYUbWv8r36YK1fEIScpzl4k/view?usp=drivesdk"
             },
             {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Ack...",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1Wvz54Q-0gLQwNp3vXwEeK9VEJNJNBOrM/view?usp=drivesdk"
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "They have nowhere to run.",
+                "line": 239,
+                "start_time": "0-20-31.580000",
+                "end_time": "0-20-33.420000",
+                "url": "https://drive.google.com/file/d/1MPp9n_wv4dd3Wuf8RKACVKKJNYhUz2wg/view?usp=drivesdk"
             },
             {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "So, you were lying. Then there's no reason to let you live.",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1-eO0jN6rqv0zTVEpqybGWg25IYSDpAWK/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "I-I won't let you...finish me off here! Not when the Rounds seat is within my reach...! Drastic times call for drastic measures\u2014",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1-RQsEtf8YHNi3U2hWuENUaKj386ws4D7/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "What the hell is that...?",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/1pzXFa-Mvhz5viTjQlyjRt356_KF5kXga/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "... Heheh... The last \"Bug\"...!",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1UrZRVogZzYqOswvZoj6e0SfWgWqDVRoU/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Don't tell me...",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1giGTAaguBF4zBA20e5EziMN7SGohVa0e/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "He's using it on himself... What a fool.",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1GDH5j_diX3TzDM4u3rWTcdli4GhE6tq6/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Aghhh...gah...a-aahhh\u2014",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1iHtjAwcpCqF4BQUSlYoPMQ3aYXp0nein/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "AAAAAHHHH!!!",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/1nz1XnH8EPgBcetdH8JmZvRZBi0Pdxviq/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Hah...a-ahahah...! This is amazing...! Incredible! I can feel the power within me... Hahahaha!",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/1WxA6fxdx8V7sOfPpfXtOguH-j8Glmo-1/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "With this power...I no longer need to fear you or Shadow!",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1rZSVvcfyiaJNm_nDZuLL7UFmUPnRhewq/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Whoa, the villain's power-up! Classic move! Well played!)",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/1KznG2-koyDplRffiqxCA46F3XDKpkAlu/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Captain Shinmon! Cid! ...Wait, that's not Cid!",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/1e_1iTCKUE3q8Pd3L46w1yvmtEuI1kd1Y/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(And here comes the hero! Perfect timing, Shinra!)",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1QjhaPIxRJ6uTBNhRyY7nI9SVAyoMgH4q/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "...My name is Shadow. I lurk in the darkness and hunt down shadows...",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/1vxurprmTi_UmtoRsSCk0cCj-OiKFESy7/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "We're not up against him. ...Focus on the bastard in front of you.",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1zIog3-VSJ_9ptimmxehIcRweLYo2X-3K/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Wait, don't tell me...! Kanen...used the \"Bug\" on himself?!",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1MDyfuHuI5_xA_ZGrbcXE_gCSlXDX9DWA/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Yeah, he's a tough one. Shinra, can you handle him?",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1bEw3OsZk__aHiafWmni3JTjgDmJWs_qZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "It doesn't matter who the enemy is! A hero is always a hero!",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1Ii3L-7NhlBX7u23pPlNPVEZIcblg2XGd/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Shinra, you're awesome...! Yes, yes! I've been waiting for something like this!)",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/13HLWAQvA4bq4yKX3pKZaWed0atQEvlGs/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(The brighter the hero shines against the bad guys, the more I radiate as a shadowbroker!)",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1SqU1J3ENZHXI6S3cEMjeTXkkHFHdmEcv/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "You think you can put me to rest...? That you can take me out?! I am the strongest!",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1tKToLFgcKGVtQ3IkBKJLH3h88pzyIQb1/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow&Benimaru (Shadow)",
-                "subtitle": "...What?",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1Ba6GOte697ZiKYKbCkEAjvcW6ivK_W3d/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Shadow&Benimaru (Benimaru)",
-                "subtitle": "...What?",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1Ba6GOte697ZiKYKbCkEAjvcW6ivK_W3d/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "With borrowed power, you'll never be the strongest...",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1W8cSMOTn_Y4ZU8bJgVL_VQQQL6IJWMib/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Let me show you what it truly means to be the strongest...!",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1HPn7mvRtbnI4fFDbN3Qp5ZzfcOcQtWsO/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Don't count me out! I'll be a hero in this world as well!",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1lnZzUN0h5ZyjjPr3cGhe5BKV1qdR4fr_/view?usp=drivesdk"
-            }
-        ],
-        "e7": [
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Wh-Why...? H-How am I actually...losing...? AAAAAHHH!!!",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/1FDXXEm8ewR3_Kl761-eG0szJfntCAS_a/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "(This sensation... It feels like the \"Adolla Link.\" In that case\u2014)",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/1RDwN69pBIK3NuckOH7Sa3sGmr0nenTxg/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "This ends now...!",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1J0iGYwvXGwi96oK3DmHcDgsuaw71IX0z/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "...Wha? Wh-What speed\u2014",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/1Xnq1TZtIaqq5jc6yVLKT3_uNgWCNYdtj/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Graaarrrr!!!",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1Y0djMI12TUAMxd7-QfmaXKPGEx9Bli6U/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "...L\u00e1tom.",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/15EQIvLF9AJjKDJgY4xnGwQOETygj33aD/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "...It's over now. No more Infernals should show up.",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1yqBps8o7RfiwL1hiEr6a-_DDza88Pjkn/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "So it seems.",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/1GnP_sDsFqhPyPeQxT66mod6_cT3u1VGg/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Wait, huh? What happened...to that guy?!",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/1ybJhTt9FcNwxqPQYR98kUxabbUoOnf8I/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "He vanished a long time ago. Anyway, he'll be fine. Don't worry about him.",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/1YFpjILIKBWJ1A3tgGC2YEeKml-wzud2L/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "*huff, huff* What is the source of their immense power...?",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/1EJTCof_2-lo83AHufL2Zi_g2vmy2ruOs/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Still, I'm not done yet... Next time I'll\u2014",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/16P3fISYtop74fBQTLFseMBoU4Xkdt_hr/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "You have no path to recovery.",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1GoTBwEcWWEzSHtlZo6Se2wOqPMnIc7MX/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "Wha...?!",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/16umS6dIgLFbUYndv7r3j-S72cDV5Obgw/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(The dirty work heroes can't do is for the shadowbroker to take care of...or something like that.)",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1UqMbEppg8xx8mO_1DM_avwlrre9YAqES/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "Etch into your gaze...what true strength looks like. This is my power.",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1D8mLK98MRvxETBFp138S8osnbdZpY4UT/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "Watch closely. I am...",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1XIEq0ipnVuhZ-BDqVa16t8wikgFN_WW8/view?usp=drivesdk"
-            },
-            {
-                "name": "Kanen",
-                "name_variant": "Kanen",
-                "subtitle": "S-Stop\u2014",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1QtB68L2QhomoCRRDN8BV11JFv1jucurg/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Shadow",
-                "subtitle": "...Atomic.",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/1ninmtXYYc-FZ4gJAcwLzs1F2xFl7A6Pi/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "What's this, an earthquake?! And there's light coming from over there...!",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/179qcwDbJj1UZR8GoYt2qMJR_cL_BS9BR/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...It's over.",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1VCSKQU7AJbGwY9EWc6_T8S-KkmUyX3IS/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "What do you mean\u2014",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1cG5PGZWPEdLTFvCJp2UOWJmCEqiog6Go/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Kusakabe! Captain Shinmon!",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1Ajt5leuQtqWbC6jSiy_3pef1eEjVe_Y-/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Are you both okay?",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1wsgbvxTYoOyrIQ6G1sH9jwGyVCpxz7a9/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Wait, is it just the two of you? Where's Cid? Don't tell me he got caught up in the fighting...!",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1TRN_cGVSQoNZfdu2bgeYxVw4fCJWwRwm/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Whew! Jeez, I'm glad everyone's okay!",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/10r-riKqSrUZpcBg-n0Kz-tLSODlLMExT/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Cid! You're all right!",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1i72PDdQbcm-l8ouv55b8x8jwKnkM6lVW/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "I hid and watched while all of you fought.",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1Lzo8aLgoSI9A38w3FPMrZv3w0WFbrIG8/view?usp=drivesdk"
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "It's exactly as you predicted, My Lord.",
+                "line": 240,
+                "start_time": "0-20-34.130000",
+                "end_time": "0-20-36.580000",
+                "url": "https://drive.google.com/file/d/1xWKHOhs6DtiSD5quNTHPrSDYttMtKThQ/view?usp=drivesdk"
             },
             {
                 "name": "Beta",
                 "name_variant": "Beta",
-                "subtitle": "Heheh... Let's talk once we get back to town. I'm sure everyone will be waiting.",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1-9gms9XHtfKPralvNWi4c84ePbLTl2l4/view?usp=drivesdk"
+                "subtitle": "I have only words of admiration for your foresight and meticulous planning.",
+                "line": 241,
+                "start_time": "0-20-37.290000",
+                "end_time": "0-20-41.290000",
+                "url": "https://drive.google.com/file/d/1mUpDekDlrJk02TXuk2PVDgZ_GIApjg9C/view?usp=drivesdk"
             },
             {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "...Everyone?",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1tX3gRY1O1RuAqhIMvFZ42-KJgJ_yFQL8/view?usp=drivesdk"
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "We haven't had a big hunt in ages. I can't wait!",
+                "line": 242,
+                "start_time": "0-20-41.540000",
+                "end_time": "0-20-44.500000",
+                "url": "https://drive.google.com/file/d/13VlhKJOL_5D6uSKYaFhy5xhMgiLQs-kc/view?usp=drivesdk"
             },
             {
-                "name": "Man A",
-                "name_variant": "Man A",
-                "subtitle": "Hey, Shinra and the others are back!",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/1gmMoLrI1eUNfOCe009o31MA5sQKXy_6H/view?usp=drivesdk"
-            },
-            {
-                "name": "Woman A",
-                "name_variant": "Woman A",
-                "subtitle": "You saved our town again, didn't you? Thank you so much.",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/1SVQRBWjlTmH8KEsSvprA3w2T6xKCkBgq/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Uh, y-yes...!",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1b8sld7l2ufQ9Qh431vP7EycZq2OlMjos/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Heheh. You've really been accepted into this town.",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/1jMuBpl2bhwqrr01URSQWLqAHWwvgHWo0/view?usp=drivesdk"
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "I'll show no mercy.",
+                "line": 243,
+                "start_time": "0-20-44.500000",
+                "end_time": "0-20-46.170000",
+                "url": "https://drive.google.com/file/d/133lkSmj5bajFdPTsJejNLnD7zvWAFNpQ/view?usp=drivesdk"
             },
             {
                 "name": "Epsilon",
                 "name_variant": "Epsilon",
-                "subtitle": "You could probably stay here if you can't get back to your world.",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/18srf9KerHSZEctHZuuSX1f9J4C1jokJT/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Th-That would be a problem!",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1UVqc3Uh9b6upSd38vG3mp_3oeYUrSWO9/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "...",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/1eOHUP2ULZoqCLHRieo_lbk2pxtEWG27h/view?usp=drivesdk"
+                "subtitle": "We're all waiting for your orders, My Lord.",
+                "line": 244,
+                "start_time": "0-20-49.630000",
+                "end_time": "0-20-52.460000",
+                "url": "https://drive.google.com/file/d/1lggV6haCl0e75_5q-7DeFHNC6yiL3_Jr/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Shinra?",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1ZT1gLioOe9Rywk8rIf5nRNvpNbIzLuOE/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "...I'm just real happy. I managed to protect...these people and this place.",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1gvq_491yvGikVNLIp96__JSrreCcHwUn/view?usp=drivesdk"
+                "name_variant": "Shadow",
+                "subtitle": "Excellent.",
+                "line": 245,
+                "start_time": "0-20-58.130000",
+                "end_time": "0-20-59.130000",
+                "url": "https://drive.google.com/file/d/1D1QxpIctPzlMvDrsGw7zqrnUaA9OETpe/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Man, what a great smile! You really are a hero, Shinra!)",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/13k4mi64SpC4YKe2LhGQpu5L94bKCn3VV/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Hm? ...Wha?! Hey, Kusakabe!",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1XoTQF9E9ZtR9-AdgezkVs-rITJKQK8zH/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "H-Hey yourself... You're glowing!",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/16Jej8t5g-_zeUn0f0YOS6Bif-1HHzMyG/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Guess we aren't returning via the pillar of light.",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1ngK0kenNubqg0094YYeiT1FMNfoj5qDW/view?usp=drivesdk"
+                "name_variant": "Shadow",
+                "subtitle": "I'm not sure exactly what's excellent, but I'm sure that it is.",
+                "line": 246,
+                "start_time": "0-20-59.130000",
+                "end_time": "0-21-02.290000",
+                "url": "https://drive.google.com/file/d/17_ElROT5xgYVW4E8WKRyVScNJDcpY9PX/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Why's this happening all of a sudden... Wait...oh.)",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1e8A9w_BZ2zWLmNggJ3Hdh90MBGi84qzM/view?usp=drivesdk"
+                "name_variant": "Shadow",
+                "subtitle": "I was blessed with a new life, and in a new world, no less.",
+                "line": 247,
+                "start_time": "0-21-03.040000",
+                "end_time": "0-21-06.210000",
+                "url": "https://drive.google.com/file/d/10w62aJ-4fA56OvoAOBKTTJXAb0bOWnYQ/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(The artifact is broken... I totally forgot it was in my pocket...)",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/10Zgr_BBEKenxlkkZORDlHXM1FPApx9hL/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Hey, what are you up to?",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1hNqCzhbAqhN1oYyzwb7qA2U3CpdeDuMK/view?usp=drivesdk"
+                "name_variant": "Shadow",
+                "subtitle": "And I was given...",
+                "line": 248,
+                "start_time": "0-21-06.630000",
+                "end_time": "0-21-08.080000",
+                "url": "https://drive.google.com/file/d/1jfMJQy3MRE_iI6Kkdec0C2j400Z81MzP/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "N-Nothing! I was on the verge of tears, so I was fishing around for a handkerchief.",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1k_TZkL8gNgDKxXcppNBh80-BROhkHeaX/view?usp=drivesdk"
+                "name_variant": "Shadow",
+                "subtitle": "I need more power.",
+                "line": 249,
+                "start_time": "0-21-08.920000",
+                "end_time": "0-21-13.040000",
+                "url": "https://drive.google.com/file/d/1zAd-M0gHG9VqKJ7y-x6GlNy_P8g9LDnV/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Whether it was the impact or the stress applied to it that made the artificat stop working...it seems it was the key for them to return home.)",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1xInoLwx7ahdbRJHEf9b2hfPn8zw48J3E/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "...Well, so long as we can get back to Asakusa.",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1UUT6nhew7J0uX43fQKaQDeP6Oc8qm8Y2/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Thank you so much for everything, Natsume, Shiron! And Cid...thank you too!",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1iGpPMTnySePoNjqAf4PUYighvmHX9Tct/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Guess we can call it even, but you really helped us out a lot! Thanks...whoa!",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1PH2luZ6SF8fe3jLppYqjLMHbRGM9gJHM/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Oof.",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1X5zajDoaDrWgkjbGotmbKFhwi--TiwRo/view?usp=drivesdk"
-            },
-            {
-                "name": "Tamaki",
-                "name_variant": "Tamaki",
-                "subtitle": "Nyaa! Get off, Kusakabe!",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1aj-iL2_YIizzzxRjkLzsUVaq23GG4Heb/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "If anything, you were the one who got close! Aaaah! You get away from me!",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/12aN5povZxGW3kn8P8z5yhGWbUdKQRaKX/view?usp=drivesdk"
+                "name_variant": "Shadow",
+                "subtitle": "...magic.",
+                "line": 250,
+                "start_time": "0-21-16.670000",
+                "end_time": "0-21-17.880000",
+                "url": "https://drive.google.com/file/d/1yWAslkV3n1TMQtAehMLv3QVIWAJvgXwo/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Yup, yup. Good stuff. Acting just like a protagonist until the end!)",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1nvfWy8Cq7f7EKtBUd4zFMB8JWLQXj36G/view?usp=drivesdk"
-            },
-            {
-                "name": "Benimaru",
-                "name_variant": "Benimaru",
-                "subtitle": "Not the most smooth ending... Well, anyway...thanks for everything.",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1LaZQaXzyDx355Pvk1K-z00RJWHCJgALg/view?usp=drivesdk"
+                "name_variant": "Shadow",
+                "subtitle": "With this new power at my disposal...",
+                "line": 251,
+                "start_time": "0-21-18.250000",
+                "end_time": "0-21-20.630000",
+                "url": "https://drive.google.com/file/d/1cJ68N2ThLe5I-dzL8f-am0LzhHSASC60/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Hmm... Still brusque until the end!)",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1xJ2xbe8NpX9-gpwalz1II3EoiLhIPUD4/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Cid! Thanks for everything!",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1xi1Uy831tGyGTNYW8Rf42JSvLBFn0FGz/view?usp=drivesdk"
+                "name_variant": "Shadow",
+                "subtitle": "There is but one summit we aim to reach.",
+                "line": 252,
+                "start_time": "0-21-22.040000",
+                "end_time": "0-21-24.250000",
+                "url": "https://drive.google.com/file/d/1CI0hhfaMG8_0yaicQhJry1xx3Ci3lT7o/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "I'm glad I go to meet you guys. See you again someday.",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1HoHdbO7VKo4UrAWstW2wyp2ZzcVFUCcx/view?usp=drivesdk"
+                "name_variant": "Shadow",
+                "subtitle": "Let's go.",
+                "line": 253,
+                "start_time": "0-21-25.630000",
+                "end_time": "0-21-26.830000",
+                "url": "https://drive.google.com/file/d/1eH7zerHOZRL3_CfzMR8H_uYEe1IYsWxQ/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Although we'll see whether it's as friends or foes.",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1ZKy4-Y16yxMbze1XliSod_eb5YvbJjRK/view?usp=drivesdk"
-            },
-            {
-                "name": "Shinra",
-                "name_variant": "Shinra",
-                "subtitle": "Cid, what's that supposed to mean\u2014",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1aahpb7rKsxDINxlsgSiS-xVmjk6aIPlb/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "...It's all over now.",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1W3Ppfbo3G8YyXT6sOrCLjhrMUdwK4MqZ/view?usp=drivesdk"
+                "name_variant": "Shadow",
+                "subtitle": "This time, I'm going to make it.",
+                "line": 254,
+                "start_time": "0-21-38.880000",
+                "end_time": "0-21-41.290000",
+                "url": "https://drive.google.com/file/d/1D8-QUFHi-fgmDNLGfSmm0haG8qBGnhAd/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Yeah... It's a bit sad.",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/1d3NTsApYGA3Y5m-MHTDvG9GJ1D4WKSTQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Hehe. You have us, Master Shadow. Come on, let's return to Alexandria.",
-                "line": 64,
-                "url": "https://drive.google.com/file/d/1thZRepMI05Dv1K3-51sMqyOUxXiUMzce/view?usp=drivesdk"
+                "name_variant": "Shadow",
+                "subtitle": "I would give up everything to get there.",
+                "line": 255,
+                "start_time": "0-21-41.670000",
+                "end_time": "0-21-43.960000",
+                "url": "https://drive.google.com/file/d/1iIAU3o5pMP1lBwCQHppN1WfANw0nWjg2/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Right, let's head home as well.",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/14YLTegPxbGcIzfWBYwstHy94txZWEm_8/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "*sigh* In the end, I never got to learn the secret of the \"Lucky Lecher Lure\"...",
-                "line": 66,
-                "url": "https://drive.google.com/file/d/1P5fcvcSSez1PEAmUiP1M_qn0VZNgLwNW/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "You're still going on about that? How trivial...",
-                "line": 67,
-                "url": "https://drive.google.com/file/d/1V1f4oo58x4HHkOumROKGYyhfwBNxJDIK/view?usp=drivesdk"
+                "name_variant": "Shadow",
+                "subtitle": "No, I will give up everything!",
+                "line": 256,
+                "start_time": "0-21-44.710000",
+                "end_time": "0-21-46.830000",
+                "url": "https://drive.google.com/file/d/1Oj-aRXqbKG9CHNeRX3oAgMMGybkh8Ybu/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(A Special Fire Force that protects people from Spontaneous Human Combustion, huh...)",
-                "line": 68,
-                "url": "https://drive.google.com/file/d/1Dfpje_Vu3tpSWMqor4inUmz3c_QOvBhj/view?usp=drivesdk"
+                "name_variant": "Shadow",
+                "subtitle": "If that's what it takes to get there, that's how badly I want it.",
+                "line": 257,
+                "start_time": "0-21-47.080000",
+                "end_time": "0-21-50.540000",
+                "url": "https://drive.google.com/file/d/1QOJlaTJ2kKqrCuWrvxoe5jEfWbfhDMKB/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Heroes are really something! The stronger their radiance, the more shadows stand out!)",
-                "line": 69,
-                "url": "https://drive.google.com/file/d/1ojDAH4USxfwz9xcjPXzpKREG1jLZ48em/view?usp=drivesdk"
+                "name_variant": "Shadow",
+                "subtitle": "I don't want to be the hero.",
+                "line": 258,
+                "start_time": "0-21-51.210000",
+                "end_time": "0-21-52.920000",
+                "url": "https://drive.google.com/file/d/1HXL5TyhZ1XuFpEclcir0DcoWFWZpgQsl/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(I said we might be foe next time, but...I feel like we'll be friends again.)",
-                "line": 70,
-                "url": "https://drive.google.com/file/d/1SgAfouCDL6o4BK4_SpO5IO_lgiPurgJD/view?usp=drivesdk"
+                "name_variant": "Shadow",
+                "subtitle": "I don't want to be the last boss.",
+                "line": 259,
+                "start_time": "0-21-53.830000",
+                "end_time": "0-21-55.250000",
+                "url": "https://drive.google.com/file/d/1tZZVK4O8adPtQwEYG0HdrqSxeS2Wm0t4/view?usp=drivesdk"
             },
             {
                 "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Even if they forget about us... Just kidding.)",
-                "line": 71,
-                "url": "https://drive.google.com/file/d/1uXDY0FBWsWKjTuxBXYPw3d_FrNOpRUl1/view?usp=drivesdk"
+                "name_variant": "Shadow",
+                "subtitle": "I want to be the one in the story who operates from the shadows,",
+                "line": 260,
+                "start_time": "0-21-56.920000",
+                "end_time": "0-21-59.210000",
+                "url": "https://drive.google.com/file/d/1IxnUDf_rHbQEGkZZs7LQ9pPnnHzde6T0/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Shadow",
+                "subtitle": "showing everyone their greatness:",
+                "line": 261,
+                "start_time": "0-21-59.210000",
+                "end_time": "0-22-01.380000",
+                "url": "https://drive.google.com/file/d/1pDD2ASu8Db-tRNYhhM2QDpkHGIx52Vwt/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Shadow",
+                "subtitle": "The Eminence in Shadow!",
+                "line": 262,
+                "start_time": "0-22-09.040000",
+                "end_time": "0-22-10.630000",
+                "url": "https://drive.google.com/file/d/1kl9xY84mNASaG3EbPl70rbjle4_ayMKu/view?usp=drivesdk"
             }
         ]
     }
@@ -3473,9 +2382,9 @@ let data = {
 
 // let setDoc = db.collection('data').doc('es_bheif').set(data['bheif']);
 
-// let setDoc = db.collection('data').doc('ln_v3').set(data['v3']);
+// let setDoc = db.collection('data').doc('ln_v4').set(data['v4']);
 
-// let setDoc = db.collection('data').doc('an_s2_e3').set(data['s2']);
+let setDoc = db.collection('data').doc('an_s1_e1').set(data['s1']);
 
 // let setDoc = db.collection('data').doc('info').set(data);
 

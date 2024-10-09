@@ -2,21 +2,21 @@
     "ln": {
         "volume_count": 6,
         "line_count": 24986,
-        "word_count": 343977,
-        "char_count": 1923593,
+        "word_count": 343994,
+        "char_count": 1923687,
         "characters": {
-            "Cid Kagenou (Minoru Kageno)": 44,
-            "Cid Kagenou": 2376,
-            "Cid Kagenou (Shadow)": 526,
-            "Bandit": 34,
+            "Cid Kagenou (Minoru Kageno)": 52,
+            "Cid Kagenou": 3523,
+            "Cid Kagenou (Shadow)": 753,
+            "Bandit": 58,
             "Bandit Boss": 15,
-            "Alpha": 278,
+            "Alpha": 294,
             "Mr. Kagenou": 3,
             "Mrs. Kagenou": 2,
-            "Beta": 295,
-            "Narrator": 5573,
+            "Beta": 510,
+            "Narrator": 7383,
             "Grease": 55,
-            "Soldier": 13,
+            "Soldier": 39,
             "Claire Kagenou": 275,
             "Garden Member": 1,
             "Alexia Midgar": 380,
@@ -24,10 +24,10 @@
             "Po Tato": 50,
             "Student": 19,
             "Zenon Griffey": 71,
-            "Knight": 29,
+            "Knight": 106,
             "Iris Midgar": 185,
-            "Scientist": 20,
-            "Cult Member": 27,
+            "Scientist": 33,
+            "Cult Member": 28,
             "Mitsugoshi Staff": 4,
             "Gamma (Luna)": 28,
             "Sherry Barnett": 143,
@@ -36,14 +36,14 @@
             "Nu": 75,
             "Gamma": 117,
             "Referee": 11,
-            "Rose Oriana": 176,
+            "Rose Oriana": 278,
             "Teacher": 1,
             "Marco Granger": 5,
             "Rex": 42,
             "Lutheran Barnett (Sir Gaunt)": 10,
             "Medic": 3,
             "Beta (Natsume Kafka)": 78,
-            "Epsilon": 53,
+            "Epsilon": 112,
             "Announcer": 2,
             "Jack Nelson": 98,
             "Aurora": 108,
@@ -56,35 +56,35 @@
             "Goldy Gilded": 46,
             "Spectator": 3,
             "Supervisor": 2,
-            "Perv Asshat": 48,
+            "Perv Asshat": 108,
             "Captain's Daughter": 9,
             "Duke's Second Son": 8,
             "Beatrix": 43,
             "Clerk": 1,
-            "Aristocrat": 11,
+            "Aristocrat": 15,
             "Klaus Midgar": 1,
-            "Raphael Oriana": 2,
-            "Cid Kagenou (Stylish Bandit Slayer)": 11,
+            "Raphael Oriana": 9,
+            "Cid Kagenou (Stylish Bandit Slayer)": 20,
             "Lambda": 12,
-            "No. 665": 10,
-            "No. 664": 31,
-            "Rose Oriana (No. 666)": 21,
+            "No. 665": 13,
+            "No. 664": 51,
+            "Rose Oriana (No. 666)": 38,
             "Ghoul": 3,
             "White Demon": 30,
             "Merchant": 12,
             "Civilian": 12,
             "Mary": 104,
             "Coworker": 8,
-            "Marie": 25,
+            "Marie": 48,
             "Claudia": 15,
             "Vampire": 8,
             "Crimson": 22,
             "Juggernaut": 59,
             "Yukime": 151,
             "Elisabeth": 3,
-            "No. 664 (No. 664 & No. 665 & No. 666 (No. 664))": 1,
-            "No. 665 (No. 664 & No. 665 & No. 666 (No. 665))": 1,
-            "Rose Oriana (No. 664 & No. 665 & No. 666 (No. 666))": 1,
+            "No. 664 (No. 664 & No. 665 & No. 666 (No. 664))": 2,
+            "No. 665 (No. 664 & No. 665 & No. 666 (No. 665))": 2,
+            "Rose Oriana (No. 664 & No. 665 & No. 666 (No. 666))": 2,
             "Aurora (Witch Claire)": 12,
             "Scarface": 14,
             "Natsu (Natsu & Kana (Natsu))": 2,
@@ -96,7 +96,30 @@
             "Garter Kikuchi": 15,
             "Leaf One": 12,
             "Natsu": 7,
-            "Kana": 2
+            "Kana": 2,
+            "Victoria (No. 559)": 65,
+            "No. 664 (No. 664 & No. 665 (No. 664))": 1,
+            "No. 665 (No. 664 & No. 665 (No. 665))": 1,
+            "Kouadoi": 24,
+            "Reina Oriana": 9,
+            "Epsilon (Shiron)": 36,
+            "Margaret": 64,
+            "Maid": 1,
+            "Kevin": 18,
+            "Mordred": 98,
+            "Priest": 1,
+            "Beta (Beta & Epsilon (Beta))": 2,
+            "Epsilon (Beta & Epsilon (Epsilon))": 2,
+            "Akane Nishino": 231,
+            "Kidnapper A": 27,
+            "Kidnapper B": 2,
+            "Cid Kagenou (Stylish Ruffian Slayer)": 3,
+            "Akira Nishino": 52,
+            "Yuuka": 102,
+            "Yuudai Saejima": 44,
+            "Haitani": 37,
+            "Fatty McSpecs": 6,
+            "Forum User": 32
         },
         "volumes": {
             "v1": {
@@ -792,69 +815,226 @@
             },
             "v4": {
                 "line_count": 4353,
-                "word_count": 59239,
-                "char_count": 327413,
-                "characters": {},
+                "word_count": 59256,
+                "char_count": 327507,
+                "characters": {
+                    "Narrator": 1810,
+                    "Raphael Oriana": 7,
+                    "Rose Oriana": 102,
+                    "No. 664": 20,
+                    "Rose Oriana (No. 666)": 17,
+                    "No. 665": 3,
+                    "Victoria (No. 559)": 65,
+                    "No. 664 (No. 664 & No. 665 (No. 664))": 1,
+                    "No. 665 (No. 664 & No. 665 (No. 665))": 1,
+                    "No. 664 (No. 664 & No. 665 & No. 666 (No. 664))": 1,
+                    "No. 665 (No. 664 & No. 665 & No. 666 (No. 665))": 1,
+                    "Rose Oriana (No. 664 & No. 665 & No. 666 (No. 666))": 1,
+                    "Kouadoi": 24,
+                    "Reina Oriana": 9,
+                    "Cid Kagenou": 1147,
+                    "Marie": 23,
+                    "Soldier": 26,
+                    "Cid Kagenou (Shadow)": 227,
+                    "Epsilon (Shiron)": 36,
+                    "Perv Asshat": 60,
+                    "Aristocrat": 4,
+                    "Margaret": 64,
+                    "Maid": 1,
+                    "Kevin": 18,
+                    "Epsilon": 59,
+                    "Cult Member": 1,
+                    "Mordred": 98,
+                    "Priest": 1,
+                    "Beta": 215,
+                    "Beta (Beta & Epsilon (Beta))": 2,
+                    "Epsilon (Beta & Epsilon (Epsilon))": 2,
+                    "Akane Nishino": 231,
+                    "Cid Kagenou (Minoru Kageno)": 8,
+                    "Kidnapper A": 27,
+                    "Kidnapper B": 2,
+                    "Cid Kagenou (Stylish Bandit Slayer)": 9,
+                    "Cid Kagenou (Stylish Ruffian Slayer)": 3,
+                    "Knight": 77,
+                    "Akira Nishino": 52,
+                    "Yuuka": 102,
+                    "Yuudai Saejima": 44,
+                    "Scientist": 13,
+                    "Haitani": 37,
+                    "Fatty McSpecs": 6,
+                    "Forum User": 32,
+                    "Bandit": 24,
+                    "Alpha": 16
+                },
                 "chapters": {
                     "c1": {
-                        "word_count": 5583,
-                        "char_count": 30744,
+                        "word_count": 5597,
+                        "char_count": 30820,
                         "line_count": 449,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 248,
+                            "Raphael Oriana": 1,
+                            "Rose Oriana": 2,
+                            "No. 664": 20,
+                            "Rose Oriana (No. 666)": 17,
+                            "No. 665": 3,
+                            "Victoria (No. 559)": 42,
+                            "No. 664 (No. 664 & No. 665 (No. 664))": 1,
+                            "No. 665 (No. 664 & No. 665 (No. 665))": 1,
+                            "No. 664 (No. 664 & No. 665 & No. 666 (No. 664))": 1,
+                            "No. 665 (No. 664 & No. 665 & No. 666 (No. 665))": 1,
+                            "Rose Oriana (No. 664 & No. 665 & No. 666 (No. 666))": 1,
+                            "Kouadoi": 24,
+                            "Reina Oriana": 1,
+                            "Cid Kagenou": 44,
+                            "Marie": 23,
+                            "Soldier": 25,
+                            "Cid Kagenou (Shadow)": 47
+                        }
                     },
                     "c2": {
                         "word_count": 5123,
                         "char_count": 27559,
                         "line_count": 369,
-                        "characters": {}
+                        "characters": {
+                            "Cid Kagenou": 188,
+                            "Epsilon (Shiron)": 21,
+                            "Perv Asshat": 18,
+                            "Narrator": 101,
+                            "Aristocrat": 4,
+                            "Margaret": 33,
+                            "Maid": 1,
+                            "Kevin": 18,
+                            "Rose Oriana": 25
+                        }
                     },
                     "c3": {
                         "word_count": 5703,
                         "char_count": 31157,
                         "line_count": 442,
-                        "characters": {}
+                        "characters": {
+                            "Epsilon": 49,
+                            "Narrator": 143,
+                            "Victoria (No. 559)": 17,
+                            "Cid Kagenou": 171,
+                            "Margaret": 26,
+                            "Epsilon (Shiron)": 15,
+                            "Reina Oriana": 7,
+                            "Perv Asshat": 7,
+                            "Rose Oriana": 30,
+                            "Cid Kagenou (Shadow)": 12
+                        }
                     },
                     "c4": {
-                        "word_count": 9099,
-                        "char_count": 50559,
+                        "word_count": 9102,
+                        "char_count": 50577,
                         "line_count": 653,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 375,
+                            "Perv Asshat": 35,
+                            "Cult Member": 1,
+                            "Mordred": 98,
+                            "Priest": 1,
+                            "Rose Oriana": 45,
+                            "Raphael Oriana": 6,
+                            "Reina Oriana": 1,
+                            "Soldier": 1,
+                            "Margaret": 5,
+                            "Beta": 55,
+                            "Epsilon": 7,
+                            "Cid Kagenou (Shadow)": 87,
+                            "Beta (Beta & Epsilon (Beta))": 2,
+                            "Epsilon (Beta & Epsilon (Epsilon))": 2
+                        }
                     },
                     "c5": {
                         "word_count": 3221,
                         "char_count": 17817,
                         "line_count": 224,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 163,
+                            "Akane Nishino": 25,
+                            "Cid Kagenou (Minoru Kageno)": 8,
+                            "Kidnapper A": 27,
+                            "Kidnapper B": 2,
+                            "Cid Kagenou (Stylish Bandit Slayer)": 9,
+                            "Cid Kagenou (Stylish Ruffian Slayer)": 3
+                        }
                     },
                     "c6": {
                         "word_count": 6716,
                         "char_count": 37329,
                         "line_count": 517,
-                        "characters": {}
+                        "characters": {
+                            "Cid Kagenou (Shadow)": 33,
+                            "Beta": 77,
+                            "Cid Kagenou": 233,
+                            "Narrator": 130,
+                            "Akane Nishino": 35,
+                            "Knight": 44
+                        }
                     },
                     "c7": {
                         "word_count": 10044,
                         "char_count": 55005,
                         "line_count": 605,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 176,
+                            "Akira Nishino": 28,
+                            "Akane Nishino": 123,
+                            "Yuuka": 46,
+                            "Cid Kagenou": 238,
+                            "Beta": 13,
+                            "Yuudai Saejima": 29,
+                            "Scientist": 13
+                        }
                     },
                     "c8": {
                         "word_count": 6610,
                         "char_count": 36842,
                         "line_count": 559,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 156,
+                            "Akane Nishino": 33,
+                            "Yuudai Saejima": 15,
+                            "Haitani": 22,
+                            "Knight": 18,
+                            "Cid Kagenou (Shadow)": 1,
+                            "Cid Kagenou": 255,
+                            "Yuuka": 27,
+                            "Fatty McSpecs": 6,
+                            "Forum User": 32,
+                            "Beta": 7,
+                            "Bandit": 24
+                        }
                     },
                     "c9": {
                         "word_count": 6125,
                         "char_count": 34702,
                         "line_count": 503,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 318,
+                            "Akira Nishino": 24,
+                            "Yuuka": 29,
+                            "Beta": 32,
+                            "Knight": 15,
+                            "Haitani": 15,
+                            "Cid Kagenou (Shadow)": 46,
+                            "Cid Kagenou": 18,
+                            "Akane Nishino": 15,
+                            "Alpha": 16,
+                            "Epsilon": 3,
+                            "Victoria (No. 559)": 6
+                        }
                     },
                     "c10": {
                         "word_count": 1015,
                         "char_count": 5699,
                         "line_count": 32,
-                        "characters": {}
+                        "characters": {
+                            "Beta": 31,
+                            "Cid Kagenou (Shadow)": 1
+                        }
                     }
                 }
             },
@@ -12084,9 +12264,9 @@
     },
     "chars": {
         "Alpha": {
-            "total": 4020,
+            "total": 4036,
             "names": {
-                "Alpha": 3967,
+                "Alpha": 3983,
                 "Alpha & Gamma (Alpha)": 1,
                 "Alpha & Eta (Alpha)": 1,
                 "Seven Shadows (Alpha)": 8,
@@ -12100,11 +12280,11 @@
             }
         },
         "Beta": {
-            "total": 2917,
+            "total": 3134,
             "names": {
-                "Beta": 2558,
+                "Beta": 2773,
                 "Seven Shadows (Beta)": 14,
-                "Beta & Epsilon (Beta)": 29,
+                "Beta & Epsilon (Beta)": 31,
                 "Beta & Gamma (Beta)": 5,
                 "Beta & Gamma & Epsilon (Beta)": 1,
                 "Beta & Zeta (Beta)": 3,
@@ -12162,14 +12342,14 @@
             }
         },
         "Epsilon": {
-            "total": 2195,
+            "total": 2292,
             "names": {
-                "Epsilon": 2091,
+                "Epsilon": 2150,
                 "Seven Shadows (Epsilon)": 14,
-                "Beta & Epsilon (Epsilon)": 29,
+                "Beta & Epsilon (Epsilon)": 31,
                 "Beta & Gamma & Epsilon (Epsilon)": 1,
                 "Zeta & Epsilon (Epsilon)": 1,
-                "Shiron": 47,
+                "Shiron": 83,
                 "Everyone (Epsilon)": 6,
                 "Gamma& Epsilon & Eta (Epsilon)": 1,
                 "Gamma & Epsilon (Epsilon)": 1,
@@ -12267,14 +12447,14 @@
             }
         },
         "Cid Kagenou": {
-            "total": 8728,
+            "total": 10122,
             "names": {
-                "Shadow": 1267,
-                "Minoru Kageno": 118,
-                "Stylish Ruffian Slayer": 35,
-                "Cid Kagenou": 4315,
+                "Shadow": 1494,
+                "Minoru Kageno": 126,
+                "Stylish Ruffian Slayer": 38,
+                "Cid Kagenou": 5462,
                 "Mundane Mann": 219,
-                "Stylish Bandit Slayer": 24,
+                "Stylish Bandit Slayer": 33,
                 "John Smith": 592,
                 "John Smith & Yukime (John Smith)": 1,
                 "Cid": 1963,
@@ -12293,15 +12473,15 @@
             }
         },
         "Akane Nishino": {
-            "total": 88,
+            "total": 319,
             "names": {
-                "Akane Nishino": 88
+                "Akane Nishino": 319
             }
         },
-        "Akane's Butler": {
+        "Butler": {
             "total": 1,
             "names": {
-                "Akane's Butler": 1
+                "Butler": 1
             }
         },
         "Classmate": {
@@ -12323,15 +12503,15 @@
             }
         },
         "Kidnapper A": {
-            "total": 49,
+            "total": 76,
             "names": {
-                "Kidnapper A": 49
+                "Kidnapper A": 76
             }
         },
         "Kidnapper B": {
-            "total": 50,
+            "total": 52,
             "names": {
-                "Kidnapper B": 50
+                "Kidnapper B": 52
             }
         },
         "News Reporter": {
@@ -12353,9 +12533,9 @@
             }
         },
         "Bandit": {
-            "total": 68,
+            "total": 92,
             "names": {
-                "Bandit": 68
+                "Bandit": 92
             }
         },
         "Bandit Boss": {
@@ -12374,9 +12554,9 @@
             }
         },
         "Maid": {
-            "total": 6,
+            "total": 7,
             "names": {
-                "Maid": 6
+                "Maid": 7
             }
         },
         "Grease": {
@@ -12386,9 +12566,9 @@
             }
         },
         "Soldier": {
-            "total": 50,
+            "total": 76,
             "names": {
-                "Soldier": 50
+                "Soldier": 76
             }
         },
         "Girl": {
@@ -12433,15 +12613,15 @@
             }
         },
         "Scientist": {
-            "total": 66,
+            "total": 79,
             "names": {
-                "Scientist": 66
+                "Scientist": 79
             }
         },
         "Knight": {
-            "total": 151,
+            "total": 228,
             "names": {
-                "Knight": 151
+                "Knight": 228
             }
         },
         "Iris Midgar": {
@@ -12452,14 +12632,14 @@
             }
         },
         "Rose Oriana": {
-            "total": 1161,
+            "total": 1281,
             "names": {
-                "Rose Oriana": 676,
-                "No. 666": 197,
+                "Rose Oriana": 778,
+                "No. 666": 214,
                 "Rose": 149,
                 "Rose & Alexia (Rose)": 1,
                 "No.666": 137,
-                "No. 664 & No. 665 & No. 666 (No. 666)": 1
+                "No. 664 & No. 665 & No. 666 (No. 666)": 2
             }
         },
         "Civilian": {
@@ -12489,9 +12669,9 @@
             }
         },
         "Cult Member": {
-            "total": 113,
+            "total": 114,
             "names": {
-                "Cult Member": 113
+                "Cult Member": 114
             }
         },
         "Lutheran Barnett": {
@@ -12653,15 +12833,15 @@
             }
         },
         "Perv Asshat": {
-            "total": 314,
+            "total": 374,
             "names": {
-                "Perv Asshat": 314
+                "Perv Asshat": 374
             }
         },
         "Raphael Oriana": {
-            "total": 50,
+            "total": 57,
             "names": {
-                "Raphael Oriana": 50
+                "Raphael Oriana": 57
             }
         },
         "Civil Servant": {
@@ -12707,9 +12887,9 @@
             }
         },
         "Aristocrat": {
-            "total": 71,
+            "total": 75,
             "names": {
-                "Aristocrat": 71
+                "Aristocrat": 75
             }
         },
         "Crowd": {
@@ -12725,9 +12905,9 @@
             }
         },
         "Mordred": {
-            "total": 169,
+            "total": 267,
             "names": {
-                "Mordred": 169
+                "Mordred": 267
             }
         },
         "Sailor": {
@@ -12746,17 +12926,19 @@
             }
         },
         "No. 665": {
-            "total": 48,
+            "total": 53,
             "names": {
-                "No. 665": 47,
-                "No. 664 & No. 665 & No. 666 (No. 665)": 1
+                "No. 665": 50,
+                "No. 664 & No. 665 & No. 666 (No. 665)": 2,
+                "No. 664 & No. 665 (No. 665)": 1
             }
         },
         "No. 664": {
-            "total": 108,
+            "total": 130,
             "names": {
-                "No. 664": 107,
-                "No. 664 & No. 665 & No. 666 (No. 664)": 1
+                "No. 664": 127,
+                "No. 664 & No. 665 & No. 666 (No. 664)": 2,
+                "No. 664 & No. 665 (No. 664)": 1
             }
         },
         "White Demon": {
@@ -12784,9 +12966,9 @@
             }
         },
         "Marie": {
-            "total": 106,
+            "total": 129,
             "names": {
-                "Marie": 106
+                "Marie": 129
             }
         },
         "Coworker": {
@@ -12885,23 +13067,23 @@
             }
         },
         "Victoria": {
-            "total": 247,
+            "total": 312,
             "names": {
-                "No. 559": 117,
+                "No. 559": 182,
                 "??? (Victoria)": 10,
                 "Victoria": 120
             }
         },
         "Kouadoi": {
-            "total": 27,
+            "total": 51,
             "names": {
-                "Kouadoi": 27
+                "Kouadoi": 51
             }
         },
         "Reina Oriana": {
-            "total": 25,
+            "total": 34,
             "names": {
-                "Reina Oriana": 25
+                "Reina Oriana": 34
             }
         },
         "Parton": {
@@ -12917,15 +13099,15 @@
             }
         },
         "Margaret": {
-            "total": 81,
+            "total": 145,
             "names": {
-                "Margaret": 81
+                "Margaret": 145
             }
         },
         "Kevin": {
-            "total": 32,
+            "total": 50,
             "names": {
-                "Kevin": 32
+                "Kevin": 50
             }
         },
         "Goldy": {
@@ -12935,9 +13117,9 @@
             }
         },
         "Priest": {
-            "total": 6,
+            "total": 7,
             "names": {
-                "Priest": 6
+                "Priest": 7
             }
         },
         "Knights": {
@@ -12947,9 +13129,9 @@
             }
         },
         "Narrator": {
-            "total": 6168,
+            "total": 7978,
             "names": {
-                "Narrator": 6168
+                "Narrator": 7978
             }
         },
         "Mysterious Captain": {
@@ -14133,6 +14315,42 @@
             "total": 14,
             "names": {
                 "Scarface": 14
+            }
+        },
+        "Akira Nishino": {
+            "total": 52,
+            "names": {
+                "Akira Nishino": 52
+            }
+        },
+        "Yuuka": {
+            "total": 102,
+            "names": {
+                "Yuuka": 102
+            }
+        },
+        "Yuudai Saejima": {
+            "total": 44,
+            "names": {
+                "Yuudai Saejima": 44
+            }
+        },
+        "Haitani": {
+            "total": 37,
+            "names": {
+                "Haitani": 37
+            }
+        },
+        "Fatty McSpecs": {
+            "total": 6,
+            "names": {
+                "Fatty McSpecs": 6
+            }
+        },
+        "Forum User": {
+            "total": 32,
+            "names": {
+                "Forum User": 32
             }
         }
     }

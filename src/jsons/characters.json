@@ -123,7 +123,6 @@
             "Earth": {
                 "order": 3,
                 "characters": [
-                    "Akane's Butler",
                     "Kidnapper A",
                     "Kidnapper B"
                 ]
@@ -170,6 +169,7 @@
             "General": {
                 "order": 10,
                 "characters": [
+                    "Fatty McSpecs",
                     "Toppe Batterius",
                     "Scarface"
                 ]
@@ -183,6 +183,7 @@
                     "Attendees",
                     "Bookie",
                     "Broadcast",
+                    "Butler",
                     "Church Member",
                     "Civilian",
                     "Coworker",
@@ -194,6 +195,7 @@
                     "Female Pilgrim",
                     "Follower A",
                     "Follower B",
+                    "Forum User",
                     "Guard",
                     "Heckler",
                     "Junior",
@@ -449,6 +451,42 @@
             "subgroup": "Earth",
             "order": 1,
             "url": "characterIcons/AkaneNishinoIcon.webp"
+        },
+        {
+            "name": "Akira Nishino",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Earth",
+            "order": 2,
+            "url": "characterIcons/AkiraNishinoIcon.webp"
+        },
+        {
+            "name": "Haitani",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Earth",
+            "order": 3,
+            "url": "characterIcons/HaitaniIcon.webp"
+        },
+        {
+            "name": "Yuudai Saejima",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Earth",
+            "order": 4,
+            "url": "characterIcons/YuudaiSaejimaIcon.webp"
+        },
+        {
+            "name": "Yuuka",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Earth",
+            "order": 5,
+            "url": "characterIcons/YuukaIcon.webp"
         },
         {
             "name": "Alexia Midgar",
@@ -942,6 +980,7 @@
         {
             "name": "No. 664",
             "name_variants": [
+                "No. 664 & No. 665 (No. 664)",
                 "No. 664 & No. 665 & No. 666 (No. 664)"
             ],
             "name_mirrors": [],
@@ -953,6 +992,7 @@
         {
             "name": "No. 665",
             "name_variants": [
+                "No. 664 & No. 665 (No. 665)",
                 "No. 664 & No. 665 & No. 666 (No. 665)"
             ],
             "name_mirrors": [],
