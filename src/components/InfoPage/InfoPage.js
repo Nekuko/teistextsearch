@@ -4,6 +4,7 @@ import './InfoPage.css'; // Import the CSS file
 import Collapsible from 'react-collapsible';
 import { ESMAP } from '../../esMap';
 import { fetchInformationData, fetchVersionData } from '../../utils/firebaseFunctions';
+import { namedCharactersList } from '../../namedCharacters';
 
 const formatNumber = (num) => num.toLocaleString();
 
@@ -121,15 +122,7 @@ function InfoPage() {
             return parsedState;
         }
 
-        return ['Akane Nishino', 'Akira Nishino', 'Alexia Midgar', 'Alpha', 'Annerose Nichtsehen', 'Aurora', 
-            'Beatrix', 'Beta', 'Chi', 'Cid Kagenou', 'Claire Kagenou', 'Claudia', 'Crimson', 'Delta', 'Duet', 
-            'Elisabeth', 'Epsilon', 'Eta', 'Freya', 'Gamma', 'Garter Kikuchi', 'Gettan', 'Glen', 'Goldy Gilded', 
-            'Grease', 'Haitani', 'Iota', 'Iris Midgar', 'Jack Nelson', 'Juggernaut', 'Kana', 'Kevin', 'Klaus Midgar', 
-            'Kouadoi', 'Lambda', 'Lili', 'Lutheran Barnett', 'Marco Granger', 'Margaret', 'Marie', 'Mary', 'Mist Dragon', 
-            'Mordred', 'Mr. Kagenou', 'Mrs. Kagenou', 'Natsu', 'No. 664', 'No. 665', 'Nonna', 'Nu', 'Olivier', 'Omega', 
-            'Pente', 'Perv Asshat', 'Po Tato', 'Quinton', 'Raphael Oriana', 'Reina Oriana', 'Rex', 'Rose Oriana', 'Rouge', 
-            'Sarasa', 'Sergey Gorman', 'Sherry Barnett', 'Skel Etal', 'Victoria', 'White Demon', 'Yukime', 'Yuudai Saejima', 
-            'Yuuka', 'Zenon Griffey', 'Zeta']
+        return namedCharactersList;
     });
 
     const [animeDropdownState, setAnimeDropdownState] = useState(() => {

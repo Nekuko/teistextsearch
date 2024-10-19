@@ -11,16 +11,18 @@ function ContextOverlay({ images, contextData, contextOpen, setContextOpen }) {
     const [initialOpen, setInitialOpen] = useState(false);
 
     useEffect(() => {
-        const allLines = contextData.surrounding.map((line) => {
-            if (line.hasOwnProperty('subtitle')) {
-                return { text: line.subtitle, index: line.line };
-            } else {
-                return { text: line.text, index: line.line };
-            }
-        });
-
+        const processedLines = new Set();
+        const allLines = contextData.surrounding.reduce((acc, line) => {
+          const processedText = line.hasOwnProperty('subtitle') ? line.subtitle : line.text;
+          if (!processedLines.has(line.line)) {
+            processedLines.add(line.line);
+            acc.push({ text: processedText, index: line.line });
+          }
+          return acc;
+        }, []);
+      
         setContextLines(allLines);
-    }, [contextData]);
+      }, [contextData]);
 
     const handleClickOutside = (event) => {
         if (contextOpen && overlayRef.current && !overlayRef.current.contains(event.target)) {

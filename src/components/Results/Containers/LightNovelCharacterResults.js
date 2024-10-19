@@ -117,14 +117,19 @@ function LightNovelCharacterResults({ full, manageContextData, namedCharacters, 
       } else {
         nameFinal = `${character.name_variant} | (${character.name})`;
       }
-      let substring = sentence.text.substring(start, end + 1);
-      if (substring.charAt(0) === " ") {
-        start++;
+      if (sentence.characters.length === 1) {
+        characterInformation.push(`${nameFinal}`)
+      } else {
+        let substring = sentence.text.substring(start, end + 1);
+        if (substring.charAt(0) === " ") {
+          start++;
+        }
+        if (substring.charAt(substring.length - 1) === " ") {
+          end--;
+        }
+        characterInformation.push(`${nameFinal} [${start}, ${end + 1}]`)
       }
-      if (substring.charAt(substring.length - 1) === " ") {
-        end--;
-      }
-      characterInformation.push(`${nameFinal} [${start}, ${end + 1}]`)
+      
     }
 
     setPreviewPosition({ top: rect.top, left: rect.left });

@@ -2,43 +2,43 @@
     "ln": {
         "volume_count": 6,
         "line_count": 24986,
-        "word_count": 343994,
-        "char_count": 1923687,
+        "word_count": 344034,
+        "char_count": 1923912,
         "characters": {
             "Cid Kagenou (Minoru Kageno)": 52,
-            "Cid Kagenou": 3523,
-            "Cid Kagenou (Shadow)": 753,
+            "Cid Kagenou": 4510,
+            "Cid Kagenou (Shadow)": 812,
             "Bandit": 58,
             "Bandit Boss": 15,
-            "Alpha": 294,
+            "Alpha": 353,
             "Mr. Kagenou": 3,
             "Mrs. Kagenou": 2,
             "Beta": 510,
-            "Narrator": 7383,
+            "Narrator": 8818,
             "Grease": 55,
             "Soldier": 39,
-            "Claire Kagenou": 275,
+            "Claire Kagenou": 639,
             "Garden Member": 1,
-            "Alexia Midgar": 380,
-            "Skel Etal": 94,
-            "Po Tato": 50,
-            "Student": 19,
+            "Alexia Midgar": 807,
+            "Skel Etal": 151,
+            "Po Tato": 102,
+            "Student": 51,
             "Zenon Griffey": 71,
-            "Knight": 106,
-            "Iris Midgar": 185,
-            "Scientist": 33,
-            "Cult Member": 28,
+            "Knight": 113,
+            "Iris Midgar": 193,
+            "Scientist": 36,
+            "Cult Member": 35,
             "Mitsugoshi Staff": 4,
             "Gamma (Luna)": 28,
             "Sherry Barnett": 143,
             "Lutheran Barnett": 86,
             "Glen": 13,
             "Nu": 75,
-            "Gamma": 117,
+            "Gamma": 139,
             "Referee": 11,
-            "Rose Oriana": 278,
-            "Teacher": 1,
-            "Marco Granger": 5,
+            "Rose Oriana": 303,
+            "Teacher": 9,
+            "Marco Granger": 7,
             "Rex": 42,
             "Lutheran Barnett (Sir Gaunt)": 10,
             "Medic": 3,
@@ -46,8 +46,8 @@
             "Epsilon": 112,
             "Announcer": 2,
             "Jack Nelson": 98,
-            "Aurora": 108,
-            "Delta": 114,
+            "Aurora": 209,
+            "Delta": 149,
             "Rude": 9,
             "Cid Kagenou (Mundane Mann)": 134,
             "Annerose Nichtsehen": 74,
@@ -66,8 +66,8 @@
             "Raphael Oriana": 9,
             "Cid Kagenou (Stylish Bandit Slayer)": 20,
             "Lambda": 12,
-            "No. 665": 13,
-            "No. 664": 51,
+            "No. 665": 15,
+            "No. 664": 53,
             "Rose Oriana (No. 666)": 38,
             "Ghoul": 3,
             "White Demon": 30,
@@ -85,7 +85,7 @@
             "No. 664 (No. 664 & No. 665 & No. 666 (No. 664))": 2,
             "No. 665 (No. 664 & No. 665 & No. 666 (No. 665))": 2,
             "Rose Oriana (No. 664 & No. 665 & No. 666 (No. 666))": 2,
-            "Aurora (Witch Claire)": 12,
+            "Aurora (Witch Claire)": 15,
             "Scarface": 14,
             "Natsu (Natsu & Kana (Natsu))": 2,
             "Kana (Natsu & Kana (Kana))": 2,
@@ -97,7 +97,7 @@
             "Leaf One": 12,
             "Natsu": 7,
             "Kana": 2,
-            "Victoria (No. 559)": 65,
+            "Victoria (No. 559)": 81,
             "No. 664 (No. 664 & No. 665 (No. 664))": 1,
             "No. 665 (No. 664 & No. 665 (No. 665))": 1,
             "Kouadoi": 24,
@@ -119,7 +119,33 @@
             "Yuudai Saejima": 44,
             "Haitani": 37,
             "Fatty McSpecs": 6,
-            "Forum User": 32
+            "Forum User": 32,
+            "Skel Etal (Skel & Po (Skel))": 1,
+            "Po Tato (Skel & Po (Po))": 1,
+            "Zeta": 145,
+            "Spirit": 1,
+            "Delta (Delta & Zeta (Delta))": 2,
+            "Zeta (Delta & Zeta (Zeta))": 2,
+            "Nina": 108,
+            "Jean": 15,
+            "Dark Spider": 17,
+            "Willow": 99,
+            "Fenrir": 129,
+            "Issac": 66,
+            "Alexia Midgar (Alexia & Claire (Alexia))": 3,
+            "Claire Kagenou (Alexia & Claire (Claire))": 3,
+            "Forbidden Stacks": 13,
+            "Adder": 10,
+            "Zeta's Father": 32,
+            "Zeta (Lilim)": 70,
+            "Zeta's Mother": 20,
+            "Chief": 17,
+            "Petos": 54,
+            "Eta": 57,
+            "Suzuki Hope": 4,
+            "Cid Kagenou (Suzuki Hope)": 84,
+            "Christina Hope": 82,
+            "Eliza Dakuaikan": 28
         },
         "volumes": {
             "v1": {
@@ -487,8 +513,8 @@
                             "Skel Etal": 12,
                             "Supervisor": 2,
                             "Alexia Midgar": 38,
-                            "Narrator": 181,
                             "Beta (Natsume Kafka)": 28,
+                            "Narrator": 181,
                             "Epsilon": 9,
                             "Perv Asshat": 1,
                             "Rose Oriana": 28,
@@ -816,7 +842,7 @@
             "v4": {
                 "line_count": 4353,
                 "word_count": 59256,
-                "char_count": 327507,
+                "char_count": 327505,
                 "characters": {
                     "Narrator": 1810,
                     "Raphael Oriana": 7,
@@ -1010,7 +1036,7 @@
                     },
                     "c9": {
                         "word_count": 6125,
-                        "char_count": 34702,
+                        "char_count": 34700,
                         "line_count": 503,
                         "characters": {
                             "Narrator": 318,
@@ -1040,57 +1066,216 @@
             },
             "v5": {
                 "line_count": 4061,
-                "word_count": 57525,
-                "char_count": 319918,
-                "characters": {},
+                "word_count": 57565,
+                "char_count": 320145,
+                "characters": {
+                    "Cid Kagenou": 987,
+                    "Skel Etal": 57,
+                    "Po Tato": 52,
+                    "Skel Etal (Skel & Po (Skel))": 1,
+                    "Po Tato (Skel & Po (Po))": 1,
+                    "Zeta": 145,
+                    "Claire Kagenou": 364,
+                    "Narrator": 1435,
+                    "Aurora": 101,
+                    "Spirit": 1,
+                    "Alexia Midgar": 427,
+                    "Delta": 35,
+                    "Delta (Delta & Zeta (Delta))": 2,
+                    "Zeta (Delta & Zeta (Zeta))": 2,
+                    "Knight": 7,
+                    "Cid Kagenou (Shadow)": 59,
+                    "Nina": 108,
+                    "Jean": 15,
+                    "Victoria (No. 559)": 16,
+                    "Teacher": 8,
+                    "Dark Spider": 17,
+                    "Willow": 99,
+                    "Fenrir": 129,
+                    "Student": 32,
+                    "Issac": 66,
+                    "Scientist": 3,
+                    "Alexia Midgar (Alexia & Claire (Alexia))": 3,
+                    "Claire Kagenou (Alexia & Claire (Claire))": 3,
+                    "Forbidden Stacks": 13,
+                    "Iris Midgar": 8,
+                    "Adder": 10,
+                    "Marco Granger": 2,
+                    "Zeta's Father": 32,
+                    "Zeta (Lilim)": 70,
+                    "Zeta's Mother": 20,
+                    "Chief": 17,
+                    "Petos": 54,
+                    "Cult Member": 7,
+                    "Alpha": 59,
+                    "Rose Oriana": 25,
+                    "No. 665": 2,
+                    "No. 664": 2,
+                    "Gamma": 22,
+                    "Eta": 57,
+                    "Suzuki Hope": 4,
+                    "Cid Kagenou (Suzuki Hope)": 84,
+                    "Christina Hope": 82,
+                    "Eliza Dakuaikan": 28,
+                    "Aurora (Witch Claire)": 3
+                },
                 "chapters": {
                     "c1": {
-                        "word_count": 7082,
-                        "char_count": 38970,
+                        "word_count": 7119,
+                        "char_count": 39167,
                         "line_count": 552,
-                        "characters": {}
+                        "characters": {
+                            "Cid Kagenou": 280,
+                            "Skel Etal": 27,
+                            "Po Tato": 20,
+                            "Skel Etal (Skel & Po (Skel))": 1,
+                            "Po Tato (Skel & Po (Po))": 1,
+                            "Zeta": 35,
+                            "Claire Kagenou": 44,
+                            "Narrator": 72,
+                            "Aurora": 26,
+                            "Spirit": 1,
+                            "Alexia Midgar": 56,
+                            "Delta": 35,
+                            "Delta (Delta & Zeta (Delta))": 2,
+                            "Zeta (Delta & Zeta (Zeta))": 2,
+                            "Knight": 7,
+                            "Cid Kagenou (Shadow)": 8
+                        }
                     },
                     "c2": {
                         "word_count": 10452,
                         "char_count": 57098,
                         "line_count": 714,
-                        "characters": {}
+                        "characters": {
+                            "Cid Kagenou": 215,
+                            "Po Tato": 12,
+                            "Skel Etal": 11,
+                            "Zeta": 31,
+                            "Nina": 39,
+                            "Claire Kagenou": 133,
+                            "Narrator": 165,
+                            "Aurora": 29,
+                            "Jean": 15,
+                            "Victoria (No. 559)": 6,
+                            "Teacher": 8,
+                            "Alexia Midgar": 82,
+                            "Dark Spider": 17,
+                            "Willow": 23,
+                            "Fenrir": 23
+                        }
                     },
                     "c3": {
-                        "word_count": 9174,
-                        "char_count": 51320,
+                        "word_count": 9177,
+                        "char_count": 51350,
                         "line_count": 731,
-                        "characters": {}
+                        "characters": {
+                            "Cid Kagenou": 183,
+                            "Alexia Midgar": 145,
+                            "Student": 6,
+                            "Issac": 5,
+                            "Claire Kagenou": 83,
+                            "Aurora": 28,
+                            "Scientist": 3,
+                            "Narrator": 207,
+                            "Alexia Midgar (Alexia & Claire (Alexia))": 3,
+                            "Claire Kagenou (Alexia & Claire (Claire))": 3,
+                            "Forbidden Stacks": 13,
+                            "Willow": 76,
+                            "Cid Kagenou (Shadow)": 6,
+                            "Iris Midgar": 8,
+                            "Adder": 10,
+                            "Marco Granger": 2,
+                            "Zeta": 32,
+                            "Nina": 27
+                        }
                     },
                     "c4": {
                         "word_count": 8008,
                         "char_count": 44804,
                         "line_count": 591,
-                        "characters": {}
+                        "characters": {
+                            "Cid Kagenou": 163,
+                            "Claire Kagenou": 23,
+                            "Skel Etal": 19,
+                            "Po Tato": 20,
+                            "Zeta": 38,
+                            "Narrator": 220,
+                            "Zeta's Father": 32,
+                            "Zeta (Lilim)": 70,
+                            "Zeta's Mother": 20,
+                            "Chief": 17,
+                            "Petos": 26,
+                            "Cult Member": 7,
+                            "Cid Kagenou (Shadow)": 19,
+                            "Alpha": 11,
+                            "Victoria (No. 559)": 7,
+                            "Nina": 3
+                        }
                     },
                     "c5": {
                         "word_count": 4090,
                         "char_count": 22677,
                         "line_count": 210,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 94,
+                            "Fenrir": 31,
+                            "Petos": 28,
+                            "Alpha": 48,
+                            "Rose Oriana": 25,
+                            "No. 665": 2,
+                            "No. 664": 2,
+                            "Gamma": 22,
+                            "Eta": 16
+                        }
                     },
                     "c6": {
                         "word_count": 9746,
                         "char_count": 54385,
                         "line_count": 613,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 323,
+                            "Alexia Midgar": 97,
+                            "Claire Kagenou": 53,
+                            "Student": 26,
+                            "Cid Kagenou": 99,
+                            "Suzuki Hope": 4,
+                            "Cid Kagenou (Suzuki Hope)": 54,
+                            "Nina": 27,
+                            "Issac": 29,
+                            "Christina Hope": 35,
+                            "Eliza Dakuaikan": 28
+                        }
                     },
                     "c7": {
                         "word_count": 8273,
                         "char_count": 46843,
                         "line_count": 609,
-                        "characters": {}
+                        "characters": {
+                            "Narrator": 354,
+                            "Christina Hope": 47,
+                            "Issac": 32,
+                            "Cid Kagenou (Suzuki Hope)": 30,
+                            "Aurora": 18,
+                            "Claire Kagenou": 28,
+                            "Alexia Midgar": 47,
+                            "Fenrir": 75,
+                            "Aurora (Witch Claire)": 3,
+                            "Cid Kagenou (Shadow)": 26,
+                            "Nina": 12,
+                            "Victoria (No. 559)": 3,
+                            "Zeta": 9,
+                            "Cid Kagenou": 45
+                        }
                     },
                     "c8": {
                         "word_count": 700,
                         "char_count": 3821,
                         "line_count": 41,
-                        "characters": {}
+                        "characters": {
+                            "Eta": 41,
+                            "Cid Kagenou": 2
+                        }
                     }
                 }
             },
@@ -12264,9 +12449,9 @@
     },
     "chars": {
         "Alpha": {
-            "total": 4036,
+            "total": 4095,
             "names": {
-                "Alpha": 3983,
+                "Alpha": 4042,
                 "Alpha & Gamma (Alpha)": 1,
                 "Alpha & Eta (Alpha)": 1,
                 "Seven Shadows (Alpha)": 8,
@@ -12313,9 +12498,9 @@
             }
         },
         "Gamma": {
-            "total": 2223,
+            "total": 2245,
             "names": {
-                "Gamma": 2064,
+                "Gamma": 2086,
                 "Seven Shadows (Gamma)": 14,
                 "Alpha & Gamma (Gamma)": 1,
                 "Beta & Gamma (Gamma)": 5,
@@ -12330,11 +12515,11 @@
             }
         },
         "Delta": {
-            "total": 1606,
+            "total": 1643,
             "names": {
-                "Delta": 1574,
+                "Delta": 1609,
                 "Seven Shadows (Delta)": 13,
-                "Delta & Zeta (Delta)": 4,
+                "Delta & Zeta (Delta)": 6,
                 "Deltan": 1,
                 "??? (Delta)": 7,
                 "Everyone (Delta)": 6,
@@ -12359,11 +12544,11 @@
             }
         },
         "Zeta": {
-            "total": 2221,
+            "total": 2438,
             "names": {
-                "Zeta": 2167,
+                "Zeta": 2312,
                 "Seven Shadows (Zeta)": 14,
-                "Delta & Zeta (Zeta)": 4,
+                "Delta & Zeta (Zeta)": 6,
                 "Alpha & Zeta (Zeta)": 3,
                 "Beta & Zeta (Zeta)": 3,
                 "Zetan": 3,
@@ -12373,13 +12558,14 @@
                 "None (Zeta)": 15,
                 "Everyone (Zeta)": 5,
                 "Zeta & Beta (Zeta)": 1,
-                "Zeta & Eta (Zeta)": 1
+                "Zeta & Eta (Zeta)": 1,
+                "Lilim": 70
             }
         },
         "Eta": {
-            "total": 1381,
+            "total": 1438,
             "names": {
-                "Eta": 1356,
+                "Eta": 1413,
                 "Seven Shadows (Eta)": 10,
                 "Alpha & Eta (Eta)": 1,
                 "Everyone (Eta)": 6,
@@ -12447,12 +12633,12 @@
             }
         },
         "Cid Kagenou": {
-            "total": 10122,
+            "total": 11252,
             "names": {
-                "Shadow": 1494,
+                "Shadow": 1553,
                 "Minoru Kageno": 126,
                 "Stylish Ruffian Slayer": 38,
-                "Cid Kagenou": 5462,
+                "Cid Kagenou": 6449,
                 "Mundane Mann": 219,
                 "Stylish Bandit Slayer": 33,
                 "John Smith": 592,
@@ -12469,7 +12655,8 @@
                 "Cid & Sunraku (Cid)": 1,
                 "3 People (Cid)": 1,
                 "Cid & Beta & Epsilon (Cid)": 1,
-                "Shadow&Benimaru (Shadow)": 1
+                "Shadow&Benimaru (Shadow)": 1,
+                "Suzuki Hope": 84
             }
         },
         "Akane Nishino": {
@@ -12491,15 +12678,15 @@
             }
         },
         "Teacher": {
-            "total": 17,
+            "total": 25,
             "names": {
-                "Teacher": 17
+                "Teacher": 25
             }
         },
         "Student": {
-            "total": 111,
+            "total": 143,
             "names": {
-                "Student": 111
+                "Student": 143
             }
         },
         "Kidnapper A": {
@@ -12545,12 +12732,12 @@
             }
         },
         "Claire Kagenou": {
-            "total": 925,
+            "total": 1292,
             "names": {
-                "Claire Kagenou": 517,
+                "Claire Kagenou": 881,
                 "Claire": 403,
                 "??? (Claire Kagenou)": 4,
-                "Alexia & Claire (Claire)": 1
+                "Alexia & Claire (Claire)": 4
             }
         },
         "Maid": {
@@ -12578,32 +12765,32 @@
             }
         },
         "Skel Etal": {
-            "total": 478,
+            "total": 536,
             "names": {
-                "Skel Etal": 429,
-                "Skel & Po (Skel)": 13,
+                "Skel Etal": 486,
+                "Skel & Po (Skel)": 14,
                 "Skel": 36
             }
         },
         "Po Tato": {
-            "total": 258,
+            "total": 311,
             "names": {
-                "Po Tato": 225,
-                "Skel & Po (Po)": 13,
+                "Po Tato": 277,
+                "Skel & Po (Po)": 14,
                 "Po": 20
             }
         },
         "Alexia Midgar": {
-            "total": 1601,
+            "total": 2031,
             "names": {
-                "Alexia Midgar": 989,
+                "Alexia Midgar": 1416,
                 "Alexia Midgar & Natsume Kafka (Alexia Midgar)": 1,
                 "Alexia": 605,
                 "Rose & Alexia (Alexia)": 1,
                 "????? (Alexia Midgar)": 1,
                 "Shelly and Alexia (Alexia)": 1,
                 "??? (Alexia Midgar)": 2,
-                "Alexia & Claire (Alexia)": 1
+                "Alexia & Claire (Alexia)": 4
             }
         },
         "Zenon Griffey": {
@@ -12613,28 +12800,28 @@
             }
         },
         "Scientist": {
-            "total": 79,
+            "total": 82,
             "names": {
-                "Scientist": 79
+                "Scientist": 82
             }
         },
         "Knight": {
-            "total": 228,
+            "total": 235,
             "names": {
-                "Knight": 228
+                "Knight": 235
             }
         },
         "Iris Midgar": {
-            "total": 741,
+            "total": 749,
             "names": {
-                "Iris Midgar": 583,
+                "Iris Midgar": 591,
                 "Iris": 158
             }
         },
         "Rose Oriana": {
-            "total": 1281,
+            "total": 1306,
             "names": {
-                "Rose Oriana": 778,
+                "Rose Oriana": 803,
                 "No. 666": 214,
                 "Rose": 149,
                 "Rose & Alexia (Rose)": 1,
@@ -12655,9 +12842,9 @@
             }
         },
         "Marco Granger": {
-            "total": 14,
+            "total": 16,
             "names": {
-                "Marco Granger": 14
+                "Marco Granger": 16
             }
         },
         "Sherry Barnett": {
@@ -12669,9 +12856,9 @@
             }
         },
         "Cult Member": {
-            "total": 114,
+            "total": 121,
             "names": {
-                "Cult Member": 114
+                "Cult Member": 121
             }
         },
         "Lutheran Barnett": {
@@ -12754,10 +12941,10 @@
             }
         },
         "Aurora": {
-            "total": 448,
+            "total": 552,
             "names": {
-                "Aurora": 379,
-                "Witch Claire": 52,
+                "Aurora": 480,
+                "Witch Claire": 55,
                 "Massive Mound of Magic": 14,
                 "??? (Witch Claire)": 2,
                 "3 People (Aurora)": 1
@@ -12926,17 +13113,17 @@
             }
         },
         "No. 665": {
-            "total": 53,
+            "total": 55,
             "names": {
-                "No. 665": 50,
+                "No. 665": 52,
                 "No. 664 & No. 665 & No. 666 (No. 665)": 2,
                 "No. 664 & No. 665 (No. 665)": 1
             }
         },
         "No. 664": {
-            "total": 130,
+            "total": 132,
             "names": {
-                "No. 664": 127,
+                "No. 664": 129,
                 "No. 664 & No. 665 & No. 666 (No. 664)": 2,
                 "No. 664 & No. 665 (No. 664)": 1
             }
@@ -13067,9 +13254,9 @@
             }
         },
         "Victoria": {
-            "total": 312,
+            "total": 328,
             "names": {
-                "No. 559": 182,
+                "No. 559": 198,
                 "??? (Victoria)": 10,
                 "Victoria": 120
             }
@@ -13129,9 +13316,9 @@
             }
         },
         "Narrator": {
-            "total": 7978,
+            "total": 9413,
             "names": {
-                "Narrator": 7978
+                "Narrator": 9413
             }
         },
         "Mysterious Captain": {
@@ -14351,6 +14538,102 @@
             "total": 32,
             "names": {
                 "Forum User": 32
+            }
+        },
+        "Spirit": {
+            "total": 1,
+            "names": {
+                "Spirit": 1
+            }
+        },
+        "Nina": {
+            "total": 108,
+            "names": {
+                "Nina": 108
+            }
+        },
+        "Jean": {
+            "total": 15,
+            "names": {
+                "Jean": 15
+            }
+        },
+        "Dark Spider": {
+            "total": 17,
+            "names": {
+                "Dark Spider": 17
+            }
+        },
+        "Willow": {
+            "total": 99,
+            "names": {
+                "Willow": 99
+            }
+        },
+        "Fenrir": {
+            "total": 129,
+            "names": {
+                "Fenrir": 129
+            }
+        },
+        "Issac": {
+            "total": 66,
+            "names": {
+                "Issac": 66
+            }
+        },
+        "Forbidden Stacks": {
+            "total": 13,
+            "names": {
+                "Forbidden Stacks": 13
+            }
+        },
+        "Adder": {
+            "total": 10,
+            "names": {
+                "Adder": 10
+            }
+        },
+        "Zeta's Father": {
+            "total": 32,
+            "names": {
+                "Zeta's Father": 32
+            }
+        },
+        "Zeta's Mother": {
+            "total": 20,
+            "names": {
+                "Zeta's Mother": 20
+            }
+        },
+        "Chief": {
+            "total": 17,
+            "names": {
+                "Chief": 17
+            }
+        },
+        "Petos": {
+            "total": 54,
+            "names": {
+                "Petos": 54
+            }
+        },
+        "Suzuki Hope": {
+            "total": 4,
+            "names": {
+                "Suzuki Hope": 4
+            }
+        },
+        "Christina Hope": {
+            "total": 82,
+            "names": {
+                "Christina Hope": 82
+            }
+        },
+        "Eliza Dakuaikan": {
+            "total": 28,
+            "names": {
+                "Eliza Dakuaikan": 28
             }
         }
     }

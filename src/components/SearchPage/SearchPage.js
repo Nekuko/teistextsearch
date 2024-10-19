@@ -19,6 +19,7 @@ import { ReactComponent as WholeWord } from '../../svgs/codicon--whole-word.svg'
 import { ReactComponent as Regex } from '../../svgs/codicon--regex.svg';
 import { analytics } from '../../firebase';
 import { logEvent } from 'firebase/analytics'
+import { namedCharactersList } from '../../namedCharacters';
 
 function createCharacterDropdowns(data) {
     let dropdowns = {};
@@ -458,15 +459,7 @@ function SearchPage() {
             return parsedState;
         }
 
-        return ['Akane Nishino', 'Akira Nishino', 'Alexia Midgar', 'Alpha', 'Annerose Nichtsehen', 'Aurora', 
-            'Beatrix', 'Beta', 'Chi', 'Cid Kagenou', 'Claire Kagenou', 'Claudia', 'Crimson', 'Delta', 'Duet', 
-            'Elisabeth', 'Epsilon', 'Eta', 'Freya', 'Gamma', 'Garter Kikuchi', 'Gettan', 'Glen', 'Goldy Gilded', 
-            'Grease', 'Haitani', 'Iota', 'Iris Midgar', 'Jack Nelson', 'Juggernaut', 'Kana', 'Kevin', 'Klaus Midgar', 
-            'Kouadoi', 'Lambda', 'Lili', 'Lutheran Barnett', 'Marco Granger', 'Margaret', 'Marie', 'Mary', 'Mist Dragon', 
-            'Mordred', 'Mr. Kagenou', 'Mrs. Kagenou', 'Natsu', 'No. 664', 'No. 665', 'Nonna', 'Nu', 'Olivier', 'Omega', 
-            'Pente', 'Perv Asshat', 'Po Tato', 'Quinton', 'Raphael Oriana', 'Reina Oriana', 'Rex', 'Rose Oriana', 'Rouge', 
-            'Sarasa', 'Sergey Gorman', 'Sherry Barnett', 'Skel Etal', 'Victoria', 'White Demon', 'Yukime', 'Yuudai Saejima', 
-            'Yuuka', 'Zenon Griffey', 'Zeta']
+        return namedCharactersList;
     });
 
     // Use an effect to update sessionStorage when namedActive changes
