@@ -6422,12 +6422,12 @@
     },
     "ssc": {
         "part_count": 3,
-        "line_count": 10630,
-        "word_count": 113209,
-        "char_count": 646619,
+        "line_count": 10957,
+        "word_count": 116795,
+        "char_count": 667828,
         "characters": {
             "Alpha": 1344,
-            "Narrator": 55,
+            "Narrator": 59,
             "Mysterious Captain": 26,
             "Mysterious Soldier A": 10,
             "Alpha (??? (Alpha))": 5,
@@ -6438,7 +6438,7 @@
             "Epsilon": 1007,
             "Mysterious Soldier D": 4,
             "Zeta": 1119,
-            "Gamma": 1150,
+            "Gamma": 1283,
             "Mysterious Soldier E": 6,
             "Beta": 957,
             "Mysterious Soldiers": 2,
@@ -6450,7 +6450,7 @@
             "Cultist F": 3,
             "Lambda (Mound of Flesh (Lambda))": 1,
             "Lambda (Tawny Elf (Lambda))": 15,
-            "Cid Kagenou (Cid)": 613,
+            "Cid Kagenou (Cid)": 635,
             "Lambda": 379,
             "Merchant B": 11,
             "Merchant A Secretary": 10,
@@ -6536,7 +6536,7 @@
             "Malak": 40,
             "Chi (No. 111)": 278,
             "Omega (No. 122)": 200,
-            "Annerose Nichtsehen (Annerose)": 100,
+            "Annerose Nichtsehen (Annerose)": 215,
             "Sergey Gorman (Sergey)": 145,
             "Velgalta Soldier A": 2,
             "Velgalta Soldier B": 3,
@@ -6563,7 +6563,7 @@
             "Olivier (??? (Olivier))": 12,
             "Bishop Drake (Bishop of Orum)": 10,
             "Bishop Drake": 15,
-            "Gamma (None (Gamma))": 21,
+            "Gamma (None (Gamma))": 26,
             "Sergey Gorman (??? (Sergey Gorman))": 1,
             "Chi (??? (Karen))": 13,
             "Chi (Karen)": 180,
@@ -6603,7 +6603,15 @@
             "Villager C": 15,
             "Saurva": 7,
             "Villagers": 1,
-            "Zeta (None (Zeta))": 15
+            "Zeta (None (Zeta))": 15,
+            "Archbishop Teinen": 4,
+            "Audience": 1,
+            "Announcer": 12,
+            "Ichi Van Dasher (Ichi)": 2,
+            "Goldy Gilded (??? (Goldy))": 1,
+            "Goldy Gilded (Goldy)": 22,
+            "Spectator A": 3,
+            "Spectator B": 3
         },
         "parts": {
             "p1": {
@@ -9298,15 +9306,15 @@
                 }
             },
             "p3": {
-                "chapter_count": 6,
-                "line_count": 1867,
-                "word_count": 21082,
-                "char_count": 118581,
+                "chapter_count": 7,
+                "line_count": 2194,
+                "word_count": 24668,
+                "char_count": 139790,
                 "characters": {
                     "Olivier (??? (Olivier))": 10,
                     "Alpha": 241,
                     "Beta": 131,
-                    "Gamma": 151,
+                    "Gamma": 284,
                     "Epsilon": 146,
                     "Zeta": 237,
                     "Delta": 44,
@@ -9322,7 +9330,7 @@
                     "Omega": 134,
                     "Chi": 125,
                     "Nu (93)": 21,
-                    "Cid Kagenou (Cid)": 95,
+                    "Cid Kagenou (Cid)": 117,
                     "Beta (None (Beta))": 8,
                     "Fan Passerby": 9,
                     "Alpha (Alpha & Beta (Alpha))": 1,
@@ -9341,7 +9349,7 @@
                     "Iota": 92,
                     "Gamma (Gamma & Iota (Gamma))": 3,
                     "Iota (Gamma & Iota (Iota))": 3,
-                    "Narrator": 4,
+                    "Narrator": 8,
                     "Bandit?": 10,
                     "Cult Member": 28,
                     "Epsilon (Epsilon & Chi & Omega (Epsilon))": 1,
@@ -9355,7 +9363,17 @@
                     "Zeta (None (Zeta))": 15,
                     "Alpha (None (Alpha))": 10,
                     "Victoria": 7,
-                    "Bishop Drake": 9
+                    "Bishop Drake": 9,
+                    "Annerose Nichtsehen (Annerose)": 115,
+                    "Gamma (None (Gamma))": 5,
+                    "Archbishop Teinen": 4,
+                    "Audience": 1,
+                    "Announcer": 12,
+                    "Ichi Van Dasher (Ichi)": 2,
+                    "Goldy Gilded (??? (Goldy))": 1,
+                    "Goldy Gilded (Goldy)": 22,
+                    "Spectator A": 3,
+                    "Spectator B": 3
                 },
                 "chapters": {
                     "c3-1": {
@@ -9886,6 +9904,91 @@
                                     "Alpha (None (Alpha))": 10,
                                     "Victoria": 7,
                                     "Bishop Drake": 9
+                                }
+                            }
+                        }
+                    },
+                    "c3-7": {
+                        "episode_count": 5,
+                        "line_count": 327,
+                        "word_count": 3586,
+                        "char_count": 21209,
+                        "characters": {
+                            "Annerose Nichtsehen (Annerose)": 115,
+                            "Gamma": 133,
+                            "Gamma (None (Gamma))": 5,
+                            "Archbishop Teinen": 4,
+                            "Audience": 1,
+                            "Announcer": 12,
+                            "Ichi Van Dasher (Ichi)": 2,
+                            "Narrator": 4,
+                            "Goldy Gilded (??? (Goldy))": 1,
+                            "Goldy Gilded (Goldy)": 22,
+                            "Spectator A": 3,
+                            "Spectator B": 3,
+                            "Cid Kagenou (Cid)": 22
+                        },
+                        "episodes": {
+                            "e1": {
+                                "line_count": 56,
+                                "word_count": 627,
+                                "char_count": 3716,
+                                "characters": {
+                                    "Annerose Nichtsehen (Annerose)": 27,
+                                    "Gamma": 29
+                                }
+                            },
+                            "e2": {
+                                "line_count": 55,
+                                "word_count": 728,
+                                "char_count": 4257,
+                                "characters": {
+                                    "Gamma (None (Gamma))": 5,
+                                    "Gamma": 28,
+                                    "Annerose Nichtsehen (Annerose)": 22
+                                }
+                            },
+                            "e3": {
+                                "line_count": 63,
+                                "word_count": 698,
+                                "char_count": 4162,
+                                "characters": {
+                                    "Archbishop Teinen": 4,
+                                    "Audience": 1,
+                                    "Announcer": 2,
+                                    "Gamma": 27,
+                                    "Ichi Van Dasher (Ichi)": 2,
+                                    "Narrator": 4,
+                                    "Annerose Nichtsehen (Annerose)": 16,
+                                    "Goldy Gilded (??? (Goldy))": 1,
+                                    "Goldy Gilded (Goldy)": 6
+                                }
+                            },
+                            "e4": {
+                                "line_count": 82,
+                                "word_count": 790,
+                                "char_count": 4646,
+                                "characters": {
+                                    "Gamma": 22,
+                                    "Annerose Nichtsehen (Annerose)": 37,
+                                    "Announcer": 6,
+                                    "Goldy Gilded (Goldy)": 13,
+                                    "Spectator A": 2,
+                                    "Spectator B": 2
+                                }
+                            },
+                            "e5": {
+                                "line_count": 71,
+                                "word_count": 743,
+                                "char_count": 4428,
+                                "characters": {
+                                    "Announcer": 4,
+                                    "Annerose Nichtsehen (Annerose)": 13,
+                                    "Spectator A": 1,
+                                    "Spectator B": 1,
+                                    "Gamma": 27,
+                                    "Goldy Gilded (Goldy)": 3,
+                                    "Cid Kagenou (Cid)": 22
                                 }
                             }
                         }
@@ -12498,16 +12601,16 @@
             }
         },
         "Gamma": {
-            "total": 2245,
+            "total": 2383,
             "names": {
-                "Gamma": 2086,
+                "Gamma": 2219,
                 "Seven Shadows (Gamma)": 14,
                 "Alpha & Gamma (Gamma)": 1,
                 "Beta & Gamma (Gamma)": 5,
                 "Beta & Gamma & Epsilon (Gamma)": 1,
                 "Luna": 104,
                 "Everyone (Gamma)": 6,
-                "None (Gamma)": 21,
+                "None (Gamma)": 26,
                 "??? (Gamma)": 2,
                 "Gamma& Epsilon & Eta (Gamma)": 1,
                 "Gamma & Epsilon (Gamma)": 1,
@@ -12633,7 +12736,7 @@
             }
         },
         "Cid Kagenou": {
-            "total": 11252,
+            "total": 11274,
             "names": {
                 "Shadow": 1553,
                 "Minoru Kageno": 126,
@@ -12643,7 +12746,7 @@
                 "Stylish Bandit Slayer": 33,
                 "John Smith": 592,
                 "John Smith & Yukime (John Smith)": 1,
-                "Cid": 1963,
+                "Cid": 1985,
                 "???? (Shadow)": 3,
                 "None (Cid Kagenou)": 12,
                 "??? (Stylish Bandit Slayer)": 1,
@@ -12929,9 +13032,9 @@
             }
         },
         "Announcer": {
-            "total": 48,
+            "total": 60,
             "names": {
-                "Announcer": 48
+                "Announcer": 60
             }
         },
         "Toppe Batterius": {
@@ -12975,10 +13078,10 @@
             }
         },
         "Annerose Nichtsehen": {
-            "total": 332,
+            "total": 447,
             "names": {
                 "Annerose Nichtsehen": 228,
-                "Annerose": 100,
+                "Annerose": 215,
                 "None (Annerose)": 4
             }
         },
@@ -13008,9 +13111,11 @@
             }
         },
         "Goldy Gilded": {
-            "total": 189,
+            "total": 212,
             "names": {
-                "Goldy Gilded": 189
+                "Goldy Gilded": 189,
+                "??? (Goldy)": 1,
+                "Goldy": 22
             }
         },
         "Beatrix": {
@@ -13316,9 +13421,9 @@
             }
         },
         "Narrator": {
-            "total": 9413,
+            "total": 9417,
             "names": {
-                "Narrator": 9413
+                "Narrator": 9417
             }
         },
         "Mysterious Captain": {
@@ -13839,6 +13944,36 @@
                 "Villagers": 1
             }
         },
+        "Archbishop Teinen": {
+            "total": 4,
+            "names": {
+                "Archbishop Teinen": 4
+            }
+        },
+        "Audience": {
+            "total": 2,
+            "names": {
+                "Audience": 2
+            }
+        },
+        "Ichi Van Dasher": {
+            "total": 2,
+            "names": {
+                "Ichi": 2
+            }
+        },
+        "Spectator A": {
+            "total": 9,
+            "names": {
+                "Spectator A": 9
+            }
+        },
+        "Spectator B": {
+            "total": 9,
+            "names": {
+                "Spectator B": 9
+            }
+        },
         "Bandits": {
             "total": 2,
             "names": {
@@ -14295,24 +14430,6 @@
             "total": 2,
             "names": {
                 "Knight A": 2
-            }
-        },
-        "Audience": {
-            "total": 1,
-            "names": {
-                "Audience": 1
-            }
-        },
-        "Spectator A": {
-            "total": 6,
-            "names": {
-                "Spectator A": 6
-            }
-        },
-        "Spectator B": {
-            "total": 6,
-            "names": {
-                "Spectator B": 6
             }
         },
         "Boys": {

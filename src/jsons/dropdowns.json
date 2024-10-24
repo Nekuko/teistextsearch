@@ -1060,6 +1060,29 @@
                         },
                         "checked": false
                     },
+                    "3-7 | Wandering Warrior": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Former Seven Blades"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Waters of Lindwurm"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "The Goddess' Trial"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Gold Dragon Showdown"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "The Victorious Myth"
+                        },
+                        "checked": false
+                    },
                     "checked": false
                 },
                 "checked": false

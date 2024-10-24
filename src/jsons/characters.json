@@ -170,6 +170,7 @@
             "General": {
                 "order": 10,
                 "characters": [
+                    "Archbishop Teinen",
                     "Fatty McSpecs",
                     "Toppe Batterius",
                     "Scarface",
@@ -886,6 +887,7 @@
         {
             "name": "Zeta",
             "name_variants": [
+                "Lilim",
                 "Zetan",
                 "??? (Zeta)",
                 "Everyone (Zeta)",
@@ -1201,9 +1203,15 @@
         {
             "name": "Goldy Gilded",
             "name_variants": [
+                "??? (Goldy)",
                 "Goldy & Quinton (Goldy)"
             ],
-            "name_mirrors": [],
+            "name_mirrors": [
+                {
+                    "base": "Goldy Gilded",
+                    "alt": "Goldy"
+                }
+            ],
             "group": "Others",
             "subgroup": "",
             "order": 4,
@@ -1677,6 +1685,20 @@
             "subgroup": "Vampires",
             "order": 3,
             "url": "characterIcons/MaryIcon.webp"
+        },
+        {
+            "name": "Ichi Van Dasher",
+            "name_variants": [],
+            "name_mirrors": [
+                {
+                    "base": "Ichi Van Dasher",
+                    "alt": "Ichi"
+                }
+            ],
+            "group": "Others",
+            "subgroup": "General",
+            "order": 1,
+            "url": ""
         },
         {
             "name": "Customer",
