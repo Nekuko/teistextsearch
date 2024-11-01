@@ -21,7 +21,8 @@ export const ESMAP = {
     "tpis": "The Producer in Shadow!",
     "ssitw": "Stranded! Summer in the Wild?!",
     "adswy": "A Dreamy Summer with You",
-    "bheif": "Blazing Hero! Eminence in Flames!"
+    "bheif": "Blazing Hero! Eminence in Flames!",
+    "aystpm": "At Your Service! The Perfect Maid!"
 };
 
 const ESMAPREVERSE = {};
