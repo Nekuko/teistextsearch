@@ -20,7 +20,9 @@ export const ESMAP = {
     "hd2": "HIGHEST DREAM II",
     "tpis": "The Producer in Shadow!",
     "ssitw": "Stranded! Summer in the Wild?!",
-    "adswy": "A Dreamy Summer with You"
+    "adswy": "A Dreamy Summer with You",
+    "bheif": "Blazing Hero! Eminence in Flames!",
+    "aystpm": "At Your Service! The Perfect Maid!"
 };
 
 const ESMAPREVERSE = {};

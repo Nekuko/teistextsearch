@@ -1037,6 +1037,52 @@
                         },
                         "checked": false
                     },
+                    "3-6 | Beast Gods & Fake Legends": {
+                        "e1": {
+                            "checked": false,
+                            "title": "A Hero's Traces"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "The Lakshmi Clan"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Saurva the Beast God"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Grave-robbing"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "A Hero's Confession"
+                        },
+                        "checked": false
+                    },
+                    "3-7 | Wandering Warrior": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Former Seven Blades"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Waters of Lindwurm"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "The Goddess' Trial"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Gold Dragon Showdown"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "The Victorious Myth"
+                        },
+                        "checked": false
+                    },
                     "checked": false
                 },
                 "checked": false
@@ -1721,6 +1767,68 @@
                     "e7": {
                         "checked": false,
                         "title": "A Dreamy Summer with You"
+                    },
+                    "checked": false
+                },
+                "Blazing Hero! Eminence in Flames!": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Blazing Hero! Eminence in Flames!"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Blazing Hero! Eminence in Flames!"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Blazing Hero! Eminence in Flames!"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Blazing Hero! Eminence in Flames!"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Blazing Hero! Eminence in Flames!"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Blazing Hero! Eminence in Flames!"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Blazing Hero! Eminence in Flames!"
+                    },
+                    "checked": false
+                },
+                "At Your Service! The Perfect Maid!": {
+                    "e1": {
+                        "checked": false,
+                        "title": "At Your Service! The Perfect Maid!"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "At Your Service! The Perfect Maid!"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "At Your Service! The Perfect Maid!"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "At Your Service! The Perfect Maid!"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "At Your Service! The Perfect Maid!"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "At Your Service! The Perfect Maid!"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "At Your Service! The Perfect Maid!"
                     },
                     "checked": false
                 },

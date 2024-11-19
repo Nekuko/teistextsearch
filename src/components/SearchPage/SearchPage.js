@@ -19,6 +19,7 @@ import { ReactComponent as WholeWord } from '../../svgs/codicon--whole-word.svg'
 import { ReactComponent as Regex } from '../../svgs/codicon--regex.svg';
 import { analytics } from '../../firebase';
 import { logEvent } from 'firebase/analytics'
+import { namedCharactersList } from '../../namedCharacters';
 
 function createCharacterDropdowns(data) {
     let dropdowns = {};
@@ -107,11 +108,20 @@ function createCharacterDropdowns(data) {
             for (const name_variant of name_variants) {
                 for (const variant of Object.keys(url)) {
                     if (variant !== 'base') {
-                        if (variant === name_variant) {
-                            characterImages[variant] = url[variant]
-                        } else if (name_variant.includes(`(${variant})`)) {
-                            characterImages[name_variant] = url[variant];
+                        if (name_mirrors.some(mirror => mirror.base === name_variant)) {
+                            if (variant === name_variant || name_variant.includes(`(${variant})`)) {
+                                const mirror = name_mirrors.find(mirror => mirror.base.includes(name_variant));
+                                characterImages[mirror['base']] = url[variant]
+                                characterImages[mirror['alt']] = url[variant]
+                            }
+                        } else {
+                            if (variant === name_variant) {
+                                characterImages[variant] = url[variant]
+                            } else if (name_variant.includes(`(${variant})`)) {
+                                characterImages[name_variant] = url[variant];
+                            }
                         }
+                        
                     } else {
                         characterImages[name] = url.base;
                     }
@@ -230,7 +240,6 @@ function SearchPage() {
                 if (savedNameMap) {
                     savedNameMap = JSON.parse(savedNameMap);
                 }
-
                 if (characterData.versionUpdated || Object.keys(savedCharacterDropdowns).length === 0 ||
                     Object.keys(savedNameMap).length === 0) {
                     let characterDropdownData = createCharacterDropdowns(characterData.data);
@@ -450,12 +459,7 @@ function SearchPage() {
             return parsedState;
         }
 
-        return ['Akane Nishino', 'Alexia Midgar', 'Alpha', 'Annerose Nichtsehen', 'Aurora', 'Beatrix', 'Beta', 'Chi', 'Cid Kagenou', 'Claire Kagenou', 'Claudia',
-            'Crimson', 'Delta', 'Duet', 'Elisabeth', 'Epsilon', 'Eta', 'Freya', 'Gamma', 'Garter Kikuchi', 'Gettan', 'Glen', 'Goldy Gilded', 'Grease', 'Iota',
-            'Iris Midgar', 'Jack Nelson', 'Juggernaut', 'Kana', 'Kevin', 'Klaus Midgar', 'Kouadoi', 'Lambda', 'Lili', 'Lutheran Barnett', 'Marco Granger',
-            'Margaret', 'Marie', 'Mary', 'Mist Dragon', 'Mordred', 'Mr. Kagenou', 'Mrs. Kagenou', 'Natsu', 'No. 664', 'No. 665', 'Nonna', 'Nu', 'Olivier',
-            'Omega', 'Pente', 'Perv Asshat', 'Po Tato', 'Quinton', 'Raphael Oriana', 'Reina Oriana', 'Rex', 'Rose Oriana', 'Rouge', 'Sarasa', 'Sergey Gorman',
-            'Sherry Barnett', 'Skel Etal', 'Victoria', 'White Demon', 'Yukime', 'Zenon Griffey', 'Zeta']
+        return namedCharactersList;
     });
 
     // Use an effect to update sessionStorage when namedActive changes
@@ -922,7 +926,7 @@ function SearchPage() {
                 lnResults = [];
             }
             // Update the state with the search results
-            setSearchResults({ full: {ln: fullLNData, wn: fullWNData, an: fullANData, ssc: fullSSCData, apo: fullAPOData, es: fullESData}, anime: animeResults, ln: lnResults, lnChar: lnCharacterResults, wn: wnResults, ssc: { ...sscResults }, es: { ...esResults }, apo: { ...apoResults } });
+            setSearchResults({ full: { ln: fullLNData, wn: fullWNData, an: fullANData, ssc: fullSSCData, apo: fullAPOData, es: fullESData }, anime: animeResults, ln: lnResults, lnChar: lnCharacterResults, wn: wnResults, ssc: { ...sscResults }, es: { ...esResults }, apo: { ...apoResults } });
             scrollToBottom();
         }
     }
