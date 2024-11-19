@@ -51391,7 +51391,7 @@ let data = {
 
 // let setDoc = db.collection('data').doc('es_dss').set(data['dss']);
 
-let setDoc = db.collection('data').doc('ln_v2').set(data['v2']);
+// let setDoc = db.collection('data').doc('ln_v2').set(data['v2']);
 
 // let setDoc = db.collection('data').doc('an_s101').set(data['kj1']);
 
