@@ -30,6 +30,7 @@ function Main() {
       {location.pathname !== '/login' && location.pathname !== '/noauth' && <Header />}
       <Routes>
         <Route path="/" element={<ProtectedRoute component={SearchPage} />} />
+        <Route path="/media" element={<ProtectedRoute component={SearchPage} />} />
         <Route path="/info" element={<ProtectedRoute component={InfoPage} />} />
         <Route path="/settings" element={<ProtectedRoute component={SettingsPage} />} />
       </Routes>

@@ -1,9 +1,8 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useState } from 'react';
 import './CharactersContainer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRotateRight, faN } from '@fortawesome/free-solid-svg-icons';
 import CharacterGroupDropdown from './CharacterGroupDropdown.js';
-
 function CharactersContainer({
   dropdownStates,
   setDropdownStates,
@@ -13,6 +12,7 @@ function CharactersContainer({
   characterImages,
 }) {
 
+  let [allOpen, setAllOpen] = useState(false);
   useEffect(() => {
     if (namedActive) {
       // Assuming you have a list of character names called namedCharacters

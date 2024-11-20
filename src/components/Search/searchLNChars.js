@@ -64,13 +64,12 @@ export function searchLNChars(keys, text, keywords, nameMap, characters = [], ca
         let characterFound = false;
         for (let character of namedCharacters) {
           let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character.toLowerCase()}`];
-
           if (nameMap[`${character} (All)`]) {
             characterToCheck = nameMap[`${character} (All)`].map(name => name.toLowerCase());
           }
           for (let checkCharacter of characterToCheck) {
             for (let range of rangesToCheck) {
-              if (checkCharacter === range.name_variant.toLowerCase()) {
+              if (checkCharacter.name_variant === range.name_variant && checkCharacter.name === range.name) {
                 characterFound = true;
                 break;
               }
@@ -91,15 +90,26 @@ export function searchLNChars(keys, text, keywords, nameMap, characters = [], ca
       } else if (anyMatch && characters.length > 0) {
         let characterFound = false;
         for (let character of characters) {
-          let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character.toLowerCase()}`];
-          characterToCheck.push(character.toLowerCase())
+          let characterToCheck = nameMap[character.name_variant] ? nameMap[character.name_variant].map(name => ({
+            name: character.name,
+            name_variant: name
+          })) : [
+            { name: character.name, name_variant: character.name_variant }
+          ];
 
-          if (nameMap[`${character} (All)`]) {
-            characterToCheck = nameMap[`${character} (All)`].map(name => name.toLowerCase());
+          if (character.name.includes("(All)")) {
+            if (nameMap[character.name]) {
+              characterToCheck = nameMap[character.name].map(name => ({
+                name: character.name.replace(" (All)", ""),
+                name_variant: name
+              }))
+            }
+
           }
+
           for (let checkCharacter of characterToCheck) {
             for (let range of rangesToCheck) {
-              if (checkCharacter === range.name_variant.toLowerCase()) {
+              if (checkCharacter.name === range.name && checkCharacter.name_variant === range.name_variant) {
                 characterFound = true;
                 break;
               }
@@ -126,14 +136,26 @@ export function searchLNChars(keys, text, keywords, nameMap, characters = [], ca
     // Add the filtered sentences to the results only if there are matches
     if (filteredSentences.length > 0) {
       if (characters.length > 0) {
-        for (let character of characters) {
-          let characterToCheck = nameMap[character] ? nameMap[character].map(name => name) : [character];
-          characterToCheck.push(character)
+        for (let characterMap of characters) {
+          let characterToCheck = nameMap[characterMap.name_variant] ?
+            nameMap[characterMap.name_variant].map(name => ({
+              name: characterMap.name,
+              name_variant: name
+            })) : [
+              { name: characterMap.name, name_variant: characterMap.name_variant }
+            ];
+
           let characterSentences = filteredSentences.filter(sentence => {
             return characterToCheck.some(name => {
-              return sentence.characters.some(range => range.name_variant === name && range.match);
+              return sentence.characters.some(range =>
+                (range.name === name.name && range.name_variant === name.name_variant) ||
+                (range.name_variant === name.name_variant && range.match)
+              );
             });
           });
+
+          let character = characterMap.name_variant;
+
           if (characterSentences.length > 0) {
             if (!results[character]) {
               results[character] = { count: 0, mediums: {} };
@@ -170,6 +192,7 @@ export function searchLNChars(keys, text, keywords, nameMap, characters = [], ca
     }
 
   }
+
 
   return results;
 }

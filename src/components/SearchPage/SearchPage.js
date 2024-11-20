@@ -674,14 +674,20 @@ function SearchPage() {
                     .map(([subname]) => subname);
                 if (hasSubnames) {
                     if (subnamesEntries.every(([subname, checked]) => subname === 'checked' || subname === 'open' || checked)) {
-                        // If every item of the subnames is checked, add the main name with '(All)'
-                        entries.push(character + ' (All)');
+                        entries.push({name: character + ' (All)',
+                            name_variant: character + ' (All)'
+                        });
                     } else {
-                        entries.push(...checkedSubnames);
+                        checkedSubnames.forEach(sub_name => {
+                            entries.push({
+                                name: character,
+                                name_variant: sub_name
+                            });
+                        });
                     }
                 } else {
                     // If the character has no subnames, add the character
-                    entries.push(character);
+                    entries.push({name: character, name_variant: character});
                 }
             }
             return entries;
@@ -705,7 +711,6 @@ function SearchPage() {
                 });
             }
         });
-
 
 
 
@@ -912,6 +917,9 @@ function SearchPage() {
             if (typeof addedWord === 'string' && addedWord && (!filterState.regex)) {
                 keywords.push(addedWord);
             }
+            keywords = keywords.map(keyword => keyword
+            .replace(/[\u2018\u2019]/g, "'")
+            .replace(/[\u201C\u201D]/g, '"'));
 
 
             animeResults = searchAnime(animeCheckedItems, animeText, keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, filterState.regex, namedActive, namedCharacters);

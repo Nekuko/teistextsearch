@@ -673,8 +673,8 @@ function MOGDropdownMenu({ mogDropdownState, setMogDropdownState, openMOG, setOp
           <div className="item-header">
             <div className="volume-trigger-drop">
               {images.sscCoverImages["ssc"] && <img className="ssc-image" src={images.sscCoverImages["ssc"]} alt={"Seven Shadows Chronicles"} />}
-              <span className={`season-title ${partsChecked['Seven Shadows Chronicles']?.checked ? '' : 'dimmed'}`}>Seven Shadows Chronicles</span>
-              <FontAwesomeIcon className="dropdown-icon" icon={openParts['Seven Shadows Chronicles'] ? faChevronUp : faChevronDown} onClick={(event) => handlePartClick(event, 'Seven Shadows Chronicles')} />
+              <span onClick={(event) => handlePartClick(event, 'Seven Shadows Chronicles')} className={`season-title ${partsChecked['Seven Shadows Chronicles']?.checked ? '' : 'dimmed'}`}>Seven Shadows Chronicles</span>
+              <FontAwesomeIcon onClick={(event) => handlePartClick(event, 'Seven Shadows Chronicles')} className="dropdown-icon" icon={openParts['Seven Shadows Chronicles'] ? faChevronUp : faChevronDown} />
             </div>
             <input
               type="checkbox"

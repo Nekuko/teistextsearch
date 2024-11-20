@@ -54,6 +54,15 @@ function Header() {
             <SlashLine className="nav-separator" />
             <li className='desktop-nav-li'>
               <NavLink
+                to="/media"
+                className={({ isActive }) => (isActive ? 'active-link' : '')}
+              >
+                MEDIA
+              </NavLink>
+            </li>
+            <SlashLine className="nav-separator" />
+            <li className='desktop-nav-li'>
+              <NavLink
                 to="/info"
                 className={({ isActive }) => (isActive ? 'active-link' : '')}
               >
@@ -89,6 +98,15 @@ function Header() {
                   className={({ isActive }) => (isActive ? 'active-link' : '')}
                 >
                   SEARCH
+                </NavLink>
+              </li>
+              <li className='mobile-nav-li'>
+                <NavLink
+                  onClick={toggleMenu}
+                  to="/media"
+                  className={({ isActive }) => (isActive ? 'active-link' : '')}
+                >
+                  MEDIA
                 </NavLink>
               </li>
               <li className='mobile-nav-li'>
