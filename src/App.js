@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer';
 import SearchPage from './components/SearchPage/SearchPage'; // Import the Searchpage component
 import InfoPage from './components/InfoPage/InfoPage'; // Import the InfoPage component
 import LoginPage from './components/LoginPage/LoginPage';
+import MediaPage from './components/MediaPage/MediaPage';
 import ProtectedRoute from './components/ProtectedRoute';
 import 'firebase/auth';
 import NoAuth from './components/NoAuth/NoAuth';
@@ -22,6 +23,7 @@ function App() {
   );
 }
 
+// <Route path="/media" element={<ProtectedRoute component={MediaPage} />} />
 function Main() {
   const location = useLocation();
 
@@ -30,7 +32,6 @@ function Main() {
       {location.pathname !== '/login' && location.pathname !== '/noauth' && <Header />}
       <Routes>
         <Route path="/" element={<ProtectedRoute component={SearchPage} />} />
-        <Route path="/media" element={<ProtectedRoute component={SearchPage} />} />
         <Route path="/info" element={<ProtectedRoute component={InfoPage} />} />
         <Route path="/settings" element={<ProtectedRoute component={SettingsPage} />} />
       </Routes>

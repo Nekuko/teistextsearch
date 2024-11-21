@@ -6551,25 +6551,25 @@
     },
     "ssc": {
         "part_count": 3,
-        "line_count": 10957,
-        "word_count": 116795,
-        "char_count": 667828,
+        "line_count": 11288,
+        "word_count": 120133,
+        "char_count": 686525,
         "characters": {
-            "Alpha": 1344,
+            "Alpha": 1370,
             "Narrator": 59,
             "Mysterious Captain": 26,
             "Mysterious Soldier A": 10,
             "Alpha (??? (Alpha))": 5,
             "Mysterious Soldier B": 4,
-            "Delta": 550,
-            "Eta": 643,
+            "Delta": 556,
+            "Eta": 645,
             "Mysterious Soldier C": 6,
-            "Epsilon": 1007,
+            "Epsilon": 1039,
             "Mysterious Soldier D": 4,
-            "Zeta": 1119,
+            "Zeta": 1122,
             "Gamma": 1283,
             "Mysterious Soldier E": 6,
-            "Beta": 957,
+            "Beta": 1042,
             "Mysterious Soldiers": 2,
             "Cultist A": 8,
             "Cultist B": 5,
@@ -6579,8 +6579,8 @@
             "Cultist F": 3,
             "Lambda (Mound of Flesh (Lambda))": 1,
             "Lambda (Tawny Elf (Lambda))": 15,
-            "Cid Kagenou (Cid)": 635,
-            "Lambda": 379,
+            "Cid Kagenou (Cid)": 657,
+            "Lambda": 384,
             "Merchant B": 11,
             "Merchant A Secretary": 10,
             "Merchant C": 2,
@@ -6706,7 +6706,7 @@
             "Sergey Gorman (Sergei)": 22,
             "Velgalta Soldier": 6,
             "Cultist": 1,
-            "Nu (93)": 21,
+            "Nu (93)": 22,
             "Beta (None (Beta))": 8,
             "Fan Passerby": 9,
             "Alpha (Alpha & Beta (Alpha))": 1,
@@ -6716,8 +6716,8 @@
             "Nu (??? (No. 93))": 1,
             "Nu (No. 93)": 19,
             "Garden Member": 2,
-            "Chi (Chi & Omega (Chi))": 5,
-            "Omega (Chi & Omega (Omega))": 5,
+            "Chi (Chi & Omega (Chi))": 8,
+            "Omega (Chi & Omega (Omega))": 8,
             "Lambda (None (Lambda))": 1,
             "Iota (None (Iota))": 16,
             "Iota": 92,
@@ -6740,7 +6740,16 @@
             "Goldy Gilded (??? (Goldy))": 1,
             "Goldy Gilded (Goldy)": 22,
             "Spectator A": 3,
-            "Spectator B": 3
+            "Spectator B": 3,
+            "Eta (Eta & Epsilon (Eta))": 1,
+            "Epsilon (Eta & Epsilon (Epsilon))": 1,
+            "Zeta (Zeta & 93 (Zeta))": 1,
+            "Nu (Zeta & 93 (93))": 1,
+            "Beta (Beta & ??? (Sigma) (Beta))": 1,
+            "Sigma (Beta & ??? (Sigma) (Sigma))": 1,
+            "Sigma": 133,
+            "Orianan Paladin A": 2,
+            "Orianan Paladin B": 2
         },
         "parts": {
             "p1": {
@@ -9435,19 +9444,19 @@
                 }
             },
             "p3": {
-                "chapter_count": 7,
-                "line_count": 2194,
-                "word_count": 24668,
-                "char_count": 139790,
+                "chapter_count": 8,
+                "line_count": 2525,
+                "word_count": 28006,
+                "char_count": 158487,
                 "characters": {
                     "Olivier (??? (Olivier))": 10,
-                    "Alpha": 241,
-                    "Beta": 131,
+                    "Alpha": 267,
+                    "Beta": 216,
                     "Gamma": 284,
-                    "Epsilon": 146,
-                    "Zeta": 237,
-                    "Delta": 44,
-                    "Eta": 116,
+                    "Epsilon": 178,
+                    "Zeta": 240,
+                    "Delta": 50,
+                    "Eta": 118,
                     "Alpha (Seven Shadows (Alpha))": 2,
                     "Beta (Seven Shadows (Beta))": 2,
                     "Gamma (Seven Shadows (Gamma))": 2,
@@ -9455,11 +9464,11 @@
                     "Epsilon (Seven Shadows (Epsilon))": 2,
                     "Zeta (Seven Shadows (Zeta))": 2,
                     "Eta (Seven Shadows (Eta))": 2,
-                    "Lambda": 72,
+                    "Lambda": 77,
                     "Omega": 134,
                     "Chi": 125,
-                    "Nu (93)": 21,
-                    "Cid Kagenou (Cid)": 117,
+                    "Nu (93)": 22,
+                    "Cid Kagenou (Cid)": 139,
                     "Beta (None (Beta))": 8,
                     "Fan Passerby": 9,
                     "Alpha (Alpha & Beta (Alpha))": 1,
@@ -9470,8 +9479,8 @@
                     "Nu (No. 93)": 19,
                     "Garden Member": 2,
                     "Delta (??? (Delta))": 1,
-                    "Chi (Chi & Omega (Chi))": 5,
-                    "Omega (Chi & Omega (Omega))": 5,
+                    "Chi (Chi & Omega (Chi))": 8,
+                    "Omega (Chi & Omega (Omega))": 8,
                     "Alpha (??? (Alpha))": 1,
                     "Lambda (None (Lambda))": 1,
                     "Iota (None (Iota))": 16,
@@ -9502,7 +9511,16 @@
                     "Goldy Gilded (??? (Goldy))": 1,
                     "Goldy Gilded (Goldy)": 22,
                     "Spectator A": 3,
-                    "Spectator B": 3
+                    "Spectator B": 3,
+                    "Eta (Eta & Epsilon (Eta))": 1,
+                    "Epsilon (Eta & Epsilon (Epsilon))": 1,
+                    "Zeta (Zeta & 93 (Zeta))": 1,
+                    "Nu (Zeta & 93 (93))": 1,
+                    "Beta (Beta & ??? (Sigma) (Beta))": 1,
+                    "Sigma (Beta & ??? (Sigma) (Sigma))": 1,
+                    "Sigma": 133,
+                    "Orianan Paladin A": 2,
+                    "Orianan Paladin B": 2
                 },
                 "chapters": {
                     "c3-1": {
@@ -10117,6 +10135,100 @@
                                     "Spectator B": 1,
                                     "Gamma": 27,
                                     "Goldy Gilded (Goldy)": 3,
+                                    "Cid Kagenou (Cid)": 22
+                                }
+                            }
+                        }
+                    },
+                    "c3-8": {
+                        "episode_count": 5,
+                        "line_count": 331,
+                        "word_count": 3338,
+                        "char_count": 18697,
+                        "characters": {
+                            "Eta (Eta & Epsilon (Eta))": 1,
+                            "Epsilon (Eta & Epsilon (Epsilon))": 1,
+                            "Chi (Chi & Omega (Chi))": 3,
+                            "Omega (Chi & Omega (Omega))": 3,
+                            "Zeta (Zeta & 93 (Zeta))": 1,
+                            "Nu (Zeta & 93 (93))": 1,
+                            "Delta": 6,
+                            "Lambda": 5,
+                            "Beta (Beta & ??? (Sigma) (Beta))": 1,
+                            "Sigma (Beta & ??? (Sigma) (Sigma))": 1,
+                            "Alpha": 26,
+                            "Eta": 2,
+                            "Epsilon": 32,
+                            "Zeta": 3,
+                            "Nu (93)": 1,
+                            "Beta": 85,
+                            "Sigma": 133,
+                            "Orianan Paladin A": 2,
+                            "Orianan Paladin B": 2,
+                            "Cid Kagenou (Cid)": 22
+                        },
+                        "episodes": {
+                            "e1": {
+                                "line_count": 59,
+                                "word_count": 638,
+                                "char_count": 3626,
+                                "characters": {
+                                    "Eta (Eta & Epsilon (Eta))": 1,
+                                    "Epsilon (Eta & Epsilon (Epsilon))": 1,
+                                    "Chi (Chi & Omega (Chi))": 3,
+                                    "Omega (Chi & Omega (Omega))": 3,
+                                    "Zeta (Zeta & 93 (Zeta))": 1,
+                                    "Nu (Zeta & 93 (93))": 1,
+                                    "Delta": 6,
+                                    "Lambda": 5,
+                                    "Beta (Beta & ??? (Sigma) (Beta))": 1,
+                                    "Sigma (Beta & ??? (Sigma) (Sigma))": 1,
+                                    "Alpha": 26,
+                                    "Eta": 2,
+                                    "Epsilon": 3,
+                                    "Zeta": 3,
+                                    "Nu (93)": 1,
+                                    "Beta": 4,
+                                    "Sigma": 3
+                                }
+                            },
+                            "e2": {
+                                "line_count": 61,
+                                "word_count": 693,
+                                "char_count": 3713,
+                                "characters": {
+                                    "Beta": 26,
+                                    "Epsilon": 29,
+                                    "Sigma": 6
+                                }
+                            },
+                            "e3": {
+                                "line_count": 71,
+                                "word_count": 565,
+                                "char_count": 3211,
+                                "characters": {
+                                    "Sigma": 34,
+                                    "Beta": 37
+                                }
+                            },
+                            "e4": {
+                                "line_count": 65,
+                                "word_count": 675,
+                                "char_count": 3890,
+                                "characters": {
+                                    "Sigma": 61,
+                                    "Beta": 4
+                                }
+                            },
+                            "e5": {
+                                "line_count": 69,
+                                "word_count": 767,
+                                "char_count": 4257,
+                                "characters": {
+                                    "Sigma": 29,
+                                    "Orianan Paladin A": 2,
+                                    "Orianan Paladin B": 2,
+                                    "Beta": 14,
                                     "Cid Kagenou (Cid)": 22
                                 }
                             }
@@ -12681,9 +12793,9 @@
     },
     "chars": {
         "Alpha": {
-            "total": 4134,
+            "total": 4160,
             "names": {
-                "Alpha": 4081,
+                "Alpha": 4107,
                 "Alpha & Gamma (Alpha)": 1,
                 "Alpha & Eta (Alpha)": 1,
                 "Seven Shadows (Alpha)": 8,
@@ -12697,9 +12809,9 @@
             }
         },
         "Beta": {
-            "total": 3150,
+            "total": 3236,
             "names": {
-                "Beta": 2788,
+                "Beta": 2873,
                 "Seven Shadows (Beta)": 14,
                 "Beta & Epsilon (Beta)": 32,
                 "Beta & Gamma (Beta)": 5,
@@ -12713,6 +12825,7 @@
                 "Beta & Delta & Zeta (Beta)": 1,
                 "None (Beta)": 11,
                 "Alpha & Beta (Beta)": 2,
+                "Beta & ??? (Sigma) (Beta)": 1,
                 "Beta & Eta (Beta)": 1,
                 "Zeta & Beta (Beta)": 1,
                 "Fictional Gamma": 11,
@@ -12747,9 +12860,9 @@
             }
         },
         "Delta": {
-            "total": 1756,
+            "total": 1762,
             "names": {
-                "Delta": 1719,
+                "Delta": 1725,
                 "Seven Shadows (Delta)": 13,
                 "Delta & Zeta (Delta)": 8,
                 "Deltan": 1,
@@ -12760,9 +12873,9 @@
             }
         },
         "Epsilon": {
-            "total": 2304,
+            "total": 2337,
             "names": {
-                "Epsilon": 2161,
+                "Epsilon": 2193,
                 "Seven Shadows (Epsilon)": 14,
                 "Beta & Epsilon (Epsilon)": 32,
                 "Beta & Gamma & Epsilon (Epsilon)": 1,
@@ -12772,14 +12885,15 @@
                 "Gamma& Epsilon & Eta (Epsilon)": 1,
                 "Gamma & Epsilon (Epsilon)": 1,
                 "Epsilon & Chi & Omega (Epsilon)": 1,
+                "Eta & Epsilon (Epsilon)": 1,
                 "??? (Epsilon)": 2,
                 "Cid & Beta & Epsilon (Epsilon)": 1
             }
         },
         "Zeta": {
-            "total": 2573,
+            "total": 2577,
             "names": {
-                "Zeta": 2444,
+                "Zeta": 2447,
                 "Seven Shadows (Zeta)": 14,
                 "Delta & Zeta (Zeta)": 8,
                 "Alpha & Zeta (Zeta)": 3,
@@ -12789,6 +12903,7 @@
                 "??? (Zeta)": 3,
                 "Beta & Delta & Zeta (Zeta)": 1,
                 "None (Zeta)": 15,
+                "Zeta & 93 (Zeta)": 1,
                 "Everyone (Zeta)": 5,
                 "Zeta & Beta (Zeta)": 1,
                 "Zeta & Eta (Zeta)": 1,
@@ -12797,13 +12912,14 @@
             }
         },
         "Eta": {
-            "total": 1443,
+            "total": 1446,
             "names": {
-                "Eta": 1418,
+                "Eta": 1420,
                 "Seven Shadows (Eta)": 10,
                 "Alpha & Eta (Eta)": 1,
                 "Everyone (Eta)": 6,
                 "Gamma& Epsilon & Eta (Eta)": 1,
+                "Eta & Epsilon (Eta)": 1,
                 "Beta & Eta (Eta)": 1,
                 "Zeta & Eta (Eta)": 1,
                 "??? (Eta)": 5
@@ -12816,21 +12932,22 @@
             }
         },
         "Nu": {
-            "total": 545,
+            "total": 547,
             "names": {
                 "Nu": 492,
                 "Alpha & Nu (Nu)": 1,
                 "Characterised Alpha": 11,
-                "93": 21,
+                "93": 22,
                 "??? (No. 93)": 1,
-                "No. 93": 19
+                "No. 93": 19,
+                "Zeta & 93 (93)": 1
             }
         },
         "Chi": {
-            "total": 724,
+            "total": 727,
             "names": {
                 "Chi": 223,
-                "Chi & Omega (Chi)": 10,
+                "Chi & Omega (Chi)": 13,
                 "Characterised Shadow": 8,
                 "Characterised Eta": 3,
                 "Characterised Cult Member": 3,
@@ -12842,10 +12959,10 @@
             }
         },
         "Omega": {
-            "total": 448,
+            "total": 451,
             "names": {
                 "Omega": 224,
-                "Chi & Omega (Omega)": 10,
+                "Chi & Omega (Omega)": 13,
                 "Characterised Zeta": 2,
                 "Characterised Gamma": 2,
                 "Possessed (Omega)": 4,
@@ -12867,7 +12984,7 @@
             }
         },
         "Cid Kagenou": {
-            "total": 11381,
+            "total": 11403,
             "names": {
                 "Shadow": 1562,
                 "Minoru Kageno": 126,
@@ -12877,7 +12994,7 @@
                 "Stylish Bandit Slayer": 33,
                 "John Smith": 592,
                 "John Smith & Yukime (John Smith)": 1,
-                "Cid": 2082,
+                "Cid": 2104,
                 "???? (Shadow)": 3,
                 "None (Cid Kagenou)": 12,
                 "??? (Stylish Bandit Slayer)": 1,
@@ -13341,9 +13458,9 @@
             }
         },
         "Lambda": {
-            "total": 697,
+            "total": 702,
             "names": {
-                "Lambda": 680,
+                "Lambda": 685,
                 "Mound of Flesh (Lambda)": 1,
                 "Tawny Elf (Lambda)": 15,
                 "None (Lambda)": 1
@@ -14104,6 +14221,25 @@
             "total": 9,
             "names": {
                 "Spectator B": 9
+            }
+        },
+        "Sigma": {
+            "total": 134,
+            "names": {
+                "Beta & ??? (Sigma) (Sigma)": 1,
+                "Sigma": 133
+            }
+        },
+        "Orianan Paladin A": {
+            "total": 2,
+            "names": {
+                "Orianan Paladin A": 2
+            }
+        },
+        "Orianan Paladin B": {
+            "total": 2,
+            "names": {
+                "Orianan Paladin B": 2
             }
         },
         "Bandits": {

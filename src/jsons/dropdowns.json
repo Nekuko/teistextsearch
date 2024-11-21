@@ -1083,6 +1083,29 @@
                         },
                         "checked": false
                     },
+                    "3-8 | Shadow Ninja Girl": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Wide-range Investigation"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Cool Ninja Girl"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Tunnels of Midgar"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Hardcore Fan"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Garden Ninjustu"
+                        },
+                        "checked": false
+                    },
                     "checked": false
                 },
                 "checked": false

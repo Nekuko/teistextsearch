@@ -8,6 +8,7 @@ body {
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
+  overflow-x: hidden;
 }
 
 code {

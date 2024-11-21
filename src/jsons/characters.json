@@ -54,6 +54,8 @@
             "General": {
                 "order": 2,
                 "characters": [
+                    "Orianan Paladin A",
+                    "Orianan Paladin B",
                     "Oriana Noble A",
                     "Oriana Noble B",
                     "Oriana Noble C"
@@ -788,6 +790,7 @@
                 "Beta & Eta (Beta)",
                 "Beta & Gamma (Beta)",
                 "Beta & Zeta (Beta)",
+                "Beta & ??? (Sigma) (Beta)",
                 "Beta & Delta & Zeta (Beta)",
                 "Beta & Gamma & Epsilon (Beta)",
                 "Cid & Beta & Epsilon (Beta)"
@@ -865,6 +868,7 @@
                 "Everyone (Epsilon)",
                 "Seven Shadows (Epsilon)",
                 "Beta & Epsilon (Epsilon)",
+                "Eta & Epsilon (Epsilon)",
                 "Gamma & Epsilon (Epsilon)",
                 "Zeta & Epsilon (Epsilon)",
                 "Beta & Gamma & Epsilon (Epsilon)",
@@ -900,6 +904,7 @@
                 "Delta & Zeta (Zeta)",
                 "Zeta & Epsilon (Zeta)",
                 "Zeta & Eta (Zeta)",
+                "Zeta & 93 (Zeta)",
                 "Beta & Delta & Zeta (Zeta)",
                 "Cid & Delta & Zeta (Zeta)"
             ],
@@ -922,6 +927,7 @@
                 "Seven Shadows (Eta)",
                 "Alpha & Eta (Eta)",
                 "Beta & Eta (Eta)",
+                "Eta & Epsilon (Eta)",
                 "Zeta & Eta (Eta)",
                 "Gamma & Epsilon & Eta (Eta)"
             ],
@@ -967,6 +973,7 @@
                 "No. 93",
                 "??? (No. 93)",
                 "Alpha & Nu (Nu)",
+                "Zeta & 93 (93)",
                 "Characterised Alpha"
             ],
             "name_mirrors": [
@@ -979,6 +986,17 @@
             "subgroup": "Numbers",
             "order": 2,
             "url": "characterIcons/NuIcon.webp"
+        },
+        {
+            "name": "Sigma",
+            "name_variants": [
+                "Beta & ??? (Sigma) (Sigma)"
+            ],
+            "name_mirrors": [],
+            "group": "Shadow Garden",
+            "subgroup": "Numbers",
+            "order": 4,
+            "url": "characterIcons/SigmaIcon.webp"
         },
         {
             "name": "Chi",
@@ -996,7 +1014,7 @@
             "name_mirrors": [],
             "group": "Shadow Garden",
             "subgroup": "Numbers",
-            "order": 4,
+            "order": 5,
             "url": "characterIcons/ChiIcon.webp"
         },
         {
@@ -1013,7 +1031,7 @@
             "name_mirrors": [],
             "group": "Shadow Garden",
             "subgroup": "Numbers",
-            "order": 5,
+            "order": 6,
             "url": "characterIcons/OmegaIcon.webp"
         },
         {
