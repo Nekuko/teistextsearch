@@ -23,7 +23,6 @@ function App() {
   );
 }
 
-// <Route path="/media" element={<ProtectedRoute component={MediaPage} />} />
 function Main() {
   const location = useLocation();
 
@@ -32,6 +31,7 @@ function Main() {
       {location.pathname !== '/login' && location.pathname !== '/noauth' && <Header />}
       <Routes>
         <Route path="/" element={<ProtectedRoute component={SearchPage} />} />
+        <Route path="/media" element={<ProtectedRoute component={MediaPage} />} />
         <Route path="/info" element={<ProtectedRoute component={InfoPage} />} />
         <Route path="/settings" element={<ProtectedRoute component={SettingsPage} />} />
       </Routes>

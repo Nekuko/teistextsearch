@@ -1,7 +1,7 @@
 export function searchLNChars(keys, text, keywords, nameMap, characters = [], caseSensitive = false, exactMatch = false, regex = false, namedActive = false, namedCharacters = []) {
   // Initialize an empty object to hold the results
   let results = {};
-
+  let charMap = {};
   // Iterate over the keys
   for (let i = 0; i < keys.length; i++) {
     let key = keys[i];
@@ -63,13 +63,13 @@ export function searchLNChars(keys, text, keywords, nameMap, characters = [], ca
       if (anyMatch && namedActive && characters.length === 0) {
         let characterFound = false;
         for (let character of namedCharacters) {
-          let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character.toLowerCase()}`];
+          let characterToCheck = nameMap[character] ? nameMap[character] : [`${character}`];
           if (nameMap[`${character} (All)`]) {
-            characterToCheck = nameMap[`${character} (All)`].map(name => name.toLowerCase());
+            characterToCheck = nameMap[`${character} (All)`];
           }
           for (let checkCharacter of characterToCheck) {
             for (let range of rangesToCheck) {
-              if (checkCharacter.name_variant === range.name_variant && checkCharacter.name === range.name) {
+              if (checkCharacter === range.name) {
                 characterFound = true;
                 break;
               }
@@ -90,22 +90,32 @@ export function searchLNChars(keys, text, keywords, nameMap, characters = [], ca
       } else if (anyMatch && characters.length > 0) {
         let characterFound = false;
         for (let character of characters) {
-          let characterToCheck = nameMap[character.name_variant] ? nameMap[character.name_variant].map(name => ({
-            name: character.name,
-            name_variant: name
-          })) : [
-            { name: character.name, name_variant: character.name_variant }
-          ];
-
-          if (character.name.includes("(All)")) {
-            if (nameMap[character.name]) {
-              characterToCheck = nameMap[character.name].map(name => ({
-                name: character.name.replace(" (All)", ""),
-                name_variant: name
-              }))
+          let characterToCheck;
+          if (!Object.keys(charMap).includes(`${character.name}:${character.name_variant}`)) {
+            characterToCheck = nameMap[character.name_variant] ? nameMap[character.name_variant].map(name => ({
+              name: character.name,
+              name_variant: name
+            })) : [
+              { name: character.name, name_variant: character.name_variant }
+            ];
+            if (!characterToCheck.includes(character)) {
+              characterToCheck.push(character)
             }
-
+            
+            if (character.name.includes("(All)")) {
+              if (nameMap[character.name]) {
+                characterToCheck = nameMap[character.name].map(name => ({
+                  name: character.name.replace(" (All)", ""),
+                  name_variant: name
+                }))
+              }
+            }
+            charMap[`${character.name}:${character.name_variant}`] = characterToCheck;
+          } else {
+            characterToCheck = charMap[`${character.name}:${character.name_variant}`];
           }
+          
+          
 
           for (let checkCharacter of characterToCheck) {
             for (let range of rangesToCheck) {
@@ -137,14 +147,7 @@ export function searchLNChars(keys, text, keywords, nameMap, characters = [], ca
     if (filteredSentences.length > 0) {
       if (characters.length > 0) {
         for (let characterMap of characters) {
-          let characterToCheck = nameMap[characterMap.name_variant] ?
-            nameMap[characterMap.name_variant].map(name => ({
-              name: characterMap.name,
-              name_variant: name
-            })) : [
-              { name: characterMap.name, name_variant: characterMap.name_variant }
-            ];
-
+          let characterToCheck = charMap[`${characterMap.name}:${characterMap.name_variant}`]
           let characterSentences = filteredSentences.filter(sentence => {
             return characterToCheck.some(name => {
               return sentence.characters.some(range =>
@@ -192,7 +195,7 @@ export function searchLNChars(keys, text, keywords, nameMap, characters = [], ca
     }
 
   }
-
+  console.log(charMap)
 
   return results;
 }

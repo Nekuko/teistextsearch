@@ -43,14 +43,14 @@ export function searchSSC(keys, text, keywords, nameMap, characters = [], caseSe
       if (allKeywordsFound && namedActive && characters.length === 0) {
         let characterFound = false;
         for (let character of namedCharacters) {
-          let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character.toLowerCase()}`];
-          characterToCheck.push(character.toLowerCase())
+          let characterToCheck = nameMap[character] ? nameMap[character] : [`${character}`];
+          characterToCheck.push(character)
           if (nameMap[`${character} (All)`]) {
-            characterToCheck = nameMap[`${character} (All)`].map(name => name.toLowerCase());
+            characterToCheck = nameMap[`${character} (All)`];
           }
 
           for (let checkCharacter of characterToCheck) {
-            if (checkCharacter === sentence.name_variant.toLowerCase()) {
+            if (checkCharacter === sentence.name_variant) {
               characterFound = true;
               break;
             }
@@ -65,13 +65,24 @@ export function searchSSC(keys, text, keywords, nameMap, characters = [], caseSe
       } else if (allKeywordsFound && characters.length > 0) {
         let characterFound = false;
         for (let character of characters) {
-          let characterToCheck = nameMap[character] ? nameMap[character].map(name => name.toLowerCase()) : [`${character.toLowerCase()}`];
-          characterToCheck.push(character.toLowerCase())
-          if (nameMap[`${character} (All)`]) {
-            characterToCheck = nameMap[`${character} (All)`].map(name => name.toLowerCase());
+          let characterToCheck = nameMap[character.name_variant] ? nameMap[character.name_variant].map(name => ({
+            name: character.name,
+            name_variant: name
+          })) : [
+            { name: character.name, name_variant: character.name_variant }
+          ];
+          characterToCheck.push(character)
+          if (character.name.includes("(All)")) {
+            if (nameMap[character.name]) {
+              characterToCheck = nameMap[character.name].map(name => ({
+                name: character.name.replace(" (All)", ""),
+                name_variant: name
+              }))
+            }
+
           }
           for (let checkCharacter of characterToCheck) {
-            if (checkCharacter === sentence.name_variant.toLowerCase()) {
+            if (checkCharacter.name === sentence.name && checkCharacter.name_variant === sentence.name_variant) {
               characterFound = true;
               break;
             }
@@ -90,9 +101,19 @@ export function searchSSC(keys, text, keywords, nameMap, characters = [], caseSe
     // Add the filtered sentences to the sscResults only if there are matches
     if (filteredSentences.length > 0) {
       if (characters.length > 0) {
-        for (let character of characters) {
-          let characterToCheck = nameMap[character] ? nameMap[character].map(name => name) : [character];
-          let characterSentences = filteredSentences.filter(sentence => characterToCheck.some(name => sentence.name_variant === name));
+        for (let characterMap of characters) {
+          let characterToCheck = nameMap[characterMap.name_variant] ?
+            nameMap[characterMap.name_variant].map(name => ({
+              name: characterMap.name,
+              name_variant: name
+            })) : [
+              { name: characterMap.name, name_variant: characterMap.name_variant }
+            ];
+          characterToCheck.push(characterMap)
+          let characterSentences = filteredSentences.filter(sentence => characterToCheck.some(name =>
+            sentence.name_variant === name.name_variant));
+
+          let character = characterMap.name_variant;
 
           if (characterSentences.length > 0) {
             if (!sscResults[character]) {

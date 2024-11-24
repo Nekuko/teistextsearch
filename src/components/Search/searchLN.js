@@ -65,6 +65,5 @@ export function searchLN(keys, text, keywords, caseSensitive = false, exactMatch
     }
 
   }
-
   return results;
 }

@@ -150,6 +150,7 @@ function createCharacterDropdowns(data) {
         }
 
     }
+    console.log(names)
 
     return { "dropdowns": dropdowns, "names": names, "characterImages": characterImages };
 
@@ -239,6 +240,12 @@ function SearchPage() {
                 }
                 if (savedNameMap) {
                     savedNameMap = JSON.parse(savedNameMap);
+                    for (const key in savedNameMap) {
+                        if (savedNameMap.hasOwnProperty(key)) {
+                          const array = savedNameMap[key];
+                          savedNameMap[key] = [...new Set(array)];
+                        }
+                      }
                 }
                 if (characterData.versionUpdated || Object.keys(savedCharacterDropdowns).length === 0 ||
                     Object.keys(savedNameMap).length === 0) {
@@ -920,7 +927,6 @@ function SearchPage() {
             keywords = keywords.map(keyword => keyword
             .replace(/[\u2018\u2019]/g, "'")
             .replace(/[\u201C\u201D]/g, '"'));
-
 
             animeResults = searchAnime(animeCheckedItems, animeText, keywords, nameMap, checkedCharacters, filterState.caseSensitive, filterState.exactMatch, filterState.regex, namedActive, namedCharacters);
             lnResults = searchLN(lnCheckedItems, lnText, keywords, filterState.caseSensitive, filterState.exactMatch, filterState.regex);
