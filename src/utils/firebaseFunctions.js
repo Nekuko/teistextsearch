@@ -676,6 +676,50 @@ export async function fetchInformationData(versionData, setVersionData) {
     return { data, versionUpdated }; // Return both data and the boolean flag
 }
 
+export async function fetchGenericData(versionData, setVersionData, dataName) {
+    const db = await openDB('firestore-cache-db', 1, {
+        upgrade(db) {
+            db.createObjectStore('firestore-cache');
+        },
+    });
+
+    const versionDocRef = doc(firestore, 'data', 'versions');
+    let versionDocSnap;
+    if (versionData) {
+        versionDocSnap = versionData;
+    } else {
+        versionDocSnap = (await getDoc(versionDocRef)).data();
+        setVersionData(versionDocSnap);
+    }
+
+    let firestoreVersion = versionDocSnap.info[dataName];
+    let indexedDBVersion = await db.get('firestore-cache', `data-versions-info-${dataName}`);
+
+    let data;
+    let versionUpdated = false; // Initialize the boolean flag
+
+    if (!indexedDBVersion || firestoreVersion !== indexedDBVersion) {
+        const dataDocRef = doc(firestore, 'data', dataName);
+        let dataDocSnap = await getDoc(dataDocRef);
+        data = dataDocSnap.data();
+
+        // Store the data in IndexedDB for future use
+        await db.put('firestore-cache', data, `data-${dataName}`);
+        versionUpdated = true; // Set the flag to true
+    } else if (firestoreVersion === indexedDBVersion) {
+        // Fetch data from IndexedDB
+        data = await db.get('firestore-cache', `data-${dataName}`);
+    }
+
+
+    // Store the version number in IndexedDB for future use
+    if (firestoreVersion !== indexedDBVersion) {
+        await db.put('firestore-cache', firestoreVersion, `data-versions-info-${dataName}`);
+    }
+
+    return { data, versionUpdated };
+}
+
 export async function fetchMediumImageData(versionData, setVersionData) {
 
     const db = await openDB('firestore-cache-db', 1, {

@@ -150,7 +150,6 @@ function createCharacterDropdowns(data) {
         }
 
     }
-    console.log(names)
 
     return { "dropdowns": dropdowns, "names": names, "characterImages": characterImages };
 

@@ -22,7 +22,8 @@ export const ESMAP = {
     "ssitw": "Stranded! Summer in the Wild?!",
     "adswy": "A Dreamy Summer with You",
     "bheif": "Blazing Hero! Eminence in Flames!",
-    "aystpm": "At Your Service! The Perfect Maid!"
+    "aystpm": "At Your Service! The Perfect Maid!",
+    "fthasg": "From the Heart! A Sage's Gift"
 };
 
 const ESMAPREVERSE = {};
