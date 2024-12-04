@@ -91,15 +91,15 @@
 
 .caret-icon {
     color: #c8000f;
-    width: 1.5%;
-    height: 1.5%;
+    width: 20px;
+    height: 100%;
     padding-top: 4px;
 }
 
 .caret-icon-small {
     color: #c8000f;
-    width: 0.8%;
-    height: 0.8%;
+    width: 12px;
+    height: 100%;
     padding-bottom: 1px;
 }
 

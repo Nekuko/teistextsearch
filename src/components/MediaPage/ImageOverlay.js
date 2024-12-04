@@ -8,7 +8,7 @@ import { ReactComponent as TwitterIcon } from '../../svgs/twitter-icon.svg';
 import { ReactComponent as SlashLine } from '../../svgs/nav_separator.svg';
 
 function ImageOverlay({ images, fullImageData, imageOpen, setImageOpen, setImageData }) {
-    let specialMap = { a: "Afterword", t: "Teaser" }
+    let specialMap = { a: "Afterword", t: "Teaser", th: "Thanks" }
     const overlayRef = useRef();
     const [initialOpen, setInitialOpen] = useState(false);
     const [imageShown, setImageShown] = useState(true);
@@ -59,14 +59,14 @@ function ImageOverlay({ images, fullImageData, imageOpen, setImageOpen, setImage
 
     return (
         <div className="image-overlay">
-            <div className={`image-content ${imageOpen ? 'open' : ''}`} ref={overlayRef}>
+            <div className={`image-content ${imageOpen ? 'open' : ''}`}>
                 <FontAwesomeIcon
                     className="context-close-icon"
                     icon={faXmark}
                     onClick={() => setImageOpen(false)}
                 />
                 {imageShown && (
-                    <div className="image-navigation-container">
+                    <div ref={overlayRef} className="image-navigation-container">
                         <div onClick={() => handleLeftClick()} disabled={currentIndex - 1 < 0} className="image-navigation-icon-container">
                             {currentIndex - 1 >= 0 && (
                                 <FontAwesomeIcon
@@ -113,8 +113,8 @@ function ImageOverlay({ images, fullImageData, imageOpen, setImageOpen, setImage
                     </div>
                 )}
                 {!imageShown && (
-                    <div className="text-and-title">
-                        <div className="image-overlay-sentences">
+                    <div ref={overlayRef} className="text-and-title">
+                        <div  className="image-overlay-sentences">
                             {imageData.en_text.length > 0 ? (
                                 <div>
                                     {imageData.en_text.map((line, index) => (

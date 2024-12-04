@@ -25,4 +25,5 @@ yarn-error.log*
 serviceAccountKey.json
 src/images/
 src/svgs/
+.firebase
 

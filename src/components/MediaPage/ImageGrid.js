@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ImageGrid = ({ data, mediaImages, manageImageData }) => {
   const groupedNotes = groupNotesByAnime(data);
-  let specialMap = { a: "Afterword", t: "Teaser", "th": "Thanks" }
+  let specialMap = { a: "Afterword", t: "Teaser", th: "Thanks" }
 
   const [menuStates, setMenuStates] = useState({
     ...data.groups,

@@ -46,6 +46,11 @@
         width: 50px;
     }
     
+    .image-navigation-container {
+        height: 70%;
+        width: 100%;
+    }
+    
 
 
 }
@@ -68,7 +73,12 @@
     }
 
     .image-navigation-icon-container {
-        width: min-content;
+        width: 90px;
+    }
+
+    .image-navigation-container {
+        height: 100%;
+        width: 90%;
     }
 }
 
@@ -106,9 +116,7 @@
 
 .image-navigation-container {
     display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -160,6 +168,9 @@
     height: 95%;
     justify-content: center;
     flex-direction: column;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .image-overlay-sentences {
