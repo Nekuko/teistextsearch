@@ -702,7 +702,7 @@ function MOGDropdownMenu({ mogDropdownState, setMogDropdownState, openMOG, setOp
           <div className="item-header">
             <div className="volume-trigger-drop">
               {images.esCoverImages["Event Stories"] && <img className="es-image" src={images.esCoverImages["Event Stories"]} alt={"Event Stories"} />}
-              <span className={`season-title ${partsChecked['Event Stories']?.checked ? '' : 'dimmed'}`}>Event Stories</span>
+              <span onClick={(event) => handlePartClick(event, 'Event Stories')} className={`season-title ${partsChecked['Event Stories']?.checked ? '' : 'dimmed'}`}>Event Stories</span>
               <FontAwesomeIcon className="dropdown-icon" icon={openParts['Event Stories'] ? faChevronUp : faChevronDown} onClick={(event) => handlePartClick(event, 'Event Stories')} />
             </div>
             <input
@@ -732,7 +732,7 @@ function MOGDropdownMenu({ mogDropdownState, setMogDropdownState, openMOG, setOp
           <div className="item-header">
             <div className="volume-trigger-drop">
               {images.apoCoverImages["Apocrypha"] && <img className="apo-image" src={images.apoCoverImages["Apocrypha"]} alt={"SApocrypha"} />}
-              <span className={`season-title ${partsChecked['Apocrypha']?.checked ? '' : 'dimmed'}`}>Apocrypha</span>
+              <span onClick={(event) => handlePartClick(event, 'Apocrypha')} className={`season-title ${partsChecked['Apocrypha']?.checked ? '' : 'dimmed'}`}>Apocrypha</span>
               <FontAwesomeIcon className="dropdown-icon" icon={openParts['Apocrypha'] ? faChevronUp : faChevronDown} onClick={(event) => handlePartClick(event, 'Apocrypha')} />
             </div>
             <input

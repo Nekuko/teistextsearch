@@ -1,0 +1,146 @@
+@media (min-width: 1025px) {
+
+    .context-close-icon:hover,
+    .context-jump-button:hover {
+        color: red;
+        cursor: pointer;
+    }
+
+    .image-and-title {
+        height: 90%;
+    }
+}
+
+@media (max-width: 1025px) {
+    .image-and-title {
+        height: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .text-and-title {
+        width: 85%
+    }
+
+    .notes-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .scrollable-container {
+        max-height: 275px;
+    }
+
+
+}
+
+@media (min-width: 769px) {
+    .text-and-title {
+        width: 62%
+    }
+
+    .notes-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .scrollable-container {
+        max-height: 500px;
+    }
+}
+
+.scrollable-container {
+    overflow-y: auto;
+}
+
+.note-group-title {
+    color: red;
+}
+.notes-container {
+    gap: 5%;
+    display: grid;
+    padding-right: 10px;
+}
+
+.image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.image-content {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    padding: 20px 20px 5px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-and-title {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-title-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.text-and-title {
+    display: flex;
+    height: 95%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-overlay-sentences {
+    color: white;
+    height: 100%;
+    overflow: auto;
+    padding: 10px;
+    padding-top: 5px;
+    background-color: #2c3033;
+    border-radius: 5px;
+    user-select: text;
+}
+
+.image-overlay-title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.overlay-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.image-title {
+    color: white;
+    margin: 0;
+}
+
+.image-overlay-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

@@ -3435,10 +3435,10 @@
         }
     },
     "es": {
-        "stories": 24,
-        "line_count": 10667,
-        "word_count": 118810,
-        "char_count": 661125,
+        "stories": 25,
+        "line_count": 11110,
+        "word_count": 123541,
+        "char_count": 687288,
         "characters": {
             "Alexia Midgar (Alexia)": 489,
             "Committee Member": 3,
@@ -3446,7 +3446,7 @@
             "Committee Person": 5,
             "Po Tato (Po)": 19,
             "Skel Etal (Skel)": 36,
-            "Cid Kagenou (Cid)": 1412,
+            "Cid Kagenou (Cid)": 1438,
             "Narrator": 527,
             "Alexia Midgar (????? (Alexia Midgar))": 1,
             "Rose Oriana (Rose)": 141,
@@ -3461,12 +3461,12 @@
             "Boss Monster": 2,
             "Sherry Barnett (Shelly and Alexia (Sherry))": 1,
             "Alexia Midgar (Shelly and Alexia (Alexia))": 1,
-            "Gamma": 315,
-            "Eta": 484,
-            "Zeta": 929,
-            "Alpha": 1210,
-            "Delta": 609,
-            "Beta": 647,
+            "Gamma": 341,
+            "Eta": 627,
+            "Zeta": 950,
+            "Alpha": 1221,
+            "Delta": 625,
+            "Beta": 657,
             "Nu": 207,
             "Rabbit T-thrope": 14,
             "Fox T-thrope": 1,
@@ -3486,7 +3486,7 @@
             "Shishiodoshi (Shishi(?))": 1,
             "Shishiodoshi": 9,
             "T-thrope Spectators": 4,
-            "Epsilon": 550,
+            "Epsilon": 738,
             "Alpha (Everyone (Alpha))": 4,
             "Beta (Everyone (Beta))": 4,
             "Gamma (Everyone (Gamma))": 4,
@@ -3589,8 +3589,8 @@
             "Maximilian": 27,
             "Aurora (??? (Witch Claire))": 2,
             "Aurora (Witch Claire)": 12,
-            "Omega": 47,
-            "Chi": 49,
+            "Omega": 48,
+            "Chi": 50,
             "Chi (Chi & Omega (Chi))": 3,
             "Omega (Chi & Omega (Omega))": 3,
             "OiKatzo": 58,
@@ -6543,6 +6543,105 @@
                             "Cid Kagenou (Cid)": 4,
                             "Delta (Delta & Zeta (Delta))": 2,
                             "Zeta (Delta & Zeta (Zeta))": 2
+                        }
+                    }
+                }
+            },
+            "fthasg": {
+                "line_count": 443,
+                "word_count": 4731,
+                "char_count": 26163,
+                "characters": {
+                    "Epsilon": 188,
+                    "Chi": 1,
+                    "Omega": 1,
+                    "Eta": 143,
+                    "Zeta": 21,
+                    "Delta": 16,
+                    "Gamma": 26,
+                    "Alpha": 11,
+                    "Cid Kagenou (Cid)": 26,
+                    "Beta": 10
+                },
+                "episodes": {
+                    "e1": {
+                        "word_count": 637,
+                        "char_count": 3616,
+                        "line_count": 61,
+                        "characters": {
+                            "Epsilon": 36,
+                            "Chi": 1,
+                            "Omega": 1,
+                            "Eta": 23
+                        }
+                    },
+                    "e2": {
+                        "word_count": 671,
+                        "char_count": 3793,
+                        "line_count": 68,
+                        "characters": {
+                            "Epsilon": 25,
+                            "Zeta": 9,
+                            "Eta": 21,
+                            "Delta": 6,
+                            "Gamma": 7
+                        }
+                    },
+                    "e3": {
+                        "word_count": 628,
+                        "char_count": 3406,
+                        "line_count": 60,
+                        "characters": {
+                            "Epsilon": 20,
+                            "Eta": 22,
+                            "Zeta": 11,
+                            "Delta": 7
+                        }
+                    },
+                    "e4": {
+                        "word_count": 772,
+                        "char_count": 4245,
+                        "line_count": 62,
+                        "characters": {
+                            "Eta": 28,
+                            "Epsilon": 30,
+                            "Alpha": 4
+                        }
+                    },
+                    "e5": {
+                        "word_count": 884,
+                        "char_count": 4730,
+                        "line_count": 84,
+                        "characters": {
+                            "Epsilon": 39,
+                            "Cid Kagenou (Cid)": 26,
+                            "Eta": 14,
+                            "Beta": 5
+                        }
+                    },
+                    "e6": {
+                        "word_count": 546,
+                        "char_count": 3027,
+                        "line_count": 49,
+                        "characters": {
+                            "Epsilon": 10,
+                            "Eta": 16,
+                            "Beta": 4,
+                            "Alpha": 7,
+                            "Gamma": 12
+                        }
+                    },
+                    "e7": {
+                        "word_count": 593,
+                        "char_count": 3346,
+                        "line_count": 59,
+                        "characters": {
+                            "Gamma": 7,
+                            "Epsilon": 28,
+                            "Eta": 19,
+                            "Delta": 3,
+                            "Zeta": 1,
+                            "Beta": 1
                         }
                     }
                 }
@@ -12793,9 +12892,9 @@
     },
     "chars": {
         "Alpha": {
-            "total": 4160,
+            "total": 4171,
             "names": {
-                "Alpha": 4107,
+                "Alpha": 4118,
                 "Alpha & Gamma (Alpha)": 1,
                 "Alpha & Eta (Alpha)": 1,
                 "Seven Shadows (Alpha)": 8,
@@ -12809,9 +12908,9 @@
             }
         },
         "Beta": {
-            "total": 3236,
+            "total": 3246,
             "names": {
-                "Beta": 2873,
+                "Beta": 2883,
                 "Seven Shadows (Beta)": 14,
                 "Beta & Epsilon (Beta)": 32,
                 "Beta & Gamma (Beta)": 5,
@@ -12843,9 +12942,9 @@
             }
         },
         "Gamma": {
-            "total": 2394,
+            "total": 2420,
             "names": {
-                "Gamma": 2230,
+                "Gamma": 2256,
                 "Seven Shadows (Gamma)": 14,
                 "Alpha & Gamma (Gamma)": 1,
                 "Beta & Gamma (Gamma)": 5,
@@ -12860,9 +12959,9 @@
             }
         },
         "Delta": {
-            "total": 1762,
+            "total": 1778,
             "names": {
-                "Delta": 1725,
+                "Delta": 1741,
                 "Seven Shadows (Delta)": 13,
                 "Delta & Zeta (Delta)": 8,
                 "Deltan": 1,
@@ -12873,9 +12972,9 @@
             }
         },
         "Epsilon": {
-            "total": 2337,
+            "total": 2525,
             "names": {
-                "Epsilon": 2193,
+                "Epsilon": 2381,
                 "Seven Shadows (Epsilon)": 14,
                 "Beta & Epsilon (Epsilon)": 32,
                 "Beta & Gamma & Epsilon (Epsilon)": 1,
@@ -12891,9 +12990,9 @@
             }
         },
         "Zeta": {
-            "total": 2577,
+            "total": 2598,
             "names": {
-                "Zeta": 2447,
+                "Zeta": 2468,
                 "Seven Shadows (Zeta)": 14,
                 "Delta & Zeta (Zeta)": 8,
                 "Alpha & Zeta (Zeta)": 3,
@@ -12912,9 +13011,9 @@
             }
         },
         "Eta": {
-            "total": 1446,
+            "total": 1589,
             "names": {
-                "Eta": 1420,
+                "Eta": 1563,
                 "Seven Shadows (Eta)": 10,
                 "Alpha & Eta (Eta)": 1,
                 "Everyone (Eta)": 6,
@@ -12944,9 +13043,9 @@
             }
         },
         "Chi": {
-            "total": 727,
+            "total": 728,
             "names": {
-                "Chi": 223,
+                "Chi": 224,
                 "Chi & Omega (Chi)": 13,
                 "Characterised Shadow": 8,
                 "Characterised Eta": 3,
@@ -12959,9 +13058,9 @@
             }
         },
         "Omega": {
-            "total": 451,
+            "total": 452,
             "names": {
-                "Omega": 224,
+                "Omega": 225,
                 "Chi & Omega (Omega)": 13,
                 "Characterised Zeta": 2,
                 "Characterised Gamma": 2,
@@ -12984,7 +13083,7 @@
             }
         },
         "Cid Kagenou": {
-            "total": 11403,
+            "total": 11429,
             "names": {
                 "Shadow": 1562,
                 "Minoru Kageno": 126,
@@ -12994,7 +13093,7 @@
                 "Stylish Bandit Slayer": 33,
                 "John Smith": 592,
                 "John Smith & Yukime (John Smith)": 1,
-                "Cid": 2104,
+                "Cid": 2130,
                 "???? (Shadow)": 3,
                 "None (Cid Kagenou)": 12,
                 "??? (Stylish Bandit Slayer)": 1,

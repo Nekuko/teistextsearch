@@ -692,14 +692,14 @@ export async function fetchGenericData(versionData, setVersionData, dataName) {
         setVersionData(versionDocSnap);
     }
 
-    let firestoreVersion = versionDocSnap.info[dataName];
+    let firestoreVersion = versionDocSnap.info[`${dataName}`];
     let indexedDBVersion = await db.get('firestore-cache', `data-versions-info-${dataName}`);
 
     let data;
     let versionUpdated = false; // Initialize the boolean flag
 
     if (!indexedDBVersion || firestoreVersion !== indexedDBVersion) {
-        const dataDocRef = doc(firestore, 'data', dataName);
+        const dataDocRef = doc(firestore, 'data', `${dataName}`);
         let dataDocSnap = await getDoc(dataDocRef);
         data = dataDocSnap.data();
 
@@ -772,6 +772,25 @@ export async function fetchCharacterImages(urls) {
     const downloadPromises = urls.map(async (reference) => {
         try {
             const url = await getDownloadURL(ref(storage, `gs://teistextsearch.appspot.com/${reference}`));
+            imageMap[reference] = url;
+        } catch (error) {
+            console.error(`Error fetching URL for ${reference}:`, error);
+        }
+    });
+
+    // Wait for all promises to resolve
+    await Promise.all(downloadPromises);
+    return imageMap;
+}
+
+export async function fetchGenericImages(urls, folder) {
+    const storage = getStorage();
+    const imageMap = {};
+
+    // Create an array of promises for each URL
+    const downloadPromises = urls.map(async (reference) => {
+        try {
+            const url = await getDownloadURL(ref(storage, `gs://teistextsearch.appspot.com/${folder}/${reference}`));
             imageMap[reference] = url;
         } catch (error) {
             console.error(`Error fetching URL for ${reference}:`, error);

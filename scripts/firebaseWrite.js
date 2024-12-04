@@ -10,6 +10,3126 @@ admin.initializeApp({
 let db = admin.firestore();
 
 let data = {
+    "fthasg": {
+        "e1": [
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "S-So cold... It really feels like winter...",
+                "line": 1,
+                "url": "https://drive.google.com/file/d/1uXgFoXDejtoMzWtL2_HqQp_n6LpXEWGJ/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Which means it must almost be the holiday season. That's something I definitely look forward to.",
+                "line": 2,
+                "url": "https://drive.google.com/file/d/1L7IdKZ3GRMf0KRjM_bdInM4F9eIQKzr5/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Heehee, what kind of sweets shall I make this year? Maybe I'll even try for some hot chocolate and cookies to keep Master Shadow warm\u2014",
+                "line": 3,
+                "url": "https://drive.google.com/file/d/1IPclODXzE0RIisQE01Hod7fHPN-bPNop/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Huh? Is that Chi, Omega, and...Eta? What're they doing over there?",
+                "line": 4,
+                "url": "https://drive.google.com/file/d/1ZGMP_B6PqwtrXQw-Dxd13Rs_kdSqbZv5/view?usp=drivesdk"
+            },
+            {
+                "name": "Chi",
+                "name_variant": "Chi",
+                "subtitle": "Please accept our sincere apology, Lady Eta. We're in a great hurry...",
+                "line": 5,
+                "url": "https://drive.google.com/file/d/1SmEj90xT9miePVYTBQLwJfGuI3W1ofS_/view?usp=drivesdk"
+            },
+            {
+                "name": "Omega",
+                "name_variant": "Omega",
+                "subtitle": "And this is a very important errand, so we'll be taking our leave now.",
+                "line": 6,
+                "url": "https://drive.google.com/file/d/1kFnUQoRu3ZEG_LZrFkFpctoz1498Z-pm/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...And off they go.",
+                "line": 7,
+                "url": "https://drive.google.com/file/d/1Ej_tJumGhqcPRcXG1_XTpLj3BAySQ443/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "What's wrong?",
+                "line": 8,
+                "url": "https://drive.google.com/file/d/1RusXsAlhr35ahRfZb2Yu08jV5K8Ak59x/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "I wanted them to help with an experiment... But it looks like they're busy...",
+                "line": 9,
+                "url": "https://drive.google.com/file/d/124ATEsbbveD7AeI-AM6uIw6rWVoambmA/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(...\"Busy\" might not be the real reason.)",
+                "line": 10,
+                "url": "https://drive.google.com/file/d/1N2ZNjj7Wbu0OYNOAMgjcQduK5kl4vVLf/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Lately...when I need helpers for my experiments...everyone suddenly remembers they have something to do...",
+                "line": 11,
+                "url": "https://drive.google.com/file/d/1Gwv6CITEKNT_vbbLZn9EFYnseXOKH0YB/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(In other words, they're obviously avoiding you.)",
+                "line": 12,
+                "url": "https://drive.google.com/file/d/1M4x6iJwSItA5d_F5xxII2sB-KkyLrqap/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...",
+                "line": 13,
+                "url": "https://drive.google.com/file/d/1NLaTOb8qW1s0L1esOCBFJI59quFynMaX/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Uh, Eta?",
+                "line": 14,
+                "url": "https://drive.google.com/file/d/19cynjdipLkyYzDY6Ci7wnekaINsaINd6/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Yeah, I guess even she'd feel hurt by that...)",
+                "line": 15,
+                "url": "https://drive.google.com/file/d/1DdGbdRWA6RJ-cNuMc3Nd4Wvq8b92S6zS/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "At this rate...I won't be able to secure any subjects... A grave situation indeed...",
+                "line": 16,
+                "url": "https://drive.google.com/file/d/1R9Mzm1zIMrmWTAdxUf5xZIxkeMtpjHGp/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "You see, that's your problem right there, Eta.",
+                "line": 17,
+                "url": "https://drive.google.com/file/d/1njjKM5rbrHBQu2pUU5vcevtrqNgWBLhr/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...What do you mean?",
+                "line": 18,
+                "url": "https://drive.google.com/file/d/1gS0A6qaKkyNrC1Pba1_XpgZaufCjFCQi/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "You're seriously set in your ways. Try thinking of how you interact with others once in a while.",
+                "line": 19,
+                "url": "https://drive.google.com/file/d/1RhkzME3R_bbJKG59ogFDljsqiPao70go/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Eta might be fine with that...but I'm not.)",
+                "line": 20,
+                "url": "https://drive.google.com/file/d/1b5ssxNAIm2p5ENH5gsyNdv1b5geg-2tM/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Use this as an opportunity to improve your relationship with everyone.",
+                "line": 21,
+                "url": "https://drive.google.com/file/d/1fPCdYSIzjCczsRVf2Falar2uxCVyxc9H/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Why?",
+                "line": 22,
+                "url": "https://drive.google.com/file/d/1FAWYW0Kh-YZpU8L1j-7irOu7kYY3I0F1/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "\"Why?\" ...Ugh, come on, no questions\u2014you need to do it, and that's that!",
+                "line": 23,
+                "url": "https://drive.google.com/file/d/1LveRagbYADFP3E5-z9nJpVnb6sveXM0h/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Too much work... Besides, how do I do it...?",
+                "line": 24,
+                "url": "https://drive.google.com/file/d/1Ocxt8Q2SxA-iwLn2pzvgUAiheauzAyQ5/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "\"How\"? Well...",
+                "line": 25,
+                "url": "https://drive.google.com/file/d/1fwpoAYR2pOnexu9_jRiI9zYdpPpmshV8/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Aha, I know! It's almost the holiday season, right? What about giving presents to everyone?",
+                "line": 26,
+                "url": "https://drive.google.com/file/d/1oQXYBfmJ3cvluXqw9Ij8hgDMt8XijWQg/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "The holiday season...? Presents...?",
+                "line": 27,
+                "url": "https://drive.google.com/file/d/1cEH4AN3umjZuUMCyWeiy2rixRJwHcGA4/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "You know, the new custom Mitsugoshi spread, about giving gifts to those you're close to.",
+                "line": 28,
+                "url": "https://drive.google.com/file/d/1Qx1Iij1DYFkoCFoFL7iChctArsr_guhl/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "So, you're going to give presents to the people who helped you along the way or took part in your experiments. As a way of expressing gratitude and apologizing for everything.",
+                "line": 29,
+                "url": "https://drive.google.com/file/d/1BVq2LMsuRYHjtEL23uzUXvmXNAHtyBqJ/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Just saying thanks isn't enough?",
+                "line": 30,
+                "url": "https://drive.google.com/file/d/14kjsJgX-RhNUHtfIFzqQfo2VTHccJUu2/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "No. These need to be gifts from the heart.",
+                "line": 31,
+                "url": "https://drive.google.com/file/d/1QvIAxOk8x7dLngWAsTOSV4sEbfYb0Oz1/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "That's how you show consideration for the other person's feelings. Then they'll be sure to show you some understanding, too.",
+                "line": 32,
+                "url": "https://drive.google.com/file/d/1VSGvKSZnWy8pXtYzX_ZYtvlv9JQ-14fG/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Definitely too much work...",
+                "line": 33,
+                "url": "https://drive.google.com/file/d/1k_OdqbicySnLMITcmKQEsec76YJuo589/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Don't say that... What if everyone keeps on avoiding you like the plague?",
+                "line": 34,
+                "url": "https://drive.google.com/file/d/15Zpms-9ngYjaecPNmxDxrBSdQ60l5Xee/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "That...would be problematic.",
+                "line": 35,
+                "url": "https://drive.google.com/file/d/1pYukaSF9oNb-_VMt72GQ5LKwieLUepz0/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Honestly, I get why people are wary of Eta's experiments. Even I try not to get sucked into them if at all possible.)",
+                "line": 36,
+                "url": "https://drive.google.com/file/d/1UJja5FFTeeE9ajMrv8xAzfOe72PR503P/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(But it still hurts to see people avoiding her like that... I really hope we can do something to remedy the situation.)",
+                "line": 37,
+                "url": "https://drive.google.com/file/d/1zVg7Yt10JNKKx2uLL3M5DjOXf2R8F-g4/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Ugh...",
+                "line": 38,
+                "url": "https://drive.google.com/file/d/1UCTNahmVh3aNA-p0xYOz9IybpMBf0SQt/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Fine. I'll do it.",
+                "line": 39,
+                "url": "https://drive.google.com/file/d/1Z86QNG5w_EOxe60SoQa9NOsklbDSw_nX/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "That's the spirit!",
+                "line": 40,
+                "url": "https://drive.google.com/file/d/19SUzsShEXLycEgfsBqy3yDIdpNLv5gMw/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Otherwise, they'll keep their guard up...and that will hinder future experiments...",
+                "line": 41,
+                "url": "https://drive.google.com/file/d/1bRtIFJ1qT7xYSa-X3gEwTVG9R3P5zVwh/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Huh? Did you say something?",
+                "line": 42,
+                "url": "https://drive.google.com/file/d/1lbFa2jozrok9ht1levGGA6x0Quu2qy-o/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "No.",
+                "line": 43,
+                "url": "https://drive.google.com/file/d/15m1dCpc2Ui-CO5QJ4ELna7CJnSkLvXUj/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "So...what do I need to do?",
+                "line": 44,
+                "url": "https://drive.google.com/file/d/1q54tgfNvz3CHJkBOfLX8nBT8Y9FhRFQ-/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Well. If we're being serious about it, we may as well dress the part by changing into something seasonal.",
+                "line": 45,
+                "url": "https://drive.google.com/file/d/1diD5oRxsf3v8VxPcdVm8B4ElDGOYO3Y8/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "And given this particular holiday...it's gotta be a saint outfit!",
+                "line": 46,
+                "url": "https://drive.google.com/file/d/1L1GjFItR0wFprhEXtH3tPMSURfTdpxC-/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...What's that?",
+                "line": 47,
+                "url": "https://drive.google.com/file/d/1Ehb4gJX4UKgP4MXUVamwiLyqIr1fceon/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "This...might be a little too sexy for you. Let's go with something cuter...but then are we getting too contrived? How about we try this top to give the outfit a little more maturity...",
+                "line": 48,
+                "url": "https://drive.google.com/file/d/1dkGU_iCPJE2i56FIIYIbFh-Xv36q1a4-/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Not like it matters.",
+                "line": 49,
+                "url": "https://drive.google.com/file/d/1em5Tm0DkVGtvpEueVw3Hx9CMCDTjd5cR/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Heehee, oh, just humor me. It's not like we get to do this every day. This should be where the fun starts.",
+                "line": 50,
+                "url": "https://drive.google.com/file/d/1MsNbjHAPQJVQqNbKnuuRpLchY7JLDkX6/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Besides, you need to have more fun with fashion in general. You NEVER put any work into your appearance.",
+                "line": 51,
+                "url": "https://drive.google.com/file/d/1TP73iZu7eq_c0ZdT4AZpNYK2ackRZjPZ/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "All that matters is doing my research...",
+                "line": 52,
+                "url": "https://drive.google.com/file/d/1exo1LhekO8yvHoyfIrayadh3bo6kgeSh/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Then a holiday saint outfit won't do you any harm.",
+                "line": 53,
+                "url": "https://drive.google.com/file/d/1kUMyOa7pIeS11-tvP_PGtu2afdIE5YDy/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Yep, this is way better. Now, let's get changed.",
+                "line": 54,
+                "url": "https://drive.google.com/file/d/1Qq_idVzPa79JzU3gAzjP_q2P8I8YBSQ0/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "*sigh* Fine...",
+                "line": 55,
+                "url": "https://drive.google.com/file/d/1YvsJAvg5eif1vUTLzkn7kYkfGO4ab6nr/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "There we go! You look amazing. My eye for fashion never fails.",
+                "line": 56,
+                "url": "https://drive.google.com/file/d/1QdADROpczAnpH_6O9dgZnKcDdkTsspet/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Really? But why did you change too?",
+                "line": 57,
+                "url": "https://drive.google.com/file/d/1skxRaH4mqnoBeWkYraKey-btibNI_rQ_/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Because I also want to dress cute\u2014uh, no, it's so I can help you. I'm not sure you can pull this off on your own.",
+                "line": 58,
+                "url": "https://drive.google.com/file/d/1-fXcTHrrk3K-EyK6Hm8BRB0-k_fNeeJC/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "But...I'd be fine...alone...",
+                "line": 59,
+                "url": "https://drive.google.com/file/d/1vC4UTvn63_h3abMFhm1Cmu5B6xv7qgVQ/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Yes, yes. Spare me the grumbling, and let's get to work!",
+                "line": 60,
+                "url": "https://drive.google.com/file/d/1K0I261sxl8gQe8OmLWnhs-rUguSml7FP/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "We'll call this \"Operation Gift-Giver\"! Now, time to go find out what everyone wants!",
+                "line": 61,
+                "url": "https://drive.google.com/file/d/1OjDKmLQJo63yCSQaT_lPO4QqIn94jnfI/view?usp=drivesdk"
+            }
+        ],
+        "e2": [
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Now, who to start with... Oh?",
+                "line": 1,
+                "url": "https://drive.google.com/file/d/16zR4xd-lP1QYq-i-KN3HofpdFryA-k-G/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "...Hm?",
+                "line": 2,
+                "url": "https://drive.google.com/file/d/12TGffhpKgSMDvJZ076Imx9hYpDDbJ5fo/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Zeta! Perfect timing! Do you have a second?",
+                "line": 3,
+                "url": "https://drive.google.com/file/d/1dbUwUqoLjl6m_EjEtM9l-y99RssopLB0/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "What's up?",
+                "line": 4,
+                "url": "https://drive.google.com/file/d/1JqnhXkI0BKvTUPvKS8ENrAvyKgUPRsYh/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "I need...to ask you something...",
+                "line": 5,
+                "url": "https://drive.google.com/file/d/1Gtbg_H1eNNLOTzRyXesprrTUMs2c8eTt/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Eta, too, huh.",
+                "line": 6,
+                "url": "https://drive.google.com/file/d/15l32gEqKjkareI6L0Ws2zIjuXBcZkxjS/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "...So, what's the experiment this time?",
+                "line": 7,
+                "url": "https://drive.google.com/file/d/1L0avv_Df2PpYkufqWODmjtpPd0Oezei3/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(...Yeah, she's definitely got her guard up. Time for me to step in and smooth this over.)",
+                "line": 8,
+                "url": "https://drive.google.com/file/d/1axOb1gg3TTYD-JxRbxsZpc4HszYzK2vU/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Relax, there's no experiment. Today is different. Right, Eta?",
+                "line": 9,
+                "url": "https://drive.google.com/file/d/1Er6C3zSolQ4aAdKGiSe65tvooKYweEFo/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "If you want something...I'll get it... So tell me.",
+                "line": 10,
+                "url": "https://drive.google.com/file/d/1GwB0LTFl4gYVp2WuF4rT4BXS7ZCllieC/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Uh...why?",
+                "line": 11,
+                "url": "https://drive.google.com/file/d/16ITz0RF5cBfnVTiSkZdvtPyQXIHc_DaQ/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Um... Because I...need to do this...?",
+                "line": 12,
+                "url": "https://drive.google.com/file/d/1Uv8lYzu3AQ7YzX226y4mChGA9oS4SmC8/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Wait, don't tell me this is so scheme to sucker me in with a bribe\u2014",
+                "line": 13,
+                "url": "https://drive.google.com/file/d/1anhLxbRw-jPvEe7b3RIgmAELgqgvB5gv/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "No, no. This has nothing to do with science. No one is going to do anything to you.",
+                "line": 14,
+                "url": "https://drive.google.com/file/d/1HG9htANjS7WOyW8_Gjgi3Gs4e3UKCb8f/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Yeah. So tell me.",
+                "line": 15,
+                "url": "https://drive.google.com/file/d/1c2bISTh27ajUzEvpTz8hnPm7rujm-j8l/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Well, I guess it won't hurt.",
+                "line": 16,
+                "url": "https://drive.google.com/file/d/1LI5iKgZwGuF4z6kHDY9ciE-in94SpLHl/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "But still...what do I want... Hmm, maybe some tasty fish?",
+                "line": 17,
+                "url": "https://drive.google.com/file/d/1YUC3mnxnPTS0eihCPbGUo7hh6g2fwzM9/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Thanks, that was very informative. Let's go, Eta!",
+                "line": 18,
+                "url": "https://drive.google.com/file/d/1VGqJAWfRW2DzUVBQBMkppGB2PAOPGdlu/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Informative how...?",
+                "line": 19,
+                "url": "https://drive.google.com/file/d/1m2CX-UAqVwsb86JhSOO_LpTcFHek2T-C/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "A little chilly, but Mr. Sunny Sun is warm... Perfect for a nap.",
+                "line": 20,
+                "url": "https://drive.google.com/file/d/1-ci64nOGwLC7xgfgDeh2Amg9pk2mWVkt/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "There she is... Hey Delta, do you have a moment? We need to ask you something.",
+                "line": 21,
+                "url": "https://drive.google.com/file/d/1bieOeud_k8DMD4Y8CAwVRTfRUWjCdY4W/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Ask me something?",
+                "line": 22,
+                "url": "https://drive.google.com/file/d/1sowm6qd6GQvyDMzU062FP0mG2SiNKP_9/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Tell me what you want...",
+                "line": 23,
+                "url": "https://drive.google.com/file/d/1k2dVyCCWfdEza25I7gEO-yJS7Z24Tp_S/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Eep?! She's gonna pluck my tail again!",
+                "line": 24,
+                "url": "https://drive.google.com/file/d/1uV3yXh7gwsa9yDIo3pR1nNF74LNtLE__/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Pluck her tail...? Eta, what in the world have you been up to?)",
+                "line": 25,
+                "url": "https://drive.google.com/file/d/1tzetVOXzWe2qrbhF_J6UGdzK7Lg3X6T4/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "That was to study...therianthrope fur... A necessary sacrifice... But don't worry... I'm not here to pluck today...",
+                "line": 26,
+                "url": "https://drive.google.com/file/d/1UvFpR7yaLZ-cxTHE2p9I783RxuBVAoxx/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Really...? Then why did you talk to me? I'm not gonna help with any experiments!",
+                "line": 27,
+                "url": "https://drive.google.com/file/d/1B2W_iE9idffo1raPb13Db8mAul0Wwsdd/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Calm down, this isn't an experiment. We just have a question.",
+                "line": 28,
+                "url": "https://drive.google.com/file/d/1Cj1OZymofezPLXdxYjfqZleDxRGb3o2n/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "...And it won't hurt? It's not scary?",
+                "line": 29,
+                "url": "https://drive.google.com/file/d/1R8jkcIxh5tmrv3u9aPcr7SkkUBznHQOj/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "No. Just tell me what you want...and I'll get it for you...",
+                "line": 30,
+                "url": "https://drive.google.com/file/d/14pvm4gLWxM2S0bnpeTXAUmhJu4lRu1Yk/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Huh, you will? Okay, then meat! I want yummy meat!",
+                "line": 31,
+                "url": "https://drive.google.com/file/d/19b08DQBrUYCdSPInio3oaHtRsyt9WAs7/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Well, I suppose that covers the Seven Shadows and the Numbers...",
+                "line": 32,
+                "url": "https://drive.google.com/file/d/1KJao9jefxyaKDpk0JsnepPsR_m0QMs7O/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Luckily it's pretty much all candy and little stuff. A few items might take some effort...but we can start with the easy ones.",
+                "line": 33,
+                "url": "https://drive.google.com/file/d/1qLRblvJx63Ntl52W2fxKqTxWhblr24as/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Is that...really enough...?",
+                "line": 34,
+                "url": "https://drive.google.com/file/d/1Uo5UbSRfY2mDxGaPbqzri_QRt-eb0scc/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Why the serious face?",
+                "line": 35,
+                "url": "https://drive.google.com/file/d/1WnYim42qC1hfYxfdmPzmCJZ8vMgHEIoC/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Holiday gifts...are special.",
+                "line": 36,
+                "url": "https://drive.google.com/file/d/1rkDX2euKqMX5WI15jJ4_oIlrLj-RyGOX/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "What...?",
+                "line": 37,
+                "url": "https://drive.google.com/file/d/1aPNZVJpaSAMO3i8gCmTMstmUxlsmwvIM/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "People want...something special on holidays. Regular items...don't work.",
+                "line": 38,
+                "url": "https://drive.google.com/file/d/1MYzLRknxfUcuuOhd-nGH3NGTs02Gv1Rr/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "What exactly do you mean by \"special\"?",
+                "line": 39,
+                "url": "https://drive.google.com/file/d/1rIAzB3ahynBdahD_jS_bY6M6jY_1Imzh/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Zeta said fish, Delta said meat... But regular fish and meat...are unacceptable.",
+                "line": 40,
+                "url": "https://drive.google.com/file/d/1joU0G1wvxoI5OgB3TVduwgguQ-vwoBX7/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "The holiday season...demands legendary quality... Anything else...will be a disappointment.",
+                "line": 41,
+                "url": "https://drive.google.com/file/d/1EUPcuEcFOEpQMfeWcW9j78dX1RyT55ZX/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Legendary quality... Are we talking like platinum salmon or Cobay beef? Shadow Wisdom says those are super hard to come by.",
+                "line": 42,
+                "url": "https://drive.google.com/file/d/1YjslNuQl_LEWsZZn45T1wvH3TGzU9kYq/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Exactly. Things of that caliber...are sure to make everyone happy.",
+                "line": 43,
+                "url": "https://drive.google.com/file/d/1Q-xRxmWpoAKm4UcLdow9Ue6HWS4_u61x/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "What's this about legendary quality?",
+                "line": 44,
+                "url": "https://drive.google.com/file/d/1fMQij0C2LmOwX8Li56J9kc7Cr5QKz1wB/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Oh, Gamma, amazing timing... Do you happen to have any legendary foods?",
+                "line": 45,
+                "url": "https://drive.google.com/file/d/1WpsJ5SC5X8SszveujRsaaoI2V7GX31AX/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "As in the two just mentioned? I'm sad to say that both are currently out of stock.",
+                "line": 46,
+                "url": "https://drive.google.com/file/d/189OepKxkcgL6rOo76RxYNX_TQdnqp-_R/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Really? And here I thought Mitsugoshi never ran out of anything.",
+                "line": 47,
+                "url": "https://drive.google.com/file/d/1WjcgYYy5TkUogvfgg6CS2P6KziXI61VY/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "What did you expect? Platinum salmon and Cobay beef are both delicacies from appropriately rare beasts...",
+                "line": 48,
+                "url": "https://drive.google.com/file/d/141GtGNfs5RtZUBaZgNcacL9MaaPjdmro/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "Demand for them increases this time of year. We can hardly keep any on the shelves, they sell so fast. And the reserve orders for more just keep coming in.",
+                "line": 49,
+                "url": "https://drive.google.com/file/d/1iT5pnh9mfr-TBV21wxGcDegDSJ6WV_CC/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Wow, so they're that popular... I had no idea.",
+                "line": 50,
+                "url": "https://drive.google.com/file/d/1rTNb1gGIAolQYTNXdPOjto4FtV93bVqj/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Then I'll go catch some myself... That's the only option...",
+                "line": 51,
+                "url": "https://drive.google.com/file/d/1BQA7pKKfOxo18ht6PhNJ510n3lChhasR/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Are you serious?",
+                "line": 52,
+                "url": "https://drive.google.com/file/d/1sKLJ6qloW92Ojb7GmiHd5om3Qn3W_FQD/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Of course.",
+                "line": 53,
+                "url": "https://drive.google.com/file/d/1lKfwiO0i45-rMhcsp80mRGBURnIZ5VaS/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Zeta and Delta only said fish and meat, and would probably even be fine with something else.)",
+                "line": 54,
+                "url": "https://drive.google.com/file/d/1eqHii1gu5UBegcRqtcCk5x_zQzUFcfWc/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(But Eta being Eta, this is probably her way of demonstrating good faith. In which case...)",
+                "line": 55,
+                "url": "https://drive.google.com/file/d/1RxpD-EiR4r5jz59TvKdnHW-9M9tgw4ik/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Understood. I'll help with the hunt.",
+                "line": 56,
+                "url": "https://drive.google.com/file/d/12RmdF5hzGMH2BDqjZjf_rzilzpzUzNXi/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Thanks.",
+                "line": 57,
+                "url": "https://drive.google.com/file/d/1ToRPgENeEZ49ph8W3LqCl_q2S1KjQiwF/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "And then if it comes to a fight...I can harvest your data, too... I can hardly wait...",
+                "line": 58,
+                "url": "https://drive.google.com/file/d/1jMa7PaRzKqMHn0xrpuy1iRZcQBxSwF3s/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Did you say something?",
+                "line": 59,
+                "url": "https://drive.google.com/file/d/1pT3HOyC6rf_X02YI9-yL87xcDORsaQw1/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "No.",
+                "line": 60,
+                "url": "https://drive.google.com/file/d/1oli7Zqemaq4-i5qiEU-40jIgmoYChtJe/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Well, whatever. Now that that's settled, we'd better keep the momentum going. Let's hurry to the forest.",
+                "line": 61,
+                "url": "https://drive.google.com/file/d/1el75t7RQJ2gh4aeQlzdw8GgBp2lWAJT_/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "Oh, wait. I have a question before you go... Have you seen Chi and Omega, by chance?",
+                "line": 62,
+                "url": "https://drive.google.com/file/d/1yEvPSiQWlzMa1bwcPmD4dSUn1j4hQ5Vv/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...We did. They said they had an errand...and ran off somewhere.",
+                "line": 63,
+                "url": "https://drive.google.com/file/d/1XeF0XJDvBLtxLDdibQCSKYyW6CyaKiBL/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "An errand? But I don't recall asking them to do anything... Maybe it's for someone else.",
+                "line": 64,
+                "url": "https://drive.google.com/file/d/12GTt9RBguL2BfMPH0DV-5o4mt36-p2bb/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "Thank you. I'll wait a bit longer while I finish things up here. I'm sure they'll be back soon enough.",
+                "line": 65,
+                "url": "https://drive.google.com/file/d/1T_Hua-dhHIRONWf19NzmprljJG9Ckv3d/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Did you need them for something? Seems like everyone is short on help this time of year.",
+                "line": 66,
+                "url": "https://drive.google.com/file/d/1rdeAiw6CHzSqy7micFoSfPvD4xu3XvYd/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "But we'd better be on our way, too. Now\u2014time to hunt some monsters!",
+                "line": 67,
+                "url": "https://drive.google.com/file/d/1ilv57q1I5WYprmrq8lFGdU7dEl6u5Hoi/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Heheh, let the fun begin...",
+                "line": 68,
+                "url": "https://drive.google.com/file/d/1teUe8l5CPz8rknjO7-Cl4gK-3wopshvW/view?usp=drivesdk"
+            }
+        ],
+        "e3": [
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "*pant, gasp*...!",
+                "line": 1,
+                "url": "https://drive.google.com/file/d/1PTZpKOpJd_t0JwBasL21XrdXg3vu9vIo/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Good work.",
+                "line": 2,
+                "url": "https://drive.google.com/file/d/1Ui8uTh7zpLiebHKC2orwu4BT6ELaiZcD/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "J-Just how many am I supposed to catch?!",
+                "line": 3,
+                "url": "https://drive.google.com/file/d/1kqPt7qIuf8F1lY7nPQGPvsZySBKcEIyu/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "One, two, three...ten? But I think we could still use two more...",
+                "line": 4,
+                "url": "https://drive.google.com/file/d/1-zsMzs6m5XjT6AzO59UwlsbXAIt6n6Fj/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "No, this is enough! *pant, wheeze*...",
+                "line": 5,
+                "url": "https://drive.google.com/file/d/1pXK1kHtuArqrhgIzyxixfD_-7AM0vH5N/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Seriously... I can't believe you made me fight so many monsters on my own.",
+                "line": 6,
+                "url": "https://drive.google.com/file/d/1e1UPr1YnztDOB9OU7Cay2IJ8XUDrO9cL/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "And no sooner do I down one than you call over more. This isn't a \"hunt one, get one free,\" so stop already!",
+                "line": 7,
+                "url": "https://drive.google.com/file/d/14oyDzKPn67X7ZBONiZCPrrtRoizf31kA/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...\"Hunt one, get one free\"?",
+                "line": 8,
+                "url": "https://drive.google.com/file/d/1pa1SpJ1rqmemoU00Ty3I1hnfsRLzuRvk/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "You know, like the Shadow Wisdom where you get something for free after purchase...?",
+                "line": 9,
+                "url": "https://drive.google.com/file/d/1rSJ7qsRH4wScuDcDEjKmHV0_dMgWXQoh/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Besides all you're doing is standing there watching. It wouldn't kill you to lend a hand, you know!",
+                "line": 10,
+                "url": "https://drive.google.com/file/d/124ZjjZVy0KkURsjL1UZdO8YC3Vu1Ikmn/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "But you can handle this much on your own...or am I wrong?",
+                "line": 11,
+                "url": "https://drive.google.com/file/d/1eIYIqyrpzROLbs2-H6zNM0EsFgyipFzL/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Ugh... Well, yeah, of course I can. I can...but even I get tired.",
+                "line": 12,
+                "url": "https://drive.google.com/file/d/1YTtHslMemUEWVMBLZtrB-sSGg18C24Xq/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Thanks to you...we have plenty of Cobay beef. And I got my data... And I was able to test the effectiveness of my pheromone beast lures...",
+                "line": 13,
+                "url": "https://drive.google.com/file/d/1-M4xb5BSPbvRBN2Xz_8meMnncuCleNM5/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Three birds with one stone... Heheheh...",
+                "line": 14,
+                "url": "https://drive.google.com/file/d/1GzrSvLeMd3Kw7Rhwy-fcOEeIUqVG_12R/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Data...? Wait, what are you talking about\u2014",
+                "line": 15,
+                "url": "https://drive.google.com/file/d/1_KtzicoeTFypjulqZfQog1do3hbNR6zr/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...No, I get it. I'm onto your scheme now.",
+                "line": 16,
+                "url": "https://drive.google.com/file/d/1uv3WftrxUZ6KUc0JNSXusTwVYTm6PU2u/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "You just wanted to collect my combat data while trying out your synthetic pheromones, didn't you! All that talk about Cobay beef was nothing but a lie...!",
+                "line": 17,
+                "url": "https://drive.google.com/file/d/1_aU_SIHaxpRbIoIihzz9jnsiqmjVjOjd/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "The part about me wanting to give something special for the holidays...is true. Also...",
+                "line": 18,
+                "url": "https://drive.google.com/file/d/1Sk37T0W-D1pVa6z32vbXU5CWUJEFk7ZF/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "If this research goes well...I'll let you be the first to test my pheromone perfume.",
+                "line": 19,
+                "url": "https://drive.google.com/file/d/1xf0h1_gjUYxEUQb87RKvPR3Cf7vBS4Sc/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Well, that's a first I'm not interested in. That stuff is meant to attract monsters, right?",
+                "line": 20,
+                "url": "https://drive.google.com/file/d/122HD9AWNfPiMcB4VlATebw8KqUq96lxK/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Yes...for now. But pheromones...are originally intended to attract the opposite sex.",
+                "line": 21,
+                "url": "https://drive.google.com/file/d/1eqPMO2exZQvt8xz6f39mt0h2lgpsT-W0/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "If I apply my research...I may be able to make perfumes that captivate someone specific...",
+                "line": 22,
+                "url": "https://drive.google.com/file/d/1OSyqyRMooJWgxZqPRsisdB-UQlAwCUGN/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Wha...?!",
+                "line": 23,
+                "url": "https://drive.google.com/file/d/13iw2bTV1mRRIqIEjVx_jTiKKo3FLZJ0E/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Is she saying what I think she is...?! That I might be able to seduce Master Shadow?!)",
+                "line": 24,
+                "url": "https://drive.google.com/file/d/1joNECg2vaSMTBTRKbBZ4KnYenEO0tj7h/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "So...will you help?",
+                "line": 25,
+                "url": "https://drive.google.com/file/d/1VI2DrrJhrYamUKmhmpF-3F90emhHvhLK/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Heehee, if that's the case, then Epsilon is on the job! I'll help you every step of the way!",
+                "line": 26,
+                "url": "https://drive.google.com/file/d/1BQAyCiAtlwW3fs0Q-9sPZUO634lLJyyq/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Okay, then next I want to test it on...platinum salmon.",
+                "line": 27,
+                "url": "https://drive.google.com/file/d/1RZ5nZSMvQNgMj6fXy96CG9iN0AwOGHe3/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "By all means! Just leave it to me!",
+                "line": 28,
+                "url": "https://drive.google.com/file/d/1gQP2PV-g7_hy_aXi6bznZrPE9X_SuH-0/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "No way...! Is this...platinum salmon?!",
+                "line": 29,
+                "url": "https://drive.google.com/file/d/19fSjlbrJRh3mD5mBCCtE44-kBECrCOdD/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Wow! Huge chunks of meat! Look at all that yummy fat!",
+                "line": 30,
+                "url": "https://drive.google.com/file/d/1tnbNiL0Zpzf9tFTUaDATXI5I58a3m9Je/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "We got what both of you wanted...",
+                "line": 31,
+                "url": "https://drive.google.com/file/d/14Ji_I1EEhjQTBg5aTXhBEVXJKpr-A5MH/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Thanks. But I really wasn't expecting platinum salmon... All I asked for was some tasty fish.",
+                "line": 32,
+                "url": "https://drive.google.com/file/d/1KGZQ90qyhXh-H3u8N9hZVDN2PRAaY4bJ/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "I'm surprised too! Never thought you'd give me this much tasty-looking meat!",
+                "line": 33,
+                "url": "https://drive.google.com/file/d/1ctCbMZrmYnTg0E1GIBPdWts3LV51Ya_2/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "It was Eta's idea. She said that if you're going to give a gift, it needs to be special.",
+                "line": 34,
+                "url": "https://drive.google.com/file/d/1RjleJpjsYBLivvE_LUpEBWdu3MEQAkcy/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Do you like it?",
+                "line": 35,
+                "url": "https://drive.google.com/file/d/1EtyHjQH76OwPmI22yY5gzRsPaF9IisyO/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Of course I do. I'm happy. Really.",
+                "line": 36,
+                "url": "https://drive.google.com/file/d/1ZZPnN_wRF4xcNmbntXiMRjkgWYBnMcMW/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "I wanna eat this big meat now! Thanks, Eta!",
+                "line": 37,
+                "url": "https://drive.google.com/file/d/1mVQLP7E402yDfnorKsL4_zZ-KH69en4v/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Good.",
+                "line": 38,
+                "url": "https://drive.google.com/file/d/15ZLsTfitvTAChCUZKJOuCtcVzmv7EYsY/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Um...hey.",
+                "line": 39,
+                "url": "https://drive.google.com/file/d/1JZszyHS0F5VSyoWR-umsDuwRQnl5Nm-s/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Hm?",
+                "line": 40,
+                "url": "https://drive.google.com/file/d/1jFHeu4zvISvSspDcKYH59AmfWC38xPtL/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "I'm...sorry. For giving you the slip before you even have the chance to talk lately...",
+                "line": 41,
+                "url": "https://drive.google.com/file/d/1Km5F9_xwiQIfKlzTqiH866qdCeTBakSA/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "...Me, too. Sorry for always running away.",
+                "line": 42,
+                "url": "https://drive.google.com/file/d/1J0rj6Ohn-_ywsQAx6VGncFToWUPQoTDs/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...I wasn't expecting apologies.",
+                "line": 43,
+                "url": "https://drive.google.com/file/d/16fzePD2WNVXAtLfHyKr1_TEyNxJiyKYA/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Well, I just felt it wasn't very good of me to act that way.",
+                "line": 44,
+                "url": "https://drive.google.com/file/d/1SYe5Jyma_9MfG4K7NGSwGmES6nhYvm6G/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "But you do need to ease up on the experimenting. We should hang out together sometimes instead of you staying cooped up in your lab.",
+                "line": 45,
+                "url": "https://drive.google.com/file/d/1C7mqSJsfjiMfnka7K9NTSMtHxpWuE0B1/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Together...?",
+                "line": 46,
+                "url": "https://drive.google.com/file/d/10oOTtBJQvWWkGdbDriyFH6k7BUTa-G6G/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Yeah. It'll make for a good change of pace.",
+                "line": 47,
+                "url": "https://drive.google.com/file/d/1tAOHbm8t4LAzo_wwDoIpSthmpT15CUS3/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "Me too! I wanna hang out too!",
+                "line": 48,
+                "url": "https://drive.google.com/file/d/1bEFrqZ_2iL_LKlJAu3UaezN0tkuu-3NN/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "What an excellent idea. If we leave you to your own devices, we'd hardly ever see your face.",
+                "line": 49,
+                "url": "https://drive.google.com/file/d/17YMoAUX0r4QjdGzD-HndzhVEd0Ox9nwr/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "But I don't know...what we'd do.",
+                "line": 50,
+                "url": "https://drive.google.com/file/d/1iQTORkD2vFtQGC-5WXxsV2-mvnljkuvF/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Then for starters...let's eat this platinum salmon together.",
+                "line": 51,
+                "url": "https://drive.google.com/file/d/16VkzHB1f6nixVW1iX6RUcEetaOwBs8Zc/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Are you sure...?",
+                "line": 52,
+                "url": "https://drive.google.com/file/d/1m-5dLEzoBE1XMbnjzl0wiRe_43tG7M13/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "It's not like we don't have plenty of it. Besides, foods like this taste better when shared with others than they do alone.",
+                "line": 53,
+                "url": "https://drive.google.com/file/d/1VhYhY2kx7JBjsHxt1SCHW3dB2hOf4JCF/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "I wanna eat with everyone, too! It'll be more yummy that way!",
+                "line": 54,
+                "url": "https://drive.google.com/file/d/1GrlTM13-NTZhMIdyGijmpkr-HdEZlUah/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Thank you.",
+                "line": 55,
+                "url": "https://drive.google.com/file/d/1rWTqY_u20QSWmPz7KP4LPZ9gjNCR6YuG/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Sure. I'll hit you up with an invite soon.",
+                "line": 56,
+                "url": "https://drive.google.com/file/d/1WjX9VfXk6EcAAMRfbDV7C5GmW_5iDdFP/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "It's gonna be tons of fun!",
+                "line": 57,
+                "url": "https://drive.google.com/file/d/1zerUy81Eq4aJ87jAexYQuotD7nwcW_XY/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Heehee, that went well, huh?",
+                "line": 58,
+                "url": "https://drive.google.com/file/d/1-MHwFTIoX-DbeVtaPMlZYajyoHX_4m0S/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...I'll make sure the next time does, too.",
+                "line": 59,
+                "url": "https://drive.google.com/file/d/11tjuAfaG3n1-YgWuKBG03TDMukz5xCFM/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Seems that my little plan to bridge the gap between Eta and the others with presents was the right call.)",
+                "line": 60,
+                "url": "https://drive.google.com/file/d/15YlHJxqGul2zolgsv6oTQpvomBkqXOTP/view?usp=drivesdk"
+            }
+        ],
+        "e4": [
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Next is a present for Lady Alpha. I'm not sure what to get, though...",
+                "line": 1,
+                "url": "https://drive.google.com/file/d/1LLWEXTwaNFsyMEzDIbwbqphuHQrHKOab/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Yeah... She said that she's \"fine with anything as long as it comes from the heart.\"",
+                "line": 2,
+                "url": "https://drive.google.com/file/d/1CSdXKIA-TkF9E9oJld3unnSmDSawUpP4/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "All the more reason we can't just give her some random gift.",
+                "line": 3,
+                "url": "https://drive.google.com/file/d/1RVodyoCNEvyhhaIPEvpnFcaB6uKFIKgX/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(And...Eta being Eta, there's no guarantee she won't use the gift as a pretext for some weird experiment.)",
+                "line": 4,
+                "url": "https://drive.google.com/file/d/1gBXXfhF9HFZOhd3mJR03T5LaGklKMqHF/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(I gotta be ready to stop her if she does!)",
+                "line": 5,
+                "url": "https://drive.google.com/file/d/1F9nVJdMUqFt83x56NS0Kq3no8mvOuc82/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Something that would make Lady Alpha happy... Something she would like... Hmm... I don't know...",
+                "line": 6,
+                "url": "https://drive.google.com/file/d/1mc-bsxbCRXVqOq7I-vy3_sspDpVMQfVD/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Huh.",
+                "line": 7,
+                "url": "https://drive.google.com/file/d/1zGnW5OUUGy5_hBKuEaNc3JcaKgfZbcWL/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Honestly, I didn't think you'd give it so much serious thought.",
+                "line": 8,
+                "url": "https://drive.google.com/file/d/1xcT9TbQ4S-r2TlhJQT9E_ZJmaup2uFvu/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...I didn't either.",
+                "line": 9,
+                "url": "https://drive.google.com/file/d/1gimW7ojlpGAjUOfnQjkDxqt-PSfJMyqR/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "But seeing Zeta and Delta so happy...wasn't bad.",
+                "line": 10,
+                "url": "https://drive.google.com/file/d/1brIDx39JsnDvpfzpsVcwDx4W-sm01B2y/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "So, I want to make Lady Alpha happy, too... Is that strange?",
+                "line": 11,
+                "url": "https://drive.google.com/file/d/1WQMYQxy9wq_blRhA-ZosCpcPjI9Eed1C/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "No, not at all. In fact, it's a really good mindset.",
+                "line": 12,
+                "url": "https://drive.google.com/file/d/1LMAeWce5aQP_cuB7zpjOVe3oQNSwLCty/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "That's...good, I guess.",
+                "line": 13,
+                "url": "https://drive.google.com/file/d/1UuEXmnsF6eiKIPyLwMShrPfGMEEX9gZG/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "What do you think, Epsilon? What can I give Lady Alpha to make her happy...?",
+                "line": 14,
+                "url": "https://drive.google.com/file/d/1BFr3YebWkotPy-v6E8Ed3GMiM6TRgfXu/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Well, let's see...",
+                "line": 15,
+                "url": "https://drive.google.com/file/d/1vFP-3pWmueO5_tpYU-5HjH3h28x-uoAM/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "How about we look at this from another angle? As in, give Lady Alpha something to help her loosen up...that eases her fatigue.",
+                "line": 16,
+                "url": "https://drive.google.com/file/d/1SKcta8IBc7zzwOblLMPhv4PjjtyVWRyW/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Her duties as leader of the Seven Shadows mean she's always busy, right? So, we want to give her a bit of respite.",
+                "line": 17,
+                "url": "https://drive.google.com/file/d/14qG99--_SIJl4MahCygaqNBUvekAiHnU/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Loosen up... Ease fatigue... So...relaxation items?",
+                "line": 18,
+                "url": "https://drive.google.com/file/d/1l_Ou-_ANevu4Qn4CGP779Du46mQlUrtX/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Yes, exactly. Like what about some bodycare products that she can use during bath time?",
+                "line": 19,
+                "url": "https://drive.google.com/file/d/1vB-KJkZLPiao0no0oLzv2tsZyQ_iQ2rq/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Maybe... Bath salts with stress-relieving effects?",
+                "line": 20,
+                "url": "https://drive.google.com/file/d/1jQp3nkYHLSnFbjhD65_An2mJOQEpREO7/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Nice idea. I think she'd definitely like that!",
+                "line": 21,
+                "url": "https://drive.google.com/file/d/145f1QgZkZfAPYRJcGjbyM5hLAxq0FSna/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Then...I'll make some immediately. And you're going to help.",
+                "line": 22,
+                "url": "https://drive.google.com/file/d/1ErFz_EM-PVjblP_hR-jUZEpQdxJyHWNB/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Okay, Eta. I finished mincing these herbs. Can't say much for the smell, though... Are you really going to use these?",
+                "line": 23,
+                "url": "https://drive.google.com/file/d/1K1ojk2v2O7T0o2bpTU5JB19WiMGy2GEK/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "The odor is not ideal...but they ease fatigue. We'll fix the fragrance later...so it's not an issue. Now it's time to add the rock salt...for a detox effect.",
+                "line": 24,
+                "url": "https://drive.google.com/file/d/1bpTaFMWPwDtGZVXzdWGzhyUYvcH-MyAd/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(...She isn't playing around here. I bet she's going to cook up something good\u2014)",
+                "line": 25,
+                "url": "https://drive.google.com/file/d/1ISbSDwKj7tk2DeSXiuIZzOA-B-KbB0xd/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "And while we're at it...let's try some lemon...",
+                "line": 26,
+                "url": "https://drive.google.com/file/d/19TAsvx9hv0lAHFhWMcqUFUmR5CXrIRon/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Wait. Did she just add lemon for no real reason?)",
+                "line": 27,
+                "url": "https://drive.google.com/file/d/1qURmIfUVc4EB_dQbaFeTvR0rH1jsWzxb/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Heheheh... I want her to try this as soon as it's finished...! I'm so excited...!",
+                "line": 28,
+                "url": "https://drive.google.com/file/d/1b_elqVOLUvGEP3HFLnCesake2sRhxojd/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Well? I rubbed different medicines on your left and right arms. Can you feel the effects?",
+                "line": 29,
+                "url": "https://drive.google.com/file/d/1pMWrp5x1Gu_lTXfbSS4WDgBNg1_zlMb0/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Yes, I can. The skin where you put it on my right arm is visibly improved...while my left arm feels warm and refreshed.",
+                "line": 30,
+                "url": "https://drive.google.com/file/d/1SI19LT1TlUhZ_eXg-62N9D6vQhF6maJD/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "The right arm...is a solution that makes skin smoother. The left...supplements magic energy and recovers fatigue.",
+                "line": 31,
+                "url": "https://drive.google.com/file/d/1_990asgJ5iCnGGN1nvzrW3YQT47gBic5/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "The experiment...was a big success... Yay me.",
+                "line": 32,
+                "url": "https://drive.google.com/file/d/1eI-uktJBeiWd9OaqNfi09NLK-j4TDom1/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Yeah. They definitely work. The only thing is\u2014",
+                "line": 33,
+                "url": "https://drive.google.com/file/d/1kIP6ppYZbMf1BoV7fZeHbmh3o5goWQnv/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "My right arm is going numb...and my left arm is glowing!",
+                "line": 34,
+                "url": "https://drive.google.com/file/d/1PT16LHu9368VEXf1vvuANblXkvqQGEuo/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "So, it's a failure...?",
+                "line": 35,
+                "url": "https://drive.google.com/file/d/1UmokDzbgbAl47iUk9vU4GAVqMN2FzT5f/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Explain to me exactly why it wouldn't be a failure!",
+                "line": 36,
+                "url": "https://drive.google.com/file/d/1XjwREpn_RP9chfNY9vMHujdTUDG__Xjc/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...They make your skin smoother and relieve fatigue, but have some...no, a fair amount of side effects... It's just a byproduct of prioritizing efficiency.",
+                "line": 37,
+                "url": "https://drive.google.com/file/d/16aTko4qkdLWRXxfs-nFoPokxmx_yLWug/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Well, there's no denying that your concoctions work. The skin on my right arm is smooth as silk, and my left arm feels light as a feather.",
+                "line": 38,
+                "url": "https://drive.google.com/file/d/1HngaPw-ABrObnBp9wWBG7XABgGTl-7zz/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "So...a huge success after all.",
+                "line": 39,
+                "url": "https://drive.google.com/file/d/19k3aJW8BQPjylLf2r0y5kaXHHVWq4rhx/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "I just have to wonder if Lady Alpha will actually like these. I mean, once she takes a bath, she's either going to lose all feeling in her body, or be shining bright as a torch!",
+                "line": 40,
+                "url": "https://drive.google.com/file/d/1iRc6ggfAX9WFfYo2BnQaGHAtMbDG-bzu/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Is that a problem?",
+                "line": 41,
+                "url": "https://drive.google.com/file/d/16Xa8rdgGkTSI0eeos_FSpx8QrmcUtz_1/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Yes, it is. Any way you look at it.",
+                "line": 42,
+                "url": "https://drive.google.com/file/d/1slIZlBxmckmYSz1YUPStYP0u5xFMnMfp/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Hmm...",
+                "line": 43,
+                "url": "https://drive.google.com/file/d/1Jz-JY-rKVNM_93Y_D2_LNC4-pI6cH8Rz/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Then what if I made bath salts with moderate fatigue relief and skin softening properties...but no side effects...?",
+                "line": 44,
+                "url": "https://drive.google.com/file/d/1dttU86fFoLI5DVOsRj_P6MXIpCXq3uAi/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "That'd be good. At least in my opinion.",
+                "line": 45,
+                "url": "https://drive.google.com/file/d/1tA4Q_xc9hy680EDA7TrYADGHVrstZeZg/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Heehee... And so, you made two kinds of bath salts. How very like you, Eta.",
+                "line": 46,
+                "url": "https://drive.google.com/file/d/1JRgzts1qHHiYvKqZqVYWjsGvOzU7uLFl/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Only because Epsilon said no side effects.",
+                "line": 47,
+                "url": "https://drive.google.com/file/d/1XTrlMl5vR_x8paYYim8O5vdmmnJNpKj3/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "But...the first version I made was more effective. So there may be times when you want to use it instead...",
+                "line": 48,
+                "url": "https://drive.google.com/file/d/1ziaKij1bgR6Cy0vx_6wJuxf7FZhJiraQ/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "I see. But\u2014",
+                "line": 49,
+                "url": "https://drive.google.com/file/d/1-iblZ-DhA1XfY3Iou6MOlQpjsfUtALzd/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "I would be even happier if next time, you created a bath salt that made my skin very soft and got rid of fatigue...and was also completely free of side effects.",
+                "line": 50,
+                "url": "https://drive.google.com/file/d/1El2L_nMgusbD6_O3Zw4jeENFmByCkjCR/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Understood. I'll make something better next time.",
+                "line": 51,
+                "url": "https://drive.google.com/file/d/1pPx4NeMk5J_RPjnNQ_mPRYgd1tHwMAVz/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "I'm sure you will. And thank you, too, Epsilon.",
+                "line": 52,
+                "url": "https://drive.google.com/file/d/19xonT4dAHx37U2U_EL-Eznop4-L_DYTJ/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Oh, all I did was help. But I'm glad you like it all the same. Isn't that right, Eta?",
+                "line": 53,
+                "url": "https://drive.google.com/file/d/1STSgcCud4PDUIVAJd2zcOpJfqN0hWLjn/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Yeah. It...feels nice.",
+                "line": 54,
+                "url": "https://drive.google.com/file/d/1UIxvR0Opp6-enTznYqrESH661qhX-4Ej/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "So, we've given presents to Zeta, Delta, and now Lady Alpha...so I suppose Beta is next.",
+                "line": 55,
+                "url": "https://drive.google.com/file/d/18ntmtiO7wxE_7W2zi0UpjZ-fceX0BDVH/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "I know what Beta wants... A photograph of Master Shadow. So...let's go take one.",
+                "line": 56,
+                "url": "https://drive.google.com/file/d/1SKB-y4Ty9jcpF-Nt7YPmV0od9zWywAJy/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Right, I know. I know, but...",
+                "line": 57,
+                "url": "https://drive.google.com/file/d/1sMZJ_eavOISnH0g9B2I75kNrpeEaOWOh/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Why does it have to be a photo of Master Shadow? I can't even think of what he'd say...)",
+                "line": 58,
+                "url": "https://drive.google.com/file/d/1VaEdxiwXcl92X2LGcuv8L1E-tFaoi_pI/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(And it's all the worse that we'll be doing it for that miserable airhead...!)",
+                "line": 59,
+                "url": "https://drive.google.com/file/d/1psHP0QARr9DkeQR1GBxS6YapPpWCN-zl/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...You don't want to? Then I'll do it by myself\u2014",
+                "line": 60,
+                "url": "https://drive.google.com/file/d/10d5Yxdo1V9ZGMcWjR4E9n44GlA72P_Mu/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "W-Wait!",
+                "line": 61,
+                "url": "https://drive.google.com/file/d/1sSUYOy1J6gZjiqnDhkkUunXgFXc1dRhI/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "I-I'll go, I'll go. This is all part of helping you, after all.",
+                "line": 62,
+                "url": "https://drive.google.com/file/d/1iN9H1BM7IzborMdEww-e4nJS55QSciSg/view?usp=drivesdk"
+            }
+        ],
+        "e5": [
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...And that's why we're doing this holiday gift plan...",
+                "line": 1,
+                "url": "https://drive.google.com/file/d/15CbYVfYQJPZk9p1Y65mtPg--kb8UmoI3/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Gotcha. That explains your outfits. Sounds like a pretty good plan to me.",
+                "line": 2,
+                "url": "https://drive.google.com/file/d/10FITLFHtXP6f9tQmzyFeije4wlRdCTr5/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "(People tend to look at doing things for appearance as \"jumping on the bandwagon,\" but what really counts is getting out there on the starting line at all. I applaud your spirit, girls!)",
+                "line": 3,
+                "url": "https://drive.google.com/file/d/1CiXzuUT7Sydfrtn_ODh_bVA6v-XAxPvt/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Your praise is most unexpected, my lord! I am overcome with emotion!",
+                "line": 4,
+                "url": "https://drive.google.com/file/d/18VaM6_FaMgo9NJQwM6t6PT15sB627Py1/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "(There goes Epsilon and her dramatics. But I know she's just leaning into her role.)",
+                "line": 5,
+                "url": "https://drive.google.com/file/d/1ClOc5TUm1KHNkNrLV9CYIDNgIC2w3DJJ/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "So, what brings you here to me?",
+                "line": 6,
+                "url": "https://drive.google.com/file/d/1HLHq0c40NyOgjGfkRtHFh6GsJSSGFmGn/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Truth be told, we were hoping to take a few photographs of you, my lord.",
+                "line": 7,
+                "url": "https://drive.google.com/file/d/19y5AgWeTym5bXkNPF3Vww37MtOUA4Yyk/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Huh? Pictures of me? Why?",
+                "line": 8,
+                "url": "https://drive.google.com/file/d/1LQlb4tiu2ma2OVn_c2H_mv8bonifJpt0/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Well...Beta says she just has to have one...",
+                "line": 9,
+                "url": "https://drive.google.com/file/d/1u5V1TIDqT6tqnpQDdZgkXuXIbpMEpfoB/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Are you're sure you heard her right? There's gotta be a better present than that. Nobody'd want a photo of me.",
+                "line": 10,
+                "url": "https://drive.google.com/file/d/1BliOe9Ufowcr9nbtLrlUPWPLm8Y3L3NP/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "I-I would! I'd be delighted to have one! I'd keep it shut away so no one else could see it, and treasure it for the rest of my life! Don't you agree, Eta?",
+                "line": 11,
+                "url": "https://drive.google.com/file/d/1F3jyt4MbrW_HiPK2DIpPle0pYtCV8XHk/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Maybe...if it was a picture of his insides.",
+                "line": 12,
+                "url": "https://drive.google.com/file/d/1TANDC_72ZSozExYex6kAhLGYOWNpAOG5/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "(Line an anatomy photo?! Freaky!)",
+                "line": 13,
+                "url": "https://drive.google.com/file/d/1MTeUHvUOB9WC_74NmuvsYvF-IZxG7Jy3/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Anyway, a photo of me isn't worth anything. And I find having my picture taken kinda embarrassing.",
+                "line": 14,
+                "url": "https://drive.google.com/file/d/1m6lTslctCKTqO_1ybaVhyStvm3JkUbfS/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Then what if you think of it as a present to me? Please let me take your picture!",
+                "line": 15,
+                "url": "https://drive.google.com/file/d/1fAvrcJ6zZHrRXkEQbRmBmgqFC2kjM9rx/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Hmm, well, since you put it that way... I'll let you have your photos...if you can take them.",
+                "line": 16,
+                "url": "https://drive.google.com/file/d/1qhVL1iAF1lJBB_Art3-sQj3c19QEo9ku/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Really?!",
+                "line": 17,
+                "url": "https://drive.google.com/file/d/15KiH4KPzmXvku3O_hAcGV5OmkHnYKQAU/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Really. Now, let's get started.",
+                "line": 18,
+                "url": "https://drive.google.com/file/d/1mS2SHPtzbhovpFpbR92ufR6tOeNgJ0B8/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Ack, please wait...! Um, let me get the Rolapoid\u2014",
+                "line": 19,
+                "url": "https://drive.google.com/file/d/1vJq64bHdFddHqvywvWrAYBZbe1eCakAR/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Use this... A new and improved Rolapoid. It has ultra high image quality and corrects camera shake...",
+                "line": 20,
+                "url": "https://drive.google.com/file/d/1W1SLByIzPsxB2PilGnJnzM5SrfltIZN0/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Amazing, Eta! You really are prepared for everything!",
+                "line": 21,
+                "url": "https://drive.google.com/file/d/1LghthPe9mUckwQXns6iIKV0Ed3XKTbr-/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Now, here goes... Okay, say \"cheese\"!",
+                "line": 22,
+                "url": "https://drive.google.com/file/d/1LRirgdZ7T2oTT-Ba2KrgbgBVxOfOwnD0/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Huh? He's gone! But I'm sure I took the photo right\u2014",
+                "line": 23,
+                "url": "https://drive.google.com/file/d/1ONnSHOVPrKLIwk-9V2g3fI3RI-zlHeoy/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Aren't you going to take a photo of me?",
+                "line": 24,
+                "url": "https://drive.google.com/file/d/1J6Y6JSR_NRjLjLqbNWUZKiBsQ2VgKt2I/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "My lord?! When did you get behind me...",
+                "line": 25,
+                "url": "https://drive.google.com/file/d/1ErQFPvQqLqoc2YPIVY3wOD2QqBVRPm6P/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "I-I'll try again! Okay...say \"cheese\"!",
+                "line": 26,
+                "url": "https://drive.google.com/file/d/1gsGjAV1IQCmrQY_O3Oi22MMheigk40Q2/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...He disappeared again.",
+                "line": 27,
+                "url": "https://drive.google.com/file/d/1_ZebN3rYfPf4pHgRoo7FwSXFjwHLwdyt/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Hey, over here.",
+                "line": 28,
+                "url": "https://drive.google.com/file/d/1R3QCKln2vsUl5fpiE6Z8eeLDcy8JNBlt/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Now he's all the way over there...!",
+                "line": 29,
+                "url": "https://drive.google.com/file/d/1oxW2xDHqaq_86YTRH1-SHlDKlnTdXaDU/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Aha, I think I understand what Master Shadow actually meant now...",
+                "line": 30,
+                "url": "https://drive.google.com/file/d/1rNMFI56KiLYn9vPnRbwR0RilkD7QfngA/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...What he actually meant?",
+                "line": 31,
+                "url": "https://drive.google.com/file/d/12ftg6YGQM54jxLU0HV6u7-EsADh9Pg7b/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Master Shadow said the photos are ours IF we can take them.",
+                "line": 32,
+                "url": "https://drive.google.com/file/d/1vSmYimi0pwCb69fhA-8rYeKay5aUANRo/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "In other words, our lord doesn't intend to let himself be photographed so easily. We were too naive.",
+                "line": 33,
+                "url": "https://drive.google.com/file/d/1BDy3w9HxsdAeW1si95IiVr-i8YHJ-z50/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "It'll be good training. Think of it like killing two birds with one stone.",
+                "line": 34,
+                "url": "https://drive.google.com/file/d/1PptslTHOHL86N5TN6GE9JdshELBo9jHp/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "But isn't this too difficult...?",
+                "line": 35,
+                "url": "https://drive.google.com/file/d/1PTdG468Mz8AW0QzoutzRv5YkQcmnejzW/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Hey, sometimes you gotta try new things. So, what'll it be? You giving up?",
+                "line": 36,
+                "url": "https://drive.google.com/file/d/1dlhqHxTTI7tY4EPOD-Yg2FD7Aysofl2U/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "No! We will never give up!",
+                "line": 37,
+                "url": "https://drive.google.com/file/d/1EK4bnrtz2ekvUCHHxDOhLTBnXqa0iOn3/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...But may we have a little time to strategize?",
+                "line": 38,
+                "url": "https://drive.google.com/file/d/10mdfUO9MgTgAKWyKkg7FQ1KLbcbUpFT4/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Sure, be my guest.",
+                "line": 39,
+                "url": "https://drive.google.com/file/d/1qp0nY3Ah_OWv33L0hUq21JxmAFC1FjL9/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "We need to work together here, Eta. I'll act like I'm readying the camera to take a shot while you figure out where Master Shadow is going to reappear after he vanishes.",
+                "line": 40,
+                "url": "https://drive.google.com/file/d/1Zp8Iy33g1LVafYmUzz5nCse50xq6jZA0/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...And then you'll snap the photo when he reappears?",
+                "line": 41,
+                "url": "https://drive.google.com/file/d/1P1BhLzFXAaH_KtoDHkv2MaW5kuwV11rj/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Yes. And then...*whisper, whisper*",
+                "line": 42,
+                "url": "https://drive.google.com/file/d/1jzak4MyNOzvYQSH5osG57_zT33uYZLGS/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Ahh, I see. Understood...!",
+                "line": 43,
+                "url": "https://drive.google.com/file/d/1qHb0ArGPO4vQg5max66p4rH7GQ-WttHV/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Finished with your little meeting yet? Let's get back to the game.",
+                "line": 44,
+                "url": "https://drive.google.com/file/d/1j5ObNF4GIigS5andKPaaUn2KAE3F8QSs/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Okay, here goes! Say \"cheese\"!",
+                "line": 45,
+                "url": "https://drive.google.com/file/d/1JJB4X0PCOKxmsQpkSnuBysD6EoHPubqn/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Epsilon. Six o'clock.",
+                "line": 46,
+                "url": "https://drive.google.com/file/d/1wcTTrVoxpVQev1Y2p7E6_TONvUD8XvHK/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Here!",
+                "line": 47,
+                "url": "https://drive.google.com/file/d/1_d3hlpY_tdR_gDqMkIbuVN0NB5TUN8Bd/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Whoa, good looking out. But\u2014",
+                "line": 48,
+                "url": "https://drive.google.com/file/d/1F-SGxSw3Gh-CVLl5glZhR9Bi60nX_ppM/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Grr... He's so fast! Keep on him, Eta! Where's he going next?!",
+                "line": 49,
+                "url": "https://drive.google.com/file/d/1YxVYLG-AQO9dTGM2_-EpMs6ny-ITe_2k/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Now he's headed to eleven o'clock.",
+                "line": 50,
+                "url": "https://drive.google.com/file/d/1frkwASQCuHjhsUInAxBVBKl0Adirq6Nk/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "There!",
+                "line": 51,
+                "url": "https://drive.google.com/file/d/12GOQejVFeYMcNTXqsT0KTXSBUHCrOuJe/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Too bad. That was just an afterimage.",
+                "line": 52,
+                "url": "https://drive.google.com/file/d/1567kU2AR-RR2hsU1sCJQM32TRmu3V-xZ/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "This isn't working. I can't even catch his shadow! But...I'm not through yet!",
+                "line": 53,
+                "url": "https://drive.google.com/file/d/1HDYP0li6ykxKUoJCBsy8fNklP3szZhQ2/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "*pant, pant*... It's just no use... All those shots, and I haven't managed to get even a bit of him in frame...",
+                "line": 54,
+                "url": "https://drive.google.com/file/d/1_mW4InzTysJblBNBCFTJDZRUliX-C9Bb/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...We're almost out of film. This may be a lost cause...",
+                "line": 55,
+                "url": "https://drive.google.com/file/d/1zIKt1XX3soaPpA3FHTKT3T6P6XAJVg4N/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Yeah, though I do feel bad for Beta... We were fools to think we could ever take a photo of Master Shadow.",
+                "line": 56,
+                "url": "https://drive.google.com/file/d/16VaqN0fs77c5WV-7Cc63UDDMzh6VSqj9/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Oh, are you throwing in the towel?",
+                "line": 57,
+                "url": "https://drive.google.com/file/d/1D1yFC3scBXabxDw4jN67OZxyu9zBIxn-/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Yes... I apologize for the unreasonable request. Let's go, Eta.",
+                "line": 58,
+                "url": "https://drive.google.com/file/d/1pwUTNV-Gyrm1AXyHt_VqW9qEY1Pt8X3a/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Okay...",
+                "line": 59,
+                "url": "https://drive.google.com/file/d/1zwlyAMqeP7mfEVKeWQMF9iE8HmZhrw-5/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "...They actually left.",
+                "line": 60,
+                "url": "https://drive.google.com/file/d/11RP6MT-diarwv6YmU7_IsDWd-atyt229/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "(They tried so hard, though... But if they say they're giving up, then so be it.)",
+                "line": 61,
+                "url": "https://drive.google.com/file/d/1tHNKs96T63M_eWu_PtljpHaE3KpflikB/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...NOW!!!",
+                "line": 62,
+                "url": "https://drive.google.com/file/d/1bK82FcswA14pa5cpz9ujghHoS5ROT8qv/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Say \"cheese\"...",
+                "line": 63,
+                "url": "https://drive.google.com/file/d/1y7lQjXc9tURIdsCu7Yb8j4aBoh_ZuseC/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Huh?! Both of you...? But I saw you walk off that way...",
+                "line": 64,
+                "url": "https://drive.google.com/file/d/161SBR7o9xKRaBwX8qbM1_lm6xHfKemuO/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Heheheh... We fooled you, my lord! The magic presence you felt moving away was a fake created by me!",
+                "line": 65,
+                "url": "https://drive.google.com/file/d/17Ab7TdguHigYRv0M6mAjcm0f4muhNyMp/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "Oh...so that's how you did it. All that coming at me head-on was just to make me think you'd given up completely....",
+                "line": 66,
+                "url": "https://drive.google.com/file/d/1lQaurlh1rBWKJLxihv8ZYV3yZhRnzoP9/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "But in truth, you were placing your bets on this final deception. I see, I see. Not bad.",
+                "line": 67,
+                "url": "https://drive.google.com/file/d/1Ts-fSCvOBbjHEmClkxYn6WOmea-RItmP/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "S-So,...will you allow us to keep the photo?",
+                "line": 68,
+                "url": "https://drive.google.com/file/d/15i_5j5KRmbF2k4W443f_KF0JmU3uPWyF/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "A promise is a promise. Okay. The photo is yours.",
+                "line": 69,
+                "url": "https://drive.google.com/file/d/1QFVZV6zndPXABpNY1mOrCh3gqJNZfCPT/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Thank you very much! We did it, Eta!",
+                "line": 70,
+                "url": "https://drive.google.com/file/d/1LcPcqquw7gMUKxodtIAPca0dd4Ymvp9p/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Let's get this to Beta...",
+                "line": 71,
+                "url": "https://drive.google.com/file/d/14romHgEwjyqPmbGvZgP9VyJ73R0LzDMj/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Yes, I'm sure she'll love it! If you'll excuse us, my lord!",
+                "line": 72,
+                "url": "https://drive.google.com/file/d/1pBue_LvOaZkY1ooflZFJliVBsnocMhl6/view?usp=drivesdk"
+            },
+            {
+                "name": "Cid Kagenou",
+                "name_variant": "Cid",
+                "subtitle": "(...Good grief. They were trying so hard that I'd feel bad not letting them snap at least one shot.)",
+                "line": 73,
+                "url": "https://drive.google.com/file/d/1xYiAvyoxKC0iBam2VHItghhzItQ55020/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "I-Is this really a picture of Master Shadow...?!",
+                "line": 74,
+                "url": "https://drive.google.com/file/d/1fWxm5gIU6JK1begHdveNX-1x_i6MFhi4/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "You should be grateful. We went to a lot of trouble to get that.",
+                "line": 75,
+                "url": "https://drive.google.com/file/d/1d-Z862Rl6vVn2HmT6dRa9E31spu34bdS/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Oh my... A photo taken just for me, a Master Shadow who's mine and mine alone... *sigh* It's wonderful...",
+                "line": 76,
+                "url": "https://drive.google.com/file/d/1C5wS-YFEJ7hSVANUmJA90l4MTMbsNSN4/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...J-Just so you know, I'm the one who took it! ME!",
+                "line": 77,
+                "url": "https://drive.google.com/file/d/1es1O0g3wC3xImmfRjg6FjYMDolrqt6lF/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Okay, and?",
+                "line": 78,
+                "url": "https://drive.google.com/file/d/1CoNlAHHMD_G9Wdo5JN8KsZtq8NuxfM21/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "That means it was ME he was looking at when I took the photo! Those eyes were locked on ME!",
+                "line": 79,
+                "url": "https://drive.google.com/file/d/1DNVThKi1d99ltfD3x-VJiu5398XW1QVK/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Blah, blah, blah! I can't hear you!",
+                "line": 80,
+                "url": "https://drive.google.com/file/d/1U3VWk5uWx9G8ntRambcape6ntXoggRJH/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Hey! Listen when I'm talking to you!",
+                "line": 81,
+                "url": "https://drive.google.com/file/d/18KEoAY4g0ChXLeEE8kS2cxnPC88UhdYq/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Heheh... I must make note of this glorious occasion in the Chronicles of Master Shadow right away...",
+                "line": 82,
+                "url": "https://drive.google.com/file/d/1RW4_Oi8kBaQqdQWwYRtfJ6PtJ7m7FdSV/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Don't you dare ignore me!",
+                "line": 83,
+                "url": "https://drive.google.com/file/d/1TS2lyhvzHSoMq257U1ea3ij9NEVAesdl/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "All this over a simple picture...",
+                "line": 84,
+                "url": "https://drive.google.com/file/d/1HzfNLndGkBVdvOjhVXRnE9DTI3MOSXTN/view?usp=drivesdk"
+            }
+        ],
+        "e6": [
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Whew. We've given gifts to pretty much all the Numbers to thank them for their help.",
+                "line": 1,
+                "url": "https://drive.google.com/file/d/17EYxl_c7LEGvc2ssbSwMMlOt19-L5bZE/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "I'm exhausted... This might be the first time I've talked to this many people in a day...",
+                "line": 2,
+                "url": "https://drive.google.com/file/d/1Z_nLnfkPbcbFyHpgAlVoRxTvFzpq7n1y/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "But it doesn't feel bad, right? We made everyone so happy with just some sweets and little knickknacks.",
+                "line": 3,
+                "url": "https://drive.google.com/file/d/1JUF6RlThic2t1Ku1KGUGyuQ3P6Cadl6V/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "You...may be right.",
+                "line": 4,
+                "url": "https://drive.google.com/file/d/10EtdNbZ5HOnlEe6_p1Cn_Yg46TQvc3Ex/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "Nicely done, you two. Why not have a tea break?",
+                "line": 5,
+                "url": "https://drive.google.com/file/d/1JuuT4I7ZfGMNghRF_G7r0RO-wNzcMWvb/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Oh, Beta. Did you brew some for us? How kind of you.",
+                "line": 6,
+                "url": "https://drive.google.com/file/d/1IBbHKIoGSJ9ReE6Q9QMhwrJRVtHM4F-0/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "I did, as thanks for the photo. And to celebrate Eta getting out of her lab for once.",
+                "line": 7,
+                "url": "https://drive.google.com/file/d/1kJqVJuzUaqsRDRPHDRW8llW795Y_samh/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "What...?",
+                "line": 8,
+                "url": "https://drive.google.com/file/d/11VS7SLI5tnZf0hyoszCS3aiz7NNEo0sF/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "...Oh, you're here too, Beta? I had something to ask these two... It seems my timing was perfect.",
+                "line": 9,
+                "url": "https://drive.google.com/file/d/1ZbJvTCmpOpkW1Tkf6H2FfwTk-iv8Xohl/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Now even Lady Alpha is here...",
+                "line": 10,
+                "url": "https://drive.google.com/file/d/1IC04kCBMG0dGAYpceIJj57KgzobUtlLE/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Do you mind if I join you? I brought some sweets by as a gift.",
+                "line": 11,
+                "url": "https://drive.google.com/file/d/140BaEF0X6hYlhbJE80-T2At746X0PTXn/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Th-These are cookies from that famous confectionary in the capital! Not even Mitsugoshi could get ahold of these beauties!",
+                "line": 12,
+                "url": "https://drive.google.com/file/d/12kojnrcWGdEZ5vv__O4WWDt3SQhfNG3u/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "I've heard of them before, too. Art in cookie form, all baked by one elderly shop owner.",
+                "line": 13,
+                "url": "https://drive.google.com/file/d/1Lwo9xb5Kxn4QmImYOu41h72RFNQD2QnN/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Why?",
+                "line": 14,
+                "url": "https://drive.google.com/file/d/1ziQSTLIH9Z-_N5CVyoM543c9AKsOyWQ9/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Oh, just as a little thank-you. Besides...sweets are best enjoyed in the company of others.",
+                "line": 15,
+                "url": "https://drive.google.com/file/d/1bGChNXTI2clshaGnSsxS-vkkGxMuI8-X/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Hmm... Everything...has been strange today.",
+                "line": 16,
+                "url": "https://drive.google.com/file/d/1hl0QTce--9COk5uWMF089hSP51b7bgMV/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Everyone seemed to be busy lately...and would run off whenever I tried to talk to them...",
+                "line": 17,
+                "url": "https://drive.google.com/file/d/1aKsd7_zsb0dXDk5ckG-sNa05Ce0hx5e4/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "But today...everyone is coming to talk to me...",
+                "line": 18,
+                "url": "https://drive.google.com/file/d/1azZEA224MOOW25l9Zh8Qcq332g6JaG1Q/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Indeed. But...can you think of any reason why this might be?",
+                "line": 19,
+                "url": "https://drive.google.com/file/d/1RK5m0grrV7J4aAd_PcilI-4I_Ucn7kKQ/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...I used to not care about anything...so long as I could research whatever I wanted...",
+                "line": 20,
+                "url": "https://drive.google.com/file/d/1JPgAuEZoyXHdCJMWWuzdIn9AoqcRLHHA/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "But seeing everyone so happy...and thinking of me...is not a bad thing. It...feels kind of nice.",
+                "line": 21,
+                "url": "https://drive.google.com/file/d/1-EGEVrnvtBvmALqiX0ll6Kc1946PqK_b/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Heehee... You've made a very good discovery, then.",
+                "line": 22,
+                "url": "https://drive.google.com/file/d/16nIrsrk8gmxHY-GbWqg72LotzR-_Zuxv/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "I hope this marks the beginning of you getting closer to everyone, Eta.",
+                "line": 23,
+                "url": "https://drive.google.com/file/d/12xzSSxpj6GYO_4_1BJRlk9hXon0E2u_C/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "...My, my. Everyone here together. Are you having a tea party?",
+                "line": 24,
+                "url": "https://drive.google.com/file/d/1Iv3p4kAkb4pFy_qi9jo3D0F3Al0ZTNbv/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Perfect timing, Gamma. Won't you join us? I have some excellent cookies.",
+                "line": 25,
+                "url": "https://drive.google.com/file/d/1Z9gqbmxkC2q4HcXTVDZ9tOjkSmmjz8l_/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "What?! These...are from that stubborn mule of a shopkeeper who never says anything but \"No\"!",
+                "line": 26,
+                "url": "https://drive.google.com/file/d/1mKrKWxkz8MyLb7ARmWTX-s1KpSoO1vMk/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "L-Lady Alpha! Did you bring these to motivate me to negotiate harder?!",
+                "line": 27,
+                "url": "https://drive.google.com/file/d/1dgdeL3nw1P4klFtz91cn3l4jmrVTd8v4/view?usp=drivesdk"
+            },
+            {
+                "name": "Alpha",
+                "name_variant": "Alpha",
+                "subtitle": "Heehee, no. They're a reward for Eta.",
+                "line": 28,
+                "url": "https://drive.google.com/file/d/1nj9AUVRp9OjoNfTDFF_GmxCRkZ-IkX3U/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "...Which means?",
+                "line": 29,
+                "url": "https://drive.google.com/file/d/1UFDqA64YixeBecif9TeUYBIZFCMxFKcm/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Eta asked everyone what they wanted and then got presents for them.",
+                "line": 30,
+                "url": "https://drive.google.com/file/d/1Xibjxr3nq7Vc1yM9MCgbDWO9HOamL2-7/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Then Lady Alpha and Beta...invited us to have tea.",
+                "line": 31,
+                "url": "https://drive.google.com/file/d/1BfWbQOE2o30I0fSEKrZQoBLXJyyrxsko/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "Ah, so that's what happened.",
+                "line": 32,
+                "url": "https://drive.google.com/file/d/13KHR51Z_SXCTXQHMRNgQcsbegAwE49uv/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "By the way...I didn't have a chance to ask you yet, Gamma. Do you...want anything for the holidays?",
+                "line": 33,
+                "url": "https://drive.google.com/file/d/1DsiND3uu56cCt1QeZeodqsCI09lcldb0/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "Well... I want the rights to sell these cookies!",
+                "line": 34,
+                "url": "https://drive.google.com/file/d/1R9BV2Z9xvJJa1Tr6pqlyq0yb5KKOMkEU/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "I-I think we just got the toughest request of the day...",
+                "line": 35,
+                "url": "https://drive.google.com/file/d/1j8RHM_lYVQmvDkn-5r-Xq8kUyq7MQ0mN/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Should I create a brainwashing serum?",
+                "line": 36,
+                "url": "https://drive.google.com/file/d/10Ms2iKyZZukSe6LfZIFYuabb5plIxke3/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "I was merely joking. So...can I ask for something besides a physical object?",
+                "line": 37,
+                "url": "https://drive.google.com/file/d/1MjjK_hpSFIc9ymdMULeAXLvsbcT2l0XH/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "I guess so...as long as it's something I can do...",
+                "line": 38,
+                "url": "https://drive.google.com/file/d/1-Gibz5ZAP4Ic7Lnxo3Fx-hhTP1LhDOpI/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "Excellent! Then will you be my training partners?",
+                "line": 39,
+                "url": "https://drive.google.com/file/d/1AusvIT1gWCCN6P2W2C9FKv8HMMx0Rxiw/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "I normally ask Chi and Omega...but for some reason I can't find them today.",
+                "line": 40,
+                "url": "https://drive.google.com/file/d/1hTcsY53GUfMAULYcUxInrd-5dkRolUqB/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "O-Oh, I see...",
+                "line": 41,
+                "url": "https://drive.google.com/file/d/15toaNrLYQsu3F-DJGY1gplEo5xKC_B-D/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(So those two really were in a hurry...a hurry to get away from Gamma.)",
+                "line": 42,
+                "url": "https://drive.google.com/file/d/1MAkkeGu9QcoWxufzqfIn63aILxdsSV5G/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "All right. If we become your training partners, that should count as a gift for three people.",
+                "line": 43,
+                "url": "https://drive.google.com/file/d/1UYLDU7AK6daF8gXq1W3rNin2vC3iLMHn/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Why three people...?",
+                "line": 44,
+                "url": "https://drive.google.com/file/d/1hcnM0pjdhfQXqztI5EAZ-h4X8sY05C9W/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "I don't know either...",
+                "line": 45,
+                "url": "https://drive.google.com/file/d/1gtphSY96uGWlEDJMNc2EXrX8a0p14iMq/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "At any rate, I'll be eternally grateful if you accept!",
+                "line": 46,
+                "url": "https://drive.google.com/file/d/1_3VZz1wsDJ63MjMi7ZDfLyuAgU7BJNzf/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "Heheheh... My mighty blade yearns for action! Training or no, it burns all the same!",
+                "line": 47,
+                "url": "https://drive.google.com/file/d/1JNa-5MkfR_5AoDqZCb9qeqOJcM2idPkS/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "This will be annoying...but I have to do it. Since it's a holiday gift...",
+                "line": 48,
+                "url": "https://drive.google.com/file/d/1GpI8ngNxs_kklqKmk144hPYiCQ3HzOBX/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Right, then let's head outside. We'll train with you until you've had your fill!",
+                "line": 49,
+                "url": "https://drive.google.com/file/d/12jbusd2-O-Rt3ge1fb0mp56Zavkve38h/view?usp=drivesdk"
+            }
+        ],
+        "e7": [
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "...Okay. That seems like enough for today!",
+                "line": 1,
+                "url": "https://drive.google.com/file/d/1JCzextsnBL88c0pRFSR8O6i0Sg553lzb/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Whew... So? Are you satisfied.",
+                "line": 2,
+                "url": "https://drive.google.com/file/d/1_wMS7gOnTAY6tTG7gUvoG-A48oNDhHeU/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "Yes, that was a productive training session thanks to the two of you. Thank you for the wonderful gift.",
+                "line": 3,
+                "url": "https://drive.google.com/file/d/1lBNOKX6wciTq8-ikofKIeFUfPZmVww3l/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Glad to hear it...",
+                "line": 4,
+                "url": "https://drive.google.com/file/d/1TsJV4Fq0tueyq4Lawf6rb77lf_fd05ns/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "This isn't me returning the favor...but I'll speak with Lady Alpha about increasing your research budget.",
+                "line": 5,
+                "url": "https://drive.google.com/file/d/1Zp5JMJ-mSrzX1iryC6JGJEU8MbX1xU_K/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "What...?! But you're always such a miser about it...! Are you sure...?",
+                "line": 6,
+                "url": "https://drive.google.com/file/d/1cwBeYnqf4vt4v-LhzW_No7ZBIw3EEuR6/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "I had a feeling you would say that...",
+                "line": 7,
+                "url": "https://drive.google.com/file/d/1LdD6IwVe_GhIvy1ScnkUFKq_2CBwD17S/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "But, no matter. I'd like you to keep in mind that our funds are finite, however.",
+                "line": 8,
+                "url": "https://drive.google.com/file/d/1APivDTL84Z82nZCz14zH1cQKkEGXGb19/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "And as for you, Epsilon... Hmm. If I come across any good tea leaves, they're yours.",
+                "line": 9,
+                "url": "https://drive.google.com/file/d/1KickZ0mY_lC-TVOhNjpTFJoJ7xXZJAQO/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "That would be amazing! Thank you, Gamma!",
+                "line": 10,
+                "url": "https://drive.google.com/file/d/13YjuMDlGJMesT4WQUDJqhTVHrr3ZrYz1/view?usp=drivesdk"
+            },
+            {
+                "name": "Gamma",
+                "name_variant": "Gamma",
+                "subtitle": "I'm the one who should be thanking you. Now, I need to redo the budget sheets. But first I should glance over the relevant data...",
+                "line": 11,
+                "url": "https://drive.google.com/file/d/11OYA3S_tzYyI4bcTxBiLrkmb1TzRkdrD/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "You do know that walking while thinking too much is what makes you trip, right? Not like she heard me, though.",
+                "line": 12,
+                "url": "https://drive.google.com/file/d/1ldEiwPjNWItTRBQAAT_-o9or1GUTi1iI/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Guess the president of Mitsugoshi always has a million things to do.",
+                "line": 13,
+                "url": "https://drive.google.com/file/d/1cbkdMFxK2jIJMZyU_IFakSHccWY6BKAd/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Strange.",
+                "line": 14,
+                "url": "https://drive.google.com/file/d/1J4Mqir19C23RiX_J2D2eGPXd6hNv84Bx/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "We spent all day...doing things for others. And yet, the outcome was good for me as well...",
+                "line": 15,
+                "url": "https://drive.google.com/file/d/1gs1UqvUZYiHGF4DZkr5w6E58Ew98WN2g/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "That's because we're friends who look out for each other.",
+                "line": 16,
+                "url": "https://drive.google.com/file/d/1E-uimxHYi57m_UJpbXQHdnzoZDZdRog1/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "When someone's nice to you, it makes you want to return the favor, right? Everybody was happy about what you did for them. That's what being friends is all about.",
+                "line": 17,
+                "url": "https://drive.google.com/file/d/1t3_BHmnBPWZYkHgVwyw2C6HnxjgAuiy0/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Friends...",
+                "line": 18,
+                "url": "https://drive.google.com/file/d/1vJChSVGe2Q4gBTQ1OzHzRZJZ05Ktv-IQ/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...Thank you for today, Epsilon.",
+                "line": 19,
+                "url": "https://drive.google.com/file/d/1OkAjowX4eE0-KkBJsUdK17os4KFCb7LN/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Why say that now?",
+                "line": 20,
+                "url": "https://drive.google.com/file/d/1ne4GF0GZgqY4q4kJenYHCdNKnOG85Sz2/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Today was...a new experience for me. Giving presents to others...and receiving things...happy feelings...in return...",
+                "line": 21,
+                "url": "https://drive.google.com/file/d/1l1S9BuKPbsY0h0CfUBzjlt6KFvW42Swy/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "I would never have thought of either...on my own. This was a very valuable experience...and it was all your idea.",
+                "line": 22,
+                "url": "https://drive.google.com/file/d/17VrNCF3qrlByTvykp4518h8MQ8NlETGk/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Heehee, you're welcome. Hearing that makes it all worth it. \"Operation Gift-Giver\" was a success!",
+                "line": 23,
+                "url": "https://drive.google.com/file/d/1ML4cBIgfrwn-Jbcv4sZLsrOtVzJpqMS7/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "I have...one last gift to give...",
+                "line": 24,
+                "url": "https://drive.google.com/file/d/1bBisTAEBvbsXRt_j4bllR6RZrynWjJvq/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "What?! Wait, don't tell me we forgot someone...?",
+                "line": 25,
+                "url": "https://drive.google.com/file/d/1XR9mSQ1rARwXDJJ7gchWvKK67TwGj5_f/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "We did, and she's right here...",
+                "line": 26,
+                "url": "https://drive.google.com/file/d/1HKZ72Vl7dAZziYrkVvrmcF9w2fdGaNeZ/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "What...?",
+                "line": 27,
+                "url": "https://drive.google.com/file/d/1pkZp9A7n-VugfyyAKQOwC0ZDKw6I41kP/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "The last person...is you, Epsilon.",
+                "line": 28,
+                "url": "https://drive.google.com/file/d/1E2b-4cSk59wh--kdFmPTymqCK1KaWMcI/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Here... This is your gift. Take it...",
+                "line": 29,
+                "url": "https://drive.google.com/file/d/1TuO4LkZJ6tWK9eywpGmaI5VHrlx3znHe/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Really? Thanks... I never expected a surprise like this here at the very end.",
+                "line": 30,
+                "url": "https://drive.google.com/file/d/1xRELRIhLzpLEc_4fHO-t9eJuDJK2rosr/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "But wait... Is this the pheromone perfume I used when I was hunting?",
+                "line": 31,
+                "url": "https://drive.google.com/file/d/13WZXSbaCTimXhxjCc7-bwB7jjqCk4klB/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Yeah.",
+                "line": 32,
+                "url": "https://drive.google.com/file/d/1zHxqApMVUQFbXGQar7T4n1pQUzYXDSi6/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "But doesn't it attract monsters...?",
+                "line": 33,
+                "url": "https://drive.google.com/file/d/1ijNq6kul6D1EszVIHUhl18KcYV4W1eJT/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Don't worry. I've tweaked the recipe so it works on people... Now all eyes will be on you...",
+                "line": 34,
+                "url": "https://drive.google.com/file/d/1bDlhx9X3oTtyCHKwk0JmH5MkiMvOFoqp/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Really?! Master Shadow will be fixated on me?!",
+                "line": 35,
+                "url": "https://drive.google.com/file/d/1G9byO5jPD-OzX712fjVIaXu28vGfx8vN/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Heehee, thank you, Eta! I'll put this to good use. With this, I can... Heehee, heeheehee... Eeheehee!",
+                "line": 36,
+                "url": "https://drive.google.com/file/d/1eb_5MCJ-EceXc0FnU1fMJT0eUC1jJr6I/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Glad you like it...",
+                "line": 37,
+                "url": "https://drive.google.com/file/d/1Nf9HEzfLgic7ItdwDtHRYzIPpsCpcETQ/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "Make a report on how it feels to use and its efficacy afterwards. I look forward to reading it...",
+                "line": 38,
+                "url": "https://drive.google.com/file/d/1ldvql0nzxTp9Ap-OAoZbkrFVlCNY3zwG/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Uh...okay. Guess that part of you will never change.",
+                "line": 39,
+                "url": "https://drive.google.com/file/d/1uLrNH1YztHBEpyba4B6efVKV6fcxh1dY/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "But whatever. I think I'll try it right away. Now, let's see here\u2014",
+                "line": 40,
+                "url": "https://drive.google.com/file/d/1tWzUii35s7xDo1QDq7Bjt6_UmiEZ1Ojq/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Oh... This smells pretty nice. Like actually usable\u2014",
+                "line": 41,
+                "url": "https://drive.google.com/file/d/1ghrQQswa-bUyxOXX-RpHwDaeJFwEsSgH/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...Hm?",
+                "line": 42,
+                "url": "https://drive.google.com/file/d/1sEpsLXHOpcxCULjhXIGSDlPS1cB0xzU7/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "...",
+                "line": 43,
+                "url": "https://drive.google.com/file/d/1Mx6UAv8ufJccfcGTn0zPRr5eP4oy8hWr/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "...What's with the hug?",
+                "line": 44,
+                "url": "https://drive.google.com/file/d/10R-Ph3-XVu_XfAO7Ezmab4KJILfPUHEc/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "I can't say... But I...don't want to let go.",
+                "line": 45,
+                "url": "https://drive.google.com/file/d/1eOriIdJUnljssbMhQuVNaOxSCaNOxMXo/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Wh-What gives\u2014",
+                "line": 46,
+                "url": "https://drive.google.com/file/d/1eN-7nnranw26Wi5fuzG8OqiHZNeWVKMT/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "There! I knew someone smelled good!",
+                "line": 47,
+                "url": "https://drive.google.com/file/d/1PSuXU2lhGuNdC7Af4vy4-7AK1gwNPj_1/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Wait, Delta? What's gotten into you, now?!",
+                "line": 48,
+                "url": "https://drive.google.com/file/d/1DmspJFriHDTbip256pCDMbuxZJ7rQX8p/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "*sniff, sniff* Huh? Epsilon?",
+                "line": 49,
+                "url": "https://drive.google.com/file/d/1vZ0jKprXnop-l7ouGsFGXTyznDXtYxS4/view?usp=drivesdk"
+            },
+            {
+                "name": "Delta",
+                "name_variant": "Delta",
+                "subtitle": "You look cute all of the sudden! Can I hug you? Give you a big squeeze?",
+                "line": 50,
+                "url": "https://drive.google.com/file/d/1t3CLs7Y-oS7QE9XWUnlCdlQsGy6lhFLn/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Y-You already are...! Urgh... Can't breathe...!",
+                "line": 51,
+                "url": "https://drive.google.com/file/d/12UDJez9Ds2rKU5OV1T3LowdRUp_-O6nn/view?usp=drivesdk"
+            },
+            {
+                "name": "Zeta",
+                "name_variant": "Zeta",
+                "subtitle": "Make room, you stupid mutt. I want some Epsilon, too.",
+                "line": 52,
+                "url": "https://drive.google.com/file/d/1tXICrFfo9lIYZ8o2G0U1U7cKqshXRtmG/view?usp=drivesdk"
+            },
+            {
+                "name": "Beta",
+                "name_variant": "Beta",
+                "subtitle": "I-I don't understand... My head is spinning... But Epsilon seems so...dreamy...",
+                "line": 53,
+                "url": "https://drive.google.com/file/d/1ajJKcCTQ6GNXkvLWZ6UNPJNHx4bel-Fp/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Oh, no way! Zeta and Beta, too...?!",
+                "line": 54,
+                "url": "https://drive.google.com/file/d/1kTsalyFsDsTFpZtKfUl_-BqESK7tYeOj/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(What the heck?! Is it because of the pheromone perfume...?)",
+                "line": 55,
+                "url": "https://drive.google.com/file/d/1HYJLzPSGCgX_tvXqsPVJCYGI06HoIWMr/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "(Eta said she changed it so it works on people...but maybe it works on everyone, not just the opposite sex!)",
+                "line": 56,
+                "url": "https://drive.google.com/file/d/15C3-ma3K5rtpVXwYhHsZtEoasjBcjmXV/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Just calm down, everyone! Let's just take a breath and step back, okay? Okay?!",
+                "line": 57,
+                "url": "https://drive.google.com/file/d/1bFRnE4veCBgMg9J5P4ut1y5SnfIqHs-d/view?usp=drivesdk"
+            },
+            {
+                "name": "Eta",
+                "name_variant": "Eta",
+                "subtitle": "No... I'm never going to let you go...!",
+                "line": 58,
+                "url": "https://drive.google.com/file/d/1PjAn3YBWNPdCcBmStTU3_lPkPJ3wmzIt/view?usp=drivesdk"
+            },
+            {
+                "name": "Epsilon",
+                "name_variant": "Epsilon",
+                "subtitle": "Oh, come on! You invented this stuff, Eta! Do something!",
+                "line": 59,
+                "url": "https://drive.google.com/file/d/1gogwQV3-sl-aqRxa8uGSMa02EXKXsdYZ/view?usp=drivesdk"
+            }
+        ]
+    }
+}
+
+let info = {
     "ln": {
         "volume_count": 6,
         "line_count": 24986,
@@ -3446,10 +6566,10 @@ let data = {
         }
     },
     "es": {
-        "stories": 24,
-        "line_count": 10667,
-        "word_count": 118810,
-        "char_count": 661125,
+        "stories": 25,
+        "line_count": 11110,
+        "word_count": 123541,
+        "char_count": 687288,
         "characters": {
             "Alexia Midgar (Alexia)": 489,
             "Committee Member": 3,
@@ -3457,7 +6577,7 @@ let data = {
             "Committee Person": 5,
             "Po Tato (Po)": 19,
             "Skel Etal (Skel)": 36,
-            "Cid Kagenou (Cid)": 1412,
+            "Cid Kagenou (Cid)": 1438,
             "Narrator": 527,
             "Alexia Midgar (????? (Alexia Midgar))": 1,
             "Rose Oriana (Rose)": 141,
@@ -3472,12 +6592,12 @@ let data = {
             "Boss Monster": 2,
             "Sherry Barnett (Shelly and Alexia (Sherry))": 1,
             "Alexia Midgar (Shelly and Alexia (Alexia))": 1,
-            "Gamma": 315,
-            "Eta": 484,
-            "Zeta": 929,
-            "Alpha": 1210,
-            "Delta": 609,
-            "Beta": 647,
+            "Gamma": 341,
+            "Eta": 627,
+            "Zeta": 950,
+            "Alpha": 1221,
+            "Delta": 625,
+            "Beta": 657,
             "Nu": 207,
             "Rabbit T-thrope": 14,
             "Fox T-thrope": 1,
@@ -3497,7 +6617,7 @@ let data = {
             "Shishiodoshi (Shishi(?))": 1,
             "Shishiodoshi": 9,
             "T-thrope Spectators": 4,
-            "Epsilon": 550,
+            "Epsilon": 738,
             "Alpha (Everyone (Alpha))": 4,
             "Beta (Everyone (Beta))": 4,
             "Gamma (Everyone (Gamma))": 4,
@@ -3600,8 +6720,8 @@ let data = {
             "Maximilian": 27,
             "Aurora (??? (Witch Claire))": 2,
             "Aurora (Witch Claire)": 12,
-            "Omega": 47,
-            "Chi": 49,
+            "Omega": 48,
+            "Chi": 50,
             "Chi (Chi & Omega (Chi))": 3,
             "Omega (Chi & Omega (Omega))": 3,
             "OiKatzo": 58,
@@ -6554,6 +9674,105 @@ let data = {
                             "Cid Kagenou (Cid)": 4,
                             "Delta (Delta & Zeta (Delta))": 2,
                             "Zeta (Delta & Zeta (Zeta))": 2
+                        }
+                    }
+                }
+            },
+            "fthasg": {
+                "line_count": 443,
+                "word_count": 4731,
+                "char_count": 26163,
+                "characters": {
+                    "Epsilon": 188,
+                    "Chi": 1,
+                    "Omega": 1,
+                    "Eta": 143,
+                    "Zeta": 21,
+                    "Delta": 16,
+                    "Gamma": 26,
+                    "Alpha": 11,
+                    "Cid Kagenou (Cid)": 26,
+                    "Beta": 10
+                },
+                "episodes": {
+                    "e1": {
+                        "word_count": 637,
+                        "char_count": 3616,
+                        "line_count": 61,
+                        "characters": {
+                            "Epsilon": 36,
+                            "Chi": 1,
+                            "Omega": 1,
+                            "Eta": 23
+                        }
+                    },
+                    "e2": {
+                        "word_count": 671,
+                        "char_count": 3793,
+                        "line_count": 68,
+                        "characters": {
+                            "Epsilon": 25,
+                            "Zeta": 9,
+                            "Eta": 21,
+                            "Delta": 6,
+                            "Gamma": 7
+                        }
+                    },
+                    "e3": {
+                        "word_count": 628,
+                        "char_count": 3406,
+                        "line_count": 60,
+                        "characters": {
+                            "Epsilon": 20,
+                            "Eta": 22,
+                            "Zeta": 11,
+                            "Delta": 7
+                        }
+                    },
+                    "e4": {
+                        "word_count": 772,
+                        "char_count": 4245,
+                        "line_count": 62,
+                        "characters": {
+                            "Eta": 28,
+                            "Epsilon": 30,
+                            "Alpha": 4
+                        }
+                    },
+                    "e5": {
+                        "word_count": 884,
+                        "char_count": 4730,
+                        "line_count": 84,
+                        "characters": {
+                            "Epsilon": 39,
+                            "Cid Kagenou (Cid)": 26,
+                            "Eta": 14,
+                            "Beta": 5
+                        }
+                    },
+                    "e6": {
+                        "word_count": 546,
+                        "char_count": 3027,
+                        "line_count": 49,
+                        "characters": {
+                            "Epsilon": 10,
+                            "Eta": 16,
+                            "Beta": 4,
+                            "Alpha": 7,
+                            "Gamma": 12
+                        }
+                    },
+                    "e7": {
+                        "word_count": 593,
+                        "char_count": 3346,
+                        "line_count": 59,
+                        "characters": {
+                            "Gamma": 7,
+                            "Epsilon": 28,
+                            "Eta": 19,
+                            "Delta": 3,
+                            "Zeta": 1,
+                            "Beta": 1
                         }
                     }
                 }
@@ -12804,9 +16023,9 @@ let data = {
     },
     "chars": {
         "Alpha": {
-            "total": 4160,
+            "total": 4171,
             "names": {
-                "Alpha": 4107,
+                "Alpha": 4118,
                 "Alpha & Gamma (Alpha)": 1,
                 "Alpha & Eta (Alpha)": 1,
                 "Seven Shadows (Alpha)": 8,
@@ -12820,9 +16039,9 @@ let data = {
             }
         },
         "Beta": {
-            "total": 3236,
+            "total": 3246,
             "names": {
-                "Beta": 2873,
+                "Beta": 2883,
                 "Seven Shadows (Beta)": 14,
                 "Beta & Epsilon (Beta)": 32,
                 "Beta & Gamma (Beta)": 5,
@@ -12854,9 +16073,9 @@ let data = {
             }
         },
         "Gamma": {
-            "total": 2394,
+            "total": 2420,
             "names": {
-                "Gamma": 2230,
+                "Gamma": 2256,
                 "Seven Shadows (Gamma)": 14,
                 "Alpha & Gamma (Gamma)": 1,
                 "Beta & Gamma (Gamma)": 5,
@@ -12871,9 +16090,9 @@ let data = {
             }
         },
         "Delta": {
-            "total": 1762,
+            "total": 1778,
             "names": {
-                "Delta": 1725,
+                "Delta": 1741,
                 "Seven Shadows (Delta)": 13,
                 "Delta & Zeta (Delta)": 8,
                 "Deltan": 1,
@@ -12884,9 +16103,9 @@ let data = {
             }
         },
         "Epsilon": {
-            "total": 2337,
+            "total": 2525,
             "names": {
-                "Epsilon": 2193,
+                "Epsilon": 2381,
                 "Seven Shadows (Epsilon)": 14,
                 "Beta & Epsilon (Epsilon)": 32,
                 "Beta & Gamma & Epsilon (Epsilon)": 1,
@@ -12902,9 +16121,9 @@ let data = {
             }
         },
         "Zeta": {
-            "total": 2577,
+            "total": 2598,
             "names": {
-                "Zeta": 2447,
+                "Zeta": 2468,
                 "Seven Shadows (Zeta)": 14,
                 "Delta & Zeta (Zeta)": 8,
                 "Alpha & Zeta (Zeta)": 3,
@@ -12923,9 +16142,9 @@ let data = {
             }
         },
         "Eta": {
-            "total": 1446,
+            "total": 1589,
             "names": {
-                "Eta": 1420,
+                "Eta": 1563,
                 "Seven Shadows (Eta)": 10,
                 "Alpha & Eta (Eta)": 1,
                 "Everyone (Eta)": 6,
@@ -12955,9 +16174,9 @@ let data = {
             }
         },
         "Chi": {
-            "total": 727,
+            "total": 728,
             "names": {
-                "Chi": 223,
+                "Chi": 224,
                 "Chi & Omega (Chi)": 13,
                 "Characterised Shadow": 8,
                 "Characterised Eta": 3,
@@ -12970,9 +16189,9 @@ let data = {
             }
         },
         "Omega": {
-            "total": 451,
+            "total": 452,
             "names": {
-                "Omega": 224,
+                "Omega": 225,
                 "Chi & Omega (Omega)": 13,
                 "Characterised Zeta": 2,
                 "Characterised Gamma": 2,
@@ -12995,7 +16214,7 @@ let data = {
             }
         },
         "Cid Kagenou": {
-            "total": 11403,
+            "total": 11429,
             "names": {
                 "Shadow": 1562,
                 "Minoru Kageno": 126,
@@ -13005,7 +16224,7 @@ let data = {
                 "Stylish Bandit Slayer": 33,
                 "John Smith": 592,
                 "John Smith & Yukime (John Smith)": 1,
-                "Cid": 2104,
+                "Cid": 2130,
                 "???? (Shadow)": 3,
                 "None (Cid Kagenou)": 12,
                 "??? (Stylish Bandit Slayer)": 1,
@@ -15041,25 +18260,3285 @@ let data = {
     }
 }
 
+let dropdowns = {
+    "anime": {
+        "mainChecked": false,
+        "filter": "",
+        "openSeasons": {},
+        "seasonsChecked": {
+            "Season 1": {
+                "s1e1": {
+                    "title": "1 | The Hated Classmate",
+                    "checked": false
+                },
+                "s1e2": {
+                    "title": "2 | Shadow Garden is Born",
+                    "checked": false
+                },
+                "s1e3": {
+                    "title": "3 | Fencer Ordinaire",
+                    "checked": false
+                },
+                "s1e4": {
+                    "title": "4 | Sadism's Rewards",
+                    "checked": false
+                },
+                "s1e5": {
+                    "title": "5 | I Am...",
+                    "checked": false
+                },
+                "s1e6": {
+                    "title": "6 | Pretenders",
+                    "checked": false
+                },
+                "s1e7": {
+                    "title": "7 | A Fencing Tournament of Intrigue & Bloodshed",
+                    "checked": false
+                },
+                "s1e8": {
+                    "title": "8 | Dark Knight Academy Under Attack",
+                    "checked": false
+                },
+                "s1e9": {
+                    "title": "9 | The End of a Lie",
+                    "checked": false
+                },
+                "s1e10": {
+                    "title": "10 | The Sacred Land, City of Deception",
+                    "checked": false
+                },
+                "s1e11": {
+                    "title": "11 | The Goddess's Trial",
+                    "checked": false
+                },
+                "s1e12": {
+                    "title": "12 | The Truth Within the Memories",
+                    "checked": false
+                },
+                "s1e13": {
+                    "title": "13 | A Bloody Showdown as an Offering to Annihilation",
+                    "checked": false
+                },
+                "s1e14": {
+                    "title": "14 | Your Lie, Your Wish",
+                    "checked": false
+                },
+                "s1e15": {
+                    "title": "15 | The Strongest Weakest Man",
+                    "checked": false
+                },
+                "s1e16": {
+                    "title": "16 | Unseen Intentions",
+                    "checked": false
+                },
+                "s1e17": {
+                    "title": "17 | Moonlight That Pierces the Darkness",
+                    "checked": false
+                },
+                "s1e18": {
+                    "title": "18 | Betting on a Moment",
+                    "checked": false
+                },
+                "s1e19": {
+                    "title": "19 | Dancing Puppet",
+                    "checked": false
+                },
+                "s1e20": {
+                    "title": "20 | Advent of the Demon",
+                    "checked": false
+                },
+                "checked": false
+            },
+            "Season 2": {
+                "s2e1": {
+                    "title": "1 | The Lawless City",
+                    "checked": false
+                },
+                "s2e2": {
+                    "title": "2 | The Haven",
+                    "checked": false
+                },
+                "s2e3": {
+                    "title": "3 | The Hour Of Awakening",
+                    "checked": false
+                },
+                "s2e4": {
+                    "title": "4 | Mask of Falsehood",
+                    "checked": false
+                },
+                "s2e5": {
+                    "title": "5 | He Who Pulls the Strings",
+                    "checked": false
+                },
+                "s2e6": {
+                    "title": "6 | John Smith",
+                    "checked": false
+                },
+                "s2e7": {
+                    "title": "7 | Something Precious",
+                    "checked": false
+                },
+                "s2e8": {
+                    "title": "8 | Tears of the Dragon",
+                    "checked": false
+                },
+                "s2e9": {
+                    "title": "9 | The Key",
+                    "checked": false
+                },
+                "s2e10": {
+                    "title": "10 | The Caged Bird",
+                    "checked": false
+                },
+                "s2e11": {
+                    "title": "11 | Determination",
+                    "checked": false
+                },
+                "s2e12": {
+                    "title": "12 | Highest",
+                    "checked": false
+                },
+                "checked": false
+            },
+            "Kage-Jitsu!": {
+                "s101e1": {
+                    "title": "1 | The Seven Shadows want their operation to succeed!",
+                    "checked": false
+                },
+                "s101e2": {
+                    "title": "2 | The Seven Shadows want to finish up an amazing war chronicle!",
+                    "checked": false
+                },
+                "s101e3": {
+                    "title": "3 | The Seven Shadows want to make delicious chocolate!",
+                    "checked": false
+                },
+                "s101e4": {
+                    "title": "4 | The Seven Shadows want to procure the legendary coffee!",
+                    "checked": false
+                },
+                "s101e5": {
+                    "title": "5 | The Seven Shadows want to create an Artifact!",
+                    "checked": false
+                },
+                "s101e6": {
+                    "title": "6 | The Seven Shadows want to recommend cute underwear!",
+                    "checked": false
+                },
+                "s101e7": {
+                    "title": "7 | The Seven Shadows want to select cute underwear!",
+                    "checked": false
+                },
+                "s101e8": {
+                    "title": "8 | The Seven Shadows want to bathe in the finest hot spa!",
+                    "checked": false
+                },
+                "s101e9": {
+                    "title": "9 | The Seven Shadows want to get along together!",
+                    "checked": false
+                },
+                "s101e10": {
+                    "title": "10 | The Seven Shadows want to gain awesome muscles!",
+                    "checked": false
+                },
+                "s101e11": {
+                    "title": "11 | The Seven Shadows want to understand what \"Bubble\" means!",
+                    "checked": false
+                },
+                "s101e12": {
+                    "title": "12 | The Seven Shadows want to create a new taste!",
+                    "checked": false
+                },
+                "s101e13": {
+                    "title": "13 | The Seven Shadows want to see friendliness being displayed!",
+                    "checked": false
+                },
+                "s101e14": {
+                    "title": "14 | The Seven Shadows want to receive words of praise!",
+                    "checked": false
+                },
+                "s101e15": {
+                    "title": "15 | The Seven Shadows want to enjoy pleasant music!",
+                    "checked": false
+                },
+                "s101e16": {
+                    "title": "16 | The Seven Shadows want to put on amazing underwear!",
+                    "checked": false
+                },
+                "s101e17": {
+                    "title": "17 | The Seven Shadows want to continue this operation!",
+                    "checked": false
+                },
+                "checked": false
+            },
+            "Kage-Jitsu! 2nd": {
+                "s102e1": {
+                    "title": "1 | The Seven Shadows want to improve their branding!",
+                    "checked": false
+                },
+                "s102e2": {
+                    "title": "2 | The Seven Shadows wants to develop cute clothes!",
+                    "checked": false
+                },
+                "s102e3": {
+                    "title": "3 | The Seven Shadows want to create a trend!",
+                    "checked": false
+                },
+                "s102e4": {
+                    "title": "4 | The Seven Shadows want to make awesome banknotes!",
+                    "checked": false
+                },
+                "s102e5": {
+                    "title": "5 | The Seven Shadows want to be praised for their success!",
+                    "checked": false
+                },
+                "s102e6": {
+                    "title": "6 | The Seven Shadows want to hunt in the Lawless City!",
+                    "checked": false
+                },
+                "s102e7": {
+                    "title": "7 | The Seven Shadows want to follow the Lord they believe in!",
+                    "checked": false
+                },
+                "s102e8": {
+                    "title": "8 | The Seven Shadows want to blather on once in a while!",
+                    "checked": false
+                },
+                "s102e9": {
+                    "title": "9 | The Seven Shadows want to be seen as a bit smarter!",
+                    "checked": false
+                },
+                "s102e10": {
+                    "title": "10 | The Seven Shadows want to get more familiar with music!",
+                    "checked": false
+                },
+                "s102e11": {
+                    "title": "11 | The Seven Shadows want to show off their growth!",
+                    "checked": false
+                },
+                "s102e12": {
+                    "title": "12 | The Seven Shadows won't be shaken no matter what!",
+                    "checked": false
+                },
+                "checked": false
+            }
+        },
+        "episodeFilters": {}
+    },
+    "mog": {
+        "mogMainChecked": false,
+        "filter": "",
+        "openParts": {},
+        "categoryFilters": {},
+        "sectionFilters": {},
+        "partsChecked": {
+            "Seven Shadows Chronicles": {
+                "Part 1 | Rise of Garden": {
+                    "1-1 | Shadow Garden, Mobilize!": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Prelude"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Garden Policy"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Shadow Garden Covert Op"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Possessed Search"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "After the Rescue"
+                        },
+                        "checked": false
+                    },
+                    "1-2 | Ancient Dragon of Alexandria": {
+                        "e1": {
+                            "checked": false,
+                            "title": "The Lost City"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Abyss Woods"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Tale of Ruin"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Shadow's Sword"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Future Unlocked"
+                        },
+                        "checked": false
+                    },
+                    "1-3 | Have Mercy! Eta's Protocol": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Eta's Scheme"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Defense System"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Magic Gear"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Try, Try Again"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "The Gear's Value"
+                        },
+                        "checked": false
+                    },
+                    "1-4 | Behold! Tuna Chaos": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Day Off Together"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Going Fishing"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Tasty Tuna Sammy"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Victory Formula"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "A King is Born"
+                        },
+                        "checked": false
+                    },
+                    "1-5 | Here Comes Trouble": {
+                        "e1": {
+                            "checked": false,
+                            "title": "News Beginnings"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Open the Door"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "N. Kafka is Born"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Mystery Paladin"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Point Blank"
+                        },
+                        "checked": false
+                    },
+                    "1-6 | Intense! Unstoppable Alpha": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Poking the Bear"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Re-Infiltration"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "BBQ Provocation"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Merciless Probe"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Grace Thy Blade"
+                        },
+                        "checked": false
+                    },
+                    "1-7 | Brutal! Delta's Night Hunt": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Mountaineering"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "As Cats and Dogs"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Begin the Hunt"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Brutal Diplomacy"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "My Fangs Rejoice"
+                        },
+                        "checked": false
+                    },
+                    "1-8 | She is Beauty, She is Grace!": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Inspired by Ire"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Presentation Row"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Shadow Power!"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Epsilon's Justice"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Pianist Shiron"
+                        },
+                        "checked": false
+                    },
+                    "1-9 | Watch Out, Gamma!": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Morning Shopping"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Luna's Past"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Luna: The Truth"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Gamma Capriccio"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Shadow World Foe"
+                        },
+                        "checked": false
+                    },
+                    "1-10 | Mitsugoshi, Ltd. is Open!": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Info Wars Begin"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Plot at A-Okay Co."
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Deception Op"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Mitsugoshi Credo"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "No Shadows Left"
+                        },
+                        "checked": false
+                    },
+                    "1-11 | Deal! Arranged Booking": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Beta Reminisces"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Harsh Happenings"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "2 Birds 1 Stone"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Sponsor's Intent"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Ebony Swirl"
+                        },
+                        "checked": false
+                    },
+                    "1-12 | Natsume & Shiron Hang Out!": {
+                        "e1": {
+                            "checked": false,
+                            "title": "City-State Duo"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Fleeting Vacance"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Jugang Ruins"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Beta—Behind You!"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Great Collapse"
+                        },
+                        "checked": false
+                    },
+                    "1-13 | Visions... Zeta and the Prophet": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Spy Request"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Saintly Prayer"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Secret Cathedral"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Wonky Background"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Victoria—Prophet"
+                        },
+                        "checked": false
+                    },
+                    "1-14 | The Garden on the Eve of Battle!": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Can You Lift?"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Research & Hair"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Garden's Enemy"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Cherish Shadow"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "To the Prelude"
+                        },
+                        "checked": false
+                    },
+                    "1 Final | Final Battle! Templar Fanatics": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Battlefront: Part 1"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Battlefront: Part 2"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Battlefront: Part 3"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Reunion in Flame"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Prelude to a New Battle"
+                        },
+                        "checked": false
+                    },
+                    "checked": false
+                },
+                "Part 2 | Sturm of Velgalta": {
+                    "2-1 | Operation: Rescue & Recover": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Zeta's Departure"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Lurk in Darkness, Hunt Down Shadows"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Possessed Heiress"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Nicoletta Marquez"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Opeartion: Rescue"
+                        },
+                        "checked": false
+                    },
+                    "2-2 | A Brilliant Mission!": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Slow and Slay"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "The Weakest Link"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Pitfall Experiments"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Prophetess' Doubt"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Destined Numbers"
+                        },
+                        "checked": false
+                    },
+                    "2-3 | Investigation! In Search of Oil": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Buried Black Gold"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "The Land of Madlid"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Nyle River Trouble"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Malak the Malevolent"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "The Perfect Base"
+                        },
+                        "checked": false
+                    },
+                    "2-4 | Possessed Cult Leader": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Keep Investigating"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Two \"Seven Blades\""
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Confronting Sergey"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Not Even a Scratch"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Glorious Escape"
+                        },
+                        "checked": false
+                    },
+                    "2-5 |  Cult Secrets Revealed!": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Possessed Lady Karen"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Two Ruthless Choices"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Cult Secrets Unveiled"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "To Know Thyself"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Loss and Rebirth"
+                        },
+                        "checked": false
+                    },
+                    "2-6 | The Garden Heads North": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Mysterious \"Tears\""
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Countering Regeneration"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Altered History"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Vengeance is Mine"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Journey to the North"
+                        },
+                        "checked": false
+                    },
+                    "2-7 | Blood Pact! Unlikely Pair": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Secret Villa Seizure"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Secret Fund in Laugus"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "RIP Mundane Man"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Authorized Savagery"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Without Loyalties"
+                        },
+                        "checked": false
+                    },
+                    "2-8 | Seven Blades Swordswoman": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Her Name is Annerose"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Naive Swordswoman"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Luna & Annerose"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "A Knight's Honor"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "What is Passed Down"
+                        },
+                        "checked": false
+                    },
+                    "2-9 | The Ones We Protect": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Fallout"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Painted Lies"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Reason to Fight"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "The Ones We Protect"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Embarkment"
+                        },
+                        "checked": false
+                    },
+                    "2-10 | Duel! Defeat Malak!": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Path of the Dragon"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Evolutionary Dead-End"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Muscles Are Stored"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Break Apart!"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "White Diamond"
+                        },
+                        "checked": false
+                    },
+                    "2-11 | Faith and Conviction": {
+                        "e1": {
+                            "checked": false,
+                            "title": "People in the Stands"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Shadow Actress"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Trust's Companion"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "A Saint Gone Mad"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "False Oracles"
+                        },
+                        "checked": false
+                    },
+                    "2-12 | Evil Ambition's End": {
+                        "e1": {
+                            "checked": false,
+                            "title": "The First Child"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Numbers Advantage"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "\"He\" is Here"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Dragon Awakes"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Summit of Strength"
+                        },
+                        "checked": false
+                    },
+                    "2-13 | Hero...... Lured by Illusions": {
+                        "e1": {
+                            "checked": false,
+                            "title": "A New Journey"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Sergey's Hideout"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Artificial Dragons"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Ambition's End"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "A Mysterious Elf"
+                        },
+                        "checked": false
+                    },
+                    "checked": false
+                },
+                "Part 3 | Secret of Sacra": {
+                    "3-1 | Shadow Garden Revamp": {
+                        "e1": {
+                            "checked": false,
+                            "title": "A Bitter Retreat"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Reorganizing"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Girls Reshuffled"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Lambda's Favorite"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Take No One Lightly"
+                        },
+                        "checked": false
+                    },
+                    "3-2 | The Hero Revealed!": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Secret of the Heroes"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Church and Heroes"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Truth Amidst Lies"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "The Lost Tribe"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Olivier's Face"
+                        },
+                        "checked": false
+                    },
+                    "3-3 | Alexandria Rebellion": {
+                        "e1": {
+                            "checked": false,
+                            "title": "The Situation Begins"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "I Won't Hurt You..."
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Override Experiment"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Outcome of the Duel"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "End of Scenario"
+                        },
+                        "checked": false
+                    },
+                    "3-4 | Influencers Ahoy!": {
+                        "e1": {
+                            "checked": false,
+                            "title": "A Bodacious Debut"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Problematic Property"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "An Aristocratic List"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "A Thief of the Cult"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "A Manor House Reborn"
+                        },
+                        "checked": false
+                    },
+                    "3-5 | Snaps of the Seven": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Going Nowhere"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "The Rolapoid Mk. 1"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Pictures of Us?!"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Check it!"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Memories in Photos"
+                        },
+                        "checked": false
+                    },
+                    "3-6 | Beast Gods & Fake Legends": {
+                        "e1": {
+                            "checked": false,
+                            "title": "A Hero's Traces"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "The Lakshmi Clan"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Saurva the Beast God"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Grave-robbing"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "A Hero's Confession"
+                        },
+                        "checked": false
+                    },
+                    "3-7 | Wandering Warrior": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Former Seven Blades"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Waters of Lindwurm"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "The Goddess' Trial"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Gold Dragon Showdown"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "The Victorious Myth"
+                        },
+                        "checked": false
+                    },
+                    "3-8 | Shadow Ninja Girl": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Wide-range Investigation"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Cool Ninja Girl"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Tunnels of Midgar"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Hardcore Fan"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Garden Ninjustu"
+                        },
+                        "checked": false
+                    },
+                    "checked": false
+                },
+                "checked": false
+            },
+            "Event Stories": {
+                "Holiday Rhapsody": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Holiday Rhapsody Ep.1"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Holiday Rhapsody Ep.2"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Holiday Rhapsody Ep.3"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Holiday Rhapsody Ep.4"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Holiday Rhapsody Ep.5"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Holiday Rhapsody Ep.6"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Holiday Rhapsody Ep.7"
+                    },
+                    "checked": false
+                },
+                "Fantastic! The Great Ize-athelon!": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Fantastic! The Great Ize-athelon! Ep.1"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Fantastic! The Great Ize-athelon! Ep.2"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Fantastic! The Great Ize-athelon! Ep.3"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Fantastic! The Great Ize-athelon! Ep.4"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Fantastic! The Great Ize-athelon! Ep.5"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Fantastic! The Great Ize-athelon! Ep.6"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Fantastic! The Great Ize-athelon! Ep.7"
+                    },
+                    "checked": false
+                },
+                "Natural vs. Artificial: Chocolate Showdown!": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Natural vs. Artificial: Chocolate Showdown!"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Natural vs. Artificial: Chocolate Showdown!"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Natural vs. Artificial: Chocolate Showdown!"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Natural vs. Artificial: Chocolate Showdown!"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Natural vs. Artificial: Chocolate Showdown!"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Natural vs. Artificial: Chocolate Showdown!"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Natural vs. Artificial: Chocolate Showdown!"
+                    },
+                    "checked": false
+                },
+                "Rose of Garden": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Rose of Garden"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Rose of Garden"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Rose of Garden"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Rose of Garden"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Rose of Garden"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Rose of Garden"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Rose of Garden"
+                    },
+                    "checked": false
+                },
+                "HIGHEST DREAM": {
+                    "e1": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM"
+                    },
+                    "checked": false
+                },
+                "Clever & Lucky Bunny Girls!": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Clever & Lucky Bunny Girls!"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Clever & Lucky Bunny Girls!"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Clever & Lucky Bunny Girls!"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Clever & Lucky Bunny Girls!"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Clever & Lucky Bunny Girls!"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Clever & Lucky Bunny Girls!"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Clever & Lucky Bunny Girls!"
+                    },
+                    "checked": false
+                },
+                "Shadows Unite! Let's party!": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Shadows Unite! Let's party!"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Shadows Unite! Let's party!"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Shadows Unite! Let's party!"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Shadows Unite! Let's party!"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Shadows Unite! Let's party!"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Shadows Unite! Let's party!"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Shadows Unite! Let's party!"
+                    },
+                    "checked": false
+                },
+                "Truth Seekers": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Truth Seekers"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Truth Seekers"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Truth Seekers"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Truth Seekers"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Truth Seekers"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Truth Seekers"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Truth Seekers"
+                    },
+                    "checked": false
+                },
+                "Midsummer Triangle": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Midsummer Triangle"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Midsummer Triangle"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Midsummer Triangle"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Midsummer Triangle"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Midsummer Triangle"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Midsummer Triangle"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Midsummer Triangle"
+                    },
+                    "checked": false
+                },
+                "Dreamy Summer Sunset": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Dreamy Summer Sunset"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Dreamy Summer Sunset"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Dreamy Summer Sunset"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Dreamy Summer Sunset"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Dreamy Summer Sunset"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Dreamy Summer Sunset"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Dreamy Summer Sunset"
+                    },
+                    "checked": false
+                },
+                "Interlude": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Interlude"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Interlude"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Interlude"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Interlude"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Interlude"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Interlude"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Interlude"
+                    },
+                    "checked": false
+                },
+                "Let's Smile! Halloween Night!": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Let's Smile! Halloween Night!"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Let's Smile! Halloween Night!"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Let's Smile! Halloween Night!"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Let's Smile! Halloween Night!"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Let's Smile! Halloween Night!"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Let's Smile! Halloween Night!"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Let's Smile! Halloween Night!"
+                    },
+                    "checked": false
+                },
+                "Amnesia?! Noob Again!": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Amnesia?! Noob Again!"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Amnesia?! Noob Again!"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Amnesia?! Noob Again!"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Amnesia?! Noob Again!"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Amnesia?! Noob Again!"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Amnesia?! Noob Again!"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Amnesia?! Noob Again!"
+                    },
+                    "checked": false
+                },
+                "A Gift from Miss Santa!": {
+                    "e1": {
+                        "checked": false,
+                        "title": "A Gift from Miss Santa!"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "A Gift from Miss Santa!"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "A Gift from Miss Santa!"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "A Gift from Miss Santa!"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "A Gift from Miss Santa!"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "A Gift from Miss Santa!"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "A Gift from Miss Santa!"
+                    },
+                    "checked": false
+                },
+                "Run! The Great Ize-athlon 2.0!": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Run! The Great Ize-athlon 2.0!"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Run! The Great Ize-athlon 2.0!"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Run! The Great Ize-athlon 2.0!"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Run! The Great Ize-athlon 2.0!"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Run! The Great Ize-athlon 2.0!"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Run! The Great Ize-athlon 2.0!"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Run! The Great Ize-athlon 2.0!"
+                    },
+                    "checked": false
+                },
+                "Masquerade": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Masquerade"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Masquerade"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Masquerade"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Masquerade"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Masquerade"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Masquerade"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Masquerade"
+                    },
+                    "checked": false
+                },
+                "Be Mine! Sweet Valentine": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Be Mine! Sweet Valentine"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Be Mine! Sweet Valentine"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Be Mine! Sweet Valentine"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Be Mine! Sweet Valentine"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Be Mine! Sweet Valentine"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Be Mine! Sweet Valentine"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Be Mine! Sweet Valentine"
+                    },
+                    "checked": false
+                },
+                "Trash-Game Hunter Meets Shadow": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Trash-Game Hunter Meets Shadow"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Trash-Game Hunter Meets Shadow"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Trash-Game Hunter Meets Shadow"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Trash-Game Hunter Meets Shadow"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Trash-Game Hunter Meets Shadow"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Trash-Game Hunter Meets Shadow"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Trash-Game Hunter Meets Shadow"
+                    },
+                    "checked": false
+                },
+                "HIGHEST DREAM II": {
+                    "e1": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM II"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM II"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM II"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM II"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM II"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM II"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM II"
+                    },
+                    "checked": false
+                },
+                "The Producer in Shadow!": {
+                    "e1": {
+                        "checked": false,
+                        "title": "The Producer in Shadow!"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "The Producer in Shadow!"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "The Producer in Shadow!"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "The Producer in Shadow!"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "The Producer in Shadow!"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "The Producer in Shadow!"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "The Producer in Shadow!"
+                    },
+                    "checked": false
+                },
+                "Stranded! Summer in the Wild?!": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Stranded! Summer in the Wild?!"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Stranded! Summer in the Wild?!"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Stranded! Summer in the Wild?!"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Stranded! Summer in the Wild?!"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Stranded! Summer in the Wild?!"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Stranded! Summer in the Wild?!"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Stranded! Summer in the Wild?!"
+                    },
+                    "checked": false
+                },
+                "A Dreamy Summer with You": {
+                    "e1": {
+                        "checked": false,
+                        "title": "A Dreamy Summer with You"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "A Dreamy Summer with You"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "A Dreamy Summer with You"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "A Dreamy Summer with You"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "A Dreamy Summer with You"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "A Dreamy Summer with You"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "A Dreamy Summer with You"
+                    },
+                    "checked": false
+                },
+                "Blazing Hero! Eminence in Flames!": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Blazing Hero! Eminence in Flames!"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Blazing Hero! Eminence in Flames!"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Blazing Hero! Eminence in Flames!"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Blazing Hero! Eminence in Flames!"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Blazing Hero! Eminence in Flames!"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Blazing Hero! Eminence in Flames!"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Blazing Hero! Eminence in Flames!"
+                    },
+                    "checked": false
+                },
+                "At Your Service! The Perfect Maid!": {
+                    "e1": {
+                        "checked": false,
+                        "title": "At Your Service! The Perfect Maid!"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "At Your Service! The Perfect Maid!"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "At Your Service! The Perfect Maid!"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "At Your Service! The Perfect Maid!"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "At Your Service! The Perfect Maid!"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "At Your Service! The Perfect Maid!"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "At Your Service! The Perfect Maid!"
+                    },
+                    "checked": false
+                },
+                "From the Heart! A Sage's Gift": {
+                    "e1": {
+                        "checked": false,
+                        "title": "From the Heart! A Sage's Gift"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "From the Heart! A Sage's Gift"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "From the Heart! A Sage's Gift"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "From the Heart! A Sage's Gift"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "From the Heart! A Sage's Gift"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "From the Heart! A Sage's Gift"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "From the Heart! A Sage's Gift"
+                    },
+                    "checked": false
+                },
+                "checked": false
+            },
+            "Apocrypha": {
+                "1 | Requiem for Scattered Shadows": {
+                    "1 | Millennium Past": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Episode 1"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Episode 2"
+                        },
+                        "e3-1": {
+                            "checked": false,
+                            "title": "Episode 3-1"
+                        },
+                        "e3-2": {
+                            "checked": false,
+                            "title": "Episode 3-2"
+                        },
+                        "e3-3": {
+                            "checked": false,
+                            "title": "Episode 3-3"
+                        },
+                        "e4-1": {
+                            "checked": false,
+                            "title": "Episode 4-1"
+                        },
+                        "e4-2": {
+                            "checked": false,
+                            "title": "Episode 4-2"
+                        },
+                        "e5-1": {
+                            "checked": false,
+                            "title": "Episode 5-1"
+                        },
+                        "e5-2": {
+                            "checked": false,
+                            "title": "Episode 5-2"
+                        },
+                        "e5-3": {
+                            "checked": false,
+                            "title": "Episode 5-3"
+                        },
+                        "e6": {
+                            "checked": false,
+                            "title": "Episode 6"
+                        },
+                        "e7": {
+                            "checked": false,
+                            "title": "Episode 7"
+                        },
+                        "e8-1": {
+                            "checked": false,
+                            "title": "Episode 8-1"
+                        },
+                        "e8-2": {
+                            "checked": false,
+                            "title": "Episode 8-2"
+                        }
+                    },
+                    "2 | Heroes of Time": {
+                        "eA1": {
+                            "checked": false,
+                            "title": "Episode A1"
+                        },
+                        "eA2": {
+                            "checked": false,
+                            "title": "Episode A2"
+                        },
+                        "eA3": {
+                            "checked": false,
+                            "title": "Episode A3"
+                        },
+                        "eA4": {
+                            "checked": false,
+                            "title": "Episode A4"
+                        },
+                        "eA5": {
+                            "checked": false,
+                            "title": "Episode A5"
+                        },
+                        "eA6-1": {
+                            "checked": false,
+                            "title": "Episode A6-1"
+                        },
+                        "eA6-2": {
+                            "checked": false,
+                            "title": "Episode A6-2"
+                        },
+                        "eA6-3": {
+                            "checked": false,
+                            "title": "Episode A6-3"
+                        },
+                        "eA7-1": {
+                            "checked": false,
+                            "title": "Episode A7-1"
+                        },
+                        "eA7-2": {
+                            "checked": false,
+                            "title": "Episode A7-2"
+                        },
+                        "eA7-3": {
+                            "checked": false,
+                            "title": "Episode A7-3"
+                        },
+                        "eA8": {
+                            "checked": false,
+                            "title": "Episode A8"
+                        },
+                        "eA9": {
+                            "checked": false,
+                            "title": "Episode A9"
+                        },
+                        "eB1": {
+                            "checked": false,
+                            "title": "Episode B1"
+                        },
+                        "eB2": {
+                            "checked": false,
+                            "title": "Episode B2"
+                        },
+                        "eB3": {
+                            "checked": false,
+                            "title": "Episode B3"
+                        }
+                    },
+                    "checked": false
+                },
+                "checked": false
+            }
+        }
+    },
+    "ln": {
+        "lnMainChecked": false,
+        "lnFilter": "",
+        "openVolumes": {},
+        "volumesChecked": {
+            "Volume 1": {
+                "checked": false,
+                "v1c1": {
+                    "checked": false,
+                    "title": "P | Preparing the Perfect Stage!"
+                },
+                "v1c2": {
+                    "checked": false,
+                    "title": "1 | Starting the Shadowbroker Tutorial!"
+                },
+                "v1c3": {
+                    "checked": false,
+                    "title": "2 | Assuming the Role of a Side Character at School!"
+                },
+                "v1c4": {
+                    "checked": false,
+                    "title": "3 | My Official Beginning as a Mastermind in Action!"
+                },
+                "v1c5": {
+                    "checked": false,
+                    "title": "4 | The Two Sides of the Shadow Garden?!"
+                },
+                "v1c6": {
+                    "checked": false,
+                    "title": "5 | Mastering the Peaceful Life of a Nobody!"
+                },
+                "v1c7": {
+                    "checked": false,
+                    "title": "6 | That Scene Where Terrorists Take Over the School"
+                },
+                "v1c8": {
+                    "checked": false,
+                    "title": "F | My Idea of the Ultimate Shadow Commander!"
+                },
+                "v1c9": {
+                    "checked": false,
+                    "title": "A | The Chronicles of Master Shadow Complete Version: Volume 1"
+                }
+            },
+            "Volume 2": {
+                "checked": false,
+                "v2c1": {
+                    "checked": false,
+                    "title": "P | To Lindwurm, the Sacred Land!"
+                },
+                "v2c2": {
+                    "checked": false,
+                    "title": "1 | Fun Times at the Goddess's Trial!"
+                },
+                "v2c3": {
+                    "checked": false,
+                    "title": "2 | Investigating the Sanctuary!"
+                },
+                "v2c4": {
+                    "checked": false,
+                    "title": "3 | When Things Get Boring, It's Time for Explosives!"
+                },
+                "v2c5": {
+                    "checked": false,
+                    "title": "4 | This Situation Calls for a \"Who Is That Guy?!\""
+                },
+                "v2c6": {
+                    "checked": false,
+                    "title": "5 | A Battle to Attract Only MVPs!"
+                },
+                "v2c7": {
+                    "checked": false,
+                    "title": "6 | A Mastermind Always Plays Piano Under Moonlight!"
+                },
+                "v2c8": {
+                    "checked": false,
+                    "title": "7 | Showing Off a Smidgen of My Strength!"
+                },
+                "v2c9": {
+                    "checked": false,
+                    "title": "8 | Lay Your Eyes on My True Powers!"
+                },
+                "v2c10": {
+                    "checked": false,
+                    "title": "F | Just Who Is This Mysterious Badass?!"
+                },
+                "v2c11": {
+                    "checked": false,
+                    "title": "A | The Chronicles of Master Shadow Complete Version: Volume II"
+                }
+            },
+            "Volume 3": {
+                "checked": false,
+                "v3c1": {
+                    "checked": false,
+                    "title": "P | Heading to the Lawless City over Fall Break!"
+                },
+                "v3c2": {
+                    "checked": false,
+                    "title": "1 | Lawless City Bandit Hunting!"
+                },
+                "v3c3": {
+                    "checked": false,
+                    "title": "2 | Storming the Crimson Tower!"
+                },
+                "v3c4": {
+                    "checked": false,
+                    "title": "3 | Pursuing the Blood Queen!"
+                },
+                "v3c5": {
+                    "checked": false,
+                    "title": "X | Field Notes on a Little Brother—by Young Claire!"
+                },
+                "v3c6": {
+                    "checked": false,
+                    "title": "4 | I'll Destroy It All and Start from Scratch!"
+                },
+                "v3c7": {
+                    "checked": false,
+                    "title": "5 | Printing Fake Money as Mitsugoshi Throws Down with the Major Corporate Alliance!"
+                },
+                "v3c8": {
+                    "checked": false,
+                    "title": "6 | Circulating Counterfeit Cash!"
+                },
+                "v3c9": {
+                    "checked": false,
+                    "title": "E | The One to Destroy It All and Start from Scratch—with Fake Bills!"
+                },
+                "v3c10": {
+                    "checked": false,
+                    "title": "A | The Chronicles of Master Shadow Complete Version: Volume III"
+                }
+            },
+            "Volume 4": {
+                "checked": false,
+                "v4c1": {
+                    "checked": false,
+                    "title": "P | It's Time for a War in the Oriana Kingdom!"
+                },
+                "v4c2": {
+                    "checked": false,
+                    "title": "1 | Putting the Kibosh on Rose Oriana's Wedding!"
+                },
+                "v4c3": {
+                    "checked": false,
+                    "title": "2 | Begin Operation: Obstruction!"
+                },
+                "v4c4": {
+                    "checked": false,
+                    "title": "3 | Crashing the Ceremony!"
+                },
+                "v4c5": {
+                    "checked": false,
+                    "title": "X | Rise of the Fancy Hoodlum Slayer!"
+                },
+                "v4c6": {
+                    "checked": false,
+                    "title": "4 | Lurking in the Darkness in Fantastical Japan!"
+                },
+                "v4c7": {
+                    "checked": false,
+                    "title": "5 | Sneaking Around in Japan, Just Like the Old Days!!"
+                },
+                "v4c8": {
+                    "checked": false,
+                    "title": "6 | Something Smells Fishy... But an Eminence in Shadow Always Cracks the Case!"
+                },
+                "v4c9": {
+                    "checked": false,
+                    "title": "E | Behold, a Full-Fledged Eminence in Shadow!"
+                },
+                "v4c10": {
+                    "checked": false,
+                    "title": "A | The Chronicles of Master Shadow Complete Edition: Volume IV"
+                }
+            },
+            "Volume 5": {
+                "checked": false,
+                "v5c1": {
+                    "checked": false,
+                    "title": "P | The Case of the Missing Students and the Not-So-Peaceful Academy!"
+                },
+                "v5c2": {
+                    "checked": false,
+                    "title": "1 | Claire's Back, and Her Symptoms Are Worse Than Ever!"
+                },
+                "v5c3": {
+                    "checked": false,
+                    "title": "2 | Morning Comes, and There's an Impaler on the Loose!!"
+                },
+                "v5c4": {
+                    "checked": false,
+                    "title": "3 | The Case Is Closed, So It's Time for a Flashback!"
+                },
+                "v5c5": {
+                    "checked": false,
+                    "title": "4 | Peace in Our Time!"
+                },
+                "v5c6": {
+                    "checked": false,
+                    "title": "5 | Terrorists Attack the School...Again!!"
+                },
+                "v5c7": {
+                    "checked": false,
+                    "title": "E | I'd Let the Whole World Burn, If That's What It Took!"
+                },
+                "v5c8": {
+                    "checked": false,
+                    "title": "A | Eta's Research Journal"
+                }
+            },
+            "Volume 6": {
+                "checked": false,
+                "v6c1": {
+                    "checked": false,
+                    "title": "P | The Clandestine Ruler of the Midgar Kingdom...I'm so Jealous!"
+                },
+                "v6c2": {
+                    "checked": false,
+                    "title": "1 | Enter \"Jack The Rippler\"!"
+                },
+                "v6c3": {
+                    "checked": false,
+                    "title": "2 | Surprise Assassins at the Sleepover!"
+                },
+                "v6c4": {
+                    "checked": false,
+                    "title": "3 | Let's Decipher the Crime Announcement!"
+                },
+                "v6c5": {
+                    "checked": false,
+                    "title": "4 | And then a Monster becomes a Legend!"
+                },
+                "v6c6": {
+                    "checked": false,
+                    "title": "I | The Monster's Successor!"
+                },
+                "v6c7": {
+                    "checked": false,
+                    "title": "X | Oath of the Plains"
+                },
+                "v6c8": {
+                    "checked": false,
+                    "title": "5 | Welcome to Shadow Garden!"
+                },
+                "v6c9": {
+                    "checked": false,
+                    "title": "E | The Scent of That Day"
+                },
+                "v6c10": {
+                    "checked": false,
+                    "title": "A | Alpha's Organizational Management Diary."
+                }
+            }
+        },
+        "chapterFilters": {}
+    },
+    "wn": {
+        "wnMainChecked": false,
+        "wnFilter": "",
+        "openVolumes": {},
+        "volumesChecked": {
+            "Volume 1": {
+                "checked": false,
+                "v1c1": {
+                    "checked": false,
+                    "title": "Remaining Within the Limits of Being Human Means You Would Be Vaporized By a Nuke"
+                },
+                "v1c2": {
+                    "checked": false,
+                    "title": "Bandits Are Basically Just Walking Bonus Stages"
+                },
+                "v1c3": {
+                    "checked": false,
+                    "title": "Sudden Emergence of the Order of Diabolos?!"
+                },
+                "v1c4": {
+                    "checked": false,
+                    "title": "If Only He Had Hair......"
+                },
+                "v1c5": {
+                    "checked": false,
+                    "title": "Real Member of the Order, and Real Person of the Curse"
+                },
+                "v1c6": {
+                    "checked": false,
+                    "title": "Your Drug Test Result is 'Positive'"
+                },
+                "v1c7": {
+                    "checked": false,
+                    "title": "A Simple Fighting Lesson, Power in Shadows Style (With Only This Much, You Are Also a Power in the Shadows?!)"
+                },
+                "v1c8": {
+                    "checked": false,
+                    "title": "Powers in the Shadows are Lonely"
+                },
+                "v1c9": {
+                    "checked": false,
+                    "title": "The Frolicking of Those Who Know Nothing of the World of Shadows"
+                },
+                "v1c10": {
+                    "checked": false,
+                    "title": "Apparently He Discovered Her Secret And Is Blackmailing Her......"
+                },
+                "v1c11": {
+                    "checked": false,
+                    "title": "Conflict is Entertaining When You Are Uninvolved"
+                },
+                "v1c12": {
+                    "checked": false,
+                    "title": "Hi, My Name Is Pochi! Nice to Meet You, Everyone!"
+                },
+                "v1c13": {
+                    "checked": false,
+                    "title": "Incidentally, I'm In the Zenon Faction"
+                },
+                "v1c14": {
+                    "checked": false,
+                    "title": "It Would Take Serious Effort To Make Me Truly Flip Out"
+                },
+                "v1c15": {
+                    "checked": false,
+                    "title": "Oh Wow, What a Wonderful Idea (In a Monotone Voice)"
+                },
+                "v1c16": {
+                    "checked": false,
+                    "title": "Currently Writing the Complete Version of 'The War Chronicles of Shadow-sama'"
+                },
+                "v1c17": {
+                    "checked": false,
+                    "title": "Fragment of Diabolos! Squish!"
+                },
+                "v1c18": {
+                    "checked": false,
+                    "title": "Keep Watching from Below the Stage"
+                },
+                "v1c19": {
+                    "checked": false,
+                    "title": "Far Off Memory"
+                },
+                "v1c20": {
+                    "checked": false,
+                    "title": "\"I AM......\""
+                },
+                "v1c21": {
+                    "checked": false,
+                    "title": "[Urgent Question] The Way to Dispose of a Dead Body on Campus [Anon]"
+                }
+            },
+            "Volume 2": {
+                "checked": false,
+                "v2c22": {
+                    "checked": false,
+                    "title": "That Which Anyone Would Overlook"
+                },
+                "v2c23": {
+                    "checked": false,
+                    "title": "Otherworld General Trading Company Mitsugoshi Co."
+                },
+                "v2c24": {
+                    "checked": false,
+                    "title": "7 Girls and 1 Guy. Obviously Someone's Going to Be Left Out"
+                },
+                "v2c25": {
+                    "checked": false,
+                    "title": "Respite in an Alleyway"
+                },
+                "v2c26": {
+                    "checked": false,
+                    "title": "Ugh, My Head..."
+                },
+                "v2c27": {
+                    "checked": false,
+                    "title": "High Heels & One Piece & White Legs"
+                },
+                "v2c28": {
+                    "checked": false,
+                    "title": "Otherworld-Style Valentine's Day"
+                },
+                "v2c29": {
+                    "checked": false,
+                    "title": "A Mob Can Tell"
+                },
+                "v2c30": {
+                    "checked": false,
+                    "title": "Bastard"
+                },
+                "v2c31": {
+                    "checked": false,
+                    "title": "Can You Keep Up With Me?"
+                },
+                "v2c32": {
+                    "checked": false,
+                    "title": "The Undying Magic Swordsman"
+                },
+                "v2c33": {
+                    "checked": false,
+                    "title": "What Every Boy in the Universe Dreams Of"
+                },
+                "v2c34": {
+                    "checked": false,
+                    "title": "There Are Times When A Mob Has to Act"
+                },
+                "v2c35": {
+                    "checked": false,
+                    "title": "The Romance of Looking Down From a Rooftop"
+                },
+                "v2c36": {
+                    "checked": false,
+                    "title": "Relieved That It's More Decent Than Expected"
+                },
+                "v2c37": {
+                    "checked": false,
+                    "title": "The Course of an Advanced Psychological Battle"
+                },
+                "v2c38": {
+                    "checked": false,
+                    "title": "Lending Just a Tiny Bit of Help"
+                },
+                "v2c39": {
+                    "checked": false,
+                    "title": "Wanting to Live for Just One More Day"
+                },
+                "v2c40": {
+                    "checked": false,
+                    "title": "That Which is Truly Important"
+                },
+                "v2c41": {
+                    "checked": false,
+                    "title": "Arrival of the Summer Rain"
+                }
+            },
+            "Volume 3": {
+                "checked": false,
+                "v3c42": {
+                    "checked": false,
+                    "title": "Proposing the Leech-style Mob Life"
+                },
+                "v3c43": {
+                    "checked": false,
+                    "title": "That Thing That's As Enigmatic as Wooden Swords At Tourist Spots"
+                },
+                "v3c44": {
+                    "checked": false,
+                    "title": "Holy Sword Excalibur"
+                },
+                "v3c45": {
+                    "checked": false,
+                    "title": "Plan A Has Failed, Shift to Plan B"
+                },
+                "v3c46": {
+                    "checked": false,
+                    "title": "A Woman Who Seems Shady and A Woman Who Seems Cheap and A Woman Who Seems Blissful"
+                },
+                "v3c47": {
+                    "checked": false,
+                    "title": "The Theory That When a Bomb Goes Off It Can Erase Everything Else That Had Happened"
+                },
+                "v3c48": {
+                    "checked": false,
+                    "title": "Please Believe That There Really Are Times When Those Who Have No Intention of Looking Still End up Seeing"
+                },
+                "v3c49": {
+                    "checked": false,
+                    "title": "Those That Don't Understand Are Boring"
+                },
+                "v3c50": {
+                    "checked": false,
+                    "title": "The Heroine Who Directed and Acted in Her Own Production"
+                },
+                "v3c51": {
+                    "checked": false,
+                    "title": "The Birth of 'Precise'"
+                },
+                "v3c52": {
+                    "checked": false,
+                    "title": "The Truth Within Memories"
+                },
+                "v3c53": {
+                    "checked": false,
+                    "title": "The Escape Plan of a Fragile, Dainty Girl"
+                },
+                "v3c54": {
+                    "checked": false,
+                    "title": "Gratz for Taking First Place in the 'Humans Who Can't Use Magic' Tournament"
+                },
+                "v3c55": {
+                    "checked": false,
+                    "title": "Just Look at What You Want to Look At Then"
+                },
+                "v3c56": {
+                    "checked": false,
+                    "title": "Genes, Age, or Stress?"
+                },
+                "v3c57": {
+                    "checked": false,
+                    "title": "Everything Is Within His Expectations"
+                },
+                "v3c58": {
+                    "checked": false,
+                    "title": "That Which Can Only Be Drawn By the Chosen"
+                },
+                "v3c59": {
+                    "checked": false,
+                    "title": "Inescapable Attack"
+                },
+                "v3c60": {
+                    "checked": false,
+                    "title": "Puzzle Piece"
+                }
+            },
+            "Volume 4": {
+                "checked": false,
+                "v4c61": {
+                    "checked": false,
+                    "title": "The Girl and the Sound of Rain"
+                },
+                "v4c62": {
+                    "checked": false,
+                    "title": "I Am a Man Who Rides the Waves"
+                },
+                "v4c63": {
+                    "checked": false,
+                    "title": "The Mysterious Young Swordsman Jimina"
+                },
+                "v4c64": {
+                    "checked": false,
+                    "title": "Spartan Hazing From a Festival Regular!"
+                },
+                "v4c65": {
+                    "checked": false,
+                    "title": "No Need to Rush, Youngster, For Life is Long"
+                },
+                "v4c66": {
+                    "checked": false,
+                    "title": "The Harmless Poyoyon and Mole"
+                },
+                "v4c67": {
+                    "checked": false,
+                    "title": "Sure-Win Golden Dragon's Sure-Win Formula"
+                },
+                "v4c68": {
+                    "checked": false,
+                    "title": "The Match Where The Stronger One Gets All the Attention"
+                },
+                "v4c69": {
+                    "checked": false,
+                    "title": "Evil ** Kill ** Dragon!!"
+                },
+                "v4c70": {
+                    "checked": false,
+                    "title": "In Expectation of This Happening"
+                },
+                "v4c71": {
+                    "checked": false,
+                    "title": "Beta's Job"
+                },
+                "v4c72": {
+                    "checked": false,
+                    "title": "A Power in the Shadows Playing Under the Moonlight"
+                },
+                "v4c73": {
+                    "checked": false,
+                    "title": "The Girl Who Dreams a Dream and the Boy Who Walks a Dream"
+                },
+                "v4c74": {
+                    "checked": false,
+                    "title": "The Single Ray of Light Shining Into the Darkness"
+                },
+                "v4c75": {
+                    "checked": false,
+                    "title": "The Girls' Paths, and His Decision"
+                },
+                "v4c76": {
+                    "checked": false,
+                    "title": "The Basics of Human Relationships Is Abandonment Play"
+                },
+                "v4c77": {
+                    "checked": false,
+                    "title": "And Who Are You?"
+                },
+                "v4c78": {
+                    "checked": false,
+                    "title": "What Always Ends up Happening from Stopping at the Last Instant"
+                },
+                "v4c79": {
+                    "checked": false,
+                    "title": "I've Won! (Assured)"
+                },
+                "v4c80": {
+                    "checked": false,
+                    "title": "Exactly Who Are You?"
+                },
+                "v4c81": {
+                    "checked": false,
+                    "title": "Breakfast at the Special Seating NAO"
+                },
+                "v4c82": {
+                    "checked": false,
+                    "title": "The Smelly Man is Part of the Plan"
+                },
+                "v4c83": {
+                    "checked": false,
+                    "title": "From A Far Away Height..."
+                },
+                "v4c84": {
+                    "checked": false,
+                    "title": "Final Duty"
+                },
+                "v4c85": {
+                    "checked": false,
+                    "title": "Mysterious Masked Swordsman Slayer, At Your Service!!"
+                },
+                "v4c86": {
+                    "checked": false,
+                    "title": "Summit of the Path of the Sword"
+                },
+                "v4c87": {
+                    "checked": false,
+                    "title": "Your Real Enemy"
+                },
+                "v4c88": {
+                    "checked": false,
+                    "title": "Ashes of a Dream"
+                }
+            },
+            "Volume 5": {
+                "checked": false,
+                "v5c89": {
+                    "checked": false,
+                    "title": "Being Gatekeeper A is Great!"
+                },
+                "v5c90": {
+                    "checked": false,
+                    "title": "It's Already Completely Healed"
+                },
+                "v5c91": {
+                    "checked": false,
+                    "title": "What Belongs to Bandits Also Belongs to Me"
+                },
+                "v5c92": {
+                    "checked": false,
+                    "title": "Two Loser (Dogs) and a Watchdog"
+                },
+                "v5c93": {
+                    "checked": false,
+                    "title": "Shockingly Huge Bargain Sale, Only in Outlaw City!!"
+                },
+                "v5c94": {
+                    "checked": false,
+                    "title": "Stop Throbbing..."
+                },
+                "v5c95": {
+                    "checked": false,
+                    "title": "From Mob Escape to Mob Revenge"
+                },
+                "v5c96": {
+                    "checked": false,
+                    "title": "For the Sake of This Day, I Have Prepared This... Hole!!"
+                },
+                "v5c97": {
+                    "checked": false,
+                    "title": "Rampage... The Streets are... Blood... Run..."
+                },
+                "v5c98": {
+                    "checked": false,
+                    "title": "Tough Lady"
+                },
+                "v5c99": {
+                    "checked": false,
+                    "title": "The Three Currents"
+                },
+                "v5c100": {
+                    "checked": false,
+                    "title": "War of Monsters"
+                },
+                "v5c101": {
+                    "checked": false,
+                    "title": "The Rumored Shadow Garden"
+                },
+                "v5c102": {
+                    "checked": false,
+                    "title": "Two Lasses"
+                },
+                "v5c103": {
+                    "checked": false,
+                    "title": "What are you doi-?!"
+                },
+                "v5c104": {
+                    "checked": false,
+                    "title": "Don't You Dare Steal My Role, Girl"
+                },
+                "v5c105": {
+                    "checked": false,
+                    "title": "The Man Who Was Too Early"
+                },
+                "v5c106": {
+                    "checked": false,
+                    "title": "What Do YOU Understand About This Pain?! (Blood Pressure)"
+                },
+                "v5c107": {
+                    "checked": false,
+                    "title": "Her Duty"
+                },
+                "v5c108": {
+                    "checked": false,
+                    "title": "Overwhelmingly Terrible at Explanations"
+                },
+                "v5c109": {
+                    "checked": false,
+                    "title": "The Queen of Blood"
+                },
+                "v5c110": {
+                    "checked": false,
+                    "title": "Her Master"
+                },
+                "v5c111": {
+                    "checked": false,
+                    "title": "Mission Complete"
+                },
+                "v5c112": {
+                    "checked": false,
+                    "title": "There's No Helping It When the Left Hand Begins to Ache"
+                }
+            },
+            "Volume 6": {
+                "checked": false,
+                "v6c113": {
+                    "checked": false,
+                    "title": "Kyaaa! Not so rough!"
+                },
+                "v6c114": {
+                    "checked": false,
+                    "title": "Super Elite Agent, Whose Name Is"
+                },
+                "v6c115": {
+                    "checked": false,
+                    "title": "The World Is Whispering To Me"
+                },
+                "v6c116": {
+                    "checked": false,
+                    "title": "Do You Really Think So?"
+                },
+                "v6c117": {
+                    "checked": false,
+                    "title": "The smell of wood."
+                },
+                "v6c118": {
+                    "checked": false,
+                    "title": "Golden retriever"
+                },
+                "v6c119": {
+                    "checked": false,
+                    "title": "Ol, Its Ol!!"
+                },
+                "v6c120": {
+                    "checked": false,
+                    "title": "Blind Big Wolf"
+                },
+                "v6c121": {
+                    "checked": false,
+                    "title": "Great Trading Alliance"
+                },
+                "v6c122": {
+                    "checked": false,
+                    "title": "The Malaise Of Mitsugoshi"
+                },
+                "v6c123": {
+                    "checked": false,
+                    "title": "Sample"
+                },
+                "v6c124": {
+                    "checked": false,
+                    "title": "The Power of a Super Elite Agent"
+                },
+                "v6c125": {
+                    "checked": false,
+                    "title": "The First To Notice The Change"
+                },
+                "v6c126": {
+                    "checked": false,
+                    "title": "Don't Get In The Way"
+                },
+                "v6c127": {
+                    "checked": false,
+                    "title": "Black Jaguar"
+                },
+                "v6c128": {
+                    "checked": false,
+                    "title": "The Supreme Code"
+                },
+                "v6c129": {
+                    "checked": false,
+                    "title": "It's All That Fool's Fault"
+                },
+                "v6c130": {
+                    "checked": false,
+                    "title": "Goodbye, John Smith"
+                },
+                "v6c131": {
+                    "checked": false,
+                    "title": "His Back"
+                },
+                "v6c132": {
+                    "checked": false,
+                    "title": "Finally, This Day Has Come"
+                },
+                "v6c133": {
+                    "checked": false,
+                    "title": "Yukime and Gettan"
+                },
+                "v6c134": {
+                    "checked": false,
+                    "title": "Rumor of the counterfeit bills"
+                },
+                "v6c135": {
+                    "checked": false,
+                    "title": "John Smith was their esteemed master."
+                },
+                "v6c136": {
+                    "checked": false,
+                    "title": "You made me angry... . ."
+                },
+                "v6c137": {
+                    "checked": false,
+                    "title": "The man who is burning with revenge"
+                },
+                "v6c138": {
+                    "checked": false,
+                    "title": "Those who lost their eyes"
+                },
+                "v6c139": {
+                    "checked": false,
+                    "title": "Even if we talk, it will be a waste of time"
+                },
+                "v6c140": {
+                    "checked": false,
+                    "title": "Gettan......"
+                },
+                "v6c141": {
+                    "checked": false,
+                    "title": "Everything is his"
+                },
+                "v6c142": {
+                    "checked": false,
+                    "title": "The bloody Demon King who betrayed his dream"
+                }
+            },
+            "Volume 7": {
+                "checked": false,
+                "v7c143": {
+                    "checked": false,
+                    "title": "That Ordinary Boy is Revealed to be—!"
+                },
+                "v7c145": {
+                    "checked": false,
+                    "title": "His name is Kageno Minoru [Cid's Past Life]"
+                },
+                "v7c146": {
+                    "checked": false,
+                    "title": "Mystery Man"
+                },
+                "v7c147": {
+                    "checked": false,
+                    "title": "Not Enough Calories At All"
+                },
+                "v7c148": {
+                    "checked": false,
+                    "title": "When it's All Over"
+                },
+                "v7c149": {
+                    "checked": false,
+                    "title": "Code 0"
+                },
+                "v7c150": {
+                    "checked": false,
+                    "title": "Who Do You Think You're Dealing With?"
+                },
+                "v7c151": {
+                    "checked": false,
+                    "title": "The Princess's Mob Friend"
+                },
+                "v7c152": {
+                    "checked": false,
+                    "title": "Evil Encroaching"
+                },
+                "v7c153": {
+                    "checked": false,
+                    "title": "Looks like We're Done"
+                },
+                "v7c154": {
+                    "checked": false,
+                    "title": "Soul Searching"
+                },
+                "v7c155": {
+                    "checked": false,
+                    "title": "Sorry, Ya Lost Me."
+                },
+                "v7c156": {
+                    "checked": false,
+                    "title": "Action Spy"
+                },
+                "v7c157": {
+                    "checked": false,
+                    "title": "Cut Down Anything!"
+                },
+                "v7c158": {
+                    "checked": false,
+                    "title": "Beacon of Revolt"
+                },
+                "v7c159": {
+                    "checked": false,
+                    "title": "I Can Hear Him But From Where..."
+                },
+                "v7c160": {
+                    "checked": false,
+                    "title": "My Time to Shine?"
+                },
+                "v7c161": {
+                    "checked": false,
+                    "title": "The Ringleader is Here!?"
+                },
+                "v7c162": {
+                    "checked": false,
+                    "title": "Sigh, really didn't want to make a scene, man~"
+                },
+                "v7c163": {
+                    "checked": false,
+                    "title": "The Power of Diabolos"
+                },
+                "v7c164": {
+                    "checked": false,
+                    "title": "Where is He?"
+                },
+                "v7c165": {
+                    "checked": false,
+                    "title": "Demon Lord Unleashed"
+                },
+                "v7c166": {
+                    "checked": false,
+                    "title": "Mordred"
+                },
+                "v7c167": {
+                    "checked": false,
+                    "title": "What Were Ideal Powers in Shadows in My Mind?"
+                }
+            },
+            "Volume 8": {
+                "checked": false,
+                "v8c168": {
+                    "checked": false,
+                    "title": "In This Troop You Will Earn A Lot of Money"
+                },
+                "v8c169": {
+                    "checked": false,
+                    "title": "The Dream Of Two Men"
+                },
+                "v8c170": {
+                    "checked": false,
+                    "title": "Mob Character's Field Trip"
+                },
+                "v8c171": {
+                    "checked": false,
+                    "title": "Three Ojisans"
+                },
+                "v8c172": {
+                    "checked": false,
+                    "title": "Vow of Black Rose"
+                },
+                "v8c173": {
+                    "checked": false,
+                    "title": "Don't Upstage Me"
+                },
+                "v8c174": {
+                    "checked": false,
+                    "title": "Do Not Kick the Platform"
+                },
+                "v8c175": {
+                    "checked": false,
+                    "title": "Evil God・Instant Kill・Sword"
+                },
+                "v8c176": {
+                    "checked": false,
+                    "title": "Died On the Spot"
+                },
+                "v8c177": {
+                    "checked": false,
+                    "title": "So-called Master"
+                },
+                "v8c178": {
+                    "checked": false,
+                    "title": "The End of Mob Character"
+                },
+                "v8c179": {
+                    "checked": false,
+                    "title": "A Small Part of the Abyss-like Plan"
+                },
+                "v8c180": {
+                    "checked": false,
+                    "title": "She's the Type of Person Who Always Exaggerates"
+                },
+                "v8c181": {
+                    "checked": false,
+                    "title": "The Other Side Connecting the Past, Present and Future"
+                },
+                "v8c182": {
+                    "checked": false,
+                    "title": "Infatuated with That Courage and Insight"
+                },
+                "v8c183": {
+                    "checked": false,
+                    "title": "We Are Friends After All!"
+                },
+                "v8c184": {
+                    "checked": false,
+                    "title": "If He Was Born Before A Thousand Years Ago"
+                },
+                "v8c185": {
+                    "checked": false,
+                    "title": "Terrible Interests"
+                },
+                "v8c186": {
+                    "checked": false,
+                    "title": "Two People with Social Phobia"
+                },
+                "v8c187": {
+                    "checked": false,
+                    "title": "Epsilon's Secret Recipe"
+                },
+                "v8c188": {
+                    "checked": false,
+                    "title": "Epsilon in Gorgeous Disguise"
+                },
+                "v8c189": {
+                    "checked": false,
+                    "title": "Take A Walk in the Forest"
+                },
+                "v8c190": {
+                    "checked": false,
+                    "title": "Everything Is Connected, All of Which Meets His Expectations"
+                },
+                "v8c191": {
+                    "checked": false,
+                    "title": "Let Me Show You Perfect Magic Control"
+                },
+                "v8c192": {
+                    "checked": false,
+                    "title": "It's Not My Fault The Shot Went Awry"
+                },
+                "v8c193": {
+                    "checked": false,
+                    "title": "Great Sacrifice for World Peace and Science"
+                },
+                "v8c194": {
+                    "checked": false,
+                    "title": "The Secret One Wants to Hide the Most"
+                },
+                "v8c195": {
+                    "checked": false,
+                    "title": "A Natural Phenomenon of Unknown Cause or A Paranormal Phenomenon"
+                },
+                "v8c196": {
+                    "checked": false,
+                    "title": "Battle of Darkness"
+                },
+                "v8c197": {
+                    "checked": false,
+                    "title": "Forget to Close the Door"
+                },
+                "v8c198": {
+                    "checked": false,
+                    "title": "It's All The Americans' Fault"
+                },
+                "v8c199": {
+                    "checked": false,
+                    "title": "Mysterious Architect Eta Lloyd Wright"
+                },
+                "v8c200": {
+                    "checked": false,
+                    "title": "The Only Food Left Is DX"
+                },
+                "v8c201": {
+                    "checked": false,
+                    "title": "Fraudulent Company"
+                },
+                "v8c202": {
+                    "checked": false,
+                    "title": "Seems Like Never Coming Back"
+                }
+            }
+        },
+        "chapterFilters": {}
+    }
+}
+
+let mediums = {
+    "lnCoverImages": {
+        "v1": "LNV1Cover.webp",
+        "v2": "LNV2Cover.webp",
+        "v3": "LNV3Cover.webp",
+        "v4": "LNV4Cover.webp",
+        "v5": "LNV5Cover.webp",
+        "v6": "LNV6Cover.webp"
+    },
+    "animeCoverImages": {
+        "s1": "ANS1Cover.webp",
+        "s2": "ANS2Cover.webp",
+        "Kage-Jitsu!": "KJ1Cover.webp",
+        "Kage-Jitsu! 2nd": "KJ2Cover.webp",
+        "s101": "KJ1Cover.webp",
+        "s102": "KJ2Cover.webp"
+    },
+    "sscCoverImages": {
+        "ssc": "SSCCover.webp",
+        "1-1": "SSC1-1Cover.webp",
+        "1-2": "SSC1-2Cover.webp",
+        "1-3": "SSC1-3Cover.webp",
+        "1-4": "SSC1-4Cover.webp",
+        "1-5": "SSC1-5Cover.webp",
+        "1-6": "SSC1-6Cover.webp",
+        "1-7": "SSC1-7Cover.webp",
+        "1-8": "SSC1-8Cover.webp",
+        "1-9": "SSC1-9Cover.webp",
+        "1-10": "SSC1-10Cover.webp",
+        "1-11": "SSC1-11Cover.webp",
+        "1-12": "SSC1-12Cover.webp",
+        "1-13": "SSC1-13Cover.webp",
+        "1-14": "SSC1-14Cover.webp",
+        "1-15": "SSC1-FCover.webp",
+        "2-1": "SSC2-1Cover.webp",
+        "2-2": "SSC2-2Cover.webp",
+        "2-3": "SSC2-3Cover.webp",
+        "2-4": "SSC2-4Cover.webp",
+        "2-5": "SSC2-5Cover.webp",
+        "2-6": "SSC2-6Cover.webp",
+        "2-7": "SSC2-7Cover.webp",
+        "2-8": "SSC2-8Cover.webp",
+        "2-9": "SSC2-9Cover.webp",
+        "2-10": "SSC2-10Cover.webp",
+        "2-11": "SSC2-11Cover.webp",
+        "2-12": "SSC2-12Cover.webp",
+        "2-13": "SSC2-13Cover.webp",
+        "3-1": "SSC3-1Cover.webp",
+        "3-2": "SSC3-2Cover.webp",
+        "3-3": "SSC3-3Cover.webp",
+        "3-4": "SSC3-4Cover.webp",
+        "3-5": "SSC3-5Cover.webp",
+        "3-6": "SSC3-6Cover.webp",
+        "3-7": "SSC3-7Cover.webp",
+        "3-8": "SSC3-8Cover.webp"
+    },
+    "esCoverImages": {
+        "Event Stories": "ESCover.webp",
+        "hr": "ESHRCover.webp",
+        "ftgi": "ESFTGICover.webp",
+        "nvacs": "ESNVACSCover.webp",
+        "rog": "ESROGCover.webp",
+        "hd": "ESHDCover.webp",
+        "clbg": "ESCLBGCover.webp",
+        "sulp": "ESSULPCover.webp",
+        "ts": "ESTSCover.webp",
+        "mt": "ESMTCover.webp",
+        "dss": "ESDSSCover.webp",
+        "i": "ESICover.webp",
+        "lshn": "ESLSHNCover.webp",
+        "ana": "ESANACover.webp",
+        "agfms": "ESAGFMSCover.webp",
+        "rtgi2": "ESRTGI2Cover.webp",
+        "m": "ESMCover.webp",
+        "bmsv": "ESBMSVCover.webp",
+        "tghms": "ESTGHMSCover.webp",
+        "hd2": "ESHD2Cover.webp",
+        "tpis": "ESTPISCover.webp",
+        "ssitw": "ESSSITWCover.webp",
+        "adswy": "ESADSWYCover.webp",
+        "bheif": "ESBHEIFCover.webp",
+        "aystpm": "ESAYSTPMCover.webp",
+        "fthasg": "ESFTHASGCover.webp"
+    },
+    "apoCoverImages": {
+        "Apocrypha": "APOCover.webp",
+        "1": "APO1Cover.webp",
+        "1-1": "APO1-1Cover.webp",
+        "1-1-1": "APO1-1-1Cover.webp",
+        "1-1-2": "APO1-1-2Cover.webp",
+        "1-1-3-1": "APO1-1-3-1Cover.webp",
+        "1-1-3-2": "APO1-1-3-2Cover.webp",
+        "1-1-3-3": "APO1-1-3-3Cover.webp",
+        "1-1-4-1": "APO1-1-4-1Cover.webp",
+        "1-1-4-2": "APO1-1-4-2Cover.webp",
+        "1-1-5-1": "APO1-1-5-1Cover.webp",
+        "1-1-5-2": "APO1-1-5-2Cover.webp",
+        "1-1-5-3": "APO1-1-5-3Cover.webp",
+        "1-1-6": "APO1-1-6Cover.webp",
+        "1-1-7": "APO1-1-7Cover.webp",
+        "1-1-8-1": "APO1-1-8-1Cover.webp",
+        "1-1-8-2": "APO1-1-8-2Cover.webp",
+        "1-2": "APO1-2Cover.webp",
+        "1-2-A1": "APO1-2-A1Cover.webp",
+        "1-2-A2": "APO1-2-A2Cover.webp",
+        "1-2-A3": "APO1-2-A3Cover.webp",
+        "1-2-A4": "APO1-2-A4Cover.webp",
+        "1-2-A5": "APO1-2-A5Cover.webp",
+        "1-2-A6-1": "APO1-2-A6-1Cover.webp",
+        "1-2-A6-2": "APO1-2-A6-2Cover.webp",
+        "1-2-A6-3": "APO1-2-A6-3Cover.webp",
+        "1-2-A7-1": "APO1-2-A7-1Cover.webp",
+        "1-2-A7-2": "APO1-2-A7-2Cover.webp",
+        "1-2-A7-3": "APO1-2-A7-3Cover.webp",
+        "1-2-A8": "APO1-2-A8Cover.webp",
+        "1-2-A9": "APO1-2-A9Cover.webp",
+        "1-2-B1": "APO1-2-B1Cover.webp",
+        "1-2-B2": "APO1-2-B2Cover.webp",
+        "1-2-B3": "APO1-2-B3Cover.webp"
+    }
+}
+
+function writeData(setDoc) {
+    setDoc.then(() => {
+        console.log('Document successfully written!');
+      }).catch((error) => {
+        console.error('Error writing document: ', error);
+      });
+}
+/*
+let setDoc;
+setDoc = db.collection('data').doc('info').set(info);
+writeData(setDoc)
+
+setDoc = db.collection('data').doc('dropdowns').set(dropdowns);
+writeData(setDoc)
+
+setDoc = db.collection('data').doc('medium_images').set(mediums);
+writeData(setDoc)*/
+
 // let setDoc = db.collection('data').doc('an_s2_e8').set(data['s2']);
 
 // let setDoc = db.collection('data').doc('ssc_p3_c3-8').set(data['p3']['c3-8']);
 
 // let setDoc = db.collection('data').doc('apo_p1_c1-2').set(data['p1']['c1-2']);
 
-// let setDoc = db.collection('data').doc('es_aystpm').set(data['aystpm']);
+let setDoc = db.collection('data').doc('es_fthasg').set(data['fthasg']);
 
 // let setDoc = db.collection('data').doc('ln_v2').set(data['v2']);
 
 // let setDoc = db.collection('data').doc('an_s1_e1').set(data['s1']);
 
-let setDoc = db.collection('data').doc('info').set(data);
+// let setDoc = db.collection('data').doc('info').set(data);
 
 // let setDoc = db.collection('data').doc('characters').set(data);
 
 // let setDoc = db.collection('data').doc('medium_images').set(data);
 
 // let setDoc = db.collection('data').doc('dropdowns').set(data);
+
+// let setDoc = db.collection('data').doc('media').set(data);
 
 setDoc.then(() => {
   console.log('Document successfully written!');

@@ -1,5 +1,6 @@
 {
     "notes": {
+        "groups": {"1": "Season 1", "2": "Season 2", "m1": "Lost Echoes"},
         "0": {
             "en_author": "Nakanishi Kazuya",
             "jp_author": "中西 和也",
@@ -434,13 +435,13 @@
         "20": {
             "en_author": "Nakanishi Kazuya",
             "jp_author": "中西 和也",
-            "date": "",
-            "jp_image": "directors_note_an1_1.jpg",
+            "date": "05/10/2023",
+            "jp_image": "directors_note_an2_1.jpg",
             "jp_text": "",
             "en_text": "",
             "ml": false,
-            "episode": "21",
-            "anime": "1"
+            "episode": "1",
+            "anime": "2"
         },
         "21": {
             "en_author": "Nakanishi Kazuya",

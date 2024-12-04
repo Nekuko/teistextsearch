@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './SettingsPage.css'; // Import the CSS file
 import { readVersions } from '../../utils/indexedDBFunctions';
 import { ESMAP } from '../../esMap';
-import { fetchVersionData, fetchInformationData, fetchLNData, fetchWNData, fetchANData, fetchDropdowns, fetchSSCData, fetchAPOData, fetchESData, fetchCharactersData, fetchMediumImageData } from '../../utils/firebaseFunctions';
+import { fetchVersionData, fetchInformationData, fetchLNData, fetchWNData, fetchANData, fetchDropdowns, fetchSSCData, fetchAPOData, fetchESData, fetchCharactersData, fetchMediumImageData, fetchGenericData } from '../../utils/firebaseFunctions';
 import { faArrowsRotate, faChevronDown, faChevronUp, faXmark, faPlus, faMinus, faRotateRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { namedCharactersList } from '../../namedCharacters';
@@ -68,6 +68,9 @@ function populateOrders() {
 
   correctOrder.push(`Information Data`);
   correctKeys.push(`info-info`)
+
+  correctOrder.push(`Media Data`);
+  correctKeys.push(`info-media`)
 
   correctOrder.push(`Medium Image Data`);
   correctKeys.push(`info-medium_images`)
@@ -165,6 +168,8 @@ function SettingsPage() {
             cleanedKey = "Information Data"
           } else if (key.includes('data-versions-info-characters')) {
             cleanedKey = "Character Data"
+          } else if (key.includes('data-versions-info-media')) {
+            cleanedKey = "Media Data"
           } else if (key.includes('data-versions-info-medium_images')) {
             cleanedKey = "Medium Image Data"
           }
@@ -222,6 +227,8 @@ function SettingsPage() {
             dataValue = versionDataTemp['info']['info']
           } else if (key.includes('data-versions-info-characters')) {
             dataValue = versionDataTemp['info']['characters']
+          } else if (key.includes('data-versions-info-media')) {
+            dataValue = versionDataTemp['info']['media']
           } else if (key.includes('data-versions-info-medium_images')) {
             dataValue = versionDataTemp['info']['medium_images']
           } else if (key.includes('data-versions-ssc')) {
@@ -264,6 +271,8 @@ function SettingsPage() {
               dataValue = versionDataTemp['info']['info'];
             } else if (missingValue.key.includes('info-characters')) {
               dataValue = versionDataTemp['info']['characters'];
+            } else if (missingValue.key.includes('info-media')) {
+              dataValue = versionDataTemp['info']['media'];
             } else if (missingValue.key.includes('info-medium_images')) {
               dataValue = versionDataTemp['info']['medium_images'];
             } else if (missingValue.key.includes('ssc_')) {
@@ -453,6 +462,8 @@ function SettingsPage() {
             await fetchInformationData(versionData, setVersionData);
           } else if (value.key.includes('info-characters')) {
             await fetchCharactersData(versionData, setVersionData);
+          } else if (value.key.includes('info-media')) {
+            await fetchGenericData(versionData, setVersionData, 'media');
           } else if (value.key.includes('info-medium_images')) {
             await fetchMediumImageData(versionData, setVersionData);
 
