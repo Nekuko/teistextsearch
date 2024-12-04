@@ -1,5 +1,9 @@
 @media (min-width: 1025px) {
-    .translate-icon:hover {
+
+    .translate-icon:hover,
+    .twitter-icon:hover,
+    .caret-icon:hover,
+    .caret-icon-small:hover {
         fill: red;
         color: red;
         cursor: pointer;
@@ -7,12 +11,21 @@
 
 }
 
+.media-page {
+    display: flexbox;
+    flex-direction: column;
+    height: 100%;
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+}
+
 
 
 .image-grid {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .note-item {
@@ -22,6 +35,7 @@
 
 .img-caption {
     margin: 0;
+    user-select: none;
 }
 
 .empty-item {
@@ -29,14 +43,14 @@
     height: 161px;
     background-color: black;
     border-radius: 5px;
-  }
+}
 
 .note-item:hover {
     .img-zoom img {
         transform: scale(1.1);
         transition: transform 0.2s ease-in-out;
     }
-    
+
     .img-caption {
         color: #c8000f;
     }
@@ -45,6 +59,7 @@
 .note-item img {
     width: 100%;
     height: auto;
+    user-select: none;
 }
 
 .img-zoom {
@@ -53,7 +68,55 @@
 }
 
 .translate-icon {
-    width: 20px;
+    padding-left: 1px;
+    padding-top: 2px;
+    width: 21px;
     fill: #c8000f;
-    color: red;
+    color: #c8000f;
+}
+
+.twitter-icon {
+    padding-top: 4px;
+    width: 19px;
+    fill: #c8000f;
+    color: #c8000f;
+}
+
+.info-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.caret-icon {
+    color: #c8000f;
+    width: 1.5%;
+    height: 1.5%;
+    padding-top: 4px;
+}
+
+.caret-icon-small {
+    color: #c8000f;
+    width: 0.8%;
+    height: 0.8%;
+    padding-bottom: 1px;
+}
+
+
+.media-header {
+    font-family: 'Noto Serif JP';
+    font-size: calc(1em + 1.4vw);
+    color: #c8000f;
+    font-weight: 100;
+    letter-spacing: 0.07em;
+    align-items: center;
+    position: flex;
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    user-select: none;
+    cursor: pointer;
 }

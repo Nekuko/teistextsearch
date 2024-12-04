@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './MediaPage.css';
+import { faCaretRight, faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fetchGenericData, fetchVersionData, fetchGenericImages } from '../../utils/firebaseFunctions';
 import ImageGrid from './ImageGrid';
 import ImageOverlay from './ImageOverlay';
@@ -12,6 +14,15 @@ function MediaPage() {
 
   const [imageOpen, setImageOpen] = useState(false);
   const [imageData, setImageData] = useState({});
+
+  const [menuStates, setMenuStates] = useState({ "notes": false })
+
+  const toggleMenu = (menuId) => {
+    setMenuStates((prevStates) => ({
+      ...prevStates,
+      [menuId]: !prevStates[menuId],
+    }));
+  };
 
   useEffect(() => {
     if (!imageOpen) {
@@ -64,7 +75,7 @@ function MediaPage() {
           setMediaImages(imageURLS);
           sessionStorage.setItem("mediaImages", JSON.stringify(imageURLS));
         }
-        
+
 
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -96,43 +107,53 @@ function MediaPage() {
 
   if (loading || errors) {
     return (
-      <div className="info-page">
-        <h1 className="filters-header">MEDIA</h1>
-        <div className="info-content">
-          <div className="info-main">
-            <h1 className="info-header">DIRECTOR'S NOTES</h1>
-            <div className="notes-container">
-              {[...Array(10)].map((_, index) => (
-                <div key={index} className="note-item empty-item"></div>
-              ))}
-              <br/>
-            </div>
+      <div className="media-page">
+      <h1 className="filters-header">MEDIA</h1>
+      <div className="info-content">
+        <div className="info-main">
+          <div className="info-title-container">
+            <h1 className="media-header">DIRECTOR'S NOTES</h1>
+            <FontAwesomeIcon
+              className="caret-icon"
+              icon={faCaretRight}
+            />
           </div>
-          <button title={"To Top"} className="scroll-top-button" onClick={scrollToTop}>UP</button>
         </div>
+        <button title={"To Top"} className="scroll-top-button" onClick={scrollToTop}>UP</button>
       </div>
+    </div>
     );
   }
 
   function manageImageData(data, reference) {
     if (reference === 'notes') {
-      setImageData({full: data.full, specific: data.specific, original: mediaData.notes});
-    setImageOpen(true);
+      setImageData({ full: data.full, specific: data.specific, original: mediaData.notes });
+      setImageOpen(true);
     }
   }
 
   return (
-    <div className="info-page">
+    <div className="media-page">
       <h1 className="filters-header">MEDIA</h1>
       <div className="info-content">
         <div className="info-main">
-          <h1 className="info-header">DIRECTOR'S NOTES</h1>
-          <ImageGrid data={mediaData.notes} mediaImages={mediaImages} manageImageData={manageImageData}/>
+          <div className="info-title-container">
+            <h1 onClick={() => toggleMenu("notes")} className="media-header">DIRECTOR'S NOTES</h1>
+            <FontAwesomeIcon
+              onClick={() => toggleMenu("notes")}
+              className="caret-icon"
+              icon={menuStates.notes ? faCaretDown : faCaretRight}
+            />
+          </div>
+          {menuStates.notes && (
+            <ImageGrid data={mediaData.notes} mediaImages={mediaImages} manageImageData={manageImageData} />
+          )}
         </div>
+
         <button title={"To Top"} className="scroll-top-button" onClick={scrollToTop}>UP</button>
       </div>
       {imageOpen && (
-        <ImageOverlay images={mediaImages} fullImageData={imageData} imageOpen={imageOpen} setImageOpen={setImageOpen} />
+        <ImageOverlay images={mediaImages} fullImageData={imageData} imageOpen={imageOpen} setImageOpen={setImageOpen} setImageData={setImageData} />
       )}
     </div>
   );

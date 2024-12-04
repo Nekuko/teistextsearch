@@ -9,6 +9,25 @@ body {
   -moz-user-select: none;
   -webkit-user-select: none;
   overflow-x: hidden;
+  grid-template-rows: auto 1fr auto;
+  display: grid;
+  min-height: 100vh;
+}
+
+.App {
+  margin: 0;
+  font-family: 'Bellota Text', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  font-weight: 700;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  overflow-x: hidden;
+  grid-template-rows: auto 1fr auto;
+  display: grid;
+  min-height: 100vh;
 }
 
 code {

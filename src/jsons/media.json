@@ -1,6 +1,10 @@
 {
     "notes": {
-        "groups": {"1": "Season 1", "2": "Season 2", "m1": "Lost Echoes"},
+        "groups": {
+            "1": "Season 1",
+            "2": "Season 2",
+            "m1": "Lost Echoes"
+        },
         "0": {
             "en_author": "Nakanishi Kazuya",
             "jp_author": "中西 和也",
@@ -35,7 +39,8 @@
             ],
             "ml": false,
             "episode": "1",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1577856169351282689"
         },
         "1": {
             "en_author": "Nakanishi Kazuya",
@@ -67,7 +72,8 @@
             ],
             "ml": false,
             "episode": "2",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1580392890399805441"
         },
         "2": {
             "en_author": "Nakanishi Kazuya",
@@ -101,7 +107,8 @@
             ],
             "ml": false,
             "episode": "3",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1582929607866597376"
         },
         "3": {
             "en_author": "Nakanishi Kazuya",
@@ -133,7 +140,8 @@
             ],
             "ml": false,
             "episode": "4",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1585466314352574464"
         },
         "4": {
             "en_author": "Nakanishi Kazuya",
@@ -155,7 +163,8 @@
             ],
             "ml": true,
             "episode": "5",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1588003029466259457"
         },
         "5": {
             "en_author": "Nakanishi Kazuya",
@@ -179,7 +188,8 @@
             ],
             "ml": true,
             "episode": "6",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1590539749852205056"
         },
         "6": {
             "en_author": "Nakanishi Kazuya",
@@ -197,7 +207,8 @@
             ],
             "ml": true,
             "episode": "7",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1593076467830759425"
         },
         "7": {
             "en_author": "Nakanishi Kazuya",
@@ -217,7 +228,8 @@
             ],
             "ml": true,
             "episode": "8",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1595613173133897729"
         },
         "8": {
             "en_author": "Nakanishi Kazuya",
@@ -238,7 +250,8 @@
             ],
             "ml": true,
             "episode": "9",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1598149893201096704"
         },
         "9": {
             "en_author": "Nakanishi Kazuya",
@@ -257,7 +270,8 @@
             ],
             "ml": true,
             "episode": "10",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1600686606960263170"
         },
         "10": {
             "en_author": "Nakanishi Kazuya",
@@ -275,7 +289,8 @@
             ],
             "ml": true,
             "episode": "11",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1603223323629985794"
         },
         "11": {
             "en_author": "Nakanishi Kazuya",
@@ -286,7 +301,8 @@
             "en_text": "",
             "ml": false,
             "episode": "12",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1605760044980736001"
         },
         "12": {
             "en_author": "Nakanishi Kazuya",
@@ -294,10 +310,29 @@
             "date": "29/12/2022",
             "jp_image": "directors_note_an1_13.jpg",
             "jp_text": "",
-            "en_text": "",
+            "en_text": [
+                "Hi, the director here, and that was Episode 13. Now then, let's talk about Chi(Kai) and Omega.",
+                "They are characters from the original work, and by now surely none out there remaineth who still asketh \"Who the heck are they!?\" They are characters from the original work. They are not anime-original characters. They are characters from the original work.",
+                "And when I say 'original work', I mean the 'Web Novel' as it is labeled by the general public.",
+                "As a fan of the OG, my intention is to pick up as many OG elements as possible. Oh, but of course there are also elements that we cannot pick up, nor do we intend to pick up in the future. But anyways.",
+                "Chi and Omega are WN-only characters, and I fear the opportunity for them to appear in the light novel is very far into the distance.",
+                "Explanation for the circumstances behind their appearances this episode:",
+                "Apparently Epsilon is operating separately within the Holy Sanctuary",
+                "I wanted a dedicated scene to illustrate this properly in the anime",
+                "As a bonus, we'll use this as a chance to explain the kind of members Shadow Garden, as an organization, is made of",
+                "And so we may need some conversational scenes. Should we give the mobs some lines?",
+                "It is at this point, while we were going through the script, a certain WN-stan budded in: \"Well, since we need somebody to interact with Epsilon, how about Chi and Omega?\" to which he was met with the \"The heck he's on about?\" look.",
+                "By the way, when I suggested to the author for the inclusion of these two, he couldn't help contain his bewilderment: \"Include them and do what?\"",
+                "To be fair, I would have had the same reaction if I were in their shoes.",
+                "So I pushed through with the reasoning that WN fans (a.k.a. me) will be happy to see them, and while we were at it we also commissioned Mr Touzai for their character designs...",
+                "That said, the 'original work' as defined by the general public does not have these two characters, and so they are treated as nothing more than 'flashy-looking mobs' within the anime.",
+                "Perhaps many of you would have noticed, they were never once called by their names within the show. Blonde hair is Chi(Kai), black hair is Omega.",
+                "Please do take this opportunity and give them your support."
+            ],
             "ml": false,
             "episode": "13",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1608310297432924160"
         },
         "13": {
             "en_author": "Nakanishi Kazuya",
@@ -318,7 +353,8 @@
             ],
             "ml": true,
             "episode": "14",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1610833465208934402"
         },
         "14": {
             "en_author": "Nakanishi Kazuya",
@@ -335,7 +371,8 @@
             ],
             "ml": true,
             "episode": "15",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1613370304755105792"
         },
         "15": {
             "en_author": "Nakanishi Kazuya",
@@ -351,7 +388,8 @@
             ],
             "ml": true,
             "episode": "16",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1615907035064766464"
         },
         "16": {
             "en_author": "Nakanishi Kazuya",
@@ -370,7 +408,8 @@
             ],
             "ml": true,
             "episode": "17",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1618443719195398145"
         },
         "17": {
             "en_author": "Nakanishi Kazuya",
@@ -388,7 +427,8 @@
             ],
             "ml": true,
             "episode": "18",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1620980326733434880"
         },
         "18": {
             "en_author": "Nakanishi Kazuya",
@@ -410,7 +450,8 @@
             ],
             "ml": true,
             "episode": "19",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1623517280712761344"
         },
         "19": {
             "en_author": "Nakanishi Kazuya",
@@ -430,9 +471,81 @@
             ],
             "ml": true,
             "episode": "20",
-            "anime": "1"
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1626061306309517313"
         },
         "20": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "22/02/2023",
+            "jp_image": "directors_note_an1_th.jpg",
+            "jp_text": "",
+            "en_text": [
+                "The Eminence in Shadow",
+                "2nd Season",
+                "Hello, this is the director.",
+                "Nice to meet you, thank you for watching \"first season\", and the broadcast of the \"second season\" was decided.",
+                "As you can see from the past tense, there are a lot of intersting stories around here, but I'll probably have a chance to talk about them elsewhere.",
+                "In any case, we are currently working hard on the production, so please wait it's short but that's all for now.",
+                "Thank you for your continued support."
+            ],
+            "ml": false,
+            "episode": "th",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1628369009648467968"
+        },
+        "22": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "23/02/2023",
+            "jp_image": "directors_note_an1_a.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Sherry",
+                "A conversation one day.",
+                "\"It's about Sherry\"",
+                "\"Yes.\"",
+                "\"It's just the way the story is supposed to flow.\"",
+                "\"I've checked the original work. That's why we've come up with this storyboard.\"",
+                "\"Yes\"",
+                "\"But I am not sure if it's a good idea to add this to the anime that wasn't done in the original work.\"",
+                "\"Huh? I see your point.\"",
+                "\"That's right\"",
+                "\"Yes\"",
+                "\"Aizawa-san, anything from you?\"",
+                "\"No.\"",
+                "\"Any opposition to this?\"",
+                "\"No\"",
+                "\"Are you upset about this?\"",
+                "\"No\"",
+                "\"Should I do a retake?\"",
+                "\"No\"",
+                "\"Really\"",
+                "\"Yes\"",
+                "\"And Sherry?\"",
+                "\"Yes\"",
+                "\"Yes\"",
+                "That's what happened.",
+                "Rose",
+                "Q. It's not a good time to introduce the haircut (of Rose)!",
+                "A. I think so, too.",
+                "In episode 1, Rose....666 appeared. 664 and 665 as well. But the original work had only been published up to the third volume at that time, there was no character design. Our policy was to ask Tozai-san to come up with designs for the more important characters. So naturally, we ordered designs for these girls as well. And then, he came up with the following: A rough design with their hair short. Naturally, we proceeded with the work according to the rough design.",
+                "Just as I was thinking that with this design, the hair cut (of Rose) would be performed in the final episode... I read the fourth volume of the original work and could not believe my eyes. Sad news: Rose's hair is still long in the illustration. No, no, no, no.... What should we do, forget about the first episode and stop the cutting of her hair in the last episode? I even went so far as to ask the author about it, and as a result, he said, \"Don't worry, I'll have it cut in the original story too!\". He said he had thought of a good time to do it. So, he decided to adapt it to the original work afterwards.",
+                "Conclusion. A rough design is just that, a rough design. Things happen.",
+                "Shadow",
+                "Q.They will know, right?",
+                "A. No, they won't.",
+                "I'm serious. It is not for the sake of the animation, but for the sake of the story. The change from Cid to Shadow is not only in his costume, but also in his height, build, hair length, and eyes. It's easy to understand if you look at the settings. In other words, it is not a \"disguise\" but a \"metamorphosis\" or \"transformation\".",
+                "Of course, people in that world cannot instantly change their height and weight. If there is a person with a clearly different physique in front of them, that is a different person. They will not be able to recognize them. We, who are looking at it from omniscient point of view, are able to tell by the color, the voice, and the transformation scene, but there is a difference in consciousness for the people who are seeing it in front of their eyes and those who are not. This is the reason why Shadow is not exposed. Of course, this is just an excuse I prepared for the fact that I had to leave out the mask due to the work schedule.",
+                "What about the girls? I have a feeling that if they were to wear hoods and their silhouettes were uniformly inconspicuous, they wouldn't be noticed too. If they just put on masks as in the original story, it would be obvious from their hair style.",
+                "In case you are wondering, there is no problem when Shadow Garden comes out showing their face...because there are \"no witnesses\". Like in episode 2 or 4...."
+            ],
+            "ml": true,
+            "episode": "a",
+            "anime": "1",
+            "link": "https://x.com/yaduka301/status/1628591706278084609"
+        },
+        "23": {
             "en_author": "Nakanishi Kazuya",
             "jp_author": "中西 和也",
             "date": "05/10/2023",
@@ -441,9 +554,10 @@
             "en_text": "",
             "ml": false,
             "episode": "1",
-            "anime": "2"
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1709765845164171346"
         },
-        "21": {
+        "24": {
             "en_author": "Nakanishi Kazuya",
             "jp_author": "中西 和也",
             "date": "12/10/2023",
@@ -504,9 +618,10 @@
             ],
             "ml": false,
             "episode": "2",
-            "anime": "2"
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1712302076674658740"
         },
-        "22": {
+        "25": {
             "en_author": "Nakanishi Kazuya",
             "jp_author": "中西 和也",
             "date": "19/10/2023",
@@ -545,9 +660,10 @@
             ],
             "ml": false,
             "episode": "3",
-            "anime": "2"
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1714838791972896995"
         },
-        "23": {
+        "26": {
             "en_author": "Nakanishi Kazuya",
             "jp_author": "中西 和也",
             "date": "26/10/2023",
@@ -578,9 +694,10 @@
             ],
             "ml": false,
             "episode": "4",
-            "anime": "2"
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1717375511838556625"
         },
-        "24": {
+        "27": {
             "en_author": "Nakanishi Kazuya",
             "jp_author": "中西 和也",
             "date": "02/11/2023",
@@ -606,9 +723,10 @@
             ],
             "ml": false,
             "episode": "5",
-            "anime": "2"
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1719912315502657838"
         },
-        "25": {
+        "28": {
             "en_author": "Nakanishi Kazuya",
             "jp_author": "中西 和也",
             "date": "09/11/2023",
@@ -643,9 +761,10 @@
             ],
             "ml": false,
             "episode": "6",
-            "anime": "2"
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1722448932230287734"
         },
-        "26": {
+        "29": {
             "en_author": "Nakanishi Kazuya",
             "jp_author": "中西 和也",
             "date": "16/11/2023",
@@ -678,9 +797,10 @@
             ],
             "ml": false,
             "episode": "7",
-            "anime": "2"
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1724985653954494784"
         },
-        "27": {
+        "30": {
             "en_author": "Nakanishi Kazuya",
             "jp_author": "中西 和也",
             "date": "23/11/2023",
@@ -731,9 +851,10 @@
             ],
             "ml": false,
             "episode": "8",
-            "anime": "2"
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1727522366631141837"
         },
-        "28": {
+        "31": {
             "en_author": "Nakanishi Kazuya",
             "jp_author": "中西 和也",
             "date": "30/11/2023",
@@ -776,9 +897,10 @@
             ],
             "ml": false,
             "episode": "9",
-            "anime": "2"
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1730059076229550537"
         },
-        "29": {
+        "32": {
             "en_author": "Nakanishi Kazuya",
             "jp_author": "中西 和也",
             "date": "07/12/2023",
@@ -820,9 +942,10 @@
             ],
             "ml": false,
             "episode": "10",
-            "anime": "2"
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1732595796866953653"
         },
-        "30": {
+        "33": {
             "en_author": "Nakanishi Kazuya",
             "jp_author": "中西 和也",
             "date": "14/12/2023",
@@ -865,9 +988,10 @@
             ],
             "ml": false,
             "episode": "11",
-            "anime": "2"
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1735135856489627858"
         },
-        "31": {
+        "34": {
             "en_author": "Nakanishi Kazuya",
             "jp_author": "中西 和也",
             "date": "21/10/2023",
@@ -885,9 +1009,10 @@
             ],
             "ml": false,
             "episode": "12",
-            "anime": "2"
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1737673437341159577"
         },
-        "32": {
+        "35": {
             "en_author": "Nakanishi Kazuya",
             "jp_author": "中西 和也",
             "date": "29/12/2023",
@@ -975,9 +1100,10 @@
             ],
             "ml": false,
             "episode": "a",
-            "anime": "2"
+            "anime": "2",
+            "link": "https://x.com/yaduka301/status/1740569072516178260"
         },
-        "33": {
+        "36": {
             "en_author": "Nakanishi Kazuya",
             "jp_author": "中西 和也",
             "date": "24/05/2024",
@@ -1017,13 +1143,14 @@
                 "There were no scripts, so I went straight from the storyboard..... so might as well call my self \"the scriptor\". Just kidding.",
                 "Anyways. It was a short PV so imma end it here.",
                 "I apologize about the \"new information\" of the movie.",
-                "You'll have to wait for the official announcement, not out from the blue. If there is one thing I can say, I'll be saying the same thing that is written in the PV. “銳意制作中(We are working hard on it)",
+                "You'll have to wait for the official announcement, not out from the blue. If there is one thing I can say, I'll be saying the same thing that is written in the PV. \"銳意制作中(We are working hard on it)\"",
                 "And thats it for this message",
                 "See you next time"
             ],
             "ml": false,
             "episode": "t",
-            "anime": "m1"
+            "anime": "m1",
+            "link": "https://twitter.com/yaduka301/status/1794926995085971512"
         }
     }
 }

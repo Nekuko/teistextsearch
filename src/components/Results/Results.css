@@ -215,6 +215,7 @@
   position: absolute;
   bottom: 5px;
   right: 5px;
+  user-select: none;
 }
 
 

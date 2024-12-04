@@ -195,7 +195,6 @@ export function searchLNChars(keys, text, keywords, nameMap, characters = [], ca
     }
 
   }
-  console.log(charMap)
 
   return results;
 }

@@ -10,3122 +10,1159 @@ admin.initializeApp({
 let db = admin.firestore();
 
 let data = {
-    "fthasg": {
-        "e1": [
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "S-So cold... It really feels like winter...",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/1uXgFoXDejtoMzWtL2_HqQp_n6LpXEWGJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...Which means it must almost be the holiday season. That's something I definitely look forward to.",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/1L7IdKZ3GRMf0KRjM_bdInM4F9eIQKzr5/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Heehee, what kind of sweets shall I make this year? Maybe I'll even try for some hot chocolate and cookies to keep Master Shadow warm\u2014",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1IPclODXzE0RIisQE01Hod7fHPN-bPNop/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Huh? Is that Chi, Omega, and...Eta? What're they doing over there?",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/1ZGMP_B6PqwtrXQw-Dxd13Rs_kdSqbZv5/view?usp=drivesdk"
-            },
-            {
-                "name": "Chi",
-                "name_variant": "Chi",
-                "subtitle": "Please accept our sincere apology, Lady Eta. We're in a great hurry...",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1SmEj90xT9miePVYTBQLwJfGuI3W1ofS_/view?usp=drivesdk"
-            },
-            {
-                "name": "Omega",
-                "name_variant": "Omega",
-                "subtitle": "And this is a very important errand, so we'll be taking our leave now.",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/1kFnUQoRu3ZEG_LZrFkFpctoz1498Z-pm/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...And off they go.",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1Ej_tJumGhqcPRcXG1_XTpLj3BAySQ443/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "What's wrong?",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/1RusXsAlhr35ahRfZb2Yu08jV5K8Ak59x/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "I wanted them to help with an experiment... But it looks like they're busy...",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/124ATEsbbveD7AeI-AM6uIw6rWVoambmA/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(...\"Busy\" might not be the real reason.)",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/1N2ZNjj7Wbu0OYNOAMgjcQduK5kl4vVLf/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Lately...when I need helpers for my experiments...everyone suddenly remembers they have something to do...",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/1Gwv6CITEKNT_vbbLZn9EFYnseXOKH0YB/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(In other words, they're obviously avoiding you.)",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1M4x6iJwSItA5d_F5xxII2sB-KkyLrqap/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1NLaTOb8qW1s0L1esOCBFJI59quFynMaX/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Uh, Eta?",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/19cynjdipLkyYzDY6Ci7wnekaINsaINd6/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Yeah, I guess even she'd feel hurt by that...)",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1DdGbdRWA6RJ-cNuMc3Nd4Wvq8b92S6zS/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "At this rate...I won't be able to secure any subjects... A grave situation indeed...",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1R9Mzm1zIMrmWTAdxUf5xZIxkeMtpjHGp/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "You see, that's your problem right there, Eta.",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1njjKM5rbrHBQu2pUU5vcevtrqNgWBLhr/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...What do you mean?",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1gS0A6qaKkyNrC1Pba1_XpgZaufCjFCQi/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "You're seriously set in your ways. Try thinking of how you interact with others once in a while.",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/1RhkzME3R_bbJKG59ogFDljsqiPao70go/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Eta might be fine with that...but I'm not.)",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1b5ssxNAIm2p5ENH5gsyNdv1b5geg-2tM/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Use this as an opportunity to improve your relationship with everyone.",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1fPCdYSIzjCczsRVf2Falar2uxCVyxc9H/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Why?",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1FAWYW0Kh-YZpU8L1j-7irOu7kYY3I0F1/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "\"Why?\" ...Ugh, come on, no questions\u2014you need to do it, and that's that!",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1LveRagbYADFP3E5-z9nJpVnb6sveXM0h/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Too much work... Besides, how do I do it...?",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1Ocxt8Q2SxA-iwLn2pzvgUAiheauzAyQ5/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "\"How\"? Well...",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1fwpoAYR2pOnexu9_jRiI9zYdpPpmshV8/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Aha, I know! It's almost the holiday season, right? What about giving presents to everyone?",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/1oQXYBfmJ3cvluXqw9Ij8hgDMt8XijWQg/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "The holiday season...? Presents...?",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1cEH4AN3umjZuUMCyWeiy2rixRJwHcGA4/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "You know, the new custom Mitsugoshi spread, about giving gifts to those you're close to.",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1Qx1Iij1DYFkoCFoFL7iChctArsr_guhl/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "So, you're going to give presents to the people who helped you along the way or took part in your experiments. As a way of expressing gratitude and apologizing for everything.",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1BVq2LMsuRYHjtEL23uzUXvmXNAHtyBqJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Just saying thanks isn't enough?",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/14kjsJgX-RhNUHtfIFzqQfo2VTHccJUu2/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "No. These need to be gifts from the heart.",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/1QvIAxOk8x7dLngWAsTOSV4sEbfYb0Oz1/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "That's how you show consideration for the other person's feelings. Then they'll be sure to show you some understanding, too.",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/1VSGvKSZnWy8pXtYzX_ZYtvlv9JQ-14fG/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Definitely too much work...",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1k_OdqbicySnLMITcmKQEsec76YJuo589/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Don't say that... What if everyone keeps on avoiding you like the plague?",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/15Zpms-9ngYjaecPNmxDxrBSdQ60l5Xee/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "That...would be problematic.",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/1pYukaSF9oNb-_VMt72GQ5LKwieLUepz0/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Honestly, I get why people are wary of Eta's experiments. Even I try not to get sucked into them if at all possible.)",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1UJja5FFTeeE9ajMrv8xAzfOe72PR503P/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(But it still hurts to see people avoiding her like that... I really hope we can do something to remedy the situation.)",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/1zVg7Yt10JNKKx2uLL3M5DjOXf2R8F-g4/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Ugh...",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1UCTNahmVh3aNA-p0xYOz9IybpMBf0SQt/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Fine. I'll do it.",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1Z86QNG5w_EOxe60SoQa9NOsklbDSw_nX/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "That's the spirit!",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/19SUzsShEXLycEgfsBqy3yDIdpNLv5gMw/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Otherwise, they'll keep their guard up...and that will hinder future experiments...",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1bRtIFJ1qT7xYSa-X3gEwTVG9R3P5zVwh/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Huh? Did you say something?",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1lbFa2jozrok9ht1levGGA6x0Quu2qy-o/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "No.",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/15m1dCpc2Ui-CO5QJ4ELna7CJnSkLvXUj/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "So...what do I need to do?",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1q54tgfNvz3CHJkBOfLX8nBT8Y9FhRFQ-/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Well. If we're being serious about it, we may as well dress the part by changing into something seasonal.",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1diD5oRxsf3v8VxPcdVm8B4ElDGOYO3Y8/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "And given this particular holiday...it's gotta be a saint outfit!",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1L1GjFItR0wFprhEXtH3tPMSURfTdpxC-/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...What's that?",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1Ehb4gJX4UKgP4MXUVamwiLyqIr1fceon/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "This...might be a little too sexy for you. Let's go with something cuter...but then are we getting too contrived? How about we try this top to give the outfit a little more maturity...",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1dkGU_iCPJE2i56FIIYIbFh-Xv36q1a4-/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Not like it matters.",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1em5Tm0DkVGtvpEueVw3Hx9CMCDTjd5cR/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Heehee, oh, just humor me. It's not like we get to do this every day. This should be where the fun starts.",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1MsNbjHAPQJVQqNbKnuuRpLchY7JLDkX6/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Besides, you need to have more fun with fashion in general. You NEVER put any work into your appearance.",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1TP73iZu7eq_c0ZdT4AZpNYK2ackRZjPZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "All that matters is doing my research...",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1exo1LhekO8yvHoyfIrayadh3bo6kgeSh/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Then a holiday saint outfit won't do you any harm.",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1kUMyOa7pIeS11-tvP_PGtu2afdIE5YDy/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...Yep, this is way better. Now, let's get changed.",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1Qq_idVzPa79JzU3gAzjP_q2P8I8YBSQ0/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "*sigh* Fine...",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1YvsJAvg5eif1vUTLzkn7kYkfGO4ab6nr/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "There we go! You look amazing. My eye for fashion never fails.",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1QdADROpczAnpH_6O9dgZnKcDdkTsspet/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Really? But why did you change too?",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1skxRaH4mqnoBeWkYraKey-btibNI_rQ_/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Because I also want to dress cute\u2014uh, no, it's so I can help you. I'm not sure you can pull this off on your own.",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1-fXcTHrrk3K-EyK6Hm8BRB0-k_fNeeJC/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "But...I'd be fine...alone...",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1vC4UTvn63_h3abMFhm1Cmu5B6xv7qgVQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Yes, yes. Spare me the grumbling, and let's get to work!",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1K0I261sxl8gQe8OmLWnhs-rUguSml7FP/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "We'll call this \"Operation Gift-Giver\"! Now, time to go find out what everyone wants!",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1OjDKmLQJo63yCSQaT_lPO4QqIn94jnfI/view?usp=drivesdk"
-            }
-        ],
-        "e2": [
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Now, who to start with... Oh?",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/16zR4xd-lP1QYq-i-KN3HofpdFryA-k-G/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "...Hm?",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/12TGffhpKgSMDvJZ076Imx9hYpDDbJ5fo/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Zeta! Perfect timing! Do you have a second?",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1dbUwUqoLjl6m_EjEtM9l-y99RssopLB0/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "What's up?",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/1JqnhXkI0BKvTUPvKS8ENrAvyKgUPRsYh/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "I need...to ask you something...",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1Gtbg_H1eNNLOTzRyXesprrTUMs2c8eTt/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Eta, too, huh.",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/15l32gEqKjkareI6L0Ws2zIjuXBcZkxjS/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "...So, what's the experiment this time?",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1L0avv_Df2PpYkufqWODmjtpPd0Oezei3/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(...Yeah, she's definitely got her guard up. Time for me to step in and smooth this over.)",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/1axOb1gg3TTYD-JxRbxsZpc4HszYzK2vU/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Relax, there's no experiment. Today is different. Right, Eta?",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/1Er6C3zSolQ4aAdKGiSe65tvooKYweEFo/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "If you want something...I'll get it... So tell me.",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/1GwB0LTFl4gYVp2WuF4rT4BXS7ZCllieC/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Uh...why?",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/16ITz0RF5cBfnVTiSkZdvtPyQXIHc_DaQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Um... Because I...need to do this...?",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1Uv8lYzu3AQ7YzX226y4mChGA9oS4SmC8/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Wait, don't tell me this is so scheme to sucker me in with a bribe\u2014",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1anhLxbRw-jPvEe7b3RIgmAELgqgvB5gv/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "No, no. This has nothing to do with science. No one is going to do anything to you.",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/1HG9htANjS7WOyW8_Gjgi3Gs4e3UKCb8f/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Yeah. So tell me.",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1c2bISTh27ajUzEvpTz8hnPm7rujm-j8l/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Well, I guess it won't hurt.",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1LI5iKgZwGuF4z6kHDY9ciE-in94SpLHl/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "But still...what do I want... Hmm, maybe some tasty fish?",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1YUC3mnxnPTS0eihCPbGUo7hh6g2fwzM9/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Thanks, that was very informative. Let's go, Eta!",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1VGqJAWfRW2DzUVBQBMkppGB2PAOPGdlu/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Informative how...?",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/1m2CX-UAqVwsb86JhSOO_LpTcFHek2T-C/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "A little chilly, but Mr. Sunny Sun is warm... Perfect for a nap.",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1-ci64nOGwLC7xgfgDeh2Amg9pk2mWVkt/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "There she is... Hey Delta, do you have a moment? We need to ask you something.",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1bieOeud_k8DMD4Y8CAwVRTfRUWjCdY4W/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Ask me something?",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1sowm6qd6GQvyDMzU062FP0mG2SiNKP_9/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Tell me what you want...",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1k2dVyCCWfdEza25I7gEO-yJS7Z24Tp_S/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Eep?! She's gonna pluck my tail again!",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1uV3yXh7gwsa9yDIo3pR1nNF74LNtLE__/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Pluck her tail...? Eta, what in the world have you been up to?)",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1tzetVOXzWe2qrbhF_J6UGdzK7Lg3X6T4/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "That was to study...therianthrope fur... A necessary sacrifice... But don't worry... I'm not here to pluck today...",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/1UvFpR7yaLZ-cxTHE2p9I783RxuBVAoxx/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Really...? Then why did you talk to me? I'm not gonna help with any experiments!",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1B2W_iE9idffo1raPb13Db8mAul0Wwsdd/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Calm down, this isn't an experiment. We just have a question.",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1Cj1OZymofezPLXdxYjfqZleDxRGb3o2n/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "...And it won't hurt? It's not scary?",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1R8jkcIxh5tmrv3u9aPcr7SkkUBznHQOj/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "No. Just tell me what you want...and I'll get it for you...",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/14pvm4gLWxM2S0bnpeTXAUmhJu4lRu1Yk/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Huh, you will? Okay, then meat! I want yummy meat!",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/19b08DQBrUYCdSPInio3oaHtRsyt9WAs7/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Well, I suppose that covers the Seven Shadows and the Numbers...",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/1KJao9jefxyaKDpk0JsnepPsR_m0QMs7O/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Luckily it's pretty much all candy and little stuff. A few items might take some effort...but we can start with the easy ones.",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1qLRblvJx63Ntl52W2fxKqTxWhblr24as/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Is that...really enough...?",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/1Uo5UbSRfY2mDxGaPbqzri_QRt-eb0scc/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Why the serious face?",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/1WnYim42qC1hfYxfdmPzmCJZ8vMgHEIoC/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Holiday gifts...are special.",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1rkDX2euKqMX5WI15jJ4_oIlrLj-RyGOX/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "What...?",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/1aPNZVJpaSAMO3i8gCmTMstmUxlsmwvIM/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "People want...something special on holidays. Regular items...don't work.",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1MYzLRknxfUcuuOhd-nGH3NGTs02Gv1Rr/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "What exactly do you mean by \"special\"?",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1rIAzB3ahynBdahD_jS_bY6M6jY_1Imzh/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Zeta said fish, Delta said meat... But regular fish and meat...are unacceptable.",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1joU0G1wvxoI5OgB3TVduwgguQ-vwoBX7/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "The holiday season...demands legendary quality... Anything else...will be a disappointment.",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1EUPcuEcFOEpQMfeWcW9j78dX1RyT55ZX/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Legendary quality... Are we talking like platinum salmon or Cobay beef? Shadow Wisdom says those are super hard to come by.",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1YjslNuQl_LEWsZZn45T1wvH3TGzU9kYq/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Exactly. Things of that caliber...are sure to make everyone happy.",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1Q-xRxmWpoAKm4UcLdow9Ue6HWS4_u61x/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "What's this about legendary quality?",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1fMQij0C2LmOwX8Li56J9kc7Cr5QKz1wB/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Oh, Gamma, amazing timing... Do you happen to have any legendary foods?",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1WpsJ5SC5X8SszveujRsaaoI2V7GX31AX/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "As in the two just mentioned? I'm sad to say that both are currently out of stock.",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/189OepKxkcgL6rOo76RxYNX_TQdnqp-_R/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Really? And here I thought Mitsugoshi never ran out of anything.",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1WjcgYYy5TkUogvfgg6CS2P6KziXI61VY/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "What did you expect? Platinum salmon and Cobay beef are both delicacies from appropriately rare beasts...",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/141GtGNfs5RtZUBaZgNcacL9MaaPjdmro/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Demand for them increases this time of year. We can hardly keep any on the shelves, they sell so fast. And the reserve orders for more just keep coming in.",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1iT5pnh9mfr-TBV21wxGcDegDSJ6WV_CC/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Wow, so they're that popular... I had no idea.",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1rTNb1gGIAolQYTNXdPOjto4FtV93bVqj/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Then I'll go catch some myself... That's the only option...",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1BQA7pKKfOxo18ht6PhNJ510n3lChhasR/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Are you serious?",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1sKLJ6qloW92Ojb7GmiHd5om3Qn3W_FQD/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Of course.",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1lKfwiO0i45-rMhcsp80mRGBURnIZ5VaS/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Zeta and Delta only said fish and meat, and would probably even be fine with something else.)",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1eqHii1gu5UBegcRqtcCk5x_zQzUFcfWc/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(But Eta being Eta, this is probably her way of demonstrating good faith. In which case...)",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1RxpD-EiR4r5jz59TvKdnHW-9M9tgw4ik/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Understood. I'll help with the hunt.",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/12RmdF5hzGMH2BDqjZjf_rzilzpzUzNXi/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Thanks.",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1ToRPgENeEZ49ph8W3LqCl_q2S1KjQiwF/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "And then if it comes to a fight...I can harvest your data, too... I can hardly wait...",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1jMa7PaRzKqMHn0xrpuy1iRZcQBxSwF3s/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Did you say something?",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1pT3HOyC6rf_X02YI9-yL87xcDORsaQw1/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "No.",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/1oli7Zqemaq4-i5qiEU-40jIgmoYChtJe/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Well, whatever. Now that that's settled, we'd better keep the momentum going. Let's hurry to the forest.",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1el75t7RQJ2gh4aeQlzdw8GgBp2lWAJT_/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Oh, wait. I have a question before you go... Have you seen Chi and Omega, by chance?",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1yEvPSiQWlzMa1bwcPmD4dSUn1j4hQ5Vv/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...We did. They said they had an errand...and ran off somewhere.",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/1XeF0XJDvBLtxLDdibQCSKYyW6CyaKiBL/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "An errand? But I don't recall asking them to do anything... Maybe it's for someone else.",
-                "line": 64,
-                "url": "https://drive.google.com/file/d/12GTt9RBguL2BfMPH0DV-5o4mt36-p2bb/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Thank you. I'll wait a bit longer while I finish things up here. I'm sure they'll be back soon enough.",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/1T_Hua-dhHIRONWf19NzmprljJG9Ckv3d/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Did you need them for something? Seems like everyone is short on help this time of year.",
-                "line": 66,
-                "url": "https://drive.google.com/file/d/1rdeAiw6CHzSqy7micFoSfPvD4xu3XvYd/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "But we'd better be on our way, too. Now\u2014time to hunt some monsters!",
-                "line": 67,
-                "url": "https://drive.google.com/file/d/1ilv57q1I5WYprmrq8lFGdU7dEl6u5Hoi/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Heheh, let the fun begin...",
-                "line": 68,
-                "url": "https://drive.google.com/file/d/1teUe8l5CPz8rknjO7-Cl4gK-3wopshvW/view?usp=drivesdk"
-            }
-        ],
-        "e3": [
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "*pant, gasp*...!",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/1PTZpKOpJd_t0JwBasL21XrdXg3vu9vIo/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Good work.",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/1Ui8uTh7zpLiebHKC2orwu4BT6ELaiZcD/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "J-Just how many am I supposed to catch?!",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1kqPt7qIuf8F1lY7nPQGPvsZySBKcEIyu/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "One, two, three...ten? But I think we could still use two more...",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/1-zsMzs6m5XjT6AzO59UwlsbXAIt6n6Fj/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "No, this is enough! *pant, wheeze*...",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1pXK1kHtuArqrhgIzyxixfD_-7AM0vH5N/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Seriously... I can't believe you made me fight so many monsters on my own.",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/1e1UPr1YnztDOB9OU7Cay2IJ8XUDrO9cL/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "And no sooner do I down one than you call over more. This isn't a \"hunt one, get one free,\" so stop already!",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/14oyDzKPn67X7ZBONiZCPrrtRoizf31kA/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...\"Hunt one, get one free\"?",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/1pa1SpJ1rqmemoU00Ty3I1hnfsRLzuRvk/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "You know, like the Shadow Wisdom where you get something for free after purchase...?",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/1rSJ7qsRH4wScuDcDEjKmHV0_dMgWXQoh/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Besides all you're doing is standing there watching. It wouldn't kill you to lend a hand, you know!",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/124ZjjZVy0KkURsjL1UZdO8YC3Vu1Ikmn/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "But you can handle this much on your own...or am I wrong?",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/1eIYIqyrpzROLbs2-H6zNM0EsFgyipFzL/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Ugh... Well, yeah, of course I can. I can...but even I get tired.",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1YTtHslMemUEWVMBLZtrB-sSGg18C24Xq/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Thanks to you...we have plenty of Cobay beef. And I got my data... And I was able to test the effectiveness of my pheromone beast lures...",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1-M4xb5BSPbvRBN2Xz_8meMnncuCleNM5/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Three birds with one stone... Heheheh...",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/1GzrSvLeMd3Kw7Rhwy-fcOEeIUqVG_12R/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Data...? Wait, what are you talking about\u2014",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1_KtzicoeTFypjulqZfQog1do3hbNR6zr/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...No, I get it. I'm onto your scheme now.",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1uv3WftrxUZ6KUc0JNSXusTwVYTm6PU2u/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "You just wanted to collect my combat data while trying out your synthetic pheromones, didn't you! All that talk about Cobay beef was nothing but a lie...!",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1_aU_SIHaxpRbIoIihzz9jnsiqmjVjOjd/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "The part about me wanting to give something special for the holidays...is true. Also...",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1Sk37T0W-D1pVa6z32vbXU5CWUJEFk7ZF/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "If this research goes well...I'll let you be the first to test my pheromone perfume.",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/1xf0h1_gjUYxEUQb87RKvPR3Cf7vBS4Sc/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Well, that's a first I'm not interested in. That stuff is meant to attract monsters, right?",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/122HD9AWNfPiMcB4VlATebw8KqUq96lxK/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Yes...for now. But pheromones...are originally intended to attract the opposite sex.",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1eqPMO2exZQvt8xz6f39mt0h2lgpsT-W0/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "If I apply my research...I may be able to make perfumes that captivate someone specific...",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1OSyqyRMooJWgxZqPRsisdB-UQlAwCUGN/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Wha...?!",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/13iw2bTV1mRRIqIEjVx_jTiKKo3FLZJ0E/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Is she saying what I think she is...?! That I might be able to seduce Master Shadow?!)",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1joNECg2vaSMTBTRKbBZ4KnYenEO0tj7h/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "So...will you help?",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1VI2DrrJhrYamUKmhmpF-3F90emhHvhLK/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Heehee, if that's the case, then Epsilon is on the job! I'll help you every step of the way!",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/1BQAyCiAtlwW3fs0Q-9sPZUO634lLJyyq/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Okay, then next I want to test it on...platinum salmon.",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1RZ5nZSMvQNgMj6fXy96CG9iN0AwOGHe3/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "By all means! Just leave it to me!",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1gQP2PV-g7_hy_aXi6bznZrPE9X_SuH-0/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "No way...! Is this...platinum salmon?!",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/19fSjlbrJRh3mD5mBCCtE44-kBECrCOdD/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Wow! Huge chunks of meat! Look at all that yummy fat!",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1tnbNiL0Zpzf9tFTUaDATXI5I58a3m9Je/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "We got what both of you wanted...",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/14Ji_I1EEhjQTBg5aTXhBEVXJKpr-A5MH/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Thanks. But I really wasn't expecting platinum salmon... All I asked for was some tasty fish.",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/1KGZQ90qyhXh-H3u8N9hZVDN2PRAaY4bJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "I'm surprised too! Never thought you'd give me this much tasty-looking meat!",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1ctCbMZrmYnTg0E1GIBPdWts3LV51Ya_2/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "It was Eta's idea. She said that if you're going to give a gift, it needs to be special.",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/1RjleJpjsYBLivvE_LUpEBWdu3MEQAkcy/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Do you like it?",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/1EtyHjQH76OwPmI22yY5gzRsPaF9IisyO/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Of course I do. I'm happy. Really.",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1ZZPnN_wRF4xcNmbntXiMRjkgWYBnMcMW/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "I wanna eat this big meat now! Thanks, Eta!",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/1mVQLP7E402yDfnorKsL4_zZ-KH69en4v/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Good.",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/15ZLsTfitvTAChCUZKJOuCtcVzmv7EYsY/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Um...hey.",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1JZszyHS0F5VSyoWR-umsDuwRQnl5Nm-s/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Hm?",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1jFHeu4zvISvSspDcKYH59AmfWC38xPtL/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "I'm...sorry. For giving you the slip before you even have the chance to talk lately...",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1Km5F9_xwiQIfKlzTqiH866qdCeTBakSA/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "...Me, too. Sorry for always running away.",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1J0rj6Ohn-_ywsQAx6VGncFToWUPQoTDs/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...I wasn't expecting apologies.",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/16fzePD2WNVXAtLfHyKr1_TEyNxJiyKYA/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Well, I just felt it wasn't very good of me to act that way.",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1SYe5Jyma_9MfG4K7NGSwGmES6nhYvm6G/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "But you do need to ease up on the experimenting. We should hang out together sometimes instead of you staying cooped up in your lab.",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1C7mqSJsfjiMfnka7K9NTSMtHxpWuE0B1/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Together...?",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/10oOTtBJQvWWkGdbDriyFH6k7BUTa-G6G/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Yeah. It'll make for a good change of pace.",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1tAOHbm8t4LAzo_wwDoIpSthmpT15CUS3/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "Me too! I wanna hang out too!",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1bEFrqZ_2iL_LKlJAu3UaezN0tkuu-3NN/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "What an excellent idea. If we leave you to your own devices, we'd hardly ever see your face.",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/17YMoAUX0r4QjdGzD-HndzhVEd0Ox9nwr/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "But I don't know...what we'd do.",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1iQTORkD2vFtQGC-5WXxsV2-mvnljkuvF/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Then for starters...let's eat this platinum salmon together.",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/16VkzHB1f6nixVW1iX6RUcEetaOwBs8Zc/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Are you sure...?",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1m-5dLEzoBE1XMbnjzl0wiRe_43tG7M13/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "It's not like we don't have plenty of it. Besides, foods like this taste better when shared with others than they do alone.",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1VhYhY2kx7JBjsHxt1SCHW3dB2hOf4JCF/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "I wanna eat with everyone, too! It'll be more yummy that way!",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1GrlTM13-NTZhMIdyGijmpkr-HdEZlUah/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Thank you.",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1rWTqY_u20QSWmPz7KP4LPZ9gjNCR6YuG/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Sure. I'll hit you up with an invite soon.",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1WjX9VfXk6EcAAMRfbDV7C5GmW_5iDdFP/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "It's gonna be tons of fun!",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1zerUy81Eq4aJ87jAexYQuotD7nwcW_XY/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Heehee, that went well, huh?",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1-MHwFTIoX-DbeVtaPMlZYajyoHX_4m0S/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...I'll make sure the next time does, too.",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/11tjuAfaG3n1-YgWuKBG03TDMukz5xCFM/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Seems that my little plan to bridge the gap between Eta and the others with presents was the right call.)",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/15YlHJxqGul2zolgsv6oTQpvomBkqXOTP/view?usp=drivesdk"
-            }
-        ],
-        "e4": [
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Next is a present for Lady Alpha. I'm not sure what to get, though...",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/1LLWEXTwaNFsyMEzDIbwbqphuHQrHKOab/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Yeah... She said that she's \"fine with anything as long as it comes from the heart.\"",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/1CSdXKIA-TkF9E9oJld3unnSmDSawUpP4/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "All the more reason we can't just give her some random gift.",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1RVodyoCNEvyhhaIPEvpnFcaB6uKFIKgX/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(And...Eta being Eta, there's no guarantee she won't use the gift as a pretext for some weird experiment.)",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/1gBXXfhF9HFZOhd3mJR03T5LaGklKMqHF/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(I gotta be ready to stop her if she does!)",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1F9nVJdMUqFt83x56NS0Kq3no8mvOuc82/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Something that would make Lady Alpha happy... Something she would like... Hmm... I don't know...",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/1mc-bsxbCRXVqOq7I-vy3_sspDpVMQfVD/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...Huh.",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1zGnW5OUUGy5_hBKuEaNc3JcaKgfZbcWL/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Honestly, I didn't think you'd give it so much serious thought.",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/1xcT9TbQ4S-r2TlhJQT9E_ZJmaup2uFvu/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...I didn't either.",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/1gimW7ojlpGAjUOfnQjkDxqt-PSfJMyqR/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "But seeing Zeta and Delta so happy...wasn't bad.",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/1brIDx39JsnDvpfzpsVcwDx4W-sm01B2y/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "So, I want to make Lady Alpha happy, too... Is that strange?",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/1WQMYQxy9wq_blRhA-ZosCpcPjI9Eed1C/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "No, not at all. In fact, it's a really good mindset.",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1LMAeWce5aQP_cuB7zpjOVe3oQNSwLCty/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "That's...good, I guess.",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1UuEXmnsF6eiKIPyLwMShrPfGMEEX9gZG/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "What do you think, Epsilon? What can I give Lady Alpha to make her happy...?",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/1BFr3YebWkotPy-v6E8Ed3GMiM6TRgfXu/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Well, let's see...",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1vFP-3pWmueO5_tpYU-5HjH3h28x-uoAM/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "How about we look at this from another angle? As in, give Lady Alpha something to help her loosen up...that eases her fatigue.",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1SKcta8IBc7zzwOblLMPhv4PjjtyVWRyW/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Her duties as leader of the Seven Shadows mean she's always busy, right? So, we want to give her a bit of respite.",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/14qG99--_SIJl4MahCygaqNBUvekAiHnU/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Loosen up... Ease fatigue... So...relaxation items?",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1l_Ou-_ANevu4Qn4CGP779Du46mQlUrtX/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Yes, exactly. Like what about some bodycare products that she can use during bath time?",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/1vB-KJkZLPiao0no0oLzv2tsZyQ_iQ2rq/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Maybe... Bath salts with stress-relieving effects?",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1jQp3nkYHLSnFbjhD65_An2mJOQEpREO7/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Nice idea. I think she'd definitely like that!",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/145f1QgZkZfAPYRJcGjbyM5hLAxq0FSna/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Then...I'll make some immediately. And you're going to help.",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1ErFz_EM-PVjblP_hR-jUZEpQdxJyHWNB/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Okay, Eta. I finished mincing these herbs. Can't say much for the smell, though... Are you really going to use these?",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1K1ojk2v2O7T0o2bpTU5JB19WiMGy2GEK/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "The odor is not ideal...but they ease fatigue. We'll fix the fragrance later...so it's not an issue. Now it's time to add the rock salt...for a detox effect.",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1bpTaFMWPwDtGZVXzdWGzhyUYvcH-MyAd/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(...She isn't playing around here. I bet she's going to cook up something good\u2014)",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1ISbSDwKj7tk2DeSXiuIZzOA-B-KbB0xd/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "And while we're at it...let's try some lemon...",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/19TAsvx9hv0lAHFhWMcqUFUmR5CXrIRon/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Wait. Did she just add lemon for no real reason?)",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1qURmIfUVc4EB_dQbaFeTvR0rH1jsWzxb/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Heheheh... I want her to try this as soon as it's finished...! I'm so excited...!",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1b_elqVOLUvGEP3HFLnCesake2sRhxojd/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Well? I rubbed different medicines on your left and right arms. Can you feel the effects?",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1pMWrp5x1Gu_lTXfbSS4WDgBNg1_zlMb0/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Yes, I can. The skin where you put it on my right arm is visibly improved...while my left arm feels warm and refreshed.",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1SI19LT1TlUhZ_eXg-62N9D6vQhF6maJD/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "The right arm...is a solution that makes skin smoother. The left...supplements magic energy and recovers fatigue.",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/1_990asgJ5iCnGGN1nvzrW3YQT47gBic5/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "The experiment...was a big success... Yay me.",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/1eI-uktJBeiWd9OaqNfi09NLK-j4TDom1/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...Yeah. They definitely work. The only thing is\u2014",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1kIP6ppYZbMf1BoV7fZeHbmh3o5goWQnv/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "My right arm is going numb...and my left arm is glowing!",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/1PT16LHu9368VEXf1vvuANblXkvqQGEuo/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "So, it's a failure...?",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/1UmokDzbgbAl47iUk9vU4GAVqMN2FzT5f/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Explain to me exactly why it wouldn't be a failure!",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1XjwREpn_RP9chfNY9vMHujdTUDG__Xjc/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...They make your skin smoother and relieve fatigue, but have some...no, a fair amount of side effects... It's just a byproduct of prioritizing efficiency.",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/16aTko4qkdLWRXxfs-nFoPokxmx_yLWug/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Well, there's no denying that your concoctions work. The skin on my right arm is smooth as silk, and my left arm feels light as a feather.",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1HngaPw-ABrObnBp9wWBG7XABgGTl-7zz/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "So...a huge success after all.",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/19k3aJW8BQPjylLf2r0y5kaXHHVWq4rhx/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I just have to wonder if Lady Alpha will actually like these. I mean, once she takes a bath, she's either going to lose all feeling in her body, or be shining bright as a torch!",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1iRc6ggfAX9WFfYo2BnQaGHAtMbDG-bzu/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Is that a problem?",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/16Xa8rdgGkTSI0eeos_FSpx8QrmcUtz_1/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Yes, it is. Any way you look at it.",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1slIZlBxmckmYSz1YUPStYP0u5xFMnMfp/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Hmm...",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1Jz-JY-rKVNM_93Y_D2_LNC4-pI6cH8Rz/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Then what if I made bath salts with moderate fatigue relief and skin softening properties...but no side effects...?",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1dttU86fFoLI5DVOsRj_P6MXIpCXq3uAi/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "That'd be good. At least in my opinion.",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1tA4Q_xc9hy680EDA7TrYADGHVrstZeZg/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Heehee... And so, you made two kinds of bath salts. How very like you, Eta.",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1JRgzts1qHHiYvKqZqVYWjsGvOzU7uLFl/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Only because Epsilon said no side effects.",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1XTrlMl5vR_x8paYYim8O5vdmmnJNpKj3/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "But...the first version I made was more effective. So there may be times when you want to use it instead...",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1ziaKij1bgR6Cy0vx_6wJuxf7FZhJiraQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "I see. But\u2014",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1-iblZ-DhA1XfY3Iou6MOlQpjsfUtALzd/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "I would be even happier if next time, you created a bath salt that made my skin very soft and got rid of fatigue...and was also completely free of side effects.",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1El2L_nMgusbD6_O3Zw4jeENFmByCkjCR/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Understood. I'll make something better next time.",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/1pPx4NeMk5J_RPjnNQ_mPRYgd1tHwMAVz/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "I'm sure you will. And thank you, too, Epsilon.",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/19xonT4dAHx37U2U_EL-Eznop4-L_DYTJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Oh, all I did was help. But I'm glad you like it all the same. Isn't that right, Eta?",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1STSgcCud4PDUIVAJd2zcOpJfqN0hWLjn/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Yeah. It...feels nice.",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1UIxvR0Opp6-enTznYqrESH661qhX-4Ej/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "So, we've given presents to Zeta, Delta, and now Lady Alpha...so I suppose Beta is next.",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/18ntmtiO7wxE_7W2zi0UpjZ-fceX0BDVH/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "I know what Beta wants... A photograph of Master Shadow. So...let's go take one.",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/1SKB-y4Ty9jcpF-Nt7YPmV0od9zWywAJy/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Right, I know. I know, but...",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1sMZJ_eavOISnH0g9B2I75kNrpeEaOWOh/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Why does it have to be a photo of Master Shadow? I can't even think of what he'd say...)",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1VaEdxiwXcl92X2LGcuv8L1E-tFaoi_pI/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(And it's all the worse that we'll be doing it for that miserable airhead...!)",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1psHP0QARr9DkeQR1GBxS6YapPpWCN-zl/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...You don't want to? Then I'll do it by myself\u2014",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/10d5Yxdo1V9ZGMcWjR4E9n44GlA72P_Mu/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "W-Wait!",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1sSUYOy1J6gZjiqnDhkkUunXgFXc1dRhI/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I-I'll go, I'll go. This is all part of helping you, after all.",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1iN9H1BM7IzborMdEww-e4nJS55QSciSg/view?usp=drivesdk"
-            }
-        ],
-        "e5": [
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...And that's why we're doing this holiday gift plan...",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/15CbYVfYQJPZk9p1Y65mtPg--kb8UmoI3/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Gotcha. That explains your outfits. Sounds like a pretty good plan to me.",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/10FITLFHtXP6f9tQmzyFeije4wlRdCTr5/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(People tend to look at doing things for appearance as \"jumping on the bandwagon,\" but what really counts is getting out there on the starting line at all. I applaud your spirit, girls!)",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1CiXzuUT7Sydfrtn_ODh_bVA6v-XAxPvt/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Your praise is most unexpected, my lord! I am overcome with emotion!",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/18VaM6_FaMgo9NJQwM6t6PT15sB627Py1/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(There goes Epsilon and her dramatics. But I know she's just leaning into her role.)",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1ClOc5TUm1KHNkNrLV9CYIDNgIC2w3DJJ/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "So, what brings you here to me?",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/1HLHq0c40NyOgjGfkRtHFh6GsJSSGFmGn/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Truth be told, we were hoping to take a few photographs of you, my lord.",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/19y5AgWeTym5bXkNPF3Vww37MtOUA4Yyk/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Huh? Pictures of me? Why?",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/1LQlb4tiu2ma2OVn_c2H_mv8bonifJpt0/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Well...Beta says she just has to have one...",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/1u5V1TIDqT6tqnpQDdZgkXuXIbpMEpfoB/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Are you're sure you heard her right? There's gotta be a better present than that. Nobody'd want a photo of me.",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/1BliOe9Ufowcr9nbtLrlUPWPLm8Y3L3NP/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I-I would! I'd be delighted to have one! I'd keep it shut away so no one else could see it, and treasure it for the rest of my life! Don't you agree, Eta?",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/1F3jyt4MbrW_HiPK2DIpPle0pYtCV8XHk/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Maybe...if it was a picture of his insides.",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1TANDC_72ZSozExYex6kAhLGYOWNpAOG5/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(Line an anatomy photo?! Freaky!)",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1MTeUHvUOB9WC_74NmuvsYvF-IZxG7Jy3/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Anyway, a photo of me isn't worth anything. And I find having my picture taken kinda embarrassing.",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/1m6lTslctCKTqO_1ybaVhyStvm3JkUbfS/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Then what if you think of it as a present to me? Please let me take your picture!",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1fAvrcJ6zZHrRXkEQbRmBmgqFC2kjM9rx/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Hmm, well, since you put it that way... I'll let you have your photos...if you can take them.",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1qhVL1iAF1lJBB_Art3-sQj3c19QEo9ku/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Really?!",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/15KiH4KPzmXvku3O_hAcGV5OmkHnYKQAU/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Really. Now, let's get started.",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1mS2SHPtzbhovpFpbR92ufR6tOeNgJ0B8/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Ack, please wait...! Um, let me get the Rolapoid\u2014",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/1vJq64bHdFddHqvywvWrAYBZbe1eCakAR/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Use this... A new and improved Rolapoid. It has ultra high image quality and corrects camera shake...",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1W1SLByIzPsxB2PilGnJnzM5SrfltIZN0/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Amazing, Eta! You really are prepared for everything!",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1LghthPe9mUckwQXns6iIKV0Ed3XKTbr-/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Now, here goes... Okay, say \"cheese\"!",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/1LRirgdZ7T2oTT-Ba2KrgbgBVxOfOwnD0/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...Huh? He's gone! But I'm sure I took the photo right\u2014",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1ONnSHOVPrKLIwk-9V2g3fI3RI-zlHeoy/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Aren't you going to take a photo of me?",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1J6Y6JSR_NRjLjLqbNWUZKiBsQ2VgKt2I/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "My lord?! When did you get behind me...",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1ErQFPvQqLqoc2YPIVY3wOD2QqBVRPm6P/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I-I'll try again! Okay...say \"cheese\"!",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/1gsGjAV1IQCmrQY_O3Oi22MMheigk40Q2/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...He disappeared again.",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1_ZebN3rYfPf4pHgRoo7FwSXFjwHLwdyt/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Hey, over here.",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1R3QCKln2vsUl5fpiE6Z8eeLDcy8JNBlt/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Now he's all the way over there...!",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1oxW2xDHqaq_86YTRH1-SHlDKlnTdXaDU/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...Aha, I think I understand what Master Shadow actually meant now...",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1rNMFI56KiLYn9vPnRbwR0RilkD7QfngA/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...What he actually meant?",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/12ftg6YGQM54jxLU0HV6u7-EsADh9Pg7b/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Master Shadow said the photos are ours IF we can take them.",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/1vSmYimi0pwCb69fhA-8rYeKay5aUANRo/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "In other words, our lord doesn't intend to let himself be photographed so easily. We were too naive.",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1BDy3w9HxsdAeW1si95IiVr-i8YHJ-z50/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "It'll be good training. Think of it like killing two birds with one stone.",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/1PptslTHOHL86N5TN6GE9JdshELBo9jHp/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "But isn't this too difficult...?",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/1PTdG468Mz8AW0QzoutzRv5YkQcmnejzW/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Hey, sometimes you gotta try new things. So, what'll it be? You giving up?",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1dlhqHxTTI7tY4EPOD-Yg2FD7Aysofl2U/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "No! We will never give up!",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/1EK4bnrtz2ekvUCHHxDOhLTBnXqa0iOn3/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...But may we have a little time to strategize?",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/10mdfUO9MgTgAKWyKkg7FQ1KLbcbUpFT4/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Sure, be my guest.",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1qp0nY3Ah_OWv33L0hUq21JxmAFC1FjL9/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "We need to work together here, Eta. I'll act like I'm readying the camera to take a shot while you figure out where Master Shadow is going to reappear after he vanishes.",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1Zp8Iy33g1LVafYmUzz5nCse50xq6jZA0/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...And then you'll snap the photo when he reappears?",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1P1BhLzFXAaH_KtoDHkv2MaW5kuwV11rj/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Yes. And then...*whisper, whisper*",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1jzak4MyNOzvYQSH5osG57_zT33uYZLGS/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Ahh, I see. Understood...!",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1qHb0ArGPO4vQg5max66p4rH7GQ-WttHV/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Finished with your little meeting yet? Let's get back to the game.",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1j5ObNF4GIigS5andKPaaUn2KAE3F8QSs/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Okay, here goes! Say \"cheese\"!",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1JJB4X0PCOKxmsQpkSnuBysD6EoHPubqn/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Epsilon. Six o'clock.",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1wcTTrVoxpVQev1Y2p7E6_TONvUD8XvHK/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Here!",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1_d3hlpY_tdR_gDqMkIbuVN0NB5TUN8Bd/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Whoa, good looking out. But\u2014",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1F-SGxSw3Gh-CVLl5glZhR9Bi60nX_ppM/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Grr... He's so fast! Keep on him, Eta! Where's he going next?!",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1YxVYLG-AQO9dTGM2_-EpMs6ny-ITe_2k/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Now he's headed to eleven o'clock.",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1frkwASQCuHjhsUInAxBVBKl0Adirq6Nk/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "There!",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/12GOQejVFeYMcNTXqsT0KTXSBUHCrOuJe/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Too bad. That was just an afterimage.",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1567kU2AR-RR2hsU1sCJQM32TRmu3V-xZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "This isn't working. I can't even catch his shadow! But...I'm not through yet!",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1HDYP0li6ykxKUoJCBsy8fNklP3szZhQ2/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "*pant, pant*... It's just no use... All those shots, and I haven't managed to get even a bit of him in frame...",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1_mW4InzTysJblBNBCFTJDZRUliX-C9Bb/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...We're almost out of film. This may be a lost cause...",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1zIKt1XX3soaPpA3FHTKT3T6P6XAJVg4N/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Yeah, though I do feel bad for Beta... We were fools to think we could ever take a photo of Master Shadow.",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/16VaqN0fs77c5WV-7Cc63UDDMzh6VSqj9/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Oh, are you throwing in the towel?",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1D1yFC3scBXabxDw4jN67OZxyu9zBIxn-/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Yes... I apologize for the unreasonable request. Let's go, Eta.",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1pwUTNV-Gyrm1AXyHt_VqW9qEY1Pt8X3a/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Okay...",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1zwlyAMqeP7mfEVKeWQMF9iE8HmZhrw-5/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "...They actually left.",
-                "line": 60,
-                "url": "https://drive.google.com/file/d/11RP6MT-diarwv6YmU7_IsDWd-atyt229/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(They tried so hard, though... But if they say they're giving up, then so be it.)",
-                "line": 61,
-                "url": "https://drive.google.com/file/d/1tHNKs96T63M_eWu_PtljpHaE3KpflikB/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...NOW!!!",
-                "line": 62,
-                "url": "https://drive.google.com/file/d/1bK82FcswA14pa5cpz9ujghHoS5ROT8qv/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Say \"cheese\"...",
-                "line": 63,
-                "url": "https://drive.google.com/file/d/1y7lQjXc9tURIdsCu7Yb8j4aBoh_ZuseC/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Huh?! Both of you...? But I saw you walk off that way...",
-                "line": 64,
-                "url": "https://drive.google.com/file/d/161SBR7o9xKRaBwX8qbM1_lm6xHfKemuO/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Heheheh... We fooled you, my lord! The magic presence you felt moving away was a fake created by me!",
-                "line": 65,
-                "url": "https://drive.google.com/file/d/17Ab7TdguHigYRv0M6mAjcm0f4muhNyMp/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "Oh...so that's how you did it. All that coming at me head-on was just to make me think you'd given up completely....",
-                "line": 66,
-                "url": "https://drive.google.com/file/d/1lQaurlh1rBWKJLxihv8ZYV3yZhRnzoP9/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "But in truth, you were placing your bets on this final deception. I see, I see. Not bad.",
-                "line": 67,
-                "url": "https://drive.google.com/file/d/1Ts-fSCvOBbjHEmClkxYn6WOmea-RItmP/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "S-So,...will you allow us to keep the photo?",
-                "line": 68,
-                "url": "https://drive.google.com/file/d/15i_5j5KRmbF2k4W443f_KF0JmU3uPWyF/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "A promise is a promise. Okay. The photo is yours.",
-                "line": 69,
-                "url": "https://drive.google.com/file/d/1QFVZV6zndPXABpNY1mOrCh3gqJNZfCPT/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Thank you very much! We did it, Eta!",
-                "line": 70,
-                "url": "https://drive.google.com/file/d/1LcPcqquw7gMUKxodtIAPca0dd4Ymvp9p/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Let's get this to Beta...",
-                "line": 71,
-                "url": "https://drive.google.com/file/d/14romHgEwjyqPmbGvZgP9VyJ73R0LzDMj/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Yes, I'm sure she'll love it! If you'll excuse us, my lord!",
-                "line": 72,
-                "url": "https://drive.google.com/file/d/1pBue_LvOaZkY1ooflZFJliVBsnocMhl6/view?usp=drivesdk"
-            },
-            {
-                "name": "Cid Kagenou",
-                "name_variant": "Cid",
-                "subtitle": "(...Good grief. They were trying so hard that I'd feel bad not letting them snap at least one shot.)",
-                "line": 73,
-                "url": "https://drive.google.com/file/d/1xYiAvyoxKC0iBam2VHItghhzItQ55020/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "I-Is this really a picture of Master Shadow...?!",
-                "line": 74,
-                "url": "https://drive.google.com/file/d/1fWxm5gIU6JK1begHdveNX-1x_i6MFhi4/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "You should be grateful. We went to a lot of trouble to get that.",
-                "line": 75,
-                "url": "https://drive.google.com/file/d/1d-Z862Rl6vVn2HmT6dRa9E31spu34bdS/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Oh my... A photo taken just for me, a Master Shadow who's mine and mine alone... *sigh* It's wonderful...",
-                "line": 76,
-                "url": "https://drive.google.com/file/d/1C5wS-YFEJ7hSVANUmJA90l4MTMbsNSN4/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...J-Just so you know, I'm the one who took it! ME!",
-                "line": 77,
-                "url": "https://drive.google.com/file/d/1es1O0g3wC3xImmfRjg6FjYMDolrqt6lF/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Okay, and?",
-                "line": 78,
-                "url": "https://drive.google.com/file/d/1CoNlAHHMD_G9Wdo5JN8KsZtq8NuxfM21/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "That means it was ME he was looking at when I took the photo! Those eyes were locked on ME!",
-                "line": 79,
-                "url": "https://drive.google.com/file/d/1DNVThKi1d99ltfD3x-VJiu5398XW1QVK/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Blah, blah, blah! I can't hear you!",
-                "line": 80,
-                "url": "https://drive.google.com/file/d/1U3VWk5uWx9G8ntRambcape6ntXoggRJH/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Hey! Listen when I'm talking to you!",
-                "line": 81,
-                "url": "https://drive.google.com/file/d/18KEoAY4g0ChXLeEE8kS2cxnPC88UhdYq/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Heheh... I must make note of this glorious occasion in the Chronicles of Master Shadow right away...",
-                "line": 82,
-                "url": "https://drive.google.com/file/d/1RW4_Oi8kBaQqdQWwYRtfJ6PtJ7m7FdSV/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Don't you dare ignore me!",
-                "line": 83,
-                "url": "https://drive.google.com/file/d/1TS2lyhvzHSoMq257U1ea3ij9NEVAesdl/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "All this over a simple picture...",
-                "line": 84,
-                "url": "https://drive.google.com/file/d/1HzfNLndGkBVdvOjhVXRnE9DTI3MOSXTN/view?usp=drivesdk"
-            }
-        ],
-        "e6": [
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...Whew. We've given gifts to pretty much all the Numbers to thank them for their help.",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/17EYxl_c7LEGvc2ssbSwMMlOt19-L5bZE/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "I'm exhausted... This might be the first time I've talked to this many people in a day...",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/1Z_nLnfkPbcbFyHpgAlVoRxTvFzpq7n1y/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "But it doesn't feel bad, right? We made everyone so happy with just some sweets and little knickknacks.",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1JUF6RlThic2t1Ku1KGUGyuQ3P6Cadl6V/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "You...may be right.",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/10EtdNbZ5HOnlEe6_p1Cn_Yg46TQvc3Ex/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "Nicely done, you two. Why not have a tea break?",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1JuuT4I7ZfGMNghRF_G7r0RO-wNzcMWvb/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Oh, Beta. Did you brew some for us? How kind of you.",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/1IBbHKIoGSJ9ReE6Q9QMhwrJRVtHM4F-0/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "I did, as thanks for the photo. And to celebrate Eta getting out of her lab for once.",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1kJqVJuzUaqsRDRPHDRW8llW795Y_samh/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "What...?",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/11VS7SLI5tnZf0hyoszCS3aiz7NNEo0sF/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "...Oh, you're here too, Beta? I had something to ask these two... It seems my timing was perfect.",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/1ZbJvTCmpOpkW1Tkf6H2FfwTk-iv8Xohl/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Now even Lady Alpha is here...",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/1IC04kCBMG0dGAYpceIJj57KgzobUtlLE/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Do you mind if I join you? I brought some sweets by as a gift.",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/140BaEF0X6hYlhbJE80-T2At746X0PTXn/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Th-These are cookies from that famous confectionary in the capital! Not even Mitsugoshi could get ahold of these beauties!",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/12kojnrcWGdEZ5vv__O4WWDt3SQhfNG3u/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "I've heard of them before, too. Art in cookie form, all baked by one elderly shop owner.",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1Lwo9xb5Kxn4QmImYOu41h72RFNQD2QnN/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Why?",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/1ziQSTLIH9Z-_N5CVyoM543c9AKsOyWQ9/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Oh, just as a little thank-you. Besides...sweets are best enjoyed in the company of others.",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1bGChNXTI2clshaGnSsxS-vkkGxMuI8-X/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Hmm... Everything...has been strange today.",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1hl0QTce--9COk5uWMF089hSP51b7bgMV/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Everyone seemed to be busy lately...and would run off whenever I tried to talk to them...",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1aKsd7_zsb0dXDk5ckG-sNa05Ce0hx5e4/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "But today...everyone is coming to talk to me...",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1azZEA224MOOW25l9Zh8Qcq332g6JaG1Q/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Indeed. But...can you think of any reason why this might be?",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/1RK5m0grrV7J4aAd_PcilI-4I_Ucn7kKQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...I used to not care about anything...so long as I could research whatever I wanted...",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1JPgAuEZoyXHdCJMWWuzdIn9AoqcRLHHA/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "But seeing everyone so happy...and thinking of me...is not a bad thing. It...feels kind of nice.",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1-EGEVrnvtBvmALqiX0ll6Kc1946PqK_b/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Heehee... You've made a very good discovery, then.",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/16nIrsrk8gmxHY-GbWqg72LotzR-_Zuxv/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "I hope this marks the beginning of you getting closer to everyone, Eta.",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/12xzSSxpj6GYO_4_1BJRlk9hXon0E2u_C/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "...My, my. Everyone here together. Are you having a tea party?",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1Iv3p4kAkb4pFy_qi9jo3D0F3Al0ZTNbv/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Perfect timing, Gamma. Won't you join us? I have some excellent cookies.",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1Z9gqbmxkC2q4HcXTVDZ9tOjkSmmjz8l_/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "What?! These...are from that stubborn mule of a shopkeeper who never says anything but \"No\"!",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/1mKrKWxkz8MyLb7ARmWTX-s1KpSoO1vMk/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "L-Lady Alpha! Did you bring these to motivate me to negotiate harder?!",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1dgdeL3nw1P4klFtz91cn3l4jmrVTd8v4/view?usp=drivesdk"
-            },
-            {
-                "name": "Alpha",
-                "name_variant": "Alpha",
-                "subtitle": "Heehee, no. They're a reward for Eta.",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1nj9AUVRp9OjoNfTDFF_GmxCRkZ-IkX3U/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "...Which means?",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1UFDqA64YixeBecif9TeUYBIZFCMxFKcm/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Eta asked everyone what they wanted and then got presents for them.",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1Xibjxr3nq7Vc1yM9MCgbDWO9HOamL2-7/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Then Lady Alpha and Beta...invited us to have tea.",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/1BfWbQOE2o30I0fSEKrZQoBLXJyyrxsko/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Ah, so that's what happened.",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/13KHR51Z_SXCTXQHMRNgQcsbegAwE49uv/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "By the way...I didn't have a chance to ask you yet, Gamma. Do you...want anything for the holidays?",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1DsiND3uu56cCt1QeZeodqsCI09lcldb0/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Well... I want the rights to sell these cookies!",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/1R9BV2Z9xvJJa1Tr6pqlyq0yb5KKOMkEU/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "I-I think we just got the toughest request of the day...",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/1j8RHM_lYVQmvDkn-5r-Xq8kUyq7MQ0mN/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Should I create a brainwashing serum?",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/10Ms2iKyZZukSe6LfZIFYuabb5plIxke3/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "I was merely joking. So...can I ask for something besides a physical object?",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/1MjjK_hpSFIc9ymdMULeAXLvsbcT2l0XH/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "I guess so...as long as it's something I can do...",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1-Gibz5ZAP4Ic7Lnxo3Fx-hhTP1LhDOpI/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Excellent! Then will you be my training partners?",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1AusvIT1gWCCN6P2W2C9FKv8HMMx0Rxiw/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "I normally ask Chi and Omega...but for some reason I can't find them today.",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1hTcsY53GUfMAULYcUxInrd-5dkRolUqB/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "O-Oh, I see...",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/15toaNrLYQsu3F-DJGY1gplEo5xKC_B-D/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(So those two really were in a hurry...a hurry to get away from Gamma.)",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1MAkkeGu9QcoWxufzqfIn63aILxdsSV5G/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "All right. If we become your training partners, that should count as a gift for three people.",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1UYLDU7AK6daF8gXq1W3rNin2vC3iLMHn/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Why three people...?",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/1hcnM0pjdhfQXqztI5EAZ-h4X8sY05C9W/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "I don't know either...",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1gtphSY96uGWlEDJMNc2EXrX8a0p14iMq/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "At any rate, I'll be eternally grateful if you accept!",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1_3VZz1wsDJ63MjMi7ZDfLyuAgU7BJNzf/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Heheheh... My mighty blade yearns for action! Training or no, it burns all the same!",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1JNa-5MkfR_5AoDqZCb9qeqOJcM2idPkS/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "This will be annoying...but I have to do it. Since it's a holiday gift...",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1GpI8ngNxs_kklqKmk144hPYiCQ3HzOBX/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Right, then let's head outside. We'll train with you until you've had your fill!",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/12jbusd2-O-Rt3ge1fb0mp56Zavkve38h/view?usp=drivesdk"
-            }
-        ],
-        "e7": [
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "...Okay. That seems like enough for today!",
-                "line": 1,
-                "url": "https://drive.google.com/file/d/1JCzextsnBL88c0pRFSR8O6i0Sg553lzb/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Whew... So? Are you satisfied.",
-                "line": 2,
-                "url": "https://drive.google.com/file/d/1_wMS7gOnTAY6tTG7gUvoG-A48oNDhHeU/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "Yes, that was a productive training session thanks to the two of you. Thank you for the wonderful gift.",
-                "line": 3,
-                "url": "https://drive.google.com/file/d/1lBNOKX6wciTq8-ikofKIeFUfPZmVww3l/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Glad to hear it...",
-                "line": 4,
-                "url": "https://drive.google.com/file/d/1TsJV4Fq0tueyq4Lawf6rb77lf_fd05ns/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "This isn't me returning the favor...but I'll speak with Lady Alpha about increasing your research budget.",
-                "line": 5,
-                "url": "https://drive.google.com/file/d/1Zp5JMJ-mSrzX1iryC6JGJEU8MbX1xU_K/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "What...?! But you're always such a miser about it...! Are you sure...?",
-                "line": 6,
-                "url": "https://drive.google.com/file/d/1cwBeYnqf4vt4v-LhzW_No7ZBIw3EEuR6/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "I had a feeling you would say that...",
-                "line": 7,
-                "url": "https://drive.google.com/file/d/1LdD6IwVe_GhIvy1ScnkUFKq_2CBwD17S/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "But, no matter. I'd like you to keep in mind that our funds are finite, however.",
-                "line": 8,
-                "url": "https://drive.google.com/file/d/1APivDTL84Z82nZCz14zH1cQKkEGXGb19/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "And as for you, Epsilon... Hmm. If I come across any good tea leaves, they're yours.",
-                "line": 9,
-                "url": "https://drive.google.com/file/d/1KickZ0mY_lC-TVOhNjpTFJoJ7xXZJAQO/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "That would be amazing! Thank you, Gamma!",
-                "line": 10,
-                "url": "https://drive.google.com/file/d/13YjuMDlGJMesT4WQUDJqhTVHrr3ZrYz1/view?usp=drivesdk"
-            },
-            {
-                "name": "Gamma",
-                "name_variant": "Gamma",
-                "subtitle": "I'm the one who should be thanking you. Now, I need to redo the budget sheets. But first I should glance over the relevant data...",
-                "line": 11,
-                "url": "https://drive.google.com/file/d/11OYA3S_tzYyI4bcTxBiLrkmb1TzRkdrD/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "You do know that walking while thinking too much is what makes you trip, right? Not like she heard me, though.",
-                "line": 12,
-                "url": "https://drive.google.com/file/d/1ldEiwPjNWItTRBQAAT_-o9or1GUTi1iI/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Guess the president of Mitsugoshi always has a million things to do.",
-                "line": 13,
-                "url": "https://drive.google.com/file/d/1cbkdMFxK2jIJMZyU_IFakSHccWY6BKAd/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Strange.",
-                "line": 14,
-                "url": "https://drive.google.com/file/d/1J4Mqir19C23RiX_J2D2eGPXd6hNv84Bx/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "We spent all day...doing things for others. And yet, the outcome was good for me as well...",
-                "line": 15,
-                "url": "https://drive.google.com/file/d/1gs1UqvUZYiHGF4DZkr5w6E58Ew98WN2g/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "That's because we're friends who look out for each other.",
-                "line": 16,
-                "url": "https://drive.google.com/file/d/1E-uimxHYi57m_UJpbXQHdnzoZDZdRog1/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "When someone's nice to you, it makes you want to return the favor, right? Everybody was happy about what you did for them. That's what being friends is all about.",
-                "line": 17,
-                "url": "https://drive.google.com/file/d/1t3_BHmnBPWZYkHgVwyw2C6HnxjgAuiy0/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Friends...",
-                "line": 18,
-                "url": "https://drive.google.com/file/d/1vJChSVGe2Q4gBTQ1OzHzRZJZ05Ktv-IQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...Thank you for today, Epsilon.",
-                "line": 19,
-                "url": "https://drive.google.com/file/d/1OkAjowX4eE0-KkBJsUdK17os4KFCb7LN/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Why say that now?",
-                "line": 20,
-                "url": "https://drive.google.com/file/d/1ne4GF0GZgqY4q4kJenYHCdNKnOG85Sz2/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Today was...a new experience for me. Giving presents to others...and receiving things...happy feelings...in return...",
-                "line": 21,
-                "url": "https://drive.google.com/file/d/1l1S9BuKPbsY0h0CfUBzjlt6KFvW42Swy/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "I would never have thought of either...on my own. This was a very valuable experience...and it was all your idea.",
-                "line": 22,
-                "url": "https://drive.google.com/file/d/17VrNCF3qrlByTvykp4518h8MQ8NlETGk/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Heehee, you're welcome. Hearing that makes it all worth it. \"Operation Gift-Giver\" was a success!",
-                "line": 23,
-                "url": "https://drive.google.com/file/d/1ML4cBIgfrwn-Jbcv4sZLsrOtVzJpqMS7/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "I have...one last gift to give...",
-                "line": 24,
-                "url": "https://drive.google.com/file/d/1bBisTAEBvbsXRt_j4bllR6RZrynWjJvq/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "What?! Wait, don't tell me we forgot someone...?",
-                "line": 25,
-                "url": "https://drive.google.com/file/d/1XR9mSQ1rARwXDJJ7gchWvKK67TwGj5_f/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "We did, and she's right here...",
-                "line": 26,
-                "url": "https://drive.google.com/file/d/1HKZ72Vl7dAZziYrkVvrmcF9w2fdGaNeZ/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "What...?",
-                "line": 27,
-                "url": "https://drive.google.com/file/d/1pkZp9A7n-VugfyyAKQOwC0ZDKw6I41kP/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "The last person...is you, Epsilon.",
-                "line": 28,
-                "url": "https://drive.google.com/file/d/1E2b-4cSk59wh--kdFmPTymqCK1KaWMcI/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Here... This is your gift. Take it...",
-                "line": 29,
-                "url": "https://drive.google.com/file/d/1TuO4LkZJ6tWK9eywpGmaI5VHrlx3znHe/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Really? Thanks... I never expected a surprise like this here at the very end.",
-                "line": 30,
-                "url": "https://drive.google.com/file/d/1xRELRIhLzpLEc_4fHO-t9eJuDJK2rosr/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "But wait... Is this the pheromone perfume I used when I was hunting?",
-                "line": 31,
-                "url": "https://drive.google.com/file/d/13WZXSbaCTimXhxjCc7-bwB7jjqCk4klB/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Yeah.",
-                "line": 32,
-                "url": "https://drive.google.com/file/d/1zHxqApMVUQFbXGQar7T4n1pQUzYXDSi6/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "But doesn't it attract monsters...?",
-                "line": 33,
-                "url": "https://drive.google.com/file/d/1ijNq6kul6D1EszVIHUhl18KcYV4W1eJT/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Don't worry. I've tweaked the recipe so it works on people... Now all eyes will be on you...",
-                "line": 34,
-                "url": "https://drive.google.com/file/d/1bDlhx9X3oTtyCHKwk0JmH5MkiMvOFoqp/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Really?! Master Shadow will be fixated on me?!",
-                "line": 35,
-                "url": "https://drive.google.com/file/d/1G9byO5jPD-OzX712fjVIaXu28vGfx8vN/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Heehee, thank you, Eta! I'll put this to good use. With this, I can... Heehee, heeheehee... Eeheehee!",
-                "line": 36,
-                "url": "https://drive.google.com/file/d/1eb_5MCJ-EceXc0FnU1fMJT0eUC1jJr6I/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Glad you like it...",
-                "line": 37,
-                "url": "https://drive.google.com/file/d/1Nf9HEzfLgic7ItdwDtHRYzIPpsCpcETQ/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "Make a report on how it feels to use and its efficacy afterwards. I look forward to reading it...",
-                "line": 38,
-                "url": "https://drive.google.com/file/d/1ldvql0nzxTp9Ap-OAoZbkrFVlCNY3zwG/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Uh...okay. Guess that part of you will never change.",
-                "line": 39,
-                "url": "https://drive.google.com/file/d/1uLrNH1YztHBEpyba4B6efVKV6fcxh1dY/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "But whatever. I think I'll try it right away. Now, let's see here\u2014",
-                "line": 40,
-                "url": "https://drive.google.com/file/d/1tWzUii35s7xDo1QDq7Bjt6_UmiEZ1Ojq/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Oh... This smells pretty nice. Like actually usable\u2014",
-                "line": 41,
-                "url": "https://drive.google.com/file/d/1ghrQQswa-bUyxOXX-RpHwDaeJFwEsSgH/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...Hm?",
-                "line": 42,
-                "url": "https://drive.google.com/file/d/1sEpsLXHOpcxCULjhXIGSDlPS1cB0xzU7/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "...",
-                "line": 43,
-                "url": "https://drive.google.com/file/d/1Mx6UAv8ufJccfcGTn0zPRr5eP4oy8hWr/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "...What's with the hug?",
-                "line": 44,
-                "url": "https://drive.google.com/file/d/10R-Ph3-XVu_XfAO7Ezmab4KJILfPUHEc/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "I can't say... But I...don't want to let go.",
-                "line": 45,
-                "url": "https://drive.google.com/file/d/1eOriIdJUnljssbMhQuVNaOxSCaNOxMXo/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Wh-What gives\u2014",
-                "line": 46,
-                "url": "https://drive.google.com/file/d/1eN-7nnranw26Wi5fuzG8OqiHZNeWVKMT/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "There! I knew someone smelled good!",
-                "line": 47,
-                "url": "https://drive.google.com/file/d/1PSuXU2lhGuNdC7Af4vy4-7AK1gwNPj_1/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Wait, Delta? What's gotten into you, now?!",
-                "line": 48,
-                "url": "https://drive.google.com/file/d/1DmspJFriHDTbip256pCDMbuxZJ7rQX8p/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "*sniff, sniff* Huh? Epsilon?",
-                "line": 49,
-                "url": "https://drive.google.com/file/d/1vZ0jKprXnop-l7ouGsFGXTyznDXtYxS4/view?usp=drivesdk"
-            },
-            {
-                "name": "Delta",
-                "name_variant": "Delta",
-                "subtitle": "You look cute all of the sudden! Can I hug you? Give you a big squeeze?",
-                "line": 50,
-                "url": "https://drive.google.com/file/d/1t3CLs7Y-oS7QE9XWUnlCdlQsGy6lhFLn/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Y-You already are...! Urgh... Can't breathe...!",
-                "line": 51,
-                "url": "https://drive.google.com/file/d/12UDJez9Ds2rKU5OV1T3LowdRUp_-O6nn/view?usp=drivesdk"
-            },
-            {
-                "name": "Zeta",
-                "name_variant": "Zeta",
-                "subtitle": "Make room, you stupid mutt. I want some Epsilon, too.",
-                "line": 52,
-                "url": "https://drive.google.com/file/d/1tXICrFfo9lIYZ8o2G0U1U7cKqshXRtmG/view?usp=drivesdk"
-            },
-            {
-                "name": "Beta",
-                "name_variant": "Beta",
-                "subtitle": "I-I don't understand... My head is spinning... But Epsilon seems so...dreamy...",
-                "line": 53,
-                "url": "https://drive.google.com/file/d/1ajJKcCTQ6GNXkvLWZ6UNPJNHx4bel-Fp/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Oh, no way! Zeta and Beta, too...?!",
-                "line": 54,
-                "url": "https://drive.google.com/file/d/1kTsalyFsDsTFpZtKfUl_-BqESK7tYeOj/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(What the heck?! Is it because of the pheromone perfume...?)",
-                "line": 55,
-                "url": "https://drive.google.com/file/d/1HYJLzPSGCgX_tvXqsPVJCYGI06HoIWMr/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "(Eta said she changed it so it works on people...but maybe it works on everyone, not just the opposite sex!)",
-                "line": 56,
-                "url": "https://drive.google.com/file/d/15C3-ma3K5rtpVXwYhHsZtEoasjBcjmXV/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Just calm down, everyone! Let's just take a breath and step back, okay? Okay?!",
-                "line": 57,
-                "url": "https://drive.google.com/file/d/1bFRnE4veCBgMg9J5P4ut1y5SnfIqHs-d/view?usp=drivesdk"
-            },
-            {
-                "name": "Eta",
-                "name_variant": "Eta",
-                "subtitle": "No... I'm never going to let you go...!",
-                "line": 58,
-                "url": "https://drive.google.com/file/d/1PjAn3YBWNPdCcBmStTU3_lPkPJ3wmzIt/view?usp=drivesdk"
-            },
-            {
-                "name": "Epsilon",
-                "name_variant": "Epsilon",
-                "subtitle": "Oh, come on! You invented this stuff, Eta! Do something!",
-                "line": 59,
-                "url": "https://drive.google.com/file/d/1gogwQV3-sl-aqRxa8uGSMa02EXKXsdYZ/view?usp=drivesdk"
-            }
-        ]
+    "notes": {
+        "groups": {
+            "1": "Season 1",
+            "2": "Season 2",
+            "m1": "Lost Echoes"
+        },
+        "0": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "06/10/2022",
+            "jp_image": "directors_note_an1_1.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Hi this is the Director.",
+                "I've been requested to write something..",
+                "So lets get straight to the point. I'm going to talk about the left thing.",
+                "We changed the steps from the original(LN) to make the current episode 1.",
+                "Some may think",
+                "\"Why change the important part?\"",
+                "No,its a misunderstanding.",
+                "The left(buffed minoru) was Airi-sensei's(teis comic artist) idea.",
+                "In the original(LN), Minoru's appearance was written as how it is drawn in the Anime monologue. So everyone read the LN! Still on Sale!",
+                "Anyways, you may think again.. \"its unreasonable to bring a story from the middle to the the top.\"",
+                "And you're wrong again.",
+                "We submitted a proposal(submitted by me) in the meeting where we decided how to script(compose) the whole Anime.",
+                "And episode 1 was written in that proposal like this.",
+                "「epi 1 is going to be 30mins of Chapter 146 of the WN.」",
+                "At that time(where we start to discuss how to make the anime) there were only 3 LN volumes.",
+                "Me as the one who proposed thinking I was  bold. But so are the staffs who approved my proposal.",
+                "Btw the reason why I submitted that proposal is because it makes it easier to understand what this series is all about.",
+                "It's not like we were aiming for the impact.(we wont deny aiming for it tho)",
+                "Well we cant talk about this series without his abnormality.......",
+                "But we are going to talk about that in the future.",
+                "Now if you'll excuse me here.",
+                "Enjoy the 20 episodes of TEIS",
+                "PS: I was casually talking to a executive and he asked me \"Who do you want to VA Akane?\" Cuz it was formal I answered \"Let's choose Horie-san(Kushieda from toradora, Hanekawa from Monogatari, Kouko from GoldenTime etc..)\"",
+                "And there were no vetoes. And thus an absolute popular academic idol was born. Thankful Thankful!"
+            ],
+            "ml": false,
+            "episode": "1",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1577856169351282689"
+        },
+        "1": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "13/10/2022",
+            "jp_image": "directors_note_an1_2.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Hi this is the Director.",
+                "I cant hide my emotions that the last text(directors msg) was approved to be published. So I'm going to write another one.",
+                "In the episode 2, if you reread the Original(LN) you may feel that TEIS is using a format of a Classic Isekai Fantasy.",
+                "「Reincarnated in a local known family」",
+                "「While training—」",
+                "「Sworn loyalty from a slave girl—」",
+                "「Solving a kidnapping case—」",
+                "Blah blah blah",
+                "And after that it follows,",
+                "「Academy in the Capital—」",
+                "「With the Princess—」",
+                "Yada yada",
+                "You can say \"It is a Classic Isekai Fantasy\". But it changes vibes by just adding Formula X in it. So there is still a sleeping Treasure in this \"Isekai\" genre.",
+                "———Well",
+                "If the Original(LN) was like I said. We wanted the anime to be like that too. So we made the Episode 2 a Classical Isekai episode 1.",
+                "I think what sets TEIS and the other Isekai Fantasies apart is the \"Cutted Training\" part.",
+                "We didn't just cut it cuz we didn't have the time. We decided to cut it because if the MC was like this we wanted the audience to not know(to be surprised) whats going to happen.",
+                "Well. Now we have \"a kinda classical but not that classic Isekai Fantasy episode 1\" Episode 2.",
+                "PS: When I saw the design of Olba. I heard the Voice of Rikiya Koyama(Yukichi Fukuzawa from Bunbougu Stray Dogs, Kogorou Mouri from Detective Conan, etc...).",
+                "Even tho Olba had a short screen time, thanks to Koyama-san making Olba a worthy opponent of the MC to be shredded. Olba looks strong..... no..... He is strong... He just fought the wrong guy..."
+            ],
+            "ml": false,
+            "episode": "2",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1580392890399805441"
+        },
+        "2": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "20/10/2022",
+            "jp_image": "directors_note_an1_3.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Hi this is the Director.",
+                "The set is moving from countryside to the Capital, and the MC is matured.",
+                "Looks like we are standing in the starting line of the first episode of the story... HUH",
+                "The Episode 1 is episode 1, and then the Episode 2 is actually the episode 1, and now Episode 3 is the episode 1 of the main story..... How many times do we need to repeat \"episode 1\".....",
+                "Anyways,",
+                "If you're feeling that the visuals are different from the LN..... You're correct!",
+                "It's so different.",
+                "We have plenty of reasons for that, but the main reason is the appearance.",
+                "The characters that Touzai-sensei made revolves around High-school Girls with mini skirt and High heels that is confused about human relationships, and worrying about the gap of \"fantasy and reality\".",
+                "——— I think its impossible to put such characters in a idyllic medieval set.",
+                "So we decided to make the visual settings into the Early Modern Era. The LN's fantasy-ness is focused on「Spellswords」",
+                "and that's why we made the technology that looks like the modern stuffs with a scarce connection to magical elements, just to match the settings.",
+                "Oh by the way, Season 1 Opening was drawn like that because I thought \"wait.. maybe we can make TEIS into a Modern ESP Action Anime.....\"",
+                "(There is plenty of other reasons but) that is the reason why the OP looks like that.",
+                "Anyways,",
+                "I can say showing visuals that doesn't directly affect the story is a unique part of \"Anime\"",
+                "PS: Alexia is Hanazawa-san(Ichika from Quintessential Quintuplets, Nadeko from Monogatari series, Mitsuri from Demon Slayer).",
+                "Sarcastic, Bad attitude, Bad personality. Alexia has all the traits for being a troublesome women. And yet she is elegant. Her anger is always directed to those worthless spineless people.",
+                "We had many staffs requesting for someone that is capable to VA such a high demanding character. I was thinking the same too.",
+                "And yes. A greater big shot came than I imagined",
+                "I'm thankful for the Main VA cast and the Guest VA cast.......",
+                "This series is blessed with Voice actors and actresses."
+            ],
+            "ml": false,
+            "episode": "3",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1582929607866597376"
+        },
+        "3": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "27/10/2022",
+            "jp_image": "directors_note_an1_4.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Hi this is the Director.",
+                "Alpha wearing a school uniform is just her spiting Alexia.",
+                "Alpha might not in screen but she maybe keeping an eye....",
+                "Let's talk seriously.... ",
+                "What if Alpha appeared in a dress...",
+                "What if Alpha did that bed scene in Slime body suit...",
+                "I think it would be strange...",
+                "So Alpha wearing a school uniform was the decision that most of us felt comfortable.",
+                "Alpha is casted as a main character visual-wise. But, LN readers know the fact that MC and Alpha's interaction is not that common. She is that type of strange character.",
+                "It was a precious face to face scene. She has to appeal to him at least a little bit. That is how I felt it.",
+                "The main topic is Alexia going hard mode. If this series was about 「an outsider MC sweeping to solve the problems」We still need a reason that allows the MC to sweep in.",
+                "But due to the nature of this genre. It's also difficult to create a classic \"MC getting cornered and makes a great comeback\" type of story flow.",
+                "So we needed an alternative way to do it.",
+                "We wanted the audience to feel the \"it doesn't matter which side you're in. Punch that mf bastard\" flow.",
+                "And this episode was a preparation. Its not surprising that Alexia going in Hard Mode",
+                "So! Next Episode is going to be that scene!!",
+                "It took 6takes for Yamashita-san(Shadow's VA) to pull it. Please look forward for it!!!",
+                "PS: Alpha's VA is going to be Asami Seto-san(VA of Kugisaki Nobara from JJK, Sakurajima Mai from Rascal Does Not Dream of Bunny Girl Senpai, etc.)",
+                "From numerous of tape audition entries. She survived the whole audition with some others. While other were discussing on \"what character fits their voice or whose voice fits the character\" Seto-san is the only actress to pick Alpha without changing her mind from the start till the end. Other characters were already decided, and its time to decide Alpha's VA... Seto-san's name was the only one left on Alpha's VA list. So we offered the role.",
+                "While being surrounded with bunch of jerk-offs, Alpha's calm voice is TEIS only hope of it being serious."
+            ],
+            "ml": false,
+            "episode": "4",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1585466314352574464"
+        },
+        "4": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "03/11/2022",
+            "jp_image": "directors_note_an1_5.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Thanks for your time. Director here.",
+                "Speaking of which, there are some original elements in the anime, such as guns. This is partly due to the fact that the level of technology in the work has been raised to match the visuals of the characters. This is an alternative to the so-called \"level\" and \"skill\" numerical elements.",
+                "The standard numeric element in recent Isekai works can easily measure the \"who is stronger and weaker than whom\" part.",
+                "I would have liked to be able to explain the logic behind each character's strength in text as in the original work, but the limited length of the anime and the fact that it is not available ...... made me wonder if there was some way to make the story easier to understand.",
+                "Ordinary people from Isekai use guns, just like us earthlings. So, in a cutting edge world there are superhumans who wield swords, there are monsters that mow down the superhumans, and there are great superhumans who can obliterate them.",
+                "I thought, \"If I escalate the story in steps, it will be a little easier to see...\" and that's how I made the story.",
+                "This kind of thing becomes unnecessary after the tone and manner of the work is conveyed, so you could say it's a fun thing to do in the early stages.",
+                "",
+                "The instructor is Masaya Matsukaze.",
+                "I had hoped that he would be able to bring out this big, pretentious rat with his kind and hostile voice, and I was not disappointed. In addition to that, the design of the awakened state in the original anime is also good. It is really a pity for the character to disappear after just one time!"
+            ],
+            "ml": true,
+            "episode": "5",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1588003029466259457"
+        },
+        "5": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "10/11/2022",
+            "jp_image": "directors_note_an1_6.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Thanks for your time, this is the director.",
+                "The sixth episode has been delivered. I guess you could say that this is a Nichijou (ordinary life) episode before the incident. No, you see, it's always bloody... really, so far everything has been bloody except for this episode ......",
+                "Anyway, no matter what I write, it seems to get caught up in the flow of the next episode, so I'd like to talk about the OP this time.",
+                "If you ask me with a straight face \"What is that\"? The image I had when I received the song (it was a tentative song at the time) was \"flying at high speed through a valley of buildings under a blue sky.\" I had a rule of thumb that if you keep working from this kind of first impression or initial impulse, it will come together in a good way.",
+                "But, on the contrary, it was decided that Shadow-sama was not to be filmed under a blue sky... Or, to begin with, it was the role of the \"hero\" to fight coolly in the groovy chorus part, not the job of the \"powerful person behind the scenes\"...? And then I thought, \"Well, what should I do?\" I had already used up all the ideas I had originally planned to use for the OP by the end of the first episode....",
+                "As a result, it ended up looking like that. I think that the drama of this work would work even if it were a modern xenomorphic story instead of a Isekai reincarnation story.",
+                "The red and white suit is completely different from the one in the original story, and it looks just like a sci-fi suit. I guess it fits well with school parody in that sense as well. I wonder if it is a three-dimensional object or not...",
+                "Anyway, this is how it looks this time. It will be a little different from now on. We will use this song throughout all 20 episodes, but we will continue to make changes little by little.",
+                "",
+                "Gamma is Mimori Suzuko.",
+                "As I look back at the documents from that time, I found that I had made a note of \"99 points\" in Mimori's audition. I also made a note that she had the same image I had envision in the early days of the show.",
+                "She is an intelligent and beautiful woman and is also a comedian. She is the only person who could play this role."
+            ],
+            "ml": true,
+            "episode": "6",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1590539749852205056"
+        },
+        "6": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "17/11/2022",
+            "jp_image": "directors_note_an1_7.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Thanks for your time, this is the director. We have delivered the 7th episode. The main character died, he also died in the first episode, so let's look forward to the next episode.",
+                "\"School\" and \"terrorists\" are staples of storytelling... But I wonder which one will be well received? I think it's because there are fewer school battle stories these days, and there are fewer straight-up terrorist stories coming our way. It has been a long time since Isekai stories became the mainstream in the industry these days, and perhaps the story of a large monster appearing in the forest would be more familiar? Or is that too old-fashioned?",
+                "In this work, the story is often depicted in the city, so I can't use such a standard setting very much, but I was thinking of using it to create a unique \"urban Isekai story\".",
+                "As a creator, it was fun to depict the foolishness of school boys. I'd like to continue to create scenes with Cid Hyoro-Jaga where they are just talking about stupid things as long as time permits, but, well, there's a lot to do in this work: ...... terrorists are here, and there are more characters appearing....",
+                "Anyway, it was a fun episode in that sense. But the nature of this work is like a battle with one's skills. Because of that, the staff is sometimes almost crushed by the volume of work. To everyone involved, thank you for your effort...",
+                "As for the terrorists, we'll get to that next time. This time, it's a classic fighting tournament (for the first time). I'm sure there are many readers of the original work who wanted to see this."
+            ],
+            "ml": true,
+            "episode": "7",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1593076467830759425"
+        },
+        "7": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "24/11/2022",
+            "jp_image": "directors_note_an1_8.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Thanks for your time, director here.",
+                "We have delivered episode 8. It was an episode that made me think, \"I knew it was a bad idea to have terrorists come to the academy...\". After all, the number of students in this school alone is estimated to be more than 1,000. And the teachers and instructors who instruct them, and the servants who take care of them...",
+                "By the way, I assume that the population of Baron Kagenou, the hometown of the main character, is about 1,000~1,500 people in all.",
+                "And the terrorists to detain all of them, no matter how many underhand techniques they use, would require a certain number of people. Furthermore, if we count the people outside the school and the people who are planning to attack on the side, the blistering volume of material is outrageous.",
+                "Thanks again to everyone involved for all your hard work, and next week is the big day.",
+                "",
+                "The characters that were added like new medicine are dying in a hurry.",
+                "In the midst of that, the play by Okamoto Nobuhiko, also known as Rex-kun, who showed a splendid explanation of his death was fun. There were parts I wanted to dig deeper into, such as the frustration of Glenn and Marco having to fight with a handicap, has helped me every time."
+            ],
+            "ml": true,
+            "episode": "8",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1595613173133897729"
+        },
+        "8": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "01/12/2022",
+            "jp_image": "directors_note_an1_9.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Thanks for your time. Director here.",
+                "I feel like this is a story one don't need to think much about, but let's say: If an old man who lost his strength and has been maintaining his strength by sharpening his skills, suddenly gains a strong body. Will he be able to control it immediately?",
+                "And what if he is not even aware that he is doing so, even though he is a seeker who is willing to \"Give up everything for his dreams\"? I wonder if he feels he have to see it right in front of his eyes. That is the story.",
+                "...but in the sense that he is living for his dream and neglecting his dependents... I don't think he has any right to feel anything about it. The story is just unfortunate for the girl who was involved in it.",
+                "However, although the structure of the story itself is not so different from that of Alexia's, the fact that the punchline is so polarizing is due to the character of the heroine, I suppose. She seems to come back on her own without any help, even if she sacrifices a limb or two. In this work, where the only salvation is \"an ending that barely ends in a bad end,\" it was difficult for the beautiful girl to live happily....I wonder what will happen to that girl in the future. .... To be continued .... in the Original work ...",
+                "Well from the story title, the atmosphere is different from usual, and the mood is darker this time. The series is 20 episodes, so we can say that the next episode is the second half of the series.",
+                "",
+                "Lutheran role is Ootsuka-san. He is a master of his craft, especially in expressing the despair of being an enemy so perfectly.",
+                "Sherry, who is voiced by Aizawa-san, is a girl who lives in a happy dream but is forced to face reality when that dream was suddenly shattered. Thank you for your wonderful performance."
+            ],
+            "ml": true,
+            "episode": "9",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1598149893201096704"
+        },
+        "9": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "08/12/2022",
+            "jp_image": "directors_note_an1_10.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Thank you for your time. This is the director, bringing you the 10th episode. Can you feel the difference in the mood from last week's serious atmosphere? This is normal as we are entering a new stage and a new arc.",
+                "From this time on, the story will be led by the guys who have been working behind the scenes for a while. So, the story will be lighter than before...I guess.",
+                "By the way, this time is a long-distance travel episode. I think this is one of the reasons why I proposed the use of train in the anime. For us modern people, it is difficult to measure the distance even if we are told \"X days by horse-drawn carriage\". I thought it would be easier to grasp the distance by adding the familiar element of a train.... And, if we prepare a carriage room at the back of the train, we can handle both travel and rest in one place. As for horse-drawn carriages for the travel... it was very difficult to draw horses.... I didn't know if we could do it at the time, so I couldn't take the risk.",
+                "The screen hog during the breast comparison scene... was Mori-san, who also plays the role of Gamma.",
+                "",
+                "Beta is Minase Inori. The character's popularity demands an actress who is highly sought after inside and outside the work. Currently, Minase is popular among anime fans... It is true that the person who can show Beta's character correctly is also an actress in such a position.",
+                "I thought the only one who can play the role of Beta is one who is No. 1 in the industry and is able to stay at the top in a group of elites. The amount of effort put in and the hardships of the actors off-screen are unknown to the masses. But isn't this industry not so different from that of the voice actors? If that is the case, I think the actors are portraying the characters as they should be portrayed."
+            ],
+            "ml": true,
+            "episode": "10",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1600686606960263170"
+        },
+        "10": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "15/10/2022",
+            "jp_image": "directors_note_an1_11.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Thank you for your time. This is the director. Welcome to another episode of the \"Fighting Tournament\" (2nd time) series! I've been thinking about the new characters in this series, and yes, there are a lot of unfamiliar faces, both on the high side and on the low side...? But I think they are doing the most fantasy-like thing ever, with magic circles, summons, beams, etc.!",
+                "Speaking of fantasy, there are monsters in the story. The author states, \"Slime doesn't appear anywhere near human villages\", just like wild animals living in the mountains today. I think this is an excellent setting, because you don't have to make any unnecessary assumptions when creating a story, and yet, since it exists as a setting, you can bring it out whenever you want to.",
+                "That's why I mentioned some of them in the last issue.",
+                "I'd like to do something like an otherworldly fantasy once in a while... or something like that, but I don't know...",
+                "",
+                "The role of Nelson is played by Mugihito. Well, as you can imagine, he's definitely a bad guy, but he's a charming and lovable priest, and he's oozing hardship from every corner... He's going to have a lot of trouble next week."
+            ],
+            "ml": true,
+            "episode": "11",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1603223323629985794"
+        },
+        "11": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "22/12/2022",
+            "jp_image": "directors_note_an1_12.jpg",
+            "jp_text": "",
+            "en_text": "",
+            "ml": false,
+            "episode": "12",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1605760044980736001"
+        },
+        "12": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "29/12/2022",
+            "jp_image": "directors_note_an1_13.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Hi, the director here, and that was Episode 13. Now then, let's talk about Chi(Kai) and Omega.",
+                "They are characters from the original work, and by now surely none out there remaineth who still asketh \"Who the heck are they!?\" They are characters from the original work. They are not anime-original characters. They are characters from the original work.",
+                "And when I say 'original work', I mean the 'Web Novel' as it is labeled by the general public.",
+                "As a fan of the OG, my intention is to pick up as many OG elements as possible. Oh, but of course there are also elements that we cannot pick up, nor do we intend to pick up in the future. But anyways.",
+                "Chi and Omega are WN-only characters, and I fear the opportunity for them to appear in the light novel is very far into the distance.",
+                "Explanation for the circumstances behind their appearances this episode:",
+                "Apparently Epsilon is operating separately within the Holy Sanctuary",
+                "I wanted a dedicated scene to illustrate this properly in the anime",
+                "As a bonus, we'll use this as a chance to explain the kind of members Shadow Garden, as an organization, is made of",
+                "And so we may need some conversational scenes. Should we give the mobs some lines?",
+                "It is at this point, while we were going through the script, a certain WN-stan budded in: \"Well, since we need somebody to interact with Epsilon, how about Chi and Omega?\" to which he was met with the \"The heck he's on about?\" look.",
+                "By the way, when I suggested to the author for the inclusion of these two, he couldn't help contain his bewilderment: \"Include them and do what?\"",
+                "To be fair, I would have had the same reaction if I were in their shoes.",
+                "So I pushed through with the reasoning that WN fans (a.k.a. me) will be happy to see them, and while we were at it we also commissioned Mr Touzai for their character designs...",
+                "That said, the 'original work' as defined by the general public does not have these two characters, and so they are treated as nothing more than 'flashy-looking mobs' within the anime.",
+                "Perhaps many of you would have noticed, they were never once called by their names within the show. Blonde hair is Chi(Kai), black hair is Omega.",
+                "Please do take this opportunity and give them your support."
+            ],
+            "ml": false,
+            "episode": "13",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1608310297432924160"
+        },
+        "13": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "05/01/2023",
+            "jp_image": "directors_note_an1_14.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Thank you for your time. This is the director, and we have delivered episode 14!",
+                "This is the end of the sanctuary, the end of the amount of things to be done. Well, it's impossible to make everyone wear armor if it's going to be like this, so we had to simplify the costumes and make the background art look unnatural with those outfits.",
+                "As for the tron suit... Well, originally, it was half-naked beautiful girls fighting against a half-naked old man... I was originally thinking of dressing it up like an ancient Roman swordfight, and then I came up with the gimmick of a sci-fi style sanctuary...... And then I thought, \"Well, what's the best way to do it?\" Therefore, I thought that the full-body tights type would have to be the chosen style. Well, the whole concept of the \"Diabolos cult power-up\" is \"power-up\". Because of that, Nelson thinks he has become a superior being.",
+                "And so, the story towards the end will begin in the next episode. Please stay with us.",
+                "",
+                "Nazuka Kaori is Aurora. Aurora's voice could only be described as perfect, with an aloof mischievousness and a shadowy air that gave off a sense of piled up years.",
+                "She was like a beautiful, mysterious, bloodthirsty sister.",
+                "It's a pity that her appearance is limited to this episode!",
+                "I wonder if she will ever come back?"
+            ],
+            "ml": true,
+            "episode": "14",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1610833465208934402"
+        },
+        "14": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "12/01/2023",
+            "jp_image": "directors_note_an1_15.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Thank you for your time. This is the director and we have delivered episode 15.",
+                "The OP has changed again, and the final chapter has begun, and it's a standard martial arts competition (for the third time). Why cast Midorikawa Hikaru all of a sudden? Well, because I've been a fan since I was watched \"Pa 0°7-kun\".... I am 90% serious and 10% joking.",
+                "There is the casting of the new characters around Jimina, more than for Jimina himself. It's just the nature of the genre. The new characters in the middle of the story turns against the main character if it is necessary. And I'm talking about the case where the entire street turn against him. But the creator wants the characters to be adored and cared for, even though they appear as mobs in the street at large.",
+                "My choice would be Midorikawa Hikaru (honorific title omitted) as Jimina. There are probably not many anime viewers who don't know who Midorikawa is. With the image of his voice from the many roles he has played, the many characters who point at him saying \"Small fry, small fry\" are beyond pathetic and seem more like adorable creatures.",
+                "I am trying to do something a little tricky by borrowing power outside of the screen. This is because the work itself was originally designed to enjoy the confusion of the whole situation from a remote position, rather than to enjoy the work by getting emotionally involved in someone or to engage deeply with the world."
+            ],
+            "ml": true,
+            "episode": "15",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1613370304755105792"
+        },
+        "15": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "19/01/2023",
+            "jp_image": "directors_note_an1_16.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Thanks for your time. This is the director and we have delivered episode 16. Now, it's time to talk about these two. Zeta is Asai Ayaka and Eta is Kondou Reina. The main characters! But even though the characters are mentioned in the material, there is almost no dialogue, and since they have not appeared in any existing productions, there is almost no data on them.",
+                "Shadow Garden Seven Shadows, seven mysterious and beautiful girls who follow the main character is an element that I definitely want to write and promote in terms of sales but it's not that kind of story. I checked the original work and found that it was necessary to depict all seven girls together at least once at some point. Specifically, it seems that all seven members are already together around page 64 of the first volume of the original work. And since the main story starts after break up of the seven, it would be bad if the seven didn't line up at least once.",
+                "By the way, in the anime, unlike the original, the members of the Shadow Garden hide their faces with hooded cloaks instead of masks. It's tough to increase the cost of the work where the modern anime characters, with their eyes and complex tangled bangs, have to be further hidden. And that's a big part of the reason why, there was also the decision to consider whether it might actually be necessary to hide the faces of the two who are not in the original work.. At the time, I was thinking that if I put a hood over everyone's head, I would be able to \"show them without revealing them\". Well, when I checked with the original work author, he replied, \"You can show them and let them talk,\"....No matter how hard we try to animate the characters who have not appeared in the original work, their characterization will be blurred. So we decided to treat the two characters in the anime in such a way that you may think, \"Well, they are interesting in their own way, so maybe it's possible.\"",
+                "The original has not yet appeared...the anime precedes it...the characterization...I feel like I've heard it somewhere..."
+            ],
+            "ml": true,
+            "episode": "16",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1615907035064766464"
+        },
+        "16": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "26/01/2023",
+            "jp_image": "directors_note_an1_17.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Thank you for your time. This is the director and we have delivered episode 17. As a side note, the color of \"magic power\" indicates the character's position or stance. It's like \"low,\" \"chaos,\" \"light,\" \"dark,\" or something along those lines. I have not decided what color means what attribute, so you should think about which force the characters belongs to.",
+                "So, now that we are almost at the end of the story, let's talk about the ending theme while we still can. The main beautiful girls with illustrations that have nothing to do with the main story will take turns doing character songs. I am sorry but I had to make the words bigger at the site's request. One of the reasons is that there were not so many shades of gray in the ED!",
+                "I thought it would not make anyone happy if I forced their \"appearance for appearance's sake\" into the main story. And I was not happy with the way they were presented in the main story. If that's the case, I thought we should reserve the OPED as their exclusive slot! If the ED is not connected to the main story from the beginning, it will save us from increasing our workload!",
+                "The reason that the ED theme consists of cute picture and song, is because of the intense (opposite) content. By the way, the order of the EDs is decided by Dice-san after the first episode. Considering the number of songs and the number of remaining episodes in the main story, please understand that some of the characters will not be featured...",
+                "By the way, there is a pattern in the processing of the ED images and the results shows the professionalism of the cinematographer.",
+                "",
+                "Hayami Show is Doem Ketsuhat (Perv Asshat). It's a scam, isn't it? I don't think it's funny if this handsome guy calls himself a \"doujamu\" or \"doumu\" or something like that, maybe..."
+            ],
+            "ml": true,
+            "episode": "17",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1618443719195398145"
+        },
+        "17": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "02/02/2023",
+            "jp_image": "directors_note_an1_18.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Thank you for your time. This is the director, and we have delivered the 18th episode. This is the last harmonious story, I guess.",
+                "Fushianasu-san... No, Fushianasu... The full names of the original characters, with their last names, are all decided by the original author. Nelson (I didn't know it was a last name...) and Midgar and Oriana, too.",
+                "I thought it was unbalanced that Jimina gave his full name in the meeting scene, but Annerose only gave her first name. And this is what I came up with. There is a color illustration of her in the original work and a standing picture at the end of the book. It made me think that she is definitely a new heroine...Fushianasu! I was influenced by the way the story was presented after all. I've come up with a lot of names for mob characters, but I think it's hard to beat the original...",
+                "",
+                "Annerose is Wakayama Shion. Wakayama's line \"I have completely seen through your movements\" left a lasting impression on me. Actually it was \"I have seen through your movements\" in the script. The word \"completely\" was ad-libbed by the performer, but she was not even aware of it! We did not NG the line. I thought \"Well, but it's Fushianasu, and it sounds like Fushianasu, so it's OK to adopt it\".",
+                "At this point, I thought \"Isn't the character too pathetic if you add 'completely'\"? It was a word that was supposed to be omitted from the script. But if it came from the performer's subconscious, it can't be helped. That's the kind of star you're born under, Fushianasu."
+            ],
+            "ml": true,
+            "episode": "18",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1620980326733434880"
+        },
+        "18": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "09/02/2023",
+            "jp_image": "directors_note_an1_19.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Thank you for your time. This is the director and we have delivered episode 19.",
+                "What did they do to deserve all these? Of course, they didn't. In fact, they only done what is good and needed for the masses and stopped when it was necessary.",
+                "I felt that the essense of the story is that these righteous people are not rewarded, which is the impression I had when I re-read the original work upon accepting this job. The story also follows the usual trend of where the righteous person is hurt for picking a fight with the protagonist but somehow, it didn't make me laugh a bit.",
+                "The original author wrote a really harsh story, but as you know, this is also where his (Cid) story starts. I hope you will see it through to the end and I look forward to seeing you in the next and final episode.",
+                "",
+                "Iris is played by Hikasa Youko.",
+                "While the story centered on the heroine of each chapter, when we put all 20 episodes of the anime series together as a story, we need a central character. And Iris is the one we need. Since we knew that it was going to be like this, it was only natural that the actress we should ask would be her.",
+                "Beatrix is played by Komatsu Mikako.",
+                "Although she is mentioned as the strongest in the series, there are almost no battle scenes. So we had to give the impression of strength only by the atmosphere... In this situation, Mikako Komatsu's voice was a great help.",
+                "A strong person is one who can afford to be composed, and a composed person is one who can enjoy a meal. And it really helped that the burger looked delicious!"
+            ],
+            "ml": true,
+            "episode": "19",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1623517280712761344"
+        },
+        "19": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "16/02/2023",
+            "jp_image": "directors_note_an1_20.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Delta is Fairouz Ai. I was rereading the original, and I happened to hear Delta's voice on TV. And I decided that she was to be Delta. I remember the character was carrying dumbbells...",
+                "I'm very sure that I didn't feel like asking anyone else and she is the only person I would have asked. But if there was any miscalculation, it would be that she went on to become a popular actress at a very fast pace but I'm glad she accepted the role.",
+                "There was almost no dialogue (for Delta), especially in the anime....but if only there was a continuation!!",
+                "Note: Fairouz Ai voiced Sakura Hibiki in \"Dumbbell Nan Kilo Moteru?\"",
+                "",
+                "The main character Cid is played by Yamashita Seiichiro.",
+                "I am sure that everyone who first heard the news of the anime adaptation probably had a certain person in mind when they thought of him, dressed in a black coat and performing in an exaggerated manner. We could probably guess the actor everyone had in mind.",
+                "But we decided to go with him (Yamashita). After all that is said and done, I can put it into words. I would like to summarize it vaguely as \"Because it was necessary\". I think that's a good reason, isn't it?"
+            ],
+            "ml": true,
+            "episode": "20",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1626061306309517313"
+        },
+        "20": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "22/02/2023",
+            "jp_image": "directors_note_an1_th.jpg",
+            "jp_text": "",
+            "en_text": [
+                "The Eminence in Shadow",
+                "2nd Season",
+                "Hello, this is the director.",
+                "Nice to meet you, thank you for watching \"first season\", and the broadcast of the \"second season\" was decided.",
+                "As you can see from the past tense, there are a lot of intersting stories around here, but I'll probably have a chance to talk about them elsewhere.",
+                "In any case, we are currently working hard on the production, so please wait it's short but that's all for now.",
+                "Thank you for your continued support."
+            ],
+            "ml": false,
+            "episode": "th",
+            "anime": "1",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1628369009648467968"
+        },
+        "22": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "23/02/2023",
+            "jp_image": "directors_note_an1_a.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Sherry",
+                "A conversation one day.",
+                "\"It's about Sherry\"",
+                "\"Yes.\"",
+                "\"It's just the way the story is supposed to flow.\"",
+                "\"I've checked the original work. That's why we've come up with this storyboard.\"",
+                "\"Yes\"",
+                "\"But I am not sure if it's a good idea to add this to the anime that wasn't done in the original work.\"",
+                "\"Huh? I see your point.\"",
+                "\"That's right\"",
+                "\"Yes\"",
+                "\"Aizawa-san, anything from you?\"",
+                "\"No.\"",
+                "\"Any opposition to this?\"",
+                "\"No\"",
+                "\"Are you upset about this?\"",
+                "\"No\"",
+                "\"Should I do a retake?\"",
+                "\"No\"",
+                "\"Really\"",
+                "\"Yes\"",
+                "\"And Sherry?\"",
+                "\"Yes\"",
+                "\"Yes\"",
+                "That's what happened.",
+                "Rose",
+                "Q. It's not a good time to introduce the haircut (of Rose)!",
+                "A. I think so, too.",
+                "In episode 1, Rose....666 appeared. 664 and 665 as well. But the original work had only been published up to the third volume at that time, there was no character design. Our policy was to ask Tozai-san to come up with designs for the more important characters. So naturally, we ordered designs for these girls as well. And then, he came up with the following: A rough design with their hair short. Naturally, we proceeded with the work according to the rough design.",
+                "Just as I was thinking that with this design, the hair cut (of Rose) would be performed in the final episode... I read the fourth volume of the original work and could not believe my eyes. Sad news: Rose's hair is still long in the illustration. No, no, no, no.... What should we do, forget about the first episode and stop the cutting of her hair in the last episode? I even went so far as to ask the author about it, and as a result, he said, \"Don't worry, I'll have it cut in the original story too!\". He said he had thought of a good time to do it. So, he decided to adapt it to the original work afterwards.",
+                "Conclusion. A rough design is just that, a rough design. Things happen.",
+                "Shadow",
+                "Q.They will know, right?",
+                "A. No, they won't.",
+                "I'm serious. It is not for the sake of the animation, but for the sake of the story. The change from Cid to Shadow is not only in his costume, but also in his height, build, hair length, and eyes. It's easy to understand if you look at the settings. In other words, it is not a \"disguise\" but a \"metamorphosis\" or \"transformation\".",
+                "Of course, people in that world cannot instantly change their height and weight. If there is a person with a clearly different physique in front of them, that is a different person. They will not be able to recognize them. We, who are looking at it from omniscient point of view, are able to tell by the color, the voice, and the transformation scene, but there is a difference in consciousness for the people who are seeing it in front of their eyes and those who are not. This is the reason why Shadow is not exposed. Of course, this is just an excuse I prepared for the fact that I had to leave out the mask due to the work schedule.",
+                "What about the girls? I have a feeling that if they were to wear hoods and their silhouettes were uniformly inconspicuous, they wouldn't be noticed too. If they just put on masks as in the original story, it would be obvious from their hair style.",
+                "In case you are wondering, there is no problem when Shadow Garden comes out showing their face...because there are \"no witnesses\". Like in episode 2 or 4...."
+            ],
+            "ml": true,
+            "episode": "a",
+            "anime": "1",
+            "link": "https://x.com/yaduka301/status/1628591706278084609"
+        },
+        "23": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "05/10/2023",
+            "jp_image": "directors_note_an2_1.jpg",
+            "jp_text": "",
+            "en_text": "",
+            "ml": false,
+            "episode": "1",
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1709765845164171346"
+        },
+        "24": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "12/10/2023",
+            "jp_image": "directors_note_an2_2.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Hi this is the Director. That was Ep2.",
+                "Even if it's a little bit stiff, there is something we can gain from an Exploding PunchLine.",
+                "Plus Sugita-san's beautiful voice adds further more impact to the punchline.",
+                "Anyways Let's talk about the OP and ED.",
+                "The OP is what the OP is. According to the series' MC it was a \"Cutting everything down except for the necessary stuff\".",
+                "The S1 OP was made in a jumpy way.",
+                "The fact that S2 OP was done straight may have been surprising.",
+                "Aaaand about the ED.....",
+                "The story that I'm going to tell is kind of a non-fiction story but hear me out....",
+                "-One day-",
+                "\"Umm about the ED.\"",
+                "\"What about it?\"",
+                "\"We spent too much money on S1's ED.\"",
+                "\"I wonder.\"",
+                "\"So I propose...\"",
+                "\"(Looks like we are going to have single song and no characters singing)\"",
+                "\"4 characters singing!\"",
+                "\"(What the hell is this man talking..)\"",
+                "\"So who are we picking?\"",
+                "\"Hmmmm let's separate 7 into 1,2,2, and 2.\"",
+                "\"That would be 7 recordings and the cost will stay the same.\"",
+                "\"I see.\"",
+                "\"So pick 4 characters.\"",
+                "Alpha aside, I don't want to make it like I'm ranking the other six.\"",
+                "\"Naruhodo.... So Alexia and others?\"",
+                "\"Nope, I don't want the characters that is involved in the main story to do meta-fiction elements in the anime.\"",
+                "\"What about the Seven Shadows (Shades)?\"",
+                "\"Shadow Garden characters (7shades) is our PR characters outside this work.\"",
+                "\"Naruhodo, soo the characters from SG side that is likely to appear in S2 are...\"",
+                "\"Yes, but I don't want to use 664 and 665 because they are involved with 666...\"",
+                "\"So a character that some reputation but doesn't get involved with the main story..\"",
+                "\"Nu, Lambda, Chi(Kai), and Omega?\"",
+                "\"Let's roll with that\"",
+                "\"Really?! Chi and Omega hasn't even appeared in the LN yet.\"",
+                "\"I don't see any problems.\"",
+                "And thats how it turned out.",
+                "There are many stories that went like the story I told. I'm sure the people who were involved was having a rough time.",
+                "Oh btw the artist of the art behind this msg is not the S1 legendary super animator... his schedule was full so I asked someone who is close to me.",
+                "Anyways",
+                "Stay tune for the next episode where the trigger gets lighter and lighter to pull.",
+                "PS: Juggernaut's VA is Tsuyoshi Koyama-san! *Not to be confused by Rikiya Koyama (Olba's VA)",
+                "Tsuyoshi-san's voice is what I heard when I saw Juggernaut's design.",
+                "Wild and excellent!",
+                "Oh as you know,",
+                "its not \"ジャガー (jagā)\"",
+                "Its z\"ジャガ (jaga)\"",
+                "We made the mistake in front of the author Daisuke himself. When we found out that we were pronouncing it wrong we froze.",
+                "Crimson's VA is Tomokazu Sugita-san!!",
+                "Beautiful voice. It is really beautiful when you hear it in person.",
+                "I love Crimson's design that adds more beauty to Sugita-san's voice.",
+                "So thats why he got that treatment...."
+            ],
+            "ml": false,
+            "episode": "2",
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1712302076674658740"
+        },
+        "25": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "19/10/2023",
+            "jp_image": "directors_note_an2_3.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Hi, this is the Director.",
+                "Episode 3 was Lawless City-Arc's final episode.",
+                "Ummm... when I was drawing the storyboard, I realized about something.... Or should I say something fell from the heavens.",
+                "\"Wait? Maybe it's time to show it.... It's natural to pull it in this story flow\"",
+                "Let me paint the picture. There is no characters that adversely affects the future story of the LN in the screen..",
+                "Hmmm.... Looks like it's doable... Wait... Maybe we are changing it too much...",
+                "But since I came up with the idea, might as well draw it and show it to Daisuke- sensei. If we get rejected, I'm just going fix it....",
+                "Long story short, the idea was accepted. So thank you Nazuka-san (Aurora's VA). Yamashita-san (Shadow's VA) teaching Nazuka-san how to say it was a funny sight to see. But lets keep it secret.",
+                "We have another topic. Many people might be thinking \"Why is it on the left arm?\"",
+                "Well..... this is.... ummm.... You know.. haha",
+                "Well in the LN's ■■■ the ■■■ is ■■■",
+                "and that ■■ is \"■■■\" with ■■.",
+                "This time it was",
+                "\"■■■'s ■■\" \"■■■'s ■■\"!",
+                "We asked the author about but he replied",
+                "-\"I had no such intentions to make it like this at that time.\"",
+                "Yes. I expected this answer.",
+                "So now we are told to do whatever we want to do and maybe this",
+                "■■■■■■■■■.",
+                "So we decided to make the ■■■ on the left arm.",
+                "In terms of Evil eye contents, It's true that its harder to understand it, but to make the story after this easy to understand. It must be done.",
+                "We still have problems left but next episode is a new story!!! That voice.... Is that...",
+                "",
+                "PS: Elisabeth is voiced by Saori Hayami-san",
+                "This character called Elisabeth is only explained by other characters through their flashbacks. Even in LN.",
+                "Actually she has no single phrase. There is no problem with that... Wait If she doesn't speak, the last battle is going to end up like the Lindvurm (Sacred Land) arc....",
+                "So we decided to make her say a phrase and make it understandable to the audience what kind of a character she is...",
+                "Well I'm sure she is a \"good person\".",
+                "And I wanted her to sound like a \"good person\" so I asked Hayami-san to voice over Elisabeth."
+            ],
+            "ml": false,
+            "episode": "3",
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1714838791972896995"
+        },
+        "26": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "26/10/2023",
+            "jp_image": "directors_note_an2_4.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Hi this is the Director.",
+                "That was Episode 4 and Fake Bill arc starts!",
+                "That means \"John Smith\" is here!",
+                "John Smith's VA is Jun Fukuyama-san. A lot of people might expected it. I'm with the \"a lot of people\" side. I couldn't think of someone else other than him.",
+                "In this arc, there is no need to go crazy.",
+                "Therefore I think he is the most fitting VA. So sit back, relax, and enjoy.",
+                "Anyways, Finally we are in the Fake Bill arc. This arc made me think back. Reading Chapter 21's (WN) \"■■\" text made me sure that this series is getting novelized.",
+                "And then Chapter 136 is where I thought",
+                "\"This series is definitely getting an anime adaption.\"",
+                "It was exactly at the Fake Bill arc. October 2018 was the date which the revisions were added.",
+                "It was 5 years ago..... Damn we've come so far.",
+                "When I was told to be the Director.",
+                "Visualizing this arc was the first thing that came to my mind.",
+                "Now, how to recreate that feeling after reading the WN in the anime.",
+                "I wanted to recreate it, so that is why we used 20 episodes to adapt the Vol.1 and 2.",
+                "Audience might say \"We thought there was was no 2nd Season\"",
+                "Well back then I was thinking \"If we made the 20 episodes with our heart, They might want us to make additional 2 or 3 seasons.",
+                "At that time, I was aiming for \"I want to do this arc in here and that scene in that.\"",
+                "I'm amazed that it came true....",
+                "I'm so thankful for everyone and the staffs for giving me such an opportunity.",
+                "With that being said. Stay tuned for the next episode!"
+            ],
+            "ml": false,
+            "episode": "4",
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1717375511838556625"
+        },
+        "27": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "02/11/2023",
+            "jp_image": "directors_note_an2_5.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Hi this is the Director. That was Episode 5.",
+                "Just in case you're wondering. Gamma's scene was written by me and passed to the Filming Director.",
+                "In other words it was our methods. Yes.",
+                "Oh Btw,",
+                "Us and the girls had same reaction while making the series in the advant (The scenes before the OP). For some reason someday in the S1's Dubbing session, we had a time to look back S1's character profiles.",
+                "Our reaction was \"Eh?\". The staffs were surprised by the \"16\" and \"17\". What a healthy girls.",
+                "Anyway, New characters again! And his name is \"月丹(Gettan)\"...",
+                "Hmm? \"月丹(Gettan)\"?",
+                "\"ユキメ (Yukime)\" is \"ユキメ (Yukime)\"",
+                "But \"月丹(Gettan)\" is not \"ゲッタン (Gettan)\"?",
+                "What is the meaning of this?",
+                "I think its impossible for Kanji to exist on this world. So maybe they use Kanji to translate the ideograms in this world into modern language. And looking at Gettan's outfit, His origin must be close to irl Asian culture.",
+                "If the series's main stage is European-like, and the culture is molded by the endemism of that region. There has to be distance between culture spheres just like in reality.",
+                "And yet Gettan holds a position in a distant foreign land. (even though it's an underground)",
+                "He is used to accept different cultures...",
+                "Interact with lots of ppl...."
+            ],
+            "ml": false,
+            "episode": "5",
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1719912315502657838"
+        },
+        "28": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "09/11/2023",
+            "jp_image": "directors_note_an2_6.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Hi this the Director!",
+                "That was Episode 6.",
+                "Since the Mc is the MC, I was expecting that \"no way he hurts the heroine.\" Looking at his past scenarios. The Mc's might sound like a moron but his attitude was willing to help. I had some kind of level of trust for him..... but this MC..... Not only the heroines, he also betrayed the audience with no reason at all.",
+                "\"How to finish the MC's mistakes?\"",
+                "\"Can we completely erase the reader's frustration?\"",
+                "I was thinking about those stuffs while waiting for some updates.",
+                "This chapter(arc) is really my favorite.",
+                "The plot makes me want to jump into a fire just to take a risk of getting burned.",
+                "I bet there is only few people that are willingly to write this arc.",
+                "And I was thinking. How great could it be if I landed it perfectly.....",
+                "With that being said, it was a battle episode!",
+                "Money related gang wars,,,,,",
+                "Stack of cash,,,,",
+                "Train robbery,,,,",
+                "Insane fast paced fights inside and outside a moving train,,,,",
+                "This is it. This is the one. I'm surely it will be great to watch.",
+                "If we are going to add some stuff, I'm going to make this part the action part that is worth to watch.",
+                "I was thinking of adding Delta's fight scene in S1 which is not in the original work(LN). Well it got added to the S2 so we protraited action as much as we could as a TV series.",
+                "Phew... as always my words were unorganized, but I'm looking forward to see you next time!",
+                "Does this story even ends....",
+                "PS: I want to listen to the convo of Gettan and Garter all day.",
+                "Mentioning Namikawa-san (Gettan) and Chafuurin-san (Garter) might be needed but, they are funny even though both of them are just talking about bad stuff.",
+                "So Gettan's VA is Daisuke Namikawa-san!",
+                "There is a lot of actors that can act as a \"cool adult\" but Namikawa-san is an actor with a voice that can express the miserable and shameful part of the adults. Sounds strong and cool, but somehow a hopeless aura comes with it.",
+                "Muy Excelente"
+            ],
+            "ml": false,
+            "episode": "6",
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1722448932230287734"
+        },
+        "29": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "16/11/2023",
+            "jp_image": "directors_note_an2_7.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Hi this is the Director.",
+                "That was Episode 7 with Special ending.",
+                "In this genre, it's hard to end a story with a MC not gaining a thing.",
+                "Putting the story together with what the MC wanted being stolen, while the genre likes to take the method of \"Take Everything\" makes hard to convince the audience. If we wanted to do it till the end, we need to wait and see the expression of the audience. That kind of balancing skills are wanted.",
+                "If we made the audience laugh while watching the MC gets no gain or gets robbed by \"the Enemies\" is a accomplishment. There is nothing to say than \"We did well\".",
+                "Its no wonder why one of our troublesome reader (definitely not the Director) was convinced that this WN is getting an adaptation.",
+                "Anyways, What is the best way to end the story if we animate it.....",
+                "I don't want to cut any dialogues but, adding the whole conversation makes it boring. Although we need a \"desecrate the scene\" type of punchline.....",
+                "Desecrate...... I see.....",
+                "Let's make it a Special Ending!",
+                "First, make a sentimental music about Yukime and Gettan's years of love-hatred relationship, and put a shi*ty convo above the music to shatter the scene.",
+                "\"————. As I requested, I want it to be blasphemous. So make a sentimental music\"",
+                "\"Ok\"",
+                "And just like that, the music that I requested was used in the Ending. I swear there was no \"tricking the composers to make the best song they can do.\". We already told them about the usage of it. I promise.",
+                "Let me express my gratitude to the staffs again. Thank you for your work.",
+                "Even one of our high position staff said \"Forget about those character songs. Make this the normal ending song.\"",
+                "So make sure to enjoy the song as a single song too!",
+                "And with that being said,",
+                "Next episode is going to be a new arc....",
+                "Hmmmm..... Huh?",
+                "PS: It's a unnecessary topic but we made this Delta (The one in the background of the raw) appear in S1's last part, to make the reunion in the S2EP4.",
+                "Well she was already bound to reunite with BOSU in this arc. But yeah, that's when I figured that she can't appear in the First Episode along with 6 others.",
+                "So that is why the avant of the season was like that."
+            ],
+            "ml": false,
+            "episode": "7",
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1724985653954494784"
+        },
+        "30": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "23/11/2023",
+            "jp_image": "directors_note_an2_8.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Hi! This is the Director!",
+                "That was Episode 8.",
+                "It's Anime Original time.....",
+                "(\"It's Hunting time\" reference)",
+                "Why? Let me explain.",
+                "I already said it a million times but I'm going to say it again.",
+                "\"I LOVE FAKE MONEY ARC\" but thats that and this is this.",
+                "After all the things that the MC did to the heroines, just to appear next week like nothing happened is a bit weird.",
+                "Also he himself said \"Maybe it's correct to put some distance.\"",
+                "Reading the WN, you can feel the Mc and Author had a burnout syndrome in the Prison Break Arc.",
+                "Even the LN..... you know....",
+                "There was a time that it took a year to publish a new volume...",
+                "I was even relieved for his come back.",
+                "Anyways,",
+                "Following the LN, having an interval in the anime is inevitable. And using this episode as an interval between arcs was all according to plan.",
+                "So it's obvious for \"what to do next?\" to rise to the surface.",
+                "Personally I wanted to do the Prison Break Arc, but we don't really have that much time.",
+                "Actually the reason that I can't make it is because I couldn't think of methods to solve the setting differences between the WN and LN.",
+                "I did came up with a solution right now, but unfortunately its too late.",
+                "So, we had a meeting about \"what to do next?\". Make a story about the past? Make an original story for the anime? Those sort of stuffs.",
+                "And suddenly a bigwig said \"Can't we just request Sensei (the author) to write something?\"",
+                "All of us looked at each other unintentionally.",
+                "\"What if the new volume gets delayed due to our request?\" Says the Director. Well let's just ask sensei and pray for the best. —————",
+                "And thus this Episode was born.",
+                "By the way, the request was \"Seven shades (shadow) with Po and Skel, NO CID\"",
+                "Thank you for your help Aizawa-sensei. Let me borrow this place to express my gratitude.",
+                "Oh and by the way, It was me. It was me who said",
+                "\"If the author himself is helping, It should be natural for the illustrator to help.\"",
+                "and pressed such demands.",
+                "Thank you too Touzai-sensei.",
+                "PS: 原作 (gensaku) \"Original work\" is",
+                "different from 原案(gen・an) \"Original Plan\"",
+                "Just like how 監督 (kantoku)\"Director\" and",
+                "監修(kanshū)\"Supervisor\" different is.",
+                "Well it depends on the series so it's slightly difficult to understand.",
+                "But in our case Author writes the \"Original work\"",
+                "↓ Make a script based on the \"Original work\"",
+                "↓ The Author checks the script....",
+                "That's how the anime was made.",
+                "Oh speaking of \"Original work\".",
+                "I wonder if the short Original work gets published somewhere."
+            ],
+            "ml": false,
+            "episode": "8",
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1727522366631141837"
+        },
+        "31": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "30/11/2023",
+            "jp_image": "directors_note_an2_9.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Hi! This is the Director and that was Episode 9.",
+                "It was all performance including the staff roll. By the way, in the art context and setting names are.....",
+                "Wait, in the script it is different....",
+                "It's hard to Explain...",
+                "Anyways,",
+                "Bushin Festival was in the summer and the anime is currently in the middle of winter.",
+                "In exchange for his own work, he was supposed to agree to help us achieve our goals. But I realized I was just a Vanguard for the Organization. (this is bu-shi-!)",
+                "Based on those circumstances, it's been months already. The current situation must be \"One's heart is festering\"",
+                "Although, the industry is still hard for those who are not thorough with their actions as usual.",
+                "I have a feeling that the closing chapter is going to be pain in the ......",
+                "Anyways, we are entering Vol 4 from today. We are entering and I wrote \"closing chapter\" earlier....",
+                "Some of you might already guessed it based on the remaining episodes. Yes, S2 is going to end in the middle of Vol4.",
+                "After S2 with 12 episodes got decided to be made, I was thinking \"How to assign the Chapters (arcs)\".",
+                "12 episodes is too long for a single volume, and its too short for 2 volumes.",
+                "Its basically 「帯に短し襷に長し (Obi ni mijikashi, Tasuki ni nagashi)」 *Meaning: It's good for neither this nor that",
+                "\"So let me do 1 and a half Volume.... though I haven't heard other series doing it\"",
+                "\"Oh... Ok...\"———— and thus another unheard lighthearted decision was made.",
+                "S1 having 20 episodes and S2 ending in the middle of a volume....",
+                "This anime really loves doing special things..... Well, streaming is the mainstream nowadays, so organizing stories per cour mightt be turning into an old method.",
+                "Oh speaking of \"Organizing\"",
+                "There is a rumor that there was a human who wanted to make S2 starts in April",
+                "after the S1 ends in February.....",
+                "Stahp. You want us dead?",
+                "That's all. Stay tuned till the end.",
+                "",
+                "PS: Two girls that couldn't get to wear swimsuits due to the story.",
+                "664 is Miyu Tomita-san",
+                "665 is Hina Yōmiya-san",
+                "There was nothing to say, they slayed their roles and did a good work.",
+                "Comparing them to the Religious Euthusiasts girls, both of them prioritize their work. \"If they prioritize their private lives nothing will be left\". We made both of them to move under such images.",
+                "They are not slacking off. I think.",
+                "Well both of them are those type of girls that will put their lives when necessary.",
+                "Just like in the episode."
+            ],
+            "ml": false,
+            "episode": "9",
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1730059076229550537"
+        },
+        "32": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "07/12/2023",
+            "jp_image": "directors_note_an2_10.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Hi it's the Director! That was Episode 10.",
+                "The topic that I'm about to tell is nothing special. But hear me out.",
+                "Imagine you're in a Cinema (Theater) and you're leaning forward from your seat because its the climax scene.",
+                "\"But you feel thirsty, so you take a sip.\"",
+                "\"But you feel peckish, so you reach for the popcorns.\"",
+                "Those kind of behaviors are not an act of bad will.",
+                "\"Being Impressed\" and \"Physiological Needs\" can exist at the same time.",
+                "In other words...... how do I put it...",
+                "Hmmmmmm.... Yeah....",
+                "Now I know you want to say \"what is he talking about?\"",
+                "Don't worry that's the normal reaction.",
+                "Anyways,",
+                "We've been making 30 Episodes of this anime.",
+                "And the current episode is the first episode that has no battle scenes.",
+                "S1E3 had no battle scenes but there was a sword wielding scene, so this episode is the first one to totally have no \"fighting scenes\"",
+                "There were some plans to bring a battle scene from the WN or make some anime-original fighting scenes. But adding them would make us choke ourselves time-wise.",
+                "So the plan was rejected.",
+                "Well the current situation is boiling, And the powder keg is about to blow!",
+                "That's all for today!",
+                "It's been long since I wrote a short note..",
+                "Maybe I've been writing long notes the whole time....",
+                "",
+                "PS: Natsu and Kana, Yukime's underlings.",
+                "Natsu is Kaya Ichinose-san",
+                "Kana is Madoka Asahina-san",
+                "It's slightly confusing but generally speaking. The base that SG was using in the episode was from Yukime's company.",
+                "So Natsu and Kana was to appear.",
+                "But in the Editing phase, they didn't make it to the cut. Wait.... One made it through..",
+                "By the way,",
+                "Both of them have a line in the Original Work, and they were close to the main characters.",
+                "And I thought they would had good amount of screen time. So we went to ask Touzai-sensei to draw their Character designs.",
+                "We wanted to use both of them as more as possible. But it was difficult."
+            ],
+            "ml": false,
+            "episode": "10",
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1732595796866953653"
+        },
+        "33": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "14/12/2023",
+            "jp_image": "directors_note_an2_11.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Hi! It's the Director. That was Episode 11!",
+                "Some of you guys might noticed that this episode was longer than the other eps.",
+                "If you felt the advertisement was short, you're correct!",
+                "We reduced the length of the Ads.",
+                "When I measured the storyboard, there were too many task to deal while heading to the final episode.",
+                "After making the script, I had a feeling that adjusting the lines might not be enough.",
+                "Oh well. There's nothing we can do. So I told the Bigwig.",
+                "Nakanishi: We don't have enough airing time. So I think we'll be scraping off some scenes.",
+                "Bigwig: Hmm scraping off you say...",
+                "N: Yeah (especially the Avant and the A- part)",
+                "B: Understood. Let's cut off some scenes.",
+                "N: Okay",
+                "B: Lets cut off some advertisements.",
+                "N: WHAT?",
+                "B: Oh we can cut off the sponsor credits too.",
+                "N: Wait wha? We can't cut off the Sponsor Credits!!",
+                "Most of it is based on real story.",
+                "By the way,",
+                "Playing the OP and ED every episodes with no inserting main story on them was our original plan since the first planning.",
+                "Cutting off OP and ED might get us 3mins max of airing time, but that would add 3 more minutes of work to do. That would burden the studio.",
+                "If we cut the OP and ED repeatedly, \"oh We accidentally made an unnecessary episode\" could happen.....",
+                "Having more works to do doesn't mean that our deadline will be extended.",
+                "Long time ago,",
+                "I had an opportunity to help an anime studio that was making an Anime that doesn't use OP and ED that much.",
+                "Before numbers of work and the approaching deadline, the main staffs were close to see the heave.... No, their faces were not in this world.",
+                "Recalling that memory made me swear, to not cut stuffs that were not originally planned to make some airing time.",
+                "Well the oath didn't really mean something in the face of reality. And that's why we delivered a special episode.",
+                "Oh yeah, THERE WERE NO SPONSOR CREDITS HARMED IN THIS EPISODE.",
+                "With that being said, stay tune for the final episode!",
+                "",
+                "PS: Queen Reina's VA is Yuuko Minaguchi-san!",
+                "We wanted a \"stupid\" character and not a \"villain\" character. So we requested a person that has a voice with no evil intentions.",
+                "Reina having no evil intentions made her uncontrollable. So we decided to give her the Red card in this Episode."
+            ],
+            "ml": false,
+            "episode": "11",
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1735135856489627858"
+        },
+        "34": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "21/10/2023",
+            "jp_image": "directors_note_an2_12.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Thank for you watching!! 2023.12",
+                "PS: The Anime started with Yui Horie-san's line.",
+                "So ending the anime with her voice should make it better",
+                "We decided our decision with an easygoing mind.",
+                "But, Kobayashi-san and Kagawa-san (VAs of the kidnappers) joining in made it more wonderful.",
+                "With the music in the background. It felt like we are back at the beginning, and it felt like a long long prologue has just ended too.",
+                "Anyways. that's all for today's notes.",
+                "Once again thank you for watching."
+            ],
+            "ml": false,
+            "episode": "12",
+            "anime": "2",
+            "link": "https://twitter.com/Shadowgarden_PR/status/1737673437341159577"
+        },
+        "35": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "29/12/2023",
+            "jp_image": "directors_note_an2_a.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Special",
+                "Hi it's Nakanishi. This note is guerrilla. Handwriting the previous notes was a pain in the ass, so I'm going to use digital.",
+                "But unlike the previous notes this one might have less jokes and is more focused on small details. Lets begin.",
+                "",
+                "•King Oriana",
+                "Raphael Geerk Oriana.",
+                "There's a particular reason why he has a middle name, and it's a simple reason.",
+                "The god who made this world forgot to name himself. And god spread his name differently throughout the land.",
+                "By the way my first knowing about this information was when I checked the panflet in the package.",
+                "Resulting \"What are we going to do... the name is different...\" type of situation.",
+                "And the creator gave us an oracle that says \"Let there be Middlename\" and time continue till present day.",
+                "But the question of \"Rose's Middle Name\" is still not yet answered and is left vague.",
+                "Maybe Oriana Kingdom has a custom of naming a saint's name that is attached to the king's title.",
+                "The king's name was \"Geerk\" throughout the anime. Because that's what I was told.",
+                "",
+                "•559",
+                "559 is like a Seven Shades (Shadows) but has no heroine plot armor. That's how we wanted to draw her.",
+                "Her face expression was something... But looks like the audience enjoyed it and is accepting how she act?",
+                "Making her extreme probably made her cute?",
+                "Anyways, Her behavior towards 666 is 99% personal. In the S2E9 where 666 spotted the queen in the ruins. 559 was staring at 666.",
+                "In the background there was this conversation.",
+                "But Rose, She doesnt know.",
+                "It's surely that she will know about it with a little effort of searching. But she has no will to know.",
+                "Rose wont even question, even her mom is wearing a bright colored pink dress, while she is in her mourning dress.",
+                "As I wrote earlier 559's behavior towards her is 99% personal, but only hitting her in that situation is quite warm-hearted.",
+                "Maybe 559 was feeling pity, beyond Anger and Dismay.",
+                "",
+                "•Mordred",
+                "Weak. Even with Koyasu's Voice, the characters weakness cant be hidden.",
+                "I think a lot of people know about this, but Mordred got huge nerf in the LN.",
+                "He got nerfed so hard to the point where he made me question \"How did you even manage to make Perv listen to you.\"",
+                "Man, what should we do about him. A final boss with a Huge Nerf....",
+                "Well we tried our best to do some tricks and the outcome was aired.",
+                "We also did some adjustments to his line to make him sound like a scholarly person.",
+                "We added out-of-place settings to his weapon. Well not only the weapon, but also in his Full Armor and him wearing it.",
+                "Maybe the idea was \"I'm not a monkey. So instead of training let me just wear a strong equipment.\"",
+                "As for his plan in that situation. He threw the towel for resurrecting Diablos and changed it to \"Summon someting from a different dimension to buy some time or (kill shadow) if lucky.\"",
+                "Practically, He actually controlled the Ragnarok (around at the end of S2E11)",
+                "It was pretty reasonable for a plan. But such retreating strategy is not well received by the Elites, so it wont be a main strategy idea in the organization————",
+                "And that's how I thought about it, So I don't really know what will happen.",
+                "",
+                "•Effects",
+                "Its brand new! Not from the stash!",
+                "Oh... but the Color and Image Processing is still the same.",
+                "•Episode 8",
+                "Let me tell you a fact that will blow your mind.",
+                "We \"The Animator Side\" didn't request any Bikini episodes. I swear.",
+                "",
+                "•戒名\"Kaimyō\"",
+                "(The name written on the tombs)",
+                "We did our research about rules and laws about tombs.",
+                "And the results was \"We don't know!\", even we did it correctly, it would probably make some unnecessary problems.",
+                "So we did it vaguely. Is it not \"童子 (Douji)\" If one dies at 18?",
+                "",
+                "•By the way...",
+                "In this anime, there's same scene that has little different stories.",
+                "For example S1 E13, E14 and S2 E11, E12. A scene that was shown on the previous episode is moved to the back... or something getting added in the next Ep that was not in the previous episode.",
+                "If you try connecting the anime, you will realize that it won't connect perfectly. It's on purpose.",
+                "The point is each scenes have their own place. A scene that goes to the advant, a scene goes to the middle and to the end.",
+                "We prioritized how to make each episode good and made our decision.",
+                "Regardless of the pros and cons, we wont be changing how we do the anime.",
+                "",
+                "Anyways,",
+                "It was a disorganized note but thats all for this note.",
+                "Next time is...... next time.",
+                "Next time hmm?",
+                "No, let's not go any further.",
+                "With that being said.",
+                "Thank you for reading and I bid you all farewell.",
+                "",
+                "PS: Ahh, this one. It's Zeta's casual clothing.",
+                "The reason why it looks like a dress is to match her clothing with the other shades.",
+                "We ordered Zeta's Casual clothing along with the other shades/shadows very early in the process.",
+                "But my idea of \"If most of her mission is infiltration, she needs to be in a cosplay.\" gave her 0 screen time.",
+                "We manage to force her in to the last episode... its too good to be wasted.",
+                "We left it to the character designers to decide how to draw the designs.",
+                "So actually there was no intention or whatsoever. But the circle and triangles on the necklace that you can find around the Isekai world is... ummm",
+                "Let's just say it's a symbol of a tribe."
+            ],
+            "ml": false,
+            "episode": "a",
+            "anime": "2",
+            "link": "https://x.com/yaduka301/status/1740569072516178260"
+        },
+        "36": {
+            "en_author": "Nakanishi Kazuya",
+            "jp_author": "中西 和也",
+            "date": "24/05/2024",
+            "jp_image": "directors_note_anm1_t.jpg",
+            "jp_text": "",
+            "en_text": [
+                "Hi this is Nakanishi. Bringing you a special release commemorative edition letter.",
+                "Makers have the balls to say that this is a new information.",
+                "I ordered the makers with a vague description \"We are having an event, might as well make something.\"",
+                "But I didn't know that they were making \"New Information\" or a theme about it.",
+                "Well I guess we can say that officially announcing the main staffs is new information....",
+                "Putting that topic aside.",
+                "The video that was published was a \"PV exclusive video\".",
+                "Unlike the normal PV's out there that uses cuts from the main animation, this one is a Video only for the Promotion Video.",
+                "You can receive the video as \"Wow! An animation only for the PV! How wonderful!\"",
+                "Or",
+                "\"Does that mean.... The movie isnt ready yet.....?\"",
+                "I'll leave the imagining for the audience.",
+                "Its \"How you receive it\" matters.",
+                "By the way,",
+                "The staffs are",
+                "Director: Me",
+                "Storyboard: Me",
+                "Production: Me",
+                "Key frames: Me",
+                "Animation Director: Me",
+                "Chief Animation Director: Character designer",
+                "After saying \"This is my maiden work movie.\" I received fired up retouch.",
+                "And Animations, Finishing Touch, VFX, Editor, SE and etc are brought to you by the same staffs who worked in the anime.",
+                "They have my gratitude.",
+                "About the mysterious professor's VA....",
+                "Well I think you don't need any explanation about him.",
+                "———— thats about it. Only the Ani Director is different.Its my first time doing Animation Director. And it felt like eternal since I drew key frames.",
+                "Oh, I did all the \"KeyFrame Director\" and \"2nd KeyFrame\" works.",
+                "\"Soloing Key frame\" in the rare and correct sense of the word.",
+                "Well it only was 30cuts so its not a story to brag.",
+                "There were no scripts, so I went straight from the storyboard..... so might as well call my self \"the scriptor\". Just kidding.",
+                "Anyways. It was a short PV so imma end it here.",
+                "I apologize about the \"new information\" of the movie.",
+                "You'll have to wait for the official announcement, not out from the blue. If there is one thing I can say, I'll be saying the same thing that is written in the PV. \"銳意制作中(We are working hard on it)\"",
+                "And thats it for this message",
+                "See you next time"
+            ],
+            "ml": false,
+            "episode": "t",
+            "anime": "m1",
+            "link": "https://twitter.com/yaduka301/status/1794926995085971512"
+        }
     }
 }
 
@@ -21524,7 +19561,7 @@ writeData(setDoc)*/
 
 // let setDoc = db.collection('data').doc('apo_p1_c1-2').set(data['p1']['c1-2']);
 
-let setDoc = db.collection('data').doc('es_fthasg').set(data['fthasg']);
+// let setDoc = db.collection('data').doc('es_fthasg').set(data['fthasg']);
 
 // let setDoc = db.collection('data').doc('ln_v2').set(data['v2']);
 
@@ -21538,7 +19575,7 @@ let setDoc = db.collection('data').doc('es_fthasg').set(data['fthasg']);
 
 // let setDoc = db.collection('data').doc('dropdowns').set(data);
 
-// let setDoc = db.collection('data').doc('media').set(data);
+let setDoc = db.collection('data').doc('media').set(data);
 
 setDoc.then(() => {
   console.log('Document successfully written!');
