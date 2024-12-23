@@ -1106,6 +1106,29 @@
                         },
                         "checked": false
                     },
+                    "3-9 | The Sunken Sanctuary": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Suspicious Water"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Underwater Secret"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Malak Hunting!"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Sanctuary Backdoor"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Plans for the Future"
+                        },
+                        "checked": false
+                    },
                     "checked": false
                 },
                 "checked": false

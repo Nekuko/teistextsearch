@@ -4,1166 +4,1890 @@ const admin = require('firebase-admin');
 var serviceAccount = require('../serviceAccountKey.json');
 
 admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount)
+    credential: admin.credential.cert(serviceAccount)
 });
 
 let db = admin.firestore();
 
 let data = {
-    "notes": {
-        "groups": {
-            "1": "Season 1",
-            "2": "Season 2",
-            "m1": "Lost Echoes"
+    "groups": {
+        "Shadow Garden": {
+            "order": 1,
+            "Seven Shadows": {
+                "order": 1,
+                "characters": []
+            },
+            "Numbers": {
+                "order": 2,
+                "characters": []
+            },
+            "Members": {
+                "order": 3,
+                "characters": [
+                    "Garden Member",
+                    "Garden Members"
+                ]
+            }
         },
-        "0": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "06/10/2022",
-            "jp_image": "directors_note_an1_1.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Hi this is the Director.",
-                "I've been requested to write something..",
-                "So lets get straight to the point. I'm going to talk about the left thing.",
-                "We changed the steps from the original(LN) to make the current episode 1.",
-                "Some may think",
-                "\"Why change the important part?\"",
-                "No,its a misunderstanding.",
-                "The left(buffed minoru) was Airi-sensei's(teis comic artist) idea.",
-                "In the original(LN), Minoru's appearance was written as how it is drawn in the Anime monologue. So everyone read the LN! Still on Sale!",
-                "Anyways, you may think again.. \"its unreasonable to bring a story from the middle to the the top.\"",
-                "And you're wrong again.",
-                "We submitted a proposal(submitted by me) in the meeting where we decided how to script(compose) the whole Anime.",
-                "And episode 1 was written in that proposal like this.",
-                "「epi 1 is going to be 30mins of Chapter 146 of the WN.」",
-                "At that time(where we start to discuss how to make the anime) there were only 3 LN volumes.",
-                "Me as the one who proposed thinking I was  bold. But so are the staffs who approved my proposal.",
-                "Btw the reason why I submitted that proposal is because it makes it easier to understand what this series is all about.",
-                "It's not like we were aiming for the impact.(we wont deny aiming for it tho)",
-                "Well we cant talk about this series without his abnormality.......",
-                "But we are going to talk about that in the future.",
-                "Now if you'll excuse me here.",
-                "Enjoy the 20 episodes of TEIS",
-                "PS: I was casually talking to a executive and he asked me \"Who do you want to VA Akane?\" Cuz it was formal I answered \"Let's choose Horie-san(Kushieda from toradora, Hanekawa from Monogatari, Kouko from GoldenTime etc..)\"",
-                "And there were no vetoes. And thus an absolute popular academic idol was born. Thankful Thankful!"
-            ],
-            "ml": false,
-            "episode": "1",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1577856169351282689"
+        "Midgar": {
+            "order": 2,
+            "Midgar Academy": {
+                "order": 1,
+                "characters": []
+            },
+            "Crimson Order": {
+                "order": 2,
+                "characters": []
+            },
+            "Midgar Kingdom": {
+                "order": 3,
+                "characters": []
+            },
+            "General": {
+                "order": 4,
+                "characters": [
+                    "Captain's Daughter",
+                    "Duke's Second Son",
+                    "Forbidden Stacks",
+                    "Knight Captain"
+                ]
+            }
         },
-        "1": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "13/10/2022",
-            "jp_image": "directors_note_an1_2.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Hi this is the Director.",
-                "I cant hide my emotions that the last text(directors msg) was approved to be published. So I'm going to write another one.",
-                "In the episode 2, if you reread the Original(LN) you may feel that TEIS is using a format of a Classic Isekai Fantasy.",
-                "「Reincarnated in a local known family」",
-                "「While training—」",
-                "「Sworn loyalty from a slave girl—」",
-                "「Solving a kidnapping case—」",
-                "Blah blah blah",
-                "And after that it follows,",
-                "「Academy in the Capital—」",
-                "「With the Princess—」",
-                "Yada yada",
-                "You can say \"It is a Classic Isekai Fantasy\". But it changes vibes by just adding Formula X in it. So there is still a sleeping Treasure in this \"Isekai\" genre.",
-                "———Well",
-                "If the Original(LN) was like I said. We wanted the anime to be like that too. So we made the Episode 2 a Classical Isekai episode 1.",
-                "I think what sets TEIS and the other Isekai Fantasies apart is the \"Cutted Training\" part.",
-                "We didn't just cut it cuz we didn't have the time. We decided to cut it because if the MC was like this we wanted the audience to not know(to be surprised) whats going to happen.",
-                "Well. Now we have \"a kinda classical but not that classic Isekai Fantasy episode 1\" Episode 2.",
-                "PS: When I saw the design of Olba. I heard the Voice of Rikiya Koyama(Yukichi Fukuzawa from Bunbougu Stray Dogs, Kogorou Mouri from Detective Conan, etc...).",
-                "Even tho Olba had a short screen time, thanks to Koyama-san making Olba a worthy opponent of the MC to be shredded. Olba looks strong..... no..... He is strong... He just fought the wrong guy..."
-            ],
-            "ml": false,
-            "episode": "2",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1580392890399805441"
+        "Oriana": {
+            "order": 3,
+            "Oriana Kingdom": {
+                "order": 1,
+                "characters": [
+                    "Newwealth",
+                    "Parton"
+                ]
+            },
+            "General": {
+                "order": 2,
+                "characters": [
+                    "Orianan Paladin A",
+                    "Orianan Paladin B",
+                    "Oriana Noble A",
+                    "Oriana Noble B",
+                    "Oriana Noble C"
+                ]
+            }
         },
-        "2": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "20/10/2022",
-            "jp_image": "directors_note_an1_3.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Hi this is the Director.",
-                "The set is moving from countryside to the Capital, and the MC is matured.",
-                "Looks like we are standing in the starting line of the first episode of the story... HUH",
-                "The Episode 1 is episode 1, and then the Episode 2 is actually the episode 1, and now Episode 3 is the episode 1 of the main story..... How many times do we need to repeat \"episode 1\".....",
-                "Anyways,",
-                "If you're feeling that the visuals are different from the LN..... You're correct!",
-                "It's so different.",
-                "We have plenty of reasons for that, but the main reason is the appearance.",
-                "The characters that Touzai-sensei made revolves around High-school Girls with mini skirt and High heels that is confused about human relationships, and worrying about the gap of \"fantasy and reality\".",
-                "——— I think its impossible to put such characters in a idyllic medieval set.",
-                "So we decided to make the visual settings into the Early Modern Era. The LN's fantasy-ness is focused on「Spellswords」",
-                "and that's why we made the technology that looks like the modern stuffs with a scarce connection to magical elements, just to match the settings.",
-                "Oh by the way, Season 1 Opening was drawn like that because I thought \"wait.. maybe we can make TEIS into a Modern ESP Action Anime.....\"",
-                "(There is plenty of other reasons but) that is the reason why the OP looks like that.",
-                "Anyways,",
-                "I can say showing visuals that doesn't directly affect the story is a unique part of \"Anime\"",
-                "PS: Alexia is Hanazawa-san(Ichika from Quintessential Quintuplets, Nadeko from Monogatari series, Mitsuri from Demon Slayer).",
-                "Sarcastic, Bad attitude, Bad personality. Alexia has all the traits for being a troublesome women. And yet she is elegant. Her anger is always directed to those worthless spineless people.",
-                "We had many staffs requesting for someone that is capable to VA such a high demanding character. I was thinking the same too.",
-                "And yes. A greater big shot came than I imagined",
-                "I'm thankful for the Main VA cast and the Guest VA cast.......",
-                "This series is blessed with Voice actors and actresses."
-            ],
-            "ml": false,
-            "episode": "3",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1582929607866597376"
+        "Cult of Diablos": {
+            "order": 4,
+            "Knights of Rounds": {
+                "order": 1,
+                "characters": []
+            },
+            "Members": {
+                "order": 2,
+                "characters": []
+            },
+            "Children": {
+                "order": 3,
+                "characters": []
+            },
+            "Generic": {
+                "order": 4,
+                "characters": [
+                    "Cult Leader",
+                    "Cult Member Boss",
+                    "Cult Member C",
+                    "Cult Members",
+                    "Cultist",
+                    "Cultist A",
+                    "Cultist B",
+                    "Cultist C",
+                    "Cultist D",
+                    "Cultist E",
+                    "Cultist F"
+                ]
+            }
         },
-        "3": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "27/10/2022",
-            "jp_image": "directors_note_an1_4.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Hi this is the Director.",
-                "Alpha wearing a school uniform is just her spiting Alexia.",
-                "Alpha might not in screen but she maybe keeping an eye....",
-                "Let's talk seriously.... ",
-                "What if Alpha appeared in a dress...",
-                "What if Alpha did that bed scene in Slime body suit...",
-                "I think it would be strange...",
-                "So Alpha wearing a school uniform was the decision that most of us felt comfortable.",
-                "Alpha is casted as a main character visual-wise. But, LN readers know the fact that MC and Alpha's interaction is not that common. She is that type of strange character.",
-                "It was a precious face to face scene. She has to appeal to him at least a little bit. That is how I felt it.",
-                "The main topic is Alexia going hard mode. If this series was about 「an outsider MC sweeping to solve the problems」We still need a reason that allows the MC to sweep in.",
-                "But due to the nature of this genre. It's also difficult to create a classic \"MC getting cornered and makes a great comeback\" type of story flow.",
-                "So we needed an alternative way to do it.",
-                "We wanted the audience to feel the \"it doesn't matter which side you're in. Punch that mf bastard\" flow.",
-                "And this episode was a preparation. Its not surprising that Alexia going in Hard Mode",
-                "So! Next Episode is going to be that scene!!",
-                "It took 6takes for Yamashita-san(Shadow's VA) to pull it. Please look forward for it!!!",
-                "PS: Alpha's VA is going to be Asami Seto-san(VA of Kugisaki Nobara from JJK, Sakurajima Mai from Rascal Does Not Dream of Bunny Girl Senpai, etc.)",
-                "From numerous of tape audition entries. She survived the whole audition with some others. While other were discussing on \"what character fits their voice or whose voice fits the character\" Seto-san is the only actress to pick Alpha without changing her mind from the start till the end. Other characters were already decided, and its time to decide Alpha's VA... Seto-san's name was the only one left on Alpha's VA list. So we offered the role.",
-                "While being surrounded with bunch of jerk-offs, Alpha's calm voice is TEIS only hope of it being serious."
-            ],
-            "ml": false,
-            "episode": "4",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1585466314352574464"
+        "Velgalta": {
+            "order": 5,
+            "General": {
+                "order": 1,
+                "characters": [
+                    "Velgalta Soldier",
+                    "Velgalta Soldier A",
+                    "Velgalta Soldier B",
+                    "Velgalta Soldier C",
+                    "Velgalta Soldier D",
+                    "Velgalta Soldier E",
+                    "Velgalta Soldiers"
+                ]
+            }
         },
-        "4": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "03/11/2022",
-            "jp_image": "directors_note_an1_5.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Thanks for your time. Director here.",
-                "Speaking of which, there are some original elements in the anime, such as guns. This is partly due to the fact that the level of technology in the work has been raised to match the visuals of the characters. This is an alternative to the so-called \"level\" and \"skill\" numerical elements.",
-                "The standard numeric element in recent Isekai works can easily measure the \"who is stronger and weaker than whom\" part.",
-                "I would have liked to be able to explain the logic behind each character's strength in text as in the original work, but the limited length of the anime and the fact that it is not available ...... made me wonder if there was some way to make the story easier to understand.",
-                "Ordinary people from Isekai use guns, just like us earthlings. So, in a cutting edge world there are superhumans who wield swords, there are monsters that mow down the superhumans, and there are great superhumans who can obliterate them.",
-                "I thought, \"If I escalate the story in steps, it will be a little easier to see...\" and that's how I made the story.",
-                "This kind of thing becomes unnecessary after the tone and manner of the work is conveyed, so you could say it's a fun thing to do in the early stages.",
-                "",
-                "The instructor is Masaya Matsukaze.",
-                "I had hoped that he would be able to bring out this big, pretentious rat with his kind and hostile voice, and I was not disappointed. In addition to that, the design of the awakened state in the original anime is also good. It is really a pity for the character to disappear after just one time!"
-            ],
-            "ml": true,
-            "episode": "5",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1588003029466259457"
+        "Others": {
+            "order": 6,
+            "Apocrypha": {
+                "order": 1,
+                "characters": []
+            },
+            "Dragons": {
+                "order": 2,
+                "characters": [
+                    "Malak Swarm",
+                    "Malaks",
+                    "Nidhogg"
+                ]
+            },
+            "Earth": {
+                "order": 3,
+                "characters": [
+                    "Kidnapper A",
+                    "Kidnapper B"
+                ]
+            },
+            "Fire Force": {
+                "order": 4,
+                "characters": []
+            },
+            "Lawless City": {
+                "order": 5,
+                "characters": []
+            },
+            "Major Corporate Alliance": {
+                "order": 6,
+                "characters": [
+                    "Leaf One",
+                    "Leaf Two",
+                    "Leaf Three",
+                    "Zabra"
+                ]
+            },
+            "Shangri-La Frontier": {
+                "order": 7,
+                "characters": []
+            },
+            "Templars": {
+                "order": 8,
+                "characters": [
+                    "Templar A",
+                    "Templar B",
+                    "Templar C",
+                    "Templar Leader",
+                    "Templar Leader A",
+                    "Templar Leader B",
+                    "Templar Leader C",
+                    "Templar Leader D",
+                    "Templars"
+                ]
+            },
+            "Vampires": {
+                "order": 9,
+                "characters": []
+            },
+            "General": {
+                "order": 10,
+                "characters": [
+                    "Archbishop Teinen",
+                    "Fatty McSpecs",
+                    "Toppe Batterius",
+                    "Scarface",
+                    "Zeta's Father",
+                    "Zeta's Mother"
+                ]
+            }
         },
-        "5": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "10/11/2022",
-            "jp_image": "directors_note_an1_6.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Thanks for your time, this is the director.",
-                "The sixth episode has been delivered. I guess you could say that this is a Nichijou (ordinary life) episode before the incident. No, you see, it's always bloody... really, so far everything has been bloody except for this episode ......",
-                "Anyway, no matter what I write, it seems to get caught up in the flow of the next episode, so I'd like to talk about the OP this time.",
-                "If you ask me with a straight face \"What is that\"? The image I had when I received the song (it was a tentative song at the time) was \"flying at high speed through a valley of buildings under a blue sky.\" I had a rule of thumb that if you keep working from this kind of first impression or initial impulse, it will come together in a good way.",
-                "But, on the contrary, it was decided that Shadow-sama was not to be filmed under a blue sky... Or, to begin with, it was the role of the \"hero\" to fight coolly in the groovy chorus part, not the job of the \"powerful person behind the scenes\"...? And then I thought, \"Well, what should I do?\" I had already used up all the ideas I had originally planned to use for the OP by the end of the first episode....",
-                "As a result, it ended up looking like that. I think that the drama of this work would work even if it were a modern xenomorphic story instead of a Isekai reincarnation story.",
-                "The red and white suit is completely different from the one in the original story, and it looks just like a sci-fi suit. I guess it fits well with school parody in that sense as well. I wonder if it is a three-dimensional object or not...",
-                "Anyway, this is how it looks this time. It will be a little different from now on. We will use this song throughout all 20 episodes, but we will continue to make changes little by little.",
-                "",
-                "Gamma is Mimori Suzuko.",
-                "As I look back at the documents from that time, I found that I had made a note of \"99 points\" in Mimori's audition. I also made a note that she had the same image I had envision in the early days of the show.",
-                "She is an intelligent and beautiful woman and is also a comedian. She is the only person who could play this role."
-            ],
-            "ml": true,
-            "episode": "6",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1590539749852205056"
-        },
-        "6": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "17/11/2022",
-            "jp_image": "directors_note_an1_7.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Thanks for your time, this is the director. We have delivered the 7th episode. The main character died, he also died in the first episode, so let's look forward to the next episode.",
-                "\"School\" and \"terrorists\" are staples of storytelling... But I wonder which one will be well received? I think it's because there are fewer school battle stories these days, and there are fewer straight-up terrorist stories coming our way. It has been a long time since Isekai stories became the mainstream in the industry these days, and perhaps the story of a large monster appearing in the forest would be more familiar? Or is that too old-fashioned?",
-                "In this work, the story is often depicted in the city, so I can't use such a standard setting very much, but I was thinking of using it to create a unique \"urban Isekai story\".",
-                "As a creator, it was fun to depict the foolishness of school boys. I'd like to continue to create scenes with Cid Hyoro-Jaga where they are just talking about stupid things as long as time permits, but, well, there's a lot to do in this work: ...... terrorists are here, and there are more characters appearing....",
-                "Anyway, it was a fun episode in that sense. But the nature of this work is like a battle with one's skills. Because of that, the staff is sometimes almost crushed by the volume of work. To everyone involved, thank you for your effort...",
-                "As for the terrorists, we'll get to that next time. This time, it's a classic fighting tournament (for the first time). I'm sure there are many readers of the original work who wanted to see this."
-            ],
-            "ml": true,
-            "episode": "7",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1593076467830759425"
-        },
-        "7": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "24/11/2022",
-            "jp_image": "directors_note_an1_8.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Thanks for your time, director here.",
-                "We have delivered episode 8. It was an episode that made me think, \"I knew it was a bad idea to have terrorists come to the academy...\". After all, the number of students in this school alone is estimated to be more than 1,000. And the teachers and instructors who instruct them, and the servants who take care of them...",
-                "By the way, I assume that the population of Baron Kagenou, the hometown of the main character, is about 1,000~1,500 people in all.",
-                "And the terrorists to detain all of them, no matter how many underhand techniques they use, would require a certain number of people. Furthermore, if we count the people outside the school and the people who are planning to attack on the side, the blistering volume of material is outrageous.",
-                "Thanks again to everyone involved for all your hard work, and next week is the big day.",
-                "",
-                "The characters that were added like new medicine are dying in a hurry.",
-                "In the midst of that, the play by Okamoto Nobuhiko, also known as Rex-kun, who showed a splendid explanation of his death was fun. There were parts I wanted to dig deeper into, such as the frustration of Glenn and Marco having to fight with a handicap, has helped me every time."
-            ],
-            "ml": true,
-            "episode": "8",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1595613173133897729"
-        },
-        "8": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "01/12/2022",
-            "jp_image": "directors_note_an1_9.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Thanks for your time. Director here.",
-                "I feel like this is a story one don't need to think much about, but let's say: If an old man who lost his strength and has been maintaining his strength by sharpening his skills, suddenly gains a strong body. Will he be able to control it immediately?",
-                "And what if he is not even aware that he is doing so, even though he is a seeker who is willing to \"Give up everything for his dreams\"? I wonder if he feels he have to see it right in front of his eyes. That is the story.",
-                "...but in the sense that he is living for his dream and neglecting his dependents... I don't think he has any right to feel anything about it. The story is just unfortunate for the girl who was involved in it.",
-                "However, although the structure of the story itself is not so different from that of Alexia's, the fact that the punchline is so polarizing is due to the character of the heroine, I suppose. She seems to come back on her own without any help, even if she sacrifices a limb or two. In this work, where the only salvation is \"an ending that barely ends in a bad end,\" it was difficult for the beautiful girl to live happily....I wonder what will happen to that girl in the future. .... To be continued .... in the Original work ...",
-                "Well from the story title, the atmosphere is different from usual, and the mood is darker this time. The series is 20 episodes, so we can say that the next episode is the second half of the series.",
-                "",
-                "Lutheran role is Ootsuka-san. He is a master of his craft, especially in expressing the despair of being an enemy so perfectly.",
-                "Sherry, who is voiced by Aizawa-san, is a girl who lives in a happy dream but is forced to face reality when that dream was suddenly shattered. Thank you for your wonderful performance."
-            ],
-            "ml": true,
-            "episode": "9",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1598149893201096704"
-        },
-        "9": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "08/12/2022",
-            "jp_image": "directors_note_an1_10.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Thank you for your time. This is the director, bringing you the 10th episode. Can you feel the difference in the mood from last week's serious atmosphere? This is normal as we are entering a new stage and a new arc.",
-                "From this time on, the story will be led by the guys who have been working behind the scenes for a while. So, the story will be lighter than before...I guess.",
-                "By the way, this time is a long-distance travel episode. I think this is one of the reasons why I proposed the use of train in the anime. For us modern people, it is difficult to measure the distance even if we are told \"X days by horse-drawn carriage\". I thought it would be easier to grasp the distance by adding the familiar element of a train.... And, if we prepare a carriage room at the back of the train, we can handle both travel and rest in one place. As for horse-drawn carriages for the travel... it was very difficult to draw horses.... I didn't know if we could do it at the time, so I couldn't take the risk.",
-                "The screen hog during the breast comparison scene... was Mori-san, who also plays the role of Gamma.",
-                "",
-                "Beta is Minase Inori. The character's popularity demands an actress who is highly sought after inside and outside the work. Currently, Minase is popular among anime fans... It is true that the person who can show Beta's character correctly is also an actress in such a position.",
-                "I thought the only one who can play the role of Beta is one who is No. 1 in the industry and is able to stay at the top in a group of elites. The amount of effort put in and the hardships of the actors off-screen are unknown to the masses. But isn't this industry not so different from that of the voice actors? If that is the case, I think the actors are portraying the characters as they should be portrayed."
-            ],
-            "ml": true,
-            "episode": "10",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1600686606960263170"
-        },
-        "10": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "15/10/2022",
-            "jp_image": "directors_note_an1_11.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Thank you for your time. This is the director. Welcome to another episode of the \"Fighting Tournament\" (2nd time) series! I've been thinking about the new characters in this series, and yes, there are a lot of unfamiliar faces, both on the high side and on the low side...? But I think they are doing the most fantasy-like thing ever, with magic circles, summons, beams, etc.!",
-                "Speaking of fantasy, there are monsters in the story. The author states, \"Slime doesn't appear anywhere near human villages\", just like wild animals living in the mountains today. I think this is an excellent setting, because you don't have to make any unnecessary assumptions when creating a story, and yet, since it exists as a setting, you can bring it out whenever you want to.",
-                "That's why I mentioned some of them in the last issue.",
-                "I'd like to do something like an otherworldly fantasy once in a while... or something like that, but I don't know...",
-                "",
-                "The role of Nelson is played by Mugihito. Well, as you can imagine, he's definitely a bad guy, but he's a charming and lovable priest, and he's oozing hardship from every corner... He's going to have a lot of trouble next week."
-            ],
-            "ml": true,
-            "episode": "11",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1603223323629985794"
-        },
-        "11": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "22/12/2022",
-            "jp_image": "directors_note_an1_12.jpg",
-            "jp_text": "",
-            "en_text": "",
-            "ml": false,
-            "episode": "12",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1605760044980736001"
-        },
-        "12": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "29/12/2022",
-            "jp_image": "directors_note_an1_13.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Hi, the director here, and that was Episode 13. Now then, let's talk about Chi(Kai) and Omega.",
-                "They are characters from the original work, and by now surely none out there remaineth who still asketh \"Who the heck are they!?\" They are characters from the original work. They are not anime-original characters. They are characters from the original work.",
-                "And when I say 'original work', I mean the 'Web Novel' as it is labeled by the general public.",
-                "As a fan of the OG, my intention is to pick up as many OG elements as possible. Oh, but of course there are also elements that we cannot pick up, nor do we intend to pick up in the future. But anyways.",
-                "Chi and Omega are WN-only characters, and I fear the opportunity for them to appear in the light novel is very far into the distance.",
-                "Explanation for the circumstances behind their appearances this episode:",
-                "Apparently Epsilon is operating separately within the Holy Sanctuary",
-                "I wanted a dedicated scene to illustrate this properly in the anime",
-                "As a bonus, we'll use this as a chance to explain the kind of members Shadow Garden, as an organization, is made of",
-                "And so we may need some conversational scenes. Should we give the mobs some lines?",
-                "It is at this point, while we were going through the script, a certain WN-stan budded in: \"Well, since we need somebody to interact with Epsilon, how about Chi and Omega?\" to which he was met with the \"The heck he's on about?\" look.",
-                "By the way, when I suggested to the author for the inclusion of these two, he couldn't help contain his bewilderment: \"Include them and do what?\"",
-                "To be fair, I would have had the same reaction if I were in their shoes.",
-                "So I pushed through with the reasoning that WN fans (a.k.a. me) will be happy to see them, and while we were at it we also commissioned Mr Touzai for their character designs...",
-                "That said, the 'original work' as defined by the general public does not have these two characters, and so they are treated as nothing more than 'flashy-looking mobs' within the anime.",
-                "Perhaps many of you would have noticed, they were never once called by their names within the show. Blonde hair is Chi(Kai), black hair is Omega.",
-                "Please do take this opportunity and give them your support."
-            ],
-            "ml": false,
-            "episode": "13",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1608310297432924160"
-        },
-        "13": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "05/01/2023",
-            "jp_image": "directors_note_an1_14.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Thank you for your time. This is the director, and we have delivered episode 14!",
-                "This is the end of the sanctuary, the end of the amount of things to be done. Well, it's impossible to make everyone wear armor if it's going to be like this, so we had to simplify the costumes and make the background art look unnatural with those outfits.",
-                "As for the tron suit... Well, originally, it was half-naked beautiful girls fighting against a half-naked old man... I was originally thinking of dressing it up like an ancient Roman swordfight, and then I came up with the gimmick of a sci-fi style sanctuary...... And then I thought, \"Well, what's the best way to do it?\" Therefore, I thought that the full-body tights type would have to be the chosen style. Well, the whole concept of the \"Diabolos cult power-up\" is \"power-up\". Because of that, Nelson thinks he has become a superior being.",
-                "And so, the story towards the end will begin in the next episode. Please stay with us.",
-                "",
-                "Nazuka Kaori is Aurora. Aurora's voice could only be described as perfect, with an aloof mischievousness and a shadowy air that gave off a sense of piled up years.",
-                "She was like a beautiful, mysterious, bloodthirsty sister.",
-                "It's a pity that her appearance is limited to this episode!",
-                "I wonder if she will ever come back?"
-            ],
-            "ml": true,
-            "episode": "14",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1610833465208934402"
-        },
-        "14": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "12/01/2023",
-            "jp_image": "directors_note_an1_15.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Thank you for your time. This is the director and we have delivered episode 15.",
-                "The OP has changed again, and the final chapter has begun, and it's a standard martial arts competition (for the third time). Why cast Midorikawa Hikaru all of a sudden? Well, because I've been a fan since I was watched \"Pa 0°7-kun\".... I am 90% serious and 10% joking.",
-                "There is the casting of the new characters around Jimina, more than for Jimina himself. It's just the nature of the genre. The new characters in the middle of the story turns against the main character if it is necessary. And I'm talking about the case where the entire street turn against him. But the creator wants the characters to be adored and cared for, even though they appear as mobs in the street at large.",
-                "My choice would be Midorikawa Hikaru (honorific title omitted) as Jimina. There are probably not many anime viewers who don't know who Midorikawa is. With the image of his voice from the many roles he has played, the many characters who point at him saying \"Small fry, small fry\" are beyond pathetic and seem more like adorable creatures.",
-                "I am trying to do something a little tricky by borrowing power outside of the screen. This is because the work itself was originally designed to enjoy the confusion of the whole situation from a remote position, rather than to enjoy the work by getting emotionally involved in someone or to engage deeply with the world."
-            ],
-            "ml": true,
-            "episode": "15",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1613370304755105792"
-        },
-        "15": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "19/01/2023",
-            "jp_image": "directors_note_an1_16.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Thanks for your time. This is the director and we have delivered episode 16. Now, it's time to talk about these two. Zeta is Asai Ayaka and Eta is Kondou Reina. The main characters! But even though the characters are mentioned in the material, there is almost no dialogue, and since they have not appeared in any existing productions, there is almost no data on them.",
-                "Shadow Garden Seven Shadows, seven mysterious and beautiful girls who follow the main character is an element that I definitely want to write and promote in terms of sales but it's not that kind of story. I checked the original work and found that it was necessary to depict all seven girls together at least once at some point. Specifically, it seems that all seven members are already together around page 64 of the first volume of the original work. And since the main story starts after break up of the seven, it would be bad if the seven didn't line up at least once.",
-                "By the way, in the anime, unlike the original, the members of the Shadow Garden hide their faces with hooded cloaks instead of masks. It's tough to increase the cost of the work where the modern anime characters, with their eyes and complex tangled bangs, have to be further hidden. And that's a big part of the reason why, there was also the decision to consider whether it might actually be necessary to hide the faces of the two who are not in the original work.. At the time, I was thinking that if I put a hood over everyone's head, I would be able to \"show them without revealing them\". Well, when I checked with the original work author, he replied, \"You can show them and let them talk,\"....No matter how hard we try to animate the characters who have not appeared in the original work, their characterization will be blurred. So we decided to treat the two characters in the anime in such a way that you may think, \"Well, they are interesting in their own way, so maybe it's possible.\"",
-                "The original has not yet appeared...the anime precedes it...the characterization...I feel like I've heard it somewhere..."
-            ],
-            "ml": true,
-            "episode": "16",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1615907035064766464"
-        },
-        "16": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "26/01/2023",
-            "jp_image": "directors_note_an1_17.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Thank you for your time. This is the director and we have delivered episode 17. As a side note, the color of \"magic power\" indicates the character's position or stance. It's like \"low,\" \"chaos,\" \"light,\" \"dark,\" or something along those lines. I have not decided what color means what attribute, so you should think about which force the characters belongs to.",
-                "So, now that we are almost at the end of the story, let's talk about the ending theme while we still can. The main beautiful girls with illustrations that have nothing to do with the main story will take turns doing character songs. I am sorry but I had to make the words bigger at the site's request. One of the reasons is that there were not so many shades of gray in the ED!",
-                "I thought it would not make anyone happy if I forced their \"appearance for appearance's sake\" into the main story. And I was not happy with the way they were presented in the main story. If that's the case, I thought we should reserve the OPED as their exclusive slot! If the ED is not connected to the main story from the beginning, it will save us from increasing our workload!",
-                "The reason that the ED theme consists of cute picture and song, is because of the intense (opposite) content. By the way, the order of the EDs is decided by Dice-san after the first episode. Considering the number of songs and the number of remaining episodes in the main story, please understand that some of the characters will not be featured...",
-                "By the way, there is a pattern in the processing of the ED images and the results shows the professionalism of the cinematographer.",
-                "",
-                "Hayami Show is Doem Ketsuhat (Perv Asshat). It's a scam, isn't it? I don't think it's funny if this handsome guy calls himself a \"doujamu\" or \"doumu\" or something like that, maybe..."
-            ],
-            "ml": true,
-            "episode": "17",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1618443719195398145"
-        },
-        "17": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "02/02/2023",
-            "jp_image": "directors_note_an1_18.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Thank you for your time. This is the director, and we have delivered the 18th episode. This is the last harmonious story, I guess.",
-                "Fushianasu-san... No, Fushianasu... The full names of the original characters, with their last names, are all decided by the original author. Nelson (I didn't know it was a last name...) and Midgar and Oriana, too.",
-                "I thought it was unbalanced that Jimina gave his full name in the meeting scene, but Annerose only gave her first name. And this is what I came up with. There is a color illustration of her in the original work and a standing picture at the end of the book. It made me think that she is definitely a new heroine...Fushianasu! I was influenced by the way the story was presented after all. I've come up with a lot of names for mob characters, but I think it's hard to beat the original...",
-                "",
-                "Annerose is Wakayama Shion. Wakayama's line \"I have completely seen through your movements\" left a lasting impression on me. Actually it was \"I have seen through your movements\" in the script. The word \"completely\" was ad-libbed by the performer, but she was not even aware of it! We did not NG the line. I thought \"Well, but it's Fushianasu, and it sounds like Fushianasu, so it's OK to adopt it\".",
-                "At this point, I thought \"Isn't the character too pathetic if you add 'completely'\"? It was a word that was supposed to be omitted from the script. But if it came from the performer's subconscious, it can't be helped. That's the kind of star you're born under, Fushianasu."
-            ],
-            "ml": true,
-            "episode": "18",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1620980326733434880"
-        },
-        "18": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "09/02/2023",
-            "jp_image": "directors_note_an1_19.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Thank you for your time. This is the director and we have delivered episode 19.",
-                "What did they do to deserve all these? Of course, they didn't. In fact, they only done what is good and needed for the masses and stopped when it was necessary.",
-                "I felt that the essense of the story is that these righteous people are not rewarded, which is the impression I had when I re-read the original work upon accepting this job. The story also follows the usual trend of where the righteous person is hurt for picking a fight with the protagonist but somehow, it didn't make me laugh a bit.",
-                "The original author wrote a really harsh story, but as you know, this is also where his (Cid) story starts. I hope you will see it through to the end and I look forward to seeing you in the next and final episode.",
-                "",
-                "Iris is played by Hikasa Youko.",
-                "While the story centered on the heroine of each chapter, when we put all 20 episodes of the anime series together as a story, we need a central character. And Iris is the one we need. Since we knew that it was going to be like this, it was only natural that the actress we should ask would be her.",
-                "Beatrix is played by Komatsu Mikako.",
-                "Although she is mentioned as the strongest in the series, there are almost no battle scenes. So we had to give the impression of strength only by the atmosphere... In this situation, Mikako Komatsu's voice was a great help.",
-                "A strong person is one who can afford to be composed, and a composed person is one who can enjoy a meal. And it really helped that the burger looked delicious!"
-            ],
-            "ml": true,
-            "episode": "19",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1623517280712761344"
-        },
-        "19": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "16/02/2023",
-            "jp_image": "directors_note_an1_20.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Delta is Fairouz Ai. I was rereading the original, and I happened to hear Delta's voice on TV. And I decided that she was to be Delta. I remember the character was carrying dumbbells...",
-                "I'm very sure that I didn't feel like asking anyone else and she is the only person I would have asked. But if there was any miscalculation, it would be that she went on to become a popular actress at a very fast pace but I'm glad she accepted the role.",
-                "There was almost no dialogue (for Delta), especially in the anime....but if only there was a continuation!!",
-                "Note: Fairouz Ai voiced Sakura Hibiki in \"Dumbbell Nan Kilo Moteru?\"",
-                "",
-                "The main character Cid is played by Yamashita Seiichiro.",
-                "I am sure that everyone who first heard the news of the anime adaptation probably had a certain person in mind when they thought of him, dressed in a black coat and performing in an exaggerated manner. We could probably guess the actor everyone had in mind.",
-                "But we decided to go with him (Yamashita). After all that is said and done, I can put it into words. I would like to summarize it vaguely as \"Because it was necessary\". I think that's a good reason, isn't it?"
-            ],
-            "ml": true,
-            "episode": "20",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1626061306309517313"
-        },
-        "20": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "22/02/2023",
-            "jp_image": "directors_note_an1_th.jpg",
-            "jp_text": "",
-            "en_text": [
-                "The Eminence in Shadow",
-                "2nd Season",
-                "Hello, this is the director.",
-                "Nice to meet you, thank you for watching \"first season\", and the broadcast of the \"second season\" was decided.",
-                "As you can see from the past tense, there are a lot of intersting stories around here, but I'll probably have a chance to talk about them elsewhere.",
-                "In any case, we are currently working hard on the production, so please wait it's short but that's all for now.",
-                "Thank you for your continued support."
-            ],
-            "ml": false,
-            "episode": "th",
-            "anime": "1",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1628369009648467968"
-        },
-        "22": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "23/02/2023",
-            "jp_image": "directors_note_an1_a.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Sherry",
-                "A conversation one day.",
-                "\"It's about Sherry\"",
-                "\"Yes.\"",
-                "\"It's just the way the story is supposed to flow.\"",
-                "\"I've checked the original work. That's why we've come up with this storyboard.\"",
-                "\"Yes\"",
-                "\"But I am not sure if it's a good idea to add this to the anime that wasn't done in the original work.\"",
-                "\"Huh? I see your point.\"",
-                "\"That's right\"",
-                "\"Yes\"",
-                "\"Aizawa-san, anything from you?\"",
-                "\"No.\"",
-                "\"Any opposition to this?\"",
-                "\"No\"",
-                "\"Are you upset about this?\"",
-                "\"No\"",
-                "\"Should I do a retake?\"",
-                "\"No\"",
-                "\"Really\"",
-                "\"Yes\"",
-                "\"And Sherry?\"",
-                "\"Yes\"",
-                "\"Yes\"",
-                "That's what happened.",
-                "Rose",
-                "Q. It's not a good time to introduce the haircut (of Rose)!",
-                "A. I think so, too.",
-                "In episode 1, Rose....666 appeared. 664 and 665 as well. But the original work had only been published up to the third volume at that time, there was no character design. Our policy was to ask Tozai-san to come up with designs for the more important characters. So naturally, we ordered designs for these girls as well. And then, he came up with the following: A rough design with their hair short. Naturally, we proceeded with the work according to the rough design.",
-                "Just as I was thinking that with this design, the hair cut (of Rose) would be performed in the final episode... I read the fourth volume of the original work and could not believe my eyes. Sad news: Rose's hair is still long in the illustration. No, no, no, no.... What should we do, forget about the first episode and stop the cutting of her hair in the last episode? I even went so far as to ask the author about it, and as a result, he said, \"Don't worry, I'll have it cut in the original story too!\". He said he had thought of a good time to do it. So, he decided to adapt it to the original work afterwards.",
-                "Conclusion. A rough design is just that, a rough design. Things happen.",
-                "Shadow",
-                "Q.They will know, right?",
-                "A. No, they won't.",
-                "I'm serious. It is not for the sake of the animation, but for the sake of the story. The change from Cid to Shadow is not only in his costume, but also in his height, build, hair length, and eyes. It's easy to understand if you look at the settings. In other words, it is not a \"disguise\" but a \"metamorphosis\" or \"transformation\".",
-                "Of course, people in that world cannot instantly change their height and weight. If there is a person with a clearly different physique in front of them, that is a different person. They will not be able to recognize them. We, who are looking at it from omniscient point of view, are able to tell by the color, the voice, and the transformation scene, but there is a difference in consciousness for the people who are seeing it in front of their eyes and those who are not. This is the reason why Shadow is not exposed. Of course, this is just an excuse I prepared for the fact that I had to leave out the mask due to the work schedule.",
-                "What about the girls? I have a feeling that if they were to wear hoods and their silhouettes were uniformly inconspicuous, they wouldn't be noticed too. If they just put on masks as in the original story, it would be obvious from their hair style.",
-                "In case you are wondering, there is no problem when Shadow Garden comes out showing their face...because there are \"no witnesses\". Like in episode 2 or 4...."
-            ],
-            "ml": true,
-            "episode": "a",
-            "anime": "1",
-            "link": "https://x.com/yaduka301/status/1628591706278084609"
-        },
-        "23": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "05/10/2023",
-            "jp_image": "directors_note_an2_1.jpg",
-            "jp_text": "",
-            "en_text": "",
-            "ml": false,
-            "episode": "1",
-            "anime": "2",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1709765845164171346"
-        },
-        "24": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "12/10/2023",
-            "jp_image": "directors_note_an2_2.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Hi this is the Director. That was Ep2.",
-                "Even if it's a little bit stiff, there is something we can gain from an Exploding PunchLine.",
-                "Plus Sugita-san's beautiful voice adds further more impact to the punchline.",
-                "Anyways Let's talk about the OP and ED.",
-                "The OP is what the OP is. According to the series' MC it was a \"Cutting everything down except for the necessary stuff\".",
-                "The S1 OP was made in a jumpy way.",
-                "The fact that S2 OP was done straight may have been surprising.",
-                "Aaaand about the ED.....",
-                "The story that I'm going to tell is kind of a non-fiction story but hear me out....",
-                "-One day-",
-                "\"Umm about the ED.\"",
-                "\"What about it?\"",
-                "\"We spent too much money on S1's ED.\"",
-                "\"I wonder.\"",
-                "\"So I propose...\"",
-                "\"(Looks like we are going to have single song and no characters singing)\"",
-                "\"4 characters singing!\"",
-                "\"(What the hell is this man talking..)\"",
-                "\"So who are we picking?\"",
-                "\"Hmmmm let's separate 7 into 1,2,2, and 2.\"",
-                "\"That would be 7 recordings and the cost will stay the same.\"",
-                "\"I see.\"",
-                "\"So pick 4 characters.\"",
-                "Alpha aside, I don't want to make it like I'm ranking the other six.\"",
-                "\"Naruhodo.... So Alexia and others?\"",
-                "\"Nope, I don't want the characters that is involved in the main story to do meta-fiction elements in the anime.\"",
-                "\"What about the Seven Shadows (Shades)?\"",
-                "\"Shadow Garden characters (7shades) is our PR characters outside this work.\"",
-                "\"Naruhodo, soo the characters from SG side that is likely to appear in S2 are...\"",
-                "\"Yes, but I don't want to use 664 and 665 because they are involved with 666...\"",
-                "\"So a character that some reputation but doesn't get involved with the main story..\"",
-                "\"Nu, Lambda, Chi(Kai), and Omega?\"",
-                "\"Let's roll with that\"",
-                "\"Really?! Chi and Omega hasn't even appeared in the LN yet.\"",
-                "\"I don't see any problems.\"",
-                "And thats how it turned out.",
-                "There are many stories that went like the story I told. I'm sure the people who were involved was having a rough time.",
-                "Oh btw the artist of the art behind this msg is not the S1 legendary super animator... his schedule was full so I asked someone who is close to me.",
-                "Anyways",
-                "Stay tune for the next episode where the trigger gets lighter and lighter to pull.",
-                "PS: Juggernaut's VA is Tsuyoshi Koyama-san! *Not to be confused by Rikiya Koyama (Olba's VA)",
-                "Tsuyoshi-san's voice is what I heard when I saw Juggernaut's design.",
-                "Wild and excellent!",
-                "Oh as you know,",
-                "its not \"ジャガー (jagā)\"",
-                "Its z\"ジャガ (jaga)\"",
-                "We made the mistake in front of the author Daisuke himself. When we found out that we were pronouncing it wrong we froze.",
-                "Crimson's VA is Tomokazu Sugita-san!!",
-                "Beautiful voice. It is really beautiful when you hear it in person.",
-                "I love Crimson's design that adds more beauty to Sugita-san's voice.",
-                "So thats why he got that treatment...."
-            ],
-            "ml": false,
-            "episode": "2",
-            "anime": "2",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1712302076674658740"
-        },
-        "25": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "19/10/2023",
-            "jp_image": "directors_note_an2_3.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Hi, this is the Director.",
-                "Episode 3 was Lawless City-Arc's final episode.",
-                "Ummm... when I was drawing the storyboard, I realized about something.... Or should I say something fell from the heavens.",
-                "\"Wait? Maybe it's time to show it.... It's natural to pull it in this story flow\"",
-                "Let me paint the picture. There is no characters that adversely affects the future story of the LN in the screen..",
-                "Hmmm.... Looks like it's doable... Wait... Maybe we are changing it too much...",
-                "But since I came up with the idea, might as well draw it and show it to Daisuke- sensei. If we get rejected, I'm just going fix it....",
-                "Long story short, the idea was accepted. So thank you Nazuka-san (Aurora's VA). Yamashita-san (Shadow's VA) teaching Nazuka-san how to say it was a funny sight to see. But lets keep it secret.",
-                "We have another topic. Many people might be thinking \"Why is it on the left arm?\"",
-                "Well..... this is.... ummm.... You know.. haha",
-                "Well in the LN's ■■■ the ■■■ is ■■■",
-                "and that ■■ is \"■■■\" with ■■.",
-                "This time it was",
-                "\"■■■'s ■■\" \"■■■'s ■■\"!",
-                "We asked the author about but he replied",
-                "-\"I had no such intentions to make it like this at that time.\"",
-                "Yes. I expected this answer.",
-                "So now we are told to do whatever we want to do and maybe this",
-                "■■■■■■■■■.",
-                "So we decided to make the ■■■ on the left arm.",
-                "In terms of Evil eye contents, It's true that its harder to understand it, but to make the story after this easy to understand. It must be done.",
-                "We still have problems left but next episode is a new story!!! That voice.... Is that...",
-                "",
-                "PS: Elisabeth is voiced by Saori Hayami-san",
-                "This character called Elisabeth is only explained by other characters through their flashbacks. Even in LN.",
-                "Actually she has no single phrase. There is no problem with that... Wait If she doesn't speak, the last battle is going to end up like the Lindvurm (Sacred Land) arc....",
-                "So we decided to make her say a phrase and make it understandable to the audience what kind of a character she is...",
-                "Well I'm sure she is a \"good person\".",
-                "And I wanted her to sound like a \"good person\" so I asked Hayami-san to voice over Elisabeth."
-            ],
-            "ml": false,
-            "episode": "3",
-            "anime": "2",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1714838791972896995"
-        },
-        "26": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "26/10/2023",
-            "jp_image": "directors_note_an2_4.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Hi this is the Director.",
-                "That was Episode 4 and Fake Bill arc starts!",
-                "That means \"John Smith\" is here!",
-                "John Smith's VA is Jun Fukuyama-san. A lot of people might expected it. I'm with the \"a lot of people\" side. I couldn't think of someone else other than him.",
-                "In this arc, there is no need to go crazy.",
-                "Therefore I think he is the most fitting VA. So sit back, relax, and enjoy.",
-                "Anyways, Finally we are in the Fake Bill arc. This arc made me think back. Reading Chapter 21's (WN) \"■■\" text made me sure that this series is getting novelized.",
-                "And then Chapter 136 is where I thought",
-                "\"This series is definitely getting an anime adaption.\"",
-                "It was exactly at the Fake Bill arc. October 2018 was the date which the revisions were added.",
-                "It was 5 years ago..... Damn we've come so far.",
-                "When I was told to be the Director.",
-                "Visualizing this arc was the first thing that came to my mind.",
-                "Now, how to recreate that feeling after reading the WN in the anime.",
-                "I wanted to recreate it, so that is why we used 20 episodes to adapt the Vol.1 and 2.",
-                "Audience might say \"We thought there was was no 2nd Season\"",
-                "Well back then I was thinking \"If we made the 20 episodes with our heart, They might want us to make additional 2 or 3 seasons.",
-                "At that time, I was aiming for \"I want to do this arc in here and that scene in that.\"",
-                "I'm amazed that it came true....",
-                "I'm so thankful for everyone and the staffs for giving me such an opportunity.",
-                "With that being said. Stay tuned for the next episode!"
-            ],
-            "ml": false,
-            "episode": "4",
-            "anime": "2",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1717375511838556625"
-        },
-        "27": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "02/11/2023",
-            "jp_image": "directors_note_an2_5.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Hi this is the Director. That was Episode 5.",
-                "Just in case you're wondering. Gamma's scene was written by me and passed to the Filming Director.",
-                "In other words it was our methods. Yes.",
-                "Oh Btw,",
-                "Us and the girls had same reaction while making the series in the advant (The scenes before the OP). For some reason someday in the S1's Dubbing session, we had a time to look back S1's character profiles.",
-                "Our reaction was \"Eh?\". The staffs were surprised by the \"16\" and \"17\". What a healthy girls.",
-                "Anyway, New characters again! And his name is \"月丹(Gettan)\"...",
-                "Hmm? \"月丹(Gettan)\"?",
-                "\"ユキメ (Yukime)\" is \"ユキメ (Yukime)\"",
-                "But \"月丹(Gettan)\" is not \"ゲッタン (Gettan)\"?",
-                "What is the meaning of this?",
-                "I think its impossible for Kanji to exist on this world. So maybe they use Kanji to translate the ideograms in this world into modern language. And looking at Gettan's outfit, His origin must be close to irl Asian culture.",
-                "If the series's main stage is European-like, and the culture is molded by the endemism of that region. There has to be distance between culture spheres just like in reality.",
-                "And yet Gettan holds a position in a distant foreign land. (even though it's an underground)",
-                "He is used to accept different cultures...",
-                "Interact with lots of ppl...."
-            ],
-            "ml": false,
-            "episode": "5",
-            "anime": "2",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1719912315502657838"
-        },
-        "28": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "09/11/2023",
-            "jp_image": "directors_note_an2_6.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Hi this the Director!",
-                "That was Episode 6.",
-                "Since the Mc is the MC, I was expecting that \"no way he hurts the heroine.\" Looking at his past scenarios. The Mc's might sound like a moron but his attitude was willing to help. I had some kind of level of trust for him..... but this MC..... Not only the heroines, he also betrayed the audience with no reason at all.",
-                "\"How to finish the MC's mistakes?\"",
-                "\"Can we completely erase the reader's frustration?\"",
-                "I was thinking about those stuffs while waiting for some updates.",
-                "This chapter(arc) is really my favorite.",
-                "The plot makes me want to jump into a fire just to take a risk of getting burned.",
-                "I bet there is only few people that are willingly to write this arc.",
-                "And I was thinking. How great could it be if I landed it perfectly.....",
-                "With that being said, it was a battle episode!",
-                "Money related gang wars,,,,,",
-                "Stack of cash,,,,",
-                "Train robbery,,,,",
-                "Insane fast paced fights inside and outside a moving train,,,,",
-                "This is it. This is the one. I'm surely it will be great to watch.",
-                "If we are going to add some stuff, I'm going to make this part the action part that is worth to watch.",
-                "I was thinking of adding Delta's fight scene in S1 which is not in the original work(LN). Well it got added to the S2 so we protraited action as much as we could as a TV series.",
-                "Phew... as always my words were unorganized, but I'm looking forward to see you next time!",
-                "Does this story even ends....",
-                "PS: I want to listen to the convo of Gettan and Garter all day.",
-                "Mentioning Namikawa-san (Gettan) and Chafuurin-san (Garter) might be needed but, they are funny even though both of them are just talking about bad stuff.",
-                "So Gettan's VA is Daisuke Namikawa-san!",
-                "There is a lot of actors that can act as a \"cool adult\" but Namikawa-san is an actor with a voice that can express the miserable and shameful part of the adults. Sounds strong and cool, but somehow a hopeless aura comes with it.",
-                "Muy Excelente"
-            ],
-            "ml": false,
-            "episode": "6",
-            "anime": "2",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1722448932230287734"
-        },
-        "29": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "16/11/2023",
-            "jp_image": "directors_note_an2_7.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Hi this is the Director.",
-                "That was Episode 7 with Special ending.",
-                "In this genre, it's hard to end a story with a MC not gaining a thing.",
-                "Putting the story together with what the MC wanted being stolen, while the genre likes to take the method of \"Take Everything\" makes hard to convince the audience. If we wanted to do it till the end, we need to wait and see the expression of the audience. That kind of balancing skills are wanted.",
-                "If we made the audience laugh while watching the MC gets no gain or gets robbed by \"the Enemies\" is a accomplishment. There is nothing to say than \"We did well\".",
-                "Its no wonder why one of our troublesome reader (definitely not the Director) was convinced that this WN is getting an adaptation.",
-                "Anyways, What is the best way to end the story if we animate it.....",
-                "I don't want to cut any dialogues but, adding the whole conversation makes it boring. Although we need a \"desecrate the scene\" type of punchline.....",
-                "Desecrate...... I see.....",
-                "Let's make it a Special Ending!",
-                "First, make a sentimental music about Yukime and Gettan's years of love-hatred relationship, and put a shi*ty convo above the music to shatter the scene.",
-                "\"————. As I requested, I want it to be blasphemous. So make a sentimental music\"",
-                "\"Ok\"",
-                "And just like that, the music that I requested was used in the Ending. I swear there was no \"tricking the composers to make the best song they can do.\". We already told them about the usage of it. I promise.",
-                "Let me express my gratitude to the staffs again. Thank you for your work.",
-                "Even one of our high position staff said \"Forget about those character songs. Make this the normal ending song.\"",
-                "So make sure to enjoy the song as a single song too!",
-                "And with that being said,",
-                "Next episode is going to be a new arc....",
-                "Hmmmm..... Huh?",
-                "PS: It's a unnecessary topic but we made this Delta (The one in the background of the raw) appear in S1's last part, to make the reunion in the S2EP4.",
-                "Well she was already bound to reunite with BOSU in this arc. But yeah, that's when I figured that she can't appear in the First Episode along with 6 others.",
-                "So that is why the avant of the season was like that."
-            ],
-            "ml": false,
-            "episode": "7",
-            "anime": "2",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1724985653954494784"
-        },
-        "30": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "23/11/2023",
-            "jp_image": "directors_note_an2_8.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Hi! This is the Director!",
-                "That was Episode 8.",
-                "It's Anime Original time.....",
-                "(\"It's Hunting time\" reference)",
-                "Why? Let me explain.",
-                "I already said it a million times but I'm going to say it again.",
-                "\"I LOVE FAKE MONEY ARC\" but thats that and this is this.",
-                "After all the things that the MC did to the heroines, just to appear next week like nothing happened is a bit weird.",
-                "Also he himself said \"Maybe it's correct to put some distance.\"",
-                "Reading the WN, you can feel the Mc and Author had a burnout syndrome in the Prison Break Arc.",
-                "Even the LN..... you know....",
-                "There was a time that it took a year to publish a new volume...",
-                "I was even relieved for his come back.",
-                "Anyways,",
-                "Following the LN, having an interval in the anime is inevitable. And using this episode as an interval between arcs was all according to plan.",
-                "So it's obvious for \"what to do next?\" to rise to the surface.",
-                "Personally I wanted to do the Prison Break Arc, but we don't really have that much time.",
-                "Actually the reason that I can't make it is because I couldn't think of methods to solve the setting differences between the WN and LN.",
-                "I did came up with a solution right now, but unfortunately its too late.",
-                "So, we had a meeting about \"what to do next?\". Make a story about the past? Make an original story for the anime? Those sort of stuffs.",
-                "And suddenly a bigwig said \"Can't we just request Sensei (the author) to write something?\"",
-                "All of us looked at each other unintentionally.",
-                "\"What if the new volume gets delayed due to our request?\" Says the Director. Well let's just ask sensei and pray for the best. —————",
-                "And thus this Episode was born.",
-                "By the way, the request was \"Seven shades (shadow) with Po and Skel, NO CID\"",
-                "Thank you for your help Aizawa-sensei. Let me borrow this place to express my gratitude.",
-                "Oh and by the way, It was me. It was me who said",
-                "\"If the author himself is helping, It should be natural for the illustrator to help.\"",
-                "and pressed such demands.",
-                "Thank you too Touzai-sensei.",
-                "PS: 原作 (gensaku) \"Original work\" is",
-                "different from 原案(gen・an) \"Original Plan\"",
-                "Just like how 監督 (kantoku)\"Director\" and",
-                "監修(kanshū)\"Supervisor\" different is.",
-                "Well it depends on the series so it's slightly difficult to understand.",
-                "But in our case Author writes the \"Original work\"",
-                "↓ Make a script based on the \"Original work\"",
-                "↓ The Author checks the script....",
-                "That's how the anime was made.",
-                "Oh speaking of \"Original work\".",
-                "I wonder if the short Original work gets published somewhere."
-            ],
-            "ml": false,
-            "episode": "8",
-            "anime": "2",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1727522366631141837"
-        },
-        "31": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "30/11/2023",
-            "jp_image": "directors_note_an2_9.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Hi! This is the Director and that was Episode 9.",
-                "It was all performance including the staff roll. By the way, in the art context and setting names are.....",
-                "Wait, in the script it is different....",
-                "It's hard to Explain...",
-                "Anyways,",
-                "Bushin Festival was in the summer and the anime is currently in the middle of winter.",
-                "In exchange for his own work, he was supposed to agree to help us achieve our goals. But I realized I was just a Vanguard for the Organization. (this is bu-shi-!)",
-                "Based on those circumstances, it's been months already. The current situation must be \"One's heart is festering\"",
-                "Although, the industry is still hard for those who are not thorough with their actions as usual.",
-                "I have a feeling that the closing chapter is going to be pain in the ......",
-                "Anyways, we are entering Vol 4 from today. We are entering and I wrote \"closing chapter\" earlier....",
-                "Some of you might already guessed it based on the remaining episodes. Yes, S2 is going to end in the middle of Vol4.",
-                "After S2 with 12 episodes got decided to be made, I was thinking \"How to assign the Chapters (arcs)\".",
-                "12 episodes is too long for a single volume, and its too short for 2 volumes.",
-                "Its basically 「帯に短し襷に長し (Obi ni mijikashi, Tasuki ni nagashi)」 *Meaning: It's good for neither this nor that",
-                "\"So let me do 1 and a half Volume.... though I haven't heard other series doing it\"",
-                "\"Oh... Ok...\"———— and thus another unheard lighthearted decision was made.",
-                "S1 having 20 episodes and S2 ending in the middle of a volume....",
-                "This anime really loves doing special things..... Well, streaming is the mainstream nowadays, so organizing stories per cour mightt be turning into an old method.",
-                "Oh speaking of \"Organizing\"",
-                "There is a rumor that there was a human who wanted to make S2 starts in April",
-                "after the S1 ends in February.....",
-                "Stahp. You want us dead?",
-                "That's all. Stay tuned till the end.",
-                "",
-                "PS: Two girls that couldn't get to wear swimsuits due to the story.",
-                "664 is Miyu Tomita-san",
-                "665 is Hina Yōmiya-san",
-                "There was nothing to say, they slayed their roles and did a good work.",
-                "Comparing them to the Religious Euthusiasts girls, both of them prioritize their work. \"If they prioritize their private lives nothing will be left\". We made both of them to move under such images.",
-                "They are not slacking off. I think.",
-                "Well both of them are those type of girls that will put their lives when necessary.",
-                "Just like in the episode."
-            ],
-            "ml": false,
-            "episode": "9",
-            "anime": "2",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1730059076229550537"
-        },
-        "32": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "07/12/2023",
-            "jp_image": "directors_note_an2_10.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Hi it's the Director! That was Episode 10.",
-                "The topic that I'm about to tell is nothing special. But hear me out.",
-                "Imagine you're in a Cinema (Theater) and you're leaning forward from your seat because its the climax scene.",
-                "\"But you feel thirsty, so you take a sip.\"",
-                "\"But you feel peckish, so you reach for the popcorns.\"",
-                "Those kind of behaviors are not an act of bad will.",
-                "\"Being Impressed\" and \"Physiological Needs\" can exist at the same time.",
-                "In other words...... how do I put it...",
-                "Hmmmmmm.... Yeah....",
-                "Now I know you want to say \"what is he talking about?\"",
-                "Don't worry that's the normal reaction.",
-                "Anyways,",
-                "We've been making 30 Episodes of this anime.",
-                "And the current episode is the first episode that has no battle scenes.",
-                "S1E3 had no battle scenes but there was a sword wielding scene, so this episode is the first one to totally have no \"fighting scenes\"",
-                "There were some plans to bring a battle scene from the WN or make some anime-original fighting scenes. But adding them would make us choke ourselves time-wise.",
-                "So the plan was rejected.",
-                "Well the current situation is boiling, And the powder keg is about to blow!",
-                "That's all for today!",
-                "It's been long since I wrote a short note..",
-                "Maybe I've been writing long notes the whole time....",
-                "",
-                "PS: Natsu and Kana, Yukime's underlings.",
-                "Natsu is Kaya Ichinose-san",
-                "Kana is Madoka Asahina-san",
-                "It's slightly confusing but generally speaking. The base that SG was using in the episode was from Yukime's company.",
-                "So Natsu and Kana was to appear.",
-                "But in the Editing phase, they didn't make it to the cut. Wait.... One made it through..",
-                "By the way,",
-                "Both of them have a line in the Original Work, and they were close to the main characters.",
-                "And I thought they would had good amount of screen time. So we went to ask Touzai-sensei to draw their Character designs.",
-                "We wanted to use both of them as more as possible. But it was difficult."
-            ],
-            "ml": false,
-            "episode": "10",
-            "anime": "2",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1732595796866953653"
-        },
-        "33": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "14/12/2023",
-            "jp_image": "directors_note_an2_11.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Hi! It's the Director. That was Episode 11!",
-                "Some of you guys might noticed that this episode was longer than the other eps.",
-                "If you felt the advertisement was short, you're correct!",
-                "We reduced the length of the Ads.",
-                "When I measured the storyboard, there were too many task to deal while heading to the final episode.",
-                "After making the script, I had a feeling that adjusting the lines might not be enough.",
-                "Oh well. There's nothing we can do. So I told the Bigwig.",
-                "Nakanishi: We don't have enough airing time. So I think we'll be scraping off some scenes.",
-                "Bigwig: Hmm scraping off you say...",
-                "N: Yeah (especially the Avant and the A- part)",
-                "B: Understood. Let's cut off some scenes.",
-                "N: Okay",
-                "B: Lets cut off some advertisements.",
-                "N: WHAT?",
-                "B: Oh we can cut off the sponsor credits too.",
-                "N: Wait wha? We can't cut off the Sponsor Credits!!",
-                "Most of it is based on real story.",
-                "By the way,",
-                "Playing the OP and ED every episodes with no inserting main story on them was our original plan since the first planning.",
-                "Cutting off OP and ED might get us 3mins max of airing time, but that would add 3 more minutes of work to do. That would burden the studio.",
-                "If we cut the OP and ED repeatedly, \"oh We accidentally made an unnecessary episode\" could happen.....",
-                "Having more works to do doesn't mean that our deadline will be extended.",
-                "Long time ago,",
-                "I had an opportunity to help an anime studio that was making an Anime that doesn't use OP and ED that much.",
-                "Before numbers of work and the approaching deadline, the main staffs were close to see the heave.... No, their faces were not in this world.",
-                "Recalling that memory made me swear, to not cut stuffs that were not originally planned to make some airing time.",
-                "Well the oath didn't really mean something in the face of reality. And that's why we delivered a special episode.",
-                "Oh yeah, THERE WERE NO SPONSOR CREDITS HARMED IN THIS EPISODE.",
-                "With that being said, stay tune for the final episode!",
-                "",
-                "PS: Queen Reina's VA is Yuuko Minaguchi-san!",
-                "We wanted a \"stupid\" character and not a \"villain\" character. So we requested a person that has a voice with no evil intentions.",
-                "Reina having no evil intentions made her uncontrollable. So we decided to give her the Red card in this Episode."
-            ],
-            "ml": false,
-            "episode": "11",
-            "anime": "2",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1735135856489627858"
-        },
-        "34": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "21/10/2023",
-            "jp_image": "directors_note_an2_12.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Thank for you watching!! 2023.12",
-                "PS: The Anime started with Yui Horie-san's line.",
-                "So ending the anime with her voice should make it better",
-                "We decided our decision with an easygoing mind.",
-                "But, Kobayashi-san and Kagawa-san (VAs of the kidnappers) joining in made it more wonderful.",
-                "With the music in the background. It felt like we are back at the beginning, and it felt like a long long prologue has just ended too.",
-                "Anyways. that's all for today's notes.",
-                "Once again thank you for watching."
-            ],
-            "ml": false,
-            "episode": "12",
-            "anime": "2",
-            "link": "https://twitter.com/Shadowgarden_PR/status/1737673437341159577"
-        },
-        "35": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "29/12/2023",
-            "jp_image": "directors_note_an2_a.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Special",
-                "Hi it's Nakanishi. This note is guerrilla. Handwriting the previous notes was a pain in the ass, so I'm going to use digital.",
-                "But unlike the previous notes this one might have less jokes and is more focused on small details. Lets begin.",
-                "",
-                "•King Oriana",
-                "Raphael Geerk Oriana.",
-                "There's a particular reason why he has a middle name, and it's a simple reason.",
-                "The god who made this world forgot to name himself. And god spread his name differently throughout the land.",
-                "By the way my first knowing about this information was when I checked the panflet in the package.",
-                "Resulting \"What are we going to do... the name is different...\" type of situation.",
-                "And the creator gave us an oracle that says \"Let there be Middlename\" and time continue till present day.",
-                "But the question of \"Rose's Middle Name\" is still not yet answered and is left vague.",
-                "Maybe Oriana Kingdom has a custom of naming a saint's name that is attached to the king's title.",
-                "The king's name was \"Geerk\" throughout the anime. Because that's what I was told.",
-                "",
-                "•559",
-                "559 is like a Seven Shades (Shadows) but has no heroine plot armor. That's how we wanted to draw her.",
-                "Her face expression was something... But looks like the audience enjoyed it and is accepting how she act?",
-                "Making her extreme probably made her cute?",
-                "Anyways, Her behavior towards 666 is 99% personal. In the S2E9 where 666 spotted the queen in the ruins. 559 was staring at 666.",
-                "In the background there was this conversation.",
-                "But Rose, She doesnt know.",
-                "It's surely that she will know about it with a little effort of searching. But she has no will to know.",
-                "Rose wont even question, even her mom is wearing a bright colored pink dress, while she is in her mourning dress.",
-                "As I wrote earlier 559's behavior towards her is 99% personal, but only hitting her in that situation is quite warm-hearted.",
-                "Maybe 559 was feeling pity, beyond Anger and Dismay.",
-                "",
-                "•Mordred",
-                "Weak. Even with Koyasu's Voice, the characters weakness cant be hidden.",
-                "I think a lot of people know about this, but Mordred got huge nerf in the LN.",
-                "He got nerfed so hard to the point where he made me question \"How did you even manage to make Perv listen to you.\"",
-                "Man, what should we do about him. A final boss with a Huge Nerf....",
-                "Well we tried our best to do some tricks and the outcome was aired.",
-                "We also did some adjustments to his line to make him sound like a scholarly person.",
-                "We added out-of-place settings to his weapon. Well not only the weapon, but also in his Full Armor and him wearing it.",
-                "Maybe the idea was \"I'm not a monkey. So instead of training let me just wear a strong equipment.\"",
-                "As for his plan in that situation. He threw the towel for resurrecting Diablos and changed it to \"Summon someting from a different dimension to buy some time or (kill shadow) if lucky.\"",
-                "Practically, He actually controlled the Ragnarok (around at the end of S2E11)",
-                "It was pretty reasonable for a plan. But such retreating strategy is not well received by the Elites, so it wont be a main strategy idea in the organization————",
-                "And that's how I thought about it, So I don't really know what will happen.",
-                "",
-                "•Effects",
-                "Its brand new! Not from the stash!",
-                "Oh... but the Color and Image Processing is still the same.",
-                "•Episode 8",
-                "Let me tell you a fact that will blow your mind.",
-                "We \"The Animator Side\" didn't request any Bikini episodes. I swear.",
-                "",
-                "•戒名\"Kaimyō\"",
-                "(The name written on the tombs)",
-                "We did our research about rules and laws about tombs.",
-                "And the results was \"We don't know!\", even we did it correctly, it would probably make some unnecessary problems.",
-                "So we did it vaguely. Is it not \"童子 (Douji)\" If one dies at 18?",
-                "",
-                "•By the way...",
-                "In this anime, there's same scene that has little different stories.",
-                "For example S1 E13, E14 and S2 E11, E12. A scene that was shown on the previous episode is moved to the back... or something getting added in the next Ep that was not in the previous episode.",
-                "If you try connecting the anime, you will realize that it won't connect perfectly. It's on purpose.",
-                "The point is each scenes have their own place. A scene that goes to the advant, a scene goes to the middle and to the end.",
-                "We prioritized how to make each episode good and made our decision.",
-                "Regardless of the pros and cons, we wont be changing how we do the anime.",
-                "",
-                "Anyways,",
-                "It was a disorganized note but thats all for this note.",
-                "Next time is...... next time.",
-                "Next time hmm?",
-                "No, let's not go any further.",
-                "With that being said.",
-                "Thank you for reading and I bid you all farewell.",
-                "",
-                "PS: Ahh, this one. It's Zeta's casual clothing.",
-                "The reason why it looks like a dress is to match her clothing with the other shades.",
-                "We ordered Zeta's Casual clothing along with the other shades/shadows very early in the process.",
-                "But my idea of \"If most of her mission is infiltration, she needs to be in a cosplay.\" gave her 0 screen time.",
-                "We manage to force her in to the last episode... its too good to be wasted.",
-                "We left it to the character designers to decide how to draw the designs.",
-                "So actually there was no intention or whatsoever. But the circle and triangles on the necklace that you can find around the Isekai world is... ummm",
-                "Let's just say it's a symbol of a tribe."
-            ],
-            "ml": false,
-            "episode": "a",
-            "anime": "2",
-            "link": "https://x.com/yaduka301/status/1740569072516178260"
-        },
-        "36": {
-            "en_author": "Nakanishi Kazuya",
-            "jp_author": "中西 和也",
-            "date": "24/05/2024",
-            "jp_image": "directors_note_anm1_t.jpg",
-            "jp_text": "",
-            "en_text": [
-                "Hi this is Nakanishi. Bringing you a special release commemorative edition letter.",
-                "Makers have the balls to say that this is a new information.",
-                "I ordered the makers with a vague description \"We are having an event, might as well make something.\"",
-                "But I didn't know that they were making \"New Information\" or a theme about it.",
-                "Well I guess we can say that officially announcing the main staffs is new information....",
-                "Putting that topic aside.",
-                "The video that was published was a \"PV exclusive video\".",
-                "Unlike the normal PV's out there that uses cuts from the main animation, this one is a Video only for the Promotion Video.",
-                "You can receive the video as \"Wow! An animation only for the PV! How wonderful!\"",
-                "Or",
-                "\"Does that mean.... The movie isnt ready yet.....?\"",
-                "I'll leave the imagining for the audience.",
-                "Its \"How you receive it\" matters.",
-                "By the way,",
-                "The staffs are",
-                "Director: Me",
-                "Storyboard: Me",
-                "Production: Me",
-                "Key frames: Me",
-                "Animation Director: Me",
-                "Chief Animation Director: Character designer",
-                "After saying \"This is my maiden work movie.\" I received fired up retouch.",
-                "And Animations, Finishing Touch, VFX, Editor, SE and etc are brought to you by the same staffs who worked in the anime.",
-                "They have my gratitude.",
-                "About the mysterious professor's VA....",
-                "Well I think you don't need any explanation about him.",
-                "———— thats about it. Only the Ani Director is different.Its my first time doing Animation Director. And it felt like eternal since I drew key frames.",
-                "Oh, I did all the \"KeyFrame Director\" and \"2nd KeyFrame\" works.",
-                "\"Soloing Key frame\" in the rare and correct sense of the word.",
-                "Well it only was 30cuts so its not a story to brag.",
-                "There were no scripts, so I went straight from the storyboard..... so might as well call my self \"the scriptor\". Just kidding.",
-                "Anyways. It was a short PV so imma end it here.",
-                "I apologize about the \"new information\" of the movie.",
-                "You'll have to wait for the official announcement, not out from the blue. If there is one thing I can say, I'll be saying the same thing that is written in the PV. \"銳意制作中(We are working hard on it)\"",
-                "And thats it for this message",
-                "See you next time"
-            ],
-            "ml": false,
-            "episode": "t",
-            "anime": "m1",
-            "link": "https://twitter.com/yaduka301/status/1794926995085971512"
+        "Generic": {
+            "order": 7,
+            "General": {
+                "order": 1,
+                "characters": [
+                    "Attendees",
+                    "Bookie",
+                    "Broadcast",
+                    "Butler",
+                    "Church Member",
+                    "Civilian",
+                    "Chief",
+                    "Coworker",
+                    "Crowd",
+                    "Disciple",
+                    "Elven Coachwoman",
+                    "Elven Guardswoman",
+                    "Fan Passerby",
+                    "Female Pilgrim",
+                    "Follower A",
+                    "Follower B",
+                    "Forum User",
+                    "Guard",
+                    "Heckler",
+                    "Junior",
+                    "Maid",
+                    "Man A",
+                    "Manager",
+                    "Medic",
+                    "Mother",
+                    "Old Man",
+                    "Paladin",
+                    "Passerby A",
+                    "Passerby B",
+                    "Passerby C",
+                    "Passerby D",
+                    "Pickpocket",
+                    "Priest",
+                    "Researcher",
+                    "Sailor",
+                    "Scientist",
+                    "Soldier",
+                    "Subordinate",
+                    "Supervisor",
+                    "Vampire",
+                    "Veteran Paladin",
+                    "Villager A",
+                    "Villager B",
+                    "Villager C",
+                    "Villagers",
+                    "Woman A"
+                ]
+            },
+            "Bandits": {
+                "order": 2,
+                "characters": [
+                    "Bandit",
+                    "Bandit A",
+                    "Bandit B",
+                    "Bandit Boss",
+                    "Bandits"
+                ]
+            },
+            "Business": {
+                "order": 3,
+                "characters": [
+                    "Branch Manager",
+                    "Cake Shop Assistant",
+                    "Clerk",
+                    "Merchant",
+                    "Merchant A",
+                    "Merchant A Secretary",
+                    "Merchant B",
+                    "Merchant C",
+                    "Mitsugoshi Staff",
+                    "Quiche Stall Owner",
+                    "Shop Staff",
+                    "Skewer Stall Owner",
+                    "Soup Stall Owner",
+                    "Staff",
+                    "Wounded Merchant"
+                ]
+            },
+            "Casino": {
+                "order": 4,
+                "characters": [
+                    "Dealer"
+                ]
+            },
+            "Children": {
+                "order": 5,
+                "characters": [
+                    "Boy",
+                    "Boy A",
+                    "Boy B",
+                    "Boy C",
+                    "Boys",
+                    "Children",
+                    "Girl",
+                    "Girl A",
+                    "Girl B"
+                ]
+            },
+            "Committee": {
+                "order": 6,
+                "characters": [
+                    "Boy Cmte. Member A",
+                    "Boy Cmte. Member B",
+                    "Committee Member",
+                    "Committee Members",
+                    "Committee Person",
+                    "Girl Cmte. Member A",
+                    "Girl Cmte. Member B"
+                ]
+            },
+            "Deceased": {
+                "order": 7,
+                "characters": [
+                    "Deceased Child",
+                    "Deceased Elderly",
+                    "Deceased Man",
+                    "Deceased Woman"
+                ]
+            },
+            "Events": {
+                "order": 8,
+                "characters": [
+                    "Announcer",
+                    "Audience",
+                    "Participant",
+                    "Participant A",
+                    "Participant B",
+                    "Participant C",
+                    "Referee",
+                    "Spectator",
+                    "Spectator A",
+                    "Spectator B",
+                    "Spectator Woman"
+                ]
+            },
+            "Kingdom": {
+                "order": 9,
+                "characters": [
+                    "Aristocrat",
+                    "Aristocrats",
+                    "Civil Servant",
+                    "Civil Servants",
+                    "Margrave",
+                    "Noblewoman"
+                ]
+            },
+            "Knights": {
+                "order": 10,
+                "characters": [
+                    "Dark Knight",
+                    "Female DK Trainee",
+                    "Knight",
+                    "Knight A",
+                    "Knights"
+                ]
+            },
+            "Mercenaries": {
+                "order": 11,
+                "characters": [
+                    "Mercenary B",
+                    "Mercenary Boss",
+                    "Mercenary C",
+                    "Mercenary Veteran",
+                    "Mundane Mercenary"
+                ]
+            },
+            "Monsters": {
+                "order": 12,
+                "characters": [
+                    "Alpha Wolf",
+                    "Basilisk",
+                    "Boar",
+                    "Boss Monster",
+                    "Evil Spirit",
+                    "Ghoul",
+                    "Little Cuckoo-kun",
+                    "Merry Whip",
+                    "Monster",
+                    "Mr. Vendy",
+                    "Saurva",
+                    "Spirit"
+                ]
+            },
+            "Mysterious": {
+                "order": 13,
+                "characters": [
+                    "Mysterious Captain",
+                    "Mysterious Man A",
+                    "Mysterious Man B",
+                    "Mysterious Man C",
+                    "Mysterious Man D",
+                    "Mysterious Soldier A",
+                    "Mysterious Soldier B",
+                    "Mysterious Soldier C",
+                    "Mysterious Soldier D",
+                    "Mysterious Soldier E",
+                    "Mysterious Soldiers",
+                    "Mysterious Voice"
+                ]
+            },
+            "News": {
+                "order": 14,
+                "characters": [
+                    "Editor",
+                    "MNA Journalist",
+                    "News Reporter",
+                    "Reporter"
+                ]
+            },
+            "Rogues": {
+                "order": 16,
+                "characters": [
+                    "Rogue A",
+                    "Rogue B",
+                    "Rogue Leader"
+                ]
+            },
+            "School": {
+                "order": 17,
+                "characters": [
+                    "Classmate",
+                    "Female Student",
+                    "Female Student A",
+                    "Male Student A",
+                    "Student",
+                    "Teacher"
+                ]
+            },
+            "Therianthropes": {
+                "order": 18,
+                "characters": [
+                    "Bearded Participant",
+                    "Bearded T-thrope",
+                    "Fox T-thrope",
+                    "McKen Ro",
+                    "Pigtailed T-thrope",
+                    "Rabbit T-thrope",
+                    "Raccoon T-thrope",
+                    "Red Horse T-thrope",
+                    "T-thrope Opponent",
+                    "T-thrope Spectator",
+                    "T-thrope Spectators",
+                    "Therianthrope A",
+                    "Therianthrope B",
+                    "Tiger T-thrope",
+                    "White Horse T-thrope"
+                ]
+            }
         }
-    }
+    },
+    "characters": [
+        {
+            "name": "Narrator",
+            "name_variants": [],
+            "name_mirrors": [
+                {
+                    "base": "Narrator",
+                    "alt": ""
+                }
+            ],
+            "group": "Generic",
+            "subgroup": "",
+            "order": 1,
+            "url": ""
+        },
+        {
+            "name": "Akane Nishino",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Earth",
+            "order": 1,
+            "url": "characterIcons/AkaneNishinoIcon.webp"
+        },
+        {
+            "name": "Akira Nishino",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Earth",
+            "order": 2,
+            "url": "characterIcons/AkiraNishinoIcon.webp"
+        },
+        {
+            "name": "Haitani",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Earth",
+            "order": 3,
+            "url": "characterIcons/HaitaniIcon.webp"
+        },
+        {
+            "name": "Yuudai Saejima",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Earth",
+            "order": 4,
+            "url": "characterIcons/YuudaiSaejimaIcon.webp"
+        },
+        {
+            "name": "Yuuka",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Earth",
+            "order": 5,
+            "url": "characterIcons/YuukaIcon.webp"
+        },
+        {
+            "name": "Alexia Midgar",
+            "name_variants": [
+                "??? (Alexia Midgar)",
+                "Alexia & Claire (Alexia)",
+                "Alexia Midgar & Natsume Kafka (Alexia Midgar)",
+                "Rose & Alexia (Alexia)",
+                "Sherry & Alexia (Alexia)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "Alexia Midgar",
+                    "alt": "Alexia"
+                },
+                {
+                    "base": "??? (Alexia Midgar)",
+                    "alt": "????? (Alexia Midgar"
+                },
+                {
+                    "base": "Sherry & Alexia (Alexia)",
+                    "alt": "Shelly and Alexia (Alexia)"
+                }
+            ],
+            "group": "Midgar",
+            "subgroup": "Midgar Academy",
+            "order": 1,
+            "url": "characterIcons/AlexiaMidgarIcon.webp"
+        },
+        {
+            "name": "Claire Kagenou",
+            "name_variants": [
+                "??? (Claire Kagenou)",
+                "Alexia & Claire (Claire)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "Claire Kagenou",
+                    "alt": "Claire"
+                }
+            ],
+            "group": "Midgar",
+            "subgroup": "Midgar Academy",
+            "order": 2,
+            "url": "characterIcons/ClaireKagenouIcon.webp"
+        },
+        {
+            "name": "Christina Hope",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Midgar",
+            "subgroup": "Midgar Academy",
+            "order": 3,
+            "url": "characterIcons/ChristinaHopeIcon.webp"
+        },
+        {
+            "name": "Eliza Dakuaikan",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Midgar",
+            "subgroup": "Midgar Academy",
+            "order": 4,
+            "url": ""
+        },
+        {
+            "name": "Po Tato",
+            "name_variants": [
+                "Skel & Po (Po)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "Po Tato",
+                    "alt": "Po"
+                }
+            ],
+            "group": "Midgar",
+            "subgroup": "Midgar Academy",
+            "order": 5,
+            "url": "characterIcons/PoTatoIcon.webp"
+        },
+        {
+            "name": "Sherry Barnett",
+            "name_variants": [
+                "Sherry & Alexia (Sherry)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "Sherry Barnett",
+                    "alt": "Sherry"
+                },
+                {
+                    "base": "Sherry & Alexia (Alexia)",
+                    "alt": "Shelly and Alexia (Alexia)"
+                }
+            ],
+            "group": "Midgar",
+            "subgroup": "Midgar Academy",
+            "order": 6,
+            "url": "characterIcons/SherryBarnettIcon.webp"
+        },
+        {
+            "name": "Skel Etal",
+            "name_variants": [
+                "Skel & Po (Skel)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "Skel Etal",
+                    "alt": "Skel"
+                }
+            ],
+            "group": "Midgar",
+            "subgroup": "Midgar Academy",
+            "order": 7,
+            "url": "characterIcons/SkelEtalIcon.webp"
+        },
+        {
+            "name": "Suzuki Hope",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Midgar",
+            "subgroup": "Midgar Academy",
+            "order": 8,
+            "url": "characterIcons/SuzukiHopeIcon.webp"
+        },
+        {
+            "name": "Iris Midgar",
+            "name_variants": [],
+            "name_mirrors": [
+                {
+                    "base": "Iris Midgar",
+                    "alt": "Iris"
+                }
+            ],
+            "group": "Midgar",
+            "subgroup": "Crimson Order",
+            "order": 1,
+            "url": "characterIcons/IrisMidgarIcon.webp"
+        },
+        {
+            "name": "Adder",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Midgar",
+            "subgroup": "Crimson Order",
+            "order": 2,
+            "url": ""
+        },
+        {
+            "name": "Marco Granger",
+            "name_variants": [
+                "Dark Knight Trainee"
+            ],
+            "name_mirrors": [],
+            "group": "Midgar",
+            "subgroup": "Crimson Order",
+            "order": 3,
+            "url": "characterIcons/MarcoGrangerIcon.webp"
+        },
+        {
+            "name": "Glen",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Midgar",
+            "subgroup": "Crimson Order",
+            "order": 4,
+            "url": "characterIcons/GlenIcon.webp"
+        },
+        {
+            "name": "Klaus Midgar",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Midgar",
+            "subgroup": "Midgar Kingdom",
+            "order": 1,
+            "url": "characterIcons/KlausMidgarIcon.webp"
+        },
+        {
+            "name": "Mr. Kagenou",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Midgar",
+            "subgroup": "Midgar Kingdom",
+            "order": 2,
+            "url": "characterIcons/MrKagenouIcon.webp"
+        },
+        {
+            "name": "Mrs. Kagenou",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Midgar",
+            "subgroup": "Midgar Kingdom",
+            "order": 3,
+            "url": "characterIcons/MrsKagenouIcon.webp"
+        },
+        {
+            "name": "Cid Kagenou",
+            "name_variants": [
+                "Shadow",
+                "Mundane Mann",
+                "John Smith",
+                "Suzuki Hope",
+                "Minoru Kageno",
+                "Stylish Bandit Slayer",
+                "Stylish Ruffian Slayer",
+                "Nuru",
+                "??? (Cid Kagenou)",
+                "??? (Shadow)",
+                "??? (Minoru Kageno)",
+                "??? (Stylish Bandit Slayer)",
+                "??? (Nuru)",
+                "None (Cid Kagenou)",
+                "Cid & Sunraku (Cid)",
+                "John Smith & Yukime (John Smith)",
+                "Cid & Beta & Epsilon (Cid)",
+                "Cid & Delta & Zeta (Cid)",
+                "Shadow & Benimaru (Shadow)",
+                "Sunraku & Shadow (Shadow)",
+                "3 People (Cid)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "??? (Shadow)",
+                    "alt": "???? (Shadow)"
+                },
+                {
+                    "base": "Cid Kagenou",
+                    "alt": "Cid"
+                },
+                {
+                    "base": "Shadow & Benimaru (Shadow)",
+                    "alt": "Shadow&Benimaru (Shadow)"
+                }
+            ],
+            "group": "Shadow Garden",
+            "subgroup": "",
+            "order": 1,
+            "url": {
+                "base": "characterIcons/CidKagenouIcon.webp",
+                "Shadow": "characterIcons/ShadowIcon.webp",
+                "Mundane Mann": "characterIcons/MundaneMannIcon.webp",
+                "John Smith": "characterIcons/JohnSmithIcon.webp",
+                "Minoru Kageno": "characterIcons/MinoruKagenoIcon.webp",
+                "Stylish Bandit Slayer": "characterIcons/StylishBanditSlayerIcon.webp",
+                "Stylish Ruffian Slayer": "characterIcons/StylishRuffianSlayerIcon.webp",
+                "Nuru": "characterIcons/NuruIcon.webp",
+                "Suzuki Hope": "characterIcons/SuzukiHopeIcon.webp"
+            }
+        },
+        {
+            "name": "Alpha",
+            "name_variants": [
+                "??? (Alpha)",
+                "Everyone (Alpha)",
+                "None (Alpha)",
+                "Seven Shadows (Alpha)",
+                "Alpha & Beta (Alpha)",
+                "Alpha & Eta (Alpha)",
+                "Alpha & Freya (Alpha)",
+                "Alpha & Gamma (Alpha)",
+                "Alpha & Nu (Alpha)",
+                "Alpha & Zeta (Alpha)",
+                "Everyone (Alpha)"
+            ],
+            "name_mirrors": [],
+            "group": "Shadow Garden",
+            "subgroup": "Seven Shadows",
+            "order": 1,
+            "url": "characterIcons/AlphaIcon.webp"
+        },
+        {
+            "name": "Beta",
+            "name_variants": [
+                "Natsume Kafka",
+                "??? (Beta)",
+                "??? (Natsume Kafka)",
+                "Everyone (Beta)",
+                "None (Beta)",
+                "Seven Shadows (Beta)",
+                "Fictional Alpha",
+                "Fictional Delta",
+                "Fictional Epsilon",
+                "Fictional Eta",
+                "Fictional Freya",
+                "Fictional Gamma",
+                "Fictional Lili",
+                "Fictional Olivier",
+                "Fictional Shadow",
+                "Fictional Zenon",
+                "Alexia Midgar & Natsume Kafka (Natsume Kafka)",
+                "Alpha & Beta (Beta)",
+                "Beta & Epsilon (Beta)",
+                "Beta & Eta (Beta)",
+                "Beta & Gamma (Beta)",
+                "Beta & Zeta (Beta)",
+                "Beta & ??? (Sigma) (Beta)",
+                "Beta & Delta & Zeta (Beta)",
+                "Beta & Gamma & Epsilon (Beta)",
+                "Cid & Beta & Epsilon (Beta)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "Natsume Kafka",
+                    "alt": "Natsume"
+                },
+                {
+                    "base": "??? (Natsume Kafka)",
+                    "alt": "??? (Natsume)"
+                },
+                {
+                    "base": "Beta & Zeta (Beta)",
+                    "alt": "Zeta & Beta (Beta)"
+                }
+            ],
+            "group": "Shadow Garden",
+            "subgroup": "Seven Shadows",
+            "order": 2,
+            "url": {
+                "base": "characterIcons/BetaIcon.webp",
+                "Natsume Kafka": "characterIcons/NatsumeKafkaIcon.webp"
+            }
+        },
+        {
+            "name": "Gamma",
+            "name_variants": [
+                "Luna",
+                "??? (Gamma)",
+                "Everyone (Gamma)",
+                "None (Gamma)",
+                "Seven Shadows (Gamma)",
+                "Alpha & Gamma (Gamma)",
+                "Beta & Gamma (Gamma)",
+                "Gamma & Epsilon (Gamma)",
+                "Gamma & Iota (Gamma)",
+                "Beta & Gamma & Epsilon (Gamma)",
+                "Gamma & Epsilon & Eta (Gamma)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "Gamma & Epsilon & Eta (Gamma)",
+                    "alt": "Gamma& Epsilon & Eta (Gamma)"
+                }
+            ],
+            "group": "Shadow Garden",
+            "subgroup": "Seven Shadows",
+            "order": 3,
+            "url": "characterIcons/GammaIcon.webp"
+        },
+        {
+            "name": "Delta",
+            "name_variants": [
+                "Deltan",
+                "??? (Delta)",
+                "Everyone (Delta)",
+                "Seven Shadows (Delta)",
+                "Delta & Zeta (Delta)",
+                "Beta & Delta & Zeta (Delta)",
+                "Cid & Delta & Zeta (Delta)"
+            ],
+            "name_mirrors": [],
+            "group": "Shadow Garden",
+            "subgroup": "Seven Shadows",
+            "order": 4,
+            "url": "characterIcons/DeltaIcon.webp"
+        },
+        {
+            "name": "Epsilon",
+            "name_variants": [
+                "Shiron",
+                "??? (Epsilon)",
+                "Everyone (Epsilon)",
+                "Seven Shadows (Epsilon)",
+                "Beta & Epsilon (Epsilon)",
+                "Eta & Epsilon (Epsilon)",
+                "Gamma & Epsilon (Epsilon)",
+                "Zeta & Epsilon (Epsilon)",
+                "Beta & Gamma & Epsilon (Epsilon)",
+                "Cid & Beta & Epsilon (Epsilon)",
+                "Gamma & Epsilon & Eta (Epsilon)",
+                "Epsilon & Chi & Omega (Epsilon)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "Gamma & Epsilon & Eta (Epsilon)",
+                    "alt": "Gamma& Epsilon & Eta (Epsilon)"
+                }
+            ],
+            "group": "Shadow Garden",
+            "subgroup": "Seven Shadows",
+            "order": 5,
+            "url": {
+                "base": "characterIcons/EpsilonIcon.webp",
+                "Shiron": "characterIcons/ShironIcon.webp"
+            }
+        },
+        {
+            "name": "Zeta",
+            "name_variants": [
+                "Lilim",
+                "Zetan",
+                "??? (Zeta)",
+                "Everyone (Zeta)",
+                "None (Zeta)",
+                "Seven Shadows (Zeta)",
+                "Alpha & Zeta (Zeta)",
+                "Beta & Zeta (Zeta)",
+                "Delta & Zeta (Zeta)",
+                "Zeta & Epsilon (Zeta)",
+                "Zeta & Eta (Zeta)",
+                "Zeta & 93 (Zeta)",
+                "Beta & Delta & Zeta (Zeta)",
+                "Cid & Delta & Zeta (Zeta)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "Beta & Zeta (Zeta)",
+                    "alt": "Zeta & Beta (Zeta)"
+                }
+            ],
+            "group": "Shadow Garden",
+            "subgroup": "Seven Shadows",
+            "order": 5,
+            "url": "characterIcons/ZetaIcon.webp"
+        },
+        {
+            "name": "Eta",
+            "name_variants": [
+                "??? (Eta)",
+                "Everyone (Eta)",
+                "Seven Shadows (Eta)",
+                "Alpha & Eta (Eta)",
+                "Beta & Eta (Eta)",
+                "Eta & Epsilon (Eta)",
+                "Zeta & Eta (Eta)",
+                "Gamma & Epsilon & Eta (Eta)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "Gamma & Epsilon & Eta (Eta)",
+                    "alt": "Gamma& Epsilon & Eta (Eta)"
+                }
+            ],
+            "group": "Shadow Garden",
+            "subgroup": "Seven Shadows",
+            "order": 7,
+            "url": "characterIcons/EtaIcon.webp"
+        },
+        {
+            "name": "Iota",
+            "name_variants": [
+                "None (Iota)",
+                "Gamma & Iota (Iota)"
+            ],
+            "name_mirrors": [],
+            "group": "Shadow Garden",
+            "subgroup": "Numbers",
+            "order": 1,
+            "url": "characterIcons/IotaIcon.webp"
+        },
+        {
+            "name": "Lambda",
+            "name_variants": [
+                "Mound of Flesh (Lambda)",
+                "None (Lambda)",
+                "Tawny Elf (Lambda)"
+            ],
+            "name_mirrors": [],
+            "group": "Shadow Garden",
+            "subgroup": "Numbers",
+            "order": 2,
+            "url": "characterIcons/LambdaIcon.webp"
+        },
+        {
+            "name": "Nu",
+            "name_variants": [
+                "No. 93",
+                "??? (No. 93)",
+                "Alpha & Nu (Nu)",
+                "Zeta & 93 (93)",
+                "Characterised Alpha"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "No. 93",
+                    "alt": "93"
+                }
+            ],
+            "group": "Shadow Garden",
+            "subgroup": "Numbers",
+            "order": 2,
+            "url": "characterIcons/NuIcon.webp"
+        },
+        {
+            "name": "Sigma",
+            "name_variants": [
+                "Beta & ??? (Sigma) (Sigma)"
+            ],
+            "name_mirrors": [],
+            "group": "Shadow Garden",
+            "subgroup": "Numbers",
+            "order": 4,
+            "url": "characterIcons/SigmaIcon.webp"
+        },
+        {
+            "name": "Chi",
+            "name_variants": [
+                "No. 111",
+                "Karen",
+                "??? (Karen)",
+                "Characterised Cult Member",
+                "Characterised Eta",
+                "Characterised Shadow",
+                "Chi & Omega (Chi)",
+                "No. 111 & No. 122 (No. 111)",
+                "Epsilon & Chi & Omega (Chi)"
+            ],
+            "name_mirrors": [],
+            "group": "Shadow Garden",
+            "subgroup": "Numbers",
+            "order": 5,
+            "url": "characterIcons/ChiIcon.webp"
+        },
+        {
+            "name": "Omega",
+            "name_variants": [
+                "No. 122",
+                "Characterised Gamma",
+                "Characterised Zeta",
+                "Possessed (Omega)",
+                "Chi & Omega (Omega)",
+                "No. 111 & No. 122 (No. 122)",
+                "Epsilon & Chi & Omega (Omega)"
+            ],
+            "name_mirrors": [],
+            "group": "Shadow Garden",
+            "subgroup": "Numbers",
+            "order": 6,
+            "url": "characterIcons/OmegaIcon.webp"
+        },
+        {
+            "name": "Victoria",
+            "name_variants": [
+                "No. 559",
+                "??? (Victoria)"
+            ],
+            "name_mirrors": [],
+            "group": "Shadow Garden",
+            "subgroup": "Members",
+            "order": 2,
+            "url": "characterIcons/VictoriaIcon.webp"
+        },
+        {
+            "name": "No. 664",
+            "name_variants": [
+                "No. 664 & No. 665 (No. 664)",
+                "No. 664 & No. 665 & No. 666 (No. 664)"
+            ],
+            "name_mirrors": [],
+            "group": "Shadow Garden",
+            "subgroup": "Members",
+            "order": 2,
+            "url": "characterIcons/664Icon.webp"
+        },
+        {
+            "name": "No. 665",
+            "name_variants": [
+                "No. 664 & No. 665 (No. 665)",
+                "No. 664 & No. 665 & No. 666 (No. 665)"
+            ],
+            "name_mirrors": [],
+            "group": "Shadow Garden",
+            "subgroup": "Members",
+            "order": 3,
+            "url": "characterIcons/665Icon.webp"
+        },
+        {
+            "name": "Annerose Nichtsehen",
+            "name_variants": [
+                "None (Annerose)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "Annerose Nichtsehen",
+                    "alt": "Annerose"
+                }
+            ],
+            "group": "Velgalta",
+            "subgroup": "",
+            "order": 1,
+            "url": "characterIcons/AnneroseNichtsehenIcon.webp"
+        },
+        {
+            "name": "Rude",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Velgalta",
+            "subgroup": "",
+            "order": 2,
+            "url": ""
+        },
+        {
+            "name": "Curie Oso",
+            "name_variants": [],
+            "name_mirrors": [
+                {
+                    "base": "Curie Oso",
+                    "alt": "Curious Noblewoman"
+                }
+            ],
+            "group": "Velgalta",
+            "subgroup": "General",
+            "order": 1,
+            "url": ""
+        },
+        {
+            "name": "Benimaru",
+            "name_variants": [
+                "Shadow & Benimaru (Benimaru)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "Shadow & Benimaru (Benimaru)",
+                    "alt": "Shadow&Benimaru (Benimaru)"
+                }
+            ],
+            "group": "Others",
+            "subgroup": "Fire Force",
+            "order": 1,
+            "url": "characterIcons/BenimaruIcon.webp"
+        },
+        {
+            "name": "Shinra",
+            "name_variants": [
+                "Shinra & Tamaki (Shinra)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Fire Force",
+            "order": 2,
+            "url": "characterIcons/ShinraIcon.webp"
+        },
+        {
+            "name": "Tamaki",
+            "name_variants": [
+                "Shinra & Tamaki (Tamaki)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Fire Force",
+            "order": 1,
+            "url": "characterIcons/TamakiIcon.webp"
+        },
+        {
+            "name": "Arthur Pencilgon",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Shangri-La Frontier",
+            "order": 1,
+            "url": "characterIcons/ArthurPencilgonIcon.webp"
+        },
+        {
+            "name": "OiKatzo",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Shangri-La Frontier",
+            "order": 2,
+            "url": "characterIcons/OiKatzoIcon.webp"
+        },
+        {
+            "name": "Sunraku",
+            "name_variants": [
+                "??? (Sunraku)",
+                "Cid & Sunraku (Sunraku)",
+                "Sunraku & Shadow (Sunraku)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Shangri-La Frontier",
+            "order": 3,
+            "url": "characterIcons/SunrakuIcon.webp"
+        },
+        {
+            "name": "Wethermon",
+            "name_variants": [
+                "??? (Wethermon)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Shangri-La Frontier",
+            "order": 4,
+            "url": ""
+        },
+        {
+            "name": "Aurora",
+            "name_variants": [
+                "Witch Claire",
+                "??? (Witch Claire)",
+                "Massive Mound of Magic",
+                "3 People (Aurora)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "",
+            "order": 1,
+            "url": "characterIcons/AuroraIcon.webp"
+        },
+        {
+            "name": "Beatrix",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "",
+            "order": 2,
+            "url": "characterIcons/BeatrixIcon.webp"
+        },
+        {
+            "name": "Nina",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "",
+            "order": 2,
+            "url": "characterIcons/NinaIcon.webp"
+        },
+        {
+            "name": "Goldy Gilded",
+            "name_variants": [
+                "??? (Goldy)",
+                "Goldy & Quinton (Goldy)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "Goldy Gilded",
+                    "alt": "Goldy"
+                }
+            ],
+            "group": "Others",
+            "subgroup": "",
+            "order": 4,
+            "url": "characterIcons/GoldyGildedIcon.webp"
+        },
+        {
+            "name": "Quinton",
+            "name_variants": [
+                "Goldy & Quinton (Quinton)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "",
+            "order": 5,
+            "url": "characterIcons/QuintonIcon.webp"
+        },
+        {
+            "name": "Yukime",
+            "name_variants": [
+                "John Smith & Yukime (Yukime)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "",
+            "order": 6,
+            "url": "characterIcons/YukimeIcon.webp"
+        },
+        {
+            "name": "Olivier",
+            "name_variants": [
+                "Alpha Look-alike",
+                "??? (Olivier)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Apocrypha",
+            "order": 1,
+            "url": "characterIcons/OlivierIcon.webp"
+        },
+        {
+            "name": "Freya",
+            "name_variants": [
+                "??? (Freya)",
+                "Alpha & Freya (Freya)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Apocrypha",
+            "order": 2,
+            "url": "characterIcons/FreyaIcon.webp"
+        },
+        {
+            "name": "Lili",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Apocrypha",
+            "order": 3,
+            "url": "characterIcons/LiliIcon.webp"
+        },
+        {
+            "name": "Duet",
+            "name_variants": [
+                "Beta Look-alike"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Apocrypha",
+            "order": 4,
+            "url": "characterIcons/DuetIcon.webp"
+        },
+        {
+            "name": "Sarasa",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Apocrypha",
+            "order": 5,
+            "url": "characterIcons/SarasaIcon.webp"
+        },
+        {
+            "name": "Pente",
+            "name_variants": [
+                "Epsilon Look-alike"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Apocrypha",
+            "order": 6,
+            "url": "characterIcons/PenteIcon.webp"
+        },
+        {
+            "name": "Nonna",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Apocrypha",
+            "order": 7,
+            "url": "characterIcons/NonnaIcon.webp"
+        },
+        {
+            "name": "Rouge",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Apocrypha",
+            "order": 8,
+            "url": "characterIcons/RougeIcon.webp"
+        },
+        {
+            "name": "Fenrir",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Knights of Rounds",
+            "order": 1,
+            "url": "characterIcons/FenrirIcon.webp"
+        },
+        {
+            "name": "Mordred",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Knights of Rounds",
+            "order": 2,
+            "url": "characterIcons/MordredIcon.webp"
+        },
+        {
+            "name": "Petos",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Knights of Rounds",
+            "order": 3,
+            "url": "characterIcons/PetosIcon.webp"
+        },
+        {
+            "name": "Jack Nelson",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Knights of Rounds",
+            "order": 4,
+            "url": "characterIcons/JackNelsonIcon.webp"
+        },
+        {
+            "name": "Sergey Gorman",
+            "name_variants": [
+                "??? (Sergey Gorman)",
+                "None (Sergey Gorman)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "Sergey Gorman",
+                    "alt": "Sergey"
+                },
+                {
+                    "base": "Sergey Gorman",
+                    "alt": "Sergei"
+                }
+            ],
+            "group": "Cult of Diablos",
+            "subgroup": "Knights of Rounds",
+            "order": 5,
+            "url": "characterIcons/SergeyGormanIcon.webp"
+        },
+        {
+            "name": "Lutheran Barnett",
+            "name_variants": [
+                "Sir Gaunt"
+            ],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Knights of Rounds",
+            "order": 6,
+            "url": {
+                "base": "characterIcons/LutheranBarnettIcon.webp",
+                "Sir Gaunt": "characterIcons/SirGauntIcon.webp"
+            }
+        },
+        {
+            "name": "Issac",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Members",
+            "order": 1,
+            "url": "characterIcons/IssacIcon.webp"
+        },
+        {
+            "name": "Gettan",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Members",
+            "order": 2,
+            "url": "characterIcons/GettanIcon.webp"
+        },
+        {
+            "name": "Grease",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Members",
+            "order": 3,
+            "url": "characterIcons/GreaseIcon.webp"
+        },
+        {
+            "name": "Perv Asshat",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Members",
+            "order": 4,
+            "url": "characterIcons/PervAsshatIcon.webp"
+        },
+        {
+            "name": "Zenon Griffey",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Members",
+            "order": 5,
+            "url": "characterIcons/ZenonGriffeyIcon.webp"
+        },
+        {
+            "name": "Chuvi",
+            "name_variants": [
+                "??? (Chuvi)"
+            ],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Children",
+            "order": 1,
+            "url": ""
+        },
+        {
+            "name": "Dark Spider",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Children",
+            "order": 2,
+            "url": ""
+        },
+        {
+            "name": "Kanen",
+            "name_variants": [
+                "??? (Kanen)"
+            ],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Children",
+            "order": 3,
+            "url": ""
+        },
+        {
+            "name": "Kouadoi",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Children",
+            "order": 4,
+            "url": "characterIcons/KouadoiIcon.webp"
+        },
+        {
+            "name": "Jean",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Children",
+            "order": 5,
+            "url": ""
+        },
+        {
+            "name": "Maximilian",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Children",
+            "order": 6,
+            "url": ""
+        },
+        {
+            "name": "Nanigashi",
+            "name_variants": [
+                "??? (Nanigashi)"
+            ],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Children",
+            "order": 7,
+            "url": ""
+        },
+        {
+            "name": "Rex",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Children",
+            "order": 8,
+            "url": "characterIcons/RexIcon.webp"
+        },
+        {
+            "name": "Willow",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Children",
+            "order": 9,
+            "url": ""
+        },
+        {
+            "name": "Cult Member",
+            "name_variants": [],
+            "name_mirrors": [
+                {
+                    "base": "Cult Member",
+                    "alt": "Bandit?"
+                }
+            ],
+            "group": "Cult of Diablos",
+            "subgroup": "Generic",
+            "order": -1,
+            "url": ""
+        },
+        {
+            "name": "Cult Member A",
+            "name_variants": [
+                "Cult Member A & B (Cult Member A)"
+            ],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Generic",
+            "order": -1,
+            "url": ""
+        },
+        {
+            "name": "Cult Member B",
+            "name_variants": [
+                "Cult Member A & B (Cult Member B)"
+            ],
+            "name_mirrors": [],
+            "group": "Cult of Diablos",
+            "subgroup": "Generic",
+            "order": -1,
+            "url": ""
+        },
+        {
+            "name": "Bishop Drake",
+            "name_variants": [],
+            "name_mirrors": [
+                {
+                    "base": "Bishop Drake",
+                    "alt": "Bishop of Orum"
+                }
+            ],
+            "group": "Others",
+            "subgroup": "Templars",
+            "order": 1,
+            "url": ""
+        },
+        {
+            "name": "Templar",
+            "name_variants": [
+                "??? (Templar)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "??? (Templar)",
+                    "alt": "????? (Templar)"
+                }
+            ],
+            "group": "Others",
+            "subgroup": "Templars",
+            "order": 1,
+            "url": ""
+        },
+        {
+            "name": "Claudia",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Lawless City",
+            "order": 1,
+            "url": "characterIcons/ClaudiaIcon.webp"
+        },
+        {
+            "name": "Juggernaut",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Lawless City",
+            "order": 2,
+            "url": "characterIcons/JuggernautIcon.webp"
+        },
+        {
+            "name": "Marie",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Lawless City",
+            "order": 3,
+            "url": "characterIcons/MarieIcon.webp"
+        },
+        {
+            "name": "Kana",
+            "name_variants": [
+                "Natsu & Kana (Kana)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Lawless City",
+            "order": 3,
+            "url": "characterIcons/KanaIcon.webp"
+        },
+        {
+            "name": "Natsu",
+            "name_variants": [
+                "Natsu & Kana (Natsu)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Lawless City",
+            "order": 4,
+            "url": "characterIcons/NatsuIcon.webp"
+        },
+        {
+            "name": "White Demon",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Lawless City",
+            "order": 5,
+            "url": "characterIcons/WhiteDemonIcon.webp"
+        },
+        {
+            "name": "Garter Kikuchi",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Major Corporate Alliance",
+            "order": 1,
+            "url": "characterIcons/GarterKikuchiIcon.webp"
+        },
+        {
+            "name": "Elisabeth",
+            "name_variants": [
+                "3 People (Elisabeth)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Vampires",
+            "order": 1,
+            "url": "characterIcons/ElisabethIcon.webp"
+        },
+        {
+            "name": "Crimson",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Vampires",
+            "order": 2,
+            "url": "characterIcons/CrimsonIcon.webp"
+        },
+        {
+            "name": "Mary",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Vampires",
+            "order": 3,
+            "url": "characterIcons/MaryIcon.webp"
+        },
+        {
+            "name": "Ichi Van Dasher",
+            "name_variants": [],
+            "name_mirrors": [
+                {
+                    "base": "Ichi Van Dasher",
+                    "alt": "Ichi"
+                }
+            ],
+            "group": "Others",
+            "subgroup": "General",
+            "order": 1,
+            "url": ""
+        },
+        {
+            "name": "Customer",
+            "name_variants": [
+                "??? (Customer)"
+            ],
+            "name_mirrors": [],
+            "group": "Generic",
+            "subgroup": "Business",
+            "order": -1,
+            "url": ""
+        },
+        {
+            "name": "Dog T-thrope Priest",
+            "name_variants": [],
+            "name_mirrors": [
+                {
+                    "base": "Dog T-thrope Priest",
+                    "alt": "Dog T.thrope Priest"
+                }
+            ],
+            "group": "Generic",
+            "subgroup": "Therianthropes",
+            "order": -1,
+            "url": ""
+        },
+        {
+            "name": "Joker",
+            "name_variants": [
+                "??? (Joker)"
+            ],
+            "name_mirrors": [],
+            "group": "Generic",
+            "subgroup": "Casino",
+            "order": 1,
+            "url": ""
+        },
+        {
+            "name": "King",
+            "name_variants": [
+                "??? (King)"
+            ],
+            "name_mirrors": [],
+            "group": "Generic",
+            "subgroup": "Casino",
+            "order": 2,
+            "url": ""
+        },
+        {
+            "name": "Rose Oriana",
+            "name_variants": [
+                "No. 666",
+                "Rose & Alexia (Rose)",
+                "No. 664 & No. 665 & No. 666 (No. 666)"
+            ],
+            "name_mirrors": [
+                {
+                    "base": "Rose Oriana",
+                    "alt": "Rose"
+                },
+                {
+                    "base": "No. 666",
+                    "alt": "No.666"
+                }
+            ],
+            "group": "Oriana",
+            "subgroup": "",
+            "order": 1,
+            "url": {
+                "base": "characterIcons/RoseOrianaIcon.webp",
+                "No. 666": "characterIcons/666Icon.webp"
+            }
+        },
+        {
+            "name": "Kevin",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Oriana",
+            "subgroup": "Oriana Kingdom",
+            "order": 1,
+            "url": "characterIcons/KevinIcon.webp"
+        },
+        {
+            "name": "Margaret",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Oriana",
+            "subgroup": "Oriana Kingdom",
+            "order": 2,
+            "url": "characterIcons/MargaretIcon.webp"
+        },
+        {
+            "name": "Raphael Oriana",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Oriana",
+            "subgroup": "Oriana Kingdom",
+            "order": 3,
+            "url": "characterIcons/RaphaelOrianaIcon.webp"
+        },
+        {
+            "name": "Reina Oriana",
+            "name_variants": [],
+            "name_mirrors": [],
+            "group": "Oriana",
+            "subgroup": "Oriana Kingdom",
+            "order": 4,
+            "url": "characterIcons/ReinaOrianaIcon.webp"
+        },
+        {
+            "name": "Mercenary A",
+            "name_variants": [
+                "??? (Mercenary A)"
+            ],
+            "name_mirrors": [],
+            "group": "Generic",
+            "subgroup": "Mercenaries",
+            "order": 1,
+            "url": ""
+        },
+        {
+            "name": "Mist Dragon",
+            "name_variants": [
+                "??? (Mist Dragon)",
+                "None (Mist Dragon)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Dragons",
+            "order": 1,
+            "url": "characterIcons/MistDragonIcon.webp"
+        },
+        {
+            "name": "Malak",
+            "name_variants": [],
+            "name_mirrors": [
+                {
+                    "base": "Malak",
+                    "alt": "Malak the Malevolent"
+                }
+            ],
+            "group": "Others",
+            "subgroup": "Dragons",
+            "order": 2,
+            "url": ""
+        },
+        {
+            "name": "Shishiodoshi",
+            "name_variants": [
+                "Shishi(?)"
+            ],
+            "name_mirrors": [],
+            "group": "Generic",
+            "subgroup": "Monsters",
+            "order": -1,
+            "url": ""
+        }
+    ]
 }
 
 let info = {
@@ -7818,9 +8542,9 @@ let info = {
     },
     "ssc": {
         "part_count": 3,
-        "line_count": 11288,
-        "word_count": 120133,
-        "char_count": 686525,
+        "line_count": 11621,
+        "word_count": 123401,
+        "char_count": 705455,
         "characters": {
             "Alpha": 1370,
             "Narrator": 59,
@@ -7828,10 +8552,10 @@ let info = {
             "Mysterious Soldier A": 10,
             "Alpha (??? (Alpha))": 5,
             "Mysterious Soldier B": 4,
-            "Delta": 556,
-            "Eta": 645,
+            "Delta": 611,
+            "Eta": 709,
             "Mysterious Soldier C": 6,
-            "Epsilon": 1039,
+            "Epsilon": 1087,
             "Mysterious Soldier D": 4,
             "Zeta": 1122,
             "Gamma": 1283,
@@ -7846,8 +8570,8 @@ let info = {
             "Cultist F": 3,
             "Lambda (Mound of Flesh (Lambda))": 1,
             "Lambda (Tawny Elf (Lambda))": 15,
-            "Cid Kagenou (Cid)": 657,
-            "Lambda": 384,
+            "Cid Kagenou (Cid)": 678,
+            "Lambda": 411,
             "Merchant B": 11,
             "Merchant A Secretary": 10,
             "Merchant C": 2,
@@ -7950,9 +8674,9 @@ let info = {
             "Chi (No. 111 & No. 122 (No. 111))": 5,
             "Omega (No. 111 & No. 122 (No. 122))": 5,
             "Annerose Nichtsehen (None (Annerose))": 4,
-            "Chi": 136,
-            "Omega": 142,
-            "Malaks": 1,
+            "Chi": 171,
+            "Omega": 184,
+            "Malaks": 7,
             "Sergey Gorman (None (Sergey Gorman))": 32,
             "Gamma (Gamma & Epsilon (Gamma))": 1,
             "Epsilon (Gamma & Epsilon (Epsilon))": 1,
@@ -7983,8 +8707,8 @@ let info = {
             "Nu (??? (No. 93))": 1,
             "Nu (No. 93)": 19,
             "Garden Member": 2,
-            "Chi (Chi & Omega (Chi))": 8,
-            "Omega (Chi & Omega (Omega))": 8,
+            "Chi (Chi & Omega (Chi))": 13,
+            "Omega (Chi & Omega (Omega))": 13,
             "Lambda (None (Lambda))": 1,
             "Iota (None (Iota))": 16,
             "Iota": 92,
@@ -8016,7 +8740,9 @@ let info = {
             "Sigma (Beta & ??? (Sigma) (Sigma))": 1,
             "Sigma": 133,
             "Orianan Paladin A": 2,
-            "Orianan Paladin B": 2
+            "Orianan Paladin B": 2,
+            "Malak (Malak the Malevolent)": 4,
+            "Cid Kagenou (None (Cid))": 21
         },
         "parts": {
             "p1": {
@@ -10711,19 +11437,19 @@ let info = {
                 }
             },
             "p3": {
-                "chapter_count": 8,
-                "line_count": 2525,
-                "word_count": 28006,
-                "char_count": 158487,
+                "chapter_count": 9,
+                "line_count": 2858,
+                "word_count": 31274,
+                "char_count": 177417,
                 "characters": {
                     "Olivier (??? (Olivier))": 10,
                     "Alpha": 267,
                     "Beta": 216,
                     "Gamma": 284,
-                    "Epsilon": 178,
+                    "Epsilon": 226,
                     "Zeta": 240,
-                    "Delta": 50,
-                    "Eta": 118,
+                    "Delta": 105,
+                    "Eta": 182,
                     "Alpha (Seven Shadows (Alpha))": 2,
                     "Beta (Seven Shadows (Beta))": 2,
                     "Gamma (Seven Shadows (Gamma))": 2,
@@ -10731,11 +11457,11 @@ let info = {
                     "Epsilon (Seven Shadows (Epsilon))": 2,
                     "Zeta (Seven Shadows (Zeta))": 2,
                     "Eta (Seven Shadows (Eta))": 2,
-                    "Lambda": 77,
-                    "Omega": 134,
-                    "Chi": 125,
+                    "Lambda": 104,
+                    "Omega": 176,
+                    "Chi": 160,
                     "Nu (93)": 22,
-                    "Cid Kagenou (Cid)": 139,
+                    "Cid Kagenou (Cid)": 160,
                     "Beta (None (Beta))": 8,
                     "Fan Passerby": 9,
                     "Alpha (Alpha & Beta (Alpha))": 1,
@@ -10746,8 +11472,8 @@ let info = {
                     "Nu (No. 93)": 19,
                     "Garden Member": 2,
                     "Delta (??? (Delta))": 1,
-                    "Chi (Chi & Omega (Chi))": 8,
-                    "Omega (Chi & Omega (Omega))": 8,
+                    "Chi (Chi & Omega (Chi))": 13,
+                    "Omega (Chi & Omega (Omega))": 13,
                     "Alpha (??? (Alpha))": 1,
                     "Lambda (None (Lambda))": 1,
                     "Iota (None (Iota))": 16,
@@ -10787,7 +11513,10 @@ let info = {
                     "Sigma (Beta & ??? (Sigma) (Sigma))": 1,
                     "Sigma": 133,
                     "Orianan Paladin A": 2,
-                    "Orianan Paladin B": 2
+                    "Orianan Paladin B": 2,
+                    "Malak (Malak the Malevolent)": 4,
+                    "Malaks": 6,
+                    "Cid Kagenou (None (Cid))": 21
                 },
                 "chapters": {
                     "c3-1": {
@@ -11497,6 +12226,90 @@ let info = {
                                     "Orianan Paladin B": 2,
                                     "Beta": 14,
                                     "Cid Kagenou (Cid)": 22
+                                }
+                            }
+                        }
+                    },
+                    "c3-9": {
+                        "episode_count": 5,
+                        "line_count": 333,
+                        "word_count": 3268,
+                        "char_count": 18930,
+                        "characters": {
+                            "Eta": 64,
+                            "Epsilon": 48,
+                            "Chi": 35,
+                            "Omega": 42,
+                            "Chi (Chi & Omega (Chi))": 5,
+                            "Omega (Chi & Omega (Omega))": 5,
+                            "Delta": 55,
+                            "Malak (Malak the Malevolent)": 4,
+                            "Lambda": 27,
+                            "Malaks": 6,
+                            "Cid Kagenou (None (Cid))": 21,
+                            "Cid Kagenou (Cid)": 21
+                        },
+                        "episodes": {
+                            "e1": {
+                                "line_count": 61,
+                                "word_count": 736,
+                                "char_count": 4230,
+                                "characters": {
+                                    "Eta": 13,
+                                    "Epsilon": 14,
+                                    "Chi": 15,
+                                    "Omega": 12,
+                                    "Chi (Chi & Omega (Chi))": 3,
+                                    "Omega (Chi & Omega (Omega))": 3,
+                                    "Delta": 3,
+                                    "Malak (Malak the Malevolent)": 1
+                                }
+                            },
+                            "e2": {
+                                "line_count": 67,
+                                "word_count": 702,
+                                "char_count": 3994,
+                                "characters": {
+                                    "Omega": 20,
+                                    "Chi": 10,
+                                    "Eta": 23,
+                                    "Epsilon": 14
+                                }
+                            },
+                            "e3": {
+                                "line_count": 63,
+                                "word_count": 419,
+                                "char_count": 2573,
+                                "characters": {
+                                    "Delta": 32,
+                                    "Malak (Malak the Malevolent)": 2,
+                                    "Lambda": 23,
+                                    "Malaks": 6
+                                }
+                            },
+                            "e4": {
+                                "line_count": 70,
+                                "word_count": 660,
+                                "char_count": 3892,
+                                "characters": {
+                                    "Epsilon": 20,
+                                    "Eta": 28,
+                                    "Chi": 10,
+                                    "Omega": 10,
+                                    "Chi (Chi & Omega (Chi))": 2,
+                                    "Omega (Chi & Omega (Omega))": 2
+                                }
+                            },
+                            "e5": {
+                                "line_count": 67,
+                                "word_count": 751,
+                                "char_count": 4241,
+                                "characters": {
+                                    "Cid Kagenou (None (Cid))": 21,
+                                    "Delta": 20,
+                                    "Malak (Malak the Malevolent)": 1,
+                                    "Lambda": 4,
+                                    "Cid Kagenou (Cid)": 21
                                 }
                             }
                         }
@@ -14127,9 +14940,9 @@ let info = {
             }
         },
         "Delta": {
-            "total": 1778,
+            "total": 1833,
             "names": {
-                "Delta": 1741,
+                "Delta": 1796,
                 "Seven Shadows (Delta)": 13,
                 "Delta & Zeta (Delta)": 8,
                 "Deltan": 1,
@@ -14140,9 +14953,9 @@ let info = {
             }
         },
         "Epsilon": {
-            "total": 2525,
+            "total": 2573,
             "names": {
-                "Epsilon": 2381,
+                "Epsilon": 2429,
                 "Seven Shadows (Epsilon)": 14,
                 "Beta & Epsilon (Epsilon)": 32,
                 "Beta & Gamma & Epsilon (Epsilon)": 1,
@@ -14179,9 +14992,9 @@ let info = {
             }
         },
         "Eta": {
-            "total": 1589,
+            "total": 1653,
             "names": {
-                "Eta": 1563,
+                "Eta": 1627,
                 "Seven Shadows (Eta)": 10,
                 "Alpha & Eta (Eta)": 1,
                 "Everyone (Eta)": 6,
@@ -14211,10 +15024,10 @@ let info = {
             }
         },
         "Chi": {
-            "total": 728,
+            "total": 768,
             "names": {
-                "Chi": 224,
-                "Chi & Omega (Chi)": 13,
+                "Chi": 259,
+                "Chi & Omega (Chi)": 18,
                 "Characterised Shadow": 8,
                 "Characterised Eta": 3,
                 "Characterised Cult Member": 3,
@@ -14226,10 +15039,10 @@ let info = {
             }
         },
         "Omega": {
-            "total": 452,
+            "total": 499,
             "names": {
-                "Omega": 225,
-                "Chi & Omega (Omega)": 13,
+                "Omega": 267,
+                "Chi & Omega (Omega)": 18,
                 "Characterised Zeta": 2,
                 "Characterised Gamma": 2,
                 "Possessed (Omega)": 4,
@@ -14251,7 +15064,7 @@ let info = {
             }
         },
         "Cid Kagenou": {
-            "total": 11429,
+            "total": 11471,
             "names": {
                 "Shadow": 1562,
                 "Minoru Kageno": 126,
@@ -14261,9 +15074,10 @@ let info = {
                 "Stylish Bandit Slayer": 33,
                 "John Smith": 592,
                 "John Smith & Yukime (John Smith)": 1,
-                "Cid": 2130,
+                "Cid": 2151,
                 "???? (Shadow)": 3,
                 "None (Cid Kagenou)": 12,
+                "None (Cid)": 21,
                 "??? (Stylish Bandit Slayer)": 1,
                 "??? (Cid Kagenou)": 4,
                 "??? (Nuru)": 7,
@@ -14725,9 +15539,9 @@ let info = {
             }
         },
         "Lambda": {
-            "total": 702,
+            "total": 729,
             "names": {
-                "Lambda": 685,
+                "Lambda": 712,
                 "Mound of Flesh (Lambda)": 1,
                 "Tawny Elf (Lambda)": 15,
                 "None (Lambda)": 1
@@ -15316,9 +16130,10 @@ let info = {
             }
         },
         "Malak": {
-            "total": 40,
+            "total": 44,
             "names": {
-                "Malak": 40
+                "Malak": 40,
+                "Malak the Malevolent": 4
             }
         },
         "Sergey Gorman": {
@@ -15397,9 +16212,9 @@ let info = {
             }
         },
         "Malaks": {
-            "total": 1,
+            "total": 7,
             "names": {
-                "Malaks": 1
+                "Malaks": 7
             }
         },
         "Olivier": {
@@ -17402,6 +18217,29 @@ let dropdowns = {
                         "e5": {
                             "checked": false,
                             "title": "Garden Ninjustu"
+                        },
+                        "checked": false
+                    },
+                    "3-9 | The Sunken Sanctuary": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Suspicious Water"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Underwater Secret"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Malak Hunting!"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Sanctuary Backdoor"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Plans for the Future"
                         },
                         "checked": false
                     },
@@ -19469,7 +20307,8 @@ let mediums = {
         "3-5": "SSC3-5Cover.webp",
         "3-6": "SSC3-6Cover.webp",
         "3-7": "SSC3-7Cover.webp",
-        "3-8": "SSC3-8Cover.webp"
+        "3-8": "SSC3-8Cover.webp",
+        "3-9": "SSC3-9Cover.webp"
     },
     "esCoverImages": {
         "Event Stories": "ESCover.webp",
@@ -19540,12 +20379,15 @@ let mediums = {
 function writeData(setDoc) {
     setDoc.then(() => {
         console.log('Document successfully written!');
-      }).catch((error) => {
+    }).catch((error) => {
         console.error('Error writing document: ', error);
-      });
+    });
 }
 /*
 let setDoc;
+setDoc = db.collection('data').doc('ssc_p3_c3-9').set(data['p3']['c3-9']);
+writeData(setDoc)
+
 setDoc = db.collection('data').doc('info').set(info);
 writeData(setDoc)
 
@@ -19553,7 +20395,8 @@ setDoc = db.collection('data').doc('dropdowns').set(dropdowns);
 writeData(setDoc)
 
 setDoc = db.collection('data').doc('medium_images').set(mediums);
-writeData(setDoc)*/
+writeData(setDoc)
+*/
 
 // let setDoc = db.collection('data').doc('an_s2_e8').set(data['s2']);
 
@@ -19569,16 +20412,16 @@ writeData(setDoc)*/
 
 // let setDoc = db.collection('data').doc('info').set(data);
 
-// let setDoc = db.collection('data').doc('characters').set(data);
+let setDoc = db.collection('data').doc('characters').set(data);
 
 // let setDoc = db.collection('data').doc('medium_images').set(data);
 
 // let setDoc = db.collection('data').doc('dropdowns').set(data);
 
-let setDoc = db.collection('data').doc('media').set(data);
+// let setDoc = db.collection('data').doc('media').set(data);
 
 setDoc.then(() => {
-  console.log('Document successfully written!');
+    console.log('Document successfully written!');
 }).catch((error) => {
-  console.error('Error writing document: ', error);
+    console.error('Error writing document: ', error);
 });

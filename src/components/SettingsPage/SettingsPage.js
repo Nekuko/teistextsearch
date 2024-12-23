@@ -45,7 +45,7 @@ function populateOrders() {
     correctKeys.push(`ssc_p2_c2-${i}`)
   }
 
-  for (let i = 1; i <= 8; i++) {
+  for (let i = 1; i <= 9; i++) {
     correctOrder.push(`Seven Shadow Chronicles Part 3, Chapter 3-${i}`);
     correctKeys.push(`ssc_p3_c3-${i}`)
   }

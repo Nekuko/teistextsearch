@@ -6650,9 +6650,9 @@
     },
     "ssc": {
         "part_count": 3,
-        "line_count": 11288,
-        "word_count": 120133,
-        "char_count": 686525,
+        "line_count": 11621,
+        "word_count": 123401,
+        "char_count": 705455,
         "characters": {
             "Alpha": 1370,
             "Narrator": 59,
@@ -6660,10 +6660,10 @@
             "Mysterious Soldier A": 10,
             "Alpha (??? (Alpha))": 5,
             "Mysterious Soldier B": 4,
-            "Delta": 556,
-            "Eta": 645,
+            "Delta": 611,
+            "Eta": 709,
             "Mysterious Soldier C": 6,
-            "Epsilon": 1039,
+            "Epsilon": 1087,
             "Mysterious Soldier D": 4,
             "Zeta": 1122,
             "Gamma": 1283,
@@ -6678,8 +6678,8 @@
             "Cultist F": 3,
             "Lambda (Mound of Flesh (Lambda))": 1,
             "Lambda (Tawny Elf (Lambda))": 15,
-            "Cid Kagenou (Cid)": 657,
-            "Lambda": 384,
+            "Cid Kagenou (Cid)": 678,
+            "Lambda": 411,
             "Merchant B": 11,
             "Merchant A Secretary": 10,
             "Merchant C": 2,
@@ -6782,9 +6782,9 @@
             "Chi (No. 111 & No. 122 (No. 111))": 5,
             "Omega (No. 111 & No. 122 (No. 122))": 5,
             "Annerose Nichtsehen (None (Annerose))": 4,
-            "Chi": 136,
-            "Omega": 142,
-            "Malaks": 1,
+            "Chi": 171,
+            "Omega": 184,
+            "Malaks": 7,
             "Sergey Gorman (None (Sergey Gorman))": 32,
             "Gamma (Gamma & Epsilon (Gamma))": 1,
             "Epsilon (Gamma & Epsilon (Epsilon))": 1,
@@ -6815,8 +6815,8 @@
             "Nu (??? (No. 93))": 1,
             "Nu (No. 93)": 19,
             "Garden Member": 2,
-            "Chi (Chi & Omega (Chi))": 8,
-            "Omega (Chi & Omega (Omega))": 8,
+            "Chi (Chi & Omega (Chi))": 13,
+            "Omega (Chi & Omega (Omega))": 13,
             "Lambda (None (Lambda))": 1,
             "Iota (None (Iota))": 16,
             "Iota": 92,
@@ -6848,7 +6848,9 @@
             "Sigma (Beta & ??? (Sigma) (Sigma))": 1,
             "Sigma": 133,
             "Orianan Paladin A": 2,
-            "Orianan Paladin B": 2
+            "Orianan Paladin B": 2,
+            "Malak (Malak the Malevolent)": 4,
+            "Cid Kagenou (None (Cid))": 21
         },
         "parts": {
             "p1": {
@@ -9543,19 +9545,19 @@
                 }
             },
             "p3": {
-                "chapter_count": 8,
-                "line_count": 2525,
-                "word_count": 28006,
-                "char_count": 158487,
+                "chapter_count": 9,
+                "line_count": 2858,
+                "word_count": 31274,
+                "char_count": 177417,
                 "characters": {
                     "Olivier (??? (Olivier))": 10,
                     "Alpha": 267,
                     "Beta": 216,
                     "Gamma": 284,
-                    "Epsilon": 178,
+                    "Epsilon": 226,
                     "Zeta": 240,
-                    "Delta": 50,
-                    "Eta": 118,
+                    "Delta": 105,
+                    "Eta": 182,
                     "Alpha (Seven Shadows (Alpha))": 2,
                     "Beta (Seven Shadows (Beta))": 2,
                     "Gamma (Seven Shadows (Gamma))": 2,
@@ -9563,11 +9565,11 @@
                     "Epsilon (Seven Shadows (Epsilon))": 2,
                     "Zeta (Seven Shadows (Zeta))": 2,
                     "Eta (Seven Shadows (Eta))": 2,
-                    "Lambda": 77,
-                    "Omega": 134,
-                    "Chi": 125,
+                    "Lambda": 104,
+                    "Omega": 176,
+                    "Chi": 160,
                     "Nu (93)": 22,
-                    "Cid Kagenou (Cid)": 139,
+                    "Cid Kagenou (Cid)": 160,
                     "Beta (None (Beta))": 8,
                     "Fan Passerby": 9,
                     "Alpha (Alpha & Beta (Alpha))": 1,
@@ -9578,8 +9580,8 @@
                     "Nu (No. 93)": 19,
                     "Garden Member": 2,
                     "Delta (??? (Delta))": 1,
-                    "Chi (Chi & Omega (Chi))": 8,
-                    "Omega (Chi & Omega (Omega))": 8,
+                    "Chi (Chi & Omega (Chi))": 13,
+                    "Omega (Chi & Omega (Omega))": 13,
                     "Alpha (??? (Alpha))": 1,
                     "Lambda (None (Lambda))": 1,
                     "Iota (None (Iota))": 16,
@@ -9619,7 +9621,10 @@
                     "Sigma (Beta & ??? (Sigma) (Sigma))": 1,
                     "Sigma": 133,
                     "Orianan Paladin A": 2,
-                    "Orianan Paladin B": 2
+                    "Orianan Paladin B": 2,
+                    "Malak (Malak the Malevolent)": 4,
+                    "Malaks": 6,
+                    "Cid Kagenou (None (Cid))": 21
                 },
                 "chapters": {
                     "c3-1": {
@@ -10329,6 +10334,90 @@
                                     "Orianan Paladin B": 2,
                                     "Beta": 14,
                                     "Cid Kagenou (Cid)": 22
+                                }
+                            }
+                        }
+                    },
+                    "c3-9": {
+                        "episode_count": 5,
+                        "line_count": 333,
+                        "word_count": 3268,
+                        "char_count": 18930,
+                        "characters": {
+                            "Eta": 64,
+                            "Epsilon": 48,
+                            "Chi": 35,
+                            "Omega": 42,
+                            "Chi (Chi & Omega (Chi))": 5,
+                            "Omega (Chi & Omega (Omega))": 5,
+                            "Delta": 55,
+                            "Malak (Malak the Malevolent)": 4,
+                            "Lambda": 27,
+                            "Malaks": 6,
+                            "Cid Kagenou (None (Cid))": 21,
+                            "Cid Kagenou (Cid)": 21
+                        },
+                        "episodes": {
+                            "e1": {
+                                "line_count": 61,
+                                "word_count": 736,
+                                "char_count": 4230,
+                                "characters": {
+                                    "Eta": 13,
+                                    "Epsilon": 14,
+                                    "Chi": 15,
+                                    "Omega": 12,
+                                    "Chi (Chi & Omega (Chi))": 3,
+                                    "Omega (Chi & Omega (Omega))": 3,
+                                    "Delta": 3,
+                                    "Malak (Malak the Malevolent)": 1
+                                }
+                            },
+                            "e2": {
+                                "line_count": 67,
+                                "word_count": 702,
+                                "char_count": 3994,
+                                "characters": {
+                                    "Omega": 20,
+                                    "Chi": 10,
+                                    "Eta": 23,
+                                    "Epsilon": 14
+                                }
+                            },
+                            "e3": {
+                                "line_count": 63,
+                                "word_count": 419,
+                                "char_count": 2573,
+                                "characters": {
+                                    "Delta": 32,
+                                    "Malak (Malak the Malevolent)": 2,
+                                    "Lambda": 23,
+                                    "Malaks": 6
+                                }
+                            },
+                            "e4": {
+                                "line_count": 70,
+                                "word_count": 660,
+                                "char_count": 3892,
+                                "characters": {
+                                    "Epsilon": 20,
+                                    "Eta": 28,
+                                    "Chi": 10,
+                                    "Omega": 10,
+                                    "Chi (Chi & Omega (Chi))": 2,
+                                    "Omega (Chi & Omega (Omega))": 2
+                                }
+                            },
+                            "e5": {
+                                "line_count": 67,
+                                "word_count": 751,
+                                "char_count": 4241,
+                                "characters": {
+                                    "Cid Kagenou (None (Cid))": 21,
+                                    "Delta": 20,
+                                    "Malak (Malak the Malevolent)": 1,
+                                    "Lambda": 4,
+                                    "Cid Kagenou (Cid)": 21
                                 }
                             }
                         }
@@ -12959,9 +13048,9 @@
             }
         },
         "Delta": {
-            "total": 1778,
+            "total": 1833,
             "names": {
-                "Delta": 1741,
+                "Delta": 1796,
                 "Seven Shadows (Delta)": 13,
                 "Delta & Zeta (Delta)": 8,
                 "Deltan": 1,
@@ -12972,9 +13061,9 @@
             }
         },
         "Epsilon": {
-            "total": 2525,
+            "total": 2573,
             "names": {
-                "Epsilon": 2381,
+                "Epsilon": 2429,
                 "Seven Shadows (Epsilon)": 14,
                 "Beta & Epsilon (Epsilon)": 32,
                 "Beta & Gamma & Epsilon (Epsilon)": 1,
@@ -13011,9 +13100,9 @@
             }
         },
         "Eta": {
-            "total": 1589,
+            "total": 1653,
             "names": {
-                "Eta": 1563,
+                "Eta": 1627,
                 "Seven Shadows (Eta)": 10,
                 "Alpha & Eta (Eta)": 1,
                 "Everyone (Eta)": 6,
@@ -13043,10 +13132,10 @@
             }
         },
         "Chi": {
-            "total": 728,
+            "total": 768,
             "names": {
-                "Chi": 224,
-                "Chi & Omega (Chi)": 13,
+                "Chi": 259,
+                "Chi & Omega (Chi)": 18,
                 "Characterised Shadow": 8,
                 "Characterised Eta": 3,
                 "Characterised Cult Member": 3,
@@ -13058,10 +13147,10 @@
             }
         },
         "Omega": {
-            "total": 452,
+            "total": 499,
             "names": {
-                "Omega": 225,
-                "Chi & Omega (Omega)": 13,
+                "Omega": 267,
+                "Chi & Omega (Omega)": 18,
                 "Characterised Zeta": 2,
                 "Characterised Gamma": 2,
                 "Possessed (Omega)": 4,
@@ -13083,7 +13172,7 @@
             }
         },
         "Cid Kagenou": {
-            "total": 11429,
+            "total": 11471,
             "names": {
                 "Shadow": 1562,
                 "Minoru Kageno": 126,
@@ -13093,9 +13182,10 @@
                 "Stylish Bandit Slayer": 33,
                 "John Smith": 592,
                 "John Smith & Yukime (John Smith)": 1,
-                "Cid": 2130,
+                "Cid": 2151,
                 "???? (Shadow)": 3,
                 "None (Cid Kagenou)": 12,
+                "None (Cid)": 21,
                 "??? (Stylish Bandit Slayer)": 1,
                 "??? (Cid Kagenou)": 4,
                 "??? (Nuru)": 7,
@@ -13557,9 +13647,9 @@
             }
         },
         "Lambda": {
-            "total": 702,
+            "total": 729,
             "names": {
-                "Lambda": 685,
+                "Lambda": 712,
                 "Mound of Flesh (Lambda)": 1,
                 "Tawny Elf (Lambda)": 15,
                 "None (Lambda)": 1
@@ -14148,9 +14238,10 @@
             }
         },
         "Malak": {
-            "total": 40,
+            "total": 44,
             "names": {
-                "Malak": 40
+                "Malak": 40,
+                "Malak the Malevolent": 4
             }
         },
         "Sergey Gorman": {
@@ -14229,9 +14320,9 @@
             }
         },
         "Malaks": {
-            "total": 1,
+            "total": 7,
             "names": {
-                "Malaks": 1
+                "Malaks": 7
             }
         },
         "Olivier": {

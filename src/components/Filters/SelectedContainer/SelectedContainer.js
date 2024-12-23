@@ -325,7 +325,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
         groupedMainParts.push({ text: "MOG SSC Rise of Garden", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 1 Rise of Garden" })
       } else if (item.text === "MOG SSC SOV C2-1-13") {
         groupedMainParts.push({ text: "MOG SSC Sturm of Velgalta", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 2 Sturm of Velgalta" })
-      } else if (item.text === "MOG SSC SOS C3-1-8") {
+      } else if (item.text === "MOG SSC SOS C3-1-9") {
         groupedMainParts.push({ text: "MOG SSC Secret of Sacra", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 3 Secret of Sacra" })
       } else {
         groupedMainParts.push(item)
@@ -340,7 +340,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     for (const item of groupParts) {
       if (item.text === "MOG SSC SOS C3-1") {
         containsC3_1 = true;
-      } else if (item.text === "MOG SSC SOS C3-2-8") {
+      } else if (item.text === "MOG SSC SOS C3-2-9") {
         containsC3_2_3 = true;
       } else if (item.text === "MOG SSC SOV C2-1") {
         containsC2_1 = true;
@@ -359,7 +359,7 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     if (containsC3_1 && containsC3_2_3) {
       groupedMainParts.push({ text: "MOG SSC Secret of Sacra", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 3 Secret of Sacra" })
       groupedMainParts = groupedMainParts.filter(item => {
-        return item.text !== "MOG SSC SOS C3-1" && item.text !== "MOG SSC SOS C3-2-8";
+        return item.text !== "MOG SSC SOS C3-1" && item.text !== "MOG SSC SOS C3-2-9";
       });
     }
 
@@ -768,29 +768,29 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
             const isBE = bName.includes("-E") || bName === 'Epilogue';
             const isAppendixA = aName === 'Appendix';
             const isAppendixB = bName === 'Appendix';
-        
+
             if (isAppendixA && isAppendixB) {
-                return 0;
+              return 0;
             }
-        
+
             if (isAppendixA) {
-                return 1;
+              return 1;
             }
             if (isAppendixB) {
-                return -1;
+              return -1;
             }
-        
+
             if (isAE && isBE) {
-                return 0;
+              return 0;
             }
-        
+
             if (isAE) {
-                return 1;
+              return 1;
             }
             if (isBE) {
-                return -1;
+              return -1;
             }
-        
+
             return 0;
           });
         }

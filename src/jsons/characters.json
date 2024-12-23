@@ -117,7 +117,6 @@
             "Dragons": {
                 "order": 2,
                 "characters": [
-                    "Malak",
                     "Malak Swarm",
                     "Malaks",
                     "Nidhogg"
@@ -1851,6 +1850,20 @@
             "subgroup": "Dragons",
             "order": 1,
             "url": "characterIcons/MistDragonIcon.webp"
+        },
+        {
+            "name": "Malak",
+            "name_variants": [],
+            "name_mirrors": [
+                {
+                    "base": "Malak",
+                    "alt": "Malak the Malevolent"
+                }
+            ],
+            "group": "Others",
+            "subgroup": "Dragons",
+            "order": 2,
+            "url": ""
         },
         {
             "name": "Shishiodoshi",
