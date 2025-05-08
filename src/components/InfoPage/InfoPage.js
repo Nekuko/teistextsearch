@@ -200,7 +200,7 @@ function InfoPage() {
         "F": "Final Chapter",
         "A": "Appendix",
         "E": "Epilogue",
-        "I": "Intermission"
+        "S": "Side Story"
     }
 
     const lnCoverImages = mediumImages.lnCoverImages;
@@ -239,7 +239,7 @@ function InfoPage() {
                                 <>
                                     <div className="volume-trigger">
                                         {lnCoverImages[volume] && <img className="cover-image" src={lnCoverImages[volume]} alt={all_counts[volume]} />}
-                                        {`${volume.replace("v", "Volume ") === 'Volume 6' ? "Volume 6 [Fan-TL]" : volume.replace("v", "Volume ")}`}
+                                        {`${volume.replace("v", "Volume ")}`}
                                     </div>
                                 </>
                             }>

@@ -50,16 +50,20 @@
 
 .filters {
   align-items: center;
-  position: flex; /* Position relative to the Header component */
+  position: flex;
+  /* Position relative to the Header component */
   width: 75%;
   background-color: #1f2224;
   padding: 20px;
   border-radius: 5px;
   margin: auto;
   color: white;
-  display: flex; /* Use flexbox to arrange children in a row */
-  flex-direction: column; /* Align children horizontally */
-  justify-content: space-around; /* Distribute space evenly around the containers */
+  display: flex;
+  /* Use flexbox to arrange children in a row */
+  flex-direction: column;
+  /* Align children horizontally */
+  justify-content: space-around;
+  /* Distribute space evenly around the containers */
 }
 
 .search-button {
@@ -76,31 +80,42 @@
 
 
 .search-button:active {
-  transform: translateY(2px); /* Move the button down by 2px when it's clicked */
-  box-shadow: 1px 1px 1px; /* Reduce the shadow to give a "pushed down" effect */
+  transform: translateY(2px);
+  /* Move the button down by 2px when it's clicked */
+  box-shadow: 1px 1px 1px;
+  /* Reduce the shadow to give a "pushed down" effect */
 }
 
 .row-container-center {
   display: flex;
-  flex-direction: row; /* Align children horizontally */
-  justify-content: space-around; /* Distribute space evenly around the containers */
+  flex-direction: row;
+  /* Align children horizontally */
+  justify-content: space-around;
+  /* Distribute space evenly around the containers */
   align-items: center;
   width: 100%;
 }
 
 
-.mediums-container, .characters-container, .selected-container {
+.mediums-container,
+.characters-container,
+.selected-container {
   display: flex;
   flex-direction: column;
-  background-color: #2c2f33; /* Adjust the background color as needed */
+  background-color: #2c2f33;
+  /* Adjust the background color as needed */
   padding: 15px;
-  width: auto; /* Adjust the width to fit content */
+  width: auto;
+  /* Adjust the width to fit content */
   border-radius: 5px;
-  margin-bottom: 20px; /* Space between this container and the next content */
+  margin-bottom: 20px;
+  /* Space between this container and the next content */
   padding-top: 0;
 }
 
-.mediums-title, .characters-title, .selected-title {
+.mediums-title,
+.characters-title,
+.selected-title {
   margin-top: 0;
   font-family: 'Noto Serif JP';
   font-size: calc(0.9em + 1.8vw);
@@ -108,7 +123,8 @@
   font-weight: 100;
   letter-spacing: 0.07em;
   margin-bottom: 0;
-  border-bottom: 1px solid white; /* Adjust the color as needed */
+  border-bottom: 1px solid white;
+  /* Adjust the color as needed */
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;

@@ -1129,6 +1129,128 @@
                         },
                         "checked": false
                     },
+                    "3-10 | Under the Academy!": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Mist and Archives"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "The Ignorant"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "The Sealed Chapel"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "The Call of Lili"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "At a Later Date"
+                        },
+                        "checked": false
+                    },
+                    "3-11 | Memories Revealed": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Return to Sanctuary"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Replicated Sanctuary"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "A Hero's Memories"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Sanctuary's Defenses"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Violet Eyes"
+                        },
+                        "checked": false
+                    },
+                    "3-12 | A Saint Sacrificed": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Until We Meet Again"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Sacred Land Clash"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Paradise Lost"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Shadow Eat Shadow"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "An End to Templars"
+                        },
+                        "checked": false
+                    },
+                    "3-13 | Flash! God-Killing Shadow": {
+                        "e1": {
+                            "checked": false,
+                            "title": "Victoria's Whereabouts"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Backwater Village!"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "Commencing Suppression"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "Blasphemy"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Forgiveness"
+                        },
+                        "e6": {
+                            "checked": false,
+                            "title": "Time Marches On"
+                        },
+                        "checked": false
+                    },
+                    "checked": false
+                },
+                "Part 4 | Boughs of Shadow": {
+                    "4-1 | The Seven Shadows Lurk": {
+                        "e1": {
+                            "checked": false,
+                            "title": "The Mysterious War"
+                        },
+                        "e2": {
+                            "checked": false,
+                            "title": "Seats of Discord"
+                        },
+                        "e3": {
+                            "checked": false,
+                            "title": "The Lost Kingdom"
+                        },
+                        "e4": {
+                            "checked": false,
+                            "title": "The Numberless Blues"
+                        },
+                        "e5": {
+                            "checked": false,
+                            "title": "Family Food"
+                        },
+                        "checked": false
+                    },
                     "checked": false
                 },
                 "checked": false
@@ -1909,6 +2031,130 @@
                     },
                     "checked": false
                 },
+                "Special Mission! The Best New Year's Dish!": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Special Mission! The Best New Year's Dish!"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Special Mission! The Best New Year's Dish!"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Special Mission! The Best New Year's Dish!"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Special Mission! The Best New Year's Dish!"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Special Mission! The Best New Year's Dish!"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Special Mission! The Best New Year's Dish!"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Special Mission! The Best New Year's Dish!"
+                    },
+                    "checked": false
+                },
+                "Shadow Live in Another World": {
+                    "e1": {
+                        "checked": false,
+                        "title": "Shadow Live in Another World"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "Shadow Live in Another World"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "Shadow Live in Another World"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "Shadow Live in Another World"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "Shadow Live in Another World"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "Shadow Live in Another World"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "Shadow Live in Another World"
+                    },
+                    "checked": false
+                },
+                "HIGHEST DREAM III": {
+                    "e1": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM III"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM III"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM III"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM III"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM III"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM III"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "HIGHEST DREAM III"
+                    },
+                    "checked": false
+                },
+                "All In! Jackpot Bunny Fight!": {
+                    "e1": {
+                        "checked": false,
+                        "title": "All In! Jackpot Bunny Fight!"
+                    },
+                    "e2": {
+                        "checked": false,
+                        "title": "All In! Jackpot Bunny Fight!"
+                    },
+                    "e3": {
+                        "checked": false,
+                        "title": "All In! Jackpot Bunny Fight!"
+                    },
+                    "e4": {
+                        "checked": false,
+                        "title": "All In! Jackpot Bunny Fight!"
+                    },
+                    "e5": {
+                        "checked": false,
+                        "title": "All In! Jackpot Bunny Fight!"
+                    },
+                    "e6": {
+                        "checked": false,
+                        "title": "All In! Jackpot Bunny Fight!"
+                    },
+                    "e7": {
+                        "checked": false,
+                        "title": "All In! Jackpot Bunny Fight!"
+                    },
+                    "checked": false
+                },
                 "checked": false
             },
             "Apocrypha": {
@@ -2259,43 +2505,43 @@
                 "checked": false,
                 "v6c1": {
                     "checked": false,
-                    "title": "P | The Clandestine Ruler of the Midgar Kingdom...I'm so Jealous!"
+                    "title": "P | There Are People Ruling the Midgar Kingdom from the Shadows? I'm So Jealous!"
                 },
                 "v6c2": {
                     "checked": false,
-                    "title": "1 | Enter \"Jack The Rippler\"!"
+                    "title": "1 | Enter Jack the Ripper!"
                 },
                 "v6c3": {
                     "checked": false,
-                    "title": "2 | Surprise Assassins at the Sleepover!"
+                    "title": "2 | Assassins at the Sleepover!"
                 },
                 "v6c4": {
                     "checked": false,
-                    "title": "3 | Let's Decipher the Crime Announcement!"
+                    "title": "3 | Deciphering the Calling Card!"
                 },
                 "v6c5": {
                     "checked": false,
-                    "title": "4 | And then a Monster becomes a Legend!"
+                    "title": "4 | The Monster Becomes a Legend!"
                 },
                 "v6c6": {
                     "checked": false,
-                    "title": "I | The Monster's Successor!"
+                    "title": "X | Following in the Monster's Footsteps!"
                 },
                 "v6c7": {
                     "checked": false,
-                    "title": "X | Oath of the Plains"
+                    "title": "S | The Grassland Vow"
                 },
                 "v6c8": {
                     "checked": false,
-                    "title": "5 | Welcome to Shadow Garden!"
+                    "title": "5 | Welcome to the Shadow Garden!"
                 },
                 "v6c9": {
                     "checked": false,
-                    "title": "E | The Scent of That Day"
+                    "title": "E | That Nostalgic Smell"
                 },
                 "v6c10": {
                     "checked": false,
-                    "title": "A | Alpha's Organizational Management Diary."
+                    "title": "A | Alpha's Organizational Management Journal"
                 }
             }
         },

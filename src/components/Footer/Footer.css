@@ -17,18 +17,3 @@
     text-align: right;
     padding: 10px;
 }
-
-.logout {
-    margin-right: 20px;
-    background: none;
-    border: none;
-    color: white;
-    font-family: 'Bellota Text', cursive;
-    font-weight: 700;
-    font-size: medium;
-}
-
-.logout:hover {
-    color: #c8000f;
-    cursor: pointer;
-}

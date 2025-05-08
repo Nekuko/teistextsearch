@@ -1,73 +1,18 @@
-@media (min-width: 769px) {
-  .mobile-nav {
-    display: none;
-  }
-
-  .burger-open:hover {
-    color: white;
-  }
-
-  .logo:hover {
-    opacity: 0.7;
-  }
-}
-
-/* Hide desktop navigation on screens smaller than or equal to 768px */
-@media (max-width: 768px) {
-  .desktop-nav {
-    display: none;
-  }
-
-  .burger-open:hover {
-    color: #c8000f;
-  }
-  
-}
-
-.overlay-menu {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 30px;
-  right: 0;
-  width: 220px;
-  height: auto;
-  background-color: rgba(17, 17, 17, 1); /* Semi-transparent black overlay */
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 0px;
-  border-radius: 5px 0px 0px 5px;
-}
-
-.burger-icon {
-  font-size: 200%;
-  position: absolute;
-  color: white;
-  right: 10px;
-  top: 34px;
-  z-index: 3;
-}
-
-.burger-open {
-  color: #c8000f;
-}
-
 .Header {
   display: flex;
-  position: relative;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  height: 100px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
-  height: 100px;
   z-index: 1;
 }
 
 .Header .title {
-  left: 0;
-  padding: 0 4%;
   display: flex;
   align-items: center;
+  padding: 0 4%;
   font-family: 'Noto Serif JP';
   font-size: calc(1em + 2vw);
   color: white;
@@ -77,89 +22,119 @@
 
 .Header .title .red {
   color: #c8000f;
-  font-weight: 800; /* make the red text bolder */
+  font-weight: 800;
 }
 
 .Header nav {
-  display: flex; 
+  display: flex;
   justify-content: flex-end;
 }
 
-.desktop-nav-ul {
+.Header nav ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-around; 
   align-items: center;
 }
 
-.mobile-nav-ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  gap: 30px;
+.Header nav li {
+  padding: 0 2vw;
+  flex: 1 1 auto;
 }
 
-.desktop-nav-li {
-  padding: 0 2vw; /* add padding to each list item */
-  flex: 1 1 auto; /* add this to allow the items to shrink and grow as needed */
-}
-
-.mobile-nav-li {
-  padding: 0 2vw; /* add padding to each list item */
-  flex: 1 1 auto; /* add this to allow the items to shrink and grow as needed */
-}
-
-.Header nav ul li a {
+.Header nav a {
   color: white;
   text-decoration: none;
   font-family: 'Bellota Text', cursive;
   font-weight: 700;
   position: relative;
   overflow: hidden;
-  white-space: nowrap; /* add this to prevent text from breaking into multiple lines */
+  white-space: nowrap;
   background-size: 200% 100%;
   background-position: right;
+  transition: color 0.3s ease;
 }
 
-.Header nav ul li a:before {
+.Header nav a::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #c8000f; /* change this to the color you want */
+  background-color: #c8000f;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s ease-in-out;
   z-index: -1;
 }
 
-.Header nav ul li a:hover:before {
+.Header nav a:hover {
+  color: #fff;
+}
+
+.Header nav a:hover::before {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-.Header nav ul li a:hover {
-  color: #fff; /* change this to the color you want when hovered */
+.logo {
+  width: 200px;
+  height: auto;
+  transition: opacity 0.3s ease;
 }
 
-
+.logo:hover {
+  opacity: 0.7;
+}
 
 .active-link {
-  background-color: #c8000f; /* change this to the color you want when active */
+  background-color: #c8000f;
 }
 
-/* Header.css */
-.logo {
-  width: 200px; /* Adjust as needed */
-  height: auto; /* Keeps the aspect ratio */
-  transition: opacity 0.3s ease; /* Adds a smooth transition */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .burger-open {
+    color: #c8000f;
+  }
+
+  .burger-icon {
+    font-size: 200%;
+    position: absolute;
+    color: white;
+    right: 10px;
+    top: 34px;
+    z-index: 3;
+  }
+
+  .mobile-nav-ul {
+    flex-direction: column;
+    height: 100%;
+    gap: 30px;
+  }
+
+  .overlay-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 30px;
+    right: 0;
+    width: 220px;
+    height: auto;
+    background-color: rgba(17, 17, 17, 1);
+    padding: 2% 0 2% 0;
+    border-radius: 5px 0 0 5px;
+  }
 }
 
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none;
+  }
 
-
-
-
-
+  .burger-open:hover {
+    color: white;
+  }
+}

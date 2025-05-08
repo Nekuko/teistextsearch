@@ -146,30 +146,50 @@
                     "Zabra"
                 ]
             },
-            "Shangri-La Frontier": {
+            "Re:Zero": {
                 "order": 7,
+                "characters": [
+                    "Witch Cultist"
+                ]
+            },
+            "Shangri-La Frontier": {
+                "order": 8,
                 "characters": []
             },
             "Templars": {
-                "order": 8,
+                "order": 9,
                 "characters": [
                     "Templar A",
                     "Templar B",
                     "Templar C",
+                    "Templar C",
+                    "Templar D",
+                    "Templar E",
+                    "Templar F",
+                    "Templar G",
+                    "Templar H",
+                    "Templar I",
+                    "Templar J",
+                    "Templar K",
+                    "Templar L",
+                    "Templar M",
+                    "Templar N",
                     "Templar Leader",
                     "Templar Leader A",
                     "Templar Leader B",
                     "Templar Leader C",
                     "Templar Leader D",
+                    "Templar Leader E",
+                    "Templar Leader F",
                     "Templars"
                 ]
             },
             "Vampires": {
-                "order": 9,
+                "order": 10,
                 "characters": []
             },
             "General": {
-                "order": 10,
+                "order": 11,
                 "characters": [
                     "Archbishop Teinen",
                     "Fatty McSpecs",
@@ -249,6 +269,9 @@
                     "Branch Manager",
                     "Cake Shop Assistant",
                     "Clerk",
+                    "Female Employee A",
+                    "Female Employee B",
+                    "Female Employees",
                     "Merchant",
                     "Merchant A",
                     "Merchant A Secretary",
@@ -335,6 +358,9 @@
                 "order": 10,
                 "characters": [
                     "Dark Knight",
+                    "Dark Knight Guard A",
+                    "Dark Knight Guard B",
+                    "Dark Knight Guard C",
                     "Female DK Trainee",
                     "Knight",
                     "Knight A",
@@ -429,6 +455,14 @@
                     "T-thrope Spectators",
                     "Therianthrope A",
                     "Therianthrope B",
+                    "Therianthrope C",
+                    "Therianthrope D",
+                    "Therianthrope E",
+                    "Therianthrope F",
+                    "Therianthrope G",
+                    "Therianthrope H",
+                    "Therianthrope I",
+                    "Therianthrops",
                     "Tiger T-thrope",
                     "White Horse T-thrope"
                 ]
@@ -945,7 +979,8 @@
             "name": "Iota",
             "name_variants": [
                 "None (Iota)",
-                "Gamma & Iota (Iota)"
+                "Gamma & Iota (Iota)",
+                "Sigma & Iota (Iota)"
             ],
             "name_mirrors": [],
             "group": "Shadow Garden",
@@ -989,6 +1024,7 @@
         {
             "name": "Sigma",
             "name_variants": [
+                "Sigma & Iota (Sigma)",
                 "Beta & ??? (Sigma) (Sigma)"
             ],
             "name_mirrors": [],
@@ -1037,9 +1073,16 @@
             "name": "Victoria",
             "name_variants": [
                 "No. 559",
-                "??? (Victoria)"
+                "No Number",
+                "??? (Victoria)",
+                "559 & 666 (559)"
             ],
-            "name_mirrors": [],
+            "name_mirrors": [
+                {
+                    "base": "No. 559",
+                    "alt": "559"
+                }
+            ],
             "group": "Shadow Garden",
             "subgroup": "Members",
             "order": 2,
@@ -1185,6 +1228,52 @@
             "name_mirrors": [],
             "group": "Others",
             "subgroup": "Shangri-La Frontier",
+            "order": 4,
+            "url": ""
+        },
+        {
+            "name": "Subaru",
+            "name_variants": [
+                "??? (Subaru)",
+                "Everyone (Subaru)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Re:Zero",
+            "order": 1,
+            "url": ""
+        },
+        {
+            "name": "Emilia",
+            "name_variants": [
+                "??? (Emilia)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Re:Zero",
+            "order": 2,
+            "url": ""
+        },
+        {
+            "name": "Rem",
+            "name_variants": [
+                "??? (Rem)",
+                "Everyone (Rem)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Re:Zero",
+            "order": 3,
+            "url": ""
+        },
+        {
+            "name": "Petelgeuse",
+            "name_variants": [
+                "??? (Petelgeuse)"
+            ],
+            "name_mirrors": [],
+            "group": "Others",
+            "subgroup": "Re:Zero",
             "order": 4,
             "url": ""
         },
@@ -1772,6 +1861,7 @@
             "name_variants": [
                 "No. 666",
                 "Rose & Alexia (Rose)",
+                "559 & 666 (666)",
                 "No. 664 & No. 665 & No. 666 (No. 666)"
             ],
             "name_mirrors": [
@@ -1782,6 +1872,10 @@
                 {
                     "base": "No. 666",
                     "alt": "No.666"
+                },
+                {
+                    "base": "No. 666",
+                    "alt": "666"
                 }
             ],
             "group": "Oriana",

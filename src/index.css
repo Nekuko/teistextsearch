@@ -39,12 +39,14 @@ code {
   width: 6px;
   height: 6px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #c8000f;
   border-radius: 2px;
   margin: 2px;
   box-shadow: none;
 }
+
 ::-webkit-scrollbar-track {
   border-radius: 2px;
   background: #fff;

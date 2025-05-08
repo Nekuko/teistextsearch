@@ -117,7 +117,8 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
       'Seven Shadows Chronicles': 'SSC',
       'Rise of Garden': 'ROG',
       'Sturm of Velgalta': 'SOV',
-      'Secret of Sacra': 'SOS'
+      'Secret of Sacra': 'SOS',
+      "Boughs of Shadow": "BOS"
     };
     let sscList = [];
     let groupedEpisodes = {};
@@ -325,8 +326,10 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
         groupedMainParts.push({ text: "MOG SSC Rise of Garden", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 1 Rise of Garden" })
       } else if (item.text === "MOG SSC SOV C2-1-13") {
         groupedMainParts.push({ text: "MOG SSC Sturm of Velgalta", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 2 Sturm of Velgalta" })
-      } else if (item.text === "MOG SSC SOS C3-1-9") {
+      } else if (item.text === "MOG SSC SOS C3-1-13") {
         groupedMainParts.push({ text: "MOG SSC Secret of Sacra", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 3 Secret of Sacra" })
+      } else if (item.text === "MOG SSC BOS C4-1") {
+        groupedMainParts.push({ text: "MOG SSC Boughs of Shadow", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 4 Boughs of Shadow" })
       } else {
         groupedMainParts.push(item)
       }
@@ -338,13 +341,13 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     let containsC2_2_13 = false;
 
     for (const item of groupParts) {
-      if (item.text === "MOG SSC SOS C3-1") {
+      if (item.text === "MOG SSC SOS C3-1-12") {
         containsC3_1 = true;
-      } else if (item.text === "MOG SSC SOS C3-2-9") {
+      } else if (item.text === "MOG SSC SOS C3-13 E1-6") {
         containsC3_2_3 = true;
       } else if (item.text === "MOG SSC SOV C2-1") {
         containsC2_1 = true;
-      } else if (item.text === "MOG SSC SOV C2-2-13") {
+      } else if (item.text === "MOG SSC SOV C2-2-12") {
         containsC2_2_13 = true;
       }
     }
@@ -359,13 +362,13 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
     if (containsC3_1 && containsC3_2_3) {
       groupedMainParts.push({ text: "MOG SSC Secret of Sacra", hoverText: "Master of Garden, Seven Shadows Chronicles, Part 3 Secret of Sacra" })
       groupedMainParts = groupedMainParts.filter(item => {
-        return item.text !== "MOG SSC SOS C3-1" && item.text !== "MOG SSC SOS C3-2-9";
+        return item.text !== "MOG SSC SOS C3-1-12" && item.text !== "MOG SSC SOS C3-13 E1-6";
       });
     }
 
 
 
-    let mainGroups = ["MOG SSC Rise of Garden", "MOG SSC Sturm of Velgalta", "MOG SSC Secret of Sacra"];
+    let mainGroups = ["MOG SSC Rise of Garden", "MOG SSC Sturm of Velgalta", "MOG SSC Secret of Sacra", "MOG SSC Boughs of Shadow"];
     if (mainGroups.every(group => groupedMainParts.some(item => item.text === group))) {
       groupedMainParts = groupedMainParts.filter(item => !mainGroups.includes(item.text));
       groupedMainParts.push({ text: "MOG Seven Shadows Chronicles", hoverText: "Master of Garden, Seven Shadows Chronicles" });
@@ -724,8 +727,8 @@ function SelectedContainer({ wnDropdownState, mogDropdownState, animeDropdownSta
                   }
                 }
                 break;
-              case 'I':
-                chapterType = 'Intermission';
+              case 'S':
+                chapterType = 'Side Story';
                 ranges.push({ id: chapterId, type: chapterType });
                 continue;
               case 'X':

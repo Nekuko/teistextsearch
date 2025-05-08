@@ -23,7 +23,12 @@ export const ESMAP = {
     "adswy": "A Dreamy Summer with You",
     "bheif": "Blazing Hero! Eminence in Flames!",
     "aystpm": "At Your Service! The Perfect Maid!",
-    "fthasg": "From the Heart! A Sage's Gift"
+    "fthasg": "From the Heart! A Sage's Gift",
+    "smtbnyd": "Special Mission! The Best New Year's Dish!",
+    "sliaw": "Shadow Live in Another World",
+    "hd3": "HIGHEST DREAM III",
+    "aijbf": "All In! Jackpot Bunny Fight!"
+
 };
 
 const ESMAPREVERSE = {};
